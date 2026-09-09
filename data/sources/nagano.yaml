@@ -1,0 +1,174 @@
+# 長野県の自治体運営の空き家バンク（ADR 0001）。
+# 各エントリは sitemill の Source（巡回設定）と、akiya-atlas の municipality（表示用）を兼ねる。
+# policy: crawl にできるのは、運営主体が自治体または自治体の移住推進組織だと明記されたサイトだけ。
+# operator_evidence には根拠となる記述の引用と URL、確認日を必ず書く。
+sources:
+  - id: nagano-tomi
+    name: 東御市空き家バンク
+    operator: 東御市
+    operator_kind: municipality
+    operator_evidence:
+      quote: "東御市役所 〒389-0592 長野県東御市県 281-2 電話：0268-62-1111（代表） Copyright © TOMI City. All rights reserved."
+      url: https://akiya.city.tomi.nagano.jp/
+      checked_on: 2026-09-10
+    policy: crawl
+    official_url: https://www.city.tomi.nagano.jp/
+    pages:
+      - url: https://akiya.city.tomi.nagano.jp/
+        kind: listing_index
+        follow:
+          - pattern: '^https://akiya\.city\.tomi\.nagano\.jp/\d{4}/\d{2}/[^/]+\.html$'
+            kind: listing_detail
+            max_links: 12
+      - url: https://www.city.tomi.nagano.jp/category/akiyabank/166961.html
+        kind: info
+    allow_hosts: [akiya.city.tomi.nagano.jp, www.city.tomi.nagano.jp]
+    max_pages: 15
+    external_links:
+      - label: アットホーム 空き家バンク（東御市）
+        url: https://tomi-c20219.akiya-athome.jp/
+        note: 民間プラットフォーム。本サイトでは巡回・要約しない
+      - label: LIFULL HOME'S 空き家バンク（東御市）
+        url: https://www.homes.co.jp/akiyabank/nagano/tomi/
+        note: 民間プラットフォーム。本サイトでは巡回・要約しない
+    municipality:
+      code: "202193"
+      name: 東御市
+      prefecture: 長野県
+      prefecture_slug: nagano
+      slug: 202193-tomi
+      bank_url: https://akiya.city.tomi.nagano.jp/
+      bank_label: 空き家バンク
+      map_query: 長野県東御市
+
+  - id: nagano-saku
+    name: 佐久市空き家バンク
+    operator: 佐久市 企画部 移住交流推進課
+    operator_kind: municipality
+    operator_evidence:
+      quote: "【佐久市移住・空き家・当サイトについて】 佐久市 企画部 移住交流推進課 電話：0267-62-4139 Copyright © SAKU City. All rights reserved."
+      url: https://39ijyu.com/index2.php?kubun=IE
+      checked_on: 2026-09-10
+    policy: crawl
+    official_url: https://www.city.saku.nagano.jp/
+    pages:
+      - url: https://39ijyu.com/all.php?kubun=IE
+        kind: listing_index
+        follow:
+          - pattern: '^https://39ijyu\.com/detail\.php\?id=\d+&kubun=IE$'
+            kind: listing_detail
+            max_links: 12
+      - url: https://www.city.saku.nagano.jp/kanko/ijyuteijyu/akiya/akiyabank.html
+        kind: info
+    allow_hosts: [39ijyu.com, www.city.saku.nagano.jp]
+    max_pages: 15
+    external_links:
+      - label: アットホーム 空き家バンク（佐久市）
+        url: https://saku-c20217.akiya-athome.jp/
+        note: 民間プラットフォーム。本サイトでは巡回・要約しない
+    municipality:
+      code: "202177"
+      name: 佐久市
+      prefecture: 長野県
+      prefecture_slug: nagano
+      slug: 202177-saku
+      bank_url: https://39ijyu.com/index2.php?kubun=IE
+      bank_label: 空き家バンク
+      map_query: 長野県佐久市
+
+  - id: nagano-iiyama
+    name: 飯山市空き家バンク
+    operator: 飯山市（移住定住支援サイト）
+    operator_kind: municipality
+    operator_evidence:
+      quote: "Copyright © 2018-2026 長野県飯山市 移住定住支援サイト All Rights Reserved.（飯山市公式サイトから「飯山市空き家バンク物件の詳細情報はこちら（移住定住支援サイト）」として案内）"
+      url: https://www.city.iiyama.nagano.jp/soshiki/ijyuteijyusuisinka/54286/news/iiyamashinosumai
+      checked_on: 2026-09-10
+    policy: crawl
+    official_url: https://www.city.iiyama.nagano.jp/
+    pages:
+      - url: https://furusato-iiyama.net/akiyabank/
+        kind: listing_index
+        follow:
+          - pattern: '^https://furusato-iiyama\.net/[a-z]\d{2,4}/$'
+            kind: listing_detail
+            max_links: 12
+      - url: https://www.city.iiyama.nagano.jp/soshiki/ijyuteijyusuisinka/54286/news/iiyamashinosumai
+        kind: info
+    allow_hosts: [furusato-iiyama.net, www.city.iiyama.nagano.jp]
+    max_pages: 15
+    municipality:
+      code: "202134"
+      name: 飯山市
+      prefecture: 長野県
+      prefecture_slug: nagano
+      slug: 202134-iiyama
+      bank_url: https://furusato-iiyama.net/akiyabank/
+      bank_label: 空き家バンク
+      map_query: 長野県飯山市
+      subsidies:
+        - name: 飯山市空き家活用等事業補助金（空き家改修補助）
+          kind: 改修
+          url: https://www.city.iiyama.nagano.jp/soshiki/ijyuteijyusuisinka/ijyuteijyu/hojokin_juutaku/akiya_kaishu
+          summary: UIJターン・市内在住の方、または空き家の所有者等が、賃貸借する空き家バンク登録物件を改修する場合の補助
+          checked_on: 2026-09-09
+        - name: 飯山市空き家活用等事業補助金（家財の運搬処分補助）
+          kind: 家財
+          url: https://www.city.iiyama.nagano.jp/soshiki/ijyuteijyusuisinka/54286/news/akiya_katsuyo
+          summary: 空き家バンク物件の売却等に伴い、不要家財を処分する方への補助
+          checked_on: 2026-09-09
+
+  - id: nagano-omachi
+    name: 大町市空き家バンク
+    operator: 大町市定住促進協働会議（事務局：大町市まちづくり産業課）
+    operator_kind: municipality_affiliated
+    operator_evidence:
+      quote: "大町市定住促進協働会議（事務局：大町市まちづくり産業課住促進係） Tel：0261-21-1210"
+      url: https://www.iju-omachi.jp/akiyabank.html
+      checked_on: 2026-09-10
+    policy: crawl
+    official_url: https://www.city.omachi.nagano.jp/
+    pages:
+      - url: https://www.iju-omachi.jp/akiyabank.html
+        kind: listing_index
+      - url: https://www.city.omachi.nagano.jp/00002000/00002800/00002816.html
+        kind: info
+    allow_hosts: [www.iju-omachi.jp, www.city.omachi.nagano.jp]
+    max_pages: 5
+    municipality:
+      code: "202126"
+      name: 大町市
+      prefecture: 長野県
+      prefecture_slug: nagano
+      slug: 202126-omachi
+      bank_url: https://www.iju-omachi.jp/akiyabank.html
+      bank_label: 空き家バンク
+      map_query: 長野県大町市
+
+  - id: nagano-ina
+    name: 伊那市空き家バンク（伊那地域空き家バンク）
+    operator: 伊那市（物件情報は伊那地域空き家バンクホームページ）
+    operator_kind: municipality
+    operator_evidence:
+      quote: "伊那市は空き家情報登録制度「空き家バンク」を運営しています ／ 空き家バンク物件情報（外部サイト）"
+      url: https://www.inacity.jp/kurashi/sumai/akiyabank/index.html
+      checked_on: 2026-09-10
+    # 物件情報サイト（ina-akiyabank.jp）は JavaScript で描画され静的 HTML に物件が無いため、今フェーズは巡回せずリンクのみ
+    policy: link_only
+    official_url: https://www.inacity.jp/
+    pages:
+      - url: https://www.inacity.jp/kurashi/sumai/akiyabank/index.html
+        kind: info
+    external_links:
+      - label: 伊那地域空き家バンク（物件情報）
+        url: https://www.ina-akiyabank.jp/
+        note: 伊那市が案内する物件情報サイト。JavaScript 描画のため本サイトでは要約せずリンクのみ
+    municipality:
+      code: "202096"
+      name: 伊那市
+      prefecture: 長野県
+      prefecture_slug: nagano
+      slug: 202096-ina
+      bank_url: https://www.ina-akiyabank.jp/
+      bank_label: 空き家バンク（伊那地域空き家バンク）
+      map_query: 長野県伊那市

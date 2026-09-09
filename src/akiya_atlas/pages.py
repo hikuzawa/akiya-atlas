@@ -1,0 +1,529 @@
+"""ページ生成（ADR 0003, 0004, 0005）。テンプレートには表示用に整形済みの値だけを渡す。"""
+
+from __future__ import annotations
+
+from dataclasses import dataclass
+from datetime import datetime
+from typing import Any
+
+from sitemill.build.site import date_ja, datetime_ja, m2, yen
+from sitemill.charts import (
+    Bar,
+    Chart,
+    bin_values,
+    chart_css,
+    column_chart,
+    flow_diagram,
+    hbar_chart,
+)
+from sitemill.embeds import maps_place_embed
+from sitemill.models import Embed, OperatorInfo, Page, PageMeta, Source, SourceLink, TrustSignals
+from sitemill.settings import Workspace
+
+from akiya_atlas.affiliates import OFFERS
+from akiya_atlas.data import Dataset
+from akiya_atlas.schema import FIELD_LABELS, Listing, Municipality
+
+PRICE_EDGES = [1_000_000, 3_000_000, 5_000_000, 10_000_000]
+PRICE_LABELS = ["100万円未満", "100〜300万円", "300〜500万円", "500〜1,000万円", "1,000万円以上"]
+BAND_RENT = "賃貸"
+BAND_NONE = "価格記載なし・応相談"
+BUILT_EDGES = [1971, 1981, 1991, 2001]
+BUILT_LABELS = ["〜1970年", "1971〜80年", "1981〜90年", "1991〜2000年", "2001年〜"]
+MIN_CHART_POINTS = 3
+SALE_FLOW = [
+    "現地と権利関係の確認",
+    "自治体の空き家バンクに登録",
+    "査定・相談（複数社）",
+    "買主と交渉・契約",
+    "引き渡し",
+]
+DEMOLITION_FLOW = [
+    "解体補助の有無を確認",
+    "見積を複数社で比較",
+    "補助金の申請",
+    "解体工事",
+    "滅失登記・跡地の活用",
+]
+
+
+@dataclass
+class Ctx:
+    ws: Workspace
+    ds: Dataset
+    now: datetime
+    operator: OperatorInfo
+    maps_key: str | None
+
+    @property
+    def base_context(self) -> dict[str, Any]:
+        return {"chart_css": chart_css(), "offers": OFFERS}
+
+
+def price_band(ls: Listing) -> str:
+    if ls.price.ok:
+        idx = next((i for i, e in enumerate(PRICE_EDGES) if ls.price.value < e), len(PRICE_EDGES))  # type: ignore[operator]
+        return PRICE_LABELS[idx]
+    if ls.deal_type == "rent" or (ls.rent_monthly.ok and not ls.price.ok):
+        return BAND_RENT
+    return BAND_NONE
+
+
+def _dt(value: str | None) -> datetime | None:
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(value)
+    except ValueError:
+        return None
+
+
+def listing_path(muni: Municipality, ls: Listing) -> str:
+    return f"{muni.path}{ls.slug}/index.html"
+
+
+def listing_url_path(muni: Municipality, ls: Listing) -> str:
+    return f"/{muni.path}{ls.slug}/"
+
+
+def price_text(ls: Listing) -> str:
+    parts = []
+    if ls.price.ok:
+        parts.append(yen(ls.price.value))
+    if ls.rent_monthly.ok:
+        parts.append(f"月額 {yen(ls.rent_monthly.value)}")
+    if parts:
+        return " / ".join(parts)
+    if ls.price.quote or ls.rent_monthly.quote:
+        return ls.price.quote or ls.rent_monthly.quote or "—"
+    return "記載なし"
+
+
+def listing_row(muni: Municipality, ls: Listing) -> dict[str, Any]:
+    return {
+        "no": ls.listing_no,
+        "title": ls.display_title,
+        "deal": ls.deal_label,
+        "price": price_text(ls),
+        "band": price_band(ls),
+        "address": ls.address.value if ls.address.ok else None,
+        "built_year": ls.built_year.value if ls.built_year.ok else None,
+        "floor_area": m2(ls.floor_area_m2.value) if ls.floor_area_m2.ok else None,
+        "status": ls.status,
+        "status_text": ls.status_text.value if ls.status_text.ok else None,
+        "url": listing_url_path(muni, ls),
+        "source_url": ls.primary_url,
+        "updated": date_ja(_dt(ls.last_seen_at)),
+    }
+
+
+def fact_rows(ls: Listing) -> list[dict[str, Any]]:
+    """物件ページの項目表。値と原文（引用）を並べて出す。"""
+    rows = []
+    formatters = {
+        "price": yen,
+        "rent_monthly": yen,
+        "land_area_m2": m2,
+        "floor_area_m2": m2,
+        "built_year": lambda v: f"{v}年",
+    }
+    for key, label in FIELD_LABELS.items():
+        fv = getattr(ls, key)
+        fmt = formatters.get(key)
+        value = (fmt(fv.value) if fmt else str(fv.value)) if fv.ok else None
+        rows.append(
+            {
+                "label": label,
+                "value": value,
+                "quote": fv.quote,
+                "ok": fv.ok,
+                "note": fv.note,
+                "show_quote": bool(fv.quote) and (value is None or fv.quote != value),
+            }
+        )
+    return rows
+
+
+def operator_info(ws: Workspace) -> OperatorInfo:
+    return OperatorInfo(
+        name=ws.site.operator.name,
+        contact=ws.site.operator.contact,
+        url=ws.site.operator.url or ws.site.url("/about/"),
+    )
+
+
+def source_links(ctx: Ctx, muni: Municipality) -> list[SourceLink]:
+    src = ctx.ds.by_source.get(muni.id)
+    links: list[SourceLink] = []
+    if src is not None:
+        for p in src.pages:
+            if p.kind.value == "listing_index":
+                st = ctx.ds.state.get(p.url)
+                links.append(
+                    SourceLink(
+                        label=f"{muni.name} {muni.bank_label}",
+                        url=p.url,
+                        fetched_at=st.fetched_at if st else None,
+                    )
+                )
+    if not links:
+        links.append(SourceLink(label=f"{muni.name} {muni.bank_label}", url=muni.bank_url))
+    return links
+
+
+def trust(
+    ctx: Ctx, *, sources: list[SourceLink], count: int | None, updated: datetime | None = None
+) -> TrustSignals:
+    return TrustSignals(
+        updated_at=updated or ctx.now,
+        sources=sources,
+        operator=ctx.operator,
+        record_count=count,
+        generated_at=ctx.now,
+    )
+
+
+def muni_map(ctx: Ctx, muni: Municipality) -> Embed:
+    query = muni.map_query or f"{muni.prefecture}{muni.name}"
+    return maps_place_embed(query, api_key=ctx.maps_key, title=f"{muni.name}の地図", zoom=11)
+
+
+def listing_map(ctx: Ctx, muni: Municipality, ls: Listing) -> Embed | None:
+    if not ls.address.ok:
+        return None
+    address = str(ls.address.value)
+    query = address if muni.name in address else f"{muni.prefecture}{muni.name}{address}"
+    return maps_place_embed(query, api_key=ctx.maps_key, title=f"{address} 周辺の地図", zoom=14)
+
+
+def price_chart(title: str, listings: list[Listing]) -> Chart | None:
+    values = [float(ls.price.value) for ls in listings if ls.price.ok]  # type: ignore[arg-type]
+    if len(values) < MIN_CHART_POINTS:
+        return None
+    return column_chart(
+        title,
+        bin_values(values, PRICE_EDGES, PRICE_LABELS),
+        unit="件",
+        desc=f"売買価格の分布（{len(values)} 件）",
+    )
+
+
+def built_chart(title: str, listings: list[Listing]) -> Chart | None:
+    values = [float(ls.built_year.value) for ls in listings if ls.built_year.ok]  # type: ignore[arg-type]
+    if len(values) < MIN_CHART_POINTS:
+        return None
+    return column_chart(
+        title,
+        bin_values(values, BUILT_EDGES, BUILT_LABELS),
+        unit="件",
+        desc=f"築年の分布（{len(values)} 件）",
+    )
+
+
+def count_chart(title: str, munis: list[Municipality], ds: Dataset) -> Chart | None:
+    bars = [Bar(m.name, len(ds.listings_for(m, active_only=True))) for m in munis]
+    if len(bars) < 2:
+        return None
+    return hbar_chart(title, bars, unit="件", desc="市町村ごとの掲載件数")
+
+
+def muni_row(ctx: Ctx, muni: Municipality) -> dict[str, Any]:
+    rows = ctx.ds.listings_for(muni, active_only=True)
+    return {
+        "name": muni.name,
+        "code": muni.code,
+        "url": f"/{muni.path}",
+        "bank_url": muni.bank_url,
+        "count": len(rows),
+        "sale": sum(1 for r in rows if r.deal_type in ("sale", "both")),
+        "rent": sum(1 for r in rows if r.deal_type in ("rent", "both")),
+        "subsidy_migration": muni.has_migration_subsidy,
+        "subsidy_renovation": muni.has_renovation_subsidy,
+        "subsidy_demolition": muni.has_demolition_subsidy,
+        "last_fetched": datetime_ja(ctx.ds.last_fetched(muni.id)),
+    }
+
+
+def external_links(ctx: Ctx, muni: Municipality) -> list[dict[str, str]]:
+    src = ctx.ds.by_source.get(muni.id)
+    return [
+        {"label": e.label, "url": e.url, "note": e.note or ""}
+        for e in (src.external_links if src else [])
+    ]
+
+
+def _page(
+    ctx: Ctx,
+    *,
+    path: str,
+    template: str,
+    title: str,
+    description: str,
+    context: dict[str, Any],
+    trust_signals: TrustSignals,
+    priority: float = 0.5,
+    changefreq: str = "weekly",
+) -> Page:
+    meta = PageMeta(
+        title=title, description=description, path=path, priority=priority, changefreq=changefreq
+    )
+    return Page(
+        meta=meta, template=template, context={**ctx.base_context, **context}, trust=trust_signals
+    )
+
+
+def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
+    ctx = Ctx(
+        ws=ws, ds=ds, now=now, operator=operator_info(ws), maps_key=ws.secrets.google_maps_embed_key
+    )
+    pages: list[Page] = []
+    all_active = [ls for ls in ds.listings if ls.status == "active"]
+    all_sources = [link for m in ds.municipalities for link in source_links(ctx, m)]
+
+    pref_rows = []
+    for slug, name in ds.prefectures():
+        munis = ds.municipalities_in(slug)
+        pref_rows.append(
+            {
+                "slug": slug,
+                "name": name,
+                "url": f"/{slug}/",
+                "municipalities": len(munis),
+                "count": sum(len(ds.listings_for(m, active_only=True)) for m in munis),
+            }
+        )
+    recent = sorted(all_active, key=lambda ls: ls.last_seen_at or "", reverse=True)[:8]
+    pages.append(
+        _page(
+            ctx,
+            path="index.html",
+            template="index.html",
+            title="自治体の空き家バンクを横断検索",
+            description=ws.site.description,
+            context={
+                "prefectures": pref_rows,
+                "stats": {
+                    "prefectures": len(pref_rows),
+                    "municipalities": len(ds.municipalities),
+                    "listings": len(all_active),
+                },
+                "recent": [
+                    listing_row(ds.muni_by_source[ls.source_id], ls)
+                    for ls in recent
+                    if ls.source_id in ds.muni_by_source
+                ],
+                "chart_counts": count_chart("市町村別の掲載件数", ds.municipalities, ds),
+            },
+            trust_signals=trust(ctx, sources=all_sources, count=len(all_active)),
+            priority=1.0,
+            changefreq="daily",
+        )
+    )
+
+    for slug, name in ds.prefectures():
+        munis = ds.municipalities_in(slug)
+        active = [ls for m in munis for ls in ds.listings_for(m, active_only=True)]
+        pages.append(
+            _page(
+                ctx,
+                path=f"{slug}/index.html",
+                template="prefecture.html",
+                title=f"{name}の空き家バンク一覧",
+                description=f"{name}内の自治体が運営する空き家バンクの掲載件数・補助金の有無をまとめて確認できます。",
+                context={
+                    "prefecture": {"slug": slug, "name": name},
+                    "municipalities": [muni_row(ctx, m) for m in munis],
+                    "chart_counts": count_chart(f"{name} 市町村別の掲載件数", munis, ds),
+                    "chart_price": price_chart(f"{name} 売買価格の分布", active),
+                },
+                trust_signals=trust(
+                    ctx,
+                    sources=[link for m in munis for link in source_links(ctx, m)],
+                    count=len(active),
+                ),
+                priority=0.8,
+                changefreq="daily",
+            )
+        )
+
+    for muni in ds.municipalities:
+        listings = ds.listings_for(muni)
+        active = [ls for ls in listings if ls.status == "active"]
+        updated_candidates = [d for d in (_dt(ls.last_seen_at) for ls in listings) if d is not None]
+        fetched = ds.last_fetched(muni.id)
+        if fetched is not None:
+            updated_candidates.append(fetched)
+        pages.append(
+            _page(
+                ctx,
+                path=f"{muni.path}index.html",
+                template="municipality.html",
+                title=f"{muni.name}の空き家バンク（{muni.prefecture}）",
+                description=f"{muni.prefecture}{muni.name}の空き家バンク掲載物件の要約と、移住・改修などの補助制度、一次情報へのリンク。",
+                context={
+                    "muni": muni,
+                    "muni_row": muni_row(ctx, muni),
+                    "listings": [listing_row(muni, ls) for ls in listings],
+                    "subsidies": muni.subsidies,
+                    "external": external_links(ctx, muni),
+                    "map": muni_map(ctx, muni),
+                    "chart_price": price_chart(f"{muni.name} 売買価格の分布", active),
+                    "chart_built": built_chart(f"{muni.name} 築年の分布", active),
+                    "min_points": MIN_CHART_POINTS,
+                },
+                trust_signals=trust(
+                    ctx,
+                    sources=source_links(ctx, muni),
+                    count=len(active),
+                    updated=max(updated_candidates) if updated_candidates else None,
+                ),
+                priority=0.8,
+                changefreq="daily",
+            )
+        )
+        for ls in listings:
+            prov = ls.provenance or {}
+            pages.append(
+                _page(
+                    ctx,
+                    path=listing_path(muni, ls),
+                    template="listing.html",
+                    title=f"{ls.display_title}（{muni.name} 空き家バンク {ls.listing_no}）",
+                    description=(
+                        ls.summary or f"{muni.name}の空き家バンク物件 {ls.listing_no} の要約。"
+                    )[:150],
+                    context={
+                        "muni": muni,
+                        "listing": ls,
+                        "row": listing_row(muni, ls),
+                        "facts": fact_rows(ls),
+                        "map": listing_map(ctx, muni, ls),
+                        "fetched_at": datetime_ja(_dt(prov.get("fetched_at"))),
+                        "extractor": (prov.get("extractor") or {}).get("model"),
+                        "is_stale": ls.status != "active",
+                    },
+                    trust_signals=trust(
+                        ctx,
+                        sources=[
+                            SourceLink(
+                                label=f"{muni.name} {muni.bank_label}（物件 {ls.listing_no}）",
+                                url=ls.primary_url,
+                                fetched_at=_dt(prov.get("fetched_at")),
+                            )
+                        ],
+                        count=None,
+                        updated=_dt(ls.last_seen_at),
+                    ),
+                    priority=0.6,
+                )
+            )
+
+    subsidies = [
+        {"muni": m.name, "muni_url": f"/{m.path}", **s.model_dump(mode="json")}
+        for m in ds.municipalities
+        for s in m.subsidies
+    ]
+    pages.append(
+        _page(
+            ctx,
+            path="owners/index.html",
+            template="owners.html",
+            title="空き家をお持ちの方へ（売る・貸す・解体する）",
+            description="空き家の売却・賃貸・解体の流れと、自治体の補助制度をまとめました。",
+            context={
+                "flow_sale": flow_diagram("売却・賃貸までの流れ", SALE_FLOW, per_row=3),
+                "flow_demolition": flow_diagram("解体までの流れ", DEMOLITION_FLOW, per_row=3),
+                "subsidies": subsidies,
+            },
+            trust_signals=trust(ctx, sources=all_sources, count=len(subsidies)),
+            priority=0.9,
+        )
+    )
+    pages.append(
+        _page(
+            ctx,
+            path="about/index.html",
+            template="about.html",
+            title="このサイトについて・運営者情報",
+            description="空き家アトラスの運営者情報、掲載方針、巡回ボットについて。",
+            context={"user_agent": ws.site.user_agent},
+            trust_signals=trust(ctx, sources=all_sources, count=len(all_active)),
+            priority=0.3,
+            changefreq="monthly",
+        )
+    )
+    pages.append(
+        _page(
+            ctx,
+            path="data/index.html",
+            template="data.html",
+            title="データについて（出典・取得日時・ライセンス）",
+            description="掲載データの出典、取得日時、巡回方針、ライセンス判定の一覧。",
+            context={"sources": [source_row(ctx, s) for s in ds.sources]},
+            trust_signals=trust(ctx, sources=all_sources, count=len(all_active)),
+            priority=0.3,
+        )
+    )
+    return pages
+
+
+def source_row(ctx: Ctx, src: Source) -> dict[str, Any]:
+    muni = ctx.ds.muni_by_source.get(src.id)
+    ev = src.operator_evidence
+    return {
+        "id": src.id,
+        "name": src.name,
+        "municipality": muni.name if muni else "",
+        "municipality_url": f"/{muni.path}" if muni else None,
+        "operator": src.operator,
+        "operator_kind": {
+            "municipality": "自治体",
+            "municipality_affiliated": "自治体の関連組織",
+            "third_party": "民間",
+            "unknown": "不明",
+        }[src.operator_kind.value],
+        "evidence": {
+            "quote": ev.quote,
+            "url": ev.url,
+            "checked_on": ev.checked_on.isoformat() if ev.checked_on else None,
+        }
+        if ev
+        else None,
+        "policy": "巡回して要約" if src.crawlable else "リンクのみ",
+        "pages": [{"url": p.url, "kind": p.kind.value} for p in src.pages],
+        "license": src.license.label if src.license else "未判定（画像・データの再利用はしない）",
+        "last_fetched": datetime_ja(ctx.ds.last_fetched(src.id)),
+        "external": [
+            {"label": e.label, "url": e.url, "note": e.note or ""} for e in src.external_links
+        ],
+    }
+
+
+def search_index(ws: Workspace, ds: Dataset) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for muni in ds.municipalities:
+        for ls in ds.listings_for(muni, active_only=True):
+            rows.append(
+                {
+                    "id": ls.record_id,
+                    "pref": muni.prefecture,
+                    "pref_slug": muni.prefecture_slug,
+                    "muni": muni.name,
+                    "muni_code": muni.code,
+                    "no": ls.listing_no,
+                    "title": ls.display_title,
+                    "deal": ls.deal_type,
+                    "deal_label": ls.deal_label,
+                    "price": ls.price.value if ls.price.ok else None,
+                    "rent": ls.rent_monthly.value if ls.rent_monthly.ok else None,
+                    "price_text": price_text(ls),
+                    "band": price_band(ls),
+                    "subsidy_migration": muni.has_migration_subsidy,
+                    "subsidy_renovation": muni.has_renovation_subsidy,
+                    "address": ls.address.value if ls.address.ok else None,
+                    "built_year": ls.built_year.value if ls.built_year.ok else None,
+                    "url": listing_url_path(muni, ls),
+                    "updated": (ls.last_seen_at or "")[:10],
+                }
+            )
+    return rows

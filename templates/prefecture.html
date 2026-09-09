@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<nav class="breadcrumb" aria-label="現在地"><a href="/">トップ</a> › {{ prefecture.name }}</nav>
+<h1>{{ prefecture.name }}の空き家バンク</h1>
+<p class="lead">{{ prefecture.name }}内で自治体が運営する空き家バンクの掲載状況です。件数は本サイトが確認できた物件数で、自治体ページの全件とは異なることがあります。</p>
+
+<div class="table-wrap">
+<table class="data-table">
+  <caption>市町村別の掲載状況と補助制度</caption>
+  <thead><tr><th scope="col">市町村</th><th scope="col">掲載</th><th scope="col">売買</th><th scope="col">賃貸</th><th scope="col">移住補助</th><th scope="col">改修補助</th><th scope="col">解体補助</th><th scope="col">最終取得</th></tr></thead>
+  <tbody>
+  {% for m in municipalities %}
+  <tr>
+    <th scope="row"><a href="{{ m.url }}">{{ m.name }}</a></th>
+    <td class="num">{{ m.count|number }}</td>
+    <td class="num">{{ m.sale|number }}</td>
+    <td class="num">{{ m.rent|number }}</td>
+    <td>{{ "あり" if m.subsidy_migration else "—" }}</td>
+    <td>{{ "あり" if m.subsidy_renovation else "—" }}</td>
+    <td>{{ "あり" if m.subsidy_demolition else "—" }}</td>
+    <td>{{ m.last_fetched }}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+
+{% if chart_counts %}{{ chart_counts|chart }}{% endif %}
+{% if chart_price %}{{ chart_price|chart }}{% endif %}
+{% endblock %}

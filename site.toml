@@ -1,0 +1,36 @@
+# サイト設定。秘密情報は書かない（.env に置く）。
+[site]
+id = "akiya-atlas"
+name = "空き家アトラス"
+# 基準 URL はここ 1 か所だけで差し替える（本番は https://akiya-atlas.com に切り替え予定）
+base_url = "https://akiya-atlas.pages.dev"
+service = "akiya_atlas.service:service"
+language = "ja"
+description = "自治体が運営する空き家バンクを、都道府県・市町村・価格帯・補助金の有無で横断検索できます。物件の要約と一次情報へのリンクだけを載せています。"
+
+[operator]
+name = "準備中"
+contact = "準備中"
+
+[paths]
+data = "data"
+templates = "templates"
+static = "static"
+dist = "dist"
+fixtures = "tests/fixtures"
+
+[crawl]
+default_delay_seconds = 3.0
+jitter_seconds = 1.0
+timeout_seconds = 30.0
+max_pages_per_source = 15
+
+[llm]
+provider = "anthropic"
+model = "claude-haiku-4-5"
+max_input_chars = 60000
+max_output_tokens = 16000
+temperature = 0.0
+
+[analytics]
+provider = "cloudflare"

@@ -1,0 +1,39 @@
+{% import "sitemill/macros.html" as sm %}
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ meta.title }} | {{ site.name }}</title>
+<meta name="description" content="{{ meta.description }}">
+<link rel="canonical" href="{{ base_url }}{{ meta.url_path }}">
+{% if meta.noindex %}<meta name="robots" content="noindex">{% endif %}
+<link rel="stylesheet" href="/static/style.css">
+<style>{{ chart_css|safe }}</style>
+{{ analytics }}
+</head>
+<body>
+<a class="skip" href="#main">本文へ</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/">{{ site.name }}</a>
+    <nav class="site-nav" aria-label="サイト内">
+      <a href="/#search">物件を探す</a>
+      <a href="/owners/">所有者の方へ</a>
+      <a href="/data/">データについて</a>
+      <a href="/about/">運営者情報</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="container">
+{% block content %}{% endblock %}
+</main>
+<footer class="site-footer">
+  <div class="container">
+    {{ sm.trust_block(trust) }}
+    <p class="disclaimer">本サイトは各自治体の空き家バンクの掲載情報を機械的に要約し、一次情報へのリンクとともに掲載しています。物件の写真・詳細本文は掲載していません。価格・面積などの数値は自治体ページの原文から機械抽出したもので、推定値は含みません。申込みや最新の状況は必ず各自治体のページでご確認ください。</p>
+    <p class="copyright">© {{ build_time.year }} {{ site.name }}</p>
+  </div>
+</footer>
+</body>
+</html>

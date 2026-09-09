@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+<nav class="breadcrumb" aria-label="現在地"><a href="/">トップ</a> › データについて</nav>
+<h1>データについて</h1>
+<p class="lead">本サイトのデータは、以下の一次情報を巡回して機械的に要約したものです。各行に運営主体の根拠、巡回方針、最終取得日時、ライセンス判定を示します。</p>
+
+<section aria-labelledby="sources-title">
+  <h2 id="sources-title">出典一覧</h2>
+  {% for s in sources %}
+  <article class="source">
+    <h3>{{ s.name }}{% if s.municipality_url %}（<a href="{{ s.municipality_url }}">{{ s.municipality }}</a>）{% endif %}</h3>
+    <dl class="facts">
+      <dt>運営主体</dt><dd>{{ s.operator }}（{{ s.operator_kind }}）</dd>
+      {% if s.evidence %}
+      <dt>根拠</dt><dd>「{{ s.evidence.quote }}」 — <a href="{{ s.evidence.url }}" rel="noopener" target="_blank">出典</a>{% if s.evidence.checked_on %}（確認日 {{ s.evidence.checked_on }}）{% endif %}</dd>
+      {% endif %}
+      <dt>巡回方針</dt><dd>{{ s.policy }}</dd>
+      {% if s.pages %}
+      <dt>巡回ページ</dt><dd><ul>{% for p in s.pages %}<li><a href="{{ p.url }}" rel="noopener" target="_blank">{{ p.url }}</a> <span class="meta">{{ p.kind }}</span></li>{% endfor %}</ul></dd>
+      {% endif %}
+      <dt>最終取得</dt><dd>{{ s.last_fetched }}</dd>
+      <dt>ライセンス判定</dt><dd>{{ s.license }}</dd>
+      {% if s.external %}
+      <dt>関連する民間サイト（リンクのみ）</dt><dd><ul>{% for e in s.external %}<li><a href="{{ e.url }}" rel="noopener nofollow" target="_blank">{{ e.label }}</a>{% if e.note %} — {{ e.note }}{% endif %}</li>{% endfor %}</ul></dd>
+      {% endif %}
+    </dl>
+  </article>
+  {% endfor %}
+</section>
+
+<section aria-labelledby="embed-title">
+  <h2 id="embed-title">埋め込み・図解の利用元</h2>
+  <ul>
+    <li>地図: Google Maps Embed API（地図データ ©Google）。埋め込み機能を利用し、地図画像の転載はしていません。</li>
+    <li>図解: 本サイトが抽出したデータから自動生成した SVG です。</li>
+    <li>写真・動画: 掲載していません。今後、明示的なライセンス（CC BY / CC0 / 政府標準利用規約 2.0 など）が確認できた素材に限り、出典とクレジットを付けて掲載する場合があります。</li>
+  </ul>
+</section>
+{% endblock %}

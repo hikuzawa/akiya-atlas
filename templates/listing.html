@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+<nav class="breadcrumb" aria-label="現在地"><a href="/">トップ</a> › <a href="/{{ muni.prefecture_slug }}/">{{ muni.prefecture }}</a> › <a href="/{{ muni.path }}">{{ muni.name }}</a> › {{ listing.listing_no }}</nav>
+<h1>{{ listing.display_title }}</h1>
+<p class="meta">{{ muni.name }} {{ muni.bank_label }} 物件番号 {{ listing.listing_no }} ／ {{ listing.deal_label }}{% if is_stale %} ／ <span class="tag warn">掲載終了の可能性（最近の巡回で確認できていません）</span>{% endif %}</p>
+
+<p class="primary-link"><a class="button" href="{{ listing.primary_url }}" rel="noopener" target="_blank">自治体の物件ページを見る（写真・詳細・申込み）</a></p>
+
+{% if listing.summary %}
+<section aria-labelledby="summary-title">
+  <h2 id="summary-title">要約</h2>
+  <p>{{ listing.summary }}</p>
+  <p class="meta">要約は自治体ページの記載をもとに自動生成したものです。本文の転載ではありません。</p>
+</section>
+{% endif %}
+
+<section aria-labelledby="facts-title">
+  <h2 id="facts-title">基本情報（原文からの機械抽出）</h2>
+  <dl class="facts">
+    {% for f in facts %}
+    <dt>{{ f.label }}</dt>
+    <dd>
+      {% if f.ok %}{{ f.value }}{% if f.show_quote %} <span class="quote">（原文: {{ f.quote }}）</span>{% endif %}{% if f.note == "from_tsubo" %} <span class="meta">坪から換算</span>{% endif %}
+      {% elif f.quote %}<span class="missing">{{ f.quote }}</span> <span class="meta">（原文のまま。数値化できませんでした）</span>
+      {% else %}<span class="missing">記載なし</span>{% endif %}
+    </dd>
+    {% endfor %}
+  </dl>
+</section>
+
+{% if map %}
+<section aria-labelledby="map-title">
+  <h2 id="map-title">位置（所在地の記載から検索）</h2>
+  {{ map|embed }}
+</section>
+{% endif %}
+
+<section aria-labelledby="subsidy-title">
+  <h2 id="subsidy-title">{{ muni.name }}の補助制度</h2>
+  {% if muni.subsidies %}
+  <ul class="subsidy-list">{% for s in muni.subsidies %}<li><span class="tag">{{ s.kind }}</span> <a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.name }}</a></li>{% endfor %}</ul>
+  {% else %}<p>本サイトで確認できた補助制度はまだありません。</p>{% endif %}
+</section>
+
+<section class="cta" aria-labelledby="owner-title">
+  <h2 id="owner-title">この地域に空き家をお持ちの方へ</h2>
+  <p>査定・解体の流れと補助制度を <a href="/owners/">所有者向けの案内</a> にまとめています。</p>
+</section>
+
+<p class="meta">取得日時: {{ fetched_at }}{% if extractor %} ／ 抽出: {{ extractor }}（引用の検証と数値化はプログラムで実施）{% endif %}</p>
+{% endblock %}

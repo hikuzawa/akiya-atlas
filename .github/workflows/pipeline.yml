@@ -1,0 +1,98 @@
+# 日次パイプライン: crawl → extract → build → deploy。
+# 前提（人間側の作業）:
+#   - GitHub に hikuzawa/sitemill と hikuzawa/akiya-atlas を作成し push する
+#   - このリポジトリの Secrets に ANTHROPIC_API_KEY, CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID,
+#     GOOGLE_MAPS_EMBED_KEY（任意）, CF_WEB_ANALYTICS_TOKEN（任意）を登録する
+#   - Cloudflare Pages に akiya-atlas プロジェクトを作る（Direct Upload）
+# Secrets が無い間は extract と deploy のステップで止まる（意図どおり）。
+name: pipeline
+
+on:
+  schedule:
+    - cron: "0 18 * * *" # 03:00 JST
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: "Cloudflare Pages に配置する"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout akiya-atlas
+        uses: actions/checkout@v4
+        with:
+          path: akiya-atlas
+
+      - name: Checkout sitemill (path 依存の隣に置く。ADR 0006)
+        uses: actions/checkout@v4
+        with:
+          repository: hikuzawa/sitemill
+          path: sitemill
+          token: ${{ secrets.SITEMILL_READ_TOKEN || github.token }}
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Restore raw HTML cache (git 管理外)
+        uses: actions/cache@v4
+        with:
+          path: |
+            akiya-atlas/data/raw
+            akiya-atlas/data/llm_cache
+          key: akiya-atlas-cache-${{ github.run_id }}
+          restore-keys: |
+            akiya-atlas-cache-
+
+      - name: Sync
+        working-directory: akiya-atlas
+        run: uv sync --frozen
+
+      - name: Crawl
+        working-directory: akiya-atlas
+        run: uv run sitemill crawl
+
+      - name: Extract
+        working-directory: akiya-atlas
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: uv run sitemill extract
+
+      - name: Build
+        working-directory: akiya-atlas
+        env:
+          GOOGLE_MAPS_EMBED_KEY: ${{ secrets.GOOGLE_MAPS_EMBED_KEY }}
+          CF_WEB_ANALYTICS_TOKEN: ${{ secrets.CF_WEB_ANALYTICS_TOKEN }}
+        run: uv run sitemill build
+
+      - name: Eval (fixture、劣化検知)
+        working-directory: akiya-atlas
+        run: uv run sitemill eval
+
+      - name: Commit data changes
+        working-directory: akiya-atlas
+        run: |
+          git config user.name "sitemill-bot"
+          git config user.email "sitemill-bot@users.noreply.github.com"
+          git add data/state data/records data/runs
+          git diff --cached --quiet || git commit -m "data: $(date -u +%Y-%m-%dT%H:%MZ) の巡回・抽出結果"
+          git push
+
+      - name: Deploy to Cloudflare Pages
+        if: ${{ github.event_name == 'schedule' || inputs.deploy }}
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy akiya-atlas/dist --project-name=akiya-atlas
