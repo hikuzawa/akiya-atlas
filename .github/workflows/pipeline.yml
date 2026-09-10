@@ -44,6 +44,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: akiya-atlas
+          # 全履歴を取る。shallow clone だと「HEAD:main への push」が fast-forward か判定できず、
+          # main 以外のブランチから手動実行したときに push が拒否される
+          fetch-depth: 0
 
       - name: Checkout sitemill (path 依存の隣に置く。ADR 0006)
         uses: actions/checkout@v4
@@ -162,6 +165,7 @@ jobs:
         if: failure()
         env:
           GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }} # 作業ディレクトリ直下は git 管理外なので、対象リポジトリを明示する
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
           gh label create pipeline-failure --color B60205 --description "日次パイプラインの失敗" 2>/dev/null || true
