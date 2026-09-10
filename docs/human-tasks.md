@@ -11,11 +11,11 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 ## 公開までに必要
 3. ~~**GitHub リポジトリ**を作成し push する~~ → 済み（2026-09-10）。sitemill は public（https://github.com/hikuzawa/sitemill）、akiya-atlas は private（https://github.com/hikuzawa/akiya-atlas）。sitemill が public のため、CI からの sitemill checkout に読み取り用 PAT は不要。
    両リポジトリの git 作者設定はローカルで済ませてある。
-4. **Cloudflare アカウント**と **Pages プロジェクト `akiya-atlas`**（Direct Upload）を作る。API トークン（Pages 編集権限）とアカウント ID を発行する。
-5. **GitHub Secrets** を akiya-atlas に登録する: `ANTHROPIC_API_KEY`（済み）, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`。
+4. ~~**Cloudflare アカウント**と API トークン（Account > Cloudflare Pages: Edit）・アカウント ID を発行する~~ → 済み（2026-09-10、Secrets に登録済み）。Pages プロジェクト `akiya-atlas` は手で作らなくてよい。`pipeline.yml` が deploy の直前に「無ければ作成、あれば何もしない」で用意する（`wrangler pages project create`）。
+5. ~~**GitHub Secrets** を akiya-atlas に登録する~~ → 済み（2026-09-10）: `ANTHROPIC_API_KEY`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`。
 6. **Cloudflare Web Analytics** を有効にしてビーコントークンを取得し、Secrets の `CF_WEB_ANALYTICS_TOKEN` と `.env` に入れる（無くても動く。計測タグが出ないだけ）。
 7. **Google Maps Platform**: Maps Embed API を有効にし、HTTP リファラで `akiya-atlas.pages.dev` と `akiya-atlas.com` に制限した公開キーを発行して `GOOGLE_MAPS_EMBED_KEY` に入れる（無い間は地図は外部リンクにフォールバック）。
-8. **ドメイン `akiya-atlas.com`** を取得したら、Cloudflare Pages にカスタムドメインを設定し、`site.toml` の `base_url` を 1 行差し替える。
+8. **ドメイン `akiya-atlas.com`** を取得したら、Cloudflare Pages のプロジェクト `akiya-atlas` にカスタムドメイン `akiya-atlas.com` と `www.akiya-atlas.com` を追加する。その後の AI 側の作業（`site.toml` の `base_url` を `https://akiya-atlas.com` に差し替え、www → apex の 301 を `_redirects` に出す、再 deploy）は準備済みで、「ドメイン設定した」の合図で適用する。配置前の検査 `.github/scripts/check_public_urls.py` が canonical / sitemap / robots の古いホスト残りを止める。
 
 ## 収益化のために必要
 9. **ASP アカウント**（不動産一括査定・解体一括見積・空き家買取の各案件）を契約し、計測 URL を `src/akiya_atlas/affiliates.py` の `Offer.url` に入れる。入れるまで CTA は「準備中」表示。

@@ -3,11 +3,15 @@
 #   - Cloudflare の Secrets が未設定でも crawl → extract → build までは必ず動く。
 #   - deploy は Cloudflare の Secrets が両方そろっているときだけ実行し、無ければスキップ（run 自体は成功）。
 #   - Secrets を後から登録すれば、ワークフローを変更せずに deploy まで動く。
+#   - Pages プロジェクト akiya-atlas は deploy の直前に CI が用意する（無ければ作成、あれば何もしない）。
+#     ダッシュボードでの手作業も、トークンをローカルに置くことも要らない。
+#   - build の直後に、canonical / sitemap / robots が site.toml の base_url を指すことを検査する
+#     （ドメイン切替のときに古いホストが残ったまま配置されるのを止める）。
 # 前提（人間側の作業、docs/human-tasks.md）:
 #   - GitHub に hikuzawa/sitemill と hikuzawa/akiya-atlas を作成し push する（済み）
-#   - Secrets: ANTHROPIC_API_KEY（済み）、CLOUDFLARE_API_TOKEN、CLOUDFLARE_ACCOUNT_ID、
-#     GOOGLE_MAPS_EMBED_KEY / CF_WEB_ANALYTICS_TOKEN（任意）。sitemill は public なので読み取り用 PAT は不要
-#   - Cloudflare Pages に akiya-atlas プロジェクトを作る（Direct Upload）
+#   - Secrets: ANTHROPIC_API_KEY（済み）、CLOUDFLARE_API_TOKEN（Account > Cloudflare Pages: Edit）、
+#     CLOUDFLARE_ACCOUNT_ID、GOOGLE_MAPS_EMBED_KEY / CF_WEB_ANALYTICS_TOKEN（任意）。
+#     sitemill は public なので読み取り用 PAT は不要
 name: pipeline
 
 on:
@@ -83,6 +87,10 @@ jobs:
           CF_WEB_ANALYTICS_TOKEN: ${{ secrets.CF_WEB_ANALYTICS_TOKEN }}
         run: uv run sitemill build
 
+      - name: 公開 URL の検査（canonical / sitemap / robots が site.toml の base_url を指す）
+        working-directory: akiya-atlas
+        run: uv run python .github/scripts/check_public_urls.py
+
       - name: Eval (fixture、劣化検知)
         working-directory: akiya-atlas
         run: uv run sitemill eval
@@ -106,6 +114,38 @@ jobs:
             echo "::notice::Cloudflare の Secrets が未設定のため deploy をスキップします（crawl→extract→build は完了）"
           fi
 
+      - name: Cloudflare Pages プロジェクトを用意（無ければ作成、あれば何もしない）
+        if: >-
+          steps.cf.outputs.ready == 'true' &&
+          (github.event_name == 'schedule' || inputs.deploy)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          PROJECT_NAME: akiya-atlas
+        run: |
+          # 存在確認は Pages API の GET で行う。200 なら既存なので何もしない、404 なら wrangler で作成する。
+          # それ以外（400/401/403 など）はトークンの権限やアカウント ID の問題なので、理由を出して止める。
+          body="$(mktemp)"
+          status="$(curl -sS -o "$body" -w '%{http_code}' \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/$PROJECT_NAME")"
+          case "$status" in
+            200)
+              echo "Pages プロジェクト $PROJECT_NAME は既に存在する（$(jq -r '.result.subdomain // "?"' "$body")）。作成はスキップ"
+              ;;
+            404)
+              echo "Pages プロジェクト $PROJECT_NAME が無いので作成する（production branch: main）"
+              # --force: 新規の静的プロジェクトを Workers に振り替える wrangler の自動委譲を使わず、
+              # 必ず Pages プロジェクト（akiya-atlas.pages.dev）として作る
+              npx --yes wrangler@4 pages project create "$PROJECT_NAME" --production-branch main --force
+              ;;
+            *)
+              echo "::error::Pages API が HTTP $status を返した。CLOUDFLARE_API_TOKEN に Account > Cloudflare Pages: Edit の権限があるか、CLOUDFLARE_ACCOUNT_ID が正しいかを確認する"
+              jq -r '.errors[]? | "  code \(.code): \(.message)"' "$body" 2>/dev/null || cat "$body"
+              exit 1
+              ;;
+          esac
+
       - name: Deploy to Cloudflare Pages
         if: >-
           steps.cf.outputs.ready == 'true' &&
@@ -114,7 +154,9 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy akiya-atlas/dist --project-name=akiya-atlas
+          # 作業ディレクトリ直下は git 管理外（2 リポジトリを並べている）で wrangler がブランチを検出できないため、
+          # production branch の main を明示して本番（akiya-atlas.pages.dev）に配置する
+          command: pages deploy akiya-atlas/dist --project-name=akiya-atlas --branch=main
 
       - name: 失敗時に Issue で通知
         if: failure()
