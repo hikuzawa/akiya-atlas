@@ -2,7 +2,7 @@
   "command": "crawl",
   "errors": [],
   "extraction_metrics": null,
-  "finished_at": "2026-09-10T04:15:28Z",
+  "finished_at": "2026-09-10T04:09:48Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -13,14 +13,14 @@
   "service": "akiya-atlas",
   "stages": {
     "crawl": {
-      "changed": 26,
+      "changed": 2,
       "errors": 0,
-      "fetched": 67,
+      "fetched": 41,
       "not_modified": 3,
-      "requests": 78,
+      "requests": 52,
       "skipped_link_only": 1,
-      "unchanged": 44
+      "unchanged": 42
     }
   },
-  "started_at": "2026-09-10T04:11:32Z"
+  "started_at": "2026-09-10T04:07:18Z"
 }

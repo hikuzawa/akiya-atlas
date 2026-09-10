@@ -12,3 +12,8 @@
 
 ## 影響
 - 市町村の slug は JIS コードとローマ字名（例 `20219-tomi`）で衝突を避ける
+
+## 追記（2026-09-10）: 巡回ページ数の上限
+`site.toml` の `[crawl] max_pages_per_source` はサイト全体の上限（ハードシーリング）で、各 source の `max_pages` は
+その範囲内でのみ有効になる（`min(site上限, source.max_pages)`）。detail ページまで辿るために source 側を大きくするときは、
+site 側の上限も併せて引き上げる。詳細ページの follow は `max_links` で制御する。

@@ -23,7 +23,7 @@ fixtures = "tests/fixtures"
 default_delay_seconds = 3.0
 jitter_seconds = 1.0
 timeout_seconds = 30.0
-max_pages_per_source = 15
+max_pages_per_source = 50   # サイト全体の上限。各 source の max_pages がこれ以下なら source 側が優先
 
 [llm]
 provider = "anthropic"

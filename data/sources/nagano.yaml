@@ -19,11 +19,11 @@ sources:
         follow:
           - pattern: '^https://akiya\.city\.tomi\.nagano\.jp/\d{4}/\d{2}/[^/]+\.html$'
             kind: listing_detail
-            max_links: 12
+            max_links: 25
       - url: https://www.city.tomi.nagano.jp/category/akiyabank/166961.html
         kind: info
     allow_hosts: [akiya.city.tomi.nagano.jp, www.city.tomi.nagano.jp]
-    max_pages: 15
+    max_pages: 30
     external_links:
       - label: アットホーム 空き家バンク（東御市）
         url: https://tomi-c20219.akiya-athome.jp/
@@ -68,11 +68,11 @@ sources:
         follow:
           - pattern: '^https://39ijyu\.com/detail\.php\?id=\d+&kubun=IE$'
             kind: listing_detail
-            max_links: 12
+            max_links: 40
       - url: https://www.city.saku.nagano.jp/kanko/ijyuteijyu/akiya/akiyabank.html
         kind: info
     allow_hosts: [39ijyu.com, www.city.saku.nagano.jp]
-    max_pages: 15
+    max_pages: 45
     external_links:
       - label: アットホーム 空き家バンク（佐久市）
         url: https://saku-c20217.akiya-athome.jp/
