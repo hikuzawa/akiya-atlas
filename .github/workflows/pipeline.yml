@@ -106,13 +106,29 @@ jobs:
         run: uv run sitemill eval
 
       - name: Commit data changes
+        id: commit
         working-directory: akiya-atlas
+        # push が競合しても配置（deploy）は続ける。失敗は下の通知ステップが outcome を見て Issue に出す
+        continue-on-error: true
         run: |
           git config user.name "sitemill-bot"
           git config user.email "sitemill-bot@users.noreply.github.com"
           git add data/state data/records data/runs
           git diff --cached --quiet || git commit -m "data: $(date -u +%Y-%m-%dT%H:%MZ) の巡回・抽出結果"
-          git push origin HEAD:main
+          # 人の作業が同時に main へ push されると拒否される。origin/main を取り込み直して最大 3 回まで再試行し、
+          # data ファイル自体が競合したら諦める（巡回状態と物件は次回の巡回で再生成される）
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            echo "push が拒否された（試行 $attempt/3）。origin/main を取り込んで再試行する"
+            git fetch origin main
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo "::error::data のコミットが origin/main と競合したため push を諦めた（配置は続行）"
+              exit 1
+            fi
+          done
+          echo "::error::3 回試しても data を push できなかった（配置は続行）"
+          exit 1
 
       - name: Cloudflare の Secrets を確認
         id: cf
@@ -169,15 +185,21 @@ jobs:
           command: pages deploy akiya-atlas/dist --project-name=akiya-atlas --branch=main
 
       - name: 失敗時に Issue で通知
-        if: failure()
+        if: failure() || steps.commit.outcome == 'failure'
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }} # 作業ディレクトリ直下は git 管理外なので、対象リポジトリを明示する
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          JOB_STATUS: ${{ job.status }}
+          COMMIT_OUTCOME: ${{ steps.commit.outcome }}
         run: |
           gh label create pipeline-failure --color B60205 --description "日次パイプラインの失敗" 2>/dev/null || true
           num=$(gh issue list --label pipeline-failure --state open --json number --jq '.[0].number // empty')
-          msg="$(date -u +%FT%TZ) にパイプラインが失敗しました: $RUN_URL"
+          if [ "$JOB_STATUS" = "success" ] && [ "$COMMIT_OUTCOME" = "failure" ]; then
+            msg="$(date -u +%FT%TZ) に data の push が失敗しました（並行する push と競合。配置は実行済み）: $RUN_URL"
+          else
+            msg="$(date -u +%FT%TZ) にパイプラインが失敗しました: $RUN_URL"
+          fi
           if [ -n "$num" ]; then
             gh issue comment "$num" --body "$msg"
           else
