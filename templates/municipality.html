@@ -2,6 +2,7 @@
 {% block content %}
 <nav class="breadcrumb" aria-label="現在地"><a href="/">トップ</a> › <a href="/{{ muni.prefecture_slug }}/">{{ muni.prefecture }}</a> › {{ muni.name }}</nav>
 <h1>{{ muni.name }}の空き家バンク</h1>
+{% if muni.crawled %}
 <p class="lead">{{ muni.prefecture }}{{ muni.name }}が運営する{{ muni.bank_label }}の掲載物件を要約しています。詳細・写真・申込みは <a href="{{ muni.bank_url }}" rel="noopener" target="_blank">{{ muni.name }}の{{ muni.bank_label }}（公式）</a> をご覧ください。</p>
 
 <ul class="stats" aria-label="掲載状況">
@@ -10,6 +11,20 @@
   <li><strong>{{ muni_row.rent|number }}</strong> 賃貸</li>
   <li>最終取得 {{ muni_row.last_fetched }}</li>
 </ul>
+{% else %}
+<div class="notice" role="note">
+  <p><strong>{% if muni.bank_status == "none" %}空き家バンクの物件ページを確認できませんでした{% elif muni.bank_status == "spa_unsupported" %}このサイトはまだ物件を要約できません{% else %}物件は民間プラットフォームで公開されています{% endif %}</strong></p>
+  <p>{{ muni.bank_note }}</p>
+  <p><a class="button" href="{{ muni.bank_url }}" rel="noopener" target="_blank">{{ muni.name }}の{{ muni.bank_label }}（公式・外部サイト）</a></p>
+</div>
+{% if external %}
+<section aria-labelledby="ext-title">
+  <h2 id="ext-title">物件を探せるサイト</h2>
+  <p class="meta">以下は自治体以外が運営するサイトです。本サイトでは巡回・要約せず、リンクのみ掲載しています。</p>
+  <ul>{% for e in external %}<li><a href="{{ e.url }}" rel="noopener nofollow" target="_blank">{{ e.label }}</a>{% if e.note %} — {{ e.note }}{% endif %}</li>{% endfor %}</ul>
+</section>
+{% endif %}
+{% endif %}
 
 <section aria-labelledby="subsidy-title">
   <h2 id="subsidy-title">補助制度</h2>
@@ -24,6 +39,7 @@
   {% endif %}
 </section>
 
+{% if muni.crawled %}
 <section aria-labelledby="listing-title">
   <h2 id="listing-title">掲載物件（要約）</h2>
   {% if listings %}
@@ -60,13 +76,14 @@
 {% else %}
 <p class="meta">価格・築年の分布グラフは、数値が {{ min_points }} 件以上そろうと表示されます。</p>
 {% endif %}
+{% endif %}{# muni.crawled #}
 
 <section aria-labelledby="map-title">
   <h2 id="map-title">位置</h2>
   {{ map|embed }}
 </section>
 
-{% if external %}
+{% if external and muni.crawled %}
 <section aria-labelledby="ext-title">
   <h2 id="ext-title">民間プラットフォームの掲載</h2>
   <p class="meta">以下は自治体以外が運営するサイトです。本サイトでは巡回・要約せず、リンクのみ掲載しています。</p>

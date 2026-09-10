@@ -235,6 +235,8 @@ def muni_row(ctx: Ctx, muni: Municipality) -> dict[str, Any]:
         "code": muni.code,
         "url": f"/{muni.path}",
         "bank_url": muni.bank_url,
+        "bank_status": muni.bank_status,
+        "crawled": muni.crawled,
         "count": len(rows),
         "sale": sum(1 for r in rows if r.deal_type in ("sale", "both")),
         "rent": sum(1 for r in rows if r.deal_type in ("rent", "both")),

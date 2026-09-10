@@ -11,6 +11,7 @@ import re
 from dataclasses import dataclass, field
 from datetime import UTC, date, datetime
 
+import yaml
 from sitemill.classify import ClassifiedPage, PageClass, PlatformRegistry, classify_page
 from sitemill.fetch.client import PoliteClient
 from sitemill.fetch.discover import discover_source
@@ -24,9 +25,15 @@ from sitemill.models import (
     SeedPage,
     Source,
 )
-from sitemill.review import ReviewCandidate
+from sitemill.review import ReviewCandidate, ReviewQueue
+from sitemill.settings import Workspace
+from sitemill.store.jsonio import write_json
 
-from akiya_atlas.municipalities import MunicipalityRef
+from akiya_atlas.municipalities import (
+    MunicipalityRef,
+    default_code_table_path,
+    municipalities_for,
+)
 from akiya_atlas.official_domains import OfficialHost, candidate_official_urls, classify_host
 
 log = logging.getLogger(__name__)
@@ -286,15 +293,14 @@ def run_discovery(
     client: PoliteClient,
     platforms: PlatformRegistry,
     *,
-    existing_ids: set[str],
+    existing_codes: set[str],
     limit: int | None = None,
 ) -> DiscoveryReport:
     """市町村リストを評価し、結果（findings）を集める。書き出しは呼び出し側が行う。"""
     targets = munis[:limit] if limit else munis
     report = DiscoveryReport(prefecture=targets[0].prefecture if targets else "")
     for muni in targets:
-        sid = f"{muni.prefecture_slug}-{muni.code}"
-        if sid in existing_ids:
+        if muni.code in existing_codes:  # 既に手動登録済みの市町村はスキップ
             report.skipped_existing += 1
             continue
         f = assess_municipality(muni, client, platforms)
@@ -312,3 +318,182 @@ def run_discovery(
 
 def utc_now_iso() -> str:
     return datetime.now(UTC).replace(microsecond=0).isoformat()
+
+
+# bank_status（巡回状況）の判定
+def bank_status_of(f: MunicipalityFinding) -> str:
+    if f.policy == "crawl":
+        return "available"
+    if f.policy == "link_only" and f.classified is not None:
+        if f.classified.page_class is PageClass.spa:
+            return "spa_unsupported"
+        return "third_party_only"
+    if f.official is not None and f.classified is None:
+        return "none"
+    return "review"
+
+
+def _bank_note(f: MunicipalityFinding, status: str) -> str:
+    if status == "third_party_only":
+        return (
+            "物件は民間プラットフォームで公開されています。"
+            "本サイトでは巡回・要約せず、リンクのみ掲載します。"
+        )
+    if status == "spa_unsupported":
+        return (
+            "空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。"
+            "公式サイトでご確認ください。"
+        )
+    if status == "none":
+        return (
+            "本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。"
+            "移住・空き家の情報は公式サイトや県の窓口をご確認ください。"
+        )
+    return ""
+
+
+_RAKUEN_NAGANO = ExternalLink(
+    label="楽園信州 空き家バンク・空き地バンク（長野県）",
+    url="https://rakuen-akiya.jp/",
+    note="長野県が案内する県内横断の空き家・空き地バンク（民間運営）。",
+)
+
+
+def finding_to_source_dict(f: MunicipalityFinding, *, prefecture_name: str) -> dict:
+    """finding を data/sources/*.yaml の 1 エントリ（dict）にする。"""
+    m = f.muni
+    status = bank_status_of(f)
+    sid = f"{m.prefecture_slug}-{m.code}"
+    externals = list(f.external_links)
+    if m.prefecture_slug == "nagano" and status in ("third_party_only", "none", "spa_unsupported"):
+        if not any(e.url == _RAKUEN_NAGANO.url for e in externals):
+            externals.append(_RAKUEN_NAGANO)
+    op_kind = f.operator_kind.value if hasattr(f.operator_kind, "value") else str(f.operator_kind)
+    entry: dict = {
+        "id": sid,
+        "name": f"{m.name}空き家バンク",
+        "operator": m.name,
+        "operator_kind": op_kind,
+        "official_url": ("https://" + f.official_url + "/") if f.official_url else f.bank_url,
+        "policy": "crawl" if status == "available" else "link_only",
+        "municipality": {
+            "code": m.code,
+            "name": m.name,
+            "prefecture": prefecture_name,
+            "prefecture_slug": m.prefecture_slug,
+            "slug": m.slug,
+            "bank_url": f.bank_url
+            or (("https://" + f.official_url + "/") if f.official_url else ""),
+            "bank_status": status,
+            "map_query": f"{prefecture_name}{m.name}",
+        },
+    }
+    note = _bank_note(f, status)
+    if note:
+        entry["municipality"]["bank_note"] = note
+    if f.evidence_quote:
+        entry["operator_evidence"] = {
+            "quote": f.evidence_quote,
+            "url": f.evidence_url or entry["official_url"],
+            "checked_on": date.today().isoformat(),
+        }
+    if status == "available" and f.bank_url:
+        kind = (
+            "listing_detail"
+            if (f.classified and f.classified.page_class is PageClass.listing_detail)
+            else "listing_index"
+        )
+        entry["pages"] = [{"url": f.bank_url, "kind": kind}]
+        entry["allow_hosts"] = [host_of(f.bank_url)]
+        entry["max_pages"] = 30
+    if externals:
+        entry["external_links"] = [
+            {"label": e.label, "url": e.url, **({"note": e.note} if e.note else {})}
+            for e in externals
+        ]
+    return entry
+
+
+DEFAULT_PLATFORM_EXTRA = frozenset({"39ijyu.com", "iju-omachi.jp", "furusato-iiyama.net"})
+
+
+def existing_codes_from_sources(ws: Workspace) -> set[str]:
+    """既に手動 sources に登録済みの市町村コードを集める（重複巡回を避ける）。"""
+    from akiya_atlas.data import load_municipalities
+
+    return {m.code for m in load_municipalities(ws)}
+
+
+def discover_and_write(
+    ws: Workspace,
+    prefecture: str,
+    *,
+    limit: int | None = None,
+    adopt_threshold: float = CONFIDENCE_ADOPT,
+    client: PoliteClient | None = None,
+) -> DiscoveryReport:
+    """都道府県を評価し、高確信は sources に、全件を review 行列に書き出す。"""
+    table = default_code_table_path(ws.root)
+    munis = municipalities_for(prefecture, table)
+    pref_name = munis[0].prefecture if munis else prefecture
+    pref_slug = munis[0].prefecture_slug if munis else prefecture
+    existing = existing_codes_from_sources(ws)
+    platforms = (
+        PlatformRegistry()
+    )  # 既定 + 移住系サイトも第三者として初期扱いしない（相互リンクで判定するため足さない）
+
+    owns_client = client is None
+    if client is None:
+        crawl = ws.site.crawl
+        client = PoliteClient(
+            ws.site.user_agent,
+            default_delay=crawl.default_delay_seconds,
+            jitter=crawl.jitter_seconds,
+            timeout=crawl.timeout_seconds,
+        )
+    try:
+        report = run_discovery(munis, client, platforms, existing_codes=existing, limit=limit)
+    finally:
+        if owns_client:
+            client.close()
+
+    # 自動採用（crawl / link_only かつ確信度が閾値以上）を sources に、全件を review に
+    adopted: list[dict] = []
+    candidates: list[ReviewCandidate] = []
+    for f in report.findings:
+        c = finding_to_candidate(f)
+        adopt = f.policy in ("crawl", "link_only") and f.confidence >= adopt_threshold
+        if adopt:
+            c.proposed_policy = str(f.policy)
+            adopted.append(finding_to_source_dict(f, prefecture_name=pref_name))
+        candidates.append(c)
+
+    if adopted:
+        auto_path = ws.sources_dir / f"{pref_slug}-auto.yaml"
+        auto_path.parent.mkdir(parents=True, exist_ok=True)
+        header = "# 自動発見で採用した source（ADR 0007）。人手で確認・修正してよい。\n"
+        body = yaml.safe_dump({"sources": adopted}, allow_unicode=True, sort_keys=False, width=200)
+        auto_path.write_text(header + body, encoding="utf-8", newline="\n")
+
+    queue = ReviewQueue(
+        prefecture=pref_name,
+        prefecture_slug=pref_slug,
+        created_at=utc_now_iso(),
+        candidates=candidates,
+    )
+    review_path = ws.root / "data" / "review" / f"{pref_slug}.yaml"
+    queue.save(review_path)
+
+    write_json(
+        ws.runs_dir / f"discover-{pref_slug}.json",
+        {
+            "prefecture": pref_name,
+            "total": report.total,
+            "skipped_existing": report.skipped_existing,
+            "adopted_crawl": report.adopted_crawl,
+            "adopted_link_only": report.adopted_link_only,
+            "pending": report.pending,
+            "requests": client.request_count,
+        },
+    )
+    return report

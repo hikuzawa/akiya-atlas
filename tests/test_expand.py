@@ -94,3 +94,81 @@ def test_finding_to_candidate() -> None:
     c = finding_to_candidate(f)
     assert c.key == "202193" and c.label == "長野県 東御市" and c.proposed_action == "URL修正"
     assert c.proposed_policy == "pending"
+
+
+def _finding(policy: str, pc, muni_code="203000", host="www.city.x.nagano.jp", bank="https://x/"):  # noqa: ANN001
+    from sitemill.classify import ClassifiedPage
+    from sitemill.models import OperatorKind
+
+    from akiya_atlas.expand import MunicipalityFinding
+    from akiya_atlas.municipalities import MunicipalityRef
+
+    m = MunicipalityRef(
+        code=muni_code,
+        prefecture="長野県",
+        prefecture_slug="nagano",
+        name="架空市",
+        name_kana="カクウシ",
+    )
+    classified = ClassifiedPage(url=bank, page_class=pc, confidence=0.8) if pc else None
+    return MunicipalityFinding(
+        muni=m,
+        official_url=host,
+        bank_url=bank if pc else None,
+        classified=classified,
+        operator_kind=OperatorKind.municipality if pc else OperatorKind.unknown,
+        evidence_quote="公式ドメイン" if pc else None,
+        policy=policy,
+        confidence=0.85,
+    )
+
+
+def test_source_dict_loads_as_source_and_municipality() -> None:
+    import yaml
+    from sitemill.models import Source
+
+    from akiya_atlas.expand import bank_status_of, finding_to_source_dict
+    from akiya_atlas.schema import Municipality
+
+    cases = [
+        ("crawl", PageClass.listing_index, "available"),
+        ("link_only", PageClass.third_party, "third_party_only"),
+        ("link_only", PageClass.spa, "spa_unsupported"),
+    ]
+    for policy, pc, expected_status in cases:
+        f = _finding(policy, pc)
+        assert bank_status_of(f) == expected_status
+        entry = finding_to_source_dict(f, prefecture_name="長野県")
+        # yaml 経由で Source として妥当
+        loaded = yaml.safe_load(yaml.safe_dump({"sources": [entry]}, allow_unicode=True))
+        src = Source.model_validate(loaded["sources"][0])
+        assert src.id == "nagano-203000"
+        assert src.crawlable == (policy == "crawl")
+        # municipality ブロックも妥当
+        muni_payload = {
+            "id": src.id,
+            "official_url": entry["official_url"],
+            **entry["municipality"],
+        }
+        muni = Municipality.model_validate(muni_payload)
+        assert muni.bank_status == expected_status
+        assert muni.crawled == (expected_status == "available")
+
+
+def test_no_bank_case_is_none_status() -> None:
+    from sitemill.classify import PageClass  # noqa: F401
+
+    from akiya_atlas.expand import bank_status_of
+
+    f = _finding("pending", None)
+    f.official = object()  # official 解決済みだが分類なし
+    assert bank_status_of(f) == "none"
+
+
+def test_nagano_no_crawl_gets_rakuen_link() -> None:
+    from akiya_atlas.expand import finding_to_source_dict
+
+    f = _finding("link_only", PageClass.third_party)
+    entry = finding_to_source_dict(f, prefecture_name="長野県")
+    urls = [e["url"] for e in entry.get("external_links", [])]
+    assert any("rakuen-akiya.jp" in u for u in urls)

@@ -97,3 +97,6 @@ pre { background: var(--tag-bg); padding: .6rem .8rem; border-radius: .4rem; ove
   .facts, .trust-list { grid-template-columns: 1fr; }
   .facts dt, .trust-list dt { margin-top: .4rem; }
 }
+
+.notice { border: 1px solid var(--accent); border-radius: .6rem; padding: 1rem 1.25rem; background: var(--surface); margin: 1rem 0; }
+.notice p { margin: .4rem 0; }

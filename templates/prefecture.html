@@ -12,7 +12,7 @@
   {% for m in municipalities %}
   <tr>
     <th scope="row"><a href="{{ m.url }}">{{ m.name }}</a></th>
-    <td class="num">{{ m.count|number }}</td>
+    <td class="num">{% if m.crawled %}{{ m.count|number }}{% elif m.bank_status == "third_party_only" %}<span class="tag">民間のみ</span>{% elif m.bank_status == "spa_unsupported" %}<span class="tag">JS未対応</span>{% else %}<span class="tag">なし</span>{% endif %}</td>
     <td class="num">{{ m.sale|number }}</td>
     <td class="num">{{ m.rent|number }}</td>
     <td>{{ "あり" if m.subsidy_migration else "—" }}</td>
