@@ -1,1 +1,7 @@
-{"url": "https://39ijyu.com/detail.php?id=293&kubun=IE", "kind": "listing_detail", "key_field": "listing_no", "html": "../../html/saku_detail.html", "note": "2026-09-10 取得。面積は「198m2/59.89坪」のように㎡と坪が併記される例"}
+{
+ "url": "https://39ijyu.com/detail.php?id=293&kubun=IE",
+ "kind": "listing_detail",
+ "key_field": "listing_no",
+ "html": "../../html/saku_detail.html",
+ "note": "llm_response.json は 2026-09-10 に claude-haiku-4-5 で取得した本番応答。手作りの旧応答は llm_response.previous.json。"
+}

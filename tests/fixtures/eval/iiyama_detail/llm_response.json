@@ -1,1 +1,19 @@
-{"listings": [{"listing_no_quote": "A357", "deal_type": "sale", "title": "飯山駅に近い飯山地区の中古住宅", "summary": "飯山地区の新町区にある5DKの中古住宅。大幅な補修が必要ですが、飯山駅まで徒歩圏で庭付きです。", "address_quote": "飯山市大字飯山", "price_quote": "280万円", "rent_quote": null, "land_area_quote": "190.85m2", "floor_area_quote": "126.16m2", "built_year_quote": null, "structure_quote": "木造2階建", "layout_quote": "5DK", "status_quote": null}]}
+{
+  "listings": [
+    {
+      "address_quote": "飯山市大字飯山",
+      "built_year_quote": null,
+      "deal_type": "sale",
+      "floor_area_quote": "126.16m2",
+      "land_area_quote": "190.85m2",
+      "layout_quote": "5DK",
+      "listing_no_quote": "A357",
+      "price_quote": "280万円",
+      "rent_quote": null,
+      "status_quote": null,
+      "structure_quote": null,
+      "summary": "飯山駅まで徒歩7分の立地にある5DK中古住宅。土地面積190.85㎡、建物面積126.16㎡。大幅な補修が必要だが、移住支援補助金の対象となる。",
+      "title": "飯山市飯山地区の中古住宅"
+    }
+  ]
+}

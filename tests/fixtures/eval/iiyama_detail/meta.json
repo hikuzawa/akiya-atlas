@@ -1,1 +1,7 @@
-{"url": "https://furusato-iiyama.net/a357/", "kind": "listing_detail", "key_field": "listing_no", "html": "../../html/iiyama_detail.html", "note": "2026-09-10 取得。structure_quote は本文に無い文字列を意図的に入れ、quote_not_in_source の検出を確かめる"}
+{
+ "url": "https://furusato-iiyama.net/a357/",
+ "kind": "listing_detail",
+ "key_field": "listing_no",
+ "html": "../../html/iiyama_detail.html",
+ "note": "llm_response.json は 2026-09-10 に claude-haiku-4-5 で取得した本番応答。手作りの旧応答は llm_response.previous.json。 structure_quote の検証など旧応答固有の意図は previous 側にある。"
+}
