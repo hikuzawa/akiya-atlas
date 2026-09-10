@@ -462,6 +462,9 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
     for muni in ds.municipalities:
         listings = ds.listings_for(muni)
         active = [ls for ls in listings if ls.is_active]
+        # 成約済（closed）は現行・掲載終了候補が 1 件も無いときだけ「過去の掲載」として載せる。
+        # 個別ページも作らない（売却済み物件のページで索引を膨らませない）
+        shown = [ls for ls in listings if not ls.is_closed] or listings
         updated_candidates = [d for d in (_dt(ls.last_seen_at) for ls in listings) if d is not None]
         fetched = ds.last_fetched(muni.id)
         if fetched is not None:
@@ -476,7 +479,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                 context={
                     "muni": muni,
                     "muni_row": muni_row(ctx, muni),
-                    "listings": [listing_row(muni, ls) for ls in listings],
+                    "listings": [listing_row(muni, ls) for ls in shown],
                     "subsidies": muni.subsidies,
                     "external": external_links(ctx, muni),
                     "map": muni_map(ctx, muni),
@@ -495,7 +498,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                 changefreq="daily",
             )
         )
-        for ls in listings:
+        for ls in shown:
             prov = ls.provenance or {}
             pages.append(
                 _page(
