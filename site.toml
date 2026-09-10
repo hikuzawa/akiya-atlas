@@ -2,8 +2,10 @@
 [site]
 id = "akiya-atlas"
 name = "空き家アトラス"
-# 基準 URL はここ 1 か所だけで差し替える（本番は https://akiya-atlas.com に切り替え予定）
-base_url = "https://akiya-atlas.pages.dev"
+# 基準 URL はここ 1 か所だけで差し替える（本番は https://akiya-atlas.com に切り替え予定）。
+# Pages の既定ホストは akiya-atlas-asb.pages.dev（akiya-atlas.pages.dev は第三者のプロジェクトが使用中で取得できない）。
+# CI（pipeline.yml）は配置前に canonical / sitemap / robots がこの値を指すことを検査する。
+base_url = "https://akiya-atlas-asb.pages.dev"
 service = "akiya_atlas.service:service"
 language = "ja"
 description = "自治体が運営する空き家バンクを、都道府県・市町村・価格帯・補助金の有無で横断検索できます。物件の要約と一次情報へのリンクだけを載せています。"

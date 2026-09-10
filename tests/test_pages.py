@@ -216,4 +216,4 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
 
     assert (dist / "_redirects").read_text(encoding="utf-8") == ""
     sitemap = (dist / "sitemap.xml").read_text(encoding="utf-8")
-    assert "https://akiya-atlas.pages.dev/nagano/202193-tomi/322/" in sitemap
+    assert f"{ws.site.base_url}/nagano/202193-tomi/322/" in sitemap  # 基準 URL は site.toml に従う

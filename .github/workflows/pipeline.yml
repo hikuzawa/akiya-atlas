@@ -139,7 +139,7 @@ jobs:
             404)
               echo "Pages プロジェクト $PROJECT_NAME が無いので作成する（production branch: main）"
               # --force: 新規の静的プロジェクトを Workers に振り替える wrangler の自動委譲を使わず、
-              # 必ず Pages プロジェクト（akiya-atlas.pages.dev）として作る
+              # 必ず Pages プロジェクト（<name>.pages.dev）として作る
               npx --yes wrangler@4 pages project create "$PROJECT_NAME" --production-branch main --force
               ;;
             *)
@@ -158,7 +158,7 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           # 作業ディレクトリ直下は git 管理外（2 リポジトリを並べている）で wrangler がブランチを検出できないため、
-          # production branch の main を明示して本番（akiya-atlas.pages.dev）に配置する
+          # production branch の main を明示して本番（akiya-atlas-asb.pages.dev）に配置する
           command: pages deploy akiya-atlas/dist --project-name=akiya-atlas --branch=main
 
       - name: 失敗時に Issue で通知
