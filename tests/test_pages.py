@@ -184,6 +184,7 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
         "owners/index.html",
         "about/index.html",
         "data/index.html",
+        "404.html",
         "search/index.json",
         "sitemap.xml",
         "robots.txt",
@@ -193,7 +194,7 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
     ]
     for rel in expected:
         assert (dist / rel).is_file(), rel
-    assert report.stages["build"]["pages"] == 11
+    assert report.stages["build"]["pages"] == 12
 
     listing = (dist / "nagano/202193-tomi/322/index.html").read_text(encoding="utf-8")
     assert (
@@ -217,3 +218,35 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
     assert (dist / "_redirects").read_text(encoding="utf-8") == ""
     sitemap = (dist / "sitemap.xml").read_text(encoding="utf-8")
     assert f"{ws.site.base_url}/nagano/202193-tomi/322/" in sitemap  # 基準 URL は site.toml に従う
+
+
+def test_pii_check_passes_clean_and_flags_personal_info(ws: Workspace) -> None:
+    from sitemill.build.site import BuildError
+
+    from akiya_atlas.pages import ensure_no_pii
+
+    ds = Dataset.load(ws)
+    ensure_no_pii(ds, ws)  # サンプルデータは合格
+
+    # 個人の氏名・メール・電話を要約に混ぜると検出してビルドを止める
+    ds.listings[0].summary = "所有者 佐藤一郎 様 連絡先 taro@gmail.com 090-1234-5678"
+    with pytest.raises(BuildError, match="個人情報"):
+        ensure_no_pii(ds, ws)
+
+
+def test_municipal_representative_phone_is_whitelisted(ws: Workspace) -> None:
+    from sitemill.build.pii import scan_text
+
+    from akiya_atlas.pages import _pii_policy
+
+    # 運営根拠の引用に代表電話を載せると、その番号は代表電話として許可される
+    yaml_path = ws.sources_dir / "nagano.yaml"
+    text = yaml_path.read_text(encoding="utf-8").replace(
+        'quote: "東御市役所 Copyright © TOMI City."',
+        'quote: "東御市役所 電話：0268-62-1111（代表） Copyright © TOMI City."',
+    )
+    yaml_path.write_text(text, encoding="utf-8")
+    policy = _pii_policy(ws)
+    assert scan_text("お問い合わせ 0268-62-1111", policy=policy) == []
+    # 一方で個人の携帯番号は許可されない
+    assert [f.kind for f in scan_text("090-1234-5678", policy=policy)] == ["phone"]

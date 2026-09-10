@@ -221,5 +221,9 @@ class AkiyaAtlasService:
     def eval_dir(self, ws: Workspace) -> Path | None:
         return ws.fixtures_dir / "eval"
 
+    def pii_policy(self, ws: Workspace) -> Any:
+        """生成ページの公開前 PII 検査に使うポリシー（自治体の代表電話・代表メールを許可）。"""
+        return pages._pii_policy(ws)
+
 
 service = AkiyaAtlasService()

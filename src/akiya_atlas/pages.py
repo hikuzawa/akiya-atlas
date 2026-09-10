@@ -6,6 +6,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from typing import Any
 
+from sitemill.build.pii import PiiFinding, default_jp_gov_policy, find_phones, scan_text
 from sitemill.build.site import BuildError, date_ja, datetime_ja, m2, yen
 from sitemill.charts import (
     Bar,
@@ -255,6 +256,19 @@ def external_links(ctx: Ctx, muni: Municipality) -> list[dict[str, str]]:
     ]
 
 
+def website_node(ws: Workspace) -> dict[str, Any]:
+    """全ページ共通の JSON-LD（WebSite + 運営組織）。物件個別の構造化データは載せない。"""
+    return {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": ws.site.name,
+        "url": f"{ws.site.base_url}/",
+        "description": ws.site.description,
+        "inLanguage": "ja",
+        "publisher": {"@type": "Organization", "name": ws.site.operator.name},
+    }
+
+
 def _page(
     ctx: Ctx,
     *,
@@ -266,9 +280,17 @@ def _page(
     trust_signals: TrustSignals,
     priority: float = 0.5,
     changefreq: str = "weekly",
+    noindex: bool = False,
+    structured_data: list[dict[str, Any]] | None = None,
 ) -> Page:
     meta = PageMeta(
-        title=title, description=description, path=path, priority=priority, changefreq=changefreq
+        title=title,
+        description=description,
+        path=path,
+        priority=priority,
+        changefreq=changefreq,
+        noindex=noindex,
+        structured_data=structured_data or [website_node(ctx.ws)],
     )
     return Page(
         meta=meta, template=template, context={**ctx.base_context, **context}, trust=trust_signals
@@ -287,8 +309,56 @@ def ensure_no_street_numbers(ds: Dataset) -> None:
         raise BuildError(f"番地が残っている所在地があるためビルドを中止: {bad[:5]}")
 
 
+def _municipal_phones(ws: Workspace) -> set[str]:
+    """自治体運営と確認できた source の運営主体根拠（引用）に載る電話を代表電話として集める。
+
+    運営主体の根拠引用は自治体公式ページの連絡先を写したものなので、そこに載る番号は
+    自治体の代表・担当電話とみなしてホワイトリストにする（レコード本文の番号は対象外）。
+    """
+    from akiya_atlas.data import load_sources
+
+    phones: set[str] = set()
+    for src in load_sources(ws):
+        if src.operator_kind.value not in ("municipality", "municipality_affiliated"):
+            continue
+        ev = src.operator_evidence
+        if ev and ev.quote:
+            phones.update(find_phones(ev.quote))
+    return phones
+
+
+def _pii_policy(ws: Workspace) -> Any:
+    """自治体の代表電話・代表メールを許可するポリシー。代表電話は運営根拠と登録ファイルから。"""
+    allow = _municipal_phones(ws)
+    path = ws.data_dir / "reference" / "municipal_phones.json"
+    if path.is_file():
+        import json
+
+        allow.update(str(x) for x in json.loads(path.read_text(encoding="utf-8")))
+    return default_jp_gov_policy(allow_phones=allow)
+
+
+def ensure_no_pii(ds: Dataset, ws: Workspace) -> None:
+    """レコードの本文・引用に個人情報（氏名・電話・メール）が無いことを保証する。"""
+    policy = _pii_policy(ws)
+    findings: list[PiiFinding] = []
+    for ls in ds.listings:
+        texts: list[str | None] = [ls.title, ls.summary]
+        for key in ("address", "structure", "layout", "status_text"):
+            fv = getattr(ls, key)
+            if isinstance(fv.value, str):
+                texts.append(fv.value)
+            texts.append(fv.quote)
+        blob = " ".join(t for t in texts if t)
+        findings.extend(scan_text(blob, policy=policy, where=ls.record_id))
+    if findings:
+        details = "; ".join(f.describe() for f in findings[:5])
+        raise BuildError(f"個人情報らしき文字列がレコードに含まれるためビルドを中止: {details}")
+
+
 def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
     ensure_no_street_numbers(ds)
+    ensure_no_pii(ds, ws)
     ctx = Ctx(
         ws=ws, ds=ds, now=now, operator=operator_info(ws), maps_key=ws.secrets.google_maps_embed_key
     )
@@ -478,6 +548,20 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
             context={"sources": [source_row(ctx, s) for s in ds.sources]},
             trust_signals=trust(ctx, sources=all_sources, count=len(all_active)),
             priority=0.3,
+        )
+    )
+    pages.append(
+        _page(
+            ctx,
+            path="404.html",
+            template="404.html",
+            title="ページが見つかりません",
+            description="お探しのページは見つかりませんでした。",
+            context={},
+            trust_signals=trust(ctx, sources=all_sources, count=len(all_active)),
+            priority=0.0,
+            changefreq="yearly",
+            noindex=True,
         )
     )
     return pages

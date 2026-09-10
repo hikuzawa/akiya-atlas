@@ -6,11 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ meta.title }} | {{ site.name }}</title>
 <meta name="description" content="{{ meta.description }}">
-<link rel="canonical" href="{{ base_url }}{{ meta.url_path }}">
-{% if meta.noindex %}<meta name="robots" content="noindex">{% endif %}
+{{ sm.head_meta(meta, site, base_url, analytics=analytics, site_verification=site_verification) }}
 <link rel="stylesheet" href="/static/style.css">
 <style>{{ chart_css|safe }}</style>
-{{ analytics }}
 </head>
 <body>
 <a class="skip" href="#main">本文へ</a>

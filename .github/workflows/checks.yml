@@ -5,6 +5,10 @@ name: checks
 on:
   push:
     branches: [main]
+    # pipeline がデータだけをコミットするときは checks を走らせない（Actions 無料枠の節約）。
+    # コードや設定の変更では従来どおり走る。
+    paths-ignore:
+      - "data/**"
   pull_request:
 
 permissions:

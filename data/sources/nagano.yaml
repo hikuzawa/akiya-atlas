@@ -205,4 +205,6 @@ sources:
       slug: 202096-ina
       bank_url: https://www.ina-akiyabank.jp/
       bank_label: 空き家バンク（伊那地域空き家バンク）
+      bank_status: spa_unsupported
+      bank_note: 伊那地域空き家バンクのサイトが JavaScript 表示のため、本サイトではまだ物件を要約できません。公式サイトでご確認ください。
       map_query: 長野県伊那市
