@@ -25,6 +25,7 @@ def test_candidate_urls_prefer_kind_prefix() -> None:
     urls = candidate_official_urls(m)
     assert "https://www.city.tomi.nagano.jp/" in urls
     assert any("city.toumi.nagano.jp" in u for u in urls)
+    assert "https://www.city.tomi.lg.jp/" in urls  # city.<name>.lg.jp（長野県で多い形式）
     # 市なので town/vill prefix は生成しない
     assert not any("town." in u or "vill." in u for u in urls)
 

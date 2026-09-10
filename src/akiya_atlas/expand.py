@@ -14,7 +14,6 @@ from datetime import UTC, date, datetime
 import yaml
 from sitemill.classify import ClassifiedPage, PageClass, PlatformRegistry, classify_page
 from sitemill.fetch.client import PoliteClient
-from sitemill.fetch.discover import discover_source
 from sitemill.fetch.links import extract_links, host_of
 from sitemill.models import (
     CrawlPolicy,
@@ -61,7 +60,7 @@ class MunicipalityFinding:
 
 
 def resolve_official_url(
-    muni: MunicipalityRef, client: PoliteClient, *, max_probes: int = 12
+    muni: MunicipalityRef, client: PoliteClient, *, max_probes: int = 16
 ) -> tuple[str, OfficialHost] | None:
     """候補 URL を順に叩き、到達できた公式ドメインを返す。"""
     for url in candidate_official_urls(muni)[:max_probes]:
@@ -82,23 +81,83 @@ class BankProbe:
     cross_linked: bool = False  # 非公式ホストだが公式サイトから空き家バンクとして案内されているか
 
 
+_AKIYA_URL = re.compile(r"aki|akiya|空き?家|空家|akiyabank|akiya-bank", re.I)
+_AKIYA_ANCHOR = re.compile(r"空き?家|空家バンク|あき家")
+_INTERMEDIATE = re.compile(r"住ま|移住|定住|くらし|暮らし|生活|空き?家|不動産|土地")
+
+
+@dataclass
+class _Cand:
+    url: str
+    text: str
+    found_on: str
+    score: int
+
+
+def _deep_discover_bank(
+    official_url: str, official: OfficialHost, client: PoliteClient
+) -> _Cand | None:
+    """公式トップ→中間カテゴリ→空き家、および sitemap を辿って空き家バンク候補を探す（2 階層）。"""
+    top = client.get(official_url)
+    if not top.ok:
+        return None
+    best: _Cand | None = None
+    seen_pages: set[str] = {official_url}
+
+    def consider(url: str, text: str, found_on: str) -> None:
+        nonlocal best
+        s = 0
+        if _AKIYA_ANCHOR.search(text):
+            s += 3
+        if _AKIYA_URL.search(url):
+            s += 2
+        if s == 0:
+            return
+        if best is None or s > best.score:
+            best = _Cand(url=url, text=text[:80], found_on=found_on, score=s)
+
+    top_links = extract_links(top.text, top.final_url)
+    for ln in top_links:
+        consider(ln.url, ln.text, official_url)
+    # 直リンクが弱ければ中間ページを 1 階層辿る
+    if best is None or best.score < 5:
+        inter = [
+            ln
+            for ln in top_links
+            if _INTERMEDIATE.search(ln.text) and host_of(ln.url) == official.host
+        ][:5]
+        for ln in inter:
+            if ln.url in seen_pages:
+                continue
+            seen_pages.add(ln.url)
+            page = client.get(ln.url)
+            if not page.ok:
+                continue
+            for sub in extract_links(page.text, page.final_url):
+                consider(sub.url, sub.text, ln.url)
+            if best and best.score >= 5:
+                break
+    # sitemap も直接見る
+    if best is None or best.score < 5:
+        for sm in (
+            official_url.rstrip("/") + "/sitemap.xml",
+            official_url.rstrip("/") + "/sitemap_index.xml",
+        ):
+            res = client.get(sm)
+            if not res.ok:
+                continue
+            for loc in re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", res.text, re.I)[:200]:
+                if _AKIYA_URL.search(loc):
+                    consider(loc, "", sm)
+    return best
+
+
 def find_bank_page(
     official_url: str, official: OfficialHost, client: PoliteClient, platforms: PlatformRegistry
 ) -> BankProbe:
     """公式サイトから空き家バンクページを見つけ分類する。公式ドメイン上か/相互リンクかも判定する。"""
-    probe_source = Source(
-        id="_probe",
-        name="probe",
-        operator="probe",
-        operator_kind=OperatorKind.municipality,
-        operator_evidence=OperatorEvidence(quote="probe", url=official_url),
-        policy=CrawlPolicy.crawl,
-        official_url=official_url,
-        pages=[SeedPage(url=official_url)],
-    )
-    candidates = discover_source(probe_source, client, max_pages=4)
     probe = BankProbe()
-    top = candidates[0] if candidates else None
+    top = _deep_discover_bank(official_url, official, client)
     if top is None:
         return probe
     probe.url = top.url
@@ -418,10 +477,17 @@ DEFAULT_PLATFORM_EXTRA = frozenset({"39ijyu.com", "iju-omachi.jp", "furusato-iiy
 
 
 def existing_codes_from_sources(ws: Workspace) -> set[str]:
-    """既に手動 sources に登録済みの市町村コードを集める（重複巡回を避ける）。"""
-    from akiya_atlas.data import load_municipalities
+    """手動 sources（*-auto.yaml を除く）の市町村コードを集める。auto は毎回再生成する。"""
+    from akiya_atlas.data import load_entries, municipality_from_entry
 
-    return {m.code for m in load_municipalities(ws)}
+    codes: set[str] = set()
+    for entry in load_entries(ws):
+        if str(entry.get("_file", "")).endswith("-auto.yaml"):
+            continue
+        m = municipality_from_entry(entry)
+        if m is not None:
+            codes.add(m.code)
+    return codes
 
 
 def discover_and_write(
@@ -468,12 +534,12 @@ def discover_and_write(
             adopted.append(finding_to_source_dict(f, prefecture_name=pref_name))
         candidates.append(c)
 
-    if adopted:
-        auto_path = ws.sources_dir / f"{pref_slug}-auto.yaml"
-        auto_path.parent.mkdir(parents=True, exist_ok=True)
-        header = "# 自動発見で採用した source（ADR 0007）。人手で確認・修正してよい。\n"
-        body = yaml.safe_dump({"sources": adopted}, allow_unicode=True, sort_keys=False, width=200)
-        auto_path.write_text(header + body, encoding="utf-8", newline="\n")
+    # auto ファイルは毎回再生成する（採用が 0 でも空で上書きし、古い内容を残さない）
+    auto_path = ws.sources_dir / f"{pref_slug}-auto.yaml"
+    auto_path.parent.mkdir(parents=True, exist_ok=True)
+    header = "# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。\n"
+    body = yaml.safe_dump({"sources": adopted}, allow_unicode=True, sort_keys=False, width=200)
+    auto_path.write_text(header + body, encoding="utf-8", newline="\n")
 
     queue = ReviewQueue(
         prefecture=pref_name,

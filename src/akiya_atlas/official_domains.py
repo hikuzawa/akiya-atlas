@@ -71,9 +71,13 @@ def candidate_official_urls(muni: MunicipalityRef) -> list[str]:
 
     for r in variants:
         for pfx in prefixes:
+            # 最も多い順: city.<name>.lg.jp（県セグメントなし）→ 地理型 <pref>.jp
+            add(f"https://www.{pfx}.{r}.lg.jp/")
+            add(f"https://{pfx}.{r}.lg.jp/")
             add(f"https://www.{pfx}.{r}.{pref}.jp/")
             add(f"https://www.{pfx}.{r}.{pref}.lg.jp/")
         add(f"https://www.{r}.{pref}.jp/")
         add(f"https://www.{r}.{pref}.lg.jp/")
         add(f"https://{r}.{pref}.lg.jp/")
+        add(f"https://www.{r}.lg.jp/")
     return urls
