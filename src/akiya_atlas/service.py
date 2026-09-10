@@ -225,7 +225,7 @@ class AkiyaAtlasService:
         return pages.search_index(ws, Dataset.load(ws))
 
     def redirects(self, ws: Workspace) -> list[Redirect]:
-        return [*site_redirects.www_to_apex(ws.site.base_url), *affiliates.redirects()]
+        return [*site_redirects.for_site(ws.site.base_url), *affiliates.redirects()]
 
     def eval_dir(self, ws: Workspace) -> Path | None:
         return ws.fixtures_dir / "eval"
