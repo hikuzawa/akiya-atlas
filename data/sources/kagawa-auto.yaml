@@ -52,18 +52,14 @@ sources:
     prefecture: 香川県
     prefecture_slug: kagawa
     slug: '372030'
-    bank_url: https://www.city.sakaide.lg.jp/soshiki/seisaku/akiyakaisyuu.html
+    bank_url: https://www.city.sakaide.lg.jp/life/1/12/196/
     bank_status: info
     map_query: 香川県坂出市
-    bank_note: 坂出市の空き家バンクは登録制です（採用した改修補助のページには物件一覧がありません）。物件は登録・問い合わせを通じて扱われます。詳しくは市の公式ページをご確認ください。
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.sakaide.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.sakaide.lg.jp/
     checked_on: '2026-09-10'
-  pages: []
-  allow_hosts:
-  - www.city.sakaide.lg.jp
-  max_pages: 30
 - id: kagawa-372048
   name: 善通寺市空き家バンク
   operator: 善通寺市

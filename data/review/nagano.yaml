@@ -1,6 +1,6 @@
 prefecture: 長野県
 prefecture_slug: nagano
-created_at: '2026-09-10T10:07:34+00:00'
+created_at: '2026-09-10T12:20:58+00:00'
 candidates:
 - key: '202011'
   label: 長野県 長野市
@@ -760,15 +760,15 @@ candidates:
   note: null
 - key: '204480'
   label: 長野県 生坂村
-  url: https://www.village.ikusaka.nagano.jp/gyousei/sinkouka/aki_nougyou_taiken2026.html
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.81
+  url: https://www.village.ikusaka.nagano.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.village.ikusaka.nagano.jp）
   evidence_url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null
@@ -887,14 +887,14 @@ candidates:
 - key: '205419'
   label: 長野県 小布施町
   url: https://www.town.obuse.nagano.jp/docs/36516.html
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.82
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.town.obuse.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
   evidence_url: https://www.town.obuse.nagano.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null
@@ -970,10 +970,10 @@ candidates:
   note: null
 - key: '205885'
   label: 長野県 小川村
-  url: http://ogawamura.jp/house/page/2/
+  url: http://ogawamura.jp/house/
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.88
+  confidence: 0.93
   operator_kind: municipality
   evidence_quote: 公式サイト（www.vill.ogawa.nagano.jp）から空き家バンクとして案内されているリンク
   evidence_url: https://www.vill.ogawa.nagano.jp/
@@ -998,10 +998,10 @@ candidates:
   note: null
 - key: '206024'
   label: 長野県 栄村
-  url: http://www.vill.sakae.nagano.jp/docs/834.html
+  url: http://www.vill.sakae.nagano.jp/docs/1028.html
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.82
+  confidence: 0.87
   operator_kind: municipality
   evidence_quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.vill.sakae.nagano.jp）
   evidence_url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html

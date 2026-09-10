@@ -1242,23 +1242,29 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "bank_url": "https://www.village.ikusaka.nagano.jp/gyousei/sinkouka/aki_nougyou_taiken2026.html",
+      "alternatives": [
+        "https://www.village.ikusaka.nagano.jp/gyousei/sinkouka/aki_nougyou_taiken2026.html"
+      ],
+      "bank_url": "https://www.village.ikusaka.nagano.jp/",
       "code": "204480",
-      "confidence": 0.8135,
+      "confidence": 0.6,
       "cross_linked": false,
       "evidence_quote": "長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.village.ikusaka.nagano.jp）",
       "evidence_url": "https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html",
       "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
       "name": "生坂村",
       "name_kana": "ｲｸｻｶﾑﾗ",
       "official_url": "www.village.ikusaka.nagano.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
-      "policy": "crawl",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
       "prefecture": "長野県",
       "prefecture_slug": "nagano",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
       "bank_url": "https://www.vill.yamagata.nagano.jp/",
@@ -1413,23 +1419,27 @@
       "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
     },
     {
+      "alternatives": [],
       "bank_url": "https://www.town.obuse.nagano.jp/docs/36516.html",
       "code": "205419",
-      "confidence": 0.8205,
+      "confidence": 0.6,
       "cross_linked": false,
       "evidence_quote": "公式ドメイン www.town.obuse.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.obuse.nagano.jp/",
       "external_links": [],
+      "listing_rows": 0,
+      "listing_score": 0.0,
       "name": "小布施町",
       "name_kana": "ｵﾌﾞｾﾏﾁ",
       "official_url": "www.town.obuse.nagano.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
-      "policy": "crawl",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
       "prefecture": "長野県",
       "prefecture_slug": "nagano",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
     },
     {
       "bank_url": "https://www.vill.takayama.nagano.jp/akiyabank/",
@@ -1527,18 +1537,28 @@
       "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
     },
     {
-      "bank_url": "http://ogawamura.jp/house/page/2/",
+      "alternatives": [
+        "https://www.vill.ogawa.nagano.jp/docs/6313.html",
+        "https://www.vill.ogawa.nagano.jp/docs/6478.html",
+        "http://ogawamura.jp/house/page/2/",
+        "https://www.vill.ogawa.nagano.jp/docs/6743.html",
+        "https://www.vill.ogawa.nagano.jp/docs/6742.html"
+      ],
+      "bank_url": "http://ogawamura.jp/house/",
       "code": "205885",
-      "confidence": 0.8765,
+      "confidence": 0.9324999999999999,
       "cross_linked": true,
       "evidence_quote": "公式サイト（www.vill.ogawa.nagano.jp）から空き家バンクとして案内されているリンク",
       "evidence_url": "https://www.vill.ogawa.nagano.jp/",
       "external_links": [],
+      "listing_rows": 31,
+      "listing_score": 1.0,
       "name": "小川村",
       "name_kana": "ｵｶﾞﾜﾑﾗ",
       "official_url": "www.vill.ogawa.nagano.jp",
       "operator_kind": "municipality",
       "page_class": "listing_index",
+      "pagination_pattern": "https?://ogawamura\\.jp/house/page/\\d+/?$",
       "policy": "crawl",
       "prefecture": "長野県",
       "prefecture_slug": "nagano",
@@ -1565,27 +1585,28 @@
       "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
     },
     {
-      "bank_url": "http://www.vill.sakae.nagano.jp/docs/834.html",
+      "alternatives": [
+        "http://www.vill.sakae.nagano.jp/docs/834.html",
+        "http://www.vill.sakae.nagano.jp/docs/2030.html",
+        "http://www.vill.sakae.nagano.jp/docs/2671.html",
+        "http://www.vill.sakae.nagano.jp/ad/303.html?redirect=http%3A%2F%2Fsakae-akiyamago.com%2F",
+        "http://sakae-akiyamago.com/"
+      ],
+      "bank_url": "http://www.vill.sakae.nagano.jp/docs/1028.html",
       "code": "206024",
-      "confidence": 0.8205,
+      "confidence": 0.8694999999999999,
       "cross_linked": false,
       "evidence_quote": "長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.vill.sakae.nagano.jp）",
       "evidence_url": "https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html",
-      "external_links": [
-        {
-          "label": "全国版空き家・空き地バンクサイト（アットホーム）",
-          "url": "https://sakae-v20602.akiya-athome.jp/"
-        },
-        {
-          "label": "楽園信州空き家バンク",
-          "url": "https://rakuen-akiya.jp/housesearch/area/?vender_jiscode[]=20602"
-        }
-      ],
+      "external_links": [],
+      "listing_rows": 11,
+      "listing_score": 1.0,
       "name": "栄村",
       "name_kana": "ｻｶｴﾑﾗ",
       "official_url": "www.vill.sakae.nagano.jp",
       "operator_kind": "municipality",
       "page_class": "listing_index",
+      "pagination_pattern": null,
       "policy": "crawl",
       "prefecture": "長野県",
       "prefecture_slug": "nagano",

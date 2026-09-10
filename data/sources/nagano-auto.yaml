@@ -1409,15 +1409,15 @@ sources:
     bank_url: https://www.village.ikusaka.nagano.jp/
     bank_status: none
     map_query: 長野県生坂村
-    bank_note: 村公式サイトで空き家バンクの物件一覧ページを確認できませんでした。移住・空き家の情報は村公式サイトでご確認ください。
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.village.ikusaka.nagano.jp）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
     checked_on: '2026-09-10'
-  pages: []
-  allow_hosts:
-  - www.village.ikusaka.nagano.jp
-  max_pages: 30
+  external_links:
+  - label: 楽園信州 空き家バンク・空き地バンク（長野県）
+    url: https://rakuen-akiya.jp/
+    note: 長野県が案内する県内横断の空き家・空き地バンク（民間運営）。
 - id: nagano-204501
   name: 山形村空き家バンク
   operator: 山形村
@@ -1625,15 +1625,15 @@ sources:
     bank_url: https://www.town.obuse.nagano.jp/docs/36516.html
     bank_status: info
     map_query: 長野県小布施町
-    bank_note: 小布施町の空き家バンクは登録制です。物件は登録・問い合わせを通じて扱われます。詳細は町の公式ページをご確認ください。
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.obuse.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.obuse.nagano.jp/
     checked_on: '2026-09-10'
-  pages: []
-  allow_hosts:
-  - www.town.obuse.nagano.jp
-  max_pages: 30
+  external_links:
+  - label: 楽園信州 空き家バンク・空き地バンク（長野県）
+    url: https://rakuen-akiya.jp/
+    note: 長野県が案内する県内横断の空き家・空き地バンク（民間運営）。
 - id: nagano-205435
   name: 高山村空き家バンク
   operator: 高山村
@@ -1776,6 +1776,10 @@ sources:
   pages:
   - url: http://ogawamura.jp/house/
     kind: listing_index
+    follow:
+    - pattern: https?://ogawamura\.jp/house/page/\d+/?$
+      kind: listing_index
+      max_links: 20
   allow_hosts:
   - ogawamura.jp
   max_pages: 30
@@ -1828,8 +1832,3 @@ sources:
   allow_hosts:
   - www.vill.sakae.nagano.jp
   max_pages: 30
-  external_links:
-  - label: 全国版空き家・空き地バンクサイト（アットホーム）
-    url: https://sakae-v20602.akiya-athome.jp/
-  - label: 楽園信州空き家バンク
-    url: https://rakuen-akiya.jp/housesearch/area/?vender_jiscode[]=20602
