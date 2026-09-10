@@ -1,18 +1,18 @@
-# 人間側で必要な作業（2026-09-10 時点）
+# 人間側で必要な作業（2026-09-10 更新）
 
 AI が全自動で回すための前提として、アカウント作成や鍵の登録など人にしかできない作業を並べる。
 上から順に済ませると、`uv run sitemill run` → 日次の GitHub Actions → Cloudflare Pages 公開までがつながる。
 
 ## 今すぐ必要（縦断パイプラインを完走させるため）
-1. **Anthropic API キー**を `akiya-atlas/.env` に書く（`.env.example` をコピーして `ANTHROPIC_API_KEY=...`）。
+1. ~~**Anthropic API キー**を `akiya-atlas/.env` に書く~~ → 済み（2026-09-10）。**ただし鍵の作り直しを推奨**: 一度 `.env.example` に書かれた値がローカルの git 履歴に入り（push 前に履歴から除去済み）、監査ログにも表示されたため。作り直したら `.env` を更新し、下の表のコマンドで GitHub Secret も更新する。
    これが無いと `sitemill extract` は「.env に何を書くか」を表示して止まる。抽出モデルは `site.toml` の `[llm] model`（既定 `claude-haiku-4-5`）で変えられる。
 2. **運営者名と連絡手段**を決め、`site.toml` の `[operator]` に書く（現在は「準備中」）。全ページのフッターと `/about/` に出る。
 
 ## 公開までに必要
-3. **GitHub リポジトリ**（private）を作成し push する: `hikuzawa/sitemill`、`hikuzawa/akiya-atlas`。
+3. ~~**GitHub リポジトリ**（private）を作成し push する~~ → 済み（2026-09-10、https://github.com/hikuzawa/sitemill と https://github.com/hikuzawa/akiya-atlas）。
    両リポジトリの git 作者設定はローカルで済ませてある。
 4. **Cloudflare アカウント**と **Pages プロジェクト `akiya-atlas`**（Direct Upload）を作る。API トークン（Pages 編集権限）とアカウント ID を発行する。
-5. **GitHub Secrets** を akiya-atlas に登録する: `ANTHROPIC_API_KEY`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`。
+5. **GitHub Secrets** を akiya-atlas に登録する: `ANTHROPIC_API_KEY`（済み）, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`。
    sitemill が private の場合、akiya-atlas のワークフローが sitemill を checkout できるよう `SITEMILL_READ_TOKEN`（sitemill 読み取り権限の fine-grained PAT）も登録する。
 6. **Cloudflare Web Analytics** を有効にしてビーコントークンを取得し、Secrets の `CF_WEB_ANALYTICS_TOKEN` と `.env` に入れる（無くても動く。計測タグが出ないだけ）。
 7. **Google Maps Platform**: Maps Embed API を有効にし、HTTP リファラで `akiya-atlas.pages.dev` と `akiya-atlas.com` に制限した公開キーを発行して `GOOGLE_MAPS_EMBED_KEY` に入れる（無い間は地図は外部リンクにフォールバック）。
