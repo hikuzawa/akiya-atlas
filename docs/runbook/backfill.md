@@ -39,7 +39,36 @@ ANTHROPIC_API_KEY=<値>
 ```
 `.env` は git 管理外。値は他の場所から探索しない（CLAUDE.md の規約）。
 
-### 1-5. 並列数
+### 1-5. Windows（PowerShell）で回す場合
+PowerShell 7 で検証済み（富山県で発見→巡回→抽出→自己修復を通した）。次の 4 点だけ Linux と違う。
+
+1. **uv の導入**: `irm https://astral.sh/uv/install.ps1 | iex`
+2. **文字コード**: セッションの最初に `$env:PYTHONUTF8 = "1"` を入れる。Windows の既定ロケールは
+   cp932 のままなので、これが無いと文字コードを明示していない読み書きが化ける。ログに残すときは
+   `Tee-Object -Encoding utf8`（既定の `>` は PowerShell 5.1 だと UTF-16 になる）。
+   ```powershell
+   $env:PYTHONUTF8 = "1"
+   uv run akiya-atlas backfill --only 富山県 2>&1 | Tee-Object -FilePath logsackfill.log -Append -Encoding utf8
+   ```
+   コマンドの引数に日本語（県名）をそのまま渡してよい。
+3. **長時間の実行**: tmux の代わりに `Start-Process` で切り離す。ウィンドウを閉じても走り続ける。
+   ```powershell
+   New-Item -ItemType Directory -Force logs | Out-Null
+   $p = Start-Process uv -ArgumentList "run","akiya-atlas","backfill","--stages","discover","--workers","8" `
+        -RedirectStandardOutput logsackfill-discover.log -RedirectStandardError logsackfill-discover.err.log `
+        -WindowStyle Hidden -PassThru
+   $p.Id | Out-File logsackfill.pid                      # 止めるとき: Stop-Process -Id (Get-Content logsackfill.pid)
+   Get-Content logsackfill-discover.log -Wait -Tail 20    # 進捗を追う（Ctrl+C で見るのをやめても実行は続く）
+   ```
+   `logs/` は git 管理外。
+4. **スリープさせない**: 実行前に電源設定を変える。終わったら元に戻す。
+   ```powershell
+   powercfg /change standby-timeout-ac 0    # スリープしない（AC 電源時）
+   powercfg /change hibernate-timeout-ac 0  # 休止状態にしない
+   ```
+   画面が消えるのは構わない。ノート PC は AC につないでおく（バッテリー時の設定は `-dc`）。
+
+### 1-6. 並列数
 `site.toml` の `[crawl] max_workers` が既定の並列数（8）。Raspberry Pi 4 なら 4 程度に下げる。
 コマンドの `--workers` で一時的に上書きもできる。並列にしても **1 ホストあたりの間隔（3 秒 + robots の
 Crawl-delay）は縮まらない**（ホスト別ロックで担保）。
@@ -68,8 +97,8 @@ uv run akiya-atlas backfill --stages discover --workers 8 2>&1 | tee -a backfill
 ```
 - 進捗は `data/runs/backfill.json` に県×工程で記録される。`uv run akiya-atlas backfill --status` で一覧。
 - 済みの県（長野・沖縄・香川）は自動的に発見済み扱いになる。
-- 所要の目安: 1 市町村あたり約 0.4 分（逐次）。並列 8 で 1 県 3〜5 分、44 県で **2〜3 時間**。
-  Raspberry Pi（並列 4）なら 4〜6 時間。夜間に回す想定。
+- 所要の目安（実測: 富山県 15 市町村・並列 8 で 1.1 分＝1 市町村あたり約 0.07 分）。
+  残り 1,600 市町村で **2 時間前後**。Raspberry Pi（並列 4）なら 4〜6 時間。夜間に回す想定。
 - 終わったら `--status` で県ごとの `crawl=` `link_only=` `pending=` を確認する。pending が多い県は
   2 の表を用意して `uv run akiya-atlas expand <県名>` で再発見する。
 
@@ -78,8 +107,10 @@ uv run akiya-atlas backfill --stages discover --workers 8 2>&1 | tee -a backfill
 uv run akiya-atlas backfill --stages crawl,extract,heal --workers 8 2>&1 | tee -a backfill-extract.log
 ```
 - 巡回対象は静的な物件一覧を持つ自治体だけ（全国で 1 割弱、150 前後の見込み）。
-- 抽出の費用は Haiku 4.5 で **1 自治体あたり約 $0.15**、全国で **$20〜30**。`data/runs/latest-extract.json` の
-  `llm.input_tokens / output_tokens` で実費を確認できる。
+- 所要の目安（実測: 富山県の巡回対象 5 自治体で 3.2 分）。全国 150 前後なら **1.5〜2 時間**。
+- 抽出の費用は Haiku 4.5 で **巡回対象 1 自治体あたり $0.03〜0.05**（富山県実測: 5 自治体・入力 26k・
+  出力 33k トークンで約 $0.19）。全国 150 自治体で **$5〜10** の見込み。掲載件数の多い自治体は
+  これより高い。`data/runs/latest-extract.json` の `llm.input_tokens / output_tokens` で実費を確認できる。
 - `heal` は「巡回したのに 0 件」の自治体を同一サイト内で選び直し、より一覧らしいページがあれば差し替えて
   その場で再巡回・再抽出、無ければ状態を info/none に見直す。人手の修正は要らない。
 
@@ -93,6 +124,7 @@ uv run akiya-atlas rediscover 宮城県 --code 042021          # 特定の市町
 
 ## 4. 途中で止まった場合の再開
 - **同じコマンドをもう一度実行するだけ**。`data/runs/backfill.json` にある済みの工程は飛ばす。
+  Windows なら `Get-Content logsackfill-discover.log -Tail 5` で最後にどこまで進んだかを見てから再実行する。
 - 発見の途中で止まった県は、その県の発見だけ最初からやり直す（1 県数分）。
 - 巡回は `data/state/crawl.json` の条件付き GET で続きから、抽出は未処理（pending）のページだけが対象。
 - Raspberry Pi の電源断・SSH 切断: `tmux attach -t backfill` で戻る。プロセスが死んでいれば再実行。
