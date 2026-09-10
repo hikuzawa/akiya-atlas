@@ -10,6 +10,7 @@ import logging
 import re
 from dataclasses import dataclass, field
 from datetime import UTC, date, datetime
+from pathlib import Path
 
 import yaml
 from sitemill.classify import ClassifiedPage, PageClass, PlatformRegistry, classify_page
@@ -69,6 +70,68 @@ def resolve_official_url(
             oh = classify_host(host_of(res.final_url), muni.prefecture_slug)
             if oh.is_official:
                 return res.final_url, oh
+    return None
+
+
+@dataclass(frozen=True)
+class OfficialResolution:
+    url: str
+    host: OfficialHost
+    evidence_quote: str
+    evidence_url: str
+
+
+@dataclass
+class OfficialOverrides:
+    """県の公的な市町村一覧から得た code→公式URL の対応（ADR 0007 条件A）。"""
+
+    by_code: dict[str, str] = field(default_factory=dict)
+    source_url: str = ""
+    source_name: str = ""
+
+    @classmethod
+    def load(cls, ws: Workspace, pref_slug: str) -> OfficialOverrides:
+        from sitemill.store.jsonio import read_json
+
+        path = ws.root / "data" / "reference" / f"{pref_slug}_official_urls.json"
+        data = read_json(path)
+        if not data:
+            return cls()
+        by_code = {
+            str(m["code"]): m["official_url"]
+            for m in data.get("municipalities", [])
+            if m.get("code") and m.get("official_url")
+        }
+        return cls(
+            by_code=by_code,
+            source_url=data.get("source_url", ""),
+            source_name=data.get("source_name", ""),
+        )
+
+
+def resolve_official(
+    muni: MunicipalityRef, client: PoliteClient, overrides: OfficialOverrides
+) -> OfficialResolution | None:
+    """公式ドメインを解決する。候補URL → 県の市町村一覧の順。運営主体の根拠も返す。"""
+    probed = resolve_official_url(muni, client)
+    if probed is not None:
+        url, host = probed
+        return OfficialResolution(url, host, host.evidence(), "https://" + host.host + "/")
+    # 県の公的一覧に載っている URL を使う（ドメインが命名規則外でも一覧が運営主体を保証する）
+    override_url = overrides.by_code.get(muni.code)
+    if override_url:
+        res = client.get(override_url, check_robots=True)
+        if res.ok or res.not_modified:
+            host = classify_host(host_of(res.final_url), muni.prefecture_slug)
+            if not host.is_official:
+                host = OfficialHost(host_of(res.final_url), "prefecture_listed", True, "strong")
+            quote = (
+                f"{overrides.source_name or '県の市町村一覧'}に掲載された公式サイト"
+                f"（{host_of(res.final_url)}）"
+            )
+            return OfficialResolution(
+                res.final_url, host, quote, overrides.source_url or override_url
+            )
     return None
 
 
@@ -317,22 +380,28 @@ def finding_to_candidate(f: MunicipalityFinding) -> ReviewCandidate:
 
 
 def assess_municipality(
-    muni: MunicipalityRef, client: PoliteClient, platforms: PlatformRegistry
+    muni: MunicipalityRef,
+    client: PoliteClient,
+    platforms: PlatformRegistry,
+    overrides: OfficialOverrides | None = None,
 ) -> MunicipalityFinding:
     """1 市町村を評価して finding を返す（ネットワークを使う）。"""
-    resolved = resolve_official_url(muni, client)
+    resolved = resolve_official(muni, client, overrides or OfficialOverrides())
     if resolved is None:
         return decide(muni, None, None, cross_linked=False, bank_host_official=False)
-    official_url, official = resolved
-    probe = find_bank_page(official_url, official, client, platforms)
+    probe = find_bank_page(resolved.url, resolved.host, client, platforms)
     f = decide(
         muni,
-        official,
+        resolved.host,
         probe.classified,
         cross_linked=probe.cross_linked,
         bank_host_official=probe.host_official,
     )
-    f.official_url = official.host
+    f.official_url = resolved.host.host
+    # 運営主体の根拠は解決元から（相互リンクで確認できた場合は decide 側の根拠を優先）
+    if not probe.cross_linked:
+        f.evidence_quote = resolved.evidence_quote
+        f.evidence_url = resolved.evidence_url
     f.external_links = probe.externals
     f.cross_linked = probe.cross_linked
     return f
@@ -355,6 +424,7 @@ def run_discovery(
     platforms: PlatformRegistry,
     *,
     existing_codes: set[str],
+    overrides: OfficialOverrides | None = None,
     limit: int | None = None,
 ) -> DiscoveryReport:
     """市町村リストを評価し、結果（findings）を集める。書き出しは呼び出し側が行う。"""
@@ -364,7 +434,7 @@ def run_discovery(
         if muni.code in existing_codes:  # 既に手動登録済みの市町村はスキップ
             report.skipped_existing += 1
             continue
-        f = assess_municipality(muni, client, platforms)
+        f = assess_municipality(muni, client, platforms, overrides)
         report.findings.append(f)
         report.total += 1
         if f.policy == "crawl":
@@ -514,9 +584,8 @@ def discover_and_write(
     pref_name = munis[0].prefecture if munis else prefecture
     pref_slug = munis[0].prefecture_slug if munis else prefecture
     existing = existing_codes_from_sources(ws)
-    platforms = (
-        PlatformRegistry()
-    )  # 既定 + 移住系サイトも第三者として初期扱いしない（相互リンクで判定するため足さない）
+    overrides = OfficialOverrides.load(ws, pref_slug)
+    platforms = PlatformRegistry()
 
     owns_client = client is None
     if client is None:
@@ -528,37 +597,19 @@ def discover_and_write(
             timeout=crawl.timeout_seconds,
         )
     try:
-        report = run_discovery(munis, client, platforms, existing_codes=existing, limit=limit)
+        report = run_discovery(
+            munis, client, platforms, existing_codes=existing, overrides=overrides, limit=limit
+        )
     finally:
         if owns_client:
             client.close()
 
-    # 自動採用（crawl / link_only かつ確信度が閾値以上）を sources に、全件を review に
-    adopted: list[dict] = []
-    candidates: list[ReviewCandidate] = []
-    for f in report.findings:
-        c = finding_to_candidate(f)
-        adopt = f.policy in ("crawl", "link_only") and f.confidence >= adopt_threshold
-        if adopt:
-            c.proposed_policy = str(f.policy)
-            adopted.append(finding_to_source_dict(f, prefecture_name=pref_name))
-        candidates.append(c)
-
-    # auto ファイルは毎回再生成する（採用が 0 でも空で上書きし、古い内容を残さない）
-    auto_path = ws.sources_dir / f"{pref_slug}-auto.yaml"
-    auto_path.parent.mkdir(parents=True, exist_ok=True)
-    header = "# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。\n"
-    body = yaml.safe_dump({"sources": adopted}, allow_unicode=True, sort_keys=False, width=200)
-    auto_path.write_text(header + body, encoding="utf-8", newline="\n")
-
-    queue = ReviewQueue(
-        prefecture=pref_name,
-        prefecture_slug=pref_slug,
-        created_at=utc_now_iso(),
-        candidates=candidates,
-    )
-    review_path = ws.root / "data" / "review" / f"{pref_slug}.yaml"
-    queue.save(review_path)
+    # 運営主体が確認できたもの（policy が crawl / link_only）はすべて自動採用する。
+    # 確信度の閾値は使わない（運営主体の確認が採用の条件。ADR 0007 の原則）。
+    del adopt_threshold
+    _write_findings(ws, pref_slug, report.findings)
+    adopted, candidates = _outputs_from_findings(report.findings, pref_name)
+    _write_sources_and_review(ws, pref_name, pref_slug, adopted, candidates)
 
     write_json(
         ws.runs_dir / f"discover-{pref_slug}.json",
@@ -573,3 +624,119 @@ def discover_and_write(
         },
     )
     return report
+
+
+def _finding_to_row(f: MunicipalityFinding) -> dict:
+    """finding を JSON 化（再書き出し用。ネットワーク無しで sources/review を作り直せる）。"""
+    return {
+        "code": f.muni.code,
+        "name": f.muni.name,
+        "name_kana": f.muni.name_kana,
+        "prefecture": f.muni.prefecture,
+        "prefecture_slug": f.muni.prefecture_slug,
+        "official_url": f.official_url,
+        "bank_url": f.bank_url,
+        "page_class": f.classified.page_class.value if f.classified else None,
+        "confidence": f.confidence,
+        "operator_kind": f.operator_kind.value,
+        "evidence_quote": f.evidence_quote,
+        "evidence_url": f.evidence_url,
+        "cross_linked": f.cross_linked,
+        "policy": str(f.policy),
+        "reason": f.reason,
+        "proposed_action": f.proposed_action,
+        "external_links": [
+            {"label": e.label, "url": e.url, **({"note": e.note} if e.note else {})}
+            for e in f.external_links
+        ],
+    }
+
+
+def _row_to_finding(row: dict) -> MunicipalityFinding:
+    muni = MunicipalityRef(
+        code=row["code"],
+        prefecture=row["prefecture"],
+        prefecture_slug=row["prefecture_slug"],
+        name=row["name"],
+        name_kana=row.get("name_kana", ""),
+    )
+    classified = None
+    if row.get("page_class"):
+        classified = ClassifiedPage(
+            url=row.get("bank_url") or "",
+            page_class=PageClass(row["page_class"]),
+            confidence=row.get("confidence", 0.0),
+        )
+    return MunicipalityFinding(
+        muni=muni,
+        official_url=row.get("official_url"),
+        bank_url=row.get("bank_url"),
+        classified=classified,
+        operator_kind=OperatorKind(row.get("operator_kind", "unknown")),
+        evidence_quote=row.get("evidence_quote"),
+        evidence_url=row.get("evidence_url"),
+        cross_linked=row.get("cross_linked", False),
+        external_links=[
+            ExternalLink(label=e["label"], url=e["url"], note=e.get("note"))
+            for e in row.get("external_links", [])
+        ],
+        policy=row.get("policy", "pending"),
+        confidence=row.get("confidence", 0.0),
+        reason=row.get("reason", ""),
+        proposed_action=row.get("proposed_action", "承認"),
+    )
+
+
+def _findings_path(ws: Workspace, pref_slug: str) -> Path:
+    return ws.runs_dir / f"discover-{pref_slug}-findings.json"
+
+
+def _write_findings(ws: Workspace, pref_slug: str, findings: list[MunicipalityFinding]) -> None:
+    write_json(_findings_path(ws, pref_slug), {"findings": [_finding_to_row(f) for f in findings]})
+
+
+def _outputs_from_findings(
+    findings: list[MunicipalityFinding], pref_name: str
+) -> tuple[list[dict], list[ReviewCandidate]]:
+    adopted: list[dict] = []
+    candidates: list[ReviewCandidate] = []
+    for f in findings:
+        candidates.append(finding_to_candidate(f))
+        if f.policy in ("crawl", "link_only"):
+            adopted.append(finding_to_source_dict(f, prefecture_name=pref_name))
+    return adopted, candidates
+
+
+def _write_sources_and_review(
+    ws: Workspace,
+    pref_name: str,
+    pref_slug: str,
+    adopted: list[dict],
+    candidates: list[ReviewCandidate],
+) -> None:
+    auto_path = ws.sources_dir / f"{pref_slug}-auto.yaml"
+    auto_path.parent.mkdir(parents=True, exist_ok=True)
+    header = "# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。\n"
+    body = yaml.safe_dump({"sources": adopted}, allow_unicode=True, sort_keys=False, width=200)
+    auto_path.write_text(header + body, encoding="utf-8", newline="\n")
+    queue = ReviewQueue(
+        prefecture=pref_name,
+        prefecture_slug=pref_slug,
+        created_at=utc_now_iso(),
+        candidates=candidates,
+    )
+    queue.save(ws.root / "data" / "review" / f"{pref_slug}.yaml")
+
+
+def rebuild_outputs(ws: Workspace, prefecture: str) -> tuple[int, int]:
+    """保存済み findings から sources/review を作り直す。(採用数, pending数) を返す。"""
+    from sitemill.store.jsonio import read_json
+
+    munis = municipalities_for(prefecture, default_code_table_path(ws.root))
+    pref_name = munis[0].prefecture if munis else prefecture
+    pref_slug = munis[0].prefecture_slug if munis else prefecture
+    data = read_json(_findings_path(ws, pref_slug)) or {"findings": []}
+    findings = [_row_to_finding(r) for r in data["findings"]]
+    adopted, candidates = _outputs_from_findings(findings, pref_name)
+    _write_sources_and_review(ws, pref_name, pref_slug, adopted, candidates)
+    return len(adopted), sum(1 for c in candidates if c.proposed_policy == "pending")

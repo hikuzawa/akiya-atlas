@@ -2,7 +2,7 @@
   "command": "build",
   "errors": [],
   "extraction_metrics": null,
-  "finished_at": "2026-09-10T09:59:58Z",
+  "finished_at": "2026-09-10T08:57:00Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -13,9 +13,9 @@
   "service": "akiya-atlas",
   "stages": {
     "build": {
-      "files": 226,
-      "pages": 220
+      "files": 160,
+      "pages": 154
     }
   },
-  "started_at": "2026-09-10T09:59:58Z"
+  "started_at": "2026-09-10T08:57:00Z"
 }
