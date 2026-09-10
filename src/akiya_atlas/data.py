@@ -76,10 +76,15 @@ class Dataset:
     state: CrawlState
     by_source: dict[str, Source] = field(default_factory=dict)
     muni_by_source: dict[str, Municipality] = field(default_factory=dict)
+    listings_by_source: dict[str, list[Listing]] = field(default_factory=dict)
 
     def __post_init__(self) -> None:
         self.by_source = {s.id: s for s in self.sources}
         self.muni_by_source = {m.id: m for m in self.municipalities}
+        # 全国規模では市町村が 1,700・物件が数万件になる。毎回の線形走査を避けて source ごとに引く
+        self.listings_by_source = {}
+        for ls in self.listings:
+            self.listings_by_source.setdefault(ls.source_id, []).append(ls)
 
     @classmethod
     def load(cls, ws: Workspace) -> Dataset:
@@ -92,7 +97,7 @@ class Dataset:
         return cls(sources=sources, municipalities=municipalities, listings=listings, state=state)
 
     def listings_for(self, muni: Municipality, *, active_only: bool = False) -> list[Listing]:
-        rows = [ls for ls in self.listings if ls.source_id == muni.id]
+        rows = self.listings_by_source.get(muni.id, [])
         if active_only:
             rows = [ls for ls in rows if ls.is_active]
         return sorted(rows, key=lambda ls: (not ls.is_active, ls.listing_no))
