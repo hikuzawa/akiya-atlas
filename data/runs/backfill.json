@@ -1,0 +1,44 @@
+{
+  "prefectures": {
+    "toyama": {
+      "crawl": "2026-09-10T21:27:17+00:00",
+      "crawl_stats": {
+        "changed": 5,
+        "errors": 0,
+        "fetched": 5,
+        "not_modified": 0,
+        "requests": 10,
+        "unchanged": 0,
+        "workers": 8
+      },
+      "discover": "2026-09-10T21:26:58+00:00",
+      "discover_stats": {
+        "adopted_crawl": 5,
+        "adopted_link_only": 10,
+        "minutes": 1.1,
+        "pending": 0,
+        "requests": 110,
+        "skipped_existing": 0,
+        "total": 15
+      },
+      "elapsed_minutes": 3.2,
+      "extract": "2026-09-10T21:30:21+00:00",
+      "extract_stats": {
+        "input_tokens": 26177,
+        "items": 221,
+        "llm_calls": 5,
+        "output_tokens": 33307,
+        "pages": 5
+      },
+      "heal": "2026-09-10T21:30:21+00:00",
+      "heal_stats": {
+        "checked": 0,
+        "downgraded": 0,
+        "requests": 0,
+        "swapped": 0
+      },
+      "name": "富山県"
+    }
+  },
+  "updated_at": "2026-09-10T21:30:21+00:00"
+}

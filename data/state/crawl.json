@@ -1260,6 +1260,24 @@
       "status": 200,
       "url": "https://furusato-iiyama.net/b042/"
     },
+    "https://namerikawa-akiya.com/": {
+      "changed_at": "2026-09-10T21:27:13Z",
+      "content_hash": "sha256:ba3fc49f3bf3d2ba784f1e3932fed079718ff34d5a49bd181aa56389caf65021",
+      "error": null,
+      "error_count": 0,
+      "etag": null,
+      "extracted_at": "2026-09-10T21:27:18Z",
+      "extracted_hash": "sha256:ba3fc49f3bf3d2ba784f1e3932fed079718ff34d5a49bd181aa56389caf65021",
+      "fetched_at": "2026-09-10T21:27:13Z",
+      "kind": "listing_index",
+      "last_modified": null,
+      "pending_extract": false,
+      "prompt_version": "listing_v1",
+      "seen_count": 1,
+      "source_id": "toyama-162060",
+      "status": 200,
+      "url": "https://namerikawa-akiya.com/"
+    },
     "https://ogawamura.jp/house/page/2/": {
       "changed_at": "2026-09-10T12:21:05Z",
       "content_hash": "sha256:469d767dbabdaf84e028b58f3f10e6197686cb0850ae8a398a82240cb20b3edc",
@@ -1350,6 +1368,24 @@
       "status": 200,
       "url": "https://www.city.omachi.nagano.jp/00002000/00002800/00002816.html"
     },
+    "https://www.city.oyabe.toyama.jp/ijyu/1001572/1003141/1004072.html": {
+      "changed_at": "2026-09-10T21:27:13Z",
+      "content_hash": "sha256:73703e54c39db1b2252aa030f917cff35e15654cdac064f392849f4e2fc57ad2",
+      "error": null,
+      "error_count": 0,
+      "etag": "\"80b5-65b26e0343a0a\"",
+      "extracted_at": "2026-09-10T21:27:18Z",
+      "extracted_hash": "sha256:73703e54c39db1b2252aa030f917cff35e15654cdac064f392849f4e2fc57ad2",
+      "fetched_at": "2026-09-10T21:27:13Z",
+      "kind": "listing_index",
+      "last_modified": "Thu, 10 Sep 2026 20:33:08 GMT",
+      "pending_extract": false,
+      "prompt_version": "listing_v1",
+      "seen_count": 1,
+      "source_id": "toyama-162094",
+      "status": 200,
+      "url": "https://www.city.oyabe.toyama.jp/ijyu/1001572/1003141/1004072.html"
+    },
     "https://www.city.sakaide.lg.jp/soshiki/seisaku/akiyakaisyuu.html": {
       "changed_at": "2026-09-10T11:07:36Z",
       "content_hash": "sha256:b7f1ed24ddbe4f052be04d4ffc57d88df93c4538af0c0406d55bf65eebd0d694",
@@ -1403,6 +1439,24 @@
       "source_id": "nagano-tomi",
       "status": 304,
       "url": "https://www.city.tomi.nagano.jp/category/akiyabank/166961.html"
+    },
+    "https://www.city.toyama.lg.jp/akiyabk/index.html": {
+      "changed_at": "2026-09-10T21:27:13Z",
+      "content_hash": "sha256:7c27d1744ee7b78669bcce012bbef9fc39d96767327a21aae882e577a0551163",
+      "error": null,
+      "error_count": 0,
+      "etag": "\"2f5d-65b226b641240\"",
+      "extracted_at": "2026-09-10T21:27:18Z",
+      "extracted_hash": "sha256:7c27d1744ee7b78669bcce012bbef9fc39d96767327a21aae882e577a0551163",
+      "fetched_at": "2026-09-10T21:27:13Z",
+      "kind": "listing_index",
+      "last_modified": "Thu, 10 Sep 2026 15:14:09 GMT",
+      "pending_extract": false,
+      "prompt_version": "listing_v1",
+      "seen_count": 1,
+      "source_id": "toyama-162019",
+      "status": 200,
+      "url": "https://www.city.toyama.lg.jp/akiyabk/index.html"
     },
     "https://www.iju-omachi.jp/akiyabank.html": {
       "changed_at": "2026-09-09T21:16:12Z",
@@ -1458,6 +1512,24 @@
       "status": 304,
       "url": "https://www.town.agematsu.nagano.jp/kurashi/sumai_seikatsu/tochi/akiya.html"
     },
+    "https://www.town.kamiichi.toyama.jp/page/1646.html": {
+      "changed_at": "2026-09-10T21:27:13Z",
+      "content_hash": "sha256:ece9d33bf25171672a36b136b6784a28fd2c885dc21546be0317c8370567984f",
+      "error": null,
+      "error_count": 0,
+      "etag": null,
+      "extracted_at": "2026-09-10T21:27:18Z",
+      "extracted_hash": "sha256:ece9d33bf25171672a36b136b6784a28fd2c885dc21546be0317c8370567984f",
+      "fetched_at": "2026-09-10T21:27:13Z",
+      "kind": "listing_index",
+      "last_modified": "Thu, 10 Sep 2026 21:00:27 GMT",
+      "pending_extract": false,
+      "prompt_version": "listing_v1",
+      "seen_count": 1,
+      "source_id": "toyama-163228",
+      "status": 200,
+      "url": "https://www.town.kamiichi.toyama.jp/page/1646.html"
+    },
     "https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/index.html": {
       "changed_at": "2026-09-10T07:24:25Z",
       "content_hash": "sha256:7cf657dbd603f6a96fb996afca8944a025cd8289e4c930de0049de381d2a8881",
@@ -1475,6 +1547,24 @@
       "source_id": "nagano-203505",
       "status": 304,
       "url": "https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/index.html"
+    },
+    "https://www.town.nyuzen.toyama.jp/gyosei/machizukuri/sumai/1/1856.html": {
+      "changed_at": "2026-09-10T21:27:13Z",
+      "content_hash": "sha256:2eae50fd155e34a436555cede32021f2f681cabc327e675986479c1410914f9f",
+      "error": null,
+      "error_count": 0,
+      "etag": "W/\"6a9e0773-212fe\"",
+      "extracted_at": "2026-09-10T21:27:18Z",
+      "extracted_hash": "sha256:2eae50fd155e34a436555cede32021f2f681cabc327e675986479c1410914f9f",
+      "fetched_at": "2026-09-10T21:27:13Z",
+      "kind": "listing_index",
+      "last_modified": "Mon, 07 Sep 2026 00:38:11 GMT",
+      "pending_extract": false,
+      "prompt_version": "listing_v1",
+      "seen_count": 1,
+      "source_id": "toyama-163422",
+      "status": 200,
+      "url": "https://www.town.nyuzen.toyama.jp/gyosei/machizukuri/sumai/1/1856.html"
     },
     "https://www.town.obuse.nagano.jp/docs/36516.html": {
       "changed_at": "2026-09-10T07:24:33Z",
