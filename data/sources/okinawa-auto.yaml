@@ -1,0 +1,827 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: okinawa-472018
+  name: 那覇市空き家バンク
+  operator: 那覇市
+  operator_kind: municipality
+  official_url: https://www.city.naha.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '472018'
+    name: 那覇市
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '472018'
+    bank_url: https://www.city.naha.okinawa.jp/
+    bank_status: none
+    map_query: 沖縄県那覇市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.naha.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.naha.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-472051
+  name: 宜野湾市空き家バンク
+  operator: 宜野湾市
+  operator_kind: municipality
+  official_url: https://www.city.ginowan.lg.jp/
+  policy: link_only
+  municipality:
+    code: '472051'
+    name: 宜野湾市
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '472051'
+    bank_url: https://www.city.ginowan.lg.jp/
+    bank_status: none
+    map_query: 沖縄県宜野湾市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ginowan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.ginowan.lg.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-472077
+  name: 石垣市空き家バンク
+  operator: 石垣市
+  operator_kind: municipality
+  official_url: https://www.city.ishigaki.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '472077'
+    name: 石垣市
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '472077'
+    bank_url: https://www.city.ishigaki.okinawa.jp/index.html
+    bank_status: info
+    map_query: 沖縄県石垣市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ishigaki.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.ishigaki.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-472085
+  name: 浦添市空き家バンク
+  operator: 浦添市
+  operator_kind: municipality
+  official_url: https://www.city.urasoe.lg.jp/
+  policy: link_only
+  municipality:
+    code: '472085'
+    name: 浦添市
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '472085'
+    bank_url: https://www.city.urasoe.lg.jp/doc/2025022700156/
+    bank_status: info
+    map_query: 沖縄県浦添市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.urasoe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.urasoe.lg.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-472093
+  name: 名護市空き家バンク
+  operator: 名護市
+  operator_kind: municipality
+  official_url: https://www.city.nago.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '472093'
+    name: 名護市
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '472093'
+    bank_url: https://www.city.nago.okinawa.jp/kurashi/2018102500029/
+    bank_status: info
+    map_query: 沖縄県名護市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nago.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.nago.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-472107
+  name: 糸満市空き家バンク
+  operator: 糸満市
+  operator_kind: municipality
+  official_url: https://www.city.itoman.lg.jp/
+  policy: link_only
+  municipality:
+    code: '472107'
+    name: 糸満市
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '472107'
+    bank_url: https://www.city.itoman.lg.jp/
+    bank_status: none
+    map_query: 沖縄県糸満市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.itoman.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.itoman.lg.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-472115
+  name: 沖縄市空き家バンク
+  operator: 沖縄市
+  operator_kind: municipality
+  official_url: https://www.city.okinawa.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '472115'
+    name: 沖縄市
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '472115'
+    bank_url: https://www.city.okinawa.okinawa.jp/kurashi/sumai/akiya/index.html
+    bank_status: info
+    map_query: 沖縄県沖縄市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.okinawa.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.okinawa.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-472123
+  name: 豊見城市空き家バンク
+  operator: 豊見城市
+  operator_kind: municipality
+  official_url: https://www.city.tomigusuku.lg.jp/
+  policy: link_only
+  municipality:
+    code: '472123'
+    name: 豊見城市
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '472123'
+    bank_url: https://www.city.tomigusuku.lg.jp/
+    bank_status: none
+    map_query: 沖縄県豊見城市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tomigusuku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.tomigusuku.lg.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-472131
+  name: うるま市空き家バンク
+  operator: うるま市
+  operator_kind: municipality
+  official_url: https://www.city.uruma.lg.jp/
+  policy: link_only
+  municipality:
+    code: '472131'
+    name: うるま市
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '472131'
+    bank_url: https://www.city.uruma.lg.jp/kurashitetsuzuki/sumai/akiya/index.html
+    bank_status: spa_unsupported
+    map_query: 沖縄県うるま市
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.uruma.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.uruma.lg.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-472140
+  name: 宮古島市空き家バンク
+  operator: 宮古島市
+  operator_kind: municipality
+  official_url: https://www.city.miyakojima.lg.jp/
+  policy: link_only
+  municipality:
+    code: '472140'
+    name: 宮古島市
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '472140'
+    bank_url: https://www.city.miyakojima.lg.jp/
+    bank_status: none
+    map_query: 沖縄県宮古島市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.miyakojima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.miyakojima.lg.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-472158
+  name: 南城市空き家バンク
+  operator: 南城市
+  operator_kind: municipality
+  official_url: https://www.city.nanjo.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '472158'
+    name: 南城市
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '472158'
+    bank_url: https://www.city.nanjo.okinawa.jp/
+    bank_status: none
+    map_query: 沖縄県南城市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nanjo.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.nanjo.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473014
+  name: 国頭村空き家バンク
+  operator: 国頭村
+  operator_kind: municipality
+  official_url: https://www.vill.kunigami.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473014'
+    name: 国頭村
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473014'
+    bank_url: https://www.vill.kunigami.okinawa.jp/vacant_house_bank/
+    bank_status: info
+    map_query: 沖縄県国頭村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.kunigami.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.kunigami.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473022
+  name: 大宜味村空き家バンク
+  operator: 大宜味村
+  operator_kind: municipality
+  official_url: https://www.vill.ogimi.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473022'
+    name: 大宜味村
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473022'
+    bank_url: https://www.ojkk.or.jp/akiya-katsuyou/
+    bank_status: info
+    map_query: 沖縄県大宜味村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式サイト（www.vill.ogimi.okinawa.jp）から空き家バンクとして案内されているリンク
+    url: https://www.vill.ogimi.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473031
+  name: 東村空き家バンク
+  operator: 東村
+  operator_kind: municipality
+  official_url: https://www.vill.higashi.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473031'
+    name: 東村
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473031'
+    bank_url: https://www.vill.higashi.okinawa.jp/
+    bank_status: none
+    map_query: 沖縄県東村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.higashi.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.higashi.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473065
+  name: 今帰仁村空き家バンク
+  operator: 今帰仁村
+  operator_kind: municipality
+  official_url: https://www.nakijin.jp/
+  policy: link_only
+  municipality:
+    code: '473065'
+    name: 今帰仁村
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473065'
+    bank_url: https://www.nakijin.jp/index.html
+    bank_status: info
+    map_query: 沖縄県今帰仁村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 沖縄県 リンク集（市町村ホームページ）に掲載された公式サイト（www.nakijin.jp）
+    url: https://www.pref.okinawa.lg.jp/about/1018107.html
+    checked_on: '2026-09-10'
+- id: okinawa-473081
+  name: 本部町空き家バンク
+  operator: 本部町
+  operator_kind: municipality
+  official_url: https://www.town.motobu.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473081'
+    name: 本部町
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473081'
+    bank_url: http://motobu-nakijin-fire-119.town.motobu.okinawa.jp/
+    bank_status: info
+    map_query: 沖縄県本部町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.motobu.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.motobu.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473111
+  name: 恩納村空き家バンク
+  operator: 恩納村
+  operator_kind: municipality
+  official_url: https://www.vill.onna.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473111'
+    name: 恩納村
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473111'
+    bank_url: https://www.vill.onna.okinawa.jp/
+    bank_status: none
+    map_query: 沖縄県恩納村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.onna.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.onna.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473138
+  name: 宜野座村空き家バンク
+  operator: 宜野座村
+  operator_kind: municipality
+  official_url: https://www.vill.ginoza.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473138'
+    name: 宜野座村
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473138'
+    bank_url: https://www.vill.ginoza.okinawa.jp/
+    bank_status: none
+    map_query: 沖縄県宜野座村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.ginoza.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.ginoza.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473146
+  name: 金武町空き家バンク
+  operator: 金武町
+  operator_kind: municipality
+  official_url: https://www.town.kin.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473146'
+    name: 金武町
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473146'
+    bank_url: https://www.town.kin.okinawa.jp/
+    bank_status: none
+    map_query: 沖縄県金武町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kin.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kin.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473154
+  name: 伊江村空き家バンク
+  operator: 伊江村
+  operator_kind: municipality
+  official_url: https://www.iejima.org/
+  policy: link_only
+  municipality:
+    code: '473154'
+    name: 伊江村
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473154'
+    bank_url: https://www.iejima.org/document/2020082700016/
+    bank_status: info
+    map_query: 沖縄県伊江村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 沖縄県 リンク集（市町村ホームページ）に掲載された公式サイト（www.iejima.org）
+    url: https://www.pref.okinawa.lg.jp/about/1018107.html
+    checked_on: '2026-09-10'
+- id: okinawa-473243
+  name: 読谷村空き家バンク
+  operator: 読谷村
+  operator_kind: municipality
+  official_url: https://www.vill.yomitan.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473243'
+    name: 読谷村
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473243'
+    bank_url: https://www.vill.yomitan.okinawa.jp/
+    bank_status: none
+    map_query: 沖縄県読谷村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.yomitan.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.yomitan.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473251
+  name: 嘉手納町空き家バンク
+  operator: 嘉手納町
+  operator_kind: municipality
+  official_url: https://www.town.kadena.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473251'
+    name: 嘉手納町
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473251'
+    bank_url: https://www.town.kadena.okinawa.jp/
+    bank_status: none
+    map_query: 沖縄県嘉手納町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kadena.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kadena.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473260
+  name: 北谷町空き家バンク
+  operator: 北谷町
+  operator_kind: municipality
+  official_url: https://www.chatan.jp/
+  policy: link_only
+  municipality:
+    code: '473260'
+    name: 北谷町
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473260'
+    bank_url: https://www.chatan.jp/
+    bank_status: none
+    map_query: 沖縄県北谷町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 沖縄県 リンク集（市町村ホームページ）に掲載された公式サイト（www.chatan.jp）
+    url: https://www.pref.okinawa.lg.jp/about/1018107.html
+    checked_on: '2026-09-10'
+- id: okinawa-473278
+  name: 北中城村空き家バンク
+  operator: 北中城村
+  operator_kind: municipality
+  official_url: https://www.vill.kitanakagusuku.lg.jp/
+  policy: link_only
+  municipality:
+    code: '473278'
+    name: 北中城村
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473278'
+    bank_url: https://www.vill.kitanakagusuku.lg.jp/kakuka/jumin/kankyou/kankyopet/akichi/sitemap.dir.xml
+    bank_status: info
+    map_query: 沖縄県北中城村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.kitanakagusuku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.vill.kitanakagusuku.lg.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473286
+  name: 中城村空き家バンク
+  operator: 中城村
+  operator_kind: municipality
+  official_url: https://www.vill.nakagusuku.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473286'
+    name: 中城村
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473286'
+    bank_url: https://www.nakakita-fd-okinawa.jp/
+    bank_status: info
+    map_query: 沖縄県中城村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.nakagusuku.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.nakagusuku.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473294
+  name: 西原町空き家バンク
+  operator: 西原町
+  operator_kind: municipality
+  official_url: https://www.town.nishihara.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473294'
+    name: 西原町
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473294'
+    bank_url: https://www.town.nishihara.okinawa.jp/
+    bank_status: none
+    map_query: 沖縄県西原町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.nishihara.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.nishihara.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473481
+  name: 与那原町空き家バンク
+  operator: 与那原町
+  operator_kind: municipality
+  official_url: https://www.town.yonabaru.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473481'
+    name: 与那原町
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473481'
+    bank_url: https://www.town.yonabaru.okinawa.jp/
+    bank_status: none
+    map_query: 沖縄県与那原町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yonabaru.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.yonabaru.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473502
+  name: 南風原町空き家バンク
+  operator: 南風原町
+  operator_kind: municipality
+  official_url: https://www.town.haebaru.lg.jp/
+  policy: link_only
+  municipality:
+    code: '473502'
+    name: 南風原町
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473502'
+    bank_url: https://www.town.haebaru.lg.jp/
+    bank_status: none
+    map_query: 沖縄県南風原町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.haebaru.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.haebaru.lg.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473537
+  name: 渡嘉敷村空き家バンク
+  operator: 渡嘉敷村
+  operator_kind: municipality
+  official_url: https://www.vill.tokashiki.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473537'
+    name: 渡嘉敷村
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473537'
+    bank_url: https://www.vill.tokashiki.okinawa.jp/
+    bank_status: none
+    map_query: 沖縄県渡嘉敷村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.tokashiki.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.tokashiki.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473545
+  name: 座間味村空き家バンク
+  operator: 座間味村
+  operator_kind: municipality
+  official_url: https://www.vill.zamami.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473545'
+    name: 座間味村
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473545'
+    bank_url: https://www.vill.zamami.okinawa.jp/kanko_iju/iju_teiju/sumai/akiya/
+    bank_status: info
+    map_query: 沖縄県座間味村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.zamami.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.zamami.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473553
+  name: 粟国村空き家バンク
+  operator: 粟国村
+  operator_kind: municipality
+  official_url: https://www.vill.aguni.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473553'
+    name: 粟国村
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473553'
+    bank_url: https://www.vill.aguni.okinawa.jp/kurashi/1042.html
+    bank_status: info
+    map_query: 沖縄県粟国村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.aguni.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.aguni.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473561
+  name: 渡名喜村空き家バンク
+  operator: 渡名喜村
+  operator_kind: municipality
+  official_url: https://www.vill.tonaki.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473561'
+    name: 渡名喜村
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473561'
+    bank_url: http://www.vill.tonaki.okinawa.jp/index.jsp
+    bank_status: info
+    map_query: 沖縄県渡名喜村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.tonaki.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.tonaki.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473570
+  name: 南大東村空き家バンク
+  operator: 南大東村
+  operator_kind: municipality
+  official_url: https://www.vill.minamidaito.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473570'
+    name: 南大東村
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473570'
+    bank_url: https://www.vill.minamidaito.okinawa.jp/life/1/4/22/
+    bank_status: info
+    map_query: 沖縄県南大東村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.minamidaito.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.minamidaito.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473588
+  name: 北大東村空き家バンク
+  operator: 北大東村
+  operator_kind: municipality
+  official_url: https://vill.kitadaito.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473588'
+    name: 北大東村
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473588'
+    bank_url: https://vill.kitadaito.okinawa.jp/
+    bank_status: none
+    map_query: 沖縄県北大東村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン vill.kitadaito.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://vill.kitadaito.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473596
+  name: 伊平屋村空き家バンク
+  operator: 伊平屋村
+  operator_kind: municipality
+  official_url: https://www.vill.iheya.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473596'
+    name: 伊平屋村
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473596'
+    bank_url: https://www.vill.iheya.okinawa.jp/
+    bank_status: none
+    map_query: 沖縄県伊平屋村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.iheya.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.iheya.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473600
+  name: 伊是名村空き家バンク
+  operator: 伊是名村
+  operator_kind: municipality
+  official_url: https://www.vill.izena.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473600'
+    name: 伊是名村
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473600'
+    bank_url: https://www.vill.izena.okinawa.jp/
+    bank_status: none
+    map_query: 沖縄県伊是名村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.izena.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.izena.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473618
+  name: 久米島町空き家バンク
+  operator: 久米島町
+  operator_kind: municipality
+  official_url: https://www.town.kumejima.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473618'
+    name: 久米島町
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473618'
+    bank_url: https://www.town.kumejima.okinawa.jp/categories/kurashi/akiya/
+    bank_status: info
+    map_query: 沖縄県久米島町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kumejima.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kumejima.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473626
+  name: 八重瀬町空き家バンク
+  operator: 八重瀬町
+  operator_kind: municipality
+  official_url: https://www.town.yaese.lg.jp/
+  policy: link_only
+  municipality:
+    code: '473626'
+    name: 八重瀬町
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473626'
+    bank_url: https://www.town.yaese.lg.jp/
+    bank_status: none
+    map_query: 沖縄県八重瀬町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yaese.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.yaese.lg.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473758
+  name: 多良間村空き家バンク
+  operator: 多良間村
+  operator_kind: municipality
+  official_url: https://www.vill.tarama.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473758'
+    name: 多良間村
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473758'
+    bank_url: https://www.vill.tarama.okinawa.jp/
+    bank_status: none
+    map_query: 沖縄県多良間村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.tarama.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.tarama.okinawa.jp/
+    checked_on: '2026-09-10'
+- id: okinawa-473812
+  name: 竹富町空き家バンク
+  operator: 竹富町
+  operator_kind: municipality
+  official_url: https://www.town.taketomi.lg.jp/
+  policy: crawl
+  municipality:
+    code: '473812'
+    name: 竹富町
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473812'
+    bank_url: https://www.town.taketomi.lg.jp/soshiki/machizukuri/akiyakeijiban
+    bank_status: available
+    map_query: 沖縄県竹富町
+  operator_evidence:
+    quote: 公式ドメイン www.town.taketomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.taketomi.lg.jp/
+    checked_on: '2026-09-10'
+  pages:
+  - url: https://www.town.taketomi.lg.jp/soshiki/machizukuri/akiyakeijiban
+    kind: listing_index
+  allow_hosts:
+  - www.town.taketomi.lg.jp
+  max_pages: 30
+- id: okinawa-473821
+  name: 与那国町空き家バンク
+  operator: 与那国町
+  operator_kind: municipality
+  official_url: https://www.town.yonaguni.okinawa.jp/
+  policy: link_only
+  municipality:
+    code: '473821'
+    name: 与那国町
+    prefecture: 沖縄県
+    prefecture_slug: okinawa
+    slug: '473821'
+    bank_url: https://www.jma-net.go.jp/ishigaki/
+    bank_status: info
+    map_query: 沖縄県与那国町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yonaguni.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.yonaguni.okinawa.jp/
+    checked_on: '2026-09-10'

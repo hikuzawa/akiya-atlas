@@ -1,5 +1,23 @@
 {
   "urls": {
+    "http://ogawamura.jp/house/": {
+      "changed_at": "2026-09-10T11:10:32Z",
+      "content_hash": "sha256:198268874cb8e83e5cf02f284fe9e5acfa5a5da040f8a3978612024b38b86e8a",
+      "error": null,
+      "error_count": 0,
+      "etag": null,
+      "extracted_at": "2026-09-10T11:10:35Z",
+      "extracted_hash": "sha256:198268874cb8e83e5cf02f284fe9e5acfa5a5da040f8a3978612024b38b86e8a",
+      "fetched_at": "2026-09-10T11:10:32Z",
+      "kind": "listing_index",
+      "last_modified": null,
+      "pending_extract": false,
+      "prompt_version": "listing_v1",
+      "seen_count": 1,
+      "source_id": "nagano-205885",
+      "status": 200,
+      "url": "http://ogawamura.jp/house/"
+    },
     "http://ogawamura.jp/house/page/2/": {
       "changed_at": "2026-09-10T07:24:36Z",
       "content_hash": "sha256:469d767dbabdaf84e028b58f3f10e6197686cb0850ae8a398a82240cb20b3edc",
@@ -35,6 +53,24 @@
       "source_id": "nagano-203076",
       "status": 200,
       "url": "http://www.vill.kitaaiki.nagano.jp/docs/11593.html"
+    },
+    "http://www.vill.sakae.nagano.jp/docs/1028.html": {
+      "changed_at": "2026-09-10T11:03:53Z",
+      "content_hash": "sha256:ed6d9350d216f76b12a1893272e545236460e344c9379b655fed9a59e5005b65",
+      "error": null,
+      "error_count": 0,
+      "etag": null,
+      "extracted_at": "2026-09-10T11:03:57Z",
+      "extracted_hash": "sha256:ed6d9350d216f76b12a1893272e545236460e344c9379b655fed9a59e5005b65",
+      "fetched_at": "2026-09-10T11:03:53Z",
+      "kind": "listing_index",
+      "last_modified": "Thu, 10 Sep 2026 11:00:31 GMT",
+      "pending_extract": false,
+      "prompt_version": "listing_v1",
+      "seen_count": 1,
+      "source_id": "nagano-206024",
+      "status": 200,
+      "url": "http://www.vill.sakae.nagano.jp/docs/1028.html"
     },
     "http://www.vill.sakae.nagano.jp/docs/834.html": {
       "changed_at": "2026-09-10T10:00:46Z",
@@ -1260,6 +1296,24 @@
       "status": 200,
       "url": "https://www.city.omachi.nagano.jp/00002000/00002800/00002816.html"
     },
+    "https://www.city.sakaide.lg.jp/soshiki/seisaku/akiyakaisyuu.html": {
+      "changed_at": "2026-09-10T11:07:36Z",
+      "content_hash": "sha256:b7f1ed24ddbe4f052be04d4ffc57d88df93c4538af0c0406d55bf65eebd0d694",
+      "error": null,
+      "error_count": 0,
+      "etag": null,
+      "extracted_at": "2026-09-10T11:07:44Z",
+      "extracted_hash": "sha256:b7f1ed24ddbe4f052be04d4ffc57d88df93c4538af0c0406d55bf65eebd0d694",
+      "fetched_at": "2026-09-10T11:07:36Z",
+      "kind": "listing_index",
+      "last_modified": "Thu, 10 Sep 2026 11:01:14 GMT",
+      "pending_extract": false,
+      "prompt_version": "listing_v1",
+      "seen_count": 1,
+      "source_id": "kagawa-372030",
+      "status": 200,
+      "url": "https://www.city.sakaide.lg.jp/soshiki/seisaku/akiyakaisyuu.html"
+    },
     "https://www.city.saku.nagano.jp/kanko/ijyuteijyu/akiya/akiyabank.html": {
       "changed_at": "2026-09-09T21:14:50Z",
       "content_hash": "sha256:f776544c4fa664b9f3a185eee050a247a254c061123e5817a39b4895ce88c693",
@@ -1385,6 +1439,24 @@
       "source_id": "nagano-205419",
       "status": 200,
       "url": "https://www.town.obuse.nagano.jp/docs/36516.html"
+    },
+    "https://www.town.taketomi.lg.jp/soshiki/machizukuri/akiyakeijiban": {
+      "changed_at": "2026-09-10T11:07:40Z",
+      "content_hash": "sha256:94ed18cf124489d7ae389d5edf7b319a155dd7d73ef91ce6304377299d05674a",
+      "error": null,
+      "error_count": 0,
+      "etag": null,
+      "extracted_at": "2026-09-10T11:07:44Z",
+      "extracted_hash": "sha256:94ed18cf124489d7ae389d5edf7b319a155dd7d73ef91ce6304377299d05674a",
+      "fetched_at": "2026-09-10T11:07:40Z",
+      "kind": "listing_index",
+      "last_modified": null,
+      "pending_extract": false,
+      "prompt_version": "listing_v1",
+      "seen_count": 1,
+      "source_id": "okinawa-473812",
+      "status": 200,
+      "url": "https://www.town.taketomi.lg.jp/soshiki/machizukuri/akiyakeijiban"
     },
     "https://www.urugi.jp/top/administration_living/migration_settlement/": {
       "changed_at": "2026-09-10T10:00:21Z",

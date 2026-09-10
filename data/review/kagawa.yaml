@@ -1,0 +1,242 @@
+prefecture: 香川県
+prefecture_slug: kagawa
+created_at: '2026-09-10T11:04:29+00:00'
+candidates:
+- key: '372013'
+  label: 香川県 高松市
+  url: https://www.city.takamatsu.kagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.takamatsu.kagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.takamatsu.kagawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '372021'
+  label: 香川県 丸亀市
+  url: https://www.city.marugame.lg.jp/life/1/9/47/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.marugame.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.marugame.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '372030'
+  label: 香川県 坂出市
+  url: https://www.city.sakaide.lg.jp/soshiki/seisaku/akiyakaisyuu.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sakaide.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.sakaide.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '372048'
+  label: 香川県 善通寺市
+  url: https://www.city.zentsuji.kagawa.jp/site/akiyataisaku/akiyabank-jigyosho.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.zentsuji.kagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.zentsuji.kagawa.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '372056'
+  label: 香川県 観音寺市
+  url: https://www.city.kanonji.kagawa.jp/life/9/48/180/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kanonji.kagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kanonji.kagawa.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '372064'
+  label: 香川県 さぬき市
+  url: https://www.city.sanuki.lg.jp/kurashi/ijuteiju/akiyabank/sitemap.dir.xml
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sanuki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.sanuki.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '372072'
+  label: 香川県 東かがわ市
+  url: https://www.higashikagawa.jp/kurashinojoho/sumai/2025.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 香川県 香川県内市町リンクに掲載された公式サイト（www.higashikagawa.jp）
+  evidence_url: https://www.pref.kagawa.lg.jp/kocho/shokai/profile/w3cz95150312151105.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '372081'
+  label: 香川県 三豊市
+  url: https://www.city.mitoyo.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.mitoyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.mitoyo.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '373222'
+  label: 香川県 土庄町
+  url: https://www.town.tonosho.kagawa.jp/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.55
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tonosho.kagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.tonosho.kagawa.jp/
+  reason: 物件ページが公式ドメイン外で相互リンクも確認できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '373249'
+  label: 香川県 小豆島町
+  url: https://www.town.shodoshima.lg.jp/gyousei/kurashi/ijyu_teiju/2608.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shodoshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.shodoshima.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '373419'
+  label: 香川県 三木町
+  url: https://www.town.miki.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.miki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.miki.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '373648'
+  label: 香川県 直島町
+  url: https://www.town.naoshima.lg.jp/about/machidukuri/akibank.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.naoshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.naoshima.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '373869'
+  label: 香川県 宇多津町
+  url: https://www.town.utazu.lg.jp/page/5664.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.utazu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.utazu.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '373877'
+  label: 香川県 綾川町
+  url: http://www.ayakiku.com/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ayagawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.ayagawa.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '374032'
+  label: 香川県 琴平町
+  url: https://www.town.kotohira.kagawa.jp/site/ijyuu/1371.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kotohira.kagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kotohira.kagawa.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '374041'
+  label: 香川県 多度津町
+  url: https://www.town.tadotsu.kagawa.jp/kurashi_tetsuzuki/jutaku/akiyataisaku/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tadotsu.kagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.tadotsu.kagawa.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '374067'
+  label: 香川県 まんのう町
+  url: https://www.town.manno.lg.jp/site/miryoku-hasshin/1326.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.manno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.manno.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

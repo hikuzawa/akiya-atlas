@@ -1399,23 +1399,22 @@ sources:
   operator: 生坂村
   operator_kind: municipality
   official_url: https://www.village.ikusaka.nagano.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '204480'
     name: 生坂村
     prefecture: 長野県
     prefecture_slug: nagano
     slug: '204480'
-    bank_url: https://www.village.ikusaka.nagano.jp/gyousei/sinkouka/aki_nougyou_taiken2026.html
-    bank_status: available
+    bank_url: https://www.village.ikusaka.nagano.jp/
+    bank_status: none
     map_query: 長野県生坂村
+    bank_note: 村公式サイトで空き家バンクの物件一覧ページを確認できませんでした。移住・空き家の情報は村公式サイトでご確認ください。
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.village.ikusaka.nagano.jp）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
     checked_on: '2026-09-10'
-  pages:
-  - url: https://www.village.ikusaka.nagano.jp/gyousei/sinkouka/aki_nougyou_taiken2026.html
-    kind: listing_index
+  pages: []
   allow_hosts:
   - www.village.ikusaka.nagano.jp
   max_pages: 30
@@ -1616,7 +1615,7 @@ sources:
   operator: 小布施町
   operator_kind: municipality
   official_url: https://www.town.obuse.nagano.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '205419'
     name: 小布施町
@@ -1624,15 +1623,14 @@ sources:
     prefecture_slug: nagano
     slug: '205419'
     bank_url: https://www.town.obuse.nagano.jp/docs/36516.html
-    bank_status: available
+    bank_status: info
     map_query: 長野県小布施町
+    bank_note: 小布施町の空き家バンクは登録制です。物件は登録・問い合わせを通じて扱われます。詳細は町の公式ページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.obuse.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.obuse.nagano.jp/
     checked_on: '2026-09-10'
-  pages:
-  - url: https://www.town.obuse.nagano.jp/docs/36516.html
-    kind: listing_index
+  pages: []
   allow_hosts:
   - www.town.obuse.nagano.jp
   max_pages: 30
@@ -1768,7 +1766,7 @@ sources:
     prefecture: 長野県
     prefecture_slug: nagano
     slug: '205885'
-    bank_url: http://ogawamura.jp/house/page/2/
+    bank_url: http://ogawamura.jp/house/
     bank_status: available
     map_query: 長野県小川村
   operator_evidence:
@@ -1776,7 +1774,7 @@ sources:
     url: https://www.vill.ogawa.nagano.jp/
     checked_on: '2026-09-10'
   pages:
-  - url: http://ogawamura.jp/house/page/2/
+  - url: http://ogawamura.jp/house/
     kind: listing_index
   allow_hosts:
   - ogawamura.jp
@@ -1817,7 +1815,7 @@ sources:
     prefecture: 長野県
     prefecture_slug: nagano
     slug: '206024'
-    bank_url: http://www.vill.sakae.nagano.jp/docs/834.html
+    bank_url: http://www.vill.sakae.nagano.jp/docs/1028.html
     bank_status: available
     map_query: 長野県栄村
   operator_evidence:
@@ -1825,7 +1823,7 @@ sources:
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
     checked_on: '2026-09-10'
   pages:
-  - url: http://www.vill.sakae.nagano.jp/docs/834.html
+  - url: http://www.vill.sakae.nagano.jp/docs/1028.html
     kind: listing_index
   allow_hosts:
   - www.vill.sakae.nagano.jp

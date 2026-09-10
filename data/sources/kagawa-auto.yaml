@@ -1,0 +1,346 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: kagawa-372013
+  name: 高松市空き家バンク
+  operator: 高松市
+  operator_kind: municipality
+  official_url: https://www.city.takamatsu.kagawa.jp/
+  policy: link_only
+  municipality:
+    code: '372013'
+    name: 高松市
+    prefecture: 香川県
+    prefecture_slug: kagawa
+    slug: '372013'
+    bank_url: https://www.city.takamatsu.kagawa.jp/
+    bank_status: none
+    map_query: 香川県高松市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.takamatsu.kagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.takamatsu.kagawa.jp/
+    checked_on: '2026-09-10'
+- id: kagawa-372021
+  name: 丸亀市空き家バンク
+  operator: 丸亀市
+  operator_kind: municipality
+  official_url: https://www.city.marugame.lg.jp/
+  policy: link_only
+  municipality:
+    code: '372021'
+    name: 丸亀市
+    prefecture: 香川県
+    prefecture_slug: kagawa
+    slug: '372021'
+    bank_url: https://www.city.marugame.lg.jp/life/1/9/47/
+    bank_status: info
+    map_query: 香川県丸亀市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.marugame.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.marugame.lg.jp/
+    checked_on: '2026-09-10'
+- id: kagawa-372030
+  name: 坂出市空き家バンク
+  operator: 坂出市
+  operator_kind: municipality
+  official_url: https://www.city.sakaide.lg.jp/
+  policy: link_only
+  municipality:
+    code: '372030'
+    name: 坂出市
+    prefecture: 香川県
+    prefecture_slug: kagawa
+    slug: '372030'
+    bank_url: https://www.city.sakaide.lg.jp/soshiki/seisaku/akiyakaisyuu.html
+    bank_status: info
+    map_query: 香川県坂出市
+    bank_note: 坂出市の空き家バンクは登録制です（採用した改修補助のページには物件一覧がありません）。物件は登録・問い合わせを通じて扱われます。詳しくは市の公式ページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.sakaide.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.sakaide.lg.jp/
+    checked_on: '2026-09-10'
+  pages: []
+  allow_hosts:
+  - www.city.sakaide.lg.jp
+  max_pages: 30
+- id: kagawa-372048
+  name: 善通寺市空き家バンク
+  operator: 善通寺市
+  operator_kind: municipality
+  official_url: https://www.city.zentsuji.kagawa.jp/
+  policy: link_only
+  municipality:
+    code: '372048'
+    name: 善通寺市
+    prefecture: 香川県
+    prefecture_slug: kagawa
+    slug: '372048'
+    bank_url: https://www.city.zentsuji.kagawa.jp/site/akiyataisaku/akiyabank-jigyosho.html
+    bank_status: info
+    map_query: 香川県善通寺市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.zentsuji.kagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.zentsuji.kagawa.jp/
+    checked_on: '2026-09-10'
+- id: kagawa-372056
+  name: 観音寺市空き家バンク
+  operator: 観音寺市
+  operator_kind: municipality
+  official_url: https://www.city.kanonji.kagawa.jp/
+  policy: link_only
+  municipality:
+    code: '372056'
+    name: 観音寺市
+    prefecture: 香川県
+    prefecture_slug: kagawa
+    slug: '372056'
+    bank_url: https://www.city.kanonji.kagawa.jp/life/9/48/180/
+    bank_status: info
+    map_query: 香川県観音寺市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kanonji.kagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kanonji.kagawa.jp/
+    checked_on: '2026-09-10'
+- id: kagawa-372064
+  name: さぬき市空き家バンク
+  operator: さぬき市
+  operator_kind: municipality
+  official_url: https://www.city.sanuki.lg.jp/
+  policy: link_only
+  municipality:
+    code: '372064'
+    name: さぬき市
+    prefecture: 香川県
+    prefecture_slug: kagawa
+    slug: '372064'
+    bank_url: https://www.city.sanuki.lg.jp/kurashi/ijuteiju/akiyabank/sitemap.dir.xml
+    bank_status: info
+    map_query: 香川県さぬき市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.sanuki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.sanuki.lg.jp/
+    checked_on: '2026-09-10'
+- id: kagawa-372072
+  name: 東かがわ市空き家バンク
+  operator: 東かがわ市
+  operator_kind: municipality
+  official_url: https://www.higashikagawa.jp/
+  policy: link_only
+  municipality:
+    code: '372072'
+    name: 東かがわ市
+    prefecture: 香川県
+    prefecture_slug: kagawa
+    slug: '372072'
+    bank_url: https://www.higashikagawa.jp/kurashinojoho/sumai/2025.html
+    bank_status: info
+    map_query: 香川県東かがわ市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 香川県 香川県内市町リンクに掲載された公式サイト（www.higashikagawa.jp）
+    url: https://www.pref.kagawa.lg.jp/kocho/shokai/profile/w3cz95150312151105.html
+    checked_on: '2026-09-10'
+- id: kagawa-372081
+  name: 三豊市空き家バンク
+  operator: 三豊市
+  operator_kind: municipality
+  official_url: https://www.city.mitoyo.lg.jp/
+  policy: link_only
+  municipality:
+    code: '372081'
+    name: 三豊市
+    prefecture: 香川県
+    prefecture_slug: kagawa
+    slug: '372081'
+    bank_url: https://www.city.mitoyo.lg.jp/
+    bank_status: none
+    map_query: 香川県三豊市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.mitoyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.mitoyo.lg.jp/
+    checked_on: '2026-09-10'
+- id: kagawa-373222
+  name: 土庄町空き家バンク
+  operator: 土庄町
+  operator_kind: municipality
+  official_url: https://www.town.tonosho.kagawa.jp/
+  policy: link_only
+  municipality:
+    code: '373222'
+    name: 土庄町
+    prefecture: 香川県
+    prefecture_slug: kagawa
+    slug: '373222'
+    bank_url: https://www.town.tonosho.kagawa.jp/
+    bank_status: none
+    map_query: 香川県土庄町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.tonosho.kagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.tonosho.kagawa.jp/
+    checked_on: '2026-09-10'
+- id: kagawa-373249
+  name: 小豆島町空き家バンク
+  operator: 小豆島町
+  operator_kind: municipality
+  official_url: https://www.town.shodoshima.lg.jp/
+  policy: link_only
+  municipality:
+    code: '373249'
+    name: 小豆島町
+    prefecture: 香川県
+    prefecture_slug: kagawa
+    slug: '373249'
+    bank_url: https://www.town.shodoshima.lg.jp/gyousei/kurashi/ijyu_teiju/2608.html
+    bank_status: info
+    map_query: 香川県小豆島町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shodoshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.shodoshima.lg.jp/
+    checked_on: '2026-09-10'
+- id: kagawa-373419
+  name: 三木町空き家バンク
+  operator: 三木町
+  operator_kind: municipality
+  official_url: https://www.town.miki.lg.jp/
+  policy: link_only
+  municipality:
+    code: '373419'
+    name: 三木町
+    prefecture: 香川県
+    prefecture_slug: kagawa
+    slug: '373419'
+    bank_url: https://www.town.miki.lg.jp/
+    bank_status: none
+    map_query: 香川県三木町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.miki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.miki.lg.jp/
+    checked_on: '2026-09-10'
+- id: kagawa-373648
+  name: 直島町空き家バンク
+  operator: 直島町
+  operator_kind: municipality
+  official_url: https://www.town.naoshima.lg.jp/
+  policy: link_only
+  municipality:
+    code: '373648'
+    name: 直島町
+    prefecture: 香川県
+    prefecture_slug: kagawa
+    slug: '373648'
+    bank_url: https://www.town.naoshima.lg.jp/about/machidukuri/akibank.html
+    bank_status: info
+    map_query: 香川県直島町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.naoshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.naoshima.lg.jp/
+    checked_on: '2026-09-10'
+- id: kagawa-373869
+  name: 宇多津町空き家バンク
+  operator: 宇多津町
+  operator_kind: municipality
+  official_url: https://www.town.utazu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '373869'
+    name: 宇多津町
+    prefecture: 香川県
+    prefecture_slug: kagawa
+    slug: '373869'
+    bank_url: https://www.town.utazu.lg.jp/page/5664.html
+    bank_status: info
+    map_query: 香川県宇多津町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.utazu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.utazu.lg.jp/
+    checked_on: '2026-09-10'
+- id: kagawa-373877
+  name: 綾川町空き家バンク
+  operator: 綾川町
+  operator_kind: municipality
+  official_url: https://www.town.ayagawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '373877'
+    name: 綾川町
+    prefecture: 香川県
+    prefecture_slug: kagawa
+    slug: '373877'
+    bank_url: http://www.ayakiku.com/
+    bank_status: info
+    map_query: 香川県綾川町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ayagawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.ayagawa.lg.jp/
+    checked_on: '2026-09-10'
+- id: kagawa-374032
+  name: 琴平町空き家バンク
+  operator: 琴平町
+  operator_kind: municipality
+  official_url: https://www.town.kotohira.kagawa.jp/
+  policy: link_only
+  municipality:
+    code: '374032'
+    name: 琴平町
+    prefecture: 香川県
+    prefecture_slug: kagawa
+    slug: '374032'
+    bank_url: https://www.town.kotohira.kagawa.jp/site/ijyuu/1371.html
+    bank_status: info
+    map_query: 香川県琴平町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kotohira.kagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kotohira.kagawa.jp/
+    checked_on: '2026-09-10'
+- id: kagawa-374041
+  name: 多度津町空き家バンク
+  operator: 多度津町
+  operator_kind: municipality
+  official_url: https://www.town.tadotsu.kagawa.jp/
+  policy: link_only
+  municipality:
+    code: '374041'
+    name: 多度津町
+    prefecture: 香川県
+    prefecture_slug: kagawa
+    slug: '374041'
+    bank_url: https://www.town.tadotsu.kagawa.jp/kurashi_tetsuzuki/jutaku/akiyataisaku/index.html
+    bank_status: info
+    map_query: 香川県多度津町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.tadotsu.kagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.tadotsu.kagawa.jp/
+    checked_on: '2026-09-10'
+- id: kagawa-374067
+  name: まんのう町空き家バンク
+  operator: まんのう町
+  operator_kind: municipality
+  official_url: https://www.town.manno.lg.jp/
+  policy: link_only
+  municipality:
+    code: '374067'
+    name: まんのう町
+    prefecture: 香川県
+    prefecture_slug: kagawa
+    slug: '374067'
+    bank_url: https://www.town.manno.lg.jp/site/miryoku-hasshin/1326.html
+    bank_status: info
+    map_query: 香川県まんのう町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.manno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.manno.lg.jp/
+    checked_on: '2026-09-10'
