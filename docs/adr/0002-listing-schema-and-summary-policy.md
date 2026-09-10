@@ -14,3 +14,9 @@
 
 ## 影響
 - 抽出プロンプトは `src/akiya_atlas/prompts/listing_v1.md`。版を上げたら ADR に追記する
+
+## 追記（2026-09-10）: 所在地は「市町村＋大字・地区名」まで
+所在地は番地・号・建物名を保持しない（表示もデータも）。丁目・字（小字）は地名として残す。
+取り込み時（`item_to_content`）と後処理（`finalize`）で sitemill の `parse.jp.address.strip_street_number` を適用し、
+落とした文字列が要約・見出しに含まれていればそこからも消す。ビルド時（`pages.ensure_no_street_numbers`）に
+番地が残っていればビルドを中止し、コミット済みレコードにも番地が無いことをテスト（`test_address_policy.py`）で検査する。

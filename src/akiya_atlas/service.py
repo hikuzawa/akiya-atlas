@@ -11,6 +11,7 @@ from typing import Any
 from sitemill.diff.state import CrawlState
 from sitemill.extract import ExtractedItem, ExtractionSpec
 from sitemill.models import Page, Provenance, Redirect, Source
+from sitemill.parse.jp.address import has_street_number, strip_street_number
 from sitemill.settings import Workspace
 from sitemill.store.records import RecordStore
 
@@ -33,6 +34,48 @@ FIELD_KEYS = (
     "status_text",
 )
 STALE_AFTER_DAYS = 30
+
+
+def sanitize_address_fields(content: dict[str, Any]) -> bool:
+    """所在地から番地・号・建物名を落とし「市町村＋大字・地区名」までにする（ADR 0002 追記）。
+
+    落とした文字列が title / summary に含まれていればそこからも消す。変更があれば True。
+    """
+    changed = False
+    addr = content.get("address")
+    if not addr or addr.get("status") != "parsed" or not addr.get("value"):
+        return False
+    original = str(addr["value"])
+    kept, removed = strip_street_number(original)
+    if kept == original and removed is None:
+        return False
+    if kept:
+        addr["value"] = kept
+        addr["quote"] = kept
+        if removed:
+            addr["note"] = "street_number_removed"
+    else:
+        addr.update(
+            {"value": None, "quote": None, "status": "unparsed", "note": "street_number_only"}
+        )
+    changed = True
+    if removed:
+        for key in ("title", "summary"):
+            text = content.get(key)
+            if text and removed in text:
+                content[key] = text.replace(removed, "").strip() or None
+    return changed
+
+
+def assert_no_street_numbers(records: list[dict[str, Any]], *, where: str) -> None:
+    bad = [
+        r.get("record_id")
+        for r in records
+        for v in ((r.get("address") or {}).get("value"), (r.get("address") or {}).get("quote"))
+        if v and has_street_number(str(v))
+    ]
+    if bad:
+        raise ValueError(f"{where}: 番地が残っている所在地がある: {bad[:5]}")
 
 
 def item_to_content(
@@ -64,6 +107,7 @@ def item_to_content(
     for key in FIELD_KEYS:
         fv = item.fields.get(key)
         content[key] = fv.model_dump(mode="json") if fv is not None else None
+    sanitize_address_fields(content)
     return content
 
 
@@ -144,6 +188,10 @@ class AkiyaAtlasService:
             store = RecordStore(records_path(ws, source.id))
             if not len(store):
                 continue
+            normalized = sum(1 for r in store.records.values() if sanitize_address_fields(r))
+            if normalized:
+                log.info("%s: %d 件の所在地から番地を除去", source.id, normalized)
+            assert_no_street_numbers(store.all(), where=source.id)
             for record in store.records.values():
                 st = state.get(record.get("source_url", ""))
                 if (

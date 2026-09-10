@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from typing import Any
 
-from sitemill.build.site import date_ja, datetime_ja, m2, yen
+from sitemill.build.site import BuildError, date_ja, datetime_ja, m2, yen
 from sitemill.charts import (
     Bar,
     Chart,
@@ -18,6 +18,7 @@ from sitemill.charts import (
 )
 from sitemill.embeds import maps_place_embed
 from sitemill.models import Embed, OperatorInfo, Page, PageMeta, Source, SourceLink, TrustSignals
+from sitemill.parse.jp.address import has_street_number
 from sitemill.settings import Workspace
 
 from akiya_atlas.affiliates import OFFERS
@@ -272,7 +273,20 @@ def _page(
     )
 
 
+def ensure_no_street_numbers(ds: Dataset) -> None:
+    """番地・号が残った所在地があれば公開しない（表示とデータの両方で保証する）。"""
+    bad = [
+        ls.record_id
+        for ls in ds.listings
+        for v in (ls.address.value, ls.address.quote)
+        if v and has_street_number(str(v))
+    ]
+    if bad:
+        raise BuildError(f"番地が残っている所在地があるためビルドを中止: {bad[:5]}")
+
+
 def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
+    ensure_no_street_numbers(ds)
     ctx = Ctx(
         ws=ws, ds=ds, now=now, operator=operator_info(ws), maps_key=ws.secrets.google_maps_embed_key
     )
