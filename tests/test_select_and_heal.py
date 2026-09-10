@@ -199,3 +199,41 @@ def test_heal_skips_sources_with_active_listings_or_not_yet_crawled(ws: Workspac
     with _client() as c:  # 巡回記録が無い → 対象外
         result = expand.heal(ws, client=c)
     assert result["checked"] == 0 and not result["changed"]
+
+
+def test_two_municipalities_on_one_official_site_go_to_human_review() -> None:
+    """北海道には泊村が 2 つ（古宇郡・国後郡）。候補ドメインの推測は同じ URL に当たる。
+
+    片方に相手のサイトを結び付けて公開しないよう、両方を人間確認に回す。
+    """
+    from sitemill.models import OperatorKind
+
+    from akiya_atlas.expand import MunicipalityFinding, _flag_shared_official_urls
+    from akiya_atlas.municipalities import MunicipalityRef
+
+    def _f(code: str, name: str, url: str) -> MunicipalityFinding:
+        return MunicipalityFinding(
+            muni=MunicipalityRef(
+                code=code,
+                prefecture="北海道",
+                prefecture_slug="hokkaido",
+                name=name,
+                name_kana="",
+            ),
+            official_url=url,
+            bank_url=url,
+            operator_kind=OperatorKind.municipality,
+            evidence_quote="公式ドメイン",
+            policy="link_only",
+            confidence=0.6,
+        )
+
+    findings = [
+        _f("014036", "泊村", "https://www.vill.tomari.hokkaido.jp/"),
+        _f("016969", "泊村", "https://www.vill.tomari.hokkaido.jp/"),
+        _f("012025", "函館市", "https://www.city.hakodate.hokkaido.jp/"),
+    ]
+    _flag_shared_official_urls(findings)
+    assert [f.policy for f in findings] == ["pending", "pending", "link_only"]
+    assert findings[0].bank_url is None and "取り違え" in findings[0].reason
+    assert findings[2].bank_url == "https://www.city.hakodate.hokkaido.jp/"

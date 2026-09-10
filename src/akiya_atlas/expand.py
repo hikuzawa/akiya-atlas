@@ -653,6 +653,7 @@ def run_discovery(
             findings = list(pool.map(assess, todo))
     else:
         findings = [assess(m) for m in todo]
+    _flag_shared_official_urls(findings)
     for f in findings:
         report.findings.append(f)
         report.total += 1
@@ -663,6 +664,33 @@ def run_discovery(
         else:
             report.pending += 1
     return report
+
+
+def _flag_shared_official_urls(findings: list[MunicipalityFinding]) -> None:
+    """同じ公式サイトに解決した市町村が複数あれば、取り違えなので両方を人間確認に回す。
+
+    同名の市町村（北海道の泊村は古宇郡と国後郡の 2 つ）は候補ドメインの推測が同じ URL に当たる。
+    県の市町村一覧でも同名は対応づけないので、どちらのサイトかは機械では決められない。
+    片方に相手のサイトを結び付けて公開するより、人間に確認してもらう方がよい。
+    """
+    by_host: dict[str, list[MunicipalityFinding]] = {}
+    for f in findings:
+        if f.official_url and f.policy != "pending":
+            by_host.setdefault(host_of(f.official_url), []).append(f)
+    for host, group in by_host.items():
+        if len(group) < 2:
+            continue
+        names = "・".join(f"{f.muni.name}({f.muni.code})" for f in group)
+        for f in group:
+            f.policy = "pending"
+            f.proposed_action = "URL修正"
+            f.confidence = 0.2
+            f.reason = f"同じ公式サイト {host} に複数の市町村が解決した（{names}）。取り違えの恐れ"
+            f.bank_url = None
+            f.classified = None
+            f.operator_kind = OperatorKind.unknown
+            f.evidence_quote = None
+            f.evidence_url = None
 
 
 def utc_now_iso() -> str:
