@@ -13,7 +13,7 @@
 </ul>
 {% else %}
 <div class="notice" role="note">
-  <p><strong>{% if muni.bank_status == "none" %}空き家バンクの物件ページを確認できませんでした{% elif muni.bank_status == "spa_unsupported" %}このサイトはまだ物件を要約できません{% else %}物件は民間プラットフォームで公開されています{% endif %}</strong></p>
+  <p><strong>{% if muni.bank_status == "none" %}空き家バンクの物件ページを確認できませんでした{% elif muni.bank_status == "spa_unsupported" %}このサイトはまだ物件を要約できません{% elif muni.bank_status == "info" %}空き家バンクは登録制などで物件を公開しています{% else %}物件は民間プラットフォームで公開されています{% endif %}</strong></p>
   <p>{{ muni.bank_note }}</p>
   <p><a class="button" href="{{ muni.bank_url }}" rel="noopener" target="_blank">{{ muni.name }}の{{ muni.bank_label }}（公式・外部サイト）</a></p>
 </div>

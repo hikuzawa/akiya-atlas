@@ -39,7 +39,9 @@ class Municipality(BaseModel):
     bank_url: str
     bank_label: str = "空き家バンク"
     # 巡回状況: available=巡回 / third_party_only=民間のみ / spa_unsupported=JS描画 / none=なし
-    bank_status: Literal["available", "third_party_only", "spa_unsupported", "none"] = "available"
+    bank_status: Literal[
+        "available", "third_party_only", "spa_unsupported", "info", "none"
+    ] = "available"
     bank_note: str | None = None  # 非巡回ケースの説明（分類結果から自動生成）
     subsidies: list[Subsidy] = Field(default_factory=list)
     contact: str | None = None

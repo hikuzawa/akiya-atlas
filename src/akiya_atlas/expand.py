@@ -206,65 +206,67 @@ def decide(
     cross_linked: bool,
     bank_host_official: bool,
 ) -> MunicipalityFinding:
-    """分類・公式ドメイン・相互リンクから policy と確信度を決める（純関数、テスト対象）。"""
+    """分類・公式ドメイン・相互リンクから policy と確信度を決める（純関数、テスト対象）。
+
+    原則（ADR 0007）: 運営主体が確認できたら（公式ドメイン解決）自動採用する。人間に回すのは
+    公式URLを解決できず運営主体を判定できないものだけ（pending）。
+    """
     f = MunicipalityFinding(muni=muni, official=official, classified=classified)
     if official is None:
+        # 運営主体を判定できない。ここだけが人間レビュー対象
         f.policy = "pending"
         f.confidence = 0.2
-        f.reason = "公式 URL を自動解決できなかった"
+        f.reason = "公式 URL を自動解決できなかった（運営主体を判定できない）"
         f.proposed_action = "URL修正"
         return f
 
+    # 公式ドメインが解決できた = 運営主体は自治体（確認済み）
     f.official_url = official.host
+    f.operator_kind = OperatorKind.municipality
+    f.evidence_quote = official.evidence()
+    f.evidence_url = "https://" + official.host + "/"
+    official_link = f.evidence_url
+
     if classified is None:
-        f.policy = "pending"
-        f.confidence = 0.3
-        f.reason = "空き家バンクページが見つからない（掲載なしの可能性）"
-        f.proposed_action = "承認"  # 「空き家バンクなし」ページとして承認
+        # バンクページを特定できないが、運営主体（自治体）は確認済み → 公式へのリンクのみ
+        f.policy = "link_only"
+        f.bank_url = official_link
+        f.confidence = 0.6
+        f.reason = "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+        f.proposed_action = "承認"
         return f
 
     f.bank_url = classified.url
     pc = classified.page_class
-    # 運営主体の根拠
-    if bank_host_official:
-        f.operator_kind = OperatorKind.municipality
-        f.evidence_quote = official.evidence()
-        f.evidence_url = classified.url
-    elif cross_linked:
-        f.operator_kind = OperatorKind.municipality
+    if cross_linked:
         f.evidence_quote = (
             f"公式サイト（{official.host}）から空き家バンクとして案内されているリンク"
         )
-        f.evidence_url = official.host
-    else:
-        f.operator_kind = OperatorKind.unknown
 
-    if pc is PageClass.third_party:
+    if pc in (PageClass.listing_index, PageClass.listing_detail):
+        if bank_host_official or cross_linked:
+            f.policy = "crawl"
+            f.confidence = min(0.95, 0.6 + classified.confidence * 0.35)
+            f.reason = "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+        else:
+            # 物件一覧だが非公式ホストで相互リンクも無い → 巡回せず公式へリンク
+            f.policy = "link_only"
+            f.bank_url = official_link
+            f.confidence = 0.55
+            f.reason = "物件ページが公式ドメイン外で相互リンクも確認できず。公式へのリンクのみ"
+    elif pc is PageClass.third_party:
         f.policy = "link_only"
-        f.confidence = classified.confidence
+        f.confidence = max(0.7, classified.confidence)
         f.reason = "掲載は民間プラットフォーム。巡回せずリンクのみ"
-        f.proposed_action = "承認"
     elif pc is PageClass.spa:
         f.policy = "link_only"
-        f.confidence = classified.confidence
+        f.confidence = max(0.7, classified.confidence)
         f.reason = "JavaScript 描画のため静的 HTML に物件が無い。リンクのみ"
-        f.proposed_action = "承認"
-    elif pc in (PageClass.listing_index, PageClass.listing_detail):
-        if f.operator_kind is OperatorKind.municipality:
-            f.policy = "crawl"
-            f.confidence = min(0.95, 0.55 + classified.confidence * 0.4)
-            f.reason = "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
-            f.proposed_action = "承認"
-        else:
-            f.policy = "pending"
-            f.confidence = 0.45
-            f.reason = "物件ページだが運営主体の根拠が弱い（非公式ドメイン・相互リンクなし）"
-            f.proposed_action = "承認"
-    else:  # not_listing
-        f.policy = "pending"
-        f.confidence = 0.35
-        f.reason = "空き家バンクの物件ページを特定できない"
-        f.proposed_action = "URL修正"
+    else:  # not_listing = 制度案内ページ（物件は登録制/別ページ）
+        f.policy = "link_only"
+        f.confidence = 0.6
+        f.reason = "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    f.proposed_action = "承認"
     return f
 
 
@@ -383,12 +385,15 @@ def utc_now_iso() -> str:
 def bank_status_of(f: MunicipalityFinding) -> str:
     if f.policy == "crawl":
         return "available"
-    if f.policy == "link_only" and f.classified is not None:
-        if f.classified.page_class is PageClass.spa:
+    if f.policy == "link_only":
+        pc = f.classified.page_class if f.classified is not None else None
+        if pc is PageClass.spa:
             return "spa_unsupported"
-        return "third_party_only"
-    if f.official is not None and f.classified is None:
-        return "none"
+        if pc is PageClass.third_party:
+            return "third_party_only"
+        if pc is PageClass.not_listing:
+            return "info"
+        return "none"  # バンクページ未特定 / 非公式ホストの物件一覧 → 公式へリンク
     return "review"
 
 
@@ -402,6 +407,11 @@ def _bank_note(f: MunicipalityFinding, status: str) -> str:
         return (
             "空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。"
             "公式サイトでご確認ください。"
+        )
+    if status == "info":
+        return (
+            "この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。"
+            "詳しくは公式の空き家バンクページをご確認ください。"
         )
     if status == "none":
         return (

@@ -26,9 +26,11 @@ def test_no_official_url_goes_pending_for_url_fix() -> None:
     assert f.policy == "pending" and f.proposed_action == "URL修正"
 
 
-def test_official_but_no_bank_page_is_pending_no_bank() -> None:
+def test_official_resolved_but_no_bank_page_links_to_official() -> None:
+    # 公式が解決できれば運営主体は確認済み → 人間に回さず公式へのリンクのみ
     f = decide(TOMI, OFFICIAL, None, cross_linked=False, bank_host_official=False)
-    assert f.policy == "pending" and "掲載なし" in f.reason
+    assert f.policy == "link_only" and f.operator_kind is OperatorKind.municipality
+    assert "公式へのリンク" in f.reason
 
 
 def test_official_domain_static_listing_auto_crawl() -> None:
@@ -64,7 +66,8 @@ def test_spa_is_link_only() -> None:
     assert f.policy == "link_only" and "JavaScript" in f.reason
 
 
-def test_listing_without_operator_evidence_is_pending() -> None:
+def test_listing_on_unverified_host_links_to_official_not_pending() -> None:
+    # 公式解決済み・物件一覧が非公式ホスト・相互リンク無し → 巡回せず公式へリンク
     f = decide(
         TOMI,
         OFFICIAL,
@@ -72,7 +75,16 @@ def test_listing_without_operator_evidence_is_pending() -> None:
         cross_linked=False,
         bank_host_official=False,
     )
-    assert f.policy == "pending" and f.operator_kind is OperatorKind.unknown
+    assert f.policy == "link_only" and f.operator_kind is OperatorKind.municipality
+
+
+def test_not_listing_on_official_is_info_link_only() -> None:
+    from akiya_atlas.expand import bank_status_of
+
+    f = decide(
+        TOMI, OFFICIAL, _cp(PageClass.not_listing), cross_linked=False, bank_host_official=True
+    )
+    assert f.policy == "link_only" and bank_status_of(f) == "info"
 
 
 def test_finding_to_source_only_for_crawl() -> None:
@@ -156,13 +168,11 @@ def test_source_dict_loads_as_source_and_municipality() -> None:
 
 
 def test_no_bank_case_is_none_status() -> None:
-    from sitemill.classify import PageClass  # noqa: F401
-
+    # 公式解決済み・バンク未特定 → link_only（公式へリンク）・bank_status=none
     from akiya_atlas.expand import bank_status_of
 
-    f = _finding("pending", None)
-    f.official = object()  # official 解決済みだが分類なし
-    assert bank_status_of(f) == "none"
+    f = decide(TOMI, OFFICIAL, None, cross_linked=False, bank_host_official=False)
+    assert f.policy == "link_only" and bank_status_of(f) == "none"
 
 
 def test_nagano_no_crawl_gets_rakuen_link() -> None:
