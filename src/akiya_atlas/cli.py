@@ -73,6 +73,10 @@ def _register(app: typer.Typer) -> None:
         )
         for n in table.unmatched:
             typer.echo(f"  未対応: {n}（候補ドメインの推測で解決できなければ pending になる）")
+        for n in table.ambiguous:
+            typer.echo(f"  同名あり: {n}（取り違えを避けるため対応づけない）")
+        for n in table.duplicates:
+            typer.echo(f"  重複: {n}")
         for n in table.ignored:
             typer.echo(f"  無視: {n}")
 

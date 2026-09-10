@@ -1,0 +1,909 @@
+{
+  "source_url": "https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html",
+  "source_name": "北海道 道内179市町村（50音別）",
+  "checked_on": "2026-09-11",
+  "unmatched": [
+    "泊村",
+    "色丹村",
+    "泊村",
+    "留夜別村",
+    "留別村",
+    "紗那村",
+    "蘂取村"
+  ],
+  "ambiguous": [
+    "泊村"
+  ],
+  "municipalities": [
+    {
+      "code": "011002",
+      "name": "札幌市",
+      "official_url": "https://www.city.sapporo.jp/"
+    },
+    {
+      "code": "012025",
+      "name": "函館市",
+      "official_url": "https://www.city.hakodate.hokkaido.jp/"
+    },
+    {
+      "code": "012033",
+      "name": "小樽市",
+      "official_url": "https://www.city.otaru.lg.jp/"
+    },
+    {
+      "code": "012041",
+      "name": "旭川市",
+      "official_url": "https://www.city.asahikawa.hokkaido.jp/"
+    },
+    {
+      "code": "012050",
+      "name": "室蘭市",
+      "official_url": "https://www.city.muroran.lg.jp/"
+    },
+    {
+      "code": "012068",
+      "name": "釧路市",
+      "official_url": "https://www.city.kushiro.lg.jp/"
+    },
+    {
+      "code": "012076",
+      "name": "帯広市",
+      "official_url": "https://www.city.obihiro.hokkaido.jp/"
+    },
+    {
+      "code": "012084",
+      "name": "北見市",
+      "official_url": "https://www.city.kitami.lg.jp/"
+    },
+    {
+      "code": "012092",
+      "name": "夕張市",
+      "official_url": "https://www.city.yubari.lg.jp/"
+    },
+    {
+      "code": "012106",
+      "name": "岩見沢市",
+      "official_url": "https://www.city.iwamizawa.hokkaido.jp/"
+    },
+    {
+      "code": "012114",
+      "name": "網走市",
+      "official_url": "https://www.city.abashiri.hokkaido.jp/"
+    },
+    {
+      "code": "012122",
+      "name": "留萌市",
+      "official_url": "https://www.e-rumoi.jp/"
+    },
+    {
+      "code": "012131",
+      "name": "苫小牧市",
+      "official_url": "http://www.city.tomakomai.hokkaido.jp/"
+    },
+    {
+      "code": "012149",
+      "name": "稚内市",
+      "official_url": "https://www.city.wakkanai.hokkaido.jp/"
+    },
+    {
+      "code": "012157",
+      "name": "美唄市",
+      "official_url": "http://www.city.bibai.hokkaido.jp/"
+    },
+    {
+      "code": "012165",
+      "name": "芦別市",
+      "official_url": "https://www.city.ashibetsu.hokkaido.jp/"
+    },
+    {
+      "code": "012173",
+      "name": "江別市",
+      "official_url": "https://www.city.ebetsu.hokkaido.jp/"
+    },
+    {
+      "code": "012181",
+      "name": "赤平市",
+      "official_url": "https://www.city.akabira.hokkaido.jp/"
+    },
+    {
+      "code": "012190",
+      "name": "紋別市",
+      "official_url": "https://mombetsu.jp/"
+    },
+    {
+      "code": "012203",
+      "name": "士別市",
+      "official_url": "https://www.city.shibetsu.lg.jp/"
+    },
+    {
+      "code": "012211",
+      "name": "名寄市",
+      "official_url": "http://www.city.nayoro.lg.jp/"
+    },
+    {
+      "code": "012220",
+      "name": "三笠市",
+      "official_url": "https://www.city.mikasa.hokkaido.jp/"
+    },
+    {
+      "code": "012238",
+      "name": "根室市",
+      "official_url": "https://www.city.nemuro.hokkaido.jp/"
+    },
+    {
+      "code": "012246",
+      "name": "千歳市",
+      "official_url": "https://www.city.chitose.lg.jp/"
+    },
+    {
+      "code": "012254",
+      "name": "滝川市",
+      "official_url": "https://www.city.takikawa.hokkaido.jp/"
+    },
+    {
+      "code": "012262",
+      "name": "砂川市",
+      "official_url": "https://www.city.sunagawa.hokkaido.jp/"
+    },
+    {
+      "code": "012271",
+      "name": "歌志内市",
+      "official_url": "https://www.city.utashinai.hokkaido.jp/"
+    },
+    {
+      "code": "012289",
+      "name": "深川市",
+      "official_url": "https://www.city.fukagawa.lg.jp/"
+    },
+    {
+      "code": "012297",
+      "name": "富良野市",
+      "official_url": "http://www.city.furano.hokkaido.jp/"
+    },
+    {
+      "code": "012301",
+      "name": "登別市",
+      "official_url": "https://www.city.noboribetsu.lg.jp/"
+    },
+    {
+      "code": "012319",
+      "name": "恵庭市",
+      "official_url": "https://www.city.eniwa.hokkaido.jp/"
+    },
+    {
+      "code": "012335",
+      "name": "伊達市",
+      "official_url": "https://www.city.date.hokkaido.jp/"
+    },
+    {
+      "code": "012343",
+      "name": "北広島市",
+      "official_url": "https://www.city.kitahiroshima.hokkaido.jp/"
+    },
+    {
+      "code": "012351",
+      "name": "石狩市",
+      "official_url": "http://www.city.ishikari.hokkaido.jp/"
+    },
+    {
+      "code": "012360",
+      "name": "北斗市",
+      "official_url": "https://www.city.hokuto.hokkaido.jp/"
+    },
+    {
+      "code": "013030",
+      "name": "当別町",
+      "official_url": "https://www.town.tobetsu.hokkaido.jp/"
+    },
+    {
+      "code": "013048",
+      "name": "新篠津村",
+      "official_url": "https://www.vill.shinshinotsu.hokkaido.jp/"
+    },
+    {
+      "code": "013315",
+      "name": "松前町",
+      "official_url": "https://www.town.matsumae.hokkaido.jp/"
+    },
+    {
+      "code": "013323",
+      "name": "福島町",
+      "official_url": "http://www.town.fukushima.hokkaido.jp/"
+    },
+    {
+      "code": "013331",
+      "name": "知内町",
+      "official_url": "https://www.town.shiriuchi.hokkaido.jp/"
+    },
+    {
+      "code": "013340",
+      "name": "木古内町",
+      "official_url": "https://www.town.kikonai.hokkaido.jp/"
+    },
+    {
+      "code": "013374",
+      "name": "七飯町",
+      "official_url": "https://www.town.nanae.hokkaido.jp/"
+    },
+    {
+      "code": "013439",
+      "name": "鹿部町",
+      "official_url": "http://www.town.shikabe.lg.jp/"
+    },
+    {
+      "code": "013455",
+      "name": "森町",
+      "official_url": "https://www.town.hokkaido-mori.lg.jp/"
+    },
+    {
+      "code": "013463",
+      "name": "八雲町",
+      "official_url": "https://www.town.yakumo.lg.jp/"
+    },
+    {
+      "code": "013471",
+      "name": "長万部町",
+      "official_url": "http://www.town.oshamambe.lg.jp/"
+    },
+    {
+      "code": "013617",
+      "name": "江差町",
+      "official_url": "https://www.hokkaido-esashi.jp/"
+    },
+    {
+      "code": "013625",
+      "name": "上ノ国町",
+      "official_url": "http://www.town.kaminokuni.lg.jp/"
+    },
+    {
+      "code": "013633",
+      "name": "厚沢部町",
+      "official_url": "https://www.town.assabu.lg.jp/"
+    },
+    {
+      "code": "013641",
+      "name": "乙部町",
+      "official_url": "https://www.town.otobe.lg.jp/"
+    },
+    {
+      "code": "013676",
+      "name": "奥尻町",
+      "official_url": "https://www.town.okushiri.lg.jp/"
+    },
+    {
+      "code": "013706",
+      "name": "今金町",
+      "official_url": "https://www.town.imakane.lg.jp/"
+    },
+    {
+      "code": "013714",
+      "name": "せたな町",
+      "official_url": "https://www.town.setana.lg.jp/"
+    },
+    {
+      "code": "013919",
+      "name": "島牧村",
+      "official_url": "https://www.vill.shimamaki.lg.jp/"
+    },
+    {
+      "code": "013927",
+      "name": "寿都町",
+      "official_url": "http://www.town.suttu.lg.jp/"
+    },
+    {
+      "code": "013935",
+      "name": "黒松内町",
+      "official_url": "http://www.kuromatsunai.com/"
+    },
+    {
+      "code": "013943",
+      "name": "蘭越町",
+      "official_url": "http://www.town.rankoshi.hokkaido.jp/"
+    },
+    {
+      "code": "013951",
+      "name": "ニセコ町",
+      "official_url": "https://www.town.niseko.lg.jp/"
+    },
+    {
+      "code": "013960",
+      "name": "真狩村",
+      "official_url": "https://www.vill.makkari.lg.jp/"
+    },
+    {
+      "code": "013978",
+      "name": "留寿都村",
+      "official_url": "https://www.vill.rusutsu.lg.jp/"
+    },
+    {
+      "code": "013986",
+      "name": "喜茂別町",
+      "official_url": "http://www.town.kimobetsu.hokkaido.jp/"
+    },
+    {
+      "code": "013994",
+      "name": "京極町",
+      "official_url": "http://www.town-kyogoku.jp/"
+    },
+    {
+      "code": "014001",
+      "name": "倶知安町",
+      "official_url": "https://www.town.kutchan.hokkaido.jp/"
+    },
+    {
+      "code": "014010",
+      "name": "共和町",
+      "official_url": "https://www.town.kyowa.hokkaido.jp/"
+    },
+    {
+      "code": "014028",
+      "name": "岩内町",
+      "official_url": "https://www.town.iwanai.hokkaido.jp/"
+    },
+    {
+      "code": "014044",
+      "name": "神恵内村",
+      "official_url": "https://www.vill.kamoenai.hokkaido.jp/"
+    },
+    {
+      "code": "014052",
+      "name": "積丹町",
+      "official_url": "http://www.town.shakotan.hokkaido.jp/"
+    },
+    {
+      "code": "014061",
+      "name": "古平町",
+      "official_url": "http://www.town.furubira.lg.jp/"
+    },
+    {
+      "code": "014079",
+      "name": "仁木町",
+      "official_url": "http://www.town.niki.hokkaido.jp/"
+    },
+    {
+      "code": "014087",
+      "name": "余市町",
+      "official_url": "https://www.town.yoichi.hokkaido.jp/"
+    },
+    {
+      "code": "014095",
+      "name": "赤井川村",
+      "official_url": "https://www.akaigawa.com/"
+    },
+    {
+      "code": "014231",
+      "name": "南幌町",
+      "official_url": "http://www.town.nanporo.hokkaido.jp/"
+    },
+    {
+      "code": "014249",
+      "name": "奈井江町",
+      "official_url": "http://www.town.naie.hokkaido.jp/"
+    },
+    {
+      "code": "014257",
+      "name": "上砂川町",
+      "official_url": "http://town.kamisunagawa.hokkaido.jp/"
+    },
+    {
+      "code": "014273",
+      "name": "由仁町",
+      "official_url": "http://www.town.yuni.lg.jp/"
+    },
+    {
+      "code": "014281",
+      "name": "長沼町",
+      "official_url": "https://www.maoi-net.jp/"
+    },
+    {
+      "code": "014290",
+      "name": "栗山町",
+      "official_url": "https://www.town.kuriyama.hokkaido.jp/"
+    },
+    {
+      "code": "014303",
+      "name": "月形町",
+      "official_url": "https://www.town.tsukigata.hokkaido.jp/"
+    },
+    {
+      "code": "014311",
+      "name": "浦臼町",
+      "official_url": "https://www.town.urausu.hokkaido.jp/"
+    },
+    {
+      "code": "014320",
+      "name": "新十津川町",
+      "official_url": "https://www.town.shintotsukawa.lg.jp/"
+    },
+    {
+      "code": "014338",
+      "name": "妹背牛町",
+      "official_url": "https://www.town.moseushi.hokkaido.jp/"
+    },
+    {
+      "code": "014346",
+      "name": "秩父別町",
+      "official_url": "https://www.town.chippubetsu.hokkaido.jp/"
+    },
+    {
+      "code": "014362",
+      "name": "雨竜町",
+      "official_url": "https://www.town.uryu.hokkaido.jp/"
+    },
+    {
+      "code": "014371",
+      "name": "北竜町",
+      "official_url": "http://www.town.hokuryu.hokkaido.jp/"
+    },
+    {
+      "code": "014389",
+      "name": "沼田町",
+      "official_url": "https://www.town.numata.hokkaido.jp/"
+    },
+    {
+      "code": "014524",
+      "name": "鷹栖町",
+      "official_url": "https://www.town.takasu.hokkaido.jp/"
+    },
+    {
+      "code": "014532",
+      "name": "東神楽町",
+      "official_url": "https://www.town.higashikagura.lg.jp/"
+    },
+    {
+      "code": "014541",
+      "name": "当麻町",
+      "official_url": "http://town.tohma.hokkaido.jp/"
+    },
+    {
+      "code": "014559",
+      "name": "比布町",
+      "official_url": "http://www.town.pippu.hokkaido.jp/"
+    },
+    {
+      "code": "014567",
+      "name": "愛別町",
+      "official_url": "http://www.town.aibetsu.hokkaido.jp/"
+    },
+    {
+      "code": "014575",
+      "name": "上川町",
+      "official_url": "https://www.town.hokkaido-kamikawa.lg.jp/"
+    },
+    {
+      "code": "014583",
+      "name": "東川町",
+      "official_url": "https://town.higashikawa.hokkaido.jp/"
+    },
+    {
+      "code": "014591",
+      "name": "美瑛町",
+      "official_url": "https://town.biei.hokkaido.jp/"
+    },
+    {
+      "code": "014605",
+      "name": "上富良野町",
+      "official_url": "https://www.town.kamifurano.hokkaido.jp/"
+    },
+    {
+      "code": "014613",
+      "name": "中富良野町",
+      "official_url": "https://www.town.nakafurano.lg.jp/"
+    },
+    {
+      "code": "014621",
+      "name": "南富良野町",
+      "official_url": "https://www.town.minamifurano.hokkaido.jp/"
+    },
+    {
+      "code": "014630",
+      "name": "占冠村",
+      "official_url": "http://www.vill.shimukappu.lg.jp/"
+    },
+    {
+      "code": "014648",
+      "name": "和寒町",
+      "official_url": "https://www.town.wassamu.hokkaido.jp/"
+    },
+    {
+      "code": "014656",
+      "name": "剣淵町",
+      "official_url": "https://www.town.kembuchi.hokkaido.jp/"
+    },
+    {
+      "code": "014681",
+      "name": "下川町",
+      "official_url": "https://www.town.shimokawa.hokkaido.jp/"
+    },
+    {
+      "code": "014699",
+      "name": "美深町",
+      "official_url": "http://www.town.bifuka.hokkaido.jp/"
+    },
+    {
+      "code": "014702",
+      "name": "音威子府村",
+      "official_url": "https://www.vill.otoineppu.hokkaido.jp/"
+    },
+    {
+      "code": "014711",
+      "name": "中川町",
+      "official_url": "http://www.town.nakagawa.hokkaido.jp/"
+    },
+    {
+      "code": "014729",
+      "name": "幌加内町",
+      "official_url": "http://www.town.horokanai.hokkaido.jp/"
+    },
+    {
+      "code": "014818",
+      "name": "増毛町",
+      "official_url": "https://www.town.mashike.hokkaido.jp/"
+    },
+    {
+      "code": "014826",
+      "name": "小平町",
+      "official_url": "https://www.town.obira.hokkaido.jp/"
+    },
+    {
+      "code": "014834",
+      "name": "苫前町",
+      "official_url": "http://www.town.tomamae.lg.jp/"
+    },
+    {
+      "code": "014842",
+      "name": "羽幌町",
+      "official_url": "https://www.town.haboro.lg.jp/"
+    },
+    {
+      "code": "014851",
+      "name": "初山別村",
+      "official_url": "http://www.vill.shosanbetsu.lg.jp/"
+    },
+    {
+      "code": "014869",
+      "name": "遠別町",
+      "official_url": "http://www.town.embetsu.hokkaido.jp/"
+    },
+    {
+      "code": "014877",
+      "name": "天塩町",
+      "official_url": "http://www.teshiotown.hokkaido.jp/"
+    },
+    {
+      "code": "015113",
+      "name": "猿払村",
+      "official_url": "https://www.vill.sarufutsu.hokkaido.jp/"
+    },
+    {
+      "code": "015121",
+      "name": "浜頓別町",
+      "official_url": "http://www.town.hamatonbetsu.hokkaido.jp/"
+    },
+    {
+      "code": "015130",
+      "name": "中頓別町",
+      "official_url": "https://www.town.nakatombetsu.hokkaido.jp/"
+    },
+    {
+      "code": "015148",
+      "name": "枝幸町",
+      "official_url": "https://www.esashi.jp/"
+    },
+    {
+      "code": "015164",
+      "name": "豊富町",
+      "official_url": "https://www.town.toyotomi.hokkaido.jp/"
+    },
+    {
+      "code": "015172",
+      "name": "礼文町",
+      "official_url": "https://www.town.rebun.hokkaido.jp/"
+    },
+    {
+      "code": "015181",
+      "name": "利尻町",
+      "official_url": "http://www.town.rishiri.hokkaido.jp/"
+    },
+    {
+      "code": "015199",
+      "name": "利尻富士町",
+      "official_url": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/"
+    },
+    {
+      "code": "015202",
+      "name": "幌延町",
+      "official_url": "https://www.town.horonobe.lg.jp/"
+    },
+    {
+      "code": "015431",
+      "name": "美幌町",
+      "official_url": "http://www.town.bihoro.hokkaido.jp/"
+    },
+    {
+      "code": "015440",
+      "name": "津別町",
+      "official_url": "https://www.town.tsubetsu.hokkaido.jp/"
+    },
+    {
+      "code": "015458",
+      "name": "斜里町",
+      "official_url": "https://www.town.shari.hokkaido.jp/"
+    },
+    {
+      "code": "015466",
+      "name": "清里町",
+      "official_url": "https://www.town.kiyosato.hokkaido.jp/"
+    },
+    {
+      "code": "015474",
+      "name": "小清水町",
+      "official_url": "https://www.town.koshimizu.hokkaido.jp/"
+    },
+    {
+      "code": "015491",
+      "name": "訓子府町",
+      "official_url": "https://www.town.kunneppu.hokkaido.jp/"
+    },
+    {
+      "code": "015504",
+      "name": "置戸町",
+      "official_url": "http://www.town.oketo.hokkaido.jp/"
+    },
+    {
+      "code": "015521",
+      "name": "佐呂間町",
+      "official_url": "https://www.town.saroma.hokkaido.jp/"
+    },
+    {
+      "code": "015555",
+      "name": "遠軽町",
+      "official_url": "https://engaru.jp/"
+    },
+    {
+      "code": "015598",
+      "name": "湧別町",
+      "official_url": "https://www.town.yubetsu.lg.jp/"
+    },
+    {
+      "code": "015601",
+      "name": "滝上町",
+      "official_url": "https://town.takinoue.hokkaido.jp/"
+    },
+    {
+      "code": "015610",
+      "name": "興部町",
+      "official_url": "https://www.town.okoppe.lg.jp/"
+    },
+    {
+      "code": "015628",
+      "name": "西興部村",
+      "official_url": "https://www.vill.nishiokoppe.lg.jp/"
+    },
+    {
+      "code": "015636",
+      "name": "雄武町",
+      "official_url": "http://www.town.oumu.hokkaido.jp/"
+    },
+    {
+      "code": "015644",
+      "name": "大空町",
+      "official_url": "http://www.town.ozora.hokkaido.jp/"
+    },
+    {
+      "code": "015717",
+      "name": "豊浦町",
+      "official_url": "https://www.town.toyoura.hokkaido.jp/"
+    },
+    {
+      "code": "015750",
+      "name": "壮瞥町",
+      "official_url": "https://www.town.sobetsu.lg.jp/"
+    },
+    {
+      "code": "015784",
+      "name": "白老町",
+      "official_url": "http://www.town.shiraoi.hokkaido.jp/"
+    },
+    {
+      "code": "015814",
+      "name": "厚真町",
+      "official_url": "http://www.town.atsuma.lg.jp/"
+    },
+    {
+      "code": "015849",
+      "name": "洞爺湖町",
+      "official_url": "http://www.town.toyako.hokkaido.jp/"
+    },
+    {
+      "code": "015857",
+      "name": "安平町",
+      "official_url": "https://www.town.abira.lg.jp/"
+    },
+    {
+      "code": "015865",
+      "name": "むかわ町",
+      "official_url": "http://www.town.mukawa.lg.jp/"
+    },
+    {
+      "code": "016012",
+      "name": "日高町",
+      "official_url": "https://www.town.hidaka.hokkaido.jp/"
+    },
+    {
+      "code": "016021",
+      "name": "平取町",
+      "official_url": "http://www.town.biratori.hokkaido.jp/"
+    },
+    {
+      "code": "016047",
+      "name": "新冠町",
+      "official_url": "https://www.niikappu.jp/"
+    },
+    {
+      "code": "016071",
+      "name": "浦河町",
+      "official_url": "https://www.town.urakawa.hokkaido.jp/"
+    },
+    {
+      "code": "016080",
+      "name": "様似町",
+      "official_url": "http://www.samani.jp/"
+    },
+    {
+      "code": "016098",
+      "name": "えりも町",
+      "official_url": "https://www.town.erimo.lg.jp/"
+    },
+    {
+      "code": "016101",
+      "name": "新ひだか町",
+      "official_url": "https://www.shinhidaka-hokkaido.jp/"
+    },
+    {
+      "code": "016314",
+      "name": "音更町",
+      "official_url": "https://www.town.otofuke.hokkaido.jp/"
+    },
+    {
+      "code": "016322",
+      "name": "士幌町",
+      "official_url": "https://www.shihoro.jp/"
+    },
+    {
+      "code": "016331",
+      "name": "上士幌町",
+      "official_url": "https://www.kamishihoro.jp/"
+    },
+    {
+      "code": "016349",
+      "name": "鹿追町",
+      "official_url": "https://www.town.shikaoi.lg.jp/"
+    },
+    {
+      "code": "016357",
+      "name": "新得町",
+      "official_url": "https://www.shintoku-town.jp/"
+    },
+    {
+      "code": "016365",
+      "name": "清水町",
+      "official_url": "http://www.town.shimizu.hokkaido.jp/"
+    },
+    {
+      "code": "016373",
+      "name": "芽室町",
+      "official_url": "https://www.memuro.net/"
+    },
+    {
+      "code": "016381",
+      "name": "中札内村",
+      "official_url": "http://www.vill.nakasatsunai.hokkaido.jp/"
+    },
+    {
+      "code": "016390",
+      "name": "更別村",
+      "official_url": "https://www.sarabetsu.jp/"
+    },
+    {
+      "code": "016411",
+      "name": "大樹町",
+      "official_url": "https://www.town.taiki.hokkaido.jp/"
+    },
+    {
+      "code": "016420",
+      "name": "広尾町",
+      "official_url": "https://www.town.hiroo.lg.jp/"
+    },
+    {
+      "code": "016438",
+      "name": "幕別町",
+      "official_url": "https://www.town.makubetsu.lg.jp/"
+    },
+    {
+      "code": "016446",
+      "name": "池田町",
+      "official_url": "https://www.town.hokkaido-ikeda.lg.jp/"
+    },
+    {
+      "code": "016454",
+      "name": "豊頃町",
+      "official_url": "http://www.toyokoro.jp/"
+    },
+    {
+      "code": "016462",
+      "name": "本別町",
+      "official_url": "https://www.town.honbetsu.hokkaido.jp/"
+    },
+    {
+      "code": "016471",
+      "name": "足寄町",
+      "official_url": "https://www.town.ashoro.hokkaido.jp/"
+    },
+    {
+      "code": "016489",
+      "name": "陸別町",
+      "official_url": "https://www.rikubetsu.jp/"
+    },
+    {
+      "code": "016497",
+      "name": "浦幌町",
+      "official_url": "https://www.urahoro.jp/"
+    },
+    {
+      "code": "016616",
+      "name": "釧路町",
+      "official_url": "http://www.town.kushiro.lg.jp/"
+    },
+    {
+      "code": "016624",
+      "name": "厚岸町",
+      "official_url": "https://www.akkeshi-town.jp/"
+    },
+    {
+      "code": "016632",
+      "name": "浜中町",
+      "official_url": "https://www.townhamanaka.jp/"
+    },
+    {
+      "code": "016641",
+      "name": "標茶町",
+      "official_url": "http://www.town.shibecha.hokkaido.jp/"
+    },
+    {
+      "code": "016659",
+      "name": "弟子屈町",
+      "official_url": "https://www.town.teshikaga.hokkaido.jp/"
+    },
+    {
+      "code": "016675",
+      "name": "鶴居村",
+      "official_url": "https://www.vill.tsurui.lg.jp/"
+    },
+    {
+      "code": "016683",
+      "name": "白糠町",
+      "official_url": "https://www.town.shiranuka.lg.jp/"
+    },
+    {
+      "code": "016918",
+      "name": "別海町",
+      "official_url": "https://betsukai.jp/"
+    },
+    {
+      "code": "016926",
+      "name": "中標津町",
+      "official_url": "https://www.nakashibetsu.jp/"
+    },
+    {
+      "code": "016934",
+      "name": "標津町",
+      "official_url": "https://www.shibetsutown.jp/"
+    },
+    {
+      "code": "016942",
+      "name": "羅臼町",
+      "official_url": "http://www.rausu-town.jp/"
+    }
+  ]
+}
