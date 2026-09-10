@@ -40,6 +40,17 @@ sources:
       bank_url: https://akiya.city.tomi.nagano.jp/
       bank_label: 空き家バンク
       map_query: 長野県東御市
+      subsidies:
+        - name: 東御市UIJターン就業・創業移住支援事業補助金
+          kind: 移住
+          url: https://www.city.tomi.nagano.jp/category/ijuusya/153546.html
+          summary: 東京圏・愛知県・大阪府から東御市に移住し、就業または創業した方を対象に、国・長野県・東御市が共同で交付
+          checked_on: 2026-09-10
+        - name: 老朽危険空き家解体事業補助金
+          kind: 解体
+          url: https://www.city.tomi.nagano.jp/category/jyokyokaitai/165902.html
+          summary: 老朽化した危険な空き家の解体工事に要する経費が対象（家財の撤去・運搬・処分の費用は除く）
+          checked_on: 2026-09-10
 
   - id: nagano-saku
     name: 佐久市空き家バンク
@@ -75,6 +86,17 @@ sources:
       bank_url: https://39ijyu.com/index2.php?kubun=IE
       bank_label: 空き家バンク
       map_query: 長野県佐久市
+      subsidies:
+        - name: 令和8年度佐久市UIJターン就業・創業移住支援事業補助金
+          kind: 移住
+          url: https://www.city.saku.nagano.jp/kanko/ijyuteijyu/shien/UIJ-hojyokin.html
+          summary: 東京圏などから佐久市へ移住し、就業または創業した方への移住支援金（詳細は市の案内ページから外部サイトへ）
+          checked_on: 2026-09-10
+        - name: 令和8年度 佐久市移住検討者滞在費補助金
+          kind: 移住
+          url: https://www.city.saku.nagano.jp/kanko/ijyuteijyu/shien/saku_taizaihi_hojokin.html
+          summary: 移住を検討して佐久市に滞在する方の滞在費を補助
+          checked_on: 2026-09-10
 
   - id: nagano-iiyama
     name: 飯山市空き家バンク
@@ -144,6 +166,18 @@ sources:
       bank_url: https://www.iju-omachi.jp/akiyabank.html
       bank_label: 空き家バンク
       map_query: 長野県大町市
+      subsidies:
+        - name: 移住推進空き家改修事業補助金
+          kind: 改修
+          url: https://www.iju-omachi.jp/shien.html
+          summary: 大町市に移住する方が空き家を購入または賃借して入居するための改修費の一部を補助
+          checked_on: 2026-09-10
+        - name: マイホーム取得助成事業補助金
+          kind: 取得
+          url: https://www.iju-omachi.jp/shien.html
+          summary: 新築や売家の購入でマイホームを取得した方への補助
+          amount_text: 新築で最大45万円、購入で最大40万円
+          checked_on: 2026-09-10
 
   - id: nagano-ina
     name: 伊那市空き家バンク（伊那地域空き家バンク）
