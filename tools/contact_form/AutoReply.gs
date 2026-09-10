@@ -568,7 +568,6 @@ function previewReply() {
     receivedAt: new Date(),
     name: '山田 太郎',
     email: 'example@example.com',
-    enteredEmail: 'example@example.com',
     selectedCategory: 'その他',
     body:
       'https://akiya-atlas.com/nagano/202011/ に載っている物件を見学したいのですが、いつ行けますか。' +

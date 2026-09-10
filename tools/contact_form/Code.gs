@@ -2,12 +2,12 @@
  * 空き家アトラス お問い合わせフォーム（Google Apps Script）。
  *
  * setup() を一度実行すると、次をまとめて行う:
- *   1. Google フォームの作成（質問: お名前 / メールアドレス / 種別（選択）/ 内容）
- *   2. メールアドレス収集の有効化
- *   3. 回答先スプレッドシートの作成とフォームへのリンク、「自動返信ログ」シートの用意
- *   4. フォーム送信時トリガー（onFormSubmit）の登録
- *   5. GitHub のラベル（takedown / municipality / needs-human）の用意（GITHUB_TOKEN が設定済みのとき）
- *   6. 完了時にフォーム URL（回答用・編集用）と回答スプレッドシートの URL をログに出力
+ *   1. Google フォームの作成（質問: お名前 / メールアドレス（返信先）/ 種別（選択）/ 内容）。
+ *      回答者に Google ログインは求めない（メールアドレスの自動収集は使わず、返信は入力欄のアドレスにだけ送る）
+ *   2. 回答先スプレッドシートの作成とフォームへのリンク、「自動返信ログ」シートの用意
+ *   3. フォーム送信時トリガー（onFormSubmit）の登録
+ *   4. GitHub のラベル（takedown / municipality / needs-human）の用意（GITHUB_TOKEN が設定済みのとき）
+ *   5. 完了時にフォーム URL（回答用・編集用）と回答スプレッドシートの URL をログに出力
  *
  * 送信時の処理（AI による分類・自動返信・Issue 作成・ログ記録）は AutoReply.gs にある。
  * API キーと GitHub トークンはスクリプトプロパティにだけ置き、コードには書かない（README の表）。
@@ -153,7 +153,7 @@ function getOrCreateForm_(props) {
   }
   const form = FormApp.create(CONFIG.formTitle);
   form.setDescription(CONFIG.formDescription);
-  form.setCollectEmail(true); // メールアドレス収集を有効化（回答にメールアドレス列が付く）
+  // メールアドレスの自動収集（setCollectEmail）は使わない。回答者に Google ログインを求めず、返信先は入力欄の値だけを使う
   form.setLimitOneResponsePerUser(false);
   form.setAllowResponseEdits(false);
   form.setConfirmationMessage(CONFIG.confirmationMessage);
@@ -244,9 +244,8 @@ function onFormSubmit(e) {
   const submission = {
     receivedAt: response.getTimestamp(),
     name: (answers[Q_NAME] || '').trim(),
-    // 返信先: フォームが収集した（Google アカウントで確認済みの）メールを優先し、無ければ入力欄の値
-    email: (response.getRespondentEmail() || answers[Q_EMAIL] || '').trim(),
-    enteredEmail: (answers[Q_EMAIL] || '').trim(),
+    // 返信先は入力欄「メールアドレス（返信先）」の値だけ（フォームのメールアドレス自動収集は使っていない）
+    email: (answers[Q_EMAIL] || '').trim(),
     selectedCategory: answers[Q_CATEGORY] || '',
     body: answers[Q_BODY] || '',
   };
