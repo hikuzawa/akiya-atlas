@@ -1,0 +1,148 @@
+{
+  "accuracy": {
+    "address": {
+      "correct": 2,
+      "rate": 0.667,
+      "total": 3
+    },
+    "built_year": {
+      "correct": 3,
+      "rate": 1.0,
+      "total": 3
+    },
+    "floor_area_m2": {
+      "correct": 3,
+      "rate": 1.0,
+      "total": 3
+    },
+    "land_area_m2": {
+      "correct": 3,
+      "rate": 1.0,
+      "total": 3
+    },
+    "layout": {
+      "correct": 2,
+      "rate": 1.0,
+      "total": 2
+    },
+    "price": {
+      "correct": 3,
+      "rate": 1.0,
+      "total": 3
+    },
+    "rent_monthly": {
+      "correct": 1,
+      "rate": 1.0,
+      "total": 1
+    },
+    "structure": {
+      "correct": 1,
+      "rate": 1.0,
+      "total": 1
+    }
+  },
+  "cases": 3,
+  "metrics": {
+    "fields": {
+      "address": {
+        "not_found": 0,
+        "notes": {},
+        "parsed": 3,
+        "quote_not_in_source": 0,
+        "total": 3,
+        "unparsed": 0
+      },
+      "built_year": {
+        "not_found": 1,
+        "notes": {},
+        "parsed": 2,
+        "quote_not_in_source": 0,
+        "total": 3,
+        "unparsed": 0
+      },
+      "floor_area_m2": {
+        "not_found": 0,
+        "notes": {},
+        "parsed": 3,
+        "quote_not_in_source": 0,
+        "total": 3,
+        "unparsed": 0
+      },
+      "land_area_m2": {
+        "not_found": 0,
+        "notes": {},
+        "parsed": 3,
+        "quote_not_in_source": 0,
+        "total": 3,
+        "unparsed": 0
+      },
+      "layout": {
+        "not_found": 0,
+        "notes": {},
+        "parsed": 3,
+        "quote_not_in_source": 0,
+        "total": 3,
+        "unparsed": 0
+      },
+      "listing_no": {
+        "not_found": 0,
+        "notes": {},
+        "parsed": 3,
+        "quote_not_in_source": 0,
+        "total": 3,
+        "unparsed": 0
+      },
+      "price": {
+        "not_found": 0,
+        "notes": {},
+        "parsed": 3,
+        "quote_not_in_source": 0,
+        "total": 3,
+        "unparsed": 0
+      },
+      "rent_monthly": {
+        "not_found": 3,
+        "notes": {},
+        "parsed": 0,
+        "quote_not_in_source": 0,
+        "total": 3,
+        "unparsed": 0
+      },
+      "status_text": {
+        "not_found": 3,
+        "notes": {},
+        "parsed": 0,
+        "quote_not_in_source": 0,
+        "total": 3,
+        "unparsed": 0
+      },
+      "structure": {
+        "not_found": 1,
+        "notes": {
+          "quote_not_in_source": 1
+        },
+        "parsed": 1,
+        "quote_not_in_source": 1,
+        "total": 3,
+        "unparsed": 0
+      }
+    },
+    "flags": {},
+    "items": 3,
+    "pages": 3,
+    "summary_replaced": 0,
+    "truncated_pages": 0
+  },
+  "mismatches": [
+    {
+      "case": "tomi_detail",
+      "expected": "東御市滋野",
+      "field": "address",
+      "got": "東御市滋野乙4000-1",
+      "key": "No.322"
+    }
+  ],
+  "recorded": [],
+  "skipped": [],
+  "unmatched_expected": []
+}
