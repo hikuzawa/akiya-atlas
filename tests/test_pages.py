@@ -215,13 +215,8 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
     assert "準備中" in owners and "/go/" not in owners  # ダミーリンクを置かない
     assert 'data-generated="sitemill.charts"' in owners
 
-    redirects = (dist / "_redirects").read_text(encoding="utf-8")
-    host = ws.site.base_url.split("//", 1)[1]
-    # www → apex と pages.dev → apex の 301 だけを出す。ASP 未契約の間は /go/ を出さない
-    assert redirects.splitlines() == [
-        f"www.{host}/* {ws.site.base_url}/:splat 301",
-        f"akiya-atlas-asb.pages.dev/* {ws.site.base_url}/:splat 301",
-    ]
+    # ASP 未契約の間は /go/ を出さない。www / pages.dev → apex は Bulk Redirects で行う
+    assert (dist / "_redirects").read_text(encoding="utf-8") == ""
     sitemap = (dist / "sitemap.xml").read_text(encoding="utf-8")
     assert f"{ws.site.base_url}/nagano/202193-tomi/322/" in sitemap  # 基準 URL は site.toml に従う
 

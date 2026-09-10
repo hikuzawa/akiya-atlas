@@ -6,7 +6,7 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 ## 今すぐ必要（縦断パイプラインを完走させるため）
 1. ~~**Anthropic API キー**を `akiya-atlas/.env` に書く~~ → 済み（2026-09-10）。**ただし鍵の作り直しを推奨**: 一度 `.env.example` に書かれた値がローカルの git 履歴に入り（push 前に履歴から除去済み）、監査ログにも表示されたため。作り直したら `.env` を更新し、下の表のコマンドで GitHub Secret も更新する。
    これが無いと `sitemill extract` は「.env に何を書くか」を表示して止まる。抽出モデルは `site.toml` の `[llm] model`（既定 `claude-haiku-4-5`）で変えられる。
-2. **運営者名と連絡手段**を決め、`site.toml` の `[operator]` に書く（現在は「準備中」）。全ページのフッターと `/about/` に出る。
+2. **運営者名と連絡手段**を決め、`site.toml` の `[operator]` に書く（現在は「準備中」）。全ページのフッターと `/about/` に出る。連絡手段は `tools/contact_form/` の Apps Script（`setup()` を一度実行するとフォーム・回答シート・送信時トリガーができ、ログにフォーム URL が出る。手順は同ディレクトリの README）で作り、その URL を `contact` に入れる。
 
 ## 公開までに必要
 3. ~~**GitHub リポジトリ**を作成し push する~~ → 済み（2026-09-10）。sitemill は public（https://github.com/hikuzawa/sitemill）、akiya-atlas は private（https://github.com/hikuzawa/akiya-atlas）。sitemill が public のため、CI からの sitemill checkout に読み取り用 PAT は不要。
@@ -15,16 +15,21 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 5. ~~**GitHub Secrets** を akiya-atlas に登録する~~ → 済み（2026-09-10）: `ANTHROPIC_API_KEY`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`。
 6. **Cloudflare Web Analytics** を有効にしてビーコントークンを取得し、Secrets の `CF_WEB_ANALYTICS_TOKEN` と `.env` に入れる（無くても動く。計測タグが出ないだけ）。
 7. **Google Maps Platform**: Maps Embed API を有効にし、HTTP リファラで `akiya-atlas-asb.pages.dev` と `akiya-atlas.com` に制限した公開キーを発行して `GOOGLE_MAPS_EMBED_KEY` に入れる（無い間は地図は外部リンクにフォールバック）。
-8. **ドメイン `akiya-atlas.com`** を取得したら、Cloudflare Pages のプロジェクト `akiya-atlas` にカスタムドメイン `akiya-atlas.com` と `www.akiya-atlas.com` を追加する。その後の AI 側の作業（`site.toml` の `base_url` を `https://akiya-atlas.com` に差し替え、www → apex の 301 を `_redirects` に出す、再 deploy）は準備済みで、「ドメイン設定した」の合図で適用する。配置前の検査 `.github/scripts/check_public_urls.py` が canonical / sitemap / robots の古いホスト残りを止める。
+8. ~~**ドメイン `akiya-atlas.com`** を取得し、Pages にカスタムドメイン（apex と www）を追加する~~ → 済み（2026-09-10）。`site.toml` の `base_url` は `https://akiya-atlas.com` に切替済みで、CI が配置前に本番ドメインを固定検査する。
+9. **www と pages.dev から apex への 301（Bulk Redirects、約 5 分）**。Pages の `_redirects` はドメイン単位のリダイレクトに非対応（公式の Advanced redirects 表で ❌。wrangler はエラーを出さずに受理するが効かない）なので、Cloudflare ダッシュボードのアカウントレベル「Bulk redirects」で行う。
+   1. 「Create Bulk Redirect List」で 2 件を登録: Source `https://www.akiya-atlas.com` → Target `https://akiya-atlas.com`、Status 301。Source `https://akiya-atlas-asb.pages.dev` → Target `https://akiya-atlas.com`、Status 301。各項目の「Edit parameters」で「Subpath matching」「Preserve path suffix」「Preserve query string」を有効にする（「Include subdomains」は無効のまま。プレビュー `<hash>.akiya-atlas-asb.pages.dev` を巻き込まないため）。
+   2. 「Create Bulk Redirect Rule」でそのリストを選び「Save and Deploy」。
+   3. 確認: `curl -sI https://www.akiya-atlas.com/nagano/?x=1` が 301 で `location: https://akiya-atlas.com/nagano/?x=1`、`curl -sI https://akiya-atlas-asb.pages.dev/` が 301 で apex を指す。
+   www だけならゾーンの Redirect Rules テンプレート「Redirect from WWW to Root」でもよいが、pages.dev は Bulk Redirects でしか扱えない。
 
 ## 収益化のために必要
-9. **ASP アカウント**（不動産一括査定・解体一括見積・空き家買取の各案件）を契約し、計測 URL を `src/akiya_atlas/affiliates.py` の `Offer.url` に入れる。入れるまで CTA は「準備中」表示。
-10. 各 ASP の掲載ルール（「広告」表記など）に合わせてテンプレートの文言を確認する。
+10. **ASP アカウント**（不動産一括査定・解体一括見積・空き家買取の各案件）を契約し、計測 URL を `src/akiya_atlas/affiliates.py` の `Offer.url` に入れる。入れるまで CTA は「準備中」表示。
+11. 各 ASP の掲載ルール（「広告」表記など）に合わせてテンプレートの文言を確認する。
 
 ## 任意・後で
-11. Street View を使う場合は Geocoding API の有効化（所在地から緯度経度を得るため）。
-12. 公式 SNS（YouTube / Instagram / X）の埋め込みを使う場合、Instagram と X は oEmbed の利用登録が要る。
-13. Raspberry Pi で回す場合は uv を入れ、`akiya-atlas` を clone して `.env` を置き、cron で `uv run sitemill run` を実行する。
+12. Street View を使う場合は Geocoding API の有効化（所在地から緯度経度を得るため）。
+13. 公式 SNS（YouTube / Instagram / X）の埋め込みを使う場合、Instagram と X は oEmbed の利用登録が要る。
+14. Raspberry Pi で回す場合は uv を入れ、`akiya-atlas` を clone して `.env` を置き、cron で `uv run sitemill run` を実行する。
 
 ## AI 側で次に行う作業（人の作業を待たずに進められるもの）
 - 伊那市の物件情報サイト（SPA）の JSON API の有無と規約確認。使えなければ link_only のまま

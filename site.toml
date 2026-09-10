@@ -2,7 +2,7 @@
 [site]
 id = "akiya-atlas"
 name = "空き家アトラス"
-# 基準 URL はここ 1 か所だけで差し替える。canonical / sitemap / robots / www→apex の 301 はここから決まる。
+# 基準 URL はここ 1 か所だけで差し替える。canonical / sitemap / robots はここから決まる。
 # Pages の既定ホストは akiya-atlas-asb.pages.dev（akiya-atlas.pages.dev は第三者のプロジェクトが使用中で取得できない）。
 # CI（pipeline.yml）は配置前に生成物がこの値を指すこと、この値が本番ドメインであること（--expect-base）を検査する。
 base_url = "https://akiya-atlas.com"

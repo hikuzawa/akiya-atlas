@@ -17,7 +17,7 @@ from sitemill.parse.jp.address import has_street_number, strip_street_number
 from sitemill.settings import Workspace
 from sitemill.store.records import RecordStore
 
-from akiya_atlas import affiliates, pages, site_redirects
+from akiya_atlas import affiliates, pages
 from akiya_atlas.data import Dataset, load_municipalities, load_sources, records_path
 from akiya_atlas.schema import normalize_listing_no, record_id_for
 from akiya_atlas.spec import spec_for_kind
@@ -225,7 +225,9 @@ class AkiyaAtlasService:
         return pages.search_index(ws, Dataset.load(ws))
 
     def redirects(self, ws: Workspace) -> list[Redirect]:
-        return [*site_redirects.for_site(ws.site.base_url), *affiliates.redirects()]
+        # www / pages.dev → apex の 301 は _redirects では効かない（ドメイン単位は非対応）。
+        # Cloudflare の Bulk Redirects で行う（docs/human-tasks.md 9）。ここは ASP の /go/ だけ
+        return affiliates.redirects()
 
     def eval_dir(self, ws: Workspace) -> Path | None:
         return ws.fixtures_dir / "eval"
