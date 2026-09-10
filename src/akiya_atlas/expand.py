@@ -676,7 +676,9 @@ def _flag_shared_official_urls(findings: list[MunicipalityFinding]) -> None:
     by_host: dict[str, list[MunicipalityFinding]] = {}
     for f in findings:
         if f.official_url and f.policy != "pending":
-            by_host.setdefault(host_of(f.official_url), []).append(f)
+            # official_url はホスト名だけのことも URL のこともある
+            key = host_of(f.official_url) or f.official_url.lower()
+            by_host.setdefault(key, []).append(f)
     for host, group in by_host.items():
         if len(group) < 2:
             continue

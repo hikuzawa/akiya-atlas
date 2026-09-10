@@ -228,12 +228,20 @@ def test_two_municipalities_on_one_official_site_go_to_human_review() -> None:
             confidence=0.6,
         )
 
+    # decide が入れる official_url はホスト名だけ（スキーム無し）
     findings = [
-        _f("014036", "泊村", "https://www.vill.tomari.hokkaido.jp/"),
-        _f("016969", "泊村", "https://www.vill.tomari.hokkaido.jp/"),
-        _f("012025", "函館市", "https://www.city.hakodate.hokkaido.jp/"),
+        _f("014036", "泊村", "www.vill.tomari.hokkaido.jp"),
+        _f("016969", "泊村", "www.vill.tomari.hokkaido.jp"),
+        _f("012025", "函館市", "www.city.hakodate.hokkaido.jp"),
     ]
     _flag_shared_official_urls(findings)
     assert [f.policy for f in findings] == ["pending", "pending", "link_only"]
     assert findings[0].bank_url is None and "取り違え" in findings[0].reason
-    assert findings[2].bank_url == "https://www.city.hakodate.hokkaido.jp/"
+    assert findings[2].bank_url == "www.city.hakodate.hokkaido.jp"
+    # URL の形でも同じように働く
+    urls = [
+        _f("014036", "泊村", "https://www.vill.tomari.hokkaido.jp/"),
+        _f("016969", "泊村", "https://www.vill.tomari.hokkaido.jp/"),
+    ]
+    _flag_shared_official_urls(urls)
+    assert [f.policy for f in urls] == ["pending", "pending"]
