@@ -9,11 +9,10 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 2. **運営者名と連絡手段**を決め、`site.toml` の `[operator]` に書く（現在は「準備中」）。全ページのフッターと `/about/` に出る。
 
 ## 公開までに必要
-3. ~~**GitHub リポジトリ**（private）を作成し push する~~ → 済み（2026-09-10、https://github.com/hikuzawa/sitemill と https://github.com/hikuzawa/akiya-atlas）。
+3. ~~**GitHub リポジトリ**を作成し push する~~ → 済み（2026-09-10）。sitemill は public（https://github.com/hikuzawa/sitemill）、akiya-atlas は private（https://github.com/hikuzawa/akiya-atlas）。sitemill が public のため、CI からの sitemill checkout に読み取り用 PAT は不要。
    両リポジトリの git 作者設定はローカルで済ませてある。
 4. **Cloudflare アカウント**と **Pages プロジェクト `akiya-atlas`**（Direct Upload）を作る。API トークン（Pages 編集権限）とアカウント ID を発行する。
 5. **GitHub Secrets** を akiya-atlas に登録する: `ANTHROPIC_API_KEY`（済み）, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`。
-   sitemill が private の場合、akiya-atlas のワークフローが sitemill を checkout できるよう `SITEMILL_READ_TOKEN`（sitemill 読み取り権限の fine-grained PAT）も登録する。
 6. **Cloudflare Web Analytics** を有効にしてビーコントークンを取得し、Secrets の `CF_WEB_ANALYTICS_TOKEN` と `.env` に入れる（無くても動く。計測タグが出ないだけ）。
 7. **Google Maps Platform**: Maps Embed API を有効にし、HTTP リファラで `akiya-atlas.pages.dev` と `akiya-atlas.com` に制限した公開キーを発行して `GOOGLE_MAPS_EMBED_KEY` に入れる（無い間は地図は外部リンクにフォールバック）。
 8. **ドメイン `akiya-atlas.com`** を取得したら、Cloudflare Pages にカスタムドメインを設定し、`site.toml` の `base_url` を 1 行差し替える。
@@ -41,7 +40,6 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 | `ANTHROPIC_API_KEY` | Anthropic Console → API Keys。この環境の `.env` から登録済み。鍵を作り直したら再実行 | `grep '^ANTHROPIC_API_KEY=' .env \| cut -d= -f2- \| gh secret set ANTHROPIC_API_KEY --repo hikuzawa/akiya-atlas` |
 | `CLOUDFLARE_API_TOKEN` | Cloudflare ダッシュボード → My Profile → API Tokens → Create Token → テンプレート「Cloudflare Pages — Edit」（Account Resources に対象アカウント） | `gh secret set CLOUDFLARE_API_TOKEN --repo hikuzawa/akiya-atlas`（プロンプトに貼り付け） |
 | `CLOUDFLARE_ACCOUNT_ID` | Cloudflare ダッシュボード → Workers & Pages の概要ページ右側「Account ID」 | `gh secret set CLOUDFLARE_ACCOUNT_ID --repo hikuzawa/akiya-atlas` |
-| `SITEMILL_READ_TOKEN` | GitHub → Settings → Developer settings → Personal access tokens → Fine-grained → Repository access を `hikuzawa/sitemill` のみ、Permissions は Contents: Read-only（有効期限を設定） | `gh secret set SITEMILL_READ_TOKEN --repo hikuzawa/akiya-atlas` |
 | `GOOGLE_MAPS_EMBED_KEY`（任意） | Google Cloud Console → APIs & Services → Credentials。Maps Embed API のみ、HTTP リファラで制限 | `gh secret set GOOGLE_MAPS_EMBED_KEY --repo hikuzawa/akiya-atlas` |
 | `CF_WEB_ANALYTICS_TOKEN`（任意） | Cloudflare → Web Analytics → サイト追加 → JS スニペット内の token | `gh secret set CF_WEB_ANALYTICS_TOKEN --repo hikuzawa/akiya-atlas` |
 

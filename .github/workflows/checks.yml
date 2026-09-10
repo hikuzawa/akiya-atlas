@@ -1,5 +1,5 @@
 # push / PR ごとに lint・テスト・秘密の全履歴スキャンを行う。
-# sitemill が private の間は SITEMILL_READ_TOKEN（sitemill 読み取り権限の PAT）が要る。public になれば不要。
+# sitemill は public なので、既定の github.token で checkout できる。
 name: checks
 
 on:
@@ -22,7 +22,6 @@ jobs:
         with:
           repository: hikuzawa/sitemill
           path: sitemill
-          token: ${{ secrets.SITEMILL_READ_TOKEN || github.token }}
       - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true

@@ -9,6 +9,12 @@
 
 ## 使い方
 
+clone 後、まずコミット前フック（秘密の混入を止める）を有効化する:
+
+```
+git config core.hooksPath .githooks
+```
+
 ```
 cp .env.example .env        # ANTHROPIC_API_KEY などを手で書く
 uv sync
