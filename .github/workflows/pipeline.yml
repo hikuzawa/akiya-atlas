@@ -92,7 +92,8 @@ jobs:
 
       - name: 公開 URL の検査（canonical / sitemap / robots が site.toml の base_url を指す）
         working-directory: akiya-atlas
-        run: uv run python .github/scripts/check_public_urls.py
+        # 本番ドメインを固定する。base_url を変えるときはここも一緒に変える
+        run: uv run python .github/scripts/check_public_urls.py --expect-base https://akiya-atlas.com
 
       - name: Eval (fixture、劣化検知)
         working-directory: akiya-atlas

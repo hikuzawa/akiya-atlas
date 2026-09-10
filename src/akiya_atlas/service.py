@@ -17,7 +17,7 @@ from sitemill.parse.jp.address import has_street_number, strip_street_number
 from sitemill.settings import Workspace
 from sitemill.store.records import RecordStore
 
-from akiya_atlas import affiliates, pages
+from akiya_atlas import affiliates, pages, site_redirects
 from akiya_atlas.data import Dataset, load_municipalities, load_sources, records_path
 from akiya_atlas.schema import normalize_listing_no, record_id_for
 from akiya_atlas.spec import spec_for_kind
@@ -225,7 +225,7 @@ class AkiyaAtlasService:
         return pages.search_index(ws, Dataset.load(ws))
 
     def redirects(self, ws: Workspace) -> list[Redirect]:
-        return affiliates.redirects()
+        return [*site_redirects.www_to_apex(ws.site.base_url), *affiliates.redirects()]
 
     def eval_dir(self, ws: Workspace) -> Path | None:
         return ws.fixtures_dir / "eval"

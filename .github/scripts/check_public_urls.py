@@ -26,10 +26,15 @@ def _under(url: str, base: str) -> bool:
     return url == base or url.startswith(base + "/")
 
 
-def check(site_toml: Path, dist: Path) -> tuple[list[str], str]:
-    """問題の一覧と、通ったときの要約 1 行を返す。"""
+def check(site_toml: Path, dist: Path, *, expect_base: str | None = None) -> tuple[list[str], str]:
+    """問題の一覧と、通ったときの要約 1 行を返す。
+
+    expect_base を渡すと、base_url がその値であることも要求する（本番ドメインの固定）。
+    """
     base = str(tomllib.loads(site_toml.read_text(encoding="utf-8"))["site"]["base_url"]).rstrip("/")
     problems: list[str] = []
+    if expect_base and base != expect_base.rstrip("/"):
+        problems.append(f"site.toml の base_url が本番ドメイン {expect_base} ではない: {base!r}")
     if not re.match(r"^https://[^/]+$", base):
         problems.append(f"site.toml の base_url が https://ホスト の形ではない: {base!r}")
     if not dist.is_dir():
@@ -95,10 +100,15 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--site", default="site.toml", type=Path)
     ap.add_argument("--dist", default="dist", type=Path)
+    ap.add_argument(
+        "--expect-base",
+        default=None,
+        help="base_url がこの値であることも要求する（本番ドメインの固定。例: https://akiya-atlas.com）",
+    )
     args = ap.parse_args(argv)
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")  # Windows の cp932 端末でも落ちない
-    problems, summary = check(args.site, args.dist)
+    problems, summary = check(args.site, args.dist, expect_base=args.expect_base)
     if problems:
         print(f"公開 URL の検査に失敗（{len(problems)} 件）:")
         for p in problems[:50]:
