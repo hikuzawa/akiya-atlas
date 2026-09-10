@@ -1,0 +1,9 @@
+#!/bin/sh
+# コミット前に、秘密らしき文字列と .env の混入を止める。
+# 有効化（clone 後に一度）: git config core.hooksPath .githooks
+# gitleaks が入っていれば併用する。無くても sitemill scan-secrets が動く。
+set -e
+if command -v gitleaks >/dev/null 2>&1; then
+  gitleaks protect --staged --redact --no-banner
+fi
+uv run --quiet sitemill scan-secrets --staged

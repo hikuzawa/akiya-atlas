@@ -25,6 +25,8 @@ sitemill の最初の利用者。自治体が独自に運営する空き家バ�
 - 実在の物件・場所を AI 画像生成で描かない。図解は SVG のコード生成に限り「自動生成」と明記する
 - 所有者向け CTA は ASP 契約が無い間は「準備中」。ダミーリンクは置かない
 - 秘密情報は `.env` にだけ置く（手で書く。パスワードマネージャーや環境変数を探索しない）。鍵が無ければ止めて「.env に何を書くか」を提示する
+- `.env.example` にはプレースホルダー（空の値）だけを置く。値を書いた時点でコミット前フックが止める
+- コミット前フックは `.githooks/pre-commit`（`uv run sitemill scan-secrets --staged`、gitleaks があれば併用）。clone 後に一度 `git config core.hooksPath .githooks` で有効化する。CI でも全履歴を走査する
 - 取得した生 HTML はコミットしない。テストに要る数ページだけ `tests/fixtures/html/` に置く
 - sitemill は今のフェーズでは `../sitemill` への editable 依存。安定したら git タグ固定に切り替える（ADR 0006）
 - 区切りごとに `uv run pytest` と `uv run ruff check` を通してからコミットする。コミットはこのディレクトリ内で行う

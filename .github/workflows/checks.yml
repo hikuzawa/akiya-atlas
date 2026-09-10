@@ -1,0 +1,47 @@
+# push / PR ごとに lint・テスト・秘密の全履歴スキャンを行う。
+# sitemill が private の間は SITEMILL_READ_TOKEN（sitemill 読み取り権限の PAT）が要る。public になれば不要。
+name: checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: akiya-atlas
+          fetch-depth: 0 # 履歴スキャンのため全履歴を取る
+      - uses: actions/checkout@v4
+        with:
+          repository: hikuzawa/sitemill
+          path: sitemill
+          token: ${{ secrets.SITEMILL_READ_TOKEN || github.token }}
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - working-directory: akiya-atlas
+        run: uv sync --frozen
+      - working-directory: akiya-atlas
+        run: uv run ruff check src tests
+      - working-directory: akiya-atlas
+        run: uv run pytest -q
+      - name: Secret scan (全履歴)
+        working-directory: akiya-atlas
+        run: uv run sitemill scan-secrets --history
+
+  gitleaks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
