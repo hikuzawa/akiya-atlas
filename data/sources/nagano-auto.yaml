@@ -1,0 +1,241 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: nagano-202070
+  name: 須坂市空き家バンク
+  operator: 須坂市
+  operator_kind: municipality
+  official_url: https://www.city.suzaka.nagano.jp/
+  policy: link_only
+  municipality:
+    code: '202070'
+    name: 須坂市
+    prefecture: 長野県
+    prefecture_slug: nagano
+    slug: '202070'
+    bank_url: https://rakuen-akiya.jp/
+    bank_status: third_party_only
+    map_query: 長野県須坂市
+    bank_note: 物件は民間プラットフォームで公開されています。本サイトでは巡回・要約せず、リンクのみ掲載します。
+  operator_evidence:
+    quote: 公式サイト（www.city.suzaka.nagano.jp）から空き家バンクとして案内されているリンク
+    url: www.city.suzaka.nagano.jp
+    checked_on: '2026-09-10'
+  external_links:
+  - label: ' '
+    url: https://rakuen-akiya.jp/
+  - label: rakuen-akiya.jp
+    url: https://rakuen-akiya.jp/contact/
+  - label: 1013 件
+    url: https://rakuen-akiya.jp/housesearch/all/
+  - label: お気に入り
+    url: https://rakuen-akiya.jp/favorite/
+  - label: 閲覧履歴
+    url: https://rakuen-akiya.jp/history/
+  - label: 空き家・空き地をさがす
+    url: https://rakuen-akiya.jp/housesearch/
+  - label: 空き家・空き地バンクとは
+    url: https://rakuen-akiya.jp/about/
+  - label: 空き家・空き地を提供
+    url: https://rakuen-akiya.jp/provide/
+  - label: 補助金・支援制度
+    url: https://rakuen-akiya.jp/assist/
+  - label: 市町村・不動産会社を探す
+    url: https://rakuen-akiya.jp/search/
+  - label: rakuen-akiya.jp
+    url: https://rakuen-akiya.jp/infomation/%E7%9C%8C%E5%86%85%E3%81%AE%E7%A7%BB%E4%BD%8F%E3%81%8A%E8%A9%A6%E3%81%97%E4%BD%8F%E5%AE%85/
+  - label: rakuen-akiya.jp
+    url: https://rakuen-akiya.jp/home-inspection/
+  - label: 空き地（売土地）の一覧を見る
+    url: https://rakuen-akiya.jp/housesearch/feature/?bc4=1
+  - label: 一覧
+    url: https://rakuen-akiya.jp/infomation/
+  - label: rakuen-akiya.jp
+    url: https://rakuen-akiya.jp/feed/
+  - label: 物件の探し方、教えます！～地方で理想の住まいを見つけるポイントとは？～
+    url: https://rakuen-akiya.jp/infomation/%e7%89%a9%e4%bb%b6%e3%81%ae%e6%8e%a2%e3%81%97%e6%96%b9%e3%80%81%e6%95%99%e3%81%88%e3%81%be%e3%81%99%ef%bc%81%ef%bd%9e%e5%9c%b0%e6%96%b9%e3%81%a7%e7%90%86%e6%83%b3%e3%81%ae%e4%bd%8f%e3%81%be%e3%81%84/
+  - label: 【R8.9月12日(土)】空き家・空き地相談会 （諏訪エリア／南信エリア）《予約制》
+    url: https://rakuen-akiya.jp/infomation/%e3%80%90r8-9%e6%9c%8812%e6%97%a5%e5%9c%9f%e3%80%91%e7%a9%ba%e3%81%8d%e5%ae%b6%e3%83%bb%e7%a9%ba%e3%81%8d%e5%9c%b0%e7%9b%b8%e8%ab%87%e4%bc%9a-%ef%bc%88%e8%ab%8f%e8%a8%aa%e3%82%a8%e3%83%aa%e3%82%a2/
+  - label: 【R8.7月11日(土)】空き家・空き地相談会 （諏訪エリア／南信エリア）《予約制》
+    url: https://rakuen-akiya.jp/infomation/%e3%80%90r8-7%e6%9c%8811%e6%97%a5%e5%9c%9f%e3%80%91%e7%a9%ba%e3%81%8d%e5%ae%b6%e3%83%bb%e7%a9%ba%e3%81%8d%e5%9c%b0%e7%9b%b8%e8%ab%87%e4%bc%9a-%ef%bc%88%e8%ab%8f%e8%a8%aa%e3%82%a8%e3%83%aa%e3%82%a2/
+  - label: 【R8.6/24(水)】長野県宅建協会主催「諏訪・南信圏域 出張空き家＆住まい相談会」＠銀座NAGANO
+    url: https://rakuen-akiya.jp/infomation/%e3%80%90r8-6-24%e6%b0%b4%e3%80%91%e9%95%b7%e9%87%8e%e7%9c%8c%e5%ae%85%e5%bb%ba%e5%8d%94%e4%bc%9a%e4%b8%bb%e5%82%ac%e3%80%8c%e8%ab%8f%e8%a8%aa%e3%83%bb%e5%8d%97%e4%bf%a1%e5%9c%8f%e5%9f%9f-%e5%87%ba/
+  - label: 【R8.6/17 (水)】長野県宅建協会主催「東信圏域 出張空き家＆住まい相談会」＠銀座NAGANO
+    url: https://rakuen-akiya.jp/infomation/%e3%80%90r8-6-17-%e6%b0%b4%e3%80%91%e9%95%b7%e9%87%8e%e7%9c%8c%e5%ae%85%e5%bb%ba%e5%8d%94%e4%bc%9a%e4%b8%bb%e5%82%ac%e3%80%8c%e6%9d%b1%e4%bf%a1%e5%9c%8f%e5%9f%9f-%e5%87%ba%e5%bc%b5%e7%a9%ba%e3%81%8d/
+  - label: rakuen-akiya.jp
+    url: https://rakuen-akiya.jp/faq/
+  - label: 個人情報のお取扱いについて
+    url: https://rakuen-akiya.jp/privacypolicy/
+  - label: 運営主体・免責事項
+    url: https://rakuen-akiya.jp/management/
+- id: nagano-203505
+  name: 長和町空き家バンク
+  operator: 長和町
+  operator_kind: municipality
+  official_url: https://www.town.nagawa.nagano.jp/
+  policy: crawl
+  municipality:
+    code: '203505'
+    name: 長和町
+    prefecture: 長野県
+    prefecture_slug: nagano
+    slug: '203505'
+    bank_url: https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/index.html
+    bank_status: available
+    map_query: 長野県長和町
+  operator_evidence:
+    quote: 公式ドメイン www.town.nagawa.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/index.html
+    checked_on: '2026-09-10'
+  pages:
+  - url: https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/index.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.nagawa.nagano.jp
+  max_pages: 30
+- id: nagano-204226
+  name: 上松町空き家バンク
+  operator: 上松町
+  operator_kind: municipality
+  official_url: https://www.town.agematsu.nagano.jp/
+  policy: crawl
+  municipality:
+    code: '204226'
+    name: 上松町
+    prefecture: 長野県
+    prefecture_slug: nagano
+    slug: '204226'
+    bank_url: https://www.town.agematsu.nagano.jp/kurashi/sumai_seikatsu/tochi/akiya.html
+    bank_status: available
+    map_query: 長野県上松町
+  operator_evidence:
+    quote: 公式ドメイン www.town.agematsu.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.agematsu.nagano.jp/kurashi/sumai_seikatsu/tochi/akiya.html
+    checked_on: '2026-09-10'
+  pages:
+  - url: https://www.town.agematsu.nagano.jp/kurashi/sumai_seikatsu/tochi/akiya.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.agematsu.nagano.jp
+  max_pages: 30
+  external_links:
+  - label: 楽園信州空き家バンク
+    url: https://rakuen-akiya.jp/
+  - label: 全国版空き家バンク
+    url: https://www.homes.co.jp/akiyabank/
+- id: nagano-204234
+  name: 南木曽町空き家バンク
+  operator: 南木曽町
+  operator_kind: municipality
+  official_url: https://www.town.nagiso.nagano.jp/
+  policy: link_only
+  municipality:
+    code: '204234'
+    name: 南木曽町
+    prefecture: 長野県
+    prefecture_slug: nagano
+    slug: '204234'
+    bank_url: https://rakuen-akiya.jp/housesearch/area/?vender_jiscode[]=20423
+    bank_status: third_party_only
+    map_query: 長野県南木曽町
+    bank_note: 物件は民間プラットフォームで公開されています。本サイトでは巡回・要約せず、リンクのみ掲載します。
+  operator_evidence:
+    quote: 公式サイト（www.town.nagiso.nagano.jp）から空き家バンクとして案内されているリンク
+    url: www.town.nagiso.nagano.jp
+    checked_on: '2026-09-10'
+  external_links:
+  - label: ' '
+    url: https://rakuen-akiya.jp/
+  - label: rakuen-akiya.jp
+    url: https://rakuen-akiya.jp/contact/
+  - label: 1013 件
+    url: https://rakuen-akiya.jp/housesearch/all/
+  - label: お気に入り
+    url: https://rakuen-akiya.jp/favorite/
+  - label: 閲覧履歴
+    url: https://rakuen-akiya.jp/history/
+  - label: 空き家・空き地をさがす
+    url: https://rakuen-akiya.jp/housesearch/
+  - label: 空き家・空き地バンクとは
+    url: https://rakuen-akiya.jp/about/
+  - label: 空き家・空き地を提供
+    url: https://rakuen-akiya.jp/provide/
+  - label: 補助金・支援制度
+    url: https://rakuen-akiya.jp/assist/
+  - label: 市町村・不動産会社を探す
+    url: https://rakuen-akiya.jp/search/
+  - label: 木曽郡南木曽町読書下仲町4191-1
+    url: https://rakuen-akiya.jp/bukken/434498/
+  - label: 南木曽町
+    url: https://rakuen-akiya.jp/vendor/9054/
+  - label: 木曽郡南木曽町吾妻3810-1
+    url: https://rakuen-akiya.jp/bukken/434505/
+  - label: 木曽郡南木曽町読書坂ノ下3892
+    url: https://rakuen-akiya.jp/bukken/454614/
+  - label: 木曽郡南木曽町吾妻3834
+    url: https://rakuen-akiya.jp/bukken/428258/
+  - label: 木曽郡南木曽町吾妻蘭3807
+    url: https://rakuen-akiya.jp/bukken/418012/
+  - label: 木曽郡南木曽町読書南栄町3378-1
+    url: https://rakuen-akiya.jp/bukken/443939/
+  - label: 木曽郡南木曽町吾妻新道3226-4
+    url: https://rakuen-akiya.jp/bukken/416476/
+  - label: 木曽郡南木曽町吾妻新道3112
+    url: https://rakuen-akiya.jp/bukken/437910/
+  - label: 木曽郡南木曽町読書川向2864-5
+    url: https://rakuen-akiya.jp/bukken/455819/
+  - label: 木曽郡南木曽町吾妻大島2936-1
+    url: https://rakuen-akiya.jp/bukken/455823/
+  - label: 個人情報のお取扱いについて
+    url: https://rakuen-akiya.jp/privacypolicy/
+  - label: 運営主体・免責事項
+    url: https://rakuen-akiya.jp/management/
+- id: nagano-205419
+  name: 小布施町空き家バンク
+  operator: 小布施町
+  operator_kind: municipality
+  official_url: https://www.town.obuse.nagano.jp/
+  policy: crawl
+  municipality:
+    code: '205419'
+    name: 小布施町
+    prefecture: 長野県
+    prefecture_slug: nagano
+    slug: '205419'
+    bank_url: https://www.town.obuse.nagano.jp/docs/36516.html
+    bank_status: available
+    map_query: 長野県小布施町
+  operator_evidence:
+    quote: 公式ドメイン www.town.obuse.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.obuse.nagano.jp/docs/36516.html
+    checked_on: '2026-09-10'
+  pages:
+  - url: https://www.town.obuse.nagano.jp/docs/36516.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.obuse.nagano.jp
+  max_pages: 30
+- id: nagano-205885
+  name: 小川村空き家バンク
+  operator: 小川村
+  operator_kind: municipality
+  official_url: https://www.vill.ogawa.nagano.jp/
+  policy: crawl
+  municipality:
+    code: '205885'
+    name: 小川村
+    prefecture: 長野県
+    prefecture_slug: nagano
+    slug: '205885'
+    bank_url: http://ogawamura.jp/house/page/2/
+    bank_status: available
+    map_query: 長野県小川村
+  operator_evidence:
+    quote: 公式サイト（www.vill.ogawa.nagano.jp）から空き家バンクとして案内されているリンク
+    url: www.vill.ogawa.nagano.jp
+    checked_on: '2026-09-10'
+  pages:
+  - url: http://ogawamura.jp/house/page/2/
+    kind: listing_index
+  allow_hosts:
+  - ogawamura.jp
+  max_pages: 30

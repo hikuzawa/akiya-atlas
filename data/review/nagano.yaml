@@ -1,0 +1,1012 @@
+prefecture: 長野県
+prefecture_slug: nagano
+created_at: '2026-09-10T07:23:02+00:00'
+candidates:
+- key: '202011'
+  label: 長野県 長野市
+  url: www.city.nagano.nagano.jp
+  page_class: null
+  class_label: null
+  confidence: 0.3
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 空き家バンクページが見つからない（掲載なしの可能性）
+  proposed_policy: pending
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '202029'
+  label: 長野県 松本市
+  url: https://www.city.matsumoto.nagano.jp/soshiki/85/3266.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.matsumoto.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.matsumoto.nagano.jp/soshiki/85/3266.html
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '202037'
+  label: 長野県 上田市
+  url: https://www.city.ueda.nagano.jp/soshiki/akiya/97119.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ueda.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.ueda.nagano.jp/soshiki/akiya/97119.html
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '202045'
+  label: 長野県 岡谷市
+  url: https://www.city.okaya.lg.jp/kurashi_tetsuzuki/seikatsu_sodan/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.okaya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.okaya.lg.jp/kurashi_tetsuzuki/seikatsu_sodan/akiya/index.html
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '202053'
+  label: 長野県 飯田市
+  url: www.city.iida.lg.jp
+  page_class: null
+  class_label: null
+  confidence: 0.3
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 空き家バンクページが見つからない（掲載なしの可能性）
+  proposed_policy: pending
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '202061'
+  label: 長野県 諏訪市
+  url: https://www.city.suwa.lg.jp/life/1/14/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.suwa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.suwa.lg.jp/life/1/14/
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '202070'
+  label: 長野県 須坂市
+  url: https://rakuen-akiya.jp/
+  page_class: third_party
+  class_label: 第三者プラットフォーム
+  confidence: 0.99
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.city.suzaka.nagano.jp）から空き家バンクとして案内されているリンク
+  evidence_url: www.city.suzaka.nagano.jp
+  reason: 掲載は民間プラットフォーム。巡回せずリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '202088'
+  label: 長野県 小諸市
+  url: https://www.city.komoro.lg.jp/kurasu/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.komoro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.komoro.lg.jp/kurasu/index.html
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '202100'
+  label: 長野県 駒ヶ根市
+  url: https://www.city.komagane.nagano.jp/gyosei/kosodate_bunka_sports/kyoikuiinkai/hatarakikatakaikaku/sitemap.dir.xml
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.komagane.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.komagane.nagano.jp/gyosei/kosodate_bunka_sports/kyoikuiinkai/hatarakikatakaikaku/sitemap.dir.xml
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '202118'
+  label: 長野県 中野市
+  url: https://www.city.nakano.nagano.jp/docs/2023120700047/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nakano.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.nakano.nagano.jp/docs/2023120700047/
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '202142'
+  label: 長野県 茅野市
+  url: https://www.city.chino.lg.jp/site/akiya/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.chino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.chino.lg.jp/site/akiya/
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '202151'
+  label: 長野県 塩尻市
+  url: https://www.city.shiojiri.lg.jp/site/akiya/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shiojiri.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.shiojiri.lg.jp/site/akiya/
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '202185'
+  label: 長野県 千曲市
+  url: https://www.city.chikuma.lg.jp/soshiki/kenchiku/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.chikuma.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.chikuma.lg.jp/soshiki/kenchiku/akiya/index.html
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '202207'
+  label: 長野県 安曇野市
+  url: www.city.azumino.nagano.jp
+  page_class: null
+  class_label: null
+  confidence: 0.3
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 空き家バンクページが見つからない（掲載なしの可能性）
+  proposed_policy: pending
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '203033'
+  label: 長野県 小海町
+  url: null
+  page_class: null
+  class_label: null
+  confidence: 0.2
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 公式 URL を自動解決できなかった
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '203041'
+  label: 長野県 川上村
+  url: www.vill.kawakami.nagano.jp
+  page_class: null
+  class_label: null
+  confidence: 0.3
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 空き家バンクページが見つからない（掲載なしの可能性）
+  proposed_policy: pending
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '203050'
+  label: 長野県 南牧村
+  url: null
+  page_class: null
+  class_label: null
+  confidence: 0.2
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 公式 URL を自動解決できなかった
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '203068'
+  label: 長野県 南相木村
+  url: null
+  page_class: null
+  class_label: null
+  confidence: 0.2
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 公式 URL を自動解決できなかった
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '203076'
+  label: 長野県 北相木村
+  url: null
+  page_class: null
+  class_label: null
+  confidence: 0.2
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 公式 URL を自動解決できなかった
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '203092'
+  label: 長野県 佐久穂町
+  url: https://www.town.sakuho.nagano.jp/kurashi_tetsuzuki/sumai_seikatsu/akiya_akichi
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.sakuho.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.sakuho.nagano.jp/kurashi_tetsuzuki/sumai_seikatsu/akiya_akichi
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '203211'
+  label: 長野県 軽井沢町
+  url: www.town.karuizawa.lg.jp
+  page_class: null
+  class_label: null
+  confidence: 0.3
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 空き家バンクページが見つからない（掲載なしの可能性）
+  proposed_policy: pending
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '203238'
+  label: 長野県 御代田町
+  url: www.town.miyota.nagano.jp
+  page_class: null
+  class_label: null
+  confidence: 0.3
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 空き家バンクページが見つからない（掲載なしの可能性）
+  proposed_policy: pending
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '203246'
+  label: 長野県 立科町
+  url: https://www.town.tateshina.nagano.jp/seikatsu/hikkoshisumai/1727.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tateshina.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.tateshina.nagano.jp/seikatsu/hikkoshisumai/1727.html
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '203491'
+  label: 長野県 青木村
+  url: www.vill.aoki.nagano.jp
+  page_class: null
+  class_label: null
+  confidence: 0.3
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 空き家バンクページが見つからない（掲載なしの可能性）
+  proposed_policy: pending
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '203505'
+  label: 長野県 長和町
+  url: https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/index.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.86
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nagawa.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/index.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '203611'
+  label: 長野県 下諏訪町
+  url: https://www.town.shimosuwa.lg.jp/www/genre/1000100000031/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shimosuwa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.shimosuwa.lg.jp/www/genre/1000100000031/index.html
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '203629'
+  label: 長野県 富士見町
+  url: www.town.fujimi.lg.jp
+  page_class: null
+  class_label: null
+  confidence: 0.3
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 空き家バンクページが見つからない（掲載なしの可能性）
+  proposed_policy: pending
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '203637'
+  label: 長野県 原村
+  url: www.vill.hara.lg.jp
+  page_class: null
+  class_label: null
+  confidence: 0.3
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 空き家バンクページが見つからない（掲載なしの可能性）
+  proposed_policy: pending
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '203823'
+  label: 長野県 辰野町
+  url: https://www.town.tatsuno.lg.jp/gyosei/kurashi_tetsuzuki/3685.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tatsuno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.tatsuno.lg.jp/gyosei/kurashi_tetsuzuki/3685.html
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '203831'
+  label: 長野県 箕輪町
+  url: www.town.minowa.lg.jp
+  page_class: null
+  class_label: null
+  confidence: 0.3
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 空き家バンクページが見つからない（掲載なしの可能性）
+  proposed_policy: pending
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '203840'
+  label: 長野県 飯島町
+  url: https://www.town.iijima.lg.jp/soshikiichiran/kensetsusuidoka/tosikeikakukakari/sumai/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.iijima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.iijima.lg.jp/soshikiichiran/kensetsusuidoka/tosikeikakukakari/sumai/akiya/index.html
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '203858'
+  label: 長野県 南箕輪村
+  url: https://www.vill.minamiminowa.lg.jp/soshiki/chiiki/akiya-201704-202302.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.minamiminowa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.minamiminowa.lg.jp/soshiki/chiiki/akiya-201704-202302.html
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '203866'
+  label: 長野県 中川村
+  url: https://www.vill.nakagawa.nagano.jp/life/1/15/170/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.nakagawa.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.nakagawa.nagano.jp/life/1/15/170/
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '203882'
+  label: 長野県 宮田村
+  url: www.vill.miyada.nagano.jp
+  page_class: null
+  class_label: null
+  confidence: 0.3
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 空き家バンクページが見つからない（掲載なしの可能性）
+  proposed_policy: pending
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '204021'
+  label: 長野県 松川町
+  url: https://www.town.matsukawa.lg.jp/choseijoho/matsukawamachinoshokai/hokashichosontonokoryu/makinoharashi/sitemap.dir.xml
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.matsukawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.matsukawa.lg.jp/choseijoho/matsukawamachinoshokai/hokashichosontonokoryu/makinoharashi/sitemap.dir.xml
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204030'
+  label: 長野県 高森町
+  url: null
+  page_class: null
+  class_label: null
+  confidence: 0.2
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 公式 URL を自動解決できなかった
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204048'
+  label: 長野県 阿南町
+  url: null
+  page_class: null
+  class_label: null
+  confidence: 0.2
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 公式 URL を自動解決できなかった
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204072'
+  label: 長野県 阿智村
+  url: https://www.vill.achi.lg.jp/site/teiju/achikazoku-seido-akiya.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.achi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.achi.lg.jp/site/teiju/achikazoku-seido-akiya.html
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204099'
+  label: 長野県 平谷村
+  url: null
+  page_class: null
+  class_label: null
+  confidence: 0.2
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 公式 URL を自動解決できなかった
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204102'
+  label: 長野県 根羽村
+  url: null
+  page_class: null
+  class_label: null
+  confidence: 0.2
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 公式 URL を自動解決できなかった
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204111'
+  label: 長野県 下條村
+  url: null
+  page_class: null
+  class_label: null
+  confidence: 0.2
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 公式 URL を自動解決できなかった
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204129'
+  label: 長野県 売木村
+  url: null
+  page_class: null
+  class_label: null
+  confidence: 0.2
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 公式 URL を自動解決できなかった
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204137'
+  label: 長野県 天龍村
+  url: null
+  page_class: null
+  class_label: null
+  confidence: 0.2
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 公式 URL を自動解決できなかった
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204145'
+  label: 長野県 泰阜村
+  url: https://www.vill.yasuoka.nagano.jp/docs/55996.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.yasuoka.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.yasuoka.nagano.jp/docs/55996.html
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204153'
+  label: 長野県 喬木村
+  url: www.vill.takagi.lg.jp
+  page_class: null
+  class_label: null
+  confidence: 0.3
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 空き家バンクページが見つからない（掲載なしの可能性）
+  proposed_policy: pending
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '204161'
+  label: 長野県 豊丘村
+  url: null
+  page_class: null
+  class_label: null
+  confidence: 0.2
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 公式 URL を自動解決できなかった
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204170'
+  label: 長野県 大鹿村
+  url: https://www.vill.ooshika.nagano.jp/akiyabanku_toroku/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.ooshika.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.ooshika.nagano.jp/akiyabanku_toroku/
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204226'
+  label: 長野県 上松町
+  url: https://www.town.agematsu.nagano.jp/kurashi/sumai_seikatsu/tochi/akiya.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.agematsu.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.agematsu.nagano.jp/kurashi/sumai_seikatsu/tochi/akiya.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '204234'
+  label: 長野県 南木曽町
+  url: https://rakuen-akiya.jp/housesearch/area/?vender_jiscode[]=20423
+  page_class: third_party
+  class_label: 第三者プラットフォーム
+  confidence: 0.99
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.town.nagiso.nagano.jp）から空き家バンクとして案内されているリンク
+  evidence_url: www.town.nagiso.nagano.jp
+  reason: 掲載は民間プラットフォーム。巡回せずリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '204251'
+  label: 長野県 木祖村
+  url: https://www.vill.kiso.nagano.jp/kurashi_joho/iju_teiju/akiyabank_touroku.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.kiso.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.kiso.nagano.jp/kurashi_joho/iju_teiju/akiyabank_touroku.html
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204293'
+  label: 長野県 王滝村
+  url: https://www.vill.otaki.nagano.jp/kurashi/sumai/ijyu/akiyabank.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.otaki.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.otaki.nagano.jp/kurashi/sumai/ijyu/akiyabank.html
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204307'
+  label: 長野県 大桑村
+  url: https://www.vill.okuwa.lg.jp/kurashi/akiyabank/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.okuwa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.okuwa.lg.jp/kurashi/akiyabank/index.html
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204323'
+  label: 長野県 木曽町
+  url: null
+  page_class: null
+  class_label: null
+  confidence: 0.2
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 公式 URL を自動解決できなかった
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204463'
+  label: 長野県 麻績村
+  url: www.vill.omi.nagano.jp
+  page_class: null
+  class_label: null
+  confidence: 0.3
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 空き家バンクページが見つからない（掲載なしの可能性）
+  proposed_policy: pending
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '204480'
+  label: 長野県 生坂村
+  url: null
+  page_class: null
+  class_label: null
+  confidence: 0.2
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 公式 URL を自動解決できなかった
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204501'
+  label: 長野県 山形村
+  url: www.vill.yamagata.nagano.jp
+  page_class: null
+  class_label: null
+  confidence: 0.3
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 空き家バンクページが見つからない（掲載なしの可能性）
+  proposed_policy: pending
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '204510'
+  label: 長野県 朝日村
+  url: https://www.vill.asahi.nagano.jp/material/files/group/11/akiyabankuriyou.pdf
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.asahi.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.asahi.nagano.jp/material/files/group/11/akiyabankuriyou.pdf
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204528'
+  label: 長野県 筑北村
+  url: https://www.vill.chikuhoku.lg.jp/ijyu-teijyu/akiya/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.chikuhoku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.chikuhoku.lg.jp/ijyu-teijyu/akiya/
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204811'
+  label: 長野県 池田町
+  url: null
+  page_class: null
+  class_label: null
+  confidence: 0.2
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 公式 URL を自動解決できなかった
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204820'
+  label: 長野県 松川村
+  url: https://www.vill.matsukawa.nagano.jp/search/?q=空き家バンク
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.matsukawa.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.matsukawa.nagano.jp/search/?q=空き家バンク
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204854'
+  label: 長野県 白馬村
+  url: https://www.vill.hakuba.lg.jp/gyosei/furusatonozei_ijuteiju/ijuteiju/sumu/akiyabank/sitemap.dir.xml
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.hakuba.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.hakuba.lg.jp/gyosei/furusatonozei_ijuteiju/ijuteiju/sumu/akiyabank/sitemap.dir.xml
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '204862'
+  label: 長野県 小谷村
+  url: www.vill.otari.nagano.jp
+  page_class: null
+  class_label: null
+  confidence: 0.3
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 空き家バンクページが見つからない（掲載なしの可能性）
+  proposed_policy: pending
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '205214'
+  label: 長野県 坂城町
+  url: https://www.town.sakaki.nagano.jp/life/1/4/22/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.sakaki.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.sakaki.nagano.jp/life/1/4/22/
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '205419'
+  label: 長野県 小布施町
+  url: https://www.town.obuse.nagano.jp/docs/36516.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.8
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.obuse.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.obuse.nagano.jp/docs/36516.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '205435'
+  label: 長野県 高山村
+  url: https://www.vill.takayama.nagano.jp/akiyabank/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.takayama.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.takayama.nagano.jp/akiyabank/
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '205613'
+  label: 長野県 山ノ内町
+  url: www.town.yamanouchi.nagano.jp
+  page_class: null
+  class_label: null
+  confidence: 0.3
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 空き家バンクページが見つからない（掲載なしの可能性）
+  proposed_policy: pending
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '205621'
+  label: 長野県 木島平村
+  url: https://www.vill.kijimadaira.lg.jp/articles/2026090700017/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.kijimadaira.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.kijimadaira.lg.jp/articles/2026090700017/
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '205630'
+  label: 長野県 野沢温泉村
+  url: https://www.vill.nozawaonsen.nagano.jp/www/contents/1050000000007/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.nozawaonsen.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.nozawaonsen.nagano.jp/www/contents/1050000000007/index.html
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '205834'
+  label: 長野県 信濃町
+  url: https://www.town.shinano.lg.jp/docs/369.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shinano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.shinano.lg.jp/docs/369.html
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '205885'
+  label: 長野県 小川村
+  url: http://ogawamura.jp/house/page/2/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.87
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.vill.ogawa.nagano.jp）から空き家バンクとして案内されているリンク
+  evidence_url: www.vill.ogawa.nagano.jp
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '205907'
+  label: 長野県 飯綱町
+  url: https://www.town.iizuna.nagano.jp/docs/14258.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.35
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.iizuna.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.iizuna.nagano.jp/docs/14258.html
+  reason: 空き家バンクの物件ページを特定できない
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
+- key: '206024'
+  label: 長野県 栄村
+  url: null
+  page_class: null
+  class_label: null
+  confidence: 0.2
+  operator_kind: unknown
+  evidence_quote: null
+  evidence_url: null
+  reason: 公式 URL を自動解決できなかった
+  proposed_policy: pending
+  proposed_action: URL修正
+  decision: null
+  note: null
