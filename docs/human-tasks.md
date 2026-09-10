@@ -32,3 +32,17 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 - 東御市・佐久市・大町市の補助制度ページの確認と `data/sources/nagano.yaml` への追記（出典 URL と確認日付き）
 - 本番の LLM 応答を `tests/fixtures/eval/` に保存し、手作りの応答と入れ替えて抽出精度を再計測
 - 巡回 2 回目以降の差分検知（304 / ハッシュ一致）が実サイトで期待どおりか確認
+
+## GitHub Secrets の登録コマンド（akiya-atlas、2026-09-10 追記）
+値は画面に出さず、ファイルや標準入力から流し込む。登録後は `gh secret list --repo hikuzawa/akiya-atlas` で確認する。
+
+| Secret | 値の発行場所 | 登録コマンド |
+|---|---|---|
+| `ANTHROPIC_API_KEY` | Anthropic Console → API Keys。この環境の `.env` から登録済み。鍵を作り直したら再実行 | `grep '^ANTHROPIC_API_KEY=' .env \| cut -d= -f2- \| gh secret set ANTHROPIC_API_KEY --repo hikuzawa/akiya-atlas` |
+| `CLOUDFLARE_API_TOKEN` | Cloudflare ダッシュボード → My Profile → API Tokens → Create Token → テンプレート「Cloudflare Pages — Edit」（Account Resources に対象アカウント） | `gh secret set CLOUDFLARE_API_TOKEN --repo hikuzawa/akiya-atlas`（プロンプトに貼り付け） |
+| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare ダッシュボード → Workers & Pages の概要ページ右側「Account ID」 | `gh secret set CLOUDFLARE_ACCOUNT_ID --repo hikuzawa/akiya-atlas` |
+| `SITEMILL_READ_TOKEN` | GitHub → Settings → Developer settings → Personal access tokens → Fine-grained → Repository access を `hikuzawa/sitemill` のみ、Permissions は Contents: Read-only（有効期限を設定） | `gh secret set SITEMILL_READ_TOKEN --repo hikuzawa/akiya-atlas` |
+| `GOOGLE_MAPS_EMBED_KEY`（任意） | Google Cloud Console → APIs & Services → Credentials。Maps Embed API のみ、HTTP リファラで制限 | `gh secret set GOOGLE_MAPS_EMBED_KEY --repo hikuzawa/akiya-atlas` |
+| `CF_WEB_ANALYTICS_TOKEN`（任意） | Cloudflare → Web Analytics → サイト追加 → JS スニペット内の token | `gh secret set CF_WEB_ANALYTICS_TOKEN --repo hikuzawa/akiya-atlas` |
+
+注意: `.env.example` には値を書かない（git にコミットされる）。値は `.env` だけに置く。
