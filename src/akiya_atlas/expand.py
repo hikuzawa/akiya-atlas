@@ -504,7 +504,8 @@ def finding_to_source_dict(f: MunicipalityFinding, *, prefecture_name: str) -> d
     status = bank_status_of(f)
     sid = f"{m.prefecture_slug}-{m.code}"
     externals = list(f.external_links)
-    if m.prefecture_slug == "nagano" and status in ("third_party_only", "none", "spa_unsupported"):
+    rakuen_statuses = ("third_party_only", "none", "spa_unsupported", "info")
+    if m.prefecture_slug == "nagano" and status in rakuen_statuses:
         if not any(e.url == _RAKUEN_NAGANO.url for e in externals):
             externals.append(_RAKUEN_NAGANO)
     op_kind = f.operator_kind.value if hasattr(f.operator_kind, "value") else str(f.operator_kind)
