@@ -48,19 +48,22 @@ PowerShell 7 で検証済み（富山県で発見→巡回→抽出→自己修�
    `Tee-Object -Encoding utf8`（既定の `>` は PowerShell 5.1 だと UTF-16 になる）。
    ```powershell
    $env:PYTHONUTF8 = "1"
-   uv run akiya-atlas backfill --only 富山県 2>&1 | Tee-Object -FilePath logsackfill.log -Append -Encoding utf8
+   uv run akiya-atlas backfill --only 富山県 2>&1 | Tee-Object -FilePath logs\backfill.log -Append -Encoding utf8
    ```
    コマンドの引数に日本語（県名）をそのまま渡してよい。
 3. **長時間の実行**: tmux の代わりに `Start-Process` で切り離す。ウィンドウを閉じても走り続ける。
    ```powershell
    New-Item -ItemType Directory -Force logs | Out-Null
    $p = Start-Process uv -ArgumentList "run","akiya-atlas","backfill","--stages","discover","--workers","8" `
-        -RedirectStandardOutput logsackfill-discover.log -RedirectStandardError logsackfill-discover.err.log `
+        -RedirectStandardOutput logs\backfill-discover.log -RedirectStandardError logs\backfill-discover.err.log `
         -WindowStyle Hidden -PassThru
-   $p.Id | Out-File logsackfill.pid                      # 止めるとき: Stop-Process -Id (Get-Content logsackfill.pid)
-   Get-Content logsackfill-discover.log -Wait -Tail 20    # 進捗を追う（Ctrl+C で見るのをやめても実行は続く）
+   $p.Id | Out-File logs\backfill.pid                      # 止めるとき: Stop-Process -Id (Get-Content logs\backfill.pid)
+   Get-Content logs\backfill-discover.log -Wait -Tail 20   # 県ごとの結果（Ctrl+C で見るのをやめても実行は続く）
+   (Select-String logs\backfill-discover.err.log -Pattern "policy=").Count   # 判定済みの市町村数
    ```
-   `logs/` は git 管理外。
+   `logs/` は git 管理外。標準出力（`.log`）には県ごとの 1 行、標準エラー（`.err.log`）には市町村ごとの
+   判定と robots の警告が出る。1 県に 10 分以上かかることがある（北海道は 185 市町村）ので、
+   細かい進捗は `.err.log` の `policy=` の行数を見るのが早い。
 4. **スリープさせない**: 実行前に電源設定を変える。終わったら元に戻す。
    ```powershell
    powercfg /change standby-timeout-ac 0    # スリープしない（AC 電源時）
@@ -123,7 +126,7 @@ uv run akiya-atlas rediscover 宮城県 --code 042021          # 特定の市町
 
 ## 4. 途中で止まった場合の再開
 - **同じコマンドをもう一度実行するだけ**。`data/runs/backfill.json` にある済みの工程は飛ばす。
-  Windows なら `Get-Content logsackfill-discover.log -Tail 5` で最後にどこまで進んだかを見てから再実行する。
+  Windows なら `Get-Content logs\backfill-discover.log -Tail 5` で最後にどこまで進んだかを見てから再実行する。
 - 発見の途中で止まった県は、その県の発見だけ最初からやり直す（1 県数分）。
 - 巡回は `data/state/crawl.json` の条件付き GET で続きから、抽出は未処理（pending）のページだけが対象。
 - Raspberry Pi の電源断・SSH 切断: `tmux attach -t backfill` で戻る。プロセスが死んでいれば再実行。
