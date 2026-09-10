@@ -83,6 +83,12 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: uv run sitemill extract
 
+      - name: Heal（巡回しても 0 件の source を同一サイト内で再評価し、差し替えか状態見直し）
+        working-directory: akiya-atlas
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: uv run sitemill heal
+
       - name: Build
         working-directory: akiya-atlas
         env:

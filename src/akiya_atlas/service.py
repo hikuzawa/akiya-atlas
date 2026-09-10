@@ -236,5 +236,11 @@ class AkiyaAtlasService:
         """生成ページの公開前 PII 検査に使うポリシー（自治体の代表電話・代表メールを許可）。"""
         return pages._pii_policy(ws)
 
+    def heal(self, ws: Workspace, *, client: Any, source_ids: list[str] | None = None) -> dict:
+        """巡回したのに現行 0 件の自治体を候補の選び直しで自己修復する（heal フック）。"""
+        from akiya_atlas.expand import heal
+
+        return heal(ws, client=client, source_ids=source_ids)
+
 
 service = AkiyaAtlasService()

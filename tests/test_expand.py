@@ -62,8 +62,23 @@ def test_third_party_platform_is_link_only() -> None:
 
 
 def test_spa_is_link_only() -> None:
-    f = decide(TOMI, OFFICIAL, _cp(PageClass.spa), cross_linked=False, bank_host_official=False)
+    f = decide(TOMI, OFFICIAL, _cp(PageClass.spa), cross_linked=False, bank_host_official=True)
     assert f.policy == "link_only" and "JavaScript" in f.reason
+
+
+def test_off_host_non_listing_page_is_not_used_as_bank_page() -> None:
+    # 公式外の非物件ページ（例: URL に aki を含む他省庁のページ）は根拠にせず、公式へのリンクのみ
+    from akiya_atlas.expand import bank_status_of
+
+    f = decide(
+        TOMI,
+        OFFICIAL,
+        _cp(PageClass.not_listing, url="https://www.mlit.go.jp/river/wakinkyu/"),
+        cross_linked=False,
+        bank_host_official=False,
+    )
+    assert f.policy == "link_only" and f.classified is None
+    assert f.bank_url == "https://www.city.tomi.nagano.jp/" and bank_status_of(f) == "none"
 
 
 def test_listing_on_unverified_host_links_to_official_not_pending() -> None:

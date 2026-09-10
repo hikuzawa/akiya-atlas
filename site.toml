@@ -26,6 +26,7 @@ default_delay_seconds = 3.0
 jitter_seconds = 1.0
 timeout_seconds = 30.0
 max_pages_per_source = 50   # サイト全体の上限。各 source の max_pages がこれ以下なら source 側が優先
+max_workers = 8             # ホスト並列数（sitemill ADR 0013）。1 ホストあたりの間隔は並列でも縮まらない
 
 [llm]
 provider = "anthropic"
