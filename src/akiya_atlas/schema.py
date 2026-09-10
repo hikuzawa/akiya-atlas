@@ -13,6 +13,10 @@ from sitemill.models import FieldValue
 
 DealType = Literal["sale", "rent", "both", "unknown"]
 DEAL_LABELS = {"sale": "売買", "rent": "賃貸", "both": "売買・賃貸", "unknown": "種別不明"}
+# 成約・売約済みなど「現在は募集していない」ことを示す語。原文の見出しに現れる。
+CLOSED_MARKERS = re.compile(
+    r"成約済|ご成約|売約済|契約済|申込済|申し込み済|商談中|募集終了|掲載終了"
+)
 
 
 class Subsidy(BaseModel):
@@ -39,9 +43,9 @@ class Municipality(BaseModel):
     bank_url: str
     bank_label: str = "空き家バンク"
     # 巡回状況: available=巡回 / third_party_only=民間のみ / spa_unsupported=JS描画 / none=なし
-    bank_status: Literal[
-        "available", "third_party_only", "spa_unsupported", "info", "none"
-    ] = "available"
+    bank_status: Literal["available", "third_party_only", "spa_unsupported", "info", "none"] = (
+        "available"
+    )
     bank_note: str | None = None  # 非巡回ケースの説明（分類結果から自動生成）
     subsidies: list[Subsidy] = Field(default_factory=list)
     contact: str | None = None
@@ -115,6 +119,19 @@ class Listing(BaseModel):
     @property
     def display_title(self) -> str:
         return self.title or f"空き家バンク物件 {self.listing_no}"
+
+    @property
+    def is_closed(self) -> bool:
+        """原文の見出し・要約に成約済み等の語があれば、募集中でないとみなす。"""
+        parts = [self.title, self.summary]
+        if self.status_text.ok:
+            parts.append(str(self.status_text.value))
+        return any(p and CLOSED_MARKERS.search(p) for p in parts)
+
+    @property
+    def is_active(self) -> bool:
+        """現在掲載中（stale でも成約済でもない）か。"""
+        return self.status == "active" and not self.is_closed
 
 
 FIELD_LABELS = {

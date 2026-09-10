@@ -111,7 +111,7 @@ def listing_row(muni: Municipality, ls: Listing) -> dict[str, Any]:
         "address": ls.address.value if ls.address.ok else None,
         "built_year": ls.built_year.value if ls.built_year.ok else None,
         "floor_area": m2(ls.floor_area_m2.value) if ls.floor_area_m2.ok else None,
-        "status": ls.status,
+        "status": "closed" if ls.is_closed else ls.status,
         "status_text": ls.status_text.value if ls.status_text.ok else None,
         "url": listing_url_path(muni, ls),
         "source_url": ls.primary_url,
@@ -356,6 +356,33 @@ def ensure_no_pii(ds: Dataset, ws: Workspace) -> None:
         raise BuildError(f"個人情報らしき文字列がレコードに含まれるためビルドを中止: {details}")
 
 
+def no_listings_reason(ctx: Ctx, muni: Municipality) -> str | None:
+    """巡回対象なのに現在の掲載が 0 件のとき、その理由を区別する。
+
+    - "empty": 一覧ページの取得に成功しているが、掲載物件が無い（＝現在掲載物件なし）。
+    - "unavailable": 一覧ページを取得できていない／取得に失敗（＝取り込めていない）。
+    巡回対象でない、または掲載がある場合は None。
+    """
+    if not muni.crawled or ctx.ds.listings_for(muni, active_only=True):
+        return None
+    src = ctx.ds.by_source.get(muni.id)
+    fetched_ok = False
+    seen_state = False
+    if src is not None:
+        for p in src.pages:
+            if p.kind.value != "listing_index":
+                continue
+            st = ctx.ds.state.get(p.url)
+            if st is None:
+                continue
+            seen_state = True
+            if st.fetched_at is not None and not st.error:
+                fetched_ok = True
+    if not seen_state:
+        return "unavailable"
+    return "empty" if fetched_ok else "unavailable"
+
+
 def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
     ensure_no_street_numbers(ds)
     ensure_no_pii(ds, ws)
@@ -363,7 +390,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
         ws=ws, ds=ds, now=now, operator=operator_info(ws), maps_key=ws.secrets.google_maps_embed_key
     )
     pages: list[Page] = []
-    all_active = [ls for ls in ds.listings if ls.status == "active"]
+    all_active = [ls for ls in ds.listings if ls.is_active]
     all_sources = [link for m in ds.municipalities for link in source_links(ctx, m)]
 
     pref_rows = []
@@ -434,7 +461,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
 
     for muni in ds.municipalities:
         listings = ds.listings_for(muni)
-        active = [ls for ls in listings if ls.status == "active"]
+        active = [ls for ls in listings if ls.is_active]
         updated_candidates = [d for d in (_dt(ls.last_seen_at) for ls in listings) if d is not None]
         fetched = ds.last_fetched(muni.id)
         if fetched is not None:
@@ -456,6 +483,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                     "chart_price": price_chart(f"{muni.name} 売買価格の分布", active),
                     "chart_built": built_chart(f"{muni.name} 築年の分布", active),
                     "min_points": MIN_CHART_POINTS,
+                    "no_listings_reason": no_listings_reason(ctx, muni),
                 },
                 trust_signals=trust(
                     ctx,

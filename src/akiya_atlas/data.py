@@ -94,8 +94,8 @@ class Dataset:
     def listings_for(self, muni: Municipality, *, active_only: bool = False) -> list[Listing]:
         rows = [ls for ls in self.listings if ls.source_id == muni.id]
         if active_only:
-            rows = [ls for ls in rows if ls.status == "active"]
-        return sorted(rows, key=lambda ls: (ls.status != "active", ls.listing_no))
+            rows = [ls for ls in rows if ls.is_active]
+        return sorted(rows, key=lambda ls: (not ls.is_active, ls.listing_no))
 
     def prefectures(self) -> list[tuple[str, str]]:
         seen: dict[str, str] = {}

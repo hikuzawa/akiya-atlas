@@ -250,3 +250,15 @@ def test_municipal_representative_phone_is_whitelisted(ws: Workspace) -> None:
     assert scan_text("お問い合わせ 0268-62-1111", policy=policy) == []
     # 一方で個人の携帯番号は許可されない
     assert [f.kind for f in scan_text("090-1234-5678", policy=policy)] == ["phone"]
+
+
+def test_is_closed_and_is_active() -> None:
+    sold = Listing.model_validate(
+        _listing("s", "1", "a", title="【ご成約済】古民家", price=_fv(3_000_000, "300万円"))
+    )
+    assert sold.is_closed and not sold.is_active
+    live = Listing.model_validate(_listing("s", "1", "b", title="静かな古民家"))
+    assert not live.is_closed and live.is_active
+    # stale も非アクティブ
+    stale = Listing.model_validate(_listing("s", "1", "c", title="家", status="stale"))
+    assert not stale.is_active

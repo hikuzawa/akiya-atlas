@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+import hashlib
 import logging
+import re
 from collections.abc import Sequence
 from datetime import datetime
 from pathlib import Path
@@ -84,9 +86,16 @@ def item_to_content(
     """抽出結果 1 件をレコードの内容にする。物件番号が無い一覧項目は捨てる。"""
     no = item.value("listing_no")
     if not no:
-        if kind != "listing_detail":
-            return None
-        no = url.rstrip("/").rsplit("/", 1)[-1] or url  # 詳細ページは URL 末尾で代替
+        if kind == "listing_detail":
+            no = url.rstrip("/").rsplit("/", 1)[-1] or url  # 詳細ページは URL 末尾で代替
+        else:
+            # 物件番号を持たない一覧（例: 小川村）は、題名から安定 ID を作る。
+            # 「【ご成約済】」等の状態接頭辞は除いてから採番し、状態が変わっても同一物件とみなす。
+            title = (item.free.get("title") or "").strip()
+            base = re.sub(r"^【[^】]*】", "", title).strip()
+            if not base:
+                return None
+            no = "T" + hashlib.sha1(base.encode("utf-8")).hexdigest()[:8]
     listing_no = normalize_listing_no(str(no))
     if not listing_no:
         return None

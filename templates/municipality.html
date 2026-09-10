@@ -43,6 +43,9 @@
 <section aria-labelledby="listing-title">
   <h2 id="listing-title">掲載物件（要約）</h2>
   {% if listings %}
+  {% if no_listings_reason == "empty" %}
+  <p class="notice-inline" role="note">現在、募集中の物件はありません。以下には過去の掲載（成約済など）を含みます。最新は <a href="{{ muni.bank_url }}" rel="noopener" target="_blank">公式ページ</a> でご確認ください。</p>
+  {% endif %}
   <div class="table-wrap">
   <table class="data-table">
     <caption>{{ muni.name }}の空き家バンク掲載物件。数値は原文から機械抽出</caption>
@@ -51,7 +54,7 @@
     {% for r in listings %}
     <tr{% if r.status != "active" %} class="stale"{% endif %}>
       <td>{{ r.no }}</td>
-      <td><a href="{{ r.url }}">{{ r.title }}</a>{% if r.status != "active" %} <span class="tag warn">掲載終了の可能性</span>{% endif %}{% if r.status_text %} <span class="tag">{{ r.status_text }}</span>{% endif %}</td>
+      <td><a href="{{ r.url }}">{{ r.title }}</a>{% if r.status == "closed" %} <span class="tag warn">成約済・募集終了</span>{% elif r.status != "active" %} <span class="tag warn">掲載終了の可能性</span>{% endif %}{% if r.status_text %} <span class="tag">{{ r.status_text }}</span>{% endif %}</td>
       <td>{{ r.deal }}</td>
       <td class="num">{{ r.price }}</td>
       <td>{{ r.address or "—" }}</td>
@@ -63,8 +66,10 @@
     </tbody>
   </table>
   </div>
+  {% elif no_listings_reason == "unavailable" %}
+  <p>現在、物件情報を取り込めていません。<a href="{{ muni.bank_url }}" rel="noopener" target="_blank">公式ページ</a>をご覧ください。</p>
   {% else %}
-  <p>まだ物件を取り込めていません。<a href="{{ muni.bank_url }}" rel="noopener" target="_blank">公式ページ</a>をご覧ください。</p>
+  <p>現在、掲載中の物件はありません。最新の情報は <a href="{{ muni.bank_url }}" rel="noopener" target="_blank">公式ページ</a> でご確認ください。</p>
   {% endif %}
 </section>
 
