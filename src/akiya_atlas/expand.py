@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import logging
 import re
+import socket
 from dataclasses import dataclass, field
 from datetime import UTC, date, datetime
 from pathlib import Path
@@ -22,7 +23,7 @@ from sitemill.classify import (
     listing_score,
 )
 from sitemill.diff.normalize import page_text
-from sitemill.fetch.client import PoliteClient
+from sitemill.fetch.client import FetchResult, PoliteClient
 from sitemill.fetch.links import extract_links, host_of
 from sitemill.models import (
     CrawlPolicy,
@@ -146,7 +147,33 @@ def resolve_official(
             return OfficialResolution(
                 res.final_url, host, quote, overrides.source_url or override_url
             )
+        if site_is_up(res, override_url):
+            # 取得できなくても（robots 拒否・403・古い TLS・応答なし）、県の公的一覧に
+            # 載っている事実が運営主体の根拠になる（ADR 0007 条件A）。人手でも直せないので
+            # 人間確認には回さず、リンクだけ出す。
+            host = OfficialHost(host_of(override_url), "prefecture_listed", True, "strong")
+            quote = (
+                f"{overrides.source_name or '県の市町村一覧'}に掲載された公式サイト"
+                f"（{host.host}）。サイトを取得できなかったためリンクのみ"
+                f"（{res.error or res.status}）"
+            )
+            return OfficialResolution(
+                override_url, host, quote, overrides.source_url or override_url
+            )
     return None
+
+
+def site_is_up(res: FetchResult, url: str) -> bool:
+    """取得に失敗した相手のサイトが「在る」かどうか。URL 自体が誤りなら False。"""
+    if res.status == 404:
+        return False  # 一覧の URL が古い。人が直せるので人間確認に回す
+    if res.status:
+        return True  # 403 など、サーバは応答している
+    try:  # HTTP の応答が無い（robots 不達・TLS・タイムアウト）。名前解決できるかで判断する
+        socket.getaddrinfo(host_of(url), None)
+    except OSError:
+        return False
+    return True
 
 
 @dataclass
