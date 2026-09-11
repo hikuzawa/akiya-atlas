@@ -118,9 +118,10 @@ def drop_wrong_prices(content: dict[str, Any]) -> bool:
         field = content.get(key)
         if not field or field.get("status") != "parsed" or field.get("value") is None:
             continue
-        value, _note = parser(str(field.get("quote") or ""))
+        value, note = parser(str(field.get("quote") or ""))
         if value is None:
-            field.update({"value": None, "status": "unparsed", "note": "not_a_price"})
+            # 注記はパーサの判断をそのまま残す（not_a_price か price_unknown か）
+            field.update({"value": None, "status": "unparsed", "note": note or "not_a_price"})
             changed = True
     return changed
 

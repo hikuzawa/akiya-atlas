@@ -41,7 +41,12 @@ def test_saved_records_are_corrected() -> None:
     assert drop_wrong_prices(content)
     assert content["price"]["value"] is None and content["price"]["status"] == "unparsed"
     assert content["price"]["quote"] == "[坪単価75,000円]"  # 原文は残す
+    assert content["price"]["note"] == "not_a_price"
     assert content["rent_monthly"]["value"] is None
+    # 価格未定（0万円）は理由を分けて残す
+    unknown = {"price": {"value": 0, "quote": "0万円", "status": "parsed", "note": None}}
+    assert drop_wrong_prices(unknown)
+    assert unknown["price"]["note"] == "price_unknown"
     # 正しい値は触らない
     ok = {"price": {"value": 3_500_000, "quote": "350万円", "status": "parsed", "note": None}}
     assert not drop_wrong_prices(ok)
