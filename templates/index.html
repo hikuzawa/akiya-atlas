@@ -40,7 +40,18 @@
         <select name="deal" data-filter="deal"><option value="">すべて</option>
           <option value="sale">売買</option><option value="rent">賃貸</option><option value="both">売買・賃貸</option>
         </select></label>
+      <label>延床面積
+        <select name="floor" data-filter="floor"><option value="">すべて</option>
+          <option value="0-50">50㎡未満</option><option value="50-100">50〜100㎡</option>
+          <option value="100-150">100〜150㎡</option><option value="150-">150㎡以上</option>
+        </select></label>
+      <label>部屋数
+        <select name="rooms" data-filter="rooms"><option value="">すべて</option>
+          <option value="1-3">3 部屋まで</option><option value="4-5">4〜5 部屋</option>
+          <option value="6-">6 部屋以上</option>
+        </select></label>
       <label class="check"><input type="checkbox" name="subsidy" data-filter="subsidy"> 移住・改修の補助金がある市町村だけ</label>
+      <label class="check"><input type="checkbox" name="detail" data-filter="detail"> 自治体の詳細ページがあるものだけ</label>
     </form>
     <p class="search-status" data-search-status aria-live="polite">読み込み中…</p>
     <ol class="cards results" data-search-results></ol>

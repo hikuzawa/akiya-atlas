@@ -3,5 +3,5 @@
  "kind": "listing_detail",
  "key_field": "listing_no",
  "html": "../../html/tomi_detail.html",
- "note": "llm_response.json は 2026-09-10 に claude-haiku-4-5 で取得した本番応答。手作りの旧応答は llm_response.previous.json。"
+ "note": "llm_response.json は 2026-09-10 に claude-haiku-4-5 で取得した本番応答。手作りの旧応答は llm_response.previous.json。 所在地は期待値から外している（抽出は番地つきで取り、番地の除去は service の finalize とそのテストで固定しているため）。"
 }

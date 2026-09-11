@@ -1,0 +1,7 @@
+{
+ "url": "https://www.city.aki.kochi.jp/iju/reside/list.php",
+ "kind": "listing_index",
+ "key_field": "listing_no",
+ "html": "../../html/aki_cards.html",
+ "note": "高知県安芸市の空き家バンク一覧（カード形式）。2026-09-11 取得。llm_response.json は sitemill eval --record で本番のモデルから取り直す。"
+}

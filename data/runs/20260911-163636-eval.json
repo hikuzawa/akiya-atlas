@@ -1,9 +1,9 @@
 {
   "accuracy": {
     "address": {
-      "correct": 12,
-      "rate": 1.0,
-      "total": 12
+      "correct": 2,
+      "rate": 0.667,
+      "total": 3
     },
     "built_year": {
       "correct": 3,
@@ -11,9 +11,9 @@
       "total": 3
     },
     "floor_area_m2": {
-      "correct": 5,
+      "correct": 3,
       "rate": 1.0,
-      "total": 5
+      "total": 3
     },
     "land_area_m2": {
       "correct": 3,
@@ -26,14 +26,14 @@
       "total": 2
     },
     "price": {
-      "correct": 15,
+      "correct": 3,
       "rate": 1.0,
-      "total": 15
+      "total": 3
     },
     "rent_monthly": {
-      "correct": 13,
+      "correct": 1,
       "rate": 1.0,
-      "total": 13
+      "total": 1
     },
     "structure": {
       "correct": 1,
@@ -41,111 +41,130 @@
       "total": 1
     }
   },
-  "cases": 9,
+  "cases": 3,
   "metrics": {
     "fields": {
       "address": {
-        "not_found": 65,
-        "notes": {},
-        "parsed": 415,
-        "quote_not_in_source": 0,
-        "total": 480,
-        "unparsed": 0
-      },
-      "built_year": {
-        "not_found": 478,
-        "notes": {},
-        "parsed": 2,
-        "quote_not_in_source": 0,
-        "total": 480,
-        "unparsed": 0
-      },
-      "floor_area_m2": {
-        "not_found": 475,
-        "notes": {},
-        "parsed": 5,
-        "quote_not_in_source": 0,
-        "total": 480,
-        "unparsed": 0
-      },
-      "land_area_m2": {
-        "not_found": 304,
-        "notes": {
-          "no_number": 2,
-          "quote_not_in_source": 1
-        },
-        "parsed": 173,
-        "quote_not_in_source": 1,
-        "total": 480,
-        "unparsed": 2
-      },
-      "layout": {
-        "not_found": 477,
+        "not_found": 0,
         "notes": {},
         "parsed": 3,
         "quote_not_in_source": 0,
-        "total": 480,
+        "total": 3,
+        "unparsed": 0
+      },
+      "built_year": {
+        "not_found": 1,
+        "notes": {},
+        "parsed": 2,
+        "quote_not_in_source": 0,
+        "total": 3,
+        "unparsed": 0
+      },
+      "floor_area_m2": {
+        "not_found": 0,
+        "notes": {},
+        "parsed": 3,
+        "quote_not_in_source": 0,
+        "total": 3,
+        "unparsed": 0
+      },
+      "land_area_m2": {
+        "not_found": 0,
+        "notes": {},
+        "parsed": 3,
+        "quote_not_in_source": 0,
+        "total": 3,
+        "unparsed": 0
+      },
+      "layout": {
+        "not_found": 0,
+        "notes": {},
+        "parsed": 3,
+        "quote_not_in_source": 0,
+        "total": 3,
         "unparsed": 0
       },
       "listing_no": {
-        "not_found": 2,
+        "not_found": 0,
         "notes": {},
-        "parsed": 478,
+        "parsed": 3,
         "quote_not_in_source": 0,
-        "total": 480,
+        "total": 3,
         "unparsed": 0
       },
       "price": {
-        "not_found": 102,
-        "notes": {
-          "negotiable": 38,
-          "no_number": 33,
-          "not_a_price": 11
-        },
-        "parsed": 296,
+        "not_found": 0,
+        "notes": {},
+        "parsed": 3,
         "quote_not_in_source": 0,
-        "total": 480,
-        "unparsed": 82
+        "total": 3,
+        "unparsed": 0
       },
       "rent_monthly": {
-        "not_found": 374,
-        "notes": {
-          "negotiable": 2,
-          "no_number": 7,
-          "range": 1
-        },
-        "parsed": 96,
+        "not_found": 3,
+        "notes": {},
+        "parsed": 0,
         "quote_not_in_source": 0,
-        "total": 480,
-        "unparsed": 10
+        "total": 3,
+        "unparsed": 0
       },
       "status_text": {
-        "not_found": 456,
+        "not_found": 3,
         "notes": {},
-        "parsed": 24,
+        "parsed": 0,
         "quote_not_in_source": 0,
-        "total": 480,
+        "total": 3,
         "unparsed": 0
       },
       "structure": {
-        "not_found": 478,
+        "not_found": 1,
         "notes": {
           "quote_not_in_source": 1
         },
         "parsed": 1,
         "quote_not_in_source": 1,
-        "total": 480,
+        "total": 3,
         "unparsed": 0
       }
     },
     "flags": {},
-    "items": 480,
-    "pages": 9,
+    "items": 3,
+    "pages": 3,
     "summary_replaced": 0,
     "truncated_pages": 0
   },
-  "mismatches": [],
-  "recorded": [],
+  "mismatches": [
+    {
+      "case": "tomi_detail",
+      "expected": "東御市滋野",
+      "field": "address",
+      "got": "東御市滋野乙4000-1",
+      "key": "No.322"
+    }
+  ],
+  "recorded": [
+    {
+      "cached": true,
+      "case": "iiyama_detail",
+      "input_tokens": 3807,
+      "model": "claude-haiku-4-5-20251001",
+      "output_tokens": 200
+    },
+    {
+      "cached": true,
+      "case": "saku_detail",
+      "input_tokens": 3636,
+      "model": "claude-haiku-4-5-20251001",
+      "output_tokens": 264
+    },
+    {
+      "cached": true,
+      "case": "tomi_detail",
+      "input_tokens": 3402,
+      "model": "claude-haiku-4-5-20251001",
+      "output_tokens": 211
+    }
+  ],
   "skipped": [],
   "unmatched_expected": []
 }

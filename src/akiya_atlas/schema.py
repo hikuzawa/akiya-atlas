@@ -101,6 +101,8 @@ class Listing(BaseModel):
     page_kind: str = "listing_index"
     provenance: dict[str, Any] | None = None
     status: str = "active"
+    duplicate_of: str | None = None  # 同じ物件が別 source にもある（ADR 0009）
+    duplicate_reason: str | None = None
     first_seen_at: str | None = None
     last_seen_at: str | None = None
     history: list[dict[str, Any]] = Field(default_factory=list)

@@ -97,7 +97,8 @@ class Dataset:
         return cls(sources=sources, municipalities=municipalities, listings=listings, state=state)
 
     def listings_for(self, muni: Municipality, *, active_only: bool = False) -> list[Listing]:
-        rows = self.listings_by_source.get(muni.id, [])
+        # 他の source と同じ物件（ADR 0009）は数えない・出さない
+        rows = [ls for ls in self.listings_by_source.get(muni.id, []) if not ls.duplicate_of]
         if active_only:
             rows = [ls for ls in rows if ls.is_active]
         return sorted(rows, key=lambda ls: (not ls.is_active, ls.listing_no))

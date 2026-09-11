@@ -2,8 +2,8 @@
   "accuracy": {
     "address": {
       "correct": 12,
-      "rate": 1.0,
-      "total": 12
+      "rate": 0.923,
+      "total": 13
     },
     "built_year": {
       "correct": 3,
@@ -144,7 +144,15 @@
     "summary_replaced": 0,
     "truncated_pages": 0
   },
-  "mismatches": [],
+  "mismatches": [
+    {
+      "case": "tomi_detail",
+      "expected": "東御市滋野",
+      "field": "address",
+      "got": "東御市滋野乙4000-1",
+      "key": "No.322"
+    }
+  ],
   "recorded": [],
   "skipped": [],
   "unmatched_expected": []

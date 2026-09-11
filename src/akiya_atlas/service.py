@@ -13,6 +13,7 @@ from typing import Any
 from sitemill.build.pii import PHONE_RE
 from sitemill.diff.state import CrawlState
 from sitemill.extract import ExtractedItem, ExtractionSpec
+from sitemill.fetch.links import host_of
 from sitemill.models import Page, Provenance, Redirect, Source
 from sitemill.parse.jp.address import has_street_number, strip_street_number
 from sitemill.settings import Workspace
@@ -200,6 +201,78 @@ def merge_content(existing: dict[str, Any], new: dict[str, Any]) -> dict[str, An
     return out
 
 
+def _facts_key(content: dict[str, Any]) -> tuple | None:
+    """所在地・価格・延床面積がそろっているときだけ作る突き合わせキー（ADR 0009 条件2）。"""
+    addr, price, floor = (content.get(k) or {} for k in ("address", "price", "floor_area_m2"))
+    if not all(
+        f.get("status") == "parsed" and f.get("value") is not None for f in (addr, price, floor)
+    ):
+        return None
+    return (
+        content.get("municipality_code"),
+        str(addr["value"]),
+        int(price["value"]),
+        round(float(floor["value"]), 1),
+    )
+
+
+def mark_duplicates(ws: Workspace) -> dict[str, int]:
+    """同一物件が複数 source にあるとき、市町村サイト側を正として他を隠す。
+
+    隠す側には `duplicate_of` と `duplicate_reason` を書く。削除はしないので、正の側が
+    消えれば次回また表に戻せる。件数は実行レポートに出す。
+    """
+    from akiya_atlas.data import load_municipalities, load_sources
+
+    munis = {m.id: m for m in load_municipalities(ws)}
+    sources = {s.id: s for s in load_sources(ws)}
+
+    def is_own_site(source_id: str) -> bool:
+        """その source が市町村自身のサイトか（公式ドメインと同じホストか）。"""
+        muni, src = munis.get(source_id), sources.get(source_id)
+        if muni is None or src is None:
+            return False
+        return host_of(muni.bank_url) == host_of(muni.official_url)
+
+    stores = {sid: RecordStore(records_path(ws, sid)) for sid in munis}
+    rows: list[tuple[str, dict[str, Any]]] = [
+        (sid, rec) for sid, store in stores.items() for rec in store.records.values()
+    ]
+    groups: dict[tuple, list[tuple[str, dict[str, Any]]]] = {}
+    for sid, rec in rows:
+        if rec.get("status") != "active":
+            continue
+        no = normalize_listing_no(str(rec.get("listing_no") or ""))
+        if no:
+            groups.setdefault(("no", rec.get("municipality_code"), no), []).append((sid, rec))
+        facts = _facts_key(rec)
+        if facts is not None:
+            groups.setdefault(("facts", *facts), []).append((sid, rec))
+
+    counts = {"groups": 0, "hidden": 0, "restored": 0}
+    hidden_ids: set[str] = set()
+    for key, group in groups.items():
+        if len(group) < 2 or len({sid for sid, _ in group}) < 2:
+            continue  # 同じ source の中の重複は扱わない（一覧と詳細は既に統合済み）
+        counts["groups"] += 1
+        group.sort(key=lambda pair: (not is_own_site(pair[0]), pair[0]))
+        keeper = group[0][1]
+        for _sid, rec in group[1:]:
+            rec["duplicate_of"] = keeper.get("record_id")
+            rec["duplicate_reason"] = "listing_no" if key[0] == "no" else "address_price_area"
+            hidden_ids.add(str(rec.get("record_id")))
+            counts["hidden"] += 1
+    for _sid, rec in rows:  # 重複でなくなったものは印を外す
+        if rec.get("duplicate_of") and str(rec.get("record_id")) not in hidden_ids:
+            rec.pop("duplicate_of", None)
+            rec.pop("duplicate_reason", None)
+            counts["restored"] += 1
+    if counts["hidden"] or counts["restored"]:
+        for store in stores.values():
+            store.save()
+    return counts
+
+
 class AkiyaAtlasService:
     id = "akiya-atlas"
 
@@ -245,7 +318,7 @@ class AkiyaAtlasService:
         log.info("%s %s: %s", source.id, url, counts)
         return counts
 
-    def finalize(self, ws: Workspace, *, now: datetime) -> None:
+    def finalize(self, ws: Workspace, *, now: datetime) -> dict[str, int]:
         """変化の無いページのレコードは見えているとみなし、古いものを stale にする。"""
         state = CrawlState.load(ws.state_dir / "crawl.json")
         for source in load_sources(ws):
@@ -277,6 +350,11 @@ class AkiyaAtlasService:
             if stale:
                 log.info("%s: %d 件を stale に", source.id, stale)
             store.save()
+        # 全 source が揃ってから、同じ物件が 2 か所に出ていないかを見る（ADR 0009）
+        dups = mark_duplicates(ws)
+        if dups["hidden"] or dups["restored"]:
+            log.info("重複: %d 件を隠し、%d 件を戻した", dups["hidden"], dups["restored"])
+        return dups
 
     def pages(self, ws: Workspace, *, now: datetime) -> list[Page]:
         return pages.build_pages(ws, Dataset.load(ws), now=now)

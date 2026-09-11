@@ -54,11 +54,31 @@
     if (pref) select.value = current;
   }
 
+  // 「50-100」「150-」のような範囲指定に値が入るか。値が無い物件は範囲指定時に外す
+  function inRange(value, spec) {
+    if (!spec) return true;
+    if (value == null) return false;
+    var parts = spec.split("-");
+    var lo = parts[0] === "" ? -Infinity : Number(parts[0]);
+    var hi = parts[1] === "" || parts[1] === undefined ? Infinity : Number(parts[1]);
+    return value >= lo && value < hi;
+  }
+
+  // 間取りの原文（5DK、3LDK など）から部屋数を読む。読めなければ null
+  function rooms(layout) {
+    if (!layout) return null;
+    var m = String(layout).match(/(\d+)\s*[SLDK]/i);
+    return m ? Number(m[1]) : null;
+  }
+
   function matches(r) {
     if (filters.muni_code && r.muni_code !== filters.muni_code) return false;
     if (filters.band && r.band !== filters.band) return false;
     if (filters.deal && r.deal !== filters.deal) return false;
     if (filters.subsidy && !(r.subsidy_migration || r.subsidy_renovation)) return false;
+    if (filters.detail && !r.has_detail) return false;
+    if (!inRange(r.floor_area_m2, filters.floor)) return false;
+    if (!inRange(rooms(r.layout), filters.rooms)) return false;
     return true;
   }
 
@@ -67,6 +87,7 @@
     facts.push("<li>" + icon("map") + esc(r.pref) + " " + esc(r.muni) + "</li>");
     if (r.address) facts.push("<li>" + icon("pin") + esc(r.address) + "</li>");
     if (r.floor_area_m2) facts.push("<li>" + icon("area") + "延床 " + esc(r.floor_area_m2) + "㎡</li>");
+    if (r.layout) facts.push("<li>" + icon("home") + esc(r.layout) + "</li>");
     if (r.built_year) facts.push("<li>" + icon("calendar") + esc(r.built_year) + "年築</li>");
     var badges = [];
     if (r.has_detail) badges.push('<span class="badge badge-info">' + icon("check") + "詳細あり</span>");
