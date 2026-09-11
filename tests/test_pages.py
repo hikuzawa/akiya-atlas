@@ -334,3 +334,26 @@ def test_takedown_hides_the_listing_from_pages_and_search(ws: Workspace) -> None
     assert all(r["url"] != "/nagano/202193-tomi/322/" for r in rows)
     sitemap = (dist / "sitemap.xml").read_text(encoding="utf-8")
     assert "/nagano/202193-tomi/322/" not in sitemap
+
+
+def test_price_quote_is_shown_without_brackets() -> None:
+    """数値化できない価格は原文の引用を出す。囲みの角括弧は表示崩れに見えるので外す。"""
+    from sitemill.models import FieldStatus, FieldValue
+
+    from akiya_atlas.pages import price_text
+    from akiya_atlas.schema import Listing
+
+    def _mk(quote: str) -> Listing:
+        return Listing(
+            record_id="a",
+            source_id="s",
+            municipality_code="000000",
+            listing_no="1",
+            source_url="https://example.invalid/",
+            price=FieldValue(quote=quote, status=FieldStatus.unparsed),
+        )
+
+    assert price_text(_mk("[無償譲渡]")) == "無償譲渡"
+    assert price_text(_mk("［応相談］")) == "応相談"
+    assert price_text(_mk("応相談")) == "応相談"
+    assert price_text(_mk("[]")) == "—"

@@ -117,8 +117,10 @@ def price_text(ls: Listing) -> str:
         parts.append(f"月額 {yen(ls.rent_monthly.value)}")
     if parts:
         return " / ".join(parts)
-    if ls.price.quote or ls.rent_monthly.quote:
-        return ls.price.quote or ls.rent_monthly.quote or "—"
+    quote = ls.price.quote or ls.rent_monthly.quote
+    if quote:
+        # 原文の引用をそのまま出す。ただし「[無償譲渡]」のような囲みは表示崩れに見えるので外す
+        return quote.strip().strip("[]［］").strip() or "—"
     return "記載なし"
 
 
