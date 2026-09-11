@@ -149,3 +149,25 @@ def test_match_links_handles_decorated_anchors_and_internal_pages() -> None:
         "name": "高松市",
         "official_url": "http://www.city.takamatsu.kagawa.jp/",
     }
+
+
+def test_one_prefecture_failing_does_not_stop_the_rest(
+    rt: commands.Runtime, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """全国分は数時間かかる。1 県の想定外で残りを落とさない。"""
+    calls: list[str] = []
+
+    def boom(rt_: commands.Runtime, slug: str) -> list[str]:
+        calls.append(slug)
+        if slug == "kagawa":
+            raise ValueError("番地が残っている所在地がある")
+        return []
+
+    monkeypatch.setattr(backfill, "source_ids_for", boom)
+    lines: list[str] = []
+    backfill.run_backfill(rt, only=["香川県", "高知県"], stages=("crawl",), echo=lines.append)
+    assert calls == ["kagawa", "kochi"]  # JIS 順。香川で落ちても高知は続く
+    prog = backfill.load_progress(rt.ws)["prefectures"]
+    assert "番地" in prog["kagawa"]["error"] and not prog["kagawa"].get("crawl")
+    assert prog["kochi"]["crawl"]
+    assert any("失敗した県" in ln for ln in lines)

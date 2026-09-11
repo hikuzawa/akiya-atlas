@@ -98,11 +98,16 @@ def run_backfill(
     stages: Sequence[str] = STAGES,
     echo: Callable[[str], None] = print,
 ) -> dict[str, Any]:
-    """都道府県を順に処理し、進捗を都度保存する。"""
+    """都道府県を順に処理し、進捗を都度保存する。
+
+    1 県で失敗しても止めない。全国分は数時間かかるので、1 件の想定外（相手サイトの書式、
+    通信の失敗）で残りの県を落とさないほうがよい。失敗は進捗ファイルに残し、最後にまとめて出す。
+    """
     ws = rt.ws
     prog = load_progress(ws)
     table = prog["prefectures"]
     wanted = [st for st in STAGES if st in stages]
+    failed: list[str] = []
     for name, slug in prefectures(only):
         entry = table.setdefault(slug, {"name": name})
         # backfill 以前に手動で discover 済みの県（長野・沖縄・香川）は発見済みとして扱う
@@ -112,55 +117,84 @@ def run_backfill(
             echo(f"{name}: 済み（スキップ。やり直すなら --force）")
             continue
         t0 = time.monotonic()
-        if "discover" in wanted and (force or not entry.get("discover")):
-            with rt.client() as client:
-                report = discover_and_write(ws, name, client=client, workers=workers)
-                requests = client.request_count
-            entry["discover"] = _now()
-            entry["discover_stats"] = {
-                "total": report.total,
-                "skipped_existing": report.skipped_existing,
-                "adopted_crawl": report.adopted_crawl,
-                "adopted_link_only": report.adopted_link_only,
-                "pending": report.pending,
-                "requests": requests,
-                "minutes": round((time.monotonic() - t0) / 60, 1),
-            }
+        try:
+            _run_prefecture(rt, name, slug, entry, prog, wanted, workers, force, echo)
+        except Exception as e:  # noqa: BLE001
+            entry["error"] = f"{type(e).__name__}: {e}"[:300]
+            entry["elapsed_minutes"] = round((time.monotonic() - t0) / 60, 1)
             save_progress(ws, prog)
-            echo(
-                f"{name}: 発見 {entry['discover_stats']['minutes']}分 対象={report.total} "
-                f"crawl={report.adopted_crawl} link_only={report.adopted_link_only} "
-                f"pending={report.pending}"
-            )
-        ids = source_ids_for(rt, slug)
-        if "crawl" in wanted and (force or not entry.get("crawl")):
-            if ids:
-                rep = commands.cmd_crawl(rt, ids, workers=workers)
-                entry["crawl_stats"] = rep.stages.get("crawl", {})
-            entry["crawl"] = _now()
-            save_progress(ws, prog)
-            echo(f"{name}: 巡回 {len(ids)} source {entry.get('crawl_stats', {})}")
-        if "extract" in wanted and (force or not entry.get("extract")):
-            if ids:
-                rep = commands.cmd_extract(rt, ids, workers=workers)
-                entry["extract_stats"] = {
-                    **rep.stages.get("extract", {}),
-                    "llm_calls": rep.llm.calls,
-                    "input_tokens": rep.llm.input_tokens,
-                    "output_tokens": rep.llm.output_tokens,
-                }
-            entry["extract"] = _now()
-            save_progress(ws, prog)
-            echo(f"{name}: 抽出 {entry.get('extract_stats', {})}")
-        if "heal" in wanted and (force or not entry.get("heal")):
-            if ids:
-                rep = commands.cmd_heal(rt, ids)
-                entry["heal_stats"] = rep.stages.get("heal", {})
-                for note in rep.notes:
-                    echo(f"  - {note}")
-            entry["heal"] = _now()
-            save_progress(ws, prog)
+            failed.append(name)
+            log.exception("%s: 失敗", name)
+            echo(f"{name}: 失敗（続行）: {entry['error']}")
+            continue
+        entry.pop("error", None)
         entry["elapsed_minutes"] = round((time.monotonic() - t0) / 60, 1)
         save_progress(ws, prog)
         echo(f"{name}: 完了 {entry['elapsed_minutes']}分")
+    if failed:
+        echo(f"失敗した県: {'・'.join(failed)}（直してから同じコマンドを再実行する）")
     return prog
+
+
+def _run_prefecture(  # noqa: PLR0913
+    rt: commands.Runtime,
+    name: str,
+    slug: str,
+    entry: dict[str, Any],
+    prog: dict[str, Any],
+    wanted: Sequence[str],
+    workers: int | None,
+    force: bool,
+    echo: Callable[[str], None],
+) -> None:
+    """1 県分の 発見→巡回→抽出→自己修復。工程ごとに進捗を保存する。"""
+    ws = rt.ws
+    t0 = time.monotonic()
+    if "discover" in wanted and (force or not entry.get("discover")):
+        with rt.client() as client:
+            report = discover_and_write(ws, name, client=client, workers=workers)
+            requests = client.request_count
+        entry["discover"] = _now()
+        entry["discover_stats"] = {
+            "total": report.total,
+            "skipped_existing": report.skipped_existing,
+            "adopted_crawl": report.adopted_crawl,
+            "adopted_link_only": report.adopted_link_only,
+            "pending": report.pending,
+            "requests": requests,
+            "minutes": round((time.monotonic() - t0) / 60, 1),
+        }
+        save_progress(ws, prog)
+        echo(
+            f"{name}: 発見 {entry['discover_stats']['minutes']}分 対象={report.total} "
+            f"crawl={report.adopted_crawl} link_only={report.adopted_link_only} "
+            f"pending={report.pending}"
+        )
+    ids = source_ids_for(rt, slug)
+    if "crawl" in wanted and (force or not entry.get("crawl")):
+        if ids:
+            rep = commands.cmd_crawl(rt, ids, workers=workers)
+            entry["crawl_stats"] = rep.stages.get("crawl", {})
+        entry["crawl"] = _now()
+        save_progress(ws, prog)
+        echo(f"{name}: 巡回 {len(ids)} source {entry.get('crawl_stats', {})}")
+    if "extract" in wanted and (force or not entry.get("extract")):
+        if ids:
+            rep = commands.cmd_extract(rt, ids, workers=workers)
+            entry["extract_stats"] = {
+                **rep.stages.get("extract", {}),
+                "llm_calls": rep.llm.calls,
+                "input_tokens": rep.llm.input_tokens,
+                "output_tokens": rep.llm.output_tokens,
+            }
+        entry["extract"] = _now()
+        save_progress(ws, prog)
+        echo(f"{name}: 抽出 {entry.get('extract_stats', {})}")
+    if "heal" in wanted and (force or not entry.get("heal")):
+        if ids:
+            rep = commands.cmd_heal(rt, ids)
+            entry["heal_stats"] = rep.stages.get("heal", {})
+            for note in rep.notes:
+                echo(f"  - {note}")
+        entry["heal"] = _now()
+        save_progress(ws, prog)
