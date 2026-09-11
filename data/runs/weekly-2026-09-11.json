@@ -1,0 +1,82 @@
+{
+  "days": 7,
+  "generated_at": "2026-09-11T11:10:11+00:00",
+  "per_day": [
+    {
+      "date": "2026-09-09",
+      "seconds": 280.0,
+      "fetched": 81,
+      "changed": 42,
+      "pages": 0,
+      "items": 0,
+      "created": 0,
+      "updated": 0,
+      "llm_calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "heal_checked": 0,
+      "heal_changed": 0,
+      "heal_downgraded": 0,
+      "heal_recrawl": 0,
+      "build_pages": 10,
+      "errors": [],
+      "cost": 0.0
+    },
+    {
+      "date": "2026-09-10",
+      "seconds": 3560.0,
+      "fetched": 890,
+      "changed": 46,
+      "pages": 84,
+      "items": 534,
+      "created": 432,
+      "updated": 82,
+      "llm_calls": 84,
+      "input_tokens": 311538,
+      "output_tokens": 83188,
+      "heal_checked": 0,
+      "heal_changed": 0,
+      "heal_downgraded": 0,
+      "heal_recrawl": 0,
+      "build_pages": 819,
+      "errors": [
+        "crawl: https://furusato-iiyama.net/akiyabank/: robots.txt を取得できないため今回は巡回しない",
+        "crawl: https://www.iju-omachi.jp/akiyabank.html: robots.txt を取得できないため今回は巡回しない"
+      ],
+      "cost": 0.7275
+    },
+    {
+      "date": "2026-09-11",
+      "seconds": 14696.0,
+      "fetched": 1768,
+      "changed": 428,
+      "pages": 395,
+      "items": 4771,
+      "created": 3765,
+      "updated": 828,
+      "llm_calls": 395,
+      "input_tokens": 1860098,
+      "output_tokens": 761779,
+      "heal_checked": 269,
+      "heal_changed": 0,
+      "heal_downgraded": 110,
+      "heal_recrawl": 0,
+      "build_pages": 6070,
+      "errors": [
+        "crawl: https://www.town.mutsuzawa.chiba.jp/akiya/page/2: HTTP 404",
+        "crawl: https://www.town.mutsuzawa.chiba.jp/akiya/page/2: HTTP 404",
+        "crawl: https://www.town.mutsuzawa.chiba.jp/akiya/page/2: HTTP 404",
+        "crawl: https://www.city.kaizu.lg.jp/kurashi/0000001552.html: robots.txt を取得できないため今回は巡回しない",
+        "crawl: https://www.town.mutsuzawa.chiba.jp/akiya/page/2: HTTP 404",
+        "crawl: https://www.town.mutsuzawa.chiba.jp/akiya/page/2: HTTP 404"
+      ],
+      "cost": 5.669
+    }
+  ],
+  "month_estimate": {
+    "minutes": 3089.333333333333,
+    "cost": 63.96471
+  },
+  "takedowns_hidden": 0,
+  "other_open_issues": {}
+}
