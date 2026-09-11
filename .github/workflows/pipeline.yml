@@ -7,12 +7,15 @@
 #     ダッシュボードでの手作業も、トークンをローカルに置くことも要らない。
 #   - build の直後に、canonical / sitemap / robots が site.toml の base_url を指すことを検査する
 #     （ドメイン切替のときに古いホストが残ったまま配置されるのを止める）。
+#   - 手動実行の mode=deploy-only は、巡回・抽出・heal・データのコミットを行わず、main の現在のデータで
+#     build → 検査 → deploy だけを行う（テンプレートやデザインの変更を反映するとき）。既定は full。
 # 前提（人間側の作業、docs/human-tasks.md）:
 #   - GitHub に hikuzawa/sitemill と hikuzawa/akiya-atlas を作成し push する（済み）
 #   - Secrets: ANTHROPIC_API_KEY（済み）、CLOUDFLARE_API_TOKEN（Account > Cloudflare Pages: Edit）、
 #     CLOUDFLARE_ACCOUNT_ID、GOOGLE_MAPS_EMBED_KEY / CF_WEB_ANALYTICS_TOKEN（任意）。
 #     sitemill は public なので読み取り用 PAT は不要
 name: pipeline
+run-name: "pipeline (${{ inputs.mode || 'full' }})"
 
 on:
   schedule:
@@ -23,6 +26,13 @@ on:
         description: "Cloudflare Pages に配置する（Secrets がある場合）"
         type: boolean
         default: true
+      mode:
+        description: "full: 巡回→抽出→heal→build→検査→deploy ／ deploy-only: 巡回・抽出・heal・データのコミットを行わず、main の現在のデータで build→検査→deploy だけ"
+        type: choice
+        options:
+          - full
+          - deploy-only
+        default: full
 
 permissions:
   contents: write
@@ -60,6 +70,7 @@ jobs:
           enable-cache: true
 
       - name: Restore raw HTML cache (git 管理外)
+        if: inputs.mode != 'deploy-only' # deploy-only では飛ばす
         uses: actions/cache@v4
         with:
           path: |
@@ -74,16 +85,19 @@ jobs:
         run: uv sync --frozen
 
       - name: Crawl
+        if: inputs.mode != 'deploy-only' # deploy-only では飛ばす
         working-directory: akiya-atlas
         run: uv run sitemill crawl
 
       - name: Extract
+        if: inputs.mode != 'deploy-only' # deploy-only では飛ばす
         working-directory: akiya-atlas
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: uv run sitemill extract
 
       - name: Heal（巡回しても 0 件の source を同一サイト内で再評価し、差し替えか状態見直し）
+        if: inputs.mode != 'deploy-only' # deploy-only では飛ばす
         working-directory: akiya-atlas
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -102,11 +116,13 @@ jobs:
         run: uv run python .github/scripts/check_public_urls.py --expect-base https://akiya-atlas.com
 
       - name: Eval (fixture、劣化検知)
+        if: inputs.mode != 'deploy-only' # deploy-only では飛ばす
         working-directory: akiya-atlas
         run: uv run sitemill eval
 
       - name: Commit data changes
         id: commit
+        if: inputs.mode != 'deploy-only' # deploy-only では飛ばす
         working-directory: akiya-atlas
         # push が競合しても配置（deploy）は続ける。失敗は下の通知ステップが outcome を見て Issue に出す
         continue-on-error: true
