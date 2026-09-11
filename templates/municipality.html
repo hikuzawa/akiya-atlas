@@ -1,103 +1,108 @@
 {% extends "base.html" %}
 {% block content %}
-<nav class="breadcrumb" aria-label="現在地"><a href="/">トップ</a> › <a href="/{{ muni.prefecture_slug }}/">{{ muni.prefecture }}</a> › {{ muni.name }}</nav>
-<h1>{{ muni.name }}の空き家バンク</h1>
-{% if muni.crawled %}
-<p class="lead">{{ muni.prefecture }}{{ muni.name }}が運営する{{ muni.bank_label }}の掲載物件を要約しています。詳細・写真・申込みは <a href="{{ muni.bank_url }}" rel="noopener" target="_blank">{{ muni.name }}の{{ muni.bank_label }}（公式）</a> をご覧ください。</p>
-
-<ul class="stats" aria-label="掲載状況">
-  <li><strong>{{ muni_row.count|number }}</strong> 掲載中</li>
-  <li><strong>{{ muni_row.sale|number }}</strong> 売買</li>
-  <li><strong>{{ muni_row.rent|number }}</strong> 賃貸</li>
-  <li>最終取得 {{ muni_row.last_fetched }}</li>
-</ul>
-{% else %}
-<div class="notice" role="note">
-  <p><strong>{% if muni.bank_status == "none" %}空き家バンクの物件ページを確認できませんでした{% elif muni.bank_status == "spa_unsupported" %}このサイトはまだ物件を要約できません{% elif muni.bank_status == "info" %}空き家バンクは登録制などで物件を公開しています{% else %}物件は民間プラットフォームで公開されています{% endif %}</strong></p>
-  <p>{{ muni.bank_note }}</p>
-  <p><a class="button" href="{{ muni.bank_url }}" rel="noopener" target="_blank">{{ muni.name }}の{{ muni.bank_label }}（公式・外部サイト）</a></p>
+{% set active = listings|selectattr("status", "eq", "active")|list %}
+{% set has_subsidy = subsidies|length > 0 %}
+<nav class="breadcrumb" aria-label="現在地"><ol><li><a href="/">トップ</a></li><li><a href="/{{ muni.prefecture_slug }}/">{{ muni.prefecture }}</a></li><li>{{ muni.name }}</li></ol></nav>
+<div class="page-head">
+  <h1>{{ muni.name }}の空き家バンク</h1>
+  {% if muni.crawled %}
+  <p class="sub">{{ muni.prefecture }}{{ muni.name }}が運営する{{ muni.bank_label }}の掲載物件を要約しています。詳細・写真・申込みは公式ページで。</p>
+  <div class="operator-line">
+    <span class="who">{{ ui.icon("building") }}運営: {{ muni.name }}（自治体・公式）</span>
+    {{ ui.ext_link(muni.bank_url, muni.name ~ "の" ~ muni.bank_label ~ "（公式）で詳細を見る") }}
+  </div>
+  {# 数字の帯: 件数 / 価格帯の最多 / 築年の範囲 / 補助制度 / 最終取得 #}
+  {% set labels = ["100万円未満", "100〜300万円", "300〜500万円", "500〜1,000万円", "1,000万円以上"] %}
+  {% set ns = namespace(counts=[], top=-1, topn=0, kinds=[]) %}
+  {% for l in labels %}
+    {% set c = active|selectattr("band", "eq", l)|list|length %}
+    {% set ns.counts = ns.counts + [c] %}
+    {% if c > ns.topn %}{% set ns.topn = c %}{% set ns.top = loop.index0 %}{% endif %}
+  {% endfor %}
+  {% set years = active|selectattr("built_year")|map(attribute="built_year")|sort|list %}
+  {% if muni_row.subsidy_migration %}{% set ns.kinds = ns.kinds + [("ok", "移住")] %}{% endif %}
+  {% if muni_row.subsidy_renovation %}{% set ns.kinds = ns.kinds + [("ok", "改修")] %}{% endif %}
+  {% if muni_row.subsidy_demolition %}{% set ns.kinds = ns.kinds + [("ok", "解体")] %}{% endif %}
+  {% set cells = [{"value": muni_row.count|number, "unit": "件", "label": "掲載中（売買 " ~ muni_row.sale|number ~ " ／ 賃貸 " ~ muni_row.rent|number ~ "）", "kind": "kaki"}] %}
+  {% if ns.topn > 0 %}
+    {% set cells = cells + [{"value": labels[ns.top], "label": "売買の価格帯で最多（" ~ ns.topn ~ " 件）", "kind": "text", "bars": {"counts": ns.counts, "labels": labels, "top": ns.top, "title": "売買価格の分布"}}] %}
+  {% endif %}
+  {% if years|length >= 2 %}
+    {% set cells = cells + [{"value": years[0] ~ "〜" ~ years[-1], "unit": "年", "label": "築年の範囲（" ~ years|length ~ " 件に記載）", "kind": "range"}] %}
+  {% elif years|length == 1 %}
+    {% set cells = cells + [{"value": years[0], "unit": "年", "label": "築年（1 件に記載）"}] %}
+  {% endif %}
+  {% if ns.kinds %}
+    {% set cells = cells + [{"label": "補助制度あり（" ~ subsidies|length ~ " 件）", "badges": ns.kinds}] %}
+  {% endif %}
+  {% set cells = cells + [{"value": muni_row.last_fetched, "label": "最終取得（公式ページを毎日確認）", "kind": "text"}] %}
+  {{ ui.stat_strip(cells, muni.name ~ "の掲載状況") }}
+  {% else %}
+  {{ ui.status_card(muni) }}
+  {% endif %}
 </div>
-{% if external %}
-<section aria-labelledby="ext-title">
-  <h2 id="ext-title">物件を探せるサイト</h2>
-  <p class="meta">以下は自治体以外が運営するサイトです。本サイトでは巡回・要約せず、リンクのみ掲載しています。</p>
-  <ul>{% for e in external %}<li><a href="{{ e.url }}" rel="noopener nofollow" target="_blank">{{ e.label }}</a>{% if e.note %} — {{ e.note }}{% endif %}</li>{% endfor %}</ul>
+
+{% if not muni.crawled and external %}
+<section class="section" aria-labelledby="ext-title">
+  {{ ui.section_head("ext-title", "物件を探せるサイト", "自治体以外が運営。本サイトでは要約せずリンクのみ") }}
+  <ul class="link-list surface">{% for e in external %}<li><a href="{{ e.url }}" rel="noopener nofollow" target="_blank">{{ e.label }}{{ ui.icon("ext") }}</a>{% if e.note %}<span class="meta">{{ e.note }}</span>{% endif %}</li>{% endfor %}</ul>
 </section>
 {% endif %}
-{% endif %}
 
-<section aria-labelledby="subsidy-title">
-  <h2 id="subsidy-title">補助制度</h2>
+<section class="section" aria-labelledby="subsidy-title">
+  {{ ui.section_head("subsidy-title", "補助制度", "本サイトが確認したもの。最新は自治体ページで") }}
   {% if subsidies %}
-  <ul class="subsidy-list">
-    {% for s in subsidies %}
-    <li><span class="tag">{{ s.kind }}</span> <a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.name }}</a>{% if s.summary %} — {{ s.summary }}{% endif %}{% if s.amount_text %}（{{ s.amount_text }}）{% endif %}{% if s.checked_on %} <span class="meta">確認日 {{ s.checked_on }}</span>{% endif %}</li>
-    {% endfor %}
-  </ul>
+  {{ ui.subsidy_cards(subsidies) }}
   {% else %}
-  <p>本サイトで確認できた補助制度はまだありません。最新情報は自治体ページをご確認ください。</p>
+  <p class="surface">本サイトで確認できた補助制度はまだありません。最新情報は自治体ページをご確認ください。</p>
   {% endif %}
 </section>
 
 {% if muni.crawled %}
-<section aria-labelledby="listing-title">
-  <h2 id="listing-title">掲載物件（要約）</h2>
+<section class="section" aria-labelledby="listing-title">
+  {{ ui.section_head("listing-title", "掲載物件", "要約と数値は自治体ページの原文から機械抽出") }}
   {% if listings %}
   {% if no_listings_reason == "empty" %}
-  <p class="notice-inline" role="note">現在、募集中の物件はありません。以下には過去の掲載（成約済など）を含みます。最新は <a href="{{ muni.bank_url }}" rel="noopener" target="_blank">公式ページ</a> でご確認ください。</p>
+  <div class="notice warn" role="note"><p>現在、募集中の物件はありません。以下には過去の掲載（成約済など）を含みます。最新は {{ ui.ext_link(muni.bank_url, "公式ページ", "") }} でご確認ください。</p></div>
   {% endif %}
-  <div class="table-wrap">
-  <table class="data-table">
-    <caption>{{ muni.name }}の空き家バンク掲載物件。数値は原文から機械抽出</caption>
-    <thead><tr><th scope="col">番号</th><th scope="col">物件</th><th scope="col">種別</th><th scope="col">価格</th><th scope="col">所在地</th><th scope="col">築年</th><th scope="col">延床</th><th scope="col">確認日</th></tr></thead>
-    <tbody>
-    {% for r in listings %}
-    <tr{% if r.status != "active" %} class="stale"{% endif %}>
-      <td>{{ r.no }}</td>
-      <td><a href="{{ r.url }}">{{ r.title }}</a>{% if r.status == "closed" %} <span class="tag warn">成約済・募集終了</span>{% elif r.status != "active" %} <span class="tag warn">掲載終了の可能性</span>{% endif %}{% if r.status_text %} <span class="tag">{{ r.status_text }}</span>{% endif %}</td>
-      <td>{{ r.deal }}</td>
-      <td class="num">{{ r.price }}</td>
-      <td>{{ r.address or "—" }}</td>
-      <td class="num">{{ r.built_year or "—" }}</td>
-      <td class="num">{{ r.floor_area or "—" }}</td>
-      <td>{{ r.updated }}</td>
-    </tr>
-    {% endfor %}
-    </tbody>
-  </table>
-  </div>
+  <ul class="cards">
+    {% for r in listings %}{{ ui.listing_card(r, subsidy=has_subsidy) }}{% endfor %}
+  </ul>
   {% elif no_listings_reason == "unavailable" %}
-  <p>現在、物件情報を取り込めていません。<a href="{{ muni.bank_url }}" rel="noopener" target="_blank">公式ページ</a>をご覧ください。</p>
+  <p class="surface">現在、物件情報を取り込めていません。{{ ui.ext_link(muni.bank_url, "公式ページを見る", "") }}</p>
   {% else %}
-  <p>現在、掲載中の物件はありません。最新の情報は <a href="{{ muni.bank_url }}" rel="noopener" target="_blank">公式ページ</a> でご確認ください。</p>
+  <p class="surface">現在、掲載中の物件はありません。最新の情報は {{ ui.ext_link(muni.bank_url, "公式ページ", "") }} でご確認ください。</p>
   {% endif %}
 </section>
 
 {% if chart_price or chart_built %}
-<section aria-label="分布">
-  {% if chart_price %}{{ chart_price|chart }}{% endif %}
-  {% if chart_built %}{{ chart_built|chart }}{% endif %}
+<section class="section" aria-labelledby="dist-title">
+  {{ ui.section_head("dist-title", "価格と築年の分布", "数値が記載されている物件だけを数えています") }}
+  <div class="two-col">
+    {% if chart_price %}<div class="chart-card">{{ chart_price|chart }}</div>{% endif %}
+    {% if chart_built %}<div class="chart-card">{{ chart_built|chart }}</div>{% endif %}
+  </div>
 </section>
 {% else %}
 <p class="meta">価格・築年の分布グラフは、数値が {{ min_points }} 件以上そろうと表示されます。</p>
 {% endif %}
 {% endif %}{# muni.crawled #}
 
-<section aria-labelledby="map-title">
-  <h2 id="map-title">位置</h2>
+<section class="section" aria-labelledby="map-title">
+  {{ ui.section_head("map-title", "位置") }}
   {{ map|embed }}
 </section>
 
 {% if external and muni.crawled %}
-<section aria-labelledby="ext-title">
-  <h2 id="ext-title">民間プラットフォームの掲載</h2>
-  <p class="meta">以下は自治体以外が運営するサイトです。本サイトでは巡回・要約せず、リンクのみ掲載しています。</p>
-  <ul>{% for e in external %}<li><a href="{{ e.url }}" rel="noopener nofollow" target="_blank">{{ e.label }}</a>{% if e.note %} — {{ e.note }}{% endif %}</li>{% endfor %}</ul>
+<section class="section" aria-labelledby="ext2-title">
+  {{ ui.section_head("ext2-title", "民間サイトの掲載", "自治体以外が運営。本サイトでは要約せずリンクのみ") }}
+  <ul class="link-list surface">{% for e in external %}<li><a href="{{ e.url }}" rel="noopener nofollow" target="_blank">{{ e.label }}{{ ui.icon("ext") }}</a>{% if e.note %}<span class="meta">{{ e.note }}</span>{% endif %}</li>{% endfor %}</ul>
 </section>
 {% endif %}
 
-<section class="cta" aria-labelledby="owner-title">
+<section class="section cta" aria-labelledby="owner-title">
   <h2 id="owner-title">{{ muni.name }}に空き家をお持ちの方へ</h2>
-  <p>売却・賃貸・解体の流れと補助制度は <a href="/owners/">所有者向けの案内</a> にまとめています。</p>
+  <p>住む・貸す・売る・登録・解体・管理の 6 つの選択肢と、査定・解体の流れ、補助制度をまとめています。</p>
+  <p><a class="btn btn-primary" href="/owners/">選択肢を見る{{ ui.icon("arrow") }}</a></p>
 </section>
 {% endblock %}

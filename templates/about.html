@@ -1,35 +1,46 @@
 {% extends "base.html" %}
 {% block content %}
-<nav class="breadcrumb" aria-label="現在地"><a href="/">トップ</a> › 運営者情報</nav>
-<h1>このサイトについて</h1>
+<nav class="breadcrumb" aria-label="現在地"><ol><li><a href="/">トップ</a></li><li>運営者情報</li></ol></nav>
+<div class="page-head narrow">
+  <h1>このサイトについて</h1>
+  <p class="sub">自治体が運営する空き家バンクの掲載情報を横断して探せる情報サイトです。物件の紹介・仲介は行っていません。</p>
+</div>
 
-<section aria-labelledby="operator-title">
-  <h2 id="operator-title">運営者情報</h2>
-  <dl class="facts">
-    <dt>運営者</dt><dd>{{ site.operator.name }}</dd>
-    <dt>連絡先</dt><dd>{{ site.operator.contact }}</dd>
-  </dl>
+<section class="section narrow" aria-labelledby="operator-title">
+  {{ ui.section_head("operator-title", "運営者情報") }}
+  <div class="surface">
+    <dl class="facts">
+      <div class="row"><dt>運営者</dt><dd>{{ site.operator.name }}</dd></div>
+      <div class="row"><dt>連絡先</dt><dd>{{ site.operator.contact }}</dd></div>
+    </dl>
+  </div>
 </section>
 
-<section aria-labelledby="policy-title">
-  <h2 id="policy-title">掲載方針</h2>
-  <ul>
-    <li>掲載するのは、自治体または自治体の移住推進組織が運営主体と明記された空き家バンクの情報だけです。民間プラットフォームはリンクのみ掲載します。</li>
-    <li>物件の写真と詳細本文は掲載しません。要約と、価格・面積などの数値、一次情報（自治体ページ）へのリンクにとどめます。</li>
-    <li>数値は自治体ページの原文から機械的に抽出し、推定や換算は行いません（坪から㎡への換算のみ、その旨を明記して表示します）。</li>
-    <li>すべての情報に一次情報の URL と取得日時を付けています。</li>
-    <li>図解はデータから自動生成した SVG で、写真ではありません。地図は Google Maps の埋め込み機能を使っています。</li>
-  </ul>
+<section class="section narrow" aria-labelledby="policy-title">
+  {{ ui.section_head("policy-title", "掲載方針") }}
+  <div class="surface">
+    <ul>
+      <li>掲載するのは、自治体または自治体の移住推進組織が運営主体と明記された空き家バンクの情報だけです。民間プラットフォームはリンクのみ掲載します。</li>
+      <li>物件の写真と詳細本文は掲載しません。要約と、価格・面積などの数値、一次情報（自治体ページ）へのリンクにとどめます。</li>
+      <li>数値は自治体ページの原文から機械的に抽出し、推定や換算は行いません（坪から㎡への換算のみ、その旨を明記して表示します）。</li>
+      <li>すべての情報に一次情報の URL と取得日時を付けています。</li>
+      <li>図解はデータから自動生成した SVG で、写真ではありません。地図は Google Maps の埋め込み機能を使っています。都道府県ページの市町村の升目図は地理データを使わず、市町村コード順に並べたものです。</li>
+    </ul>
+  </div>
 </section>
 
-<section aria-labelledby="bot-title">
-  <h2 id="bot-title">巡回ボットについて</h2>
-  <p>本サイトは次の User-Agent で各自治体のページを巡回しています。robots.txt を尊重し、同じサイトへのアクセスは数秒以上の間隔を空けています。巡回を止めてほしい場合は上記の連絡先までお知らせください。</p>
-  <pre><code>{{ user_agent }}</code></pre>
+<section class="section narrow" aria-labelledby="bot-title">
+  {{ ui.section_head("bot-title", "巡回ボットについて") }}
+  <div class="surface">
+    <p>本サイトは次の User-Agent で各自治体のページを巡回しています。robots.txt を尊重し、同じサイトへのアクセスは数秒以上の間隔を空けています。巡回を止めてほしい場合は上記の連絡先までお知らせください。</p>
+    <pre><code>{{ user_agent }}</code></pre>
+  </div>
 </section>
 
-<section aria-labelledby="disclaimer-title">
-  <h2 id="disclaimer-title">免責</h2>
-  <p>掲載内容の正確性には努めていますが、自治体ページの更新や抽出の誤りにより実際と異なる場合があります。物件の申込みや契約は、必ず自治体および関係者に直接ご確認ください。本サイトは物件の仲介を行いません。</p>
+<section class="section narrow" aria-labelledby="disclaimer-title">
+  {{ ui.section_head("disclaimer-title", "免責") }}
+  <div class="surface">
+    <p>掲載内容の正確性には努めていますが、自治体ページの更新や抽出の誤りにより実際と異なる場合があります。物件の申込みや契約は、必ず自治体および関係者に直接ご確認ください。本サイトは物件の仲介を行いません。</p>
+  </div>
 </section>
 {% endblock %}

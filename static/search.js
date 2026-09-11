@@ -1,19 +1,28 @@
-// 静的 JSON 索引をクライアント側で絞り込む検索（都道府県 × 市町村 × 価格帯 × 補助金の有無）。
+// 静的 JSON 索引をクライアント側で絞り込む検索（都道府県 × 市町村 × 価格帯 × 種別 × 補助金の有無）。
+// 結果は物件カードとして描画し、20 件ずつ「さらに表示」で増やす。依存ライブラリなし。
 (function () {
   "use strict";
   var form = document.querySelector("[data-search-form]");
   var status = document.querySelector("[data-search-status]");
   var list = document.querySelector("[data-search-results]");
+  var moreWrap = document.querySelector("[data-search-more]");
+  var moreBtn = moreWrap ? moreWrap.querySelector("button") : null;
   if (!form || !status || !list) return;
 
   var rows = [];
+  var hits = [];
+  var shown = 0;
   var filters = {};
-  var MAX = 100;
+  var PAGE = 20;
 
   function esc(s) {
     return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
     });
+  }
+
+  function icon(name) {
+    return '<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-' + name + '"/></svg>';
   }
 
   function readFilters() {
@@ -49,22 +58,43 @@
     return true;
   }
 
+  function card(r) {
+    var facts = [];
+    facts.push("<li>" + icon("map") + esc(r.pref) + " " + esc(r.muni) + "</li>");
+    if (r.address) facts.push("<li>" + icon("pin") + esc(r.address) + "</li>");
+    if (r.built_year) facts.push("<li>" + icon("calendar") + esc(r.built_year) + "年築</li>");
+    var badges = [];
+    if (r.subsidy_migration) badges.push('<span class="badge badge-ok">' + icon("tag") + "移住補助</span>");
+    if (r.subsidy_renovation) badges.push('<span class="badge badge-ok">' + icon("tag") + "改修補助</span>");
+    var price = r.price_text === "記載なし"
+      ? '<div class="card-price none">価格 記載なし<span class="deal">' + esc(r.deal_label) + "</span></div>"
+      : '<div class="card-price">' + esc(r.price_text) + '<span class="deal">' + esc(r.deal_label) + "</span></div>";
+    return (
+      '<li class="card">' + price +
+      '<div class="card-title"><a href="' + esc(r.url) + '">' + esc(r.title) + "</a></div>" +
+      '<ul class="card-facts">' + facts.join("") + "</ul>" +
+      '<div class="card-foot"><div class="badges">' + badges.join("") + "</div>" +
+      (r.updated ? "<span>確認 " + esc(r.updated) + "</span>" : "") + "</div></li>"
+    );
+  }
+
+  function renderMore() {
+    var next = hits.slice(shown, shown + PAGE);
+    list.insertAdjacentHTML("beforeend", next.map(card).join(""));
+    shown += next.length;
+    if (moreWrap) {
+      moreWrap.hidden = shown >= hits.length;
+      if (moreBtn) moreBtn.textContent = "さらに表示（残り " + (hits.length - shown) + " 件）";
+    }
+  }
+
   function render() {
     readFilters();
-    var hits = rows.filter(matches);
-    status.textContent = hits.length + " 件が該当（" + rows.length + " 件中）" + (hits.length > MAX ? "。先頭 " + MAX + " 件を表示" : "");
-    list.innerHTML = hits.slice(0, MAX).map(function (r) {
-      var badges = [];
-      if (r.subsidy_migration) badges.push("移住補助");
-      if (r.subsidy_renovation) badges.push("改修補助");
-      return (
-        "<li><a href=\"" + esc(r.url) + "\">" + esc(r.title) + "</a>" +
-        '<div class="meta">' + esc(r.pref) + " " + esc(r.muni) + " ／ " + esc(r.deal_label) + " ／ " + esc(r.price_text) +
-        (r.built_year ? " ／ " + esc(r.built_year) + "年築" : "") +
-        (badges.length ? " ／ " + badges.join("・") : "") +
-        (r.updated ? " ／ 確認 " + esc(r.updated) : "") + "</div></li>"
-      );
-    }).join("");
+    hits = rows.filter(matches);
+    shown = 0;
+    list.innerHTML = "";
+    status.textContent = hits.length + " 件が該当（全 " + rows.length + " 件）";
+    renderMore();
   }
 
   fetch("/search/index.json", { cache: "no-cache" })
@@ -77,6 +107,7 @@
         if (e.target.getAttribute("data-filter") === "pref_slug") fillMunicipalities();
         render();
       });
+      if (moreBtn) moreBtn.addEventListener("click", renderMore);
     })
     .catch(function (err) {
       status.textContent = "索引を読み込めませんでした（" + err.message + "）。都道府県ページから一覧をご覧ください。";

@@ -1,49 +1,65 @@
 {% extends "base.html" %}
 {% block content %}
-<nav class="breadcrumb" aria-label="現在地"><a href="/">トップ</a> › 所有者の方へ</nav>
-<h1>空き家をお持ちの方へ</h1>
-<p class="lead">「売る」「貸す」「解体する」のどれを選ぶにも、まず自治体の空き家バンクと補助制度を確認すると選択肢が広がります。ここでは一般的な流れと、各自治体の制度をまとめています。</p>
+<nav class="breadcrumb" aria-label="現在地"><ol><li><a href="/">トップ</a></li><li>所有者の方へ</li></ol></nav>
+<div class="page-head">
+  <h1>相続した空き家、どうする？</h1>
+  <p class="lead">選択肢は「住む・使う」「貸す」「売る」「自治体の空き家バンクに登録」「解体して土地を活用」「当面は管理する」の 6 つ。どれを選ぶにも、まず自治体の空き家バンクと補助制度を確認すると選択肢が広がります。ここでは一般的な流れと各自治体の制度をまとめています。法律・税務・査定額の個別のご相談は、専門家や自治体の窓口へ。</p>
+</div>
 
-<section aria-labelledby="flow-sale-title">
-  <h2 id="flow-sale-title">売却・賃貸までの流れ</h2>
-  {{ flow_sale|chart }}
+<section class="section" aria-labelledby="options-title">
+  {{ ui.section_head("options-title", "6 つの選択肢") }}
+  <div class="surface">
+    <figure class="diagram">
+      <div class="diagram-mobile">{% include "partials/flow_options_mobile.svg" %}</div>
+      <div class="diagram-desktop">{% include "partials/flow_options_desktop.svg" %}</div>
+      <figcaption>自動生成の図解（SVG）。「向いている」は一般的な目安で、個別の状況で変わります。</figcaption>
+    </figure>
+    <details class="fold">
+      <summary>文章で読む</summary>
+      <div class="fold-body">
+        <ul>
+          <li><strong>住む・使う</strong> — 通える距離に住んでいる人向け。最初の一歩は、傷みと権利関係（名義・相続登記）を現地で確認すること。</li>
+          <li><strong>貸す</strong> — 手放さずに収入にしたい人向け。自治体の空き家バンクに「賃貸」で登録すると、借り手を広く探せます。</li>
+          <li><strong>売る</strong> — 維持費や税の負担を止めたい人向け。査定は複数社で比べ、自治体の空き家バンクも併用します。</li>
+          <li><strong>自治体の空き家バンクに登録</strong> — 買い手・借り手を広く探したい、補助制度を使いたい人向け。市町村の担当窓口に相談します。</li>
+          <li><strong>解体して土地を活用</strong> — 老朽化や倒壊のおそれがある場合。解体補助の有無を先に確認します。</li>
+          <li><strong>当面は管理する</strong> — まだ決めかねている場合。通風・除草などの管理と、固定資産税の扱いを確認します。</li>
+        </ul>
+      </div>
+    </details>
+  </div>
 </section>
 
-<section aria-labelledby="flow-demo-title">
-  <h2 id="flow-demo-title">解体までの流れ</h2>
-  {{ flow_demolition|chart }}
+<section class="section" aria-labelledby="flow-sale-title">
+  {{ ui.section_head("flow-sale-title", "売却・賃貸までの流れ", "スマホでは横にスクロールできます。下の「手順を文章で見る」でも読めます") }}
+  <div class="chart-card">{{ flow_sale|chart }}</div>
 </section>
 
-<section aria-labelledby="offers-title">
-  <h2 id="offers-title">相談先</h2>
+<section class="section" aria-labelledby="flow-demo-title">
+  {{ ui.section_head("flow-demo-title", "解体までの流れ") }}
+  <div class="chart-card">{{ flow_demolition|chart }}</div>
+</section>
+
+<section class="section" aria-labelledby="offers-title">
+  {{ ui.section_head("offers-title", "相談先", "提携先が決まるまでは「準備中」です。ダミーのリンクは置きません") }}
   <ul class="offers">
     {% for o in offers %}
     <li class="offer">
-      <h3>{{ o.label }}<span class="tag">{{ o.kind }}</span></h3>
-      <p>{{ o.description }}</p>
-      {% if o.ready %}<p><a class="button" href="{{ o.path }}" rel="sponsored noopener" target="_blank">{{ o.label }}を見る</a></p>
-      {% else %}<p class="meta">準備中</p>{% endif %}
+      <h3>{{ o.label }}{{ ui.badge("plain", o.kind) }}</h3>
+      <p class="desc">{{ o.description }}</p>
+      {% if o.ready %}<p><a class="btn btn-primary" href="{{ o.path }}" rel="sponsored noopener" target="_blank">{{ o.label }}を見る{{ ui.icon("ext") }}</a></p>
+      {% else %}<p>{{ ui.badge("mute", "準備中") }}</p>{% endif %}
     </li>
     {% endfor %}
   </ul>
 </section>
 
-<section aria-labelledby="subsidy-title">
-  <h2 id="subsidy-title">自治体の補助制度</h2>
+<section class="section" aria-labelledby="subsidy-title">
+  {{ ui.section_head("subsidy-title", "自治体の補助制度", "本サイトが確認したもの。出典と確認日付き") }}
   {% if subsidies %}
-  <div class="table-wrap">
-  <table class="data-table">
-    <caption>本サイトが確認した補助制度（出典と確認日付き）</caption>
-    <thead><tr><th scope="col">市町村</th><th scope="col">種類</th><th scope="col">制度</th><th scope="col">概要</th><th scope="col">確認日</th></tr></thead>
-    <tbody>
-    {% for s in subsidies %}
-    <tr><th scope="row"><a href="{{ s.muni_url }}">{{ s.muni }}</a></th><td>{{ s.kind }}</td><td><a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.name }}</a></td><td>{{ s.summary }}{% if s.amount_text %}（{{ s.amount_text }}）{% endif %}</td><td>{{ s.checked_on or "—" }}</td></tr>
-    {% endfor %}
-    </tbody>
-  </table>
-  </div>
+  {{ ui.subsidy_cards(subsidies, with_muni=true) }}
   {% else %}
-  <p>補助制度の情報はまだ登録されていません。</p>
+  <p class="surface">補助制度の情報はまだ登録されていません。</p>
   {% endif %}
 </section>
 {% endblock %}

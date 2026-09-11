@@ -1,68 +1,65 @@
 {% extends "base.html" %}
 {% block content %}
-<section class="hero">
-  <h1>自治体の空き家バンクを、横断して探す</h1>
-  <p class="lead">{{ site.description }}</p>
-  <ul class="stats" aria-label="収録状況">
-    <li><strong>{{ stats.prefectures|number }}</strong> 都道府県</li>
-    <li><strong>{{ stats.municipalities|number }}</strong> 市町村</li>
-    <li><strong>{{ stats.listings|number }}</strong> 掲載物件</li>
-  </ul>
+<section class="hero" aria-labelledby="hero-title">
+  <h1 id="hero-title">自治体が運営する空き家バンクを、まとめて探せます</h1>
+  <p class="lead">{{ stats.prefectures|number }} 県 {{ stats.municipalities|number }} 市町村の公式ページを毎日巡回し、物件の要約と一次情報へのリンクだけを載せています。物件の紹介・仲介は行っていません。</p>
+  {{ ui.stat_strip([
+    {"value": stats.listings|number, "unit": "件", "label": "掲載物件（自治体の公式ページで確認できたもの）", "kind": "kaki"},
+    {"value": stats.prefectures|number, "unit": "都道府県", "label": "対象の都道府県"},
+    {"value": stats.municipalities|number, "unit": "市町村", "label": "公式ページを巡回している市町村"},
+    {"value": trust.updated_at|date_ja, "label": "最終更新（毎日 03 時ごろに巡回）", "kind": "text"}
+  ], "収録状況") }}
 </section>
 
-<section id="search" class="search" aria-labelledby="search-title">
-  <h2 id="search-title">物件を探す</h2>
-  <form class="search-form" data-search-form>
-    <label>都道府県
-      <select name="pref" data-filter="pref_slug"><option value="">すべて</option>
-        {% for p in prefectures %}<option value="{{ p.slug }}">{{ p.name }}</option>{% endfor %}
-      </select></label>
-    <label>市町村
-      <select name="muni" data-filter="muni_code"><option value="">すべて</option></select></label>
-    <label>価格帯
-      <select name="band" data-filter="band"><option value="">すべて</option>
-        <option>100万円未満</option><option>100〜300万円</option><option>300〜500万円</option>
-        <option>500〜1,000万円</option><option>1,000万円以上</option><option>賃貸</option><option>価格記載なし・応相談</option>
-      </select></label>
-    <label>種別
-      <select name="deal" data-filter="deal"><option value="">すべて</option>
-        <option value="sale">売買</option><option value="rent">賃貸</option><option value="both">売買・賃貸</option>
-      </select></label>
-    <label class="check"><input type="checkbox" name="subsidy" data-filter="subsidy"> 移住・改修補助金のある市町村のみ</label>
-  </form>
-  <p class="search-status" data-search-status>読み込み中…</p>
-  <ol class="results" data-search-results></ol>
-  <noscript><p>検索には JavaScript が必要です。<a href="/nagano/">都道府県ページ</a>から一覧をご覧ください。</p></noscript>
-</section>
-
-<section aria-labelledby="pref-title">
-  <h2 id="pref-title">都道府県から探す</h2>
+<section class="section" aria-labelledby="pref-title">
+  {{ ui.section_head("pref-title", "都道府県から探す", "件数は本サイトが確認できた掲載物件の数") }}
+  {% set max_count = prefectures|map(attribute="count")|max if prefectures else 0 %}
   <ul class="cards">
-    {% for p in prefectures %}
-    <li class="card"><a href="{{ p.url }}"><strong>{{ p.name }}</strong><span>{{ p.municipalities }} 市町村 / {{ p.count|number }} 件</span></a></li>
-    {% endfor %}
+    {% for p in prefectures %}{{ ui.pref_card(p, max_count) }}{% endfor %}
   </ul>
 </section>
 
-{% if chart_counts %}
-<section aria-label="市町村別の掲載件数">{{ chart_counts|chart }}</section>
-{% endif %}
+<section id="search" class="section" aria-labelledby="search-title">
+  {{ ui.section_head("search-title", "条件で絞り込む", "都道府県・市町村・価格帯・種別・補助金") }}
+  <div class="surface">
+    <form class="search-form" data-search-form>
+      <label>都道府県
+        <select name="pref" data-filter="pref_slug"><option value="">すべて</option>
+          {% for p in prefectures %}<option value="{{ p.slug }}">{{ p.name }}</option>{% endfor %}
+        </select></label>
+      <label>市町村
+        <select name="muni" data-filter="muni_code"><option value="">すべて</option></select></label>
+      <label>価格帯
+        <select name="band" data-filter="band"><option value="">すべて</option>
+          <option>100万円未満</option><option>100〜300万円</option><option>300〜500万円</option>
+          <option>500〜1,000万円</option><option>1,000万円以上</option><option>賃貸</option><option>価格記載なし・応相談</option>
+        </select></label>
+      <label>種別
+        <select name="deal" data-filter="deal"><option value="">すべて</option>
+          <option value="sale">売買</option><option value="rent">賃貸</option><option value="both">売買・賃貸</option>
+        </select></label>
+      <label class="check"><input type="checkbox" name="subsidy" data-filter="subsidy"> 移住・改修の補助金がある市町村だけ</label>
+    </form>
+    <p class="search-status" data-search-status aria-live="polite">読み込み中…</p>
+    <ol class="cards results" data-search-results></ol>
+    <p class="more" data-search-more hidden><button type="button">さらに表示</button></p>
+    <noscript><p>検索には JavaScript が必要です。<a href="/nagano/">都道府県ページ</a>から一覧をご覧ください。</p></noscript>
+  </div>
+</section>
 
 {% if recent %}
-<section aria-labelledby="recent-title">
-  <h2 id="recent-title">最近確認した物件</h2>
-  <ul class="listing-list">
-    {% for r in recent %}
-    <li><a href="{{ r.url }}">{{ r.title }}</a> <span class="meta">{{ r.deal }} / {{ r.price }} / 確認 {{ r.updated }}</span></li>
-    {% endfor %}
+<section class="section" aria-labelledby="recent-title">
+  {{ ui.section_head("recent-title", "最近確認した物件", "巡回で最近確認できたもの") }}
+  <ul class="scroller">
+    {% for r in recent %}{{ ui.listing_card(r) }}{% endfor %}
   </ul>
 </section>
 {% endif %}
 
-<section class="cta" aria-labelledby="owner-title">
-  <h2 id="owner-title">空き家をお持ちの方へ</h2>
-  <p>売る・貸す・解体する、それぞれの流れと自治体の補助制度をまとめています。</p>
-  <p><a class="button" href="/owners/">所有者向けの案内を見る</a></p>
+<section class="section cta" aria-labelledby="owner-title">
+  <h2 id="owner-title">相続した空き家、どうする？</h2>
+  <p>住む・貸す・売る・自治体の空き家バンクに登録・解体・当面は管理。6 つの選択肢と、査定・解体の流れ、自治体の補助制度をまとめています。</p>
+  <p><a class="btn btn-primary" href="/owners/">選択肢を見る{{ ui.icon("arrow") }}</a></p>
 </section>
 <script src="/static/search.js" defer></script>
 {% endblock %}

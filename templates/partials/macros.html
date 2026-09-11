@@ -1,0 +1,182 @@
+{# 空き家アトラスの部品マクロ（docs/design/02-direction.md）。sitemill の共通マクロ（信頼ブロック等）は base.html で sm として読み込む #}
+
+{% macro icon(name) -%}
+<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-{{ name }}"/></svg>
+{%- endmacro %}
+
+{% macro logo() -%}
+<svg class="logo" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M4 16 16 5l12 11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M8 14v13h16V14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M11 19c3-2 7-2 10 0M11 23c3-2 7-2 10 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity=".75"/></svg>
+{%- endmacro %}
+
+{% macro badge(kind, text, name=none) -%}
+<span class="badge badge-{{ kind }}">{% if name %}{{ icon(name) }}{% endif %}{{ text }}</span>
+{%- endmacro %}
+
+{# 一次情報（公式・外部）へのリンク。外部に出ることをアイコンと読み上げ文で示す #}
+{% macro ext_link(url, label, cls="btn btn-primary") -%}
+<a class="{{ cls }}" href="{{ url }}" rel="noopener" target="_blank">{{ label }}{{ icon("ext") }}<span class="visually-hidden">（外部サイトが開きます）</span></a>
+{%- endmacro %}
+
+{% macro section_head(id, title, note=none) -%}
+<div class="section-head"><h2 id="{{ id }}">{{ title }}</h2>{% if note %}<span class="note">{{ note }}</span>{% endif %}</div>
+{%- endmacro %}
+
+{# 価格帯などの小さな分布。counts と labels は同じ長さ。top は最多の添字（柿渋で強調） #}
+{% macro mini_bars(counts, labels, top=-1, title="分布") -%}
+{% set mx = counts|max if counts else 0 %}
+{% set n = counts|length %}
+{% set bw = (140 - (n - 1) * 4) / n if n else 0 %}
+<svg class="mini-bars" viewBox="0 0 140 34" role="img" aria-label="{{ title }}: {% for c in counts %}{{ labels[loop.index0] }} {{ c }}件{% if not loop.last %}、{% endif %}{% endfor %}">
+{% for c in counts %}
+{% set h = (30 * c / mx) if mx else 0 %}
+<rect class="{% if loop.index0 == top %}top{% endif %}" x="{{ (loop.index0 * (bw + 4))|round(1) }}" y="{{ (34 - (h if h > 2 else 2))|round(1) }}" width="{{ bw|round(1) }}" height="{{ (h if h > 2 else 2)|round(1) }}" rx="1.5"><title>{{ labels[loop.index0] }}: {{ c }} 件</title></rect>
+{% endfor %}
+</svg>
+{%- endmacro %}
+
+{# 数字の帯。cells: [{value, unit, label, kind('kaki'|'text'|''), bars:{counts, labels, top, title}, badges:[(kind, text)]}] #}
+{% macro stat_strip(cells, label="この地域の数字") -%}
+<div class="strip" role="group" aria-label="{{ label }}">
+{% for c in cells %}
+<div class="strip-cell">
+  {% if c.value is defined and c.value is not none %}
+  <div class="strip-value {{ c.kind if c.kind is defined else '' }}">{{ c.value }}{% if c.unit is defined and c.unit %}<span class="strip-unit">{{ c.unit }}</span>{% endif %}</div>
+  {% endif %}
+  {% if c.badges is defined and c.badges %}
+  <div class="badges">{% for b in c.badges %}{{ badge(b[0], b[1]) }}{% endfor %}</div>
+  {% endif %}
+  {% if c.bars is defined and c.bars %}
+  {{ mini_bars(c.bars.counts, c.bars.labels, c.bars.top, c.bars.title) }}
+  {% endif %}
+  {% if c.label is defined and c.label %}<div class="strip-label">{{ c.label }}</div>{% endif %}
+</div>
+{% endfor %}
+</div>
+{%- endmacro %}
+
+{# 物件カード。r は pages.listing_row の行。place は都道府県・市町村名（横断一覧のとき）。subsidy は市町村に補助制度があるか #}
+{% macro listing_card(r, place=none, subsidy=false) -%}
+{% set stale = r.status != "active" %}
+<li class="card{% if stale %} is-stale{% endif %}">
+  {% if r.photo is defined and r.photo %}<figure class="photo">{{ r.photo }}</figure>{% endif %}
+  {% if r.price == "記載なし" %}
+  <div class="card-price none">価格 記載なし<span class="deal">{{ r.deal }}</span></div>
+  {% else %}
+  <div class="card-price">{{ r.price }}<span class="deal">{{ r.deal }}</span></div>
+  {% endif %}
+  <div class="card-title"><a href="{{ r.url }}">{{ r.title }}</a></div>
+  <ul class="card-facts">
+    {% if place %}<li>{{ icon("map") }}{{ place }}</li>{% endif %}
+    {% if r.address %}<li>{{ icon("pin") }}{{ r.address }}</li>{% endif %}
+    {% if r.floor_area %}<li>{{ icon("area") }}延床 {{ r.floor_area }}</li>{% endif %}
+    {% if r.built_year %}<li>{{ icon("calendar") }}{{ r.built_year }}年築</li>{% endif %}
+  </ul>
+  <div class="card-foot">
+    <div class="badges">
+      {% if r.status == "closed" %}{{ badge("mute", "成約済・募集終了") }}
+      {% elif stale %}{{ badge("warn", "掲載終了の可能性", "warn") }}{% endif %}
+      {% if r.status_text %}{{ badge("warn", r.status_text) }}{% endif %}
+      {% if r.built_year and r.floor_area %}{{ badge("info", "築年・面積あり", "check") }}{% endif %}
+      {% if subsidy %}{{ badge("ok", "補助金あり（市町村）", "tag") }}{% endif %}
+    </div>
+    <span>確認 {{ r.updated }}</span>
+  </div>
+</li>
+{%- endmacro %}
+
+{# 市町村カード（都道府県ページ）。m は pages.muni_row の行 #}
+{% macro muni_card(m) -%}
+<li class="card muni-card">
+  <div class="count">{{ m.count|number }}<small>件</small></div>
+  <div class="card-title"><a href="{{ m.url }}">{{ m.name }}</a></div>
+  <ul class="card-facts">
+    <li>{{ icon("home") }}売買 {{ m.sale|number }} ／ 賃貸 {{ m.rent|number }}</li>
+  </ul>
+  <div class="card-foot">
+    <div class="badges">
+      {% if m.subsidy_migration %}{{ badge("ok", "移住補助") }}{% endif %}
+      {% if m.subsidy_renovation %}{{ badge("ok", "改修補助") }}{% endif %}
+      {% if m.subsidy_demolition %}{{ badge("ok", "解体補助") }}{% endif %}
+    </div>
+    <span>取得 {{ m.last_fetched }}</span>
+  </div>
+</li>
+{%- endmacro %}
+
+{# 都道府県カード（トップ）。p は pref_rows の行。max_count は最大件数（棒の長さの基準） #}
+{% macro pref_card(p, max_count) -%}
+<li class="card muni-card pref-card">
+  <div class="count">{{ p.count|number }}<small>件</small></div>
+  <div class="card-title"><a href="{{ p.url }}">{{ p.name }}</a></div>
+  <div class="bar" aria-hidden="true"><span style="width: {{ ((p.count / max_count * 100) if max_count else 0)|round(0)|int }}%"></span></div>
+  <div class="card-foot"><span>{{ p.municipalities|number }} 市町村の公式ページを巡回</span></div>
+</li>
+{%- endmacro %}
+
+{# 巡回していない市町村の状態カード #}
+{% macro status_card(muni) -%}
+<div class="notice status-card" role="note">
+  <p class="st-title">
+    {%- if muni.bank_status == "info" -%}空き家バンクは登録制で、物件は登録した人だけに案内しています
+    {%- elif muni.bank_status == "third_party_only" -%}物件は民間の不動産サイトで公開されています
+    {%- elif muni.bank_status == "spa_unsupported" -%}物件ページの形式に本サイトがまだ対応していません
+    {%- else -%}空き家バンクの物件ページを確認できませんでした{%- endif -%}
+  </p>
+  {% if muni.bank_note %}<p>{{ muni.bank_note }}</p>{% endif %}
+  <p class="primary-link">{{ ext_link(muni.bank_url, muni.name ~ "の" ~ muni.bank_label ~ "（公式）を見る") }}</p>
+</div>
+{%- endmacro %}
+
+{# 補助制度のカード一覧。with_muni=true のとき市町村名も出す #}
+{% macro subsidy_cards(subsidies, with_muni=false) -%}
+<ul class="subsidy-cards">
+{% for s in subsidies %}
+<li class="subsidy-card">
+  <div class="badges">{{ badge("ok", s.kind ~ "補助" if s.kind not in ("その他",) else "その他の補助", "tag") }}{% if with_muni %}<a class="badge badge-plain" href="{{ s.muni_url }}">{{ s.muni }}</a>{% endif %}</div>
+  <div class="name"><a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.name }}{{ icon("ext") }}<span class="visually-hidden">（外部サイトが開きます）</span></a></div>
+  {% if s.summary %}<div class="desc">{{ s.summary }}{% if s.amount_text %}（{{ s.amount_text }}）{% endif %}</div>{% endif %}
+  <div class="foot">{% if s.checked_on %}<span>{{ icon("clock") }}確認日 {{ s.checked_on }}</span>{% endif %}</div>
+</li>
+{% endfor %}
+</ul>
+{%- endmacro %}
+
+{# 都道府県ページのタイル図。地理データを使わず、市町村コード順に升目を並べて件数で色分けする（docs/design/02、案 B） #}
+{% macro tile_level(m) -%}
+{%- if not m.crawled -%}na
+{%- elif m.count == 0 -%}l0
+{%- elif m.count <= 2 -%}l1
+{%- elif m.count <= 5 -%}l2
+{%- elif m.count <= 10 -%}l3
+{%- elif m.count <= 30 -%}l4
+{%- else -%}l5{%- endif -%}
+{%- endmacro %}
+
+{% macro tile_status(m) -%}
+{%- if m.bank_status == "info" -%}登録制
+{%- elif m.bank_status == "third_party_only" -%}民間のみ
+{%- elif m.bank_status == "spa_unsupported" -%}未対応
+{%- else -%}未確認{%- endif -%}
+{%- endmacro %}
+
+{% macro tile_map(municipalities, pref_name) -%}
+<ul class="tiles" aria-label="{{ pref_name }}の市町村別の掲載件数（升目の色が濃いほど多い）">
+{% for m in municipalities %}
+{% set lv = tile_level(m) %}
+<li><a class="tile {{ lv }}" href="{{ m.url }}" title="{{ m.name }}: {% if m.crawled %}{{ m.count }} 件{% else %}{{ tile_status(m) }}{% endif %}">
+  <span class="name">{{ m.name }}</span>
+  {% if m.crawled %}<span class="val">{{ m.count|number }}<span class="visually-hidden"> 件</span></span>{% else %}<span class="st">{{ tile_status(m) }}</span>{% endif %}
+</a></li>
+{% endfor %}
+</ul>
+<div class="legend" aria-hidden="true">
+  <span><i style="background: var(--map-5)"></i>31 件以上</span>
+  <span><i style="background: var(--map-4)"></i>11〜30</span>
+  <span><i style="background: var(--map-3)"></i>6〜10</span>
+  <span><i style="background: var(--map-2)"></i>3〜5</span>
+  <span><i style="background: var(--map-1)"></i>1〜2</span>
+  <span><i class="l0"></i>0 件</span>
+  <span><i class="na"></i>巡回していない（登録制・民間のみ・未対応・未確認）</span>
+</div>
+<p class="meta">升目は市町村コード順（市 → 郡部）で、実際の位置関係とは異なります。</p>
+{%- endmacro %}

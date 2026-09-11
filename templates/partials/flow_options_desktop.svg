@@ -1,0 +1,28 @@
+<svg class="fo-desktop" viewBox="0 0 960 370" width="960" height="370" role="img" aria-labelledby="fo-t fo-d" data-generated="akiya-atlas.design" xmlns="http://www.w3.org/2000/svg">
+<title id="fo-t">相続した空き家の 6 つの選択肢</title><desc id="fo-d">相続した空き家から、住む・使う、貸す、売る、自治体の空き家バンクに登録、解体して土地を活用、当面は管理する、の 6 つに枝分かれする図</desc>
+<rect class="root" x="380" y="16" width="200" height="60" rx="8"/>
+<text class="root-text" x="480" y="53" font-size="20" text-anchor="middle">相続した空き家</text>
+<path class="link" d="M480 76 V96"/>
+<path class="link" d="M16 96 H632"/>
+<path class="link" d="M16 96 V302"/>
+<path class="link" d="M16 172 H30"/>
+<circle cx="16" cy="172" r="5" fill="var(--green-700, #1F4E46)"/>
+<rect class="box" x="30" y="120" width="292" height="104" rx="8"/><text class="title" x="44" y="150" font-size="17">住む・使う</text><text class="body" x="44" y="174" font-size="13">向いている: 通える距離に住んでいる</text><text class="body" x="44" y="196" font-size="13">最初の一歩: 傷みと権利関係を現地で確認</text>
+<path class="link" d="M16 302 H30"/>
+<circle cx="16" cy="302" r="5" fill="var(--green-700, #1F4E46)"/>
+<rect class="box" x="30" y="250" width="292" height="104" rx="8"/><text class="title" x="44" y="280" font-size="17">自治体の空き家バンクに登録</text><text class="body" x="44" y="304" font-size="13">向いている: 買い手・借り手を広く探す</text><text class="body" x="44" y="326" font-size="13">最初の一歩: 市町村の担当窓口に相談</text>
+<path class="link" d="M324 96 V302"/>
+<path class="link" d="M324 172 H338"/>
+<circle cx="324" cy="172" r="5" fill="var(--green-700, #1F4E46)"/>
+<rect class="box" x="338" y="120" width="292" height="104" rx="8"/><text class="title" x="352" y="150" font-size="17">貸す</text><text class="body" x="352" y="174" font-size="13">向いている: 手放さず収入にしたい</text><text class="body" x="352" y="196" font-size="13">最初の一歩: 空き家バンクに賃貸で登録</text>
+<path class="link" d="M324 302 H338"/>
+<circle cx="324" cy="302" r="5" fill="var(--green-700, #1F4E46)"/>
+<rect class="box" x="338" y="250" width="292" height="104" rx="8"/><text class="title" x="352" y="280" font-size="17">解体して土地を活用</text><text class="body" x="352" y="304" font-size="13">向いている: 老朽化・倒壊のおそれ</text><text class="body" x="352" y="326" font-size="13">最初の一歩: 解体補助の有無を確認</text>
+<path class="link" d="M632 96 V302"/>
+<path class="link" d="M632 172 H646"/>
+<circle cx="632" cy="172" r="5" fill="var(--green-700, #1F4E46)"/>
+<rect class="box" x="646" y="120" width="292" height="104" rx="8"/><text class="title" x="660" y="150" font-size="17">売る</text><text class="body" x="660" y="174" font-size="13">向いている: 維持費・税の負担を止めたい</text><text class="body" x="660" y="196" font-size="13">最初の一歩: 査定を複数社で比べる</text>
+<path class="link" d="M632 302 H646"/>
+<circle cx="632" cy="302" r="5" fill="var(--green-700, #1F4E46)"/>
+<rect class="box" x="646" y="250" width="292" height="104" rx="8"/><text class="title" x="660" y="280" font-size="17">当面は管理する</text><text class="body" x="660" y="304" font-size="13">向いている: まだ決めかねている</text><text class="body" x="660" y="326" font-size="13">最初の一歩: 通風・除草と税の確認</text>
+</svg>
