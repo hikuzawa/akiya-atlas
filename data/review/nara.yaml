@@ -1,0 +1,550 @@
+prefecture: 奈良県
+prefecture_slug: nara
+created_at: '2026-09-11T06:32:53+00:00'
+candidates:
+- key: '292010'
+  label: 奈良県 奈良市
+  url: https://www.city.nara.lg.jp/site/akiya-bank/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.nara.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '292028'
+  label: 奈良県 大和高田市
+  url: https://www.city.yamatotakada.nara.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yamatotakada.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.yamatotakada.nara.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '292036'
+  label: 奈良県 大和郡山市
+  url: https://www.city.yamatokoriyama.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yamatokoriyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.yamatokoriyama.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '292044'
+  label: 奈良県 天理市
+  url: https://www.city.tenri.nara.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tenri.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.tenri.nara.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '292052'
+  label: 奈良県 橿原市
+  url: https://www.city.kashihara.nara.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kashihara.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kashihara.nara.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '292061'
+  label: 奈良県 桜井市
+  url: https://www.city.sakurai.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sakurai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.sakurai.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '292079'
+  label: 奈良県 五條市
+  url: https://www.city.gojo.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.gojo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.gojo.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '292087'
+  label: 奈良県 御所市
+  url: https://www.city.gose.nara.jp/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.55
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.gose.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.gose.nara.jp/
+  reason: 物件ページが公式ドメイン外で相互リンクも確認できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '292095'
+  label: 奈良県 生駒市
+  url: https://www.city.ikoma.lg.jp/0000013956.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ikoma.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.ikoma.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '292109'
+  label: 奈良県 香芝市
+  url: https://www.city.kashiba.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kashiba.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kashiba.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '292117'
+  label: 奈良県 葛城市
+  url: https://www.city.katsuragi.nara.jp/kurashi_tetsuzuki/2/3825.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.katsuragi.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.katsuragi.nara.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '292125'
+  label: 奈良県 宇陀市
+  url: https://www.city.uda.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.uda.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.uda.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '293229'
+  label: 奈良県 山添村
+  url: https://www.vill.yamazoe.nara.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.yamazoe.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.yamazoe.nara.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '293423'
+  label: 奈良県 平群町
+  url: https://www.town.heguri.nara.jp/life/1/8/26/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.heguri.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.heguri.nara.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '293431'
+  label: 奈良県 三郷町
+  url: https://www.town.sango.nara.jp/life/1/11/49/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.sango.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.sango.nara.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '293440'
+  label: 奈良県 斑鳩町
+  url: https://www.town.ikaruga.nara.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ikaruga.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ikaruga.nara.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '293458'
+  label: 奈良県 安堵町
+  url: https://www.town.ando.nara.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ando.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ando.nara.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '293610'
+  label: 奈良県 川西町
+  url: https://www.town.nara-kawanishi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 奈良県 県内市町村に掲載された公式サイト（www.town.nara-kawanishi.lg.jp）
+  evidence_url: https://www.pref.nara.lg.jp/n002/1232.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '293628'
+  label: 奈良県 三宅町
+  url: https://www.town.miyake.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.miyake.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.miyake.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '293636'
+  label: 奈良県 田原本町
+  url: https://www.town.tawaramoto.nara.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tawaramoto.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.tawaramoto.nara.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '293857'
+  label: 奈良県 曽爾村
+  url: https://www.vill.soni.nara.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.soni.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.soni.nara.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '293865'
+  label: 奈良県 御杖村
+  url: https://www.vill.mitsue.nara.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.mitsue.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.mitsue.nara.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '294012'
+  label: 奈良県 高取町
+  url: https://www.town.takatori.nara.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.takatori.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.takatori.nara.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '294021'
+  label: 奈良県 明日香村
+  url: https://www.asukamura.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 奈良県 県内市町村に掲載された公式サイト（www.asukamura.jp）
+  evidence_url: https://www.pref.nara.lg.jp/n002/1232.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '294241'
+  label: 奈良県 上牧町
+  url: https://www.town.kanmaki.nara.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kanmaki.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kanmaki.nara.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '294250'
+  label: 奈良県 王寺町
+  url: https://www.town.oji.nara.jp/kurashi_tetsuzuki/9382.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.oji.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.oji.nara.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '294268'
+  label: 奈良県 広陵町
+  url: https://www.town.koryo.nara.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 奈良県 県内市町村に掲載された公式サイト（www.town.koryo.nara.jp）
+  evidence_url: https://www.pref.nara.lg.jp/n002/1232.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '294276'
+  label: 奈良県 河合町
+  url: https://www.town.kawai.nara.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kawai.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kawai.nara.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '294411'
+  label: 奈良県 吉野町
+  url: https://www.town.yoshino.nara.jp/kurashi/sumai/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yoshino.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yoshino.nara.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '294420'
+  label: 奈良県 大淀町
+  url: https://akiyaconcierge.com/area/ooyodo/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.89
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.town.oyodo.lg.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.town.oyodo.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '294438'
+  label: 奈良県 下市町
+  url: http://shimoichi-akiyabank.com/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.town.shimoichi.lg.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.town.shimoichi.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '294446'
+  label: 奈良県 黒滝村
+  url: https://www.vill.kurotaki.nara.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.kurotaki.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.kurotaki.nara.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '294462'
+  label: 奈良県 天川村
+  url: https://www.vill.tenkawa.nara.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.tenkawa.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.tenkawa.nara.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '294471'
+  label: 奈良県 野迫川村
+  url: https://www.vill.nosegawa.nara.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.nosegawa.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.nosegawa.nara.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '294497'
+  label: 奈良県 十津川村
+  url: https://www.vill.totsukawa.lg.jp/akiyabank/index.php
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.totsukawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.totsukawa.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '294501'
+  label: 奈良県 下北山村
+  url: http://www.vill.shimokitayama.nara.jp/teiju/post_1.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.shimokitayama.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.shimokitayama.nara.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '294519'
+  label: 奈良県 上北山村
+  url: https://www.vill.kamikitayama.nara.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.kamikitayama.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.kamikitayama.nara.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '294527'
+  label: 奈良県 川上村
+  url: https://www.vill.kawakami.nara.jp/life/soshiki/zenka/kurashiteijuka/more.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.kawakami.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.kawakami.nara.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '294535'
+  label: 奈良県 東吉野村
+  url: https://vill.higashiyoshino.nara.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 奈良県 県内市町村に掲載された公式サイト（vill.higashiyoshino.nara.jp）
+  evidence_url: https://www.pref.nara.lg.jp/n002/1232.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

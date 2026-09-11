@@ -1,0 +1,606 @@
+prefecture: 大阪府
+prefecture_slug: osaka
+created_at: '2026-09-11T06:45:51+00:00'
+candidates:
+- key: '271004'
+  label: 大阪府 大阪市
+  url: https://www.city.osaka.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.osaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.osaka.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '271403'
+  label: 大阪府 堺市
+  url: https://www.city.sakai.lg.jp/kurashi/jutaku/akiya.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sakai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.sakai.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272027'
+  label: 大阪府 岸和田市
+  url: https://www.city.kishiwada.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kishiwada.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kishiwada.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272035'
+  label: 大阪府 豊中市
+  url: https://www.city.toyonaka.osaka.jp/kurashi/jutaku/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.toyonaka.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.toyonaka.osaka.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272043'
+  label: 大阪府 池田市
+  url: https://www.city.ikeda.osaka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ikeda.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.ikeda.osaka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272051'
+  label: 大阪府 吹田市
+  url: https://www.city.suita.osaka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.suita.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.suita.osaka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272060'
+  label: 大阪府 泉大津市
+  url: https://www.city.izumiotsu.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.izumiotsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.izumiotsu.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272078'
+  label: 大阪府 高槻市
+  url: https://www.city.takatsuki.osaka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.takatsuki.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.takatsuki.osaka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272086'
+  label: 大阪府 貝塚市
+  url: https://www.city.kaizuka.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kaizuka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kaizuka.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272094'
+  label: 大阪府 守口市
+  url: https://www.city.moriguchi.osaka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.moriguchi.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.moriguchi.osaka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272108'
+  label: 大阪府 枚方市
+  url: https://www.city.hirakata.osaka.jp/0000023818.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hirakata.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.hirakata.osaka.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272116'
+  label: 大阪府 茨木市
+  url: https://www.city.ibaraki.osaka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ibaraki.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.ibaraki.osaka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272124'
+  label: 大阪府 八尾市
+  url: https://www.city.yao.osaka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yao.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.yao.osaka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272132'
+  label: 大阪府 泉佐野市
+  url: https://www.city.izumisano.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.izumisano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.izumisano.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272141'
+  label: 大阪府 富田林市
+  url: https://www.city.tondabayashi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tondabayashi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tondabayashi.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272159'
+  label: 大阪府 寝屋川市
+  url: https://www.city.neyagawa.osaka.jp/kurashi/sumai_kenchiku/akiyabanku/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.neyagawa.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.neyagawa.osaka.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272167'
+  label: 大阪府 河内長野市
+  url: https://www.city.kawachinagano.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kawachinagano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kawachinagano.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272175'
+  label: 大阪府 松原市
+  url: https://www.city.matsubara.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.matsubara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.matsubara.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272183'
+  label: 大阪府 大東市
+  url: https://www.city.daito.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.daito.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.daito.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272191'
+  label: 大阪府 和泉市
+  url: https://www.city.osaka-izumi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 大阪府内の市町村に掲載された公式サイト（www.city.osaka-izumi.lg.jp）
+  evidence_url: https://www.pref.osaka.lg.jp/o070050/koho/links/city.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272205'
+  label: 大阪府 箕面市
+  url: https://www.city.minoh.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 大阪府内の市町村に掲載された公式サイト（www.city.minoh.lg.jp）
+  evidence_url: https://www.pref.osaka.lg.jp/o070050/koho/links/city.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272213'
+  label: 大阪府 柏原市
+  url: https://www.city.kashiwara.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kashiwara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kashiwara.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272221'
+  label: 大阪府 羽曳野市
+  url: https://www.city.habikino.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.habikino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.habikino.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272230'
+  label: 大阪府 門真市
+  url: https://www.city.kadoma.osaka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kadoma.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kadoma.osaka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272248'
+  label: 大阪府 摂津市
+  url: https://www.city.settsu.osaka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.settsu.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.settsu.osaka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272256'
+  label: 大阪府 高石市
+  url: https://www.city.takaishi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.takaishi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.takaishi.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272264'
+  label: 大阪府 藤井寺市
+  url: https://www.city.fujiidera.lg.jp/soshiki/toshiseibi/toshikeikaku/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.fujiidera.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.fujiidera.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272272'
+  label: 大阪府 東大阪市
+  url: https://www.city.higashiosaka.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.higashiosaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.higashiosaka.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272281'
+  label: 大阪府 泉南市
+  url: https://www.city.sennan.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sennan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.sennan.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272299'
+  label: 大阪府 四條畷市
+  url: https://www.city.shijonawate.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 大阪府内の市町村に掲載された公式サイト（www.city.shijonawate.lg.jp）
+  evidence_url: https://www.pref.osaka.lg.jp/o070050/koho/links/city.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272302'
+  label: 大阪府 交野市
+  url: https://www.city.katano.osaka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.katano.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.katano.osaka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272311'
+  label: 大阪府 大阪狭山市
+  url: https://www.city.osakasayama.osaka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.osakasayama.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.osakasayama.osaka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '272329'
+  label: 大阪府 阪南市
+  url: https://www.city.hannan.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hannan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.hannan.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '273015'
+  label: 大阪府 島本町
+  url: https://www.town.shimamoto.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shimamoto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.shimamoto.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '273210'
+  label: 大阪府 豊能町
+  url: https://www.town.toyono.osaka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.toyono.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.toyono.osaka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '273228'
+  label: 大阪府 能勢町
+  url: https://www.town.nose.osaka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nose.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.nose.osaka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '273414'
+  label: 大阪府 忠岡町
+  url: https://www.town.tadaoka.osaka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tadaoka.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.tadaoka.osaka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '273619'
+  label: 大阪府 熊取町
+  url: https://www.town.kumatori.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kumatori.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kumatori.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '273627'
+  label: 大阪府 田尻町
+  url: https://www.town.tajiri.osaka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tajiri.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.tajiri.osaka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '273660'
+  label: 大阪府 岬町
+  url: https://www.town.misaki.osaka.jp/soshiki/matidukuri/kikaku/teiju/347.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.misaki.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.misaki.osaka.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '273813'
+  label: 大阪府 太子町
+  url: http://www.town.taishi.osaka.jp/busyo/machidukurisuisinbu/chiikiseibika/akiyabank/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.taishi.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.taishi.osaka.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '273821'
+  label: 大阪府 河南町
+  url: https://www.town.kanan.osaka.jp/kurashi_tetsuzuki/sumai/1/2885.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kanan.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kanan.osaka.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '273830'
+  label: 大阪府 千早赤阪村
+  url: https://www.vill.chihayaakasaka.osaka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.chihayaakasaka.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.chihayaakasaka.osaka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

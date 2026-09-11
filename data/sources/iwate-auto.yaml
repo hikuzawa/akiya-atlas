@@ -1,0 +1,802 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: iwate-032018
+  name: 盛岡市空き家バンク
+  operator: 盛岡市
+  operator_kind: municipality
+  official_url: https://www.city.morioka.iwate.jp/
+  policy: link_only
+  municipality:
+    code: 032018
+    name: 盛岡市
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: 032018
+    bank_url: https://www.city.morioka.iwate.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 岩手県盛岡市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.morioka.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.morioka.iwate.jp/
+    checked_on: '2026-09-11'
+- id: iwate-032026
+  name: 宮古市空き家バンク
+  operator: 宮古市
+  operator_kind: municipality
+  official_url: https://www.city.miyako.iwate.jp/
+  policy: link_only
+  municipality:
+    code: '032026'
+    name: 宮古市
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: '032026'
+    bank_url: https://www.city.miyako.iwate.jp/gyosei/soshiki/toshi/akiya/561.html
+    bank_status: info
+    extract_pending: false
+    map_query: 岩手県宮古市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.miyako.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.miyako.iwate.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: akiya-athome.jp
+    url: https://www.akiya-athome.jp/
+  - label: homes.co.jp
+    url: https://www.homes.co.jp/akiyabank/iwate/miyako/
+- id: iwate-032034
+  name: 大船渡市空き家バンク
+  operator: 大船渡市
+  operator_kind: municipality
+  official_url: https://www.city.ofunato.iwate.jp/
+  policy: link_only
+  municipality:
+    code: '032034'
+    name: 大船渡市
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: '032034'
+    bank_url: https://www.city.ofunato.iwate.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 岩手県大船渡市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ofunato.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.ofunato.iwate.jp/
+    checked_on: '2026-09-11'
+- id: iwate-032051
+  name: 花巻市空き家バンク
+  operator: 花巻市
+  operator_kind: municipality
+  official_url: https://www.city.hanamaki.iwate.jp/
+  policy: link_only
+  municipality:
+    code: '032051'
+    name: 花巻市
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: '032051'
+    bank_url: https://www.city.hanamaki.iwate.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 岩手県花巻市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.hanamaki.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.hanamaki.iwate.jp/
+    checked_on: '2026-09-11'
+- id: iwate-032069
+  name: 北上市空き家バンク
+  operator: 北上市
+  operator_kind: municipality
+  official_url: https://www.city.kitakami.iwate.jp/
+  policy: link_only
+  municipality:
+    code: 032069
+    name: 北上市
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: 032069
+    bank_url: https://www.city.kitakami.iwate.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 岩手県北上市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kitakami.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kitakami.iwate.jp/
+    checked_on: '2026-09-11'
+- id: iwate-032077
+  name: 久慈市空き家バンク
+  operator: 久慈市
+  operator_kind: municipality
+  official_url: https://www.city.kuji.lg.jp/
+  policy: link_only
+  municipality:
+    code: '032077'
+    name: 久慈市
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: '032077'
+    bank_url: https://www.city.kuji.lg.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 岩手県久慈市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kuji.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kuji.lg.jp/
+    checked_on: '2026-09-11'
+- id: iwate-032085
+  name: 遠野市空き家バンク
+  operator: 遠野市
+  operator_kind: municipality
+  official_url: https://www.city.tono.iwate.jp/
+  policy: link_only
+  municipality:
+    code: 032085
+    name: 遠野市
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: 032085
+    bank_url: https://www.city.tono.iwate.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 岩手県遠野市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tono.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.tono.iwate.jp/
+    checked_on: '2026-09-11'
+- id: iwate-032093
+  name: 一関市空き家バンク
+  operator: 一関市
+  operator_kind: municipality
+  official_url: https://www.city.ichinoseki.iwate.jp/
+  policy: link_only
+  municipality:
+    code: 032093
+    name: 一関市
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: 032093
+    bank_url: https://www.city.ichinoseki.iwate.jp/genre/kurashi/akiya
+    bank_status: info
+    extract_pending: false
+    map_query: 岩手県一関市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ichinoseki.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.ichinoseki.iwate.jp/
+    checked_on: '2026-09-11'
+- id: iwate-032107
+  name: 陸前高田市空き家バンク
+  operator: 陸前高田市
+  operator_kind: municipality
+  official_url: https://www.city.rikuzentakata.iwate.jp/
+  policy: link_only
+  municipality:
+    code: '032107'
+    name: 陸前高田市
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: '032107'
+    bank_url: https://www.city.rikuzentakata.iwate.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 岩手県陸前高田市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.rikuzentakata.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.rikuzentakata.iwate.jp/
+    checked_on: '2026-09-11'
+- id: iwate-032115
+  name: 釜石市空き家バンク
+  operator: 釜石市
+  operator_kind: municipality
+  official_url: https://www.city.kamaishi.iwate.jp/
+  policy: link_only
+  municipality:
+    code: '032115'
+    name: 釜石市
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: '032115'
+    bank_url: https://www.city.kamaishi.iwate.jp/category/bunya/infra/akiya/
+    bank_status: info
+    extract_pending: false
+    map_query: 岩手県釜石市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kamaishi.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kamaishi.iwate.jp/
+    checked_on: '2026-09-11'
+- id: iwate-032131
+  name: 二戸市空き家バンク
+  operator: 二戸市
+  operator_kind: municipality
+  official_url: https://www.city.ninohe.lg.jp/
+  policy: link_only
+  municipality:
+    code: '032131'
+    name: 二戸市
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: '032131'
+    bank_url: https://www.city.ninohe.lg.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 岩手県二戸市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ninohe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.ninohe.lg.jp/
+    checked_on: '2026-09-11'
+- id: iwate-032140
+  name: 八幡平市空き家バンク
+  operator: 八幡平市
+  operator_kind: municipality
+  official_url: https://www.city.hachimantai.lg.jp/
+  policy: crawl
+  municipality:
+    code: '032140'
+    name: 八幡平市
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: '032140'
+    bank_url: https://www.city.hachimantai.lg.jp/site/ijyu-4/1816.html
+    bank_status: available
+    extract_pending: false
+    map_query: 岩手県八幡平市
+  operator_evidence:
+    quote: 公式ドメイン www.city.hachimantai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.hachimantai.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.hachimantai.lg.jp/site/ijyu-4/1816.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.hachimantai.lg.jp
+  max_pages: 30
+  external_links:
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47360
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46964
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-44113
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-44104
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-41203
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-39378
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47201
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-25988
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46985
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-43870
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-41118
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-33236
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-39380
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-33238
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-25610
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-45930
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46884
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-39382
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-39381
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-45921
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-33228
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-48095
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-25588
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E4%BA%8B%E6%A5%AD%E7%94%A8%28%E5%BB%BA%E7%89%A9%E5%85%A8%E9%83%A8%29-46247
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-44114
+  - label: 物件詳細ページはこちら
+    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-39383
+- id: iwate-032158
+  name: 奥州市空き家バンク
+  operator: 奥州市
+  operator_kind: municipality
+  official_url: https://www.city.oshu.iwate.jp/
+  policy: link_only
+  municipality:
+    code: 032158
+    name: 奥州市
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: 032158
+    bank_url: https://www.city.oshu.iwate.jp/kurashi_tetsuzuki/sumai/2/index.html
+    bank_status: info
+    extract_pending: false
+    map_query: 岩手県奥州市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.oshu.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.oshu.iwate.jp/
+    checked_on: '2026-09-11'
+- id: iwate-032166
+  name: 滝沢市空き家バンク
+  operator: 滝沢市
+  operator_kind: municipality
+  official_url: https://www.city.takizawa.iwate.jp/
+  policy: crawl
+  municipality:
+    code: '032166'
+    name: 滝沢市
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: '032166'
+    bank_url: https://www.city.takizawa.iwate.jp/kurashi/tochi-sumai/contents-12872
+    bank_status: available
+    extract_pending: false
+    map_query: 岩手県滝沢市
+  operator_evidence:
+    quote: 公式ドメイン www.city.takizawa.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.takizawa.iwate.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.takizawa.iwate.jp/kurashi/tochi-sumai/contents-12872
+    kind: listing_index
+  allow_hosts:
+  - www.city.takizawa.iwate.jp
+  max_pages: 30
+  external_links:
+  - label: akiya-athome.jp
+    url: https://www.akiya-athome.jp
+  - label: homes.co.jp
+    url: https://www.homes.co.jp/akiyabank/
+- id: iwate-033014
+  name: 雫石町空き家バンク
+  operator: 雫石町
+  operator_kind: municipality
+  official_url: https://www.town.shizukuishi.iwate.jp/
+  policy: crawl
+  municipality:
+    code: '033014'
+    name: 雫石町
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: '033014'
+    bank_url: https://www.town.shizukuishi.iwate.jp/docs/2014121000281/
+    bank_status: available
+    extract_pending: false
+    map_query: 岩手県雫石町
+  operator_evidence:
+    quote: 公式ドメイン www.town.shizukuishi.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.shizukuishi.iwate.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.shizukuishi.iwate.jp/docs/2014121000281/
+    kind: listing_index
+  allow_hosts:
+  - www.town.shizukuishi.iwate.jp
+  max_pages: 30
+  external_links:
+  - label: こちら
+    url: https://www.akiya-athome.jp
+- id: iwate-033022
+  name: 葛巻町空き家バンク
+  operator: 葛巻町
+  operator_kind: municipality
+  official_url: https://www.town.kuzumaki.lg.jp/
+  policy: link_only
+  municipality:
+    code: '033022'
+    name: 葛巻町
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: '033022'
+    bank_url: https://www.town.kuzumaki.lg.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 岩手県葛巻町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kuzumaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kuzumaki.lg.jp/
+    checked_on: '2026-09-11'
+- id: iwate-033031
+  name: 岩手町空き家バンク
+  operator: 岩手町
+  operator_kind: municipality
+  official_url: https://town.iwate.iwate.jp/
+  policy: crawl
+  municipality:
+    code: '033031'
+    name: 岩手町
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: '033031'
+    bank_url: https://town.iwate.iwate.jp/akiya/
+    bank_status: available
+    extract_pending: false
+    map_query: 岩手県岩手町
+  operator_evidence:
+    quote: 公式ドメイン town.iwate.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://town.iwate.iwate.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://town.iwate.iwate.jp/akiya/
+    kind: listing_index
+  allow_hosts:
+  - town.iwate.iwate.jp
+  max_pages: 30
+- id: iwate-033219
+  name: 紫波町空き家バンク
+  operator: 紫波町
+  operator_kind: municipality
+  official_url: https://www.town.shiwa.iwate.jp/
+  policy: link_only
+  municipality:
+    code: 033219
+    name: 紫波町
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: 033219
+    bank_url: https://www.town.shiwa.iwate.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 岩手県紫波町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shiwa.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.shiwa.iwate.jp/
+    checked_on: '2026-09-11'
+- id: iwate-033227
+  name: 矢巾町空き家バンク
+  operator: 矢巾町
+  operator_kind: municipality
+  official_url: https://www.town.yahaba.iwate.jp/
+  policy: link_only
+  municipality:
+    code: '033227'
+    name: 矢巾町
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: '033227'
+    bank_url: https://www.town.yahaba.iwate.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 岩手県矢巾町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yahaba.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.yahaba.iwate.jp/
+    checked_on: '2026-09-11'
+- id: iwate-033669
+  name: 西和賀町空き家バンク
+  operator: 西和賀町
+  operator_kind: municipality
+  official_url: https://www.town.nishiwaga.lg.jp/
+  policy: link_only
+  municipality:
+    code: 033669
+    name: 西和賀町
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: 033669
+    bank_url: https://www.town.nishiwaga.lg.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 岩手県西和賀町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.nishiwaga.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.nishiwaga.lg.jp/
+    checked_on: '2026-09-11'
+- id: iwate-033812
+  name: 金ケ崎町空き家バンク
+  operator: 金ケ崎町
+  operator_kind: municipality
+  official_url: https://www.town.kanegasaki.iwate.jp/
+  policy: link_only
+  municipality:
+    code: 033812
+    name: 金ケ崎町
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: 033812
+    bank_url: https://www.town.kanegasaki.iwate.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 岩手県金ケ崎町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kanegasaki.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kanegasaki.iwate.jp/
+    checked_on: '2026-09-11'
+- id: iwate-034029
+  name: 平泉町空き家バンク
+  operator: 平泉町
+  operator_kind: municipality
+  official_url: https://www.town.hiraizumi.iwate.jp/
+  policy: link_only
+  municipality:
+    code: 034029
+    name: 平泉町
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: 034029
+    bank_url: https://www.town.hiraizumi.iwate.jp/emigration
+    bank_status: info
+    extract_pending: false
+    map_query: 岩手県平泉町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.hiraizumi.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.hiraizumi.iwate.jp/
+    checked_on: '2026-09-11'
+- id: iwate-034410
+  name: 住田町空き家バンク
+  operator: 住田町
+  operator_kind: municipality
+  official_url: https://www.town.sumita.iwate.jp/
+  policy: crawl
+  municipality:
+    code: '034410'
+    name: 住田町
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: '034410'
+    bank_url: https://www.town.sumita.iwate.jp/docs/2022121400017/
+    bank_status: available
+    extract_pending: false
+    map_query: 岩手県住田町
+  operator_evidence:
+    quote: 公式ドメイン www.town.sumita.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.sumita.iwate.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.sumita.iwate.jp/docs/2022121400017/
+    kind: listing_detail
+  allow_hosts:
+  - www.town.sumita.iwate.jp
+  max_pages: 30
+- id: iwate-034614
+  name: 大槌町空き家バンク
+  operator: 大槌町
+  operator_kind: municipality
+  official_url: https://www.town.otsuchi.iwate.jp/
+  policy: link_only
+  municipality:
+    code: '034614'
+    name: 大槌町
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: '034614'
+    bank_url: https://www.town.otsuchi.iwate.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 岩手県大槌町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.otsuchi.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.otsuchi.iwate.jp/
+    checked_on: '2026-09-11'
+- id: iwate-034827
+  name: 山田町空き家バンク
+  operator: 山田町
+  operator_kind: municipality
+  official_url: https://www.town.yamada.iwate.jp/
+  policy: link_only
+  municipality:
+    code: 034827
+    name: 山田町
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: 034827
+    bank_url: https://www.town.yamada.iwate.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 岩手県山田町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yamada.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.yamada.iwate.jp/
+    checked_on: '2026-09-11'
+- id: iwate-034835
+  name: 岩泉町空き家バンク
+  operator: 岩泉町
+  operator_kind: municipality
+  official_url: https://www.town.iwaizumi.lg.jp/
+  policy: crawl
+  municipality:
+    code: 034835
+    name: 岩泉町
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: 034835
+    bank_url: https://www.town.iwaizumi.lg.jp/docs/2026070300060/
+    bank_status: available
+    extract_pending: true
+    map_query: 岩手県岩泉町
+  operator_evidence:
+    quote: 公式ドメイン www.town.iwaizumi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.iwaizumi.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.iwaizumi.lg.jp/docs/2026070300060/
+    kind: listing_index
+  allow_hosts:
+  - www.town.iwaizumi.lg.jp
+  max_pages: 30
+- id: iwate-034843
+  name: 田野畑村空き家バンク
+  operator: 田野畑村
+  operator_kind: municipality
+  official_url: https://www.vill.tanohata.iwate.jp/
+  policy: link_only
+  municipality:
+    code: 034843
+    name: 田野畑村
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: 034843
+    bank_url: https://www.vill.tanohata.iwate.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 岩手県田野畑村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.tanohata.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.tanohata.iwate.jp/
+    checked_on: '2026-09-11'
+- id: iwate-034851
+  name: 普代村空き家バンク
+  operator: 普代村
+  operator_kind: municipality
+  official_url: https://www.vill.fudai.iwate.jp/
+  policy: link_only
+  municipality:
+    code: 034851
+    name: 普代村
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: 034851
+    bank_url: https://www.vill.fudai.iwate.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 岩手県普代村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.fudai.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.fudai.iwate.jp/
+    checked_on: '2026-09-11'
+- id: iwate-035017
+  name: 軽米町空き家バンク
+  operator: 軽米町
+  operator_kind: municipality
+  official_url: https://www.town.karumai.iwate.jp/
+  policy: crawl
+  municipality:
+    code: '035017'
+    name: 軽米町
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: '035017'
+    bank_url: https://www.town.karumai.iwate.jp/article/kurashitetsuduki/living/jyutaku/entry-basename.html
+    bank_status: available
+    extract_pending: false
+    map_query: 岩手県軽米町
+  operator_evidence:
+    quote: 公式ドメイン www.town.karumai.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.karumai.iwate.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.karumai.iwate.jp/article/kurashitetsuduki/living/jyutaku/entry-basename.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.karumai.iwate.jp
+  max_pages: 30
+- id: iwate-035033
+  name: 野田村空き家バンク
+  operator: 野田村
+  operator_kind: municipality
+  official_url: https://www.vill.noda.iwate.jp/
+  policy: link_only
+  municipality:
+    code: '035033'
+    name: 野田村
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: '035033'
+    bank_url: https://www.vill.noda.iwate.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 岩手県野田村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.noda.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.noda.iwate.jp/
+    checked_on: '2026-09-11'
+- id: iwate-035068
+  name: 九戸村空き家バンク
+  operator: 九戸村
+  operator_kind: municipality
+  official_url: https://www.vill.kunohe.iwate.jp/
+  policy: link_only
+  municipality:
+    code: 035068
+    name: 九戸村
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: 035068
+    bank_url: https://www.vill.kunohe.iwate.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 岩手県九戸村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.kunohe.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.kunohe.iwate.jp/
+    checked_on: '2026-09-11'
+- id: iwate-035076
+  name: 洋野町空き家バンク
+  operator: 洋野町
+  operator_kind: municipality
+  official_url: https://www.town.hirono.iwate.jp/
+  policy: link_only
+  municipality:
+    code: '035076'
+    name: 洋野町
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: '035076'
+    bank_url: https://www.town.hirono.iwate.jp/doc/2022052500022/
+    bank_status: info
+    extract_pending: false
+    map_query: 岩手県洋野町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.hirono.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.hirono.iwate.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: homes.co.jp
+    url: https://www.homes.co.jp/akiyabank/iwate/kunohe_hirono/
+- id: iwate-035246
+  name: 一戸町空き家バンク
+  operator: 一戸町
+  operator_kind: municipality
+  official_url: https://www.town.ichinohe.iwate.jp/
+  policy: link_only
+  municipality:
+    code: '035246'
+    name: 一戸町
+    prefecture: 岩手県
+    prefecture_slug: iwate
+    slug: '035246'
+    bank_url: https://www.town.ichinohe.iwate.jp/kurashi_tetsuzuki/sumai/5453.html
+    bank_status: info
+    extract_pending: false
+    map_query: 岩手県一戸町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ichinohe.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.ichinohe.iwate.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: akiya-athome.jp
+    url: https://ichinohe-t03524.akiya-athome.jp/buy/house/area/iwateken/ninohegunichinohemachi/list?gyosei_cd%5B%5D=03524

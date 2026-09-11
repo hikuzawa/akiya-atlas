@@ -1,0 +1,769 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: yamagata-062014
+  name: 山形市空き家バンク
+  operator: 山形市
+  operator_kind: municipality
+  official_url: https://www.city.yamagata-yamagata.lg.jp/
+  policy: crawl
+  municipality:
+    code: '062014'
+    name: 山形市
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '062014'
+    bank_url: https://www.city.yamagata-yamagata.lg.jp/kurashi/tochi/1006582/1006583/1002505.html
+    bank_status: available
+    map_query: 山形県山形市
+  operator_evidence:
+    quote: 山形県 山形県内市町村ページに掲載された公式サイト（www.city.yamagata-yamagata.lg.jp）
+    url: https://www.pref.yamagata.jp/020026/kensei/information/clink.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.yamagata-yamagata.lg.jp/kurashi/tochi/1006582/1006583/1002505.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.yamagata-yamagata.lg.jp
+  max_pages: 30
+- id: yamagata-062022
+  name: 米沢市空き家バンク
+  operator: 米沢市
+  operator_kind: municipality
+  official_url: https://www.city.yonezawa.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: '062022'
+    name: 米沢市
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '062022'
+    bank_url: https://www.city.yonezawa.yamagata.jp/category/kurashi_tetsuzuki/2_1/index.html
+    bank_status: info
+    map_query: 山形県米沢市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yonezawa.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.yonezawa.yamagata.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-062031
+  name: 鶴岡市空き家バンク
+  operator: 鶴岡市
+  operator_kind: municipality
+  official_url: https://www.city.tsuruoka.lg.jp/
+  policy: link_only
+  municipality:
+    code: '062031'
+    name: 鶴岡市
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '062031'
+    bank_url: https://www.city.tsuruoka.lg.jp/kurashi/jyutaku/akiya/index.html
+    bank_status: info
+    map_query: 山形県鶴岡市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tsuruoka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.tsuruoka.lg.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-062049
+  name: 酒田市空き家バンク
+  operator: 酒田市
+  operator_kind: municipality
+  official_url: https://www.city.sakata.lg.jp/
+  policy: link_only
+  municipality:
+    code: 062049
+    name: 酒田市
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: 062049
+    bank_url: https://www.city.sakata.lg.jp/
+    bank_status: none
+    map_query: 山形県酒田市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.sakata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.sakata.lg.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-062057
+  name: 新庄市空き家バンク
+  operator: 新庄市
+  operator_kind: municipality
+  official_url: https://www.city.shinjo.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: '062057'
+    name: 新庄市
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '062057'
+    bank_url: https://www.city.shinjo.yamagata.jp/
+    bank_status: none
+    map_query: 山形県新庄市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.shinjo.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.shinjo.yamagata.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-062065
+  name: 寒河江市空き家バンク
+  operator: 寒河江市
+  operator_kind: municipality
+  official_url: https://www.city.sagae.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: '062065'
+    name: 寒河江市
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '062065'
+    bank_url: https://www.city.sagae.yamagata.jp/
+    bank_status: none
+    map_query: 山形県寒河江市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.sagae.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.sagae.yamagata.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-062073
+  name: 上山市空き家バンク
+  operator: 上山市
+  operator_kind: municipality
+  official_url: https://www.city.kaminoyama.yamagata.jp/
+  policy: crawl
+  municipality:
+    code: '062073'
+    name: 上山市
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '062073'
+    bank_url: https://www.city.kaminoyama.yamagata.jp/soshiki/12/kaminoyama-akiyabank2.html
+    bank_status: available
+    map_query: 山形県上山市
+  operator_evidence:
+    quote: 公式ドメイン www.city.kaminoyama.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kaminoyama.yamagata.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.kaminoyama.yamagata.jp/soshiki/12/kaminoyama-akiyabank2.html
+    kind: listing_index
+    follow:
+    - pattern: https?://www\.city\.kaminoyama\.yamagata\.jp/soshiki/12/kaminoyama\-akiyabank2\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - www.city.kaminoyama.yamagata.jp
+  max_pages: 30
+- id: yamagata-062081
+  name: 村山市空き家バンク
+  operator: 村山市
+  operator_kind: municipality
+  official_url: https://www.city.murayama.lg.jp/
+  policy: crawl
+  municipality:
+    code: 062081
+    name: 村山市
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: 062081
+    bank_url: https://www.city.murayama.lg.jp/kurashi/sumai/akiyabankjoho.html
+    bank_status: available
+    map_query: 山形県村山市
+  operator_evidence:
+    quote: 公式ドメイン www.city.murayama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.murayama.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.murayama.lg.jp/kurashi/sumai/akiyabankjoho.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.murayama.lg.jp
+  max_pages: 30
+- id: yamagata-062090
+  name: 長井市空き家バンク
+  operator: 長井市
+  operator_kind: municipality
+  official_url: https://www.city.nagai.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: 062090
+    name: 長井市
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: 062090
+    bank_url: https://www.city.nagai.yamagata.jp/
+    bank_status: none
+    map_query: 山形県長井市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nagai.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.nagai.yamagata.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-062103
+  name: 天童市空き家バンク
+  operator: 天童市
+  operator_kind: municipality
+  official_url: https://www.city.tendo.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: '062103'
+    name: 天童市
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '062103'
+    bank_url: https://www.city.tendo.yamagata.jp/
+    bank_status: none
+    map_query: 山形県天童市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tendo.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.tendo.yamagata.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-062111
+  name: 東根市空き家バンク
+  operator: 東根市
+  operator_kind: municipality
+  official_url: https://www.city.higashine.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: '062111'
+    name: 東根市
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '062111'
+    bank_url: https://www.city.higashine.yamagata.jp/
+    bank_status: none
+    map_query: 山形県東根市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.higashine.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.higashine.yamagata.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-062120
+  name: 尾花沢市空き家バンク
+  operator: 尾花沢市
+  operator_kind: municipality
+  official_url: https://www.city.obanazawa.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: '062120'
+    name: 尾花沢市
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '062120'
+    bank_url: https://www.city.obanazawa.yamagata.jp/
+    bank_status: none
+    map_query: 山形県尾花沢市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.obanazawa.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.obanazawa.yamagata.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-062138
+  name: 南陽市空き家バンク
+  operator: 南陽市
+  operator_kind: municipality
+  official_url: https://www.city.nanyo.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: 062138
+    name: 南陽市
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: 062138
+    bank_url: https://www.city.nanyo.yamagata.jp/
+    bank_status: none
+    map_query: 山形県南陽市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 山形県 山形県内市町村ページに掲載された公式サイト（www.city.nanyo.yamagata.jp）
+    url: https://www.pref.yamagata.jp/020026/kensei/information/clink.html
+    checked_on: '2026-09-11'
+- id: yamagata-063011
+  name: 山辺町空き家バンク
+  operator: 山辺町
+  operator_kind: municipality
+  official_url: https://www.town.yamanobe.yamagata.jp/
+  policy: crawl
+  municipality:
+    code: '063011'
+    name: 山辺町
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '063011'
+    bank_url: https://www.town.yamanobe.yamagata.jp/soshiki/35/akiyabank-touroku-01.html
+    bank_status: available
+    map_query: 山形県山辺町
+  operator_evidence:
+    quote: 公式ドメイン www.town.yamanobe.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.yamanobe.yamagata.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.yamanobe.yamagata.jp/soshiki/35/akiyabank-touroku-01.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.yamanobe.yamagata.jp
+  max_pages: 30
+  external_links:
+  - label: at home でみる
+    url: https://yamanobe-t06301.akiya-athome.jp/bukken/detail/buy/%E6%9D%B1%E6%9D%91%E5%B1%B1%E9%83%A1%E5%B1%B1%E8%BE%BA%E7%94%BA%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-41398
+  - label: at home でみる
+    url: https://yamanobe-t06301.akiya-athome.jp/bukken/detail/buy/%E6%9D%B1%E6%9D%91%E5%B1%B1%E9%83%A1%E5%B1%B1%E8%BE%BA%E7%94%BA%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-41399
+  - label: at home でみる
+    url: https://yamanobe-t06301.akiya-athome.jp/bukken/detail/buy/%E6%9D%B1%E6%9D%91%E5%B1%B1%E9%83%A1%E5%B1%B1%E8%BE%BA%E7%94%BA%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-43165
+  - label: at home でみる
+    url: https://yamanobe-t06301.akiya-athome.jp/bukken/detail/buy/%E6%9D%B1%E6%9D%91%E5%B1%B1%E9%83%A1%E5%B1%B1%E8%BE%BA%E7%94%BA%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-44235
+  - label: at home でみる
+    url: https://yamanobe-t06301.akiya-athome.jp/bukken/detail/buy/%E6%9D%B1%E6%9D%91%E5%B1%B1%E9%83%A1%E5%B1%B1%E8%BE%BA%E7%94%BA%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-45544
+  - label: at home でみる
+    url: https://yamanobe-t06301.akiya-athome.jp/bukken/detail/buy/%E6%9D%B1%E6%9D%91%E5%B1%B1%E9%83%A1%E5%B1%B1%E8%BE%BA%E7%94%BA%E5%A3%B2%E4%BA%8B%E6%A5%AD%E7%94%A8%28%E5%BB%BA%E7%89%A9%E5%85%A8%E9%83%A8%29-45535
+  - label: at home でみる
+    url: https://yamanobe-t06301.akiya-athome.jp/bukken/detail/buy/%E6%9D%B1%E6%9D%91%E5%B1%B1%E9%83%A1%E5%B1%B1%E8%BE%BA%E7%94%BA%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46641
+- id: yamagata-063029
+  name: 中山町空き家バンク
+  operator: 中山町
+  operator_kind: municipality
+  official_url: https://www.town.nakayama.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: 063029
+    name: 中山町
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: 063029
+    bank_url: https://www.town.nakayama.yamagata.jp/
+    bank_status: none
+    map_query: 山形県中山町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.nakayama.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.nakayama.yamagata.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-063215
+  name: 河北町空き家バンク
+  operator: 河北町
+  operator_kind: municipality
+  official_url: https://www.town.kahoku.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: '063215'
+    name: 河北町
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '063215'
+    bank_url: https://www.town.kahoku.yamagata.jp/
+    bank_status: none
+    map_query: 山形県河北町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kahoku.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kahoku.yamagata.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-063223
+  name: 西川町空き家バンク
+  operator: 西川町
+  operator_kind: municipality
+  official_url: https://www.town.nishikawa.yamagata.jp/
+  policy: crawl
+  municipality:
+    code: '063223'
+    name: 西川町
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '063223'
+    bank_url: https://www.town.nishikawa.yamagata.jp/site/iju/1440.html
+    bank_status: available
+    map_query: 山形県西川町
+  operator_evidence:
+    quote: 公式ドメイン www.town.nishikawa.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.nishikawa.yamagata.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.nishikawa.yamagata.jp/site/iju/1440.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.nishikawa.yamagata.jp
+  max_pages: 30
+- id: yamagata-063231
+  name: 朝日町空き家バンク
+  operator: 朝日町
+  operator_kind: municipality
+  official_url: https://www.town.asahi.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: '063231'
+    name: 朝日町
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '063231'
+    bank_url: https://www.town.asahi.yamagata.jp/
+    bank_status: none
+    map_query: 山形県朝日町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.asahi.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.asahi.yamagata.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-063240
+  name: 大江町空き家バンク
+  operator: 大江町
+  operator_kind: municipality
+  official_url: https://www.town.oe.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: '063240'
+    name: 大江町
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '063240'
+    bank_url: https://www.town.oe.yamagata.jp/government/living-environment/akiya-jokyaku/
+    bank_status: info
+    map_query: 山形県大江町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.oe.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.oe.yamagata.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-063410
+  name: 大石田町空き家バンク
+  operator: 大石田町
+  operator_kind: municipality
+  official_url: https://www.town.oishida.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: '063410'
+    name: 大石田町
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '063410'
+    bank_url: https://www.town.oishida.yamagata.jp/life/jyuutaku/akiyabank/index.html
+    bank_status: info
+    map_query: 山形県大石田町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.oishida.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.oishida.yamagata.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: 全国版空き家バンク(LIFULL HOME’S)外部リンク
+    url: https://www.homes.co.jp/akiyabank/
+- id: yamagata-063614
+  name: 金山町空き家バンク
+  operator: 金山町
+  operator_kind: municipality
+  official_url: https://www.town.kaneyama.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: '063614'
+    name: 金山町
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '063614'
+    bank_url: https://www.town.kaneyama.yamagata.jp/
+    bank_status: none
+    map_query: 山形県金山町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kaneyama.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kaneyama.yamagata.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-063622
+  name: 最上町空き家バンク
+  operator: 最上町
+  operator_kind: municipality
+  official_url: https://town.mogami.lg.jp/
+  policy: link_only
+  municipality:
+    code: '063622'
+    name: 最上町
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '063622'
+    bank_url: https://town.mogami.lg.jp/
+    bank_status: none
+    map_query: 山形県最上町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン town.mogami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://town.mogami.lg.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-063631
+  name: 舟形町空き家バンク
+  operator: 舟形町
+  operator_kind: municipality
+  official_url: https://www.town.funagata.yamagata.jp/
+  policy: crawl
+  municipality:
+    code: '063631'
+    name: 舟形町
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '063631'
+    bank_url: https://www.town.funagata.yamagata.jp/s022/kurashi/030/510/mogami.akiyanomori.htm
+    bank_status: available
+    map_query: 山形県舟形町
+  operator_evidence:
+    quote: 公式ドメイン www.town.funagata.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.funagata.yamagata.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.funagata.yamagata.jp/s022/kurashi/030/510/mogami.akiyanomori.htm
+    kind: listing_index
+  allow_hosts:
+  - www.town.funagata.yamagata.jp
+  max_pages: 30
+- id: yamagata-063649
+  name: 真室川町空き家バンク
+  operator: 真室川町
+  operator_kind: municipality
+  official_url: https://www.town.mamurogawa.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: 063649
+    name: 真室川町
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: 063649
+    bank_url: https://www.town.mamurogawa.yamagata.jp/kurashi_tetsuzuki/iju/index.html
+    bank_status: info
+    map_query: 山形県真室川町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.mamurogawa.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.mamurogawa.yamagata.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-063657
+  name: 大蔵村空き家バンク
+  operator: 大蔵村
+  operator_kind: municipality
+  official_url: https://www.vill.ohkura.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: '063657'
+    name: 大蔵村
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '063657'
+    bank_url: https://www.vill.ohkura.yamagata.jp/kurashi_tetsuzuki/iju_teiju/akiyabank/index.html
+    bank_status: info
+    map_query: 山形県大蔵村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 山形県 山形県内市町村ページに掲載された公式サイト（www.vill.ohkura.yamagata.jp）
+    url: https://www.pref.yamagata.jp/020026/kensei/information/clink.html
+    checked_on: '2026-09-11'
+- id: yamagata-063665
+  name: 鮭川村空き家バンク
+  operator: 鮭川村
+  operator_kind: municipality
+  official_url: https://www.vill.sakegawa.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: '063665'
+    name: 鮭川村
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '063665'
+    bank_url: https://www.vill.sakegawa.yamagata.jp/
+    bank_status: none
+    map_query: 山形県鮭川村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.sakegawa.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.sakegawa.yamagata.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-063673
+  name: 戸沢村空き家バンク
+  operator: 戸沢村
+  operator_kind: municipality
+  official_url: https://www.vill.tozawa.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: '063673'
+    name: 戸沢村
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '063673'
+    bank_url: https://www.vill.tozawa.yamagata.jp/akiyabank/
+    bank_status: info
+    map_query: 山形県戸沢村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.tozawa.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.tozawa.yamagata.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-063819
+  name: 高畠町空き家バンク
+  operator: 高畠町
+  operator_kind: municipality
+  official_url: https://www.town.takahata.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: 063819
+    name: 高畠町
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: 063819
+    bank_url: https://www.town.takahata.yamagata.jp/
+    bank_status: none
+    map_query: 山形県高畠町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.takahata.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.takahata.yamagata.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-063827
+  name: 川西町空き家バンク
+  operator: 川西町
+  operator_kind: municipality
+  official_url: https://www.town.kawanishi.yamagata.jp/
+  policy: crawl
+  municipality:
+    code: 063827
+    name: 川西町
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: 063827
+    bank_url: https://www.town.kawanishi.yamagata.jp/kurashi/jutaku/akiyabank.html
+    bank_status: available
+    map_query: 山形県川西町
+  operator_evidence:
+    quote: 公式ドメイン www.town.kawanishi.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kawanishi.yamagata.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.kawanishi.yamagata.jp/kurashi/jutaku/akiyabank.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.kawanishi.yamagata.jp
+  max_pages: 30
+- id: yamagata-064017
+  name: 小国町空き家バンク
+  operator: 小国町
+  operator_kind: municipality
+  official_url: https://www.town.oguni.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: '064017'
+    name: 小国町
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '064017'
+    bank_url: https://www.town.oguni.yamagata.jp/
+    bank_status: none
+    map_query: 山形県小国町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.oguni.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.oguni.yamagata.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-064025
+  name: 白鷹町空き家バンク
+  operator: 白鷹町
+  operator_kind: municipality
+  official_url: https://www.town.shirataka.lg.jp/
+  policy: link_only
+  municipality:
+    code: '064025'
+    name: 白鷹町
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '064025'
+    bank_url: https://www.town.shirataka.lg.jp/1190.htm
+    bank_status: spa_unsupported
+    map_query: 山形県白鷹町
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shirataka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.shirataka.lg.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-064033
+  name: 飯豊町空き家バンク
+  operator: 飯豊町
+  operator_kind: municipality
+  official_url: https://www.town.iide.yamagata.jp/
+  policy: crawl
+  municipality:
+    code: '064033'
+    name: 飯豊町
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '064033'
+    bank_url: https://www.town.iide.yamagata.jp/001/akiyajyouhou_1.html
+    bank_status: available
+    map_query: 山形県飯豊町
+  operator_evidence:
+    quote: 公式ドメイン www.town.iide.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.iide.yamagata.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.iide.yamagata.jp/001/akiyajyouhou_1.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.iide.yamagata.jp
+  max_pages: 30
+- id: yamagata-064262
+  name: 三川町空き家バンク
+  operator: 三川町
+  operator_kind: municipality
+  official_url: https://www.town.mikawa.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: '064262'
+    name: 三川町
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '064262'
+    bank_url: https://www.town.mikawa.yamagata.jp/kurashi/sumai/akiya/index.html
+    bank_status: info
+    map_query: 山形県三川町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.mikawa.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.mikawa.yamagata.jp/
+    checked_on: '2026-09-11'
+- id: yamagata-064289
+  name: 庄内町空き家バンク
+  operator: 庄内町
+  operator_kind: municipality
+  official_url: https://www.town.shonai.lg.jp/
+  policy: crawl
+  municipality:
+    code: 064289
+    name: 庄内町
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: 064289
+    bank_url: https://www.town.shonai.lg.jp/kurashi/kurashi/akiyataisaku/akiyabank/index.html
+    bank_status: available
+    map_query: 山形県庄内町
+  operator_evidence:
+    quote: 山形県 山形県内市町村ページに掲載された公式サイト（www.town.shonai.lg.jp）
+    url: https://www.pref.yamagata.jp/020026/kensei/information/clink.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.shonai.lg.jp/kurashi/kurashi/akiyataisaku/akiyabank/index.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.shonai.lg.jp
+  max_pages: 30
+- id: yamagata-064611
+  name: 遊佐町空き家バンク
+  operator: 遊佐町
+  operator_kind: municipality
+  official_url: https://www.town.yuza.yamagata.jp/
+  policy: link_only
+  municipality:
+    code: '064611'
+    name: 遊佐町
+    prefecture: 山形県
+    prefecture_slug: yamagata
+    slug: '064611'
+    bank_url: https://www.town.yuza.yamagata.jp/archive/contents-1932
+    bank_status: info
+    map_query: 山形県遊佐町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yuza.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.yuza.yamagata.jp/
+    checked_on: '2026-09-11'

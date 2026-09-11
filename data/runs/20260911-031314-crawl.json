@@ -1,0 +1,28 @@
+{
+  "command": "crawl",
+  "errors": [
+    "https://www.town.mutsuzawa.chiba.jp/akiya/page/2: HTTP 404"
+  ],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-11T03:13:30Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "crawl": {
+      "changed": 15,
+      "errors": 1,
+      "fetched": 15,
+      "not_modified": 0,
+      "requests": 31,
+      "unchanged": 0,
+      "workers": 8
+    }
+  },
+  "started_at": "2026-09-11T03:13:14Z"
+}

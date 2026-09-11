@@ -1,0 +1,1304 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: saitama-111007
+  name: さいたま市空き家バンク
+  operator: さいたま市
+  operator_kind: municipality
+  official_url: https://www.city.saitama.lg.jp/
+  policy: link_only
+  municipality:
+    code: '111007'
+    name: さいたま市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '111007'
+    bank_url: https://www.city.saitama.lg.jp/
+    bank_status: none
+    map_query: 埼玉県さいたま市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.saitama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.saitama.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112011
+  name: 川越市空き家バンク
+  operator: 川越市
+  operator_kind: municipality
+  official_url: https://www.city.kawagoe.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '112011'
+    name: 川越市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112011'
+    bank_url: https://www.city.kawagoe.saitama.jp/kurashi/jyutaku/1003031/index.html
+    bank_status: info
+    map_query: 埼玉県川越市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kawagoe.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kawagoe.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112020
+  name: 熊谷市空き家バンク
+  operator: 熊谷市
+  operator_kind: municipality
+  official_url: https://www.city.kumagaya.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112020'
+    name: 熊谷市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112020'
+    bank_url: https://www.city.kumagaya.lg.jp/kurashi/kankyo_sumai/akiyataisaku/index.html
+    bank_status: info
+    map_query: 埼玉県熊谷市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kumagaya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kumagaya.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112038
+  name: 川口市空き家バンク
+  operator: 川口市
+  operator_kind: municipality
+  official_url: https://www.city.kawaguchi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112038'
+    name: 川口市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112038'
+    bank_url: https://www.city.kawaguchi.lg.jp/
+    bank_status: none
+    map_query: 埼玉県川口市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kawaguchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kawaguchi.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112062
+  name: 行田市空き家バンク
+  operator: 行田市
+  operator_kind: municipality
+  official_url: https://www.city.gyoda.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112062'
+    name: 行田市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112062'
+    bank_url: https://www.city.gyoda.lg.jp/
+    bank_status: none
+    map_query: 埼玉県行田市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 埼玉県 関係機関へのリンク（市町村ホームページ一覧）に掲載された公式サイト（www.city.gyoda.lg.jp）
+    url: https://www.pref.saitama.lg.jp/a0301/wwwlink.html
+    checked_on: '2026-09-11'
+- id: saitama-112071
+  name: 秩父市空き家バンク
+  operator: 秩父市
+  operator_kind: municipality
+  official_url: https://www.city.chichibu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112071'
+    name: 秩父市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112071'
+    bank_url: https://www.city.chichibu.lg.jp/2928.html
+    bank_status: spa_unsupported
+    map_query: 埼玉県秩父市
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.chichibu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.chichibu.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112089
+  name: 所沢市空き家バンク
+  operator: 所沢市
+  operator_kind: municipality
+  official_url: https://www.city.tokorozawa.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '112089'
+    name: 所沢市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112089'
+    bank_url: https://www.city.tokorozawa.saitama.jp/
+    bank_status: none
+    map_query: 埼玉県所沢市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tokorozawa.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.tokorozawa.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112097
+  name: 飯能市空き家バンク
+  operator: 飯能市
+  operator_kind: municipality
+  official_url: https://www.city.hanno.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112097'
+    name: 飯能市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112097'
+    bank_url: https://www.city.hanno.lg.jp/kurashi_seikatsukankyo/akiya_reform/index.html
+    bank_status: info
+    map_query: 埼玉県飯能市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.hanno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.hanno.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112101
+  name: 加須市空き家バンク
+  operator: 加須市
+  operator_kind: municipality
+  official_url: https://www.city.kazo.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112101'
+    name: 加須市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112101'
+    bank_url: https://www.city.kazo.lg.jp/
+    bank_status: none
+    map_query: 埼玉県加須市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kazo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kazo.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112119
+  name: 本庄市空き家バンク
+  operator: 本庄市
+  operator_kind: municipality
+  official_url: https://www.city.honjo.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112119'
+    name: 本庄市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112119'
+    bank_url: https://www.city.honjo.lg.jp/
+    bank_status: none
+    map_query: 埼玉県本庄市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 埼玉県 関係機関へのリンク（市町村ホームページ一覧）に掲載された公式サイト（www.city.honjo.lg.jp）
+    url: https://www.pref.saitama.lg.jp/a0301/wwwlink.html
+    checked_on: '2026-09-11'
+- id: saitama-112127
+  name: 東松山市空き家バンク
+  operator: 東松山市
+  operator_kind: municipality
+  official_url: https://www.city.higashimatsuyama.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112127'
+    name: 東松山市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112127'
+    bank_url: https://www.city.higashimatsuyama.lg.jp/
+    bank_status: none
+    map_query: 埼玉県東松山市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.higashimatsuyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.higashimatsuyama.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112143
+  name: 春日部市空き家バンク
+  operator: 春日部市
+  operator_kind: municipality
+  official_url: https://www.city.kasukabe.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112143'
+    name: 春日部市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112143'
+    bank_url: https://www.city.kasukabe.lg.jp/
+    bank_status: none
+    map_query: 埼玉県春日部市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kasukabe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kasukabe.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112151
+  name: 狭山市空き家バンク
+  operator: 狭山市
+  operator_kind: municipality
+  official_url: https://www.city.sayama.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '112151'
+    name: 狭山市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112151'
+    bank_url: https://www.city.sayama.saitama.jp/
+    bank_status: none
+    map_query: 埼玉県狭山市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.sayama.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.sayama.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112160
+  name: 羽生市空き家バンク
+  operator: 羽生市
+  operator_kind: municipality
+  official_url: https://www.city.hanyu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112160'
+    name: 羽生市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112160'
+    bank_url: https://www.city.hanyu.lg.jp/categories/bunya/kurashi/kankyo/akiya_bank/
+    bank_status: info
+    map_query: 埼玉県羽生市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 埼玉県 関係機関へのリンク（市町村ホームページ一覧）に掲載された公式サイト（www.city.hanyu.lg.jp）
+    url: https://www.pref.saitama.lg.jp/a0301/wwwlink.html
+    checked_on: '2026-09-11'
+- id: saitama-112178
+  name: 鴻巣市空き家バンク
+  operator: 鴻巣市
+  operator_kind: municipality
+  official_url: https://www.city.kounosu.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '112178'
+    name: 鴻巣市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112178'
+    bank_url: https://www.city.kounosu.saitama.jp/life/1/8/42/
+    bank_status: info
+    map_query: 埼玉県鴻巣市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kounosu.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kounosu.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112186
+  name: 深谷市空き家バンク
+  operator: 深谷市
+  operator_kind: municipality
+  official_url: https://www.city.fukaya.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '112186'
+    name: 深谷市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112186'
+    bank_url: https://www.city.fukaya.saitama.jp/
+    bank_status: none
+    map_query: 埼玉県深谷市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.fukaya.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.fukaya.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112194
+  name: 上尾市空き家バンク
+  operator: 上尾市
+  operator_kind: municipality
+  official_url: https://www.city.ageo.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112194'
+    name: 上尾市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112194'
+    bank_url: https://www.city.ageo.lg.jp/page/036118051602.html
+    bank_status: info
+    map_query: 埼玉県上尾市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ageo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.ageo.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112216
+  name: 草加市空き家バンク
+  operator: 草加市
+  operator_kind: municipality
+  official_url: https://www.city.soka.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '112216'
+    name: 草加市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112216'
+    bank_url: https://www.city.soka.saitama.jp/
+    bank_status: none
+    map_query: 埼玉県草加市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.soka.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.soka.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112224
+  name: 越谷市空き家バンク
+  operator: 越谷市
+  operator_kind: municipality
+  official_url: https://www.city.koshigaya.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '112224'
+    name: 越谷市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112224'
+    bank_url: https://www.city.koshigaya.saitama.jp/kurashi_shisei/kurashi/sumai/akiya/index.html
+    bank_status: info
+    map_query: 埼玉県越谷市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.koshigaya.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.koshigaya.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112232
+  name: 蕨市空き家バンク
+  operator: 蕨市
+  operator_kind: municipality
+  official_url: https://www.city.warabi.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '112232'
+    name: 蕨市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112232'
+    bank_url: https://www.city.warabi.saitama.jp/
+    bank_status: none
+    map_query: 埼玉県蕨市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.warabi.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.warabi.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112241
+  name: 戸田市空き家バンク
+  operator: 戸田市
+  operator_kind: municipality
+  official_url: https://www.city.toda.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '112241'
+    name: 戸田市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112241'
+    bank_url: https://www.city.toda.saitama.jp/
+    bank_status: none
+    map_query: 埼玉県戸田市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.toda.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.toda.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112259
+  name: 入間市空き家バンク
+  operator: 入間市
+  operator_kind: municipality
+  official_url: https://www.city.iruma.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '112259'
+    name: 入間市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112259'
+    bank_url: https://www.city.iruma.saitama.jp/
+    bank_status: none
+    map_query: 埼玉県入間市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.iruma.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.iruma.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112275
+  name: 朝霞市空き家バンク
+  operator: 朝霞市
+  operator_kind: municipality
+  official_url: https://www.city.asaka.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112275'
+    name: 朝霞市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112275'
+    bank_url: https://www.city.asaka.lg.jp/
+    bank_status: none
+    map_query: 埼玉県朝霞市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.asaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.asaka.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112283
+  name: 志木市空き家バンク
+  operator: 志木市
+  operator_kind: municipality
+  official_url: https://www.city.shiki.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112283'
+    name: 志木市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112283'
+    bank_url: https://www.city.shiki.lg.jp/life/1/17/95/
+    bank_status: info
+    map_query: 埼玉県志木市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.shiki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.shiki.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112291
+  name: 和光市空き家バンク
+  operator: 和光市
+  operator_kind: municipality
+  official_url: https://www.city.wako.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112291'
+    name: 和光市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112291'
+    bank_url: https://www.city.wako.lg.jp/
+    bank_status: none
+    map_query: 埼玉県和光市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.wako.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.wako.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112305
+  name: 新座市空き家バンク
+  operator: 新座市
+  operator_kind: municipality
+  official_url: https://www.city.niiza.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112305'
+    name: 新座市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112305'
+    bank_url: https://www.city.niiza.lg.jp/life/17/106/542/
+    bank_status: info
+    map_query: 埼玉県新座市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.niiza.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.niiza.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112313
+  name: 桶川市空き家バンク
+  operator: 桶川市
+  operator_kind: municipality
+  official_url: https://www.city.okegawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112313'
+    name: 桶川市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112313'
+    bank_url: https://www.city.okegawa.lg.jp/kurashi/anshin_anzen/akiya/index.html
+    bank_status: info
+    map_query: 埼玉県桶川市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.okegawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.okegawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112321
+  name: 久喜市空き家バンク
+  operator: 久喜市
+  operator_kind: municipality
+  official_url: https://www.city.kuki.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112321'
+    name: 久喜市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112321'
+    bank_url: https://www.city.kuki.lg.jp/kurashi/sumai/akiya/1003484.html
+    bank_status: info
+    map_query: 埼玉県久喜市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kuki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kuki.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112330
+  name: 北本市空き家バンク
+  operator: 北本市
+  operator_kind: municipality
+  official_url: https://www.city.kitamoto.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112330'
+    name: 北本市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112330'
+    bank_url: https://www.city.kitamoto.lg.jp/kurashi/tochi/akiya/index.html
+    bank_status: info
+    map_query: 埼玉県北本市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kitamoto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kitamoto.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112348
+  name: 八潮市空き家バンク
+  operator: 八潮市
+  operator_kind: municipality
+  official_url: https://www.city.yashio.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112348'
+    name: 八潮市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112348'
+    bank_url: https://www.city.yashio.lg.jp/
+    bank_status: none
+    map_query: 埼玉県八潮市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yashio.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.yashio.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112356
+  name: 富士見市空き家バンク
+  operator: 富士見市
+  operator_kind: municipality
+  official_url: https://www.city.fujimi.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '112356'
+    name: 富士見市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112356'
+    bank_url: https://www.city.fujimi.saitama.jp/kurashi_tetsuzuki/sumai/2018-0511-1113-58/index.html
+    bank_status: info
+    map_query: 埼玉県富士見市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.fujimi.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.fujimi.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112372
+  name: 三郷市空き家バンク
+  operator: 三郷市
+  operator_kind: municipality
+  official_url: https://www.city.misato.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112372'
+    name: 三郷市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112372'
+    bank_url: https://www.city.misato.lg.jp/
+    bank_status: none
+    map_query: 埼玉県三郷市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.misato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.misato.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112381
+  name: 蓮田市空き家バンク
+  operator: 蓮田市
+  operator_kind: municipality
+  official_url: https://www.city.hasuda.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '112381'
+    name: 蓮田市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112381'
+    bank_url: https://www.city.hasuda.saitama.jp/
+    bank_status: none
+    map_query: 埼玉県蓮田市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.hasuda.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.hasuda.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112399
+  name: 坂戸市空き家バンク
+  operator: 坂戸市
+  operator_kind: municipality
+  official_url: https://www.city.sakado.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112399'
+    name: 坂戸市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112399'
+    bank_url: https://www.city.sakado.lg.jp/life/1/18/93/
+    bank_status: info
+    map_query: 埼玉県坂戸市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.sakado.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.sakado.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112402
+  name: 幸手市空き家バンク
+  operator: 幸手市
+  operator_kind: municipality
+  official_url: https://www.city.satte.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112402'
+    name: 幸手市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112402'
+    bank_url: https://www.city.satte.lg.jp/
+    bank_status: none
+    map_query: 埼玉県幸手市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.satte.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.satte.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112411
+  name: 鶴ヶ島市空き家バンク
+  operator: 鶴ヶ島市
+  operator_kind: municipality
+  official_url: https://www.city.tsurugashima.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112411'
+    name: 鶴ヶ島市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112411'
+    bank_url: https://www.city.tsurugashima.lg.jp/
+    bank_status: none
+    map_query: 埼玉県鶴ヶ島市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tsurugashima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.tsurugashima.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112429
+  name: 日高市空き家バンク
+  operator: 日高市
+  operator_kind: municipality
+  official_url: https://www.city.hidaka.lg.jp/
+  policy: crawl
+  municipality:
+    code: '112429'
+    name: 日高市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112429'
+    bank_url: https://www.city.hidaka.lg.jp/soshiki/toshiseibi/toshikeikaku/jutakuseisakukoen/sumai/akiya/10387.html
+    bank_status: available
+    map_query: 埼玉県日高市
+  operator_evidence:
+    quote: 公式ドメイン www.city.hidaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.hidaka.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.hidaka.lg.jp/soshiki/toshiseibi/toshikeikaku/jutakuseisakukoen/sumai/akiya/10387.html
+    kind: listing_index
+    follow:
+    - pattern: https?://www\.city\.hidaka\.lg\.jp/soshiki/toshiseibi/toshikeikaku/jutakuseisakukoen/sumai/akiya/10387\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - www.city.hidaka.lg.jp
+  max_pages: 30
+- id: saitama-112437
+  name: 吉川市空き家バンク
+  operator: 吉川市
+  operator_kind: municipality
+  official_url: https://www.city.yoshikawa.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '112437'
+    name: 吉川市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112437'
+    bank_url: https://www.city.yoshikawa.saitama.jp/
+    bank_status: none
+    map_query: 埼玉県吉川市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yoshikawa.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.yoshikawa.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112453
+  name: ふじみ野市空き家バンク
+  operator: ふじみ野市
+  operator_kind: municipality
+  official_url: https://www.city.fujimino.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '112453'
+    name: ふじみ野市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112453'
+    bank_url: https://www.city.fujimino.saitama.jp/lifescenekarasagasu/hikkoshi_sumai/akiya/index.html
+    bank_status: info
+    map_query: 埼玉県ふじみ野市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.fujimino.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.fujimino.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-112461
+  name: 白岡市空き家バンク
+  operator: 白岡市
+  operator_kind: municipality
+  official_url: https://www.city.shiraoka.lg.jp/
+  policy: link_only
+  municipality:
+    code: '112461'
+    name: 白岡市
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '112461'
+    bank_url: https://www.city.shiraoka.lg.jp/
+    bank_status: none
+    map_query: 埼玉県白岡市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.shiraoka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.shiraoka.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-113018
+  name: 伊奈町空き家バンク
+  operator: 伊奈町
+  operator_kind: municipality
+  official_url: https://www.town.saitama-ina.lg.jp/
+  policy: link_only
+  municipality:
+    code: '113018'
+    name: 伊奈町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '113018'
+    bank_url: https://www.town.saitama-ina.lg.jp/category/15-18-0-0-0-0-0-0-0-0.html
+    bank_status: info
+    map_query: 埼玉県伊奈町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 埼玉県 関係機関へのリンク（市町村ホームページ一覧）に掲載された公式サイト（www.town.saitama-ina.lg.jp）
+    url: https://www.pref.saitama.lg.jp/a0301/wwwlink.html
+    checked_on: '2026-09-11'
+- id: saitama-113247
+  name: 三芳町空き家バンク
+  operator: 三芳町
+  operator_kind: municipality
+  official_url: https://www.town.saitama-miyoshi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '113247'
+    name: 三芳町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '113247'
+    bank_url: https://www.town.saitama-miyoshi.lg.jp/
+    bank_status: none
+    map_query: 埼玉県三芳町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 埼玉県 関係機関へのリンク（市町村ホームページ一覧）に掲載された公式サイト（www.town.saitama-miyoshi.lg.jp）
+    url: https://www.pref.saitama.lg.jp/a0301/wwwlink.html
+    checked_on: '2026-09-11'
+- id: saitama-113263
+  name: 毛呂山町空き家バンク
+  operator: 毛呂山町
+  operator_kind: municipality
+  official_url: https://www.town.moroyama.saitama.jp/
+  policy: crawl
+  municipality:
+    code: '113263'
+    name: 毛呂山町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '113263'
+    bank_url: https://www.town.moroyama.saitama.jp/ijuteijusite/6993.html
+    bank_status: available
+    map_query: 埼玉県毛呂山町
+  operator_evidence:
+    quote: 公式ドメイン www.town.moroyama.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.moroyama.saitama.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.moroyama.saitama.jp/ijuteijusite/6993.html
+    kind: listing_index
+    follow:
+    - pattern: https?://www\.town\.moroyama\.saitama\.jp/ijuteijusite/6993\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - www.town.moroyama.saitama.jp
+  max_pages: 30
+- id: saitama-113271
+  name: 越生町空き家バンク
+  operator: 越生町
+  operator_kind: municipality
+  official_url: https://www.town.ogose.saitama.jp/
+  policy: crawl
+  municipality:
+    code: '113271'
+    name: 越生町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '113271'
+    bank_url: https://www.town.ogose.saitama.jp/ogoseikatsu/kurasu/akiyabanku/akiyajoho/2955.html
+    bank_status: available
+    map_query: 埼玉県越生町
+  operator_evidence:
+    quote: 公式ドメイン www.town.ogose.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.ogose.saitama.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.ogose.saitama.jp/ogoseikatsu/kurasu/akiyabanku/akiyajoho/2955.html
+    kind: listing_index
+    follow:
+    - pattern: https?://www\.town\.ogose\.saitama\.jp/ogoseikatsu/kurasu/akiyabanku/akiyajoho/2955\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - www.town.ogose.saitama.jp
+  max_pages: 30
+- id: saitama-113417
+  name: 滑川町空き家バンク
+  operator: 滑川町
+  operator_kind: municipality
+  official_url: https://www.town.namegawa.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '113417'
+    name: 滑川町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '113417'
+    bank_url: https://www.town.namegawa.saitama.jp/kurashi_tetsuzuki/sumai/4671.html
+    bank_status: info
+    map_query: 埼玉県滑川町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.namegawa.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.namegawa.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-113425
+  name: 嵐山町空き家バンク
+  operator: 嵐山町
+  operator_kind: municipality
+  official_url: https://www.town.ranzan.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '113425'
+    name: 嵐山町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '113425'
+    bank_url: https://www.town.ranzan.saitama.jp/0000006078.html
+    bank_status: info
+    map_query: 埼玉県嵐山町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ranzan.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.ranzan.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-113433
+  name: 小川町空き家バンク
+  operator: 小川町
+  operator_kind: municipality
+  official_url: https://www.town.ogawa.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '113433'
+    name: 小川町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '113433'
+    bank_url: https://www.town.ogawa.saitama.jp/
+    bank_status: none
+    map_query: 埼玉県小川町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ogawa.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.ogawa.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-113468
+  name: 川島町空き家バンク
+  operator: 川島町
+  operator_kind: municipality
+  official_url: https://www.town.kawajima.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '113468'
+    name: 川島町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '113468'
+    bank_url: https://www.town.kawajima.saitama.jp/
+    bank_status: none
+    map_query: 埼玉県川島町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kawajima.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kawajima.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-113476
+  name: 吉見町空き家バンク
+  operator: 吉見町
+  operator_kind: municipality
+  official_url: https://www.town.yoshimi.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '113476'
+    name: 吉見町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '113476'
+    bank_url: https://www.town.yoshimi.saitama.jp/kurashi_tetsuzuki/5080.html
+    bank_status: info
+    map_query: 埼玉県吉見町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yoshimi.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.yoshimi.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-113484
+  name: 鳩山町空き家バンク
+  operator: 鳩山町
+  operator_kind: municipality
+  official_url: https://www.town.hatoyama.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '113484'
+    name: 鳩山町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '113484'
+    bank_url: https://www.town.hatoyama.saitama.jp/kurashi/sumai_hikkosi/akiyataisaku/
+    bank_status: info
+    map_query: 埼玉県鳩山町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.hatoyama.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.hatoyama.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-113492
+  name: ときがわ町空き家バンク
+  operator: ときがわ町
+  operator_kind: municipality
+  official_url: https://www.town.tokigawa.lg.jp/
+  policy: crawl
+  municipality:
+    code: '113492'
+    name: ときがわ町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '113492'
+    bank_url: https://www.town.tokigawa.lg.jp/info/1063
+    bank_status: available
+    map_query: 埼玉県ときがわ町
+  operator_evidence:
+    quote: 公式ドメイン www.town.tokigawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.tokigawa.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.tokigawa.lg.jp/info/1063
+    kind: listing_index
+  allow_hosts:
+  - www.town.tokigawa.lg.jp
+  max_pages: 30
+- id: saitama-113611
+  name: 横瀬町空き家バンク
+  operator: 横瀬町
+  operator_kind: municipality
+  official_url: https://www.town.yokoze.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '113611'
+    name: 横瀬町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '113611'
+    bank_url: https://www.town.yokoze.saitama.jp/kurashi/kurashi-sodan/60642
+    bank_status: info
+    map_query: 埼玉県横瀬町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yokoze.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.yokoze.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-113620
+  name: 皆野町空き家バンク
+  operator: 皆野町
+  operator_kind: municipality
+  official_url: https://www.town.minano.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '113620'
+    name: 皆野町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '113620'
+    bank_url: https://www.town.minano.saitama.jp/
+    bank_status: none
+    map_query: 埼玉県皆野町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.minano.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.minano.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-113638
+  name: 長瀞町空き家バンク
+  operator: 長瀞町
+  operator_kind: municipality
+  official_url: https://www.town.nagatoro.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '113638'
+    name: 長瀞町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '113638'
+    bank_url: https://www.town.nagatoro.saitama.jp/life/akiya_kanri/
+    bank_status: info
+    map_query: 埼玉県長瀞町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.nagatoro.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.nagatoro.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-113654
+  name: 小鹿野町空き家バンク
+  operator: 小鹿野町
+  operator_kind: municipality
+  official_url: https://www.town.ogano.lg.jp/
+  policy: crawl
+  municipality:
+    code: '113654'
+    name: 小鹿野町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '113654'
+    bank_url: http://www.chichibuakiyabank.com/
+    bank_status: available
+    map_query: 埼玉県小鹿野町
+  operator_evidence:
+    quote: 公式サイト（www.town.ogano.lg.jp）から空き家バンクとして案内されているリンク
+    url: https://www.town.ogano.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: http://www.chichibuakiyabank.com/
+    kind: listing_index
+  allow_hosts:
+  - www.chichibuakiyabank.com
+  max_pages: 30
+- id: saitama-113697
+  name: 東秩父村空き家バンク
+  operator: 東秩父村
+  operator_kind: municipality
+  official_url: https://www.vill.higashichichibu.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '113697'
+    name: 東秩父村
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '113697'
+    bank_url: https://www.vill.higashichichibu.saitama.jp/
+    bank_status: none
+    map_query: 埼玉県東秩父村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.higashichichibu.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.higashichichibu.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-113816
+  name: 美里町空き家バンク
+  operator: 美里町
+  operator_kind: municipality
+  official_url: https://www.town.saitama-misato.lg.jp/
+  policy: link_only
+  municipality:
+    code: '113816'
+    name: 美里町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '113816'
+    bank_url: https://www.town.saitama-misato.lg.jp/0000000132.html
+    bank_status: info
+    map_query: 埼玉県美里町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 埼玉県 関係機関へのリンク（市町村ホームページ一覧）に掲載された公式サイト（www.town.saitama-misato.lg.jp）
+    url: https://www.pref.saitama.lg.jp/a0301/wwwlink.html
+    checked_on: '2026-09-11'
+- id: saitama-113832
+  name: 神川町空き家バンク
+  operator: 神川町
+  operator_kind: municipality
+  official_url: https://www.town.kamikawa.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '113832'
+    name: 神川町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '113832'
+    bank_url: https://www.town.kamikawa.saitama.jp/kurashi_tetsuduki/sumai_kenchiku/1095.html
+    bank_status: info
+    map_query: 埼玉県神川町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kamikawa.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kamikawa.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-113859
+  name: 上里町空き家バンク
+  operator: 上里町
+  operator_kind: municipality
+  official_url: https://www.town.kamisato.saitama.jp/
+  policy: crawl
+  municipality:
+    code: '113859'
+    name: 上里町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '113859'
+    bank_url: https://akiyabank.saihoku-ijuu.com/
+    bank_status: available
+    map_query: 埼玉県上里町
+  operator_evidence:
+    quote: 公式サイト（www.town.kamisato.saitama.jp）から空き家バンクとして案内されているリンク
+    url: https://www.town.kamisato.saitama.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://akiyabank.saihoku-ijuu.com/
+    kind: listing_index
+  allow_hosts:
+  - akiyabank.saihoku-ijuu.com
+  max_pages: 30
+- id: saitama-114081
+  name: 寄居町空き家バンク
+  operator: 寄居町
+  operator_kind: municipality
+  official_url: https://www.town.yorii.saitama.jp/
+  policy: link_only
+  municipality:
+    code: '114081'
+    name: 寄居町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '114081'
+    bank_url: https://www.town.yorii.saitama.jp/
+    bank_status: none
+    map_query: 埼玉県寄居町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yorii.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.yorii.saitama.jp/
+    checked_on: '2026-09-11'
+- id: saitama-114421
+  name: 宮代町空き家バンク
+  operator: 宮代町
+  operator_kind: municipality
+  official_url: https://www.town.miyashiro.lg.jp/
+  policy: link_only
+  municipality:
+    code: '114421'
+    name: 宮代町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '114421'
+    bank_url: https://www.town.miyashiro.lg.jp/category/1-16-6-0-0-0-0-0-0-0.html
+    bank_status: info
+    map_query: 埼玉県宮代町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.miyashiro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.miyashiro.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-114642
+  name: 杉戸町空き家バンク
+  operator: 杉戸町
+  operator_kind: municipality
+  official_url: https://www.town.sugito.lg.jp/
+  policy: link_only
+  municipality:
+    code: '114642'
+    name: 杉戸町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '114642'
+    bank_url: https://www.town.sugito.lg.jp/life/1/4/27/
+    bank_status: info
+    map_query: 埼玉県杉戸町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.sugito.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.sugito.lg.jp/
+    checked_on: '2026-09-11'
+- id: saitama-114651
+  name: 松伏町空き家バンク
+  operator: 松伏町
+  operator_kind: municipality
+  official_url: https://www.town.matsubushi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '114651'
+    name: 松伏町
+    prefecture: 埼玉県
+    prefecture_slug: saitama
+    slug: '114651'
+    bank_url: https://www.town.matsubushi.lg.jp/
+    bank_status: none
+    map_query: 埼玉県松伏町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.matsubushi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.matsubushi.lg.jp/
+    checked_on: '2026-09-11'

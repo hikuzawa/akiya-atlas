@@ -1,0 +1,564 @@
+prefecture: 青森県
+prefecture_slug: aomori
+created_at: '2026-09-11T06:38:27+00:00'
+candidates:
+- key: '022012'
+  label: 青森県 青森市
+  url: https://www.city.aomori.aomori.jp/kurashi_kankyo/sumai/1002247/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.aomori.aomori.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.aomori.aomori.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '022021'
+  label: 青森県 弘前市
+  url: https://www.city.hirosaki.aomori.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hirosaki.aomori.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.hirosaki.aomori.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 022039
+  label: 青森県 八戸市
+  url: https://akiya.city.hachinohe.aomori.jp/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.city.hachinohe.aomori.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.city.hachinohe.aomori.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '022047'
+  label: 青森県 黒石市
+  url: https://www.city.kuroishi.aomori.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kuroishi.aomori.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kuroishi.aomori.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '022055'
+  label: 青森県 五所川原市
+  url: https://www.city.goshogawara.lg.jp/ijuu/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.goshogawara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.goshogawara.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '022063'
+  label: 青森県 十和田市
+  url: https://www.city.towada.lg.jp/kurashi/ijuu/akiya/bukken.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.towada.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.towada.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '022071'
+  label: 青森県 三沢市
+  url: https://www.city.misawa.lg.jp/index.cfm/22,64140,17,132,html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.misawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.misawa.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 022080
+  label: 青森県 むつ市
+  url: https://www.city.mutsu.lg.jp/kurashi/machi/sumai/akiya-taiou.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.mutsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.mutsu.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 022098
+  label: 青森県 つがる市
+  url: https://www.city.tsugaru.aomori.jp/joho/mokuteki/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tsugaru.aomori.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.tsugaru.aomori.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '022101'
+  label: 青森県 平川市
+  url: https://www.city.hirakawa.lg.jp/kurashi/sumai/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hirakawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.hirakawa.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 023019
+  label: 青森県 平内町
+  url: https://www.town.hiranai.aomori.jp/kurashi/sumai/3/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hiranai.aomori.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.hiranai.aomori.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '023035'
+  label: 青森県 今別町
+  url: https://www.town.imabetsu.lg.jp/kurashi/sumai/2019-0706-1038-1.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.imabetsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.imabetsu.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '023043'
+  label: 青森県 蓬田村
+  url: https://www.vill.yomogita.lg.jp/kurashi/ijuteiju/akiyabank.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.yomogita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.yomogita.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 023078
+  label: 青森県 外ヶ浜町
+  url: https://www.town.sotogahama.lg.jp/kurashi/sumai/akiyabank.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.sotogahama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.sotogahama.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '023213'
+  label: 青森県 鰺ヶ沢町
+  url: https://www.town.ajigasawa.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ajigasawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.ajigasawa.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '023230'
+  label: 青森県 深浦町
+  url: https://www.town.fukaura.lg.jp/category/bunya/izyuu/akiya_bank/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.fukaura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.fukaura.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '023434'
+  label: 青森県 西目屋村
+  url: https://www.nishimeya.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 青森県 市町村ホームページに掲載された公式サイト（www.nishimeya.jp）
+  evidence_url: https://www.pref.aomori.lg.jp/soshiki/zaimu/shichoson/shichoson.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '023612'
+  label: 青森県 藤崎町
+  url: https://www.town.fujisaki.lg.jp/index.cfm/7,0,72,334,html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.fujisaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.fujisaki.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '023621'
+  label: 青森県 大鰐町
+  url: https://www.town.owani.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 青森県 市町村ホームページに掲載された公式サイト（www.town.owani.lg.jp）
+  evidence_url: https://www.pref.aomori.lg.jp/soshiki/zaimu/shichoson/shichoson.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '023671'
+  label: 青森県 田舎館村
+  url: https://www.vill.inakadate.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 青森県 市町村ホームページに掲載された公式サイト（www.vill.inakadate.lg.jp）
+  evidence_url: https://www.pref.aomori.lg.jp/soshiki/zaimu/shichoson/shichoson.html
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 023817
+  label: 青森県 板柳町
+  url: https://www.town.itayanagi.aomori.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.itayanagi.aomori.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.itayanagi.aomori.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 023841
+  label: 青森県 鶴田町
+  url: https://www.town.tsuruta.lg.jp/kurashi/kurashi-sumai/-3.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tsuruta.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.tsuruta.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 023876
+  label: 青森県 中泊町
+  url: https://www.town.nakadomari.lg.jp/kurashi_tetsuzuki/iju_teiju/1567.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nakadomari.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.nakadomari.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '024015'
+  label: 青森県 野辺地町
+  url: https://www.town.noheji.aomori.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.noheji.aomori.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.noheji.aomori.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '024023'
+  label: 青森県 七戸町
+  url: https://www.town.shichinohe.lg.jp/ijyu/sumai/akiya/post-407.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shichinohe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.shichinohe.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 024058
+  label: 青森県 六戸町
+  url: https://www.town.rokunohe.aomori.jp/docs/2022041100345/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.rokunohe.aomori.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.rokunohe.aomori.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '024066'
+  label: 青森県 横浜町
+  url: https://www.town.yokohama.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yokohama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.yokohama.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 024082
+  label: 青森県 東北町
+  url: https://www.town.tohoku.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tohoku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.tohoku.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '024112'
+  label: 青森県 六ヶ所村
+  url: https://www.rokkasho.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 青森県 市町村ホームページに掲載された公式サイト（www.rokkasho.jp）
+  evidence_url: https://www.pref.aomori.lg.jp/soshiki/zaimu/shichoson/shichoson.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '024121'
+  label: 青森県 おいらせ町
+  url: https://www.town.oirase.aomori.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.oirase.aomori.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.oirase.aomori.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '024236'
+  label: 青森県 大間町
+  url: https://www.town.ooma.lg.jp/lifeguide/migration
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ooma.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.ooma.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '024244'
+  label: 青森県 東通村
+  url: https://www.vill.higashidoori.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 青森県 市町村ホームページに掲載された公式サイト（www.vill.higashidoori.lg.jp）
+  evidence_url: https://www.pref.aomori.lg.jp/soshiki/zaimu/shichoson/shichoson.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '024252'
+  label: 青森県 風間浦村
+  url: https://www.kazamaura.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 青森県 市町村ホームページに掲載された公式サイト（www.kazamaura.jp）
+  evidence_url: https://www.pref.aomori.lg.jp/soshiki/zaimu/shichoson/shichoson.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '024261'
+  label: 青森県 佐井村
+  url: https://www.vill.sai.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.sai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.sai.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '024414'
+  label: 青森県 三戸町
+  url: https://www.town.sannohe.aomori.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.sannohe.aomori.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.sannohe.aomori.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '024422'
+  label: 青森県 五戸町
+  url: https://www.town.gonohe.aomori.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.gonohe.aomori.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.gonohe.aomori.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '024431'
+  label: 青森県 田子町
+  url: https://www.town.takko.lg.jp/index.cfm/9,0,23,222,html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.91
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.takko.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.takko.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '024457'
+  label: 青森県 南部町
+  url: https://www.town.aomori-nanbu.lg.jp/site/nanbugurashi/10472.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 青森県 市町村ホームページに掲載された公式サイト（www.town.aomori-nanbu.lg.jp）
+  evidence_url: https://www.pref.aomori.lg.jp/soshiki/zaimu/shichoson/shichoson.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '024465'
+  label: 青森県 階上町
+  url: https://www.town.hashikami.lg.jp/index.cfm/7,0,107,304,html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hashikami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.hashikami.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '024503'
+  label: 青森県 新郷村
+  url: https://www.vill.shingo.aomori.jp/news/post-31387/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.shingo.aomori.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.shingo.aomori.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

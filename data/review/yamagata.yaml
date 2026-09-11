@@ -1,0 +1,494 @@
+prefecture: 山形県
+prefecture_slug: yamagata
+created_at: '2026-09-11T06:32:54+00:00'
+candidates:
+- key: '062014'
+  label: 山形県 山形市
+  url: https://www.city.yamagata-yamagata.lg.jp/kurashi/tochi/1006582/1006583/1002505.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 山形県 山形県内市町村ページに掲載された公式サイト（www.city.yamagata-yamagata.lg.jp）
+  evidence_url: https://www.pref.yamagata.jp/020026/kensei/information/clink.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '062022'
+  label: 山形県 米沢市
+  url: https://www.city.yonezawa.yamagata.jp/category/kurashi_tetsuzuki/2_1/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yonezawa.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.yonezawa.yamagata.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '062031'
+  label: 山形県 鶴岡市
+  url: https://www.city.tsuruoka.lg.jp/kurashi/jyutaku/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tsuruoka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tsuruoka.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 062049
+  label: 山形県 酒田市
+  url: https://www.city.sakata.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sakata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.sakata.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '062057'
+  label: 山形県 新庄市
+  url: https://www.city.shinjo.yamagata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shinjo.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.shinjo.yamagata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '062065'
+  label: 山形県 寒河江市
+  url: https://www.city.sagae.yamagata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sagae.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.sagae.yamagata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '062073'
+  label: 山形県 上山市
+  url: https://www.city.kaminoyama.yamagata.jp/soshiki/12/kaminoyama-akiyabank2.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kaminoyama.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kaminoyama.yamagata.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 062081
+  label: 山形県 村山市
+  url: https://www.city.murayama.lg.jp/kurashi/sumai/akiyabankjoho.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.murayama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.murayama.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 062090
+  label: 山形県 長井市
+  url: https://www.city.nagai.yamagata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nagai.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.nagai.yamagata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '062103'
+  label: 山形県 天童市
+  url: https://www.city.tendo.yamagata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tendo.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.tendo.yamagata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '062111'
+  label: 山形県 東根市
+  url: https://www.city.higashine.yamagata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.higashine.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.higashine.yamagata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '062120'
+  label: 山形県 尾花沢市
+  url: https://www.city.obanazawa.yamagata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.obanazawa.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.obanazawa.yamagata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 062138
+  label: 山形県 南陽市
+  url: https://www.city.nanyo.yamagata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 山形県 山形県内市町村ページに掲載された公式サイト（www.city.nanyo.yamagata.jp）
+  evidence_url: https://www.pref.yamagata.jp/020026/kensei/information/clink.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '063011'
+  label: 山形県 山辺町
+  url: https://www.town.yamanobe.yamagata.jp/soshiki/35/akiyabank-touroku-01.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.85
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yamanobe.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yamanobe.yamagata.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 063029
+  label: 山形県 中山町
+  url: https://www.town.nakayama.yamagata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nakayama.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.nakayama.yamagata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '063215'
+  label: 山形県 河北町
+  url: https://www.town.kahoku.yamagata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kahoku.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kahoku.yamagata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '063223'
+  label: 山形県 西川町
+  url: https://www.town.nishikawa.yamagata.jp/site/iju/1440.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nishikawa.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.nishikawa.yamagata.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '063231'
+  label: 山形県 朝日町
+  url: https://www.town.asahi.yamagata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.asahi.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.asahi.yamagata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '063240'
+  label: 山形県 大江町
+  url: https://www.town.oe.yamagata.jp/government/living-environment/akiya-jokyaku/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.oe.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.oe.yamagata.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '063410'
+  label: 山形県 大石田町
+  url: https://www.town.oishida.yamagata.jp/life/jyuutaku/akiyabank/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.oishida.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.oishida.yamagata.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '063614'
+  label: 山形県 金山町
+  url: https://www.town.kaneyama.yamagata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kaneyama.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kaneyama.yamagata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '063622'
+  label: 山形県 最上町
+  url: https://town.mogami.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン town.mogami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://town.mogami.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '063631'
+  label: 山形県 舟形町
+  url: https://www.town.funagata.yamagata.jp/s022/kurashi/030/510/mogami.akiyanomori.htm
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.84
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.funagata.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.funagata.yamagata.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 063649
+  label: 山形県 真室川町
+  url: https://www.town.mamurogawa.yamagata.jp/kurashi_tetsuzuki/iju/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.mamurogawa.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.mamurogawa.yamagata.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '063657'
+  label: 山形県 大蔵村
+  url: https://www.vill.ohkura.yamagata.jp/kurashi_tetsuzuki/iju_teiju/akiyabank/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 山形県 山形県内市町村ページに掲載された公式サイト（www.vill.ohkura.yamagata.jp）
+  evidence_url: https://www.pref.yamagata.jp/020026/kensei/information/clink.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '063665'
+  label: 山形県 鮭川村
+  url: https://www.vill.sakegawa.yamagata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.sakegawa.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.sakegawa.yamagata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '063673'
+  label: 山形県 戸沢村
+  url: https://www.vill.tozawa.yamagata.jp/akiyabank/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.tozawa.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.tozawa.yamagata.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 063819
+  label: 山形県 高畠町
+  url: https://www.town.takahata.yamagata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.takahata.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.takahata.yamagata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 063827
+  label: 山形県 川西町
+  url: https://www.town.kawanishi.yamagata.jp/kurashi/jutaku/akiyabank.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kawanishi.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kawanishi.yamagata.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '064017'
+  label: 山形県 小国町
+  url: https://www.town.oguni.yamagata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.oguni.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.oguni.yamagata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '064025'
+  label: 山形県 白鷹町
+  url: https://www.town.shirataka.lg.jp/1190.htm
+  page_class: spa
+  class_label: JavaScript 描画（未対応）
+  confidence: 0.75
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shirataka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.shirataka.lg.jp/
+  reason: JavaScript 描画のため静的 HTML に物件が無い。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '064033'
+  label: 山形県 飯豊町
+  url: https://www.town.iide.yamagata.jp/001/akiyajyouhou_1.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.86
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.iide.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.iide.yamagata.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '064262'
+  label: 山形県 三川町
+  url: https://www.town.mikawa.yamagata.jp/kurashi/sumai/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.mikawa.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.mikawa.yamagata.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 064289
+  label: 山形県 庄内町
+  url: https://www.town.shonai.lg.jp/kurashi/kurashi/akiyataisaku/akiyabank/index.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 山形県 山形県内市町村ページに掲載された公式サイト（www.town.shonai.lg.jp）
+  evidence_url: https://www.pref.yamagata.jp/020026/kensei/information/clink.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '064611'
+  label: 山形県 遊佐町
+  url: https://www.town.yuza.yamagata.jp/archive/contents-1932
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yuza.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yuza.yamagata.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

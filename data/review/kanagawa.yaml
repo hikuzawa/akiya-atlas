@@ -1,0 +1,466 @@
+prefecture: 神奈川県
+prefecture_slug: kanagawa
+created_at: '2026-09-11T06:32:53+00:00'
+candidates:
+- key: '141003'
+  label: 神奈川県 横浜市
+  url: https://www.city.yokohama.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yokohama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.yokohama.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '141305'
+  label: 神奈川県 川崎市
+  url: https://www.city.kawasaki.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 神奈川県内の市町村に掲載された公式サイト（www.city.kawasaki.jp）
+  evidence_url: https://www.pref.kanagawa.jp/docs/ie2/cnt/f530001/p780102.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '141500'
+  label: 神奈川県 相模原市
+  url: https://www.city.sagamihara.kanagawa.jp/kurashi/1026489/sumai/1026511/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sagamihara.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.sagamihara.kanagawa.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '142018'
+  label: 神奈川県 横須賀市
+  url: https://www.city.yokosuka.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yokosuka.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.yokosuka.kanagawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '142034'
+  label: 神奈川県 平塚市
+  url: https://www.city.hiratsuka.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hiratsuka.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.hiratsuka.kanagawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '142042'
+  label: 神奈川県 鎌倉市
+  url: https://www.city.kamakura.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kamakura.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kamakura.kanagawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '142051'
+  label: 神奈川県 藤沢市
+  url: https://www.city.fujisawa.kanagawa.jp/jutaku/akiya/akiyataisaku.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.fujisawa.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.fujisawa.kanagawa.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '142069'
+  label: 神奈川県 小田原市
+  url: https://www.city.odawara.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.odawara.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.odawara.kanagawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '142077'
+  label: 神奈川県 茅ヶ崎市
+  url: https://www.city.chigasaki.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.chigasaki.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.chigasaki.kanagawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '142085'
+  label: 神奈川県 逗子市
+  url: https://www.city.zushi.kanagawa.jp/kurashi/sumai/1002149/1002164/1002173.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.zushi.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.zushi.kanagawa.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '142107'
+  label: 神奈川県 三浦市
+  url: https://www.city.miura.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.miura.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.miura.kanagawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '142115'
+  label: 神奈川県 秦野市
+  url: https://www.city.hadano.kanagawa.jp/kurashi-tetsuzuki/sumai/3/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hadano.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.hadano.kanagawa.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '142123'
+  label: 神奈川県 厚木市
+  url: https://www.city.atsugi.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.atsugi.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.atsugi.kanagawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '142131'
+  label: 神奈川県 大和市
+  url: https://www.city.yamato.lg.jp/gyosei/kurashi/sumai/15069.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yamato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.yamato.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '142140'
+  label: 神奈川県 伊勢原市
+  url: https://www.city.isehara.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.isehara.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.isehara.kanagawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '142158'
+  label: 神奈川県 海老名市
+  url: https://www.city.ebina.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ebina.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.ebina.kanagawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '142166'
+  label: 神奈川県 座間市
+  url: https://www.city.zama.kanagawa.jp/kurashi/sumai/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.zama.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.zama.kanagawa.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '142174'
+  label: 神奈川県 南足柄市
+  url: https://www.city.minamiashigara.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.minamiashigara.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.minamiashigara.kanagawa.jp/
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '142182'
+  label: 神奈川県 綾瀬市
+  url: https://www.city.ayase.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ayase.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.ayase.kanagawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '143014'
+  label: 神奈川県 葉山町
+  url: https://www.town.hayama.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hayama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.hayama.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '143219'
+  label: 神奈川県 寒川町
+  url: https://www.town.samukawa.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.samukawa.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.samukawa.kanagawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '143413'
+  label: 神奈川県 大磯町
+  url: https://www.town.oiso.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.oiso.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.oiso.kanagawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '143421'
+  label: 神奈川県 二宮町
+  url: https://www.town.ninomiya.kanagawa.jp/category/9-0-0-0-0-0-0-0-0-0.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ninomiya.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ninomiya.kanagawa.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '143618'
+  label: 神奈川県 中井町
+  url: https://www.town.nakai.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nakai.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.nakai.kanagawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '143626'
+  label: 神奈川県 大井町
+  url: https://www.town.oi.kanagawa.jp/life/1/14/86/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.oi.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.oi.kanagawa.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '143634'
+  label: 神奈川県 松田町
+  url: https://town.matsuda.kanagawa.jp/site/teiju-syoushi/akiya-chintai.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 神奈川県内の市町村に掲載された公式サイト（town.matsuda.kanagawa.jp）
+  evidence_url: https://www.pref.kanagawa.jp/docs/ie2/cnt/f530001/p780102.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '143642'
+  label: 神奈川県 山北町
+  url: http://www.town.yamakita.kanagawa.jp/0000007345.html
+  page_class: listing_detail
+  class_label: 物件詳細（静的）
+  confidence: 0.85
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yamakita.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yamakita.kanagawa.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '143669'
+  label: 神奈川県 開成町
+  url: https://www.town.kaisei.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kaisei.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kaisei.kanagawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '143821'
+  label: 神奈川県 箱根町
+  url: https://www.town.hakone.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hakone.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.hakone.kanagawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '143839'
+  label: 神奈川県 真鶴町
+  url: https://www.town.manazuru.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.manazuru.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.manazuru.kanagawa.jp/
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '143847'
+  label: 神奈川県 湯河原町
+  url: https://www.town.yugawara.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yugawara.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yugawara.kanagawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '144011'
+  label: 神奈川県 愛川町
+  url: https://www.town.aikawa.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.aikawa.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.aikawa.kanagawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '144029'
+  label: 神奈川県 清川村
+  url: https://www.town.kiyokawa.kanagawa.jp/Life_procedure/sumaijutaku/2375.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 神奈川県内の市町村に掲載された公式サイト（www.town.kiyokawa.kanagawa.jp）
+  evidence_url: https://www.pref.kanagawa.jp/docs/ie2/cnt/f530001/p780102.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null

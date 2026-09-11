@@ -1,0 +1,21 @@
+{
+  "command": "build",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-10T21:30:46Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "build": {
+      "files": 571,
+      "pages": 565
+    }
+  },
+  "started_at": "2026-09-10T21:30:44Z"
+}

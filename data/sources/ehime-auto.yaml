@@ -1,0 +1,412 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: ehime-382019
+  name: 松山市空き家バンク
+  operator: 松山市
+  operator_kind: municipality
+  official_url: https://www.city.matsuyama.ehime.jp/
+  policy: link_only
+  municipality:
+    code: '382019'
+    name: 松山市
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '382019'
+    bank_url: https://www.city.matsuyama.ehime.jp/
+    bank_status: none
+    map_query: 愛媛県松山市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.matsuyama.ehime.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.matsuyama.ehime.jp/
+    checked_on: '2026-09-11'
+- id: ehime-382027
+  name: 今治市空き家バンク
+  operator: 今治市
+  operator_kind: municipality
+  official_url: https://www.city.imabari.ehime.jp/
+  policy: link_only
+  municipality:
+    code: '382027'
+    name: 今治市
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '382027'
+    bank_url: https://www.city.imabari.ehime.jp/
+    bank_status: none
+    map_query: 愛媛県今治市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.imabari.ehime.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.imabari.ehime.jp/
+    checked_on: '2026-09-11'
+- id: ehime-382035
+  name: 宇和島市空き家バンク
+  operator: 宇和島市
+  operator_kind: municipality
+  official_url: https://www.city.uwajima.ehime.jp/
+  policy: link_only
+  municipality:
+    code: '382035'
+    name: 宇和島市
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '382035'
+    bank_url: https://www.city.uwajima.ehime.jp/
+    bank_status: none
+    map_query: 愛媛県宇和島市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.uwajima.ehime.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.uwajima.ehime.jp/
+    checked_on: '2026-09-11'
+- id: ehime-382043
+  name: 八幡浜市空き家バンク
+  operator: 八幡浜市
+  operator_kind: municipality
+  official_url: https://www.city.yawatahama.ehime.jp/
+  policy: link_only
+  municipality:
+    code: '382043'
+    name: 八幡浜市
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '382043'
+    bank_url: https://www.city.yawatahama.ehime.jp/category/bunya/toshikeikaku/akiya/
+    bank_status: info
+    map_query: 愛媛県八幡浜市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yawatahama.ehime.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.yawatahama.ehime.jp/
+    checked_on: '2026-09-11'
+- id: ehime-382051
+  name: 新居浜市空き家バンク
+  operator: 新居浜市
+  operator_kind: municipality
+  official_url: https://www.city.niihama.lg.jp/
+  policy: link_only
+  municipality:
+    code: '382051'
+    name: 新居浜市
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '382051'
+    bank_url: https://www.city.niihama.lg.jp/
+    bank_status: none
+    map_query: 愛媛県新居浜市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.niihama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.niihama.lg.jp/
+    checked_on: '2026-09-11'
+- id: ehime-382060
+  name: 西条市空き家バンク
+  operator: 西条市
+  operator_kind: municipality
+  official_url: https://www.city.saijo.ehime.jp/
+  policy: link_only
+  municipality:
+    code: '382060'
+    name: 西条市
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '382060'
+    bank_url: https://www.city.saijo.ehime.jp/soshiki/ijyusuishin/akiya-bank.html
+    bank_status: info
+    map_query: 愛媛県西条市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.saijo.ehime.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.saijo.ehime.jp/
+    checked_on: '2026-09-11'
+- id: ehime-382078
+  name: 大洲市空き家バンク
+  operator: 大洲市
+  operator_kind: municipality
+  official_url: https://www.city.ozu.ehime.jp/
+  policy: crawl
+  municipality:
+    code: '382078'
+    name: 大洲市
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '382078'
+    bank_url: https://www.city.ozu.ehime.jp/akiyabank/1-1-127.html
+    bank_status: available
+    map_query: 愛媛県大洲市
+  operator_evidence:
+    quote: 公式ドメイン www.city.ozu.ehime.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.ozu.ehime.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.ozu.ehime.jp/akiyabank/1-1-127.html
+    kind: listing_detail
+  allow_hosts:
+  - www.city.ozu.ehime.jp
+  max_pages: 30
+- id: ehime-382108
+  name: 伊予市空き家バンク
+  operator: 伊予市
+  operator_kind: municipality
+  official_url: https://www.city.iyo.lg.jp/
+  policy: link_only
+  municipality:
+    code: '382108'
+    name: 伊予市
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '382108'
+    bank_url: https://www.city.iyo.lg.jp/machisou/kurashi/shimin/npo/akiyasapo-toiyo.html
+    bank_status: info
+    map_query: 愛媛県伊予市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.iyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.iyo.lg.jp/
+    checked_on: '2026-09-11'
+- id: ehime-382132
+  name: 四国中央市空き家バンク
+  operator: 四国中央市
+  operator_kind: municipality
+  official_url: https://www.city.shikokuchuo.ehime.jp/
+  policy: link_only
+  municipality:
+    code: '382132'
+    name: 四国中央市
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '382132'
+    bank_url: https://www.city.shikokuchuo.ehime.jp/
+    bank_status: none
+    map_query: 愛媛県四国中央市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.shikokuchuo.ehime.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.shikokuchuo.ehime.jp/
+    checked_on: '2026-09-11'
+- id: ehime-382141
+  name: 西予市空き家バンク
+  operator: 西予市
+  operator_kind: municipality
+  official_url: https://www.city.seiyo.ehime.jp/
+  policy: link_only
+  municipality:
+    code: '382141'
+    name: 西予市
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '382141'
+    bank_url: https://www.city.seiyo.ehime.jp/
+    bank_status: none
+    map_query: 愛媛県西予市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.seiyo.ehime.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.seiyo.ehime.jp/
+    checked_on: '2026-09-11'
+- id: ehime-382159
+  name: 東温市空き家バンク
+  operator: 東温市
+  operator_kind: municipality
+  official_url: https://www.city.toon.ehime.jp/
+  policy: link_only
+  municipality:
+    code: '382159'
+    name: 東温市
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '382159'
+    bank_url: https://www.city.toon.ehime.jp/life/1/11/47/
+    bank_status: info
+    map_query: 愛媛県東温市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 愛媛県 県内市町情報に掲載された公式サイト（www.city.toon.ehime.jp）
+    url: https://www.pref.ehime.jp/page/14990.html
+    checked_on: '2026-09-11'
+- id: ehime-383562
+  name: 上島町空き家バンク
+  operator: 上島町
+  operator_kind: municipality
+  official_url: https://www.town.kamijima.lg.jp/
+  policy: link_only
+  municipality:
+    code: '383562'
+    name: 上島町
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '383562'
+    bank_url: https://www.town.kamijima.lg.jp/
+    bank_status: none
+    map_query: 愛媛県上島町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kamijima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kamijima.lg.jp/
+    checked_on: '2026-09-11'
+- id: ehime-383864
+  name: 久万高原町空き家バンク
+  operator: 久万高原町
+  operator_kind: municipality
+  official_url: https://www.kumakogen.jp/
+  policy: link_only
+  municipality:
+    code: '383864'
+    name: 久万高原町
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '383864'
+    bank_url: https://www.kumakogen.jp/site/iju/16396.html
+    bank_status: info
+    map_query: 愛媛県久万高原町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 愛媛県 県内市町情報に掲載された公式サイト（www.kumakogen.jp）
+    url: https://www.pref.ehime.jp/page/14990.html
+    checked_on: '2026-09-11'
+- id: ehime-384011
+  name: 松前町空き家バンク
+  operator: 松前町
+  operator_kind: municipality
+  official_url: https://www.town.masaki.ehime.jp/
+  policy: link_only
+  municipality:
+    code: '384011'
+    name: 松前町
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '384011'
+    bank_url: https://www.town.masaki.ehime.jp/life/1/9/53/
+    bank_status: spa_unsupported
+    map_query: 愛媛県松前町
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.masaki.ehime.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.masaki.ehime.jp/
+    checked_on: '2026-09-11'
+- id: ehime-384020
+  name: 砥部町空き家バンク
+  operator: 砥部町
+  operator_kind: municipality
+  official_url: https://www.town.tobe.ehime.jp/
+  policy: link_only
+  municipality:
+    code: '384020'
+    name: 砥部町
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '384020'
+    bank_url: https://www.town.tobe.ehime.jp/
+    bank_status: none
+    map_query: 愛媛県砥部町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.tobe.ehime.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.tobe.ehime.jp/
+    checked_on: '2026-09-11'
+- id: ehime-384224
+  name: 内子町空き家バンク
+  operator: 内子町
+  operator_kind: municipality
+  official_url: https://www.town.uchiko.ehime.jp/
+  policy: link_only
+  municipality:
+    code: '384224'
+    name: 内子町
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '384224'
+    bank_url: https://www.town.uchiko.ehime.jp/
+    bank_status: none
+    map_query: 愛媛県内子町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.uchiko.ehime.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.uchiko.ehime.jp/
+    checked_on: '2026-09-11'
+- id: ehime-384429
+  name: 伊方町空き家バンク
+  operator: 伊方町
+  operator_kind: municipality
+  official_url: https://www.town.ikata.ehime.jp/
+  policy: crawl
+  municipality:
+    code: '384429'
+    name: 伊方町
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '384429'
+    bank_url: https://www.town.ikata.ehime.jp/akiya/iju-teiju/28099.html
+    bank_status: available
+    map_query: 愛媛県伊方町
+  operator_evidence:
+    quote: 公式ドメイン www.town.ikata.ehime.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.ikata.ehime.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.ikata.ehime.jp/akiya/iju-teiju/28099.html
+    kind: listing_detail
+  allow_hosts:
+  - www.town.ikata.ehime.jp
+  max_pages: 30
+- id: ehime-384844
+  name: 松野町空き家バンク
+  operator: 松野町
+  operator_kind: municipality
+  official_url: https://www.town.matsuno.ehime.jp/
+  policy: link_only
+  municipality:
+    code: '384844'
+    name: 松野町
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '384844'
+    bank_url: https://www.town.matsuno.ehime.jp/site/akiya/
+    bank_status: info
+    map_query: 愛媛県松野町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.matsuno.ehime.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.matsuno.ehime.jp/
+    checked_on: '2026-09-11'
+- id: ehime-384887
+  name: 鬼北町空き家バンク
+  operator: 鬼北町
+  operator_kind: municipality
+  official_url: https://www.town.kihoku.ehime.jp/
+  policy: link_only
+  municipality:
+    code: '384887'
+    name: 鬼北町
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '384887'
+    bank_url: https://www.town.kihoku.ehime.jp/
+    bank_status: none
+    map_query: 愛媛県鬼北町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kihoku.ehime.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kihoku.ehime.jp/
+    checked_on: '2026-09-11'
+- id: ehime-385069
+  name: 愛南町空き家バンク
+  operator: 愛南町
+  operator_kind: municipality
+  official_url: https://www.town.ainan.ehime.jp/
+  policy: link_only
+  municipality:
+    code: '385069'
+    name: 愛南町
+    prefecture: 愛媛県
+    prefecture_slug: ehime
+    slug: '385069'
+    bank_url: https://www.town.ainan.ehime.jp/
+    bank_status: none
+    map_query: 愛媛県愛南町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ainan.ehime.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.ainan.ehime.jp/
+    checked_on: '2026-09-11'

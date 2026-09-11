@@ -1,0 +1,494 @@
+prefecture: 宮城県
+prefecture_slug: miyagi
+created_at: '2026-09-11T06:32:53+00:00'
+candidates:
+- key: 041009
+  label: 宮城県 仙台市
+  url: https://www.city.sendai.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 宮城県 県内市町村リンク集に掲載された公式サイト（www.city.sendai.jp）
+  evidence_url: https://www.pref.miyagi.jp/soshiki/kohou/link01.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '042021'
+  label: 宮城県 石巻市
+  url: https://www.city.ishinomaki.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ishinomaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.ishinomaki.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '042030'
+  label: 宮城県 塩竈市
+  url: https://www.city.shiogama.miyagi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shiogama.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.shiogama.miyagi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '042056'
+  label: 宮城県 気仙沼市
+  url: https://www.kesennuma.miyagi.jp/li/life/090/010/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 宮城県 県内市町村リンク集に掲載された公式サイト（www.kesennuma.miyagi.jp）
+  evidence_url: https://www.pref.miyagi.jp/soshiki/kohou/link01.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '042064'
+  label: 宮城県 白石市
+  url: https://www.city.shiroishi.miyagi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shiroishi.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.shiroishi.miyagi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '042072'
+  label: 宮城県 名取市
+  url: https://www.city.natori.miyagi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.natori.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.natori.miyagi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 042081
+  label: 宮城県 角田市
+  url: https://www.city.kakuda.lg.jp/soshiki/4/418.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kakuda.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kakuda.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 042099
+  label: 宮城県 多賀城市
+  url: https://www.city.tagajo.miyagi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tagajo.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.tagajo.miyagi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '042111'
+  label: 宮城県 岩沼市
+  url: https://www.city.iwanuma.miyagi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.iwanuma.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.iwanuma.miyagi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 042129
+  label: 宮城県 登米市
+  url: https://www.city.tome.miyagi.jp/jyutakutoshi/shisejoho/ijuteju/bank/akiyabank/index.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tome.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.tome.miyagi.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '042137'
+  label: 宮城県 栗原市
+  url: https://www.kuriharacity.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 宮城県 県内市町村リンク集に掲載された公式サイト（www.kuriharacity.jp）
+  evidence_url: https://www.pref.miyagi.jp/soshiki/kohou/link01.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '042145'
+  label: 宮城県 東松島市
+  url: https://www.city.higashimatsushima.miyagi.jp/kurashi/sumiyoimachini/sumai/akiya/akiyabanktoha.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.higashimatsushima.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.higashimatsushima.miyagi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '042153'
+  label: 宮城県 大崎市
+  url: https://www.city.osaki.miyagi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.osaki.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.osaki.miyagi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '042161'
+  label: 宮城県 富谷市
+  url: https://www.tomiya-city.miyagi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 宮城県 県内市町村リンク集に掲載された公式サイト（www.tomiya-city.miyagi.jp）
+  evidence_url: https://www.pref.miyagi.jp/soshiki/kohou/link01.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '043010'
+  label: 宮城県 蔵王町
+  url: https://www.town.zao.miyagi.jp/kurashi_guide/shisaku_machi/shisaku_machi/akiyabank.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.zao.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.zao.miyagi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 043028
+  label: 宮城県 七ヶ宿町
+  url: https://town.shichikashuku.miyagi.jp/its/news.cgi?act=house
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン town.shichikashuku.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://town.shichikashuku.miyagi.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '043214'
+  label: 宮城県 大河原町
+  url: https://www.town.ogawara.miyagi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ogawara.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ogawara.miyagi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '043222'
+  label: 宮城県 村田町
+  url: https://www.town.murata.miyagi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.murata.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.murata.miyagi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '043231'
+  label: 宮城県 柴田町
+  url: https://www.town.shibata.miyagi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shibata.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.shibata.miyagi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 043249
+  label: 宮城県 川崎町
+  url: https://www.town.kawasaki.miyagi.jp/soshiki/spring/307.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kawasaki.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kawasaki.miyagi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 043419
+  label: 宮城県 丸森町
+  url: https://www.town.marumori.miyagi.jp/life/detail.php?content=1422
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.marumori.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.marumori.miyagi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '043613'
+  label: 宮城県 亘理町
+  url: https://www.town.watari.miyagi.jp/life/detail.php?content=409
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.watari.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.watari.miyagi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '043621'
+  label: 宮城県 山元町
+  url: https://www.town.yamamoto.miyagi.jp/life/1/4/15/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yamamoto.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yamamoto.miyagi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '044016'
+  label: 宮城県 松島町
+  url: https://www.town.miyagi-matsushima.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 宮城県 県内市町村リンク集に掲載された公式サイト（www.town.miyagi-matsushima.lg.jp）
+  evidence_url: https://www.pref.miyagi.jp/soshiki/kohou/link01.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '044041'
+  label: 宮城県 七ヶ浜町
+  url: https://www.shichigahama.com/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 宮城県 県内市町村リンク集に掲載された公式サイト（www.shichigahama.com）
+  evidence_url: https://www.pref.miyagi.jp/soshiki/kohou/link01.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '044067'
+  label: 宮城県 利府町
+  url: https://www.town.rifu.miyagi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.rifu.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.rifu.miyagi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '044211'
+  label: 宮城県 大和町
+  url: https://www.town.taiwa.miyagi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.taiwa.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.taiwa.miyagi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 044229
+  label: 宮城県 大郷町
+  url: https://www.town.miyagi-osato.lg.jp/soshiki/machidukuri/akiya-bank02.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.86
+  operator_kind: municipality
+  evidence_quote: 宮城県 県内市町村リンク集に掲載された公式サイト（www.town.miyagi-osato.lg.jp）
+  evidence_url: https://www.pref.miyagi.jp/soshiki/kohou/link01.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '044245'
+  label: 宮城県 大衡村
+  url: https://www.village.ohira.miyagi.jp/1/3/2126.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 宮城県 県内市町村リンク集に掲載された公式サイト（www.village.ohira.miyagi.jp）
+  evidence_url: https://www.pref.miyagi.jp/soshiki/kohou/link01.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '044440'
+  label: 宮城県 色麻町
+  url: https://www.town.shikama.miyagi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shikama.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.shikama.miyagi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 044458
+  label: 宮城県 加美町
+  url: https://www.town.kami.miyagi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kami.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kami.miyagi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '045012'
+  label: 宮城県 涌谷町
+  url: https://www.town.wakuya.miyagi.jp/kurashi/sekatsu/akiya/akiyabank.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.88
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.wakuya.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.wakuya.miyagi.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '045055'
+  label: 宮城県 美里町
+  url: https://www.town.misato.miyagi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.misato.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.misato.miyagi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 045811
+  label: 宮城県 女川町
+  url: https://www.town.onagawa.miyagi.jp/onagawa_akiya.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.onagawa.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.onagawa.miyagi.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '046060'
+  label: 宮城県 南三陸町
+  url: https://www.town.minamisanriku.miyagi.jp/kurashi/sumai/2/6790.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.91
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.minamisanriku.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.minamisanriku.miyagi.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null

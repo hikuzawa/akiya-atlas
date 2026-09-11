@@ -1,0 +1,270 @@
+prefecture: 石川県
+prefecture_slug: ishikawa
+created_at: '2026-09-11T06:41:30+00:00'
+candidates:
+- key: '172014'
+  label: 石川県 金沢市
+  url: https://www.city.kanazawa.ishikawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kanazawa.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kanazawa.ishikawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '172022'
+  label: 石川県 七尾市
+  url: https://www.city.nanao.lg.jp/toshikenchiku/kurashi/sumai/sumai/akiya.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nanao.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.nanao.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '172031'
+  label: 石川県 小松市
+  url: https://www.city.komatsu.lg.jp/soshiki/1027/akiya_akishitsubanku_komatsuchoukajouhoubanku/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.komatsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.komatsu.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '172049'
+  label: 石川県 輪島市
+  url: https://www.city.wajima.ishikawa.jp/docs/akichidatabase/top.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.wajima.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.wajima.ishikawa.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '172057'
+  label: 石川県 珠洲市
+  url: https://www.city.suzu.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.suzu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.suzu.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '172065'
+  label: 石川県 加賀市
+  url: https://www.city.kaga.ishikawa.jp/kurashi/sumai/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kaga.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kaga.ishikawa.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '172073'
+  label: 石川県 羽咋市
+  url: https://www.city.hakui.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hakui.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.hakui.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '172090'
+  label: 石川県 かほく市
+  url: https://www.city.kahoku.lg.jp/001/156/157/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kahoku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kahoku.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '172103'
+  label: 石川県 白山市
+  url: https://www.city.hakusan.lg.jp/machi/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hakusan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.hakusan.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '172111'
+  label: 石川県 能美市
+  url: https://www.city.nomi.lg.jp/docs/1083.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.nomi.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '172120'
+  label: 石川県 野々市市
+  url: https://www.city.nonoichi.lg.jp/life/1/18/234/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nonoichi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.nonoichi.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '173240'
+  label: 石川県 川北町
+  url: https://www.town.kawakita.ishikawa.jp/news/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kawakita.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kawakita.ishikawa.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '173614'
+  label: 石川県 津幡町
+  url: https://www.town.tsubata.lg.jp/site/welcome/1222.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tsubata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.tsubata.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '173657'
+  label: 石川県 内灘町
+  url: https://www.town.uchinada.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.uchinada.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.uchinada.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '173843'
+  label: 石川県 志賀町
+  url: https://www.town.shika.lg.jp/life/1/6/23/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shika.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.shika.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '173860'
+  label: 石川県 宝達志水町
+  url: https://www.hodatsushimizu.jp/gyosei/kurashi_tetsuzuki/4/3796.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 石川県内市町のページに掲載された公式サイト（www.hodatsushimizu.jp）
+  evidence_url: https://www.pref.ishikawa.lg.jp/shimachi.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '174076'
+  label: 石川県 中能登町
+  url: https://www.town.nakanoto.ishikawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nakanoto.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.nakanoto.ishikawa.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '174611'
+  label: 石川県 穴水町
+  url: https://www.town.anamizu.lg.jp/akiyabank/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.84
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.anamizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.anamizu.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '174637'
+  label: 石川県 能登町
+  url: https://www.town.noto.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.noto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.noto.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

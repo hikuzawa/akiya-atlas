@@ -1,0 +1,354 @@
+prefecture: 秋田県
+prefecture_slug: akita
+created_at: '2026-09-11T06:32:52+00:00'
+candidates:
+- key: 052019
+  label: 秋田県 秋田市
+  url: https://www.city.akita.lg.jp/kurashi/sumai/1039236.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.akita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.akita.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '052027'
+  label: 秋田県 能代市
+  url: https://www.city.noshiro.lg.jp/sangyo/iju-teiju/akiya-bank/11098
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.noshiro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.noshiro.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '052035'
+  label: 秋田県 横手市
+  url: https://www.city.yokote.lg.jp/kurashi/1001142/1001280/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yokote.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.yokote.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '052043'
+  label: 秋田県 大館市
+  url: https://www.city.odate.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.odate.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.odate.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '052060'
+  label: 秋田県 男鹿市
+  url: https://www.city.oga.akita.jp/ijuteiju/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.oga.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.oga.akita.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 052078
+  label: 秋田県 湯沢市
+  url: https://www.city-yuzawa.jp/life/1/14/89/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 秋田県 県内市町村のウェブサイトに掲載された公式サイト（www.city-yuzawa.jp）
+  evidence_url: https://www.pref.akita.lg.jp/pages/archive/46079
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 052094
+  label: 秋田県 鹿角市
+  url: https://www.city.kazuno.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kazuno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kazuno.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 052108
+  label: 秋田県 由利本荘市
+  url: https://www.city.yurihonjo.lg.jp/1000006/1008699/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yurihonjo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.yurihonjo.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '052116'
+  label: 秋田県 潟上市
+  url: https://www.city.katagami.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.katagami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.katagami.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '052124'
+  label: 秋田県 大仙市
+  url: https://www.city.daisen.lg.jp/genre/machizukuri/akiyabank
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.daisen.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.daisen.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '052132'
+  label: 秋田県 北秋田市
+  url: https://www.city.kitaakita.akita.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kitaakita.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kitaakita.akita.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '052141'
+  label: 秋田県 にかほ市
+  url: https://www.city.nikaho.akita.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nikaho.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.nikaho.akita.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 052159
+  label: 秋田県 仙北市
+  url: https://www.city.semboku.akita.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 秋田県 県内市町村のウェブサイトに掲載された公式サイト（www.city.semboku.akita.jp）
+  evidence_url: https://www.pref.akita.lg.jp/pages/archive/46079
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '053031'
+  label: 秋田県 小坂町
+  url: https://www.town.kosaka.akita.jp/iju_teiju/jutaku/754.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kosaka.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kosaka.akita.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 053279
+  label: 秋田県 上小阿仁村
+  url: https://www.vill.kamikoani.akita.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.kamikoani.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.kamikoani.akita.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '053465'
+  label: 秋田県 藤里町
+  url: https://www.town.fujisato.akita.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.fujisato.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.fujisato.akita.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 053481
+  label: 秋田県 三種町
+  url: https://www.town.mitane.akita.jp/kurashi_furusatokaiki/akiya_bank/2305.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.mitane.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.mitane.akita.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 053490
+  label: 秋田県 八峰町
+  url: https://www.town.happo.lg.jp/genre/iju-teiju/hatarakitai
+  page_class: spa
+  class_label: JavaScript 描画（未対応）
+  confidence: 0.75
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.happo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.happo.lg.jp/
+  reason: JavaScript 描画のため静的 HTML に物件が無い。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 053619
+  label: 秋田県 五城目町
+  url: https://www.town.gojome.akita.jp/kurashi/2662
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.gojome.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.gojome.akita.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '053635'
+  label: 秋田県 八郎潟町
+  url: https://www.town.hachirogata.akita.jp/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hachirogata.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.hachirogata.akita.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '053660'
+  label: 秋田県 井川町
+  url: https://www.town.ikawa.akita.jp/life/1/4/25/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ikawa.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ikawa.akita.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 053686
+  label: 秋田県 大潟村
+  url: https://www.vill.ogata.akita.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.ogata.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.ogata.akita.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 054348
+  label: 秋田県 美郷町
+  url: https://www.town.misato.akita.jp/archive/contents-962
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.misato.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.misato.akita.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '054631'
+  label: 秋田県 羽後町
+  url: https://www.town.ugo.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ugo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.ugo.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '054640'
+  label: 秋田県 東成瀬村
+  url: https://vill.higashinaruse.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン vill.higashinaruse.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://vill.higashinaruse.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

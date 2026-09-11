@@ -83,3 +83,23 @@ def test_build_refuses_records_with_street_numbers(
     with pytest.raises(BuildError, match="番地"):
         ensure_no_street_numbers(ds)
     del monkeypatch, Workspace, tmp_path
+
+
+def test_sanitize_never_leaves_a_street_number_behind() -> None:
+    """全国分で出てきた書き方。整えたあとの所在地に番地が残らないことを固定する。"""
+    tricky = [
+        "E棟 新光248番地、F棟 新光252番地1",  # 複数棟の並記
+        "砂川市晴見3条北9丁目",  # 北海道の条丁目（地区なので残す）
+        "西4条南10丁目",
+        "上川郡東川町西5号北44番地",
+        "中頸城郡妙高高原町大字田口",
+    ]
+    for text in tricky:
+        content = {"address": _addr(text)}
+        sanitize_address_fields(content)
+        value = content["address"]["value"]
+        assert not (value and has_street_number(str(value))), (text, value)
+    # 条丁目はそのまま残る
+    grid = {"address": _addr("砂川市晴見3条北9丁目")}
+    assert not sanitize_address_fields(grid)
+    assert grid["address"]["value"] == "砂川市晴見3条北9丁目"

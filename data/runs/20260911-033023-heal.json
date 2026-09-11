@@ -1,0 +1,26 @@
+{
+  "command": "heal",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-11T03:31:03Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "岐阜県飛騨市: 一覧が見つからず none に変更（公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ）",
+    "岐阜県白川村: 一覧が見つからず spa_unsupported に変更（JavaScript 描画のため静的 HTML に物件が無い。リンクのみ）"
+  ],
+  "service": "akiya-atlas",
+  "stages": {
+    "heal": {
+      "checked": 2,
+      "downgraded": 2,
+      "requests": 10,
+      "swapped": 0
+    }
+  },
+  "started_at": "2026-09-11T03:30:23Z"
+}

@@ -1,0 +1,270 @@
+prefecture: 鳥取県
+prefecture_slug: tottori
+created_at: '2026-09-11T06:32:54+00:00'
+candidates:
+- key: '312011'
+  label: 鳥取県 鳥取市
+  url: https://www.city.tottori.lg.jp/page/5828.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.82
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tottori.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tottori.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '312029'
+  label: 鳥取県 米子市
+  url: https://www.city.yonago.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yonago.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.yonago.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '312037'
+  label: 鳥取県 倉吉市
+  url: https://www.city.kurayoshi.lg.jp/4975.htm
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kurayoshi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kurayoshi.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '312045'
+  label: 鳥取県 境港市
+  url: https://www.city.sakaiminato.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.city.sakaiminato.lg.jp）。サイトを取得できなかったためリンクのみ（robots.txt により拒否）
+  evidence_url: https://www.pref.tottori.lg.jp/9577.htm
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '313025'
+  label: 鳥取県 岩美町
+  url: https://www.iwami.gr.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.iwami.gr.jp）
+  evidence_url: https://www.pref.tottori.lg.jp/9577.htm
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '313254'
+  label: 鳥取県 若桜町
+  url: https://www.town.wakasa.tottori.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.wakasa.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.wakasa.tottori.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '313289'
+  label: 鳥取県 智頭町
+  url: https://www.town.chizu.tottori.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.chizu.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.chizu.tottori.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '313297'
+  label: 鳥取県 八頭町
+  url: https://www.town.yazu.tottori.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yazu.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yazu.tottori.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '313645'
+  label: 鳥取県 三朝町
+  url: https://www.town.misasa.tottori.jp/315/319/2054/2002/2021/1920/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.misasa.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.misasa.tottori.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '313700'
+  label: 鳥取県 湯梨浜町
+  url: https://www.yurihama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.yurihama.jp）
+  evidence_url: https://www.pref.tottori.lg.jp/9577.htm
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '313718'
+  label: 鳥取県 琴浦町
+  url: https://www.town.kotoura.tottori.jp/ijuteiju/ohnav/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kotoura.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kotoura.tottori.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '313726'
+  label: 鳥取県 北栄町
+  url: https://www.e-hokuei.net/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.e-hokuei.net）
+  evidence_url: https://www.pref.tottori.lg.jp/9577.htm
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '313840'
+  label: 鳥取県 日吉津村
+  url: https://www.hiezu.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.hiezu.jp）
+  evidence_url: https://www.pref.tottori.lg.jp/9577.htm
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '313866'
+  label: 鳥取県 大山町
+  url: https://www.daisen.jp/10/2/9/m107/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.daisen.jp）
+  evidence_url: https://www.pref.tottori.lg.jp/9577.htm
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '313891'
+  label: 鳥取県 南部町
+  url: https://www.town.nanbu.tottori.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nanbu.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.nanbu.tottori.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '313904'
+  label: 鳥取県 伯耆町
+  url: https://www.houki-town.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.houki-town.jp）
+  evidence_url: https://www.pref.tottori.lg.jp/9577.htm
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '314013'
+  label: 鳥取県 日南町
+  url: https://www.town.nichinan.lg.jp/mokutekibetsu/5/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nichinan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.nichinan.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '314021'
+  label: 鳥取県 日野町
+  url: http://www.town.hino.tottori.jp/2467.htm
+  page_class: spa
+  class_label: JavaScript 描画（未対応）
+  confidence: 0.75
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hino.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.hino.tottori.jp/
+  reason: JavaScript 描画のため静的 HTML に物件が無い。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '314030'
+  label: 鳥取県 江府町
+  url: https://www.town-kofu.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.town-kofu.jp）
+  evidence_url: https://www.pref.tottori.lg.jp/9577.htm
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

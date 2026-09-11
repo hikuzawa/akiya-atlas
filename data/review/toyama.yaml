@@ -1,0 +1,214 @@
+prefecture: 富山県
+prefecture_slug: toyama
+created_at: '2026-09-11T06:32:54+00:00'
+candidates:
+- key: '162019'
+  label: 富山県 富山市
+  url: https://www.city.toyama.lg.jp/akiyabk/index.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.85
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.toyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.toyama.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '162027'
+  label: 富山県 高岡市
+  url: https://www.city.takaoka.toyama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.takaoka.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.takaoka.toyama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '162043'
+  label: 富山県 魚津市
+  url: https://www.city.uozu.toyama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.uozu.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.uozu.toyama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '162051'
+  label: 富山県 氷見市
+  url: https://www.city.himi.toyama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.himi.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.himi.toyama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '162060'
+  label: 富山県 滑川市
+  url: https://namerikawa-akiya.com/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.city.namerikawa.toyama.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.city.namerikawa.toyama.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '162078'
+  label: 富山県 黒部市
+  url: https://www.city.kurobe.toyama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kurobe.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kurobe.toyama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '162086'
+  label: 富山県 砺波市
+  url: https://www.city.tonami.lg.jp/service/77804p/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tonami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tonami.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '162094'
+  label: 富山県 小矢部市
+  url: https://www.city.oyabe.toyama.jp/ijyu/1001572/1003141/1004072.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.oyabe.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.oyabe.toyama.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '162108'
+  label: 富山県 南砺市
+  url: https://www.city.nanto.toyama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nanto.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.nanto.toyama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '162116'
+  label: 富山県 射水市
+  url: https://www.city.imizu.toyama.jp/guide/svGuideDtl.aspx?servno=51303
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.imizu.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.imizu.toyama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '163210'
+  label: 富山県 舟橋村
+  url: https://www.vill.funahashi.toyama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.funahashi.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.funahashi.toyama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '163228'
+  label: 富山県 上市町
+  url: https://www.town.kamiichi.toyama.jp/page/1646.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.89
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kamiichi.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kamiichi.toyama.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '163236'
+  label: 富山県 立山町
+  url: https://www.town.tateyama.toyama.jp/kurashi_tetsuzuki/sumai_machizukuri/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tateyama.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.tateyama.toyama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '163422'
+  label: 富山県 入善町
+  url: https://www.town.nyuzen.toyama.jp/gyosei/machizukuri/sumai/1/1856.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nyuzen.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.nyuzen.toyama.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '163431'
+  label: 富山県 朝日町
+  url: https://www.town.asahi.toyama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.asahi.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.asahi.toyama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

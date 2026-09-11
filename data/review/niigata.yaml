@@ -1,0 +1,424 @@
+prefecture: 新潟県
+prefecture_slug: niigata
+created_at: '2026-09-11T06:43:20+00:00'
+candidates:
+- key: '151009'
+  label: 新潟県 新潟市
+  url: https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/index.html
+  page_class: spa
+  class_label: JavaScript 描画（未対応）
+  confidence: 0.75
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.niigata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.niigata.lg.jp/
+  reason: JavaScript 描画のため静的 HTML に物件が無い。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '152021'
+  label: 新潟県 長岡市
+  url: https://www.city.nagaoka.niigata.jp/akiya/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nagaoka.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.nagaoka.niigata.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '152048'
+  label: 新潟県 三条市
+  url: https://www.city.sanjo.niigata.jp/kurashi_tetsuzuki/kakushusodan/15607.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sanjo.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.sanjo.niigata.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '152056'
+  label: 新潟県 柏崎市
+  url: https://www.city.kashiwazaki.lg.jp/kurashi_tetsuzuki/hojo/sumai_seikatsu/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kashiwazaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kashiwazaki.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '152064'
+  label: 新潟県 新発田市
+  url: https://www.city.shibata.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shibata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.shibata.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '152081'
+  label: 新潟県 小千谷市
+  url: https://www.city.ojiya.niigata.jp/site/iju/akiyabank.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ojiya.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.ojiya.niigata.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '152099'
+  label: 新潟県 加茂市
+  url: https://www.city.kamo.niigata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kamo.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kamo.niigata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '152102'
+  label: 新潟県 十日町市
+  url: https://www.city.tokamachi.lg.jp/cgi-bin/recruit.php/1/list
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tokamachi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tokamachi.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '152111'
+  label: 新潟県 見附市
+  url: https://www.city.mitsuke.niigata.jp/life/1/9/54/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.mitsuke.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.mitsuke.niigata.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '152129'
+  label: 新潟県 村上市
+  url: https://www.city.murakami.lg.jp/site/akiya-bank/m-akiya-bank-bukken.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.murakami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.murakami.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '152137'
+  label: 新潟県 燕市
+  url: https://www.city.tsubame.niigata.jp/cgi-bin/recruit.php/3/list?page_no=1
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tsubame.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.tsubame.niigata.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '152161'
+  label: 新潟県 糸魚川市
+  url: https://www.city.itoigawa.lg.jp/life/5/19/72/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.itoigawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.itoigawa.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '152170'
+  label: 新潟県 妙高市
+  url: https://www.city.myoko.niigata.jp/myoko-life/house/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.myoko.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.myoko.niigata.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '152188'
+  label: 新潟県 五泉市
+  url: https://www.city.gosen.lg.jp/organization/7/8/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.gosen.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.gosen.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '152226'
+  label: 新潟県 上越市
+  url: https://www.city.joetsu.niigata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.joetsu.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.joetsu.niigata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '152234'
+  label: 新潟県 阿賀野市
+  url: https://www.city.agano.niigata.jp/kurashi_tetsuzuki/zumai/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.agano.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.agano.niigata.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '152242'
+  label: 新潟県 佐渡市
+  url: https://www.city.sado.niigata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sado.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.sado.niigata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '152251'
+  label: 新潟県 魚沼市
+  url: https://www.city.uonuma.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.uonuma.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.uonuma.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '152269'
+  label: 新潟県 南魚沼市
+  url: https://www.city.minamiuonuma.niigata.jp/akiyabank/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.minamiuonuma.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.minamiuonuma.niigata.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '152277'
+  label: 新潟県 胎内市
+  url: https://www.city.tainai.niigata.jp/kurashi/sekatsu/sumai/akiyabank.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tainai.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.tainai.niigata.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '153079'
+  label: 新潟県 聖籠町
+  url: https://www.town.seiro.niigata.jp/1/5/1/3/122.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.seiro.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.seiro.niigata.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '153427'
+  label: 新潟県 弥彦村
+  url: https://akiya.vill.yahiko.niigata.jp/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.9
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.vill.yahiko.niigata.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.vill.yahiko.niigata.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '153613'
+  label: 新潟県 田上町
+  url: https://www.town.tagami.niigata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tagami.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.tagami.niigata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '153851'
+  label: 新潟県 阿賀町
+  url: https://www.town.aga.niigata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.aga.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.aga.niigata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '154059'
+  label: 新潟県 出雲崎町
+  url: https://www.town.izumozaki.niigata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.izumozaki.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.izumozaki.niigata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '154610'
+  label: 新潟県 湯沢町
+  url: https://www.town.yuzawa.lg.jp/kurashinojoho/kurashi_tetsuzuki/2/7335.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yuzawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.yuzawa.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '154822'
+  label: 新潟県 津南町
+  url: https://www.town.tsunan.niigata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tsunan.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.tsunan.niigata.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '155047'
+  label: 新潟県 刈羽村
+  url: https://www.vill.kariwa.niigata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 新潟県 リンク集：県内市町村に掲載された公式サイト（www.vill.kariwa.niigata.jp）。サイトを取得できなかったためリンクのみ（robots.txt により拒否）
+  evidence_url: https://www.pref.niigata.lg.jp/site/link/link-sichoson.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '155811'
+  label: 新潟県 関川村
+  url: http://www.vill.sekikawa.niigata.jp/life/13/696/index.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 新潟県 リンク集：県内市町村に掲載された公式サイト（www.vill.sekikawa.niigata.jp）
+  evidence_url: https://www.pref.niigata.lg.jp/site/link/link-sichoson.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '155861'
+  label: 新潟県 粟島浦村
+  url: https://www.vill.awashimaura.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.awashimaura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.awashimaura.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

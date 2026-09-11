@@ -1,0 +1,424 @@
+prefecture: 和歌山県
+prefecture_slug: wakayama
+created_at: '2026-09-11T06:32:54+00:00'
+candidates:
+- key: '302015'
+  label: 和歌山県 和歌山市
+  url: https://www.city.wakayama.wakayama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.wakayama.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.wakayama.wakayama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '302023'
+  label: 和歌山県 海南市
+  url: https://www.city.kainan.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kainan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kainan.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '302031'
+  label: 和歌山県 橋本市
+  url: https://www.city.hashimoto.lg.jp/life_mokuteki/hikkoshi_sumai/12804.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hashimoto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.hashimoto.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '302040'
+  label: 和歌山県 有田市
+  url: https://www.city.arida.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.arida.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.arida.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '302058'
+  label: 和歌山県 御坊市
+  url: https://www.city.gobo.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.gobo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.gobo.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '302066'
+  label: 和歌山県 田辺市
+  url: https://www.city.tanabe.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tanabe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tanabe.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '302074'
+  label: 和歌山県 新宮市
+  url: https://www.city.shingu.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shingu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.shingu.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '302082'
+  label: 和歌山県 紀の川市
+  url: https://www.city.kinokawa.lg.jp/006/2021-0721-1820-73.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kinokawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kinokawa.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '302091'
+  label: 和歌山県 岩出市
+  url: https://www.city.iwade.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.iwade.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.iwade.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '303046'
+  label: 和歌山県 紀美野町
+  url: https://www.town.kimino.wakayama.jp/kurashi/iju/4338.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kimino.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kimino.wakayama.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '303411'
+  label: 和歌山県 かつらぎ町
+  url: https://www.town.katsuragi.wakayama.jp/teijyu/020/010/2023-1011-1627-16.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.9
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.katsuragi.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.katsuragi.wakayama.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '303437'
+  label: 和歌山県 九度山町
+  url: https://www.town.kudoyama.lg.jp/kikaku/seisaku/akiya-izyuu.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kudoyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kudoyama.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '303445'
+  label: 和歌山県 高野町
+  url: https://www.town.koya.wakayama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.koya.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.koya.wakayama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '303615'
+  label: 和歌山県 湯浅町
+  url: https://www.town.yuasa.wakayama.jp/life/1/4/17/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yuasa.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yuasa.wakayama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '303623'
+  label: 和歌山県 広川町
+  url: https://www.town.hirogawa.wakayama.jp/ijyuteijyu/akiyabank/index.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.91
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hirogawa.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.hirogawa.wakayama.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '303666'
+  label: 和歌山県 有田川町
+  url: https://www.town.aridagawa.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.aridagawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.aridagawa.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '303810'
+  label: 和歌山県 美浜町
+  url: http://www.town.mihama.wakayama.jp/docs/2026081200014/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 和歌山県 市町村のホームページ（リンク集）に掲載された公式サイト（www.town.mihama.wakayama.jp）
+  evidence_url: https://www.pref.wakayama.lg.jp/link/shichoson.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '303828'
+  label: 和歌山県 日高町
+  url: https://www.town.wakayama-hidaka.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 和歌山県 市町村のホームページ（リンク集）に掲載された公式サイト（www.town.wakayama-hidaka.lg.jp）
+  evidence_url: https://www.pref.wakayama.lg.jp/link/shichoson.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '303836'
+  label: 和歌山県 由良町
+  url: http://www.town.yura.wakayama.jp/docs/2021081200033/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.9
+  operator_kind: municipality
+  evidence_quote: 和歌山県 市町村のホームページ（リンク集）に掲載された公式サイト（www.town.yura.wakayama.jp）
+  evidence_url: https://www.pref.wakayama.lg.jp/link/shichoson.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '303909'
+  label: 和歌山県 印南町
+  url: http://www.town.wakayama-inami.lg.jp/0000000179.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 和歌山県 市町村のホームページ（リンク集）に掲載された公式サイト（www.town.wakayama-inami.lg.jp）
+  evidence_url: https://www.pref.wakayama.lg.jp/link/shichoson.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '303917'
+  label: 和歌山県 みなべ町
+  url: https://www.town.minabe.lg.jp/kurashi/03/2022110800019.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.minabe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.minabe.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '303925'
+  label: 和歌山県 日高川町
+  url: https://www.town.hidakagawa.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hidakagawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.hidakagawa.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '304018'
+  label: 和歌山県 白浜町
+  url: https://www.town.shirahama.wakayama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shirahama.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.shirahama.wakayama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '304042'
+  label: 和歌山県 上富田町
+  url: https://www.town.kamitonda.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kamitonda.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kamitonda.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '304069'
+  label: 和歌山県 すさみ町
+  url: https://www.town.susami.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.susami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.susami.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '304212'
+  label: 和歌山県 那智勝浦町
+  url: https://www.town.nachikatsuura.wakayama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nachikatsuura.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.nachikatsuura.wakayama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '304221'
+  label: 和歌山県 太地町
+  url: https://www.town.taiji.wakayama.jp/lifestage/sumai/sumai003.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.taiji.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.taiji.wakayama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '304247'
+  label: 和歌山県 古座川町
+  url: https://www.town.kozagawa.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kozagawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kozagawa.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '304271'
+  label: 和歌山県 北山村
+  url: https://www.vill.kitayama.wakayama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.kitayama.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.kitayama.wakayama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '304280'
+  label: 和歌山県 串本町
+  url: https://www.town.kushimoto.wakayama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kushimoto.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kushimoto.wakayama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

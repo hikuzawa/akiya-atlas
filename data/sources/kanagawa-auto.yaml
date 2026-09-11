@@ -1,0 +1,682 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: kanagawa-141003
+  name: 横浜市空き家バンク
+  operator: 横浜市
+  operator_kind: municipality
+  official_url: https://www.city.yokohama.lg.jp/
+  policy: link_only
+  municipality:
+    code: '141003'
+    name: 横浜市
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '141003'
+    bank_url: https://www.city.yokohama.lg.jp/
+    bank_status: none
+    map_query: 神奈川県横浜市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yokohama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.yokohama.lg.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-141305
+  name: 川崎市空き家バンク
+  operator: 川崎市
+  operator_kind: municipality
+  official_url: https://www.city.kawasaki.jp/
+  policy: link_only
+  municipality:
+    code: '141305'
+    name: 川崎市
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '141305'
+    bank_url: https://www.city.kawasaki.jp/
+    bank_status: none
+    map_query: 神奈川県川崎市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 神奈川県内の市町村に掲載された公式サイト（www.city.kawasaki.jp）
+    url: https://www.pref.kanagawa.jp/docs/ie2/cnt/f530001/p780102.html
+    checked_on: '2026-09-11'
+- id: kanagawa-141500
+  name: 相模原市空き家バンク
+  operator: 相模原市
+  operator_kind: municipality
+  official_url: https://www.city.sagamihara.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '141500'
+    name: 相模原市
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '141500'
+    bank_url: https://www.city.sagamihara.kanagawa.jp/kurashi/1026489/sumai/1026511/index.html
+    bank_status: info
+    map_query: 神奈川県相模原市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.sagamihara.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.sagamihara.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-142018
+  name: 横須賀市空き家バンク
+  operator: 横須賀市
+  operator_kind: municipality
+  official_url: https://www.city.yokosuka.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '142018'
+    name: 横須賀市
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '142018'
+    bank_url: https://www.city.yokosuka.kanagawa.jp/
+    bank_status: none
+    map_query: 神奈川県横須賀市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yokosuka.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.yokosuka.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-142034
+  name: 平塚市空き家バンク
+  operator: 平塚市
+  operator_kind: municipality
+  official_url: https://www.city.hiratsuka.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '142034'
+    name: 平塚市
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '142034'
+    bank_url: https://www.city.hiratsuka.kanagawa.jp/
+    bank_status: none
+    map_query: 神奈川県平塚市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.hiratsuka.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.hiratsuka.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-142042
+  name: 鎌倉市空き家バンク
+  operator: 鎌倉市
+  operator_kind: municipality
+  official_url: https://www.city.kamakura.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '142042'
+    name: 鎌倉市
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '142042'
+    bank_url: https://www.city.kamakura.kanagawa.jp/
+    bank_status: none
+    map_query: 神奈川県鎌倉市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kamakura.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kamakura.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-142051
+  name: 藤沢市空き家バンク
+  operator: 藤沢市
+  operator_kind: municipality
+  official_url: https://www.city.fujisawa.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '142051'
+    name: 藤沢市
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '142051'
+    bank_url: https://www.city.fujisawa.kanagawa.jp/jutaku/akiya/akiyataisaku.html
+    bank_status: info
+    map_query: 神奈川県藤沢市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.fujisawa.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.fujisawa.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-142069
+  name: 小田原市空き家バンク
+  operator: 小田原市
+  operator_kind: municipality
+  official_url: https://www.city.odawara.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '142069'
+    name: 小田原市
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '142069'
+    bank_url: https://www.city.odawara.kanagawa.jp/
+    bank_status: none
+    map_query: 神奈川県小田原市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.odawara.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.odawara.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-142077
+  name: 茅ヶ崎市空き家バンク
+  operator: 茅ヶ崎市
+  operator_kind: municipality
+  official_url: https://www.city.chigasaki.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '142077'
+    name: 茅ヶ崎市
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '142077'
+    bank_url: https://www.city.chigasaki.kanagawa.jp/
+    bank_status: none
+    map_query: 神奈川県茅ヶ崎市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.chigasaki.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.chigasaki.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-142085
+  name: 逗子市空き家バンク
+  operator: 逗子市
+  operator_kind: municipality
+  official_url: https://www.city.zushi.kanagawa.jp/
+  policy: crawl
+  municipality:
+    code: '142085'
+    name: 逗子市
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '142085'
+    bank_url: https://www.city.zushi.kanagawa.jp/kurashi/sumai/1002149/1002164/1002173.html
+    bank_status: available
+    map_query: 神奈川県逗子市
+  operator_evidence:
+    quote: 公式ドメイン www.city.zushi.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.zushi.kanagawa.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.zushi.kanagawa.jp/kurashi/sumai/1002149/1002164/1002173.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.zushi.kanagawa.jp
+  max_pages: 30
+- id: kanagawa-142107
+  name: 三浦市空き家バンク
+  operator: 三浦市
+  operator_kind: municipality
+  official_url: https://www.city.miura.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '142107'
+    name: 三浦市
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '142107'
+    bank_url: https://www.city.miura.kanagawa.jp/
+    bank_status: none
+    map_query: 神奈川県三浦市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.miura.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.miura.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-142115
+  name: 秦野市空き家バンク
+  operator: 秦野市
+  operator_kind: municipality
+  official_url: https://www.city.hadano.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '142115'
+    name: 秦野市
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '142115'
+    bank_url: https://www.city.hadano.kanagawa.jp/kurashi-tetsuzuki/sumai/3/index.html
+    bank_status: info
+    map_query: 神奈川県秦野市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.hadano.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.hadano.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-142123
+  name: 厚木市空き家バンク
+  operator: 厚木市
+  operator_kind: municipality
+  official_url: https://www.city.atsugi.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '142123'
+    name: 厚木市
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '142123'
+    bank_url: https://www.city.atsugi.kanagawa.jp/
+    bank_status: none
+    map_query: 神奈川県厚木市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.atsugi.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.atsugi.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-142131
+  name: 大和市空き家バンク
+  operator: 大和市
+  operator_kind: municipality
+  official_url: https://www.city.yamato.lg.jp/
+  policy: link_only
+  municipality:
+    code: '142131'
+    name: 大和市
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '142131'
+    bank_url: https://www.city.yamato.lg.jp/gyosei/kurashi/sumai/15069.html
+    bank_status: info
+    map_query: 神奈川県大和市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yamato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.yamato.lg.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-142140
+  name: 伊勢原市空き家バンク
+  operator: 伊勢原市
+  operator_kind: municipality
+  official_url: https://www.city.isehara.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '142140'
+    name: 伊勢原市
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '142140'
+    bank_url: https://www.city.isehara.kanagawa.jp/
+    bank_status: none
+    map_query: 神奈川県伊勢原市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.isehara.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.isehara.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-142158
+  name: 海老名市空き家バンク
+  operator: 海老名市
+  operator_kind: municipality
+  official_url: https://www.city.ebina.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '142158'
+    name: 海老名市
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '142158'
+    bank_url: https://www.city.ebina.kanagawa.jp/
+    bank_status: none
+    map_query: 神奈川県海老名市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ebina.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.ebina.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-142166
+  name: 座間市空き家バンク
+  operator: 座間市
+  operator_kind: municipality
+  official_url: https://www.city.zama.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '142166'
+    name: 座間市
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '142166'
+    bank_url: https://www.city.zama.kanagawa.jp/kurashi/sumai/akiya/index.html
+    bank_status: info
+    map_query: 神奈川県座間市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.zama.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.zama.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-142174
+  name: 南足柄市空き家バンク
+  operator: 南足柄市
+  operator_kind: municipality
+  official_url: https://www.city.minamiashigara.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '142174'
+    name: 南足柄市
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '142174'
+    bank_url: https://www.city.minamiashigara.kanagawa.jp/
+    bank_status: none
+    map_query: 神奈川県南足柄市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.minamiashigara.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.minamiashigara.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-142182
+  name: 綾瀬市空き家バンク
+  operator: 綾瀬市
+  operator_kind: municipality
+  official_url: https://www.city.ayase.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '142182'
+    name: 綾瀬市
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '142182'
+    bank_url: https://www.city.ayase.kanagawa.jp/
+    bank_status: none
+    map_query: 神奈川県綾瀬市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ayase.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.ayase.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-143014
+  name: 葉山町空き家バンク
+  operator: 葉山町
+  operator_kind: municipality
+  official_url: https://www.town.hayama.lg.jp/
+  policy: link_only
+  municipality:
+    code: '143014'
+    name: 葉山町
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '143014'
+    bank_url: https://www.town.hayama.lg.jp/
+    bank_status: none
+    map_query: 神奈川県葉山町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.hayama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.hayama.lg.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-143219
+  name: 寒川町空き家バンク
+  operator: 寒川町
+  operator_kind: municipality
+  official_url: https://www.town.samukawa.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '143219'
+    name: 寒川町
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '143219'
+    bank_url: https://www.town.samukawa.kanagawa.jp/
+    bank_status: none
+    map_query: 神奈川県寒川町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.samukawa.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.samukawa.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-143413
+  name: 大磯町空き家バンク
+  operator: 大磯町
+  operator_kind: municipality
+  official_url: https://www.town.oiso.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '143413'
+    name: 大磯町
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '143413'
+    bank_url: https://www.town.oiso.kanagawa.jp/
+    bank_status: none
+    map_query: 神奈川県大磯町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.oiso.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.oiso.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-143421
+  name: 二宮町空き家バンク
+  operator: 二宮町
+  operator_kind: municipality
+  official_url: https://www.town.ninomiya.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '143421'
+    name: 二宮町
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '143421'
+    bank_url: https://www.town.ninomiya.kanagawa.jp/category/9-0-0-0-0-0-0-0-0-0.html
+    bank_status: info
+    map_query: 神奈川県二宮町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ninomiya.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.ninomiya.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-143618
+  name: 中井町空き家バンク
+  operator: 中井町
+  operator_kind: municipality
+  official_url: https://www.town.nakai.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '143618'
+    name: 中井町
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '143618'
+    bank_url: https://www.town.nakai.kanagawa.jp/
+    bank_status: none
+    map_query: 神奈川県中井町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.nakai.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.nakai.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-143626
+  name: 大井町空き家バンク
+  operator: 大井町
+  operator_kind: municipality
+  official_url: https://www.town.oi.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '143626'
+    name: 大井町
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '143626'
+    bank_url: https://www.town.oi.kanagawa.jp/life/1/14/86/
+    bank_status: info
+    map_query: 神奈川県大井町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.oi.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.oi.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-143634
+  name: 松田町空き家バンク
+  operator: 松田町
+  operator_kind: municipality
+  official_url: https://town.matsuda.kanagawa.jp/
+  policy: crawl
+  municipality:
+    code: '143634'
+    name: 松田町
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '143634'
+    bank_url: https://town.matsuda.kanagawa.jp/site/teiju-syoushi/akiya-chintai.html
+    bank_status: available
+    map_query: 神奈川県松田町
+  operator_evidence:
+    quote: 神奈川県内の市町村に掲載された公式サイト（town.matsuda.kanagawa.jp）
+    url: https://www.pref.kanagawa.jp/docs/ie2/cnt/f530001/p780102.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://town.matsuda.kanagawa.jp/site/teiju-syoushi/akiya-chintai.html
+    kind: listing_index
+  allow_hosts:
+  - town.matsuda.kanagawa.jp
+  max_pages: 30
+- id: kanagawa-143642
+  name: 山北町空き家バンク
+  operator: 山北町
+  operator_kind: municipality
+  official_url: https://www.town.yamakita.kanagawa.jp/
+  policy: crawl
+  municipality:
+    code: '143642'
+    name: 山北町
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '143642'
+    bank_url: http://www.town.yamakita.kanagawa.jp/0000007345.html
+    bank_status: available
+    map_query: 神奈川県山北町
+  operator_evidence:
+    quote: 公式ドメイン www.town.yamakita.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.yamakita.kanagawa.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: http://www.town.yamakita.kanagawa.jp/0000007345.html
+    kind: listing_detail
+  allow_hosts:
+  - www.town.yamakita.kanagawa.jp
+  max_pages: 30
+- id: kanagawa-143669
+  name: 開成町空き家バンク
+  operator: 開成町
+  operator_kind: municipality
+  official_url: https://www.town.kaisei.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '143669'
+    name: 開成町
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '143669'
+    bank_url: https://www.town.kaisei.kanagawa.jp/
+    bank_status: none
+    map_query: 神奈川県開成町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kaisei.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kaisei.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-143821
+  name: 箱根町空き家バンク
+  operator: 箱根町
+  operator_kind: municipality
+  official_url: https://www.town.hakone.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '143821'
+    name: 箱根町
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '143821'
+    bank_url: https://www.town.hakone.kanagawa.jp/
+    bank_status: none
+    map_query: 神奈川県箱根町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.hakone.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.hakone.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-143839
+  name: 真鶴町空き家バンク
+  operator: 真鶴町
+  operator_kind: municipality
+  official_url: https://www.town.manazuru.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '143839'
+    name: 真鶴町
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '143839'
+    bank_url: https://www.town.manazuru.kanagawa.jp/
+    bank_status: none
+    map_query: 神奈川県真鶴町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.manazuru.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.manazuru.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-143847
+  name: 湯河原町空き家バンク
+  operator: 湯河原町
+  operator_kind: municipality
+  official_url: https://www.town.yugawara.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '143847'
+    name: 湯河原町
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '143847'
+    bank_url: https://www.town.yugawara.kanagawa.jp/
+    bank_status: none
+    map_query: 神奈川県湯河原町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yugawara.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.yugawara.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-144011
+  name: 愛川町空き家バンク
+  operator: 愛川町
+  operator_kind: municipality
+  official_url: https://www.town.aikawa.kanagawa.jp/
+  policy: link_only
+  municipality:
+    code: '144011'
+    name: 愛川町
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '144011'
+    bank_url: https://www.town.aikawa.kanagawa.jp/
+    bank_status: none
+    map_query: 神奈川県愛川町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.aikawa.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.aikawa.kanagawa.jp/
+    checked_on: '2026-09-11'
+- id: kanagawa-144029
+  name: 清川村空き家バンク
+  operator: 清川村
+  operator_kind: municipality
+  official_url: https://www.town.kiyokawa.kanagawa.jp/
+  policy: crawl
+  municipality:
+    code: '144029'
+    name: 清川村
+    prefecture: 神奈川県
+    prefecture_slug: kanagawa
+    slug: '144029'
+    bank_url: https://www.town.kiyokawa.kanagawa.jp/Life_procedure/sumaijutaku/2375.html
+    bank_status: available
+    map_query: 神奈川県清川村
+  operator_evidence:
+    quote: 神奈川県内の市町村に掲載された公式サイト（www.town.kiyokawa.kanagawa.jp）
+    url: https://www.pref.kanagawa.jp/docs/ie2/cnt/f530001/p780102.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.kiyokawa.kanagawa.jp/Life_procedure/sumaijutaku/2375.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.kiyokawa.kanagawa.jp
+  max_pages: 30

@@ -1,0 +1,382 @@
+prefecture: 山梨県
+prefecture_slug: yamanashi
+created_at: '2026-09-11T06:32:54+00:00'
+candidates:
+- key: '192015'
+  label: 山梨県 甲府市
+  url: https://www.city.kofu.yamanashi.jp/nanboku/machi/sumai/kekaku/aki.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kofu.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kofu.yamanashi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '192023'
+  label: 山梨県 富士吉田市
+  url: https://www.city.fujiyoshida.yamanashi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.fujiyoshida.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.fujiyoshida.yamanashi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '192040'
+  label: 山梨県 都留市
+  url: https://www.city.tsuru.yamanashi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tsuru.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.tsuru.yamanashi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '192058'
+  label: 山梨県 山梨市
+  url: https://www.city.yamanashi.yamanashi.jp/life/1/6/175/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yamanashi.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.yamanashi.yamanashi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '192066'
+  label: 山梨県 大月市
+  url: https://www.city.otsuki.yamanashi.jp/shisei/shisaku_keikaku/akiyabanku.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.89
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.otsuki.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.otsuki.yamanashi.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '192074'
+  label: 山梨県 韮崎市
+  url: https://www.city.nirasaki.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nirasaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.nirasaki.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '192082'
+  label: 山梨県 南アルプス市
+  url: https://www.city.minami-alps.yamanashi.jp/iju/akiyabank/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 山梨県市町村リンクページに掲載された公式サイト（www.city.minami-alps.yamanashi.jp）
+  evidence_url: https://www.pref.yamanashi.jp/link/link_city.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '192091'
+  label: 山梨県 北杜市
+  url: https://www.city.hokuto.yamanashi.jp/teijyu_ijyu/bank/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.91
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hokuto.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.hokuto.yamanashi.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '192104'
+  label: 山梨県 甲斐市
+  url: https://www.city.kai.yamanashi.jp/life/1/12/61/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kai.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kai.yamanashi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '192112'
+  label: 山梨県 笛吹市
+  url: https://www.city.fuefuki.yamanashi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.fuefuki.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.fuefuki.yamanashi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '192121'
+  label: 山梨県 上野原市
+  url: https://www.city.uenohara.yamanashi.jp/site/iju/1514.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.uenohara.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.uenohara.yamanashi.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '192139'
+  label: 山梨県 甲州市
+  url: https://www.city.koshu.yamanashi.jp/category/bunya/sumai/akiya/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.koshu.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.koshu.yamanashi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '192147'
+  label: 山梨県 中央市
+  url: https://www.city.chuo.lg.jp/kurashi/sumai/akiyatoutaisaku/index.html
+  page_class: spa
+  class_label: JavaScript 描画（未対応）
+  confidence: 0.75
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.chuo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.chuo.lg.jp/
+  reason: JavaScript 描画のため静的 HTML に物件が無い。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '193461'
+  label: 山梨県 市川三郷町
+  url: https://www.town.ichikawamisato.yamanashi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ichikawamisato.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ichikawamisato.yamanashi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '193640'
+  label: 山梨県 早川町
+  url: https://www.town.hayakawa.yamanashi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hayakawa.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.hayakawa.yamanashi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '193658'
+  label: 山梨県 身延町
+  url: https://www.town.minobu.lg.jp/akiya/ijyu/10369.html
+  page_class: listing_detail
+  class_label: 物件詳細（静的）
+  confidence: 0.9
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.minobu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.minobu.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '193666'
+  label: 山梨県 南部町
+  url: https://www.town.nanbu.yamanashi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nanbu.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.nanbu.yamanashi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '193682'
+  label: 山梨県 富士川町
+  url: https://www.town.fujikawa.yamanashi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.fujikawa.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.fujikawa.yamanashi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '193844'
+  label: 山梨県 昭和町
+  url: https://www.town.showa.yamanashi.jp/soshiki/9/1800.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.showa.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.showa.yamanashi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '194221'
+  label: 山梨県 道志村
+  url: http://www.vill.doshi.lg.jp/burner/log.php?id=27&url=http%3A%2F%2Fwww.vill.doshi.lg.jp%2Fakiyabank%2F
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.89
+  operator_kind: municipality
+  evidence_quote: 山梨県市町村リンクページに掲載された公式サイト（www.vill.doshi.lg.jp）
+  evidence_url: https://www.pref.yamanashi.jp/link/link_city.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '194239'
+  label: 山梨県 西桂町
+  url: https://www.town.nishikatsura.yamanashi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nishikatsura.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.nishikatsura.yamanashi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '194247'
+  label: 山梨県 忍野村
+  url: https://www.vill.oshino.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.oshino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.oshino.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '194255'
+  label: 山梨県 山中湖村
+  url: https://www.vill.yamanakako.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.yamanakako.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.yamanakako.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '194298'
+  label: 山梨県 鳴沢村
+  url: https://www.vill.narusawa.yamanashi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.narusawa.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.narusawa.yamanashi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '194301'
+  label: 山梨県 富士河口湖町
+  url: https://www.town.fujikawaguchiko.lg.jp/life/info.php?if_id=67&no=12
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.fujikawaguchiko.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.fujikawaguchiko.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '194425'
+  label: 山梨県 小菅村
+  url: https://www.vill.kosuge.yamanashi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 山梨県市町村リンクページに掲載された公式サイト（www.vill.kosuge.yamanashi.jp）
+  evidence_url: https://www.pref.yamanashi.jp/link/link_city.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '194433'
+  label: 山梨県 丹波山村
+  url: https://www.vill.tabayama.yamanashi.jp/gyousei/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.tabayama.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.tabayama.yamanashi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

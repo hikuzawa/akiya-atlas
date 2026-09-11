@@ -1,0 +1,877 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: gifu-212016
+  name: 岐阜市空き家バンク
+  operator: 岐阜市
+  operator_kind: municipality
+  official_url: https://www.city.gifu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '212016'
+    name: 岐阜市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212016'
+    bank_url: https://www.city.gifu.lg.jp/kurashi/sumai/1002445/index.html
+    bank_status: info
+    map_query: 岐阜県岐阜市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.gifu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.gifu.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-212024
+  name: 大垣市空き家バンク
+  operator: 大垣市
+  operator_kind: municipality
+  official_url: https://www.city.ogaki.lg.jp/
+  policy: link_only
+  municipality:
+    code: '212024'
+    name: 大垣市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212024'
+    bank_url: https://www.city.ogaki.lg.jp/
+    bank_status: none
+    map_query: 岐阜県大垣市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ogaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.ogaki.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-212032
+  name: 高山市空き家バンク
+  operator: 高山市
+  operator_kind: municipality
+  official_url: https://www.city.takayama.lg.jp/
+  policy: link_only
+  municipality:
+    code: '212032'
+    name: 高山市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212032'
+    bank_url: https://www.city.takayama.lg.jp/
+    bank_status: none
+    map_query: 岐阜県高山市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.takayama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.takayama.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-212041
+  name: 多治見市空き家バンク
+  operator: 多治見市
+  operator_kind: municipality
+  official_url: https://www.city.tajimi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '212041'
+    name: 多治見市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212041'
+    bank_url: https://www.city.tajimi.lg.jp/kurashi_tetsuduzuki/sumai_seikatsu_dobutsu/1006141/index.html
+    bank_status: info
+    map_query: 岐阜県多治見市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tajimi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.tajimi.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-212059
+  name: 関市空き家バンク
+  operator: 関市
+  operator_kind: municipality
+  official_url: https://www.city.seki.lg.jp/
+  policy: link_only
+  municipality:
+    code: '212059'
+    name: 関市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212059'
+    bank_url: https://www.city.seki.lg.jp/0000019414.html
+    bank_status: info
+    map_query: 岐阜県関市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.seki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.seki.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-212067
+  name: 中津川市空き家バンク
+  operator: 中津川市
+  operator_kind: municipality
+  official_url: https://www.city.nakatsugawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '212067'
+    name: 中津川市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212067'
+    bank_url: https://www.city.nakatsugawa.lg.jp/life/life/1/index.html
+    bank_status: info
+    map_query: 岐阜県中津川市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nakatsugawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.nakatsugawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-212075
+  name: 美濃市空き家バンク
+  operator: 美濃市
+  operator_kind: municipality
+  official_url: https://www.city.mino.gifu.jp/
+  policy: link_only
+  municipality:
+    code: '212075'
+    name: 美濃市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212075'
+    bank_url: https://www.city.mino.gifu.jp/
+    bank_status: none
+    map_query: 岐阜県美濃市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.mino.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.mino.gifu.jp/
+    checked_on: '2026-09-11'
+- id: gifu-212083
+  name: 瑞浪市空き家バンク
+  operator: 瑞浪市
+  operator_kind: municipality
+  official_url: https://www.city.mizunami.lg.jp/
+  policy: link_only
+  municipality:
+    code: '212083'
+    name: 瑞浪市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212083'
+    bank_url: https://www.city.mizunami.lg.jp/kurashi/sumai/1001528/index.html
+    bank_status: info
+    map_query: 岐阜県瑞浪市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.mizunami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.mizunami.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-212091
+  name: 羽島市空き家バンク
+  operator: 羽島市
+  operator_kind: municipality
+  official_url: https://www.city.hashima.lg.jp/
+  policy: link_only
+  municipality:
+    code: '212091'
+    name: 羽島市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212091'
+    bank_url: https://www.city.hashima.lg.jp/
+    bank_status: none
+    map_query: 岐阜県羽島市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.hashima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.hashima.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-212105
+  name: 恵那市空き家バンク
+  operator: 恵那市
+  operator_kind: municipality
+  official_url: https://www.city.ena.lg.jp/
+  policy: link_only
+  municipality:
+    code: '212105'
+    name: 恵那市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212105'
+    bank_url: https://www.city.ena.lg.jp/
+    bank_status: none
+    map_query: 岐阜県恵那市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ena.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.ena.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-212113
+  name: 美濃加茂市空き家バンク
+  operator: 美濃加茂市
+  operator_kind: municipality
+  official_url: https://www.city.minokamo.lg.jp/
+  policy: link_only
+  municipality:
+    code: '212113'
+    name: 美濃加茂市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212113'
+    bank_url: https://www.city.minokamo.lg.jp/
+    bank_status: none
+    map_query: 岐阜県美濃加茂市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.minokamo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.minokamo.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-212121
+  name: 土岐市空き家バンク
+  operator: 土岐市
+  operator_kind: municipality
+  official_url: https://www.city.toki.lg.jp/
+  policy: link_only
+  municipality:
+    code: '212121'
+    name: 土岐市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212121'
+    bank_url: https://www.city.toki.lg.jp/
+    bank_status: none
+    map_query: 岐阜県土岐市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.toki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.toki.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-212130
+  name: 各務原市空き家バンク
+  operator: 各務原市
+  operator_kind: municipality
+  official_url: https://www.city.kakamigahara.lg.jp/
+  policy: link_only
+  municipality:
+    code: '212130'
+    name: 各務原市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212130'
+    bank_url: https://www.city.kakamigahara.lg.jp/
+    bank_status: none
+    map_query: 岐阜県各務原市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kakamigahara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kakamigahara.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-212148
+  name: 可児市空き家バンク
+  operator: 可児市
+  operator_kind: municipality
+  official_url: https://www.city.kani.lg.jp/
+  policy: link_only
+  municipality:
+    code: '212148'
+    name: 可児市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212148'
+    bank_url: https://www.city.kani.lg.jp/24347.htm
+    bank_status: spa_unsupported
+    map_query: 岐阜県可児市
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kani.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kani.lg.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: akiya-athome.jp
+    url: https://kani-c21214.akiya-athome.jp/
+  - label: homes.co.jp
+    url: https://www.homes.co.jp/akiyabank/gifu/kani/
+- id: gifu-212156
+  name: 山県市空き家バンク
+  operator: 山県市
+  operator_kind: municipality
+  official_url: https://www.city.yamagata.gifu.jp/
+  policy: link_only
+  municipality:
+    code: '212156'
+    name: 山県市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212156'
+    bank_url: https://www.city.yamagata.gifu.jp/site/yamanavi/list9-35.html
+    bank_status: info
+    map_query: 岐阜県山県市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yamagata.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.yamagata.gifu.jp/
+    checked_on: '2026-09-11'
+- id: gifu-212164
+  name: 瑞穂市空き家バンク
+  operator: 瑞穂市
+  operator_kind: municipality
+  official_url: https://www.city.mizuho.lg.jp/
+  policy: link_only
+  municipality:
+    code: '212164'
+    name: 瑞穂市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212164'
+    bank_url: https://www.city.mizuho.lg.jp/
+    bank_status: none
+    map_query: 岐阜県瑞穂市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.mizuho.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.mizuho.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-212172
+  name: 飛騨市空き家バンク
+  operator: 飛騨市
+  operator_kind: municipality
+  official_url: https://www.city.hida.gifu.jp/
+  policy: link_only
+  municipality:
+    code: '212172'
+    name: 飛騨市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212172'
+    bank_url: https://www.city.hida.gifu.jp/
+    bank_status: none
+    map_query: 岐阜県飛騨市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.hida.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.hida.gifu.jp/
+    checked_on: '2026-09-11'
+- id: gifu-212181
+  name: 本巣市空き家バンク
+  operator: 本巣市
+  operator_kind: municipality
+  official_url: https://www.city.motosu.lg.jp/
+  policy: crawl
+  municipality:
+    code: '212181'
+    name: 本巣市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212181'
+    bank_url: https://www.city.motosu.lg.jp/iju/0000000178.html
+    bank_status: available
+    map_query: 岐阜県本巣市
+  operator_evidence:
+    quote: 公式ドメイン www.city.motosu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.motosu.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.motosu.lg.jp/iju/0000000178.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.motosu.lg.jp
+  max_pages: 30
+- id: gifu-212199
+  name: 郡上市空き家バンク
+  operator: 郡上市
+  operator_kind: municipality
+  official_url: https://www.city.gujo.gifu.jp/
+  policy: link_only
+  municipality:
+    code: '212199'
+    name: 郡上市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212199'
+    bank_url: https://www.city.gujo.gifu.jp/life/housing/
+    bank_status: info
+    map_query: 岐阜県郡上市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.gujo.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.gujo.gifu.jp/
+    checked_on: '2026-09-11'
+- id: gifu-212202
+  name: 下呂市空き家バンク
+  operator: 下呂市
+  operator_kind: municipality
+  official_url: https://www.city.gero.lg.jp/
+  policy: link_only
+  municipality:
+    code: '212202'
+    name: 下呂市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212202'
+    bank_url: https://www.city.gero.lg.jp/
+    bank_status: none
+    map_query: 岐阜県下呂市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.gero.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.gero.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-212211
+  name: 海津市空き家バンク
+  operator: 海津市
+  operator_kind: municipality
+  official_url: https://www.city.kaizu.lg.jp/
+  policy: crawl
+  municipality:
+    code: '212211'
+    name: 海津市
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '212211'
+    bank_url: https://www.city.kaizu.lg.jp/kurashi/0000001552.html
+    bank_status: available
+    map_query: 岐阜県海津市
+  operator_evidence:
+    quote: 公式ドメイン www.city.kaizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kaizu.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.kaizu.lg.jp/kurashi/0000001552.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.kaizu.lg.jp
+  max_pages: 30
+- id: gifu-213021
+  name: 岐南町空き家バンク
+  operator: 岐南町
+  operator_kind: municipality
+  official_url: https://www.town.ginan.lg.jp/
+  policy: link_only
+  municipality:
+    code: '213021'
+    name: 岐南町
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '213021'
+    bank_url: https://www.town.ginan.lg.jp/
+    bank_status: none
+    map_query: 岐阜県岐南町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ginan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.ginan.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-213039
+  name: 笠松町空き家バンク
+  operator: 笠松町
+  operator_kind: municipality
+  official_url: https://www.town.kasamatsu.gifu.jp/
+  policy: link_only
+  municipality:
+    code: '213039'
+    name: 笠松町
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '213039'
+    bank_url: https://www.town.kasamatsu.gifu.jp/
+    bank_status: none
+    map_query: 岐阜県笠松町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kasamatsu.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kasamatsu.gifu.jp/
+    checked_on: '2026-09-11'
+- id: gifu-213411
+  name: 養老町空き家バンク
+  operator: 養老町
+  operator_kind: municipality
+  official_url: https://www.town.yoro.gifu.jp/
+  policy: crawl
+  municipality:
+    code: '213411'
+    name: 養老町
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '213411'
+    bank_url: https://www.town.yoro.gifu.jp/life/living/1001778/1001779.html
+    bank_status: available
+    map_query: 岐阜県養老町
+  operator_evidence:
+    quote: 公式ドメイン www.town.yoro.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.yoro.gifu.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.yoro.gifu.jp/life/living/1001778/1001779.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.yoro.gifu.jp
+  max_pages: 30
+- id: gifu-213616
+  name: 垂井町空き家バンク
+  operator: 垂井町
+  operator_kind: municipality
+  official_url: https://www.town.tarui.lg.jp/
+  policy: link_only
+  municipality:
+    code: '213616'
+    name: 垂井町
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '213616'
+    bank_url: https://www.town.tarui.lg.jp/life/1/13/57/
+    bank_status: info
+    map_query: 岐阜県垂井町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.tarui.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.tarui.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-213624
+  name: 関ケ原町空き家バンク
+  operator: 関ケ原町
+  operator_kind: municipality
+  official_url: https://www.town.sekigahara.gifu.jp/
+  policy: link_only
+  municipality:
+    code: '213624'
+    name: 関ケ原町
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '213624'
+    bank_url: https://www.town.sekigahara.gifu.jp/4558.htm
+    bank_status: spa_unsupported
+    map_query: 岐阜県関ケ原町
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.sekigahara.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.sekigahara.gifu.jp/
+    checked_on: '2026-09-11'
+- id: gifu-213811
+  name: 神戸町空き家バンク
+  operator: 神戸町
+  operator_kind: municipality
+  official_url: https://www.town.godo.gifu.jp/
+  policy: link_only
+  municipality:
+    code: '213811'
+    name: 神戸町
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '213811'
+    bank_url: https://www.town.godo.gifu.jp/life/other/other22.html
+    bank_status: info
+    map_query: 岐阜県神戸町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.godo.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.godo.gifu.jp/
+    checked_on: '2026-09-11'
+- id: gifu-213829
+  name: 輪之内町空き家バンク
+  operator: 輪之内町
+  operator_kind: municipality
+  official_url: https://town.wanouchi.gifu.jp/
+  policy: link_only
+  municipality:
+    code: '213829'
+    name: 輪之内町
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '213829'
+    bank_url: https://town.wanouchi.gifu.jp/portal/life-process/empty-house/
+    bank_status: info
+    map_query: 岐阜県輪之内町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 岐阜県の市町村一覧に掲載された公式サイト（town.wanouchi.gifu.jp）
+    url: https://www.pref.gifu.lg.jp/page/6058.html
+    checked_on: '2026-09-11'
+- id: gifu-213837
+  name: 安八町空き家バンク
+  operator: 安八町
+  operator_kind: municipality
+  official_url: https://www.town.anpachi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '213837'
+    name: 安八町
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '213837'
+    bank_url: https://www.town.anpachi.lg.jp/
+    bank_status: none
+    map_query: 岐阜県安八町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.anpachi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.anpachi.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-214019
+  name: 揖斐川町空き家バンク
+  operator: 揖斐川町
+  operator_kind: municipality
+  official_url: https://www.town.ibigawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '214019'
+    name: 揖斐川町
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '214019'
+    bank_url: https://www.town.ibigawa.lg.jp/life/1/4/28/
+    bank_status: info
+    map_query: 岐阜県揖斐川町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ibigawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.ibigawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-214035
+  name: 大野町空き家バンク
+  operator: 大野町
+  operator_kind: municipality
+  official_url: https://www.town-ono.jp/
+  policy: link_only
+  municipality:
+    code: '214035'
+    name: 大野町
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '214035'
+    bank_url: https://www.town-ono.jp/0000001138.html
+    bank_status: info
+    map_query: 岐阜県大野町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 岐阜県の市町村一覧に掲載された公式サイト（www.town-ono.jp）
+    url: https://www.pref.gifu.lg.jp/page/6058.html
+    checked_on: '2026-09-11'
+- id: gifu-214043
+  name: 池田町空き家バンク
+  operator: 池田町
+  operator_kind: municipality
+  official_url: https://www.town.ikeda.gifu.jp/
+  policy: link_only
+  municipality:
+    code: '214043'
+    name: 池田町
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '214043'
+    bank_url: https://www.town.ikeda.gifu.jp/
+    bank_status: none
+    map_query: 岐阜県池田町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 岐阜県の市町村一覧に掲載された公式サイト（www.town.ikeda.gifu.jp）
+    url: https://www.pref.gifu.lg.jp/page/6058.html
+    checked_on: '2026-09-11'
+- id: gifu-214213
+  name: 北方町空き家バンク
+  operator: 北方町
+  operator_kind: municipality
+  official_url: https://www.town.kitagata.gifu.jp/
+  policy: link_only
+  municipality:
+    code: '214213'
+    name: 北方町
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '214213'
+    bank_url: https://www.town.kitagata.gifu.jp/
+    bank_status: none
+    map_query: 岐阜県北方町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kitagata.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kitagata.gifu.jp/
+    checked_on: '2026-09-11'
+- id: gifu-215015
+  name: 坂祝町空き家バンク
+  operator: 坂祝町
+  operator_kind: municipality
+  official_url: https://www.town.sakahogi.gifu.jp/
+  policy: link_only
+  municipality:
+    code: '215015'
+    name: 坂祝町
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '215015'
+    bank_url: https://www.town.sakahogi.gifu.jp/
+    bank_status: none
+    map_query: 岐阜県坂祝町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.sakahogi.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.sakahogi.gifu.jp/
+    checked_on: '2026-09-11'
+- id: gifu-215023
+  name: 富加町空き家バンク
+  operator: 富加町
+  operator_kind: municipality
+  official_url: https://www.town.tomika.gifu.jp/
+  policy: link_only
+  municipality:
+    code: '215023'
+    name: 富加町
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '215023'
+    bank_url: https://www.town.tomika.gifu.jp/docs/436.html
+    bank_status: info
+    map_query: 岐阜県富加町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.tomika.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.tomika.gifu.jp/
+    checked_on: '2026-09-11'
+- id: gifu-215031
+  name: 川辺町空き家バンク
+  operator: 川辺町
+  operator_kind: municipality
+  official_url: https://www.kawabe-gifu.jp/
+  policy: crawl
+  municipality:
+    code: '215031'
+    name: 川辺町
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '215031'
+    bank_url: https://www.kawabe-gifu.jp/?page_id=16351
+    bank_status: available
+    map_query: 岐阜県川辺町
+  operator_evidence:
+    quote: 岐阜県の市町村一覧に掲載された公式サイト（www.kawabe-gifu.jp）
+    url: https://www.pref.gifu.lg.jp/page/6058.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.kawabe-gifu.jp/?page_id=16351
+    kind: listing_index
+  allow_hosts:
+  - www.kawabe-gifu.jp
+  max_pages: 30
+- id: gifu-215040
+  name: 七宗町空き家バンク
+  operator: 七宗町
+  operator_kind: municipality
+  official_url: https://www.hichiso.jp/
+  policy: link_only
+  municipality:
+    code: '215040'
+    name: 七宗町
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '215040'
+    bank_url: https://www.hichiso.jp/top/kanko/settled/akiya2/
+    bank_status: info
+    map_query: 岐阜県七宗町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 岐阜県の市町村一覧に掲載された公式サイト（www.hichiso.jp）
+    url: https://www.pref.gifu.lg.jp/page/6058.html
+    checked_on: '2026-09-11'
+- id: gifu-215058
+  name: 八百津町空き家バンク
+  operator: 八百津町
+  operator_kind: municipality
+  official_url: https://www.town.yaotsu.lg.jp/
+  policy: crawl
+  municipality:
+    code: '215058'
+    name: 八百津町
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '215058'
+    bank_url: https://akiya-yaotsu.jp/
+    bank_status: available
+    map_query: 岐阜県八百津町
+  operator_evidence:
+    quote: 公式サイト（www.town.yaotsu.lg.jp）から空き家バンクとして案内されているリンク
+    url: https://www.town.yaotsu.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://akiya-yaotsu.jp/
+    kind: listing_index
+  allow_hosts:
+  - akiya-yaotsu.jp
+  max_pages: 30
+- id: gifu-215066
+  name: 白川町空き家バンク
+  operator: 白川町
+  operator_kind: municipality
+  official_url: https://www.town.shirakawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '215066'
+    name: 白川町
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '215066'
+    bank_url: https://www.town.shirakawa.lg.jp/
+    bank_status: none
+    map_query: 岐阜県白川町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shirakawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.shirakawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-215074
+  name: 東白川村空き家バンク
+  operator: 東白川村
+  operator_kind: municipality
+  official_url: https://www.vill.higashishirakawa.gifu.jp/
+  policy: link_only
+  municipality:
+    code: '215074'
+    name: 東白川村
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '215074'
+    bank_url: https://www.vill.higashishirakawa.gifu.jp/kurashi/sumai/akiya/
+    bank_status: info
+    map_query: 岐阜県東白川村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.higashishirakawa.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.higashishirakawa.gifu.jp/
+    checked_on: '2026-09-11'
+- id: gifu-215210
+  name: 御嵩町空き家バンク
+  operator: 御嵩町
+  operator_kind: municipality
+  official_url: https://www.town.mitake.lg.jp/
+  policy: link_only
+  municipality:
+    code: '215210'
+    name: 御嵩町
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '215210'
+    bank_url: https://www.town.mitake.lg.jp/
+    bank_status: none
+    map_query: 岐阜県御嵩町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.mitake.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.mitake.lg.jp/
+    checked_on: '2026-09-11'
+- id: gifu-216046
+  name: 白川村空き家バンク
+  operator: 白川村
+  operator_kind: municipality
+  official_url: https://www.vill.shirakawa.lg.jp/
+  policy: crawl
+  municipality:
+    code: '216046'
+    name: 白川村
+    prefecture: 岐阜県
+    prefecture_slug: gifu
+    slug: '216046'
+    bank_url: https://www.vill.shirakawa.lg.jp/1402.htm
+    bank_status: available
+    map_query: 岐阜県白川村
+  operator_evidence:
+    quote: 公式ドメイン www.vill.shirakawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.vill.shirakawa.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.vill.shirakawa.lg.jp/1402.htm
+    kind: listing_index
+  allow_hosts:
+  - www.vill.shirakawa.lg.jp
+  max_pages: 30

@@ -1,0 +1,30 @@
+{
+  "command": "crawl",
+  "errors": [
+    "https://www.town.mutsuzawa.chiba.jp/akiya/page/2: HTTP 404",
+    "https://www.city.kaizu.lg.jp/kurashi/0000001552.html: robots.txt を取得できないため今回は巡回しない"
+  ],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-11T05:15:50Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "crawl": {
+      "changed": 11,
+      "errors": 2,
+      "fetched": 380,
+      "not_modified": 0,
+      "requests": 687,
+      "skipped_link_only": 1437,
+      "unchanged": 369,
+      "workers": 8
+    }
+  },
+  "started_at": "2026-09-11T05:12:23Z"
+}

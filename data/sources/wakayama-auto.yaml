@@ -1,0 +1,638 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: wakayama-302015
+  name: 和歌山市空き家バンク
+  operator: 和歌山市
+  operator_kind: municipality
+  official_url: https://www.city.wakayama.wakayama.jp/
+  policy: link_only
+  municipality:
+    code: '302015'
+    name: 和歌山市
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '302015'
+    bank_url: https://www.city.wakayama.wakayama.jp/
+    bank_status: none
+    map_query: 和歌山県和歌山市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.wakayama.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.wakayama.wakayama.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-302023
+  name: 海南市空き家バンク
+  operator: 海南市
+  operator_kind: municipality
+  official_url: https://www.city.kainan.lg.jp/
+  policy: link_only
+  municipality:
+    code: '302023'
+    name: 海南市
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '302023'
+    bank_url: https://www.city.kainan.lg.jp/
+    bank_status: none
+    map_query: 和歌山県海南市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kainan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kainan.lg.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-302031
+  name: 橋本市空き家バンク
+  operator: 橋本市
+  operator_kind: municipality
+  official_url: https://www.city.hashimoto.lg.jp/
+  policy: link_only
+  municipality:
+    code: '302031'
+    name: 橋本市
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '302031'
+    bank_url: https://www.city.hashimoto.lg.jp/life_mokuteki/hikkoshi_sumai/12804.html
+    bank_status: info
+    map_query: 和歌山県橋本市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.hashimoto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.hashimoto.lg.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-302040
+  name: 有田市空き家バンク
+  operator: 有田市
+  operator_kind: municipality
+  official_url: https://www.city.arida.lg.jp/
+  policy: link_only
+  municipality:
+    code: '302040'
+    name: 有田市
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '302040'
+    bank_url: https://www.city.arida.lg.jp/
+    bank_status: none
+    map_query: 和歌山県有田市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.arida.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.arida.lg.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-302058
+  name: 御坊市空き家バンク
+  operator: 御坊市
+  operator_kind: municipality
+  official_url: https://www.city.gobo.lg.jp/
+  policy: link_only
+  municipality:
+    code: '302058'
+    name: 御坊市
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '302058'
+    bank_url: https://www.city.gobo.lg.jp/
+    bank_status: none
+    map_query: 和歌山県御坊市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.gobo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.gobo.lg.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-302066
+  name: 田辺市空き家バンク
+  operator: 田辺市
+  operator_kind: municipality
+  official_url: https://www.city.tanabe.lg.jp/
+  policy: link_only
+  municipality:
+    code: '302066'
+    name: 田辺市
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '302066'
+    bank_url: https://www.city.tanabe.lg.jp/
+    bank_status: none
+    map_query: 和歌山県田辺市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tanabe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.tanabe.lg.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-302074
+  name: 新宮市空き家バンク
+  operator: 新宮市
+  operator_kind: municipality
+  official_url: https://www.city.shingu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '302074'
+    name: 新宮市
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '302074'
+    bank_url: https://www.city.shingu.lg.jp/
+    bank_status: none
+    map_query: 和歌山県新宮市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.shingu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.shingu.lg.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-302082
+  name: 紀の川市空き家バンク
+  operator: 紀の川市
+  operator_kind: municipality
+  official_url: https://www.city.kinokawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '302082'
+    name: 紀の川市
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '302082'
+    bank_url: https://www.city.kinokawa.lg.jp/006/2021-0721-1820-73.html
+    bank_status: info
+    map_query: 和歌山県紀の川市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kinokawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kinokawa.lg.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: 全国版空き家バンク(株式会社LIFULL)
+    url: https://www.homes.co.jp/akiyabank/wakayama/kinokawa/
+  - label: 全国版空き家バンク(アットホーム株式会社)
+    url: https://www.akiya-athome.jp/buy/30/?gyosei_cd[]=30208&proc_search=
+  - label: 全国の空き家の活用事例(株式会社LIFULL)
+    url: https://www.homes.co.jp/akiyabank/usecase/
+- id: wakayama-302091
+  name: 岩出市空き家バンク
+  operator: 岩出市
+  operator_kind: municipality
+  official_url: https://www.city.iwade.lg.jp/
+  policy: link_only
+  municipality:
+    code: '302091'
+    name: 岩出市
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '302091'
+    bank_url: https://www.city.iwade.lg.jp/
+    bank_status: none
+    map_query: 和歌山県岩出市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.iwade.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.iwade.lg.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-303046
+  name: 紀美野町空き家バンク
+  operator: 紀美野町
+  operator_kind: municipality
+  official_url: https://www.town.kimino.wakayama.jp/
+  policy: crawl
+  municipality:
+    code: '303046'
+    name: 紀美野町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '303046'
+    bank_url: https://www.town.kimino.wakayama.jp/kurashi/iju/4338.html
+    bank_status: available
+    map_query: 和歌山県紀美野町
+  operator_evidence:
+    quote: 公式ドメイン www.town.kimino.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kimino.wakayama.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.kimino.wakayama.jp/kurashi/iju/4338.html
+    kind: listing_index
+    follow:
+    - pattern: https?://www\.town\.kimino\.wakayama\.jp/kurashi/iju/4338\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - www.town.kimino.wakayama.jp
+  max_pages: 30
+- id: wakayama-303411
+  name: かつらぎ町空き家バンク
+  operator: かつらぎ町
+  operator_kind: municipality
+  official_url: https://www.town.katsuragi.wakayama.jp/
+  policy: crawl
+  municipality:
+    code: '303411'
+    name: かつらぎ町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '303411'
+    bank_url: https://www.town.katsuragi.wakayama.jp/teijyu/020/010/2023-1011-1627-16.html
+    bank_status: available
+    map_query: 和歌山県かつらぎ町
+  operator_evidence:
+    quote: 公式ドメイン www.town.katsuragi.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.katsuragi.wakayama.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.katsuragi.wakayama.jp/teijyu/020/010/2023-1011-1627-16.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.katsuragi.wakayama.jp
+  max_pages: 30
+  external_links:
+  - label: 全国版空き家バンク(LIFULL HOME'S)
+    url: https://www.homes.co.jp/akiyabank/wakayama/ito_katsuragi/
+  - label: 全国版空き家バンク(アットホーム)
+    url: https://katsuragi-t30341.akiya-athome.jp/
+- id: wakayama-303437
+  name: 九度山町空き家バンク
+  operator: 九度山町
+  operator_kind: municipality
+  official_url: https://www.town.kudoyama.lg.jp/
+  policy: link_only
+  municipality:
+    code: '303437'
+    name: 九度山町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '303437'
+    bank_url: https://www.town.kudoyama.lg.jp/kikaku/seisaku/akiya-izyuu.html
+    bank_status: info
+    map_query: 和歌山県九度山町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kudoyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kudoyama.lg.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-303445
+  name: 高野町空き家バンク
+  operator: 高野町
+  operator_kind: municipality
+  official_url: https://www.town.koya.wakayama.jp/
+  policy: link_only
+  municipality:
+    code: '303445'
+    name: 高野町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '303445'
+    bank_url: https://www.town.koya.wakayama.jp/
+    bank_status: none
+    map_query: 和歌山県高野町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.koya.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.koya.wakayama.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-303615
+  name: 湯浅町空き家バンク
+  operator: 湯浅町
+  operator_kind: municipality
+  official_url: https://www.town.yuasa.wakayama.jp/
+  policy: link_only
+  municipality:
+    code: '303615'
+    name: 湯浅町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '303615'
+    bank_url: https://www.town.yuasa.wakayama.jp/life/1/4/17/
+    bank_status: info
+    map_query: 和歌山県湯浅町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yuasa.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.yuasa.wakayama.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-303623
+  name: 広川町空き家バンク
+  operator: 広川町
+  operator_kind: municipality
+  official_url: https://www.town.hirogawa.wakayama.jp/
+  policy: crawl
+  municipality:
+    code: '303623'
+    name: 広川町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '303623'
+    bank_url: https://www.town.hirogawa.wakayama.jp/ijyuteijyu/akiyabank/index.html
+    bank_status: available
+    map_query: 和歌山県広川町
+  operator_evidence:
+    quote: 公式ドメイン www.town.hirogawa.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.hirogawa.wakayama.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.hirogawa.wakayama.jp/ijyuteijyu/akiyabank/index.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.hirogawa.wakayama.jp
+  max_pages: 30
+- id: wakayama-303666
+  name: 有田川町空き家バンク
+  operator: 有田川町
+  operator_kind: municipality
+  official_url: https://www.town.aridagawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '303666'
+    name: 有田川町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '303666'
+    bank_url: https://www.town.aridagawa.lg.jp/
+    bank_status: none
+    map_query: 和歌山県有田川町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.aridagawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.aridagawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-303810
+  name: 美浜町空き家バンク
+  operator: 美浜町
+  operator_kind: municipality
+  official_url: https://www.town.mihama.wakayama.jp/
+  policy: link_only
+  municipality:
+    code: '303810'
+    name: 美浜町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '303810'
+    bank_url: http://www.town.mihama.wakayama.jp/docs/2026081200014/
+    bank_status: info
+    map_query: 和歌山県美浜町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 和歌山県 市町村のホームページ（リンク集）に掲載された公式サイト（www.town.mihama.wakayama.jp）
+    url: https://www.pref.wakayama.lg.jp/link/shichoson.html
+    checked_on: '2026-09-11'
+- id: wakayama-303828
+  name: 日高町空き家バンク
+  operator: 日高町
+  operator_kind: municipality
+  official_url: https://www.town.wakayama-hidaka.lg.jp/
+  policy: link_only
+  municipality:
+    code: '303828'
+    name: 日高町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '303828'
+    bank_url: https://www.town.wakayama-hidaka.lg.jp/
+    bank_status: none
+    map_query: 和歌山県日高町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 和歌山県 市町村のホームページ（リンク集）に掲載された公式サイト（www.town.wakayama-hidaka.lg.jp）
+    url: https://www.pref.wakayama.lg.jp/link/shichoson.html
+    checked_on: '2026-09-11'
+- id: wakayama-303836
+  name: 由良町空き家バンク
+  operator: 由良町
+  operator_kind: municipality
+  official_url: https://www.town.yura.wakayama.jp/
+  policy: crawl
+  municipality:
+    code: '303836'
+    name: 由良町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '303836'
+    bank_url: http://www.town.yura.wakayama.jp/docs/2021081200033/
+    bank_status: available
+    map_query: 和歌山県由良町
+  operator_evidence:
+    quote: 和歌山県 市町村のホームページ（リンク集）に掲載された公式サイト（www.town.yura.wakayama.jp）
+    url: https://www.pref.wakayama.lg.jp/link/shichoson.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: http://www.town.yura.wakayama.jp/docs/2021081200033/
+    kind: listing_index
+  allow_hosts:
+  - www.town.yura.wakayama.jp
+  max_pages: 30
+- id: wakayama-303909
+  name: 印南町空き家バンク
+  operator: 印南町
+  operator_kind: municipality
+  official_url: https://www.town.wakayama-inami.lg.jp/
+  policy: link_only
+  municipality:
+    code: '303909'
+    name: 印南町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '303909'
+    bank_url: http://www.town.wakayama-inami.lg.jp/0000000179.html
+    bank_status: info
+    map_query: 和歌山県印南町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 和歌山県 市町村のホームページ（リンク集）に掲載された公式サイト（www.town.wakayama-inami.lg.jp）
+    url: https://www.pref.wakayama.lg.jp/link/shichoson.html
+    checked_on: '2026-09-11'
+- id: wakayama-303917
+  name: みなべ町空き家バンク
+  operator: みなべ町
+  operator_kind: municipality
+  official_url: https://www.town.minabe.lg.jp/
+  policy: link_only
+  municipality:
+    code: '303917'
+    name: みなべ町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '303917'
+    bank_url: https://www.town.minabe.lg.jp/kurashi/03/2022110800019.html
+    bank_status: info
+    map_query: 和歌山県みなべ町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.minabe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.minabe.lg.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-303925
+  name: 日高川町空き家バンク
+  operator: 日高川町
+  operator_kind: municipality
+  official_url: https://www.town.hidakagawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '303925'
+    name: 日高川町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '303925'
+    bank_url: https://www.town.hidakagawa.lg.jp/
+    bank_status: none
+    map_query: 和歌山県日高川町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.hidakagawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.hidakagawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-304018
+  name: 白浜町空き家バンク
+  operator: 白浜町
+  operator_kind: municipality
+  official_url: https://www.town.shirahama.wakayama.jp/
+  policy: link_only
+  municipality:
+    code: '304018'
+    name: 白浜町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '304018'
+    bank_url: https://www.town.shirahama.wakayama.jp/
+    bank_status: none
+    map_query: 和歌山県白浜町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shirahama.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.shirahama.wakayama.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-304042
+  name: 上富田町空き家バンク
+  operator: 上富田町
+  operator_kind: municipality
+  official_url: https://www.town.kamitonda.lg.jp/
+  policy: link_only
+  municipality:
+    code: '304042'
+    name: 上富田町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '304042'
+    bank_url: https://www.town.kamitonda.lg.jp/
+    bank_status: none
+    map_query: 和歌山県上富田町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kamitonda.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kamitonda.lg.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-304069
+  name: すさみ町空き家バンク
+  operator: すさみ町
+  operator_kind: municipality
+  official_url: https://www.town.susami.lg.jp/
+  policy: link_only
+  municipality:
+    code: '304069'
+    name: すさみ町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '304069'
+    bank_url: https://www.town.susami.lg.jp/
+    bank_status: none
+    map_query: 和歌山県すさみ町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.susami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.susami.lg.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-304212
+  name: 那智勝浦町空き家バンク
+  operator: 那智勝浦町
+  operator_kind: municipality
+  official_url: https://www.town.nachikatsuura.wakayama.jp/
+  policy: link_only
+  municipality:
+    code: '304212'
+    name: 那智勝浦町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '304212'
+    bank_url: https://www.town.nachikatsuura.wakayama.jp/
+    bank_status: none
+    map_query: 和歌山県那智勝浦町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.nachikatsuura.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.nachikatsuura.wakayama.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-304221
+  name: 太地町空き家バンク
+  operator: 太地町
+  operator_kind: municipality
+  official_url: https://www.town.taiji.wakayama.jp/
+  policy: link_only
+  municipality:
+    code: '304221'
+    name: 太地町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '304221'
+    bank_url: https://www.town.taiji.wakayama.jp/lifestage/sumai/sumai003.html
+    bank_status: info
+    map_query: 和歌山県太地町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.taiji.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.taiji.wakayama.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-304247
+  name: 古座川町空き家バンク
+  operator: 古座川町
+  operator_kind: municipality
+  official_url: https://www.town.kozagawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '304247'
+    name: 古座川町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '304247'
+    bank_url: https://www.town.kozagawa.lg.jp/
+    bank_status: none
+    map_query: 和歌山県古座川町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kozagawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kozagawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-304271
+  name: 北山村空き家バンク
+  operator: 北山村
+  operator_kind: municipality
+  official_url: https://www.vill.kitayama.wakayama.jp/
+  policy: link_only
+  municipality:
+    code: '304271'
+    name: 北山村
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '304271'
+    bank_url: https://www.vill.kitayama.wakayama.jp/
+    bank_status: none
+    map_query: 和歌山県北山村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.kitayama.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.kitayama.wakayama.jp/
+    checked_on: '2026-09-11'
+- id: wakayama-304280
+  name: 串本町空き家バンク
+  operator: 串本町
+  operator_kind: municipality
+  official_url: https://www.town.kushimoto.wakayama.jp/
+  policy: link_only
+  municipality:
+    code: '304280'
+    name: 串本町
+    prefecture: 和歌山県
+    prefecture_slug: wakayama
+    slug: '304280'
+    bank_url: https://www.town.kushimoto.wakayama.jp/
+    bank_status: none
+    map_query: 和歌山県串本町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kushimoto.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kushimoto.wakayama.jp/
+    checked_on: '2026-09-11'

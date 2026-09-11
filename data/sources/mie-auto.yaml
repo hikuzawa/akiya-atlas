@@ -1,0 +1,626 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: mie-242012
+  name: 津市空き家バンク
+  operator: 津市
+  operator_kind: municipality
+  official_url: https://www.info.city.tsu.mie.jp/
+  policy: crawl
+  municipality:
+    code: '242012'
+    name: 津市
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '242012'
+    bank_url: https://www.info.city.tsu.mie.jp/ijuuouen/kurasu/1007946/1009757/1008299.html
+    bank_status: available
+    map_query: 三重県津市
+  operator_evidence:
+    quote: 三重県 県内市町（公式サイト）に掲載された公式サイト（www.info.city.tsu.mie.jp）
+    url: https://www.pref.mie.lg.jp/link/link1.htm
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.info.city.tsu.mie.jp/ijuuouen/kurasu/1007946/1009757/1008299.html
+    kind: listing_detail
+  allow_hosts:
+  - www.info.city.tsu.mie.jp
+  max_pages: 30
+- id: mie-242021
+  name: 四日市市空き家バンク
+  operator: 四日市市
+  operator_kind: municipality
+  official_url: https://www.city.yokkaichi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '242021'
+    name: 四日市市
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '242021'
+    bank_url: https://www.city.yokkaichi.lg.jp/
+    bank_status: none
+    map_query: 三重県四日市市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yokkaichi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.yokkaichi.lg.jp/
+    checked_on: '2026-09-11'
+- id: mie-242039
+  name: 伊勢市空き家バンク
+  operator: 伊勢市
+  operator_kind: municipality
+  official_url: https://www.city.ise.mie.jp/
+  policy: link_only
+  municipality:
+    code: '242039'
+    name: 伊勢市
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '242039'
+    bank_url: https://www.city.ise.mie.jp/kurashi/hikkoshi_sumai/akiya/index.html
+    bank_status: info
+    map_query: 三重県伊勢市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ise.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.ise.mie.jp/
+    checked_on: '2026-09-11'
+- id: mie-242047
+  name: 松阪市空き家バンク
+  operator: 松阪市
+  operator_kind: municipality
+  official_url: https://www.city.matsusaka.mie.jp/
+  policy: crawl
+  municipality:
+    code: '242047'
+    name: 松阪市
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '242047'
+    bank_url: https://www.city.matsusaka.mie.jp/soshiki/47/tourokubukken.html
+    bank_status: available
+    map_query: 三重県松阪市
+  operator_evidence:
+    quote: 公式ドメイン www.city.matsusaka.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.matsusaka.mie.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.matsusaka.mie.jp/soshiki/47/tourokubukken.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.matsusaka.mie.jp
+  max_pages: 30
+  external_links:
+  - label: アットホーム 空き家バンク 松阪市サイト
+    url: https://matsusaka-c24204.akiya-athome.jp/
+- id: mie-242055
+  name: 桑名市空き家バンク
+  operator: 桑名市
+  operator_kind: municipality
+  official_url: https://www.city.kuwana.lg.jp/
+  policy: link_only
+  municipality:
+    code: '242055'
+    name: 桑名市
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '242055'
+    bank_url: https://www.city.kuwana.lg.jp/kurashi/sumai/akiya/index.html
+    bank_status: info
+    map_query: 三重県桑名市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kuwana.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kuwana.lg.jp/
+    checked_on: '2026-09-11'
+- id: mie-242071
+  name: 鈴鹿市空き家バンク
+  operator: 鈴鹿市
+  operator_kind: municipality
+  official_url: https://www.city.suzuka.lg.jp/
+  policy: link_only
+  municipality:
+    code: '242071'
+    name: 鈴鹿市
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '242071'
+    bank_url: https://www.city.suzuka.lg.jp/kurashi/sumai/1009631/index.html
+    bank_status: info
+    map_query: 三重県鈴鹿市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.suzuka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.suzuka.lg.jp/
+    checked_on: '2026-09-11'
+- id: mie-242080
+  name: 名張市空き家バンク
+  operator: 名張市
+  operator_kind: municipality
+  official_url: https://www.city.nabari.lg.jp/
+  policy: crawl
+  municipality:
+    code: '242080'
+    name: 名張市
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '242080'
+    bank_url: https://www.city.nabari.lg.jp/s043/030/080/160/20260721140347.html
+    bank_status: available
+    map_query: 三重県名張市
+  operator_evidence:
+    quote: 公式ドメイン www.city.nabari.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.nabari.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.nabari.lg.jp/s043/030/080/160/20260721140347.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.nabari.lg.jp
+  max_pages: 30
+- id: mie-242098
+  name: 尾鷲市空き家バンク
+  operator: 尾鷲市
+  operator_kind: municipality
+  official_url: https://www.city.owase.lg.jp/
+  policy: link_only
+  municipality:
+    code: '242098'
+    name: 尾鷲市
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '242098'
+    bank_url: https://www.city.owase.lg.jp/owase_kurashi/category/14-4-0-0-0-0-0-0-0-0.html
+    bank_status: info
+    map_query: 三重県尾鷲市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.owase.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.owase.lg.jp/
+    checked_on: '2026-09-11'
+- id: mie-242101
+  name: 亀山市空き家バンク
+  operator: 亀山市
+  operator_kind: municipality
+  official_url: https://www.city.kameyama.mie.jp/
+  policy: crawl
+  municipality:
+    code: '242101'
+    name: 亀山市
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '242101'
+    bank_url: https://www.city.kameyama.mie.jp/docs/2021010500012/akiya_bank.html
+    bank_status: available
+    map_query: 三重県亀山市
+  operator_evidence:
+    quote: 公式ドメイン www.city.kameyama.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kameyama.mie.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.kameyama.mie.jp/docs/2021010500012/akiya_bank.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.kameyama.mie.jp
+  max_pages: 30
+  external_links:
+  - label: こちら
+    url: https://www.hatomarksite.com/search/mie/buy/house/area/24/list?price_b_from=&price_b_to=&land_area_all_from=&land_area_all_to=&land_area_unit=UNIT30&bld_area_from=&bld_area_to=&bld_area_unit=UNIT30&eki_walk=&key_word=&expected_return_from=&expected_return_to=&m_adr%5B%5D=24210
+- id: mie-242110
+  name: 鳥羽市空き家バンク
+  operator: 鳥羽市
+  operator_kind: municipality
+  official_url: https://www.city.toba.mie.jp/
+  policy: link_only
+  municipality:
+    code: '242110'
+    name: 鳥羽市
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '242110'
+    bank_url: https://akiyabank-toba.com/
+    bank_status: info
+    map_query: 三重県鳥羽市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式サイト（www.city.toba.mie.jp）から空き家バンクとして案内されているリンク
+    url: https://www.city.toba.mie.jp/
+    checked_on: '2026-09-11'
+- id: mie-242128
+  name: 熊野市空き家バンク
+  operator: 熊野市
+  operator_kind: municipality
+  official_url: https://www.city.kumano.lg.jp/
+  policy: link_only
+  municipality:
+    code: '242128'
+    name: 熊野市
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '242128'
+    bank_url: https://www.city.kumano.lg.jp/
+    bank_status: none
+    map_query: 三重県熊野市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kumano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kumano.lg.jp/
+    checked_on: '2026-09-11'
+- id: mie-242144
+  name: いなべ市空き家バンク
+  operator: いなべ市
+  operator_kind: municipality
+  official_url: https://www.city.inabe.mie.jp/
+  policy: crawl
+  municipality:
+    code: '242144'
+    name: いなべ市
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '242144'
+    bank_url: https://www.city.inabe.mie.jp/kurashi/jutaku/1000847.html
+    bank_status: available
+    map_query: 三重県いなべ市
+  operator_evidence:
+    quote: 公式ドメイン www.city.inabe.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.inabe.mie.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.inabe.mie.jp/kurashi/jutaku/1000847.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.inabe.mie.jp
+  max_pages: 30
+- id: mie-242152
+  name: 志摩市空き家バンク
+  operator: 志摩市
+  operator_kind: municipality
+  official_url: https://www.city.shima.mie.jp/
+  policy: crawl
+  municipality:
+    code: '242152'
+    name: 志摩市
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '242152'
+    bank_url: https://www.city.shima.mie.jp/cgi-bin/recruit.php/1/list
+    bank_status: available
+    map_query: 三重県志摩市
+  operator_evidence:
+    quote: 公式ドメイン www.city.shima.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.shima.mie.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.shima.mie.jp/cgi-bin/recruit.php/1/list
+    kind: listing_index
+  allow_hosts:
+  - www.city.shima.mie.jp
+  max_pages: 30
+- id: mie-242161
+  name: 伊賀市空き家バンク
+  operator: 伊賀市
+  operator_kind: municipality
+  official_url: https://www.city.iga.lg.jp/
+  policy: link_only
+  municipality:
+    code: '242161'
+    name: 伊賀市
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '242161'
+    bank_url: https://www.city.iga.lg.jp/0000010375.html
+    bank_status: info
+    map_query: 三重県伊賀市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.iga.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.iga.lg.jp/
+    checked_on: '2026-09-11'
+- id: mie-243035
+  name: 木曽岬町空き家バンク
+  operator: 木曽岬町
+  operator_kind: municipality
+  official_url: https://www.town.kisosaki.lg.jp/
+  policy: crawl
+  municipality:
+    code: '243035'
+    name: 木曽岬町
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '243035'
+    bank_url: https://www.town.kisosaki.lg.jp/contents_detail.php?co=new&frmId=2115
+    bank_status: available
+    map_query: 三重県木曽岬町
+  operator_evidence:
+    quote: 公式ドメイン www.town.kisosaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kisosaki.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.kisosaki.lg.jp/contents_detail.php?co=new&frmId=2115
+    kind: listing_index
+  allow_hosts:
+  - www.town.kisosaki.lg.jp
+  max_pages: 30
+- id: mie-243248
+  name: 東員町空き家バンク
+  operator: 東員町
+  operator_kind: municipality
+  official_url: https://www.town.toin.lg.jp/
+  policy: link_only
+  municipality:
+    code: '243248'
+    name: 東員町
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '243248'
+    bank_url: https://www.town.toin.lg.jp/
+    bank_status: none
+    map_query: 三重県東員町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.toin.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.toin.lg.jp/
+    checked_on: '2026-09-11'
+- id: mie-243418
+  name: 菰野町空き家バンク
+  operator: 菰野町
+  operator_kind: municipality
+  official_url: https://www.town.komono.mie.jp/
+  policy: link_only
+  municipality:
+    code: '243418'
+    name: 菰野町
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '243418'
+    bank_url: https://www.town.komono.mie.jp/
+    bank_status: none
+    map_query: 三重県菰野町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.komono.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.komono.mie.jp/
+    checked_on: '2026-09-11'
+- id: mie-243434
+  name: 朝日町空き家バンク
+  operator: 朝日町
+  operator_kind: municipality
+  official_url: https://www2.town.asahi.mie.jp/
+  policy: link_only
+  municipality:
+    code: '243434'
+    name: 朝日町
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '243434'
+    bank_url: https://www2.town.asahi.mie.jp/search3/ftsservlet?keyword=空家&btnG=検索&logical=1&pagesize=50&orderby=0&sort=1&kind=0&item=0&siteId=-1&dateDiff=
+    bank_status: info
+    map_query: 三重県朝日町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 三重県 県内市町（公式サイト）に掲載された公式サイト（www2.town.asahi.mie.jp）
+    url: https://www.pref.mie.lg.jp/link/link1.htm
+    checked_on: '2026-09-11'
+- id: mie-243442
+  name: 川越町空き家バンク
+  operator: 川越町
+  operator_kind: municipality
+  official_url: https://www.town.kawagoe.mie.jp/
+  policy: link_only
+  municipality:
+    code: '243442'
+    name: 川越町
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '243442'
+    bank_url: https://www.town.kawagoe.mie.jp/kurashi/sumaiseikatsu/1002417/index.html
+    bank_status: info
+    map_query: 三重県川越町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kawagoe.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kawagoe.mie.jp/
+    checked_on: '2026-09-11'
+- id: mie-244414
+  name: 多気町空き家バンク
+  operator: 多気町
+  operator_kind: municipality
+  official_url: https://www.town.taki.mie.jp/
+  policy: link_only
+  municipality:
+    code: '244414'
+    name: 多気町
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '244414'
+    bank_url: https://www.town.taki.mie.jp/
+    bank_status: none
+    map_query: 三重県多気町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.taki.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.taki.mie.jp/
+    checked_on: '2026-09-11'
+- id: mie-244422
+  name: 明和町空き家バンク
+  operator: 明和町
+  operator_kind: municipality
+  official_url: https://www.town.meiwa.mie.jp/
+  policy: link_only
+  municipality:
+    code: '244422'
+    name: 明和町
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '244422'
+    bank_url: https://www.town.meiwa.mie.jp/
+    bank_status: none
+    map_query: 三重県明和町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.meiwa.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.meiwa.mie.jp/
+    checked_on: '2026-09-11'
+- id: mie-244431
+  name: 大台町空き家バンク
+  operator: 大台町
+  operator_kind: municipality
+  official_url: https://www.odaitown.jp/
+  policy: link_only
+  municipality:
+    code: '244431'
+    name: 大台町
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '244431'
+    bank_url: https://www.odaitown.jp/kurashi_tetsuzuki/sumai/2996.html
+    bank_status: info
+    map_query: 三重県大台町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 三重県 県内市町（公式サイト）に掲載された公式サイト（www.odaitown.jp）
+    url: https://www.pref.mie.lg.jp/link/link1.htm
+    checked_on: '2026-09-11'
+- id: mie-244619
+  name: 玉城町空き家バンク
+  operator: 玉城町
+  operator_kind: municipality
+  official_url: https://kizuna.town.tamaki.mie.jp/
+  policy: link_only
+  municipality:
+    code: '244619'
+    name: 玉城町
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '244619'
+    bank_url: https://kizuna.town.tamaki.mie.jp/kurashi/ijyuteijyu/akiyabank.html
+    bank_status: info
+    map_query: 三重県玉城町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 三重県 県内市町（公式サイト）に掲載された公式サイト（kizuna.town.tamaki.mie.jp）
+    url: https://www.pref.mie.lg.jp/link/link1.htm
+    checked_on: '2026-09-11'
+  external_links:
+  - label: LIFULL HOME's空き家バンク(外部リンク)
+    url: https://www.homes.co.jp/akiyabank/mie/watarai_tamaki/
+- id: mie-244708
+  name: 度会町空き家バンク
+  operator: 度会町
+  operator_kind: municipality
+  official_url: https://www.town.watarai.lg.jp/
+  policy: link_only
+  municipality:
+    code: '244708'
+    name: 度会町
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '244708'
+    bank_url: https://www.town.watarai.lg.jp/
+    bank_status: none
+    map_query: 三重県度会町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.watarai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.watarai.lg.jp/
+    checked_on: '2026-09-11'
+- id: mie-244716
+  name: 大紀町空き家バンク
+  operator: 大紀町
+  operator_kind: municipality
+  official_url: https://www.town.taiki.mie.jp/
+  policy: link_only
+  municipality:
+    code: '244716'
+    name: 大紀町
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '244716'
+    bank_url: https://www.town.taiki.mie.jp/
+    bank_status: none
+    map_query: 三重県大紀町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.taiki.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.taiki.mie.jp/
+    checked_on: '2026-09-11'
+- id: mie-244724
+  name: 南伊勢町空き家バンク
+  operator: 南伊勢町
+  operator_kind: municipality
+  official_url: https://www.town.minamiise.lg.jp/
+  policy: link_only
+  municipality:
+    code: '244724'
+    name: 南伊勢町
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '244724'
+    bank_url: https://www.town.minamiise.lg.jp/
+    bank_status: none
+    map_query: 三重県南伊勢町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.minamiise.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.minamiise.lg.jp/
+    checked_on: '2026-09-11'
+- id: mie-245437
+  name: 紀北町空き家バンク
+  operator: 紀北町
+  operator_kind: municipality
+  official_url: https://www.town.mie-kihoku.lg.jp/
+  policy: link_only
+  municipality:
+    code: '245437'
+    name: 紀北町
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '245437'
+    bank_url: https://www.town.mie-kihoku.lg.jp/
+    bank_status: none
+    map_query: 三重県紀北町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 三重県 県内市町（公式サイト）に掲載された公式サイト（www.town.mie-kihoku.lg.jp）
+    url: https://www.pref.mie.lg.jp/link/link1.htm
+    checked_on: '2026-09-11'
+- id: mie-245615
+  name: 御浜町空き家バンク
+  operator: 御浜町
+  operator_kind: municipality
+  official_url: https://www.town.mihama.mie.jp/
+  policy: link_only
+  municipality:
+    code: '245615'
+    name: 御浜町
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '245615'
+    bank_url: https://www.town.mihama.mie.jp/kurashinojoho/iju_teiju/378.html
+    bank_status: info
+    map_query: 三重県御浜町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.mihama.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.mihama.mie.jp/
+    checked_on: '2026-09-11'
+- id: mie-245623
+  name: 紀宝町空き家バンク
+  operator: 紀宝町
+  operator_kind: municipality
+  official_url: https://www.town.kiho.lg.jp/
+  policy: link_only
+  municipality:
+    code: '245623'
+    name: 紀宝町
+    prefecture: 三重県
+    prefecture_slug: mie
+    slug: '245623'
+    bank_url: https://www.town.kiho.lg.jp/tourism/migration/unoccupied_house_bank/
+    bank_status: info
+    map_query: 三重県紀宝町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kiho.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kiho.lg.jp/
+    checked_on: '2026-09-11'

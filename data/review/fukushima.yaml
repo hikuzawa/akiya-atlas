@@ -1,0 +1,830 @@
+prefecture: 福島県
+prefecture_slug: fukushima
+created_at: '2026-09-11T06:32:52+00:00'
+candidates:
+- key: '072010'
+  label: 福島県 福島市
+  url: https://www.city.fukushima.fukushima.jp/kurashi/sumai/2/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.fukushima.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.fukushima.fukushima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 072028
+  label: 福島県 会津若松市
+  url: https://www.city.aizuwakamatsu.fukushima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.aizuwakamatsu.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.aizuwakamatsu.fukushima.jp/
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '072036'
+  label: 福島県 郡山市
+  url: https://www.city.koriyama.lg.jp/life/1/10/51/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.koriyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.koriyama.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '072044'
+  label: 福島県 いわき市
+  url: https://www.city.iwaki.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.iwaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.iwaki.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '072052'
+  label: 福島県 白河市
+  url: https://www.city.shirakawa.fukushima.jp/page/page005272.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.9
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shirakawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.shirakawa.fukushima.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 072079
+  label: 福島県 須賀川市
+  url: https://www.city.sukagawa.fukushima.jp/kurashi/hikkoshi_sumai/1002444/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sukagawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.sukagawa.fukushima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 072087
+  label: 福島県 喜多方市
+  url: https://www.city.kitakata.fukushima.jp/soshiki/toshiseibi/2339.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kitakata.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kitakata.fukushima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 072095
+  label: 福島県 相馬市
+  url: https://www.city.soma.fukushima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.soma.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.soma.fukushima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 072109
+  label: 福島県 二本松市
+  url: https://www.city.nihonmatsu.lg.jp/ijyu_teijyu/kurasu/page000100.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.86
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nihonmatsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.nihonmatsu.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '072117'
+  label: 福島県 田村市
+  url: https://www.city.tamura.lg.jp/soshiki/1/akiyaakichi.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tamura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tamura.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '072125'
+  label: 福島県 南相馬市
+  url: https://www.minamisoma-akiya.org/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.92
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.city.minamisoma.lg.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.city.minamisoma.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '072133'
+  label: 福島県 伊達市
+  url: https://www.city.fukushima-date.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.city.fukushima-date.lg.jp）
+  evidence_url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '072141'
+  label: 福島県 本宮市
+  url: https://www.city.motomiya.lg.jp/site/akiyapo-taru/tiikirennkei.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.motomiya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.motomiya.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '073016'
+  label: 福島県 桑折町
+  url: https://www.town.koori.fukushima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.koori.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.koori.fukushima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '073032'
+  label: 福島県 国見町
+  url: https://www.town.kunimi.fukushima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kunimi.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kunimi.fukushima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 073083
+  label: 福島県 川俣町
+  url: https://www.town.kawamata.lg.jp/site/kurashi-tetsuzuki/akiyatoubanktourokubukken.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kawamata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kawamata.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 073229
+  label: 福島県 大玉村
+  url: https://www.vill.otama.fukushima.jp/kurashi/teijyuusien/akiya_information/akiyabukkenn/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.88
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.otama.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.otama.fukushima.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '073423'
+  label: 福島県 鏡石町
+  url: https://www.town.kagamiishi.fukushima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kagamiishi.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kagamiishi.fukushima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '073440'
+  label: 福島県 天栄村
+  url: https://www.vill.tenei.fukushima.jp/site/iju/list22-74.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.tenei.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.tenei.fukushima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 073628
+  label: 福島県 下郷町
+  url: https://www.town.shimogo.fukushima.jp/life/sumai/1153.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shimogo.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.shimogo.fukushima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '073644'
+  label: 福島県 檜枝岐村
+  url: https://www.vill.hinoemata.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.hinoemata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.hinoemata.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 073679
+  label: 福島県 只見町
+  url: https://www.town.tadami.lg.jp/akiyabank/index.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tadami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.tadami.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 073687
+  label: 福島県 南会津町
+  url: https://www.town.minamiaizu.lg.jp/cgi-bin/recruit.php/1/list
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.minamiaizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.minamiaizu.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '074021'
+  label: 福島県 北塩原村
+  url: https://www.vill.kitashiobara.fukushima.jp/site/iju/1412.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.92
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.kitashiobara.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.kitashiobara.fukushima.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '074055'
+  label: 福島県 西会津町
+  url: https://www.town.nishiaizu.fukushima.jp/site/iju/5211.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nishiaizu.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.nishiaizu.fukushima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '074071'
+  label: 福島県 磐梯町
+  url: https://www.town.bandai.fukushima.jp/site/kurashi-kankyo/2020akiyabanku.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.bandai.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.bandai.fukushima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 074080
+  label: 福島県 猪苗代町
+  url: https://www.town.inawashiro.fukushima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.inawashiro.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.inawashiro.fukushima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '074217'
+  label: 福島県 会津坂下町
+  url: https://www.town.aizubange.fukushima.jp/site/akiya-bank/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.aizubange.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.aizubange.fukushima.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '074225'
+  label: 福島県 湯川村
+  url: https://www.vill.yugawa.fukushima.jp/site/bank/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.yugawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.yugawa.fukushima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '074233'
+  label: 福島県 柳津町
+  url: https://www.town.yanaizu.fukushima.jp/docs/2016032200019/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yanaizu.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yanaizu.fukushima.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '074446'
+  label: 福島県 三島町
+  url: https://www.town.mishima.fukushima.jp/site/ijyu/57.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.mishima.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.mishima.fukushima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '074454'
+  label: 福島県 金山町
+  url: https://www.town.kaneyama.fukushima.jp/site/akiyajyoho/akiya-2.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.86
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kaneyama.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kaneyama.fukushima.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '074462'
+  label: 福島県 昭和村
+  url: https://www.vill.showa.fukushima.jp/procedure/152/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.showa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.showa.fukushima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '074471'
+  label: 福島県 会津美里町
+  url: https://www.town.aizumisato.fukushima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.aizumisato.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.aizumisato.fukushima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '074616'
+  label: 福島県 西郷村
+  url: https://www.vill.nishigo.fukushima.jp/kurashi_tetsuzuki/sumai/5267.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.nishigo.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.nishigo.fukushima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '074641'
+  label: 福島県 泉崎村
+  url: https://www.vill.izumizaki.fukushima.jp/kurashi-tetsuduki/kenchiku-jutaku/page002028.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.izumizaki.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.izumizaki.fukushima.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 074659
+  label: 福島県 中島村
+  url: https://www.vill-nakajima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.vill-nakajima.jp）
+  evidence_url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '074667'
+  label: 福島県 矢吹町
+  url: https://www.town.yabuki.fukushima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yabuki.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yabuki.fukushima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 074811
+  label: 福島県 棚倉町
+  url: https://www.town.tanagura.fukushima.jp/jumin/sumai-kankyo-eisei/akiyataisaku/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tanagura.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.tanagura.fukushima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 074829
+  label: 福島県 矢祭町
+  url: https://www.town.yamatsuri.fukushima.jp/page/page000628.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yamatsuri.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yamatsuri.fukushima.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 074837
+  label: 福島県 塙町
+  url: https://www.town.hanawa.fukushima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hanawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.hanawa.fukushima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 074845
+  label: 福島県 鮫川村
+  url: https://www.vill.samegawa.fukushima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.samegawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.samegawa.fukushima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 075019
+  label: 福島県 石川町
+  url: https://www.town.ishikawa.fukushima.jp/akiya-bank/index.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ishikawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ishikawa.fukushima.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '075027'
+  label: 福島県 玉川村
+  url: https://www.vill.tamakawa.fukushima.jp/akiya/vacant-house-bank/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.tamakawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.tamakawa.fukushima.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '075035'
+  label: 福島県 平田村
+  url: https://www.vill.hirata.fukushima.jp/life/1/4/20/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.hirata.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.hirata.fukushima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '075043'
+  label: 福島県 浅川町
+  url: https://www.town.asakawa.fukushima.jp/akiya/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.asakawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.asakawa.fukushima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '075051'
+  label: 福島県 古殿町
+  url: https://www.town.furudono.fukushima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.furudono.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.furudono.fukushima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '075213'
+  label: 福島県 三春町
+  url: https://www.town.miharu.fukushima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.miharu.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.miharu.fukushima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '075221'
+  label: 福島県 小野町
+  url: https://www.town.ono.fukushima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ono.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ono.fukushima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 075418
+  label: 福島県 広野町
+  url: https://www.town.hirono.fukushima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hirono.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.hirono.fukushima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '075426'
+  label: 福島県 楢葉町
+  url: https://www.town.naraha.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.naraha.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.naraha.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '075434'
+  label: 福島県 富岡町
+  url: https://www.tomioka-town.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.tomioka-town.jp）
+  evidence_url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '075442'
+  label: 福島県 川内村
+  url: https://www.kawauchimura.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.kawauchimura.jp）
+  evidence_url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '075451'
+  label: 福島県 大熊町
+  url: https://www.town.okuma.fukushima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.okuma.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.okuma.fukushima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 075469
+  label: 福島県 双葉町
+  url: https://www.town.fukushima-futaba.lg.jp/10084.htm
+  page_class: spa
+  class_label: JavaScript 描画（未対応）
+  confidence: 0.75
+  operator_kind: municipality
+  evidence_quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.town.fukushima-futaba.lg.jp）
+  evidence_url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
+  reason: JavaScript 描画のため静的 HTML に物件が無い。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '075477'
+  label: 福島県 浪江町
+  url: https://www.town.namie.fukushima.jp/soshiki/23/25795.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.namie.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.namie.fukushima.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 075485
+  label: 福島県 葛尾村
+  url: https://www.katsurao.org/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.katsurao.org）
+  evidence_url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '075612'
+  label: 福島県 新地町
+  url: https://www.shinchi-town.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.shinchi-town.jp）
+  evidence_url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '075647'
+  label: 福島県 飯舘村
+  url: https://www.vill.iitate.fukushima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.iitate.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.iitate.fukushima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

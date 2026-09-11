@@ -1,0 +1,976 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: kagoshima-462012
+  name: 鹿児島市空き家バンク
+  operator: 鹿児島市
+  operator_kind: municipality
+  official_url: https://www.city.kagoshima.lg.jp/
+  policy: link_only
+  municipality:
+    code: '462012'
+    name: 鹿児島市
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '462012'
+    bank_url: https://www.city.kagoshima.lg.jp/
+    bank_status: none
+    map_query: 鹿児島県鹿児島市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kagoshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kagoshima.lg.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-462039
+  name: 鹿屋市空き家バンク
+  operator: 鹿屋市
+  operator_kind: municipality
+  official_url: https://www.city.kanoya.lg.jp/
+  policy: link_only
+  municipality:
+    code: '462039'
+    name: 鹿屋市
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '462039'
+    bank_url: https://www.city.kanoya.lg.jp/bouhan/kikkennakiya.html
+    bank_status: info
+    map_query: 鹿児島県鹿屋市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kanoya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kanoya.lg.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-462047
+  name: 枕崎市空き家バンク
+  operator: 枕崎市
+  operator_kind: municipality
+  official_url: https://www.city.makurazaki.lg.jp/
+  policy: crawl
+  municipality:
+    code: '462047'
+    name: 枕崎市
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '462047'
+    bank_url: https://www.city.makurazaki.lg.jp/site/ijyu/30090.html
+    bank_status: available
+    map_query: 鹿児島県枕崎市
+  operator_evidence:
+    quote: 公式ドメイン www.city.makurazaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.makurazaki.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.makurazaki.lg.jp/site/ijyu/30090.html
+    kind: listing_detail
+  allow_hosts:
+  - www.city.makurazaki.lg.jp
+  max_pages: 30
+- id: kagoshima-462063
+  name: 阿久根市空き家バンク
+  operator: 阿久根市
+  operator_kind: municipality
+  official_url: https://www.city.akune.lg.jp/
+  policy: crawl
+  municipality:
+    code: '462063'
+    name: 阿久根市
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '462063'
+    bank_url: https://www.city.akune.lg.jp/kurashi_tetsuzuki/2/akuneshiakiyabankseido/2330.html
+    bank_status: available
+    map_query: 鹿児島県阿久根市
+  operator_evidence:
+    quote: 公式ドメイン www.city.akune.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.akune.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.akune.lg.jp/kurashi_tetsuzuki/2/akuneshiakiyabankseido/2330.html
+    kind: listing_index
+    follow:
+    - pattern: https?://www\.city\.akune\.lg\.jp/kurashi_tetsuzuki/2/akuneshiakiyabankseido/2330\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - www.city.akune.lg.jp
+  max_pages: 30
+- id: kagoshima-462080
+  name: 出水市空き家バンク
+  operator: 出水市
+  operator_kind: municipality
+  official_url: https://www.city.kagoshima-izumi.lg.jp/
+  policy: crawl
+  municipality:
+    code: '462080'
+    name: 出水市
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '462080'
+    bank_url: https://www.city.kagoshima-izumi.lg.jp/page/page_00815.html
+    bank_status: available
+    map_query: 鹿児島県出水市
+  operator_evidence:
+    quote: 鹿児島県 県内市町村に掲載された公式サイト（www.city.kagoshima-izumi.lg.jp）
+    url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.kagoshima-izumi.lg.jp/page/page_00815.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.kagoshima-izumi.lg.jp
+  max_pages: 30
+  external_links:
+  - label: LIFULL HOME'S 空き家バンク
+    url: https://www.homes.co.jp/akiyabank/
+  - label: アットホーム 空き家バンク
+    url: https://www.akiya-athome.jp/
+- id: kagoshima-462101
+  name: 指宿市空き家バンク
+  operator: 指宿市
+  operator_kind: municipality
+  official_url: https://www.city.ibusuki.lg.jp/
+  policy: link_only
+  municipality:
+    code: '462101'
+    name: 指宿市
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '462101'
+    bank_url: https://www.city.ibusuki.lg.jp/ijyu/akiya.html
+    bank_status: info
+    map_query: 鹿児島県指宿市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ibusuki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.ibusuki.lg.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-462136
+  name: 西之表市空き家バンク
+  operator: 西之表市
+  operator_kind: municipality
+  official_url: https://www.city.nishinoomote.lg.jp/
+  policy: link_only
+  municipality:
+    code: '462136'
+    name: 西之表市
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '462136'
+    bank_url: https://www.city.nishinoomote.lg.jp/
+    bank_status: none
+    map_query: 鹿児島県西之表市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nishinoomote.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.nishinoomote.lg.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-462144
+  name: 垂水市空き家バンク
+  operator: 垂水市
+  operator_kind: municipality
+  official_url: https://www.city.tarumizu.lg.jp/
+  policy: crawl
+  municipality:
+    code: '462144'
+    name: 垂水市
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '462144'
+    bank_url: https://www.city.tarumizu.lg.jp/chiiki/kurashi/sangyo/akiya/sokushin.html
+    bank_status: available
+    map_query: 鹿児島県垂水市
+  operator_evidence:
+    quote: 公式ドメイン www.city.tarumizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.tarumizu.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.tarumizu.lg.jp/chiiki/kurashi/sangyo/akiya/sokushin.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.tarumizu.lg.jp
+  max_pages: 30
+- id: kagoshima-462152
+  name: 薩摩川内市空き家バンク
+  operator: 薩摩川内市
+  operator_kind: municipality
+  official_url: https://www.city.satsumasendai.lg.jp/
+  policy: link_only
+  municipality:
+    code: '462152'
+    name: 薩摩川内市
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '462152'
+    bank_url: https://www.city.satsumasendai.lg.jp/
+    bank_status: none
+    map_query: 鹿児島県薩摩川内市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.satsumasendai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.satsumasendai.lg.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-462161
+  name: 日置市空き家バンク
+  operator: 日置市
+  operator_kind: municipality
+  official_url: https://www.city.hioki.kagoshima.jp/
+  policy: link_only
+  municipality:
+    code: '462161'
+    name: 日置市
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '462161'
+    bank_url: https://www.city.hioki.kagoshima.jp/kouho/ijuteju/akiya/index.html
+    bank_status: info
+    map_query: 鹿児島県日置市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.hioki.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.hioki.kagoshima.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-462179
+  name: 曽於市空き家バンク
+  operator: 曽於市
+  operator_kind: municipality
+  official_url: https://www.city.soo.kagoshima.jp/
+  policy: link_only
+  municipality:
+    code: '462179'
+    name: 曽於市
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '462179'
+    bank_url: https://www.city.soo.kagoshima.jp/kurashi/kurashisumai/inakagurasi/akiya.html
+    bank_status: info
+    map_query: 鹿児島県曽於市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.soo.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.soo.kagoshima.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-462187
+  name: 霧島市空き家バンク
+  operator: 霧島市
+  operator_kind: municipality
+  official_url: https://www.city-kirishima.jp/
+  policy: link_only
+  municipality:
+    code: '462187'
+    name: 霧島市
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '462187'
+    bank_url: https://www.city-kirishima.jp/
+    bank_status: none
+    map_query: 鹿児島県霧島市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 鹿児島県 県内市町村に掲載された公式サイト（www.city-kirishima.jp）
+    url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+    checked_on: '2026-09-11'
+- id: kagoshima-462195
+  name: いちき串木野市空き家バンク
+  operator: いちき串木野市
+  operator_kind: municipality
+  official_url: https://www.city.ichikikushikino.lg.jp/
+  policy: crawl
+  municipality:
+    code: '462195'
+    name: いちき串木野市
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '462195'
+    bank_url: https://www.city.ichikikushikino.lg.jp/seisaku1/akiyabank/akiya-bukkenn.html
+    bank_status: available
+    map_query: 鹿児島県いちき串木野市
+  operator_evidence:
+    quote: 公式ドメイン www.city.ichikikushikino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.ichikikushikino.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.ichikikushikino.lg.jp/seisaku1/akiyabank/akiya-bukkenn.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.ichikikushikino.lg.jp
+  max_pages: 30
+  external_links:
+  - label: akiya-athome.jp
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/31713
+  - label: akiya-athome.jp
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/33865
+  - label: akiya-athome.jp
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/48936
+  - label: akiya-athome.jp
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/33249
+  - label: akiya-athome.jp
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/48933
+  - label: akiya-athome.jp
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/48584
+  - label: akiya-athome.jp
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/47490
+  - label: akiya-athome.jp
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/47489
+  - label: akiya-athome.jp
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/47485
+  - label: akiya-athome.jp
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/47190
+  - label: akiya-athome.jp
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/46264
+  - label: akiya-athome.jp
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/46260
+  - label: 空き家物件(No.123)(外部サイトへリンク)
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/44801
+  - label: akiya-athome.jp
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/43840
+  - label: 空き家物件(No.118)(外部サイトへリンク)
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/42485
+  - label: 空き家物件(No.112)(外部サイトへリンク)
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/37925
+  - label: 空き家物件(No.107)(外部サイトへリンク)
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/39711
+  - label: 空き家物件(No.102)(外部サイトへリンク)
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/37922
+  - label: 空き家物件(No.100)(外部サイトへリンク)
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/36782
+  - label: 空き家物件(No.94)(外部サイトへリンク)
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/35544
+  - label: 空き家物件(NO59)(外部サイトへリンク)
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/19123
+  - label: 空き家物件(NO41)(外部サイトへリンク)
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/6916
+  - label: 空き家物件(NO11)(外部サイトへリンク)
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/4317
+  - label: at-home「空き家バンク」(外部サイトへリンク)
+    url: https://www.akiya-athome.jp/buy/46/219/
+  - label: LIFULL-HOME'S「空き家バンク」(外部サイトへリンク)
+    url: https://www.homes.co.jp/akiyabank/kagoshima/ichikikushikino/
+- id: kagoshima-462209
+  name: 南さつま市空き家バンク
+  operator: 南さつま市
+  operator_kind: municipality
+  official_url: https://www.city.minamisatsuma.lg.jp/
+  policy: link_only
+  municipality:
+    code: '462209'
+    name: 南さつま市
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '462209'
+    bank_url: https://www.city.minamisatsuma.lg.jp/
+    bank_status: none
+    map_query: 鹿児島県南さつま市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.minamisatsuma.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.minamisatsuma.lg.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-462217
+  name: 志布志市空き家バンク
+  operator: 志布志市
+  operator_kind: municipality
+  official_url: https://www.city.shibushi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '462217'
+    name: 志布志市
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '462217'
+    bank_url: https://www.city.shibushi.lg.jp/site/iju/13595.html
+    bank_status: info
+    map_query: 鹿児島県志布志市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.shibushi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.shibushi.lg.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-462225
+  name: 奄美市空き家バンク
+  operator: 奄美市
+  operator_kind: municipality
+  official_url: https://www.city.amami.lg.jp/
+  policy: link_only
+  municipality:
+    code: '462225'
+    name: 奄美市
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '462225'
+    bank_url: https://www.city.amami.lg.jp/pjsenryaku/akiyabank/akiyabank.html
+    bank_status: info
+    map_query: 鹿児島県奄美市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.amami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.amami.lg.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-462233
+  name: 南九州市空き家バンク
+  operator: 南九州市
+  operator_kind: municipality
+  official_url: https://www.city.minamikyushu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '462233'
+    name: 南九州市
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '462233'
+    bank_url: https://www.city.minamikyushu.lg.jp/
+    bank_status: none
+    map_query: 鹿児島県南九州市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.minamikyushu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.minamikyushu.lg.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-462241
+  name: 伊佐市空き家バンク
+  operator: 伊佐市
+  operator_kind: municipality
+  official_url: https://www.city.isa.kagoshima.jp/
+  policy: link_only
+  municipality:
+    code: '462241'
+    name: 伊佐市
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '462241'
+    bank_url: https://www.city.isa.kagoshima.jp/
+    bank_status: none
+    map_query: 鹿児島県伊佐市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.isa.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.isa.kagoshima.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-462250
+  name: 姶良市空き家バンク
+  operator: 姶良市
+  operator_kind: municipality
+  official_url: https://www.city.aira.lg.jp/
+  policy: link_only
+  municipality:
+    code: '462250'
+    name: 姶良市
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '462250'
+    bank_url: https://www.city.aira.lg.jp/kurashi/sumai/akiya/index.html
+    bank_status: spa_unsupported
+    map_query: 鹿児島県姶良市
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.aira.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.aira.lg.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: 全国版空き家バンク(ライフル版)(外部サイトへリンク)
+    url: https://www.homes.co.jp/akiyabank/
+  - label: 全国版空き家バンク(アットホーム版)(外部サイトへリンク)
+    url: https://aira-c46225.akiya-athome.jp
+- id: kagoshima-463035
+  name: 三島村空き家バンク
+  operator: 三島村
+  operator_kind: municipality
+  official_url: https://mishimamura.com/
+  policy: link_only
+  municipality:
+    code: '463035'
+    name: 三島村
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '463035'
+    bank_url: https://mishimamura.com/
+    bank_status: none
+    map_query: 鹿児島県三島村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 鹿児島県 県内市町村に掲載された公式サイト（mishimamura.com）
+    url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+    checked_on: '2026-09-11'
+- id: kagoshima-463043
+  name: 十島村空き家バンク
+  operator: 十島村
+  operator_kind: municipality
+  official_url: https://www.tokara.jp/
+  policy: link_only
+  municipality:
+    code: '463043'
+    name: 十島村
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '463043'
+    bank_url: https://www.tokara.jp/
+    bank_status: none
+    map_query: 鹿児島県十島村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 鹿児島県 県内市町村に掲載された公式サイト（www.tokara.jp）
+    url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+    checked_on: '2026-09-11'
+- id: kagoshima-463922
+  name: さつま町空き家バンク
+  operator: さつま町
+  operator_kind: municipality
+  official_url: https://www.satsuma-net.jp/
+  policy: crawl
+  municipality:
+    code: '463922'
+    name: さつま町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '463922'
+    bank_url: https://www.satsuma-net.jp/teiju/akiya/1/5623.html
+    bank_status: available
+    map_query: 鹿児島県さつま町
+  operator_evidence:
+    quote: 鹿児島県 県内市町村に掲載された公式サイト（www.satsuma-net.jp）
+    url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.satsuma-net.jp/teiju/akiya/1/5623.html
+    kind: listing_index
+    follow:
+    - pattern: https?://www\.satsuma\-net\.jp/teiju/akiya/1/5623\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - www.satsuma-net.jp
+  max_pages: 30
+- id: kagoshima-464040
+  name: 長島町空き家バンク
+  operator: 長島町
+  operator_kind: municipality
+  official_url: https://www.town.nagashima.lg.jp/
+  policy: link_only
+  municipality:
+    code: '464040'
+    name: 長島町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '464040'
+    bank_url: https://www.town.nagashima.lg.jp/
+    bank_status: none
+    map_query: 鹿児島県長島町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.nagashima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.nagashima.lg.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-464520
+  name: 湧水町空き家バンク
+  operator: 湧水町
+  operator_kind: municipality
+  official_url: https://www.town.yusui.kagoshima.jp/
+  policy: crawl
+  municipality:
+    code: '464520'
+    name: 湧水町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '464520'
+    bank_url: https://www.town.yusui.kagoshima.jp/soshiki/34/787.html
+    bank_status: available
+    map_query: 鹿児島県湧水町
+  operator_evidence:
+    quote: 公式ドメイン www.town.yusui.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.yusui.kagoshima.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.yusui.kagoshima.jp/soshiki/34/787.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.yusui.kagoshima.jp
+  max_pages: 30
+- id: kagoshima-464686
+  name: 大崎町空き家バンク
+  operator: 大崎町
+  operator_kind: municipality
+  official_url: https://www.town.kagoshima-osaki.lg.jp/
+  policy: crawl
+  municipality:
+    code: '464686'
+    name: 大崎町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '464686'
+    bank_url: http://www.town.kagoshima-osaki.lg.jp/ke_kikaku/kurashi/ijuteju/sokushin/akiyabank.html
+    bank_status: available
+    map_query: 鹿児島県大崎町
+  operator_evidence:
+    quote: 鹿児島県 県内市町村に掲載された公式サイト（www.town.kagoshima-osaki.lg.jp）
+    url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: http://www.town.kagoshima-osaki.lg.jp/ke_kikaku/kurashi/ijuteju/sokushin/akiyabank.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.kagoshima-osaki.lg.jp
+  max_pages: 30
+- id: kagoshima-464821
+  name: 東串良町空き家バンク
+  operator: 東串良町
+  operator_kind: municipality
+  official_url: https://www.higashikushira.com/
+  policy: link_only
+  municipality:
+    code: '464821'
+    name: 東串良町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '464821'
+    bank_url: https://www.higashikushira.com/docs/2022071100029/
+    bank_status: info
+    map_query: 鹿児島県東串良町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 鹿児島県 県内市町村に掲載された公式サイト（www.higashikushira.com）
+    url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+    checked_on: '2026-09-11'
+- id: kagoshima-464902
+  name: 錦江町空き家バンク
+  operator: 錦江町
+  operator_kind: municipality
+  official_url: https://www.town.kinko.lg.jp/
+  policy: crawl
+  municipality:
+    code: '464902'
+    name: 錦江町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '464902'
+    bank_url: https://www.town.kinko.lg.jp/seisaku-h/kurashi/tochi/shisaku/akiyatoroku.html
+    bank_status: available
+    map_query: 鹿児島県錦江町
+  operator_evidence:
+    quote: 公式ドメイン www.town.kinko.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kinko.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.kinko.lg.jp/seisaku-h/kurashi/tochi/shisaku/akiyatoroku.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.kinko.lg.jp
+  max_pages: 30
+- id: kagoshima-464911
+  name: 南大隅町空き家バンク
+  operator: 南大隅町
+  operator_kind: municipality
+  official_url: https://www.town.minamiosumi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '464911'
+    name: 南大隅町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '464911'
+    bank_url: https://www.town.minamiosumi.lg.jp/kikaku/kurashi/sumai/akiya/akiya.html
+    bank_status: info
+    map_query: 鹿児島県南大隅町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.minamiosumi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.minamiosumi.lg.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-464929
+  name: 肝付町空き家バンク
+  operator: 肝付町
+  operator_kind: municipality
+  official_url: https://kimotsuki-town.jp/
+  policy: link_only
+  municipality:
+    code: '464929'
+    name: 肝付町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '464929'
+    bank_url: https://kimotsuki-town.jp/
+    bank_status: none
+    map_query: 鹿児島県肝付町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 鹿児島県 県内市町村に掲載された公式サイト（kimotsuki-town.jp）
+    url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+    checked_on: '2026-09-11'
+- id: kagoshima-465011
+  name: 中種子町空き家バンク
+  operator: 中種子町
+  operator_kind: municipality
+  official_url: https://town.nakatane.kagoshima.jp/
+  policy: link_only
+  municipality:
+    code: '465011'
+    name: 中種子町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '465011'
+    bank_url: https://town.nakatane.kagoshima.jp/
+    bank_status: none
+    map_query: 鹿児島県中種子町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 鹿児島県 県内市町村に掲載された公式サイト（town.nakatane.kagoshima.jp）
+    url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+    checked_on: '2026-09-11'
+- id: kagoshima-465020
+  name: 南種子町空き家バンク
+  operator: 南種子町
+  operator_kind: municipality
+  official_url: https://www.town.minamitane.kagoshima.jp/
+  policy: link_only
+  municipality:
+    code: '465020'
+    name: 南種子町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '465020'
+    bank_url: http://www.town.minamitane.kagoshima.jp/industry/etc/akiya_bank.html
+    bank_status: info
+    map_query: 鹿児島県南種子町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 鹿児島県 県内市町村に掲載された公式サイト（www.town.minamitane.kagoshima.jp）
+    url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+    checked_on: '2026-09-11'
+- id: kagoshima-465054
+  name: 屋久島町空き家バンク
+  operator: 屋久島町
+  operator_kind: municipality
+  official_url: https://www.town.yakushima.kagoshima.jp/
+  policy: link_only
+  municipality:
+    code: '465054'
+    name: 屋久島町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '465054'
+    bank_url: https://www.town.yakushima.kagoshima.jp/kurashi_tetsuzuki/sumai/akiyabank/1754.html
+    bank_status: info
+    map_query: 鹿児島県屋久島町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yakushima.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.yakushima.kagoshima.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-465232
+  name: 大和村空き家バンク
+  operator: 大和村
+  operator_kind: municipality
+  official_url: https://www.vill.yamato.lg.jp/
+  policy: link_only
+  municipality:
+    code: '465232'
+    name: 大和村
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '465232'
+    bank_url: https://www.vill.yamato.lg.jp/
+    bank_status: none
+    map_query: 鹿児島県大和村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.yamato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.vill.yamato.lg.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-465241
+  name: 宇検村空き家バンク
+  operator: 宇検村
+  operator_kind: municipality
+  official_url: https://www.uken.net/
+  policy: link_only
+  municipality:
+    code: '465241'
+    name: 宇検村
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '465241'
+    bank_url: https://www.uken.net/
+    bank_status: none
+    map_query: 鹿児島県宇検村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 鹿児島県 県内市町村に掲載された公式サイト（www.uken.net）
+    url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+    checked_on: '2026-09-11'
+- id: kagoshima-465259
+  name: 瀬戸内町空き家バンク
+  operator: 瀬戸内町
+  operator_kind: municipality
+  official_url: https://www.town.setouchi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '465259'
+    name: 瀬戸内町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '465259'
+    bank_url: https://www.town.setouchi.lg.jp/shinkou/cho/kurashi/sumai/akiya/index.html
+    bank_status: info
+    map_query: 鹿児島県瀬戸内町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.setouchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.setouchi.lg.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-465275
+  name: 龍郷町空き家バンク
+  operator: 龍郷町
+  operator_kind: municipality
+  official_url: https://www.town.tatsugo.lg.jp/
+  policy: link_only
+  municipality:
+    code: '465275'
+    name: 龍郷町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '465275'
+    bank_url: https://www.town.tatsugo.lg.jp/
+    bank_status: none
+    map_query: 鹿児島県龍郷町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.tatsugo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.tatsugo.lg.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-465291
+  name: 喜界町空き家バンク
+  operator: 喜界町
+  operator_kind: municipality
+  official_url: https://www.town.kikai.lg.jp/
+  policy: link_only
+  municipality:
+    code: '465291'
+    name: 喜界町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '465291'
+    bank_url: https://www.town.kikai.lg.jp/
+    bank_status: none
+    map_query: 鹿児島県喜界町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kikai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kikai.lg.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-465305
+  name: 徳之島町空き家バンク
+  operator: 徳之島町
+  operator_kind: municipality
+  official_url: https://www.tokunoshima-town.org/
+  policy: link_only
+  municipality:
+    code: '465305'
+    name: 徳之島町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '465305'
+    bank_url: https://www.tokunoshima-town.org/
+    bank_status: none
+    map_query: 鹿児島県徳之島町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 鹿児島県 県内市町村に掲載された公式サイト（www.tokunoshima-town.org）
+    url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+    checked_on: '2026-09-11'
+- id: kagoshima-465313
+  name: 天城町空き家バンク
+  operator: 天城町
+  operator_kind: municipality
+  official_url: https://www.town.amagi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '465313'
+    name: 天城町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '465313'
+    bank_url: https://www.town.amagi.lg.jp/kurashi/iju/akiya/
+    bank_status: info
+    map_query: 鹿児島県天城町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.amagi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.amagi.lg.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-465321
+  name: 伊仙町空き家バンク
+  operator: 伊仙町
+  operator_kind: municipality
+  official_url: https://www.town.isen.kagoshima.jp/
+  policy: link_only
+  municipality:
+    code: '465321'
+    name: 伊仙町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '465321'
+    bank_url: https://www.town.isen.kagoshima.jp/mirai/akiyabank2.html
+    bank_status: info
+    map_query: 鹿児島県伊仙町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.isen.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.isen.kagoshima.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-465330
+  name: 和泊町空き家バンク
+  operator: 和泊町
+  operator_kind: municipality
+  official_url: https://www.town.wadomari.lg.jp/
+  policy: link_only
+  municipality:
+    code: '465330'
+    name: 和泊町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '465330'
+    bank_url: https://www.town.wadomari.lg.jp/
+    bank_status: none
+    map_query: 鹿児島県和泊町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.wadomari.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.wadomari.lg.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-465348
+  name: 知名町空き家バンク
+  operator: 知名町
+  operator_kind: municipality
+  official_url: https://www.town.china.lg.jp/
+  policy: link_only
+  municipality:
+    code: '465348'
+    name: 知名町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '465348'
+    bank_url: https://www.town.china.lg.jp/
+    bank_status: none
+    map_query: 鹿児島県知名町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.china.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.china.lg.jp/
+    checked_on: '2026-09-11'
+- id: kagoshima-465356
+  name: 与論町空き家バンク
+  operator: 与論町
+  operator_kind: municipality
+  official_url: https://www.yoron.jp/
+  policy: link_only
+  municipality:
+    code: '465356'
+    name: 与論町
+    prefecture: 鹿児島県
+    prefecture_slug: kagoshima
+    slug: '465356'
+    bank_url: https://www.yoron.jp/
+    bank_status: none
+    map_query: 鹿児島県与論町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 鹿児島県 県内市町村に掲載された公式サイト（www.yoron.jp）
+    url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+    checked_on: '2026-09-11'

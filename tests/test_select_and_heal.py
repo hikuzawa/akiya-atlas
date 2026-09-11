@@ -192,6 +192,100 @@ def test_heal_downgrades_to_info_when_no_listing_exists(ws: Workspace) -> None:
     assert "bank_status: info" in auto and "policy: link_only" in auto
 
 
+# 一覧らしく見えるが物件ではないページ（北海道雨竜町の不法投棄・野焼きの案内が実例）
+NOT_AKIYA = (
+    "<html><body><h1>不法投棄と野焼きの防止</h1><p>"
+    + "廃棄物の処理及び清掃に関する法律により、みだりに廃棄物を捨てることは禁じられています。" * 4
+    + "</p><table>"
+    "<tr><th>区分</th><th>過料</th><th>面積</th></tr>"
+    "<tr><td>投棄</td><td>不法投棄 50万円</td><td>敷地 80㎡ 築20年</td><td>大字1地区</td></tr>"
+    "<tr><td>野焼</td><td>野焼き 30万円</td><td>敷地 90㎡ 築25年</td><td>大字2地区</td></tr>"
+    "</table></body></html>"
+)
+# 本文を取り出せないページ（JavaScript で描画するなど）。抽出側の問題なので採用は保つ
+UNREADABLE = (
+    "<html><body><h1>空き家バンク</h1>"
+    "<div id='app'></div><script>renderList()</script>"
+    "<table><tr><td>No.1</td><td>350万円</td><td>木造 80㎡ 築30年</td><td>大字1地区</td></tr>"
+    "<tr><td>No.2</td><td>420万円</td><td>木造 90㎡ 築35年</td><td>大字2地区</td></tr></table>"
+    "</body></html>"
+)
+
+
+@respx.mock
+def test_heal_drops_a_page_whose_body_has_no_listings(ws: Workspace) -> None:
+    """本文は読めているのに 1 件も取れないページは、一覧ではないので取り下げる。"""
+    wrong = BASE + "/kurashi/fuhoutouki.html"
+    _mock(
+        {
+            # 公式トップは「空き家」の語でこのページに案内するが、ページ本文は空き家の話ではない
+            "/": (
+                "<html><body><a href='/kurashi/fuhoutouki.html'>空き家の適正管理</a></body></html>"
+            ),
+            "/kurashi/fuhoutouki.html": NOT_AKIYA,
+        }
+    )
+    for path in ("/sitemap.xml", "/sitemap_index.xml"):  # 候補が無いときはサイトマップも探す
+        respx.get(f"{BASE}{path}").mock(return_value=httpx.Response(404))
+    expand._write_rows(ws, "nagano", "長野県", [_row(wrong)])
+    _mark_crawled(ws, wrong)
+    with _client() as c:
+        result = expand.heal(ws, client=c)
+    assert result["checked"] == 1 and result["downgraded"] == [SID]
+    data = json.loads((ws.runs_dir / "discover-nagano-findings.json").read_text(encoding="utf-8"))
+    row = data["findings"][0]
+    assert row["policy"] == "link_only" and "一覧ではなかった" in row["reason"]
+    auto = (ws.sources_dir / "nagano-auto.yaml").read_text(encoding="utf-8")
+    assert "bank_status: none" in auto and "policy: link_only" in auto
+
+
+# ページ自身が「現在、登録物件はありません」と書いている（逗子市が実例）
+EMPTY_NOTICE_PAGE = (
+    "<html><body><h1>空き家バンク登録物件</h1>"
+    "<p>空き家バンクに登録された情報を公開します。仲介を目的とした問い合わせには対応できません。</p>"
+    "<p>現在、登録物件はありません。</p>"
+    "<table><tr><th>番号</th><th>価格</th><th>建物</th><th>所在地</th></tr>"
+    f"{_rows(3)}</table>"
+    "<p>過去に登録された物件の例です。掲載の申し込みは窓口までご相談ください。</p></body></html>"
+)
+
+
+@respx.mock
+def test_heal_keeps_a_bank_that_says_it_has_no_listings_now(ws: Workspace) -> None:
+    """「現在、登録物件はありません」と書いてあるなら、空のバンクとしてそのまま扱う。"""
+    url = BASE + "/akiya/list.html"
+    _mock({"/": TOP, "/akiya/hojo.html": HOJO, "/akiya/guide.html": GUIDE_WITH_LIST})
+    respx.get(f"{BASE}/akiya/list.html").mock(
+        return_value=httpx.Response(
+            200, text=EMPTY_NOTICE_PAGE, headers={"content-type": "text/html; charset=utf-8"}
+        )
+    )
+    expand._write_rows(ws, "nagano", "長野県", [_row(url)])
+    _mark_crawled(ws, url)
+    with _client() as c:
+        result = expand.heal(ws, client=c)
+    assert result["checked"] == 1 and not result["downgraded"]
+    assert any("掲載なしと書いている" in line for line in result["changed"])
+
+
+@respx.mock
+def test_heal_keeps_a_page_whose_body_cannot_be_read(ws: Workspace) -> None:
+    """本文を取り出せないときは一覧かどうか判断できない。取り下げずに保留と報告する。"""
+    wrong = BASE + "/akiya/list.html"
+    _mock({"/": TOP, "/akiya/hojo.html": HOJO, "/akiya/guide.html": GUIDE_WITH_LIST})
+    respx.get(f"{BASE}/akiya/list.html").mock(
+        return_value=httpx.Response(
+            200, text=UNREADABLE, headers={"content-type": "text/html; charset=utf-8"}
+        )
+    )
+    expand._write_rows(ws, "nagano", "長野県", [_row(wrong)])
+    _mark_crawled(ws, wrong)
+    with _client() as c:
+        result = expand.heal(ws, client=c)
+    assert result["checked"] == 1 and not result["downgraded"] and not result["recrawl"]
+    assert any("保留" in line for line in result["changed"])
+
+
 @respx.mock
 def test_heal_skips_sources_with_active_listings_or_not_yet_crawled(ws: Workspace) -> None:
     _mock(SITE)
@@ -199,3 +293,49 @@ def test_heal_skips_sources_with_active_listings_or_not_yet_crawled(ws: Workspac
     with _client() as c:  # 巡回記録が無い → 対象外
         result = expand.heal(ws, client=c)
     assert result["checked"] == 0 and not result["changed"]
+
+
+def test_two_municipalities_on_one_official_site_go_to_human_review() -> None:
+    """北海道には泊村が 2 つ（古宇郡・国後郡）。候補ドメインの推測は同じ URL に当たる。
+
+    片方に相手のサイトを結び付けて公開しないよう、両方を人間確認に回す。
+    """
+    from sitemill.models import OperatorKind
+
+    from akiya_atlas.expand import MunicipalityFinding, _flag_shared_official_urls
+    from akiya_atlas.municipalities import MunicipalityRef
+
+    def _f(code: str, name: str, url: str) -> MunicipalityFinding:
+        return MunicipalityFinding(
+            muni=MunicipalityRef(
+                code=code,
+                prefecture="北海道",
+                prefecture_slug="hokkaido",
+                name=name,
+                name_kana="",
+            ),
+            official_url=url,
+            bank_url=url,
+            operator_kind=OperatorKind.municipality,
+            evidence_quote="公式ドメイン",
+            policy="link_only",
+            confidence=0.6,
+        )
+
+    # decide が入れる official_url はホスト名だけ（スキーム無し）
+    findings = [
+        _f("014036", "泊村", "www.vill.tomari.hokkaido.jp"),
+        _f("016969", "泊村", "www.vill.tomari.hokkaido.jp"),
+        _f("012025", "函館市", "www.city.hakodate.hokkaido.jp"),
+    ]
+    _flag_shared_official_urls(findings)
+    assert [f.policy for f in findings] == ["pending", "pending", "link_only"]
+    assert findings[0].bank_url is None and "取り違え" in findings[0].reason
+    assert findings[2].bank_url == "www.city.hakodate.hokkaido.jp"
+    # URL の形でも同じように働く
+    urls = [
+        _f("014036", "泊村", "https://www.vill.tomari.hokkaido.jp/"),
+        _f("016969", "泊村", "https://www.vill.tomari.hokkaido.jp/"),
+    ]
+    _flag_shared_official_urls(urls)
+    assert [f.policy for f in urls] == ["pending", "pending"]

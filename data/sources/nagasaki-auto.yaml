@@ -1,0 +1,442 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: nagasaki-422011
+  name: 長崎市空き家バンク
+  operator: 長崎市
+  operator_kind: municipality
+  official_url: https://www.city.nagasaki.lg.jp/
+  policy: link_only
+  municipality:
+    code: '422011'
+    name: 長崎市
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '422011'
+    bank_url: https://www.city.nagasaki.lg.jp/life/4/30/123/
+    bank_status: info
+    map_query: 長崎県長崎市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nagasaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.nagasaki.lg.jp/
+    checked_on: '2026-09-11'
+- id: nagasaki-422029
+  name: 佐世保市空き家バンク
+  operator: 佐世保市
+  operator_kind: municipality
+  official_url: https://www.city.sasebo.lg.jp/
+  policy: link_only
+  municipality:
+    code: '422029'
+    name: 佐世保市
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '422029'
+    bank_url: https://www.city.sasebo.lg.jp/
+    bank_status: none
+    map_query: 長崎県佐世保市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.sasebo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.sasebo.lg.jp/
+    checked_on: '2026-09-11'
+- id: nagasaki-422037
+  name: 島原市空き家バンク
+  operator: 島原市
+  operator_kind: municipality
+  official_url: https://www.city.shimabara.lg.jp/
+  policy: link_only
+  municipality:
+    code: '422037'
+    name: 島原市
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '422037'
+    bank_url: https://www.city.shimabara.lg.jp/page3702.html
+    bank_status: info
+    map_query: 長崎県島原市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.shimabara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.shimabara.lg.jp/
+    checked_on: '2026-09-11'
+- id: nagasaki-422045
+  name: 諫早市空き家バンク
+  operator: 諫早市
+  operator_kind: municipality
+  official_url: https://www.city.isahaya.nagasaki.jp/
+  policy: link_only
+  municipality:
+    code: '422045'
+    name: 諫早市
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '422045'
+    bank_url: https://www.city.isahaya.nagasaki.jp/
+    bank_status: none
+    map_query: 長崎県諫早市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.isahaya.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.isahaya.nagasaki.jp/
+    checked_on: '2026-09-11'
+- id: nagasaki-422053
+  name: 大村市空き家バンク
+  operator: 大村市
+  operator_kind: municipality
+  official_url: https://www.city.omura.nagasaki.jp/
+  policy: link_only
+  municipality:
+    code: '422053'
+    name: 大村市
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '422053'
+    bank_url: https://www.city.omura.nagasaki.jp/
+    bank_status: none
+    map_query: 長崎県大村市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.omura.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.omura.nagasaki.jp/
+    checked_on: '2026-09-11'
+- id: nagasaki-422070
+  name: 平戸市空き家バンク
+  operator: 平戸市
+  operator_kind: municipality
+  official_url: https://www.city.hirado.nagasaki.jp/
+  policy: link_only
+  municipality:
+    code: '422070'
+    name: 平戸市
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '422070'
+    bank_url: https://www.city.hirado.nagasaki.jp/kurashi/
+    bank_status: info
+    map_query: 長崎県平戸市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.hirado.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.hirado.nagasaki.jp/
+    checked_on: '2026-09-11'
+- id: nagasaki-422088
+  name: 松浦市空き家バンク
+  operator: 松浦市
+  operator_kind: municipality
+  official_url: https://www.city-matsuura.jp/
+  policy: link_only
+  municipality:
+    code: '422088'
+    name: 松浦市
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '422088'
+    bank_url: https://www.city-matsuura.jp/
+    bank_status: none
+    map_query: 長崎県松浦市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 長崎県 県内市町に掲載された公式サイト（www.city-matsuura.jp）
+    url: https://www.pref.nagasaki.jp/pages/page-31.html
+    checked_on: '2026-09-11'
+- id: nagasaki-422096
+  name: 対馬市空き家バンク
+  operator: 対馬市
+  operator_kind: municipality
+  official_url: https://www.city.tsushima.lg.jp/
+  policy: link_only
+  municipality:
+    code: '422096'
+    name: 対馬市
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '422096'
+    bank_url: https://www.city.tsushima.lg.jp/
+    bank_status: none
+    map_query: 長崎県対馬市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tsushima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.tsushima.lg.jp/
+    checked_on: '2026-09-11'
+- id: nagasaki-422100
+  name: 壱岐市空き家バンク
+  operator: 壱岐市
+  operator_kind: municipality
+  official_url: https://www.city.iki.nagasaki.jp/
+  policy: link_only
+  municipality:
+    code: '422100'
+    name: 壱岐市
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '422100'
+    bank_url: https://www.city.iki.nagasaki.jp/mokuteki/hikkoshi/3069.html
+    bank_status: info
+    map_query: 長崎県壱岐市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.iki.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.iki.nagasaki.jp/
+    checked_on: '2026-09-11'
+- id: nagasaki-422118
+  name: 五島市空き家バンク
+  operator: 五島市
+  operator_kind: municipality
+  official_url: https://www.city.goto.nagasaki.jp/
+  policy: link_only
+  municipality:
+    code: '422118'
+    name: 五島市
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '422118'
+    bank_url: https://www.city.goto.nagasaki.jp/
+    bank_status: none
+    map_query: 長崎県五島市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.goto.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.goto.nagasaki.jp/
+    checked_on: '2026-09-11'
+- id: nagasaki-422126
+  name: 西海市空き家バンク
+  operator: 西海市
+  operator_kind: municipality
+  official_url: https://www.city.saikai.nagasaki.jp/
+  policy: link_only
+  municipality:
+    code: '422126'
+    name: 西海市
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '422126'
+    bank_url: https://www.city.saikai.nagasaki.jp/kurashi/jutaku/2/index.html
+    bank_status: info
+    map_query: 長崎県西海市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.saikai.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.saikai.nagasaki.jp/
+    checked_on: '2026-09-11'
+- id: nagasaki-422134
+  name: 雲仙市空き家バンク
+  operator: 雲仙市
+  operator_kind: municipality
+  official_url: https://www.city.unzen.nagasaki.jp/
+  policy: crawl
+  municipality:
+    code: '422134'
+    name: 雲仙市
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '422134'
+    bank_url: https://www.city.unzen.nagasaki.jp/dynamic/ijuu/info/pub/default.aspx?c_id=30&pg=1
+    bank_status: available
+    map_query: 長崎県雲仙市
+  operator_evidence:
+    quote: 公式ドメイン www.city.unzen.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.unzen.nagasaki.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.unzen.nagasaki.jp/dynamic/ijuu/info/pub/default.aspx?c_id=30&pg=1
+    kind: listing_index
+  allow_hosts:
+  - www.city.unzen.nagasaki.jp
+  max_pages: 30
+- id: nagasaki-422142
+  name: 南島原市空き家バンク
+  operator: 南島原市
+  operator_kind: municipality
+  official_url: https://www.city.minamishimabara.lg.jp/
+  policy: crawl
+  municipality:
+    code: '422142'
+    name: 南島原市
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '422142'
+    bank_url: https://www.city.minamishimabara.lg.jp/kiji0037240/index.html
+    bank_status: available
+    map_query: 長崎県南島原市
+  operator_evidence:
+    quote: 公式ドメイン www.city.minamishimabara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.minamishimabara.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.minamishimabara.lg.jp/kiji0037240/index.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.minamishimabara.lg.jp
+  max_pages: 30
+- id: nagasaki-423076
+  name: 長与町空き家バンク
+  operator: 長与町
+  operator_kind: municipality
+  official_url: https://webtown.nagayo.jp/
+  policy: link_only
+  municipality:
+    code: '423076'
+    name: 長与町
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '423076'
+    bank_url: https://webtown.nagayo.jp/
+    bank_status: none
+    map_query: 長崎県長与町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 長崎県 県内市町に掲載された公式サイト（webtown.nagayo.jp）
+    url: https://www.pref.nagasaki.jp/pages/page-31.html
+    checked_on: '2026-09-11'
+- id: nagasaki-423084
+  name: 時津町空き家バンク
+  operator: 時津町
+  operator_kind: municipality
+  official_url: https://www.town.togitsu.nagasaki.jp/
+  policy: link_only
+  municipality:
+    code: '423084'
+    name: 時津町
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '423084'
+    bank_url: https://www.town.togitsu.nagasaki.jp/
+    bank_status: none
+    map_query: 長崎県時津町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.togitsu.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.togitsu.nagasaki.jp/
+    checked_on: '2026-09-11'
+- id: nagasaki-423211
+  name: 東彼杵町空き家バンク
+  operator: 東彼杵町
+  operator_kind: municipality
+  official_url: https://www.town.higashisonogi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '423211'
+    name: 東彼杵町
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '423211'
+    bank_url: https://www.town.higashisonogi.lg.jp/kurashi_tetsuzuki/sumai_suido/429.html
+    bank_status: info
+    map_query: 長崎県東彼杵町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.higashisonogi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.higashisonogi.lg.jp/
+    checked_on: '2026-09-11'
+- id: nagasaki-423220
+  name: 川棚町空き家バンク
+  operator: 川棚町
+  operator_kind: municipality
+  official_url: https://www.kawatana.jp/
+  policy: crawl
+  municipality:
+    code: '423220'
+    name: 川棚町
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '423220'
+    bank_url: https://www.kawatana.jp/akiyabank/post-1375.html
+    bank_status: available
+    map_query: 長崎県川棚町
+  operator_evidence:
+    quote: 長崎県 県内市町に掲載された公式サイト（www.kawatana.jp）
+    url: https://www.pref.nagasaki.jp/pages/page-31.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.kawatana.jp/akiyabank/post-1375.html
+    kind: listing_index
+  allow_hosts:
+  - www.kawatana.jp
+  max_pages: 30
+- id: nagasaki-423238
+  name: 波佐見町空き家バンク
+  operator: 波佐見町
+  operator_kind: municipality
+  official_url: https://www.town.hasami.lg.jp/
+  policy: crawl
+  municipality:
+    code: '423238'
+    name: 波佐見町
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '423238'
+    bank_url: https://www.town.hasami.lg.jp/kiji0031056/index.html
+    bank_status: available
+    map_query: 長崎県波佐見町
+  operator_evidence:
+    quote: 公式ドメイン www.town.hasami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.hasami.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.hasami.lg.jp/kiji0031056/index.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.hasami.lg.jp
+  max_pages: 30
+- id: nagasaki-423831
+  name: 小値賀町空き家バンク
+  operator: 小値賀町
+  operator_kind: municipality
+  official_url: https://www.town.ojika.lg.jp/
+  policy: link_only
+  municipality:
+    code: '423831'
+    name: 小値賀町
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '423831'
+    bank_url: https://www.town.ojika.lg.jp/
+    bank_status: none
+    map_query: 長崎県小値賀町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ojika.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.ojika.lg.jp/
+    checked_on: '2026-09-11'
+- id: nagasaki-423912
+  name: 佐々町空き家バンク
+  operator: 佐々町
+  operator_kind: municipality
+  official_url: https://www.sazacho-nagasaki.jp/
+  policy: link_only
+  municipality:
+    code: '423912'
+    name: 佐々町
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '423912'
+    bank_url: https://www.sazacho-nagasaki.jp/
+    bank_status: none
+    map_query: 長崎県佐々町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 長崎県 県内市町に掲載された公式サイト（www.sazacho-nagasaki.jp）
+    url: https://www.pref.nagasaki.jp/pages/page-31.html
+    checked_on: '2026-09-11'
+- id: nagasaki-424111
+  name: 新上五島町空き家バンク
+  operator: 新上五島町
+  operator_kind: municipality
+  official_url: https://official.shinkamigoto.net/
+  policy: link_only
+  municipality:
+    code: '424111'
+    name: 新上五島町
+    prefecture: 長崎県
+    prefecture_slug: nagasaki
+    slug: '424111'
+    bank_url: https://official.shinkamigoto.net/
+    bank_status: none
+    map_query: 長崎県新上五島町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 長崎県 県内市町に掲載された公式サイト（official.shinkamigoto.net）
+    url: https://www.pref.nagasaki.jp/pages/page-31.html
+    checked_on: '2026-09-11'

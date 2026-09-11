@@ -1,0 +1,28 @@
+{
+  "command": "heal",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-11T03:44:47Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "兵庫県明石市: 同じ一覧が最良のまま（物件行 2）。0 件の原因は抽出側の可能性",
+    "兵庫県高砂市: 同じ一覧が最良のまま（物件行 2）。0 件の原因は抽出側の可能性",
+    "兵庫県小野市: 同じ一覧が最良のまま（物件行 5）。0 件の原因は抽出側の可能性",
+    "兵庫県稲美町: 同じ一覧が最良のまま（物件行 10）。0 件の原因は抽出側の可能性"
+  ],
+  "service": "akiya-atlas",
+  "stages": {
+    "heal": {
+      "checked": 4,
+      "downgraded": 0,
+      "requests": 43,
+      "swapped": 0
+    }
+  },
+  "started_at": "2026-09-11T03:42:26Z"
+}

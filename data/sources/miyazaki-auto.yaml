@@ -1,0 +1,556 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: miyazaki-452017
+  name: 宮崎市空き家バンク
+  operator: 宮崎市
+  operator_kind: municipality
+  official_url: https://www.city.miyazaki.miyazaki.jp/
+  policy: link_only
+  municipality:
+    code: '452017'
+    name: 宮崎市
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '452017'
+    bank_url: https://www.city.miyazaki.miyazaki.jp/
+    bank_status: none
+    map_query: 宮崎県宮崎市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.miyazaki.miyazaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.miyazaki.miyazaki.jp/
+    checked_on: '2026-09-11'
+- id: miyazaki-452025
+  name: 都城市空き家バンク
+  operator: 都城市
+  operator_kind: municipality
+  official_url: https://www.city.miyakonojo.miyazaki.jp/
+  policy: crawl
+  municipality:
+    code: '452025'
+    name: 都城市
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '452025'
+    bank_url: https://www.city.miyakonojo.miyazaki.jp/site/akiyabank/61033.html
+    bank_status: available
+    map_query: 宮崎県都城市
+  operator_evidence:
+    quote: 公式ドメイン www.city.miyakonojo.miyazaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.miyakonojo.miyazaki.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.miyakonojo.miyazaki.jp/site/akiyabank/61033.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.miyakonojo.miyazaki.jp
+  max_pages: 30
+- id: miyazaki-452033
+  name: 延岡市空き家バンク
+  operator: 延岡市
+  operator_kind: municipality
+  official_url: https://www.city.nobeoka.miyazaki.jp/
+  policy: link_only
+  municipality:
+    code: '452033'
+    name: 延岡市
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '452033'
+    bank_url: https://www.city.nobeoka.miyazaki.jp/site/miryoku/1917.html
+    bank_status: info
+    map_query: 宮崎県延岡市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nobeoka.miyazaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.nobeoka.miyazaki.jp/
+    checked_on: '2026-09-11'
+- id: miyazaki-452041
+  name: 日南市空き家バンク
+  operator: 日南市
+  operator_kind: municipality
+  official_url: https://www.city.nichinan.lg.jp/
+  policy: link_only
+  municipality:
+    code: '452041'
+    name: 日南市
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '452041'
+    bank_url: https://www.city.nichinan.lg.jp/
+    bank_status: none
+    map_query: 宮崎県日南市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nichinan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.nichinan.lg.jp/
+    checked_on: '2026-09-11'
+- id: miyazaki-452050
+  name: 小林市空き家バンク
+  operator: 小林市
+  operator_kind: municipality
+  official_url: https://www.city.kobayashi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '452050'
+    name: 小林市
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '452050'
+    bank_url: https://www.city.kobayashi.lg.jp/
+    bank_status: none
+    map_query: 宮崎県小林市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kobayashi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kobayashi.lg.jp/
+    checked_on: '2026-09-11'
+- id: miyazaki-452068
+  name: 日向市空き家バンク
+  operator: 日向市
+  operator_kind: municipality
+  official_url: https://www.hyugacity.jp/
+  policy: link_only
+  municipality:
+    code: '452068'
+    name: 日向市
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '452068'
+    bank_url: https://www.hyugacity.jp/display.php?cont=150821124256
+    bank_status: info
+    map_query: 宮崎県日向市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 宮崎県 県内市町村一覧に掲載された公式サイト（www.hyugacity.jp）
+    url: https://www.pref.miyazaki.lg.jp/kohosenryaku/kense/shichoson/shichosonmap.html
+    checked_on: '2026-09-11'
+  external_links:
+  - label: LIFULL HOME'S 空き家バンク ( 外部サイト )
+    url: https://www.homes.co.jp/akiyabank/
+  - label: アットホーム空き家バンク ( 外部サイト )
+    url: https://www.akiya-athome.jp/
+- id: miyazaki-452076
+  name: 串間市空き家バンク
+  operator: 串間市
+  operator_kind: municipality
+  official_url: https://www.city.kushima.lg.jp/
+  policy: link_only
+  municipality:
+    code: '452076'
+    name: 串間市
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '452076'
+    bank_url: https://www.city.kushima.lg.jp/main/city/cat3178/
+    bank_status: info
+    map_query: 宮崎県串間市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kushima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kushima.lg.jp/
+    checked_on: '2026-09-11'
+- id: miyazaki-452084
+  name: 西都市空き家バンク
+  operator: 西都市
+  operator_kind: municipality
+  official_url: https://www.city.saito.lg.jp/
+  policy: link_only
+  municipality:
+    code: '452084'
+    name: 西都市
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '452084'
+    bank_url: https://www.city.saito.lg.jp/kurashi/post_1267.html
+    bank_status: info
+    map_query: 宮崎県西都市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.saito.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.saito.lg.jp/
+    checked_on: '2026-09-11'
+- id: miyazaki-452092
+  name: えびの市空き家バンク
+  operator: えびの市
+  operator_kind: municipality
+  official_url: https://www.city.ebino.lg.jp/
+  policy: link_only
+  municipality:
+    code: '452092'
+    name: えびの市
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '452092'
+    bank_url: https://www.city.ebino.lg.jp/life_scene/sumai_hikkoshi/2924.html
+    bank_status: info
+    map_query: 宮崎県えびの市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ebino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.ebino.lg.jp/
+    checked_on: '2026-09-11'
+- id: miyazaki-453412
+  name: 三股町空き家バンク
+  operator: 三股町
+  operator_kind: municipality
+  official_url: https://www.town.mimata.lg.jp/
+  policy: link_only
+  municipality:
+    code: '453412'
+    name: 三股町
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '453412'
+    bank_url: https://www.town.mimata.lg.jp/
+    bank_status: none
+    map_query: 宮崎県三股町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.mimata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.mimata.lg.jp/
+    checked_on: '2026-09-11'
+- id: miyazaki-453617
+  name: 高原町空き家バンク
+  operator: 高原町
+  operator_kind: municipality
+  official_url: https://www.town.takaharu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '453617'
+    name: 高原町
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '453617'
+    bank_url: https://www.town.takaharu.lg.jp/
+    bank_status: none
+    map_query: 宮崎県高原町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.takaharu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.takaharu.lg.jp/
+    checked_on: '2026-09-11'
+- id: miyazaki-453820
+  name: 国富町空き家バンク
+  operator: 国富町
+  operator_kind: municipality
+  official_url: https://www.town.kunitomi.miyazaki.jp/
+  policy: link_only
+  municipality:
+    code: '453820'
+    name: 国富町
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '453820'
+    bank_url: https://www.town.kunitomi.miyazaki.jp/
+    bank_status: none
+    map_query: 宮崎県国富町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kunitomi.miyazaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kunitomi.miyazaki.jp/
+    checked_on: '2026-09-11'
+- id: miyazaki-453838
+  name: 綾町空き家バンク
+  operator: 綾町
+  operator_kind: municipality
+  official_url: https://www.town.aya.miyazaki.jp/
+  policy: link_only
+  municipality:
+    code: '453838'
+    name: 綾町
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '453838'
+    bank_url: https://www.town.aya.miyazaki.jp/
+    bank_status: none
+    map_query: 宮崎県綾町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.aya.miyazaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.aya.miyazaki.jp/
+    checked_on: '2026-09-11'
+- id: miyazaki-454010
+  name: 高鍋町空き家バンク
+  operator: 高鍋町
+  operator_kind: municipality
+  official_url: https://www.town.takanabe.lg.jp/
+  policy: link_only
+  municipality:
+    code: '454010'
+    name: 高鍋町
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '454010'
+    bank_url: https://www.town.takanabe.lg.jp/
+    bank_status: none
+    map_query: 宮崎県高鍋町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.takanabe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.takanabe.lg.jp/
+    checked_on: '2026-09-11'
+- id: miyazaki-454028
+  name: 新富町空き家バンク
+  operator: 新富町
+  operator_kind: municipality
+  official_url: https://www.town.shintomi.lg.jp/
+  policy: crawl
+  municipality:
+    code: '454028'
+    name: 新富町
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '454028'
+    bank_url: https://www.town.shintomi.lg.jp/kurashi/sumai/1864.html
+    bank_status: available
+    map_query: 宮崎県新富町
+  operator_evidence:
+    quote: 公式ドメイン www.town.shintomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.shintomi.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.shintomi.lg.jp/kurashi/sumai/1864.html
+    kind: listing_detail
+  allow_hosts:
+  - www.town.shintomi.lg.jp
+  max_pages: 30
+- id: miyazaki-454036
+  name: 西米良村空き家バンク
+  operator: 西米良村
+  operator_kind: municipality
+  official_url: https://www.vill.nishimera.lg.jp/
+  policy: link_only
+  municipality:
+    code: '454036'
+    name: 西米良村
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '454036'
+    bank_url: https://www.vill.nishimera.lg.jp/
+    bank_status: none
+    map_query: 宮崎県西米良村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.nishimera.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.vill.nishimera.lg.jp/
+    checked_on: '2026-09-11'
+- id: miyazaki-454044
+  name: 木城町空き家バンク
+  operator: 木城町
+  operator_kind: municipality
+  official_url: https://www.town.kijo.lg.jp/
+  policy: crawl
+  municipality:
+    code: '454044'
+    name: 木城町
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '454044'
+    bank_url: https://www.town.kijo.lg.jp/sosikikarasagasu/tiikiseisakuka/3/1/290.html
+    bank_status: available
+    map_query: 宮崎県木城町
+  operator_evidence:
+    quote: 公式ドメイン www.town.kijo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kijo.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.kijo.lg.jp/sosikikarasagasu/tiikiseisakuka/3/1/290.html
+    kind: listing_index
+    follow:
+    - pattern: https?://www\.town\.kijo\.lg\.jp/sosikikarasagasu/tiikiseisakuka/3/1/290\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - www.town.kijo.lg.jp
+  max_pages: 30
+- id: miyazaki-454052
+  name: 川南町空き家バンク
+  operator: 川南町
+  operator_kind: municipality
+  official_url: https://www.town.kawaminami.miyazaki.jp/
+  policy: link_only
+  municipality:
+    code: '454052'
+    name: 川南町
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '454052'
+    bank_url: https://www.town.kawaminami.miyazaki.jp/soshiki/2/1194.html
+    bank_status: info
+    map_query: 宮崎県川南町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kawaminami.miyazaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kawaminami.miyazaki.jp/
+    checked_on: '2026-09-11'
+- id: miyazaki-454061
+  name: 都農町空き家バンク
+  operator: 都農町
+  operator_kind: municipality
+  official_url: https://www.town.tsuno.lg.jp/
+  policy: link_only
+  municipality:
+    code: '454061'
+    name: 都農町
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '454061'
+    bank_url: https://www.town.tsuno.lg.jp/
+    bank_status: none
+    map_query: 宮崎県都農町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.tsuno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.tsuno.lg.jp/
+    checked_on: '2026-09-11'
+- id: miyazaki-454214
+  name: 門川町空き家バンク
+  operator: 門川町
+  operator_kind: municipality
+  official_url: https://www.town.kadogawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '454214'
+    name: 門川町
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '454214'
+    bank_url: https://www.town.kadogawa.lg.jp/akiyabank/
+    bank_status: spa_unsupported
+    map_query: 宮崎県門川町
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kadogawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kadogawa.lg.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: akiya-athome.jp
+    url: https://kadogawa-t45421.akiya-athome.jp/
+  - label: homes.co.jp
+    url: https://www.homes.co.jp/akiyabank/miyazaki/higashiusuki_kadogawa/
+- id: miyazaki-454290
+  name: 諸塚村空き家バンク
+  operator: 諸塚村
+  operator_kind: municipality
+  official_url: https://www.vill.morotsuka.miyazaki.jp/
+  policy: link_only
+  municipality:
+    code: '454290'
+    name: 諸塚村
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '454290'
+    bank_url: https://iju.vill.morotsuka.miyazaki.jp/
+    bank_status: info
+    map_query: 宮崎県諸塚村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式サイト（www.vill.morotsuka.miyazaki.jp）から空き家バンクとして案内されているリンク
+    url: https://www.vill.morotsuka.miyazaki.jp/
+    checked_on: '2026-09-11'
+- id: miyazaki-454303
+  name: 椎葉村空き家バンク
+  operator: 椎葉村
+  operator_kind: municipality
+  official_url: https://www.vill.shiiba.miyazaki.jp/
+  policy: link_only
+  municipality:
+    code: '454303'
+    name: 椎葉村
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '454303'
+    bank_url: https://www.vill.shiiba.miyazaki.jp/
+    bank_status: none
+    map_query: 宮崎県椎葉村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.shiiba.miyazaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.shiiba.miyazaki.jp/
+    checked_on: '2026-09-11'
+- id: miyazaki-454311
+  name: 美郷町空き家バンク
+  operator: 美郷町
+  operator_kind: municipality
+  official_url: https://www.town.miyazaki-misato.lg.jp/
+  policy: crawl
+  municipality:
+    code: '454311'
+    name: 美郷町
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '454311'
+    bank_url: https://www.town.miyazaki-misato.lg.jp/dynamic/info/pub/default.aspx?c_id=26
+    bank_status: available
+    map_query: 宮崎県美郷町
+  operator_evidence:
+    quote: 宮崎県 県内市町村一覧に掲載された公式サイト（www.town.miyazaki-misato.lg.jp）
+    url: https://www.pref.miyazaki.lg.jp/kohosenryaku/kense/shichoson/shichosonmap.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.miyazaki-misato.lg.jp/dynamic/info/pub/default.aspx?c_id=26
+    kind: listing_index
+  allow_hosts:
+  - www.town.miyazaki-misato.lg.jp
+  max_pages: 30
+- id: miyazaki-454419
+  name: 高千穂町空き家バンク
+  operator: 高千穂町
+  operator_kind: municipality
+  official_url: https://www.town-takachiho.jp/
+  policy: link_only
+  municipality:
+    code: '454419'
+    name: 高千穂町
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '454419'
+    bank_url: https://www.town-takachiho.jp/
+    bank_status: none
+    map_query: 宮崎県高千穂町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 宮崎県 県内市町村一覧に掲載された公式サイト（www.town-takachiho.jp）
+    url: https://www.pref.miyazaki.lg.jp/kohosenryaku/kense/shichoson/shichosonmap.html
+    checked_on: '2026-09-11'
+- id: miyazaki-454427
+  name: 日之影町空き家バンク
+  operator: 日之影町
+  operator_kind: municipality
+  official_url: https://www.town.hinokage.lg.jp/
+  policy: link_only
+  municipality:
+    code: '454427'
+    name: 日之影町
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '454427'
+    bank_url: https://www.town.hinokage.lg.jp/
+    bank_status: none
+    map_query: 宮崎県日之影町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.hinokage.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.hinokage.lg.jp/
+    checked_on: '2026-09-11'
+- id: miyazaki-454435
+  name: 五ヶ瀬町空き家バンク
+  operator: 五ヶ瀬町
+  operator_kind: municipality
+  official_url: https://www.town.gokase.miyazaki.jp/
+  policy: link_only
+  municipality:
+    code: '454435'
+    name: 五ヶ瀬町
+    prefecture: 宮崎県
+    prefecture_slug: miyazaki
+    slug: '454435'
+    bank_url: https://www.town.gokase.miyazaki.jp/
+    bank_status: none
+    map_query: 宮崎県五ヶ瀬町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.gokase.miyazaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.gokase.miyazaki.jp/
+    checked_on: '2026-09-11'

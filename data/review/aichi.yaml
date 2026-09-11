@@ -1,0 +1,760 @@
+prefecture: 愛知県
+prefecture_slug: aichi
+created_at: '2026-09-11T06:32:52+00:00'
+candidates:
+- key: '231002'
+  label: 愛知県 名古屋市
+  url: https://www.city.nagoya.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 愛知県 県内の市町村（リンク集）に掲載された公式サイト（www.city.nagoya.jp）
+  evidence_url: https://www.pref.aichi.jp/site/userguide/link-citytown.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232017'
+  label: 愛知県 豊橋市
+  url: https://www.city.toyohashi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.toyohashi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.toyohashi.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232025'
+  label: 愛知県 岡崎市
+  url: https://www.city.okazaki.lg.jp/kurashi/hikkoshi/1012273/1012281/1003083/1003084.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.okazaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.okazaki.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232033'
+  label: 愛知県 一宮市
+  url: https://www.city.ichinomiya.aichi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ichinomiya.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.ichinomiya.aichi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232041'
+  label: 愛知県 瀬戸市
+  url: https://www.city.seto.aichi.jp/bunya/akiyakannrenn/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.seto.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.seto.aichi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232050'
+  label: 愛知県 半田市
+  url: https://www.city.handa.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.handa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.handa.lg.jp/
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232068'
+  label: 愛知県 春日井市
+  url: https://www.city.kasugai.lg.jp/kurashi/1033189/1038894/1003670/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kasugai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kasugai.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232076'
+  label: 愛知県 豊川市
+  url: https://www.city.toyokawa.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.toyokawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.toyokawa.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232084'
+  label: 愛知県 津島市
+  url: https://www.city.tsushima.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tsushima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tsushima.lg.jp/
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232092'
+  label: 愛知県 碧南市
+  url: https://www.city.hekinan.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hekinan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.hekinan.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232106'
+  label: 愛知県 刈谷市
+  url: https://www.city.kariya.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kariya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kariya.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232114'
+  label: 愛知県 豊田市
+  url: https://www.city.toyota.aichi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.toyota.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.toyota.aichi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232122'
+  label: 愛知県 安城市
+  url: https://www.city.anjo.aichi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.anjo.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.anjo.aichi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232131'
+  label: 愛知県 西尾市
+  url: https://www.city.nishio.aichi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nishio.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.nishio.aichi.jp/
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232149'
+  label: 愛知県 蒲郡市
+  url: https://www.city.gamagori.lg.jp/site/kenchiku/akiyatourokubukken.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.gamagori.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.gamagori.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232157'
+  label: 愛知県 犬山市
+  url: https://www.city.inuyama.aichi.jp/1003291/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.inuyama.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.inuyama.aichi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232165'
+  label: 愛知県 常滑市
+  url: https://www.city.tokoname.aichi.jp/1008842/1008843/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tokoname.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.tokoname.aichi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232173'
+  label: 愛知県 江南市
+  url: https://www.city.konan.lg.jp/kurashi/juutaku/1008730.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.konan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.konan.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232190'
+  label: 愛知県 小牧市
+  url: https://www.city.komaki.aichi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.komaki.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.komaki.aichi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232203'
+  label: 愛知県 稲沢市
+  url: https://www.city.inazawa.aichi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.inazawa.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.inazawa.aichi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232211'
+  label: 愛知県 新城市
+  url: https://www.city.shinshiro.lg.jp/kurashi/jyutaku-tochi/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shinshiro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.shinshiro.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232220'
+  label: 愛知県 東海市
+  url: https://www.city.tokai.aichi.jp/kurashi/1001815/1001840/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tokai.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.tokai.aichi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232238'
+  label: 愛知県 大府市
+  url: https://www.city.obu.aichi.jp/kurashi/sumai/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.obu.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.obu.aichi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232246'
+  label: 愛知県 知多市
+  url: https://www.city.chita.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.chita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.chita.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232254'
+  label: 愛知県 知立市
+  url: https://www.city.chiryu.aichi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.chiryu.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.chiryu.aichi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232262'
+  label: 愛知県 尾張旭市
+  url: https://www.city.owariasahi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.owariasahi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.owariasahi.lg.jp/
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232271'
+  label: 愛知県 高浜市
+  url: https://www.city.takahama.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.takahama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.takahama.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232289'
+  label: 愛知県 岩倉市
+  url: https://www.city.iwakura.aichi.jp/0000002813.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.iwakura.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.iwakura.aichi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232297'
+  label: 愛知県 豊明市
+  url: https://www.city.toyoake.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.toyoake.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.toyoake.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232301'
+  label: 愛知県 日進市
+  url: https://www.city.nisshin.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nisshin.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.nisshin.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232319'
+  label: 愛知県 田原市
+  url: https://www.city.tahara.aichi.jp/kurashi/jutaku/1006264/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tahara.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.tahara.aichi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232327'
+  label: 愛知県 愛西市
+  url: https://www.city.aisai.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.aisai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.aisai.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232335'
+  label: 愛知県 清須市
+  url: https://www.city.kiyosu.aichi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kiyosu.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kiyosu.aichi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232343'
+  label: 愛知県 北名古屋市
+  url: https://www.city.kitanagoya.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kitanagoya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kitanagoya.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232351'
+  label: 愛知県 弥富市
+  url: https://www.city.yatomi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yatomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.yatomi.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232360'
+  label: 愛知県 みよし市
+  url: https://www.city.aichi-miyoshi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 愛知県 県内の市町村（リンク集）に掲載された公式サイト（www.city.aichi-miyoshi.lg.jp）
+  evidence_url: https://www.pref.aichi.jp/site/userguide/link-citytown.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232378'
+  label: 愛知県 あま市
+  url: https://www.city.ama.aichi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ama.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.ama.aichi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '232386'
+  label: 愛知県 長久手市
+  url: https://www.city.nagakute.lg.jp/kurashi_tetsuzuki/sumai/13325.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nagakute.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.nagakute.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '233021'
+  label: 愛知県 東郷町
+  url: https://www.town.aichi-togo.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 愛知県 県内の市町村（リンク集）に掲載された公式サイト（www.town.aichi-togo.lg.jp）
+  evidence_url: https://www.pref.aichi.jp/site/userguide/link-citytown.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '233421'
+  label: 愛知県 豊山町
+  url: https://www.town.toyoyama.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.toyoyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.toyoyama.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '233617'
+  label: 愛知県 大口町
+  url: https://www.town.oguchi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.oguchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.oguchi.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '233625'
+  label: 愛知県 扶桑町
+  url: https://akiyabk.com/fuso/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.town.fuso.lg.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.town.fuso.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '234249'
+  label: 愛知県 大治町
+  url: https://www.town.oharu.aichi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.oharu.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.oharu.aichi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '234257'
+  label: 愛知県 蟹江町
+  url: https://www.town.kanie.aichi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kanie.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kanie.aichi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '234273'
+  label: 愛知県 飛島村
+  url: https://www.vill.tobishima.aichi.jp/kurashi/ijuu/1001701/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.tobishima.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.tobishima.aichi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '234419'
+  label: 愛知県 阿久比町
+  url: https://www.town.agui.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.agui.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.agui.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '234427'
+  label: 愛知県 東浦町
+  url: https://www.town.aichi-higashiura.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 愛知県 県内の市町村（リンク集）に掲載された公式サイト（www.town.aichi-higashiura.lg.jp）
+  evidence_url: https://www.pref.aichi.jp/site/userguide/link-citytown.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '234451'
+  label: 愛知県 南知多町
+  url: https://www.town.minamichita.lg.jp/akiya/index.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.minamichita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.minamichita.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '234460'
+  label: 愛知県 美浜町
+  url: https://www.town.aichi-mihama.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 愛知県 県内の市町村（リンク集）に掲載された公式サイト（www.town.aichi-mihama.lg.jp）
+  evidence_url: https://www.pref.aichi.jp/site/userguide/link-citytown.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '234478'
+  label: 愛知県 武豊町
+  url: https://www.town.taketoyo.lg.jp/kurashi/1001507/1001589/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.taketoyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.taketoyo.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '235016'
+  label: 愛知県 幸田町
+  url: https://www.town.kota.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kota.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kota.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '235610'
+  label: 愛知県 設楽町
+  url: https://www.town.shitara.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shitara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.shitara.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '235628'
+  label: 愛知県 東栄町
+  url: https://www.town.toei.aichi.jp/5756.htm
+  page_class: spa
+  class_label: JavaScript 描画（未対応）
+  confidence: 0.75
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.toei.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.toei.aichi.jp/
+  reason: JavaScript 描画のため静的 HTML に物件が無い。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '235636'
+  label: 愛知県 豊根村
+  url: https://www.vill.toyone.aichi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.toyone.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.toyone.aichi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

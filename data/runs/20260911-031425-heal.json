@@ -1,0 +1,27 @@
+{
+  "command": "heal",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-11T03:15:49Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "千葉県香取市: 同じ一覧が最良のまま（物件行 2）。0 件の原因は抽出側の可能性",
+    "千葉県いすみ市: 同じ一覧が最良のまま（物件行 3）。0 件の原因は抽出側の可能性",
+    "千葉県酒々井町: 同じ一覧が最良のまま（物件行 3）。0 件の原因は抽出側の可能性"
+  ],
+  "service": "akiya-atlas",
+  "stages": {
+    "heal": {
+      "checked": 3,
+      "downgraded": 0,
+      "requests": 27,
+      "swapped": 0
+    }
+  },
+  "started_at": "2026-09-11T03:14:25Z"
+}

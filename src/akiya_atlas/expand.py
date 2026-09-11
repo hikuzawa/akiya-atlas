@@ -8,11 +8,15 @@ from __future__ import annotations
 
 import logging
 import re
+import socket
+import unicodedata
 from dataclasses import dataclass, field
 from datetime import UTC, date, datetime
 from pathlib import Path
+from urllib.parse import urlsplit
 
 import yaml
+from sitemill.build.pii import PHONE_RE
 from sitemill.classify import (
     ClassifiedPage,
     ListingScore,
@@ -22,7 +26,7 @@ from sitemill.classify import (
     listing_score,
 )
 from sitemill.diff.normalize import page_text
-from sitemill.fetch.client import PoliteClient
+from sitemill.fetch.client import FetchResult, PoliteClient
 from sitemill.fetch.links import extract_links, host_of
 from sitemill.models import (
     CrawlPolicy,
@@ -72,6 +76,8 @@ class MunicipalityFinding:
     listing_rows: int | None = None
     pagination_pattern: str | None = None
     alternatives: list[str] = field(default_factory=list)
+    # 一覧は確認できているのに 1 件も取り込めていない（抽出側の課題。ページの文面を分ける）
+    extract_gap: bool = False
 
 
 def resolve_official_url(
@@ -132,8 +138,7 @@ def resolve_official(
         url, host = probed
         return OfficialResolution(url, host, host.evidence(), "https://" + host.host + "/")
     # 県の公的一覧に載っている URL を使う（ドメインが命名規則外でも一覧が運営主体を保証する）
-    override_url = overrides.by_code.get(muni.code)
-    if override_url:
+    for override_url in _override_urls(overrides.by_code.get(muni.code)):
         res = client.get(override_url, check_robots=True)
         if res.ok or res.not_modified:
             host = classify_host(host_of(res.final_url), muni.prefecture_slug)
@@ -146,7 +151,45 @@ def resolve_official(
             return OfficialResolution(
                 res.final_url, host, quote, overrides.source_url or override_url
             )
+        if site_is_up(res, override_url):
+            # 取得できなくても（robots 拒否・403・古い TLS・応答なし）、県の公的一覧に
+            # 載っている事実が運営主体の根拠になる（ADR 0007 条件A）。人手でも直せないので
+            # 人間確認には回さず、リンクだけ出す。
+            host = OfficialHost(host_of(override_url), "prefecture_listed", True, "strong")
+            quote = (
+                f"{overrides.source_name or '県の市町村一覧'}に掲載された公式サイト"
+                f"（{host.host}）。サイトを取得できなかったためリンクのみ"
+                f"（{res.error or res.status}）"
+            )
+            return OfficialResolution(
+                override_url, host, quote, overrides.source_url or override_url
+            )
     return None
+
+
+def _override_urls(url: str | None) -> list[str]:
+    """県の一覧の URL と、その入口（ホストのルート）。深いパスは移転していることがある。
+
+    例: 兵庫県の一覧にある香美町 `.../www/index.html` は 404 で、ルートは生きている。
+    """
+    if not url:
+        return []
+    parts = urlsplit(url)
+    root = f"{parts.scheme}://{parts.netloc}/"
+    return [url] if url.rstrip("/") == root.rstrip("/") else [url, root]
+
+
+def site_is_up(res: FetchResult, url: str) -> bool:
+    """取得に失敗した相手のサイトが「在る」かどうか。URL 自体が誤りなら False。"""
+    if res.status == 404:
+        return False  # 一覧の URL が古い。人が直せるので人間確認に回す
+    if res.status:
+        return True  # 403 など、サーバは応答している
+    try:  # HTTP の応答が無い（robots 不達・TLS・タイムアウト）。名前解決できるかで判断する
+        socket.getaddrinfo(host_of(url), None)
+    except OSError:
+        return False
+    return True
 
 
 @dataclass
@@ -407,9 +450,8 @@ def select_bank_page(
     # 外部プラットフォームへのリンクを収集
     for ln in extract_links(best.html, best.url):
         if platforms.is_platform(ln.url):
-            probe.externals.append(
-                ExternalLink(label=ln.text[:60] or platforms.match(ln.url) or "", url=ln.url)
-            )
+            label = clean_link_label(ln.text) or platforms.match(ln.url) or ""
+            probe.externals.append(ExternalLink(label=label, url=ln.url))
     return probe
 
 
@@ -653,6 +695,7 @@ def run_discovery(
             findings = list(pool.map(assess, todo))
     else:
         findings = [assess(m) for m in todo]
+    _flag_shared_official_urls(findings)
     for f in findings:
         report.findings.append(f)
         report.total += 1
@@ -663,6 +706,35 @@ def run_discovery(
         else:
             report.pending += 1
     return report
+
+
+def _flag_shared_official_urls(findings: list[MunicipalityFinding]) -> None:
+    """同じ公式サイトに解決した市町村が複数あれば、取り違えなので両方を人間確認に回す。
+
+    同名の市町村（北海道の泊村は古宇郡と国後郡の 2 つ）は候補ドメインの推測が同じ URL に当たる。
+    県の市町村一覧でも同名は対応づけないので、どちらのサイトかは機械では決められない。
+    片方に相手のサイトを結び付けて公開するより、人間に確認してもらう方がよい。
+    """
+    by_host: dict[str, list[MunicipalityFinding]] = {}
+    for f in findings:
+        if f.official_url and f.policy != "pending":
+            # official_url はホスト名だけのことも URL のこともある
+            key = host_of(f.official_url) or f.official_url.lower()
+            by_host.setdefault(key, []).append(f)
+    for host, group in by_host.items():
+        if len(group) < 2:
+            continue
+        names = "・".join(f"{f.muni.name}({f.muni.code})" for f in group)
+        for f in group:
+            f.policy = "pending"
+            f.proposed_action = "URL修正"
+            f.confidence = 0.2
+            f.reason = f"同じ公式サイト {host} に複数の市町村が解決した（{names}）。取り違えの恐れ"
+            f.bank_url = None
+            f.classified = None
+            f.operator_kind = OperatorKind.unknown
+            f.evidence_quote = None
+            f.evidence_url = None
 
 
 def utc_now_iso() -> str:
@@ -709,6 +781,17 @@ def _bank_note(f: MunicipalityFinding, status: str) -> str:
     return ""
 
 
+def clean_link_label(text: str) -> str:
+    """リンクの見出しから連絡先を落とす。
+
+    民間プラットフォームのアンカーには「【お気軽にご相談ください Tel. 0284-20-2266】」のように
+    担当者の電話番号が入ることがある。そのまま保存するとページに出て公開前の PII 検査で止まる。
+    """
+    label = PHONE_RE.sub("", unicodedata.normalize("NFKC", text or ""))
+    label = re.sub(r"[ 　]{2,}", " ", label).strip(" 　・-")
+    return label[:60]
+
+
 _RAKUEN_NAGANO = ExternalLink(
     label="楽園信州 空き家バンク・空き地バンク（長野県）",
     url="https://rakuen-akiya.jp/",
@@ -743,6 +826,7 @@ def finding_to_source_dict(f: MunicipalityFinding, *, prefecture_name: str) -> d
             "bank_url": f.bank_url
             or (("https://" + f.official_url + "/") if f.official_url else ""),
             "bank_status": status,
+            "extract_pending": f.extract_gap,
             "map_query": f"{prefecture_name}{m.name}",
         },
     }
@@ -883,6 +967,7 @@ def _finding_to_row(f: MunicipalityFinding) -> dict:
         "listing_score": f.listing_score,
         "listing_rows": f.listing_rows,
         "pagination_pattern": f.pagination_pattern,
+        "extract_gap": f.extract_gap,
         "alternatives": list(f.alternatives),
     }
 
@@ -912,7 +997,7 @@ def _row_to_finding(row: dict) -> MunicipalityFinding:
         evidence_url=row.get("evidence_url"),
         cross_linked=row.get("cross_linked", False),
         external_links=[
-            ExternalLink(label=e["label"], url=e["url"], note=e.get("note"))
+            ExternalLink(label=clean_link_label(e["label"]), url=e["url"], note=e.get("note"))
             for e in row.get("external_links", [])
         ],
         policy=row.get("policy", "pending"),
@@ -922,6 +1007,7 @@ def _row_to_finding(row: dict) -> MunicipalityFinding:
         listing_score=row.get("listing_score"),
         listing_rows=row.get("listing_rows"),
         pagination_pattern=row.get("pagination_pattern"),
+        extract_gap=bool(row.get("extract_gap")),
         alternatives=list(row.get("alternatives", [])),
     )
 
@@ -1028,6 +1114,21 @@ def reassess_finding(
         f.evidence_url = evidence_url or f.evidence_url
     _attach_probe(f, probe)
     return f
+
+
+MIN_BODY_TEXT = 200  # これ未満なら本文を取り出せていないとみなす（抽出側の問題）
+# 「現在、登録物件はありません」のように、掲載が無いことをページ自身が書いている
+_EMPTY_NOTICE = re.compile(r"(?:物件|情報)[はも]?(?:、|\s)*(?:ありません|ございません|None)")
+
+
+def _page_signals(url: str | None, client: PoliteClient) -> tuple[str, ListingScore | None]:
+    """抽出に渡るのと同じ本文と、一覧らしさ。0 件の理由を見分けるために使う。"""
+    if not url:
+        return "", None
+    res = client.get(url)
+    if not res.ok:
+        return "", None
+    return page_text(res.text), listing_score(res.text, res.final_url)
 
 
 def _reset_source_state(ws: Workspace, source_id: str, keep: set[str]) -> int:
@@ -1145,10 +1246,44 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
                     f"（物件行 {new.listing_rows}）"
                 )
             elif new.policy == "crawl":
-                result["changed"].append(
-                    f"{name}: 同じ一覧が最良のまま（物件行 {new.listing_rows}）。"
-                    "0 件の原因は抽出側の可能性"
-                )
+                # 0 件の理由は 3 通りある。取り下げてよいのは「一覧ではなかった」ときだけ
+                text, score = _page_signals(new.bank_url, client)
+                if len(text) < MIN_BODY_TEXT:
+                    new.extract_gap = True
+                    rows[i] = _finding_to_row(new)
+                    touched = True
+                    result["changed"].append(
+                        f"{name}: 本文を取り出せないページ（物件行 {new.listing_rows}）。"
+                        "抽出側の問題として保留"
+                    )
+                elif _EMPTY_NOTICE.search(text):
+                    result["changed"].append(f"{name}: ページ自身が掲載なしと書いている。そのまま")
+                elif score is not None and score.listing_no_count == 0 and score.rows < 5:
+                    # 物件番号も無く行も少ない＝一覧らしさが弱い。公式へのリンクだけにする
+                    fixed = decide(
+                        new.muni, new.official, None, cross_linked=False, bank_host_official=False
+                    )
+                    fixed.official_url = new.official_url
+                    fixed.evidence_quote = new.evidence_quote
+                    fixed.evidence_url = new.evidence_url
+                    fixed.reason = (
+                        "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
+                    )
+                    rows[i] = _finding_to_row(fixed)
+                    touched = True
+                    result["downgraded"].append(sid)
+                    _reset_source_state(ws, sid, set())
+                    result["changed"].append(
+                        f"{name}: 一覧ではなかったので取り下げ（物件行 {score.rows}・{old_url}）"
+                    )
+                else:
+                    new.extract_gap = True
+                    rows[i] = _finding_to_row(new)
+                    touched = True
+                    result["changed"].append(
+                        f"{name}: 一覧に見えるのに 0 件（物件行 {score.rows if score else '?'}）。"
+                        "抽出側の課題として保留"
+                    )
             else:
                 rows[i] = _finding_to_row(new)
                 touched = True

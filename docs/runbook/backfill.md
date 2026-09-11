@@ -48,19 +48,22 @@ PowerShell 7 で検証済み（富山県で発見→巡回→抽出→自己修�
    `Tee-Object -Encoding utf8`（既定の `>` は PowerShell 5.1 だと UTF-16 になる）。
    ```powershell
    $env:PYTHONUTF8 = "1"
-   uv run akiya-atlas backfill --only 富山県 2>&1 | Tee-Object -FilePath logsackfill.log -Append -Encoding utf8
+   uv run akiya-atlas backfill --only 富山県 2>&1 | Tee-Object -FilePath logs\backfill.log -Append -Encoding utf8
    ```
    コマンドの引数に日本語（県名）をそのまま渡してよい。
 3. **長時間の実行**: tmux の代わりに `Start-Process` で切り離す。ウィンドウを閉じても走り続ける。
    ```powershell
    New-Item -ItemType Directory -Force logs | Out-Null
    $p = Start-Process uv -ArgumentList "run","akiya-atlas","backfill","--stages","discover","--workers","8" `
-        -RedirectStandardOutput logsackfill-discover.log -RedirectStandardError logsackfill-discover.err.log `
+        -RedirectStandardOutput logs\backfill-discover.log -RedirectStandardError logs\backfill-discover.err.log `
         -WindowStyle Hidden -PassThru
-   $p.Id | Out-File logsackfill.pid                      # 止めるとき: Stop-Process -Id (Get-Content logsackfill.pid)
-   Get-Content logsackfill-discover.log -Wait -Tail 20    # 進捗を追う（Ctrl+C で見るのをやめても実行は続く）
+   $p.Id | Out-File logs\backfill.pid                      # 止めるとき: Stop-Process -Id (Get-Content logs\backfill.pid)
+   Get-Content logs\backfill-discover.log -Wait -Tail 20   # 県ごとの結果（Ctrl+C で見るのをやめても実行は続く）
+   (Select-String logs\backfill-discover.err.log -Pattern "policy=").Count   # 判定済みの市町村数
    ```
-   `logs/` は git 管理外。
+   `logs/` は git 管理外。標準出力（`.log`）には県ごとの 1 行、標準エラー（`.err.log`）には市町村ごとの
+   判定と robots の警告が出る。1 県に 10 分以上かかることがある（北海道は 185 市町村）ので、
+   細かい進捗は `.err.log` の `policy=` の行数を見るのが早い。
 4. **スリープさせない**: 実行前に電源設定を変える。終わったら元に戻す。
    ```powershell
    powercfg /change standby-timeout-ac 0    # スリープしない（AC 電源時）
@@ -73,19 +76,18 @@ PowerShell 7 で検証済み（富山県で発見→巡回→抽出→自己修�
 コマンドの `--workers` で一時的に上書きもできる。並列にしても **1 ホストあたりの間隔（3 秒 + robots の
 Crawl-delay）は縮まらない**（ホスト別ロックで担保）。
 
-## 2. 県の市町村リンク集（任意だが推奨）
+## 2. 県の市町村リンク集（**47 県ぶん用意済み。作業は不要**）
 候補ドメインの推測が外れる自治体（独自ドメイン: `higashikagawa.jp`、`nakijin.jp` 等）は、県の公的な
-市町村リンク集を正解源にする。県ごとに 1 ページ探して登録する。
-1. 県サイトで「市町村リンク」「市町村ホームページ一覧」「県内市町村」などのページを探す
-   （例: 香川県 `https://www.pref.kagawa.lg.jp/kocho/shokai/profile/w3cz95150312151105.html`）。
-2. 対応表を作る（ページを礼儀正しく 1 回だけ取得する）:
-   ```bash
-   uv run akiya-atlas official-urls 宮城県 "<リンク集ページの URL>" --name "宮城県 市町村ホームページ一覧"
-   ```
-   `data/reference/miyagi_official_urls.json` ができる。「未対応」が出た市町村は、推測ドメインで解決できれば
-   問題なく、できなければその市町村だけ `pending`（人間確認）になる。
-3. 省略した県も発見は動く（候補ドメインの推測だけで解決を試みる）。後から表を足して
-   `uv run akiya-atlas expand 宮城県` を再実行すれば上書きされる。
+市町村リンク集を正解源にする。**47 都道府県すべての表が `data/reference/{slug}_official_urls.json` に
+入っている**（出典 URL は `data/reference/SOURCES.md` の表）。46 県は全市区町村を解決済み、北海道だけ
+178/185（北方領土の 5 村はサイトが無く、同名が 2 つある泊村は取り違えを避けて対応づけない）。
+
+作り直したいときだけ、次のコマンドを使う（ページを礼儀正しく 1 回だけ取得する）:
+```bash
+uv run akiya-atlas official-urls 宮城県 "<リンク集ページの URL>" --name "宮城県 市町村ホームページ一覧"
+```
+「未対応」が出た市町村は、推測ドメインで解決できれば問題なく、できなければその市町村だけ
+`pending`（人間確認）になる。表を差し替えたら `uv run akiya-atlas expand 宮城県` で再発見する。
 
 ## 3. 実行
 
@@ -106,11 +108,11 @@ uv run akiya-atlas backfill --stages discover --workers 8 2>&1 | tee -a backfill
 ```bash
 uv run akiya-atlas backfill --stages crawl,extract,heal --workers 8 2>&1 | tee -a backfill-extract.log
 ```
-- 巡回対象は静的な物件一覧を持つ自治体だけ（全国で 1 割弱、150 前後の見込み）。
-- 所要の目安（実測: 富山県の巡回対象 5 自治体で 3.2 分）。全国 150 前後なら **1.5〜2 時間**。
-- 抽出の費用は Haiku 4.5 で **巡回対象 1 自治体あたり $0.03〜0.05**（富山県実測: 5 自治体・入力 26k・
-  出力 33k トークンで約 $0.19）。全国 150 自治体で **$5〜10** の見込み。掲載件数の多い自治体は
-  これより高い。`data/runs/latest-extract.json` の `llm.input_tokens / output_tokens` で実費を確認できる。
+- 巡回対象は静的な物件一覧を持つ自治体だけ（全国実測で 270 自治体＝全体の 16%）。
+- 所要の目安（**全国実測 2026-09-11**）: 巡回 3.6 分・抽出 2.2 分・自己修復 28 分。
+  自己修復は「0 件だった自治体」1 件につき約 34 秒かかるので、初回はここが一番長い。
+- 抽出の費用は Haiku 4.5 で **全国 271 ページ・3,739 項目で約 $4.8**（入力 157 万・出力 64 万トークン）。
+  `data/runs/latest-extract.json` の `llm.input_tokens / output_tokens` で実費を確認できる。
 - `heal` は「巡回したのに 0 件」の自治体を同一サイト内で選び直し、より一覧らしいページがあれば差し替えて
   その場で再巡回・再抽出、無ければ状態を info/none に見直す。人手の修正は要らない。
 
@@ -124,7 +126,7 @@ uv run akiya-atlas rediscover 宮城県 --code 042021          # 特定の市町
 
 ## 4. 途中で止まった場合の再開
 - **同じコマンドをもう一度実行するだけ**。`data/runs/backfill.json` にある済みの工程は飛ばす。
-  Windows なら `Get-Content logsackfill-discover.log -Tail 5` で最後にどこまで進んだかを見てから再実行する。
+  Windows なら `Get-Content logs\backfill-discover.log -Tail 5` で最後にどこまで進んだかを見てから再実行する。
 - 発見の途中で止まった県は、その県の発見だけ最初からやり直す（1 県数分）。
 - 巡回は `data/state/crawl.json` の条件付き GET で続きから、抽出は未処理（pending）のページだけが対象。
 - Raspberry Pi の電源断・SSH 切断: `tmux attach -t backfill` で戻る。プロセスが死んでいれば再実行。

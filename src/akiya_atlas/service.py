@@ -10,6 +10,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from sitemill.build.pii import PHONE_RE
 from sitemill.diff.state import CrawlState
 from sitemill.extract import ExtractedItem, ExtractionSpec
 from sitemill.models import Page, Provenance, Redirect, Source
@@ -38,19 +39,54 @@ FIELD_KEYS = (
 STALE_AFTER_DAYS = 30
 
 
+# 題名・要約に混じる地番らしき数字（「宮前3-15の一部」）。価格帯の「300-500万円」も巻き込むが、
+# 数値は構造化した項目で持っているので、本文からは落としてよい
+LOT_LIKE = re.compile(r"(?<![\d.])\d{1,5}-\d{1,4}(?![\d.㎡m])")
+
+
+def scrub_lot_numbers(content: dict[str, Any]) -> bool:
+    """題名・要約に残った地番と電話番号を落とす。変更があれば True。
+
+    電話番号は仲介業者や担当者の連絡先のことがあり、そのまま載せると公開前の PII 検査で止まる。
+    一次情報へのリンクは別に出しているので、本文から連絡先を持ち出す必要はない。
+    """
+    changed = False
+    for key in ("title", "summary"):
+        text = content.get(key)
+        if not text:
+            continue
+        scrubbed = PHONE_RE.sub("", LOT_LIKE.sub("", str(text)))
+        if scrubbed != text:
+            content[key] = re.sub(r"[ 　]{2,}", " ", scrubbed).strip() or None
+            changed = True
+    return changed
+
+
 def sanitize_address_fields(content: dict[str, Any]) -> bool:
     """所在地から番地・号・建物名を落とし「市町村＋大字・地区名」までにする（ADR 0002 追記）。
 
     落とした文字列が title / summary に含まれていればそこからも消す。変更があれば True。
     """
-    changed = False
+    changed = scrub_lot_numbers(content)
     addr = content.get("address")
-    if not addr or addr.get("status") != "parsed" or not addr.get("value"):
-        return False
+    if not addr:
+        return changed
+    if addr.get("status") != "parsed" or not addr.get("value"):
+        # 値として採らなかった引用（quote_not_in_source など）にも番地が入る。記録にも残さない
+        quote = addr.get("quote")
+        if quote and has_street_number(str(quote)):
+            kept, _ = strip_street_number(str(quote))
+            addr["quote"] = kept or None
+            return True
+        return changed
     original = str(addr["value"])
     kept, removed = strip_street_number(original)
+    if kept and has_street_number(kept):
+        # 想定していない書式（「E棟 新光248番地、F棟 …」のような複数棟の並記）で落としきれない。
+        # 番地を載せるくらいなら所在地ごと捨てる。全国分の抽出を止めないための保険。
+        kept, removed = "", original
     if kept == original and removed is None:
-        return False
+        return changed
     if kept:
         addr["value"] = kept
         addr["quote"] = kept

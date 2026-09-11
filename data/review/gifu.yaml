@@ -1,0 +1,592 @@
+prefecture: 岐阜県
+prefecture_slug: gifu
+created_at: '2026-09-11T06:32:52+00:00'
+candidates:
+- key: '212016'
+  label: 岐阜県 岐阜市
+  url: https://www.city.gifu.lg.jp/kurashi/sumai/1002445/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.gifu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.gifu.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212024'
+  label: 岐阜県 大垣市
+  url: https://www.city.ogaki.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ogaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.ogaki.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212032'
+  label: 岐阜県 高山市
+  url: https://www.city.takayama.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.takayama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.takayama.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212041'
+  label: 岐阜県 多治見市
+  url: https://www.city.tajimi.lg.jp/kurashi_tetsuduzuki/sumai_seikatsu_dobutsu/1006141/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tajimi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tajimi.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212059'
+  label: 岐阜県 関市
+  url: https://www.city.seki.lg.jp/0000019414.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.seki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.seki.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212067'
+  label: 岐阜県 中津川市
+  url: https://www.city.nakatsugawa.lg.jp/life/life/1/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nakatsugawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.nakatsugawa.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212075'
+  label: 岐阜県 美濃市
+  url: https://www.city.mino.gifu.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.mino.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.mino.gifu.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212083'
+  label: 岐阜県 瑞浪市
+  url: https://www.city.mizunami.lg.jp/kurashi/sumai/1001528/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.mizunami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.mizunami.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212091'
+  label: 岐阜県 羽島市
+  url: https://www.city.hashima.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hashima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.hashima.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212105'
+  label: 岐阜県 恵那市
+  url: https://www.city.ena.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ena.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.ena.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212113'
+  label: 岐阜県 美濃加茂市
+  url: https://www.city.minokamo.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.minokamo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.minokamo.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212121'
+  label: 岐阜県 土岐市
+  url: https://www.city.toki.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.toki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.toki.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212130'
+  label: 岐阜県 各務原市
+  url: https://www.city.kakamigahara.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kakamigahara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kakamigahara.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212148'
+  label: 岐阜県 可児市
+  url: https://www.city.kani.lg.jp/24347.htm
+  page_class: spa
+  class_label: JavaScript 描画（未対応）
+  confidence: 0.75
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kani.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kani.lg.jp/
+  reason: JavaScript 描画のため静的 HTML に物件が無い。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212156'
+  label: 岐阜県 山県市
+  url: https://www.city.yamagata.gifu.jp/site/yamanavi/list9-35.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yamagata.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.yamagata.gifu.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212164'
+  label: 岐阜県 瑞穂市
+  url: https://www.city.mizuho.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.mizuho.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.mizuho.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212172'
+  label: 岐阜県 飛騨市
+  url: https://www.city.hida.gifu.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hida.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.hida.gifu.jp/
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212181'
+  label: 岐阜県 本巣市
+  url: https://www.city.motosu.lg.jp/iju/0000000178.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.motosu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.motosu.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212199'
+  label: 岐阜県 郡上市
+  url: https://www.city.gujo.gifu.jp/life/housing/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.gujo.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.gujo.gifu.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212202'
+  label: 岐阜県 下呂市
+  url: https://www.city.gero.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.gero.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.gero.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '212211'
+  label: 岐阜県 海津市
+  url: https://www.city.kaizu.lg.jp/kurashi/0000001552.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kaizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kaizu.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '213021'
+  label: 岐阜県 岐南町
+  url: https://www.town.ginan.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ginan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.ginan.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '213039'
+  label: 岐阜県 笠松町
+  url: https://www.town.kasamatsu.gifu.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kasamatsu.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kasamatsu.gifu.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '213411'
+  label: 岐阜県 養老町
+  url: https://www.town.yoro.gifu.jp/life/living/1001778/1001779.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.88
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yoro.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yoro.gifu.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '213616'
+  label: 岐阜県 垂井町
+  url: https://www.town.tarui.lg.jp/life/1/13/57/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tarui.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.tarui.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '213624'
+  label: 岐阜県 関ケ原町
+  url: https://www.town.sekigahara.gifu.jp/4558.htm
+  page_class: spa
+  class_label: JavaScript 描画（未対応）
+  confidence: 0.75
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.sekigahara.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.sekigahara.gifu.jp/
+  reason: JavaScript 描画のため静的 HTML に物件が無い。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '213811'
+  label: 岐阜県 神戸町
+  url: https://www.town.godo.gifu.jp/life/other/other22.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.godo.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.godo.gifu.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '213829'
+  label: 岐阜県 輪之内町
+  url: https://town.wanouchi.gifu.jp/portal/life-process/empty-house/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 岐阜県の市町村一覧に掲載された公式サイト（town.wanouchi.gifu.jp）
+  evidence_url: https://www.pref.gifu.lg.jp/page/6058.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '213837'
+  label: 岐阜県 安八町
+  url: https://www.town.anpachi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.anpachi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.anpachi.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '214019'
+  label: 岐阜県 揖斐川町
+  url: https://www.town.ibigawa.lg.jp/life/1/4/28/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ibigawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.ibigawa.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '214035'
+  label: 岐阜県 大野町
+  url: https://www.town-ono.jp/0000001138.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 岐阜県の市町村一覧に掲載された公式サイト（www.town-ono.jp）
+  evidence_url: https://www.pref.gifu.lg.jp/page/6058.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '214043'
+  label: 岐阜県 池田町
+  url: https://www.town.ikeda.gifu.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 岐阜県の市町村一覧に掲載された公式サイト（www.town.ikeda.gifu.jp）
+  evidence_url: https://www.pref.gifu.lg.jp/page/6058.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '214213'
+  label: 岐阜県 北方町
+  url: https://www.town.kitagata.gifu.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kitagata.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kitagata.gifu.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '215015'
+  label: 岐阜県 坂祝町
+  url: https://www.town.sakahogi.gifu.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.sakahogi.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.sakahogi.gifu.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '215023'
+  label: 岐阜県 富加町
+  url: https://www.town.tomika.gifu.jp/docs/436.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tomika.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.tomika.gifu.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '215031'
+  label: 岐阜県 川辺町
+  url: https://www.kawabe-gifu.jp/?page_id=16351
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 岐阜県の市町村一覧に掲載された公式サイト（www.kawabe-gifu.jp）
+  evidence_url: https://www.pref.gifu.lg.jp/page/6058.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '215040'
+  label: 岐阜県 七宗町
+  url: https://www.hichiso.jp/top/kanko/settled/akiya2/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 岐阜県の市町村一覧に掲載された公式サイト（www.hichiso.jp）
+  evidence_url: https://www.pref.gifu.lg.jp/page/6058.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '215058'
+  label: 岐阜県 八百津町
+  url: https://akiya-yaotsu.jp/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.88
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.town.yaotsu.lg.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.town.yaotsu.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '215066'
+  label: 岐阜県 白川町
+  url: https://www.town.shirakawa.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shirakawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.shirakawa.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '215074'
+  label: 岐阜県 東白川村
+  url: https://www.vill.higashishirakawa.gifu.jp/kurashi/sumai/akiya/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.higashishirakawa.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.higashishirakawa.gifu.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '215210'
+  label: 岐阜県 御嵩町
+  url: https://www.town.mitake.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.mitake.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.mitake.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '216046'
+  label: 岐阜県 白川村
+  url: https://www.vill.shirakawa.lg.jp/1402.htm
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.shirakawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.shirakawa.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null

@@ -1,0 +1,121 @@
+{
+  "command": "extract",
+  "errors": [],
+  "extraction_metrics": {
+    "fields": {
+      "address": {
+        "not_found": 29,
+        "notes": {},
+        "parsed": 69,
+        "quote_not_in_source": 0,
+        "total": 98,
+        "unparsed": 0
+      },
+      "built_year": {
+        "not_found": 56,
+        "notes": {},
+        "parsed": 42,
+        "quote_not_in_source": 0,
+        "total": 98,
+        "unparsed": 0
+      },
+      "floor_area_m2": {
+        "not_found": 80,
+        "notes": {},
+        "parsed": 18,
+        "quote_not_in_source": 0,
+        "total": 98,
+        "unparsed": 0
+      },
+      "land_area_m2": {
+        "not_found": 75,
+        "notes": {},
+        "parsed": 23,
+        "quote_not_in_source": 0,
+        "total": 98,
+        "unparsed": 0
+      },
+      "layout": {
+        "not_found": 74,
+        "notes": {},
+        "parsed": 24,
+        "quote_not_in_source": 0,
+        "total": 98,
+        "unparsed": 0
+      },
+      "listing_no": {
+        "not_found": 0,
+        "notes": {
+          "quote_not_in_source": 2
+        },
+        "parsed": 96,
+        "quote_not_in_source": 2,
+        "total": 98,
+        "unparsed": 0
+      },
+      "price": {
+        "not_found": 10,
+        "notes": {
+          "multiple": 1
+        },
+        "parsed": 87,
+        "quote_not_in_source": 0,
+        "total": 98,
+        "unparsed": 1
+      },
+      "rent_monthly": {
+        "not_found": 88,
+        "notes": {},
+        "parsed": 10,
+        "quote_not_in_source": 0,
+        "total": 98,
+        "unparsed": 0
+      },
+      "status_text": {
+        "not_found": 49,
+        "notes": {},
+        "parsed": 49,
+        "quote_not_in_source": 0,
+        "total": 98,
+        "unparsed": 0
+      },
+      "structure": {
+        "not_found": 72,
+        "notes": {},
+        "parsed": 26,
+        "quote_not_in_source": 0,
+        "total": 98,
+        "unparsed": 0
+      }
+    },
+    "flags": {
+      "summary_verbatim_overlap": 3
+    },
+    "items": 98,
+    "pages": 8,
+    "summary_replaced": 3,
+    "truncated_pages": 0
+  },
+  "finished_at": "2026-09-11T03:07:49Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 8,
+    "input_tokens": 31473,
+    "output_tokens": 16361
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "extract": {
+      "items": 98,
+      "pages": 8
+    },
+    "ingest": {
+      "created": 98,
+      "skipped": 0,
+      "unchanged": 0,
+      "updated": 0
+    }
+  },
+  "started_at": "2026-09-11T03:06:36Z"
+}

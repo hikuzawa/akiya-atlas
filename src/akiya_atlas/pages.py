@@ -365,6 +365,8 @@ def no_listings_reason(ctx: Ctx, muni: Municipality) -> str | None:
     """
     if not muni.crawled or ctx.ds.listings_for(muni, active_only=True):
         return None
+    if muni.extract_pending:
+        return "unavailable"  # 一覧は確認できているが、本サイトがまだ取り込めていない
     src = ctx.ds.by_source.get(muni.id)
     fetched_ok = False
     seen_state = False

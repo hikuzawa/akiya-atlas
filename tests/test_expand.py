@@ -197,3 +197,46 @@ def test_nagano_no_crawl_gets_rakuen_link() -> None:
     entry = finding_to_source_dict(f, prefecture_name="長野県")
     urls = [e["url"] for e in entry.get("external_links", [])]
     assert any("rakuen-akiya.jp" in u for u in urls)
+
+
+def test_site_is_up_tells_a_blocked_site_from_a_wrong_url(monkeypatch) -> None:  # noqa: ANN001
+    """取得できない理由で扱いを分ける。
+
+    403 や robots 拒否・古い TLS は「サイトはあるが読めない」→ 県の一覧を根拠にリンクだけ出す。
+    404 は一覧の URL が古いということなので、人間確認に回す。
+    """
+    from datetime import UTC, datetime
+
+    from sitemill.fetch.client import FetchResult
+
+    from akiya_atlas.expand import site_is_up
+
+    def _res(status: int, error: str | None = None) -> FetchResult:
+        return FetchResult(
+            url="https://x.example/",
+            final_url="https://x.example/",
+            status=status,
+            fetched_at=datetime.now(UTC),
+            error=error,
+        )
+
+    assert site_is_up(_res(403), "https://x.example/") is True
+    assert site_is_up(_res(404), "https://x.example/") is False
+    # HTTP の応答が無いときは名前解決できるかで決める
+    monkeypatch.setattr("socket.getaddrinfo", lambda *a, **k: [()])
+    assert site_is_up(_res(0, "robots.txt により拒否"), "https://x.example/") is True
+
+    def _fail(*a: object, **k: object) -> None:
+        raise OSError("getaddrinfo failed")
+
+    monkeypatch.setattr("socket.getaddrinfo", _fail)
+    assert site_is_up(_res(0, "robots.txt を取得できない"), "https://x.example/") is False
+
+
+def test_external_link_label_drops_contact_numbers() -> None:
+    """民間プラットフォームのアンカーに担当者の電話番号が入ることがある（足利市の実例）。"""
+    from akiya_atlas.expand import clean_link_label
+
+    label = clean_link_label("◆物件登録募集中【お気軽にご相談ください Tel. 0284-20-2266】")
+    assert "0284" not in label and "物件登録募集中" in label
+    assert clean_link_label("空き家バンク（アットホーム）") == "空き家バンク(アットホーム)"

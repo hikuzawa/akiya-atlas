@@ -1,0 +1,25 @@
+{
+  "command": "heal",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-11T03:08:43Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "栃木県塩谷町: 同じ一覧が最良のまま（物件行 12）。0 件の原因は抽出側の可能性"
+  ],
+  "service": "akiya-atlas",
+  "stages": {
+    "heal": {
+      "checked": 1,
+      "downgraded": 0,
+      "requests": 10,
+      "swapped": 0
+    }
+  },
+  "started_at": "2026-09-11T03:07:49Z"
+}
