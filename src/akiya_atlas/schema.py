@@ -47,6 +47,7 @@ class Municipality(BaseModel):
         "available"
     )
     bank_note: str | None = None  # 非巡回ケースの説明（分類結果から自動生成）
+    extract_pending: bool = False  # 一覧はあるが本サイトがまだ取り込めていない
     subsidies: list[Subsidy] = Field(default_factory=list)
     contact: str | None = None
     map_query: str | None = None

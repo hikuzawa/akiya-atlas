@@ -76,6 +76,8 @@ class MunicipalityFinding:
     listing_rows: int | None = None
     pagination_pattern: str | None = None
     alternatives: list[str] = field(default_factory=list)
+    # 一覧は確認できているのに 1 件も取り込めていない（抽出側の課題。ページの文面を分ける）
+    extract_gap: bool = False
 
 
 def resolve_official_url(
@@ -824,6 +826,7 @@ def finding_to_source_dict(f: MunicipalityFinding, *, prefecture_name: str) -> d
             "bank_url": f.bank_url
             or (("https://" + f.official_url + "/") if f.official_url else ""),
             "bank_status": status,
+            "extract_pending": f.extract_gap,
             "map_query": f"{prefecture_name}{m.name}",
         },
     }
@@ -964,6 +967,7 @@ def _finding_to_row(f: MunicipalityFinding) -> dict:
         "listing_score": f.listing_score,
         "listing_rows": f.listing_rows,
         "pagination_pattern": f.pagination_pattern,
+        "extract_gap": f.extract_gap,
         "alternatives": list(f.alternatives),
     }
 
@@ -1003,6 +1007,7 @@ def _row_to_finding(row: dict) -> MunicipalityFinding:
         listing_score=row.get("listing_score"),
         listing_rows=row.get("listing_rows"),
         pagination_pattern=row.get("pagination_pattern"),
+        extract_gap=bool(row.get("extract_gap")),
         alternatives=list(row.get("alternatives", [])),
     )
 
@@ -1244,6 +1249,9 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
                 # 0 件の理由は 3 通りある。取り下げてよいのは「一覧ではなかった」ときだけ
                 text, score = _page_signals(new.bank_url, client)
                 if len(text) < MIN_BODY_TEXT:
+                    new.extract_gap = True
+                    rows[i] = _finding_to_row(new)
+                    touched = True
                     result["changed"].append(
                         f"{name}: 本文を取り出せないページ（物件行 {new.listing_rows}）。"
                         "抽出側の問題として保留"
@@ -1269,6 +1277,9 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
                         f"{name}: 一覧ではなかったので取り下げ（物件行 {score.rows}・{old_url}）"
                     )
                 else:
+                    new.extract_gap = True
+                    rows[i] = _finding_to_row(new)
+                    touched = True
                     result["changed"].append(
                         f"{name}: 一覧に見えるのに 0 件（物件行 {score.rows if score else '?'}）。"
                         "抽出側の課題として保留"

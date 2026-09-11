@@ -275,3 +275,25 @@ def test_listing_slug_separates_japanese_prefixed_numbers() -> None:
     # 英数字だけの番号はこれまでどおり
     assert listing_slug("A-12", "x") == "a-12" and listing_slug("25", "x") == "25"
     assert listing_slug("？？", "fallback") == "fallback"
+
+
+def test_page_says_not_yet_imported_when_the_listing_exists_but_we_read_nothing() -> None:
+    """一覧は確認できているのに 0 件のとき、「募集なし」ではなく「取り込めていない」と出す。"""
+    from akiya_atlas.schema import Municipality
+
+    payload = {
+        "id": "niigata-152021",
+        "code": "152021",
+        "name": "架空市",
+        "prefecture": "新潟県",
+        "prefecture_slug": "niigata",
+        "slug": "152021",
+        "official_url": "https://example.lg.jp/",
+        "bank_url": "https://example.lg.jp/akiya/",
+        "bank_status": "available",
+        "extract_pending": True,
+    }
+    muni = Municipality.model_validate(payload)
+    assert muni.crawled and muni.extract_pending
+    plain = Municipality.model_validate({**payload, "extract_pending": False})
+    assert not plain.extract_pending
