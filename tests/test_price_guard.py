@@ -12,6 +12,13 @@ def test_sale_price_ignores_unit_prices_and_rent() -> None:
     assert parse_sale_price("[駐車場用賃料 月1万円]") == (None, "not_a_price")
     assert parse_sale_price("㎡単価 3万円") == (None, "not_a_price")
     assert parse_sale_price("管理費 5,000円") == (None, "not_a_price")
+    # 南相馬市の実例。坪あたりの単価が売買価格として抽出されていた
+    assert parse_sale_price("坪あたり3万円程度") == (None, "not_a_price")
+    assert parse_sale_price("坪3万円程度") == (None, "not_a_price")
+    assert parse_sale_price("坪あたり4万4,000円程度価格応談") == (None, "not_a_price")
+    # 無償譲渡や格安物件は本物の売買価格なので残す
+    assert parse_sale_price("0円(無償)") == (0, None)
+    assert parse_sale_price("1万円") == (10_000, None)
     assert parse_sale_price("350万円") == (3_500_000, None)  # (値, 注記) を返す
     assert parse_sale_price("1,000万円") == (10_000_000, None)
 
