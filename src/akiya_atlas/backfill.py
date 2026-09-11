@@ -57,21 +57,19 @@ def prefectures(only: Sequence[str] | None = None) -> list[tuple[str, str]]:
 
 
 def source_ids_for(rt: commands.Runtime, slug: str) -> list[str]:
-    """その県で巡回対象になっている source id（自動発見・手動登録の両方）。"""
+    """その県で巡回対象になっている source id（自動発見・手動登録の両方）。
+
+    全国分では source が 1,700 件になるので、市町村の県は 1 回だけ読んで辞書で引く
+    （source ごとに読み直すと yaml の再解析で 1 県あたり数分かかる）。
+    """
+    from akiya_atlas.data import load_municipalities
+
+    pref_of = {m.id: m.prefecture_slug for m in load_municipalities(rt.ws)}
     return [
         s.id
         for s in rt.service.sources(rt.ws)
-        if s.crawlable and (s.id.startswith(slug + "-") or _manual_in_prefecture(rt, s.id, slug))
+        if s.crawlable and (s.id.startswith(slug + "-") or pref_of.get(s.id) == slug)
     ]
-
-
-def _manual_in_prefecture(rt: commands.Runtime, source_id: str, slug: str) -> bool:
-    from akiya_atlas.data import load_municipalities
-
-    for m in load_municipalities(rt.ws):
-        if m.id == source_id:
-            return m.prefecture_slug == slug
-    return False
 
 
 def status_table(ws: Workspace, only: Sequence[str] | None = None) -> list[str]:
