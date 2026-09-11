@@ -1100,14 +1100,18 @@ def reassess_finding(
 
 
 MIN_BODY_TEXT = 200  # これ未満なら本文を取り出せていないとみなす（抽出側の問題）
+# 「現在、登録物件はありません」のように、掲載が無いことをページ自身が書いている
+_EMPTY_NOTICE = re.compile(r"(?:物件|情報)[はも]?(?:、|\s)*(?:ありません|ございません|None)")
 
 
-def _page_body(url: str | None, client: PoliteClient) -> str:
-    """抽出に渡るのと同じ本文テキスト。0 件の原因が「一覧でない」か「読めない」かを分ける。"""
+def _page_signals(url: str | None, client: PoliteClient) -> tuple[str, ListingScore | None]:
+    """抽出に渡るのと同じ本文と、一覧らしさ。0 件の理由を見分けるために使う。"""
     if not url:
-        return ""
+        return "", None
     res = client.get(url)
-    return page_text(res.text) if res.ok else ""
+    if not res.ok:
+        return "", None
+    return page_text(res.text), listing_score(res.text, res.final_url)
 
 
 def _reset_source_state(ws: Workspace, source_id: str, keep: set[str]) -> int:
@@ -1224,27 +1228,39 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
                     f"{name}: 一覧を差し替え {old_url} → {new.bank_url}"
                     f"（物件行 {new.listing_rows}）"
                 )
-            elif new.policy == "crawl" and len(_page_body(new.bank_url, client)) < MIN_BODY_TEXT:
-                # 本文を取り出せていない（JavaScript 描画など）。抽出側の問題なので採用は保つ
-                result["changed"].append(
-                    f"{name}: 本文を取り出せないページ（物件行 {new.listing_rows}）。"
-                    "抽出側の問題として保留"
-                )
             elif new.policy == "crawl":
-                # 本文はあるのに 1 件も取れない。物件の一覧ではなかったということなので、
-                # 案内として扱い、公式へのリンクだけにする
-                fixed = decide(
-                    new.muni, new.official, None, cross_linked=False, bank_host_official=False
-                )
-                fixed.official_url = new.official_url
-                fixed.evidence_quote = new.evidence_quote
-                fixed.evidence_url = new.evidence_url
-                fixed.reason = "本文はあるが物件を 1 件も取れないページだった。公式へのリンクのみ"
-                rows[i] = _finding_to_row(fixed)
-                touched = True
-                result["downgraded"].append(sid)
-                _reset_source_state(ws, sid, set())
-                result["changed"].append(f"{name}: 物件の無いページの採用を取り下げ（{old_url}）")
+                # 0 件の理由は 3 通りある。取り下げてよいのは「一覧ではなかった」ときだけ
+                text, score = _page_signals(new.bank_url, client)
+                if len(text) < MIN_BODY_TEXT:
+                    result["changed"].append(
+                        f"{name}: 本文を取り出せないページ（物件行 {new.listing_rows}）。"
+                        "抽出側の問題として保留"
+                    )
+                elif _EMPTY_NOTICE.search(text):
+                    result["changed"].append(f"{name}: ページ自身が掲載なしと書いている。そのまま")
+                elif score is not None and score.listing_no_count == 0 and score.rows < 5:
+                    # 物件番号も無く行も少ない＝一覧らしさが弱い。公式へのリンクだけにする
+                    fixed = decide(
+                        new.muni, new.official, None, cross_linked=False, bank_host_official=False
+                    )
+                    fixed.official_url = new.official_url
+                    fixed.evidence_quote = new.evidence_quote
+                    fixed.evidence_url = new.evidence_url
+                    fixed.reason = (
+                        "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
+                    )
+                    rows[i] = _finding_to_row(fixed)
+                    touched = True
+                    result["downgraded"].append(sid)
+                    _reset_source_state(ws, sid, set())
+                    result["changed"].append(
+                        f"{name}: 一覧ではなかったので取り下げ（物件行 {score.rows}・{old_url}）"
+                    )
+                else:
+                    result["changed"].append(
+                        f"{name}: 一覧に見えるのに 0 件（物件行 {score.rows if score else '?'}）。"
+                        "抽出側の課題として保留"
+                    )
             else:
                 rows[i] = _finding_to_row(new)
                 touched = True

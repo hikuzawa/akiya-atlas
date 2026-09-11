@@ -198,8 +198,8 @@ NOT_AKIYA = (
     + "廃棄物の処理及び清掃に関する法律により、みだりに廃棄物を捨てることは禁じられています。" * 4
     + "</p><table>"
     "<tr><th>区分</th><th>過料</th><th>面積</th></tr>"
-    "<tr><td>No.1</td><td>不法投棄 50万円</td><td>敷地 80㎡ 築20年</td><td>大字1地区</td></tr>"
-    "<tr><td>No.2</td><td>野焼き 30万円</td><td>敷地 90㎡ 築25年</td><td>大字2地区</td></tr>"
+    "<tr><td>投棄</td><td>不法投棄 50万円</td><td>敷地 80㎡ 築20年</td><td>大字1地区</td></tr>"
+    "<tr><td>野焼</td><td>野焼き 30万円</td><td>敷地 90㎡ 築25年</td><td>大字2地区</td></tr>"
     "</table></body></html>"
 )
 # 本文を取り出せないページ（JavaScript で描画するなど）。抽出側の問題なので採用は保つ
@@ -234,9 +234,38 @@ def test_heal_drops_a_page_whose_body_has_no_listings(ws: Workspace) -> None:
     assert result["checked"] == 1 and result["downgraded"] == [SID]
     data = json.loads((ws.runs_dir / "discover-nagano-findings.json").read_text(encoding="utf-8"))
     row = data["findings"][0]
-    assert row["policy"] == "link_only" and "物件を 1 件も取れない" in row["reason"]
+    assert row["policy"] == "link_only" and "一覧ではなかった" in row["reason"]
     auto = (ws.sources_dir / "nagano-auto.yaml").read_text(encoding="utf-8")
     assert "bank_status: none" in auto and "policy: link_only" in auto
+
+
+# ページ自身が「現在、登録物件はありません」と書いている（逗子市が実例）
+EMPTY_NOTICE_PAGE = (
+    "<html><body><h1>空き家バンク登録物件</h1>"
+    "<p>空き家バンクに登録された情報を公開します。仲介を目的とした問い合わせには対応できません。</p>"
+    "<p>現在、登録物件はありません。</p>"
+    "<table><tr><th>番号</th><th>価格</th><th>建物</th><th>所在地</th></tr>"
+    f"{_rows(3)}</table>"
+    "<p>過去に登録された物件の例です。掲載の申し込みは窓口までご相談ください。</p></body></html>"
+)
+
+
+@respx.mock
+def test_heal_keeps_a_bank_that_says_it_has_no_listings_now(ws: Workspace) -> None:
+    """「現在、登録物件はありません」と書いてあるなら、空のバンクとしてそのまま扱う。"""
+    url = BASE + "/akiya/list.html"
+    _mock({"/": TOP, "/akiya/hojo.html": HOJO, "/akiya/guide.html": GUIDE_WITH_LIST})
+    respx.get(f"{BASE}/akiya/list.html").mock(
+        return_value=httpx.Response(
+            200, text=EMPTY_NOTICE_PAGE, headers={"content-type": "text/html; charset=utf-8"}
+        )
+    )
+    expand._write_rows(ws, "nagano", "長野県", [_row(url)])
+    _mark_crawled(ws, url)
+    with _client() as c:
+        result = expand.heal(ws, client=c)
+    assert result["checked"] == 1 and not result["downgraded"]
+    assert any("掲載なしと書いている" in line for line in result["changed"])
 
 
 @respx.mock
