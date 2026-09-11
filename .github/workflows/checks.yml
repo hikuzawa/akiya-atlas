@@ -41,6 +41,11 @@ jobs:
 
   gitleaks:
     runs-on: ubuntu-latest
+    # pull_request では対象コミットの一覧を API から引くので、PR の読み取り権限が要る
+    # （無いと "Resource not accessible by integration" で落ちる）
+    permissions:
+      contents: read
+      pull-requests: read
     steps:
       - uses: actions/checkout@v4
         with:
