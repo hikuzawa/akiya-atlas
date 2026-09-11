@@ -108,11 +108,11 @@ uv run akiya-atlas backfill --stages discover --workers 8 2>&1 | tee -a backfill
 ```bash
 uv run akiya-atlas backfill --stages crawl,extract,heal --workers 8 2>&1 | tee -a backfill-extract.log
 ```
-- 巡回対象は静的な物件一覧を持つ自治体だけ（全国で 1 割弱、150 前後の見込み）。
-- 所要の目安（実測: 富山県の巡回対象 5 自治体で 3.2 分）。全国 150 前後なら **1.5〜2 時間**。
-- 抽出の費用は Haiku 4.5 で **巡回対象 1 自治体あたり $0.03〜0.05**（富山県実測: 5 自治体・入力 26k・
-  出力 33k トークンで約 $0.19）。全国 150 自治体で **$5〜10** の見込み。掲載件数の多い自治体は
-  これより高い。`data/runs/latest-extract.json` の `llm.input_tokens / output_tokens` で実費を確認できる。
+- 巡回対象は静的な物件一覧を持つ自治体だけ（全国実測で 270 自治体＝全体の 16%）。
+- 所要の目安（**全国実測 2026-09-11**）: 巡回 3.6 分・抽出 2.2 分・自己修復 28 分。
+  自己修復は「0 件だった自治体」1 件につき約 34 秒かかるので、初回はここが一番長い。
+- 抽出の費用は Haiku 4.5 で **全国 271 ページ・3,739 項目で約 $4.8**（入力 157 万・出力 64 万トークン）。
+  `data/runs/latest-extract.json` の `llm.input_tokens / output_tokens` で実費を確認できる。
 - `heal` は「巡回したのに 0 件」の自治体を同一サイト内で選び直し、より一覧らしいページがあれば差し替えて
   その場で再巡回・再抽出、無ければ状態を info/none に見直す。人手の修正は要らない。
 
