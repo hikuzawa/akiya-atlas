@@ -16,6 +16,8 @@ _NOT_A_PRICE = re.compile(
     r"賃料|家賃|月額|月\s*\d|管理費|共益費|敷金|礼金|"
     r"手数料|税|補助|助成|上限|報酬|保証金|更新料"
 )
+# 0 円を本物の価格とみなす語（無償譲渡）。無ければ「0万円」等は価格未定として値にしない
+_FREE_OF_CHARGE = re.compile("無償|無料|贈与|ゼロ円|0円|０円")
 _NOT_A_RENT = re.compile(r"坪単価|単価|敷金|礼金|管理費|共益費|手数料|税|補助|助成|上限|保証金")
 
 
@@ -24,10 +26,16 @@ def parse_sale_price(quote: str) -> tuple[int | None, str | None]:
 
     パーサは必ず (値, 注記) を返す（sitemill の QuoteField の約束）。値にしないときは
     (None, "not_a_price") を返し、引用は残す。
+
+    0 は「無償譲渡」なら本物の価格だが、「0万円」のような価格未定の書き方でも出る。
+    無償だと分かる語があるときだけ 0 を値にする（留萌市の実例で分けた）。
     """
     if _NOT_A_PRICE.search(quote or ""):
         return None, "not_a_price"
-    return parse_yen(quote)
+    value, note = parse_yen(quote)
+    if value == 0 and not _FREE_OF_CHARGE.search(quote or ""):
+        return None, "price_unknown"
+    return value, note
 
 
 def parse_rent(quote: str) -> tuple[int | None, str | None]:

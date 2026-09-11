@@ -18,7 +18,10 @@ def test_sale_price_ignores_unit_prices_and_rent() -> None:
     assert parse_sale_price("坪あたり4万4,000円程度価格応談") == (None, "not_a_price")
     # 無償譲渡や格安物件は本物の売買価格なので残す
     assert parse_sale_price("0円(無償)") == (0, None)
+    assert parse_sale_price("0円") == (0, None)
     assert parse_sale_price("1万円") == (10_000, None)
+    # 留萌市の実例。「0万円」は無償ではなく価格未定の書き方なので値にしない
+    assert parse_sale_price("0万円") == (None, "price_unknown")
     assert parse_sale_price("350万円") == (3_500_000, None)  # (値, 注記) を返す
     assert parse_sale_price("1,000万円") == (10_000_000, None)
 
