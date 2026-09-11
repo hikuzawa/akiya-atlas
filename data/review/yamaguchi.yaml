@@ -1,6 +1,6 @@
 prefecture: 山口県
 prefecture_slug: yamaguchi
-created_at: '2026-09-11T10:00:28+00:00'
+created_at: '2026-09-11T17:38:51+00:00'
 candidates:
 - key: '352012'
   label: 山口県 下関市
@@ -131,14 +131,14 @@ candidates:
 - key: '352128'
   label: 山口県 柳井市
   url: https://www.city-yanai.jp/site/yanai-gurashi/akiya-ichiran.html
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.83
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
-  evidence_quote: 山口県 市町（関連リンク）に掲載された公式サイト（www.city-yanai.jp）
-  evidence_url: https://www.pref.yamaguchi.lg.jp/soshiki/21/26969.html
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  evidence_quote: 物件一覧を PDF（3.63MB、文字と画像が混在）でのみ公開している。PDF は解析せず、公式ページへ案内する（www.city-yanai.jp）
+  evidence_url: https://www.city-yanai.jp/site/yanai-gurashi/akiya-ichiran.html
+  reason: 物件一覧を PDF（3.63MB、文字と画像が混在）でのみ公開している。PDF は解析せず、公式ページへ案内する
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null

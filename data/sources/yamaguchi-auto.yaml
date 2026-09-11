@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.shimonoseki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.shimonoseki.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-12'
 - id: yamaguchi-352021
   name: 宇部市空き家バンク
   operator: 宇部市
@@ -41,7 +41,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ube.yamaguchi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ube.yamaguchi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-12'
 - id: yamaguchi-352039
   name: 山口市空き家バンク
   operator: 山口市
@@ -62,7 +62,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yamaguchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.yamaguchi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-12'
 - id: yamaguchi-352047
   name: 萩市空き家バンク
   operator: 萩市
@@ -83,7 +83,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hagi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hagi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-12'
 - id: yamaguchi-352063
   name: 防府市空き家バンク
   operator: 防府市
@@ -104,7 +104,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hofu.yamaguchi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hofu.yamaguchi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-12'
 - id: yamaguchi-352071
   name: 下松市空き家バンク
   operator: 下松市
@@ -125,7 +125,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kudamatsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kudamatsu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-12'
 - id: yamaguchi-352080
   name: 岩国市空き家バンク
   operator: 岩国市
@@ -146,7 +146,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.iwakuni.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.iwakuni.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-12'
 - id: yamaguchi-352101
   name: 光市空き家バンク
   operator: 光市
@@ -167,7 +167,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hikari.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hikari.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-12'
 - id: yamaguchi-352110
   name: 長門市空き家バンク
   operator: 長門市
@@ -188,13 +188,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nagato.yamaguchi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.nagato.yamaguchi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-12'
 - id: yamaguchi-352128
   name: 柳井市空き家バンク
   operator: 柳井市
   operator_kind: municipality
   official_url: https://www.city-yanai.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '352128'
     name: 柳井市
@@ -202,19 +202,14 @@ sources:
     prefecture_slug: yamaguchi
     slug: '352128'
     bank_url: https://www.city-yanai.jp/site/yanai-gurashi/akiya-ichiran.html
-    bank_status: available
-    extract_pending: true
+    bank_status: none
+    extract_pending: false
     map_query: 山口県柳井市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
-    quote: 山口県 市町（関連リンク）に掲載された公式サイト（www.city-yanai.jp）
-    url: https://www.pref.yamaguchi.lg.jp/soshiki/21/26969.html
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city-yanai.jp/site/yanai-gurashi/akiya-ichiran.html
-    kind: listing_index
-  allow_hosts:
-  - www.city-yanai.jp
-  max_pages: 30
+    quote: 物件一覧を PDF（3.63MB、文字と画像が混在）でのみ公開している。PDF は解析せず、公式ページへ案内する（www.city-yanai.jp）
+    url: https://www.city-yanai.jp/site/yanai-gurashi/akiya-ichiran.html
+    checked_on: '2026-09-12'
 - id: yamaguchi-352136
   name: 美祢市空き家バンク
   operator: 美祢市
@@ -235,7 +230,7 @@ sources:
   operator_evidence:
     quote: 山口県 市町（関連リンク）に掲載された公式サイト（www2.city.mine.lg.jp）
     url: https://www.pref.yamaguchi.lg.jp/soshiki/21/26969.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-12'
 - id: yamaguchi-352152
   name: 周南市空き家バンク
   operator: 周南市
@@ -256,7 +251,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.shunan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.shunan.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-12'
 - id: yamaguchi-352161
   name: 山陽小野田市空き家バンク
   operator: 山陽小野田市
@@ -277,7 +272,7 @@ sources:
   operator_evidence:
     quote: 山口県 市町（関連リンク）に掲載された公式サイト（www.city.sanyo-onoda.lg.jp）
     url: https://www.pref.yamaguchi.lg.jp/soshiki/21/26969.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-12'
 - id: yamaguchi-353051
   name: 周防大島町空き家バンク
   operator: 周防大島町
@@ -298,7 +293,7 @@ sources:
   operator_evidence:
     quote: 山口県 市町（関連リンク）に掲載された公式サイト（www.town.suo-oshima.lg.jp）
     url: https://www.pref.yamaguchi.lg.jp/soshiki/21/26969.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-12'
 - id: yamaguchi-353213
   name: 和木町空き家バンク
   operator: 和木町
@@ -319,7 +314,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.waki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.waki.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-12'
 - id: yamaguchi-353418
   name: 上関町空き家バンク
   operator: 上関町
@@ -339,7 +334,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kaminoseki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kaminoseki.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-12'
   pages:
   - url: https://www.town.kaminoseki.lg.jp/%e4%b8%8a%e9%96%a2%e7%94%ba%e7%a9%ba%e3%81%8d%e5%ae%b6%e3%83%90%e3%83%b3%e3%82%af%e7%89%a9%e4%bb%b6%e4%b8%80%e8%a6%a7.html
     kind: listing_index
@@ -369,7 +364,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tabuse.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.tabuse.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-12'
   pages:
   - url: https://www.town.tabuse.lg.jp/site/iju/2505.html
     kind: listing_index
@@ -395,7 +390,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hirao.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.hirao.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-12'
   pages:
   - url: https://www.town.hirao.lg.jp/kurashi/jyutaku/akiya/1457314685054.html
     kind: listing_index
@@ -425,7 +420,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.abu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.abu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-12'
   pages:
   - url: https://www.town.abu.lg.jp/akiyabank/
     kind: listing_index

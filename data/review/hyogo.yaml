@@ -1,6 +1,6 @@
 prefecture: 兵庫県
 prefecture_slug: hyogo
-created_at: '2026-09-11T09:52:54+00:00'
+created_at: '2026-09-11T17:38:53+00:00'
 candidates:
 - key: '281000'
   label: 兵庫県 神戸市
@@ -243,14 +243,14 @@ candidates:
 - key: '282189'
   label: 兵庫県 小野市
   url: https://www.city.ono.hyogo.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/2/5107.html
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.83
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
-  evidence_quote: 公式ドメイン www.city.ono.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
-  evidence_url: https://www.city.ono.hyogo.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  evidence_quote: 物件ごとの登録カードを PDF でのみ公開している。PDF は解析せず、公式ページへ案内する（www.city.ono.hyogo.jp）
+  evidence_url: https://www.city.ono.hyogo.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/2/5107.html
+  reason: 物件ごとの登録カードを PDF でのみ公開している。PDF は解析せず、公式ページへ案内する
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null

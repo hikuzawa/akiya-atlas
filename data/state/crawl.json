@@ -2016,24 +2016,6 @@
       "status": 200,
       "url": "https://www.akitakata.jp/ja/shisei/section/kikaku/main/"
     },
-    "https://www.city-yanai.jp/site/yanai-gurashi/akiya-ichiran.html": {
-      "changed_at": "2026-09-11T05:55:31Z",
-      "content_hash": "sha256:8f7f10affc264fc2c9f976d5812ac49aae2decdc95e81ba5b485c0b97803ce5b",
-      "error": null,
-      "error_count": 0,
-      "etag": "\"3f32-65b315989309f\"",
-      "extracted_at": "2026-09-11T05:56:22Z",
-      "extracted_hash": "sha256:8f7f10affc264fc2c9f976d5812ac49aae2decdc95e81ba5b485c0b97803ce5b",
-      "fetched_at": "2026-09-11T09:25:36Z",
-      "kind": "listing_index",
-      "last_modified": "Fri, 11 Sep 2026 09:02:53 GMT",
-      "pending_extract": false,
-      "prompt_version": "listing_v1",
-      "seen_count": 2,
-      "source_id": "yamaguchi-352128",
-      "status": 200,
-      "url": "https://www.city-yanai.jp/site/yanai-gurashi/akiya-ichiran.html"
-    },
     "https://www.city.abiko.chiba.jp/kurashi/sumai/abikoshi_akiyabanku.html": {
       "changed_at": "2026-09-11T03:13:16Z",
       "content_hash": "sha256:1c9c1a81d2289c25cf51bdb8f6da78de17b6be1c79fbe3fe068555ec9059bd89",
@@ -3239,24 +3221,6 @@
       "source_id": "ibaraki-082368",
       "status": 200,
       "url": "https://www.city.omitama.lg.jp/0652/info-0000005214-0.html"
-    },
-    "https://www.city.ono.hyogo.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/2/5107.html": {
-      "changed_at": "2026-09-11T05:53:38Z",
-      "content_hash": "sha256:79fd01783a5e2d7cdb8fc49f09cca1918f28793f80955c145ea4fdd15abfb3ea",
-      "error": null,
-      "error_count": 0,
-      "etag": "W/\"6a9f5e51-bbfc\"",
-      "extracted_at": "2026-09-11T05:56:22Z",
-      "extracted_hash": "sha256:79fd01783a5e2d7cdb8fc49f09cca1918f28793f80955c145ea4fdd15abfb3ea",
-      "fetched_at": "2026-09-11T09:23:42Z",
-      "kind": "listing_index",
-      "last_modified": "Tue, 08 Sep 2026 01:01:05 GMT",
-      "pending_extract": false,
-      "prompt_version": "listing_v1",
-      "seen_count": 2,
-      "source_id": "hyogo-282189",
-      "status": 200,
-      "url": "https://www.city.ono.hyogo.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/2/5107.html"
     },
     "https://www.city.ota.gunma.jp/page/1150.html": {
       "changed_at": "2026-09-11T03:08:48Z",

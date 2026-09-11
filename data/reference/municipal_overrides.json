@@ -4,7 +4,8 @@
     "official_url": "この市町村の公式サイト。候補ドメインの推測と県の一覧より優先する",
     "no_website": "公式サイトが存在しない。発見の対象から外し、サイトにも載せない",
     "evidence": "そう判断できる根拠",
-    "source": "根拠の出典 URL"
+    "source": "根拠の出典 URL",
+    "link_only": "巡回しないと決めた自治体。物件一覧が PDF だけの場合など。公式へのリンクだけを出す"
   },
   "municipalities": [
     {
@@ -69,6 +70,28 @@
       "evidence": "北方領土の 5 村。公式サイトが無く、北海道の市町村リンク集（道内179市町村）にも掲載が無い",
       "source": "https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html",
       "checked_on": "2026-09-11"
+    },
+    {
+      "code": "352128",
+      "name": "柳井市",
+      "prefecture": "山口県",
+      "link_only": true,
+      "official_url": "https://www.city-yanai.jp/",
+      "bank_url": "https://www.city-yanai.jp/site/yanai-gurashi/akiya-ichiran.html",
+      "evidence": "物件一覧を PDF（3.63MB、文字と画像が混在）でのみ公開している。PDF は解析せず、公式ページへ案内する",
+      "source": "https://www.city-yanai.jp/site/yanai-gurashi/akiya-ichiran.html",
+      "checked_on": "2026-09-12"
+    },
+    {
+      "code": "282189",
+      "name": "小野市",
+      "prefecture": "兵庫県",
+      "link_only": true,
+      "official_url": "https://www.city.ono.hyogo.jp/",
+      "bank_url": "https://www.city.ono.hyogo.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/2/5107.html",
+      "evidence": "物件ごとの登録カードを PDF でのみ公開している。PDF は解析せず、公式ページへ案内する",
+      "source": "https://www.city.ono.hyogo.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/2/5107.html",
+      "checked_on": "2026-09-12"
     }
   ]
 }

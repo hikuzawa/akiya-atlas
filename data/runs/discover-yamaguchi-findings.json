@@ -226,31 +226,29 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.city-yanai.jp/site/yanai-gurashi/akiya-bank.html"
-      ],
+      "alternatives": [],
       "bank_url": "https://www.city-yanai.jp/site/yanai-gurashi/akiya-ichiran.html",
       "code": "352128",
-      "confidence": 0.8345,
+      "confidence": 0.6,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_quote": "山口県 市町（関連リンク）に掲載された公式サイト（www.city-yanai.jp）",
-      "evidence_url": "https://www.pref.yamaguchi.lg.jp/soshiki/21/26969.html",
+      "evidence_quote": "物件一覧を PDF（3.63MB、文字と画像が混在）でのみ公開している。PDF は解析せず、公式ページへ案内する（www.city-yanai.jp）",
+      "evidence_url": "https://www.city-yanai.jp/site/yanai-gurashi/akiya-ichiran.html",
       "external_links": [],
-      "extract_gap": true,
-      "listing_rows": 6,
-      "listing_score": 0.82,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "柳井市",
       "name_kana": "ﾔﾅｲｼ",
       "official_url": "www.city-yanai.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "山口県",
       "prefecture_slug": "yamaguchi",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件一覧を PDF（3.63MB、文字と画像が混在）でのみ公開している。PDF は解析せず、公式ページへ案内する"
     },
     {
       "alternatives": [],

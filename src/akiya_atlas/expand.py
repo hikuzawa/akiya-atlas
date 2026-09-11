@@ -116,6 +116,7 @@ class OfficialOverrides:
     source_name: str = ""
     fixed: dict[str, dict] = field(default_factory=dict)  # code -> 固定した公式URLと根拠
     no_website: dict[str, dict] = field(default_factory=dict)  # code -> サイトが無い根拠
+    link_only: dict[str, dict] = field(default_factory=dict)  # code -> 巡回しない理由（PDF など）
 
     @classmethod
     def load(cls, ws: Workspace, pref_slug: str) -> OfficialOverrides:
@@ -130,6 +131,7 @@ class OfficialOverrides:
         }
         fixed: dict[str, dict] = {}
         no_website: dict[str, dict] = {}
+        link_only: dict[str, dict] = {}
         notes = read_json(ws.root / "data" / "reference" / "municipal_overrides.json") or {}
         for row in notes.get("municipalities", []):
             code = str(row.get("code") or "")
@@ -137,6 +139,10 @@ class OfficialOverrides:
                 continue
             if row.get("no_website"):
                 no_website[code] = row
+            elif row.get("link_only"):
+                link_only[code] = row
+                if row.get("official_url"):
+                    fixed[code] = row
             elif row.get("official_url"):
                 fixed[code] = row
         return cls(
@@ -145,6 +151,7 @@ class OfficialOverrides:
             source_name=data.get("source_name", ""),
             fixed=fixed,
             no_website=no_website,
+            link_only=link_only,
         )
 
 
@@ -651,6 +658,16 @@ def assess_municipality(
     resolved = resolve_official(muni, client, ov)
     if resolved is None:
         return decide(muni, None, None, cross_linked=False, bank_host_official=False)
+    note = ov.link_only.get(muni.code)
+    if note:
+        # 一覧が PDF だけ、のように巡回しないと決めた自治体。公式へのリンクだけ出す
+        f = decide(muni, resolved.host, None, cross_linked=False, bank_host_official=False)
+        f.official_url = resolved.host.host
+        f.evidence_quote = resolved.evidence_quote
+        f.evidence_url = resolved.evidence_url
+        f.reason = str(note.get("evidence") or "巡回しない（確定情報）")
+        f.bank_url = str(note.get("bank_url") or resolved.url)
+        return f
     probe = find_bank_page(resolved.url, resolved.host, client, platforms)
     f = decide(
         muni,

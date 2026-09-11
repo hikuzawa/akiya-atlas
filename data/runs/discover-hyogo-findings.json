@@ -437,41 +437,29 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.city.ono.hyogo.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/2/5105.html",
-        "https://www.city.ono.hyogo.jp/kanko_sports/event/kirakiraillumination/sitemap.dir.xml"
-      ],
+      "alternatives": [],
       "bank_url": "https://www.city.ono.hyogo.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/2/5107.html",
       "code": "282189",
-      "confidence": 0.8274999999999999,
+      "confidence": 0.6,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_quote": "公式ドメイン www.city.ono.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）",
-      "evidence_url": "https://www.city.ono.hyogo.jp/",
-      "external_links": [
-        {
-          "label": "全国版空き家バンクトップページ(LIFULL HOME'Sのサイト)(外部リンク)",
-          "url": "https://www.homes.co.jp/akiyabank/"
-        },
-        {
-          "label": "全国版空き家バンクトップページ(アットホームのサイト)(外部リンク)",
-          "url": "https://www.akiya-athome.jp/"
-        }
-      ],
-      "extract_gap": true,
-      "listing_rows": 5,
-      "listing_score": 0.71,
+      "evidence_quote": "物件ごとの登録カードを PDF でのみ公開している。PDF は解析せず、公式ページへ案内する（www.city.ono.hyogo.jp）",
+      "evidence_url": "https://www.city.ono.hyogo.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/2/5107.html",
+      "external_links": [],
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "小野市",
       "name_kana": "ｵﾉｼ",
       "official_url": "www.city.ono.hyogo.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
-      "pagination_pattern": "https?://www\\.city\\.ono\\.hyogo\\.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/2/5107\\.html/?\\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\\d+",
-      "policy": "crawl",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
       "prefecture": "兵庫県",
       "prefecture_slug": "hyogo",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件ごとの登録カードを PDF でのみ公開している。PDF は解析せず、公式ページへ案内する"
     },
     {
       "alternatives": [],
