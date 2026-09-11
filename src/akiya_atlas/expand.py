@@ -12,6 +12,7 @@ import socket
 from dataclasses import dataclass, field
 from datetime import UTC, date, datetime
 from pathlib import Path
+from urllib.parse import urlsplit
 
 import yaml
 from sitemill.classify import (
@@ -133,8 +134,7 @@ def resolve_official(
         url, host = probed
         return OfficialResolution(url, host, host.evidence(), "https://" + host.host + "/")
     # 県の公的一覧に載っている URL を使う（ドメインが命名規則外でも一覧が運営主体を保証する）
-    override_url = overrides.by_code.get(muni.code)
-    if override_url:
+    for override_url in _override_urls(overrides.by_code.get(muni.code)):
         res = client.get(override_url, check_robots=True)
         if res.ok or res.not_modified:
             host = classify_host(host_of(res.final_url), muni.prefecture_slug)
@@ -161,6 +161,18 @@ def resolve_official(
                 override_url, host, quote, overrides.source_url or override_url
             )
     return None
+
+
+def _override_urls(url: str | None) -> list[str]:
+    """県の一覧の URL と、その入口（ホストのルート）。深いパスは移転していることがある。
+
+    例: 兵庫県の一覧にある香美町 `.../www/index.html` は 404 で、ルートは生きている。
+    """
+    if not url:
+        return []
+    parts = urlsplit(url)
+    root = f"{parts.scheme}://{parts.netloc}/"
+    return [url] if url.rstrip("/") == root.rstrip("/") else [url, root]
 
 
 def site_is_up(res: FetchResult, url: str) -> bool:
