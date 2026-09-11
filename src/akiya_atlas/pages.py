@@ -150,8 +150,13 @@ def listing_row(muni: Municipality, ls: Listing) -> dict[str, Any]:
 
 
 def stats_of(listings: list[Listing]) -> dict[str, Any]:
-    """価格・築年の代表値と価格帯ごとの件数。数値が記載されている物件だけを数える。"""
+    """価格・築年の代表値と価格帯ごとの件数。数値が記載されている物件だけを数える。
+
+    無償譲渡（0 円）は最安・中央値の計算から外し、件数だけを別に持つ。0 円が最安に並ぶと
+    「1 円から買える」ように見えてしまうため（鹿児島県大崎町などに実例がある）。
+    """
     prices = sorted(int(ls.price.value) for ls in listings if ls.price.ok)  # type: ignore[arg-type]
+    paid = [p for p in prices if p > 0]
     years = sorted(int(ls.built_year.value) for ls in listings if ls.built_year.ok)  # type: ignore[arg-type]
     counts = [0] * len(PRICE_LABELS)
     for ls in listings:
@@ -165,10 +170,10 @@ def stats_of(listings: list[Listing]) -> dict[str, Any]:
     return {
         "listings": len(listings),
         "priced": len(prices),
-        "price_min": prices[0] if prices else None,
-        "price_median": _median(prices),
-        "price_text_min": yen(prices[0]) if prices else None,
-        "price_text_median": yen(_median(prices)) if prices else None,
+        "paid": len(paid),
+        "free": len(prices) - len(paid),  # 無償譲渡
+        "price_min": paid[0] if paid else None,
+        "price_median": _median(paid),
         "built_count": len(years),
         "built_min": years[0] if years else None,
         "built_max": years[-1] if years else None,
