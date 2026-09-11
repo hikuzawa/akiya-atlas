@@ -105,6 +105,26 @@ def sanitize_address_fields(content: dict[str, Any]) -> bool:
     return changed
 
 
+def drop_wrong_prices(content: dict[str, Any]) -> bool:
+    """売買価格・賃料に、単価や一時金の金額が入っていたら値を落とす。
+
+    抽出時（spec.py）でも弾いているが、以前に保存したレコードを直すためにここでも見る。
+    引用は残すので、原文に何が書いてあったかは追える。
+    """
+    from akiya_atlas.spec import parse_rent, parse_sale_price
+
+    changed = False
+    for key, parser in (("price", parse_sale_price), ("rent_monthly", parse_rent)):
+        field = content.get(key)
+        if not field or field.get("status") != "parsed" or field.get("value") is None:
+            continue
+        value, _note = parser(str(field.get("quote") or ""))
+        if value is None:
+            field.update({"value": None, "status": "unparsed", "note": "not_a_price"})
+            changed = True
+    return changed
+
+
 def assert_no_street_numbers(records: list[dict[str, Any]], *, where: str) -> None:
     bad = [
         r.get("record_id")
@@ -236,6 +256,9 @@ class AkiyaAtlasService:
             normalized = sum(1 for r in store.records.values() if sanitize_address_fields(r))
             if normalized:
                 log.info("%s: %d 件の所在地から番地を除去", source.id, normalized)
+            wrong = sum(1 for r in store.records.values() if drop_wrong_prices(r))
+            if wrong:
+                log.info("%s: %d 件の価格から単価・賃料の金額を除去", source.id, wrong)
             assert_no_street_numbers(store.all(), where=source.id)
             for record in store.records.values():
                 st = state.get(record.get("source_url", ""))

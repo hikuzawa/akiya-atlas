@@ -2,11 +2,39 @@
 
 from __future__ import annotations
 
+import re
 from importlib import resources
 from typing import Any
 
 from sitemill.extract import ExtractionSpec, QuoteField
 from sitemill.parse.jp import parse_area_m2, parse_year, parse_yen
+
+# 「坪単価 75,000円」「駐車場用賃料 月1万円」のような、物件価格ではない金額を弾く。
+# 原文にはこうした数字も並ぶので、引用が取れても値にしない（ADR 0004 の quote-then-parse）
+_NOT_A_PRICE = re.compile(
+    r"坪単価|単価|㎡単価|平米単価|賃料|家賃|月額|月\s*\d|管理費|共益費|敷金|礼金|"
+    r"手数料|税|補助|助成|上限|報酬|保証金|更新料"
+)
+_NOT_A_RENT = re.compile(r"坪単価|単価|敷金|礼金|管理費|共益費|手数料|税|補助|助成|上限|保証金")
+
+
+def parse_sale_price(quote: str) -> tuple[int | None, str | None]:
+    """売買価格の引用を値にする。単価や賃料などの金額は値にしない。
+
+    パーサは必ず (値, 注記) を返す（sitemill の QuoteField の約束）。値にしないときは
+    (None, "not_a_price") を返し、引用は残す。
+    """
+    if _NOT_A_PRICE.search(quote or ""):
+        return None, "not_a_price"
+    return parse_yen(quote)
+
+
+def parse_rent(quote: str) -> tuple[int | None, str | None]:
+    """月額賃料の引用を値にする。単価や一時金は値にしない。"""
+    if _NOT_A_RENT.search(quote or ""):
+        return None, "not_a_price"
+    return parse_yen(quote)
+
 
 PROMPT_VERSION = "listing_v1"
 
@@ -87,8 +115,8 @@ LISTING_SPEC = ExtractionSpec(
     quote_fields=(
         QuoteField("listing_no_quote", "listing_no", None),
         QuoteField("address_quote", "address", None),
-        QuoteField("price_quote", "price", parse_yen),
-        QuoteField("rent_quote", "rent_monthly", parse_yen),
+        QuoteField("price_quote", "price", parse_sale_price),
+        QuoteField("rent_quote", "rent_monthly", parse_rent),
         QuoteField("land_area_quote", "land_area_m2", parse_area_m2),
         QuoteField("floor_area_quote", "floor_area_m2", parse_area_m2),
         QuoteField("built_year_quote", "built_year", parse_year),
