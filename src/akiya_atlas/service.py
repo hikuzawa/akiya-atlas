@@ -10,6 +10,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from sitemill.build.pii import PHONE_RE
 from sitemill.diff.state import CrawlState
 from sitemill.extract import ExtractedItem, ExtractionSpec
 from sitemill.models import Page, Provenance, Redirect, Source
@@ -44,13 +45,17 @@ LOT_LIKE = re.compile(r"(?<![\d.])\d{1,5}-\d{1,4}(?![\d.㎡m])")
 
 
 def scrub_lot_numbers(content: dict[str, Any]) -> bool:
-    """題名・要約に残った地番らしき数字を落とす。変更があれば True。"""
+    """題名・要約に残った地番と電話番号を落とす。変更があれば True。
+
+    電話番号は仲介業者や担当者の連絡先のことがあり、そのまま載せると公開前の PII 検査で止まる。
+    一次情報へのリンクは別に出しているので、本文から連絡先を持ち出す必要はない。
+    """
     changed = False
     for key in ("title", "summary"):
         text = content.get(key)
         if not text:
             continue
-        scrubbed = LOT_LIKE.sub("", str(text))
+        scrubbed = PHONE_RE.sub("", LOT_LIKE.sub("", str(text)))
         if scrubbed != text:
             content[key] = re.sub(r"[ 　]{2,}", " ", scrubbed).strip() or None
             changed = True

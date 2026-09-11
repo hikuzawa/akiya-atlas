@@ -161,6 +161,15 @@ def record_id_for(source_id: str, listing_no: str) -> str:
 
 
 def listing_slug(listing_no: str, fallback: str) -> str:
-    s = normalize_listing_no(listing_no).lower()
-    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
-    return s or fallback
+    """URL に使う物件の識別子。
+
+    「地-24」「家-24」のように日本語の分類を含む物件番号は、英数字だけ残すと衝突する
+    （北海道当別町の実例）。日本語を含むときは番号そのものから短いしるしを足して区別する。
+    """
+    s = normalize_listing_no(listing_no)
+    slug = re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
+    if not slug:
+        return fallback
+    if re.search(r"[^\x00-\x7f]", s):
+        slug = f"{slug}-{hashlib.sha1(s.encode('utf-8')).hexdigest()[:4]}"
+    return slug

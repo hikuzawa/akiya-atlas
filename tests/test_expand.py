@@ -231,3 +231,12 @@ def test_site_is_up_tells_a_blocked_site_from_a_wrong_url(monkeypatch) -> None: 
 
     monkeypatch.setattr("socket.getaddrinfo", _fail)
     assert site_is_up(_res(0, "robots.txt を取得できない"), "https://x.example/") is False
+
+
+def test_external_link_label_drops_contact_numbers() -> None:
+    """民間プラットフォームのアンカーに担当者の電話番号が入ることがある（足利市の実例）。"""
+    from akiya_atlas.expand import clean_link_label
+
+    label = clean_link_label("◆物件登録募集中【お気軽にご相談ください Tel. 0284-20-2266】")
+    assert "0284" not in label and "物件登録募集中" in label
+    assert clean_link_label("空き家バンク（アットホーム）") == "空き家バンク(アットホーム)"

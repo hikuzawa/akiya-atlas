@@ -9,12 +9,14 @@ from __future__ import annotations
 import logging
 import re
 import socket
+import unicodedata
 from dataclasses import dataclass, field
 from datetime import UTC, date, datetime
 from pathlib import Path
 from urllib.parse import urlsplit
 
 import yaml
+from sitemill.build.pii import PHONE_RE
 from sitemill.classify import (
     ClassifiedPage,
     ListingScore,
@@ -446,9 +448,8 @@ def select_bank_page(
     # 外部プラットフォームへのリンクを収集
     for ln in extract_links(best.html, best.url):
         if platforms.is_platform(ln.url):
-            probe.externals.append(
-                ExternalLink(label=ln.text[:60] or platforms.match(ln.url) or "", url=ln.url)
-            )
+            label = clean_link_label(ln.text) or platforms.match(ln.url) or ""
+            probe.externals.append(ExternalLink(label=label, url=ln.url))
     return probe
 
 
@@ -778,6 +779,17 @@ def _bank_note(f: MunicipalityFinding, status: str) -> str:
     return ""
 
 
+def clean_link_label(text: str) -> str:
+    """リンクの見出しから連絡先を落とす。
+
+    民間プラットフォームのアンカーには「【お気軽にご相談ください Tel. 0284-20-2266】」のように
+    担当者の電話番号が入ることがある。そのまま保存するとページに出て公開前の PII 検査で止まる。
+    """
+    label = PHONE_RE.sub("", unicodedata.normalize("NFKC", text or ""))
+    label = re.sub(r"[ 　]{2,}", " ", label).strip(" 　・-")
+    return label[:60]
+
+
 _RAKUEN_NAGANO = ExternalLink(
     label="楽園信州 空き家バンク・空き地バンク（長野県）",
     url="https://rakuen-akiya.jp/",
@@ -981,7 +993,7 @@ def _row_to_finding(row: dict) -> MunicipalityFinding:
         evidence_url=row.get("evidence_url"),
         cross_linked=row.get("cross_linked", False),
         external_links=[
-            ExternalLink(label=e["label"], url=e["url"], note=e.get("note"))
+            ExternalLink(label=clean_link_label(e["label"]), url=e["url"], note=e.get("note"))
             for e in row.get("external_links", [])
         ],
         policy=row.get("policy", "pending"),
