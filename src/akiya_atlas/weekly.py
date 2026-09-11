@@ -55,8 +55,15 @@ class DayRow:
         return self.input_tokens / 1e6 * PRICE_IN + self.output_tokens / 1e6 * PRICE_OUT
 
 
-def collect(ws: Workspace, *, days: int = 7, now: datetime | None = None) -> list[DayRow]:
-    """直近 N 日の実行レポートを日ごとにまとめる（純関数に近い。ファイルだけを読む）。"""
+def collect(
+    ws: Workspace, *, days: int = 7, now: datetime | None = None, source: str = "ci"
+) -> list[DayRow]:
+    """直近 N 日の実行レポートを日ごとにまとめる（ファイルだけを読む）。
+
+    source は "ci"（日次パイプラインだけ）/ "local"（手元の作業だけ）/ "all"。
+    バックフィルのような手元の実行を混ぜると、日次の所要時間と費用を読み違えるため
+    既定は "ci" にしている。古いレポートには印が無いので "all" でだけ数える。
+    """
     now = now or datetime.now(UTC)
     since = now - timedelta(days=days)
     rows: dict[str, DayRow] = {}
@@ -69,6 +76,9 @@ def collect(ws: Workspace, *, days: int = 7, now: datetime | None = None) -> lis
             continue
         started = _dt(data.get("started_at"))
         if started is None or started < since:
+            continue
+        is_ci = bool(data.get("ci"))
+        if (source == "ci" and not is_ci) or (source == "local" and is_ci):
             continue
         key = started.date().isoformat()
         row = rows.setdefault(key, DayRow(date=key))
@@ -112,12 +122,15 @@ def takedown_count(ws: Workspace) -> tuple[int, dict[str, int]]:
     return len(tl.items), tl.other_issues
 
 
-def report(ws: Workspace, *, days: int = 7, now: datetime | None = None) -> list[str]:
+def report(
+    ws: Workspace, *, days: int = 7, now: datetime | None = None, source: str = "ci"
+) -> list[str]:
     """報告用の行を返す（Markdown の表）。"""
-    rows = collect(ws, days=days, now=now)
+    rows = collect(ws, days=days, now=now, source=source)
     hidden, others = takedown_count(ws)
+    kind = {"ci": "日次パイプライン", "local": "手元の実行", "all": "すべての実行"}[source]
     out = [
-        f"## 日次パイプラインの直近 {days} 日",
+        f"## {kind}の直近 {days} 日",
         "",
         "| 日付 | 実行 | 取得 | 変化 | 抽出 | 取込 | 新規/更新 | LLM | 費用 | heal | ページ |",
         "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
@@ -165,15 +178,16 @@ def month_estimate(rows: list[DayRow]) -> dict[str, float]:
     }
 
 
-def write_snapshot(ws: Workspace, *, days: int = 7) -> Path:
+def write_snapshot(ws: Workspace, *, days: int = 7, source: str = "ci") -> Path:
     """まとめを data/runs/weekly-<日付>.json に残す（次回との比較用）。"""
-    rows = collect(ws, days=days)
+    rows = collect(ws, days=days, source=source)
     path = ws.runs_dir / f"weekly-{datetime.now(UTC).date().isoformat()}.json"
     hidden, others = takedown_count(ws)
     path.write_text(
         json.dumps(
             {
                 "days": days,
+                "source": source,
                 "generated_at": datetime.now(UTC).replace(microsecond=0).isoformat(),
                 "per_day": [vars(r) | {"cost": round(r.cost, 4)} for r in rows],
                 "month_estimate": month_estimate(rows),

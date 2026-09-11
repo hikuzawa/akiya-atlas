@@ -83,22 +83,27 @@ def _register(app: typer.Typer) -> None:
     @app.command("weekly-report")
     def weekly_report_cmd(
         days: Annotated[int, typer.Option("--days", help="さかのぼる日数")] = 7,
-        save: Annotated[bool, typer.Option("--save", help="data/runs に記録を残す")] = True,
+        save: Annotated[
+            bool, typer.Option("--save/--no-save", help="data/runs に記録を残す")
+        ] = True,
+        source: Annotated[
+            str, typer.Option("--source", help="ci（日次のみ）/ local（手元のみ）/ all")
+        ] = "ci",
     ) -> None:
         """日次パイプラインの直近 N 日をまとめる（実行時間・差分・費用・自己修復・取り下げ）。"""
         from akiya_atlas import weekly
 
         rt = commands.Runtime.open()
-        for line in weekly.report(rt.ws, days=days):
+        for line in weekly.report(rt.ws, days=days, source=source):
             typer.echo(line)
-        est = weekly.month_estimate(weekly.collect(rt.ws, days=days))
+        est = weekly.month_estimate(weekly.collect(rt.ws, days=days, source=source))
         typer.echo("")
         typer.echo(
             f"1 か月に直すと: 約 {est['minutes']:.0f} 分 / 約 ${est['cost']:.2f}"
             "（GitHub Actions の無料枠は月 2,000 分）"
         )
         if save:
-            typer.echo(f"記録: {weekly.write_snapshot(rt.ws, days=days).name}")
+            typer.echo(f"記録: {weekly.write_snapshot(rt.ws, days=days, source=source).name}")
 
     @app.command("takedowns")
     def takedowns_cmd(

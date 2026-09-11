@@ -1,0 +1,57 @@
+# 週次のまとめ: 直近 7 日の日次パイプライン（CI の実行だけ）を集計して Issue に投稿する。
+# 目的は「タグを打ってよいか」「費用と時間が想定内か」を、人が毎日ログを見なくても判断できる形にすること。
+# 相手サイトには一切アクセスしない（data/runs の実行レポートだけを読む）。
+name: weekly
+
+on:
+  schedule:
+    - cron: "17 21 * * 0" # 月曜 06:17 JST（日曜 21:17 UTC）
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "さかのぼる日数"
+        type: string
+        default: "7"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  summary:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout akiya-atlas
+        uses: actions/checkout@v4
+        with:
+          path: akiya-atlas
+
+      - name: Checkout sitemill (path 依存の隣に置く。ADR 0006)
+        uses: actions/checkout@v4
+        with:
+          repository: hikuzawa/sitemill
+          path: sitemill
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Sync
+        working-directory: akiya-atlas
+        run: uv sync --frozen
+
+      - name: まとめを作る
+        working-directory: akiya-atlas
+        run: |
+          uv run akiya-atlas weekly-report --days "${{ inputs.days || 7 }}" --source ci --no-save > summary.md
+          cat summary.md
+
+      - name: Issue に投稿する
+        working-directory: akiya-atlas
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          title="週次まとめ $(date -u +%Y-%m-%d)"
+          gh issue create --title "$title" --body-file summary.md
