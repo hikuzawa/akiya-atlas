@@ -14,6 +14,7 @@ sources:
     slug: '331007'
     bank_url: https://www.city.okayama.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岡山県岡山市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -34,6 +35,7 @@ sources:
     slug: '332020'
     bank_url: https://www.city.kurashiki.okayama.jp/kurashi/sumai/1006343/index.html
     bank_status: info
+    extract_pending: false
     map_query: 岡山県倉敷市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -54,6 +56,7 @@ sources:
     slug: '332038'
     bank_url: https://www.city.tsuyama.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岡山県津山市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -74,6 +77,7 @@ sources:
     slug: '332046'
     bank_url: https://www.city.tamano.lg.jp/site/lifeoftamano/1674.html
     bank_status: info
+    extract_pending: false
     map_query: 岡山県玉野市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -94,6 +98,7 @@ sources:
     slug: '332054'
     bank_url: https://www.city.kasaoka.okayama.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岡山県笠岡市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -114,6 +119,7 @@ sources:
     slug: '332071'
     bank_url: https://www.city.ibara.okayama.jp/soshiki/27/1482.html
     bank_status: info
+    extract_pending: false
     map_query: 岡山県井原市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -134,6 +140,7 @@ sources:
     slug: '332089'
     bank_url: https://www.city.soja.okayama.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岡山県総社市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -154,6 +161,7 @@ sources:
     slug: '332097'
     bank_url: https://akiyaconcierge.com/
     bank_status: info
+    extract_pending: false
     map_query: 岡山県高梁市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -174,6 +182,7 @@ sources:
     slug: '332101'
     bank_url: https://www.city.niimi.okayama.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岡山県新見市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -194,6 +203,7 @@ sources:
     slug: '332119'
     bank_url: https://www.city.bizen.okayama.jp/site/bizen/869.html
     bank_status: info
+    extract_pending: false
     map_query: 岡山県備前市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -214,6 +224,7 @@ sources:
     slug: '332127'
     bank_url: https://www.city.setouchi.lg.jp/site/portal/
     bank_status: available
+    extract_pending: true
     map_query: 岡山県瀬戸内市
   operator_evidence:
     quote: 公式ドメイン www.city.setouchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -239,6 +250,7 @@ sources:
     slug: '332135'
     bank_url: https://www.city.akaiwa.lg.jp/kurashi/iju/4387.html
     bank_status: info
+    extract_pending: false
     map_query: 岡山県赤磐市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -259,6 +271,7 @@ sources:
     slug: '332143'
     bank_url: https://www.city.maniwa.lg.jp/life/2/13/
     bank_status: info
+    extract_pending: false
     map_query: 岡山県真庭市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -279,6 +292,7 @@ sources:
     slug: '332151'
     bank_url: https://www.city.mimasaka.lg.jp/mokutekibetsu/ijuteiju/5854.html
     bank_status: available
+    extract_pending: false
     map_query: 岡山県美作市
   operator_evidence:
     quote: 公式ドメイン www.city.mimasaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -304,6 +318,7 @@ sources:
     slug: '332160'
     bank_url: https://www.city.asakuchi.lg.jp/page/13085.html
     bank_status: available
+    extract_pending: false
     map_query: 岡山県浅口市
   operator_evidence:
     quote: 公式ドメイン www.city.asakuchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -329,6 +344,7 @@ sources:
     slug: '333468'
     bank_url: https://www.town.wake.lg.jp/kurashi/iju_teiju/akiyabank/index.html
     bank_status: info
+    extract_pending: false
     map_query: 岡山県和気町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -349,6 +365,7 @@ sources:
     slug: '334235'
     bank_url: https://www.town.hayashima.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岡山県早島町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -369,6 +386,7 @@ sources:
     slug: '334456'
     bank_url: https://www.town.satosho.okayama.jp/life/1/13/95/
     bank_status: info
+    extract_pending: false
     map_query: 岡山県里庄町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -389,6 +407,7 @@ sources:
     slug: '334618'
     bank_url: https://www.town.yakage.okayama.jp/life/teijyu/akiyatouroku.html
     bank_status: info
+    extract_pending: false
     map_query: 岡山県矢掛町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -409,6 +428,7 @@ sources:
     slug: '335860'
     bank_url: https://www.vill.shinjo.okayama.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岡山県新庄村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -429,6 +449,7 @@ sources:
     slug: '336068'
     bank_url: https://www.town.kagamino.lg.jp/life/1/25/
     bank_status: info
+    extract_pending: false
     map_query: 岡山県鏡野町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -449,6 +470,7 @@ sources:
     slug: '336220'
     bank_url: https://www.town.shoo.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岡山県勝央町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -469,6 +491,7 @@ sources:
     slug: '336238'
     bank_url: https://www.town.nagi.okayama.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岡山県奈義町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -489,6 +512,7 @@ sources:
     slug: '336432'
     bank_url: https://www.vill.nishiawakura.okayama.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岡山県西粟倉村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -509,6 +533,7 @@ sources:
     slug: '336637'
     bank_url: https://www.town.kumenan.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岡山県久米南町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -529,6 +554,7 @@ sources:
     slug: '336661'
     bank_url: https://misaki-akiyabank.com/
     bank_status: info
+    extract_pending: false
     map_query: 岡山県美咲町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -549,6 +575,7 @@ sources:
     slug: '336815'
     bank_url: https://www.town.kibichuo.lg.jp/site/teijyu/1576.html
     bank_status: available
+    extract_pending: false
     map_query: 岡山県吉備中央町
   operator_evidence:
     quote: 公式ドメイン www.town.kibichuo.lg.jp（.lg.jp、地方公共団体専用ドメイン）

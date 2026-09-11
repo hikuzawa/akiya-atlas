@@ -14,6 +14,7 @@ sources:
     slug: 032018
     bank_url: https://www.city.morioka.iwate.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岩手県盛岡市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -34,6 +35,7 @@ sources:
     slug: '032026'
     bank_url: https://www.city.miyako.iwate.jp/gyosei/soshiki/toshi/akiya/561.html
     bank_status: info
+    extract_pending: false
     map_query: 岩手県宮古市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -59,6 +61,7 @@ sources:
     slug: '032034'
     bank_url: https://www.city.ofunato.iwate.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岩手県大船渡市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -79,6 +82,7 @@ sources:
     slug: '032051'
     bank_url: https://www.city.hanamaki.iwate.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岩手県花巻市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -99,6 +103,7 @@ sources:
     slug: 032069
     bank_url: https://www.city.kitakami.iwate.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岩手県北上市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -119,6 +124,7 @@ sources:
     slug: '032077'
     bank_url: https://www.city.kuji.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岩手県久慈市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -139,6 +145,7 @@ sources:
     slug: 032085
     bank_url: https://www.city.tono.iwate.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岩手県遠野市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -159,6 +166,7 @@ sources:
     slug: 032093
     bank_url: https://www.city.ichinoseki.iwate.jp/genre/kurashi/akiya
     bank_status: info
+    extract_pending: false
     map_query: 岩手県一関市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -179,6 +187,7 @@ sources:
     slug: '032107'
     bank_url: https://www.city.rikuzentakata.iwate.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岩手県陸前高田市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -199,6 +208,7 @@ sources:
     slug: '032115'
     bank_url: https://www.city.kamaishi.iwate.jp/category/bunya/infra/akiya/
     bank_status: info
+    extract_pending: false
     map_query: 岩手県釜石市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -219,6 +229,7 @@ sources:
     slug: '032131'
     bank_url: https://www.city.ninohe.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岩手県二戸市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -239,6 +250,7 @@ sources:
     slug: '032140'
     bank_url: https://www.city.hachimantai.lg.jp/site/ijyu-4/1816.html
     bank_status: available
+    extract_pending: false
     map_query: 岩手県八幡平市
   operator_evidence:
     quote: 公式ドメイン www.city.hachimantai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -317,6 +329,7 @@ sources:
     slug: 032158
     bank_url: https://www.city.oshu.iwate.jp/kurashi_tetsuzuki/sumai/2/index.html
     bank_status: info
+    extract_pending: false
     map_query: 岩手県奥州市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -337,6 +350,7 @@ sources:
     slug: '032166'
     bank_url: https://www.city.takizawa.iwate.jp/kurashi/tochi-sumai/contents-12872
     bank_status: available
+    extract_pending: false
     map_query: 岩手県滝沢市
   operator_evidence:
     quote: 公式ドメイン www.city.takizawa.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -367,6 +381,7 @@ sources:
     slug: '033014'
     bank_url: https://www.town.shizukuishi.iwate.jp/docs/2014121000281/
     bank_status: available
+    extract_pending: false
     map_query: 岩手県雫石町
   operator_evidence:
     quote: 公式ドメイン www.town.shizukuishi.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -395,6 +410,7 @@ sources:
     slug: '033022'
     bank_url: https://www.town.kuzumaki.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岩手県葛巻町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -415,6 +431,7 @@ sources:
     slug: '033031'
     bank_url: https://town.iwate.iwate.jp/akiya/
     bank_status: available
+    extract_pending: false
     map_query: 岩手県岩手町
   operator_evidence:
     quote: 公式ドメイン town.iwate.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -440,6 +457,7 @@ sources:
     slug: 033219
     bank_url: https://www.town.shiwa.iwate.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岩手県紫波町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -460,6 +478,7 @@ sources:
     slug: '033227'
     bank_url: https://www.town.yahaba.iwate.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岩手県矢巾町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -480,6 +499,7 @@ sources:
     slug: 033669
     bank_url: https://www.town.nishiwaga.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岩手県西和賀町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -500,6 +520,7 @@ sources:
     slug: 033812
     bank_url: https://www.town.kanegasaki.iwate.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岩手県金ケ崎町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -520,6 +541,7 @@ sources:
     slug: 034029
     bank_url: https://www.town.hiraizumi.iwate.jp/emigration
     bank_status: info
+    extract_pending: false
     map_query: 岩手県平泉町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -540,6 +562,7 @@ sources:
     slug: '034410'
     bank_url: https://www.town.sumita.iwate.jp/docs/2022121400017/
     bank_status: available
+    extract_pending: false
     map_query: 岩手県住田町
   operator_evidence:
     quote: 公式ドメイン www.town.sumita.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -565,6 +588,7 @@ sources:
     slug: '034614'
     bank_url: https://www.town.otsuchi.iwate.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岩手県大槌町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -585,6 +609,7 @@ sources:
     slug: 034827
     bank_url: https://www.town.yamada.iwate.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岩手県山田町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -605,6 +630,7 @@ sources:
     slug: 034835
     bank_url: https://www.town.iwaizumi.lg.jp/docs/2026070300060/
     bank_status: available
+    extract_pending: true
     map_query: 岩手県岩泉町
   operator_evidence:
     quote: 公式ドメイン www.town.iwaizumi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -630,6 +656,7 @@ sources:
     slug: 034843
     bank_url: https://www.vill.tanohata.iwate.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岩手県田野畑村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -650,6 +677,7 @@ sources:
     slug: 034851
     bank_url: https://www.vill.fudai.iwate.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岩手県普代村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -670,6 +698,7 @@ sources:
     slug: '035017'
     bank_url: https://www.town.karumai.iwate.jp/article/kurashitetsuduki/living/jyutaku/entry-basename.html
     bank_status: available
+    extract_pending: false
     map_query: 岩手県軽米町
   operator_evidence:
     quote: 公式ドメイン www.town.karumai.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -695,6 +724,7 @@ sources:
     slug: '035033'
     bank_url: https://www.vill.noda.iwate.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岩手県野田村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -715,6 +745,7 @@ sources:
     slug: 035068
     bank_url: https://www.vill.kunohe.iwate.jp/
     bank_status: none
+    extract_pending: false
     map_query: 岩手県九戸村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -735,6 +766,7 @@ sources:
     slug: '035076'
     bank_url: https://www.town.hirono.iwate.jp/doc/2022052500022/
     bank_status: info
+    extract_pending: false
     map_query: 岩手県洋野町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -758,6 +790,7 @@ sources:
     slug: '035246'
     bank_url: https://www.town.ichinohe.iwate.jp/kurashi_tetsuzuki/sumai/5453.html
     bank_status: info
+    extract_pending: false
     map_query: 岩手県一戸町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:

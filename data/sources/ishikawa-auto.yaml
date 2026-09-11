@@ -14,6 +14,7 @@ sources:
     slug: '172014'
     bank_url: https://www.city.kanazawa.ishikawa.jp/
     bank_status: none
+    extract_pending: false
     map_query: 石川県金沢市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -34,6 +35,7 @@ sources:
     slug: '172022'
     bank_url: https://www.city.nanao.lg.jp/toshikenchiku/kurashi/sumai/sumai/akiya.html
     bank_status: info
+    extract_pending: false
     map_query: 石川県七尾市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -54,6 +56,7 @@ sources:
     slug: '172031'
     bank_url: https://www.city.komatsu.lg.jp/soshiki/1027/akiya_akishitsubanku_komatsuchoukajouhoubanku/index.html
     bank_status: info
+    extract_pending: false
     map_query: 石川県小松市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -74,6 +77,7 @@ sources:
     slug: '172049'
     bank_url: https://www.city.wajima.ishikawa.jp/docs/akichidatabase/top.html
     bank_status: info
+    extract_pending: false
     map_query: 石川県輪島市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -94,6 +98,7 @@ sources:
     slug: '172057'
     bank_url: https://www.city.suzu.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 石川県珠洲市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -114,6 +119,7 @@ sources:
     slug: '172065'
     bank_url: https://www.city.kaga.ishikawa.jp/kurashi/sumai/akiya/index.html
     bank_status: info
+    extract_pending: false
     map_query: 石川県加賀市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -134,6 +140,7 @@ sources:
     slug: '172073'
     bank_url: https://www.city.hakui.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 石川県羽咋市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -154,6 +161,7 @@ sources:
     slug: '172090'
     bank_url: https://www.city.kahoku.lg.jp/001/156/157/index.html
     bank_status: info
+    extract_pending: false
     map_query: 石川県かほく市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -174,6 +182,7 @@ sources:
     slug: '172103'
     bank_url: https://www.city.hakusan.lg.jp/machi/akiya/index.html
     bank_status: info
+    extract_pending: false
     map_query: 石川県白山市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -194,6 +203,7 @@ sources:
     slug: '172111'
     bank_url: https://www.city.nomi.lg.jp/docs/1083.html
     bank_status: available
+    extract_pending: false
     map_query: 石川県能美市
   operator_evidence:
     quote: 公式ドメイン www.city.nomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -223,6 +233,7 @@ sources:
     slug: '172120'
     bank_url: https://www.city.nonoichi.lg.jp/life/1/18/234/
     bank_status: info
+    extract_pending: false
     map_query: 石川県野々市市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -243,6 +254,7 @@ sources:
     slug: '173240'
     bank_url: https://www.town.kawakita.ishikawa.jp/news/
     bank_status: info
+    extract_pending: false
     map_query: 石川県川北町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -263,6 +275,7 @@ sources:
     slug: '173614'
     bank_url: https://www.town.tsubata.lg.jp/site/welcome/1222.html
     bank_status: available
+    extract_pending: false
     map_query: 石川県津幡町
   operator_evidence:
     quote: 公式ドメイン www.town.tsubata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -288,6 +301,7 @@ sources:
     slug: '173657'
     bank_url: https://www.town.uchinada.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 石川県内灘町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -308,6 +322,7 @@ sources:
     slug: '173843'
     bank_url: https://www.town.shika.lg.jp/life/1/6/23/
     bank_status: info
+    extract_pending: false
     map_query: 石川県志賀町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -328,6 +343,7 @@ sources:
     slug: '173860'
     bank_url: https://www.hodatsushimizu.jp/gyosei/kurashi_tetsuzuki/4/3796.html
     bank_status: info
+    extract_pending: false
     map_query: 石川県宝達志水町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -348,6 +364,7 @@ sources:
     slug: '174076'
     bank_url: https://www.town.nakanoto.ishikawa.jp/
     bank_status: none
+    extract_pending: false
     map_query: 石川県中能登町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -368,6 +385,7 @@ sources:
     slug: '174611'
     bank_url: https://www.town.anamizu.lg.jp/akiyabank/
     bank_status: available
+    extract_pending: true
     map_query: 石川県穴水町
   operator_evidence:
     quote: 公式ドメイン www.town.anamizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -393,6 +411,7 @@ sources:
     slug: '174637'
     bank_url: https://www.town.noto.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 石川県能登町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:

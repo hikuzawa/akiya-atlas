@@ -14,6 +14,7 @@ sources:
     slug: '401005'
     bank_url: https://www.city.kitakyushu.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県北九州市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -34,6 +35,7 @@ sources:
     slug: '401307'
     bank_url: https://www.city.fukuoka.lg.jp/jutaku-toshi/jigyochosei/life/top_2.html
     bank_status: info
+    extract_pending: false
     map_query: 福岡県福岡市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -54,6 +56,7 @@ sources:
     slug: '402028'
     bank_url: https://www.city.omuta.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県大牟田市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -74,6 +77,7 @@ sources:
     slug: '402036'
     bank_url: https://www.city.kurume.fukuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県久留米市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -94,6 +98,7 @@ sources:
     slug: '402044'
     bank_url: https://www.city.nogata.fukuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県直方市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -114,6 +119,7 @@ sources:
     slug: '402052'
     bank_url: https://www.city.iizuka.lg.jp/life/1/7/26/
     bank_status: info
+    extract_pending: false
     map_query: 福岡県飯塚市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -134,6 +140,7 @@ sources:
     slug: '402061'
     bank_url: https://www.joho.tagawa.fukuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県田川市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -154,6 +161,7 @@ sources:
     slug: '402079'
     bank_url: https://www.city.yanagawa.fukuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県柳川市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -174,6 +182,7 @@ sources:
     slug: '402109'
     bank_url: https://www.city.yame.fukuoka.jp/kurashi/10755.html
     bank_status: available
+    extract_pending: false
     map_query: 福岡県八女市
   operator_evidence:
     quote: 公式ドメイン www.city.yame.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -203,6 +212,7 @@ sources:
     slug: '402117'
     bank_url: https://www.city.chikugo.lg.jp/kurashi/_2299/_13109/
     bank_status: info
+    extract_pending: false
     map_query: 福岡県筑後市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -223,6 +233,7 @@ sources:
     slug: '402125'
     bank_url: https://www.city.okawa.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県大川市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -243,6 +254,7 @@ sources:
     slug: '402133'
     bank_url: https://www.city.yukuhashi.fukuoka.jp/site/akiya/1411.html
     bank_status: available
+    extract_pending: false
     map_query: 福岡県行橋市
   operator_evidence:
     quote: 公式ドメイン www.city.yukuhashi.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -273,6 +285,7 @@ sources:
     slug: '402141'
     bank_url: https://www.city.buzen.lg.jp/akiya/akiyabank.html
     bank_status: info
+    extract_pending: false
     map_query: 福岡県豊前市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -293,6 +306,7 @@ sources:
     slug: '402150'
     bank_url: https://www.city.nakama.lg.jp/akiya/search/search.php
     bank_status: available
+    extract_pending: true
     map_query: 福岡県中間市
   operator_evidence:
     quote: 公式ドメイン www.city.nakama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -318,6 +332,7 @@ sources:
     slug: '402168'
     bank_url: https://www.city.ogori.fukuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県小郡市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -338,6 +353,7 @@ sources:
     slug: '402176'
     bank_url: https://www.city.chikushino.fukuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県筑紫野市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -358,6 +374,7 @@ sources:
     slug: '402184'
     bank_url: https://www.city.kasuga.fukuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県春日市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -378,6 +395,7 @@ sources:
     slug: '402192'
     bank_url: https://www.city.onojo.fukuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県大野城市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -398,6 +416,7 @@ sources:
     slug: '402206'
     bank_url: https://www.city.munakata.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県宗像市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -418,6 +437,7 @@ sources:
     slug: '402214'
     bank_url: https://www.city.dazaifu.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県太宰府市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -438,6 +458,7 @@ sources:
     slug: '402231'
     bank_url: https://www.city.koga.fukuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県古賀市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -458,6 +479,7 @@ sources:
     slug: '402249'
     bank_url: https://www.city.fukutsu.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県福津市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -478,6 +500,7 @@ sources:
     slug: '402257'
     bank_url: https://www.city.ukiha.fukuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県うきは市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -498,6 +521,7 @@ sources:
     slug: '402265'
     bank_url: https://www.city.miyawaka.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県宮若市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -518,6 +542,7 @@ sources:
     slug: '402273'
     bank_url: https://www.city.kama.lg.jp/life/1/11/131/
     bank_status: info
+    extract_pending: false
     map_query: 福岡県嘉麻市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -538,6 +563,7 @@ sources:
     slug: '402281'
     bank_url: https://www.city.asakura.lg.jp/akiya/
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 福岡県朝倉市
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -558,6 +584,7 @@ sources:
     slug: '402290'
     bank_url: https://www.city.miyama.lg.jp/sp001/010/20201218181720.html
     bank_status: info
+    extract_pending: false
     map_query: 福岡県みやま市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -578,6 +605,7 @@ sources:
     slug: '402303'
     bank_url: https://www.city.itoshima.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県糸島市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -598,6 +626,7 @@ sources:
     slug: '402311'
     bank_url: https://www.city.nakagawa.lg.jp/soshiki/35/akiyabosyu.html
     bank_status: info
+    extract_pending: false
     map_query: 福岡県那珂川市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -618,6 +647,7 @@ sources:
     slug: '403415'
     bank_url: https://www.town.umi.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県宇美町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -638,6 +668,7 @@ sources:
     slug: '403423'
     bank_url: https://www.town.sasaguri.fukuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県篠栗町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -658,6 +689,7 @@ sources:
     slug: '403431'
     bank_url: https://www.town.shime.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県志免町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -678,6 +710,7 @@ sources:
     slug: '403440'
     bank_url: https://www.town.sue.fukuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県須恵町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -698,6 +731,7 @@ sources:
     slug: '403458'
     bank_url: https://www.town.shingu.fukuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県新宮町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -718,6 +752,7 @@ sources:
     slug: '403482'
     bank_url: https://www.town.hisayama.fukuoka.jp/gyosei/kurashi/sumai/3/index.html
     bank_status: info
+    extract_pending: false
     map_query: 福岡県久山町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -738,6 +773,7 @@ sources:
     slug: '403491'
     bank_url: https://www.town.kasuya.fukuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県粕屋町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -758,6 +794,7 @@ sources:
     slug: '403814'
     bank_url: https://www.town.ashiya.lg.jp/life/1/11/52/
     bank_status: info
+    extract_pending: false
     map_query: 福岡県芦屋町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -778,6 +815,7 @@ sources:
     slug: '403822'
     bank_url: https://www.town.mizumaki.lg.jp/iju/
     bank_status: info
+    extract_pending: false
     map_query: 福岡県水巻町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -798,6 +836,7 @@ sources:
     slug: '403831'
     bank_url: https://www.town.okagaki.lg.jp/010/050/070/20181029151015.html
     bank_status: info
+    extract_pending: false
     map_query: 福岡県岡垣町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -818,6 +857,7 @@ sources:
     slug: '403849'
     bank_url: https://www.town.onga.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県遠賀町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -838,6 +878,7 @@ sources:
     slug: '404012'
     bank_url: https://town.kotake.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県小竹町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -858,6 +899,7 @@ sources:
     slug: '404021'
     bank_url: https://www.town.kurate.lg.jp/syoukai/akiyabank/bukken_ichiran.html
     bank_status: available
+    extract_pending: false
     map_query: 福岡県鞍手町
   operator_evidence:
     quote: 公式ドメイン www.town.kurate.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -883,6 +925,7 @@ sources:
     slug: '404217'
     bank_url: https://www.town.keisen.fukuoka.jp/akiyabank/
     bank_status: info
+    extract_pending: false
     map_query: 福岡県桂川町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -903,6 +946,7 @@ sources:
     slug: '404471'
     bank_url: https://www.town.chikuzen.fukuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県筑前町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -923,6 +967,7 @@ sources:
     slug: '404489'
     bank_url: https://vill.toho-info.com/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県東峰村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -943,6 +988,7 @@ sources:
     slug: '405035'
     bank_url: https://www.town.tachiarai.fukuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県大刀洗町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -963,6 +1009,7 @@ sources:
     slug: '405221'
     bank_url: https://www.town.ooki.lg.jp/cgi-bin/recruit.php/2/list?page_no=1
     bank_status: available
+    extract_pending: false
     map_query: 福岡県大木町
   operator_evidence:
     quote: 公式ドメイン www.town.ooki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -988,6 +1035,7 @@ sources:
     slug: '405442'
     bank_url: https://www.town.hirokawa.fukuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県広川町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1008,6 +1056,7 @@ sources:
     slug: '406015'
     bank_url: https://www.town.kawara.fukuoka.jp/s045/kanko/040/090/20260401160635.html
     bank_status: info
+    extract_pending: false
     map_query: 福岡県香春町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1028,6 +1077,7 @@ sources:
     slug: '406023'
     bank_url: https://www.town.soeda.fukuoka.jp/site/soeda-life/1107.html
     bank_status: available
+    extract_pending: false
     map_query: 福岡県添田町
   operator_evidence:
     quote: 公式ドメイン www.town.soeda.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -1053,6 +1103,7 @@ sources:
     slug: '406040'
     bank_url: https://www.town.itoda.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県糸田町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1073,6 +1124,7 @@ sources:
     slug: '406058'
     bank_url: https://www.town-kawasaki.com/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県川崎町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1093,6 +1145,7 @@ sources:
     slug: '406082'
     bank_url: https://www.town.oto.fukuoka.jp/dynamic/info/pub/default.aspx?c_id=16
     bank_status: available
+    extract_pending: false
     map_query: 福岡県大任町
   operator_evidence:
     quote: 公式ドメイン www.town.oto.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -1118,6 +1171,7 @@ sources:
     slug: '406091'
     bank_url: https://www.akamura.net/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県赤村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1138,6 +1192,7 @@ sources:
     slug: '406104'
     bank_url: http://fukuchi-life.com/
     bank_status: available
+    extract_pending: false
     map_query: 福岡県福智町
   operator_evidence:
     quote: 公式サイト（www.town.fukuchi.lg.jp）から空き家バンクとして案内されているリンク
@@ -1163,6 +1218,7 @@ sources:
     slug: '406210'
     bank_url: https://www.town.kanda.lg.jp/life/1/5/24/
     bank_status: info
+    extract_pending: false
     map_query: 福岡県苅田町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1183,6 +1239,7 @@ sources:
     slug: '406252'
     bank_url: https://www.town.miyako.lg.jp/gyouseikeiei/akiya_bk/top2.html
     bank_status: info
+    extract_pending: false
     map_query: 福岡県みやこ町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1206,6 +1263,7 @@ sources:
     slug: '406422'
     bank_url: https://www.town.yoshitomi.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福岡県吉富町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1226,6 +1284,7 @@ sources:
     slug: '406465'
     bank_url: https://www.town.koge.lg.jp/ijyu_teiju/akiyaakitibank/index.html
     bank_status: info
+    extract_pending: false
     map_query: 福岡県上毛町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1246,6 +1305,7 @@ sources:
     slug: '406473'
     bank_url: https://www.town.chikujo.fukuoka.jp/li/010/120/030/index.html
     bank_status: info
+    extract_pending: false
     map_query: 福岡県築上町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:

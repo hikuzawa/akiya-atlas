@@ -14,6 +14,7 @@ sources:
     slug: '151009'
     bank_url: https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/index.html
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 新潟県新潟市
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -34,6 +35,7 @@ sources:
     slug: '152021'
     bank_url: https://www.city.nagaoka.niigata.jp/akiya/
     bank_status: available
+    extract_pending: true
     map_query: 新潟県長岡市
   operator_evidence:
     quote: 公式ドメイン www.city.nagaoka.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -59,6 +61,7 @@ sources:
     slug: '152048'
     bank_url: https://www.city.sanjo.niigata.jp/kurashi_tetsuzuki/kakushusodan/15607.html
     bank_status: info
+    extract_pending: false
     map_query: 新潟県三条市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -79,6 +82,7 @@ sources:
     slug: '152056'
     bank_url: https://www.city.kashiwazaki.lg.jp/kurashi_tetsuzuki/hojo/sumai_seikatsu/index.html
     bank_status: info
+    extract_pending: false
     map_query: 新潟県柏崎市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -99,6 +103,7 @@ sources:
     slug: '152064'
     bank_url: https://www.city.shibata.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 新潟県新発田市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -119,6 +124,7 @@ sources:
     slug: '152081'
     bank_url: https://www.city.ojiya.niigata.jp/site/iju/akiyabank.html
     bank_status: info
+    extract_pending: false
     map_query: 新潟県小千谷市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -142,6 +148,7 @@ sources:
     slug: '152099'
     bank_url: https://www.city.kamo.niigata.jp/
     bank_status: none
+    extract_pending: false
     map_query: 新潟県加茂市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -162,6 +169,7 @@ sources:
     slug: '152102'
     bank_url: https://www.city.tokamachi.lg.jp/cgi-bin/recruit.php/1/list
     bank_status: available
+    extract_pending: false
     map_query: 新潟県十日町市
   operator_evidence:
     quote: 公式ドメイン www.city.tokamachi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -187,6 +195,7 @@ sources:
     slug: '152111'
     bank_url: https://www.city.mitsuke.niigata.jp/life/1/9/54/
     bank_status: info
+    extract_pending: false
     map_query: 新潟県見附市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -207,6 +216,7 @@ sources:
     slug: '152129'
     bank_url: https://www.city.murakami.lg.jp/site/akiya-bank/m-akiya-bank-bukken.html
     bank_status: available
+    extract_pending: false
     map_query: 新潟県村上市
   operator_evidence:
     quote: 公式ドメイン www.city.murakami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -232,6 +242,7 @@ sources:
     slug: '152137'
     bank_url: https://www.city.tsubame.niigata.jp/cgi-bin/recruit.php/3/list?page_no=1
     bank_status: available
+    extract_pending: false
     map_query: 新潟県燕市
   operator_evidence:
     quote: 公式ドメイン www.city.tsubame.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -257,6 +268,7 @@ sources:
     slug: '152161'
     bank_url: https://www.city.itoigawa.lg.jp/life/5/19/72/
     bank_status: info
+    extract_pending: false
     map_query: 新潟県糸魚川市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -277,6 +289,7 @@ sources:
     slug: '152170'
     bank_url: https://www.city.myoko.niigata.jp/myoko-life/house/
     bank_status: available
+    extract_pending: false
     map_query: 新潟県妙高市
   operator_evidence:
     quote: 公式ドメイン www.city.myoko.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -302,6 +315,7 @@ sources:
     slug: '152188'
     bank_url: https://www.city.gosen.lg.jp/organization/7/8/index.html
     bank_status: info
+    extract_pending: false
     map_query: 新潟県五泉市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -322,6 +336,7 @@ sources:
     slug: '152226'
     bank_url: https://www.city.joetsu.niigata.jp/
     bank_status: none
+    extract_pending: false
     map_query: 新潟県上越市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -342,6 +357,7 @@ sources:
     slug: '152234'
     bank_url: https://www.city.agano.niigata.jp/kurashi_tetsuzuki/zumai/akiya/index.html
     bank_status: info
+    extract_pending: false
     map_query: 新潟県阿賀野市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -362,6 +378,7 @@ sources:
     slug: '152242'
     bank_url: https://www.city.sado.niigata.jp/
     bank_status: none
+    extract_pending: false
     map_query: 新潟県佐渡市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -382,6 +399,7 @@ sources:
     slug: '152251'
     bank_url: https://www.city.uonuma.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 新潟県魚沼市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -402,6 +420,7 @@ sources:
     slug: '152269'
     bank_url: https://www.city.minamiuonuma.niigata.jp/akiyabank/
     bank_status: info
+    extract_pending: false
     map_query: 新潟県南魚沼市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -422,6 +441,7 @@ sources:
     slug: '152277'
     bank_url: https://www.city.tainai.niigata.jp/kurashi/sekatsu/sumai/akiyabank.html
     bank_status: info
+    extract_pending: false
     map_query: 新潟県胎内市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -445,6 +465,7 @@ sources:
     slug: '153079'
     bank_url: https://www.town.seiro.niigata.jp/1/5/1/3/122.html
     bank_status: info
+    extract_pending: false
     map_query: 新潟県聖籠町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -465,6 +486,7 @@ sources:
     slug: '153427'
     bank_url: https://akiya.vill.yahiko.niigata.jp/
     bank_status: available
+    extract_pending: false
     map_query: 新潟県弥彦村
   operator_evidence:
     quote: 公式サイト（www.vill.yahiko.niigata.jp）から空き家バンクとして案内されているリンク
@@ -490,6 +512,7 @@ sources:
     slug: '153613'
     bank_url: https://www.town.tagami.niigata.jp/
     bank_status: none
+    extract_pending: false
     map_query: 新潟県田上町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -510,6 +533,7 @@ sources:
     slug: '153851'
     bank_url: https://www.town.aga.niigata.jp/
     bank_status: none
+    extract_pending: false
     map_query: 新潟県阿賀町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -530,6 +554,7 @@ sources:
     slug: '154059'
     bank_url: https://www.town.izumozaki.niigata.jp/
     bank_status: none
+    extract_pending: false
     map_query: 新潟県出雲崎町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -550,6 +575,7 @@ sources:
     slug: '154610'
     bank_url: https://www.town.yuzawa.lg.jp/kurashinojoho/kurashi_tetsuzuki/2/7335.html
     bank_status: info
+    extract_pending: false
     map_query: 新潟県湯沢町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -570,6 +596,7 @@ sources:
     slug: '154822'
     bank_url: https://www.town.tsunan.niigata.jp/
     bank_status: none
+    extract_pending: false
     map_query: 新潟県津南町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -590,6 +617,7 @@ sources:
     slug: '155047'
     bank_url: https://www.vill.kariwa.niigata.jp/
     bank_status: none
+    extract_pending: false
     map_query: 新潟県刈羽村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -610,6 +638,7 @@ sources:
     slug: '155811'
     bank_url: http://www.vill.sekikawa.niigata.jp/life/13/696/index.html
     bank_status: available
+    extract_pending: false
     map_query: 新潟県関川村
   operator_evidence:
     quote: 新潟県 リンク集：県内市町村に掲載された公式サイト（www.vill.sekikawa.niigata.jp）
@@ -635,6 +664,7 @@ sources:
     slug: '155861'
     bank_url: https://www.vill.awashimaura.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 新潟県粟島浦村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:

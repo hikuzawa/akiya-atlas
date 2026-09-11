@@ -14,6 +14,7 @@ sources:
     slug: '281000'
     bank_url: https://www.city.kobe.lg.jp/a92551/akiya_support.html
     bank_status: info
+    extract_pending: false
     map_query: 兵庫県神戸市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -34,6 +35,7 @@ sources:
     slug: '282014'
     bank_url: https://www.city.himeji.lg.jp/kurashi/category/2-3-7-0-0-0-0-0-0-0.html
     bank_status: info
+    extract_pending: false
     map_query: 兵庫県姫路市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -54,6 +56,7 @@ sources:
     slug: '282022'
     bank_url: https://www.city.amagasaki.hyogo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県尼崎市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -74,6 +77,7 @@ sources:
     slug: '282031'
     bank_url: https://www.city.akashi.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県明石市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -94,6 +98,7 @@ sources:
     slug: '282049'
     bank_url: https://www.nishi.or.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県西宮市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -114,6 +119,7 @@ sources:
     slug: '282057'
     bank_url: https://www.city.sumoto.lg.jp/soshiki/22/15538.html
     bank_status: info
+    extract_pending: false
     map_query: 兵庫県洲本市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -134,6 +140,7 @@ sources:
     slug: '282065'
     bank_url: https://www.city.ashiya.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県芦屋市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -154,6 +161,7 @@ sources:
     slug: '282073'
     bank_url: https://www.city.itami.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県伊丹市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -174,6 +182,7 @@ sources:
     slug: '282081'
     bank_url: https://www.city.aioi.lg.jp/site/aioisiakiyabank/
     bank_status: info
+    extract_pending: false
     map_query: 兵庫県相生市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -194,6 +203,7 @@ sources:
     slug: '282090'
     bank_url: https://www.city.toyooka.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県豊岡市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -214,6 +224,7 @@ sources:
     slug: '282103'
     bank_url: https://www.city.kakogawa.lg.jp/soshikikarasagasu/tosi_kekaku/jyutaku/akiya_akichi/40768.html
     bank_status: info
+    extract_pending: false
     map_query: 兵庫県加古川市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -234,6 +245,7 @@ sources:
     slug: '282120'
     bank_url: https://www.city.ako.lg.jp/sangyoshinko/kanko/teiju/akiya_bank.html
     bank_status: info
+    extract_pending: false
     map_query: 兵庫県赤穂市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -257,6 +269,7 @@ sources:
     slug: '282138'
     bank_url: https://www.city.nishiwaki.lg.jp/iju/topics/1477612996430.html
     bank_status: info
+    extract_pending: false
     map_query: 兵庫県西脇市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -277,6 +290,7 @@ sources:
     slug: '282146'
     bank_url: https://www.city.takarazuka.hyogo.jp/1060678/1060691/1028025/index.html
     bank_status: info
+    extract_pending: false
     map_query: 兵庫県宝塚市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -297,6 +311,7 @@ sources:
     slug: '282154'
     bank_url: https://www.city.miki.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県三木市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -317,6 +332,7 @@ sources:
     slug: '282162'
     bank_url: https://www.city.takasago.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県高砂市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -337,6 +353,7 @@ sources:
     slug: '282171'
     bank_url: https://www.city.kawanishi.hyogo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県川西市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -357,6 +374,7 @@ sources:
     slug: '282189'
     bank_url: https://www.city.ono.hyogo.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/2/5107.html
     bank_status: available
+    extract_pending: true
     map_query: 兵庫県小野市
   operator_evidence:
     quote: 公式ドメイン www.city.ono.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -391,6 +409,7 @@ sources:
     slug: '282197'
     bank_url: https://www.city.sanda.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県三田市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -411,6 +430,7 @@ sources:
     slug: '282201'
     bank_url: https://www.city.kasai.hyogo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県加西市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -431,6 +451,7 @@ sources:
     slug: '282219'
     bank_url: https://classo.jp/
     bank_status: available
+    extract_pending: false
     map_query: 兵庫県丹波篠山市
   operator_evidence:
     quote: 公式サイト（www.city.tambasasayama.lg.jp）から空き家バンクとして案内されているリンク
@@ -456,6 +477,7 @@ sources:
     slug: '282227'
     bank_url: https://www.city.yabu.hyogo.jp/kurashi_tetsuzuki/kurashi_sumai/akiya/index.html
     bank_status: info
+    extract_pending: false
     map_query: 兵庫県養父市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -476,6 +498,7 @@ sources:
     slug: '282235'
     bank_url: https://www.city.tamba.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県丹波市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -496,6 +519,7 @@ sources:
     slug: '282243'
     bank_url: https://www.city.minamiawaji.hyogo.jp/soshiki/toshi/akiyabank.html
     bank_status: info
+    extract_pending: false
     map_query: 兵庫県南あわじ市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -516,6 +540,7 @@ sources:
     slug: '282251'
     bank_url: https://www.city.asago.hyogo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県朝来市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -536,6 +561,7 @@ sources:
     slug: '282260'
     bank_url: https://www.city.awaji.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県淡路市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -556,6 +582,7 @@ sources:
     slug: '282278'
     bank_url: https://www.city.shiso.lg.jp/kurashi/sumai/akiyabank/index.html
     bank_status: info
+    extract_pending: false
     map_query: 兵庫県宍粟市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -576,6 +603,7 @@ sources:
     slug: '282286'
     bank_url: https://www.city.kato.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県加東市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -596,6 +624,7 @@ sources:
     slug: '282294'
     bank_url: https://www.city.tatsuno.lg.jp/iju/akiya-bank/1410.html
     bank_status: available
+    extract_pending: false
     map_query: 兵庫県たつの市
   operator_evidence:
     quote: 公式ドメイン www.city.tatsuno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -630,6 +659,7 @@ sources:
     slug: '283011'
     bank_url: https://www.town.inagawa.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県猪名川町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -650,6 +680,7 @@ sources:
     slug: '283657'
     bank_url: https://www.town.taka.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県多可町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -670,6 +701,7 @@ sources:
     slug: '283819'
     bank_url: https://www.town.hyogo-inami.lg.jp/0000003232.html
     bank_status: available
+    extract_pending: false
     map_query: 兵庫県稲美町
   operator_evidence:
     quote: 兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.town.hyogo-inami.lg.jp）
@@ -695,6 +727,7 @@ sources:
     slug: '283827'
     bank_url: https://www.town.harima.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県播磨町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -715,6 +748,7 @@ sources:
     slug: '284424'
     bank_url: https://www.town.ichikawa.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県市川町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -735,6 +769,7 @@ sources:
     slug: '284432'
     bank_url: http://www.town.fukusaki.hyogo.jp/0000001949.html
     bank_status: available
+    extract_pending: false
     map_query: 兵庫県福崎町
   operator_evidence:
     quote: 公式ドメイン www.town.fukusaki.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -765,6 +800,7 @@ sources:
     slug: '284467'
     bank_url: https://www.town.kamikawa.hyogo.jp/0000000317.html
     bank_status: available
+    extract_pending: false
     map_query: 兵庫県神河町
   operator_evidence:
     quote: 公式ドメイン www.town.kamikawa.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -790,6 +826,7 @@ sources:
     slug: '284645'
     bank_url: https://www.town.hyogo-taishi.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県太子町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -810,6 +847,7 @@ sources:
     slug: '284815'
     bank_url: https://www.town.kamigori.hyogo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県上郡町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -830,6 +868,7 @@ sources:
     slug: '285013'
     bank_url: https://www.town.sayo.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 兵庫県佐用町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -850,6 +889,7 @@ sources:
     slug: '285854'
     bank_url: https://www.town.mikata-kami.lg.jp/kurashi-tetsuzuki/iju-teiju-akiya/2904.html
     bank_status: info
+    extract_pending: false
     map_query: 兵庫県香美町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -870,6 +910,7 @@ sources:
     slug: '285862'
     bank_url: https://ijyu.shinonsen.com/news/2535/
     bank_status: info
+    extract_pending: false
     map_query: 兵庫県新温泉町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:

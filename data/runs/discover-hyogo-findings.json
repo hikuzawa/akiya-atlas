@@ -449,14 +449,15 @@
       "evidence_url": "https://www.city.ono.hyogo.jp/",
       "external_links": [
         {
-          "label": "全国版空き家バンクトップページ（LIFULL HOME'Sのサイト）（外部リンク）",
+          "label": "全国版空き家バンクトップページ(LIFULL HOME'Sのサイト)(外部リンク)",
           "url": "https://www.homes.co.jp/akiyabank/"
         },
         {
-          "label": "全国版空き家バンクトップページ（アットホームのサイト）（外部リンク）",
+          "label": "全国版空き家バンクトップページ(アットホームのサイト)(外部リンク)",
           "url": "https://www.akiya-athome.jp/"
         }
       ],
+      "extract_gap": true,
       "listing_rows": 5,
       "listing_score": 0.71,
       "name": "小野市",

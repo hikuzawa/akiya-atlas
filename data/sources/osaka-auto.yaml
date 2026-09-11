@@ -14,6 +14,7 @@ sources:
     slug: '271004'
     bank_url: https://www.city.osaka.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府大阪市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -34,6 +35,7 @@ sources:
     slug: '271403'
     bank_url: https://www.city.sakai.lg.jp/kurashi/jutaku/akiya.html
     bank_status: info
+    extract_pending: false
     map_query: 大阪府堺市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -54,6 +56,7 @@ sources:
     slug: '272027'
     bank_url: https://www.city.kishiwada.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府岸和田市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -74,6 +77,7 @@ sources:
     slug: '272035'
     bank_url: https://www.city.toyonaka.osaka.jp/kurashi/jutaku/akiya/index.html
     bank_status: info
+    extract_pending: false
     map_query: 大阪府豊中市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -94,6 +98,7 @@ sources:
     slug: '272043'
     bank_url: https://www.city.ikeda.osaka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府池田市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -114,6 +119,7 @@ sources:
     slug: '272051'
     bank_url: https://www.city.suita.osaka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府吹田市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -134,6 +140,7 @@ sources:
     slug: '272060'
     bank_url: https://www.city.izumiotsu.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府泉大津市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -154,6 +161,7 @@ sources:
     slug: '272078'
     bank_url: https://www.city.takatsuki.osaka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府高槻市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -174,6 +182,7 @@ sources:
     slug: '272086'
     bank_url: https://www.city.kaizuka.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府貝塚市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -194,6 +203,7 @@ sources:
     slug: '272094'
     bank_url: https://www.city.moriguchi.osaka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府守口市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -214,6 +224,7 @@ sources:
     slug: '272108'
     bank_url: https://www.city.hirakata.osaka.jp/0000023818.html
     bank_status: available
+    extract_pending: true
     map_query: 大阪府枚方市
   operator_evidence:
     quote: 公式ドメイン www.city.hirakata.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -239,6 +250,7 @@ sources:
     slug: '272116'
     bank_url: https://www.city.ibaraki.osaka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府茨木市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -259,6 +271,7 @@ sources:
     slug: '272124'
     bank_url: https://www.city.yao.osaka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府八尾市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -279,6 +292,7 @@ sources:
     slug: '272132'
     bank_url: https://www.city.izumisano.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府泉佐野市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -299,6 +313,7 @@ sources:
     slug: '272141'
     bank_url: https://www.city.tondabayashi.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府富田林市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -319,6 +334,7 @@ sources:
     slug: '272159'
     bank_url: https://www.city.neyagawa.osaka.jp/kurashi/sumai_kenchiku/akiyabanku/index.html
     bank_status: info
+    extract_pending: false
     map_query: 大阪府寝屋川市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -339,6 +355,7 @@ sources:
     slug: '272167'
     bank_url: https://www.city.kawachinagano.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府河内長野市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -359,6 +376,7 @@ sources:
     slug: '272175'
     bank_url: https://www.city.matsubara.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府松原市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -379,6 +397,7 @@ sources:
     slug: '272183'
     bank_url: https://www.city.daito.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府大東市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -399,6 +418,7 @@ sources:
     slug: '272191'
     bank_url: https://www.city.osaka-izumi.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府和泉市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -419,6 +439,7 @@ sources:
     slug: '272205'
     bank_url: https://www.city.minoh.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府箕面市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -439,6 +460,7 @@ sources:
     slug: '272213'
     bank_url: https://www.city.kashiwara.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府柏原市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -459,6 +481,7 @@ sources:
     slug: '272221'
     bank_url: https://www.city.habikino.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府羽曳野市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -479,6 +502,7 @@ sources:
     slug: '272230'
     bank_url: https://www.city.kadoma.osaka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府門真市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -499,6 +523,7 @@ sources:
     slug: '272248'
     bank_url: https://www.city.settsu.osaka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府摂津市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -519,6 +544,7 @@ sources:
     slug: '272256'
     bank_url: https://www.city.takaishi.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府高石市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -539,6 +565,7 @@ sources:
     slug: '272264'
     bank_url: https://www.city.fujiidera.lg.jp/soshiki/toshiseibi/toshikeikaku/akiya/index.html
     bank_status: info
+    extract_pending: false
     map_query: 大阪府藤井寺市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -559,6 +586,7 @@ sources:
     slug: '272272'
     bank_url: https://www.city.higashiosaka.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府東大阪市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -579,6 +607,7 @@ sources:
     slug: '272281'
     bank_url: https://www.city.sennan.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府泉南市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -599,6 +628,7 @@ sources:
     slug: '272299'
     bank_url: https://www.city.shijonawate.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府四條畷市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -619,6 +649,7 @@ sources:
     slug: '272302'
     bank_url: https://www.city.katano.osaka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府交野市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -639,6 +670,7 @@ sources:
     slug: '272311'
     bank_url: https://www.city.osakasayama.osaka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府大阪狭山市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -659,6 +691,7 @@ sources:
     slug: '272329'
     bank_url: https://www.city.hannan.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府阪南市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -679,6 +712,7 @@ sources:
     slug: '273015'
     bank_url: https://www.town.shimamoto.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府島本町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -699,6 +733,7 @@ sources:
     slug: '273210'
     bank_url: https://www.town.toyono.osaka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府豊能町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -719,6 +754,7 @@ sources:
     slug: '273228'
     bank_url: https://www.town.nose.osaka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府能勢町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -739,6 +775,7 @@ sources:
     slug: '273414'
     bank_url: https://www.town.tadaoka.osaka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府忠岡町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -759,6 +796,7 @@ sources:
     slug: '273619'
     bank_url: https://www.town.kumatori.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府熊取町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -779,6 +817,7 @@ sources:
     slug: '273627'
     bank_url: https://www.town.tajiri.osaka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府田尻町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -799,6 +838,7 @@ sources:
     slug: '273660'
     bank_url: https://www.town.misaki.osaka.jp/soshiki/matidukuri/kikaku/teiju/347.html
     bank_status: info
+    extract_pending: false
     map_query: 大阪府岬町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -819,6 +859,7 @@ sources:
     slug: '273813'
     bank_url: http://www.town.taishi.osaka.jp/busyo/machidukurisuisinbu/chiikiseibika/akiyabank/index.html
     bank_status: info
+    extract_pending: false
     map_query: 大阪府太子町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -839,6 +880,7 @@ sources:
     slug: '273821'
     bank_url: https://www.town.kanan.osaka.jp/kurashi_tetsuzuki/sumai/1/2885.html
     bank_status: info
+    extract_pending: false
     map_query: 大阪府河南町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -859,6 +901,7 @@ sources:
     slug: '273830'
     bank_url: https://www.vill.chihayaakasaka.osaka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 大阪府千早赤阪村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:

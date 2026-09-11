@@ -14,6 +14,7 @@ sources:
     slug: '011002'
     bank_url: https://www.city.sapporo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道札幌市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -34,6 +35,7 @@ sources:
     slug: '012025'
     bank_url: https://hakodate-c01202.akiya-athome.jp/
     bank_status: third_party_only
+    extract_pending: false
     map_query: 北海道函館市
     bank_note: 物件は民間プラットフォームで公開されています。本サイトでは巡回・要約せず、リンクのみ掲載します。
   operator_evidence:
@@ -139,6 +141,7 @@ sources:
     slug: '012033'
     bank_url: https://www.city.otaru.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道小樽市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -159,6 +162,7 @@ sources:
     slug: '012041'
     bank_url: https://www.city.asahikawa.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道旭川市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -179,6 +183,7 @@ sources:
     slug: '012050'
     bank_url: https://www.city.muroran.lg.jp/life/?category=540
     bank_status: info
+    extract_pending: false
     map_query: 北海道室蘭市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -199,6 +204,7 @@ sources:
     slug: 012068
     bank_url: https://www.city.kushiro.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道釧路市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -219,6 +225,7 @@ sources:
     slug: '012076'
     bank_url: https://www.city.obihiro.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道帯広市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -239,6 +246,7 @@ sources:
     slug: 012084
     bank_url: https://www.city.kitami.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道北見市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -259,6 +267,7 @@ sources:
     slug: 012092
     bank_url: https://www.city.yubari.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道夕張市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -279,6 +288,7 @@ sources:
     slug: '012106'
     bank_url: https://www.city.iwamizawa.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道岩見沢市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -299,6 +309,7 @@ sources:
     slug: '012114'
     bank_url: https://www.city.abashiri.hokkaido.jp/life/1/10/41/
     bank_status: info
+    extract_pending: false
     map_query: 北海道網走市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -319,6 +330,7 @@ sources:
     slug: '012122'
     bank_url: https://www.e-rumoi.jp/rumoilife/estate/
     bank_status: available
+    extract_pending: false
     map_query: 北海道留萌市
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.e-rumoi.jp）
@@ -344,6 +356,7 @@ sources:
     slug: '012131'
     bank_url: https://www.city.tomakomai.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道苫小牧市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -364,6 +377,7 @@ sources:
     slug: 012149
     bank_url: https://www.city.wakkanai.hokkaido.jp/kurashi/shobou/kasai/syokaki/
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 北海道稚内市
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -384,6 +398,7 @@ sources:
     slug: '012157'
     bank_url: https://www.city.bibai.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道美唄市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -404,6 +419,7 @@ sources:
     slug: '012165'
     bank_url: https://www.city.ashibetsu.hokkaido.jp/kurashi/akiyaakichi/
     bank_status: info
+    extract_pending: false
     map_query: 北海道芦別市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -424,6 +440,7 @@ sources:
     slug: '012173'
     bank_url: https://www.city.ebetsu.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道江別市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -444,6 +461,7 @@ sources:
     slug: 012181
     bank_url: https://www.city.akabira.hokkaido.jp/docs/6120.html
     bank_status: available
+    extract_pending: false
     map_query: 北海道赤平市
   operator_evidence:
     quote: 公式ドメイン www.city.akabira.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -469,6 +487,7 @@ sources:
     slug: 012190
     bank_url: https://mombetsu.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道紋別市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -489,6 +508,7 @@ sources:
     slug: '012203'
     bank_url: http://shibetsu-akiya-akiti.tesio.net/
     bank_status: info
+    extract_pending: false
     map_query: 北海道士別市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -512,6 +532,7 @@ sources:
     slug: '012211'
     bank_url: http://www.city.nayoro.lg.jp/life/cat2/prkeql0000012db8.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道名寄市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -532,6 +553,7 @@ sources:
     slug: '012220'
     bank_url: https://www.city.mikasa.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道三笠市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -552,6 +574,7 @@ sources:
     slug: 012238
     bank_url: https://www.city.nemuro.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道根室市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -572,6 +595,7 @@ sources:
     slug: '012246'
     bank_url: https://www.city.chitose.lg.jp/c01/1005931/1006756.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道千歳市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -592,6 +616,7 @@ sources:
     slug: '012254'
     bank_url: https://www.city.takikawa.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道滝川市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -612,6 +637,7 @@ sources:
     slug: '012262'
     bank_url: https://www.city.sunagawa.hokkaido.jp/seikatsu_kurashi/juutaku/newakiya-akichizyouhou.html
     bank_status: available
+    extract_pending: false
     map_query: 北海道砂川市
   operator_evidence:
     quote: 公式ドメイン www.city.sunagawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -640,6 +666,7 @@ sources:
     slug: '012271'
     bank_url: https://www.city.utashinai.hokkaido.jp/hotnews/category/274.html
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 北海道歌志内市
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -660,6 +687,7 @@ sources:
     slug: 012289
     bank_url: https://www.city.fukagawa.lg.jp/cms/section/kenchiku/ie/index.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道深川市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -680,6 +708,7 @@ sources:
     slug: 012297
     bank_url: https://www.city.furano.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道富良野市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -700,6 +729,7 @@ sources:
     slug: '012301'
     bank_url: https://www.city.noboribetsu.lg.jp/docs/2016060100015/
     bank_status: info
+    extract_pending: false
     map_query: 北海道登別市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -720,6 +750,7 @@ sources:
     slug: 012319
     bank_url: https://www.city.eniwa.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道恵庭市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -740,6 +771,7 @@ sources:
     slug: '012335'
     bank_url: https://www.city.date.hokkaido.jp/hotnews/category/211.html
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 北海道伊達市
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -760,6 +792,7 @@ sources:
     slug: '012343'
     bank_url: https://www.city.kitahiroshima.hokkaido.jp/hotnews/category/792.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道北広島市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -780,6 +813,7 @@ sources:
     slug: '012351'
     bank_url: https://www.city.ishikari.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道石狩市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -800,6 +834,7 @@ sources:
     slug: '012360'
     bank_url: https://www.city.hokuto.hokkaido.jp/docs/akiyabank.html
     bank_status: available
+    extract_pending: false
     map_query: 北海道北斗市
   operator_evidence:
     quote: 公式ドメイン www.city.hokuto.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -825,6 +860,7 @@ sources:
     slug: '013030'
     bank_url: https://www.town.tobetsu.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道当別町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -845,6 +881,7 @@ sources:
     slug: 013048
     bank_url: https://www.vill.shinshinotsu.hokkaido.jp/hotnews/detail/00003170.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道新篠津村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -865,6 +902,7 @@ sources:
     slug: '013315'
     bank_url: https://www.town.matsumae.hokkaido.jp/iju_teiju/detail/00002513.html
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 北海道松前町
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -885,6 +923,7 @@ sources:
     slug: '013323'
     bank_url: https://www.town.fukushima.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道福島町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -905,6 +944,7 @@ sources:
     slug: '013331'
     bank_url: https://www.town.shiriuchi.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道知内町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -925,6 +965,7 @@ sources:
     slug: '013340'
     bank_url: https://www.town.kikonai.hokkaido.jp/iju/jutaku_tochi/akiyareform.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道木古内町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -945,6 +986,7 @@ sources:
     slug: '013374'
     bank_url: https://www.town.nanae.hokkaido.jp/hotnews/category/156.html
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 北海道七飯町
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -965,6 +1007,7 @@ sources:
     slug: 013439
     bank_url: https://www.town.shikabe.lg.jp/kurashi_tetsuzuki/zumai/1045.html
     bank_status: available
+    extract_pending: false
     map_query: 北海道鹿部町
   operator_evidence:
     quote: 公式ドメイン www.town.shikabe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -994,6 +1037,7 @@ sources:
     slug: '013455'
     bank_url: https://www.town.hokkaido-mori.lg.jp/kurashi-tetsuzuki/sumai-pets/index.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道森町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1014,6 +1058,7 @@ sources:
     slug: '013463'
     bank_url: https://www.town.yakumo.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道八雲町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1034,6 +1079,7 @@ sources:
     slug: '013471'
     bank_url: https://www.town.oshamambe.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道長万部町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1054,6 +1100,7 @@ sources:
     slug: '013617'
     bank_url: https://www.hokkaido-esashi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道江差町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1074,6 +1121,7 @@ sources:
     slug: '013625'
     bank_url: https://www.town.kaminokuni.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道上ノ国町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1094,6 +1142,7 @@ sources:
     slug: '013633'
     bank_url: https://www.town.assabu.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道厚沢部町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1114,6 +1163,7 @@ sources:
     slug: '013641'
     bank_url: https://www.town.otobe.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道乙部町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1134,6 +1184,7 @@ sources:
     slug: '013676'
     bank_url: https://www.town.okushiri.lg.jp/hotnews/detail/00005907.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道奥尻町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1154,6 +1205,7 @@ sources:
     slug: '013706'
     bank_url: https://www.town.imakane.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道今金町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1174,6 +1226,7 @@ sources:
     slug: '013714'
     bank_url: https://www.town.setana.lg.jp/industry/post_1215.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道せたな町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1194,6 +1247,7 @@ sources:
     slug: 013919
     bank_url: https://www.vill.shimamaki.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道島牧村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1214,6 +1268,7 @@ sources:
     slug: 013927
     bank_url: https://www.town.suttu.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道寿都町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1234,6 +1289,7 @@ sources:
     slug: 013935
     bank_url: http://kuromatsunai-immig.sblo.jp/article/189175090.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道黒松内町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1254,6 +1310,7 @@ sources:
     slug: 013943
     bank_url: https://www.town.rankoshi.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道蘭越町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1274,6 +1331,7 @@ sources:
     slug: 013951
     bank_url: https://www.town.niseko.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道ニセコ町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1294,6 +1352,7 @@ sources:
     slug: 013960
     bank_url: https://www.vill.makkari.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道真狩村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1314,6 +1373,7 @@ sources:
     slug: 013978
     bank_url: https://www.vill.rusutsu.lg.jp/hotnews/category/117.html
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 北海道留寿都村
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -1334,6 +1394,7 @@ sources:
     slug: 013986
     bank_url: https://www.town.kimobetsu.hokkaido.jp/detail.php?content=325
     bank_status: available
+    extract_pending: false
     map_query: 北海道喜茂別町
   operator_evidence:
     quote: 公式ドメイン www.town.kimobetsu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -1359,6 +1420,7 @@ sources:
     slug: 013994
     bank_url: https://www.town-kyogoku.jp/life/1/5/29/
     bank_status: info
+    extract_pending: false
     map_query: 北海道京極町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1379,6 +1441,7 @@ sources:
     slug: '014001'
     bank_url: https://www.town.kutchan.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道倶知安町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1399,6 +1462,7 @@ sources:
     slug: '014010'
     bank_url: https://www.town.kyowa.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道共和町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1419,6 +1483,7 @@ sources:
     slug: 014028
     bank_url: https://www.town.iwanai.hokkaido.jp/%e6%9a%ae%e3%82%89%e3%81%97%e3%82%ac%e3%82%a4%e3%83%89/%e4%bd%8f%e3%81%be%e3%81%84%e3%83%bb%e7%94%9f%e6%b4%bb/%e3%81%be%e3%81%a1%e3%81%ae%e7%a9%ba%e3%81%8d%e5%ae%b6%e3%81%ae%e5%8f%96%e3%82%8a%e7%b5%84%e3%81%bf/
     bank_status: info
+    extract_pending: false
     map_query: 北海道岩内町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1439,6 +1504,7 @@ sources:
     slug: '014044'
     bank_url: https://www.vill.kamoenai.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道神恵内村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1459,6 +1525,7 @@ sources:
     slug: '014052'
     bank_url: https://www.town.shakotan.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道積丹町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1479,6 +1546,7 @@ sources:
     slug: '014061'
     bank_url: https://www.town.furubira.lg.jp/life/detail.php?id=330
     bank_status: available
+    extract_pending: false
     map_query: 北海道古平町
   operator_evidence:
     quote: 公式ドメイン www.town.furubira.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -1504,6 +1572,7 @@ sources:
     slug: 014079
     bank_url: https://www.town.niki.hokkaido.jp/section/kikakuka/btsphm0000002ykd.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道仁木町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1524,6 +1593,7 @@ sources:
     slug: 014087
     bank_url: https://www.town.yoichi.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道余市町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1544,6 +1614,7 @@ sources:
     slug: 014095
     bank_url: https://www.akaigawa.com/
     bank_status: none
+    extract_pending: false
     map_query: 北海道赤井川村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1564,6 +1635,7 @@ sources:
     slug: '014231'
     bank_url: https://www.town.nanporo.hokkaido.jp/life/house/vacant/
     bank_status: available
+    extract_pending: false
     map_query: 北海道南幌町
   operator_evidence:
     quote: 公式ドメイン www.town.nanporo.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -1589,6 +1661,7 @@ sources:
     slug: 014249
     bank_url: https://www.town.naie.hokkaido.jp/kurashi/akiyataisakujigyou/
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 北海道奈井江町
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -1609,6 +1682,7 @@ sources:
     slug: '014257'
     bank_url: https://town.kamisunagawa.hokkaido.jp/kurashi_tetsuzuki/zumai/akiya/503.html
     bank_status: available
+    extract_pending: false
     map_query: 北海道上砂川町
   operator_evidence:
     quote: 公式ドメイン town.kamisunagawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -1638,6 +1712,7 @@ sources:
     slug: '014273'
     bank_url: https://www.town.yuni.lg.jp/kurashi/choeijyutaku-aki
     bank_status: available
+    extract_pending: false
     map_query: 北海道由仁町
   operator_evidence:
     quote: 公式ドメイン www.town.yuni.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -1663,6 +1738,7 @@ sources:
     slug: 014281
     bank_url: https://www.maoi-net.jp/kurashi/sumai/akiyataisaku/
     bank_status: info
+    extract_pending: false
     map_query: 北海道長沼町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1683,6 +1759,7 @@ sources:
     slug: 014290
     bank_url: https://www.town.kuriyama.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道栗山町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1703,6 +1780,7 @@ sources:
     slug: '014303'
     bank_url: https://www.town.tsukigata.hokkaido.jp/life/1/4/21/
     bank_status: info
+    extract_pending: false
     map_query: 北海道月形町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1723,6 +1801,7 @@ sources:
     slug: '014311'
     bank_url: https://www.town.urausu.hokkaido.jp/ijyu/akiyabank/urausu_akichibank_touroku.html
     bank_status: available
+    extract_pending: false
     map_query: 北海道浦臼町
   operator_evidence:
     quote: 公式ドメイン www.town.urausu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -1748,6 +1827,7 @@ sources:
     slug: '014320'
     bank_url: https://www.town.shintotsukawa.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道新十津川町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1768,6 +1848,7 @@ sources:
     slug: 014338
     bank_url: https://www.town.moseushi.hokkaido.jp/ijuu/teizyu/akiya/2026-0831-0952-38.html
     bank_status: available
+    extract_pending: false
     map_query: 北海道妹背牛町
   operator_evidence:
     quote: 公式ドメイン www.town.moseushi.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -1793,6 +1874,7 @@ sources:
     slug: '014346'
     bank_url: https://www.town.chippubetsu.hokkaido.jp/category/detail.html?category=life&content=230
     bank_status: info
+    extract_pending: false
     map_query: 北海道秩父別町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1813,6 +1895,7 @@ sources:
     slug: '014362'
     bank_url: https://www.town.uryu.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道雨竜町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1833,6 +1916,7 @@ sources:
     slug: '014371'
     bank_url: https://www.town.hokuryu.hokkaido.jp/kurashi/akiya-akichi/
     bank_status: info
+    extract_pending: false
     map_query: 北海道北竜町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1858,6 +1942,7 @@ sources:
     slug: 014389
     bank_url: https://www.town.numata.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道沼田町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1878,6 +1963,7 @@ sources:
     slug: '014524'
     bank_url: https://www.town.takasu.hokkaido.jp/page/1275.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道鷹栖町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1898,6 +1984,7 @@ sources:
     slug: '014532'
     bank_url: https://www.town.higashikagura.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道東神楽町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1918,6 +2005,7 @@ sources:
     slug: '014541'
     bank_url: https://www.town.tohma.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道当麻町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1938,6 +2026,7 @@ sources:
     slug: 014559
     bank_url: https://www.town.pippu.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道比布町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1958,6 +2047,7 @@ sources:
     slug: '014567'
     bank_url: https://www.town.aibetsu.hokkaido.jp/01/11/02
     bank_status: info
+    extract_pending: false
     map_query: 北海道愛別町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1978,6 +2068,7 @@ sources:
     slug: '014575'
     bank_url: https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/geo5a8000000014g.html
     bank_status: available
+    extract_pending: false
     map_query: 北海道上川町
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.hokkaido-kamikawa.lg.jp）
@@ -2003,6 +2094,7 @@ sources:
     slug: 014583
     bank_url: https://higashikawa-town.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道東川町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -2023,6 +2115,7 @@ sources:
     slug: 014591
     bank_url: https://www.town.biei.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道美瑛町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -2043,6 +2136,7 @@ sources:
     slug: '014605'
     bank_url: https://www.town.kamifurano.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道上富良野町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -2063,6 +2157,7 @@ sources:
     slug: '014613'
     bank_url: https://www.town.nakafurano.lg.jp/hotnews/detail/00001600.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道中富良野町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -2083,6 +2178,7 @@ sources:
     slug: '014621'
     bank_url: https://www.town.minamifurano.hokkaido.jp/kurashi-info/%e4%bd%8f%e5%ae%85-2/akiya-bank/
     bank_status: info
+    extract_pending: false
     map_query: 北海道南富良野町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -2106,6 +2202,7 @@ sources:
     slug: '014630'
     bank_url: https://www.vill.shimukappu.lg.jp/shimukappu/section/kikaku/banklist.html
     bank_status: available
+    extract_pending: false
     map_query: 北海道占冠村
   operator_evidence:
     quote: 公式ドメイン www.vill.shimukappu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -2131,6 +2228,7 @@ sources:
     slug: 014648
     bank_url: https://www.town.wassamu.hokkaido.jp/affairs/city-building/why-live-2-2-2/
     bank_status: available
+    extract_pending: false
     map_query: 北海道和寒町
   operator_evidence:
     quote: 公式ドメイン www.town.wassamu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -2159,6 +2257,7 @@ sources:
     slug: '014656'
     bank_url: https://www.town.kembuchi.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道剣淵町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -2179,6 +2278,7 @@ sources:
     slug: 014681
     bank_url: https://www.town.shimokawa.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道下川町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -2199,6 +2299,7 @@ sources:
     slug: 014699
     bank_url: https://www.town.bifuka.hokkaido.jp/cms/section/nuv41p0000009o6b.html
     bank_status: available
+    extract_pending: false
     map_query: 北海道美深町
   operator_evidence:
     quote: 公式ドメイン www.town.bifuka.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -2224,6 +2325,7 @@ sources:
     slug: '014702'
     bank_url: https://www.vill.otoineppu.hokkaido.jp/kakuka/chiikishinkou/oshirase/akiya_bank.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道音威子府村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -2244,6 +2346,7 @@ sources:
     slug: '014711'
     bank_url: https://www.town.nakagawa.hokkaido.jp/section/kankyouseibi/b02d3l0000001csg.html?cp=b02d3l00000005gd&cs=Life01s0
     bank_status: info
+    extract_pending: false
     map_query: 北海道中川町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -2264,6 +2367,7 @@ sources:
     slug: 014729
     bank_url: https://www.town.horokanai.hokkaido.jp/archives/60342
     bank_status: info
+    extract_pending: false
     map_query: 北海道幌加内町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -2284,6 +2388,7 @@ sources:
     slug: 014818
     bank_url: https://www.town.mashike.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道増毛町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -2304,6 +2409,7 @@ sources:
     slug: 014826
     bank_url: https://www.town.obira.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道小平町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -2324,6 +2430,7 @@ sources:
     slug: 014834
     bank_url: http://www.town.tomamae.lg.jp/section/kensetsu/o9flkl0000001ci8.html?cp=lg6iib0000000jpj&cs=cl13
     bank_status: info
+    extract_pending: false
     map_query: 北海道苫前町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -2344,6 +2451,7 @@ sources:
     slug: 014842
     bank_url: https://www.town.haboro.lg.jp/izyu-teijyu/akiya/akiyajyouhou.html
     bank_status: available
+    extract_pending: false
     map_query: 北海道羽幌町
   operator_evidence:
     quote: 公式ドメイン www.town.haboro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -2369,6 +2477,7 @@ sources:
     slug: 014851
     bank_url: https://www.vill.shosanbetsu.lg.jp/sangyobusiness/akiyabank/
     bank_status: available
+    extract_pending: false
     map_query: 北海道初山別村
   operator_evidence:
     quote: 公式ドメイン www.vill.shosanbetsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -2394,6 +2503,7 @@ sources:
     slug: 014869
     bank_url: https://www.town.embetsu.hokkaido.jp/docs/page2014021400020.html
     bank_status: available
+    extract_pending: true
     map_query: 北海道遠別町
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.embetsu.hokkaido.jp）
@@ -2419,6 +2529,7 @@ sources:
     slug: 014877
     bank_url: https://www.teshiotown.hokkaido.jp/?page_id=10343
     bank_status: info
+    extract_pending: false
     map_query: 北海道天塩町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -2439,6 +2550,7 @@ sources:
     slug: '015113'
     bank_url: https://www.vill.sarufutsu.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道猿払村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -2459,6 +2571,7 @@ sources:
     slug: '015121'
     bank_url: http://www.town.hamatonbetsu.hokkaido.jp/news/detail.php?news=201
     bank_status: info
+    extract_pending: false
     map_query: 北海道浜頓別町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -2479,6 +2592,7 @@ sources:
     slug: '015130'
     bank_url: https://www.town.nakatombetsu.hokkaido.jp/bunya/5234/
     bank_status: info
+    extract_pending: false
     map_query: 北海道中頓別町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -2499,6 +2613,7 @@ sources:
     slug: 015148
     bank_url: https://www.esashi.jp/life/house/vacant_house/akiyabank.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道枝幸町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -2519,6 +2634,7 @@ sources:
     slug: '015164'
     bank_url: https://www.town.toyotomi.hokkaido.jp/section/chominka/lepd6s0000005emu.html?cp=a7cug60000002qjx&cs=c04s3
     bank_status: info
+    extract_pending: false
     map_query: 北海道豊富町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -2539,6 +2655,7 @@ sources:
     slug: '015172'
     bank_url: https://www.town.rebun.hokkaido.jp/hotnews/category/236.html
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 北海道礼文町
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -2559,6 +2676,7 @@ sources:
     slug: 015181
     bank_url: https://www.town.rishiri.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道利尻町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -2579,6 +2697,7 @@ sources:
     slug: 015199
     bank_url: https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1600.htm
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 北海道利尻富士町
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -2599,6 +2718,7 @@ sources:
     slug: '015202'
     bank_url: https://www.town.horonobe.lg.jp/www4/section/jumin/akiyataisaku.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道幌延町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -2619,6 +2739,7 @@ sources:
     slug: '015431'
     bank_url: https://www.town.bihoro.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道美幌町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -2639,6 +2760,7 @@ sources:
     slug: '015440'
     bank_url: https://www.town.tsubetsu.hokkaido.jp/mokutekibetsumenu/hikkoshi_sumai/2474.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道津別町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -2659,6 +2781,7 @@ sources:
     slug: 015458
     bank_url: https://www.town.shari.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道斜里町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -2679,6 +2802,7 @@ sources:
     slug: '015466'
     bank_url: https://www.town.kiyosato.hokkaido.jp/life/?content=745
     bank_status: info
+    extract_pending: false
     map_query: 北海道清里町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -2699,6 +2823,7 @@ sources:
     slug: '015474'
     bank_url: https://www.town.koshimizu.hokkaido.jp/hotnews/detail/00008311.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道小清水町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -2719,6 +2844,7 @@ sources:
     slug: 015491
     bank_url: https://www.town.kunneppu.hokkaido.jp/life/genkinamatidukuri/akiyabank/bukken.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道訓子府町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -2739,6 +2865,7 @@ sources:
     slug: '015504'
     bank_url: https://www.town.oketo.hokkaido.jp/kurashi/sumai/takuchibunjou/
     bank_status: available
+    extract_pending: false
     map_query: 北海道置戸町
   operator_evidence:
     quote: 公式ドメイン www.town.oketo.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -2764,6 +2891,7 @@ sources:
     slug: '015521'
     bank_url: https://www.town.saroma.hokkaido.jp/machi/sumai/akiyabannku.html
     bank_status: available
+    extract_pending: false
     map_query: 北海道佐呂間町
   operator_evidence:
     quote: 公式ドメイン www.town.saroma.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -2789,6 +2917,7 @@ sources:
     slug: '015555'
     bank_url: https://engaru.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道遠軽町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -2809,6 +2938,7 @@ sources:
     slug: 015598
     bank_url: https://www.town.yubetsu.lg.jp/administration/life/detail.html?content=540
     bank_status: info
+    extract_pending: false
     map_query: 北海道湧別町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -2829,6 +2959,7 @@ sources:
     slug: '015601'
     bank_url: https://www.town.takinoue.hokkaido.jp/group/
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 北海道滝上町
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -2849,6 +2980,7 @@ sources:
     slug: '015610'
     bank_url: https://www.town.okoppe.lg.jp/cms/section/kikaku/nbm3tm000000129q.html
     bank_status: available
+    extract_pending: false
     map_query: 北海道興部町
   operator_evidence:
     quote: 公式ドメイン www.town.okoppe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -2874,6 +3006,7 @@ sources:
     slug: 015628
     bank_url: https://www.vill.nishiokoppe.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道西興部村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -2894,6 +3027,7 @@ sources:
     slug: '015636'
     bank_url: https://www.town.oumu.hokkaido.jp/soshiki/sougouseisakuka/jutaku_teiju/1/iju_house/akiya/index.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道雄武町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -2914,6 +3048,7 @@ sources:
     slug: '015644'
     bank_url: https://www.town.ozora.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道大空町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -2934,6 +3069,7 @@ sources:
     slug: '015717'
     bank_url: https://www.town.toyoura.hokkaido.jp/hotnews/category/325.html
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 北海道豊浦町
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -2954,6 +3090,7 @@ sources:
     slug: '015750'
     bank_url: https://www.town.sobetsu.lg.jp/akiyabank/
     bank_status: available
+    extract_pending: false
     map_query: 北海道壮瞥町
   operator_evidence:
     quote: 公式ドメイン www.town.sobetsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -2979,6 +3116,7 @@ sources:
     slug: 015784
     bank_url: https://www.town.shiraoi.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道白老町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -2999,6 +3137,7 @@ sources:
     slug: 015814
     bank_url: https://www.town.atsuma.lg.jp/site/atsumyhome/3925.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道厚真町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -3019,6 +3158,7 @@ sources:
     slug: 015849
     bank_url: http://www.town.toyako.hokkaido.jp/settle/abandoned_house
     bank_status: available
+    extract_pending: false
     map_query: 北海道洞爺湖町
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.toyako.hokkaido.jp）
@@ -3044,6 +3184,7 @@ sources:
     slug: 015857
     bank_url: https://www.nobikura.jp/estate/
     bank_status: available
+    extract_pending: false
     map_query: 北海道安平町
   operator_evidence:
     quote: 公式サイト（www.town.abira.lg.jp）から空き家バンクとして案内されているリンク
@@ -3069,6 +3210,7 @@ sources:
     slug: 015865
     bank_url: https://www.town.mukawa.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道むかわ町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -3089,6 +3231,7 @@ sources:
     slug: '016012'
     bank_url: https://www.town.hidaka.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道日高町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -3109,6 +3252,7 @@ sources:
     slug: '016021'
     bank_url: https://www.town.biratori.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道平取町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -3129,6 +3273,7 @@ sources:
     slug: '016047'
     bank_url: https://www.niikappu.jp/kurashi/sekatsu/sumai/teijyu/sumai/akiya.html
     bank_status: available
+    extract_pending: false
     map_query: 北海道新冠町
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.niikappu.jp）
@@ -3154,6 +3299,7 @@ sources:
     slug: '016071'
     bank_url: https://www.town.urakawa.hokkaido.jp/gyosei/search/?q=空き家
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 北海道浦河町
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -3174,6 +3320,7 @@ sources:
     slug: 016080
     bank_url: https://www.samani.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道様似町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -3194,6 +3341,7 @@ sources:
     slug: 016098
     bank_url: https://www.town.erimo.lg.jp/section/choumin/sg6h9400000020b0.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道えりも町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -3214,6 +3362,7 @@ sources:
     slug: '016101'
     bank_url: https://www.shinhidaka-hokkaido.jp/hotnews/detail/00002862.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道新ひだか町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -3234,6 +3383,7 @@ sources:
     slug: '016314'
     bank_url: https://www.town.otofuke.hokkaido.jp/lifeevent/akichiakiya.html
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 北海道音更町
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -3254,6 +3404,7 @@ sources:
     slug: '016322'
     bank_url: https://www.shihoro.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道士幌町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -3274,6 +3425,7 @@ sources:
     slug: '016331'
     bank_url: https://www.kamishihoro.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道上士幌町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -3294,6 +3446,7 @@ sources:
     slug: 016349
     bank_url: https://www.town.shikaoi.lg.jp/ijyuu/akitiakiya/sakasamaitiran/
     bank_status: available
+    extract_pending: false
     map_query: 北海道鹿追町
   operator_evidence:
     quote: 公式ドメイン www.town.shikaoi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -3319,6 +3472,7 @@ sources:
     slug: '016357'
     bank_url: https://www.shintoku-town.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道新得町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -3339,6 +3493,7 @@ sources:
     slug: '016365'
     bank_url: https://www.town.shimizu.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道清水町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -3359,6 +3514,7 @@ sources:
     slug: '016373'
     bank_url: https://www.memuro.net/
     bank_status: none
+    extract_pending: false
     map_query: 北海道芽室町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -3379,6 +3535,7 @@ sources:
     slug: 016381
     bank_url: https://www.vill.nakasatsunai.hokkaido.jp/kurashi/jyuutaku_takuchi/akichi_akiie/
     bank_status: info
+    extract_pending: false
     map_query: 北海道中札内村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -3399,6 +3556,7 @@ sources:
     slug: 016390
     bank_url: https://www.sarabetsu.jp/ijyuu/information/akichi_bank/akichi/
     bank_status: available
+    extract_pending: false
     map_query: 北海道更別村
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.sarabetsu.jp）
@@ -3424,6 +3582,7 @@ sources:
     slug: '016411'
     bank_url: https://www.town.taiki.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道大樹町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -3444,6 +3603,7 @@ sources:
     slug: '016420'
     bank_url: https://www.town.hiroo.lg.jp/kurashi/ijuu/akiyabanku/
     bank_status: info
+    extract_pending: false
     map_query: 北海道広尾町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -3464,6 +3624,7 @@ sources:
     slug: 016438
     bank_url: https://www.town.makubetsu.lg.jp/kurashi/tochijutaku/akiya/
     bank_status: info
+    extract_pending: false
     map_query: 北海道幕別町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -3484,6 +3645,7 @@ sources:
     slug: '016446'
     bank_url: https://www.town.hokkaido-ikeda.lg.jp/kurashi/iju-jutaku/reform-josei/5831.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道池田町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -3504,6 +3666,7 @@ sources:
     slug: '016454'
     bank_url: https://www.toyokoro.jp/site/iju/1218.html
     bank_status: available
+    extract_pending: false
     map_query: 北海道豊頃町
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.toyokoro.jp）
@@ -3529,6 +3692,7 @@ sources:
     slug: '016462'
     bank_url: https://www.town.honbetsu.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道本別町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -3549,6 +3713,7 @@ sources:
     slug: '016471'
     bank_url: https://www.town.ashoro.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道足寄町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -3569,6 +3734,7 @@ sources:
     slug: 016489
     bank_url: https://www.rikubetsu.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道陸別町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -3589,6 +3755,7 @@ sources:
     slug: 016497
     bank_url: https://www.urahoro.jp/life/?content=1901
     bank_status: info
+    extract_pending: false
     map_query: 北海道浦幌町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -3609,6 +3776,7 @@ sources:
     slug: '016616'
     bank_url: http://www.town.kushiro.lg.jp/living-guide/20304/00032/194727151115.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道釧路町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -3629,6 +3797,7 @@ sources:
     slug: '016624'
     bank_url: https://www.akkeshi-town.jp/kanko/hanasaki/
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 北海道厚岸町
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -3649,6 +3818,7 @@ sources:
     slug: '016632'
     bank_url: https://www.townhamanaka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道浜中町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -3669,6 +3839,7 @@ sources:
     slug: '016641'
     bank_url: https://town.shibecha.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道標茶町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -3689,6 +3860,7 @@ sources:
     slug: 016659
     bank_url: https://www.town.teshikaga.hokkaido.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道弟子屈町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -3709,6 +3881,7 @@ sources:
     slug: '016675'
     bank_url: https://www.vill.tsurui.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道鶴居村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -3729,6 +3902,7 @@ sources:
     slug: 016683
     bank_url: https://www.town.shiranuka.lg.jp/section/kikaku/h8v21a0000001qan.html
     bank_status: info
+    extract_pending: false
     map_query: 北海道白糠町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -3749,6 +3923,7 @@ sources:
     slug: 016918
     bank_url: https://betsukai.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道別海町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -3769,6 +3944,7 @@ sources:
     slug: 016926
     bank_url: https://www.nakashibetsu.jp/
     bank_status: none
+    extract_pending: false
     map_query: 北海道中標津町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -3789,6 +3965,7 @@ sources:
     slug: 016934
     bank_url: https://www.shibetsutown.jp/life/?content=324
     bank_status: info
+    extract_pending: false
     map_query: 北海道標津町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -3809,6 +3986,7 @@ sources:
     slug: 016942
     bank_url: https://www.rausu-town.jp/pages/view/161
     bank_status: info
+    extract_pending: false
     map_query: 北海道羅臼町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:

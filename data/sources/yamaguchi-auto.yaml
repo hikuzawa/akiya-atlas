@@ -14,6 +14,7 @@ sources:
     slug: '352012'
     bank_url: https://www.city.shimonoseki.lg.jp/life/1/8/44/
     bank_status: info
+    extract_pending: false
     map_query: 山口県下関市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -34,6 +35,7 @@ sources:
     slug: '352021'
     bank_url: https://www.city.ube.yamaguchi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山口県宇部市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -54,6 +56,7 @@ sources:
     slug: '352039'
     bank_url: https://www.city.yamaguchi.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山口県山口市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -74,6 +77,7 @@ sources:
     slug: '352047'
     bank_url: https://www.city.hagi.lg.jp/soshiki/111/704.html
     bank_status: info
+    extract_pending: false
     map_query: 山口県萩市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -94,6 +98,7 @@ sources:
     slug: '352063'
     bank_url: https://www.city.hofu.yamaguchi.jp/site/akiya/eturan.html
     bank_status: info
+    extract_pending: false
     map_query: 山口県防府市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -114,6 +119,7 @@ sources:
     slug: '352071'
     bank_url: https://www.city.kudamatsu.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山口県下松市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -134,6 +140,7 @@ sources:
     slug: '352080'
     bank_url: https://www.city.iwakuni.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山口県岩国市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -154,6 +161,7 @@ sources:
     slug: '352101'
     bank_url: https://www.city.hikari.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山口県光市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -174,6 +182,7 @@ sources:
     slug: '352110'
     bank_url: https://www.city.nagato.yamaguchi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山口県長門市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -194,6 +203,7 @@ sources:
     slug: '352128'
     bank_url: https://www.city-yanai.jp/site/yanai-gurashi/akiya-ichiran.html
     bank_status: available
+    extract_pending: true
     map_query: 山口県柳井市
   operator_evidence:
     quote: 山口県 市町（関連リンク）に掲載された公式サイト（www.city-yanai.jp）
@@ -219,6 +229,7 @@ sources:
     slug: '352136'
     bank_url: https://www2.city.mine.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山口県美祢市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -239,6 +250,7 @@ sources:
     slug: '352152'
     bank_url: https://www.city.shunan.lg.jp/site/akiyataisaku/112553.html
     bank_status: info
+    extract_pending: false
     map_query: 山口県周南市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -259,6 +271,7 @@ sources:
     slug: '352161'
     bank_url: https://www.city.sanyo-onoda.lg.jp/life/9/64/360/
     bank_status: info
+    extract_pending: false
     map_query: 山口県山陽小野田市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -279,6 +292,7 @@ sources:
     slug: '353051'
     bank_url: https://www.town.suo-oshima.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山口県周防大島町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -299,6 +313,7 @@ sources:
     slug: '353213'
     bank_url: https://www.town.waki.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山口県和木町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -319,6 +334,7 @@ sources:
     slug: '353418'
     bank_url: https://www.town.kaminoseki.lg.jp/%e4%b8%8a%e9%96%a2%e7%94%ba%e7%a9%ba%e3%81%8d%e5%ae%b6%e3%83%90%e3%83%b3%e3%82%af%e7%89%a9%e4%bb%b6%e4%b8%80%e8%a6%a7.html
     bank_status: available
+    extract_pending: false
     map_query: 山口県上関町
   operator_evidence:
     quote: 公式ドメイン www.town.kaminoseki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -348,6 +364,7 @@ sources:
     slug: '353434'
     bank_url: https://www.town.tabuse.lg.jp/site/iju/2505.html
     bank_status: available
+    extract_pending: false
     map_query: 山口県田布施町
   operator_evidence:
     quote: 公式ドメイン www.town.tabuse.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -373,6 +390,7 @@ sources:
     slug: '353442'
     bank_url: https://www.town.hirao.lg.jp/kurashi/jyutaku/akiya/1457314685054.html
     bank_status: available
+    extract_pending: false
     map_query: 山口県平生町
   operator_evidence:
     quote: 公式ドメイン www.town.hirao.lg.jp（.lg.jp、地方公共団体専用ドメイン）
@@ -402,6 +420,7 @@ sources:
     slug: '355020'
     bank_url: https://www.town.abu.lg.jp/akiyabank/
     bank_status: available
+    extract_pending: false
     map_query: 山口県阿武町
   operator_evidence:
     quote: 公式ドメイン www.town.abu.lg.jp（.lg.jp、地方公共団体専用ドメイン）

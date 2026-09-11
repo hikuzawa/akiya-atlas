@@ -14,6 +14,7 @@ sources:
     slug: '131016'
     bank_url: https://www.city.chiyoda.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都千代田区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -34,6 +35,7 @@ sources:
     slug: '131024'
     bank_url: https://www.city.chuo.lg.jp/kurashi/sumai/akiyatoutaisaku/index.html
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 東京都中央区
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -54,6 +56,7 @@ sources:
     slug: '131032'
     bank_url: https://www.city.minato.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都港区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -74,6 +77,7 @@ sources:
     slug: '131041'
     bank_url: https://www.city.shinjuku.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都新宿区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -94,6 +98,7 @@ sources:
     slug: '131059'
     bank_url: https://www.city.bunkyo.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都文京区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -114,6 +119,7 @@ sources:
     slug: '131067'
     bank_url: https://www.city.taito.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都台東区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -134,6 +140,7 @@ sources:
     slug: '131075'
     bank_url: https://www.city.sumida.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都墨田区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -154,6 +161,7 @@ sources:
     slug: '131083'
     bank_url: https://www.city.koto.lg.jp/kurashi/sumai/akiya/index.html
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 東京都江東区
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -174,6 +182,7 @@ sources:
     slug: '131091'
     bank_url: https://www.city.shinagawa.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都品川区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -194,6 +203,7 @@ sources:
     slug: '131105'
     bank_url: https://www.city.meguro.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都目黒区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -214,6 +224,7 @@ sources:
     slug: '131113'
     bank_url: https://www.city.ota.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都大田区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -234,6 +245,7 @@ sources:
     slug: '131121'
     bank_url: https://www.city.setagaya.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都世田谷区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -254,6 +266,7 @@ sources:
     slug: '131130'
     bank_url: https://www.city.shibuya.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都渋谷区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -274,6 +287,7 @@ sources:
     slug: '131148'
     bank_url: https://www.city.tokyo-nakano.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都中野区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -294,6 +308,7 @@ sources:
     slug: '131156'
     bank_url: https://www.city.suginami.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都杉並区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -314,6 +329,7 @@ sources:
     slug: '131164'
     bank_url: https://www.city.toshima.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都豊島区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -334,6 +350,7 @@ sources:
     slug: '131172'
     bank_url: https://www.city.kita.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都北区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -354,6 +371,7 @@ sources:
     slug: '131181'
     bank_url: https://www.city.arakawa.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都荒川区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -374,6 +392,7 @@ sources:
     slug: '131199'
     bank_url: https://www.city.itabashi.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都板橋区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -394,6 +413,7 @@ sources:
     slug: '131202'
     bank_url: https://www.city.nerima.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都練馬区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -414,6 +434,7 @@ sources:
     slug: '131211'
     bank_url: https://www.city.adachi.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都足立区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -434,6 +455,7 @@ sources:
     slug: '131229'
     bank_url: https://www.city.katsushika.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都葛飾区
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -454,6 +476,7 @@ sources:
     slug: '131237'
     bank_url: https://www.city.edogawa.tokyo.jp/e039/kurashi/sumai/akiya/index.html
     bank_status: info
+    extract_pending: false
     map_query: 東京都江戸川区
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -474,6 +497,7 @@ sources:
     slug: '132012'
     bank_url: https://www.city.hachioji.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都八王子市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -494,6 +518,7 @@ sources:
     slug: '132021'
     bank_url: https://www.city.tachikawa.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都立川市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -514,6 +539,7 @@ sources:
     slug: '132039'
     bank_url: https://www.city.musashino.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都武蔵野市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -534,6 +560,7 @@ sources:
     slug: '132047'
     bank_url: https://www.city.mitaka.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都三鷹市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -554,6 +581,7 @@ sources:
     slug: '132055'
     bank_url: https://www.city.ome.tokyo.jp/site/ome-style/1420.html
     bank_status: available
+    extract_pending: false
     map_query: 東京都青梅市
   operator_evidence:
     quote: 公式ドメイン www.city.ome.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -579,6 +607,7 @@ sources:
     slug: '132063'
     bank_url: https://www.city.fuchu.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都府中市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -599,6 +628,7 @@ sources:
     slug: '132071'
     bank_url: https://www.city.akishima.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都昭島市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -619,6 +649,7 @@ sources:
     slug: '132080'
     bank_url: https://www.city.chofu.lg.jp/kurashi/sumai/akiya/index.html
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 東京都調布市
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -639,6 +670,7 @@ sources:
     slug: '132098'
     bank_url: https://www.city.machida.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都町田市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -659,6 +691,7 @@ sources:
     slug: '132101'
     bank_url: https://www.city.koganei.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都小金井市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -679,6 +712,7 @@ sources:
     slug: '132110'
     bank_url: https://www.city.kodaira.tokyo.jp/kurashi/index01013005.html
     bank_status: info
+    extract_pending: false
     map_query: 東京都小平市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -699,6 +733,7 @@ sources:
     slug: '132128'
     bank_url: https://www.city.hino.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都日野市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -719,6 +754,7 @@ sources:
     slug: '132136'
     bank_url: https://www.city.higashimurayama.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都東村山市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -739,6 +775,7 @@ sources:
     slug: '132144'
     bank_url: https://www.city.kokubunji.tokyo.jp/kurashi/sumai/1013374/index.html
     bank_status: info
+    extract_pending: false
     map_query: 東京都国分寺市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -759,6 +796,7 @@ sources:
     slug: '132152'
     bank_url: https://www.city.kunitachi.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都国立市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -779,6 +817,7 @@ sources:
     slug: '132187'
     bank_url: https://www.city.fussa.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都福生市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -799,6 +838,7 @@ sources:
     slug: '132195'
     bank_url: https://www.city.komae.tokyo.jp/index.cfm/41,0,315,3488,html
     bank_status: info
+    extract_pending: false
     map_query: 東京都狛江市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -819,6 +859,7 @@ sources:
     slug: '132209'
     bank_url: https://www.city.higashiyamato.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都東大和市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -839,6 +880,7 @@ sources:
     slug: '132217'
     bank_url: https://www.city.kiyose.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都清瀬市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -859,6 +901,7 @@ sources:
     slug: '132225'
     bank_url: https://www.city.higashikurume.lg.jp/kurashi/kankyo/1011199/index.html
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 東京都東久留米市
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
@@ -879,6 +922,7 @@ sources:
     slug: '132233'
     bank_url: https://www.city.musashimurayama.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都武蔵村山市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -899,6 +943,7 @@ sources:
     slug: '132241'
     bank_url: https://www.city.tama.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都多摩市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -919,6 +964,7 @@ sources:
     slug: '132250'
     bank_url: https://www.city.inagi.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都稲城市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -939,6 +985,7 @@ sources:
     slug: '132276'
     bank_url: https://www.city.hamura.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都羽村市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -959,6 +1006,7 @@ sources:
     slug: '132284'
     bank_url: https://www.city.akiruno.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都あきる野市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -979,6 +1027,7 @@ sources:
     slug: '132292'
     bank_url: https://www.city.nishitokyo.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都西東京市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -999,6 +1048,7 @@ sources:
     slug: '133035'
     bank_url: https://www.town.mizuho.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都瑞穂町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1019,6 +1069,7 @@ sources:
     slug: '133051'
     bank_url: https://www.town.hinode.tokyo.jp/0000004061.html
     bank_status: info
+    extract_pending: false
     map_query: 東京都日の出町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1039,6 +1090,7 @@ sources:
     slug: '133078'
     bank_url: http://www.vill.hinohara.tokyo.jp/0000000581.html
     bank_status: available
+    extract_pending: false
     map_query: 東京都檜原村
   operator_evidence:
     quote: 公式ドメイン www.vill.hinohara.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -1064,6 +1116,7 @@ sources:
     slug: '133086'
     bank_url: https://www.town.okutama.tokyo.jp/kosodate/ijuteijujoho/3/index.html
     bank_status: available
+    extract_pending: true
     map_query: 東京都奥多摩町
   operator_evidence:
     quote: 公式ドメイン www.town.okutama.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -1089,6 +1142,7 @@ sources:
     slug: '133612'
     bank_url: https://www.town.oshima.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都大島町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1109,6 +1163,7 @@ sources:
     slug: '133621'
     bank_url: https://www.toshimamura.org/
     bank_status: none
+    extract_pending: false
     map_query: 東京都利島村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1129,6 +1184,7 @@ sources:
     slug: '133639'
     bank_url: http://www.niijima.com/akiya/akiya_taisaku.html
     bank_status: info
+    extract_pending: false
     map_query: 東京都新島村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1149,6 +1205,7 @@ sources:
     slug: '133647'
     bank_url: https://www.vill.kouzushima.tokyo.jp/2026-0611/
     bank_status: info
+    extract_pending: false
     map_query: 東京都神津島村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
@@ -1169,6 +1226,7 @@ sources:
     slug: '133817'
     bank_url: https://www.vill.miyake.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都三宅村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1189,6 +1247,7 @@ sources:
     slug: '133825'
     bank_url: https://www.vill.mikurasima.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都御蔵島村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1209,6 +1268,7 @@ sources:
     slug: '134015'
     bank_url: https://www.town.hachijo.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都八丈町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1229,6 +1289,7 @@ sources:
     slug: '134023'
     bank_url: https://www.vill.aogashima.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都青ヶ島村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
@@ -1249,6 +1310,7 @@ sources:
     slug: '134210'
     bank_url: https://www.vill.ogasawara.tokyo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 東京都小笠原村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
