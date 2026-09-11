@@ -56,6 +56,7 @@ class Ctx:
     now: datetime
     operator: OperatorInfo
     maps_key: str | None
+    hidden: tuple[str, ...] = ()  # 取り下げ依頼で非表示にするページのパス
 
     @property
     def base_context(self) -> dict[str, Any]:
@@ -84,6 +85,26 @@ def listing_path(muni: Municipality, ls: Listing) -> str:
     return f"{muni.path}{ls.slug}/index.html"
 
 
+def hidden_paths(ws: Workspace) -> tuple[str, ...]:
+    """取り下げ依頼で非表示にするページのパス（data/reference/takedowns.json）。"""
+    from akiya_atlas.takedown import TakedownList
+
+    return tuple(sorted(TakedownList.load(ws).paths))
+
+
+def is_hidden(path: str, hidden: tuple[str, ...]) -> bool:
+    """そのパス自身か、その配下（市町村ごと取り下げ）なら True。"""
+    return any(path == h or path.startswith(h) for h in hidden)
+
+
+def visible_listings(
+    muni: Municipality, listings: list[Listing], hidden: tuple[str, ...]
+) -> list[Listing]:
+    if not hidden:
+        return listings
+    return [ls for ls in listings if not is_hidden(listing_url_path(muni, ls), hidden)]
+
+
 def listing_url_path(muni: Municipality, ls: Listing) -> str:
     return f"/{muni.path}{ls.slug}/"
 
@@ -106,17 +127,67 @@ def listing_row(muni: Municipality, ls: Listing) -> dict[str, Any]:
         "no": ls.listing_no,
         "title": ls.display_title,
         "deal": ls.deal_label,
+        "deal_type": ls.deal_type,
         "price": price_text(ls),
         "band": price_band(ls),
+        # 表示用の文字列だけだと合計や中央値が出せないので、数値もそのまま渡す
+        "price_yen": ls.price.value if ls.price.ok else None,
+        "rent_yen": ls.rent_monthly.value if ls.rent_monthly.ok else None,
         "address": ls.address.value if ls.address.ok else None,
         "built_year": ls.built_year.value if ls.built_year.ok else None,
         "floor_area": m2(ls.floor_area_m2.value) if ls.floor_area_m2.ok else None,
+        "floor_area_m2": ls.floor_area_m2.value if ls.floor_area_m2.ok else None,
+        "land_area_m2": ls.land_area_m2.value if ls.land_area_m2.ok else None,
+        "layout": ls.layout.value if ls.layout.ok else None,
+        "structure": ls.structure.value if ls.structure.ok else None,
+        "has_detail": bool(ls.detail_url),
         "status": "closed" if ls.is_closed else ls.status,
         "status_text": ls.status_text.value if ls.status_text.ok else None,
         "url": listing_url_path(muni, ls),
         "source_url": ls.primary_url,
         "updated": date_ja(_dt(ls.last_seen_at)),
     }
+
+
+def stats_of(listings: list[Listing]) -> dict[str, Any]:
+    """価格・築年の代表値と価格帯ごとの件数。数値が記載されている物件だけを数える。"""
+    prices = sorted(int(ls.price.value) for ls in listings if ls.price.ok)  # type: ignore[arg-type]
+    years = sorted(int(ls.built_year.value) for ls in listings if ls.built_year.ok)  # type: ignore[arg-type]
+    counts = [0] * len(PRICE_LABELS)
+    for ls in listings:
+        if ls.price.ok:
+            idx = next(
+                (i for i, e in enumerate(PRICE_EDGES) if ls.price.value < e),  # type: ignore[operator]
+                len(PRICE_EDGES),
+            )
+            counts[idx] += 1
+    top = max(range(len(counts)), key=lambda i: counts[i]) if any(counts) else -1
+    return {
+        "listings": len(listings),
+        "priced": len(prices),
+        "price_min": prices[0] if prices else None,
+        "price_median": _median(prices),
+        "price_text_min": yen(prices[0]) if prices else None,
+        "price_text_median": yen(_median(prices)) if prices else None,
+        "built_count": len(years),
+        "built_min": years[0] if years else None,
+        "built_max": years[-1] if years else None,
+        "built_median": _median(years),
+        "band_counts": counts,
+        "band_labels": list(PRICE_LABELS),
+        "band_top": top,
+        "sale": sum(1 for ls in listings if ls.deal_type in ("sale", "both")),
+        "rent": sum(1 for ls in listings if ls.deal_type in ("rent", "both")),
+        "with_detail": sum(1 for ls in listings if ls.detail_url),
+    }
+
+
+def _median(values: list[int]) -> int | None:
+    if not values:
+        return None
+    n = len(values)
+    mid = n // 2
+    return values[mid] if n % 2 else (values[mid - 1] + values[mid]) // 2
 
 
 def fact_rows(ls: Listing) -> list[dict[str, Any]]:
@@ -230,7 +301,7 @@ def count_chart(title: str, munis: list[Municipality], ds: Dataset) -> Chart | N
 
 
 def muni_row(ctx: Ctx, muni: Municipality) -> dict[str, Any]:
-    rows = ctx.ds.listings_for(muni, active_only=True)
+    rows = visible_listings(muni, ctx.ds.listings_for(muni, active_only=True), ctx.hidden)
     return {
         "name": muni.name,
         "code": muni.code,
@@ -388,11 +459,21 @@ def no_listings_reason(ctx: Ctx, muni: Municipality) -> str | None:
 def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
     ensure_no_street_numbers(ds)
     ensure_no_pii(ds, ws)
+    hidden = hidden_paths(ws)  # 取り下げ依頼のページは出さない（Issue を閉じれば次回戻る）
     ctx = Ctx(
-        ws=ws, ds=ds, now=now, operator=operator_info(ws), maps_key=ws.secrets.google_maps_embed_key
+        ws=ws,
+        ds=ds,
+        now=now,
+        operator=operator_info(ws),
+        maps_key=ws.secrets.google_maps_embed_key,
+        hidden=hidden,
     )
     pages: list[Page] = []
-    all_active = [ls for ls in ds.listings if ls.is_active]
+
+    def _listings(muni: Municipality, *, active_only: bool = False) -> list[Listing]:
+        return visible_listings(muni, ds.listings_for(muni, active_only=active_only), hidden)
+
+    all_active = [ls for m in ds.municipalities for ls in _listings(m, active_only=True)]
     all_sources = [link for m in ds.municipalities for link in source_links(ctx, m)]
 
     pref_rows = []
@@ -404,7 +485,10 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                 "name": name,
                 "url": f"/{slug}/",
                 "municipalities": len(munis),
-                "count": sum(len(ds.listings_for(m, active_only=True)) for m in munis),
+                "count": sum(len(_listings(m, active_only=True)) for m in munis),
+                "crawled": sum(1 for m in munis if m.crawled),
+                "open": sum(1 for m in munis if _listings(m, active_only=True)),
+                "subsidy_count": sum(1 for m in munis if m.has_subsidy),
             }
         )
     recent = sorted(all_active, key=lambda ls: ls.last_seen_at or "", reverse=True)[:8]
@@ -418,12 +502,22 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
             context={
                 "prefectures": pref_rows,
                 "stats": {
+                    **stats_of(all_active),
                     "prefectures": len(pref_rows),
                     "municipalities": len(ds.municipalities),
-                    "listings": len(all_active),
+                    "crawled_municipalities": sum(1 for m in ds.municipalities if m.crawled),
+                    "open_municipalities": sum(
+                        1 for m in ds.municipalities if _listings(m, active_only=True)
+                    ),
+                    "subsidy_municipalities": sum(1 for m in ds.municipalities if m.has_subsidy),
                 },
                 "recent": [
-                    listing_row(ds.muni_by_source[ls.source_id], ls)
+                    {
+                        **listing_row(ds.muni_by_source[ls.source_id], ls),
+                        "place": f"{ds.muni_by_source[ls.source_id].prefecture}"
+                        f"{ds.muni_by_source[ls.source_id].name}",
+                        "subsidy": ds.muni_by_source[ls.source_id].has_subsidy,
+                    }
                     for ls in recent
                     if ls.source_id in ds.muni_by_source
                 ],
@@ -437,7 +531,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
 
     for slug, name in ds.prefectures():
         munis = ds.municipalities_in(slug)
-        active = [ls for m in munis for ls in ds.listings_for(m, active_only=True)]
+        active = [ls for m in munis for ls in _listings(m, active_only=True)]
         pages.append(
             _page(
                 ctx,
@@ -448,8 +542,18 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                 context={
                     "prefecture": {"slug": slug, "name": name},
                     "municipalities": [muni_row(ctx, m) for m in munis],
+                    "stats": {
+                        **stats_of(active),
+                        "municipalities": len(munis),
+                        "crawled_municipalities": sum(1 for m in munis if m.crawled),
+                        "open_municipalities": sum(
+                            1 for m in munis if _listings(m, active_only=True)
+                        ),
+                        "subsidy_municipalities": sum(1 for m in munis if m.has_subsidy),
+                    },
                     "chart_counts": count_chart(f"{name} 市町村別の掲載件数", munis, ds),
                     "chart_price": price_chart(f"{name} 売買価格の分布", active),
+                    "chart_built": built_chart(f"{name} 築年の分布", active),
                 },
                 trust_signals=trust(
                     ctx,
@@ -462,7 +566,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
         )
 
     for muni in ds.municipalities:
-        listings = ds.listings_for(muni)
+        listings = _listings(muni)
         active = [ls for ls in listings if ls.is_active]
         # 成約済（closed）は現行・掲載終了候補が 1 件も無いときだけ「過去の掲載」として載せる。
         # 個別ページも作らない（売却済み物件のページで索引を膨らませない）
@@ -482,6 +586,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                     "muni": muni,
                     "muni_row": muni_row(ctx, muni),
                     "listings": [listing_row(muni, ls) for ls in shown],
+                    "stats": stats_of(active),
                     "subsidies": muni.subsidies,
                     "external": external_links(ctx, muni),
                     "map": muni_map(ctx, muni),
@@ -632,31 +737,63 @@ def source_row(ctx: Ctx, src: Source) -> dict[str, Any]:
     }
 
 
-def search_index(ws: Workspace, ds: Dataset) -> list[dict[str, Any]]:
-    rows: list[dict[str, Any]] = []
-    for muni in ds.municipalities:
-        for ls in ds.listings_for(muni, active_only=True):
-            rows.append(
-                {
-                    "id": ls.record_id,
-                    "pref": muni.prefecture,
-                    "pref_slug": muni.prefecture_slug,
-                    "muni": muni.name,
-                    "muni_code": muni.code,
-                    "no": ls.listing_no,
-                    "title": ls.display_title,
-                    "deal": ls.deal_type,
-                    "deal_label": ls.deal_label,
-                    "price": ls.price.value if ls.price.ok else None,
-                    "rent": ls.rent_monthly.value if ls.rent_monthly.ok else None,
-                    "price_text": price_text(ls),
-                    "band": price_band(ls),
-                    "subsidy_migration": muni.has_migration_subsidy,
-                    "subsidy_renovation": muni.has_renovation_subsidy,
-                    "address": ls.address.value if ls.address.ok else None,
-                    "built_year": ls.built_year.value if ls.built_year.ok else None,
-                    "url": listing_url_path(muni, ls),
-                    "updated": (ls.last_seen_at or "")[:10],
-                }
-            )
-    return rows
+def search_index(ws: Workspace, ds: Dataset) -> dict[str, Any]:
+    """検索用の索引。都道府県ごとに分けて出す。
+
+    全国分を 1 つの JSON にすると数 MB になり、検索ページを開くだけで全件を落とすことになる。
+    入口（index.json）は都道府県と市町村の一覧と件数だけ、物件の行は選ばれた都道府県のファイル
+    （<slug>.json）だけを読む。都道府県を選ぶ前に出す分として recent.json（最近確認した分）を置く。
+    """
+    hidden = hidden_paths(ws)
+    by_pref: dict[str, list[dict[str, Any]]] = {}
+    meta: list[dict[str, Any]] = []
+    total = 0
+    for slug, name in ds.prefectures():
+        munis = ds.municipalities_in(slug)
+        rows: list[dict[str, Any]] = []
+        muni_meta: list[dict[str, Any]] = []
+        for muni in munis:
+            listings = visible_listings(muni, ds.listings_for(muni, active_only=True), hidden)
+            rows.extend(search_row(muni, ls) for ls in listings)
+            if listings:
+                muni_meta.append({"code": muni.code, "name": muni.name, "count": len(listings)})
+        by_pref[f"{slug}.json"] = rows
+        total += len(rows)
+        meta.append({"slug": slug, "name": name, "count": len(rows), "municipalities": muni_meta})
+    recent = sorted(
+        (r for rows in by_pref.values() for r in rows),
+        key=lambda r: r.get("updated") or "",
+        reverse=True,
+    )[:120]
+    return {
+        "index.json": {"total": total, "prefectures": meta, "recent_count": len(recent)},
+        "recent.json": recent,
+        **by_pref,
+    }
+
+
+def search_row(muni: Municipality, ls: Listing) -> dict[str, Any]:
+    return {
+        "id": ls.record_id,
+        "pref": muni.prefecture,
+        "pref_slug": muni.prefecture_slug,
+        "muni": muni.name,
+        "muni_code": muni.code,
+        "no": ls.listing_no,
+        "title": ls.display_title,
+        "deal": ls.deal_type,
+        "deal_label": ls.deal_label,
+        "price": ls.price.value if ls.price.ok else None,
+        "rent": ls.rent_monthly.value if ls.rent_monthly.ok else None,
+        "price_text": price_text(ls),
+        "band": price_band(ls),
+        "floor_area_m2": ls.floor_area_m2.value if ls.floor_area_m2.ok else None,
+        "layout": ls.layout.value if ls.layout.ok else None,
+        "has_detail": bool(ls.detail_url),
+        "subsidy_migration": muni.has_migration_subsidy,
+        "subsidy_renovation": muni.has_renovation_subsidy,
+        "address": ls.address.value if ls.address.ok else None,
+        "built_year": ls.built_year.value if ls.built_year.ok else None,
+        "url": listing_url_path(muni, ls),
+        "updated": (ls.last_seen_at or "")[:10],
+    }

@@ -164,10 +164,18 @@ def test_dataset_and_search_index(ws: Workspace) -> None:
     tomi = ds.muni_by_source["nagano-tomi"]
     assert len(ds.listings_for(tomi, active_only=True)) == 2
     index = service.search_index(ws)
-    assert len(index) == 3  # stale は検索に出さない
-    row = next(r for r in index if r["no"] == "322")
+    # 索引は都道府県ごとに分かれている（入口・最近確認した分・県ごとのファイル）
+    assert set(index) == {"index.json", "recent.json", "nagano.json"}
+    assert index["index.json"]["total"] == 3  # stale は検索に出さない
+    rows = index["nagano.json"]
+    assert len(rows) == 3 and len(index["recent.json"]) == 3
+    row = next(r for r in rows if r["no"] == "322")
     assert row["band"] == "1,000万円以上" and row["subsidy_renovation"] is True
     assert row["url"] == "/nagano/202193-tomi/322/"
+    assert row["has_detail"] is True and row["floor_area_m2"] == 98.5  # 詳細ページあり
+    pref = index["index.json"]["prefectures"][0]
+    assert pref["slug"] == "nagano" and pref["count"] == 3
+    assert {m["code"] for m in pref["municipalities"]} == {"202193", "202177"}
 
 
 def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> None:
@@ -297,3 +305,32 @@ def test_page_says_not_yet_imported_when_the_listing_exists_but_we_read_nothing(
     assert muni.crawled and muni.extract_pending
     plain = Municipality.model_validate({**payload, "extract_pending": False})
     assert not plain.extract_pending
+
+
+def test_takedown_hides_the_listing_from_pages_and_search(ws: Workspace) -> None:
+    """取り下げ依頼のあったページは次のビルドから消える（Issue を閉じれば戻る）。"""
+    import json as _json
+
+    from akiya_atlas.takedown import collect
+
+    target = "https://akiya-atlas.com/nagano/202193-tomi/322/"
+    issue = {
+        "number": 7,
+        "title": "[お問い合わせ] 掲載の削除依頼",
+        "body": '<!-- {"kind":"akiya-atlas-contact","category":"takedown","urls":["'
+        + target
+        + '"]} -->',
+        "labels": [{"name": "takedown"}],
+    }
+    collect([issue], base_url="https://akiya-atlas.com").save(ws)
+
+    rt = commands.Runtime(ws=ws, service=service)
+    commands.cmd_build(rt)
+    dist = ws.dist_dir
+    assert not (dist / "nagano/202193-tomi/322/index.html").exists()
+    muni_page = (dist / "nagano/202193-tomi/index.html").read_text(encoding="utf-8")
+    assert "原口の木造住宅" not in muni_page
+    rows = _json.loads((dist / "search/nagano.json").read_text(encoding="utf-8"))
+    assert all(r["url"] != "/nagano/202193-tomi/322/" for r in rows)
+    sitemap = (dist / "sitemap.xml").read_text(encoding="utf-8")
+    assert "/nagano/202193-tomi/322/" not in sitemap

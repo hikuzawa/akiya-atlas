@@ -80,6 +80,27 @@ def _register(app: typer.Typer) -> None:
         for n in table.ignored:
             typer.echo(f"  無視: {n}")
 
+    @app.command("takedowns")
+    def takedowns_cmd(
+        repo: Annotated[
+            str, typer.Option("--repo", help="Issue を読むリポジトリ（owner/name）")
+        ] = "hikuzawa/akiya-atlas",
+        limit: Annotated[int, typer.Option("--limit", help="読む Issue の上限")] = 100,
+    ) -> None:
+        """取り下げ依頼の Issue を読み、非表示にするページの一覧を更新する。
+
+        takedown ラベルだけを対象にする。needs-human と municipality は数えるだけで何もしない。
+        """
+        from akiya_atlas import takedown
+
+        rt = commands.Runtime.open()
+        result = takedown.sync(rt.ws, repo, limit=limit)
+        typer.echo(f"非表示にするページ: {len(result.items)} 件")
+        for t in result.items:
+            typer.echo(f"  #{t.issue} {t.path}")
+        for name, n in sorted(result.other_issues.items()):
+            typer.echo(f"  （{name} の開いている Issue {n} 件は読むだけ）")
+
     @app.command("backfill")
     def backfill_cmd(
         only: Annotated[

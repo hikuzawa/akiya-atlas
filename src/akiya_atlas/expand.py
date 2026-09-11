@@ -75,6 +75,7 @@ class MunicipalityFinding:
     listing_score: float | None = None
     listing_rows: int | None = None
     pagination_pattern: str | None = None
+    detail_pattern: str | None = None  # 一覧から詳細ページへ辿る URL の形
     alternatives: list[str] = field(default_factory=list)
     # 一覧は確認できているのに 1 件も取り込めていない（抽出側の課題。ページの文面を分ける）
     extract_gap: bool = False
@@ -103,36 +104,62 @@ class OfficialResolution:
 
 @dataclass
 class OfficialOverrides:
-    """県の公的な市町村一覧から得た code→公式URL の対応（ADR 0007 条件A）。"""
+    """県の公的な市町村一覧から得た code→公式URL の対応（ADR 0007 条件A）。
+
+    これに `data/reference/municipal_overrides.json`（自動では決められない市町村を根拠つきで
+    固定したもの）を重ねる。同名の市町村（北海道の泊村）や、公式サイトが無い市町村
+    （北方領土の 5 村）はここで決着させる。
+    """
 
     by_code: dict[str, str] = field(default_factory=dict)
     source_url: str = ""
     source_name: str = ""
+    fixed: dict[str, dict] = field(default_factory=dict)  # code -> 固定した公式URLと根拠
+    no_website: dict[str, dict] = field(default_factory=dict)  # code -> サイトが無い根拠
 
     @classmethod
     def load(cls, ws: Workspace, pref_slug: str) -> OfficialOverrides:
         from sitemill.store.jsonio import read_json
 
         path = ws.root / "data" / "reference" / f"{pref_slug}_official_urls.json"
-        data = read_json(path)
-        if not data:
-            return cls()
+        data = read_json(path) or {}
         by_code = {
             str(m["code"]): m["official_url"]
             for m in data.get("municipalities", [])
             if m.get("code") and m.get("official_url")
         }
+        fixed: dict[str, dict] = {}
+        no_website: dict[str, dict] = {}
+        notes = read_json(ws.root / "data" / "reference" / "municipal_overrides.json") or {}
+        for row in notes.get("municipalities", []):
+            code = str(row.get("code") or "")
+            if not code:
+                continue
+            if row.get("no_website"):
+                no_website[code] = row
+            elif row.get("official_url"):
+                fixed[code] = row
         return cls(
             by_code=by_code,
             source_url=data.get("source_url", ""),
             source_name=data.get("source_name", ""),
+            fixed=fixed,
+            no_website=no_website,
         )
 
 
 def resolve_official(
     muni: MunicipalityRef, client: PoliteClient, overrides: OfficialOverrides
 ) -> OfficialResolution | None:
-    """公式ドメインを解決する。候補URL → 県の市町村一覧の順。運営主体の根拠も返す。"""
+    """公式ドメインを解決する。固定値 → 候補URL → 県の市町村一覧の順。運営主体の根拠も返す。"""
+    fixed = overrides.fixed.get(muni.code)
+    if fixed:
+        url = str(fixed["official_url"])
+        host = classify_host(host_of(url), muni.prefecture_slug)
+        if not host.is_official:
+            host = OfficialHost(host_of(url), "verified_by_hand", True, "strong")
+        quote = f"{fixed.get('evidence', '確定情報')}（{host.host}）"
+        return OfficialResolution(url, host, quote, str(fixed.get("source") or url))
     probed = resolve_official_url(muni, client)
     if probed is not None:
         url, host = probed
@@ -578,7 +605,7 @@ def finding_to_source(f: MunicipalityFinding, existing_ids: set[str]) -> Source 
         ),
         policy=CrawlPolicy.crawl,
         official_url=f.official_url or f.bank_url,
-        pages=[SeedPage(url=f.bank_url, kind=kind, follow=_pagination_follow(f))],
+        pages=[SeedPage(url=f.bank_url, kind=kind, follow=_follow_rules(f))],
         allow_hosts=[host_of(f.bank_url)],
         max_pages=30,
         external_links=f.external_links,
@@ -611,7 +638,17 @@ def assess_municipality(
     overrides: OfficialOverrides | None = None,
 ) -> MunicipalityFinding:
     """1 市町村を評価して finding を返す（ネットワークを使う）。"""
-    resolved = resolve_official(muni, client, overrides or OfficialOverrides())
+    ov = overrides or OfficialOverrides()
+    note = ov.no_website.get(muni.code)
+    if note:
+        # 公式サイトが無いと分かっている（北方領土の 5 村）。人間が確認しても変わらないので
+        # 人間確認には回さず、サイトにも載せない
+        f = MunicipalityFinding(muni=muni, policy="excluded", confidence=1.0)
+        f.reason = f"公式サイトが無い: {note.get('evidence', '')}"
+        f.evidence_url = note.get("source")
+        f.proposed_action = "対象外"
+        return f
+    resolved = resolve_official(muni, client, ov)
     if resolved is None:
         return decide(muni, None, None, cross_linked=False, bank_host_official=False)
     probe = find_bank_page(resolved.url, resolved.host, client, platforms)
@@ -642,10 +679,75 @@ def _attach_probe(f: MunicipalityFinding, probe: BankProbe) -> None:
     f.pagination_pattern = probe.pagination_pattern if f.policy == "crawl" else None
 
 
+_DETAIL_MIN_LINKS = 3  # 同じ形のリンクがこれだけあれば詳細ページの候補とみなす
+_DETAIL_SAMPLES = 2  # 抜き取りで実際に開いて確かめる本数
+_DIGITS = re.compile(r"\d+")
+_MARK = "\x00"
+
+
+def _url_shape(path: str) -> str:
+    """数字を目印に置き換えた URL の形（例: /akiya/to853.html → /akiya/to<印>.html）。"""
+    return _DIGITS.sub(_MARK, path)
+
+
+def _shape_pattern(netloc: str, shape: str) -> str:
+    """形から巡回用の正規表現を作る。スキームは問わない。"""
+    body = "".join(re.escape(part) for part in shape.split(_MARK))
+    body = r"\d+".join(re.escape(part) for part in shape.split(_MARK))
+    return rf"^https?://{re.escape(netloc)}{body}$"
+
+
+def detect_detail_follow(
+    index_url: str, html: str, client: PoliteClient, *, max_shapes: int = 3
+) -> tuple[str, int] | None:
+    """一覧ページから詳細ページへ辿る規則を見つける。(正規表現, 本数) を返す。
+
+    同じホスト・同じ形の URL が 3 本以上あり、抜き取りで開いたページに物件らしい数値
+    （価格と、面積・築年・間取りのどれか）があれば、その形を詳細ページとみなす。
+    案内やカテゴリのページを掴まないよう、必ず実際に開いて確かめる。
+    """
+    base = urlsplit(index_url)
+    base_path = base.path.rstrip("/")
+    shapes: dict[str, list[str]] = {}
+    for ln in extract_links(html, index_url):
+        parts = urlsplit(ln.url)
+        if parts.netloc != base.netloc or _DOC_URL.search(parts.path):
+            continue
+        if parts.path.rstrip("/") == base_path or not _DIGITS.search(parts.path):
+            continue
+        shapes.setdefault(_url_shape(parts.path), []).append(ln.url)
+    ranked = sorted(shapes.items(), key=lambda kv: -len(kv[1]))[:max_shapes]
+    for shape, urls in ranked:
+        if len(urls) < _DETAIL_MIN_LINKS:
+            continue
+        ok = 0
+        for url in urls[:_DETAIL_SAMPLES]:
+            res = client.get(url)
+            if not res.ok:
+                continue
+            ls = listing_score(res.text, res.final_url)
+            detailed = ls.property_prices >= 1 and (ls.area_count >= 1 or ls.rows >= 1)
+            if detailed and not ls.subsidy_dominant:
+                ok += 1
+        if ok >= _DETAIL_SAMPLES or (ok >= 1 and len(urls) >= 6):
+            return _shape_pattern(base.netloc, shape), len(urls)
+    return None
+
+
+def _detail_follow(f: MunicipalityFinding) -> list[FollowRule]:
+    if not f.detail_pattern:
+        return []
+    return [FollowRule(pattern=f.detail_pattern, kind=PageKind.listing_detail, max_links=60)]
+
+
 def _pagination_follow(f: MunicipalityFinding) -> list[FollowRule]:
     if not f.pagination_pattern:
         return []
     return [FollowRule(pattern=f.pagination_pattern, kind=PageKind.listing_index, max_links=20)]
+
+
+def _follow_rules(f: MunicipalityFinding) -> list[FollowRule]:
+    return _pagination_follow(f) + _detail_follow(f)
 
 
 @dataclass
@@ -656,6 +758,7 @@ class DiscoveryReport:
     adopted_crawl: int = 0
     adopted_link_only: int = 0
     pending: int = 0
+    excluded: int = 0  # 公式サイトが無いと分かっている市町村（北方領土の 5 村）
     findings: list[MunicipalityFinding] = field(default_factory=list)
 
 
@@ -703,6 +806,8 @@ def run_discovery(
             report.adopted_crawl += 1
         elif f.policy == "link_only":
             report.adopted_link_only += 1
+        elif f.policy == "excluded":
+            report.excluded += 1
         else:
             report.pending += 1
     return report
@@ -846,10 +951,15 @@ def finding_to_source_dict(f: MunicipalityFinding, *, prefecture_name: str) -> d
             else "listing_index"
         )
         page: dict = {"url": f.bank_url, "kind": kind}
+        follow: list[dict] = []
         if f.pagination_pattern and kind == "listing_index":
-            page["follow"] = [
+            follow.append(
                 {"pattern": f.pagination_pattern, "kind": "listing_index", "max_links": 20}
-            ]
+            )
+        if f.detail_pattern and kind == "listing_index":
+            follow.append({"pattern": f.detail_pattern, "kind": "listing_detail", "max_links": 60})
+        if follow:
+            page["follow"] = follow
         entry["pages"] = [page]
         entry["allow_hosts"] = [host_of(f.bank_url)]
         entry["max_pages"] = 30
@@ -967,6 +1077,7 @@ def _finding_to_row(f: MunicipalityFinding) -> dict:
         "listing_score": f.listing_score,
         "listing_rows": f.listing_rows,
         "pagination_pattern": f.pagination_pattern,
+        "detail_pattern": f.detail_pattern,
         "extract_gap": f.extract_gap,
         "alternatives": list(f.alternatives),
     }
@@ -1007,6 +1118,7 @@ def _row_to_finding(row: dict) -> MunicipalityFinding:
         listing_score=row.get("listing_score"),
         listing_rows=row.get("listing_rows"),
         pagination_pattern=row.get("pagination_pattern"),
+        detail_pattern=row.get("detail_pattern"),
         extract_gap=bool(row.get("extract_gap")),
         alternatives=list(row.get("alternatives", [])),
     )
@@ -1026,6 +1138,8 @@ def _outputs_from_findings(
     adopted: list[dict] = []
     candidates: list[ReviewCandidate] = []
     for f in findings:
+        if f.policy == "excluded":
+            continue  # 公式サイトが無い市町村。sources にも review にも出さない
         candidates.append(finding_to_candidate(f))
         if f.policy in ("crawl", "link_only"):
             adopted.append(finding_to_source_dict(f, prefecture_name=pref_name))
@@ -1235,6 +1349,7 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
             result["checked"] += 1
             new = reassess_finding(row, client, platforms, overrides)
             old_url = row.get("bank_url")
+            old_detail = row.get("detail_pattern")
             name = f"{pref_name}{muni.name}"
             if new.policy == "crawl" and new.bank_url and new.bank_url != old_url:
                 rows[i] = _finding_to_row(new)
@@ -1277,13 +1392,32 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
                         f"{name}: 一覧ではなかったので取り下げ（物件行 {score.rows}・{old_url}）"
                     )
                 else:
-                    new.extract_gap = True
-                    rows[i] = _finding_to_row(new)
-                    touched = True
-                    result["changed"].append(
-                        f"{name}: 一覧に見えるのに 0 件（物件行 {score.rows if score else '?'}）。"
-                        "抽出側の課題として保留"
+                    res = client.get(new.bank_url) if new.bank_url else None
+                    found = (
+                        detect_detail_follow(new.bank_url, res.text, client)
+                        if res is not None and res.ok
+                        else None
                     )
+                    if found and found[0] != old_detail:
+                        # 一覧は物件名とリンクだけで、価格などは詳細ページにある形（長岡市など）
+                        new.detail_pattern, links = found
+                        new.extract_gap = False
+                        rows[i] = _finding_to_row(new)
+                        touched = True
+                        result["recrawl"].append(sid)
+                        _reset_source_state(ws, sid, {new.bank_url} if new.bank_url else set())
+                        result["changed"].append(
+                            f"{name}: 詳細ページを辿るようにした（{links} 本）"
+                        )
+                    else:
+                        new.extract_gap = True
+                        rows[i] = _finding_to_row(new)
+                        touched = True
+                        rows_text = score.rows if score else "?"
+                        note = (
+                            f"一覧に見えるのに 0 件（物件行 {rows_text}）。抽出側の課題として保留"
+                        )
+                        result["changed"].append(f"{name}: {note}")
             else:
                 rows[i] = _finding_to_row(new)
                 touched = True

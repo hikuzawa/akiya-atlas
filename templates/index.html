@@ -6,7 +6,8 @@
   {{ ui.stat_strip([
     {"value": stats.listings|number, "unit": "件", "label": "掲載物件（自治体の公式ページで確認できたもの）", "kind": "kaki"},
     {"value": stats.prefectures|number, "unit": "都道府県", "label": "対象の都道府県"},
-    {"value": stats.municipalities|number, "unit": "市町村", "label": "公式ページを巡回している市町村"},
+    {"value": stats.open_municipalities|number, "unit": "市町村", "label": "物件を公開している市町村（巡回中 " ~ stats.crawled_municipalities|number ~ " ／ 全 " ~ stats.municipalities|number ~ "）"},
+    {"value": stats.price_text_median, "label": "売買価格の中央値（" ~ stats.priced|number ~ " 件に記載。最安 " ~ stats.price_text_min ~ "）", "kind": "text"},
     {"value": trust.updated_at|date_ja, "label": "最終更新（毎日 03 時ごろに巡回）", "kind": "text"}
   ], "収録状況") }}
 </section>
@@ -51,7 +52,7 @@
 <section class="section" aria-labelledby="recent-title">
   {{ ui.section_head("recent-title", "最近確認した物件", "巡回で最近確認できたもの") }}
   <ul class="scroller">
-    {% for r in recent %}{{ ui.listing_card(r) }}{% endfor %}
+    {% for r in recent %}{{ ui.listing_card(r, place=r.place, subsidy=r.subsidy) }}{% endfor %}
   </ul>
 </section>
 {% endif %}

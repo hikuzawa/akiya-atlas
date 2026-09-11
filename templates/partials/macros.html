@@ -76,7 +76,8 @@
       {% if r.status == "closed" %}{{ badge("mute", "成約済・募集終了") }}
       {% elif stale %}{{ badge("warn", "掲載終了の可能性", "warn") }}{% endif %}
       {% if r.status_text %}{{ badge("warn", r.status_text) }}{% endif %}
-      {% if r.built_year and r.floor_area %}{{ badge("info", "築年・面積あり", "check") }}{% endif %}
+      {% if r.has_detail is defined and r.has_detail %}{{ badge("info", "詳細ページあり", "check") }}
+      {% elif r.built_year and r.floor_area %}{{ badge("info", "築年・面積あり", "check") }}{% endif %}
       {% if subsidy %}{{ badge("ok", "補助金あり（市町村）", "tag") }}{% endif %}
     </div>
     <span>確認 {{ r.updated }}</span>
@@ -109,7 +110,7 @@
   <div class="count">{{ p.count|number }}<small>件</small></div>
   <div class="card-title"><a href="{{ p.url }}">{{ p.name }}</a></div>
   <div class="bar" aria-hidden="true"><span style="width: {{ ((p.count / max_count * 100) if max_count else 0)|round(0)|int }}%"></span></div>
-  <div class="card-foot"><span>{{ p.municipalities|number }} 市町村の公式ページを巡回</span></div>
+  <div class="card-foot"><span>{{ p.open|number }} / {{ p.municipalities|number }} 市町村で公開{% if p.subsidy_count %}・補助 {{ p.subsidy_count|number }}{% endif %}</span></div>
 </li>
 {%- endmacro %}
 

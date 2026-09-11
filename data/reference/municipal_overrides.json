@@ -1,0 +1,74 @@
+{
+  "_about": "自動発見では決められない市町村の扱いを、根拠つきで固定する。code は全国地方公共団体コード。",
+  "_fields": {
+    "official_url": "この市町村の公式サイト。候補ドメインの推測と県の一覧より優先する",
+    "no_website": "公式サイトが存在しない。発見の対象から外し、サイトにも載せない",
+    "evidence": "そう判断できる根拠",
+    "source": "根拠の出典 URL"
+  },
+  "municipalities": [
+    {
+      "code": "014036",
+      "name": "泊村",
+      "prefecture": "北海道",
+      "official_url": "https://www.vill.tomari.hokkaido.jp/",
+      "evidence": "古宇郡泊村。同サイトに所在地として「古宇郡泊村」と記載があり、北海道の市町村リンク集（道内179市町村）にも掲載されている",
+      "source": "https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html",
+      "checked_on": "2026-09-11"
+    },
+    {
+      "code": "016969",
+      "name": "泊村",
+      "prefecture": "北海道",
+      "no_website": true,
+      "evidence": "国後郡泊村（北方領土）。行政区域に施政権が及ばず公式サイトが無い。北海道の市町村リンク集（道内179市町村）にも掲載が無い",
+      "source": "https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html",
+      "checked_on": "2026-09-11"
+    },
+    {
+      "code": "016951",
+      "name": "色丹村",
+      "prefecture": "北海道",
+      "no_website": true,
+      "evidence": "北方領土の 5 村。公式サイトが無く、北海道の市町村リンク集（道内179市町村）にも掲載が無い",
+      "source": "https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html",
+      "checked_on": "2026-09-11"
+    },
+    {
+      "code": "016977",
+      "name": "留夜別村",
+      "prefecture": "北海道",
+      "no_website": true,
+      "evidence": "北方領土の 5 村。公式サイトが無く、北海道の市町村リンク集（道内179市町村）にも掲載が無い",
+      "source": "https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html",
+      "checked_on": "2026-09-11"
+    },
+    {
+      "code": "016985",
+      "name": "留別村",
+      "prefecture": "北海道",
+      "no_website": true,
+      "evidence": "北方領土の 5 村。公式サイトが無く、北海道の市町村リンク集（道内179市町村）にも掲載が無い",
+      "source": "https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html",
+      "checked_on": "2026-09-11"
+    },
+    {
+      "code": "016993",
+      "name": "紗那村",
+      "prefecture": "北海道",
+      "no_website": true,
+      "evidence": "北方領土の 5 村。公式サイトが無く、北海道の市町村リンク集（道内179市町村）にも掲載が無い",
+      "source": "https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html",
+      "checked_on": "2026-09-11"
+    },
+    {
+      "code": "017001",
+      "name": "蘂取村",
+      "prefecture": "北海道",
+      "no_website": true,
+      "evidence": "北方領土の 5 村。公式サイトが無く、北海道の市町村リンク集（道内179市町村）にも掲載が無い",
+      "source": "https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html",
+      "checked_on": "2026-09-11"
+    }
+  ]
+}

@@ -36,7 +36,7 @@ on:
 
 permissions:
   contents: write
-  issues: write # 失敗時に通知 Issue を作成/更新する
+  issues: write # 失敗時の通知 Issue と、取り下げ依頼（takedown）の読み取り
 
 concurrency:
   group: pipeline
@@ -103,6 +103,13 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: uv run sitemill heal
 
+      - name: 取り下げ依頼を取り込む（takedown ラベルの Issue → 非表示にするページ）
+        working-directory: akiya-atlas
+        env:
+          GH_TOKEN: ${{ github.token }}
+        # 依頼が無くても失敗しない。needs-human と municipality の Issue は数えるだけ
+        run: uv run akiya-atlas takedowns --repo "${{ github.repository }}"
+
       - name: Build
         working-directory: akiya-atlas
         env:
@@ -129,7 +136,7 @@ jobs:
         run: |
           git config user.name "sitemill-bot"
           git config user.email "sitemill-bot@users.noreply.github.com"
-          git add data/state data/records data/runs
+          git add data/state data/records data/runs data/reference/takedowns.json
           git diff --cached --quiet || git commit -m "data: $(date -u +%Y-%m-%dT%H:%MZ) の巡回・抽出結果"
           # 人の作業が同時に main へ push されると拒否される。origin/main を取り込み直して最大 3 回まで再試行し、
           # data ファイル自体が競合したら諦める（巡回状態と物件は次回の巡回で再生成される）

@@ -11,26 +11,19 @@
     <span class="who">{{ ui.icon("building") }}運営: {{ muni.name }}（自治体・公式）</span>
     {{ ui.ext_link(muni.bank_url, muni.name ~ "の" ~ muni.bank_label ~ "（公式）で詳細を見る") }}
   </div>
-  {# 数字の帯: 件数 / 価格帯の最多 / 築年の範囲 / 補助制度 / 最終取得 #}
-  {% set labels = ["100万円未満", "100〜300万円", "300〜500万円", "500〜1,000万円", "1,000万円以上"] %}
-  {% set ns = namespace(counts=[], top=-1, topn=0, kinds=[]) %}
-  {% for l in labels %}
-    {% set c = active|selectattr("band", "eq", l)|list|length %}
-    {% set ns.counts = ns.counts + [c] %}
-    {% if c > ns.topn %}{% set ns.topn = c %}{% set ns.top = loop.index0 %}{% endif %}
-  {% endfor %}
-  {% set years = active|selectattr("built_year")|map(attribute="built_year")|sort|list %}
+  {# 数字の帯: 件数 / 価格の中央値・最安 / 築年の範囲 / 補助制度 / 最終取得。値は pages.stats_of #}
+  {% set ns = namespace(kinds=[]) %}
   {% if muni_row.subsidy_migration %}{% set ns.kinds = ns.kinds + [("ok", "移住")] %}{% endif %}
   {% if muni_row.subsidy_renovation %}{% set ns.kinds = ns.kinds + [("ok", "改修")] %}{% endif %}
   {% if muni_row.subsidy_demolition %}{% set ns.kinds = ns.kinds + [("ok", "解体")] %}{% endif %}
   {% set cells = [{"value": muni_row.count|number, "unit": "件", "label": "掲載中（売買 " ~ muni_row.sale|number ~ " ／ 賃貸 " ~ muni_row.rent|number ~ "）", "kind": "kaki"}] %}
-  {% if ns.topn > 0 %}
-    {% set cells = cells + [{"value": labels[ns.top], "label": "売買の価格帯で最多（" ~ ns.topn ~ " 件）", "kind": "text", "bars": {"counts": ns.counts, "labels": labels, "top": ns.top, "title": "売買価格の分布"}}] %}
+  {% if stats.price_median %}
+    {% set cells = cells + [{"value": stats.price_text_median, "label": "売買価格の中央値（" ~ stats.priced ~ " 件に記載。最安 " ~ stats.price_text_min ~ "）", "kind": "text", "bars": {"counts": stats.band_counts, "labels": stats.band_labels, "top": stats.band_top, "title": "売買価格の分布"}}] %}
   {% endif %}
-  {% if years|length >= 2 %}
-    {% set cells = cells + [{"value": years[0] ~ "〜" ~ years[-1], "unit": "年", "label": "築年の範囲（" ~ years|length ~ " 件に記載）", "kind": "range"}] %}
-  {% elif years|length == 1 %}
-    {% set cells = cells + [{"value": years[0], "unit": "年", "label": "築年（1 件に記載）"}] %}
+  {% if stats.built_count >= 2 %}
+    {% set cells = cells + [{"value": stats.built_min ~ "〜" ~ stats.built_max, "unit": "年", "label": "築年の範囲（" ~ stats.built_count ~ " 件に記載。中央 " ~ stats.built_median ~ " 年）", "kind": "range"}] %}
+  {% elif stats.built_count == 1 %}
+    {% set cells = cells + [{"value": stats.built_min, "unit": "年", "label": "築年（1 件に記載）"}] %}
   {% endif %}
   {% if ns.kinds %}
     {% set cells = cells + [{"label": "補助制度あり（" ~ subsidies|length ~ " 件）", "badges": ns.kinds}] %}
