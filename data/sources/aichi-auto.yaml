@@ -1,0 +1,1120 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: aichi-231002
+  name: 名古屋市空き家バンク
+  operator: 名古屋市
+  operator_kind: municipality
+  official_url: https://www.city.nagoya.jp/
+  policy: link_only
+  municipality:
+    code: '231002'
+    name: 名古屋市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '231002'
+    bank_url: https://www.city.nagoya.jp/
+    bank_status: none
+    map_query: 愛知県名古屋市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 愛知県 県内の市町村（リンク集）に掲載された公式サイト（www.city.nagoya.jp）
+    url: https://www.pref.aichi.jp/site/userguide/link-citytown.html
+    checked_on: '2026-09-11'
+- id: aichi-232017
+  name: 豊橋市空き家バンク
+  operator: 豊橋市
+  operator_kind: municipality
+  official_url: https://www.city.toyohashi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '232017'
+    name: 豊橋市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232017'
+    bank_url: https://www.city.toyohashi.lg.jp/
+    bank_status: none
+    map_query: 愛知県豊橋市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.toyohashi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.toyohashi.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232025
+  name: 岡崎市空き家バンク
+  operator: 岡崎市
+  operator_kind: municipality
+  official_url: https://www.city.okazaki.lg.jp/
+  policy: link_only
+  municipality:
+    code: '232025'
+    name: 岡崎市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232025'
+    bank_url: https://www.city.okazaki.lg.jp/kurashi/hikkoshi/1012273/1012281/1003083/1003084.html
+    bank_status: info
+    map_query: 愛知県岡崎市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.okazaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.okazaki.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232033
+  name: 一宮市空き家バンク
+  operator: 一宮市
+  operator_kind: municipality
+  official_url: https://www.city.ichinomiya.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '232033'
+    name: 一宮市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232033'
+    bank_url: https://www.city.ichinomiya.aichi.jp/
+    bank_status: none
+    map_query: 愛知県一宮市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ichinomiya.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.ichinomiya.aichi.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232041
+  name: 瀬戸市空き家バンク
+  operator: 瀬戸市
+  operator_kind: municipality
+  official_url: https://www.city.seto.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '232041'
+    name: 瀬戸市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232041'
+    bank_url: https://www.city.seto.aichi.jp/bunya/akiyakannrenn/index.html
+    bank_status: info
+    map_query: 愛知県瀬戸市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.seto.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.seto.aichi.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232050
+  name: 半田市空き家バンク
+  operator: 半田市
+  operator_kind: municipality
+  official_url: https://www.city.handa.lg.jp/
+  policy: crawl
+  municipality:
+    code: '232050'
+    name: 半田市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232050'
+    bank_url: https://www.city.handa.lg.jp/machi/sumai/1003262/index.html
+    bank_status: available
+    map_query: 愛知県半田市
+  operator_evidence:
+    quote: 公式ドメイン www.city.handa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.handa.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.handa.lg.jp/machi/sumai/1003262/index.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.handa.lg.jp
+  max_pages: 30
+- id: aichi-232068
+  name: 春日井市空き家バンク
+  operator: 春日井市
+  operator_kind: municipality
+  official_url: https://www.city.kasugai.lg.jp/
+  policy: link_only
+  municipality:
+    code: '232068'
+    name: 春日井市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232068'
+    bank_url: https://www.city.kasugai.lg.jp/kurashi/1033189/1038894/1003670/index.html
+    bank_status: info
+    map_query: 愛知県春日井市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kasugai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kasugai.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232076
+  name: 豊川市空き家バンク
+  operator: 豊川市
+  operator_kind: municipality
+  official_url: https://www.city.toyokawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '232076'
+    name: 豊川市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232076'
+    bank_url: https://www.city.toyokawa.lg.jp/
+    bank_status: none
+    map_query: 愛知県豊川市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.toyokawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.toyokawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232084
+  name: 津島市空き家バンク
+  operator: 津島市
+  operator_kind: municipality
+  official_url: https://www.city.tsushima.lg.jp/
+  policy: crawl
+  municipality:
+    code: '232084'
+    name: 津島市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232084'
+    bank_url: https://www.city.tsushima.lg.jp/kurashi/sumaikenchiku/akiya/index.html
+    bank_status: available
+    map_query: 愛知県津島市
+  operator_evidence:
+    quote: 公式ドメイン www.city.tsushima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.tsushima.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.tsushima.lg.jp/kurashi/sumaikenchiku/akiya/index.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.tsushima.lg.jp
+  max_pages: 30
+- id: aichi-232092
+  name: 碧南市空き家バンク
+  operator: 碧南市
+  operator_kind: municipality
+  official_url: https://www.city.hekinan.lg.jp/
+  policy: link_only
+  municipality:
+    code: '232092'
+    name: 碧南市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232092'
+    bank_url: https://www.city.hekinan.lg.jp/
+    bank_status: none
+    map_query: 愛知県碧南市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.hekinan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.hekinan.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232106
+  name: 刈谷市空き家バンク
+  operator: 刈谷市
+  operator_kind: municipality
+  official_url: https://www.city.kariya.lg.jp/
+  policy: link_only
+  municipality:
+    code: '232106'
+    name: 刈谷市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232106'
+    bank_url: https://www.city.kariya.lg.jp/
+    bank_status: none
+    map_query: 愛知県刈谷市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kariya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kariya.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232114
+  name: 豊田市空き家バンク
+  operator: 豊田市
+  operator_kind: municipality
+  official_url: https://www.city.toyota.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '232114'
+    name: 豊田市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232114'
+    bank_url: https://www.city.toyota.aichi.jp/
+    bank_status: none
+    map_query: 愛知県豊田市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.toyota.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.toyota.aichi.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232122
+  name: 安城市空き家バンク
+  operator: 安城市
+  operator_kind: municipality
+  official_url: https://www.city.anjo.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '232122'
+    name: 安城市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232122'
+    bank_url: https://www.city.anjo.aichi.jp/
+    bank_status: none
+    map_query: 愛知県安城市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.anjo.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.anjo.aichi.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232131
+  name: 西尾市空き家バンク
+  operator: 西尾市
+  operator_kind: municipality
+  official_url: https://www.city.nishio.aichi.jp/
+  policy: crawl
+  municipality:
+    code: '232131'
+    name: 西尾市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232131'
+    bank_url: https://www.city.nishio.aichi.jp/kurashi/sumai/1001387/index.html
+    bank_status: available
+    map_query: 愛知県西尾市
+  operator_evidence:
+    quote: 公式ドメイン www.city.nishio.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.nishio.aichi.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.nishio.aichi.jp/kurashi/sumai/1001387/index.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.nishio.aichi.jp
+  max_pages: 30
+- id: aichi-232149
+  name: 蒲郡市空き家バンク
+  operator: 蒲郡市
+  operator_kind: municipality
+  official_url: https://www.city.gamagori.lg.jp/
+  policy: crawl
+  municipality:
+    code: '232149'
+    name: 蒲郡市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232149'
+    bank_url: https://www.city.gamagori.lg.jp/site/kenchiku/akiyatourokubukken.html
+    bank_status: available
+    map_query: 愛知県蒲郡市
+  operator_evidence:
+    quote: 公式ドメイン www.city.gamagori.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.gamagori.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.gamagori.lg.jp/site/kenchiku/akiyatourokubukken.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.gamagori.lg.jp
+  max_pages: 30
+  external_links:
+  - label: LIFULL HOMES　空き家バンク
+    url: https://www.homes.co.jp/akiyabank/aichi/gamagori/
+  - label: アットホーム　空き家バンク
+    url: https://gamagori-c23214.akiya-athome.jp/
+- id: aichi-232157
+  name: 犬山市空き家バンク
+  operator: 犬山市
+  operator_kind: municipality
+  official_url: https://www.city.inuyama.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '232157'
+    name: 犬山市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232157'
+    bank_url: https://www.city.inuyama.aichi.jp/1003291/index.html
+    bank_status: info
+    map_query: 愛知県犬山市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.inuyama.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.inuyama.aichi.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: homes.co.jp
+    url: https://www.homes.co.jp/akiyabank/
+- id: aichi-232165
+  name: 常滑市空き家バンク
+  operator: 常滑市
+  operator_kind: municipality
+  official_url: https://www.city.tokoname.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '232165'
+    name: 常滑市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232165'
+    bank_url: https://www.city.tokoname.aichi.jp/1008842/1008843/index.html
+    bank_status: info
+    map_query: 愛知県常滑市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tokoname.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.tokoname.aichi.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232173
+  name: 江南市空き家バンク
+  operator: 江南市
+  operator_kind: municipality
+  official_url: https://www.city.konan.lg.jp/
+  policy: link_only
+  municipality:
+    code: '232173'
+    name: 江南市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232173'
+    bank_url: https://www.city.konan.lg.jp/kurashi/juutaku/1008730.html
+    bank_status: info
+    map_query: 愛知県江南市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.konan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.konan.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232190
+  name: 小牧市空き家バンク
+  operator: 小牧市
+  operator_kind: municipality
+  official_url: https://www.city.komaki.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '232190'
+    name: 小牧市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232190'
+    bank_url: https://www.city.komaki.aichi.jp/
+    bank_status: none
+    map_query: 愛知県小牧市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.komaki.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.komaki.aichi.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232203
+  name: 稲沢市空き家バンク
+  operator: 稲沢市
+  operator_kind: municipality
+  official_url: https://www.city.inazawa.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '232203'
+    name: 稲沢市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232203'
+    bank_url: https://www.city.inazawa.aichi.jp/
+    bank_status: none
+    map_query: 愛知県稲沢市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.inazawa.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.inazawa.aichi.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232211
+  name: 新城市空き家バンク
+  operator: 新城市
+  operator_kind: municipality
+  official_url: https://www.city.shinshiro.lg.jp/
+  policy: link_only
+  municipality:
+    code: '232211'
+    name: 新城市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232211'
+    bank_url: https://www.city.shinshiro.lg.jp/kurashi/jyutaku-tochi/akiya/index.html
+    bank_status: info
+    map_query: 愛知県新城市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.shinshiro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.shinshiro.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232220
+  name: 東海市空き家バンク
+  operator: 東海市
+  operator_kind: municipality
+  official_url: https://www.city.tokai.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '232220'
+    name: 東海市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232220'
+    bank_url: https://www.city.tokai.aichi.jp/kurashi/1001815/1001840/index.html
+    bank_status: info
+    map_query: 愛知県東海市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tokai.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.tokai.aichi.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232238
+  name: 大府市空き家バンク
+  operator: 大府市
+  operator_kind: municipality
+  official_url: https://www.city.obu.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '232238'
+    name: 大府市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232238'
+    bank_url: https://www.city.obu.aichi.jp/kurashi/sumai/akiya/index.html
+    bank_status: info
+    map_query: 愛知県大府市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.obu.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.obu.aichi.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232246
+  name: 知多市空き家バンク
+  operator: 知多市
+  operator_kind: municipality
+  official_url: https://www.city.chita.lg.jp/
+  policy: link_only
+  municipality:
+    code: '232246'
+    name: 知多市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232246'
+    bank_url: https://www.city.chita.lg.jp/
+    bank_status: none
+    map_query: 愛知県知多市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.chita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.chita.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232254
+  name: 知立市空き家バンク
+  operator: 知立市
+  operator_kind: municipality
+  official_url: https://www.city.chiryu.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '232254'
+    name: 知立市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232254'
+    bank_url: https://www.city.chiryu.aichi.jp/
+    bank_status: none
+    map_query: 愛知県知立市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.chiryu.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.chiryu.aichi.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232262
+  name: 尾張旭市空き家バンク
+  operator: 尾張旭市
+  operator_kind: municipality
+  official_url: https://www.city.owariasahi.lg.jp/
+  policy: crawl
+  municipality:
+    code: '232262'
+    name: 尾張旭市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232262'
+    bank_url: https://www.city.owariasahi.lg.jp/life/4/10/62/
+    bank_status: available
+    map_query: 愛知県尾張旭市
+  operator_evidence:
+    quote: 公式ドメイン www.city.owariasahi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.owariasahi.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.owariasahi.lg.jp/life/4/10/62/
+    kind: listing_index
+  allow_hosts:
+  - www.city.owariasahi.lg.jp
+  max_pages: 30
+- id: aichi-232271
+  name: 高浜市空き家バンク
+  operator: 高浜市
+  operator_kind: municipality
+  official_url: https://www.city.takahama.lg.jp/
+  policy: link_only
+  municipality:
+    code: '232271'
+    name: 高浜市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232271'
+    bank_url: https://www.city.takahama.lg.jp/
+    bank_status: none
+    map_query: 愛知県高浜市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.takahama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.takahama.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232289
+  name: 岩倉市空き家バンク
+  operator: 岩倉市
+  operator_kind: municipality
+  official_url: https://www.city.iwakura.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '232289'
+    name: 岩倉市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232289'
+    bank_url: https://www.city.iwakura.aichi.jp/0000002813.html
+    bank_status: info
+    map_query: 愛知県岩倉市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.iwakura.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.iwakura.aichi.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232297
+  name: 豊明市空き家バンク
+  operator: 豊明市
+  operator_kind: municipality
+  official_url: https://www.city.toyoake.lg.jp/
+  policy: link_only
+  municipality:
+    code: '232297'
+    name: 豊明市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232297'
+    bank_url: https://www.city.toyoake.lg.jp/
+    bank_status: none
+    map_query: 愛知県豊明市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.toyoake.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.toyoake.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232301
+  name: 日進市空き家バンク
+  operator: 日進市
+  operator_kind: municipality
+  official_url: https://www.city.nisshin.lg.jp/
+  policy: link_only
+  municipality:
+    code: '232301'
+    name: 日進市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232301'
+    bank_url: https://www.city.nisshin.lg.jp/
+    bank_status: none
+    map_query: 愛知県日進市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nisshin.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.nisshin.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232319
+  name: 田原市空き家バンク
+  operator: 田原市
+  operator_kind: municipality
+  official_url: https://www.city.tahara.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '232319'
+    name: 田原市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232319'
+    bank_url: https://www.city.tahara.aichi.jp/kurashi/jutaku/1006264/index.html
+    bank_status: info
+    map_query: 愛知県田原市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tahara.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.tahara.aichi.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232327
+  name: 愛西市空き家バンク
+  operator: 愛西市
+  operator_kind: municipality
+  official_url: https://www.city.aisai.lg.jp/
+  policy: link_only
+  municipality:
+    code: '232327'
+    name: 愛西市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232327'
+    bank_url: https://www.city.aisai.lg.jp/
+    bank_status: none
+    map_query: 愛知県愛西市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.aisai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.aisai.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232335
+  name: 清須市空き家バンク
+  operator: 清須市
+  operator_kind: municipality
+  official_url: https://www.city.kiyosu.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '232335'
+    name: 清須市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232335'
+    bank_url: https://www.city.kiyosu.aichi.jp/
+    bank_status: none
+    map_query: 愛知県清須市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kiyosu.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kiyosu.aichi.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232343
+  name: 北名古屋市空き家バンク
+  operator: 北名古屋市
+  operator_kind: municipality
+  official_url: https://www.city.kitanagoya.lg.jp/
+  policy: link_only
+  municipality:
+    code: '232343'
+    name: 北名古屋市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232343'
+    bank_url: https://www.city.kitanagoya.lg.jp/
+    bank_status: none
+    map_query: 愛知県北名古屋市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kitanagoya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kitanagoya.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232351
+  name: 弥富市空き家バンク
+  operator: 弥富市
+  operator_kind: municipality
+  official_url: https://www.city.yatomi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '232351'
+    name: 弥富市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232351'
+    bank_url: https://www.city.yatomi.lg.jp/
+    bank_status: none
+    map_query: 愛知県弥富市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yatomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.yatomi.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232360
+  name: みよし市空き家バンク
+  operator: みよし市
+  operator_kind: municipality
+  official_url: https://www.city.aichi-miyoshi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '232360'
+    name: みよし市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232360'
+    bank_url: https://www.city.aichi-miyoshi.lg.jp/
+    bank_status: none
+    map_query: 愛知県みよし市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 愛知県 県内の市町村（リンク集）に掲載された公式サイト（www.city.aichi-miyoshi.lg.jp）
+    url: https://www.pref.aichi.jp/site/userguide/link-citytown.html
+    checked_on: '2026-09-11'
+- id: aichi-232378
+  name: あま市空き家バンク
+  operator: あま市
+  operator_kind: municipality
+  official_url: https://www.city.ama.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '232378'
+    name: あま市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232378'
+    bank_url: https://www.city.ama.aichi.jp/
+    bank_status: none
+    map_query: 愛知県あま市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ama.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.ama.aichi.jp/
+    checked_on: '2026-09-11'
+- id: aichi-232386
+  name: 長久手市空き家バンク
+  operator: 長久手市
+  operator_kind: municipality
+  official_url: https://www.city.nagakute.lg.jp/
+  policy: link_only
+  municipality:
+    code: '232386'
+    name: 長久手市
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '232386'
+    bank_url: https://www.city.nagakute.lg.jp/kurashi_tetsuzuki/sumai/13325.html
+    bank_status: info
+    map_query: 愛知県長久手市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nagakute.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.nagakute.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-233021
+  name: 東郷町空き家バンク
+  operator: 東郷町
+  operator_kind: municipality
+  official_url: https://www.town.aichi-togo.lg.jp/
+  policy: link_only
+  municipality:
+    code: '233021'
+    name: 東郷町
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '233021'
+    bank_url: https://www.town.aichi-togo.lg.jp/
+    bank_status: none
+    map_query: 愛知県東郷町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 愛知県 県内の市町村（リンク集）に掲載された公式サイト（www.town.aichi-togo.lg.jp）
+    url: https://www.pref.aichi.jp/site/userguide/link-citytown.html
+    checked_on: '2026-09-11'
+- id: aichi-233421
+  name: 豊山町空き家バンク
+  operator: 豊山町
+  operator_kind: municipality
+  official_url: https://www.town.toyoyama.lg.jp/
+  policy: link_only
+  municipality:
+    code: '233421'
+    name: 豊山町
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '233421'
+    bank_url: https://www.town.toyoyama.lg.jp/
+    bank_status: none
+    map_query: 愛知県豊山町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.toyoyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.toyoyama.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-233617
+  name: 大口町空き家バンク
+  operator: 大口町
+  operator_kind: municipality
+  official_url: https://www.town.oguchi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '233617'
+    name: 大口町
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '233617'
+    bank_url: https://www.town.oguchi.lg.jp/
+    bank_status: none
+    map_query: 愛知県大口町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.oguchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.oguchi.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-233625
+  name: 扶桑町空き家バンク
+  operator: 扶桑町
+  operator_kind: municipality
+  official_url: https://www.town.fuso.lg.jp/
+  policy: link_only
+  municipality:
+    code: '233625'
+    name: 扶桑町
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '233625'
+    bank_url: https://akiyabk.com/fuso/
+    bank_status: info
+    map_query: 愛知県扶桑町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式サイト（www.town.fuso.lg.jp）から空き家バンクとして案内されているリンク
+    url: https://www.town.fuso.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-234249
+  name: 大治町空き家バンク
+  operator: 大治町
+  operator_kind: municipality
+  official_url: https://www.town.oharu.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '234249'
+    name: 大治町
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '234249'
+    bank_url: https://www.town.oharu.aichi.jp/
+    bank_status: none
+    map_query: 愛知県大治町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.oharu.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.oharu.aichi.jp/
+    checked_on: '2026-09-11'
+- id: aichi-234257
+  name: 蟹江町空き家バンク
+  operator: 蟹江町
+  operator_kind: municipality
+  official_url: https://www.town.kanie.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '234257'
+    name: 蟹江町
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '234257'
+    bank_url: https://www.town.kanie.aichi.jp/
+    bank_status: none
+    map_query: 愛知県蟹江町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kanie.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kanie.aichi.jp/
+    checked_on: '2026-09-11'
+- id: aichi-234273
+  name: 飛島村空き家バンク
+  operator: 飛島村
+  operator_kind: municipality
+  official_url: https://www.vill.tobishima.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '234273'
+    name: 飛島村
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '234273'
+    bank_url: https://www.vill.tobishima.aichi.jp/kurashi/ijuu/1001701/index.html
+    bank_status: info
+    map_query: 愛知県飛島村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.tobishima.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.tobishima.aichi.jp/
+    checked_on: '2026-09-11'
+- id: aichi-234419
+  name: 阿久比町空き家バンク
+  operator: 阿久比町
+  operator_kind: municipality
+  official_url: https://www.town.agui.lg.jp/
+  policy: link_only
+  municipality:
+    code: '234419'
+    name: 阿久比町
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '234419'
+    bank_url: https://www.town.agui.lg.jp/
+    bank_status: none
+    map_query: 愛知県阿久比町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.agui.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.agui.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-234427
+  name: 東浦町空き家バンク
+  operator: 東浦町
+  operator_kind: municipality
+  official_url: https://www.town.aichi-higashiura.lg.jp/
+  policy: link_only
+  municipality:
+    code: '234427'
+    name: 東浦町
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '234427'
+    bank_url: https://www.town.aichi-higashiura.lg.jp/
+    bank_status: none
+    map_query: 愛知県東浦町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 愛知県 県内の市町村（リンク集）に掲載された公式サイト（www.town.aichi-higashiura.lg.jp）
+    url: https://www.pref.aichi.jp/site/userguide/link-citytown.html
+    checked_on: '2026-09-11'
+- id: aichi-234451
+  name: 南知多町空き家バンク
+  operator: 南知多町
+  operator_kind: municipality
+  official_url: https://www.town.minamichita.lg.jp/
+  policy: crawl
+  municipality:
+    code: '234451'
+    name: 南知多町
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '234451'
+    bank_url: https://www.town.minamichita.lg.jp/akiya/index.html
+    bank_status: available
+    map_query: 愛知県南知多町
+  operator_evidence:
+    quote: 公式ドメイン www.town.minamichita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.minamichita.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.minamichita.lg.jp/akiya/index.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.minamichita.lg.jp
+  max_pages: 30
+- id: aichi-234460
+  name: 美浜町空き家バンク
+  operator: 美浜町
+  operator_kind: municipality
+  official_url: https://www.town.aichi-mihama.lg.jp/
+  policy: link_only
+  municipality:
+    code: '234460'
+    name: 美浜町
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '234460'
+    bank_url: https://www.town.aichi-mihama.lg.jp/
+    bank_status: none
+    map_query: 愛知県美浜町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 愛知県 県内の市町村（リンク集）に掲載された公式サイト（www.town.aichi-mihama.lg.jp）
+    url: https://www.pref.aichi.jp/site/userguide/link-citytown.html
+    checked_on: '2026-09-11'
+- id: aichi-234478
+  name: 武豊町空き家バンク
+  operator: 武豊町
+  operator_kind: municipality
+  official_url: https://www.town.taketoyo.lg.jp/
+  policy: link_only
+  municipality:
+    code: '234478'
+    name: 武豊町
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '234478'
+    bank_url: https://www.town.taketoyo.lg.jp/kurashi/1001507/1001589/index.html
+    bank_status: info
+    map_query: 愛知県武豊町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.taketoyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.taketoyo.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-235016
+  name: 幸田町空き家バンク
+  operator: 幸田町
+  operator_kind: municipality
+  official_url: https://www.town.kota.lg.jp/
+  policy: link_only
+  municipality:
+    code: '235016'
+    name: 幸田町
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '235016'
+    bank_url: https://www.town.kota.lg.jp/
+    bank_status: none
+    map_query: 愛知県幸田町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kota.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kota.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-235610
+  name: 設楽町空き家バンク
+  operator: 設楽町
+  operator_kind: municipality
+  official_url: https://www.town.shitara.lg.jp/
+  policy: link_only
+  municipality:
+    code: '235610'
+    name: 設楽町
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '235610'
+    bank_url: https://www.town.shitara.lg.jp/
+    bank_status: none
+    map_query: 愛知県設楽町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shitara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.shitara.lg.jp/
+    checked_on: '2026-09-11'
+- id: aichi-235628
+  name: 東栄町空き家バンク
+  operator: 東栄町
+  operator_kind: municipality
+  official_url: https://www.town.toei.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '235628'
+    name: 東栄町
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '235628'
+    bank_url: https://www.town.toei.aichi.jp/5756.htm
+    bank_status: spa_unsupported
+    map_query: 愛知県東栄町
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.toei.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.toei.aichi.jp/
+    checked_on: '2026-09-11'
+- id: aichi-235636
+  name: 豊根村空き家バンク
+  operator: 豊根村
+  operator_kind: municipality
+  official_url: https://www.vill.toyone.aichi.jp/
+  policy: link_only
+  municipality:
+    code: '235636'
+    name: 豊根村
+    prefecture: 愛知県
+    prefecture_slug: aichi
+    slug: '235636'
+    bank_url: https://www.vill.toyone.aichi.jp/
+    bank_status: none
+    map_query: 愛知県豊根村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.toyone.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.toyone.aichi.jp/
+    checked_on: '2026-09-11'

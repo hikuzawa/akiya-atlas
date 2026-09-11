@@ -1,0 +1,760 @@
+prefecture: 千葉県
+prefecture_slug: chiba
+created_at: '2026-09-10T22:25:15+00:00'
+candidates:
+- key: '121002'
+  label: 千葉県 千葉市
+  url: https://www.city.chiba.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 千葉県 市町村一覧に掲載された公式サイト（www.city.chiba.jp）
+  evidence_url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122025'
+  label: 千葉県 銚子市
+  url: https://www.city.choshi.chiba.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.choshi.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.choshi.chiba.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122033'
+  label: 千葉県 市川市
+  url: https://www.city.ichikawa.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ichikawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.ichikawa.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122041'
+  label: 千葉県 船橋市
+  url: https://www.city.funabashi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.funabashi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.funabashi.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122050'
+  label: 千葉県 館山市
+  url: https://www.city.tateyama.chiba.jp/kenchikushisetsu/page100050.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.86
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tateyama.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.tateyama.chiba.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122068'
+  label: 千葉県 木更津市
+  url: https://www.city.kisarazu.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kisarazu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kisarazu.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122076'
+  label: 千葉県 松戸市
+  url: https://www.city.matsudo.chiba.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.matsudo.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.matsudo.chiba.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122084'
+  label: 千葉県 野田市
+  url: https://www.city.noda.chiba.jp/kurashi/anzen/bouhan/1008726.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.noda.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.noda.chiba.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122106'
+  label: 千葉県 茂原市
+  url: https://www.city.mobara.chiba.jp/0000007702.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.mobara.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.mobara.chiba.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122114'
+  label: 千葉県 成田市
+  url: https://www.city.narita.chiba.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.narita.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.narita.chiba.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122122'
+  label: 千葉県 佐倉市
+  url: https://www.city.sakura.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sakura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.sakura.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122131'
+  label: 千葉県 東金市
+  url: https://www.city.togane.chiba.jp/0000005297.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.togane.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.togane.chiba.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122157'
+  label: 千葉県 旭市
+  url: https://www.city.asahi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.asahi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.asahi.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122165'
+  label: 千葉県 習志野市
+  url: https://www.city.narashino.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.narashino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.narashino.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122173'
+  label: 千葉県 柏市
+  url: https://www.city.kashiwa.lg.jp/jutaku/living_environment/jutaku/akiya/index.html
+  page_class: spa
+  class_label: JavaScript 描画（未対応）
+  confidence: 0.75
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kashiwa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kashiwa.lg.jp/
+  reason: JavaScript 描画のため静的 HTML に物件が無い。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122181'
+  label: 千葉県 勝浦市
+  url: https://www.city.katsuura.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.katsuura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.katsuura.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122190'
+  label: 千葉県 市原市
+  url: https://www.city.ichihara.chiba.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ichihara.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.ichihara.chiba.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122203'
+  label: 千葉県 流山市
+  url: https://www.city.nagareyama.chiba.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nagareyama.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.nagareyama.chiba.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122211'
+  label: 千葉県 八千代市
+  url: https://www.city.yachiyo.lg.jp/life/1/16/211/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yachiyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.yachiyo.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122220'
+  label: 千葉県 我孫子市
+  url: https://www.city.abiko.chiba.jp/kurashi/sumai/abikoshi_akiyabanku.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.82
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.abiko.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.abiko.chiba.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122238'
+  label: 千葉県 鴨川市
+  url: https://www.city.kamogawa.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kamogawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kamogawa.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122246'
+  label: 千葉県 鎌ケ谷市
+  url: https://www.city.kamagaya.chiba.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kamagaya.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kamagaya.chiba.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122254'
+  label: 千葉県 君津市
+  url: https://www.city.kimitsu.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kimitsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kimitsu.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122262'
+  label: 千葉県 富津市
+  url: http://www.city.futtsu.lg.jp/0000007202.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.futtsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.futtsu.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122271'
+  label: 千葉県 浦安市
+  url: https://www.city.urayasu.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.urayasu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.urayasu.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122289'
+  label: 千葉県 四街道市
+  url: https://www.city.yotsukaido.chiba.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yotsukaido.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.yotsukaido.chiba.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122297'
+  label: 千葉県 袖ケ浦市
+  url: https://www.city.sodegaura.lg.jp/soshiki/toshi/bankjyouhoichiran.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sodegaura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.sodegaura.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122301'
+  label: 千葉県 八街市
+  url: https://www.city.yachimata.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yachimata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.yachimata.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122319'
+  label: 千葉県 印西市
+  url: https://www.city.inzai.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.inzai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.inzai.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122327'
+  label: 千葉県 白井市
+  url: https://www.city.shiroi.chiba.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shiroi.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.shiroi.chiba.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122335'
+  label: 千葉県 富里市
+  url: https://www.city.tomisato.lg.jp/0000009699.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tomisato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tomisato.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122343'
+  label: 千葉県 南房総市
+  url: https://www.city.minamiboso.chiba.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.minamiboso.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.minamiboso.chiba.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122351'
+  label: 千葉県 匝瑳市
+  url: https://www.city.sosa.lg.jp/page/page000263.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sosa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.sosa.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122360'
+  label: 千葉県 香取市
+  url: https://www.city.katori.lg.jp/sightseeing/matsuri/introduction/aki.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.katori.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.katori.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122378'
+  label: 千葉県 山武市
+  url: https://www.city.sammu.lg.jp/kurashi/jyutaku/akiya/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 千葉県 市町村一覧に掲載された公式サイト（www.city.sammu.lg.jp）
+  evidence_url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122386'
+  label: 千葉県 いすみ市
+  url: https://www.city.isumi.lg.jp/soshikikarasagasu/shogaigakushuka/misakikominkan/1/2/6877.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.isumi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.isumi.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '122394'
+  label: 千葉県 大網白里市
+  url: https://www.city.oamishirasato.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.oamishirasato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.oamishirasato.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '123226'
+  label: 千葉県 酒々井町
+  url: https://www.town.shisui.chiba.jp/docs/2021070200020/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shisui.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.shisui.chiba.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '123293'
+  label: 千葉県 栄町
+  url: https://www.town.sakae.chiba.jp/kurashi/seikatsukankyo/page006892.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.sakae.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.sakae.chiba.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '123421'
+  label: 千葉県 神崎町
+  url: https://www.town.kozaki.chiba.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kozaki.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kozaki.chiba.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '123471'
+  label: 千葉県 多古町
+  url: https://www.town.tako.chiba.jp/category/bunya/toshiseibi/bank/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tako.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.tako.chiba.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '123498'
+  label: 千葉県 東庄町
+  url: https://www.town.tohnosho.chiba.jp/cgi-bin/recruit.php/1/list?page_no=73
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 千葉県 市町村一覧に掲載された公式サイト（www.town.tohnosho.chiba.jp）
+  evidence_url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '124036'
+  label: 千葉県 九十九里町
+  url: https://www.town.kujukuri.chiba.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 千葉県 市町村一覧に掲載された公式サイト（www.town.kujukuri.chiba.jp）
+  evidence_url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '124095'
+  label: 千葉県 芝山町
+  url: https://www.town.shibayama.lg.jp/category/22-3-9-3-0-0-0-0-0-0.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shibayama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.shibayama.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '124109'
+  label: 千葉県 横芝光町
+  url: https://www.town.yokoshibahikari.chiba.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yokoshibahikari.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yokoshibahikari.chiba.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '124214'
+  label: 千葉県 一宮町
+  url: https://www.town.ichinomiya.chiba.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ichinomiya.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ichinomiya.chiba.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '124222'
+  label: 千葉県 睦沢町
+  url: https://www.town.mutsuzawa.chiba.jp/akiya
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.mutsuzawa.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.mutsuzawa.chiba.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '124231'
+  label: 千葉県 長生村
+  url: https://www.vill.chosei.chiba.jp/0000001054.html
+  page_class: listing_detail
+  class_label: 物件詳細（静的）
+  confidence: 0.85
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.chosei.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.chosei.chiba.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '124249'
+  label: 千葉県 白子町
+  url: http://www.town.shirako.lg.jp/0000002357.html
+  page_class: listing_detail
+  class_label: 物件詳細（静的）
+  confidence: 0.8
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shirako.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.shirako.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '124265'
+  label: 千葉県 長柄町
+  url: https://www.town.nagara.chiba.jp/soshiki/2/1628.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.85
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nagara.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.nagara.chiba.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '124273'
+  label: 千葉県 長南町
+  url: https://www.town.chonan.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.chonan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.chonan.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '124419'
+  label: 千葉県 大多喜町
+  url: https://www.town.otaki.chiba.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.otaki.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.otaki.chiba.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '124435'
+  label: 千葉県 御宿町
+  url: https://www.town.onjuku.chiba.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 千葉県 市町村一覧に掲載された公式サイト（www.town.onjuku.chiba.jp）
+  evidence_url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '124630'
+  label: 千葉県 鋸南町
+  url: https://www.town.kyonan.chiba.jp/soshiki/10/1570.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 千葉県 市町村一覧に掲載された公式サイト（www.town.kyonan.chiba.jp）
+  evidence_url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

@@ -1,0 +1,518 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: tokushima-362018
+  name: 徳島市空き家バンク
+  operator: 徳島市
+  operator_kind: municipality
+  official_url: https://www.city.tokushima.tokushima.jp/
+  policy: link_only
+  municipality:
+    code: '362018'
+    name: 徳島市
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '362018'
+    bank_url: https://www.city.tokushima.tokushima.jp/
+    bank_status: none
+    map_query: 徳島県徳島市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tokushima.tokushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.tokushima.tokushima.jp/
+    checked_on: '2026-09-11'
+- id: tokushima-362026
+  name: 鳴門市空き家バンク
+  operator: 鳴門市
+  operator_kind: municipality
+  official_url: https://www.city.naruto.lg.jp/
+  policy: link_only
+  municipality:
+    code: '362026'
+    name: 鳴門市
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '362026'
+    bank_url: https://www.city.naruto.lg.jp/
+    bank_status: none
+    map_query: 徳島県鳴門市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.naruto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.naruto.lg.jp/
+    checked_on: '2026-09-11'
+- id: tokushima-362034
+  name: 小松島市空き家バンク
+  operator: 小松島市
+  operator_kind: municipality
+  official_url: https://www.city.komatsushima.lg.jp/
+  policy: link_only
+  municipality:
+    code: '362034'
+    name: 小松島市
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '362034'
+    bank_url: https://www.city.komatsushima.lg.jp/
+    bank_status: none
+    map_query: 徳島県小松島市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.komatsushima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.komatsushima.lg.jp/
+    checked_on: '2026-09-11'
+- id: tokushima-362042
+  name: 阿南市空き家バンク
+  operator: 阿南市
+  operator_kind: municipality
+  official_url: https://www.city.anan.tokushima.jp/
+  policy: link_only
+  municipality:
+    code: '362042'
+    name: 阿南市
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '362042'
+    bank_url: https://www.city.anan.tokushima.jp/docs/2026060300018/
+    bank_status: info
+    map_query: 徳島県阿南市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.anan.tokushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.anan.tokushima.jp/
+    checked_on: '2026-09-11'
+- id: tokushima-362051
+  name: 吉野川市空き家バンク
+  operator: 吉野川市
+  operator_kind: municipality
+  official_url: https://www.city.yoshinogawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '362051'
+    name: 吉野川市
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '362051'
+    bank_url: https://www.city.yoshinogawa.lg.jp/category/bunya/jutaku/akiya/
+    bank_status: info
+    map_query: 徳島県吉野川市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yoshinogawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.yoshinogawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: tokushima-362069
+  name: 阿波市空き家バンク
+  operator: 阿波市
+  operator_kind: municipality
+  official_url: https://www.city.awa.lg.jp/
+  policy: crawl
+  municipality:
+    code: '362069'
+    name: 阿波市
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '362069'
+    bank_url: https://www.city.awa.lg.jp/docs/2025111300021/
+    bank_status: available
+    map_query: 徳島県阿波市
+  operator_evidence:
+    quote: 公式ドメイン www.city.awa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.awa.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.awa.lg.jp/docs/2025111300021/
+    kind: listing_index
+  allow_hosts:
+  - www.city.awa.lg.jp
+  max_pages: 30
+- id: tokushima-362077
+  name: 美馬市空き家バンク
+  operator: 美馬市
+  operator_kind: municipality
+  official_url: https://www.city.mima.lg.jp/
+  policy: link_only
+  municipality:
+    code: '362077'
+    name: 美馬市
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '362077'
+    bank_url: https://www.city.mima.lg.jp/
+    bank_status: none
+    map_query: 徳島県美馬市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.mima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.mima.lg.jp/
+    checked_on: '2026-09-11'
+- id: tokushima-362085
+  name: 三好市空き家バンク
+  operator: 三好市
+  operator_kind: municipality
+  official_url: https://www.miyoshi.i-tokushima.jp/
+  policy: link_only
+  municipality:
+    code: '362085'
+    name: 三好市
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '362085'
+    bank_url: https://www.miyoshi.i-tokushima.jp/
+    bank_status: none
+    map_query: 徳島県三好市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 徳島県の市町村一覧に掲載された公式サイト（www.miyoshi.i-tokushima.jp）
+    url: https://www.pref.tokushima.lg.jp/kenseijoho/kanrennochiiki/shichouson/
+    checked_on: '2026-09-11'
+- id: tokushima-363014
+  name: 勝浦町空き家バンク
+  operator: 勝浦町
+  operator_kind: municipality
+  official_url: https://www.town.katsuura.lg.jp/
+  policy: link_only
+  municipality:
+    code: '363014'
+    name: 勝浦町
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '363014'
+    bank_url: https://www.town.katsuura.lg.jp/docs/2021071900011/
+    bank_status: info
+    map_query: 徳島県勝浦町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.katsuura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.katsuura.lg.jp/
+    checked_on: '2026-09-11'
+- id: tokushima-363022
+  name: 上勝町空き家バンク
+  operator: 上勝町
+  operator_kind: municipality
+  official_url: https://www.kamikatsu.jp/
+  policy: link_only
+  municipality:
+    code: '363022'
+    name: 上勝町
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '363022'
+    bank_url: https://www.kamikatsu.jp/
+    bank_status: none
+    map_query: 徳島県上勝町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 徳島県の市町村一覧に掲載された公式サイト（www.kamikatsu.jp）
+    url: https://www.pref.tokushima.lg.jp/kenseijoho/kanrennochiiki/shichouson/
+    checked_on: '2026-09-11'
+- id: tokushima-363219
+  name: 佐那河内村空き家バンク
+  operator: 佐那河内村
+  operator_kind: municipality
+  official_url: https://www.vill.sanagochi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '363219'
+    name: 佐那河内村
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '363219'
+    bank_url: https://www.vill.sanagochi.lg.jp/
+    bank_status: none
+    map_query: 徳島県佐那河内村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.sanagochi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.vill.sanagochi.lg.jp/
+    checked_on: '2026-09-11'
+- id: tokushima-363413
+  name: 石井町空き家バンク
+  operator: 石井町
+  operator_kind: municipality
+  official_url: https://www.town.ishii.lg.jp/
+  policy: crawl
+  municipality:
+    code: '363413'
+    name: 石井町
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '363413'
+    bank_url: https://www.town.ishii.lg.jp/docs/2025022700019/
+    bank_status: available
+    map_query: 徳島県石井町
+  operator_evidence:
+    quote: 公式ドメイン www.town.ishii.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.ishii.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.ishii.lg.jp/docs/2025022700019/
+    kind: listing_index
+  allow_hosts:
+  - www.town.ishii.lg.jp
+  max_pages: 30
+- id: tokushima-363421
+  name: 神山町空き家バンク
+  operator: 神山町
+  operator_kind: municipality
+  official_url: https://www.town.kamiyama.lg.jp/
+  policy: link_only
+  municipality:
+    code: '363421'
+    name: 神山町
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '363421'
+    bank_url: https://www.town.kamiyama.lg.jp/vacanthouse/
+    bank_status: info
+    map_query: 徳島県神山町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kamiyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kamiyama.lg.jp/
+    checked_on: '2026-09-11'
+- id: tokushima-363685
+  name: 那賀町空き家バンク
+  operator: 那賀町
+  operator_kind: municipality
+  official_url: https://www.town.tokushima-naka.lg.jp/
+  policy: crawl
+  municipality:
+    code: '363685'
+    name: 那賀町
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '363685'
+    bank_url: https://www.town.tokushima-naka.lg.jp/iju/iinaka-kurashi/sumai/akiya/index.html
+    bank_status: available
+    map_query: 徳島県那賀町
+  operator_evidence:
+    quote: 徳島県の市町村一覧に掲載された公式サイト（www.town.tokushima-naka.lg.jp）
+    url: https://www.pref.tokushima.lg.jp/kenseijoho/kanrennochiiki/shichouson/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.tokushima-naka.lg.jp/iju/iinaka-kurashi/sumai/akiya/index.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.tokushima-naka.lg.jp
+  max_pages: 30
+- id: tokushima-363839
+  name: 牟岐町空き家バンク
+  operator: 牟岐町
+  operator_kind: municipality
+  official_url: https://www.town.tokushima-mugi.lg.jp/
+  policy: crawl
+  municipality:
+    code: '363839'
+    name: 牟岐町
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '363839'
+    bank_url: https://www.town.tokushima-mugi.lg.jp/doc/2024112500010/
+    bank_status: available
+    map_query: 徳島県牟岐町
+  operator_evidence:
+    quote: 徳島県の市町村一覧に掲載された公式サイト（www.town.tokushima-mugi.lg.jp）
+    url: https://www.pref.tokushima.lg.jp/kenseijoho/kanrennochiiki/shichouson/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.tokushima-mugi.lg.jp/doc/2024112500010/
+    kind: listing_index
+  allow_hosts:
+  - www.town.tokushima-mugi.lg.jp
+  max_pages: 30
+- id: tokushima-363871
+  name: 美波町空き家バンク
+  operator: 美波町
+  operator_kind: municipality
+  official_url: https://www.town.minami.lg.jp/
+  policy: crawl
+  municipality:
+    code: '363871'
+    name: 美波町
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '363871'
+    bank_url: https://www.town.minami.lg.jp/docs/4937966.html
+    bank_status: available
+    map_query: 徳島県美波町
+  operator_evidence:
+    quote: 公式ドメイン www.town.minami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.minami.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.minami.lg.jp/docs/4937966.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.minami.lg.jp
+  max_pages: 30
+- id: tokushima-363880
+  name: 海陽町空き家バンク
+  operator: 海陽町
+  operator_kind: municipality
+  official_url: https://www.town.kaiyo.lg.jp/
+  policy: crawl
+  municipality:
+    code: '363880'
+    name: 海陽町
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '363880'
+    bank_url: https://www.town.kaiyo.lg.jp/docs/2016040400050/
+    bank_status: available
+    map_query: 徳島県海陽町
+  operator_evidence:
+    quote: 公式ドメイン www.town.kaiyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kaiyo.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.kaiyo.lg.jp/docs/2016040400050/
+    kind: listing_index
+  allow_hosts:
+  - www.town.kaiyo.lg.jp
+  max_pages: 30
+- id: tokushima-364011
+  name: 松茂町空き家バンク
+  operator: 松茂町
+  operator_kind: municipality
+  official_url: https://www.town.matsushige.tokushima.jp/
+  policy: link_only
+  municipality:
+    code: '364011'
+    name: 松茂町
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '364011'
+    bank_url: https://www.town.matsushige.tokushima.jp/
+    bank_status: none
+    map_query: 徳島県松茂町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.matsushige.tokushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.matsushige.tokushima.jp/
+    checked_on: '2026-09-11'
+- id: tokushima-364029
+  name: 北島町空き家バンク
+  operator: 北島町
+  operator_kind: municipality
+  official_url: https://www.town.kitajima.lg.jp/
+  policy: link_only
+  municipality:
+    code: '364029'
+    name: 北島町
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '364029'
+    bank_url: https://www.town.kitajima.lg.jp/docs/5096459.html
+    bank_status: info
+    map_query: 徳島県北島町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kitajima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kitajima.lg.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: 北島町空き家・空き地バンク（全国版　at home）
+    url: https://kitajima-t36402.akiya-athome.jp/
+- id: tokushima-364037
+  name: 藍住町空き家バンク
+  operator: 藍住町
+  operator_kind: municipality
+  official_url: https://www.town.aizumi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '364037'
+    name: 藍住町
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '364037'
+    bank_url: https://www.town.aizumi.lg.jp/
+    bank_status: none
+    map_query: 徳島県藍住町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.aizumi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.aizumi.lg.jp/
+    checked_on: '2026-09-11'
+- id: tokushima-364045
+  name: 板野町空き家バンク
+  operator: 板野町
+  operator_kind: municipality
+  official_url: https://www.town.itano.tokushima.jp/
+  policy: link_only
+  municipality:
+    code: '364045'
+    name: 板野町
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '364045'
+    bank_url: https://www.town.itano.tokushima.jp/
+    bank_status: none
+    map_query: 徳島県板野町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 徳島県の市町村一覧に掲載された公式サイト（www.town.itano.tokushima.jp）
+    url: https://www.pref.tokushima.lg.jp/kenseijoho/kanrennochiiki/shichouson/
+    checked_on: '2026-09-11'
+- id: tokushima-364053
+  name: 上板町空き家バンク
+  operator: 上板町
+  operator_kind: municipality
+  official_url: https://www.townkamiita.jp/
+  policy: link_only
+  municipality:
+    code: '364053'
+    name: 上板町
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '364053'
+    bank_url: https://www.townkamiita.jp/docs/2022090200014/
+    bank_status: info
+    map_query: 徳島県上板町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 徳島県の市町村一覧に掲載された公式サイト（www.townkamiita.jp）
+    url: https://www.pref.tokushima.lg.jp/kenseijoho/kanrennochiiki/shichouson/
+    checked_on: '2026-09-11'
+- id: tokushima-364681
+  name: つるぎ町空き家バンク
+  operator: つるぎ町
+  operator_kind: municipality
+  official_url: https://www.town.tokushima-tsurugi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '364681'
+    name: つるぎ町
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '364681'
+    bank_url: https://www.town.tokushima-tsurugi.lg.jp/
+    bank_status: none
+    map_query: 徳島県つるぎ町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 徳島県の市町村一覧に掲載された公式サイト（www.town.tokushima-tsurugi.lg.jp）
+    url: https://www.pref.tokushima.lg.jp/kenseijoho/kanrennochiiki/shichouson/
+    checked_on: '2026-09-11'
+- id: tokushima-364894
+  name: 東みよし町空き家バンク
+  operator: 東みよし町
+  operator_kind: municipality
+  official_url: https://www.town.higashimiyoshi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '364894'
+    name: 東みよし町
+    prefecture: 徳島県
+    prefecture_slug: tokushima
+    slug: '364894'
+    bank_url: https://www.town.higashimiyoshi.lg.jp/docs/457083.html
+    bank_status: info
+    map_query: 徳島県東みよし町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.higashimiyoshi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.higashimiyoshi.lg.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: 空き家バンク
+    url: http://www.homes.co.jp/akiyabank/tokushima/miyoshi_higashimiyoshi/

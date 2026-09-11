@@ -1,0 +1,1189 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: chiba-121002
+  name: 千葉市空き家バンク
+  operator: 千葉市
+  operator_kind: municipality
+  official_url: https://www.city.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '121002'
+    name: 千葉市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '121002'
+    bank_url: https://www.city.chiba.jp/
+    bank_status: none
+    map_query: 千葉県千葉市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 千葉県 市町村一覧に掲載された公式サイト（www.city.chiba.jp）
+    url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
+    checked_on: '2026-09-11'
+- id: chiba-122025
+  name: 銚子市空き家バンク
+  operator: 銚子市
+  operator_kind: municipality
+  official_url: https://www.city.choshi.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '122025'
+    name: 銚子市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122025'
+    bank_url: https://www.city.choshi.chiba.jp/
+    bank_status: none
+    map_query: 千葉県銚子市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.choshi.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.choshi.chiba.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122033
+  name: 市川市空き家バンク
+  operator: 市川市
+  operator_kind: municipality
+  official_url: https://www.city.ichikawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '122033'
+    name: 市川市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122033'
+    bank_url: https://www.city.ichikawa.lg.jp/
+    bank_status: none
+    map_query: 千葉県市川市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ichikawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.ichikawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122041
+  name: 船橋市空き家バンク
+  operator: 船橋市
+  operator_kind: municipality
+  official_url: https://www.city.funabashi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '122041'
+    name: 船橋市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122041'
+    bank_url: https://www.city.funabashi.lg.jp/
+    bank_status: none
+    map_query: 千葉県船橋市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.funabashi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.funabashi.lg.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122050
+  name: 館山市空き家バンク
+  operator: 館山市
+  operator_kind: municipality
+  official_url: https://www.city.tateyama.chiba.jp/
+  policy: crawl
+  municipality:
+    code: '122050'
+    name: 館山市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122050'
+    bank_url: https://www.city.tateyama.chiba.jp/kenchikushisetsu/page100050.html
+    bank_status: available
+    map_query: 千葉県館山市
+  operator_evidence:
+    quote: 公式ドメイン www.city.tateyama.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.tateyama.chiba.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.tateyama.chiba.jp/kenchikushisetsu/page100050.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.tateyama.chiba.jp
+  max_pages: 30
+- id: chiba-122068
+  name: 木更津市空き家バンク
+  operator: 木更津市
+  operator_kind: municipality
+  official_url: https://www.city.kisarazu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '122068'
+    name: 木更津市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122068'
+    bank_url: https://www.city.kisarazu.lg.jp/
+    bank_status: none
+    map_query: 千葉県木更津市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kisarazu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kisarazu.lg.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122076
+  name: 松戸市空き家バンク
+  operator: 松戸市
+  operator_kind: municipality
+  official_url: https://www.city.matsudo.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '122076'
+    name: 松戸市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122076'
+    bank_url: https://www.city.matsudo.chiba.jp/
+    bank_status: none
+    map_query: 千葉県松戸市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.matsudo.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.matsudo.chiba.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122084
+  name: 野田市空き家バンク
+  operator: 野田市
+  operator_kind: municipality
+  official_url: https://www.city.noda.chiba.jp/
+  policy: crawl
+  municipality:
+    code: '122084'
+    name: 野田市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122084'
+    bank_url: https://www.city.noda.chiba.jp/kurashi/anzen/bouhan/1008726.html
+    bank_status: available
+    map_query: 千葉県野田市
+  operator_evidence:
+    quote: 公式ドメイン www.city.noda.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.noda.chiba.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.noda.chiba.jp/kurashi/anzen/bouhan/1008726.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.noda.chiba.jp
+  max_pages: 30
+- id: chiba-122106
+  name: 茂原市空き家バンク
+  operator: 茂原市
+  operator_kind: municipality
+  official_url: https://www.city.mobara.chiba.jp/
+  policy: crawl
+  municipality:
+    code: '122106'
+    name: 茂原市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122106'
+    bank_url: https://www.city.mobara.chiba.jp/0000007702.html
+    bank_status: available
+    map_query: 千葉県茂原市
+  operator_evidence:
+    quote: 公式ドメイン www.city.mobara.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.mobara.chiba.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.mobara.chiba.jp/0000007702.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.mobara.chiba.jp
+  max_pages: 30
+- id: chiba-122114
+  name: 成田市空き家バンク
+  operator: 成田市
+  operator_kind: municipality
+  official_url: https://www.city.narita.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '122114'
+    name: 成田市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122114'
+    bank_url: https://www.city.narita.chiba.jp/
+    bank_status: none
+    map_query: 千葉県成田市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.narita.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.narita.chiba.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122122
+  name: 佐倉市空き家バンク
+  operator: 佐倉市
+  operator_kind: municipality
+  official_url: https://www.city.sakura.lg.jp/
+  policy: link_only
+  municipality:
+    code: '122122'
+    name: 佐倉市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122122'
+    bank_url: https://www.city.sakura.lg.jp/
+    bank_status: none
+    map_query: 千葉県佐倉市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.sakura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.sakura.lg.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122131
+  name: 東金市空き家バンク
+  operator: 東金市
+  operator_kind: municipality
+  official_url: https://www.city.togane.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '122131'
+    name: 東金市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122131'
+    bank_url: https://www.city.togane.chiba.jp/0000005297.html
+    bank_status: info
+    map_query: 千葉県東金市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.togane.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.togane.chiba.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122157
+  name: 旭市空き家バンク
+  operator: 旭市
+  operator_kind: municipality
+  official_url: https://www.city.asahi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '122157'
+    name: 旭市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122157'
+    bank_url: https://www.city.asahi.lg.jp/
+    bank_status: none
+    map_query: 千葉県旭市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.asahi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.asahi.lg.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122165
+  name: 習志野市空き家バンク
+  operator: 習志野市
+  operator_kind: municipality
+  official_url: https://www.city.narashino.lg.jp/
+  policy: link_only
+  municipality:
+    code: '122165'
+    name: 習志野市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122165'
+    bank_url: https://www.city.narashino.lg.jp/
+    bank_status: none
+    map_query: 千葉県習志野市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.narashino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.narashino.lg.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122173
+  name: 柏市空き家バンク
+  operator: 柏市
+  operator_kind: municipality
+  official_url: https://www.city.kashiwa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '122173'
+    name: 柏市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122173'
+    bank_url: https://www.city.kashiwa.lg.jp/jutaku/living_environment/jutaku/akiya/index.html
+    bank_status: spa_unsupported
+    map_query: 千葉県柏市
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kashiwa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kashiwa.lg.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122181
+  name: 勝浦市空き家バンク
+  operator: 勝浦市
+  operator_kind: municipality
+  official_url: https://www.city.katsuura.lg.jp/
+  policy: link_only
+  municipality:
+    code: '122181'
+    name: 勝浦市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122181'
+    bank_url: https://www.city.katsuura.lg.jp/
+    bank_status: none
+    map_query: 千葉県勝浦市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.katsuura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.katsuura.lg.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122190
+  name: 市原市空き家バンク
+  operator: 市原市
+  operator_kind: municipality
+  official_url: https://www.city.ichihara.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '122190'
+    name: 市原市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122190'
+    bank_url: https://www.city.ichihara.chiba.jp/
+    bank_status: none
+    map_query: 千葉県市原市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ichihara.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.ichihara.chiba.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122203
+  name: 流山市空き家バンク
+  operator: 流山市
+  operator_kind: municipality
+  official_url: https://www.city.nagareyama.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '122203'
+    name: 流山市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122203'
+    bank_url: https://www.city.nagareyama.chiba.jp/
+    bank_status: none
+    map_query: 千葉県流山市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nagareyama.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.nagareyama.chiba.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122211
+  name: 八千代市空き家バンク
+  operator: 八千代市
+  operator_kind: municipality
+  official_url: https://www.city.yachiyo.lg.jp/
+  policy: link_only
+  municipality:
+    code: '122211'
+    name: 八千代市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122211'
+    bank_url: https://www.city.yachiyo.lg.jp/life/1/16/211/
+    bank_status: info
+    map_query: 千葉県八千代市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yachiyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.yachiyo.lg.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122220
+  name: 我孫子市空き家バンク
+  operator: 我孫子市
+  operator_kind: municipality
+  official_url: https://www.city.abiko.chiba.jp/
+  policy: crawl
+  municipality:
+    code: '122220'
+    name: 我孫子市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122220'
+    bank_url: https://www.city.abiko.chiba.jp/kurashi/sumai/abikoshi_akiyabanku.html
+    bank_status: available
+    map_query: 千葉県我孫子市
+  operator_evidence:
+    quote: 公式ドメイン www.city.abiko.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.abiko.chiba.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.abiko.chiba.jp/kurashi/sumai/abikoshi_akiyabanku.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.abiko.chiba.jp
+  max_pages: 30
+  external_links:
+  - label: 我孫子市空き家バンク（全国版）アットホームから見る（外部サイト）
+    url: https://abiko-c12222.akiya-athome.jp/
+  - label: 我孫子市空き家バンク（全国版）LIFULLから見る（外部サイト）
+    url: https://www.homes.co.jp/akiyabank/chiba/abiko/
+- id: chiba-122238
+  name: 鴨川市空き家バンク
+  operator: 鴨川市
+  operator_kind: municipality
+  official_url: https://www.city.kamogawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '122238'
+    name: 鴨川市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122238'
+    bank_url: https://www.city.kamogawa.lg.jp/
+    bank_status: none
+    map_query: 千葉県鴨川市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kamogawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kamogawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122246
+  name: 鎌ケ谷市空き家バンク
+  operator: 鎌ケ谷市
+  operator_kind: municipality
+  official_url: https://www.city.kamagaya.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '122246'
+    name: 鎌ケ谷市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122246'
+    bank_url: https://www.city.kamagaya.chiba.jp/
+    bank_status: none
+    map_query: 千葉県鎌ケ谷市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kamagaya.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kamagaya.chiba.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122254
+  name: 君津市空き家バンク
+  operator: 君津市
+  operator_kind: municipality
+  official_url: https://www.city.kimitsu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '122254'
+    name: 君津市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122254'
+    bank_url: https://www.city.kimitsu.lg.jp/
+    bank_status: none
+    map_query: 千葉県君津市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kimitsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kimitsu.lg.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122262
+  name: 富津市空き家バンク
+  operator: 富津市
+  operator_kind: municipality
+  official_url: https://www.city.futtsu.lg.jp/
+  policy: crawl
+  municipality:
+    code: '122262'
+    name: 富津市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122262'
+    bank_url: http://www.city.futtsu.lg.jp/0000007202.html
+    bank_status: available
+    map_query: 千葉県富津市
+  operator_evidence:
+    quote: 公式ドメイン www.city.futtsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.futtsu.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: http://www.city.futtsu.lg.jp/0000007202.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.futtsu.lg.jp
+  max_pages: 30
+  external_links:
+  - label: アットホーム空き家バンク （別ウインドウで開く）
+    url: https://futtsu-c12226.akiya-athome.jp/bukken/detail/buy/34071
+  - label: LIFULL HOME'S空き家バンク （別ウインドウで開く）
+    url: https://www.homes.co.jp/akiyabank/b-37324/
+- id: chiba-122271
+  name: 浦安市空き家バンク
+  operator: 浦安市
+  operator_kind: municipality
+  official_url: https://www.city.urayasu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '122271'
+    name: 浦安市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122271'
+    bank_url: https://www.city.urayasu.lg.jp/
+    bank_status: none
+    map_query: 千葉県浦安市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.urayasu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.urayasu.lg.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122289
+  name: 四街道市空き家バンク
+  operator: 四街道市
+  operator_kind: municipality
+  official_url: https://www.city.yotsukaido.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '122289'
+    name: 四街道市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122289'
+    bank_url: https://www.city.yotsukaido.chiba.jp/
+    bank_status: none
+    map_query: 千葉県四街道市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yotsukaido.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.yotsukaido.chiba.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122297
+  name: 袖ケ浦市空き家バンク
+  operator: 袖ケ浦市
+  operator_kind: municipality
+  official_url: https://www.city.sodegaura.lg.jp/
+  policy: crawl
+  municipality:
+    code: '122297'
+    name: 袖ケ浦市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122297'
+    bank_url: https://www.city.sodegaura.lg.jp/soshiki/toshi/bankjyouhoichiran.html
+    bank_status: available
+    map_query: 千葉県袖ケ浦市
+  operator_evidence:
+    quote: 公式ドメイン www.city.sodegaura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.sodegaura.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.sodegaura.lg.jp/soshiki/toshi/bankjyouhoichiran.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.sodegaura.lg.jp
+  max_pages: 30
+  external_links:
+  - label: 全国版空き家バンクトップページ（アットホーム）のリンク
+    url: https://sodegaura-c12229.akiya-athome.jp/
+  - label: 全国版空き家バンクトップぺージ（ライフルホームズ）のリンク
+    url: https://www.homes.co.jp/akiyabank/chiba/sodegaura/
+- id: chiba-122301
+  name: 八街市空き家バンク
+  operator: 八街市
+  operator_kind: municipality
+  official_url: https://www.city.yachimata.lg.jp/
+  policy: link_only
+  municipality:
+    code: '122301'
+    name: 八街市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122301'
+    bank_url: https://www.city.yachimata.lg.jp/
+    bank_status: none
+    map_query: 千葉県八街市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yachimata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.yachimata.lg.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122319
+  name: 印西市空き家バンク
+  operator: 印西市
+  operator_kind: municipality
+  official_url: https://www.city.inzai.lg.jp/
+  policy: link_only
+  municipality:
+    code: '122319'
+    name: 印西市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122319'
+    bank_url: https://www.city.inzai.lg.jp/
+    bank_status: none
+    map_query: 千葉県印西市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.inzai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.inzai.lg.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122327
+  name: 白井市空き家バンク
+  operator: 白井市
+  operator_kind: municipality
+  official_url: https://www.city.shiroi.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '122327'
+    name: 白井市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122327'
+    bank_url: https://www.city.shiroi.chiba.jp/
+    bank_status: none
+    map_query: 千葉県白井市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.shiroi.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.shiroi.chiba.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122335
+  name: 富里市空き家バンク
+  operator: 富里市
+  operator_kind: municipality
+  official_url: https://www.city.tomisato.lg.jp/
+  policy: link_only
+  municipality:
+    code: '122335'
+    name: 富里市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122335'
+    bank_url: https://www.city.tomisato.lg.jp/0000009699.html
+    bank_status: info
+    map_query: 千葉県富里市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tomisato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.tomisato.lg.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: 全国版空き家バンク(LIFFUL HOME'S) （別ウインドウで開く）
+    url: https://www.homes.co.jp/akiyabank/chiba/tomisato/
+  - label: 全国版空き家バンク(at home) （別ウインドウで開く）
+    url: https://www.akiya-athome.jp/buy/12/
+- id: chiba-122343
+  name: 南房総市空き家バンク
+  operator: 南房総市
+  operator_kind: municipality
+  official_url: https://www.city.minamiboso.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '122343'
+    name: 南房総市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122343'
+    bank_url: https://www.city.minamiboso.chiba.jp/
+    bank_status: none
+    map_query: 千葉県南房総市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.minamiboso.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.minamiboso.chiba.jp/
+    checked_on: '2026-09-11'
+- id: chiba-122351
+  name: 匝瑳市空き家バンク
+  operator: 匝瑳市
+  operator_kind: municipality
+  official_url: https://www.city.sosa.lg.jp/
+  policy: crawl
+  municipality:
+    code: '122351'
+    name: 匝瑳市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122351'
+    bank_url: https://www.city.sosa.lg.jp/page/page000263.html
+    bank_status: available
+    map_query: 千葉県匝瑳市
+  operator_evidence:
+    quote: 公式ドメイン www.city.sosa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.sosa.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.sosa.lg.jp/page/page000263.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.sosa.lg.jp
+  max_pages: 30
+- id: chiba-122360
+  name: 香取市空き家バンク
+  operator: 香取市
+  operator_kind: municipality
+  official_url: https://www.city.katori.lg.jp/
+  policy: crawl
+  municipality:
+    code: '122360'
+    name: 香取市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122360'
+    bank_url: https://www.city.katori.lg.jp/sightseeing/matsuri/introduction/aki.html
+    bank_status: available
+    map_query: 千葉県香取市
+  operator_evidence:
+    quote: 公式ドメイン www.city.katori.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.katori.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.katori.lg.jp/sightseeing/matsuri/introduction/aki.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.katori.lg.jp
+  max_pages: 30
+- id: chiba-122378
+  name: 山武市空き家バンク
+  operator: 山武市
+  operator_kind: municipality
+  official_url: https://www.city.sammu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '122378'
+    name: 山武市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122378'
+    bank_url: https://www.city.sammu.lg.jp/kurashi/jyutaku/akiya/
+    bank_status: info
+    map_query: 千葉県山武市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 千葉県 市町村一覧に掲載された公式サイト（www.city.sammu.lg.jp）
+    url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
+    checked_on: '2026-09-11'
+- id: chiba-122386
+  name: いすみ市空き家バンク
+  operator: いすみ市
+  operator_kind: municipality
+  official_url: https://www.city.isumi.lg.jp/
+  policy: crawl
+  municipality:
+    code: '122386'
+    name: いすみ市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122386'
+    bank_url: https://www.city.isumi.lg.jp/soshikikarasagasu/shogaigakushuka/misakikominkan/1/2/6877.html
+    bank_status: available
+    map_query: 千葉県いすみ市
+  operator_evidence:
+    quote: 公式ドメイン www.city.isumi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.isumi.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.isumi.lg.jp/soshikikarasagasu/shogaigakushuka/misakikominkan/1/2/6877.html
+    kind: listing_index
+    follow:
+    - pattern: https?://www\.city\.isumi\.lg\.jp/soshikikarasagasu/shogaigakushuka/misakikominkan/1/2/6877\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - www.city.isumi.lg.jp
+  max_pages: 30
+- id: chiba-122394
+  name: 大網白里市空き家バンク
+  operator: 大網白里市
+  operator_kind: municipality
+  official_url: https://www.city.oamishirasato.lg.jp/
+  policy: link_only
+  municipality:
+    code: '122394'
+    name: 大網白里市
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '122394'
+    bank_url: https://www.city.oamishirasato.lg.jp/
+    bank_status: none
+    map_query: 千葉県大網白里市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.oamishirasato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.oamishirasato.lg.jp/
+    checked_on: '2026-09-11'
+- id: chiba-123226
+  name: 酒々井町空き家バンク
+  operator: 酒々井町
+  operator_kind: municipality
+  official_url: https://www.town.shisui.chiba.jp/
+  policy: crawl
+  municipality:
+    code: '123226'
+    name: 酒々井町
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '123226'
+    bank_url: https://www.town.shisui.chiba.jp/docs/2021070200020/
+    bank_status: available
+    map_query: 千葉県酒々井町
+  operator_evidence:
+    quote: 公式ドメイン www.town.shisui.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.shisui.chiba.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.shisui.chiba.jp/docs/2021070200020/
+    kind: listing_index
+  allow_hosts:
+  - www.town.shisui.chiba.jp
+  max_pages: 30
+- id: chiba-123293
+  name: 栄町空き家バンク
+  operator: 栄町
+  operator_kind: municipality
+  official_url: https://www.town.sakae.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '123293'
+    name: 栄町
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '123293'
+    bank_url: https://www.town.sakae.chiba.jp/kurashi/seikatsukankyo/page006892.html
+    bank_status: info
+    map_query: 千葉県栄町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.sakae.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.sakae.chiba.jp/
+    checked_on: '2026-09-11'
+- id: chiba-123421
+  name: 神崎町空き家バンク
+  operator: 神崎町
+  operator_kind: municipality
+  official_url: https://www.town.kozaki.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '123421'
+    name: 神崎町
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '123421'
+    bank_url: https://www.town.kozaki.chiba.jp/
+    bank_status: none
+    map_query: 千葉県神崎町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kozaki.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kozaki.chiba.jp/
+    checked_on: '2026-09-11'
+- id: chiba-123471
+  name: 多古町空き家バンク
+  operator: 多古町
+  operator_kind: municipality
+  official_url: https://www.town.tako.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '123471'
+    name: 多古町
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '123471'
+    bank_url: https://www.town.tako.chiba.jp/category/bunya/toshiseibi/bank/
+    bank_status: info
+    map_query: 千葉県多古町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.tako.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.tako.chiba.jp/
+    checked_on: '2026-09-11'
+- id: chiba-123498
+  name: 東庄町空き家バンク
+  operator: 東庄町
+  operator_kind: municipality
+  official_url: https://www.town.tohnosho.chiba.jp/
+  policy: crawl
+  municipality:
+    code: '123498'
+    name: 東庄町
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '123498'
+    bank_url: https://www.town.tohnosho.chiba.jp/cgi-bin/recruit.php/1/list?page_no=73
+    bank_status: available
+    map_query: 千葉県東庄町
+  operator_evidence:
+    quote: 千葉県 市町村一覧に掲載された公式サイト（www.town.tohnosho.chiba.jp）
+    url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.tohnosho.chiba.jp/cgi-bin/recruit.php/1/list?page_no=73
+    kind: listing_index
+    follow:
+    - pattern: https?://www\.town\.tohnosho\.chiba\.jp/cgi\-bin/recruit\.php/1/list/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - www.town.tohnosho.chiba.jp
+  max_pages: 30
+- id: chiba-124036
+  name: 九十九里町空き家バンク
+  operator: 九十九里町
+  operator_kind: municipality
+  official_url: https://www.town.kujukuri.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '124036'
+    name: 九十九里町
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '124036'
+    bank_url: https://www.town.kujukuri.chiba.jp/
+    bank_status: none
+    map_query: 千葉県九十九里町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 千葉県 市町村一覧に掲載された公式サイト（www.town.kujukuri.chiba.jp）
+    url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
+    checked_on: '2026-09-11'
+- id: chiba-124095
+  name: 芝山町空き家バンク
+  operator: 芝山町
+  operator_kind: municipality
+  official_url: https://www.town.shibayama.lg.jp/
+  policy: link_only
+  municipality:
+    code: '124095'
+    name: 芝山町
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '124095'
+    bank_url: https://www.town.shibayama.lg.jp/category/22-3-9-3-0-0-0-0-0-0.html
+    bank_status: info
+    map_query: 千葉県芝山町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shibayama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.shibayama.lg.jp/
+    checked_on: '2026-09-11'
+- id: chiba-124109
+  name: 横芝光町空き家バンク
+  operator: 横芝光町
+  operator_kind: municipality
+  official_url: https://www.town.yokoshibahikari.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '124109'
+    name: 横芝光町
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '124109'
+    bank_url: https://www.town.yokoshibahikari.chiba.jp/
+    bank_status: none
+    map_query: 千葉県横芝光町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yokoshibahikari.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.yokoshibahikari.chiba.jp/
+    checked_on: '2026-09-11'
+- id: chiba-124214
+  name: 一宮町空き家バンク
+  operator: 一宮町
+  operator_kind: municipality
+  official_url: https://www.town.ichinomiya.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '124214'
+    name: 一宮町
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '124214'
+    bank_url: https://www.town.ichinomiya.chiba.jp/
+    bank_status: none
+    map_query: 千葉県一宮町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ichinomiya.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.ichinomiya.chiba.jp/
+    checked_on: '2026-09-11'
+- id: chiba-124222
+  name: 睦沢町空き家バンク
+  operator: 睦沢町
+  operator_kind: municipality
+  official_url: https://www.town.mutsuzawa.chiba.jp/
+  policy: crawl
+  municipality:
+    code: '124222'
+    name: 睦沢町
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '124222'
+    bank_url: https://www.town.mutsuzawa.chiba.jp/akiya
+    bank_status: available
+    map_query: 千葉県睦沢町
+  operator_evidence:
+    quote: 公式ドメイン www.town.mutsuzawa.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.mutsuzawa.chiba.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.mutsuzawa.chiba.jp/akiya
+    kind: listing_index
+    follow:
+    - pattern: https?://www\.town\.mutsuzawa\.chiba\.jp/akiya/page/\d+/?$
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - www.town.mutsuzawa.chiba.jp
+  max_pages: 30
+- id: chiba-124231
+  name: 長生村空き家バンク
+  operator: 長生村
+  operator_kind: municipality
+  official_url: https://www.vill.chosei.chiba.jp/
+  policy: crawl
+  municipality:
+    code: '124231'
+    name: 長生村
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '124231'
+    bank_url: https://www.vill.chosei.chiba.jp/0000001054.html
+    bank_status: available
+    map_query: 千葉県長生村
+  operator_evidence:
+    quote: 公式ドメイン www.vill.chosei.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.chosei.chiba.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.vill.chosei.chiba.jp/0000001054.html
+    kind: listing_detail
+  allow_hosts:
+  - www.vill.chosei.chiba.jp
+  max_pages: 30
+- id: chiba-124249
+  name: 白子町空き家バンク
+  operator: 白子町
+  operator_kind: municipality
+  official_url: https://www.town.shirako.lg.jp/
+  policy: crawl
+  municipality:
+    code: '124249'
+    name: 白子町
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '124249'
+    bank_url: http://www.town.shirako.lg.jp/0000002357.html
+    bank_status: available
+    map_query: 千葉県白子町
+  operator_evidence:
+    quote: 公式ドメイン www.town.shirako.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.shirako.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: http://www.town.shirako.lg.jp/0000002357.html
+    kind: listing_detail
+  allow_hosts:
+  - www.town.shirako.lg.jp
+  max_pages: 30
+- id: chiba-124265
+  name: 長柄町空き家バンク
+  operator: 長柄町
+  operator_kind: municipality
+  official_url: https://www.town.nagara.chiba.jp/
+  policy: crawl
+  municipality:
+    code: '124265'
+    name: 長柄町
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '124265'
+    bank_url: https://www.town.nagara.chiba.jp/soshiki/2/1628.html
+    bank_status: available
+    map_query: 千葉県長柄町
+  operator_evidence:
+    quote: 公式ドメイン www.town.nagara.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.nagara.chiba.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.nagara.chiba.jp/soshiki/2/1628.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.nagara.chiba.jp
+  max_pages: 30
+- id: chiba-124273
+  name: 長南町空き家バンク
+  operator: 長南町
+  operator_kind: municipality
+  official_url: https://www.town.chonan.lg.jp/
+  policy: link_only
+  municipality:
+    code: '124273'
+    name: 長南町
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '124273'
+    bank_url: https://www.town.chonan.lg.jp/
+    bank_status: none
+    map_query: 千葉県長南町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.chonan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.chonan.lg.jp/
+    checked_on: '2026-09-11'
+- id: chiba-124419
+  name: 大多喜町空き家バンク
+  operator: 大多喜町
+  operator_kind: municipality
+  official_url: https://www.town.otaki.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '124419'
+    name: 大多喜町
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '124419'
+    bank_url: https://www.town.otaki.chiba.jp/
+    bank_status: none
+    map_query: 千葉県大多喜町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.otaki.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.otaki.chiba.jp/
+    checked_on: '2026-09-11'
+- id: chiba-124435
+  name: 御宿町空き家バンク
+  operator: 御宿町
+  operator_kind: municipality
+  official_url: https://www.town.onjuku.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '124435'
+    name: 御宿町
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '124435'
+    bank_url: https://www.town.onjuku.chiba.jp/
+    bank_status: none
+    map_query: 千葉県御宿町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 千葉県 市町村一覧に掲載された公式サイト（www.town.onjuku.chiba.jp）
+    url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
+    checked_on: '2026-09-11'
+- id: chiba-124630
+  name: 鋸南町空き家バンク
+  operator: 鋸南町
+  operator_kind: municipality
+  official_url: https://www.town.kyonan.chiba.jp/
+  policy: link_only
+  municipality:
+    code: '124630'
+    name: 鋸南町
+    prefecture: 千葉県
+    prefecture_slug: chiba
+    slug: '124630'
+    bank_url: https://www.town.kyonan.chiba.jp/soshiki/10/1570.html
+    bank_status: info
+    map_query: 千葉県鋸南町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 千葉県 市町村一覧に掲載された公式サイト（www.town.kyonan.chiba.jp）
+    url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
+    checked_on: '2026-09-11'

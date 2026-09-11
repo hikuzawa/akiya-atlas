@@ -1,0 +1,368 @@
+prefecture: 京都府
+prefecture_slug: kyoto
+created_at: '2026-09-10T23:25:58+00:00'
+candidates:
+- key: '261009'
+  label: 京都府 京都市
+  url: https://www.city.kyoto.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kyoto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kyoto.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '262013'
+  label: 京都府 福知山市
+  url: https://www.city.fukuchiyama.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.fukuchiyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.fukuchiyama.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '262021'
+  label: 京都府 舞鶴市
+  url: https://www.city.maizuru.kyoto.jp/kurashi/category/8-6-14-1-0-0-0-0-0-0.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.maizuru.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.maizuru.kyoto.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '262030'
+  label: 京都府 綾部市
+  url: https://www.city.ayabe.lg.jp/0000005221.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ayabe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.ayabe.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '262048'
+  label: 京都府 宇治市
+  url: https://www.city.uji.kyoto.jp/soshiki/48/77988.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.uji.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.uji.kyoto.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '262056'
+  label: 京都府 宮津市
+  url: https://www.city.miyazu.kyoto.jp/life/1/5/23/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.miyazu.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.miyazu.kyoto.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '262064'
+  label: 京都府 亀岡市
+  url: https://www.city.kameoka.kyoto.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kameoka.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kameoka.kyoto.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '262072'
+  label: 京都府 城陽市
+  url: https://www.city.joyo.kyoto.jp/category/6-37-4-0-0-0-0-0-0-0.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.joyo.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.joyo.kyoto.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '262081'
+  label: 京都府 向日市
+  url: https://www.city.muko.kyoto.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.muko.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.muko.kyoto.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '262099'
+  label: 京都府 長岡京市
+  url: https://www.city.nagaokakyo.lg.jp/0000015859.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nagaokakyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.nagaokakyo.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '262102'
+  label: 京都府 八幡市
+  url: https://www.city.yawata.kyoto.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yawata.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.yawata.kyoto.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '262111'
+  label: 京都府 京田辺市
+  url: https://www.city.kyotanabe.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kyotanabe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kyotanabe.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '262129'
+  label: 京都府 京丹後市
+  url: https://www.city.kyotango.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kyotango.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kyotango.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '262137'
+  label: 京都府 南丹市
+  url: https://www.city.nantan.kyoto.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nantan.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.nantan.kyoto.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '262145'
+  label: 京都府 木津川市
+  url: https://www.city.kizugawa.lg.jp/0000001274.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kizugawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kizugawa.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '263036'
+  label: 京都府 大山崎町
+  url: https://www.town.oyamazaki.kyoto.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.oyamazaki.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.oyamazaki.kyoto.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '263222'
+  label: 京都府 久御山町
+  url: https://www.town.kumiyama.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kumiyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kumiyama.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '263435'
+  label: 京都府 井手町
+  url: https://www.town.ide.kyoto.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ide.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ide.kyoto.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '263443'
+  label: 京都府 宇治田原町
+  url: https://www.town.ujitawara.kyoto.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ujitawara.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ujitawara.kyoto.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '263648'
+  label: 京都府 笠置町
+  url: https://www.town.kasagi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kasagi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kasagi.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '263656'
+  label: 京都府 和束町
+  url: https://www.town.wazuka.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.wazuka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.wazuka.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '263664'
+  label: 京都府 精華町
+  url: https://www.town.seika.kyoto.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.seika.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.seika.kyoto.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '263672'
+  label: 京都府 南山城村
+  url: https://www.vill.minamiyamashiro.lg.jp/0000001383.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.88
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.minamiyamashiro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.minamiyamashiro.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '264075'
+  label: 京都府 京丹波町
+  url: https://www.town.kyotamba.kyoto.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 京都府 府内市町村・官公庁・都道府県等に掲載された公式サイト（www.town.kyotamba.kyoto.jp）
+  evidence_url: https://www.pref.kyoto.jp/link.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '264636'
+  label: 京都府 伊根町
+  url: https://www.town.ine.kyoto.jp/iju/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ine.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ine.kyoto.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '264652'
+  label: 京都府 与謝野町
+  url: https://www.town.yosano.lg.jp/life/house/unoccupied-house/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yosano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.yosano.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

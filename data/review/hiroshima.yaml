@@ -1,0 +1,326 @@
+prefecture: 広島県
+prefecture_slug: hiroshima
+created_at: '2026-09-11T00:19:50+00:00'
+candidates:
+- key: '341002'
+  label: 広島県 広島市
+  url: https://www.city.hiroshima.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hiroshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.hiroshima.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '342025'
+  label: 広島県 呉市
+  url: https://www.city.kure.lg.jp/soshiki/46/akiyabankutopepezi.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kure.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kure.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '342033'
+  label: 広島県 竹原市
+  url: https://www.city.takehara.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.takehara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.takehara.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '342041'
+  label: 広島県 三原市
+  url: https://www.city.mihara.hiroshima.jp/soshiki/21/akiyainfo.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.mihara.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.mihara.hiroshima.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '342050'
+  label: 広島県 尾道市
+  url: https://www.city.onomichi.hiroshima.jp/life/1/49/212/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.onomichi.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.onomichi.hiroshima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '342076'
+  label: 広島県 福山市
+  url: https://www.city.fukuyama.hiroshima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.fukuyama.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.fukuyama.hiroshima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '342084'
+  label: 広島県 府中市
+  url: https://www.city.fuchu.hiroshima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.fuchu.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.fuchu.hiroshima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '342092'
+  label: 広島県 三次市
+  url: https://www.city.miyoshi.hiroshima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.miyoshi.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.miyoshi.hiroshima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '342106'
+  label: 広島県 庄原市
+  url: https://www.city.shobara.hiroshima.jp/main/life/settlement/cat02/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shobara.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.shobara.hiroshima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '342114'
+  label: 広島県 大竹市
+  url: https://www.city.otake.hiroshima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.otake.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.otake.hiroshima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '342122'
+  label: 広島県 東広島市
+  url: https://www.city.higashihiroshima.lg.jp/kurashi/sumai/6/22359.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.higashihiroshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.higashihiroshima.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '342131'
+  label: 広島県 廿日市市
+  url: https://www.city.hatsukaichi.hiroshima.jp/life/1/16/254/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hatsukaichi.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.hatsukaichi.hiroshima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '342149'
+  label: 広島県 安芸高田市
+  url: https://www.akitakata.jp/ja/shisei/section/kikaku/main/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 広島県 県内の市・町に掲載された公式サイト（www.akitakata.jp）
+  evidence_url: https://www.pref.hiroshima.lg.jp/soshiki/19/1168589482341.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '342157'
+  label: 広島県 江田島市
+  url: https://www.city.etajima.hiroshima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.etajima.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.etajima.hiroshima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '343021'
+  label: 広島県 府中町
+  url: https://www.town.fuchu.hiroshima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.fuchu.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.fuchu.hiroshima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '343048'
+  label: 広島県 海田町
+  url: https://www.town.kaita.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kaita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kaita.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '343072'
+  label: 広島県 熊野町
+  url: https://www.town.kumano.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kumano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kumano.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '343099'
+  label: 広島県 坂町
+  url: https://www.town.saka.lg.jp/2017/03/09/post-2/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.saka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.saka.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '343684'
+  label: 広島県 安芸太田町
+  url: https://www.akiota.jp/rss/10/list5.xml
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 広島県 県内の市・町に掲載された公式サイト（www.akiota.jp）
+  evidence_url: https://www.pref.hiroshima.lg.jp/soshiki/19/1168589482341.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '343692'
+  label: 広島県 北広島町
+  url: https://www.town.kitahiroshima.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kitahiroshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kitahiroshima.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '344311'
+  label: 広島県 大崎上島町
+  url: https://www.town.osakikamijima.hiroshima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.osakikamijima.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.osakikamijima.hiroshima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '344621'
+  label: 広島県 世羅町
+  url: https://www.town.sera.hiroshima.jp/soshiki/17/19.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.sera.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.sera.hiroshima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '345458'
+  label: 広島県 神石高原町
+  url: https://www.jinsekigun.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 広島県 県内の市・町に掲載された公式サイト（www.jinsekigun.jp）
+  evidence_url: https://www.pref.hiroshima.lg.jp/soshiki/19/1168589482341.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

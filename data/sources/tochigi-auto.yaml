@@ -1,0 +1,764 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: tochigi-092011
+  name: 宇都宮市空き家バンク
+  operator: 宇都宮市
+  operator_kind: municipality
+  official_url: https://www.city.utsunomiya.lg.jp/
+  policy: link_only
+  municipality:
+    code: 092011
+    name: 宇都宮市
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 092011
+    bank_url: https://www.city.utsunomiya.lg.jp/kurashi/anshin/1016717/index.html
+    bank_status: info
+    map_query: 栃木県宇都宮市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.utsunomiya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.utsunomiya.lg.jp/
+    checked_on: '2026-09-11'
+- id: tochigi-092029
+  name: 足利市空き家バンク
+  operator: 足利市
+  operator_kind: municipality
+  official_url: https://www.city.ashikaga.tochigi.jp/
+  policy: link_only
+  municipality:
+    code: 092029
+    name: 足利市
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 092029
+    bank_url: https://ashikaga-c09202.akiya-athome.jp/
+    bank_status: third_party_only
+    map_query: 栃木県足利市
+    bank_note: 物件は民間プラットフォームで公開されています。本サイトでは巡回・要約せず、リンクのみ掲載します。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ashikaga.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.ashikaga.tochigi.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: 最近見た物件 0 件
+    url: https://ashikaga-c09202.akiya-athome.jp/mypage/history/list/
+  - label: 検討リスト 0 件
+    url: https://ashikaga-c09202.akiya-athome.jp/mypage/favorite/list/
+  - label: 保存した条件 0 件
+    url: https://ashikaga-c09202.akiya-athome.jp/mypage/hope/list/
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/
+  - label: マンション(売買)
+    url: https://ashikaga-c09202.akiya-athome.jp/buy/mansion/rail/
+  - label: 戸建(売買)
+    url: https://ashikaga-c09202.akiya-athome.jp/buy/house/rail/
+  - label: 土地(売買)
+    url: https://ashikaga-c09202.akiya-athome.jp/buy/land/rail/
+  - label: 事業・投資物件(売買)
+    url: https://ashikaga-c09202.akiya-athome.jp/buy/invest/rail/
+  - label: 住まい(賃貸)
+    url: https://ashikaga-c09202.akiya-athome.jp/rent/live/rail/
+  - label: 事業用(賃貸)
+    url: https://ashikaga-c09202.akiya-athome.jp/rent/business/rail/
+  - label: マンション(売買)
+    url: https://ashikaga-c09202.akiya-athome.jp/buy/mansion/area/
+  - label: 戸建(売買)
+    url: https://ashikaga-c09202.akiya-athome.jp/buy/house/area/
+  - label: 土地(売買)
+    url: https://ashikaga-c09202.akiya-athome.jp/buy/land/area/
+  - label: 事業・投資物件(売買)
+    url: https://ashikaga-c09202.akiya-athome.jp/buy/invest/area/
+  - label: 住まい(賃貸)
+    url: https://ashikaga-c09202.akiya-athome.jp/rent/live/area/
+  - label: 事業用(賃貸)
+    url: https://ashikaga-c09202.akiya-athome.jp/rent/business/area/
+  - label: マンション(売買)
+    url: https://ashikaga-c09202.akiya-athome.jp/buy/mansion/map/
+  - label: 戸建(売買)
+    url: https://ashikaga-c09202.akiya-athome.jp/buy/house/map/
+  - label: 土地(売買)
+    url: https://ashikaga-c09202.akiya-athome.jp/buy/land/map/
+  - label: 事業・投資物件(売買)
+    url: https://ashikaga-c09202.akiya-athome.jp/buy/invest/map/
+  - label: 住まい(賃貸)
+    url: https://ashikaga-c09202.akiya-athome.jp/rent/live/map/
+  - label: 事業用(賃貸)
+    url: https://ashikaga-c09202.akiya-athome.jp/rent/business/map/
+  - label: '◆ 子育て世帯等限定 ◆  空き家バンクリフォーム費補助金 最大１００万円 ！ '
+    url: https://ashikaga-c09202.akiya-athome.jp/contents/news/detail/?id=1805
+  - label: ◆ 移住者限定 ◆ 空き家バンク改修費補助金 最大５０万円 ！
+    url: https://ashikaga-c09202.akiya-athome.jp/contents/news/detail/?id=1537
+  - label: ◆物件登録募集中【お気軽にご相談ください Tel. 0284-20-2266】
+    url: https://ashikaga-c09202.akiya-athome.jp/contents/news/detail/?id=916
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-47966
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47601
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47470
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47297
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47244
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47197
+  - label: もっと見る
+    url: https://ashikaga-c09202.akiya-athome.jp/buy/buy/newest/list
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-19495
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-19603
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-22551
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-28242
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-28396
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-28399
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-28885
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-29497
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-30956
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-35631
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-36847
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-37056
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-37416
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-39721
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-40125
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-41635
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-41871
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-42053
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-43879
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-44228
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-45692
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-45833
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-46352
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46616
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46866
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-47189
+  - label: akiya-athome.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/rent/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%B1%85%E4%BD%8F%E7%94%A8-5240
+  - label: 戸建て（売買）
+    url: https://ashikaga-c09202.akiya-athome.jp/buy/house/area/tochigiken/ashikagashi/list?gyosei_cd[]=09202
+  - label: 戸建て（賃貸）
+    url: https://ashikaga-c09202.akiya-athome.jp/rent/live/area/tochigiken/ashikagashi/list?gyosei_cd[]=09202
+  - label: 土地（売買）
+    url: https://ashikaga-c09202.akiya-athome.jp/buy/land/area/tochigiken/ashikagashi/list?gyosei_cd[]=09202
+  - label: 土地（賃貸）
+    url: https://ashikaga-c09202.akiya-athome.jp/rent/business/area/tochigiken/ashikagashi/list?gyosei_cd[]=09202
+  - label: プライバシーポリシー
+    url: https://ashikaga-c09202.akiya-athome.jp/contents/static/privacy-policy/
+  - label: mail：kenchiku@city.ashikaga.lg.jp
+    url: https://ashikaga-c09202.akiya-athome.jp/shop/contact/shop/
+- id: tochigi-092037
+  name: 栃木市空き家バンク
+  operator: 栃木市
+  operator_kind: municipality
+  official_url: https://www.city.tochigi.lg.jp/
+  policy: crawl
+  municipality:
+    code: 092037
+    name: 栃木市
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 092037
+    bank_url: http://www.tochigi-akiya.jp/
+    bank_status: available
+    map_query: 栃木県栃木市
+  operator_evidence:
+    quote: 公式サイト（www.city.tochigi.lg.jp）から空き家バンクとして案内されているリンク
+    url: https://www.city.tochigi.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: http://www.tochigi-akiya.jp/
+    kind: listing_index
+  allow_hosts:
+  - www.tochigi-akiya.jp
+  max_pages: 30
+- id: tochigi-092045
+  name: 佐野市空き家バンク
+  operator: 佐野市
+  operator_kind: municipality
+  official_url: https://www.city.sano.lg.jp/
+  policy: crawl
+  municipality:
+    code: 092045
+    name: 佐野市
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 092045
+    bank_url: https://www.city.sano.lg.jp/cgi-bin/recruit.php/2/list
+    bank_status: available
+    map_query: 栃木県佐野市
+  operator_evidence:
+    quote: 公式ドメイン www.city.sano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.sano.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.sano.lg.jp/cgi-bin/recruit.php/2/list
+    kind: listing_index
+  allow_hosts:
+  - www.city.sano.lg.jp
+  max_pages: 30
+- id: tochigi-092053
+  name: 鹿沼市空き家バンク
+  operator: 鹿沼市
+  operator_kind: municipality
+  official_url: https://www.city.kanuma.tochigi.jp/
+  policy: link_only
+  municipality:
+    code: 092053
+    name: 鹿沼市
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 092053
+    bank_url: https://www.city.kanuma.tochigi.jp/0131/genre2-0-001.html
+    bank_status: info
+    map_query: 栃木県鹿沼市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kanuma.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kanuma.tochigi.jp/
+    checked_on: '2026-09-11'
+- id: tochigi-092061
+  name: 日光市空き家バンク
+  operator: 日光市
+  operator_kind: municipality
+  official_url: https://www.city.nikko.lg.jp/
+  policy: link_only
+  municipality:
+    code: 092061
+    name: 日光市
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 092061
+    bank_url: https://www.city.nikko.lg.jp/
+    bank_status: none
+    map_query: 栃木県日光市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nikko.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.nikko.lg.jp/
+    checked_on: '2026-09-11'
+- id: tochigi-092088
+  name: 小山市空き家バンク
+  operator: 小山市
+  operator_kind: municipality
+  official_url: https://www.city.oyama.tochigi.jp/
+  policy: link_only
+  municipality:
+    code: 092088
+    name: 小山市
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 092088
+    bank_url: https://www.city.oyama.tochigi.jp/
+    bank_status: none
+    map_query: 栃木県小山市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.oyama.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.oyama.tochigi.jp/
+    checked_on: '2026-09-11'
+- id: tochigi-092096
+  name: 真岡市空き家バンク
+  operator: 真岡市
+  operator_kind: municipality
+  official_url: https://www.city.moka.lg.jp/
+  policy: link_only
+  municipality:
+    code: 092096
+    name: 真岡市
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 092096
+    bank_url: https://moka-c09209.akiya-athome.jp/
+    bank_status: third_party_only
+    map_query: 栃木県真岡市
+    bank_note: 物件は民間プラットフォームで公開されています。本サイトでは巡回・要約せず、リンクのみ掲載します。
+  operator_evidence:
+    quote: 公式ドメイン www.city.moka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.moka.lg.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: 最近見た物件 0 件
+    url: https://moka-c09209.akiya-athome.jp/mypage/history/list/
+  - label: 検討リスト 0 件
+    url: https://moka-c09209.akiya-athome.jp/mypage/favorite/list/
+  - label: 保存した条件 0 件
+    url: https://moka-c09209.akiya-athome.jp/mypage/hope/list/
+  - label: akiya-athome.jp
+    url: https://moka-c09209.akiya-athome.jp/
+  - label: マンション(売買)
+    url: https://moka-c09209.akiya-athome.jp/buy/mansion/rail/
+  - label: 戸建(売買)
+    url: https://moka-c09209.akiya-athome.jp/buy/house/rail/
+  - label: 土地(売買)
+    url: https://moka-c09209.akiya-athome.jp/buy/land/rail/
+  - label: 事業・投資物件(売買)
+    url: https://moka-c09209.akiya-athome.jp/buy/invest/rail/
+  - label: 住まい(賃貸)
+    url: https://moka-c09209.akiya-athome.jp/rent/live/rail/
+  - label: 事業用(賃貸)
+    url: https://moka-c09209.akiya-athome.jp/rent/business/rail/
+  - label: マンション(売買)
+    url: https://moka-c09209.akiya-athome.jp/buy/mansion/area/
+  - label: 戸建(売買)
+    url: https://moka-c09209.akiya-athome.jp/buy/house/area/
+  - label: 土地(売買)
+    url: https://moka-c09209.akiya-athome.jp/buy/land/area/
+  - label: 事業・投資物件(売買)
+    url: https://moka-c09209.akiya-athome.jp/buy/invest/area/
+  - label: 住まい(賃貸)
+    url: https://moka-c09209.akiya-athome.jp/rent/live/area/
+  - label: 事業用(賃貸)
+    url: https://moka-c09209.akiya-athome.jp/rent/business/area/
+  - label: マンション(売買)
+    url: https://moka-c09209.akiya-athome.jp/buy/mansion/map/
+  - label: 戸建(売買)
+    url: https://moka-c09209.akiya-athome.jp/buy/house/map/
+  - label: 土地(売買)
+    url: https://moka-c09209.akiya-athome.jp/buy/land/map/
+  - label: 事業・投資物件(売買)
+    url: https://moka-c09209.akiya-athome.jp/buy/invest/map/
+  - label: 住まい(賃貸)
+    url: https://moka-c09209.akiya-athome.jp/rent/live/map/
+  - label: 事業用(賃貸)
+    url: https://moka-c09209.akiya-athome.jp/rent/business/map/
+  - label: 空き家バンクがＲ＆Ｃマガジンに掲載されました。
+    url: https://moka-c09209.akiya-athome.jp/contents/news/detail/?id=1049
+  - label: akiya-athome.jp
+    url: https://moka-c09209.akiya-athome.jp/bukken/detail/buy/%E7%9C%9F%E5%B2%A1%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46362
+  - label: akiya-athome.jp
+    url: https://moka-c09209.akiya-athome.jp/bukken/detail/buy/%E7%9C%9F%E5%B2%A1%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46557
+  - label: akiya-athome.jp
+    url: https://moka-c09209.akiya-athome.jp/bukken/detail/rent/%E7%9C%9F%E5%B2%A1%E5%B8%82%E4%BA%8B%E6%A5%AD%E7%94%A8-8565
+  - label: ◆売買物件一覧
+    url: https://moka-c09209.akiya-athome.jp/buy/house/area/tochigiken/mokashi/list?gyosei_cd[]=09209
+  - label: ◆賃貸物件一覧
+    url: https://moka-c09209.akiya-athome.jp/rent/live/area/tochigiken/mokashi/list?gyosei_cd[]=09209
+  - label: ◆賃貸事業用物件一覧（空き店舗）
+    url: https://moka-c09209.akiya-athome.jp/rent/business/rail/mokatetsudomokasen/station?ensen_cd[]=0e1d
+  - label: '  空き家バンク以外の
+
+      真岡市の
+
+      中古一戸建てを探す
+
+      （athome）'
+    url: https://www.athome.co.jp/kodate/chuko/tochigi/moka-city/list/?kwd=101
+  - label: '  空き家バンク以外の
+
+      真岡市の土地を探す
+
+      （athome）'
+    url: https://www.athome.co.jp/tochi/tochigi/moka-city/list/?kwd=101
+  - label: '  空き家バンク以外の
+
+      真岡市の
+
+      賃貸居住用物件を探す
+
+      （athome）'
+    url: https://www.athome.co.jp/chintai/tochigi/moka-city/list/?kwd=101
+  - label: プライバシーポリシー
+    url: https://moka-c09209.akiya-athome.jp/contents/static/privacy-policy/
+- id: tochigi-092100
+  name: 大田原市空き家バンク
+  operator: 大田原市
+  operator_kind: municipality
+  official_url: https://www.city.ohtawara.tochigi.jp/
+  policy: crawl
+  municipality:
+    code: 092100
+    name: 大田原市
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 092100
+    bank_url: https://www.city.ohtawara.tochigi.jp/docs/2014092500025/
+    bank_status: available
+    map_query: 栃木県大田原市
+  operator_evidence:
+    quote: 栃木県 リンク集（市町一覧）に掲載された公式サイト（www.city.ohtawara.tochigi.jp）
+    url: https://www.pref.tochigi.lg.jp/c05/intro/tochigi/link/lkshityouson.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.ohtawara.tochigi.jp/docs/2014092500025/
+    kind: listing_index
+  allow_hosts:
+  - www.city.ohtawara.tochigi.jp
+  max_pages: 30
+- id: tochigi-092118
+  name: 矢板市空き家バンク
+  operator: 矢板市
+  operator_kind: municipality
+  official_url: https://www.city.yaita.tochigi.jp/
+  policy: link_only
+  municipality:
+    code: 092118
+    name: 矢板市
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 092118
+    bank_url: https://www.city.yaita.tochigi.jp/site/ijuuteiju/akiya-shien.html
+    bank_status: info
+    map_query: 栃木県矢板市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yaita.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.yaita.tochigi.jp/
+    checked_on: '2026-09-11'
+- id: tochigi-092134
+  name: 那須塩原市空き家バンク
+  operator: 那須塩原市
+  operator_kind: municipality
+  official_url: https://www.city.nasushiobara.tochigi.jp/
+  policy: link_only
+  municipality:
+    code: 092134
+    name: 那須塩原市
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 092134
+    bank_url: https://www.city.nasushiobara.tochigi.jp/kurashi_tetsuzuki/sumai_kurashi/akiya/index.html
+    bank_status: info
+    map_query: 栃木県那須塩原市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nasushiobara.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.nasushiobara.tochigi.jp/
+    checked_on: '2026-09-11'
+- id: tochigi-092142
+  name: さくら市空き家バンク
+  operator: さくら市
+  operator_kind: municipality
+  official_url: https://www.city.sakura.lg.jp/
+  policy: link_only
+  municipality:
+    code: 092142
+    name: さくら市
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 092142
+    bank_url: https://www.city.sakura.lg.jp/
+    bank_status: none
+    map_query: 栃木県さくら市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.sakura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.sakura.lg.jp/
+    checked_on: '2026-09-11'
+- id: tochigi-092151
+  name: 那須烏山市空き家バンク
+  operator: 那須烏山市
+  operator_kind: municipality
+  official_url: https://www.city.nasukarasuyama.lg.jp/
+  policy: crawl
+  municipality:
+    code: 092151
+    name: 那須烏山市
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 092151
+    bank_url: https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/page004598.html
+    bank_status: available
+    map_query: 栃木県那須烏山市
+  operator_evidence:
+    quote: 公式ドメイン www.city.nasukarasuyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.nasukarasuyama.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/page004598.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.nasukarasuyama.lg.jp
+  max_pages: 30
+- id: tochigi-092169
+  name: 下野市空き家バンク
+  operator: 下野市
+  operator_kind: municipality
+  official_url: https://www.city.shimotsuke.lg.jp/
+  policy: link_only
+  municipality:
+    code: 092169
+    name: 下野市
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 092169
+    bank_url: https://www.city.shimotsuke.lg.jp/
+    bank_status: none
+    map_query: 栃木県下野市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.shimotsuke.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.shimotsuke.lg.jp/
+    checked_on: '2026-09-11'
+- id: tochigi-093017
+  name: 上三川町空き家バンク
+  operator: 上三川町
+  operator_kind: municipality
+  official_url: https://www.town.kaminokawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: 093017
+    name: 上三川町
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 093017
+    bank_url: https://www.town.kaminokawa.lg.jp/0004/info-0000001920-0.html
+    bank_status: info
+    map_query: 栃木県上三川町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kaminokawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kaminokawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: tochigi-093424
+  name: 益子町空き家バンク
+  operator: 益子町
+  operator_kind: municipality
+  official_url: https://www.town.mashiko.lg.jp/
+  policy: crawl
+  municipality:
+    code: 093424
+    name: 益子町
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 093424
+    bank_url: https://www.town.mashiko.lg.jp/mashikonokurashi/akiya.php
+    bank_status: available
+    map_query: 栃木県益子町
+  operator_evidence:
+    quote: 公式ドメイン www.town.mashiko.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.mashiko.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.mashiko.lg.jp/mashikonokurashi/akiya.php
+    kind: listing_index
+    follow:
+    - pattern: https?://www\.town\.mashiko\.lg\.jp/mashikonokurashi/akiya\.php/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - www.town.mashiko.lg.jp
+  max_pages: 30
+- id: tochigi-093432
+  name: 茂木町空き家バンク
+  operator: 茂木町
+  operator_kind: municipality
+  official_url: https://www.town.motegi.tochigi.jp/
+  policy: link_only
+  municipality:
+    code: 093432
+    name: 茂木町
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 093432
+    bank_url: https://www.town.motegi.tochigi.jp/
+    bank_status: none
+    map_query: 栃木県茂木町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.motegi.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.motegi.tochigi.jp/
+    checked_on: '2026-09-11'
+- id: tochigi-093441
+  name: 市貝町空き家バンク
+  operator: 市貝町
+  operator_kind: municipality
+  official_url: https://www.town.ichikai.tochigi.jp/
+  policy: link_only
+  municipality:
+    code: 093441
+    name: 市貝町
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 093441
+    bank_url: https://www.town.ichikai.tochigi.jp/
+    bank_status: none
+    map_query: 栃木県市貝町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ichikai.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.ichikai.tochigi.jp/
+    checked_on: '2026-09-11'
+- id: tochigi-093459
+  name: 芳賀町空き家バンク
+  operator: 芳賀町
+  operator_kind: municipality
+  official_url: https://www.town.tochigi-haga.lg.jp/
+  policy: link_only
+  municipality:
+    code: 093459
+    name: 芳賀町
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 093459
+    bank_url: https://www.town.tochigi-haga.lg.jp/kurashi/sumai/akiya_bank/top.html
+    bank_status: info
+    map_query: 栃木県芳賀町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 栃木県 リンク集（市町一覧）に掲載された公式サイト（www.town.tochigi-haga.lg.jp）
+    url: https://www.pref.tochigi.lg.jp/c05/intro/tochigi/link/lkshityouson.html
+    checked_on: '2026-09-11'
+  external_links:
+  - label: （外部サイト）
+    url: http://www.homes.co.jp/akiyabank/tochigi/haga_haga/
+  - label: LIFULLHOME'S空き家バンクホームページ（外部サイト）
+    url: https://www.homes.co.jp/akiyabank/tochigi/haga_haga/
+  - label: （外部サイト）
+    url: http://haga-t09345.akiya-athome.jp/
+  - label: アットホーム空き家バンクホームページ（外部サイト）
+    url: https://haga-t09345.akiya-athome.jp/
+- id: tochigi-093611
+  name: 壬生町空き家バンク
+  operator: 壬生町
+  operator_kind: municipality
+  official_url: https://www.town.mibu.tochigi.jp/
+  policy: crawl
+  municipality:
+    code: 093611
+    name: 壬生町
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 093611
+    bank_url: https://www.town.mibu.tochigi.jp/docs/2020052100013/
+    bank_status: available
+    map_query: 栃木県壬生町
+  operator_evidence:
+    quote: 公式ドメイン www.town.mibu.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.mibu.tochigi.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.mibu.tochigi.jp/docs/2020052100013/
+    kind: listing_index
+  allow_hosts:
+  - www.town.mibu.tochigi.jp
+  max_pages: 30
+- id: tochigi-093645
+  name: 野木町空き家バンク
+  operator: 野木町
+  operator_kind: municipality
+  official_url: https://www.town.nogi.lg.jp/
+  policy: link_only
+  municipality:
+    code: 093645
+    name: 野木町
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 093645
+    bank_url: https://www.town.nogi.lg.jp/ijyu/ijyu_news/page002793.html
+    bank_status: info
+    map_query: 栃木県野木町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.nogi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.nogi.lg.jp/
+    checked_on: '2026-09-11'
+- id: tochigi-093840
+  name: 塩谷町空き家バンク
+  operator: 塩谷町
+  operator_kind: municipality
+  official_url: https://www.town.shioya.tochigi.jp/
+  policy: crawl
+  municipality:
+    code: 093840
+    name: 塩谷町
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 093840
+    bank_url: https://www.town.shioya.tochigi.jp/info/1080
+    bank_status: available
+    map_query: 栃木県塩谷町
+  operator_evidence:
+    quote: 公式ドメイン www.town.shioya.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.shioya.tochigi.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.shioya.tochigi.jp/info/1080
+    kind: listing_index
+  allow_hosts:
+  - www.town.shioya.tochigi.jp
+  max_pages: 30
+- id: tochigi-093866
+  name: 高根沢町空き家バンク
+  operator: 高根沢町
+  operator_kind: municipality
+  official_url: https://www.town.takanezawa.tochigi.jp/
+  policy: link_only
+  municipality:
+    code: 093866
+    name: 高根沢町
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 093866
+    bank_url: https://www.town.takanezawa.tochigi.jp/
+    bank_status: none
+    map_query: 栃木県高根沢町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.takanezawa.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.takanezawa.tochigi.jp/
+    checked_on: '2026-09-11'
+- id: tochigi-094072
+  name: 那須町空き家バンク
+  operator: 那須町
+  operator_kind: municipality
+  official_url: https://www.town.nasu.lg.jp/
+  policy: link_only
+  municipality:
+    code: 094072
+    name: 那須町
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 094072
+    bank_url: https://www.town.nasu.lg.jp/
+    bank_status: none
+    map_query: 栃木県那須町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.nasu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.nasu.lg.jp/
+    checked_on: '2026-09-11'
+- id: tochigi-094111
+  name: 那珂川町空き家バンク
+  operator: 那珂川町
+  operator_kind: municipality
+  official_url: https://www.town.tochigi-nakagawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: 094111
+    name: 那珂川町
+    prefecture: 栃木県
+    prefecture_slug: tochigi
+    slug: 094111
+    bank_url: http://www.town.tochigi-nakagawa.lg.jp/0074/genre2-0-001.html
+    bank_status: info
+    map_query: 栃木県那珂川町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 栃木県 リンク集（市町一覧）に掲載された公式サイト（www.town.tochigi-nakagawa.lg.jp）
+    url: https://www.pref.tochigi.lg.jp/c05/intro/tochigi/link/lkshityouson.html
+    checked_on: '2026-09-11'

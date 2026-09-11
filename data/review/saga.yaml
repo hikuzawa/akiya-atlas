@@ -1,0 +1,284 @@
+prefecture: 佐賀県
+prefecture_slug: saga
+created_at: '2026-09-11T01:07:40+00:00'
+candidates:
+- key: '412015'
+  label: 佐賀県 佐賀市
+  url: https://www.city.saga.lg.jp/kurashi/sumai/1/1155.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.saga.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.saga.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '412023'
+  label: 佐賀県 唐津市
+  url: https://www.city.karatsu.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.karatsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.karatsu.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '412031'
+  label: 佐賀県 鳥栖市
+  url: https://www.city.tosu.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tosu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tosu.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '412040'
+  label: 佐賀県 多久市
+  url: https://www.city.taku.lg.jp/adv/ba.php?id=98
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.taku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.taku.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '412058'
+  label: 佐賀県 伊万里市
+  url: https://www.city.imari.lg.jp/12417.htm
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.imari.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.imari.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '412066'
+  label: 佐賀県 武雄市
+  url: https://www.city.takeo.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.takeo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.takeo.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '412074'
+  label: 佐賀県 鹿島市
+  url: https://www.city.saga-kashima.lg.jp/main/32987.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 佐賀県 県内市町リンクに掲載された公式サイト（www.city.saga-kashima.lg.jp）
+  evidence_url: https://www.pref.saga.lg.jp/kiji0034791/index.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '412082'
+  label: 佐賀県 小城市
+  url: https://www.city.ogi.lg.jp/main/9890.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ogi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.ogi.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '412091'
+  label: 佐賀県 嬉野市
+  url: https://www.city.ureshino.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ureshino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.ureshino.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '412104'
+  label: 佐賀県 神埼市
+  url: https://www.city.kanzaki.saga.jp/main/1.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kanzaki.saga.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kanzaki.saga.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '413275'
+  label: 佐賀県 吉野ヶ里町
+  url: https://www.town.yoshinogari.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yoshinogari.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.yoshinogari.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '413411'
+  label: 佐賀県 基山町
+  url: https://www.town.kiyama.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kiyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kiyama.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '413453'
+  label: 佐賀県 上峰町
+  url: https://www.town.kamimine.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kamimine.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kamimine.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '413461'
+  label: 佐賀県 みやき町
+  url: https://www.town.miyaki.lg.jp/teiju/akiya/_2123.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.miyaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.miyaki.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '413879'
+  label: 佐賀県 玄海町
+  url: https://www.town.genkai.lg.jp/soshiki/8/73227.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.genkai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.genkai.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '414018'
+  label: 佐賀県 有田町
+  url: https://www.town.arita.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.arita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.arita.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '414239'
+  label: 佐賀県 大町町
+  url: https://www.town.omachi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.omachi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.omachi.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '414247'
+  label: 佐賀県 江北町
+  url: https://www.town.kouhoku.saga.jp/kiji0031374/index.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kouhoku.saga.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kouhoku.saga.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '414255'
+  label: 佐賀県 白石町
+  url: https://www.town.shiroishi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shiroishi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.shiroishi.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '414417'
+  label: 佐賀県 太良町
+  url: https://www.town.tara.lg.jp/kurashi/_3629/_1661.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.tara.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

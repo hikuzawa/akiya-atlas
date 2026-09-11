@@ -1,0 +1,270 @@
+prefecture: 滋賀県
+prefecture_slug: shiga
+created_at: '2026-09-10T23:20:11+00:00'
+candidates:
+- key: '252018'
+  label: 滋賀県 大津市
+  url: https://www.city.otsu.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.otsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.otsu.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '252026'
+  label: 滋賀県 彦根市
+  url: https://www.city.hikone.lg.jp/life/6/1/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hikone.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.hikone.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '252034'
+  label: 滋賀県 長浜市
+  url: https://www.city.nagahama.lg.jp/0000016895.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nagahama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.nagahama.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '252042'
+  label: 滋賀県 近江八幡市
+  url: https://www.city.omihachiman.lg.jp/mokutekibetu/hikkoshi/sonota/29291.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.omihachiman.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.omihachiman.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '252069'
+  label: 滋賀県 草津市
+  url: https://www.city.kusatsu.shiga.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kusatsu.shiga.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kusatsu.shiga.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '252077'
+  label: 滋賀県 守山市
+  url: https://www.city.moriyama.lg.jp/kurashitetsuzuki/juken/1001868/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.moriyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.moriyama.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '252085'
+  label: 滋賀県 栗東市
+  url: https://www.city.ritto.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ritto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.ritto.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '252093'
+  label: 滋賀県 甲賀市
+  url: https://www.city.koka.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.koka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.koka.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '252107'
+  label: 滋賀県 野洲市
+  url: https://www.city.yasu.lg.jp/soshiki/juutaku/akiya/1697072106430.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yasu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.yasu.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '252115'
+  label: 滋賀県 湖南市
+  url: https://www.city.konan.lg.jp/kurashi/juutaku/1008730.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.konan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.konan.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '252123'
+  label: 滋賀県 高島市
+  url: https://www.city.takashima.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.takashima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.takashima.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '252131'
+  label: 滋賀県 東近江市
+  url: https://www.city.higashiomi.shiga.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.higashiomi.shiga.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.higashiomi.shiga.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '252140'
+  label: 滋賀県 米原市
+  url: https://www.city.maibara.lg.jp/kurashi/akiya2/23371.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.maibara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.maibara.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '253839'
+  label: 滋賀県 日野町
+  url: https://www.town.shiga-hino.lg.jp/0000002170.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.89
+  operator_kind: municipality
+  evidence_quote: 滋賀県 県内の市町一覧に掲載された公式サイト（www.town.shiga-hino.lg.jp）
+  evidence_url: https://www.pref.shiga.lg.jp/ab00/7739.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '253847'
+  label: 滋賀県 竜王町
+  url: https://www.town.ryuoh.shiga.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 滋賀県 県内の市町一覧に掲載された公式サイト（www.town.ryuoh.shiga.jp）
+  evidence_url: https://www.pref.shiga.lg.jp/ab00/7739.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '254258'
+  label: 滋賀県 愛荘町
+  url: https://www.town.aisho.shiga.jp/kurashi_tetsuzuki/sumai/akiya/10206.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.86
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.aisho.shiga.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.aisho.shiga.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '254410'
+  label: 滋賀県 豊郷町
+  url: https://www.town.toyosato.shiga.jp/category/24-1-1-0-0-0-0-0-0-0.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.toyosato.shiga.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.toyosato.shiga.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '254428'
+  label: 滋賀県 甲良町
+  url: https://www.kouratown.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 滋賀県 県内の市町一覧に掲載された公式サイト（www.kouratown.jp）
+  evidence_url: https://www.pref.shiga.lg.jp/ab00/7739.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '254436'
+  label: 滋賀県 多賀町
+  url: https://www.town.taga.lg.jp/kurashi_tetsuzuki/sumai/4/1522.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.taga.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.taga.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

@@ -1,0 +1,466 @@
+prefecture: 岩手県
+prefecture_slug: iwate
+created_at: '2026-09-10T21:50:53+00:00'
+candidates:
+- key: 032018
+  label: 岩手県 盛岡市
+  url: https://www.city.morioka.iwate.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.morioka.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.morioka.iwate.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '032026'
+  label: 岩手県 宮古市
+  url: https://www.city.miyako.iwate.jp/gyosei/soshiki/toshi/akiya/561.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.miyako.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.miyako.iwate.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '032034'
+  label: 岩手県 大船渡市
+  url: https://www.city.ofunato.iwate.jp/genre/category/kurashi/residence/karaietotaisaku
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ofunato.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.ofunato.iwate.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '032051'
+  label: 岩手県 花巻市
+  url: https://www.city.hanamaki.iwate.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hanamaki.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.hanamaki.iwate.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 032069
+  label: 岩手県 北上市
+  url: https://www.city.kitakami.iwate.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kitakami.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kitakami.iwate.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '032077'
+  label: 岩手県 久慈市
+  url: https://www.city.kuji.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kuji.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kuji.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 032085
+  label: 岩手県 遠野市
+  url: https://www.city.tono.iwate.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tono.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.tono.iwate.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 032093
+  label: 岩手県 一関市
+  url: https://www.city.ichinoseki.iwate.jp/genre/kurashi/akiya
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ichinoseki.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.ichinoseki.iwate.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '032107'
+  label: 岩手県 陸前高田市
+  url: https://www.city.rikuzentakata.iwate.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.rikuzentakata.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.rikuzentakata.iwate.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '032115'
+  label: 岩手県 釜石市
+  url: https://www.city.kamaishi.iwate.jp/category/bunya/infra/akiya/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kamaishi.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kamaishi.iwate.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '032131'
+  label: 岩手県 二戸市
+  url: https://www.city.ninohe.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ninohe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.ninohe.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '032140'
+  label: 岩手県 八幡平市
+  url: https://www.city.hachimantai.lg.jp/site/ijyu-4/1816.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hachimantai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.hachimantai.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 032158
+  label: 岩手県 奥州市
+  url: https://www.city.oshu.iwate.jp/kurashi_tetsuzuki/sumai/2/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.oshu.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.oshu.iwate.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '032166'
+  label: 岩手県 滝沢市
+  url: https://www.city.takizawa.iwate.jp/kurashi/tochi-sumai/contents-12872
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.takizawa.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.takizawa.iwate.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '033014'
+  label: 岩手県 雫石町
+  url: https://www.town.shizukuishi.iwate.jp/docs/2014121000281/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.86
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shizukuishi.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.shizukuishi.iwate.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '033022'
+  label: 岩手県 葛巻町
+  url: https://www.town.kuzumaki.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kuzumaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kuzumaki.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '033031'
+  label: 岩手県 岩手町
+  url: https://town.iwate.iwate.jp/akiya/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.9
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン town.iwate.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://town.iwate.iwate.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 033219
+  label: 岩手県 紫波町
+  url: https://www.town.shiwa.iwate.jp/soshiki/3_1/2_akiya/99999/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shiwa.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.shiwa.iwate.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '033227'
+  label: 岩手県 矢巾町
+  url: https://www.town.yahaba.iwate.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yahaba.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yahaba.iwate.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 033669
+  label: 岩手県 西和賀町
+  url: https://www.town.nishiwaga.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nishiwaga.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.nishiwaga.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 033812
+  label: 岩手県 金ケ崎町
+  url: https://www.town.kanegasaki.iwate.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kanegasaki.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kanegasaki.iwate.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 034029
+  label: 岩手県 平泉町
+  url: https://www.town.hiraizumi.iwate.jp/emigration
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hiraizumi.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.hiraizumi.iwate.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '034410'
+  label: 岩手県 住田町
+  url: https://www.town.sumita.iwate.jp/docs/2022121400017/
+  page_class: listing_detail
+  class_label: 物件詳細（静的）
+  confidence: 0.89
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.sumita.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.sumita.iwate.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '034614'
+  label: 岩手県 大槌町
+  url: https://www.town.otsuchi.iwate.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.otsuchi.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.otsuchi.iwate.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 034827
+  label: 岩手県 山田町
+  url: https://www.town.yamada.iwate.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yamada.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yamada.iwate.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 034835
+  label: 岩手県 岩泉町
+  url: https://www.town.iwaizumi.lg.jp/docs/2026070300060/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.iwaizumi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.iwaizumi.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 034843
+  label: 岩手県 田野畑村
+  url: https://www.vill.tanohata.iwate.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.tanohata.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.tanohata.iwate.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 034851
+  label: 岩手県 普代村
+  url: https://www.vill.fudai.iwate.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.fudai.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.fudai.iwate.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '035017'
+  label: 岩手県 軽米町
+  url: https://www.town.karumai.iwate.jp/article/kurashitetsuduki/living/jyutaku/entry-basename.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.82
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.karumai.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.karumai.iwate.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '035033'
+  label: 岩手県 野田村
+  url: https://www.vill.noda.iwate.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.noda.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.noda.iwate.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 035068
+  label: 岩手県 九戸村
+  url: https://www.vill.kunohe.iwate.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.kunohe.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.kunohe.iwate.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '035076'
+  label: 岩手県 洋野町
+  url: https://www.town.hirono.iwate.jp/doc/2022052500022/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hirono.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.hirono.iwate.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '035246'
+  label: 岩手県 一戸町
+  url: https://www.town.ichinohe.iwate.jp/kurashi_tetsuzuki/sumai/5453.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ichinohe.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ichinohe.iwate.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

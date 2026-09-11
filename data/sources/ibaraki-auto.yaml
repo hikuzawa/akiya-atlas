@@ -1,0 +1,945 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: ibaraki-082015
+  name: 水戸市空き家バンク
+  operator: 水戸市
+  operator_kind: municipality
+  official_url: https://www.city.mito.lg.jp/
+  policy: link_only
+  municipality:
+    code: 082015
+    name: 水戸市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082015
+    bank_url: https://www.city.mito.lg.jp/life/1/4/28/
+    bank_status: info
+    map_query: 茨城県水戸市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.mito.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.mito.lg.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082023
+  name: 日立市空き家バンク
+  operator: 日立市
+  operator_kind: municipality
+  official_url: https://www.city.hitachi.lg.jp/
+  policy: link_only
+  municipality:
+    code: 082023
+    name: 日立市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082023
+    bank_url: https://www.city.hitachi.lg.jp/
+    bank_status: none
+    map_query: 茨城県日立市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.hitachi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.hitachi.lg.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082031
+  name: 土浦市空き家バンク
+  operator: 土浦市
+  operator_kind: municipality
+  official_url: https://www.city.tsuchiura.lg.jp/
+  policy: link_only
+  municipality:
+    code: 082031
+    name: 土浦市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082031
+    bank_url: https://www.city.tsuchiura.lg.jp/
+    bank_status: none
+    map_query: 茨城県土浦市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tsuchiura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.tsuchiura.lg.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082040
+  name: 古河市空き家バンク
+  operator: 古河市
+  operator_kind: municipality
+  official_url: https://www.city.ibaraki-koga.lg.jp/
+  policy: link_only
+  municipality:
+    code: 082040
+    name: 古河市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082040
+    bank_url: https://www.city.ibaraki-koga.lg.jp/
+    bank_status: none
+    map_query: 茨城県古河市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 茨城県 県内の市町村に掲載された公式サイト（www.city.ibaraki-koga.lg.jp）
+    url: https://www.pref.ibaraki.jp/towns/index.html
+    checked_on: '2026-09-11'
+- id: ibaraki-082058
+  name: 石岡市空き家バンク
+  operator: 石岡市
+  operator_kind: municipality
+  official_url: https://www.city.ishioka.lg.jp/
+  policy: crawl
+  municipality:
+    code: 082058
+    name: 石岡市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082058
+    bank_url: https://www.city.ishioka.lg.jp/kurashi_tetsuzuki/sumai/akiyabank/page011717.html
+    bank_status: available
+    map_query: 茨城県石岡市
+  operator_evidence:
+    quote: 公式ドメイン www.city.ishioka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.ishioka.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.ishioka.lg.jp/kurashi_tetsuzuki/sumai/akiyabank/page011717.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.ishioka.lg.jp
+  max_pages: 30
+- id: ibaraki-082074
+  name: 結城市空き家バンク
+  operator: 結城市
+  operator_kind: municipality
+  official_url: https://www.city.yuki.lg.jp/
+  policy: link_only
+  municipality:
+    code: 082074
+    name: 結城市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082074
+    bank_url: https://www.city.yuki.lg.jp/
+    bank_status: none
+    map_query: 茨城県結城市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yuki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.yuki.lg.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082082
+  name: 龍ケ崎市空き家バンク
+  operator: 龍ケ崎市
+  operator_kind: municipality
+  official_url: https://www.city.ryugasaki.ibaraki.jp/
+  policy: link_only
+  municipality:
+    code: 082082
+    name: 龍ケ崎市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082082
+    bank_url: https://www.city.ryugasaki.ibaraki.jp/kurashi/seikatsu/akiya-bank/index.html
+    bank_status: info
+    map_query: 茨城県龍ケ崎市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ryugasaki.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.ryugasaki.ibaraki.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082104
+  name: 下妻市空き家バンク
+  operator: 下妻市
+  operator_kind: municipality
+  official_url: https://www.city.shimotsuma.lg.jp/
+  policy: link_only
+  municipality:
+    code: 082104
+    name: 下妻市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082104
+    bank_url: https://www.city.shimotsuma.lg.jp/
+    bank_status: none
+    map_query: 茨城県下妻市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.shimotsuma.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.shimotsuma.lg.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082112
+  name: 常総市空き家バンク
+  operator: 常総市
+  operator_kind: municipality
+  official_url: https://www.city.joso.lg.jp/
+  policy: crawl
+  municipality:
+    code: 082112
+    name: 常総市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082112
+    bank_url: https://www.city.joso.lg.jp/search.php?keyword=%E7%A9%BA%E3%81%8D%E5%AE%B6
+    bank_status: available
+    map_query: 茨城県常総市
+  operator_evidence:
+    quote: 公式ドメイン www.city.joso.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.joso.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.joso.lg.jp/search.php?keyword=%E7%A9%BA%E3%81%8D%E5%AE%B6
+    kind: listing_detail
+  allow_hosts:
+  - www.city.joso.lg.jp
+  max_pages: 30
+- id: ibaraki-082121
+  name: 常陸太田市空き家バンク
+  operator: 常陸太田市
+  operator_kind: municipality
+  official_url: https://www.city.hitachiota.ibaraki.jp/
+  policy: crawl
+  municipality:
+    code: 082121
+    name: 常陸太田市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082121
+    bank_url: https://www.city.hitachiota.ibaraki.jp/kurashi/sumai-traffic/akiya-bank/page002897.html
+    bank_status: available
+    map_query: 茨城県常陸太田市
+  operator_evidence:
+    quote: 公式ドメイン www.city.hitachiota.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.hitachiota.ibaraki.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.hitachiota.ibaraki.jp/kurashi/sumai-traffic/akiya-bank/page002897.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.hitachiota.ibaraki.jp
+  max_pages: 30
+- id: ibaraki-082147
+  name: 高萩市空き家バンク
+  operator: 高萩市
+  operator_kind: municipality
+  official_url: https://www.city.takahagi.ibaraki.jp/
+  policy: link_only
+  municipality:
+    code: 082147
+    name: 高萩市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082147
+    bank_url: https://www.city.takahagi.ibaraki.jp/
+    bank_status: none
+    map_query: 茨城県高萩市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.takahagi.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.takahagi.ibaraki.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082155
+  name: 北茨城市空き家バンク
+  operator: 北茨城市
+  operator_kind: municipality
+  official_url: https://www.city.kitaibaraki.lg.jp/
+  policy: link_only
+  municipality:
+    code: 082155
+    name: 北茨城市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082155
+    bank_url: https://www.city.kitaibaraki.lg.jp/
+    bank_status: none
+    map_query: 茨城県北茨城市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kitaibaraki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kitaibaraki.lg.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082163
+  name: 笠間市空き家バンク
+  operator: 笠間市
+  operator_kind: municipality
+  official_url: https://www.city.kasama.lg.jp/
+  policy: crawl
+  municipality:
+    code: 082163
+    name: 笠間市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082163
+    bank_url: https://ijyuu.city-kasama.jp/house-bank/
+    bank_status: available
+    map_query: 茨城県笠間市
+  operator_evidence:
+    quote: 公式サイト（www.city.kasama.lg.jp）から空き家バンクとして案内されているリンク
+    url: https://www.city.kasama.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://ijyuu.city-kasama.jp/house-bank/
+    kind: listing_index
+  allow_hosts:
+  - ijyuu.city-kasama.jp
+  max_pages: 30
+  external_links:
+  - label: LIFULL HOME’S空き家バンク（笠間市のトップページ）（外部リンク）
+    url: https://www.homes.co.jp/akiyabank/ibaraki/kasama
+- id: ibaraki-082171
+  name: 取手市空き家バンク
+  operator: 取手市
+  operator_kind: municipality
+  official_url: https://www.city.toride.ibaraki.jp/
+  policy: link_only
+  municipality:
+    code: 082171
+    name: 取手市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082171
+    bank_url: https://www.city.toride.ibaraki.jp/
+    bank_status: none
+    map_query: 茨城県取手市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.toride.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.toride.ibaraki.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082198
+  name: 牛久市空き家バンク
+  operator: 牛久市
+  operator_kind: municipality
+  official_url: https://www.city.ushiku.lg.jp/
+  policy: crawl
+  municipality:
+    code: 082198
+    name: 牛久市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082198
+    bank_url: https://www.city.ushiku.lg.jp/kurashi-tetsuduki/seikatsu/sumai-joho/akiya-taisaku/page006233.html
+    bank_status: available
+    map_query: 茨城県牛久市
+  operator_evidence:
+    quote: 公式ドメイン www.city.ushiku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.ushiku.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.ushiku.lg.jp/kurashi-tetsuduki/seikatsu/sumai-joho/akiya-taisaku/page006233.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.ushiku.lg.jp
+  max_pages: 30
+- id: ibaraki-082201
+  name: つくば市空き家バンク
+  operator: つくば市
+  operator_kind: municipality
+  official_url: https://www.city.tsukuba.lg.jp/
+  policy: link_only
+  municipality:
+    code: 082201
+    name: つくば市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082201
+    bank_url: https://www.city.tsukuba.lg.jp/akiya/index.html
+    bank_status: info
+    map_query: 茨城県つくば市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tsukuba.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.tsukuba.lg.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082210
+  name: ひたちなか市空き家バンク
+  operator: ひたちなか市
+  operator_kind: municipality
+  official_url: https://www.city.hitachinaka.lg.jp/
+  policy: crawl
+  municipality:
+    code: 082210
+    name: ひたちなか市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082210
+    bank_url: https://www.city.hitachinaka.lg.jp/machizukuri/sumai/1003440/1003452.html
+    bank_status: available
+    map_query: 茨城県ひたちなか市
+  operator_evidence:
+    quote: 公式ドメイン www.city.hitachinaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.hitachinaka.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.hitachinaka.lg.jp/machizukuri/sumai/1003440/1003452.html
+    kind: listing_detail
+  allow_hosts:
+  - www.city.hitachinaka.lg.jp
+  max_pages: 30
+- id: ibaraki-082228
+  name: 鹿嶋市空き家バンク
+  operator: 鹿嶋市
+  operator_kind: municipality
+  official_url: https://www.city.kashima.ibaraki.jp/
+  policy: link_only
+  municipality:
+    code: 082228
+    name: 鹿嶋市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082228
+    bank_url: https://www.city.kashima.ibaraki.jp/
+    bank_status: none
+    map_query: 茨城県鹿嶋市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kashima.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kashima.ibaraki.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082236
+  name: 潮来市空き家バンク
+  operator: 潮来市
+  operator_kind: municipality
+  official_url: https://www.city.itako.lg.jp/
+  policy: link_only
+  municipality:
+    code: 082236
+    name: 潮来市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082236
+    bank_url: https://www.city.itako.lg.jp/
+    bank_status: none
+    map_query: 茨城県潮来市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.itako.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.itako.lg.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082244
+  name: 守谷市空き家バンク
+  operator: 守谷市
+  operator_kind: municipality
+  official_url: https://www.city.moriya.ibaraki.jp/
+  policy: link_only
+  municipality:
+    code: 082244
+    name: 守谷市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082244
+    bank_url: https://www.city.moriya.ibaraki.jp/kurashi_tetsuzuki/juutaku/1002304/index.html
+    bank_status: info
+    map_query: 茨城県守谷市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.moriya.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.moriya.ibaraki.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082252
+  name: 常陸大宮市空き家バンク
+  operator: 常陸大宮市
+  operator_kind: municipality
+  official_url: https://www.city.hitachiomiya.lg.jp/
+  policy: link_only
+  municipality:
+    code: 082252
+    name: 常陸大宮市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082252
+    bank_url: https://www.city.hitachiomiya.lg.jp/
+    bank_status: none
+    map_query: 茨城県常陸大宮市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.hitachiomiya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.hitachiomiya.lg.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082261
+  name: 那珂市空き家バンク
+  operator: 那珂市
+  operator_kind: municipality
+  official_url: https://www.city.naka.lg.jp/
+  policy: crawl
+  municipality:
+    code: 082261
+    name: 那珂市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082261
+    bank_url: https://www.city.naka.lg.jp/kurashi-tetsuduki/sumai/akiya/page004131.html
+    bank_status: available
+    map_query: 茨城県那珂市
+  operator_evidence:
+    quote: 公式ドメイン www.city.naka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.naka.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.naka.lg.jp/kurashi-tetsuduki/sumai/akiya/page004131.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.naka.lg.jp
+  max_pages: 30
+- id: ibaraki-082279
+  name: 筑西市空き家バンク
+  operator: 筑西市
+  operator_kind: municipality
+  official_url: https://www.city.chikusei.lg.jp/
+  policy: link_only
+  municipality:
+    code: 082279
+    name: 筑西市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082279
+    bank_url: https://www.city.chikusei.lg.jp/
+    bank_status: none
+    map_query: 茨城県筑西市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.chikusei.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.chikusei.lg.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082287
+  name: 坂東市空き家バンク
+  operator: 坂東市
+  operator_kind: municipality
+  official_url: https://www.city.bando.lg.jp/
+  policy: link_only
+  municipality:
+    code: 082287
+    name: 坂東市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082287
+    bank_url: https://www.city.bando.lg.jp/
+    bank_status: none
+    map_query: 茨城県坂東市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.bando.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.bando.lg.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082295
+  name: 稲敷市空き家バンク
+  operator: 稲敷市
+  operator_kind: municipality
+  official_url: https://www.city.inashiki.lg.jp/
+  policy: link_only
+  municipality:
+    code: 082295
+    name: 稲敷市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082295
+    bank_url: https://www.city.inashiki.lg.jp/section.php?code=92
+    bank_status: info
+    map_query: 茨城県稲敷市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.inashiki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.inashiki.lg.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082309
+  name: かすみがうら市空き家バンク
+  operator: かすみがうら市
+  operator_kind: municipality
+  official_url: https://www.city.kasumigaura.lg.jp/
+  policy: link_only
+  municipality:
+    code: 082309
+    name: かすみがうら市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082309
+    bank_url: https://www.city.kasumigaura.lg.jp/
+    bank_status: none
+    map_query: 茨城県かすみがうら市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kasumigaura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kasumigaura.lg.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082317
+  name: 桜川市空き家バンク
+  operator: 桜川市
+  operator_kind: municipality
+  official_url: https://www.city.sakuragawa.lg.jp/
+  policy: crawl
+  municipality:
+    code: 082317
+    name: 桜川市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082317
+    bank_url: https://www.city.sakuragawa.lg.jp/akiya/akiya.php
+    bank_status: available
+    map_query: 茨城県桜川市
+  operator_evidence:
+    quote: 公式ドメイン www.city.sakuragawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.sakuragawa.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.sakuragawa.lg.jp/akiya/akiya.php
+    kind: listing_index
+  allow_hosts:
+  - www.city.sakuragawa.lg.jp
+  max_pages: 30
+- id: ibaraki-082325
+  name: 神栖市空き家バンク
+  operator: 神栖市
+  operator_kind: municipality
+  official_url: https://www.city.kamisu.ibaraki.jp/
+  policy: link_only
+  municipality:
+    code: 082325
+    name: 神栖市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082325
+    bank_url: https://www.city.kamisu.ibaraki.jp/
+    bank_status: none
+    map_query: 茨城県神栖市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kamisu.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kamisu.ibaraki.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082333
+  name: 行方市空き家バンク
+  operator: 行方市
+  operator_kind: municipality
+  official_url: https://www.city.namegata.ibaraki.jp/
+  policy: link_only
+  municipality:
+    code: 082333
+    name: 行方市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082333
+    bank_url: https://www.city.namegata.ibaraki.jp/
+    bank_status: none
+    map_query: 茨城県行方市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.namegata.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.namegata.ibaraki.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082341
+  name: 鉾田市空き家バンク
+  operator: 鉾田市
+  operator_kind: municipality
+  official_url: https://www.city.hokota.lg.jp/
+  policy: link_only
+  municipality:
+    code: 082341
+    name: 鉾田市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082341
+    bank_url: https://www.city.hokota.lg.jp/page/dir001189.html
+    bank_status: info
+    map_query: 茨城県鉾田市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.hokota.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.hokota.lg.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082350
+  name: つくばみらい市空き家バンク
+  operator: つくばみらい市
+  operator_kind: municipality
+  official_url: https://www.city.tsukubamirai.lg.jp/
+  policy: link_only
+  municipality:
+    code: 082350
+    name: つくばみらい市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082350
+    bank_url: https://www.city.tsukubamirai.lg.jp/jyumin/sumai-hikkoshi/akiya-taisaku/
+    bank_status: info
+    map_query: 茨城県つくばみらい市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tsukubamirai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.tsukubamirai.lg.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-082368
+  name: 小美玉市空き家バンク
+  operator: 小美玉市
+  operator_kind: municipality
+  official_url: https://www.city.omitama.lg.jp/
+  policy: crawl
+  municipality:
+    code: 082368
+    name: 小美玉市
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 082368
+    bank_url: https://www.city.omitama.lg.jp/0652/info-0000005214-0.html
+    bank_status: available
+    map_query: 茨城県小美玉市
+  operator_evidence:
+    quote: 公式ドメイン www.city.omitama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.omitama.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.omitama.lg.jp/0652/info-0000005214-0.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.omitama.lg.jp
+  max_pages: 30
+- id: ibaraki-083020
+  name: 茨城町空き家バンク
+  operator: 茨城町
+  operator_kind: municipality
+  official_url: https://www.town.ibaraki.lg.jp/
+  policy: crawl
+  municipality:
+    code: 083020
+    name: 茨城町
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 083020
+    bank_url: https://www.town.ibaraki.lg.jp/gyousei/kurashitetuduki/jyutaku/akiyabank/index.html
+    bank_status: available
+    map_query: 茨城県茨城町
+  operator_evidence:
+    quote: 公式ドメイン www.town.ibaraki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.ibaraki.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.ibaraki.lg.jp/gyousei/kurashitetuduki/jyutaku/akiyabank/index.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.ibaraki.lg.jp
+  max_pages: 30
+- id: ibaraki-083097
+  name: 大洗町空き家バンク
+  operator: 大洗町
+  operator_kind: municipality
+  official_url: https://www.town.oarai.lg.jp/
+  policy: link_only
+  municipality:
+    code: 083097
+    name: 大洗町
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 083097
+    bank_url: https://www.town.oarai.lg.jp/
+    bank_status: none
+    map_query: 茨城県大洗町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.oarai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.oarai.lg.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-083101
+  name: 城里町空き家バンク
+  operator: 城里町
+  operator_kind: municipality
+  official_url: https://www.town.shirosato.lg.jp/
+  policy: link_only
+  municipality:
+    code: 083101
+    name: 城里町
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 083101
+    bank_url: https://www.town.shirosato.lg.jp/
+    bank_status: none
+    map_query: 茨城県城里町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shirosato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.shirosato.lg.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-083411
+  name: 東海村空き家バンク
+  operator: 東海村
+  operator_kind: municipality
+  official_url: https://www.vill.tokai.ibaraki.jp/
+  policy: link_only
+  municipality:
+    code: 083411
+    name: 東海村
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 083411
+    bank_url: https://www.vill.tokai.ibaraki.jp/kurashi_tetsuzuki/sumai_pet/index.html
+    bank_status: info
+    map_query: 茨城県東海村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.tokai.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.tokai.ibaraki.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-083640
+  name: 大子町空き家バンク
+  operator: 大子町
+  operator_kind: municipality
+  official_url: https://www.town.daigo.ibaraki.jp/
+  policy: link_only
+  municipality:
+    code: 083640
+    name: 大子町
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 083640
+    bank_url: https://www.town.daigo.ibaraki.jp/sitemap.php
+    bank_status: info
+    map_query: 茨城県大子町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.daigo.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.daigo.ibaraki.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-084425
+  name: 美浦村空き家バンク
+  operator: 美浦村
+  operator_kind: municipality
+  official_url: https://www.vill.miho.lg.jp/
+  policy: link_only
+  municipality:
+    code: 084425
+    name: 美浦村
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 084425
+    bank_url: https://www.vill.miho.lg.jp/kurashi-kankyou/sumai-kekkontaisaku/akiyataisaku/
+    bank_status: info
+    map_query: 茨城県美浦村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.miho.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.vill.miho.lg.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-084433
+  name: 阿見町空き家バンク
+  operator: 阿見町
+  operator_kind: municipality
+  official_url: https://www.town.ami.lg.jp/
+  policy: crawl
+  municipality:
+    code: 084433
+    name: 阿見町
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 084433
+    bank_url: https://www.town.ami.lg.jp/0000009864.html
+    bank_status: available
+    map_query: 茨城県阿見町
+  operator_evidence:
+    quote: 公式ドメイン www.town.ami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.ami.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.ami.lg.jp/0000009864.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.ami.lg.jp
+  max_pages: 30
+- id: ibaraki-084476
+  name: 河内町空き家バンク
+  operator: 河内町
+  operator_kind: municipality
+  official_url: https://www.town.ibaraki-kawachi.lg.jp/
+  policy: link_only
+  municipality:
+    code: 084476
+    name: 河内町
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 084476
+    bank_url: https://www.town.ibaraki-kawachi.lg.jp/page/page003046.html
+    bank_status: info
+    map_query: 茨城県河内町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 茨城県 県内の市町村に掲載された公式サイト（www.town.ibaraki-kawachi.lg.jp）
+    url: https://www.pref.ibaraki.jp/towns/index.html
+    checked_on: '2026-09-11'
+  external_links:
+  - label: アットホーム
+    url: https://kawachi-t08447.akiya-athome.jp/
+  - label: ライフルホームズ
+    url: https://www.homes.co.jp/akiyabank/ibaraki/inashiki_kawachi/
+- id: ibaraki-085219
+  name: 八千代町空き家バンク
+  operator: 八千代町
+  operator_kind: municipality
+  official_url: https://www.town.ibaraki-yachiyo.lg.jp/
+  policy: link_only
+  municipality:
+    code: 085219
+    name: 八千代町
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 085219
+    bank_url: https://www.town.ibaraki-yachiyo.lg.jp/page/dir006867.html
+    bank_status: info
+    map_query: 茨城県八千代町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 茨城県 県内の市町村に掲載された公式サイト（www.town.ibaraki-yachiyo.lg.jp）
+    url: https://www.pref.ibaraki.jp/towns/index.html
+    checked_on: '2026-09-11'
+- id: ibaraki-085421
+  name: 五霞町空き家バンク
+  operator: 五霞町
+  operator_kind: municipality
+  official_url: https://www.town.goka.lg.jp/
+  policy: link_only
+  municipality:
+    code: 085421
+    name: 五霞町
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 085421
+    bank_url: https://www.town.goka.lg.jp/
+    bank_status: none
+    map_query: 茨城県五霞町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.goka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.goka.lg.jp/
+    checked_on: '2026-09-11'
+- id: ibaraki-085464
+  name: 境町空き家バンク
+  operator: 境町
+  operator_kind: municipality
+  official_url: https://www.town.sakai.ibaraki.jp/
+  policy: link_only
+  municipality:
+    code: 085464
+    name: 境町
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 085464
+    bank_url: https://www.town.sakai.ibaraki.jp/
+    bank_status: none
+    map_query: 茨城県境町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 茨城県 県内の市町村に掲載された公式サイト（www.town.sakai.ibaraki.jp）。サイトを取得できなかったためリンクのみ（robots.txt を取得できないため今回は巡回しない）
+    url: https://www.pref.ibaraki.jp/towns/index.html
+    checked_on: '2026-09-11'
+- id: ibaraki-085642
+  name: 利根町空き家バンク
+  operator: 利根町
+  operator_kind: municipality
+  official_url: https://www.town.tone.ibaraki.jp/
+  policy: link_only
+  municipality:
+    code: 085642
+    name: 利根町
+    prefecture: 茨城県
+    prefecture_slug: ibaraki
+    slug: 085642
+    bank_url: https://www.town.tone.ibaraki.jp/kurashi/sumaidouro/akiya/
+    bank_status: info
+    map_query: 茨城県利根町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.tone.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.tone.ibaraki.jp/
+    checked_on: '2026-09-11'

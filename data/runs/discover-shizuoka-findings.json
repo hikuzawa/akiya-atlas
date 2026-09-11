@@ -1,0 +1,1169 @@
+{
+  "findings": [
+    {
+      "alternatives": [],
+      "bank_url": "https://www.city.shizuoka.lg.jp/p005794.html",
+      "code": "221007",
+      "confidence": 0.8065,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.shizuoka.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
+      "evidence_url": "https://www.city.shizuoka.lg.jp/",
+      "external_links": [],
+      "listing_rows": 2,
+      "listing_score": 0.16,
+      "name": "静岡市",
+      "name_kana": "ｼｽﾞｵｶｼ",
+      "official_url": "www.city.shizuoka.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": "listing_index",
+      "pagination_pattern": null,
+      "policy": "crawl",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.city.hamamatsu.shizuoka.jp/kurashi-tetsuzuki/safety/akiya.html",
+      "code": "221309",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.hamamatsu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.hamamatsu.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": 0,
+      "listing_score": 0.0,
+      "name": "浜松市",
+      "name_kana": "ﾊﾏﾏﾂｼ",
+      "official_url": "www.city.hamamatsu.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.city.numazu.shizuoka.jp/kurashi/sumai/akiya/index.htm",
+      "code": "222038",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.numazu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.numazu.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": 1,
+      "listing_score": 0.04,
+      "name": "沼津市",
+      "name_kana": "ﾇﾏﾂﾞｼ",
+      "official_url": "www.city.numazu.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.city.atami.lg.jp/",
+      "code": "222054",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.atami.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
+      "evidence_url": "https://www.city.atami.lg.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "熱海市",
+      "name_kana": "ｱﾀﾐｼ",
+      "official_url": "www.city.atami.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.city.mishima.shizuoka.jp/page/3281.html",
+        "https://www.city.mishima.shizuoka.jp/page/3098.html",
+        "https://www.city.mishima.shizuoka.jp/page/2606.html",
+        "https://www.city.mishima.shizuoka.jp/page/2580.html",
+        "https://www.city.mishima.shizuoka.jp/page/2533.html"
+      ],
+      "bank_url": "https://www.city.mishima.shizuoka.jp/life/1/6/41/",
+      "code": "222062",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.mishima.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.mishima.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": 0,
+      "listing_score": 0.01,
+      "name": "三島市",
+      "name_kana": "ﾐｼﾏｼ",
+      "official_url": "www.city.mishima.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.city.fujinomiya.lg.jp/kurashi/sumai/akiya/index.html",
+      "code": "222071",
+      "confidence": 0.75,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.fujinomiya.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
+      "evidence_url": "https://www.city.fujinomiya.lg.jp/",
+      "external_links": [],
+      "listing_rows": 0,
+      "listing_score": 0.0,
+      "name": "富士宮市",
+      "name_kana": "ﾌｼﾞﾉﾐﾔｼ",
+      "official_url": "www.city.fujinomiya.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": "spa",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "JavaScript 描画のため静的 HTML に物件が無い。リンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.city.ito.shizuoka.jp/",
+      "code": "222089",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.ito.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.ito.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "伊東市",
+      "name_kana": "ｲﾄｳｼ",
+      "official_url": "www.city.ito.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.city.shimada.shizuoka.jp/kurashi-docs/toranomaki.html",
+        "https://www.city.shimada.shizuoka.jp/kurashi-docs/reienakijoukyou.html",
+        "https://www.city.shimada.shizuoka.jp/kurashi/tetuduki/gomi-kankyo/noyaki/",
+        "https://www.city.shimada.shizuoka.jp/gyosei-docs/minnano_shimadakiji.html"
+      ],
+      "bank_url": "https://www.city.shimada.shizuoka.jp/gyosei-docs/akiyabanku.html",
+      "code": "222097",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.shimada.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.shimada.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": 0,
+      "listing_score": 0.0,
+      "name": "島田市",
+      "name_kana": "ｼﾏﾀﾞｼ",
+      "official_url": "www.city.shimada.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.city.fuji.shizuoka.jp/1040300000/event/p000005.html",
+        "https://www.city.fuji.shizuoka.jp/kurashi/26chiku/yoshinagakita/index.html"
+      ],
+      "bank_url": "https://www.city.fuji.shizuoka.jp/kurashi/sumai/akiya/index.html",
+      "code": "222101",
+      "confidence": 0.75,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.fuji.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.fuji.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": 0,
+      "listing_score": 0.0,
+      "name": "富士市",
+      "name_kana": "ﾌｼﾞｼ",
+      "official_url": "www.city.fuji.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": "spa",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "JavaScript 描画のため静的 HTML に物件が無い。リンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.city.iwata.shizuoka.jp/1014568/index.html"
+      ],
+      "bank_url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/juutaku_pet_seikatsu/1010112/index.html",
+      "code": "222119",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.iwata.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.iwata.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": 0,
+      "listing_score": 0.0,
+      "name": "磐田市",
+      "name_kana": "ｲﾜﾀｼ",
+      "official_url": "www.city.iwata.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.city.yaizu.lg.jp/",
+      "code": "222127",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.yaizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
+      "evidence_url": "https://www.city.yaizu.lg.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "焼津市",
+      "name_kana": "ﾔｲﾂﾞｼ",
+      "official_url": "www.city.yaizu.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/7080.html",
+        "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/7745.html",
+        "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/799420.html",
+        "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/815214.html",
+        "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/978210.html"
+      ],
+      "bank_url": "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/8086.html",
+      "code": "222135",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.kakegawa.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.kakegawa.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": 0,
+      "listing_score": 0.0,
+      "name": "掛川市",
+      "name_kana": "ｶｹｶﾞﾜｼ",
+      "official_url": "www.city.kakegawa.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.city.fujieda.shizuoka.jp/",
+      "code": "222143",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.fujieda.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.fujieda.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "藤枝市",
+      "name_kana": "ﾌｼﾞｴﾀﾞｼ",
+      "official_url": "www.city.fujieda.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.city.gotemba.lg.jp/kurashi/b-7/b-7-5/9649.html",
+        "https://www.city.gotemba.lg.jp/kurashi/b-7/b-7-5/9574.html",
+        "https://www.city.gotemba.lg.jp/kurashi/b-7/b-7-5/7906.html",
+        "https://www.city.gotemba.lg.jp/kurashi/b-7/b-7-5/9561.html",
+        "https://www.city.gotemba.lg.jp/kurashi/b-7/b-7-5/17156.html"
+      ],
+      "bank_url": "https://www.city.gotemba.lg.jp/kurashi/category/b-7/b-7-5",
+      "code": "222151",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "静岡県 県内市町リンク集に掲載された公式サイト（www.city.gotemba.lg.jp）",
+      "evidence_url": "https://www.pref.shizuoka.jp/kensei/link/1007806.html",
+      "external_links": [],
+      "listing_rows": 0,
+      "listing_score": 0.0,
+      "name": "御殿場市",
+      "name_kana": "ｺﾞﾃﾝﾊﾞｼ",
+      "official_url": "www.city.gotemba.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.city.fukuroi.shizuoka.jp/",
+      "code": "222160",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.fukuroi.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.fukuroi.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "袋井市",
+      "name_kana": "ﾌｸﾛｲｼ",
+      "official_url": "www.city.fukuroi.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://shimoda-c22219.akiya-athome.jp/",
+      "code": "222194",
+      "confidence": 0.99,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.shimoda.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.shimoda.shizuoka.jp/",
+      "external_links": [
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://shimoda-c22219.akiya-athome.jp/"
+        },
+        {
+          "label": "最近見た物件 0 件",
+          "url": "https://shimoda-c22219.akiya-athome.jp/mypage/history/list/"
+        },
+        {
+          "label": "検討リスト 0 件",
+          "url": "https://shimoda-c22219.akiya-athome.jp/mypage/favorite/list/"
+        },
+        {
+          "label": "保存した条件 0 件",
+          "url": "https://shimoda-c22219.akiya-athome.jp/mypage/hope/list/"
+        },
+        {
+          "label": "マンション(売買)",
+          "url": "https://shimoda-c22219.akiya-athome.jp/buy/mansion/rail/"
+        },
+        {
+          "label": "戸建(売買)",
+          "url": "https://shimoda-c22219.akiya-athome.jp/buy/house/rail/"
+        },
+        {
+          "label": "土地(売買)",
+          "url": "https://shimoda-c22219.akiya-athome.jp/buy/land/rail/"
+        },
+        {
+          "label": "事業・投資物件(売買)",
+          "url": "https://shimoda-c22219.akiya-athome.jp/buy/invest/rail/"
+        },
+        {
+          "label": "住まい(賃貸)",
+          "url": "https://shimoda-c22219.akiya-athome.jp/rent/live/rail/"
+        },
+        {
+          "label": "事業用(賃貸)",
+          "url": "https://shimoda-c22219.akiya-athome.jp/rent/business/rail/"
+        },
+        {
+          "label": "マンション(売買)",
+          "url": "https://shimoda-c22219.akiya-athome.jp/buy/mansion/area/"
+        },
+        {
+          "label": "戸建(売買)",
+          "url": "https://shimoda-c22219.akiya-athome.jp/buy/house/area/"
+        },
+        {
+          "label": "土地(売買)",
+          "url": "https://shimoda-c22219.akiya-athome.jp/buy/land/area/"
+        },
+        {
+          "label": "事業・投資物件(売買)",
+          "url": "https://shimoda-c22219.akiya-athome.jp/buy/invest/area/"
+        },
+        {
+          "label": "住まい(賃貸)",
+          "url": "https://shimoda-c22219.akiya-athome.jp/rent/live/area/"
+        },
+        {
+          "label": "事業用(賃貸)",
+          "url": "https://shimoda-c22219.akiya-athome.jp/rent/business/area/"
+        },
+        {
+          "label": "マンション(売買)",
+          "url": "https://shimoda-c22219.akiya-athome.jp/buy/mansion/map/"
+        },
+        {
+          "label": "戸建(売買)",
+          "url": "https://shimoda-c22219.akiya-athome.jp/buy/house/map/"
+        },
+        {
+          "label": "土地(売買)",
+          "url": "https://shimoda-c22219.akiya-athome.jp/buy/land/map/"
+        },
+        {
+          "label": "事業・投資物件(売買)",
+          "url": "https://shimoda-c22219.akiya-athome.jp/buy/invest/map/"
+        },
+        {
+          "label": "住まい(賃貸)",
+          "url": "https://shimoda-c22219.akiya-athome.jp/rent/live/map/"
+        },
+        {
+          "label": "事業用(賃貸)",
+          "url": "https://shimoda-c22219.akiya-athome.jp/rent/business/map/"
+        },
+        {
+          "label": "移住者向け賃貸住宅オープンルーム開催のお知らせ ",
+          "url": "https://shimoda-c22219.akiya-athome.jp/contents/news/detail/?id=1852"
+        },
+        {
+          "label": "空き家の片付けと古いものを次の手につなぐ会(6.21sun)",
+          "url": "https://shimoda-c22219.akiya-athome.jp/contents/news/detail/?id=1816"
+        },
+        {
+          "label": "空き家バンクinstagramのお知らせ",
+          "url": "https://shimoda-c22219.akiya-athome.jp/contents/news/detail/?id=1684"
+        },
+        {
+          "label": "下田市空き家バンクホームページ再開のお知らせ",
+          "url": "https://shimoda-c22219.akiya-athome.jp/contents/news/detail/?id=1618"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://shimoda-c22219.akiya-athome.jp/bukken/detail/buy/%E4%B8%8B%E7%94%B0%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-48589"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://shimoda-c22219.akiya-athome.jp/bukken/detail/buy/%E4%B8%8B%E7%94%B0%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-48060"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://shimoda-c22219.akiya-athome.jp/bukken/detail/buy/%E4%B8%8B%E7%94%B0%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47541"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://shimoda-c22219.akiya-athome.jp/bukken/detail/buy/%E4%B8%8B%E7%94%B0%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46347"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://shimoda-c22219.akiya-athome.jp/bukken/detail/rent/%E4%B8%8B%E7%94%B0%E5%B8%82%E4%BA%8B%E6%A5%AD%E7%94%A8-8477"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://shimoda-c22219.akiya-athome.jp/bukken/detail/rent/%E4%B8%8B%E7%94%B0%E5%B8%82%E4%BA%8B%E6%A5%AD%E7%94%A8-8478"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://shimoda-c22219.akiya-athome.jp/bukken/detail/rent/%E4%B8%8B%E7%94%B0%E5%B8%82%E4%BA%8B%E6%A5%AD%E7%94%A8-8442"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://shimoda-c22219.akiya-athome.jp/bukken/detail/buy/%E4%B8%8B%E7%94%B0%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-41865"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://shimoda-c22219.akiya-athome.jp/bukken/detail/buy/%E4%B8%8B%E7%94%B0%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-43214"
+        },
+        {
+          "label": "もっと見る",
+          "url": "https://shimoda-c22219.akiya-athome.jp/buy/buy/osusume/list"
+        },
+        {
+          "label": "下田市　空き家バンク",
+          "url": "https://shimoda-c22219.akiya-athome.jp"
+        },
+        {
+          "label": "  空き家バンク以外の\n下田市の\n中古一戸建てを探す\n（athome）",
+          "url": "https://www.athome.co.jp/kodate/chuko/shizuoka/shimoda-city/list/"
+        },
+        {
+          "label": "  空き家バンク以外の\n下田市の土地を探す\n（athome）",
+          "url": "https://www.athome.co.jp/tochi/shizuoka/shimoda-city/list/"
+        },
+        {
+          "label": "  空き家バンク以外の\n下田市の\n賃貸居住用物件を探す\n（athome）",
+          "url": "https://www.athome.co.jp/chintai/shizuoka/shimoda-city/list/"
+        },
+        {
+          "label": "プライバシーポリシー",
+          "url": "https://shimoda-c22219.akiya-athome.jp/contents/static/privacy-policy/"
+        }
+      ],
+      "listing_rows": 26,
+      "listing_score": 1.0,
+      "name": "下田市",
+      "name_kana": "ｼﾓﾀﾞｼ",
+      "official_url": "www.city.shimoda.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": "third_party",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "掲載は民間プラットフォーム。巡回せずリンクのみ"
+    },
+    {
+      "alternatives": [
+        "http://www.city.susono.shizuoka.jp/kurashi/4/vacant_house/index.html"
+      ],
+      "bank_url": "https://www.city.susono.shizuoka.jp/",
+      "code": "222208",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.susono.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.susono.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "裾野市",
+      "name_kana": "ｽｿﾉｼ",
+      "official_url": "www.city.susono.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.city.kosai.shizuoka.jp/event/hikkoshi_sumai/5870.html"
+      ],
+      "bank_url": "https://www.city.kosai.shizuoka.jp/event/hikkoshi_sumai/7865.html",
+      "code": "222216",
+      "confidence": 0.8835,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.kosai.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.kosai.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": 13,
+      "listing_score": 1.0,
+      "name": "湖西市",
+      "name_kana": "ｺｻｲｼ",
+      "official_url": "www.city.kosai.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": "listing_index",
+      "pagination_pattern": "https?://www\\.city\\.kosai\\.shizuoka\\.jp/event/hikkoshi_sumai/7865\\.html/?\\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\\d+",
+      "policy": "crawl",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.city.izu.shizuoka.jp/",
+      "code": "222224",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.izu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.izu.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "伊豆市",
+      "name_kana": "ｲｽﾞｼ",
+      "official_url": "www.city.izu.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.city.omaezaki.shizuoka.jp/",
+        "https://www.city.omaezaki.shizuoka.jp/kanko/",
+        "https://www.city.omaezaki.shizuoka.jp/kurashi/",
+        "https://www.city.omaezaki.shizuoka.jp/soshiki/",
+        "https://www.city.omaezaki.shizuoka.jp/news.html"
+      ],
+      "bank_url": "https://www.city.omaezaki.shizuoka.jp/",
+      "code": "222232",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.omaezaki.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.omaezaki.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "御前崎市",
+      "name_kana": "ｵﾏｴｻﾞｷｼ",
+      "official_url": "www.city.omaezaki.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.city.kikugawa.shizuoka.jp/toshikeikaku/akiyasoudankai.html",
+        "https://www.city.kikugawa.shizuoka.jp/faq/kurashi/juutaku/index.html"
+      ],
+      "bank_url": "https://www.city.kikugawa.shizuoka.jp/",
+      "code": "222241",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.kikugawa.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.kikugawa.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "菊川市",
+      "name_kana": "ｷｸｶﾞﾜｼ",
+      "official_url": "www.city.kikugawa.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.city.izunokuni.shizuoka.jp/sports/manabi/kashidashi/aki.html"
+      ],
+      "bank_url": "https://www.city.izunokuni.shizuoka.jp/",
+      "code": "222259",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.izunokuni.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.izunokuni.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "伊豆の国市",
+      "name_kana": "ｲｽﾞﾉｸﾆｼ",
+      "official_url": "www.city.izunokuni.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.city.makinohara.shizuoka.jp/",
+        "https://www.city.makinohara.shizuoka.jp/ques/",
+        "https://www.city.makinohara.shizuoka.jp/life/",
+        "https://www.city.makinohara.shizuoka.jp/life/1/",
+        "https://www.city.makinohara.shizuoka.jp/life/2/"
+      ],
+      "bank_url": "https://www.city.makinohara.shizuoka.jp/site/makinohara-life/32178.html",
+      "code": "222267",
+      "confidence": 0.9324999999999999,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.makinohara.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.makinohara.shizuoka.jp/",
+      "external_links": [
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/23178"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/25444"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/29845"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/40084"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/43646"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/44753"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/47184"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/%E7%89%A7%E4%B9%8B%E5%8E%9F%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-48285"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/%E7%89%A7%E4%B9%8B%E5%8E%9F%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-48843"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/%E7%89%A7%E4%B9%8B%E5%8E%9F%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-48866"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/8752"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/8757"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/9347"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/9608"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/13526"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/24588"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/25283"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/26374"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/37991"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/40017"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/45792"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/45794"
+        },
+        {
+          "label": "詳細はこちら",
+          "url": "https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/%E7%89%A7%E4%B9%8B%E5%8E%9F%E5%B8%82%E5%A3%B2%E5%9C%B0-47687"
+        },
+        {
+          "label": "こちらから",
+          "url": "https://www.homes.co.jp/akiyabank/"
+        },
+        {
+          "label": "こちらから",
+          "url": "https://www.akiya-athome.jp/"
+        }
+      ],
+      "listing_rows": 29,
+      "listing_score": 1.0,
+      "name": "牧之原市",
+      "name_kana": "ﾏｷﾉﾊﾗｼ",
+      "official_url": "www.city.makinohara.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": "listing_index",
+      "pagination_pattern": null,
+      "policy": "crawl",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.town.higashiizu.lg.jp/",
+      "code": "223018",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.town.higashiizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
+      "evidence_url": "https://www.town.higashiizu.lg.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "東伊豆町",
+      "name_kana": "ﾋｶﾞｼｲｽﾞﾁｮｳ",
+      "official_url": "www.town.higashiizu.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.town.kawazu.shizuoka.jp/choumin/noyaki/",
+        "https://www.town.kawazu.shizuoka.jp/gyousei/otoiawase/"
+      ],
+      "bank_url": "https://www.town.kawazu.shizuoka.jp/",
+      "code": "223026",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.town.kawazu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.town.kawazu.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "河津町",
+      "name_kana": "ｶﾜﾂﾞﾁｮｳ",
+      "official_url": "www.town.kawazu.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.town.minamiizu.shizuoka.jp/docs/2023121900019/",
+        "https://www.town.minamiizu.shizuoka.jp/docs/2020052600025/",
+        "https://www.town.minamiizu.shizuoka.jp/docs/2022030700048/",
+        "https://www.town.minamiizu.shizuoka.jp/docs/2016022200067/",
+        "https://www.town.minamiizu.shizuoka.jp/tag/%E7%A9%BA%E3%81%8D%E5%AE%B6/"
+      ],
+      "bank_url": "http://www.town.minamiizu.shizuoka.jp/docs/2013030500011/",
+      "code": "223042",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.town.minamiizu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.town.minamiizu.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": 0,
+      "listing_score": 0.0,
+      "name": "南伊豆町",
+      "name_kana": "ﾐﾅﾐｲｽﾞﾁｮｳ",
+      "official_url": "www.town.minamiizu.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.town.matsuzaki.shizuoka.jp/docs/2018060500048/",
+        "https://www.town.matsuzaki.shizuoka.jp/",
+        "https://www.town.matsuzaki.shizuoka.jp/categories/",
+        "https://www.town.matsuzaki.shizuoka.jp/sitemap.html",
+        "https://www.town.matsuzaki.shizuoka.jp/douhoumusen/"
+      ],
+      "bank_url": "https://www.town.matsuzaki.shizuoka.jp/docs/2016012100063/",
+      "code": "223051",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.town.matsuzaki.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.town.matsuzaki.shizuoka.jp/",
+      "external_links": [
+        {
+          "label": "・全国版空き家バンク  LIFULL HOME'S【ライフルホームズ】",
+          "url": "https://www.homes.co.jp/akiyabank/"
+        },
+        {
+          "label": "・全国版空き家・空き地バンク【アットホーム 空き家バンク】",
+          "url": "https://www.akiya-athome.jp/"
+        }
+      ],
+      "listing_rows": 0,
+      "listing_score": 0.0,
+      "name": "松崎町",
+      "name_kana": "ﾏﾂｻﾞｷﾁｮｳ",
+      "official_url": "www.town.matsuzaki.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.town.nishiizu.shizuoka.jp/",
+      "code": "223069",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.town.nishiizu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.town.nishiizu.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "西伊豆町",
+      "name_kana": "ﾆｼｲｽﾞﾁｮｳ",
+      "official_url": "www.town.nishiizu.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.town.kannami.shizuoka.jp/life_event/sumai/4637.html",
+      "code": "223255",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.town.kannami.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.town.kannami.shizuoka.jp/",
+      "external_links": [
+        {
+          "label": "LIFULLHOME'S",
+          "url": "https://www.homes.co.jp/akiyabank/"
+        }
+      ],
+      "listing_rows": 0,
+      "listing_score": 0.0,
+      "name": "函南町",
+      "name_kana": "ｶﾝﾅﾐﾁｮｳ",
+      "official_url": "www.town.kannami.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.town.shimizu.shizuoka.jp/",
+      "code": "223417",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.town.shimizu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.town.shimizu.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "清水町",
+      "name_kana": "ｼﾐｽﾞﾁｮｳ",
+      "official_url": "www.town.shimizu.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.town.nagaizumi.lg.jp/moving/1/10120.html",
+        "https://www.town.nagaizumi.lg.jp/moving/1/10114.html",
+        "https://www.town.nagaizumi.lg.jp/moving/3/10121.html",
+        "https://www.town.nagaizumi.lg.jp/moving/3/10122.html",
+        "https://www.town.nagaizumi.lg.jp/soshiki/kensetsu/akiya/9198.html"
+      ],
+      "bank_url": "https://www.town.nagaizumi.lg.jp/moving/1/10118.html",
+      "code": "223425",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.town.nagaizumi.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
+      "evidence_url": "https://www.town.nagaizumi.lg.jp/",
+      "external_links": [],
+      "listing_rows": 0,
+      "listing_score": 0.0,
+      "name": "長泉町",
+      "name_kana": "ﾅｶﾞｲｽﾞﾐﾁｮｳ",
+      "official_url": "www.town.nagaizumi.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.fuji-oyama.jp/page/1015.html",
+        "https://www.fuji-oyama.jp/page/4844.html"
+      ],
+      "bank_url": "https://www.fuji-oyama.jp/",
+      "code": "223441",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "静岡県 県内市町リンク集に掲載された公式サイト（www.fuji-oyama.jp）",
+      "evidence_url": "https://www.pref.shizuoka.jp/kensei/link/1007806.html",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "小山町",
+      "name_kana": "ｵﾔﾏﾁｮｳ",
+      "official_url": "www.fuji-oyama.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.town.yoshida.shizuoka.jp/",
+      "code": "224243",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.town.yoshida.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.town.yoshida.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "吉田町",
+      "name_kana": "ﾖｼﾀﾞﾁｮｳ",
+      "official_url": "www.town.yoshida.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.town.kawanehon.shizuoka.jp/kurashi_tetsuduki/hojokinitiran/ijyuteijyuakiya/index.html",
+        "https://www.town.kawanehon.shizuoka.jp/kurashi_tetsuduki/hojokinitiran/15430.html",
+        "https://www.town.kawanehon.shizuoka.jp/kurashi_tetsuduki/11/1/1471.html",
+        "https://www.town.kawanehon.shizuoka.jp/kurashi_tetsuduki/11/1/1472.html"
+      ],
+      "bank_url": "https://www.town.kawanehon.shizuoka.jp/kurashi_tetsuduki/11/1/index.html",
+      "code": "224294",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.town.kawanehon.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.town.kawanehon.shizuoka.jp/",
+      "external_links": [],
+      "listing_rows": 0,
+      "listing_score": 0.0,
+      "name": "川根本町",
+      "name_kana": "ｶﾜﾈﾎﾝﾁｮｳ",
+      "official_url": "www.town.kawanehon.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.town.morimachi.shizuoka.jp/gyosei/kurashi_tetsuzuki/ijuteiju/akiyabank/sitemap.dir.xml"
+      ],
+      "bank_url": "https://www.town.morimachi.shizuoka.jp/",
+      "code": "224618",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "静岡県 県内市町リンク集に掲載された公式サイト（www.town.morimachi.shizuoka.jp）",
+      "evidence_url": "https://www.pref.shizuoka.jp/kensei/link/1007806.html",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "森町",
+      "name_kana": "ﾓﾘﾏﾁ",
+      "official_url": "www.town.morimachi.shizuoka.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "静岡県",
+      "prefecture_slug": "shizuoka",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    }
+  ]
+}

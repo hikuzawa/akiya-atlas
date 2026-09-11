@@ -1,0 +1,401 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: ishikawa-172014
+  name: 金沢市空き家バンク
+  operator: 金沢市
+  operator_kind: municipality
+  official_url: https://www.city.kanazawa.ishikawa.jp/
+  policy: link_only
+  municipality:
+    code: '172014'
+    name: 金沢市
+    prefecture: 石川県
+    prefecture_slug: ishikawa
+    slug: '172014'
+    bank_url: https://www.city.kanazawa.ishikawa.jp/
+    bank_status: none
+    map_query: 石川県金沢市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kanazawa.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kanazawa.ishikawa.jp/
+    checked_on: '2026-09-11'
+- id: ishikawa-172022
+  name: 七尾市空き家バンク
+  operator: 七尾市
+  operator_kind: municipality
+  official_url: https://www.city.nanao.lg.jp/
+  policy: link_only
+  municipality:
+    code: '172022'
+    name: 七尾市
+    prefecture: 石川県
+    prefecture_slug: ishikawa
+    slug: '172022'
+    bank_url: https://www.city.nanao.lg.jp/toshikenchiku/kurashi/sumai/sumai/akiya.html
+    bank_status: info
+    map_query: 石川県七尾市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nanao.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.nanao.lg.jp/
+    checked_on: '2026-09-11'
+- id: ishikawa-172031
+  name: 小松市空き家バンク
+  operator: 小松市
+  operator_kind: municipality
+  official_url: https://www.city.komatsu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '172031'
+    name: 小松市
+    prefecture: 石川県
+    prefecture_slug: ishikawa
+    slug: '172031'
+    bank_url: https://www.city.komatsu.lg.jp/soshiki/1027/akiya_akishitsubanku_komatsuchoukajouhoubanku/index.html
+    bank_status: info
+    map_query: 石川県小松市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.komatsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.komatsu.lg.jp/
+    checked_on: '2026-09-11'
+- id: ishikawa-172049
+  name: 輪島市空き家バンク
+  operator: 輪島市
+  operator_kind: municipality
+  official_url: https://www.city.wajima.ishikawa.jp/
+  policy: link_only
+  municipality:
+    code: '172049'
+    name: 輪島市
+    prefecture: 石川県
+    prefecture_slug: ishikawa
+    slug: '172049'
+    bank_url: https://www.city.wajima.ishikawa.jp/docs/akichidatabase/top.html
+    bank_status: info
+    map_query: 石川県輪島市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.wajima.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.wajima.ishikawa.jp/
+    checked_on: '2026-09-11'
+- id: ishikawa-172057
+  name: 珠洲市空き家バンク
+  operator: 珠洲市
+  operator_kind: municipality
+  official_url: https://www.city.suzu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '172057'
+    name: 珠洲市
+    prefecture: 石川県
+    prefecture_slug: ishikawa
+    slug: '172057'
+    bank_url: https://www.city.suzu.lg.jp/
+    bank_status: none
+    map_query: 石川県珠洲市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.suzu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.suzu.lg.jp/
+    checked_on: '2026-09-11'
+- id: ishikawa-172065
+  name: 加賀市空き家バンク
+  operator: 加賀市
+  operator_kind: municipality
+  official_url: https://www.city.kaga.ishikawa.jp/
+  policy: link_only
+  municipality:
+    code: '172065'
+    name: 加賀市
+    prefecture: 石川県
+    prefecture_slug: ishikawa
+    slug: '172065'
+    bank_url: https://www.city.kaga.ishikawa.jp/kurashi/sumai/akiya/index.html
+    bank_status: info
+    map_query: 石川県加賀市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kaga.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kaga.ishikawa.jp/
+    checked_on: '2026-09-11'
+- id: ishikawa-172073
+  name: 羽咋市空き家バンク
+  operator: 羽咋市
+  operator_kind: municipality
+  official_url: https://www.city.hakui.lg.jp/
+  policy: link_only
+  municipality:
+    code: '172073'
+    name: 羽咋市
+    prefecture: 石川県
+    prefecture_slug: ishikawa
+    slug: '172073'
+    bank_url: https://www.city.hakui.lg.jp/
+    bank_status: none
+    map_query: 石川県羽咋市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.hakui.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.hakui.lg.jp/
+    checked_on: '2026-09-11'
+- id: ishikawa-172090
+  name: かほく市空き家バンク
+  operator: かほく市
+  operator_kind: municipality
+  official_url: https://www.city.kahoku.lg.jp/
+  policy: link_only
+  municipality:
+    code: '172090'
+    name: かほく市
+    prefecture: 石川県
+    prefecture_slug: ishikawa
+    slug: '172090'
+    bank_url: https://www.city.kahoku.lg.jp/001/156/157/index.html
+    bank_status: info
+    map_query: 石川県かほく市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kahoku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kahoku.lg.jp/
+    checked_on: '2026-09-11'
+- id: ishikawa-172103
+  name: 白山市空き家バンク
+  operator: 白山市
+  operator_kind: municipality
+  official_url: https://www.city.hakusan.lg.jp/
+  policy: link_only
+  municipality:
+    code: '172103'
+    name: 白山市
+    prefecture: 石川県
+    prefecture_slug: ishikawa
+    slug: '172103'
+    bank_url: https://www.city.hakusan.lg.jp/machi/akiya/index.html
+    bank_status: info
+    map_query: 石川県白山市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.hakusan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.hakusan.lg.jp/
+    checked_on: '2026-09-11'
+- id: ishikawa-172111
+  name: 能美市空き家バンク
+  operator: 能美市
+  operator_kind: municipality
+  official_url: https://www.city.nomi.lg.jp/
+  policy: crawl
+  municipality:
+    code: '172111'
+    name: 能美市
+    prefecture: 石川県
+    prefecture_slug: ishikawa
+    slug: '172111'
+    bank_url: https://www.city.nomi.lg.jp/docs/1083.html
+    bank_status: available
+    map_query: 石川県能美市
+  operator_evidence:
+    quote: 公式ドメイン www.city.nomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.nomi.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.nomi.lg.jp/docs/1083.html
+    kind: listing_index
+    follow:
+    - pattern: https?://www\.city\.nomi\.lg\.jp/docs/1083\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - www.city.nomi.lg.jp
+  max_pages: 30
+- id: ishikawa-172120
+  name: 野々市市空き家バンク
+  operator: 野々市市
+  operator_kind: municipality
+  official_url: https://www.city.nonoichi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '172120'
+    name: 野々市市
+    prefecture: 石川県
+    prefecture_slug: ishikawa
+    slug: '172120'
+    bank_url: https://www.city.nonoichi.lg.jp/life/1/18/234/
+    bank_status: info
+    map_query: 石川県野々市市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nonoichi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.nonoichi.lg.jp/
+    checked_on: '2026-09-11'
+- id: ishikawa-173240
+  name: 川北町空き家バンク
+  operator: 川北町
+  operator_kind: municipality
+  official_url: https://www.town.kawakita.ishikawa.jp/
+  policy: link_only
+  municipality:
+    code: '173240'
+    name: 川北町
+    prefecture: 石川県
+    prefecture_slug: ishikawa
+    slug: '173240'
+    bank_url: https://www.town.kawakita.ishikawa.jp/news/
+    bank_status: info
+    map_query: 石川県川北町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kawakita.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kawakita.ishikawa.jp/
+    checked_on: '2026-09-11'
+- id: ishikawa-173614
+  name: 津幡町空き家バンク
+  operator: 津幡町
+  operator_kind: municipality
+  official_url: https://www.town.tsubata.lg.jp/
+  policy: crawl
+  municipality:
+    code: '173614'
+    name: 津幡町
+    prefecture: 石川県
+    prefecture_slug: ishikawa
+    slug: '173614'
+    bank_url: https://www.town.tsubata.lg.jp/site/welcome/1222.html
+    bank_status: available
+    map_query: 石川県津幡町
+  operator_evidence:
+    quote: 公式ドメイン www.town.tsubata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.tsubata.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.tsubata.lg.jp/site/welcome/1222.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.tsubata.lg.jp
+  max_pages: 30
+- id: ishikawa-173657
+  name: 内灘町空き家バンク
+  operator: 内灘町
+  operator_kind: municipality
+  official_url: https://www.town.uchinada.lg.jp/
+  policy: link_only
+  municipality:
+    code: '173657'
+    name: 内灘町
+    prefecture: 石川県
+    prefecture_slug: ishikawa
+    slug: '173657'
+    bank_url: https://www.town.uchinada.lg.jp/
+    bank_status: none
+    map_query: 石川県内灘町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.uchinada.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.uchinada.lg.jp/
+    checked_on: '2026-09-11'
+- id: ishikawa-173843
+  name: 志賀町空き家バンク
+  operator: 志賀町
+  operator_kind: municipality
+  official_url: https://www.town.shika.lg.jp/
+  policy: link_only
+  municipality:
+    code: '173843'
+    name: 志賀町
+    prefecture: 石川県
+    prefecture_slug: ishikawa
+    slug: '173843'
+    bank_url: https://www.town.shika.lg.jp/life/1/6/23/
+    bank_status: info
+    map_query: 石川県志賀町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shika.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.shika.lg.jp/
+    checked_on: '2026-09-11'
+- id: ishikawa-173860
+  name: 宝達志水町空き家バンク
+  operator: 宝達志水町
+  operator_kind: municipality
+  official_url: https://www.hodatsushimizu.jp/
+  policy: link_only
+  municipality:
+    code: '173860'
+    name: 宝達志水町
+    prefecture: 石川県
+    prefecture_slug: ishikawa
+    slug: '173860'
+    bank_url: https://www.hodatsushimizu.jp/gyosei/kurashi_tetsuzuki/4/3796.html
+    bank_status: info
+    map_query: 石川県宝達志水町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 石川県内市町のページに掲載された公式サイト（www.hodatsushimizu.jp）
+    url: https://www.pref.ishikawa.lg.jp/shimachi.html
+    checked_on: '2026-09-11'
+- id: ishikawa-174076
+  name: 中能登町空き家バンク
+  operator: 中能登町
+  operator_kind: municipality
+  official_url: https://www.town.nakanoto.ishikawa.jp/
+  policy: link_only
+  municipality:
+    code: '174076'
+    name: 中能登町
+    prefecture: 石川県
+    prefecture_slug: ishikawa
+    slug: '174076'
+    bank_url: https://www.town.nakanoto.ishikawa.jp/
+    bank_status: none
+    map_query: 石川県中能登町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.nakanoto.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.nakanoto.ishikawa.jp/
+    checked_on: '2026-09-11'
+- id: ishikawa-174611
+  name: 穴水町空き家バンク
+  operator: 穴水町
+  operator_kind: municipality
+  official_url: https://www.town.anamizu.lg.jp/
+  policy: crawl
+  municipality:
+    code: '174611'
+    name: 穴水町
+    prefecture: 石川県
+    prefecture_slug: ishikawa
+    slug: '174611'
+    bank_url: https://www.town.anamizu.lg.jp/akiyabank/
+    bank_status: available
+    map_query: 石川県穴水町
+  operator_evidence:
+    quote: 公式ドメイン www.town.anamizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.anamizu.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.anamizu.lg.jp/akiyabank/
+    kind: listing_index
+  allow_hosts:
+  - www.town.anamizu.lg.jp
+  max_pages: 30
+- id: ishikawa-174637
+  name: 能登町空き家バンク
+  operator: 能登町
+  operator_kind: municipality
+  official_url: https://www.town.noto.lg.jp/
+  policy: link_only
+  municipality:
+    code: '174637'
+    name: 能登町
+    prefecture: 石川県
+    prefecture_slug: ishikawa
+    slug: '174637'
+    bank_url: https://www.town.noto.lg.jp/
+    bank_status: none
+    map_query: 石川県能登町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.noto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.noto.lg.jp/
+    checked_on: '2026-09-11'

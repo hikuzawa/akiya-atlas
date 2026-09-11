@@ -1,0 +1,494 @@
+prefecture: 群馬県
+prefecture_slug: gunma
+created_at: '2026-09-11T02:34:36+00:00'
+candidates:
+- key: '102016'
+  label: 群馬県 前橋市
+  url: https://www.city.maebashi.gunma.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.maebashi.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.maebashi.gunma.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '102024'
+  label: 群馬県 高崎市
+  url: https://www.city.takasaki.gunma.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.takasaki.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.takasaki.gunma.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '102032'
+  label: 群馬県 桐生市
+  url: https://www.city.kiryu.lg.jp/shisei/machi/iinekiryu/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kiryu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kiryu.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '102041'
+  label: 群馬県 伊勢崎市
+  url: https://www.city.isesaki.lg.jp/kurashi_tetsuzuki/kakushusodan/18643.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.isesaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.isesaki.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '102059'
+  label: 群馬県 太田市
+  url: https://www.city.ota.gunma.jp/page/1150.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.95
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ota.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.ota.gunma.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '102067'
+  label: 群馬県 沼田市
+  url: https://www.city.numata.gunma.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.numata.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.numata.gunma.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '102075'
+  label: 群馬県 館林市
+  url: https://www.city.tatebayashi.gunma.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tatebayashi.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.tatebayashi.gunma.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '102083'
+  label: 群馬県 渋川市
+  url: https://www.city.shibukawa.lg.jp/kurashi/000048/000052/index.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shibukawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.shibukawa.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '102091'
+  label: 群馬県 藤岡市
+  url: https://www.city.fujioka.gunma.jp/kurashi_testuduki/zumai_koen/10413.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.fujioka.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.fujioka.gunma.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '102105'
+  label: 群馬県 富岡市
+  url: https://www.city.tomioka.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 群馬県 県内市町村等ホームページ外部リンク集に掲載された公式サイト（www.city.tomioka.lg.jp）。サイトを取得できなかったためリンクのみ（robots.txt を取得できないため今回は巡回しない）
+  evidence_url: https://www.pref.gunma.jp/page/14523.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '102113'
+  label: 群馬県 安中市
+  url: https://www.city.annaka.lg.jp/akiya/annakabiyori/28298.html
+  page_class: listing_detail
+  class_label: 物件詳細（静的）
+  confidence: 0.9
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.annaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.annaka.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '102121'
+  label: 群馬県 みどり市
+  url: https://www.city.midori.gunma.jp/kankyo/1001623/1001722/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.midori.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.midori.gunma.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '103446'
+  label: 群馬県 榛東村
+  url: https://www.vill.shinto.gunma.jp/life/000049/000055/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.shinto.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.shinto.gunma.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '103454'
+  label: 群馬県 吉岡町
+  url: https://www.town.yoshioka.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yoshioka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.yoshioka.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '103667'
+  label: 群馬県 上野村
+  url: https://www.uenomura.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 群馬県 県内市町村等ホームページ外部リンク集に掲載された公式サイト（www.uenomura.jp）
+  evidence_url: https://www.pref.gunma.jp/page/14523.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '103675'
+  label: 群馬県 神流町
+  url: https://www.town.kanna.gunma.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kanna.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kanna.gunma.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '103829'
+  label: 群馬県 下仁田町
+  url: https://www.town.shimonita.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shimonita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.shimonita.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '103837'
+  label: 群馬県 南牧村
+  url: https://nanmoku.ne.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 群馬県 県内市町村等ホームページ外部リンク集に掲載された公式サイト（nanmoku.ne.jp）
+  evidence_url: https://www.pref.gunma.jp/page/14523.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '103845'
+  label: 群馬県 甘楽町
+  url: https://www.town.kanra.lg.jp/kikaku/chousei/akiya/20200331163723.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kanra.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kanra.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '104213'
+  label: 群馬県 中之条町
+  url: https://www.town.nakanojo.gunma.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 群馬県 県内市町村等ホームページ外部リンク集に掲載された公式サイト（www.town.nakanojo.gunma.jp）
+  evidence_url: https://www.pref.gunma.jp/page/14523.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '104248'
+  label: 群馬県 長野原町
+  url: https://www.town.naganohara.gunma.jp/life/?content=256
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.82
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.naganohara.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.naganohara.gunma.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '104256'
+  label: 群馬県 嬬恋村
+  url: https://www.vill.tsumagoi.gunma.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.tsumagoi.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.tsumagoi.gunma.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '104264'
+  label: 群馬県 草津町
+  url: https://www.town.kusatsu.gunma.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kusatsu.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kusatsu.gunma.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '104281'
+  label: 群馬県 高山村
+  url: https://www.vill.takayama.gunma.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.takayama.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.takayama.gunma.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '104299'
+  label: 群馬県 東吾妻町
+  url: https://www.town.higashiagatsuma.gunma.jp/www/genre/1554784819493/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.higashiagatsuma.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.higashiagatsuma.gunma.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '104434'
+  label: 群馬県 片品村
+  url: https://www.vill.katashina.gunma.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.katashina.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.katashina.gunma.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '104442'
+  label: 群馬県 川場村
+  url: https://www.vill.kawaba.gunma.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.kawaba.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.kawaba.gunma.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '104485'
+  label: 群馬県 昭和村
+  url: https://www.vill.showa.gunma.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.showa.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.showa.gunma.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '104493'
+  label: 群馬県 みなかみ町
+  url: https://www.town.minakami.gunma.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.minakami.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.minakami.gunma.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '104647'
+  label: 群馬県 玉村町
+  url: https://www.town.tamamura.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tamamura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.tamamura.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '105210'
+  label: 群馬県 板倉町
+  url: https://www.town.itakura.gunma.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.itakura.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.itakura.gunma.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '105228'
+  label: 群馬県 明和町
+  url: https://www.town.meiwa.gunma.jp/life/soshiki/juuminkankyo/kankyohozen/akiyataisaku/1974.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.meiwa.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.meiwa.gunma.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '105236'
+  label: 群馬県 千代田町
+  url: https://www.town.chiyoda.gunma.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.chiyoda.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.chiyoda.gunma.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '105244'
+  label: 群馬県 大泉町
+  url: https://www.town.oizumi.gunma.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.oizumi.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.oizumi.gunma.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '105252'
+  label: 群馬県 邑楽町
+  url: https://www.town.ora.gunma.jp/s055/060/180/akiyaari.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ora.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ora.gunma.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

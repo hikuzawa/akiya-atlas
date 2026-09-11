@@ -1,0 +1,428 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: saga-412015
+  name: 佐賀市空き家バンク
+  operator: 佐賀市
+  operator_kind: municipality
+  official_url: https://www.city.saga.lg.jp/
+  policy: link_only
+  municipality:
+    code: '412015'
+    name: 佐賀市
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '412015'
+    bank_url: https://www.city.saga.lg.jp/kurashi/sumai/1/1155.html
+    bank_status: info
+    map_query: 佐賀県佐賀市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.saga.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.saga.lg.jp/
+    checked_on: '2026-09-11'
+- id: saga-412023
+  name: 唐津市空き家バンク
+  operator: 唐津市
+  operator_kind: municipality
+  official_url: https://www.city.karatsu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '412023'
+    name: 唐津市
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '412023'
+    bank_url: https://www.city.karatsu.lg.jp/
+    bank_status: none
+    map_query: 佐賀県唐津市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.karatsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.karatsu.lg.jp/
+    checked_on: '2026-09-11'
+- id: saga-412031
+  name: 鳥栖市空き家バンク
+  operator: 鳥栖市
+  operator_kind: municipality
+  official_url: https://www.city.tosu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '412031'
+    name: 鳥栖市
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '412031'
+    bank_url: https://www.city.tosu.lg.jp/
+    bank_status: none
+    map_query: 佐賀県鳥栖市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tosu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.tosu.lg.jp/
+    checked_on: '2026-09-11'
+- id: saga-412040
+  name: 多久市空き家バンク
+  operator: 多久市
+  operator_kind: municipality
+  official_url: https://www.city.taku.lg.jp/
+  policy: crawl
+  municipality:
+    code: '412040'
+    name: 多久市
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '412040'
+    bank_url: https://www.city.taku.lg.jp/adv/ba.php?id=98
+    bank_status: available
+    map_query: 佐賀県多久市
+  operator_evidence:
+    quote: 公式ドメイン www.city.taku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.taku.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.taku.lg.jp/adv/ba.php?id=98
+    kind: listing_index
+    follow:
+    - pattern: https?://www\.city\.taku\.lg\.jp/adv/ba\.php/page/\d+/?$
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - www.city.taku.lg.jp
+  max_pages: 30
+- id: saga-412058
+  name: 伊万里市空き家バンク
+  operator: 伊万里市
+  operator_kind: municipality
+  official_url: https://www.city.imari.lg.jp/
+  policy: crawl
+  municipality:
+    code: '412058'
+    name: 伊万里市
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '412058'
+    bank_url: https://www.city.imari.lg.jp/12417.htm
+    bank_status: available
+    map_query: 佐賀県伊万里市
+  operator_evidence:
+    quote: 公式ドメイン www.city.imari.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.imari.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.imari.lg.jp/12417.htm
+    kind: listing_index
+  allow_hosts:
+  - www.city.imari.lg.jp
+  max_pages: 30
+  external_links:
+  - label: ダイア不動産(株)
+    url: http://www.athome.co.jp/ahks/daia-imari.html
+  - label: 有限会社幸美建設
+    url: http://www.athome.co.jp/ahks/yukimikensetsu.html
+  - label: 浦川不動産
+    url: https://www.hatomarksite.com/search/zentaku/agent/00074100333
+- id: saga-412066
+  name: 武雄市空き家バンク
+  operator: 武雄市
+  operator_kind: municipality
+  official_url: https://www.city.takeo.lg.jp/
+  policy: link_only
+  municipality:
+    code: '412066'
+    name: 武雄市
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '412066'
+    bank_url: https://www.city.takeo.lg.jp/
+    bank_status: none
+    map_query: 佐賀県武雄市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.takeo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.takeo.lg.jp/
+    checked_on: '2026-09-11'
+- id: saga-412074
+  name: 鹿島市空き家バンク
+  operator: 鹿島市
+  operator_kind: municipality
+  official_url: https://www.city.saga-kashima.lg.jp/
+  policy: link_only
+  municipality:
+    code: '412074'
+    name: 鹿島市
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '412074'
+    bank_url: https://www.city.saga-kashima.lg.jp/main/32987.html
+    bank_status: info
+    map_query: 佐賀県鹿島市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 佐賀県 県内市町リンクに掲載された公式サイト（www.city.saga-kashima.lg.jp）
+    url: https://www.pref.saga.lg.jp/kiji0034791/index.html
+    checked_on: '2026-09-11'
+- id: saga-412082
+  name: 小城市空き家バンク
+  operator: 小城市
+  operator_kind: municipality
+  official_url: https://www.city.ogi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '412082'
+    name: 小城市
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '412082'
+    bank_url: https://www.city.ogi.lg.jp/main/9890.html
+    bank_status: info
+    map_query: 佐賀県小城市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ogi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.ogi.lg.jp/
+    checked_on: '2026-09-11'
+- id: saga-412091
+  name: 嬉野市空き家バンク
+  operator: 嬉野市
+  operator_kind: municipality
+  official_url: https://www.city.ureshino.lg.jp/
+  policy: link_only
+  municipality:
+    code: '412091'
+    name: 嬉野市
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '412091'
+    bank_url: https://www.city.ureshino.lg.jp/
+    bank_status: none
+    map_query: 佐賀県嬉野市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ureshino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.ureshino.lg.jp/
+    checked_on: '2026-09-11'
+- id: saga-412104
+  name: 神埼市空き家バンク
+  operator: 神埼市
+  operator_kind: municipality
+  official_url: https://www.city.kanzaki.saga.jp/
+  policy: link_only
+  municipality:
+    code: '412104'
+    name: 神埼市
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '412104'
+    bank_url: https://www.city.kanzaki.saga.jp/main/1.html
+    bank_status: info
+    map_query: 佐賀県神埼市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kanzaki.saga.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kanzaki.saga.jp/
+    checked_on: '2026-09-11'
+- id: saga-413275
+  name: 吉野ヶ里町空き家バンク
+  operator: 吉野ヶ里町
+  operator_kind: municipality
+  official_url: https://www.town.yoshinogari.lg.jp/
+  policy: link_only
+  municipality:
+    code: '413275'
+    name: 吉野ヶ里町
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '413275'
+    bank_url: https://www.town.yoshinogari.lg.jp/
+    bank_status: none
+    map_query: 佐賀県吉野ヶ里町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yoshinogari.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.yoshinogari.lg.jp/
+    checked_on: '2026-09-11'
+- id: saga-413411
+  name: 基山町空き家バンク
+  operator: 基山町
+  operator_kind: municipality
+  official_url: https://www.town.kiyama.lg.jp/
+  policy: link_only
+  municipality:
+    code: '413411'
+    name: 基山町
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '413411'
+    bank_url: https://www.town.kiyama.lg.jp/
+    bank_status: none
+    map_query: 佐賀県基山町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kiyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kiyama.lg.jp/
+    checked_on: '2026-09-11'
+- id: saga-413453
+  name: 上峰町空き家バンク
+  operator: 上峰町
+  operator_kind: municipality
+  official_url: https://www.town.kamimine.lg.jp/
+  policy: link_only
+  municipality:
+    code: '413453'
+    name: 上峰町
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '413453'
+    bank_url: https://www.town.kamimine.lg.jp/
+    bank_status: none
+    map_query: 佐賀県上峰町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kamimine.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kamimine.lg.jp/
+    checked_on: '2026-09-11'
+- id: saga-413461
+  name: みやき町空き家バンク
+  operator: みやき町
+  operator_kind: municipality
+  official_url: https://www.town.miyaki.lg.jp/
+  policy: link_only
+  municipality:
+    code: '413461'
+    name: みやき町
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '413461'
+    bank_url: https://www.town.miyaki.lg.jp/teiju/akiya/_2123.html
+    bank_status: info
+    map_query: 佐賀県みやき町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.miyaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.miyaki.lg.jp/
+    checked_on: '2026-09-11'
+- id: saga-413879
+  name: 玄海町空き家バンク
+  operator: 玄海町
+  operator_kind: municipality
+  official_url: https://www.town.genkai.lg.jp/
+  policy: link_only
+  municipality:
+    code: '413879'
+    name: 玄海町
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '413879'
+    bank_url: https://www.town.genkai.lg.jp/soshiki/8/73227.html
+    bank_status: info
+    map_query: 佐賀県玄海町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.genkai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.genkai.lg.jp/
+    checked_on: '2026-09-11'
+- id: saga-414018
+  name: 有田町空き家バンク
+  operator: 有田町
+  operator_kind: municipality
+  official_url: https://www.town.arita.lg.jp/
+  policy: link_only
+  municipality:
+    code: '414018'
+    name: 有田町
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '414018'
+    bank_url: https://www.town.arita.lg.jp/
+    bank_status: none
+    map_query: 佐賀県有田町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.arita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.arita.lg.jp/
+    checked_on: '2026-09-11'
+- id: saga-414239
+  name: 大町町空き家バンク
+  operator: 大町町
+  operator_kind: municipality
+  official_url: https://www.town.omachi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '414239'
+    name: 大町町
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '414239'
+    bank_url: https://www.town.omachi.lg.jp/
+    bank_status: none
+    map_query: 佐賀県大町町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.omachi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.omachi.lg.jp/
+    checked_on: '2026-09-11'
+- id: saga-414247
+  name: 江北町空き家バンク
+  operator: 江北町
+  operator_kind: municipality
+  official_url: https://www.town.kouhoku.saga.jp/
+  policy: crawl
+  municipality:
+    code: '414247'
+    name: 江北町
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '414247'
+    bank_url: https://www.town.kouhoku.saga.jp/kiji0031374/index.html
+    bank_status: available
+    map_query: 佐賀県江北町
+  operator_evidence:
+    quote: 公式ドメイン www.town.kouhoku.saga.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kouhoku.saga.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.kouhoku.saga.jp/kiji0031374/index.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.kouhoku.saga.jp
+  max_pages: 30
+- id: saga-414255
+  name: 白石町空き家バンク
+  operator: 白石町
+  operator_kind: municipality
+  official_url: https://www.town.shiroishi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '414255'
+    name: 白石町
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '414255'
+    bank_url: https://www.town.shiroishi.lg.jp/
+    bank_status: none
+    map_query: 佐賀県白石町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shiroishi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.shiroishi.lg.jp/
+    checked_on: '2026-09-11'
+- id: saga-414417
+  name: 太良町空き家バンク
+  operator: 太良町
+  operator_kind: municipality
+  official_url: https://www.town.tara.lg.jp/
+  policy: link_only
+  municipality:
+    code: '414417'
+    name: 太良町
+    prefecture: 佐賀県
+    prefecture_slug: saga
+    slug: '414417'
+    bank_url: https://www.town.tara.lg.jp/kurashi/_3629/_1661.html
+    bank_status: info
+    map_query: 佐賀県太良町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.tara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.tara.lg.jp/
+    checked_on: '2026-09-11'

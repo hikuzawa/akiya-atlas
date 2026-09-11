@@ -1,0 +1,354 @@
+prefecture: 栃木県
+prefecture_slug: tochigi
+created_at: '2026-09-10T22:10:57+00:00'
+candidates:
+- key: 092011
+  label: 栃木県 宇都宮市
+  url: https://www.city.utsunomiya.lg.jp/kurashi/anshin/1016717/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.utsunomiya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.utsunomiya.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 092029
+  label: 栃木県 足利市
+  url: https://ashikaga-c09202.akiya-athome.jp/
+  page_class: third_party
+  class_label: 第三者プラットフォーム
+  confidence: 0.99
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ashikaga.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.ashikaga.tochigi.jp/
+  reason: 掲載は民間プラットフォーム。巡回せずリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 092037
+  label: 栃木県 栃木市
+  url: http://www.tochigi-akiya.jp/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.city.tochigi.lg.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.city.tochigi.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 092045
+  label: 栃木県 佐野市
+  url: https://www.city.sano.lg.jp/cgi-bin/recruit.php/2/list
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.sano.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 092053
+  label: 栃木県 鹿沼市
+  url: https://www.city.kanuma.tochigi.jp/0131/genre2-0-001.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kanuma.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kanuma.tochigi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 092061
+  label: 栃木県 日光市
+  url: https://www.city.nikko.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nikko.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.nikko.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 092088
+  label: 栃木県 小山市
+  url: https://www.city.oyama.tochigi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.oyama.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.oyama.tochigi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 092096
+  label: 栃木県 真岡市
+  url: https://moka-c09209.akiya-athome.jp/
+  page_class: third_party
+  class_label: 第三者プラットフォーム
+  confidence: 0.99
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.moka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.moka.lg.jp/
+  reason: 掲載は民間プラットフォーム。巡回せずリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 092100
+  label: 栃木県 大田原市
+  url: https://www.city.ohtawara.tochigi.jp/docs/2014092500025/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.85
+  operator_kind: municipality
+  evidence_quote: 栃木県 リンク集（市町一覧）に掲載された公式サイト（www.city.ohtawara.tochigi.jp）
+  evidence_url: https://www.pref.tochigi.lg.jp/c05/intro/tochigi/link/lkshityouson.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 092118
+  label: 栃木県 矢板市
+  url: https://www.city.yaita.tochigi.jp/site/ijuuteiju/akiya-shien.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yaita.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.yaita.tochigi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 092134
+  label: 栃木県 那須塩原市
+  url: https://www.city.nasushiobara.tochigi.jp/kurashi_tetsuzuki/sumai_kurashi/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nasushiobara.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.nasushiobara.tochigi.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 092142
+  label: 栃木県 さくら市
+  url: https://www.city.sakura.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sakura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.sakura.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 092151
+  label: 栃木県 那須烏山市
+  url: https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/page004598.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.9
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nasukarasuyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.nasukarasuyama.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 092169
+  label: 栃木県 下野市
+  url: https://www.city.shimotsuke.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shimotsuke.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.shimotsuke.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 093017
+  label: 栃木県 上三川町
+  url: https://www.town.kaminokawa.lg.jp/0004/info-0000001920-0.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kaminokawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kaminokawa.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 093424
+  label: 栃木県 益子町
+  url: https://www.town.mashiko.lg.jp/mashikonokurashi/akiya.php
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.mashiko.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.mashiko.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 093432
+  label: 栃木県 茂木町
+  url: https://www.town.motegi.tochigi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.motegi.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.motegi.tochigi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 093441
+  label: 栃木県 市貝町
+  url: https://www.town.ichikai.tochigi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ichikai.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ichikai.tochigi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 093459
+  label: 栃木県 芳賀町
+  url: https://www.town.tochigi-haga.lg.jp/kurashi/sumai/akiya_bank/top.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 栃木県 リンク集（市町一覧）に掲載された公式サイト（www.town.tochigi-haga.lg.jp）
+  evidence_url: https://www.pref.tochigi.lg.jp/c05/intro/tochigi/link/lkshityouson.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 093611
+  label: 栃木県 壬生町
+  url: https://www.town.mibu.tochigi.jp/docs/2020052100013/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.85
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.mibu.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.mibu.tochigi.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 093645
+  label: 栃木県 野木町
+  url: https://www.town.nogi.lg.jp/ijyu/ijyu_news/page002793.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nogi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.nogi.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 093840
+  label: 栃木県 塩谷町
+  url: https://www.town.shioya.tochigi.jp/info/1080
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.88
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shioya.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.shioya.tochigi.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 093866
+  label: 栃木県 高根沢町
+  url: https://www.town.takanezawa.tochigi.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.takanezawa.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.takanezawa.tochigi.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 094072
+  label: 栃木県 那須町
+  url: https://www.town.nasu.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nasu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.nasu.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 094111
+  label: 栃木県 那珂川町
+  url: http://www.town.tochigi-nakagawa.lg.jp/0074/genre2-0-001.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 栃木県 リンク集（市町一覧）に掲載された公式サイト（www.town.tochigi-nakagawa.lg.jp）
+  evidence_url: https://www.pref.tochigi.lg.jp/c05/intro/tochigi/link/lkshityouson.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

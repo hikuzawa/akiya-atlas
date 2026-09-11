@@ -1,0 +1,888 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: hyogo-281000
+  name: 神戸市空き家バンク
+  operator: 神戸市
+  operator_kind: municipality
+  official_url: https://www.city.kobe.lg.jp/
+  policy: link_only
+  municipality:
+    code: '281000'
+    name: 神戸市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '281000'
+    bank_url: https://www.city.kobe.lg.jp/a92551/akiya_support.html
+    bank_status: info
+    map_query: 兵庫県神戸市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kobe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kobe.lg.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282014
+  name: 姫路市空き家バンク
+  operator: 姫路市
+  operator_kind: municipality
+  official_url: https://www.city.himeji.lg.jp/
+  policy: link_only
+  municipality:
+    code: '282014'
+    name: 姫路市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282014'
+    bank_url: https://www.city.himeji.lg.jp/kurashi/category/2-3-7-0-0-0-0-0-0-0.html
+    bank_status: info
+    map_query: 兵庫県姫路市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.himeji.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.himeji.lg.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282022
+  name: 尼崎市空き家バンク
+  operator: 尼崎市
+  operator_kind: municipality
+  official_url: https://www.city.amagasaki.hyogo.jp/
+  policy: link_only
+  municipality:
+    code: '282022'
+    name: 尼崎市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282022'
+    bank_url: https://www.city.amagasaki.hyogo.jp/
+    bank_status: none
+    map_query: 兵庫県尼崎市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.amagasaki.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.amagasaki.hyogo.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282031
+  name: 明石市空き家バンク
+  operator: 明石市
+  operator_kind: municipality
+  official_url: https://www.city.akashi.lg.jp/
+  policy: crawl
+  municipality:
+    code: '282031'
+    name: 明石市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282031'
+    bank_url: https://www.city.akashi.lg.jp/tosei/kouen_ka/boen/akihigan.html
+    bank_status: available
+    map_query: 兵庫県明石市
+  operator_evidence:
+    quote: 公式ドメイン www.city.akashi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.akashi.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.akashi.lg.jp/tosei/kouen_ka/boen/akihigan.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.akashi.lg.jp
+  max_pages: 30
+- id: hyogo-282049
+  name: 西宮市空き家バンク
+  operator: 西宮市
+  operator_kind: municipality
+  official_url: https://www.nishi.or.jp/
+  policy: link_only
+  municipality:
+    code: '282049'
+    name: 西宮市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282049'
+    bank_url: https://www.nishi.or.jp/
+    bank_status: none
+    map_query: 兵庫県西宮市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.nishi.or.jp）
+    url: https://web.pref.hyogo.lg.jp/link/pref.html
+    checked_on: '2026-09-11'
+- id: hyogo-282057
+  name: 洲本市空き家バンク
+  operator: 洲本市
+  operator_kind: municipality
+  official_url: https://www.city.sumoto.lg.jp/
+  policy: link_only
+  municipality:
+    code: '282057'
+    name: 洲本市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282057'
+    bank_url: https://www.city.sumoto.lg.jp/soshiki/22/15538.html
+    bank_status: info
+    map_query: 兵庫県洲本市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.sumoto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.sumoto.lg.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282065
+  name: 芦屋市空き家バンク
+  operator: 芦屋市
+  operator_kind: municipality
+  official_url: https://www.city.ashiya.lg.jp/
+  policy: link_only
+  municipality:
+    code: '282065'
+    name: 芦屋市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282065'
+    bank_url: https://www.city.ashiya.lg.jp/
+    bank_status: none
+    map_query: 兵庫県芦屋市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ashiya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.ashiya.lg.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282073
+  name: 伊丹市空き家バンク
+  operator: 伊丹市
+  operator_kind: municipality
+  official_url: https://www.city.itami.lg.jp/
+  policy: link_only
+  municipality:
+    code: '282073'
+    name: 伊丹市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282073'
+    bank_url: https://www.city.itami.lg.jp/
+    bank_status: none
+    map_query: 兵庫県伊丹市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.itami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.itami.lg.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282081
+  name: 相生市空き家バンク
+  operator: 相生市
+  operator_kind: municipality
+  official_url: https://www.city.aioi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '282081'
+    name: 相生市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282081'
+    bank_url: https://www.city.aioi.lg.jp/site/aioisiakiyabank/
+    bank_status: info
+    map_query: 兵庫県相生市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.aioi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.aioi.lg.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282090
+  name: 豊岡市空き家バンク
+  operator: 豊岡市
+  operator_kind: municipality
+  official_url: https://www.city.toyooka.lg.jp/
+  policy: link_only
+  municipality:
+    code: '282090'
+    name: 豊岡市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282090'
+    bank_url: https://www.city.toyooka.lg.jp/
+    bank_status: none
+    map_query: 兵庫県豊岡市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.toyooka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.toyooka.lg.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282103
+  name: 加古川市空き家バンク
+  operator: 加古川市
+  operator_kind: municipality
+  official_url: https://www.city.kakogawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '282103'
+    name: 加古川市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282103'
+    bank_url: https://www.city.kakogawa.lg.jp/soshikikarasagasu/tosi_kekaku/jyutaku/akiya_akichi/40768.html
+    bank_status: info
+    map_query: 兵庫県加古川市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kakogawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kakogawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282120
+  name: 赤穂市空き家バンク
+  operator: 赤穂市
+  operator_kind: municipality
+  official_url: https://www.city.ako.lg.jp/
+  policy: link_only
+  municipality:
+    code: '282120'
+    name: 赤穂市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282120'
+    bank_url: https://www.city.ako.lg.jp/sangyoshinko/kanko/teiju/akiya_bank.html
+    bank_status: info
+    map_query: 兵庫県赤穂市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ako.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.ako.lg.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: 一般社団法人兵庫県宅地建物取引業協会西播磨支部（ハトマーク）の業者一覧（外部サイトへリンク）
+    url: https://www.hatomarksite.com/search/zentaku/agent/area/
+- id: hyogo-282138
+  name: 西脇市空き家バンク
+  operator: 西脇市
+  operator_kind: municipality
+  official_url: https://www.city.nishiwaki.lg.jp/
+  policy: link_only
+  municipality:
+    code: '282138'
+    name: 西脇市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282138'
+    bank_url: https://www.city.nishiwaki.lg.jp/iju/topics/1477612996430.html
+    bank_status: info
+    map_query: 兵庫県西脇市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nishiwaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.nishiwaki.lg.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282146
+  name: 宝塚市空き家バンク
+  operator: 宝塚市
+  operator_kind: municipality
+  official_url: https://www.city.takarazuka.hyogo.jp/
+  policy: link_only
+  municipality:
+    code: '282146'
+    name: 宝塚市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282146'
+    bank_url: https://www.city.takarazuka.hyogo.jp/1060678/1060691/1028025/index.html
+    bank_status: info
+    map_query: 兵庫県宝塚市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.takarazuka.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.takarazuka.hyogo.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282154
+  name: 三木市空き家バンク
+  operator: 三木市
+  operator_kind: municipality
+  official_url: https://www.city.miki.lg.jp/
+  policy: link_only
+  municipality:
+    code: '282154'
+    name: 三木市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282154'
+    bank_url: https://www.city.miki.lg.jp/
+    bank_status: none
+    map_query: 兵庫県三木市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.miki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.miki.lg.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282162
+  name: 高砂市空き家バンク
+  operator: 高砂市
+  operator_kind: municipality
+  official_url: https://www.city.takasago.lg.jp/
+  policy: crawl
+  municipality:
+    code: '282162'
+    name: 高砂市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282162'
+    bank_url: https://www.city.takasago.lg.jp/gyoseisite/kurashi_tetsuzuki/taishinakiyakenchiku/10720.html
+    bank_status: available
+    map_query: 兵庫県高砂市
+  operator_evidence:
+    quote: 公式ドメイン www.city.takasago.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.takasago.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.takasago.lg.jp/gyoseisite/kurashi_tetsuzuki/taishinakiyakenchiku/10720.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.takasago.lg.jp
+  max_pages: 30
+- id: hyogo-282171
+  name: 川西市空き家バンク
+  operator: 川西市
+  operator_kind: municipality
+  official_url: https://www.city.kawanishi.hyogo.jp/
+  policy: link_only
+  municipality:
+    code: '282171'
+    name: 川西市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282171'
+    bank_url: https://www.city.kawanishi.hyogo.jp/
+    bank_status: none
+    map_query: 兵庫県川西市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kawanishi.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kawanishi.hyogo.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282189
+  name: 小野市空き家バンク
+  operator: 小野市
+  operator_kind: municipality
+  official_url: https://www.city.ono.hyogo.jp/
+  policy: crawl
+  municipality:
+    code: '282189'
+    name: 小野市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282189'
+    bank_url: https://www.city.ono.hyogo.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/2/5107.html
+    bank_status: available
+    map_query: 兵庫県小野市
+  operator_evidence:
+    quote: 公式ドメイン www.city.ono.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.ono.hyogo.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.ono.hyogo.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/2/5107.html
+    kind: listing_index
+    follow:
+    - pattern: https?://www\.city\.ono\.hyogo\.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/2/5107\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - www.city.ono.hyogo.jp
+  max_pages: 30
+  external_links:
+  - label: 全国版空き家バンクトップページ（LIFULL HOME'Sのサイト）（外部リンク）
+    url: https://www.homes.co.jp/akiyabank/
+  - label: 全国版空き家バンクトップページ（アットホームのサイト）（外部リンク）
+    url: https://www.akiya-athome.jp/
+- id: hyogo-282197
+  name: 三田市空き家バンク
+  operator: 三田市
+  operator_kind: municipality
+  official_url: https://www.city.sanda.lg.jp/
+  policy: link_only
+  municipality:
+    code: '282197'
+    name: 三田市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282197'
+    bank_url: https://www.city.sanda.lg.jp/
+    bank_status: none
+    map_query: 兵庫県三田市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.sanda.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.sanda.lg.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282201
+  name: 加西市空き家バンク
+  operator: 加西市
+  operator_kind: municipality
+  official_url: https://www.city.kasai.hyogo.jp/
+  policy: link_only
+  municipality:
+    code: '282201'
+    name: 加西市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282201'
+    bank_url: https://www.city.kasai.hyogo.jp/
+    bank_status: none
+    map_query: 兵庫県加西市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kasai.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kasai.hyogo.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282219
+  name: 丹波篠山市空き家バンク
+  operator: 丹波篠山市
+  operator_kind: municipality
+  official_url: https://www.city.tambasasayama.lg.jp/
+  policy: crawl
+  municipality:
+    code: '282219'
+    name: 丹波篠山市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282219'
+    bank_url: https://classo.jp/
+    bank_status: available
+    map_query: 兵庫県丹波篠山市
+  operator_evidence:
+    quote: 公式サイト（www.city.tambasasayama.lg.jp）から空き家バンクとして案内されているリンク
+    url: https://www.city.tambasasayama.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://classo.jp/
+    kind: listing_index
+  allow_hosts:
+  - classo.jp
+  max_pages: 30
+- id: hyogo-282227
+  name: 養父市空き家バンク
+  operator: 養父市
+  operator_kind: municipality
+  official_url: https://www.city.yabu.hyogo.jp/
+  policy: link_only
+  municipality:
+    code: '282227'
+    name: 養父市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282227'
+    bank_url: https://www.city.yabu.hyogo.jp/kurashi_tetsuzuki/kurashi_sumai/akiya/index.html
+    bank_status: info
+    map_query: 兵庫県養父市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yabu.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.yabu.hyogo.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282235
+  name: 丹波市空き家バンク
+  operator: 丹波市
+  operator_kind: municipality
+  official_url: https://www.city.tamba.lg.jp/
+  policy: link_only
+  municipality:
+    code: '282235'
+    name: 丹波市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282235'
+    bank_url: https://www.city.tamba.lg.jp/
+    bank_status: none
+    map_query: 兵庫県丹波市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.city.tamba.lg.jp）
+    url: https://web.pref.hyogo.lg.jp/link/pref.html
+    checked_on: '2026-09-11'
+- id: hyogo-282243
+  name: 南あわじ市空き家バンク
+  operator: 南あわじ市
+  operator_kind: municipality
+  official_url: https://www.city.minamiawaji.hyogo.jp/
+  policy: link_only
+  municipality:
+    code: '282243'
+    name: 南あわじ市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282243'
+    bank_url: https://www.city.minamiawaji.hyogo.jp/soshiki/toshi/akiyabank.html
+    bank_status: info
+    map_query: 兵庫県南あわじ市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.minamiawaji.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.minamiawaji.hyogo.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282251
+  name: 朝来市空き家バンク
+  operator: 朝来市
+  operator_kind: municipality
+  official_url: https://www.city.asago.hyogo.jp/
+  policy: link_only
+  municipality:
+    code: '282251'
+    name: 朝来市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282251'
+    bank_url: https://www.city.asago.hyogo.jp/
+    bank_status: none
+    map_query: 兵庫県朝来市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.asago.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.asago.hyogo.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282260
+  name: 淡路市空き家バンク
+  operator: 淡路市
+  operator_kind: municipality
+  official_url: https://www.city.awaji.lg.jp/
+  policy: link_only
+  municipality:
+    code: '282260'
+    name: 淡路市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282260'
+    bank_url: https://www.city.awaji.lg.jp/
+    bank_status: none
+    map_query: 兵庫県淡路市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.awaji.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.awaji.lg.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282278
+  name: 宍粟市空き家バンク
+  operator: 宍粟市
+  operator_kind: municipality
+  official_url: https://www.city.shiso.lg.jp/
+  policy: link_only
+  municipality:
+    code: '282278'
+    name: 宍粟市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282278'
+    bank_url: https://www.city.shiso.lg.jp/kurashi/sumai/akiyabank/index.html
+    bank_status: info
+    map_query: 兵庫県宍粟市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.shiso.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.shiso.lg.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282286
+  name: 加東市空き家バンク
+  operator: 加東市
+  operator_kind: municipality
+  official_url: https://www.city.kato.lg.jp/
+  policy: link_only
+  municipality:
+    code: '282286'
+    name: 加東市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282286'
+    bank_url: https://www.city.kato.lg.jp/
+    bank_status: none
+    map_query: 兵庫県加東市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kato.lg.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-282294
+  name: たつの市空き家バンク
+  operator: たつの市
+  operator_kind: municipality
+  official_url: https://www.city.tatsuno.lg.jp/
+  policy: crawl
+  municipality:
+    code: '282294'
+    name: たつの市
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '282294'
+    bank_url: https://www.city.tatsuno.lg.jp/iju/akiya-bank/1410.html
+    bank_status: available
+    map_query: 兵庫県たつの市
+  operator_evidence:
+    quote: 公式ドメイン www.city.tatsuno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.tatsuno.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.tatsuno.lg.jp/iju/akiya-bank/1410.html
+    kind: listing_index
+    follow:
+    - pattern: https?://www\.city\.tatsuno\.lg\.jp/iju/akiya\-bank/1410\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - www.city.tatsuno.lg.jp
+  max_pages: 30
+  external_links:
+  - label: アットホーム
+    url: https://www.akiya-athome.jp/buy/28/?gyosei_cd[]=28229
+  - label: ライフルホームズ
+    url: https://www.homes.co.jp/akiyabank/hyogo/tatsuno
+- id: hyogo-283011
+  name: 猪名川町空き家バンク
+  operator: 猪名川町
+  operator_kind: municipality
+  official_url: https://www.town.inagawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '283011'
+    name: 猪名川町
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '283011'
+    bank_url: https://www.town.inagawa.lg.jp/
+    bank_status: none
+    map_query: 兵庫県猪名川町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.inagawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.inagawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-283657
+  name: 多可町空き家バンク
+  operator: 多可町
+  operator_kind: municipality
+  official_url: https://www.town.taka.lg.jp/
+  policy: link_only
+  municipality:
+    code: '283657'
+    name: 多可町
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '283657'
+    bank_url: https://www.town.taka.lg.jp/
+    bank_status: none
+    map_query: 兵庫県多可町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.town.taka.lg.jp）。サイトを取得できなかったためリンクのみ（robots.txt を取得できないため今回は巡回しない）
+    url: https://web.pref.hyogo.lg.jp/link/pref.html
+    checked_on: '2026-09-11'
+- id: hyogo-283819
+  name: 稲美町空き家バンク
+  operator: 稲美町
+  operator_kind: municipality
+  official_url: https://www.town.hyogo-inami.lg.jp/
+  policy: crawl
+  municipality:
+    code: '283819'
+    name: 稲美町
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '283819'
+    bank_url: https://www.town.hyogo-inami.lg.jp/0000003232.html
+    bank_status: available
+    map_query: 兵庫県稲美町
+  operator_evidence:
+    quote: 兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.town.hyogo-inami.lg.jp）
+    url: https://web.pref.hyogo.lg.jp/link/pref.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.hyogo-inami.lg.jp/0000003232.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.hyogo-inami.lg.jp
+  max_pages: 30
+- id: hyogo-283827
+  name: 播磨町空き家バンク
+  operator: 播磨町
+  operator_kind: municipality
+  official_url: https://www.town.harima.lg.jp/
+  policy: link_only
+  municipality:
+    code: '283827'
+    name: 播磨町
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '283827'
+    bank_url: https://www.town.harima.lg.jp/
+    bank_status: none
+    map_query: 兵庫県播磨町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.harima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.harima.lg.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-284424
+  name: 市川町空き家バンク
+  operator: 市川町
+  operator_kind: municipality
+  official_url: https://www.town.ichikawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '284424'
+    name: 市川町
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '284424'
+    bank_url: https://www.town.ichikawa.lg.jp/
+    bank_status: none
+    map_query: 兵庫県市川町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ichikawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.ichikawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-284432
+  name: 福崎町空き家バンク
+  operator: 福崎町
+  operator_kind: municipality
+  official_url: https://www.town.fukusaki.hyogo.jp/
+  policy: crawl
+  municipality:
+    code: '284432'
+    name: 福崎町
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '284432'
+    bank_url: http://www.town.fukusaki.hyogo.jp/0000001949.html
+    bank_status: available
+    map_query: 兵庫県福崎町
+  operator_evidence:
+    quote: 公式ドメイン www.town.fukusaki.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.fukusaki.hyogo.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: http://www.town.fukusaki.hyogo.jp/0000001949.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.fukusaki.hyogo.jp
+  max_pages: 30
+  external_links:
+  - label: 全国版　空き家・空き地バンク　（at homeのホームページ）(外部サイトへリンク)
+    url: https://www.akiya-athome.jp
+  - label: 空き家バンク（LIFULL HOME'Sのホームページ）（外部サイトへリンク）
+    url: https://www.homes.co.jp/akiyabank
+- id: hyogo-284467
+  name: 神河町空き家バンク
+  operator: 神河町
+  operator_kind: municipality
+  official_url: https://www.town.kamikawa.hyogo.jp/
+  policy: crawl
+  municipality:
+    code: '284467'
+    name: 神河町
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '284467'
+    bank_url: https://www.town.kamikawa.hyogo.jp/0000000317.html
+    bank_status: available
+    map_query: 兵庫県神河町
+  operator_evidence:
+    quote: 公式ドメイン www.town.kamikawa.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kamikawa.hyogo.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.kamikawa.hyogo.jp/0000000317.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.kamikawa.hyogo.jp
+  max_pages: 30
+- id: hyogo-284645
+  name: 太子町空き家バンク
+  operator: 太子町
+  operator_kind: municipality
+  official_url: https://www.town.hyogo-taishi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '284645'
+    name: 太子町
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '284645'
+    bank_url: https://www.town.hyogo-taishi.lg.jp/
+    bank_status: none
+    map_query: 兵庫県太子町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.town.hyogo-taishi.lg.jp）
+    url: https://web.pref.hyogo.lg.jp/link/pref.html
+    checked_on: '2026-09-11'
+- id: hyogo-284815
+  name: 上郡町空き家バンク
+  operator: 上郡町
+  operator_kind: municipality
+  official_url: https://www.town.kamigori.hyogo.jp/
+  policy: link_only
+  municipality:
+    code: '284815'
+    name: 上郡町
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '284815'
+    bank_url: https://www.town.kamigori.hyogo.jp/
+    bank_status: none
+    map_query: 兵庫県上郡町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kamigori.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kamigori.hyogo.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-285013
+  name: 佐用町空き家バンク
+  operator: 佐用町
+  operator_kind: municipality
+  official_url: https://www.town.sayo.lg.jp/
+  policy: link_only
+  municipality:
+    code: '285013'
+    name: 佐用町
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '285013'
+    bank_url: https://www.town.sayo.lg.jp/
+    bank_status: none
+    map_query: 兵庫県佐用町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.sayo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.sayo.lg.jp/
+    checked_on: '2026-09-11'
+- id: hyogo-285854
+  name: 香美町空き家バンク
+  operator: 香美町
+  operator_kind: municipality
+  official_url: https://www.town.mikata-kami.lg.jp/
+  policy: link_only
+  municipality:
+    code: '285854'
+    name: 香美町
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '285854'
+    bank_url: https://www.town.mikata-kami.lg.jp/kurashi-tetsuzuki/iju-teiju-akiya/2904.html
+    bank_status: info
+    map_query: 兵庫県香美町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.town.mikata-kami.lg.jp）
+    url: https://web.pref.hyogo.lg.jp/link/pref.html
+    checked_on: '2026-09-11'
+- id: hyogo-285862
+  name: 新温泉町空き家バンク
+  operator: 新温泉町
+  operator_kind: municipality
+  official_url: https://www.town.shinonsen.hyogo.jp/
+  policy: link_only
+  municipality:
+    code: '285862'
+    name: 新温泉町
+    prefecture: 兵庫県
+    prefecture_slug: hyogo
+    slug: '285862'
+    bank_url: https://ijyu.shinonsen.com/news/2535/
+    bank_status: info
+    map_query: 兵庫県新温泉町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式サイト（www.town.shinonsen.hyogo.jp）から空き家バンクとして案内されているリンク
+    url: https://www.town.shinonsen.hyogo.jp/
+    checked_on: '2026-09-11'

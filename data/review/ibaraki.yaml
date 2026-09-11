@@ -1,0 +1,620 @@
+prefecture: 茨城県
+prefecture_slug: ibaraki
+created_at: '2026-09-11T02:34:35+00:00'
+candidates:
+- key: 082015
+  label: 茨城県 水戸市
+  url: https://www.city.mito.lg.jp/life/1/4/28/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.mito.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.mito.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082023
+  label: 茨城県 日立市
+  url: https://www.city.hitachi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hitachi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.hitachi.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082031
+  label: 茨城県 土浦市
+  url: https://www.city.tsuchiura.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tsuchiura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tsuchiura.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082040
+  label: 茨城県 古河市
+  url: https://www.city.ibaraki-koga.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 茨城県 県内の市町村に掲載された公式サイト（www.city.ibaraki-koga.lg.jp）
+  evidence_url: https://www.pref.ibaraki.jp/towns/index.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082058
+  label: 茨城県 石岡市
+  url: https://www.city.ishioka.lg.jp/kurashi_tetsuzuki/sumai/akiyabank/page011717.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ishioka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.ishioka.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082074
+  label: 茨城県 結城市
+  url: https://www.city.yuki.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yuki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.yuki.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082082
+  label: 茨城県 龍ケ崎市
+  url: https://www.city.ryugasaki.ibaraki.jp/kurashi/seikatsu/akiya-bank/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ryugasaki.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.ryugasaki.ibaraki.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082104
+  label: 茨城県 下妻市
+  url: https://www.city.shimotsuma.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shimotsuma.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.shimotsuma.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082112
+  label: 茨城県 常総市
+  url: https://www.city.joso.lg.jp/search.php?keyword=%E7%A9%BA%E3%81%8D%E5%AE%B6
+  page_class: listing_detail
+  class_label: 物件詳細（静的）
+  confidence: 0.86
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.joso.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.joso.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082121
+  label: 茨城県 常陸太田市
+  url: https://www.city.hitachiota.ibaraki.jp/kurashi/sumai-traffic/akiya-bank/page002897.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hitachiota.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.hitachiota.ibaraki.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082147
+  label: 茨城県 高萩市
+  url: https://www.city.takahagi.ibaraki.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.takahagi.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.takahagi.ibaraki.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082155
+  label: 茨城県 北茨城市
+  url: https://www.city.kitaibaraki.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kitaibaraki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kitaibaraki.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082163
+  label: 茨城県 笠間市
+  url: https://ijyuu.city-kasama.jp/house-bank/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.city.kasama.lg.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.city.kasama.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082171
+  label: 茨城県 取手市
+  url: https://www.city.toride.ibaraki.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.toride.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.toride.ibaraki.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082198
+  label: 茨城県 牛久市
+  url: https://www.city.ushiku.lg.jp/kurashi-tetsuduki/seikatsu/sumai-joho/akiya-taisaku/page006233.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.9
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ushiku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.ushiku.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082201
+  label: 茨城県 つくば市
+  url: https://www.city.tsukuba.lg.jp/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tsukuba.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tsukuba.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082210
+  label: 茨城県 ひたちなか市
+  url: https://www.city.hitachinaka.lg.jp/machizukuri/sumai/1003440/1003452.html
+  page_class: listing_detail
+  class_label: 物件詳細（静的）
+  confidence: 0.89
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hitachinaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.hitachinaka.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082228
+  label: 茨城県 鹿嶋市
+  url: https://www.city.kashima.ibaraki.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kashima.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kashima.ibaraki.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082236
+  label: 茨城県 潮来市
+  url: https://www.city.itako.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.itako.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.itako.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082244
+  label: 茨城県 守谷市
+  url: https://www.city.moriya.ibaraki.jp/kurashi_tetsuzuki/juutaku/1002304/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.moriya.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.moriya.ibaraki.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082252
+  label: 茨城県 常陸大宮市
+  url: https://www.city.hitachiomiya.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hitachiomiya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.hitachiomiya.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082261
+  label: 茨城県 那珂市
+  url: https://www.city.naka.lg.jp/kurashi-tetsuduki/sumai/akiya/page004131.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.82
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.naka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.naka.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082279
+  label: 茨城県 筑西市
+  url: https://www.city.chikusei.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.chikusei.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.chikusei.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082287
+  label: 茨城県 坂東市
+  url: https://www.city.bando.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.bando.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.bando.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082295
+  label: 茨城県 稲敷市
+  url: https://www.city.inashiki.lg.jp/section.php?code=92
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.inashiki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.inashiki.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082309
+  label: 茨城県 かすみがうら市
+  url: https://www.city.kasumigaura.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kasumigaura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kasumigaura.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082317
+  label: 茨城県 桜川市
+  url: https://www.city.sakuragawa.lg.jp/akiya/akiya.php
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sakuragawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.sakuragawa.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082325
+  label: 茨城県 神栖市
+  url: https://www.city.kamisu.ibaraki.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kamisu.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kamisu.ibaraki.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082333
+  label: 茨城県 行方市
+  url: https://www.city.namegata.ibaraki.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.namegata.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.namegata.ibaraki.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082341
+  label: 茨城県 鉾田市
+  url: https://www.city.hokota.lg.jp/page/dir001189.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hokota.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.hokota.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082350
+  label: 茨城県 つくばみらい市
+  url: https://www.city.tsukubamirai.lg.jp/jyumin/sumai-hikkoshi/akiya-taisaku/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tsukubamirai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tsukubamirai.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 082368
+  label: 茨城県 小美玉市
+  url: https://www.city.omitama.lg.jp/0652/info-0000005214-0.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.omitama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.omitama.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 083020
+  label: 茨城県 茨城町
+  url: https://www.town.ibaraki.lg.jp/gyousei/kurashitetuduki/jyutaku/akiyabank/index.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.82
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ibaraki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.ibaraki.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 083097
+  label: 茨城県 大洗町
+  url: https://www.town.oarai.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.oarai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.oarai.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 083101
+  label: 茨城県 城里町
+  url: https://www.town.shirosato.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shirosato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.shirosato.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 083411
+  label: 茨城県 東海村
+  url: https://www.vill.tokai.ibaraki.jp/kurashi_tetsuzuki/sumai_pet/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.tokai.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.tokai.ibaraki.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 083640
+  label: 茨城県 大子町
+  url: https://www.town.daigo.ibaraki.jp/sitemap.php
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.daigo.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.daigo.ibaraki.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 084425
+  label: 茨城県 美浦村
+  url: https://www.vill.miho.lg.jp/kurashi-kankyou/sumai-kekkontaisaku/akiyataisaku/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.miho.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.miho.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 084433
+  label: 茨城県 阿見町
+  url: https://www.town.ami.lg.jp/0000009864.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.85
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.ami.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 084476
+  label: 茨城県 河内町
+  url: https://www.town.ibaraki-kawachi.lg.jp/page/page003046.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 茨城県 県内の市町村に掲載された公式サイト（www.town.ibaraki-kawachi.lg.jp）
+  evidence_url: https://www.pref.ibaraki.jp/towns/index.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 085219
+  label: 茨城県 八千代町
+  url: https://www.town.ibaraki-yachiyo.lg.jp/page/dir006867.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 茨城県 県内の市町村に掲載された公式サイト（www.town.ibaraki-yachiyo.lg.jp）
+  evidence_url: https://www.pref.ibaraki.jp/towns/index.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 085421
+  label: 茨城県 五霞町
+  url: https://www.town.goka.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.goka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.goka.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 085464
+  label: 茨城県 境町
+  url: https://www.town.sakai.ibaraki.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 茨城県 県内の市町村に掲載された公式サイト（www.town.sakai.ibaraki.jp）。サイトを取得できなかったためリンクのみ（robots.txt を取得できないため今回は巡回しない）
+  evidence_url: https://www.pref.ibaraki.jp/towns/index.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: 085642
+  label: 茨城県 利根町
+  url: https://www.town.tone.ibaraki.jp/kurashi/sumaidouro/akiya/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tone.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.tone.ibaraki.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

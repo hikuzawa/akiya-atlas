@@ -1,0 +1,540 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: kyoto-261009
+  name: 京都市空き家バンク
+  operator: 京都市
+  operator_kind: municipality
+  official_url: https://www.city.kyoto.lg.jp/
+  policy: link_only
+  municipality:
+    code: '261009'
+    name: 京都市
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '261009'
+    bank_url: https://www.city.kyoto.lg.jp/
+    bank_status: none
+    map_query: 京都府京都市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kyoto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kyoto.lg.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-262013
+  name: 福知山市空き家バンク
+  operator: 福知山市
+  operator_kind: municipality
+  official_url: https://www.city.fukuchiyama.lg.jp/
+  policy: link_only
+  municipality:
+    code: '262013'
+    name: 福知山市
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '262013'
+    bank_url: https://www.city.fukuchiyama.lg.jp/
+    bank_status: none
+    map_query: 京都府福知山市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.fukuchiyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.fukuchiyama.lg.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-262021
+  name: 舞鶴市空き家バンク
+  operator: 舞鶴市
+  operator_kind: municipality
+  official_url: https://www.city.maizuru.kyoto.jp/
+  policy: link_only
+  municipality:
+    code: '262021'
+    name: 舞鶴市
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '262021'
+    bank_url: https://www.city.maizuru.kyoto.jp/kurashi/category/8-6-14-1-0-0-0-0-0-0.html
+    bank_status: info
+    map_query: 京都府舞鶴市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.maizuru.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.maizuru.kyoto.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-262030
+  name: 綾部市空き家バンク
+  operator: 綾部市
+  operator_kind: municipality
+  official_url: https://www.city.ayabe.lg.jp/
+  policy: crawl
+  municipality:
+    code: '262030'
+    name: 綾部市
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '262030'
+    bank_url: https://www.city.ayabe.lg.jp/0000005221.html
+    bank_status: available
+    map_query: 京都府綾部市
+  operator_evidence:
+    quote: 公式ドメイン www.city.ayabe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.ayabe.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.ayabe.lg.jp/0000005221.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.ayabe.lg.jp
+  max_pages: 30
+- id: kyoto-262048
+  name: 宇治市空き家バンク
+  operator: 宇治市
+  operator_kind: municipality
+  official_url: https://www.city.uji.kyoto.jp/
+  policy: link_only
+  municipality:
+    code: '262048'
+    name: 宇治市
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '262048'
+    bank_url: https://www.city.uji.kyoto.jp/soshiki/48/77988.html
+    bank_status: info
+    map_query: 京都府宇治市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.uji.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.uji.kyoto.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-262056
+  name: 宮津市空き家バンク
+  operator: 宮津市
+  operator_kind: municipality
+  official_url: https://www.city.miyazu.kyoto.jp/
+  policy: link_only
+  municipality:
+    code: '262056'
+    name: 宮津市
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '262056'
+    bank_url: https://www.city.miyazu.kyoto.jp/life/1/5/23/
+    bank_status: info
+    map_query: 京都府宮津市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.miyazu.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.miyazu.kyoto.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-262064
+  name: 亀岡市空き家バンク
+  operator: 亀岡市
+  operator_kind: municipality
+  official_url: https://www.city.kameoka.kyoto.jp/
+  policy: link_only
+  municipality:
+    code: '262064'
+    name: 亀岡市
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '262064'
+    bank_url: https://www.city.kameoka.kyoto.jp/
+    bank_status: none
+    map_query: 京都府亀岡市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kameoka.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kameoka.kyoto.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-262072
+  name: 城陽市空き家バンク
+  operator: 城陽市
+  operator_kind: municipality
+  official_url: https://www.city.joyo.kyoto.jp/
+  policy: link_only
+  municipality:
+    code: '262072'
+    name: 城陽市
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '262072'
+    bank_url: https://www.city.joyo.kyoto.jp/category/6-37-4-0-0-0-0-0-0-0.html
+    bank_status: info
+    map_query: 京都府城陽市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.joyo.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.joyo.kyoto.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-262081
+  name: 向日市空き家バンク
+  operator: 向日市
+  operator_kind: municipality
+  official_url: https://www.city.muko.kyoto.jp/
+  policy: link_only
+  municipality:
+    code: '262081'
+    name: 向日市
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '262081'
+    bank_url: https://www.city.muko.kyoto.jp/
+    bank_status: none
+    map_query: 京都府向日市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.muko.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.muko.kyoto.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-262099
+  name: 長岡京市空き家バンク
+  operator: 長岡京市
+  operator_kind: municipality
+  official_url: https://www.city.nagaokakyo.lg.jp/
+  policy: link_only
+  municipality:
+    code: '262099'
+    name: 長岡京市
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '262099'
+    bank_url: https://www.city.nagaokakyo.lg.jp/0000015859.html
+    bank_status: info
+    map_query: 京都府長岡京市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nagaokakyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.nagaokakyo.lg.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-262102
+  name: 八幡市空き家バンク
+  operator: 八幡市
+  operator_kind: municipality
+  official_url: https://www.city.yawata.kyoto.jp/
+  policy: link_only
+  municipality:
+    code: '262102'
+    name: 八幡市
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '262102'
+    bank_url: https://www.city.yawata.kyoto.jp/
+    bank_status: none
+    map_query: 京都府八幡市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yawata.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.yawata.kyoto.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-262111
+  name: 京田辺市空き家バンク
+  operator: 京田辺市
+  operator_kind: municipality
+  official_url: https://www.city.kyotanabe.lg.jp/
+  policy: link_only
+  municipality:
+    code: '262111'
+    name: 京田辺市
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '262111'
+    bank_url: https://www.city.kyotanabe.lg.jp/
+    bank_status: none
+    map_query: 京都府京田辺市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kyotanabe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kyotanabe.lg.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-262129
+  name: 京丹後市空き家バンク
+  operator: 京丹後市
+  operator_kind: municipality
+  official_url: https://www.city.kyotango.lg.jp/
+  policy: link_only
+  municipality:
+    code: '262129'
+    name: 京丹後市
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '262129'
+    bank_url: https://www.city.kyotango.lg.jp/
+    bank_status: none
+    map_query: 京都府京丹後市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kyotango.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kyotango.lg.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-262137
+  name: 南丹市空き家バンク
+  operator: 南丹市
+  operator_kind: municipality
+  official_url: https://www.city.nantan.kyoto.jp/
+  policy: link_only
+  municipality:
+    code: '262137'
+    name: 南丹市
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '262137'
+    bank_url: https://www.city.nantan.kyoto.jp/
+    bank_status: none
+    map_query: 京都府南丹市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nantan.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.nantan.kyoto.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-262145
+  name: 木津川市空き家バンク
+  operator: 木津川市
+  operator_kind: municipality
+  official_url: https://www.city.kizugawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '262145'
+    name: 木津川市
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '262145'
+    bank_url: https://www.city.kizugawa.lg.jp/0000001274.html
+    bank_status: info
+    map_query: 京都府木津川市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kizugawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kizugawa.lg.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: 空家バンクサイト 別ウィンドウで開く
+    url: https://kizugawa-c26214.akiya-athome.jp/
+- id: kyoto-263036
+  name: 大山崎町空き家バンク
+  operator: 大山崎町
+  operator_kind: municipality
+  official_url: https://www.town.oyamazaki.kyoto.jp/
+  policy: link_only
+  municipality:
+    code: '263036'
+    name: 大山崎町
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '263036'
+    bank_url: https://www.town.oyamazaki.kyoto.jp/
+    bank_status: none
+    map_query: 京都府大山崎町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.oyamazaki.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.oyamazaki.kyoto.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-263222
+  name: 久御山町空き家バンク
+  operator: 久御山町
+  operator_kind: municipality
+  official_url: https://www.town.kumiyama.lg.jp/
+  policy: link_only
+  municipality:
+    code: '263222'
+    name: 久御山町
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '263222'
+    bank_url: https://www.town.kumiyama.lg.jp/
+    bank_status: none
+    map_query: 京都府久御山町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kumiyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kumiyama.lg.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-263435
+  name: 井手町空き家バンク
+  operator: 井手町
+  operator_kind: municipality
+  official_url: https://www.town.ide.kyoto.jp/
+  policy: link_only
+  municipality:
+    code: '263435'
+    name: 井手町
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '263435'
+    bank_url: https://www.town.ide.kyoto.jp/
+    bank_status: none
+    map_query: 京都府井手町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ide.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.ide.kyoto.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-263443
+  name: 宇治田原町空き家バンク
+  operator: 宇治田原町
+  operator_kind: municipality
+  official_url: https://www.town.ujitawara.kyoto.jp/
+  policy: link_only
+  municipality:
+    code: '263443'
+    name: 宇治田原町
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '263443'
+    bank_url: https://www.town.ujitawara.kyoto.jp/
+    bank_status: none
+    map_query: 京都府宇治田原町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ujitawara.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.ujitawara.kyoto.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-263648
+  name: 笠置町空き家バンク
+  operator: 笠置町
+  operator_kind: municipality
+  official_url: https://www.town.kasagi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '263648'
+    name: 笠置町
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '263648'
+    bank_url: https://www.town.kasagi.lg.jp/
+    bank_status: none
+    map_query: 京都府笠置町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kasagi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kasagi.lg.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-263656
+  name: 和束町空き家バンク
+  operator: 和束町
+  operator_kind: municipality
+  official_url: https://www.town.wazuka.lg.jp/
+  policy: link_only
+  municipality:
+    code: '263656'
+    name: 和束町
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '263656'
+    bank_url: https://www.town.wazuka.lg.jp/
+    bank_status: none
+    map_query: 京都府和束町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.wazuka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.wazuka.lg.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-263664
+  name: 精華町空き家バンク
+  operator: 精華町
+  operator_kind: municipality
+  official_url: https://www.town.seika.kyoto.jp/
+  policy: link_only
+  municipality:
+    code: '263664'
+    name: 精華町
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '263664'
+    bank_url: https://www.town.seika.kyoto.jp/
+    bank_status: none
+    map_query: 京都府精華町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.seika.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.seika.kyoto.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-263672
+  name: 南山城村空き家バンク
+  operator: 南山城村
+  operator_kind: municipality
+  official_url: https://www.vill.minamiyamashiro.lg.jp/
+  policy: crawl
+  municipality:
+    code: '263672'
+    name: 南山城村
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '263672'
+    bank_url: https://www.vill.minamiyamashiro.lg.jp/0000001383.html
+    bank_status: available
+    map_query: 京都府南山城村
+  operator_evidence:
+    quote: 公式ドメイン www.vill.minamiyamashiro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.vill.minamiyamashiro.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.vill.minamiyamashiro.lg.jp/0000001383.html
+    kind: listing_index
+  allow_hosts:
+  - www.vill.minamiyamashiro.lg.jp
+  max_pages: 30
+  external_links:
+  - label: LIFULL HOME'S　空き家バンク（株式会社LIFULL） （別ウインドウで開く）
+    url: https://www.homes.co.jp/akiyabank/
+  - label: at home　空き家・空き地バンク（アットホーム株式会社） （別ウインドウで開く）
+    url: https://www.akiya-athome.jp/
+- id: kyoto-264075
+  name: 京丹波町空き家バンク
+  operator: 京丹波町
+  operator_kind: municipality
+  official_url: https://www.town.kyotamba.kyoto.jp/
+  policy: link_only
+  municipality:
+    code: '264075'
+    name: 京丹波町
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '264075'
+    bank_url: https://www.town.kyotamba.kyoto.jp/
+    bank_status: none
+    map_query: 京都府京丹波町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 京都府 府内市町村・官公庁・都道府県等に掲載された公式サイト（www.town.kyotamba.kyoto.jp）
+    url: https://www.pref.kyoto.jp/link.html
+    checked_on: '2026-09-11'
+- id: kyoto-264636
+  name: 伊根町空き家バンク
+  operator: 伊根町
+  operator_kind: municipality
+  official_url: https://www.town.ine.kyoto.jp/
+  policy: link_only
+  municipality:
+    code: '264636'
+    name: 伊根町
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '264636'
+    bank_url: https://www.town.ine.kyoto.jp/iju/akiya/index.html
+    bank_status: info
+    map_query: 京都府伊根町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ine.kyoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.ine.kyoto.jp/
+    checked_on: '2026-09-11'
+- id: kyoto-264652
+  name: 与謝野町空き家バンク
+  operator: 与謝野町
+  operator_kind: municipality
+  official_url: https://www.town.yosano.lg.jp/
+  policy: link_only
+  municipality:
+    code: '264652'
+    name: 与謝野町
+    prefecture: 京都府
+    prefecture_slug: kyoto
+    slug: '264652'
+    bank_url: https://www.town.yosano.lg.jp/life/house/unoccupied-house/
+    bank_status: info
+    map_query: 京都府与謝野町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yosano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.yosano.lg.jp/
+    checked_on: '2026-09-11'

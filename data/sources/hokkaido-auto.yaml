@@ -1,0 +1,3837 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: hokkaido-011002
+  name: 札幌市空き家バンク
+  operator: 札幌市
+  operator_kind: municipality
+  official_url: https://www.city.sapporo.jp/
+  policy: link_only
+  municipality:
+    code: '011002'
+    name: 札幌市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '011002'
+    bank_url: https://www.city.sapporo.jp/
+    bank_status: none
+    map_query: 北海道札幌市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.city.sapporo.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-012025
+  name: 函館市空き家バンク
+  operator: 函館市
+  operator_kind: municipality
+  official_url: https://www.city.hakodate.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '012025'
+    name: 函館市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012025'
+    bank_url: https://hakodate-c01202.akiya-athome.jp/
+    bank_status: third_party_only
+    map_query: 北海道函館市
+    bank_note: 物件は民間プラットフォームで公開されています。本サイトでは巡回・要約せず、リンクのみ掲載します。
+  operator_evidence:
+    quote: 公式ドメイン www.city.hakodate.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.hakodate.hokkaido.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: 最近見た物件 0 件
+    url: https://hakodate-c01202.akiya-athome.jp/mypage/history/list/
+  - label: 検討リスト 0 件
+    url: https://hakodate-c01202.akiya-athome.jp/mypage/favorite/list/
+  - label: 保存した条件 0 件
+    url: https://hakodate-c01202.akiya-athome.jp/mypage/hope/list/
+  - label: akiya-athome.jp
+    url: https://hakodate-c01202.akiya-athome.jp/
+  - label: マンション(売買)
+    url: https://hakodate-c01202.akiya-athome.jp/buy/mansion/rail/
+  - label: 戸建(売買)
+    url: https://hakodate-c01202.akiya-athome.jp/buy/house/rail/
+  - label: 土地(売買)
+    url: https://hakodate-c01202.akiya-athome.jp/buy/land/rail/
+  - label: 事業・投資物件(売買)
+    url: https://hakodate-c01202.akiya-athome.jp/buy/invest/rail/
+  - label: 住まい(賃貸)
+    url: https://hakodate-c01202.akiya-athome.jp/rent/live/rail/
+  - label: 事業用(賃貸)
+    url: https://hakodate-c01202.akiya-athome.jp/rent/business/rail/
+  - label: マンション(売買)
+    url: https://hakodate-c01202.akiya-athome.jp/buy/mansion/area/
+  - label: 戸建(売買)
+    url: https://hakodate-c01202.akiya-athome.jp/buy/house/area/
+  - label: 土地(売買)
+    url: https://hakodate-c01202.akiya-athome.jp/buy/land/area/
+  - label: 事業・投資物件(売買)
+    url: https://hakodate-c01202.akiya-athome.jp/buy/invest/area/
+  - label: 住まい(賃貸)
+    url: https://hakodate-c01202.akiya-athome.jp/rent/live/area/
+  - label: 事業用(賃貸)
+    url: https://hakodate-c01202.akiya-athome.jp/rent/business/area/
+  - label: マンション(売買)
+    url: https://hakodate-c01202.akiya-athome.jp/buy/mansion/map/
+  - label: 戸建(売買)
+    url: https://hakodate-c01202.akiya-athome.jp/buy/house/map/
+  - label: 土地(売買)
+    url: https://hakodate-c01202.akiya-athome.jp/buy/land/map/
+  - label: 事業・投資物件(売買)
+    url: https://hakodate-c01202.akiya-athome.jp/buy/invest/map/
+  - label: 住まい(賃貸)
+    url: https://hakodate-c01202.akiya-athome.jp/rent/live/map/
+  - label: 事業用(賃貸)
+    url: https://hakodate-c01202.akiya-athome.jp/rent/business/map/
+  - label: 登録番号４は，成約しました。（湯浜）
+    url: https://hakodate-c01202.akiya-athome.jp/contents/news/detail/?id=1847
+  - label: 登録番号１は，成約しました。（桔梗２丁目）
+    url: https://hakodate-c01202.akiya-athome.jp/contents/news/detail/?id=1754
+  - label: 登録番号３は，成約しました。（本通３丁目）
+    url: https://hakodate-c01202.akiya-athome.jp/contents/news/detail/?id=1722
+  - label: 登録番号２は，成約しました。（谷地頭町）
+    url: https://hakodate-c01202.akiya-athome.jp/contents/news/detail/?id=1694
+  - label: 函館市空き家バンクを公開しました。
+    url: https://hakodate-c01202.akiya-athome.jp/contents/news/detail/?id=1571
+  - label: もっと見る
+    url: https://hakodate-c01202.akiya-athome.jp/contents/news/list/
+  - label: akiya-athome.jp
+    url: https://hakodate-c01202.akiya-athome.jp/bukken/detail/buy/%E5%87%BD%E9%A4%A8%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47838
+  - label: akiya-athome.jp
+    url: https://hakodate-c01202.akiya-athome.jp/bukken/detail/buy/%E5%87%BD%E9%A4%A8%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47922
+  - label: '  空き家バンク以外の
+
+      函館市の
+
+      中古一戸建てを探す
+
+      （athome）'
+    url: https://www.athome.co.jp/kodate/chuko/hokkaido/hakodate-city/list/
+  - label: '  空き家バンク以外の
+
+      函館市の土地を探す
+
+      （athome）'
+    url: https://www.athome.co.jp/tochi/hokkaido/hakodate-city/list/
+  - label: '  空き家バンク以外の
+
+      函館市の
+
+      賃貸居住用物件を探す
+
+      （athome）'
+    url: https://www.athome.co.jp/chintai/hokkaido/hakodate-city/list/
+  - label: プライバシーポリシー
+    url: https://hakodate-c01202.akiya-athome.jp/contents/static/privacy-policy/
+- id: hokkaido-012033
+  name: 小樽市空き家バンク
+  operator: 小樽市
+  operator_kind: municipality
+  official_url: https://www.city.otaru.lg.jp/
+  policy: link_only
+  municipality:
+    code: '012033'
+    name: 小樽市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012033'
+    bank_url: https://www.city.otaru.lg.jp/
+    bank_status: none
+    map_query: 北海道小樽市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.otaru.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.otaru.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012041
+  name: 旭川市空き家バンク
+  operator: 旭川市
+  operator_kind: municipality
+  official_url: https://www.city.asahikawa.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '012041'
+    name: 旭川市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012041'
+    bank_url: https://www.city.asahikawa.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道旭川市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.asahikawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.asahikawa.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012050
+  name: 室蘭市空き家バンク
+  operator: 室蘭市
+  operator_kind: municipality
+  official_url: https://www.city.muroran.lg.jp/
+  policy: link_only
+  municipality:
+    code: '012050'
+    name: 室蘭市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012050'
+    bank_url: https://www.city.muroran.lg.jp/life/?category=540
+    bank_status: info
+    map_query: 北海道室蘭市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.muroran.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.muroran.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012068
+  name: 釧路市空き家バンク
+  operator: 釧路市
+  operator_kind: municipality
+  official_url: https://www.city.kushiro.lg.jp/
+  policy: link_only
+  municipality:
+    code: 012068
+    name: 釧路市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 012068
+    bank_url: https://www.city.kushiro.lg.jp/
+    bank_status: none
+    map_query: 北海道釧路市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kushiro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kushiro.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012076
+  name: 帯広市空き家バンク
+  operator: 帯広市
+  operator_kind: municipality
+  official_url: https://www.city.obihiro.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '012076'
+    name: 帯広市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012076'
+    bank_url: https://www.city.obihiro.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道帯広市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.obihiro.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.obihiro.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012084
+  name: 北見市空き家バンク
+  operator: 北見市
+  operator_kind: municipality
+  official_url: https://www.city.kitami.lg.jp/
+  policy: link_only
+  municipality:
+    code: 012084
+    name: 北見市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 012084
+    bank_url: https://www.city.kitami.lg.jp/
+    bank_status: none
+    map_query: 北海道北見市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kitami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kitami.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012092
+  name: 夕張市空き家バンク
+  operator: 夕張市
+  operator_kind: municipality
+  official_url: https://www.city.yubari.lg.jp/
+  policy: link_only
+  municipality:
+    code: 012092
+    name: 夕張市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 012092
+    bank_url: https://www.city.yubari.lg.jp/
+    bank_status: none
+    map_query: 北海道夕張市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yubari.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.yubari.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012106
+  name: 岩見沢市空き家バンク
+  operator: 岩見沢市
+  operator_kind: municipality
+  official_url: https://www.city.iwamizawa.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '012106'
+    name: 岩見沢市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012106'
+    bank_url: https://www.city.iwamizawa.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道岩見沢市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.iwamizawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.iwamizawa.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012114
+  name: 網走市空き家バンク
+  operator: 網走市
+  operator_kind: municipality
+  official_url: https://www.city.abashiri.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '012114'
+    name: 網走市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012114'
+    bank_url: https://www.city.abashiri.hokkaido.jp/life/1/10/41/
+    bank_status: info
+    map_query: 北海道網走市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.abashiri.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.abashiri.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012122
+  name: 留萌市空き家バンク
+  operator: 留萌市
+  operator_kind: municipality
+  official_url: https://www.e-rumoi.jp/
+  policy: crawl
+  municipality:
+    code: '012122'
+    name: 留萌市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012122'
+    bank_url: https://www.e-rumoi.jp/rumoilife/estate/
+    bank_status: available
+    map_query: 北海道留萌市
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.e-rumoi.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.e-rumoi.jp/rumoilife/estate/
+    kind: listing_index
+  allow_hosts:
+  - www.e-rumoi.jp
+  max_pages: 30
+- id: hokkaido-012131
+  name: 苫小牧市空き家バンク
+  operator: 苫小牧市
+  operator_kind: municipality
+  official_url: https://www.city.tomakomai.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '012131'
+    name: 苫小牧市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012131'
+    bank_url: https://www.city.tomakomai.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道苫小牧市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tomakomai.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.tomakomai.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012149
+  name: 稚内市空き家バンク
+  operator: 稚内市
+  operator_kind: municipality
+  official_url: https://www.city.wakkanai.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 012149
+    name: 稚内市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 012149
+    bank_url: https://www.city.wakkanai.hokkaido.jp/kurashi/shobou/kasai/syokaki/
+    bank_status: spa_unsupported
+    map_query: 北海道稚内市
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.wakkanai.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.wakkanai.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012157
+  name: 美唄市空き家バンク
+  operator: 美唄市
+  operator_kind: municipality
+  official_url: https://www.city.bibai.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '012157'
+    name: 美唄市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012157'
+    bank_url: https://www.city.bibai.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道美唄市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.bibai.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.bibai.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012165
+  name: 芦別市空き家バンク
+  operator: 芦別市
+  operator_kind: municipality
+  official_url: https://www.city.ashibetsu.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '012165'
+    name: 芦別市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012165'
+    bank_url: https://www.city.ashibetsu.hokkaido.jp/kurashi/akiyaakichi/
+    bank_status: info
+    map_query: 北海道芦別市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ashibetsu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.ashibetsu.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012173
+  name: 江別市空き家バンク
+  operator: 江別市
+  operator_kind: municipality
+  official_url: https://www.city.ebetsu.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '012173'
+    name: 江別市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012173'
+    bank_url: https://www.city.ebetsu.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道江別市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ebetsu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.ebetsu.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012181
+  name: 赤平市空き家バンク
+  operator: 赤平市
+  operator_kind: municipality
+  official_url: https://www.city.akabira.hokkaido.jp/
+  policy: crawl
+  municipality:
+    code: 012181
+    name: 赤平市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 012181
+    bank_url: https://www.city.akabira.hokkaido.jp/docs/6120.html
+    bank_status: available
+    map_query: 北海道赤平市
+  operator_evidence:
+    quote: 公式ドメイン www.city.akabira.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.akabira.hokkaido.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.akabira.hokkaido.jp/docs/6120.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.akabira.hokkaido.jp
+  max_pages: 30
+- id: hokkaido-012190
+  name: 紋別市空き家バンク
+  operator: 紋別市
+  operator_kind: municipality
+  official_url: https://mombetsu.jp/
+  policy: link_only
+  municipality:
+    code: 012190
+    name: 紋別市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 012190
+    bank_url: https://mombetsu.jp/
+    bank_status: none
+    map_query: 北海道紋別市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（mombetsu.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-012203
+  name: 士別市空き家バンク
+  operator: 士別市
+  operator_kind: municipality
+  official_url: https://www.city.shibetsu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '012203'
+    name: 士別市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012203'
+    bank_url: http://shibetsu-akiya-akiti.tesio.net/
+    bank_status: info
+    map_query: 北海道士別市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式サイト（www.city.shibetsu.lg.jp）から空き家バンクとして案内されているリンク
+    url: https://www.city.shibetsu.lg.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: homes.co.jp
+    url: https://www.homes.co.jp/akiyabank/
+- id: hokkaido-012211
+  name: 名寄市空き家バンク
+  operator: 名寄市
+  operator_kind: municipality
+  official_url: https://www.city.nayoro.lg.jp/
+  policy: link_only
+  municipality:
+    code: '012211'
+    name: 名寄市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012211'
+    bank_url: http://www.city.nayoro.lg.jp/life/cat2/prkeql0000012db8.html
+    bank_status: info
+    map_query: 北海道名寄市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.city.nayoro.lg.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-012220
+  name: 三笠市空き家バンク
+  operator: 三笠市
+  operator_kind: municipality
+  official_url: https://www.city.mikasa.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '012220'
+    name: 三笠市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012220'
+    bank_url: https://www.city.mikasa.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道三笠市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.mikasa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.mikasa.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012238
+  name: 根室市空き家バンク
+  operator: 根室市
+  operator_kind: municipality
+  official_url: https://www.city.nemuro.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 012238
+    name: 根室市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 012238
+    bank_url: https://www.city.nemuro.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道根室市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nemuro.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.nemuro.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012246
+  name: 千歳市空き家バンク
+  operator: 千歳市
+  operator_kind: municipality
+  official_url: https://www.city.chitose.lg.jp/
+  policy: link_only
+  municipality:
+    code: '012246'
+    name: 千歳市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012246'
+    bank_url: https://www.city.chitose.lg.jp/c01/1005931/1006756.html
+    bank_status: info
+    map_query: 北海道千歳市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.chitose.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.chitose.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012254
+  name: 滝川市空き家バンク
+  operator: 滝川市
+  operator_kind: municipality
+  official_url: https://www.city.takikawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '012254'
+    name: 滝川市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012254'
+    bank_url: https://www.city.takikawa.lg.jp/
+    bank_status: none
+    map_query: 北海道滝川市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.takikawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.takikawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012262
+  name: 砂川市空き家バンク
+  operator: 砂川市
+  operator_kind: municipality
+  official_url: https://www.city.sunagawa.hokkaido.jp/
+  policy: crawl
+  municipality:
+    code: '012262'
+    name: 砂川市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012262'
+    bank_url: https://www.city.sunagawa.hokkaido.jp/seikatsu_kurashi/juutaku/newakiya-akichizyouhou.html
+    bank_status: available
+    map_query: 北海道砂川市
+  operator_evidence:
+    quote: 公式ドメイン www.city.sunagawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.sunagawa.hokkaido.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.sunagawa.hokkaido.jp/seikatsu_kurashi/juutaku/newakiya-akichizyouhou.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.sunagawa.hokkaido.jp
+  max_pages: 30
+  external_links:
+  - label: https://www.athome.co.jp/
+    url: https://www.athome.co.jp/kodate/chuko/hokkaido/sunagawa-city/list/
+- id: hokkaido-012271
+  name: 歌志内市空き家バンク
+  operator: 歌志内市
+  operator_kind: municipality
+  official_url: https://www.city.utashinai.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '012271'
+    name: 歌志内市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012271'
+    bank_url: https://www.city.utashinai.hokkaido.jp/hotnews/category/274.html
+    bank_status: spa_unsupported
+    map_query: 北海道歌志内市
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.utashinai.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.utashinai.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012289
+  name: 深川市空き家バンク
+  operator: 深川市
+  operator_kind: municipality
+  official_url: https://www.city.fukagawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: 012289
+    name: 深川市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 012289
+    bank_url: https://www.city.fukagawa.lg.jp/cms/section/kenchiku/ie/index.html
+    bank_status: info
+    map_query: 北海道深川市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.fukagawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.fukagawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012297
+  name: 富良野市空き家バンク
+  operator: 富良野市
+  operator_kind: municipality
+  official_url: https://www.city.furano.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 012297
+    name: 富良野市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 012297
+    bank_url: https://www.city.furano.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道富良野市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.furano.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.furano.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012301
+  name: 登別市空き家バンク
+  operator: 登別市
+  operator_kind: municipality
+  official_url: https://www.city.noboribetsu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '012301'
+    name: 登別市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012301'
+    bank_url: https://www.city.noboribetsu.lg.jp/docs/2016060100015/
+    bank_status: info
+    map_query: 北海道登別市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.noboribetsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.noboribetsu.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012319
+  name: 恵庭市空き家バンク
+  operator: 恵庭市
+  operator_kind: municipality
+  official_url: https://www.city.eniwa.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 012319
+    name: 恵庭市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 012319
+    bank_url: https://www.city.eniwa.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道恵庭市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.eniwa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.eniwa.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012335
+  name: 伊達市空き家バンク
+  operator: 伊達市
+  operator_kind: municipality
+  official_url: https://www.city.date.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '012335'
+    name: 伊達市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012335'
+    bank_url: https://www.city.date.hokkaido.jp/hotnews/category/211.html
+    bank_status: spa_unsupported
+    map_query: 北海道伊達市
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.date.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.date.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012343
+  name: 北広島市空き家バンク
+  operator: 北広島市
+  operator_kind: municipality
+  official_url: https://www.city.kitahiroshima.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '012343'
+    name: 北広島市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012343'
+    bank_url: https://www.city.kitahiroshima.hokkaido.jp/hotnews/category/792.html
+    bank_status: info
+    map_query: 北海道北広島市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kitahiroshima.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kitahiroshima.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012351
+  name: 石狩市空き家バンク
+  operator: 石狩市
+  operator_kind: municipality
+  official_url: https://www.city.ishikari.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '012351'
+    name: 石狩市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012351'
+    bank_url: https://www.city.ishikari.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道石狩市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ishikari.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.ishikari.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-012360
+  name: 北斗市空き家バンク
+  operator: 北斗市
+  operator_kind: municipality
+  official_url: https://www.city.hokuto.hokkaido.jp/
+  policy: crawl
+  municipality:
+    code: '012360'
+    name: 北斗市
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '012360'
+    bank_url: https://www.city.hokuto.hokkaido.jp/docs/akiyabank.html
+    bank_status: available
+    map_query: 北海道北斗市
+  operator_evidence:
+    quote: 公式ドメイン www.city.hokuto.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.hokuto.hokkaido.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.hokuto.hokkaido.jp/docs/akiyabank.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.hokuto.hokkaido.jp
+  max_pages: 30
+- id: hokkaido-013030
+  name: 当別町空き家バンク
+  operator: 当別町
+  operator_kind: municipality
+  official_url: https://www.town.tobetsu.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '013030'
+    name: 当別町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '013030'
+    bank_url: https://www.town.tobetsu.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道当別町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.tobetsu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.tobetsu.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-013048
+  name: 新篠津村空き家バンク
+  operator: 新篠津村
+  operator_kind: municipality
+  official_url: https://www.vill.shinshinotsu.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 013048
+    name: 新篠津村
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 013048
+    bank_url: https://www.vill.shinshinotsu.hokkaido.jp/hotnews/detail/00003170.html
+    bank_status: info
+    map_query: 北海道新篠津村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.shinshinotsu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.shinshinotsu.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-013315
+  name: 松前町空き家バンク
+  operator: 松前町
+  operator_kind: municipality
+  official_url: https://www.town.matsumae.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '013315'
+    name: 松前町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '013315'
+    bank_url: https://www.town.matsumae.hokkaido.jp/iju_teiju/detail/00002513.html
+    bank_status: spa_unsupported
+    map_query: 北海道松前町
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.matsumae.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.matsumae.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-013323
+  name: 福島町空き家バンク
+  operator: 福島町
+  operator_kind: municipality
+  official_url: https://www.town.fukushima.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '013323'
+    name: 福島町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '013323'
+    bank_url: https://www.town.fukushima.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道福島町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.fukushima.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.fukushima.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-013331
+  name: 知内町空き家バンク
+  operator: 知内町
+  operator_kind: municipality
+  official_url: https://www.town.shiriuchi.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '013331'
+    name: 知内町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '013331'
+    bank_url: https://www.town.shiriuchi.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道知内町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shiriuchi.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.shiriuchi.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-013340
+  name: 木古内町空き家バンク
+  operator: 木古内町
+  operator_kind: municipality
+  official_url: https://www.town.kikonai.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '013340'
+    name: 木古内町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '013340'
+    bank_url: https://www.town.kikonai.hokkaido.jp/iju/jutaku_tochi/akiyareform.html
+    bank_status: info
+    map_query: 北海道木古内町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kikonai.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kikonai.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-013374
+  name: 七飯町空き家バンク
+  operator: 七飯町
+  operator_kind: municipality
+  official_url: https://www.town.nanae.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '013374'
+    name: 七飯町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '013374'
+    bank_url: https://www.town.nanae.hokkaido.jp/hotnews/category/156.html
+    bank_status: spa_unsupported
+    map_query: 北海道七飯町
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.nanae.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.nanae.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-013439
+  name: 鹿部町空き家バンク
+  operator: 鹿部町
+  operator_kind: municipality
+  official_url: https://www.town.shikabe.lg.jp/
+  policy: crawl
+  municipality:
+    code: 013439
+    name: 鹿部町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 013439
+    bank_url: https://www.town.shikabe.lg.jp/kurashi_tetsuzuki/zumai/1045.html
+    bank_status: available
+    map_query: 北海道鹿部町
+  operator_evidence:
+    quote: 公式ドメイン www.town.shikabe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.shikabe.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.shikabe.lg.jp/kurashi_tetsuzuki/zumai/1045.html
+    kind: listing_index
+    follow:
+    - pattern: https?://www\.town\.shikabe\.lg\.jp/kurashi_tetsuzuki/zumai/1045\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - www.town.shikabe.lg.jp
+  max_pages: 30
+- id: hokkaido-013455
+  name: 森町空き家バンク
+  operator: 森町
+  operator_kind: municipality
+  official_url: https://www.town.hokkaido-mori.lg.jp/
+  policy: link_only
+  municipality:
+    code: '013455'
+    name: 森町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '013455'
+    bank_url: https://www.town.hokkaido-mori.lg.jp/kurashi-tetsuzuki/sumai-pets/index.html
+    bank_status: info
+    map_query: 北海道森町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.hokkaido-mori.lg.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-013463
+  name: 八雲町空き家バンク
+  operator: 八雲町
+  operator_kind: municipality
+  official_url: https://www.town.yakumo.lg.jp/
+  policy: link_only
+  municipality:
+    code: '013463'
+    name: 八雲町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '013463'
+    bank_url: https://www.town.yakumo.lg.jp/
+    bank_status: none
+    map_query: 北海道八雲町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yakumo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.yakumo.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-013471
+  name: 長万部町空き家バンク
+  operator: 長万部町
+  operator_kind: municipality
+  official_url: https://www.town.oshamambe.lg.jp/
+  policy: link_only
+  municipality:
+    code: '013471'
+    name: 長万部町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '013471'
+    bank_url: https://www.town.oshamambe.lg.jp/
+    bank_status: none
+    map_query: 北海道長万部町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.oshamambe.lg.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-013617
+  name: 江差町空き家バンク
+  operator: 江差町
+  operator_kind: municipality
+  official_url: https://www.hokkaido-esashi.jp/
+  policy: link_only
+  municipality:
+    code: '013617'
+    name: 江差町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '013617'
+    bank_url: https://www.hokkaido-esashi.jp/
+    bank_status: none
+    map_query: 北海道江差町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.hokkaido-esashi.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-013625
+  name: 上ノ国町空き家バンク
+  operator: 上ノ国町
+  operator_kind: municipality
+  official_url: https://www.town.kaminokuni.lg.jp/
+  policy: link_only
+  municipality:
+    code: '013625'
+    name: 上ノ国町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '013625'
+    bank_url: https://www.town.kaminokuni.lg.jp/
+    bank_status: none
+    map_query: 北海道上ノ国町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kaminokuni.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kaminokuni.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-013633
+  name: 厚沢部町空き家バンク
+  operator: 厚沢部町
+  operator_kind: municipality
+  official_url: https://www.town.assabu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '013633'
+    name: 厚沢部町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '013633'
+    bank_url: https://www.town.assabu.lg.jp/
+    bank_status: none
+    map_query: 北海道厚沢部町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.assabu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.assabu.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-013641
+  name: 乙部町空き家バンク
+  operator: 乙部町
+  operator_kind: municipality
+  official_url: https://www.town.otobe.lg.jp/
+  policy: link_only
+  municipality:
+    code: '013641'
+    name: 乙部町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '013641'
+    bank_url: https://www.town.otobe.lg.jp/
+    bank_status: none
+    map_query: 北海道乙部町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.otobe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.otobe.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-013676
+  name: 奥尻町空き家バンク
+  operator: 奥尻町
+  operator_kind: municipality
+  official_url: https://www.town.okushiri.lg.jp/
+  policy: link_only
+  municipality:
+    code: '013676'
+    name: 奥尻町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '013676'
+    bank_url: https://www.town.okushiri.lg.jp/hotnews/detail/00005907.html
+    bank_status: info
+    map_query: 北海道奥尻町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.okushiri.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.okushiri.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-013706
+  name: 今金町空き家バンク
+  operator: 今金町
+  operator_kind: municipality
+  official_url: https://www.town.imakane.lg.jp/
+  policy: link_only
+  municipality:
+    code: '013706'
+    name: 今金町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '013706'
+    bank_url: https://www.town.imakane.lg.jp/
+    bank_status: none
+    map_query: 北海道今金町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.imakane.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.imakane.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-013714
+  name: せたな町空き家バンク
+  operator: せたな町
+  operator_kind: municipality
+  official_url: https://www.town.setana.lg.jp/
+  policy: link_only
+  municipality:
+    code: '013714'
+    name: せたな町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '013714'
+    bank_url: https://www.town.setana.lg.jp/industry/post_1215.html
+    bank_status: info
+    map_query: 北海道せたな町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.setana.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.setana.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-013919
+  name: 島牧村空き家バンク
+  operator: 島牧村
+  operator_kind: municipality
+  official_url: https://www.vill.shimamaki.lg.jp/
+  policy: link_only
+  municipality:
+    code: 013919
+    name: 島牧村
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 013919
+    bank_url: https://www.vill.shimamaki.lg.jp/
+    bank_status: none
+    map_query: 北海道島牧村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.shimamaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.vill.shimamaki.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-013927
+  name: 寿都町空き家バンク
+  operator: 寿都町
+  operator_kind: municipality
+  official_url: https://www.town.suttu.lg.jp/
+  policy: link_only
+  municipality:
+    code: 013927
+    name: 寿都町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 013927
+    bank_url: https://www.town.suttu.lg.jp/
+    bank_status: none
+    map_query: 北海道寿都町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.suttu.lg.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-013935
+  name: 黒松内町空き家バンク
+  operator: 黒松内町
+  operator_kind: municipality
+  official_url: https://www.kuromatsunai.com/
+  policy: link_only
+  municipality:
+    code: 013935
+    name: 黒松内町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 013935
+    bank_url: http://kuromatsunai-immig.sblo.jp/article/189175090.html
+    bank_status: info
+    map_query: 北海道黒松内町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式サイト（www.kuromatsunai.com）から空き家バンクとして案内されているリンク
+    url: https://www.kuromatsunai.com/
+    checked_on: '2026-09-11'
+- id: hokkaido-013943
+  name: 蘭越町空き家バンク
+  operator: 蘭越町
+  operator_kind: municipality
+  official_url: https://www.town.rankoshi.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 013943
+    name: 蘭越町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 013943
+    bank_url: https://www.town.rankoshi.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道蘭越町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.rankoshi.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.rankoshi.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-013951
+  name: ニセコ町空き家バンク
+  operator: ニセコ町
+  operator_kind: municipality
+  official_url: https://www.town.niseko.lg.jp/
+  policy: link_only
+  municipality:
+    code: 013951
+    name: ニセコ町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 013951
+    bank_url: https://www.town.niseko.lg.jp/
+    bank_status: none
+    map_query: 北海道ニセコ町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.niseko.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.niseko.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-013960
+  name: 真狩村空き家バンク
+  operator: 真狩村
+  operator_kind: municipality
+  official_url: https://www.vill.makkari.lg.jp/
+  policy: link_only
+  municipality:
+    code: 013960
+    name: 真狩村
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 013960
+    bank_url: https://www.vill.makkari.lg.jp/
+    bank_status: none
+    map_query: 北海道真狩村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.makkari.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.vill.makkari.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-013978
+  name: 留寿都村空き家バンク
+  operator: 留寿都村
+  operator_kind: municipality
+  official_url: https://www.vill.rusutsu.lg.jp/
+  policy: link_only
+  municipality:
+    code: 013978
+    name: 留寿都村
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 013978
+    bank_url: https://www.vill.rusutsu.lg.jp/hotnews/category/117.html
+    bank_status: spa_unsupported
+    map_query: 北海道留寿都村
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.rusutsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.vill.rusutsu.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-013986
+  name: 喜茂別町空き家バンク
+  operator: 喜茂別町
+  operator_kind: municipality
+  official_url: https://www.town.kimobetsu.hokkaido.jp/
+  policy: crawl
+  municipality:
+    code: 013986
+    name: 喜茂別町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 013986
+    bank_url: https://www.town.kimobetsu.hokkaido.jp/detail.php?content=325
+    bank_status: available
+    map_query: 北海道喜茂別町
+  operator_evidence:
+    quote: 公式ドメイン www.town.kimobetsu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kimobetsu.hokkaido.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.kimobetsu.hokkaido.jp/detail.php?content=325
+    kind: listing_index
+  allow_hosts:
+  - www.town.kimobetsu.hokkaido.jp
+  max_pages: 30
+- id: hokkaido-013994
+  name: 京極町空き家バンク
+  operator: 京極町
+  operator_kind: municipality
+  official_url: https://www.town-kyogoku.jp/
+  policy: link_only
+  municipality:
+    code: 013994
+    name: 京極町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 013994
+    bank_url: https://www.town-kyogoku.jp/life/1/5/29/
+    bank_status: info
+    map_query: 北海道京極町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town-kyogoku.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-014001
+  name: 倶知安町空き家バンク
+  operator: 倶知安町
+  operator_kind: municipality
+  official_url: https://www.town.kutchan.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '014001'
+    name: 倶知安町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014001'
+    bank_url: https://www.town.kutchan.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道倶知安町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.kutchan.hokkaido.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-014010
+  name: 共和町空き家バンク
+  operator: 共和町
+  operator_kind: municipality
+  official_url: https://www.town.kyowa.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '014010'
+    name: 共和町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014010'
+    bank_url: https://www.town.kyowa.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道共和町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kyowa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kyowa.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014028
+  name: 岩内町空き家バンク
+  operator: 岩内町
+  operator_kind: municipality
+  official_url: https://www.town.iwanai.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 014028
+    name: 岩内町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014028
+    bank_url: https://www.town.iwanai.hokkaido.jp/%e6%9a%ae%e3%82%89%e3%81%97%e3%82%ac%e3%82%a4%e3%83%89/%e4%bd%8f%e3%81%be%e3%81%84%e3%83%bb%e7%94%9f%e6%b4%bb/%e3%81%be%e3%81%a1%e3%81%ae%e7%a9%ba%e3%81%8d%e5%ae%b6%e3%81%ae%e5%8f%96%e3%82%8a%e7%b5%84%e3%81%bf/
+    bank_status: info
+    map_query: 北海道岩内町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.iwanai.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.iwanai.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014044
+  name: 神恵内村空き家バンク
+  operator: 神恵内村
+  operator_kind: municipality
+  official_url: https://www.vill.kamoenai.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '014044'
+    name: 神恵内村
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014044'
+    bank_url: https://www.vill.kamoenai.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道神恵内村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.kamoenai.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.kamoenai.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014052
+  name: 積丹町空き家バンク
+  operator: 積丹町
+  operator_kind: municipality
+  official_url: https://www.town.shakotan.lg.jp/
+  policy: link_only
+  municipality:
+    code: '014052'
+    name: 積丹町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014052'
+    bank_url: https://www.town.shakotan.lg.jp/
+    bank_status: none
+    map_query: 北海道積丹町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shakotan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.shakotan.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014061
+  name: 古平町空き家バンク
+  operator: 古平町
+  operator_kind: municipality
+  official_url: https://www.town.furubira.lg.jp/
+  policy: crawl
+  municipality:
+    code: '014061'
+    name: 古平町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014061'
+    bank_url: https://www.town.furubira.lg.jp/life/detail.php?id=330
+    bank_status: available
+    map_query: 北海道古平町
+  operator_evidence:
+    quote: 公式ドメイン www.town.furubira.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.furubira.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.furubira.lg.jp/life/detail.php?id=330
+    kind: listing_index
+  allow_hosts:
+  - www.town.furubira.lg.jp
+  max_pages: 30
+- id: hokkaido-014079
+  name: 仁木町空き家バンク
+  operator: 仁木町
+  operator_kind: municipality
+  official_url: https://www.town.niki.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 014079
+    name: 仁木町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014079
+    bank_url: https://www.town.niki.hokkaido.jp/section/kikakuka/btsphm0000002ykd.html
+    bank_status: info
+    map_query: 北海道仁木町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.niki.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.niki.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014087
+  name: 余市町空き家バンク
+  operator: 余市町
+  operator_kind: municipality
+  official_url: https://www.town.yoichi.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 014087
+    name: 余市町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014087
+    bank_url: https://www.town.yoichi.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道余市町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yoichi.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.yoichi.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014095
+  name: 赤井川村空き家バンク
+  operator: 赤井川村
+  operator_kind: municipality
+  official_url: https://www.akaigawa.com/
+  policy: link_only
+  municipality:
+    code: 014095
+    name: 赤井川村
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014095
+    bank_url: https://www.akaigawa.com/
+    bank_status: none
+    map_query: 北海道赤井川村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.akaigawa.com）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-014231
+  name: 南幌町空き家バンク
+  operator: 南幌町
+  operator_kind: municipality
+  official_url: https://www.town.nanporo.hokkaido.jp/
+  policy: crawl
+  municipality:
+    code: '014231'
+    name: 南幌町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014231'
+    bank_url: https://www.town.nanporo.hokkaido.jp/life/house/vacant/
+    bank_status: available
+    map_query: 北海道南幌町
+  operator_evidence:
+    quote: 公式ドメイン www.town.nanporo.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.nanporo.hokkaido.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.nanporo.hokkaido.jp/life/house/vacant/
+    kind: listing_index
+  allow_hosts:
+  - www.town.nanporo.hokkaido.jp
+  max_pages: 30
+- id: hokkaido-014249
+  name: 奈井江町空き家バンク
+  operator: 奈井江町
+  operator_kind: municipality
+  official_url: https://www.town.naie.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 014249
+    name: 奈井江町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014249
+    bank_url: https://www.town.naie.hokkaido.jp/kurashi/akiyataisakujigyou/
+    bank_status: spa_unsupported
+    map_query: 北海道奈井江町
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.naie.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.naie.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014257
+  name: 上砂川町空き家バンク
+  operator: 上砂川町
+  operator_kind: municipality
+  official_url: https://town.kamisunagawa.hokkaido.jp/
+  policy: crawl
+  municipality:
+    code: '014257'
+    name: 上砂川町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014257'
+    bank_url: https://town.kamisunagawa.hokkaido.jp/kurashi_tetsuzuki/zumai/akiya/503.html
+    bank_status: available
+    map_query: 北海道上砂川町
+  operator_evidence:
+    quote: 公式ドメイン town.kamisunagawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://town.kamisunagawa.hokkaido.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://town.kamisunagawa.hokkaido.jp/kurashi_tetsuzuki/zumai/akiya/503.html
+    kind: listing_index
+    follow:
+    - pattern: https?://town\.kamisunagawa\.hokkaido\.jp/kurashi_tetsuzuki/zumai/akiya/503\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - town.kamisunagawa.hokkaido.jp
+  max_pages: 30
+- id: hokkaido-014273
+  name: 由仁町空き家バンク
+  operator: 由仁町
+  operator_kind: municipality
+  official_url: https://www.town.yuni.lg.jp/
+  policy: crawl
+  municipality:
+    code: '014273'
+    name: 由仁町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014273'
+    bank_url: https://www.town.yuni.lg.jp/kurashi/choeijyutaku-aki
+    bank_status: available
+    map_query: 北海道由仁町
+  operator_evidence:
+    quote: 公式ドメイン www.town.yuni.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.yuni.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.yuni.lg.jp/kurashi/choeijyutaku-aki
+    kind: listing_index
+  allow_hosts:
+  - www.town.yuni.lg.jp
+  max_pages: 30
+- id: hokkaido-014281
+  name: 長沼町空き家バンク
+  operator: 長沼町
+  operator_kind: municipality
+  official_url: https://www.maoi-net.jp/
+  policy: link_only
+  municipality:
+    code: 014281
+    name: 長沼町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014281
+    bank_url: https://www.maoi-net.jp/kurashi/sumai/akiyataisaku/
+    bank_status: info
+    map_query: 北海道長沼町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.maoi-net.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-014290
+  name: 栗山町空き家バンク
+  operator: 栗山町
+  operator_kind: municipality
+  official_url: https://www.town.kuriyama.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 014290
+    name: 栗山町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014290
+    bank_url: https://www.town.kuriyama.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道栗山町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kuriyama.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kuriyama.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014303
+  name: 月形町空き家バンク
+  operator: 月形町
+  operator_kind: municipality
+  official_url: https://www.town.tsukigata.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '014303'
+    name: 月形町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014303'
+    bank_url: https://www.town.tsukigata.hokkaido.jp/life/1/4/21/
+    bank_status: info
+    map_query: 北海道月形町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.tsukigata.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.tsukigata.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014311
+  name: 浦臼町空き家バンク
+  operator: 浦臼町
+  operator_kind: municipality
+  official_url: https://www.town.urausu.hokkaido.jp/
+  policy: crawl
+  municipality:
+    code: '014311'
+    name: 浦臼町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014311'
+    bank_url: https://www.town.urausu.hokkaido.jp/ijyu/akiyabank/urausu_akichibank_touroku.html
+    bank_status: available
+    map_query: 北海道浦臼町
+  operator_evidence:
+    quote: 公式ドメイン www.town.urausu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.urausu.hokkaido.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.urausu.hokkaido.jp/ijyu/akiyabank/urausu_akichibank_touroku.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.urausu.hokkaido.jp
+  max_pages: 30
+- id: hokkaido-014320
+  name: 新十津川町空き家バンク
+  operator: 新十津川町
+  operator_kind: municipality
+  official_url: https://www.town.shintotsukawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '014320'
+    name: 新十津川町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014320'
+    bank_url: https://www.town.shintotsukawa.lg.jp/
+    bank_status: none
+    map_query: 北海道新十津川町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shintotsukawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.shintotsukawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014338
+  name: 妹背牛町空き家バンク
+  operator: 妹背牛町
+  operator_kind: municipality
+  official_url: https://www.town.moseushi.hokkaido.jp/
+  policy: crawl
+  municipality:
+    code: 014338
+    name: 妹背牛町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014338
+    bank_url: https://www.town.moseushi.hokkaido.jp/ijuu/teizyu/akiya/2026-0831-0952-38.html
+    bank_status: available
+    map_query: 北海道妹背牛町
+  operator_evidence:
+    quote: 公式ドメイン www.town.moseushi.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.moseushi.hokkaido.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.moseushi.hokkaido.jp/ijuu/teizyu/akiya/2026-0831-0952-38.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.moseushi.hokkaido.jp
+  max_pages: 30
+- id: hokkaido-014346
+  name: 秩父別町空き家バンク
+  operator: 秩父別町
+  operator_kind: municipality
+  official_url: https://www.town.chippubetsu.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '014346'
+    name: 秩父別町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014346'
+    bank_url: https://www.town.chippubetsu.hokkaido.jp/category/detail.html?category=life&content=230
+    bank_status: info
+    map_query: 北海道秩父別町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.chippubetsu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.chippubetsu.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014362
+  name: 雨竜町空き家バンク
+  operator: 雨竜町
+  operator_kind: municipality
+  official_url: https://www.town.uryu.hokkaido.jp/
+  policy: crawl
+  municipality:
+    code: '014362'
+    name: 雨竜町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014362'
+    bank_url: https://www.town.uryu.hokkaido.jp/docs/shushubi-fuhoutouki-noyaki.html
+    bank_status: available
+    map_query: 北海道雨竜町
+  operator_evidence:
+    quote: 公式ドメイン www.town.uryu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.uryu.hokkaido.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.uryu.hokkaido.jp/docs/shushubi-fuhoutouki-noyaki.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.uryu.hokkaido.jp
+  max_pages: 30
+- id: hokkaido-014371
+  name: 北竜町空き家バンク
+  operator: 北竜町
+  operator_kind: municipality
+  official_url: https://www.town.hokuryu.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '014371'
+    name: 北竜町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014371'
+    bank_url: https://www.town.hokuryu.hokkaido.jp/kurashi/akiya-akichi/
+    bank_status: info
+    map_query: 北海道北竜町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.hokuryu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.hokuryu.hokkaido.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: ' アットホーム空き家バンク '
+    url: https://www.akiya-athome.jp/
+  - label: ' LIFULL HOME’S空き家バンク '
+    url: https://www.homes.co.jp/akiyabank/
+- id: hokkaido-014389
+  name: 沼田町空き家バンク
+  operator: 沼田町
+  operator_kind: municipality
+  official_url: https://www.town.numata.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 014389
+    name: 沼田町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014389
+    bank_url: https://www.town.numata.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道沼田町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.numata.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.numata.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014524
+  name: 鷹栖町空き家バンク
+  operator: 鷹栖町
+  operator_kind: municipality
+  official_url: https://www.town.takasu.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '014524'
+    name: 鷹栖町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014524'
+    bank_url: https://www.town.takasu.hokkaido.jp/page/1275.html
+    bank_status: info
+    map_query: 北海道鷹栖町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.takasu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.takasu.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014532
+  name: 東神楽町空き家バンク
+  operator: 東神楽町
+  operator_kind: municipality
+  official_url: https://www.town.higashikagura.lg.jp/
+  policy: link_only
+  municipality:
+    code: '014532'
+    name: 東神楽町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014532'
+    bank_url: https://www.town.higashikagura.lg.jp/
+    bank_status: none
+    map_query: 北海道東神楽町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.higashikagura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.higashikagura.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014541
+  name: 当麻町空き家バンク
+  operator: 当麻町
+  operator_kind: municipality
+  official_url: https://www.town.tohma.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '014541'
+    name: 当麻町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014541'
+    bank_url: https://www.town.tohma.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道当麻町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.tohma.hokkaido.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-014559
+  name: 比布町空き家バンク
+  operator: 比布町
+  operator_kind: municipality
+  official_url: https://www.town.pippu.hokkaido.jp/
+  policy: crawl
+  municipality:
+    code: 014559
+    name: 比布町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014559
+    bank_url: https://www.town.pippu.hokkaido.jp/cms/section/soumu/elhgch0000002kni.html
+    bank_status: available
+    map_query: 北海道比布町
+  operator_evidence:
+    quote: 公式ドメイン www.town.pippu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.pippu.hokkaido.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.pippu.hokkaido.jp/cms/section/soumu/elhgch0000002kni.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.pippu.hokkaido.jp
+  max_pages: 30
+- id: hokkaido-014567
+  name: 愛別町空き家バンク
+  operator: 愛別町
+  operator_kind: municipality
+  official_url: https://www.town.aibetsu.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '014567'
+    name: 愛別町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014567'
+    bank_url: https://www.town.aibetsu.hokkaido.jp/01/11/02
+    bank_status: info
+    map_query: 北海道愛別町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.aibetsu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.aibetsu.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014575
+  name: 上川町空き家バンク
+  operator: 上川町
+  operator_kind: municipality
+  official_url: https://www.town.hokkaido-kamikawa.lg.jp/
+  policy: crawl
+  municipality:
+    code: '014575'
+    name: 上川町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014575'
+    bank_url: https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/geo5a8000000014g.html
+    bank_status: available
+    map_query: 北海道上川町
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.hokkaido-kamikawa.lg.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/geo5a8000000014g.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.hokkaido-kamikawa.lg.jp
+  max_pages: 30
+- id: hokkaido-014583
+  name: 東川町空き家バンク
+  operator: 東川町
+  operator_kind: municipality
+  official_url: https://higashikawa-town.jp/
+  policy: link_only
+  municipality:
+    code: 014583
+    name: 東川町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014583
+    bank_url: https://higashikawa-town.jp/
+    bank_status: none
+    map_query: 北海道東川町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（higashikawa-town.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-014591
+  name: 美瑛町空き家バンク
+  operator: 美瑛町
+  operator_kind: municipality
+  official_url: https://www.town.biei.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 014591
+    name: 美瑛町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014591
+    bank_url: https://www.town.biei.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道美瑛町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.biei.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.biei.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014605
+  name: 上富良野町空き家バンク
+  operator: 上富良野町
+  operator_kind: municipality
+  official_url: https://www.town.kamifurano.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '014605'
+    name: 上富良野町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014605'
+    bank_url: https://www.town.kamifurano.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道上富良野町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kamifurano.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kamifurano.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014613
+  name: 中富良野町空き家バンク
+  operator: 中富良野町
+  operator_kind: municipality
+  official_url: https://www.town.nakafurano.lg.jp/
+  policy: link_only
+  municipality:
+    code: '014613'
+    name: 中富良野町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014613'
+    bank_url: https://www.town.nakafurano.lg.jp/hotnews/detail/00001600.html
+    bank_status: info
+    map_query: 北海道中富良野町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.nakafurano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.nakafurano.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014621
+  name: 南富良野町空き家バンク
+  operator: 南富良野町
+  operator_kind: municipality
+  official_url: https://www.town.minamifurano.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '014621'
+    name: 南富良野町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014621'
+    bank_url: https://www.town.minamifurano.hokkaido.jp/kurashi-info/%e4%bd%8f%e5%ae%85-2/akiya-bank/
+    bank_status: info
+    map_query: 北海道南富良野町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.minamifurano.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.minamifurano.hokkaido.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: LIFULL HOME’S 空き家バンク
+    url: https://www.homes.co.jp/akiyabank/
+- id: hokkaido-014630
+  name: 占冠村空き家バンク
+  operator: 占冠村
+  operator_kind: municipality
+  official_url: https://www.vill.shimukappu.lg.jp/
+  policy: crawl
+  municipality:
+    code: '014630'
+    name: 占冠村
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014630'
+    bank_url: https://www.vill.shimukappu.lg.jp/shimukappu/section/kikaku/banklist.html
+    bank_status: available
+    map_query: 北海道占冠村
+  operator_evidence:
+    quote: 公式ドメイン www.vill.shimukappu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.vill.shimukappu.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.vill.shimukappu.lg.jp/shimukappu/section/kikaku/banklist.html
+    kind: listing_index
+  allow_hosts:
+  - www.vill.shimukappu.lg.jp
+  max_pages: 30
+- id: hokkaido-014648
+  name: 和寒町空き家バンク
+  operator: 和寒町
+  operator_kind: municipality
+  official_url: https://www.town.wassamu.hokkaido.jp/
+  policy: crawl
+  municipality:
+    code: 014648
+    name: 和寒町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014648
+    bank_url: https://www.town.wassamu.hokkaido.jp/affairs/city-building/why-live-2-2-2/
+    bank_status: available
+    map_query: 北海道和寒町
+  operator_evidence:
+    quote: 公式ドメイン www.town.wassamu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.wassamu.hokkaido.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.wassamu.hokkaido.jp/affairs/city-building/why-live-2-2-2/
+    kind: listing_index
+  allow_hosts:
+  - www.town.wassamu.hokkaido.jp
+  max_pages: 30
+  external_links:
+  - label: 「株式会社LIFULL」全国版空き家・空き地バンクはこちら
+    url: https://www.homes.co.jp/akiyabank/hokkaido/kamikawa_wassamu/
+- id: hokkaido-014656
+  name: 剣淵町空き家バンク
+  operator: 剣淵町
+  operator_kind: municipality
+  official_url: https://www.town.kembuchi.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '014656'
+    name: 剣淵町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014656'
+    bank_url: https://www.town.kembuchi.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道剣淵町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.kembuchi.hokkaido.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-014681
+  name: 下川町空き家バンク
+  operator: 下川町
+  operator_kind: municipality
+  official_url: https://www.town.shimokawa.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 014681
+    name: 下川町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014681
+    bank_url: https://www.town.shimokawa.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道下川町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shimokawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.shimokawa.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014699
+  name: 美深町空き家バンク
+  operator: 美深町
+  operator_kind: municipality
+  official_url: https://www.town.bifuka.hokkaido.jp/
+  policy: crawl
+  municipality:
+    code: 014699
+    name: 美深町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014699
+    bank_url: https://www.town.bifuka.hokkaido.jp/cms/section/nuv41p0000009o6b.html
+    bank_status: available
+    map_query: 北海道美深町
+  operator_evidence:
+    quote: 公式ドメイン www.town.bifuka.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.bifuka.hokkaido.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.bifuka.hokkaido.jp/cms/section/nuv41p0000009o6b.html
+    kind: listing_detail
+  allow_hosts:
+  - www.town.bifuka.hokkaido.jp
+  max_pages: 30
+- id: hokkaido-014702
+  name: 音威子府村空き家バンク
+  operator: 音威子府村
+  operator_kind: municipality
+  official_url: https://www.vill.otoineppu.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '014702'
+    name: 音威子府村
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014702'
+    bank_url: https://www.vill.otoineppu.hokkaido.jp/kakuka/chiikishinkou/oshirase/akiya_bank.html
+    bank_status: info
+    map_query: 北海道音威子府村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.otoineppu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.otoineppu.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014711
+  name: 中川町空き家バンク
+  operator: 中川町
+  operator_kind: municipality
+  official_url: https://www.town.nakagawa.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '014711'
+    name: 中川町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014711'
+    bank_url: https://www.town.nakagawa.hokkaido.jp/section/kankyouseibi/b02d3l0000001csg.html?cp=b02d3l00000005gd&cs=Life01s0
+    bank_status: info
+    map_query: 北海道中川町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.nakagawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.nakagawa.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014729
+  name: 幌加内町空き家バンク
+  operator: 幌加内町
+  operator_kind: municipality
+  official_url: https://www.town.horokanai.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 014729
+    name: 幌加内町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014729
+    bank_url: https://www.town.horokanai.hokkaido.jp/archives/60342
+    bank_status: info
+    map_query: 北海道幌加内町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.horokanai.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.horokanai.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014818
+  name: 増毛町空き家バンク
+  operator: 増毛町
+  operator_kind: municipality
+  official_url: https://www.town.mashike.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 014818
+    name: 増毛町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014818
+    bank_url: https://www.town.mashike.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道増毛町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.mashike.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.mashike.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014826
+  name: 小平町空き家バンク
+  operator: 小平町
+  operator_kind: municipality
+  official_url: https://www.town.obira.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 014826
+    name: 小平町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014826
+    bank_url: https://www.town.obira.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道小平町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.obira.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.obira.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-014834
+  name: 苫前町空き家バンク
+  operator: 苫前町
+  operator_kind: municipality
+  official_url: https://www.town.tomamae.lg.jp/
+  policy: link_only
+  municipality:
+    code: 014834
+    name: 苫前町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014834
+    bank_url: http://www.town.tomamae.lg.jp/section/kensetsu/o9flkl0000001ci8.html?cp=lg6iib0000000jpj&cs=cl13
+    bank_status: info
+    map_query: 北海道苫前町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.tomamae.lg.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-014842
+  name: 羽幌町空き家バンク
+  operator: 羽幌町
+  operator_kind: municipality
+  official_url: https://www.town.haboro.lg.jp/
+  policy: crawl
+  municipality:
+    code: 014842
+    name: 羽幌町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014842
+    bank_url: https://www.town.haboro.lg.jp/izyu-teijyu/akiya/akiyajyouhou.html
+    bank_status: available
+    map_query: 北海道羽幌町
+  operator_evidence:
+    quote: 公式ドメイン www.town.haboro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.haboro.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.haboro.lg.jp/izyu-teijyu/akiya/akiyajyouhou.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.haboro.lg.jp
+  max_pages: 30
+- id: hokkaido-014851
+  name: 初山別村空き家バンク
+  operator: 初山別村
+  operator_kind: municipality
+  official_url: https://www.vill.shosanbetsu.lg.jp/
+  policy: crawl
+  municipality:
+    code: 014851
+    name: 初山別村
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014851
+    bank_url: https://www.vill.shosanbetsu.lg.jp/sangyobusiness/akiyabank/
+    bank_status: available
+    map_query: 北海道初山別村
+  operator_evidence:
+    quote: 公式ドメイン www.vill.shosanbetsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.vill.shosanbetsu.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.vill.shosanbetsu.lg.jp/sangyobusiness/akiyabank/
+    kind: listing_index
+  allow_hosts:
+  - www.vill.shosanbetsu.lg.jp
+  max_pages: 30
+- id: hokkaido-014869
+  name: 遠別町空き家バンク
+  operator: 遠別町
+  operator_kind: municipality
+  official_url: https://www.town.embetsu.hokkaido.jp/
+  policy: crawl
+  municipality:
+    code: 014869
+    name: 遠別町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014869
+    bank_url: https://www.town.embetsu.hokkaido.jp/docs/page2014021400020.html
+    bank_status: available
+    map_query: 北海道遠別町
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.embetsu.hokkaido.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.embetsu.hokkaido.jp/docs/page2014021400020.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.embetsu.hokkaido.jp
+  max_pages: 30
+- id: hokkaido-014877
+  name: 天塩町空き家バンク
+  operator: 天塩町
+  operator_kind: municipality
+  official_url: https://www.teshiotown.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 014877
+    name: 天塩町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 014877
+    bank_url: https://www.teshiotown.hokkaido.jp/?page_id=10343
+    bank_status: info
+    map_query: 北海道天塩町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.teshiotown.hokkaido.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-015113
+  name: 猿払村空き家バンク
+  operator: 猿払村
+  operator_kind: municipality
+  official_url: https://www.vill.sarufutsu.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '015113'
+    name: 猿払村
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '015113'
+    bank_url: https://www.vill.sarufutsu.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道猿払村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.sarufutsu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.sarufutsu.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-015121
+  name: 浜頓別町空き家バンク
+  operator: 浜頓別町
+  operator_kind: municipality
+  official_url: https://www.town.hamatonbetsu.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '015121'
+    name: 浜頓別町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '015121'
+    bank_url: http://www.town.hamatonbetsu.hokkaido.jp/news/detail.php?news=201
+    bank_status: info
+    map_query: 北海道浜頓別町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.hamatonbetsu.hokkaido.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-015130
+  name: 中頓別町空き家バンク
+  operator: 中頓別町
+  operator_kind: municipality
+  official_url: https://www.town.nakatombetsu.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '015130'
+    name: 中頓別町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '015130'
+    bank_url: https://www.town.nakatombetsu.hokkaido.jp/bunya/5234/
+    bank_status: info
+    map_query: 北海道中頓別町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.nakatombetsu.hokkaido.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-015148
+  name: 枝幸町空き家バンク
+  operator: 枝幸町
+  operator_kind: municipality
+  official_url: https://www.esashi.jp/
+  policy: link_only
+  municipality:
+    code: 015148
+    name: 枝幸町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 015148
+    bank_url: https://www.esashi.jp/life/house/vacant_house/akiyabank.html
+    bank_status: info
+    map_query: 北海道枝幸町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.esashi.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-015164
+  name: 豊富町空き家バンク
+  operator: 豊富町
+  operator_kind: municipality
+  official_url: https://www.town.toyotomi.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '015164'
+    name: 豊富町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '015164'
+    bank_url: https://www.town.toyotomi.hokkaido.jp/section/chominka/lepd6s0000005emu.html?cp=a7cug60000002qjx&cs=c04s3
+    bank_status: info
+    map_query: 北海道豊富町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.toyotomi.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.toyotomi.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-015172
+  name: 礼文町空き家バンク
+  operator: 礼文町
+  operator_kind: municipality
+  official_url: https://www.town.rebun.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '015172'
+    name: 礼文町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '015172'
+    bank_url: https://www.town.rebun.hokkaido.jp/hotnews/category/236.html
+    bank_status: spa_unsupported
+    map_query: 北海道礼文町
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.rebun.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.rebun.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-015181
+  name: 利尻町空き家バンク
+  operator: 利尻町
+  operator_kind: municipality
+  official_url: https://www.town.rishiri.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 015181
+    name: 利尻町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 015181
+    bank_url: https://www.town.rishiri.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道利尻町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.rishiri.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.rishiri.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-015199
+  name: 利尻富士町空き家バンク
+  operator: 利尻富士町
+  operator_kind: municipality
+  official_url: https://www.town.rishirifuji.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 015199
+    name: 利尻富士町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 015199
+    bank_url: https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1600.htm
+    bank_status: spa_unsupported
+    map_query: 北海道利尻富士町
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.rishirifuji.hokkaido.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-015202
+  name: 幌延町空き家バンク
+  operator: 幌延町
+  operator_kind: municipality
+  official_url: https://www.town.horonobe.lg.jp/
+  policy: link_only
+  municipality:
+    code: '015202'
+    name: 幌延町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '015202'
+    bank_url: https://www.town.horonobe.lg.jp/www4/section/jumin/akiyataisaku.html
+    bank_status: info
+    map_query: 北海道幌延町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.horonobe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.horonobe.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-015431
+  name: 美幌町空き家バンク
+  operator: 美幌町
+  operator_kind: municipality
+  official_url: https://www.town.bihoro.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '015431'
+    name: 美幌町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '015431'
+    bank_url: https://www.town.bihoro.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道美幌町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.bihoro.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.bihoro.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-015440
+  name: 津別町空き家バンク
+  operator: 津別町
+  operator_kind: municipality
+  official_url: https://www.town.tsubetsu.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '015440'
+    name: 津別町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '015440'
+    bank_url: https://www.town.tsubetsu.hokkaido.jp/mokutekibetsumenu/hikkoshi_sumai/2474.html
+    bank_status: info
+    map_query: 北海道津別町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.tsubetsu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.tsubetsu.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-015458
+  name: 斜里町空き家バンク
+  operator: 斜里町
+  operator_kind: municipality
+  official_url: https://www.town.shari.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 015458
+    name: 斜里町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 015458
+    bank_url: https://www.town.shari.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道斜里町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shari.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.shari.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-015466
+  name: 清里町空き家バンク
+  operator: 清里町
+  operator_kind: municipality
+  official_url: https://www.town.kiyosato.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '015466'
+    name: 清里町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '015466'
+    bank_url: https://www.town.kiyosato.hokkaido.jp/life/?content=745
+    bank_status: info
+    map_query: 北海道清里町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kiyosato.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kiyosato.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-015474
+  name: 小清水町空き家バンク
+  operator: 小清水町
+  operator_kind: municipality
+  official_url: https://www.town.koshimizu.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '015474'
+    name: 小清水町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '015474'
+    bank_url: https://www.town.koshimizu.hokkaido.jp/hotnews/detail/00008311.html
+    bank_status: info
+    map_query: 北海道小清水町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.koshimizu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.koshimizu.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-015491
+  name: 訓子府町空き家バンク
+  operator: 訓子府町
+  operator_kind: municipality
+  official_url: https://www.town.kunneppu.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 015491
+    name: 訓子府町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 015491
+    bank_url: https://www.town.kunneppu.hokkaido.jp/life/genkinamatidukuri/akiyabank/bukken.html
+    bank_status: info
+    map_query: 北海道訓子府町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kunneppu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kunneppu.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-015504
+  name: 置戸町空き家バンク
+  operator: 置戸町
+  operator_kind: municipality
+  official_url: https://www.town.oketo.hokkaido.jp/
+  policy: crawl
+  municipality:
+    code: '015504'
+    name: 置戸町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '015504'
+    bank_url: https://www.town.oketo.hokkaido.jp/kurashi/sumai/takuchibunjou/
+    bank_status: available
+    map_query: 北海道置戸町
+  operator_evidence:
+    quote: 公式ドメイン www.town.oketo.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.oketo.hokkaido.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.oketo.hokkaido.jp/kurashi/sumai/takuchibunjou/
+    kind: listing_index
+  allow_hosts:
+  - www.town.oketo.hokkaido.jp
+  max_pages: 30
+- id: hokkaido-015521
+  name: 佐呂間町空き家バンク
+  operator: 佐呂間町
+  operator_kind: municipality
+  official_url: https://www.town.saroma.hokkaido.jp/
+  policy: crawl
+  municipality:
+    code: '015521'
+    name: 佐呂間町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '015521'
+    bank_url: https://www.town.saroma.hokkaido.jp/machi/sumai/akiyabannku.html
+    bank_status: available
+    map_query: 北海道佐呂間町
+  operator_evidence:
+    quote: 公式ドメイン www.town.saroma.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.saroma.hokkaido.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.saroma.hokkaido.jp/machi/sumai/akiyabannku.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.saroma.hokkaido.jp
+  max_pages: 30
+- id: hokkaido-015555
+  name: 遠軽町空き家バンク
+  operator: 遠軽町
+  operator_kind: municipality
+  official_url: https://engaru.jp/
+  policy: link_only
+  municipality:
+    code: '015555'
+    name: 遠軽町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '015555'
+    bank_url: https://engaru.jp/
+    bank_status: none
+    map_query: 北海道遠軽町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（engaru.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-015598
+  name: 湧別町空き家バンク
+  operator: 湧別町
+  operator_kind: municipality
+  official_url: https://www.town.yubetsu.lg.jp/
+  policy: link_only
+  municipality:
+    code: 015598
+    name: 湧別町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 015598
+    bank_url: https://www.town.yubetsu.lg.jp/administration/life/detail.html?content=540
+    bank_status: info
+    map_query: 北海道湧別町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yubetsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.yubetsu.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-015601
+  name: 滝上町空き家バンク
+  operator: 滝上町
+  operator_kind: municipality
+  official_url: https://www.town.takinoue.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '015601'
+    name: 滝上町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '015601'
+    bank_url: https://www.town.takinoue.hokkaido.jp/group/
+    bank_status: spa_unsupported
+    map_query: 北海道滝上町
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.takinoue.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.takinoue.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-015610
+  name: 興部町空き家バンク
+  operator: 興部町
+  operator_kind: municipality
+  official_url: https://www.town.okoppe.lg.jp/
+  policy: crawl
+  municipality:
+    code: '015610'
+    name: 興部町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '015610'
+    bank_url: https://www.town.okoppe.lg.jp/cms/section/kikaku/nbm3tm000000129q.html
+    bank_status: available
+    map_query: 北海道興部町
+  operator_evidence:
+    quote: 公式ドメイン www.town.okoppe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.okoppe.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.okoppe.lg.jp/cms/section/kikaku/nbm3tm000000129q.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.okoppe.lg.jp
+  max_pages: 30
+- id: hokkaido-015628
+  name: 西興部村空き家バンク
+  operator: 西興部村
+  operator_kind: municipality
+  official_url: https://www.vill.nishiokoppe.lg.jp/
+  policy: link_only
+  municipality:
+    code: 015628
+    name: 西興部村
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 015628
+    bank_url: https://www.vill.nishiokoppe.lg.jp/
+    bank_status: none
+    map_query: 北海道西興部村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.nishiokoppe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.vill.nishiokoppe.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-015636
+  name: 雄武町空き家バンク
+  operator: 雄武町
+  operator_kind: municipality
+  official_url: https://www.town.oumu.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '015636'
+    name: 雄武町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '015636'
+    bank_url: https://www.town.oumu.hokkaido.jp/soshiki/sougouseisakuka/jutaku_teiju/1/iju_house/akiya/index.html
+    bank_status: info
+    map_query: 北海道雄武町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.oumu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.oumu.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-015644
+  name: 大空町空き家バンク
+  operator: 大空町
+  operator_kind: municipality
+  official_url: https://www.town.ozora.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '015644'
+    name: 大空町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '015644'
+    bank_url: https://www.town.ozora.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道大空町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ozora.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.ozora.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-015717
+  name: 豊浦町空き家バンク
+  operator: 豊浦町
+  operator_kind: municipality
+  official_url: https://www.town.toyoura.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '015717'
+    name: 豊浦町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '015717'
+    bank_url: https://www.town.toyoura.hokkaido.jp/hotnews/category/325.html
+    bank_status: spa_unsupported
+    map_query: 北海道豊浦町
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.toyoura.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.toyoura.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-015750
+  name: 壮瞥町空き家バンク
+  operator: 壮瞥町
+  operator_kind: municipality
+  official_url: https://www.town.sobetsu.lg.jp/
+  policy: crawl
+  municipality:
+    code: '015750'
+    name: 壮瞥町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '015750'
+    bank_url: https://www.town.sobetsu.lg.jp/akiyabank/
+    bank_status: available
+    map_query: 北海道壮瞥町
+  operator_evidence:
+    quote: 公式ドメイン www.town.sobetsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.sobetsu.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.sobetsu.lg.jp/akiyabank/
+    kind: listing_index
+  allow_hosts:
+  - www.town.sobetsu.lg.jp
+  max_pages: 30
+- id: hokkaido-015784
+  name: 白老町空き家バンク
+  operator: 白老町
+  operator_kind: municipality
+  official_url: https://www.town.shiraoi.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 015784
+    name: 白老町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 015784
+    bank_url: https://www.town.shiraoi.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道白老町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shiraoi.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.shiraoi.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-015814
+  name: 厚真町空き家バンク
+  operator: 厚真町
+  operator_kind: municipality
+  official_url: https://www.town.atsuma.lg.jp/
+  policy: link_only
+  municipality:
+    code: 015814
+    name: 厚真町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 015814
+    bank_url: https://www.town.atsuma.lg.jp/site/atsumyhome/3925.html
+    bank_status: info
+    map_query: 北海道厚真町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.atsuma.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.atsuma.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-015849
+  name: 洞爺湖町空き家バンク
+  operator: 洞爺湖町
+  operator_kind: municipality
+  official_url: https://www.town.toyako.hokkaido.jp/
+  policy: crawl
+  municipality:
+    code: 015849
+    name: 洞爺湖町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 015849
+    bank_url: http://www.town.toyako.hokkaido.jp/settle/abandoned_house
+    bank_status: available
+    map_query: 北海道洞爺湖町
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.toyako.hokkaido.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: http://www.town.toyako.hokkaido.jp/settle/abandoned_house
+    kind: listing_index
+  allow_hosts:
+  - www.town.toyako.hokkaido.jp
+  max_pages: 30
+- id: hokkaido-015857
+  name: 安平町空き家バンク
+  operator: 安平町
+  operator_kind: municipality
+  official_url: https://www.town.abira.lg.jp/
+  policy: crawl
+  municipality:
+    code: 015857
+    name: 安平町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 015857
+    bank_url: https://www.nobikura.jp/estate/
+    bank_status: available
+    map_query: 北海道安平町
+  operator_evidence:
+    quote: 公式サイト（www.town.abira.lg.jp）から空き家バンクとして案内されているリンク
+    url: https://www.town.abira.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.nobikura.jp/estate/
+    kind: listing_index
+  allow_hosts:
+  - www.nobikura.jp
+  max_pages: 30
+- id: hokkaido-015865
+  name: むかわ町空き家バンク
+  operator: むかわ町
+  operator_kind: municipality
+  official_url: https://www.town.mukawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: 015865
+    name: むかわ町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 015865
+    bank_url: https://www.town.mukawa.lg.jp/
+    bank_status: none
+    map_query: 北海道むかわ町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.mukawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.mukawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-016012
+  name: 日高町空き家バンク
+  operator: 日高町
+  operator_kind: municipality
+  official_url: https://www.town.hidaka.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '016012'
+    name: 日高町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016012'
+    bank_url: https://www.town.hidaka.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道日高町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.hidaka.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.hidaka.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-016021
+  name: 平取町空き家バンク
+  operator: 平取町
+  operator_kind: municipality
+  official_url: https://www.town.biratori.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '016021'
+    name: 平取町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016021'
+    bank_url: https://www.town.biratori.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道平取町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.biratori.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.biratori.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-016047
+  name: 新冠町空き家バンク
+  operator: 新冠町
+  operator_kind: municipality
+  official_url: https://www.niikappu.jp/
+  policy: crawl
+  municipality:
+    code: '016047'
+    name: 新冠町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016047'
+    bank_url: https://www.niikappu.jp/kurashi/sekatsu/sumai/teijyu/sumai/akiya.html
+    bank_status: available
+    map_query: 北海道新冠町
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.niikappu.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.niikappu.jp/kurashi/sekatsu/sumai/teijyu/sumai/akiya.html
+    kind: listing_index
+  allow_hosts:
+  - www.niikappu.jp
+  max_pages: 30
+- id: hokkaido-016071
+  name: 浦河町空き家バンク
+  operator: 浦河町
+  operator_kind: municipality
+  official_url: https://www.town.urakawa.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '016071'
+    name: 浦河町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016071'
+    bank_url: https://www.town.urakawa.hokkaido.jp/gyosei/search/?q=空き家
+    bank_status: spa_unsupported
+    map_query: 北海道浦河町
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.urakawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.urakawa.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-016080
+  name: 様似町空き家バンク
+  operator: 様似町
+  operator_kind: municipality
+  official_url: https://www.samani.jp/
+  policy: link_only
+  municipality:
+    code: 016080
+    name: 様似町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 016080
+    bank_url: https://www.samani.jp/
+    bank_status: none
+    map_query: 北海道様似町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.samani.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-016098
+  name: えりも町空き家バンク
+  operator: えりも町
+  operator_kind: municipality
+  official_url: https://www.town.erimo.lg.jp/
+  policy: link_only
+  municipality:
+    code: 016098
+    name: えりも町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 016098
+    bank_url: https://www.town.erimo.lg.jp/section/choumin/sg6h9400000020b0.html
+    bank_status: info
+    map_query: 北海道えりも町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.erimo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.erimo.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-016101
+  name: 新ひだか町空き家バンク
+  operator: 新ひだか町
+  operator_kind: municipality
+  official_url: https://www.shinhidaka-hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '016101'
+    name: 新ひだか町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016101'
+    bank_url: https://www.shinhidaka-hokkaido.jp/hotnews/detail/00002862.html
+    bank_status: info
+    map_query: 北海道新ひだか町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.shinhidaka-hokkaido.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-016314
+  name: 音更町空き家バンク
+  operator: 音更町
+  operator_kind: municipality
+  official_url: https://www.town.otofuke.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '016314'
+    name: 音更町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016314'
+    bank_url: https://www.town.otofuke.hokkaido.jp/lifeevent/akichiakiya.html
+    bank_status: spa_unsupported
+    map_query: 北海道音更町
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.otofuke.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.otofuke.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-016322
+  name: 士幌町空き家バンク
+  operator: 士幌町
+  operator_kind: municipality
+  official_url: https://www.shihoro.jp/
+  policy: crawl
+  municipality:
+    code: '016322'
+    name: 士幌町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016322'
+    bank_url: https://www.shihoro.jp/life/detail.php?content=928
+    bank_status: available
+    map_query: 北海道士幌町
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.shihoro.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.shihoro.jp/life/detail.php?content=928
+    kind: listing_index
+  allow_hosts:
+  - www.shihoro.jp
+  max_pages: 30
+- id: hokkaido-016331
+  name: 上士幌町空き家バンク
+  operator: 上士幌町
+  operator_kind: municipality
+  official_url: https://www.kamishihoro.jp/
+  policy: link_only
+  municipality:
+    code: '016331'
+    name: 上士幌町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016331'
+    bank_url: https://www.kamishihoro.jp/
+    bank_status: none
+    map_query: 北海道上士幌町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.kamishihoro.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-016349
+  name: 鹿追町空き家バンク
+  operator: 鹿追町
+  operator_kind: municipality
+  official_url: https://www.town.shikaoi.lg.jp/
+  policy: crawl
+  municipality:
+    code: 016349
+    name: 鹿追町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 016349
+    bank_url: https://www.town.shikaoi.lg.jp/ijyuu/akitiakiya/sakasamaitiran/
+    bank_status: available
+    map_query: 北海道鹿追町
+  operator_evidence:
+    quote: 公式ドメイン www.town.shikaoi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.shikaoi.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.shikaoi.lg.jp/ijyuu/akitiakiya/sakasamaitiran/
+    kind: listing_index
+  allow_hosts:
+  - www.town.shikaoi.lg.jp
+  max_pages: 30
+- id: hokkaido-016357
+  name: 新得町空き家バンク
+  operator: 新得町
+  operator_kind: municipality
+  official_url: https://www.shintoku-town.jp/
+  policy: crawl
+  municipality:
+    code: '016357'
+    name: 新得町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016357'
+    bank_url: https://www.shintoku-town.jp/kurashi-tetuduki/ie_tochi/akiya_akiti_akisitu/
+    bank_status: available
+    map_query: 北海道新得町
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.shintoku-town.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.shintoku-town.jp/kurashi-tetuduki/ie_tochi/akiya_akiti_akisitu/
+    kind: listing_index
+  allow_hosts:
+  - www.shintoku-town.jp
+  max_pages: 30
+- id: hokkaido-016365
+  name: 清水町空き家バンク
+  operator: 清水町
+  operator_kind: municipality
+  official_url: https://www.town.shimizu.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '016365'
+    name: 清水町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016365'
+    bank_url: https://www.town.shimizu.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道清水町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shimizu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.shimizu.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-016373
+  name: 芽室町空き家バンク
+  operator: 芽室町
+  operator_kind: municipality
+  official_url: https://www.memuro.net/
+  policy: link_only
+  municipality:
+    code: '016373'
+    name: 芽室町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016373'
+    bank_url: https://www.memuro.net/
+    bank_status: none
+    map_query: 北海道芽室町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.memuro.net）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-016381
+  name: 中札内村空き家バンク
+  operator: 中札内村
+  operator_kind: municipality
+  official_url: https://www.vill.nakasatsunai.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 016381
+    name: 中札内村
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 016381
+    bank_url: https://www.vill.nakasatsunai.hokkaido.jp/kurashi/jyuutaku_takuchi/akichi_akiie/
+    bank_status: info
+    map_query: 北海道中札内村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.nakasatsunai.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.nakasatsunai.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-016390
+  name: 更別村空き家バンク
+  operator: 更別村
+  operator_kind: municipality
+  official_url: https://www.sarabetsu.jp/
+  policy: crawl
+  municipality:
+    code: 016390
+    name: 更別村
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 016390
+    bank_url: https://www.sarabetsu.jp/ijyuu/information/akichi_bank/akichi/
+    bank_status: available
+    map_query: 北海道更別村
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.sarabetsu.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.sarabetsu.jp/ijyuu/information/akichi_bank/akichi/
+    kind: listing_index
+  allow_hosts:
+  - www.sarabetsu.jp
+  max_pages: 30
+- id: hokkaido-016411
+  name: 大樹町空き家バンク
+  operator: 大樹町
+  operator_kind: municipality
+  official_url: https://www.town.taiki.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '016411'
+    name: 大樹町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016411'
+    bank_url: https://www.town.taiki.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道大樹町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.taiki.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.taiki.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-016420
+  name: 広尾町空き家バンク
+  operator: 広尾町
+  operator_kind: municipality
+  official_url: https://www.town.hiroo.lg.jp/
+  policy: link_only
+  municipality:
+    code: '016420'
+    name: 広尾町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016420'
+    bank_url: https://www.town.hiroo.lg.jp/kurashi/ijuu/akiyabanku/
+    bank_status: info
+    map_query: 北海道広尾町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.hiroo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.hiroo.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-016438
+  name: 幕別町空き家バンク
+  operator: 幕別町
+  operator_kind: municipality
+  official_url: https://www.town.makubetsu.lg.jp/
+  policy: link_only
+  municipality:
+    code: 016438
+    name: 幕別町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 016438
+    bank_url: https://www.town.makubetsu.lg.jp/kurashi/tochijutaku/akiya/
+    bank_status: info
+    map_query: 北海道幕別町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.makubetsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.makubetsu.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-016446
+  name: 池田町空き家バンク
+  operator: 池田町
+  operator_kind: municipality
+  official_url: https://www.town.hokkaido-ikeda.lg.jp/
+  policy: link_only
+  municipality:
+    code: '016446'
+    name: 池田町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016446'
+    bank_url: https://www.town.hokkaido-ikeda.lg.jp/kurashi/iju-jutaku/reform-josei/5831.html
+    bank_status: info
+    map_query: 北海道池田町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.hokkaido-ikeda.lg.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-016454
+  name: 豊頃町空き家バンク
+  operator: 豊頃町
+  operator_kind: municipality
+  official_url: https://www.toyokoro.jp/
+  policy: crawl
+  municipality:
+    code: '016454'
+    name: 豊頃町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016454'
+    bank_url: https://www.toyokoro.jp/site/iju/1218.html
+    bank_status: available
+    map_query: 北海道豊頃町
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.toyokoro.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.toyokoro.jp/site/iju/1218.html
+    kind: listing_index
+  allow_hosts:
+  - www.toyokoro.jp
+  max_pages: 30
+- id: hokkaido-016462
+  name: 本別町空き家バンク
+  operator: 本別町
+  operator_kind: municipality
+  official_url: https://www.town.honbetsu.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '016462'
+    name: 本別町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016462'
+    bank_url: https://www.town.honbetsu.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道本別町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.honbetsu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.honbetsu.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-016471
+  name: 足寄町空き家バンク
+  operator: 足寄町
+  operator_kind: municipality
+  official_url: https://www.town.ashoro.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '016471'
+    name: 足寄町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016471'
+    bank_url: https://www.town.ashoro.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道足寄町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ashoro.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.ashoro.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-016489
+  name: 陸別町空き家バンク
+  operator: 陸別町
+  operator_kind: municipality
+  official_url: https://www.rikubetsu.jp/
+  policy: link_only
+  municipality:
+    code: 016489
+    name: 陸別町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 016489
+    bank_url: https://www.rikubetsu.jp/
+    bank_status: none
+    map_query: 北海道陸別町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.rikubetsu.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-016497
+  name: 浦幌町空き家バンク
+  operator: 浦幌町
+  operator_kind: municipality
+  official_url: https://www.urahoro.jp/
+  policy: link_only
+  municipality:
+    code: 016497
+    name: 浦幌町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 016497
+    bank_url: https://www.urahoro.jp/life/?content=1901
+    bank_status: info
+    map_query: 北海道浦幌町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.urahoro.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-016616
+  name: 釧路町空き家バンク
+  operator: 釧路町
+  operator_kind: municipality
+  official_url: https://www.town.kushiro.lg.jp/
+  policy: link_only
+  municipality:
+    code: '016616'
+    name: 釧路町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016616'
+    bank_url: http://www.town.kushiro.lg.jp/living-guide/20304/00032/194727151115.html
+    bank_status: info
+    map_query: 北海道釧路町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.kushiro.lg.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-016624
+  name: 厚岸町空き家バンク
+  operator: 厚岸町
+  operator_kind: municipality
+  official_url: https://www.akkeshi-town.jp/
+  policy: link_only
+  municipality:
+    code: '016624'
+    name: 厚岸町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016624'
+    bank_url: https://www.akkeshi-town.jp/kanko/hanasaki/
+    bank_status: spa_unsupported
+    map_query: 北海道厚岸町
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.akkeshi-town.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-016632
+  name: 浜中町空き家バンク
+  operator: 浜中町
+  operator_kind: municipality
+  official_url: https://www.townhamanaka.jp/
+  policy: link_only
+  municipality:
+    code: '016632'
+    name: 浜中町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016632'
+    bank_url: https://www.townhamanaka.jp/
+    bank_status: none
+    map_query: 北海道浜中町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.townhamanaka.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-016641
+  name: 標茶町空き家バンク
+  operator: 標茶町
+  operator_kind: municipality
+  official_url: https://town.shibecha.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '016641'
+    name: 標茶町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016641'
+    bank_url: https://town.shibecha.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道標茶町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（town.shibecha.hokkaido.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-016659
+  name: 弟子屈町空き家バンク
+  operator: 弟子屈町
+  operator_kind: municipality
+  official_url: https://www.town.teshikaga.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: 016659
+    name: 弟子屈町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 016659
+    bank_url: https://www.town.teshikaga.hokkaido.jp/
+    bank_status: none
+    map_query: 北海道弟子屈町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.teshikaga.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.teshikaga.hokkaido.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-016675
+  name: 鶴居村空き家バンク
+  operator: 鶴居村
+  operator_kind: municipality
+  official_url: https://www.vill.tsurui.lg.jp/
+  policy: link_only
+  municipality:
+    code: '016675'
+    name: 鶴居村
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '016675'
+    bank_url: https://www.vill.tsurui.lg.jp/
+    bank_status: none
+    map_query: 北海道鶴居村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.tsurui.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.vill.tsurui.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-016683
+  name: 白糠町空き家バンク
+  operator: 白糠町
+  operator_kind: municipality
+  official_url: https://www.town.shiranuka.lg.jp/
+  policy: link_only
+  municipality:
+    code: 016683
+    name: 白糠町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 016683
+    bank_url: https://www.town.shiranuka.lg.jp/section/kikaku/h8v21a0000001qan.html
+    bank_status: info
+    map_query: 北海道白糠町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shiranuka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.shiranuka.lg.jp/
+    checked_on: '2026-09-11'
+- id: hokkaido-016918
+  name: 別海町空き家バンク
+  operator: 別海町
+  operator_kind: municipality
+  official_url: https://betsukai.jp/
+  policy: link_only
+  municipality:
+    code: 016918
+    name: 別海町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 016918
+    bank_url: https://betsukai.jp/
+    bank_status: none
+    map_query: 北海道別海町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（betsukai.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-016926
+  name: 中標津町空き家バンク
+  operator: 中標津町
+  operator_kind: municipality
+  official_url: https://www.nakashibetsu.jp/
+  policy: link_only
+  municipality:
+    code: 016926
+    name: 中標津町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 016926
+    bank_url: https://www.nakashibetsu.jp/
+    bank_status: none
+    map_query: 北海道中標津町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.nakashibetsu.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-016934
+  name: 標津町空き家バンク
+  operator: 標津町
+  operator_kind: municipality
+  official_url: https://www.shibetsutown.jp/
+  policy: link_only
+  municipality:
+    code: 016934
+    name: 標津町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 016934
+    bank_url: https://www.shibetsutown.jp/life/?content=324
+    bank_status: info
+    map_query: 北海道標津町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.shibetsutown.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
+- id: hokkaido-016942
+  name: 羅臼町空き家バンク
+  operator: 羅臼町
+  operator_kind: municipality
+  official_url: https://www.rausu-town.jp/
+  policy: link_only
+  municipality:
+    code: 016942
+    name: 羅臼町
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: 016942
+    bank_url: https://www.rausu-town.jp/pages/view/161
+    bank_status: info
+    map_query: 北海道羅臼町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.rausu-town.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'

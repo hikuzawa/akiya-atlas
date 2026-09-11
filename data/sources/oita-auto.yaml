@@ -1,0 +1,402 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: oita-442011
+  name: 大分市空き家バンク
+  operator: 大分市
+  operator_kind: municipality
+  official_url: https://www.city.oita.oita.jp/
+  policy: link_only
+  municipality:
+    code: '442011'
+    name: 大分市
+    prefecture: 大分県
+    prefecture_slug: oita
+    slug: '442011'
+    bank_url: https://www.city.oita.oita.jp/
+    bank_status: none
+    map_query: 大分県大分市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.oita.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.oita.oita.jp/
+    checked_on: '2026-09-11'
+- id: oita-442020
+  name: 別府市空き家バンク
+  operator: 別府市
+  operator_kind: municipality
+  official_url: https://www.city.beppu.oita.jp/
+  policy: link_only
+  municipality:
+    code: '442020'
+    name: 別府市
+    prefecture: 大分県
+    prefecture_slug: oita
+    slug: '442020'
+    bank_url: https://www.city.beppu.oita.jp/sisei/ijyuu/akiyabank.html
+    bank_status: info
+    map_query: 大分県別府市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.beppu.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.beppu.oita.jp/
+    checked_on: '2026-09-11'
+- id: oita-442038
+  name: 中津市空き家バンク
+  operator: 中津市
+  operator_kind: municipality
+  official_url: https://www.city-nakatsu.jp/
+  policy: crawl
+  municipality:
+    code: '442038'
+    name: 中津市
+    prefecture: 大分県
+    prefecture_slug: oita
+    slug: '442038'
+    bank_url: https://akiyabank.city-nakatsu.jp/
+    bank_status: available
+    map_query: 大分県中津市
+  operator_evidence:
+    quote: 公式サイト（www.city-nakatsu.jp）から空き家バンクとして案内されているリンク
+    url: https://www.city-nakatsu.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://akiyabank.city-nakatsu.jp/
+    kind: listing_index
+  allow_hosts:
+  - akiyabank.city-nakatsu.jp
+  max_pages: 30
+- id: oita-442046
+  name: 日田市空き家バンク
+  operator: 日田市
+  operator_kind: municipality
+  official_url: https://www.city.hita.oita.jp/
+  policy: crawl
+  municipality:
+    code: '442046'
+    name: 日田市
+    prefecture: 大分県
+    prefecture_slug: oita
+    slug: '442046'
+    bank_url: https://www.city.hita.oita.jp/site/iju/2680.html
+    bank_status: available
+    map_query: 大分県日田市
+  operator_evidence:
+    quote: 公式ドメイン www.city.hita.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.hita.oita.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.hita.oita.jp/site/iju/2680.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.hita.oita.jp
+  max_pages: 30
+- id: oita-442054
+  name: 佐伯市空き家バンク
+  operator: 佐伯市
+  operator_kind: municipality
+  official_url: https://www.city.saiki.oita.jp/
+  policy: crawl
+  municipality:
+    code: '442054'
+    name: 佐伯市
+    prefecture: 大分県
+    prefecture_slug: oita
+    slug: '442054'
+    bank_url: https://saiki-iju.com/house/
+    bank_status: available
+    map_query: 大分県佐伯市
+  operator_evidence:
+    quote: 公式サイト（www.city.saiki.oita.jp）から空き家バンクとして案内されているリンク
+    url: https://www.city.saiki.oita.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://saiki-iju.com/house/
+    kind: listing_index
+    follow:
+    - pattern: https?://saiki\-iju\.com/house/page/\d+/?$
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - saiki-iju.com
+  max_pages: 30
+- id: oita-442062
+  name: 臼杵市空き家バンク
+  operator: 臼杵市
+  operator_kind: municipality
+  official_url: https://www.city.usuki.oita.jp/
+  policy: crawl
+  municipality:
+    code: '442062'
+    name: 臼杵市
+    prefecture: 大分県
+    prefecture_slug: oita
+    slug: '442062'
+    bank_url: https://www.city.usuki.oita.jp/docs/2021051200056/
+    bank_status: available
+    map_query: 大分県臼杵市
+  operator_evidence:
+    quote: 公式ドメイン www.city.usuki.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.usuki.oita.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.usuki.oita.jp/docs/2021051200056/
+    kind: listing_index
+  allow_hosts:
+  - www.city.usuki.oita.jp
+  max_pages: 30
+- id: oita-442071
+  name: 津久見市空き家バンク
+  operator: 津久見市
+  operator_kind: municipality
+  official_url: https://www.city.tsukumi.oita.jp/
+  policy: link_only
+  municipality:
+    code: '442071'
+    name: 津久見市
+    prefecture: 大分県
+    prefecture_slug: oita
+    slug: '442071'
+    bank_url: https://www.city.tsukumi.oita.jp/soshiki/6/172.html
+    bank_status: info
+    map_query: 大分県津久見市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tsukumi.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.tsukumi.oita.jp/
+    checked_on: '2026-09-11'
+- id: oita-442089
+  name: 竹田市空き家バンク
+  operator: 竹田市
+  operator_kind: municipality
+  official_url: https://www.city.taketa.oita.jp/
+  policy: link_only
+  municipality:
+    code: '442089'
+    name: 竹田市
+    prefecture: 大分県
+    prefecture_slug: oita
+    slug: '442089'
+    bank_url: https://www.city.taketa.oita.jp/
+    bank_status: none
+    map_query: 大分県竹田市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.taketa.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.taketa.oita.jp/
+    checked_on: '2026-09-11'
+- id: oita-442097
+  name: 豊後高田市空き家バンク
+  operator: 豊後高田市
+  operator_kind: municipality
+  official_url: https://www.city.bungotakada.oita.jp/
+  policy: link_only
+  municipality:
+    code: '442097'
+    name: 豊後高田市
+    prefecture: 大分県
+    prefecture_slug: oita
+    slug: '442097'
+    bank_url: https://www.city.bungotakada.oita.jp/life/1/19/67/
+    bank_status: info
+    map_query: 大分県豊後高田市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.bungotakada.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.bungotakada.oita.jp/
+    checked_on: '2026-09-11'
+- id: oita-442101
+  name: 杵築市空き家バンク
+  operator: 杵築市
+  operator_kind: municipality
+  official_url: https://www.city.kitsuki.lg.jp/
+  policy: link_only
+  municipality:
+    code: '442101'
+    name: 杵築市
+    prefecture: 大分県
+    prefecture_slug: oita
+    slug: '442101'
+    bank_url: https://www.city.kitsuki.lg.jp/
+    bank_status: none
+    map_query: 大分県杵築市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kitsuki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kitsuki.lg.jp/
+    checked_on: '2026-09-11'
+- id: oita-442119
+  name: 宇佐市空き家バンク
+  operator: 宇佐市
+  operator_kind: municipality
+  official_url: https://www.city.usa.oita.jp/
+  policy: link_only
+  municipality:
+    code: '442119'
+    name: 宇佐市
+    prefecture: 大分県
+    prefecture_slug: oita
+    slug: '442119'
+    bank_url: https://www.city.usa.oita.jp/sougo/lifescene/6/juukyo/10439.html
+    bank_status: info
+    map_query: 大分県宇佐市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.usa.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.usa.oita.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: LIFULL HOME'S空き家バンク
+    url: https://www.homes.co.jp/akiyabank/oita/usa/
+- id: oita-442127
+  name: 豊後大野市空き家バンク
+  operator: 豊後大野市
+  operator_kind: municipality
+  official_url: https://www.bungo-ohno.jp/
+  policy: link_only
+  municipality:
+    code: '442127'
+    name: 豊後大野市
+    prefecture: 大分県
+    prefecture_slug: oita
+    slug: '442127'
+    bank_url: https://www.bungo-ohno.jp/
+    bank_status: none
+    map_query: 大分県豊後大野市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 大分県 県内市町村（リンク集）に掲載された公式サイト（www.bungo-ohno.jp）
+    url: https://www.pref.oita.jp/soshiki/75008/kennai-sityoson.html
+    checked_on: '2026-09-11'
+- id: oita-442135
+  name: 由布市空き家バンク
+  operator: 由布市
+  operator_kind: municipality
+  official_url: https://www.city.yufu.oita.jp/
+  policy: link_only
+  municipality:
+    code: '442135'
+    name: 由布市
+    prefecture: 大分県
+    prefecture_slug: oita
+    slug: '442135'
+    bank_url: https://yufu-iju.jp/
+    bank_status: info
+    map_query: 大分県由布市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式サイト（www.city.yufu.oita.jp）から空き家バンクとして案内されているリンク
+    url: https://www.city.yufu.oita.jp/
+    checked_on: '2026-09-11'
+- id: oita-442143
+  name: 国東市空き家バンク
+  operator: 国東市
+  operator_kind: municipality
+  official_url: https://www.city.kunisaki.oita.jp/
+  policy: crawl
+  municipality:
+    code: '442143'
+    name: 国東市
+    prefecture: 大分県
+    prefecture_slug: oita
+    slug: '442143'
+    bank_url: https://www.city.kunisaki.oita.jp/akiyabank/search.php
+    bank_status: available
+    map_query: 大分県国東市
+  operator_evidence:
+    quote: 公式ドメイン www.city.kunisaki.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kunisaki.oita.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.kunisaki.oita.jp/akiyabank/search.php
+    kind: listing_index
+  allow_hosts:
+  - www.city.kunisaki.oita.jp
+  max_pages: 30
+- id: oita-443221
+  name: 姫島村空き家バンク
+  operator: 姫島村
+  operator_kind: municipality
+  official_url: https://www.himeshima.jp/
+  policy: link_only
+  municipality:
+    code: '443221'
+    name: 姫島村
+    prefecture: 大分県
+    prefecture_slug: oita
+    slug: '443221'
+    bank_url: https://www.himeshima.jp/kurashi/akiyabank/
+    bank_status: info
+    map_query: 大分県姫島村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 大分県 県内市町村（リンク集）に掲載された公式サイト（www.himeshima.jp）
+    url: https://www.pref.oita.jp/soshiki/75008/kennai-sityoson.html
+    checked_on: '2026-09-11'
+  external_links:
+  - label: 姫島村空き家バンク登録物件はこちら（at homeのサイト）
+    url: https://himeshima-v44322.akiya-athome.jp/
+- id: oita-443417
+  name: 日出町空き家バンク
+  operator: 日出町
+  operator_kind: municipality
+  official_url: https://www.town.hiji.lg.jp/
+  policy: link_only
+  municipality:
+    code: '443417'
+    name: 日出町
+    prefecture: 大分県
+    prefecture_slug: oita
+    slug: '443417'
+    bank_url: https://www.town.hiji.lg.jp/
+    bank_status: none
+    map_query: 大分県日出町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.hiji.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.hiji.lg.jp/
+    checked_on: '2026-09-11'
+- id: oita-444618
+  name: 九重町空き家バンク
+  operator: 九重町
+  operator_kind: municipality
+  official_url: https://www.town.kokonoe.oita.jp/
+  policy: link_only
+  municipality:
+    code: '444618'
+    name: 九重町
+    prefecture: 大分県
+    prefecture_slug: oita
+    slug: '444618'
+    bank_url: https://www.town.kokonoe.oita.jp/
+    bank_status: none
+    map_query: 大分県九重町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kokonoe.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kokonoe.oita.jp/
+    checked_on: '2026-09-11'
+- id: oita-444626
+  name: 玖珠町空き家バンク
+  operator: 玖珠町
+  operator_kind: municipality
+  official_url: https://www.town.kusu.oita.jp/
+  policy: crawl
+  municipality:
+    code: '444626'
+    name: 玖珠町
+    prefecture: 大分県
+    prefecture_slug: oita
+    slug: '444626'
+    bank_url: https://www.town.kusu.oita.jp/cgi-bin/recruit.php/1/detail/8?ck=1
+    bank_status: available
+    map_query: 大分県玖珠町
+  operator_evidence:
+    quote: 公式ドメイン www.town.kusu.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kusu.oita.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.kusu.oita.jp/cgi-bin/recruit.php/1/detail/8?ck=1
+    kind: listing_detail
+  allow_hosts:
+  - www.town.kusu.oita.jp
+  max_pages: 30

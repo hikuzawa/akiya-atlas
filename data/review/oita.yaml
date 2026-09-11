@@ -1,0 +1,256 @@
+prefecture: 大分県
+prefecture_slug: oita
+created_at: '2026-09-11T01:36:23+00:00'
+candidates:
+- key: '442011'
+  label: 大分県 大分市
+  url: https://www.city.oita.oita.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.oita.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.oita.oita.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '442020'
+  label: 大分県 別府市
+  url: https://www.city.beppu.oita.jp/sisei/ijyuu/akiyabank.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.beppu.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.beppu.oita.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '442038'
+  label: 大分県 中津市
+  url: https://akiyabank.city-nakatsu.jp/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.9
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.city-nakatsu.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.city-nakatsu.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '442046'
+  label: 大分県 日田市
+  url: https://www.city.hita.oita.jp/site/iju/2680.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.88
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hita.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.hita.oita.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '442054'
+  label: 大分県 佐伯市
+  url: https://saiki-iju.com/house/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.city.saiki.oita.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.city.saiki.oita.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '442062'
+  label: 大分県 臼杵市
+  url: https://www.city.usuki.oita.jp/docs/2021051200056/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.86
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.usuki.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.usuki.oita.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '442071'
+  label: 大分県 津久見市
+  url: https://www.city.tsukumi.oita.jp/soshiki/6/172.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tsukumi.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.tsukumi.oita.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '442089'
+  label: 大分県 竹田市
+  url: https://www.city.taketa.oita.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.taketa.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.taketa.oita.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '442097'
+  label: 大分県 豊後高田市
+  url: https://www.city.bungotakada.oita.jp/life/1/19/67/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.bungotakada.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.bungotakada.oita.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '442101'
+  label: 大分県 杵築市
+  url: https://www.city.kitsuki.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kitsuki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kitsuki.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '442119'
+  label: 大分県 宇佐市
+  url: https://www.city.usa.oita.jp/sougo/lifescene/6/juukyo/10439.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.usa.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.usa.oita.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '442127'
+  label: 大分県 豊後大野市
+  url: https://www.bungo-ohno.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 大分県 県内市町村（リンク集）に掲載された公式サイト（www.bungo-ohno.jp）
+  evidence_url: https://www.pref.oita.jp/soshiki/75008/kennai-sityoson.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '442135'
+  label: 大分県 由布市
+  url: https://yufu-iju.jp/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.city.yufu.oita.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.city.yufu.oita.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '442143'
+  label: 大分県 国東市
+  url: https://www.city.kunisaki.oita.jp/akiyabank/search.php
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kunisaki.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kunisaki.oita.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '443221'
+  label: 大分県 姫島村
+  url: https://www.himeshima.jp/kurashi/akiyabank/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 大分県 県内市町村（リンク集）に掲載された公式サイト（www.himeshima.jp）
+  evidence_url: https://www.pref.oita.jp/soshiki/75008/kennai-sityoson.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '443417'
+  label: 大分県 日出町
+  url: https://www.town.hiji.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hiji.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.hiji.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '444618'
+  label: 大分県 九重町
+  url: https://www.town.kokonoe.oita.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kokonoe.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kokonoe.oita.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '444626'
+  label: 大分県 玖珠町
+  url: https://www.town.kusu.oita.jp/cgi-bin/recruit.php/1/detail/8?ck=1
+  page_class: listing_detail
+  class_label: 物件詳細（静的）
+  confidence: 0.87
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kusu.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kusu.oita.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null

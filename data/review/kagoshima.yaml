@@ -1,0 +1,606 @@
+prefecture: 鹿児島県
+prefecture_slug: kagoshima
+created_at: '2026-09-11T02:17:25+00:00'
+candidates:
+- key: '462012'
+  label: 鹿児島県 鹿児島市
+  url: https://www.city.kagoshima.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kagoshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kagoshima.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '462039'
+  label: 鹿児島県 鹿屋市
+  url: https://www.city.kanoya.lg.jp/bouhan/kikkennakiya.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kanoya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kanoya.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '462047'
+  label: 鹿児島県 枕崎市
+  url: https://www.city.makurazaki.lg.jp/site/ijyu/30090.html
+  page_class: listing_detail
+  class_label: 物件詳細（静的）
+  confidence: 0.82
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.makurazaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.makurazaki.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '462063'
+  label: 鹿児島県 阿久根市
+  url: https://www.city.akune.lg.jp/kurashi_tetsuzuki/2/akuneshiakiyabankseido/2330.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.91
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.akune.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.akune.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '462080'
+  label: 鹿児島県 出水市
+  url: https://www.city.kagoshima-izumi.lg.jp/page/page_00815.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 鹿児島県 県内市町村に掲載された公式サイト（www.city.kagoshima-izumi.lg.jp）
+  evidence_url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '462101'
+  label: 鹿児島県 指宿市
+  url: https://www.city.ibusuki.lg.jp/ijyu/akiya.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ibusuki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.ibusuki.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '462136'
+  label: 鹿児島県 西之表市
+  url: https://www.city.nishinoomote.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nishinoomote.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.nishinoomote.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '462144'
+  label: 鹿児島県 垂水市
+  url: https://www.city.tarumizu.lg.jp/chiiki/kurashi/sangyo/akiya/sokushin.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tarumizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tarumizu.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '462152'
+  label: 鹿児島県 薩摩川内市
+  url: https://www.city.satsumasendai.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.satsumasendai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.satsumasendai.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '462161'
+  label: 鹿児島県 日置市
+  url: https://www.city.hioki.kagoshima.jp/kouho/ijuteju/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hioki.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.hioki.kagoshima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '462179'
+  label: 鹿児島県 曽於市
+  url: https://www.city.soo.kagoshima.jp/kurashi/kurashisumai/inakagurasi/akiya.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.soo.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.soo.kagoshima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '462187'
+  label: 鹿児島県 霧島市
+  url: https://www.city-kirishima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 鹿児島県 県内市町村に掲載された公式サイト（www.city-kirishima.jp）
+  evidence_url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '462195'
+  label: 鹿児島県 いちき串木野市
+  url: https://www.city.ichikikushikino.lg.jp/seisaku1/akiyabank/akiya-bukkenn.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ichikikushikino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.ichikikushikino.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '462209'
+  label: 鹿児島県 南さつま市
+  url: https://www.city.minamisatsuma.lg.jp/living/sumai-tochi/akiyataisaku/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.minamisatsuma.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.minamisatsuma.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '462217'
+  label: 鹿児島県 志布志市
+  url: https://www.city.shibushi.lg.jp/site/iju/13595.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shibushi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.shibushi.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '462225'
+  label: 鹿児島県 奄美市
+  url: https://www.city.amami.lg.jp/pjsenryaku/akiyabank/akiyabank.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.amami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.amami.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '462233'
+  label: 鹿児島県 南九州市
+  url: https://www.city.minamikyushu.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.minamikyushu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.minamikyushu.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '462241'
+  label: 鹿児島県 伊佐市
+  url: https://www.city.isa.kagoshima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.isa.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.isa.kagoshima.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '462250'
+  label: 鹿児島県 姶良市
+  url: https://www.city.aira.lg.jp/kurashi/sumai/akiya/index.html
+  page_class: spa
+  class_label: JavaScript 描画（未対応）
+  confidence: 0.75
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.aira.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.aira.lg.jp/
+  reason: JavaScript 描画のため静的 HTML に物件が無い。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '463035'
+  label: 鹿児島県 三島村
+  url: https://mishimamura.com/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 鹿児島県 県内市町村に掲載された公式サイト（mishimamura.com）
+  evidence_url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '463043'
+  label: 鹿児島県 十島村
+  url: https://www.tokara.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 鹿児島県 県内市町村に掲載された公式サイト（www.tokara.jp）
+  evidence_url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '463922'
+  label: 鹿児島県 さつま町
+  url: https://www.satsuma-net.jp/teiju/akiya/1/5623.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 鹿児島県 県内市町村に掲載された公式サイト（www.satsuma-net.jp）
+  evidence_url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '464040'
+  label: 鹿児島県 長島町
+  url: https://www.town.nagashima.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nagashima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.nagashima.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '464520'
+  label: 鹿児島県 湧水町
+  url: https://www.town.yusui.kagoshima.jp/soshiki/34/787.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yusui.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yusui.kagoshima.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '464686'
+  label: 鹿児島県 大崎町
+  url: http://www.town.kagoshima-osaki.lg.jp/ke_kikaku/kurashi/ijuteju/sokushin/akiyabank.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 鹿児島県 県内市町村に掲載された公式サイト（www.town.kagoshima-osaki.lg.jp）
+  evidence_url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '464821'
+  label: 鹿児島県 東串良町
+  url: https://www.higashikushira.com/docs/2022071100029/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 鹿児島県 県内市町村に掲載された公式サイト（www.higashikushira.com）
+  evidence_url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '464902'
+  label: 鹿児島県 錦江町
+  url: https://www.town.kinko.lg.jp/seisaku-h/kurashi/tochi/shisaku/akiyatoroku.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.92
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kinko.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kinko.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '464911'
+  label: 鹿児島県 南大隅町
+  url: https://www.town.minamiosumi.lg.jp/kikaku/kurashi/sumai/akiya/akiya.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.minamiosumi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.minamiosumi.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '464929'
+  label: 鹿児島県 肝付町
+  url: https://kimotsuki-town.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 鹿児島県 県内市町村に掲載された公式サイト（kimotsuki-town.jp）
+  evidence_url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '465011'
+  label: 鹿児島県 中種子町
+  url: https://town.nakatane.kagoshima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 鹿児島県 県内市町村に掲載された公式サイト（town.nakatane.kagoshima.jp）
+  evidence_url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '465020'
+  label: 鹿児島県 南種子町
+  url: http://www.town.minamitane.kagoshima.jp/industry/etc/akiya_bank.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 鹿児島県 県内市町村に掲載された公式サイト（www.town.minamitane.kagoshima.jp）
+  evidence_url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '465054'
+  label: 鹿児島県 屋久島町
+  url: https://www.town.yakushima.kagoshima.jp/kurashi_tetsuzuki/sumai/akiyabank/1754.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yakushima.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yakushima.kagoshima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '465232'
+  label: 鹿児島県 大和村
+  url: https://www.vill.yamato.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.yamato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.yamato.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '465241'
+  label: 鹿児島県 宇検村
+  url: https://www.uken.net/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 鹿児島県 県内市町村に掲載された公式サイト（www.uken.net）
+  evidence_url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '465259'
+  label: 鹿児島県 瀬戸内町
+  url: https://www.town.setouchi.lg.jp/shinkou/cho/kurashi/sumai/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.setouchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.setouchi.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '465275'
+  label: 鹿児島県 龍郷町
+  url: https://www.town.tatsugo.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tatsugo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.tatsugo.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '465291'
+  label: 鹿児島県 喜界町
+  url: https://www.town.kikai.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kikai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kikai.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '465305'
+  label: 鹿児島県 徳之島町
+  url: https://www.tokunoshima-town.org/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 鹿児島県 県内市町村に掲載された公式サイト（www.tokunoshima-town.org）
+  evidence_url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '465313'
+  label: 鹿児島県 天城町
+  url: https://www.town.amagi.lg.jp/kurashi/iju/akiya/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.amagi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.amagi.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '465321'
+  label: 鹿児島県 伊仙町
+  url: https://www.town.isen.kagoshima.jp/mirai/akiyabank2.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.isen.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.isen.kagoshima.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '465330'
+  label: 鹿児島県 和泊町
+  url: https://www.town.wadomari.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.wadomari.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.wadomari.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '465348'
+  label: 鹿児島県 知名町
+  url: https://www.town.china.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.china.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.china.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '465356'
+  label: 鹿児島県 与論町
+  url: https://www.yoron.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 鹿児島県 県内市町村に掲載された公式サイト（www.yoron.jp）
+  evidence_url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

@@ -1,0 +1,886 @@
+prefecture: 埼玉県
+prefecture_slug: saitama
+created_at: '2026-09-10T22:20:03+00:00'
+candidates:
+- key: '111007'
+  label: 埼玉県 さいたま市
+  url: https://www.city.saitama.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.saitama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.saitama.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112011'
+  label: 埼玉県 川越市
+  url: https://www.city.kawagoe.saitama.jp/kurashi/jyutaku/1003031/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kawagoe.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kawagoe.saitama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112020'
+  label: 埼玉県 熊谷市
+  url: https://www.city.kumagaya.lg.jp/kurashi/kankyo_sumai/akiyataisaku/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kumagaya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kumagaya.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112038'
+  label: 埼玉県 川口市
+  url: https://www.city.kawaguchi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kawaguchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kawaguchi.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112062'
+  label: 埼玉県 行田市
+  url: https://www.city.gyoda.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 埼玉県 関係機関へのリンク（市町村ホームページ一覧）に掲載された公式サイト（www.city.gyoda.lg.jp）
+  evidence_url: https://www.pref.saitama.lg.jp/a0301/wwwlink.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112071'
+  label: 埼玉県 秩父市
+  url: https://www.city.chichibu.lg.jp/2928.html
+  page_class: spa
+  class_label: JavaScript 描画（未対応）
+  confidence: 0.75
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.chichibu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.chichibu.lg.jp/
+  reason: JavaScript 描画のため静的 HTML に物件が無い。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112089'
+  label: 埼玉県 所沢市
+  url: https://www.city.tokorozawa.saitama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tokorozawa.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.tokorozawa.saitama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112097'
+  label: 埼玉県 飯能市
+  url: https://www.city.hanno.lg.jp/kurashi_seikatsukankyo/akiya_reform/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hanno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.hanno.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112101'
+  label: 埼玉県 加須市
+  url: https://www.city.kazo.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kazo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kazo.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112119'
+  label: 埼玉県 本庄市
+  url: https://www.city.honjo.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 埼玉県 関係機関へのリンク（市町村ホームページ一覧）に掲載された公式サイト（www.city.honjo.lg.jp）
+  evidence_url: https://www.pref.saitama.lg.jp/a0301/wwwlink.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112127'
+  label: 埼玉県 東松山市
+  url: https://www.city.higashimatsuyama.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.higashimatsuyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.higashimatsuyama.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112143'
+  label: 埼玉県 春日部市
+  url: https://www.city.kasukabe.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kasukabe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kasukabe.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112151'
+  label: 埼玉県 狭山市
+  url: https://www.city.sayama.saitama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sayama.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.sayama.saitama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112160'
+  label: 埼玉県 羽生市
+  url: https://www.city.hanyu.lg.jp/categories/bunya/kurashi/kankyo/akiya_bank/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 埼玉県 関係機関へのリンク（市町村ホームページ一覧）に掲載された公式サイト（www.city.hanyu.lg.jp）
+  evidence_url: https://www.pref.saitama.lg.jp/a0301/wwwlink.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112178'
+  label: 埼玉県 鴻巣市
+  url: https://www.city.kounosu.saitama.jp/life/1/8/42/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kounosu.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kounosu.saitama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112186'
+  label: 埼玉県 深谷市
+  url: https://www.city.fukaya.saitama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.fukaya.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.fukaya.saitama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112194'
+  label: 埼玉県 上尾市
+  url: https://www.city.ageo.lg.jp/page/036118051602.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ageo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.ageo.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112216'
+  label: 埼玉県 草加市
+  url: https://www.city.soka.saitama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.soka.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.soka.saitama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112224'
+  label: 埼玉県 越谷市
+  url: https://www.city.koshigaya.saitama.jp/kurashi_shisei/kurashi/sumai/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.koshigaya.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.koshigaya.saitama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112232'
+  label: 埼玉県 蕨市
+  url: https://www.city.warabi.saitama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.warabi.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.warabi.saitama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112241'
+  label: 埼玉県 戸田市
+  url: https://www.city.toda.saitama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.toda.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.toda.saitama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112259'
+  label: 埼玉県 入間市
+  url: https://www.city.iruma.saitama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.iruma.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.iruma.saitama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112275'
+  label: 埼玉県 朝霞市
+  url: https://www.city.asaka.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.asaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.asaka.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112283'
+  label: 埼玉県 志木市
+  url: https://www.city.shiki.lg.jp/life/1/17/95/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shiki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.shiki.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112291'
+  label: 埼玉県 和光市
+  url: https://www.city.wako.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.wako.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.wako.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112305'
+  label: 埼玉県 新座市
+  url: https://www.city.niiza.lg.jp/life/17/106/542/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.niiza.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.niiza.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112313'
+  label: 埼玉県 桶川市
+  url: https://www.city.okegawa.lg.jp/kurashi/anshin_anzen/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.okegawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.okegawa.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112321'
+  label: 埼玉県 久喜市
+  url: https://www.city.kuki.lg.jp/kurashi/sumai/akiya/1003484.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kuki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kuki.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112330'
+  label: 埼玉県 北本市
+  url: https://www.city.kitamoto.lg.jp/kurashi/tochi/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kitamoto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kitamoto.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112348'
+  label: 埼玉県 八潮市
+  url: https://www.city.yashio.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yashio.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.yashio.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112356'
+  label: 埼玉県 富士見市
+  url: https://www.city.fujimi.saitama.jp/kurashi_tetsuzuki/sumai/2018-0511-1113-58/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.fujimi.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.fujimi.saitama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112372'
+  label: 埼玉県 三郷市
+  url: https://www.city.misato.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.misato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.misato.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112381'
+  label: 埼玉県 蓮田市
+  url: https://www.city.hasuda.saitama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hasuda.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.hasuda.saitama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112399'
+  label: 埼玉県 坂戸市
+  url: https://www.city.sakado.lg.jp/life/1/18/93/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sakado.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.sakado.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112402'
+  label: 埼玉県 幸手市
+  url: https://www.city.satte.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.satte.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.satte.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112411'
+  label: 埼玉県 鶴ヶ島市
+  url: https://www.city.tsurugashima.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tsurugashima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tsurugashima.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112429'
+  label: 埼玉県 日高市
+  url: https://www.city.hidaka.lg.jp/soshiki/toshiseibi/toshikeikaku/jutakuseisakukoen/sumai/akiya/10387.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hidaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.hidaka.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112437'
+  label: 埼玉県 吉川市
+  url: https://www.city.yoshikawa.saitama.jp/index.cfm/23,0,230,1052,html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yoshikawa.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.yoshikawa.saitama.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112453'
+  label: 埼玉県 ふじみ野市
+  url: https://www.city.fujimino.saitama.jp/lifescenekarasagasu/hikkoshi_sumai/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.fujimino.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.fujimino.saitama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '112461'
+  label: 埼玉県 白岡市
+  url: https://www.city.shiraoka.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shiraoka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.shiraoka.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '113018'
+  label: 埼玉県 伊奈町
+  url: https://www.town.saitama-ina.lg.jp/category/15-18-0-0-0-0-0-0-0-0.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 埼玉県 関係機関へのリンク（市町村ホームページ一覧）に掲載された公式サイト（www.town.saitama-ina.lg.jp）
+  evidence_url: https://www.pref.saitama.lg.jp/a0301/wwwlink.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '113247'
+  label: 埼玉県 三芳町
+  url: https://www.town.saitama-miyoshi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 埼玉県 関係機関へのリンク（市町村ホームページ一覧）に掲載された公式サイト（www.town.saitama-miyoshi.lg.jp）
+  evidence_url: https://www.pref.saitama.lg.jp/a0301/wwwlink.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '113263'
+  label: 埼玉県 毛呂山町
+  url: https://www.town.moroyama.saitama.jp/ijuteijusite/6993.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.moroyama.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.moroyama.saitama.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '113271'
+  label: 埼玉県 越生町
+  url: https://www.town.ogose.saitama.jp/ogoseikatsu/kurasu/akiyabanku/akiyajoho/2955.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ogose.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ogose.saitama.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '113417'
+  label: 埼玉県 滑川町
+  url: https://www.town.namegawa.saitama.jp/kurashi_tetsuzuki/sumai/4671.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.namegawa.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.namegawa.saitama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '113425'
+  label: 埼玉県 嵐山町
+  url: https://www.town.ranzan.saitama.jp/0000006078.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ranzan.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ranzan.saitama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '113433'
+  label: 埼玉県 小川町
+  url: https://www.town.ogawa.saitama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ogawa.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ogawa.saitama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '113468'
+  label: 埼玉県 川島町
+  url: https://www.town.kawajima.saitama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kawajima.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kawajima.saitama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '113476'
+  label: 埼玉県 吉見町
+  url: https://www.town.yoshimi.saitama.jp/kurashi_tetsuzuki/5080.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yoshimi.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yoshimi.saitama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '113484'
+  label: 埼玉県 鳩山町
+  url: https://www.town.hatoyama.saitama.jp/kurashi/sumai_hikkosi/akiyataisaku/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hatoyama.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.hatoyama.saitama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '113492'
+  label: 埼玉県 ときがわ町
+  url: https://www.town.tokigawa.lg.jp/info/1063
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.92
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tokigawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.tokigawa.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '113611'
+  label: 埼玉県 横瀬町
+  url: https://www.town.yokoze.saitama.jp/kurashi/kurashi-sodan/60642
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yokoze.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yokoze.saitama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '113620'
+  label: 埼玉県 皆野町
+  url: https://www.town.minano.saitama.jp/section/seikatu/28267/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.minano.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.minano.saitama.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '113638'
+  label: 埼玉県 長瀞町
+  url: https://www.town.nagatoro.saitama.jp/life/akiya_kanri/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nagatoro.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.nagatoro.saitama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '113654'
+  label: 埼玉県 小鹿野町
+  url: http://www.chichibuakiyabank.com/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.85
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.town.ogano.lg.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.town.ogano.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '113697'
+  label: 埼玉県 東秩父村
+  url: https://www.vill.higashichichibu.saitama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.higashichichibu.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.higashichichibu.saitama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '113816'
+  label: 埼玉県 美里町
+  url: https://www.town.saitama-misato.lg.jp/0000000132.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 埼玉県 関係機関へのリンク（市町村ホームページ一覧）に掲載された公式サイト（www.town.saitama-misato.lg.jp）
+  evidence_url: https://www.pref.saitama.lg.jp/a0301/wwwlink.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '113832'
+  label: 埼玉県 神川町
+  url: https://www.town.kamikawa.saitama.jp/kurashi_tetsuduki/sumai_kenchiku/1095.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kamikawa.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kamikawa.saitama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '113859'
+  label: 埼玉県 上里町
+  url: https://akiyabank.saihoku-ijuu.com/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.85
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.town.kamisato.saitama.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.town.kamisato.saitama.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '114081'
+  label: 埼玉県 寄居町
+  url: https://www.town.yorii.saitama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yorii.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yorii.saitama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '114421'
+  label: 埼玉県 宮代町
+  url: https://www.town.miyashiro.lg.jp/category/1-16-6-0-0-0-0-0-0-0.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.miyashiro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.miyashiro.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '114642'
+  label: 埼玉県 杉戸町
+  url: https://www.town.sugito.lg.jp/life/1/4/27/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.sugito.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.sugito.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '114651'
+  label: 埼玉県 松伏町
+  url: https://www.town.matsubushi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.matsubushi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.matsubushi.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

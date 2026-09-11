@@ -1,0 +1,872 @@
+prefecture: 東京都
+prefecture_slug: tokyo
+created_at: '2026-09-11T02:34:46+00:00'
+candidates:
+- key: '131016'
+  label: 東京都 千代田区
+  url: https://www.city.chiyoda.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.chiyoda.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.chiyoda.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131024'
+  label: 東京都 中央区
+  url: https://www.city.chuo.lg.jp/kurashi/sumai/akiyatoutaisaku/index.html
+  page_class: spa
+  class_label: JavaScript 描画（未対応）
+  confidence: 0.75
+  operator_kind: municipality
+  evidence_quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.city.chuo.lg.jp）
+  evidence_url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
+  reason: JavaScript 描画のため静的 HTML に物件が無い。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131032'
+  label: 東京都 港区
+  url: https://www.city.minato.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.minato.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.minato.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131041'
+  label: 東京都 新宿区
+  url: https://www.city.shinjuku.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shinjuku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.shinjuku.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131059'
+  label: 東京都 文京区
+  url: https://www.city.bunkyo.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.city.bunkyo.lg.jp）
+  evidence_url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131067'
+  label: 東京都 台東区
+  url: https://www.city.taito.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.city.taito.lg.jp）
+  evidence_url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131075'
+  label: 東京都 墨田区
+  url: https://www.city.sumida.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sumida.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.sumida.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131083'
+  label: 東京都 江東区
+  url: https://www.city.koto.lg.jp/kurashi/sumai/akiya/index.html
+  page_class: spa
+  class_label: JavaScript 描画（未対応）
+  confidence: 0.75
+  operator_kind: municipality
+  evidence_quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.city.koto.lg.jp）
+  evidence_url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
+  reason: JavaScript 描画のため静的 HTML に物件が無い。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131091'
+  label: 東京都 品川区
+  url: https://www.city.shinagawa.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shinagawa.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.shinagawa.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131105'
+  label: 東京都 目黒区
+  url: https://www.city.meguro.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.meguro.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.meguro.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131113'
+  label: 東京都 大田区
+  url: https://www.city.ota.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.city.ota.tokyo.jp）
+  evidence_url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131121'
+  label: 東京都 世田谷区
+  url: https://www.city.setagaya.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.setagaya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.setagaya.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131130'
+  label: 東京都 渋谷区
+  url: https://www.city.shibuya.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shibuya.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.shibuya.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131148'
+  label: 東京都 中野区
+  url: https://www.city.tokyo-nakano.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.city.tokyo-nakano.lg.jp）
+  evidence_url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131156'
+  label: 東京都 杉並区
+  url: https://www.city.suginami.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.suginami.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.suginami.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131164'
+  label: 東京都 豊島区
+  url: https://www.city.toshima.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.toshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.toshima.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131172'
+  label: 東京都 北区
+  url: https://www.city.kita.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kita.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131181'
+  label: 東京都 荒川区
+  url: https://www.city.arakawa.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.arakawa.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.arakawa.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131199'
+  label: 東京都 板橋区
+  url: https://www.city.itabashi.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.itabashi.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.itabashi.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131202'
+  label: 東京都 練馬区
+  url: https://www.city.nerima.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nerima.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.nerima.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131211'
+  label: 東京都 足立区
+  url: https://www.city.adachi.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.adachi.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.adachi.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131229'
+  label: 東京都 葛飾区
+  url: https://www.city.katsushika.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.katsushika.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.katsushika.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '131237'
+  label: 東京都 江戸川区
+  url: https://www.city.edogawa.tokyo.jp/e039/kurashi/sumai/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.edogawa.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.edogawa.tokyo.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132012'
+  label: 東京都 八王子市
+  url: https://www.city.hachioji.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hachioji.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.hachioji.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132021'
+  label: 東京都 立川市
+  url: https://www.city.tachikawa.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tachikawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tachikawa.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132039'
+  label: 東京都 武蔵野市
+  url: https://www.city.musashino.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.musashino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.musashino.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132047'
+  label: 東京都 三鷹市
+  url: https://www.city.mitaka.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.mitaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.mitaka.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132055'
+  label: 東京都 青梅市
+  url: https://www.city.ome.tokyo.jp/site/ome-style/1420.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ome.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.ome.tokyo.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132063'
+  label: 東京都 府中市
+  url: https://www.city.fuchu.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.fuchu.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.fuchu.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132071'
+  label: 東京都 昭島市
+  url: https://www.city.akishima.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.akishima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.akishima.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132080'
+  label: 東京都 調布市
+  url: https://www.city.chofu.lg.jp/kurashi/sumai/akiya/index.html
+  page_class: spa
+  class_label: JavaScript 描画（未対応）
+  confidence: 0.75
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.chofu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.chofu.lg.jp/
+  reason: JavaScript 描画のため静的 HTML に物件が無い。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132098'
+  label: 東京都 町田市
+  url: https://www.city.machida.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.machida.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.machida.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132101'
+  label: 東京都 小金井市
+  url: https://www.city.koganei.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.koganei.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.koganei.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132110'
+  label: 東京都 小平市
+  url: https://www.city.kodaira.tokyo.jp/kurashi/index01013005.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kodaira.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kodaira.tokyo.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132128'
+  label: 東京都 日野市
+  url: https://www.city.hino.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.hino.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132136'
+  label: 東京都 東村山市
+  url: https://www.city.higashimurayama.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.city.higashimurayama.tokyo.jp）。サイトを取得できなかったためリンクのみ（HTTP 403）
+  evidence_url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132144'
+  label: 東京都 国分寺市
+  url: https://www.city.kokubunji.tokyo.jp/kurashi/sumai/1013374/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kokubunji.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kokubunji.tokyo.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132152'
+  label: 東京都 国立市
+  url: https://www.city.kunitachi.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kunitachi.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kunitachi.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132187'
+  label: 東京都 福生市
+  url: https://www.city.fussa.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.fussa.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.fussa.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132195'
+  label: 東京都 狛江市
+  url: https://www.city.komae.tokyo.jp/index.cfm/41,0,315,3488,html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.komae.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.komae.tokyo.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132209'
+  label: 東京都 東大和市
+  url: https://www.city.higashiyamato.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.higashiyamato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.higashiyamato.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132217'
+  label: 東京都 清瀬市
+  url: https://www.city.kiyose.lg.jp/kurashi/sumai/1003908.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kiyose.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kiyose.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132225'
+  label: 東京都 東久留米市
+  url: https://www.city.higashikurume.lg.jp/kurashi/kankyo/1011199/index.html
+  page_class: spa
+  class_label: JavaScript 描画（未対応）
+  confidence: 0.75
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.higashikurume.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.higashikurume.lg.jp/
+  reason: JavaScript 描画のため静的 HTML に物件が無い。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132233'
+  label: 東京都 武蔵村山市
+  url: https://www.city.musashimurayama.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.musashimurayama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.musashimurayama.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132241'
+  label: 東京都 多摩市
+  url: https://www.city.tama.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tama.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132250'
+  label: 東京都 稲城市
+  url: https://www.city.inagi.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.inagi.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.inagi.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132276'
+  label: 東京都 羽村市
+  url: https://www.city.hamura.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hamura.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.hamura.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132284'
+  label: 東京都 あきる野市
+  url: https://www.city.akiruno.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.akiruno.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.akiruno.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '132292'
+  label: 東京都 西東京市
+  url: https://www.city.nishitokyo.lg.jp/kurasi/koen/ikegaki.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nishitokyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.nishitokyo.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '133035'
+  label: 東京都 瑞穂町
+  url: https://www.town.mizuho.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.mizuho.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.mizuho.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '133051'
+  label: 東京都 日の出町
+  url: https://www.town.hinode.tokyo.jp/0000004061.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hinode.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.hinode.tokyo.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '133078'
+  label: 東京都 檜原村
+  url: http://www.vill.hinohara.tokyo.jp/0000000581.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.9
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.hinohara.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.hinohara.tokyo.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '133086'
+  label: 東京都 奥多摩町
+  url: https://www.town.okutama.tokyo.jp/kosodate/ijuteijujoho/3/index.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.okutama.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.okutama.tokyo.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '133612'
+  label: 東京都 大島町
+  url: https://www.town.oshima.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.oshima.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.oshima.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '133621'
+  label: 東京都 利島村
+  url: https://www.toshimamura.org/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.toshimamura.org）
+  evidence_url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '133639'
+  label: 東京都 新島村
+  url: http://www.niijima.com/akiya/akiya_taisaku.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.niijima.com）
+  evidence_url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '133647'
+  label: 東京都 神津島村
+  url: https://www.vill.kouzushima.tokyo.jp/2026-0611/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.kouzushima.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.kouzushima.tokyo.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '133817'
+  label: 東京都 三宅村
+  url: https://www.vill.miyake.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.miyake.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.miyake.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '133825'
+  label: 東京都 御蔵島村
+  url: https://www.vill.mikurasima.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.vill.mikurasima.tokyo.jp）
+  evidence_url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '134015'
+  label: 東京都 八丈町
+  url: https://www.town.hachijo.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hachijo.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.hachijo.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '134023'
+  label: 東京都 青ヶ島村
+  url: https://www.vill.aogashima.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.aogashima.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.aogashima.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '134210'
+  label: 東京都 小笠原村
+  url: https://www.vill.ogasawara.tokyo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.ogasawara.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.ogasawara.tokyo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

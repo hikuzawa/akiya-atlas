@@ -1,0 +1,382 @@
+prefecture: 岡山県
+prefecture_slug: okayama
+created_at: '2026-09-11T00:12:57+00:00'
+candidates:
+- key: '331007'
+  label: 岡山県 岡山市
+  url: https://www.city.okayama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 岡山県 市町村に掲載された公式サイト（www.city.okayama.jp）
+  evidence_url: https://www.pref.okayama.jp/page/1000.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '332020'
+  label: 岡山県 倉敷市
+  url: https://www.city.kurashiki.okayama.jp/kurashi/sumai/1006343/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kurashiki.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kurashiki.okayama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '332038'
+  label: 岡山県 津山市
+  url: https://www.city.tsuyama.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tsuyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tsuyama.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '332046'
+  label: 岡山県 玉野市
+  url: https://www.city.tamano.lg.jp/site/lifeoftamano/1674.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tamano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tamano.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '332054'
+  label: 岡山県 笠岡市
+  url: https://www.city.kasaoka.okayama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kasaoka.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kasaoka.okayama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '332071'
+  label: 岡山県 井原市
+  url: https://www.city.ibara.okayama.jp/soshiki/27/1482.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ibara.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.ibara.okayama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '332089'
+  label: 岡山県 総社市
+  url: https://www.city.soja.okayama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 岡山県 市町村に掲載された公式サイト（www.city.soja.okayama.jp）
+  evidence_url: https://www.pref.okayama.jp/page/1000.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '332097'
+  label: 岡山県 高梁市
+  url: https://akiyaconcierge.com/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.city.takahashi.lg.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.city.takahashi.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '332101'
+  label: 岡山県 新見市
+  url: https://www.city.niimi.okayama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.niimi.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.niimi.okayama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '332119'
+  label: 岡山県 備前市
+  url: https://www.city.bizen.okayama.jp/site/bizen/869.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.bizen.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.bizen.okayama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '332127'
+  label: 岡山県 瀬戸内市
+  url: https://www.city.setouchi.lg.jp/site/portal/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.setouchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.setouchi.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '332135'
+  label: 岡山県 赤磐市
+  url: https://www.city.akaiwa.lg.jp/kurashi/iju/4387.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.akaiwa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.akaiwa.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '332143'
+  label: 岡山県 真庭市
+  url: https://www.city.maniwa.lg.jp/life/2/13/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.maniwa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.maniwa.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '332151'
+  label: 岡山県 美作市
+  url: https://www.city.mimasaka.lg.jp/mokutekibetsu/ijuteiju/5854.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.mimasaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.mimasaka.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '332160'
+  label: 岡山県 浅口市
+  url: https://www.city.asakuchi.lg.jp/page/13085.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.asakuchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.asakuchi.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '333468'
+  label: 岡山県 和気町
+  url: https://www.town.wake.lg.jp/kurashi/iju_teiju/akiyabank/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.wake.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.wake.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '334235'
+  label: 岡山県 早島町
+  url: https://www.town.hayashima.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hayashima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.hayashima.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '334456'
+  label: 岡山県 里庄町
+  url: https://www.town.satosho.okayama.jp/life/1/13/95/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.satosho.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.satosho.okayama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '334618'
+  label: 岡山県 矢掛町
+  url: https://www.town.yakage.okayama.jp/life/teijyu/akiyatouroku.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yakage.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yakage.okayama.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '335860'
+  label: 岡山県 新庄村
+  url: https://www.vill.shinjo.okayama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 岡山県 市町村に掲載された公式サイト（www.vill.shinjo.okayama.jp）
+  evidence_url: https://www.pref.okayama.jp/page/1000.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '336068'
+  label: 岡山県 鏡野町
+  url: https://www.town.kagamino.lg.jp/life/1/25/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kagamino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kagamino.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '336220'
+  label: 岡山県 勝央町
+  url: https://www.town.shoo.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 岡山県 市町村に掲載された公式サイト（www.town.shoo.lg.jp）
+  evidence_url: https://www.pref.okayama.jp/page/1000.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '336238'
+  label: 岡山県 奈義町
+  url: https://www.town.nagi.okayama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nagi.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.nagi.okayama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '336432'
+  label: 岡山県 西粟倉村
+  url: https://www.vill.nishiawakura.okayama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.nishiawakura.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.nishiawakura.okayama.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '336637'
+  label: 岡山県 久米南町
+  url: https://www.town.kumenan.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kumenan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kumenan.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '336661'
+  label: 岡山県 美咲町
+  url: https://misaki-akiyabank.com/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.town.okayama-misaki.lg.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.town.okayama-misaki.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '336815'
+  label: 岡山県 吉備中央町
+  url: https://www.town.kibichuo.lg.jp/site/teijyu/1576.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kibichuo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kibichuo.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null

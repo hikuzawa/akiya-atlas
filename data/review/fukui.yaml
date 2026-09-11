@@ -1,0 +1,242 @@
+prefecture: 福井県
+prefecture_slug: fukui
+created_at: '2026-09-10T22:47:18+00:00'
+candidates:
+- key: '182010'
+  label: 福井県 福井市
+  url: https://www.city.fukui.lg.jp/kurasi/jutaku/akiyataisaku/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.fukui.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.fukui.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '182028'
+  label: 福井県 敦賀市
+  url: https://www.city.tsuruga.lg.jp/life/1/5/28/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tsuruga.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tsuruga.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '182044'
+  label: 福井県 小浜市
+  url: https://www1.city.obama.fukui.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 福井県内市町リンク集に掲載された公式サイト（www1.city.obama.fukui.jp）
+  evidence_url: https://www.pref.fukui.lg.jp/doc/dx-suishin/shimachi_list.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '182052'
+  label: 福井県 大野市
+  url: https://www.city.ono.fukui.jp/kurashi/kankyo-sumai/akiya/kazaishobunhojo.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ono.fukui.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.ono.fukui.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '182061'
+  label: 福井県 勝山市
+  url: https://www.city.katsuyama.fukui.jp/soshiki/16/410.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.katsuyama.fukui.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.katsuyama.fukui.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '182079'
+  label: 福井県 鯖江市
+  url: https://www.city.sabae.fukui.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sabae.fukui.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.sabae.fukui.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '182087'
+  label: 福井県 あわら市
+  url: https://www.city.awara.lg.jp/mokuteki/life/jyutaku1/p001478.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.awara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.awara.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '182095'
+  label: 福井県 越前市
+  url: https://www.city.echizen.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.echizen.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.echizen.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '182109'
+  label: 福井県 坂井市
+  url: https://www.city.sakai.lg.jp/kurashi/jutaku/akiya.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sakai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.sakai.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '183229'
+  label: 福井県 永平寺町
+  url: https://www.town.eiheiji.lg.jp/200/206/209/p011270.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.9
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.eiheiji.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.eiheiji.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '183822'
+  label: 福井県 池田町
+  url: https://www.town.ikeda.fukui.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ikeda.fukui.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ikeda.fukui.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '184047'
+  label: 福井県 南越前町
+  url: https://www.town.minamiechizen.lg.jp/izyu/akiyajyouhou/index.html
+  page_class: spa
+  class_label: JavaScript 描画（未対応）
+  confidence: 0.75
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.minamiechizen.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.minamiechizen.lg.jp/
+  reason: JavaScript 描画のため静的 HTML に物件が無い。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '184233'
+  label: 福井県 越前町
+  url: https://www.town.echizen.fukui.jp/chousei/12/p010070.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.echizen.fukui.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.echizen.fukui.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '184420'
+  label: 福井県 美浜町
+  url: https://www.town.fukui-mihama.lg.jp/site/iju/487.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 福井県内市町リンク集に掲載された公式サイト（www.town.fukui-mihama.lg.jp）
+  evidence_url: https://www.pref.fukui.lg.jp/doc/dx-suishin/shimachi_list.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '184811'
+  label: 福井県 高浜町
+  url: https://www.town.takahama.fukui.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.takahama.fukui.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.takahama.fukui.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '184837'
+  label: 福井県 おおい町
+  url: https://www.town.ohi.fukui.jp/1221/7029/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 福井県内市町リンク集に掲載された公式サイト（www.town.ohi.fukui.jp）
+  evidence_url: https://www.pref.fukui.lg.jp/doc/dx-suishin/shimachi_list.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '185019'
+  label: 福井県 若狭町
+  url: https://www.town.fukui-wakasa.lg.jp/kurashi_tetsuzuki/sumai/1825.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 福井県内市町リンク集に掲載された公式サイト（www.town.fukui-wakasa.lg.jp）
+  evidence_url: https://www.pref.fukui.lg.jp/doc/dx-suishin/shimachi_list.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null

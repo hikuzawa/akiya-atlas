@@ -1,0 +1,758 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: gunma-102016
+  name: 前橋市空き家バンク
+  operator: 前橋市
+  operator_kind: municipality
+  official_url: https://www.city.maebashi.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '102016'
+    name: 前橋市
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '102016'
+    bank_url: https://www.city.maebashi.gunma.jp/
+    bank_status: none
+    map_query: 群馬県前橋市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.maebashi.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.maebashi.gunma.jp/
+    checked_on: '2026-09-11'
+- id: gunma-102024
+  name: 高崎市空き家バンク
+  operator: 高崎市
+  operator_kind: municipality
+  official_url: https://www.city.takasaki.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '102024'
+    name: 高崎市
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '102024'
+    bank_url: https://www.city.takasaki.gunma.jp/
+    bank_status: none
+    map_query: 群馬県高崎市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.takasaki.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.takasaki.gunma.jp/
+    checked_on: '2026-09-11'
+- id: gunma-102032
+  name: 桐生市空き家バンク
+  operator: 桐生市
+  operator_kind: municipality
+  official_url: https://www.city.kiryu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '102032'
+    name: 桐生市
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '102032'
+    bank_url: https://www.city.kiryu.lg.jp/shisei/machi/iinekiryu/akiya/index.html
+    bank_status: info
+    map_query: 群馬県桐生市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kiryu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kiryu.lg.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: アットホーム「空き家バンク」 （外部リンク）
+    url: https://kiryu-c10203.akiya-athome.jp/
+- id: gunma-102041
+  name: 伊勢崎市空き家バンク
+  operator: 伊勢崎市
+  operator_kind: municipality
+  official_url: https://www.city.isesaki.lg.jp/
+  policy: link_only
+  municipality:
+    code: '102041'
+    name: 伊勢崎市
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '102041'
+    bank_url: https://www.city.isesaki.lg.jp/kurashi_tetsuzuki/kakushusodan/18643.html
+    bank_status: info
+    map_query: 群馬県伊勢崎市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.isesaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.isesaki.lg.jp/
+    checked_on: '2026-09-11'
+- id: gunma-102059
+  name: 太田市空き家バンク
+  operator: 太田市
+  operator_kind: municipality
+  official_url: https://www.city.ota.gunma.jp/
+  policy: crawl
+  municipality:
+    code: '102059'
+    name: 太田市
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '102059'
+    bank_url: https://www.city.ota.gunma.jp/page/1150.html
+    bank_status: available
+    map_query: 群馬県太田市
+  operator_evidence:
+    quote: 公式ドメイン www.city.ota.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.ota.gunma.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.ota.gunma.jp/page/1150.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.ota.gunma.jp
+  max_pages: 30
+  external_links:
+  - label: 全国版空き家・空き地バンク（アットホーム）
+    url: https://ota-c10205.akiya-athome.jp/bukken/detail/buy/%E5%A4%AA%E7%94%B0%E5%B8%82%E5%A3%B2%E5%9C%B0-23334
+  - label: 全国版空き家・空き地バンク（ライフルホームズ）
+    url: https://www.homes.co.jp/akiyabank/b-28247/
+  - label: 全国版空き家・空き地バンク（アットホーム）
+    url: https://ota-c10205.akiya-athome.jp/bukken/detail/buy/26474
+  - label: 全国版空き家・空き地バンク（ライフルホームズ）
+    url: https://www.homes.co.jp/akiyabank/b-31707/
+  - label: 全国版空き家・空き地バンク（アットホーム）
+    url: https://ota-c10205.akiya-athome.jp/bukken/detail/buy/%E5%A4%AA%E7%94%B0%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-45113
+  - label: 全国版空き家・空き地バンク（ライフルホームズ）
+    url: https://www.homes.co.jp/akiyabank/b-46386/
+  - label: 全国版空き家・空き地バンク（アットホーム）
+    url: https://ota-c10205.akiya-athome.jp/bukken/detail/buy/46716
+  - label: 全国版空き家・空き地バンク（ライフルホームズ）
+    url: https://www.homes.co.jp/akiyabank/b-47631/
+  - label: 全国版空き家・空き地バンク（アットホーム）
+    url: https://ota-c10205.akiya-athome.jp/bukken/detail/rent/8491
+  - label: 全国版空き家・空き地バンク（ライフルホームズ）
+    url: https://www.homes.co.jp/akiyabank/b-48376/
+  - label: 全国版空き家・空き地バンク（アットホーム）
+    url: https://ota-c10205.akiya-athome.jp/bukken/detail/rent/8523
+  - label: 全国版空き家・空き地バンク（ライフルホームズ）
+    url: https://www.homes.co.jp/akiyabank/b-48624/
+- id: gunma-102067
+  name: 沼田市空き家バンク
+  operator: 沼田市
+  operator_kind: municipality
+  official_url: https://www.city.numata.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '102067'
+    name: 沼田市
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '102067'
+    bank_url: https://www.city.numata.gunma.jp/
+    bank_status: none
+    map_query: 群馬県沼田市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.numata.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.numata.gunma.jp/
+    checked_on: '2026-09-11'
+- id: gunma-102075
+  name: 館林市空き家バンク
+  operator: 館林市
+  operator_kind: municipality
+  official_url: https://www.city.tatebayashi.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '102075'
+    name: 館林市
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '102075'
+    bank_url: https://www.city.tatebayashi.gunma.jp/
+    bank_status: none
+    map_query: 群馬県館林市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tatebayashi.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.tatebayashi.gunma.jp/
+    checked_on: '2026-09-11'
+- id: gunma-102083
+  name: 渋川市空き家バンク
+  operator: 渋川市
+  operator_kind: municipality
+  official_url: https://www.city.shibukawa.lg.jp/
+  policy: crawl
+  municipality:
+    code: '102083'
+    name: 渋川市
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '102083'
+    bank_url: https://www.city.shibukawa.lg.jp/kurashi/000048/000052/index.html
+    bank_status: available
+    map_query: 群馬県渋川市
+  operator_evidence:
+    quote: 公式ドメイン www.city.shibukawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.shibukawa.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.shibukawa.lg.jp/kurashi/000048/000052/index.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.shibukawa.lg.jp
+  max_pages: 30
+- id: gunma-102091
+  name: 藤岡市空き家バンク
+  operator: 藤岡市
+  operator_kind: municipality
+  official_url: https://www.city.fujioka.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '102091'
+    name: 藤岡市
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '102091'
+    bank_url: https://www.city.fujioka.gunma.jp/kurashi_testuduki/zumai_koen/10413.html
+    bank_status: info
+    map_query: 群馬県藤岡市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.fujioka.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.fujioka.gunma.jp/
+    checked_on: '2026-09-11'
+- id: gunma-102105
+  name: 富岡市空き家バンク
+  operator: 富岡市
+  operator_kind: municipality
+  official_url: https://www.city.tomioka.lg.jp/
+  policy: link_only
+  municipality:
+    code: '102105'
+    name: 富岡市
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '102105'
+    bank_url: https://www.city.tomioka.lg.jp/
+    bank_status: none
+    map_query: 群馬県富岡市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 群馬県 県内市町村等ホームページ外部リンク集に掲載された公式サイト（www.city.tomioka.lg.jp）。サイトを取得できなかったためリンクのみ（robots.txt を取得できないため今回は巡回しない）
+    url: https://www.pref.gunma.jp/page/14523.html
+    checked_on: '2026-09-11'
+- id: gunma-102113
+  name: 安中市空き家バンク
+  operator: 安中市
+  operator_kind: municipality
+  official_url: https://www.city.annaka.lg.jp/
+  policy: crawl
+  municipality:
+    code: '102113'
+    name: 安中市
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '102113'
+    bank_url: https://www.city.annaka.lg.jp/akiya/annakabiyori/28298.html
+    bank_status: available
+    map_query: 群馬県安中市
+  operator_evidence:
+    quote: 公式ドメイン www.city.annaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.annaka.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.annaka.lg.jp/akiya/annakabiyori/28298.html
+    kind: listing_detail
+  allow_hosts:
+  - www.city.annaka.lg.jp
+  max_pages: 30
+- id: gunma-102121
+  name: みどり市空き家バンク
+  operator: みどり市
+  operator_kind: municipality
+  official_url: https://www.city.midori.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '102121'
+    name: みどり市
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '102121'
+    bank_url: https://www.city.midori.gunma.jp/kankyo/1001623/1001722/index.html
+    bank_status: info
+    map_query: 群馬県みどり市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.midori.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.midori.gunma.jp/
+    checked_on: '2026-09-11'
+- id: gunma-103446
+  name: 榛東村空き家バンク
+  operator: 榛東村
+  operator_kind: municipality
+  official_url: https://www.vill.shinto.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '103446'
+    name: 榛東村
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '103446'
+    bank_url: https://www.vill.shinto.gunma.jp/life/000049/000055/index.html
+    bank_status: info
+    map_query: 群馬県榛東村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.shinto.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.shinto.gunma.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: 榛東村空き家バンク
+    url: https://shinto-v10344.akiya-athome.jp/
+- id: gunma-103454
+  name: 吉岡町空き家バンク
+  operator: 吉岡町
+  operator_kind: municipality
+  official_url: https://www.town.yoshioka.lg.jp/
+  policy: link_only
+  municipality:
+    code: '103454'
+    name: 吉岡町
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '103454'
+    bank_url: https://www.town.yoshioka.lg.jp/
+    bank_status: none
+    map_query: 群馬県吉岡町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yoshioka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.yoshioka.lg.jp/
+    checked_on: '2026-09-11'
+- id: gunma-103667
+  name: 上野村空き家バンク
+  operator: 上野村
+  operator_kind: municipality
+  official_url: https://www.uenomura.jp/
+  policy: link_only
+  municipality:
+    code: '103667'
+    name: 上野村
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '103667'
+    bank_url: https://www.uenomura.jp/
+    bank_status: none
+    map_query: 群馬県上野村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 群馬県 県内市町村等ホームページ外部リンク集に掲載された公式サイト（www.uenomura.jp）
+    url: https://www.pref.gunma.jp/page/14523.html
+    checked_on: '2026-09-11'
+- id: gunma-103675
+  name: 神流町空き家バンク
+  operator: 神流町
+  operator_kind: municipality
+  official_url: https://www.town.kanna.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '103675'
+    name: 神流町
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '103675'
+    bank_url: https://www.town.kanna.gunma.jp/
+    bank_status: none
+    map_query: 群馬県神流町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kanna.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kanna.gunma.jp/
+    checked_on: '2026-09-11'
+- id: gunma-103829
+  name: 下仁田町空き家バンク
+  operator: 下仁田町
+  operator_kind: municipality
+  official_url: https://www.town.shimonita.lg.jp/
+  policy: link_only
+  municipality:
+    code: '103829'
+    name: 下仁田町
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '103829'
+    bank_url: https://www.town.shimonita.lg.jp/
+    bank_status: none
+    map_query: 群馬県下仁田町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shimonita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.shimonita.lg.jp/
+    checked_on: '2026-09-11'
+- id: gunma-103837
+  name: 南牧村空き家バンク
+  operator: 南牧村
+  operator_kind: municipality
+  official_url: https://nanmoku.ne.jp/
+  policy: link_only
+  municipality:
+    code: '103837'
+    name: 南牧村
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '103837'
+    bank_url: https://nanmoku.ne.jp/
+    bank_status: none
+    map_query: 群馬県南牧村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 群馬県 県内市町村等ホームページ外部リンク集に掲載された公式サイト（nanmoku.ne.jp）
+    url: https://www.pref.gunma.jp/page/14523.html
+    checked_on: '2026-09-11'
+- id: gunma-103845
+  name: 甘楽町空き家バンク
+  operator: 甘楽町
+  operator_kind: municipality
+  official_url: https://www.town.kanra.lg.jp/
+  policy: link_only
+  municipality:
+    code: '103845'
+    name: 甘楽町
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '103845'
+    bank_url: https://www.town.kanra.lg.jp/kikaku/chousei/akiya/20200331163723.html
+    bank_status: info
+    map_query: 群馬県甘楽町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kanra.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kanra.lg.jp/
+    checked_on: '2026-09-11'
+- id: gunma-104213
+  name: 中之条町空き家バンク
+  operator: 中之条町
+  operator_kind: municipality
+  official_url: https://www.town.nakanojo.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '104213'
+    name: 中之条町
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '104213'
+    bank_url: https://www.town.nakanojo.gunma.jp/
+    bank_status: none
+    map_query: 群馬県中之条町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 群馬県 県内市町村等ホームページ外部リンク集に掲載された公式サイト（www.town.nakanojo.gunma.jp）
+    url: https://www.pref.gunma.jp/page/14523.html
+    checked_on: '2026-09-11'
+- id: gunma-104248
+  name: 長野原町空き家バンク
+  operator: 長野原町
+  operator_kind: municipality
+  official_url: https://www.town.naganohara.gunma.jp/
+  policy: crawl
+  municipality:
+    code: '104248'
+    name: 長野原町
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '104248'
+    bank_url: https://www.town.naganohara.gunma.jp/life/?content=256
+    bank_status: available
+    map_query: 群馬県長野原町
+  operator_evidence:
+    quote: 公式ドメイン www.town.naganohara.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.naganohara.gunma.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.naganohara.gunma.jp/life/?content=256
+    kind: listing_index
+  allow_hosts:
+  - www.town.naganohara.gunma.jp
+  max_pages: 30
+- id: gunma-104256
+  name: 嬬恋村空き家バンク
+  operator: 嬬恋村
+  operator_kind: municipality
+  official_url: https://www.vill.tsumagoi.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '104256'
+    name: 嬬恋村
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '104256'
+    bank_url: https://www.vill.tsumagoi.gunma.jp/
+    bank_status: none
+    map_query: 群馬県嬬恋村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.tsumagoi.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.tsumagoi.gunma.jp/
+    checked_on: '2026-09-11'
+- id: gunma-104264
+  name: 草津町空き家バンク
+  operator: 草津町
+  operator_kind: municipality
+  official_url: https://www.town.kusatsu.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '104264'
+    name: 草津町
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '104264'
+    bank_url: https://www.town.kusatsu.gunma.jp/
+    bank_status: none
+    map_query: 群馬県草津町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kusatsu.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kusatsu.gunma.jp/
+    checked_on: '2026-09-11'
+- id: gunma-104281
+  name: 高山村空き家バンク
+  operator: 高山村
+  operator_kind: municipality
+  official_url: https://www.vill.takayama.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '104281'
+    name: 高山村
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '104281'
+    bank_url: https://www.vill.takayama.gunma.jp/
+    bank_status: none
+    map_query: 群馬県高山村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.takayama.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.takayama.gunma.jp/
+    checked_on: '2026-09-11'
+- id: gunma-104299
+  name: 東吾妻町空き家バンク
+  operator: 東吾妻町
+  operator_kind: municipality
+  official_url: https://www.town.higashiagatsuma.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '104299'
+    name: 東吾妻町
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '104299'
+    bank_url: https://www.town.higashiagatsuma.gunma.jp/www/genre/1554784819493/index.html
+    bank_status: info
+    map_query: 群馬県東吾妻町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.higashiagatsuma.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.higashiagatsuma.gunma.jp/
+    checked_on: '2026-09-11'
+- id: gunma-104434
+  name: 片品村空き家バンク
+  operator: 片品村
+  operator_kind: municipality
+  official_url: https://www.vill.katashina.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '104434'
+    name: 片品村
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '104434'
+    bank_url: https://www.vill.katashina.gunma.jp/
+    bank_status: none
+    map_query: 群馬県片品村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.katashina.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.katashina.gunma.jp/
+    checked_on: '2026-09-11'
+- id: gunma-104442
+  name: 川場村空き家バンク
+  operator: 川場村
+  operator_kind: municipality
+  official_url: https://www.vill.kawaba.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '104442'
+    name: 川場村
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '104442'
+    bank_url: https://www.vill.kawaba.gunma.jp/
+    bank_status: none
+    map_query: 群馬県川場村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.kawaba.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.kawaba.gunma.jp/
+    checked_on: '2026-09-11'
+- id: gunma-104485
+  name: 昭和村空き家バンク
+  operator: 昭和村
+  operator_kind: municipality
+  official_url: https://www.vill.showa.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '104485'
+    name: 昭和村
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '104485'
+    bank_url: https://www.vill.showa.gunma.jp/
+    bank_status: none
+    map_query: 群馬県昭和村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.showa.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.showa.gunma.jp/
+    checked_on: '2026-09-11'
+- id: gunma-104493
+  name: みなかみ町空き家バンク
+  operator: みなかみ町
+  operator_kind: municipality
+  official_url: https://www.town.minakami.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '104493'
+    name: みなかみ町
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '104493'
+    bank_url: https://www.town.minakami.gunma.jp/
+    bank_status: none
+    map_query: 群馬県みなかみ町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.minakami.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.minakami.gunma.jp/
+    checked_on: '2026-09-11'
+- id: gunma-104647
+  name: 玉村町空き家バンク
+  operator: 玉村町
+  operator_kind: municipality
+  official_url: https://www.town.tamamura.lg.jp/
+  policy: link_only
+  municipality:
+    code: '104647'
+    name: 玉村町
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '104647'
+    bank_url: https://www.town.tamamura.lg.jp/
+    bank_status: none
+    map_query: 群馬県玉村町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.tamamura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.tamamura.lg.jp/
+    checked_on: '2026-09-11'
+- id: gunma-105210
+  name: 板倉町空き家バンク
+  operator: 板倉町
+  operator_kind: municipality
+  official_url: https://www.town.itakura.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '105210'
+    name: 板倉町
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '105210'
+    bank_url: https://www.town.itakura.gunma.jp/
+    bank_status: none
+    map_query: 群馬県板倉町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.itakura.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.itakura.gunma.jp/
+    checked_on: '2026-09-11'
+- id: gunma-105228
+  name: 明和町空き家バンク
+  operator: 明和町
+  operator_kind: municipality
+  official_url: https://www.town.meiwa.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '105228'
+    name: 明和町
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '105228'
+    bank_url: https://www.town.meiwa.gunma.jp/life/soshiki/juuminkankyo/kankyohozen/akiyataisaku/1974.html
+    bank_status: info
+    map_query: 群馬県明和町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.meiwa.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.meiwa.gunma.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: at home ・全国版空き家・空地バンク（運営事業者：アットホーム株式会社）
+    url: https://meiwa-t10522.akiya-athome.jp/
+  - label: LIFULL HOME’S空き家バンク（運営事業者：株式会社LIFULL）
+    url: https://www.homes.co.jp/akiyabank/gunma/ora_meiwa/
+- id: gunma-105236
+  name: 千代田町空き家バンク
+  operator: 千代田町
+  operator_kind: municipality
+  official_url: https://www.town.chiyoda.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '105236'
+    name: 千代田町
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '105236'
+    bank_url: https://www.town.chiyoda.gunma.jp/
+    bank_status: none
+    map_query: 群馬県千代田町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.chiyoda.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.chiyoda.gunma.jp/
+    checked_on: '2026-09-11'
+- id: gunma-105244
+  name: 大泉町空き家バンク
+  operator: 大泉町
+  operator_kind: municipality
+  official_url: https://www.town.oizumi.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '105244'
+    name: 大泉町
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '105244'
+    bank_url: https://www.town.oizumi.gunma.jp/
+    bank_status: none
+    map_query: 群馬県大泉町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.oizumi.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.oizumi.gunma.jp/
+    checked_on: '2026-09-11'
+- id: gunma-105252
+  name: 邑楽町空き家バンク
+  operator: 邑楽町
+  operator_kind: municipality
+  official_url: https://www.town.ora.gunma.jp/
+  policy: link_only
+  municipality:
+    code: '105252'
+    name: 邑楽町
+    prefecture: 群馬県
+    prefecture_slug: gunma
+    slug: '105252'
+    bank_url: https://www.town.ora.gunma.jp/s055/060/180/akiyaari.html
+    bank_status: info
+    map_query: 群馬県邑楽町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ora.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.ora.gunma.jp/
+    checked_on: '2026-09-11'

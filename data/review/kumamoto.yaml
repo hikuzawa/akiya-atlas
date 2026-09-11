@@ -1,0 +1,634 @@
+prefecture: 熊本県
+prefecture_slug: kumamoto
+created_at: '2026-09-11T02:35:25+00:00'
+candidates:
+- key: '431001'
+  label: 熊本県 熊本市
+  url: https://www.city.kumamoto.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.city.kumamoto.jp）
+  evidence_url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '432024'
+  label: 熊本県 八代市
+  url: https://www.city.yatsushiro.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yatsushiro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.yatsushiro.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '432032'
+  label: 熊本県 人吉市
+  url: https://www.city.hitoyoshi.lg.jp/toppage/boshu/37095
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hitoyoshi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.hitoyoshi.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '432041'
+  label: 熊本県 荒尾市
+  url: https://www.city.arao.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.arao.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.arao.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '432059'
+  label: 熊本県 水俣市
+  url: https://www.city.minamata.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.minamata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.minamata.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '432067'
+  label: 熊本県 玉名市
+  url: https://www.city.tamana.lg.jp/q/aview/596/36528.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tamana.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tamana.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '432083'
+  label: 熊本県 山鹿市
+  url: https://www.yamaga-gurashi.com/house/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.city.yamaga.kumamoto.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.city.yamaga.kumamoto.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '432105'
+  label: 熊本県 菊池市
+  url: https://www.city.kikuchi.lg.jp/category/list/1320.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kikuchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kikuchi.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '432113'
+  label: 熊本県 宇土市
+  url: https://kumamoto-akiya360.jp/property/p1000000398/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.86
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.city.uto.lg.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.city.uto.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '432121'
+  label: 熊本県 上天草市
+  url: https://www.city.kamiamakusa.kumamoto.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kamiamakusa.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kamiamakusa.kumamoto.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '432130'
+  label: 熊本県 宇城市
+  url: https://www.city.uki.kumamoto.jp/toppage/ijuteiju/akiya/iju_akiya/oshirase_bank/2302102
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.uki.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.uki.kumamoto.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '432148'
+  label: 熊本県 阿蘇市
+  url: https://www.city.aso.kumamoto.jp/akiya/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.84
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.aso.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.aso.kumamoto.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '432156'
+  label: 熊本県 天草市
+  url: https://www.city.amakusa.kumamoto.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.amakusa.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.amakusa.kumamoto.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '432164'
+  label: 熊本県 合志市
+  url: https://www.city.koshi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.koshi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.koshi.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '433489'
+  label: 熊本県 美里町
+  url: https://www.town.kumamoto-misato.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.town.kumamoto-misato.lg.jp）
+  evidence_url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '433641'
+  label: 熊本県 玉東町
+  url: https://www.town.gyokuto.kumamoto.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.gyokuto.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.gyokuto.kumamoto.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '433675'
+  label: 熊本県 南関町
+  url: https://kumamoto-akiya360.jp/property/p1000000851/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.84
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.town.nankan.lg.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.town.nankan.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '433683'
+  label: 熊本県 長洲町
+  url: https://www.town.nagasu.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nagasu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.nagasu.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '433691'
+  label: 熊本県 和水町
+  url: https://www.town.nagomi.lg.jp/iju/teijyuu/akiya/16/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nagomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.nagomi.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '434035'
+  label: 熊本県 大津町
+  url: https://www.town.ozu.kumamoto.jp/page/1176.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ozu.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ozu.kumamoto.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '434043'
+  label: 熊本県 菊陽町
+  url: https://www.town.kikuyo.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kikuyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kikuyo.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '434230'
+  label: 熊本県 南小国町
+  url: https://minamioguni-rashiku.com/vacant-house/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.town.minamioguni.lg.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.town.minamioguni.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '434248'
+  label: 熊本県 小国町
+  url: https://www.town.kumamoto-oguni.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.town.kumamoto-oguni.lg.jp）
+  evidence_url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '434256'
+  label: 熊本県 産山村
+  url: http://www.ubuyama-v.jp/kurashi_tetsuzuki/sumai_iju/1/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.ubuyama-v.jp）
+  evidence_url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '434281'
+  label: 熊本県 高森町
+  url: https://www.town.takamori.kumamoto.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.town.takamori.kumamoto.jp）。サイトを取得できなかったためリンクのみ（HTTP 403）
+  evidence_url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '434329'
+  label: 熊本県 西原村
+  url: https://www.vill.nishihara.kumamoto.jp/dynamic/ijyu/info/pub/default.aspx?c_id=32
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.nishihara.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.vill.nishihara.kumamoto.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '434337'
+  label: 熊本県 南阿蘇村
+  url: https://www.vill.minamiaso.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.minamiaso.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.minamiaso.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '434418'
+  label: 熊本県 御船町
+  url: https://www.town.mifune.kumamoto.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.mifune.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.mifune.kumamoto.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '434426'
+  label: 熊本県 嘉島町
+  url: https://www.town.kumamoto-kashima.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.town.kumamoto-kashima.lg.jp）
+  evidence_url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '434434'
+  label: 熊本県 益城町
+  url: https://www.town.mashiki.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.mashiki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.mashiki.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '434442'
+  label: 熊本県 甲佐町
+  url: https://www.town.kosa.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kosa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.kosa.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '434477'
+  label: 熊本県 山都町
+  url: https://www.town.kumamoto-yamato.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.town.kumamoto-yamato.lg.jp）
+  evidence_url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '434680'
+  label: 熊本県 氷川町
+  url: https://www.town.hikawa.kumamoto.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hikawa.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.hikawa.kumamoto.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '434825'
+  label: 熊本県 芦北町
+  url: https://www.town.ashikita.lg.jp/toppage/bosyu/2068558
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ashikita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.ashikita.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '434841'
+  label: 熊本県 津奈木町
+  url: https://www.town.tsunagi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tsunagi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.tsunagi.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '435015'
+  label: 熊本県 錦町
+  url: https://www.town.kumamoto-nishiki.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.town.kumamoto-nishiki.lg.jp）
+  evidence_url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '435058'
+  label: 熊本県 多良木町
+  url: https://www.town.taragi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.taragi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.taragi.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '435066'
+  label: 熊本県 湯前町
+  url: https://www.town.yunomae.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yunomae.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.yunomae.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '435074'
+  label: 熊本県 水上村
+  url: https://www.vill.mizukami.lg.jp/dynamic/info/pub/default.aspx?c_id=22
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.mizukami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.mizukami.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '435104'
+  label: 熊本県 相良村
+  url: https://www.vill.sagara.lg.jp/iju/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.sagara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.sagara.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '435112'
+  label: 熊本県 五木村
+  url: https://www.vill.itsuki.lg.jp/dynamic/teijuu/info/pub/detail.aspx?c_id=17&id=27
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.84
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.itsuki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.itsuki.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '435121'
+  label: 熊本県 山江村
+  url: https://www.vill.yamae.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.vill.yamae.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.vill.yamae.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '435139'
+  label: 熊本県 球磨村
+  url: https://www.kumamura.com/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.kumamura.com）
+  evidence_url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '435147'
+  label: 熊本県 あさぎり町
+  url: https://www.town.asagiri.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.asagiri.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.asagiri.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '435317'
+  label: 熊本県 苓北町
+  url: https://reihoku-kumamoto.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（reihoku-kumamoto.jp）
+  evidence_url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

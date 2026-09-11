@@ -1,0 +1,801 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: nara-292010
+  name: 奈良市空き家バンク
+  operator: 奈良市
+  operator_kind: municipality
+  official_url: https://www.city.nara.lg.jp/
+  policy: link_only
+  municipality:
+    code: '292010'
+    name: 奈良市
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '292010'
+    bank_url: https://www.city.nara.lg.jp/site/akiya-bank/
+    bank_status: info
+    map_query: 奈良県奈良市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.nara.lg.jp/
+    checked_on: '2026-09-11'
+- id: nara-292028
+  name: 大和高田市空き家バンク
+  operator: 大和高田市
+  operator_kind: municipality
+  official_url: https://www.city.yamatotakada.nara.jp/
+  policy: link_only
+  municipality:
+    code: '292028'
+    name: 大和高田市
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '292028'
+    bank_url: https://www.city.yamatotakada.nara.jp/
+    bank_status: none
+    map_query: 奈良県大和高田市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yamatotakada.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.yamatotakada.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-292036
+  name: 大和郡山市空き家バンク
+  operator: 大和郡山市
+  operator_kind: municipality
+  official_url: https://www.city.yamatokoriyama.lg.jp/
+  policy: link_only
+  municipality:
+    code: '292036'
+    name: 大和郡山市
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '292036'
+    bank_url: https://www.city.yamatokoriyama.lg.jp/
+    bank_status: none
+    map_query: 奈良県大和郡山市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yamatokoriyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.yamatokoriyama.lg.jp/
+    checked_on: '2026-09-11'
+- id: nara-292044
+  name: 天理市空き家バンク
+  operator: 天理市
+  operator_kind: municipality
+  official_url: https://www.city.tenri.nara.jp/
+  policy: link_only
+  municipality:
+    code: '292044'
+    name: 天理市
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '292044'
+    bank_url: https://www.city.tenri.nara.jp/
+    bank_status: none
+    map_query: 奈良県天理市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.tenri.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.tenri.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-292052
+  name: 橿原市空き家バンク
+  operator: 橿原市
+  operator_kind: municipality
+  official_url: https://www.city.kashihara.nara.jp/
+  policy: link_only
+  municipality:
+    code: '292052'
+    name: 橿原市
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '292052'
+    bank_url: https://www.city.kashihara.nara.jp/
+    bank_status: none
+    map_query: 奈良県橿原市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kashihara.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kashihara.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-292061
+  name: 桜井市空き家バンク
+  operator: 桜井市
+  operator_kind: municipality
+  official_url: https://www.city.sakurai.lg.jp/
+  policy: link_only
+  municipality:
+    code: '292061'
+    name: 桜井市
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '292061'
+    bank_url: https://www.city.sakurai.lg.jp/
+    bank_status: none
+    map_query: 奈良県桜井市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.sakurai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.sakurai.lg.jp/
+    checked_on: '2026-09-11'
+- id: nara-292079
+  name: 五條市空き家バンク
+  operator: 五條市
+  operator_kind: municipality
+  official_url: https://www.city.gojo.lg.jp/
+  policy: link_only
+  municipality:
+    code: '292079'
+    name: 五條市
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '292079'
+    bank_url: https://www.city.gojo.lg.jp/
+    bank_status: none
+    map_query: 奈良県五條市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.gojo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.gojo.lg.jp/
+    checked_on: '2026-09-11'
+- id: nara-292087
+  name: 御所市空き家バンク
+  operator: 御所市
+  operator_kind: municipality
+  official_url: https://www.city.gose.nara.jp/
+  policy: link_only
+  municipality:
+    code: '292087'
+    name: 御所市
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '292087'
+    bank_url: https://www.city.gose.nara.jp/
+    bank_status: none
+    map_query: 奈良県御所市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.gose.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.gose.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-292095
+  name: 生駒市空き家バンク
+  operator: 生駒市
+  operator_kind: municipality
+  official_url: https://www.city.ikoma.lg.jp/
+  policy: link_only
+  municipality:
+    code: '292095'
+    name: 生駒市
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '292095'
+    bank_url: https://www.city.ikoma.lg.jp/0000013956.html
+    bank_status: info
+    map_query: 奈良県生駒市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ikoma.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.ikoma.lg.jp/
+    checked_on: '2026-09-11'
+- id: nara-292109
+  name: 香芝市空き家バンク
+  operator: 香芝市
+  operator_kind: municipality
+  official_url: https://www.city.kashiba.lg.jp/
+  policy: link_only
+  municipality:
+    code: '292109'
+    name: 香芝市
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '292109'
+    bank_url: https://www.city.kashiba.lg.jp/
+    bank_status: none
+    map_query: 奈良県香芝市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kashiba.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kashiba.lg.jp/
+    checked_on: '2026-09-11'
+- id: nara-292117
+  name: 葛城市空き家バンク
+  operator: 葛城市
+  operator_kind: municipality
+  official_url: https://www.city.katsuragi.nara.jp/
+  policy: link_only
+  municipality:
+    code: '292117'
+    name: 葛城市
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '292117'
+    bank_url: https://www.city.katsuragi.nara.jp/kurashi_tetsuzuki/2/3825.html
+    bank_status: info
+    map_query: 奈良県葛城市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.katsuragi.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.katsuragi.nara.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: 奈良県葛城市空き家バンクサイト トップページ（別ウインドで開く）
+    url: https://katsuragi-c29211.akiya-athome.jp/
+  - label: 奈良県 葛城市で空き家を探す（【ホームズ】空き家バンクのサイト）（別ウインドで開く）
+    url: https://www.homes.co.jp/akiyabank/nara/katsuragi/
+- id: nara-292125
+  name: 宇陀市空き家バンク
+  operator: 宇陀市
+  operator_kind: municipality
+  official_url: https://www.city.uda.lg.jp/
+  policy: link_only
+  municipality:
+    code: '292125'
+    name: 宇陀市
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '292125'
+    bank_url: https://www.city.uda.lg.jp/
+    bank_status: none
+    map_query: 奈良県宇陀市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.uda.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.uda.lg.jp/
+    checked_on: '2026-09-11'
+- id: nara-293229
+  name: 山添村空き家バンク
+  operator: 山添村
+  operator_kind: municipality
+  official_url: https://www.vill.yamazoe.nara.jp/
+  policy: link_only
+  municipality:
+    code: '293229'
+    name: 山添村
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '293229'
+    bank_url: https://www.vill.yamazoe.nara.jp/
+    bank_status: none
+    map_query: 奈良県山添村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.yamazoe.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.yamazoe.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-293423
+  name: 平群町空き家バンク
+  operator: 平群町
+  operator_kind: municipality
+  official_url: https://www.town.heguri.nara.jp/
+  policy: link_only
+  municipality:
+    code: '293423'
+    name: 平群町
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '293423'
+    bank_url: https://www.town.heguri.nara.jp/life/1/8/26/
+    bank_status: info
+    map_query: 奈良県平群町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.heguri.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.heguri.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-293431
+  name: 三郷町空き家バンク
+  operator: 三郷町
+  operator_kind: municipality
+  official_url: https://www.town.sango.nara.jp/
+  policy: link_only
+  municipality:
+    code: '293431'
+    name: 三郷町
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '293431'
+    bank_url: https://www.town.sango.nara.jp/life/1/11/49/
+    bank_status: info
+    map_query: 奈良県三郷町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.sango.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.sango.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-293440
+  name: 斑鳩町空き家バンク
+  operator: 斑鳩町
+  operator_kind: municipality
+  official_url: https://www.town.ikaruga.nara.jp/
+  policy: link_only
+  municipality:
+    code: '293440'
+    name: 斑鳩町
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '293440'
+    bank_url: https://www.town.ikaruga.nara.jp/
+    bank_status: none
+    map_query: 奈良県斑鳩町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ikaruga.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.ikaruga.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-293458
+  name: 安堵町空き家バンク
+  operator: 安堵町
+  operator_kind: municipality
+  official_url: https://www.town.ando.nara.jp/
+  policy: link_only
+  municipality:
+    code: '293458'
+    name: 安堵町
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '293458'
+    bank_url: https://www.town.ando.nara.jp/
+    bank_status: none
+    map_query: 奈良県安堵町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ando.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.ando.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-293610
+  name: 川西町空き家バンク
+  operator: 川西町
+  operator_kind: municipality
+  official_url: https://www.town.nara-kawanishi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '293610'
+    name: 川西町
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '293610'
+    bank_url: https://www.town.nara-kawanishi.lg.jp/
+    bank_status: none
+    map_query: 奈良県川西町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 奈良県 県内市町村に掲載された公式サイト（www.town.nara-kawanishi.lg.jp）
+    url: https://www.pref.nara.lg.jp/n002/1232.html
+    checked_on: '2026-09-11'
+- id: nara-293628
+  name: 三宅町空き家バンク
+  operator: 三宅町
+  operator_kind: municipality
+  official_url: https://www.town.miyake.lg.jp/
+  policy: link_only
+  municipality:
+    code: '293628'
+    name: 三宅町
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '293628'
+    bank_url: https://www.town.miyake.lg.jp/
+    bank_status: none
+    map_query: 奈良県三宅町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.miyake.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.miyake.lg.jp/
+    checked_on: '2026-09-11'
+- id: nara-293636
+  name: 田原本町空き家バンク
+  operator: 田原本町
+  operator_kind: municipality
+  official_url: https://www.town.tawaramoto.nara.jp/
+  policy: link_only
+  municipality:
+    code: '293636'
+    name: 田原本町
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '293636'
+    bank_url: https://www.town.tawaramoto.nara.jp/
+    bank_status: none
+    map_query: 奈良県田原本町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.tawaramoto.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.tawaramoto.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-293857
+  name: 曽爾村空き家バンク
+  operator: 曽爾村
+  operator_kind: municipality
+  official_url: https://www.vill.soni.nara.jp/
+  policy: link_only
+  municipality:
+    code: '293857'
+    name: 曽爾村
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '293857'
+    bank_url: https://www.vill.soni.nara.jp/
+    bank_status: none
+    map_query: 奈良県曽爾村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.soni.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.soni.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-293865
+  name: 御杖村空き家バンク
+  operator: 御杖村
+  operator_kind: municipality
+  official_url: https://www.vill.mitsue.nara.jp/
+  policy: link_only
+  municipality:
+    code: '293865'
+    name: 御杖村
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '293865'
+    bank_url: https://www.vill.mitsue.nara.jp/
+    bank_status: none
+    map_query: 奈良県御杖村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.mitsue.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.mitsue.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-294012
+  name: 高取町空き家バンク
+  operator: 高取町
+  operator_kind: municipality
+  official_url: https://www.town.takatori.nara.jp/
+  policy: link_only
+  municipality:
+    code: '294012'
+    name: 高取町
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '294012'
+    bank_url: https://www.town.takatori.nara.jp/
+    bank_status: none
+    map_query: 奈良県高取町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.takatori.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.takatori.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-294021
+  name: 明日香村空き家バンク
+  operator: 明日香村
+  operator_kind: municipality
+  official_url: https://www.asukamura.jp/
+  policy: link_only
+  municipality:
+    code: '294021'
+    name: 明日香村
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '294021'
+    bank_url: https://www.asukamura.jp/
+    bank_status: none
+    map_query: 奈良県明日香村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 奈良県 県内市町村に掲載された公式サイト（www.asukamura.jp）
+    url: https://www.pref.nara.lg.jp/n002/1232.html
+    checked_on: '2026-09-11'
+- id: nara-294241
+  name: 上牧町空き家バンク
+  operator: 上牧町
+  operator_kind: municipality
+  official_url: https://www.town.kanmaki.nara.jp/
+  policy: link_only
+  municipality:
+    code: '294241'
+    name: 上牧町
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '294241'
+    bank_url: https://www.town.kanmaki.nara.jp/
+    bank_status: none
+    map_query: 奈良県上牧町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kanmaki.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kanmaki.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-294250
+  name: 王寺町空き家バンク
+  operator: 王寺町
+  operator_kind: municipality
+  official_url: https://www.town.oji.nara.jp/
+  policy: link_only
+  municipality:
+    code: '294250'
+    name: 王寺町
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '294250'
+    bank_url: https://www.town.oji.nara.jp/kurashi_tetsuzuki/9382.html
+    bank_status: info
+    map_query: 奈良県王寺町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.oji.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.oji.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-294268
+  name: 広陵町空き家バンク
+  operator: 広陵町
+  operator_kind: municipality
+  official_url: https://www.town.koryo.nara.jp/
+  policy: link_only
+  municipality:
+    code: '294268'
+    name: 広陵町
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '294268'
+    bank_url: https://www.town.koryo.nara.jp/
+    bank_status: none
+    map_query: 奈良県広陵町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 奈良県 県内市町村に掲載された公式サイト（www.town.koryo.nara.jp）
+    url: https://www.pref.nara.lg.jp/n002/1232.html
+    checked_on: '2026-09-11'
+- id: nara-294276
+  name: 河合町空き家バンク
+  operator: 河合町
+  operator_kind: municipality
+  official_url: https://www.town.kawai.nara.jp/
+  policy: link_only
+  municipality:
+    code: '294276'
+    name: 河合町
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '294276'
+    bank_url: https://www.town.kawai.nara.jp/
+    bank_status: none
+    map_query: 奈良県河合町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kawai.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kawai.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-294411
+  name: 吉野町空き家バンク
+  operator: 吉野町
+  operator_kind: municipality
+  official_url: https://www.town.yoshino.nara.jp/
+  policy: link_only
+  municipality:
+    code: '294411'
+    name: 吉野町
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '294411'
+    bank_url: https://www.town.yoshino.nara.jp/kurashi/sumai/akiya/index.html
+    bank_status: info
+    map_query: 奈良県吉野町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yoshino.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.yoshino.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-294420
+  name: 大淀町空き家バンク
+  operator: 大淀町
+  operator_kind: municipality
+  official_url: https://www.town.oyodo.lg.jp/
+  policy: crawl
+  municipality:
+    code: '294420'
+    name: 大淀町
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '294420'
+    bank_url: https://akiyaconcierge.com/area/ooyodo/
+    bank_status: available
+    map_query: 奈良県大淀町
+  operator_evidence:
+    quote: 公式サイト（www.town.oyodo.lg.jp）から空き家バンクとして案内されているリンク
+    url: https://www.town.oyodo.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://akiyaconcierge.com/area/ooyodo/
+    kind: listing_index
+    follow:
+    - pattern: https?://akiyaconcierge\.com/area/ooyodo/page/\d+/?$
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - akiyaconcierge.com
+  max_pages: 30
+- id: nara-294438
+  name: 下市町空き家バンク
+  operator: 下市町
+  operator_kind: municipality
+  official_url: https://www.town.shimoichi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '294438'
+    name: 下市町
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '294438'
+    bank_url: http://shimoichi-akiyabank.com/
+    bank_status: info
+    map_query: 奈良県下市町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式サイト（www.town.shimoichi.lg.jp）から空き家バンクとして案内されているリンク
+    url: https://www.town.shimoichi.lg.jp/
+    checked_on: '2026-09-11'
+- id: nara-294446
+  name: 黒滝村空き家バンク
+  operator: 黒滝村
+  operator_kind: municipality
+  official_url: https://www.vill.kurotaki.nara.jp/
+  policy: link_only
+  municipality:
+    code: '294446'
+    name: 黒滝村
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '294446'
+    bank_url: https://www.vill.kurotaki.nara.jp/
+    bank_status: none
+    map_query: 奈良県黒滝村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.kurotaki.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.kurotaki.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-294462
+  name: 天川村空き家バンク
+  operator: 天川村
+  operator_kind: municipality
+  official_url: https://www.vill.tenkawa.nara.jp/
+  policy: link_only
+  municipality:
+    code: '294462'
+    name: 天川村
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '294462'
+    bank_url: https://www.vill.tenkawa.nara.jp/
+    bank_status: none
+    map_query: 奈良県天川村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.tenkawa.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.tenkawa.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-294471
+  name: 野迫川村空き家バンク
+  operator: 野迫川村
+  operator_kind: municipality
+  official_url: https://www.vill.nosegawa.nara.jp/
+  policy: link_only
+  municipality:
+    code: '294471'
+    name: 野迫川村
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '294471'
+    bank_url: https://www.vill.nosegawa.nara.jp/
+    bank_status: none
+    map_query: 奈良県野迫川村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.nosegawa.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.nosegawa.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-294497
+  name: 十津川村空き家バンク
+  operator: 十津川村
+  operator_kind: municipality
+  official_url: https://www.vill.totsukawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '294497'
+    name: 十津川村
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '294497'
+    bank_url: https://www.vill.totsukawa.lg.jp/akiyabank/index.php
+    bank_status: info
+    map_query: 奈良県十津川村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.totsukawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.vill.totsukawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: nara-294501
+  name: 下北山村空き家バンク
+  operator: 下北山村
+  operator_kind: municipality
+  official_url: https://www.vill.shimokitayama.nara.jp/
+  policy: link_only
+  municipality:
+    code: '294501'
+    name: 下北山村
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '294501'
+    bank_url: http://www.vill.shimokitayama.nara.jp/teiju/post_1.html
+    bank_status: info
+    map_query: 奈良県下北山村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.shimokitayama.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.shimokitayama.nara.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: homes.co.jp
+    url: https://www.homes.co.jp/akiyabank/nara/yoshino_shimokitayama/
+  - label: akiya-athome.jp
+    url: https://shimokitayama-v29450.akiya-athome.jp/
+- id: nara-294519
+  name: 上北山村空き家バンク
+  operator: 上北山村
+  operator_kind: municipality
+  official_url: https://www.vill.kamikitayama.nara.jp/
+  policy: link_only
+  municipality:
+    code: '294519'
+    name: 上北山村
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '294519'
+    bank_url: https://www.vill.kamikitayama.nara.jp/
+    bank_status: none
+    map_query: 奈良県上北山村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.kamikitayama.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.kamikitayama.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-294527
+  name: 川上村空き家バンク
+  operator: 川上村
+  operator_kind: municipality
+  official_url: https://www.vill.kawakami.nara.jp/
+  policy: link_only
+  municipality:
+    code: '294527'
+    name: 川上村
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '294527'
+    bank_url: https://www.vill.kawakami.nara.jp/life/soshiki/zenka/kurashiteijuka/more.html
+    bank_status: info
+    map_query: 奈良県川上村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.vill.kawakami.nara.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.vill.kawakami.nara.jp/
+    checked_on: '2026-09-11'
+- id: nara-294535
+  name: 東吉野村空き家バンク
+  operator: 東吉野村
+  operator_kind: municipality
+  official_url: https://vill.higashiyoshino.nara.jp/
+  policy: link_only
+  municipality:
+    code: '294535'
+    name: 東吉野村
+    prefecture: 奈良県
+    prefecture_slug: nara
+    slug: '294535'
+    bank_url: https://vill.higashiyoshino.nara.jp/
+    bank_status: none
+    map_query: 奈良県東吉野村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 奈良県 県内市町村に掲載された公式サイト（vill.higashiyoshino.nara.jp）
+    url: https://www.pref.nara.lg.jp/n002/1232.html
+    checked_on: '2026-09-11'

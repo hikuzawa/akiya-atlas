@@ -1,0 +1,298 @@
+prefecture: 長崎県
+prefecture_slug: nagasaki
+created_at: '2026-09-11T01:17:30+00:00'
+candidates:
+- key: '422011'
+  label: 長崎県 長崎市
+  url: https://www.city.nagasaki.lg.jp/life/4/30/123/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nagasaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.nagasaki.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '422029'
+  label: 長崎県 佐世保市
+  url: https://www.city.sasebo.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sasebo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.sasebo.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '422037'
+  label: 長崎県 島原市
+  url: https://www.city.shimabara.lg.jp/page3702.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shimabara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.shimabara.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '422045'
+  label: 長崎県 諫早市
+  url: https://www.city.isahaya.nagasaki.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.isahaya.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.isahaya.nagasaki.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '422053'
+  label: 長崎県 大村市
+  url: https://www.city.omura.nagasaki.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.omura.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.omura.nagasaki.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '422070'
+  label: 長崎県 平戸市
+  url: https://www.city.hirado.nagasaki.jp/kurashi/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hirado.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.hirado.nagasaki.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '422088'
+  label: 長崎県 松浦市
+  url: https://www.city-matsuura.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 長崎県 県内市町に掲載された公式サイト（www.city-matsuura.jp）
+  evidence_url: https://www.pref.nagasaki.jp/pages/page-31.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '422096'
+  label: 長崎県 対馬市
+  url: https://www.city.tsushima.lg.jp/kurashi/sumaikenchiku/akiya/index.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tsushima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tsushima.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '422100'
+  label: 長崎県 壱岐市
+  url: https://www.city.iki.nagasaki.jp/mokuteki/hikkoshi/3069.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.iki.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.iki.nagasaki.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '422118'
+  label: 長崎県 五島市
+  url: https://www.city.goto.nagasaki.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.goto.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.goto.nagasaki.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '422126'
+  label: 長崎県 西海市
+  url: https://www.city.saikai.nagasaki.jp/kurashi/jutaku/2/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.saikai.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.saikai.nagasaki.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '422134'
+  label: 長崎県 雲仙市
+  url: https://www.city.unzen.nagasaki.jp/dynamic/ijuu/info/pub/default.aspx?c_id=30&pg=1
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.unzen.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.unzen.nagasaki.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '422142'
+  label: 長崎県 南島原市
+  url: https://www.city.minamishimabara.lg.jp/kiji0037240/index.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.minamishimabara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.minamishimabara.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '423076'
+  label: 長崎県 長与町
+  url: https://webtown.nagayo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 長崎県 県内市町に掲載された公式サイト（webtown.nagayo.jp）
+  evidence_url: https://www.pref.nagasaki.jp/pages/page-31.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '423084'
+  label: 長崎県 時津町
+  url: https://www.town.togitsu.nagasaki.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.togitsu.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.togitsu.nagasaki.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '423211'
+  label: 長崎県 東彼杵町
+  url: https://www.town.higashisonogi.lg.jp/kurashi_tetsuzuki/sumai_suido/429.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.higashisonogi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.higashisonogi.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '423220'
+  label: 長崎県 川棚町
+  url: https://www.kawatana.jp/akiyabank/post-1375.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 長崎県 県内市町に掲載された公式サイト（www.kawatana.jp）
+  evidence_url: https://www.pref.nagasaki.jp/pages/page-31.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '423238'
+  label: 長崎県 波佐見町
+  url: https://www.town.hasami.lg.jp/kiji0031056/index.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.87
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.hasami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.hasami.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '423831'
+  label: 長崎県 小値賀町
+  url: https://www.town.ojika.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ojika.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.ojika.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '423912'
+  label: 長崎県 佐々町
+  url: https://www.sazacho-nagasaki.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 長崎県 県内市町に掲載された公式サイト（www.sazacho-nagasaki.jp）
+  evidence_url: https://www.pref.nagasaki.jp/pages/page-31.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '424111'
+  label: 長崎県 新上五島町
+  url: https://official.shinkamigoto.net/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 長崎県 県内市町に掲載された公式サイト（official.shinkamigoto.net）
+  evidence_url: https://www.pref.nagasaki.jp/pages/page-31.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

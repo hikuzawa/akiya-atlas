@@ -1,0 +1,578 @@
+prefecture: 兵庫県
+prefecture_slug: hyogo
+created_at: '2026-09-11T02:36:37+00:00'
+candidates:
+- key: '281000'
+  label: 兵庫県 神戸市
+  url: https://www.city.kobe.lg.jp/a92551/akiya_support.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kobe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kobe.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282014'
+  label: 兵庫県 姫路市
+  url: https://www.city.himeji.lg.jp/kurashi/category/2-3-7-0-0-0-0-0-0-0.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.himeji.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.himeji.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282022'
+  label: 兵庫県 尼崎市
+  url: https://www.city.amagasaki.hyogo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.amagasaki.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.amagasaki.hyogo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282031'
+  label: 兵庫県 明石市
+  url: https://www.city.akashi.lg.jp/tosei/kouen_ka/boen/akihigan.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.akashi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.akashi.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282049'
+  label: 兵庫県 西宮市
+  url: https://www.nishi.or.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.nishi.or.jp）
+  evidence_url: https://web.pref.hyogo.lg.jp/link/pref.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282057'
+  label: 兵庫県 洲本市
+  url: https://www.city.sumoto.lg.jp/soshiki/22/15538.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sumoto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.sumoto.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282065'
+  label: 兵庫県 芦屋市
+  url: https://www.city.ashiya.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ashiya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.ashiya.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282073'
+  label: 兵庫県 伊丹市
+  url: https://www.city.itami.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.itami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.itami.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282081'
+  label: 兵庫県 相生市
+  url: https://www.city.aioi.lg.jp/site/aioisiakiyabank/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.aioi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.aioi.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282090'
+  label: 兵庫県 豊岡市
+  url: https://www.city.toyooka.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.toyooka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.toyooka.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282103'
+  label: 兵庫県 加古川市
+  url: https://www.city.kakogawa.lg.jp/soshikikarasagasu/tosi_kekaku/jyutaku/akiya_akichi/40768.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kakogawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kakogawa.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282120'
+  label: 兵庫県 赤穂市
+  url: https://www.city.ako.lg.jp/sangyoshinko/kanko/teiju/akiya_bank.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ako.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.ako.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282138'
+  label: 兵庫県 西脇市
+  url: https://www.city.nishiwaki.lg.jp/iju/topics/1477612996430.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.nishiwaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.nishiwaki.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282146'
+  label: 兵庫県 宝塚市
+  url: https://www.city.takarazuka.hyogo.jp/1060678/1060691/1028025/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.takarazuka.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.takarazuka.hyogo.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282154'
+  label: 兵庫県 三木市
+  url: https://www.city.miki.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.miki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.miki.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282162'
+  label: 兵庫県 高砂市
+  url: https://www.city.takasago.lg.jp/gyoseisite/kurashi_tetsuzuki/taishinakiyakenchiku/10720.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.takasago.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.takasago.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282171'
+  label: 兵庫県 川西市
+  url: https://www.city.kawanishi.hyogo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kawanishi.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kawanishi.hyogo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282189'
+  label: 兵庫県 小野市
+  url: https://www.city.ono.hyogo.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/2/5107.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ono.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.ono.hyogo.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282197'
+  label: 兵庫県 三田市
+  url: https://www.city.sanda.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.sanda.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.sanda.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282201'
+  label: 兵庫県 加西市
+  url: https://www.city.kasai.hyogo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kasai.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kasai.hyogo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282219'
+  label: 兵庫県 丹波篠山市
+  url: https://classo.jp/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.92
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.city.tambasasayama.lg.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.city.tambasasayama.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282227'
+  label: 兵庫県 養父市
+  url: https://www.city.yabu.hyogo.jp/kurashi_tetsuzuki/kurashi_sumai/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yabu.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.yabu.hyogo.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282235'
+  label: 兵庫県 丹波市
+  url: https://www.city.tamba.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.city.tamba.lg.jp）
+  evidence_url: https://web.pref.hyogo.lg.jp/link/pref.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282243'
+  label: 兵庫県 南あわじ市
+  url: https://www.city.minamiawaji.hyogo.jp/soshiki/toshi/akiyabank.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.minamiawaji.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.minamiawaji.hyogo.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282251'
+  label: 兵庫県 朝来市
+  url: https://www.city.asago.hyogo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.asago.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.asago.hyogo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282260'
+  label: 兵庫県 淡路市
+  url: https://www.city.awaji.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.awaji.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.awaji.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282278'
+  label: 兵庫県 宍粟市
+  url: https://www.city.shiso.lg.jp/kurashi/sumai/akiyabank/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shiso.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.shiso.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282286'
+  label: 兵庫県 加東市
+  url: https://www.city.kato.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.kato.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '282294'
+  label: 兵庫県 たつの市
+  url: https://www.city.tatsuno.lg.jp/iju/akiya-bank/1410.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.tatsuno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.tatsuno.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '283011'
+  label: 兵庫県 猪名川町
+  url: https://www.town.inagawa.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.inagawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.inagawa.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '283657'
+  label: 兵庫県 多可町
+  url: https://www.town.taka.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.town.taka.lg.jp）。サイトを取得できなかったためリンクのみ（robots.txt を取得できないため今回は巡回しない）
+  evidence_url: https://web.pref.hyogo.lg.jp/link/pref.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '283819'
+  label: 兵庫県 稲美町
+  url: https://www.town.hyogo-inami.lg.jp/0000003232.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.86
+  operator_kind: municipality
+  evidence_quote: 兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.town.hyogo-inami.lg.jp）
+  evidence_url: https://web.pref.hyogo.lg.jp/link/pref.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '283827'
+  label: 兵庫県 播磨町
+  url: https://www.town.harima.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.harima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.harima.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '284424'
+  label: 兵庫県 市川町
+  url: https://www.town.ichikawa.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ichikawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.ichikawa.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '284432'
+  label: 兵庫県 福崎町
+  url: http://www.town.fukusaki.hyogo.jp/0000001949.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.fukusaki.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.fukusaki.hyogo.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '284467'
+  label: 兵庫県 神河町
+  url: https://www.town.kamikawa.hyogo.jp/0000000317.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kamikawa.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kamikawa.hyogo.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '284645'
+  label: 兵庫県 太子町
+  url: https://www.town.hyogo-taishi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.town.hyogo-taishi.lg.jp）
+  evidence_url: https://web.pref.hyogo.lg.jp/link/pref.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '284815'
+  label: 兵庫県 上郡町
+  url: https://www.town.kamigori.hyogo.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kamigori.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kamigori.hyogo.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '285013'
+  label: 兵庫県 佐用町
+  url: https://www.town.sayo.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.sayo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.sayo.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '285854'
+  label: 兵庫県 香美町
+  url: https://www.town.mikata-kami.lg.jp/kurashi-tetsuzuki/iju-teiju-akiya/2904.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.town.mikata-kami.lg.jp）
+  evidence_url: https://web.pref.hyogo.lg.jp/link/pref.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '285862'
+  label: 兵庫県 新温泉町
+  url: https://ijyu.shinonsen.com/news/2535/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.town.shinonsen.hyogo.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.town.shinonsen.hyogo.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

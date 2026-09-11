@@ -1,0 +1,1259 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: fukuoka-401005
+  name: 北九州市空き家バンク
+  operator: 北九州市
+  operator_kind: municipality
+  official_url: https://www.city.kitakyushu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '401005'
+    name: 北九州市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '401005'
+    bank_url: https://www.city.kitakyushu.lg.jp/
+    bank_status: none
+    map_query: 福岡県北九州市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kitakyushu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kitakyushu.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-401307
+  name: 福岡市空き家バンク
+  operator: 福岡市
+  operator_kind: municipality
+  official_url: https://www.city.fukuoka.lg.jp/
+  policy: link_only
+  municipality:
+    code: '401307'
+    name: 福岡市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '401307'
+    bank_url: https://www.city.fukuoka.lg.jp/jutaku-toshi/jigyochosei/life/top_2.html
+    bank_status: info
+    map_query: 福岡県福岡市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.fukuoka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.fukuoka.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402028
+  name: 大牟田市空き家バンク
+  operator: 大牟田市
+  operator_kind: municipality
+  official_url: https://www.city.omuta.lg.jp/
+  policy: link_only
+  municipality:
+    code: '402028'
+    name: 大牟田市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402028'
+    bank_url: https://www.city.omuta.lg.jp/
+    bank_status: none
+    map_query: 福岡県大牟田市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.omuta.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.omuta.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402036
+  name: 久留米市空き家バンク
+  operator: 久留米市
+  operator_kind: municipality
+  official_url: https://www.city.kurume.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '402036'
+    name: 久留米市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402036'
+    bank_url: https://www.city.kurume.fukuoka.jp/
+    bank_status: none
+    map_query: 福岡県久留米市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kurume.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kurume.fukuoka.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402044
+  name: 直方市空き家バンク
+  operator: 直方市
+  operator_kind: municipality
+  official_url: https://www.city.nogata.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '402044'
+    name: 直方市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402044'
+    bank_url: https://www.city.nogata.fukuoka.jp/
+    bank_status: none
+    map_query: 福岡県直方市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nogata.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.nogata.fukuoka.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402052
+  name: 飯塚市空き家バンク
+  operator: 飯塚市
+  operator_kind: municipality
+  official_url: https://www.city.iizuka.lg.jp/
+  policy: link_only
+  municipality:
+    code: '402052'
+    name: 飯塚市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402052'
+    bank_url: https://www.city.iizuka.lg.jp/life/1/7/26/
+    bank_status: info
+    map_query: 福岡県飯塚市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.iizuka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.iizuka.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402061
+  name: 田川市空き家バンク
+  operator: 田川市
+  operator_kind: municipality
+  official_url: https://www.joho.tagawa.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '402061'
+    name: 田川市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402061'
+    bank_url: https://www.joho.tagawa.fukuoka.jp/
+    bank_status: none
+    map_query: 福岡県田川市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 福岡県内市町村へのリンク集に掲載された公式サイト（www.joho.tagawa.fukuoka.jp）
+    url: https://www.pref.fukuoka.lg.jp/contents/shichoson01.html
+    checked_on: '2026-09-11'
+- id: fukuoka-402079
+  name: 柳川市空き家バンク
+  operator: 柳川市
+  operator_kind: municipality
+  official_url: https://www.city.yanagawa.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '402079'
+    name: 柳川市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402079'
+    bank_url: https://www.city.yanagawa.fukuoka.jp/
+    bank_status: none
+    map_query: 福岡県柳川市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yanagawa.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.yanagawa.fukuoka.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402109
+  name: 八女市空き家バンク
+  operator: 八女市
+  operator_kind: municipality
+  official_url: https://www.city.yame.fukuoka.jp/
+  policy: crawl
+  municipality:
+    code: '402109'
+    name: 八女市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402109'
+    bank_url: https://www.city.yame.fukuoka.jp/kurashi/10755.html
+    bank_status: available
+    map_query: 福岡県八女市
+  operator_evidence:
+    quote: 公式ドメイン www.city.yame.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.yame.fukuoka.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.yame.fukuoka.jp/kurashi/10755.html
+    kind: listing_index
+    follow:
+    - pattern: https?://www\.city\.yame\.fukuoka\.jp/kurashi/10755\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
+      kind: listing_index
+      max_links: 20
+  allow_hosts:
+  - www.city.yame.fukuoka.jp
+  max_pages: 30
+- id: fukuoka-402117
+  name: 筑後市空き家バンク
+  operator: 筑後市
+  operator_kind: municipality
+  official_url: https://www.city.chikugo.lg.jp/
+  policy: link_only
+  municipality:
+    code: '402117'
+    name: 筑後市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402117'
+    bank_url: https://www.city.chikugo.lg.jp/kurashi/_2299/_13109/
+    bank_status: info
+    map_query: 福岡県筑後市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.chikugo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.chikugo.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402125
+  name: 大川市空き家バンク
+  operator: 大川市
+  operator_kind: municipality
+  official_url: https://www.city.okawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '402125'
+    name: 大川市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402125'
+    bank_url: https://www.city.okawa.lg.jp/
+    bank_status: none
+    map_query: 福岡県大川市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.okawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.okawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402133
+  name: 行橋市空き家バンク
+  operator: 行橋市
+  operator_kind: municipality
+  official_url: https://www.city.yukuhashi.fukuoka.jp/
+  policy: crawl
+  municipality:
+    code: '402133'
+    name: 行橋市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402133'
+    bank_url: https://www.city.yukuhashi.fukuoka.jp/site/akiya/1411.html
+    bank_status: available
+    map_query: 福岡県行橋市
+  operator_evidence:
+    quote: 公式ドメイン www.city.yukuhashi.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.yukuhashi.fukuoka.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.yukuhashi.fukuoka.jp/site/akiya/1411.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.yukuhashi.fukuoka.jp
+  max_pages: 30
+  external_links:
+  - label: homes.co.jp
+    url: https://www.homes.co.jp/akiyabank/
+  - label: akiya-athome.jp
+    url: https://yukuhashi-c40213.akiya-athome.jp/
+- id: fukuoka-402141
+  name: 豊前市空き家バンク
+  operator: 豊前市
+  operator_kind: municipality
+  official_url: https://www.city.buzen.lg.jp/
+  policy: link_only
+  municipality:
+    code: '402141'
+    name: 豊前市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402141'
+    bank_url: https://www.city.buzen.lg.jp/akiya/akiyabank.html
+    bank_status: info
+    map_query: 福岡県豊前市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.buzen.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.buzen.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402150
+  name: 中間市空き家バンク
+  operator: 中間市
+  operator_kind: municipality
+  official_url: https://www.city.nakama.lg.jp/
+  policy: crawl
+  municipality:
+    code: '402150'
+    name: 中間市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402150'
+    bank_url: https://www.city.nakama.lg.jp/akiya/search/search.php
+    bank_status: available
+    map_query: 福岡県中間市
+  operator_evidence:
+    quote: 公式ドメイン www.city.nakama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.nakama.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.nakama.lg.jp/akiya/search/search.php
+    kind: listing_index
+  allow_hosts:
+  - www.city.nakama.lg.jp
+  max_pages: 30
+- id: fukuoka-402168
+  name: 小郡市空き家バンク
+  operator: 小郡市
+  operator_kind: municipality
+  official_url: https://www.city.ogori.fukuoka.jp/
+  policy: crawl
+  municipality:
+    code: '402168'
+    name: 小郡市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402168'
+    bank_url: https://www.city.ogori.fukuoka.jp/197/796/2190
+    bank_status: available
+    map_query: 福岡県小郡市
+  operator_evidence:
+    quote: 公式ドメイン www.city.ogori.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.ogori.fukuoka.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.ogori.fukuoka.jp/197/796/2190
+    kind: listing_index
+  allow_hosts:
+  - www.city.ogori.fukuoka.jp
+  max_pages: 30
+- id: fukuoka-402176
+  name: 筑紫野市空き家バンク
+  operator: 筑紫野市
+  operator_kind: municipality
+  official_url: https://www.city.chikushino.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '402176'
+    name: 筑紫野市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402176'
+    bank_url: https://www.city.chikushino.fukuoka.jp/
+    bank_status: none
+    map_query: 福岡県筑紫野市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.chikushino.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.chikushino.fukuoka.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402184
+  name: 春日市空き家バンク
+  operator: 春日市
+  operator_kind: municipality
+  official_url: https://www.city.kasuga.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '402184'
+    name: 春日市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402184'
+    bank_url: https://www.city.kasuga.fukuoka.jp/
+    bank_status: none
+    map_query: 福岡県春日市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kasuga.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.kasuga.fukuoka.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402192
+  name: 大野城市空き家バンク
+  operator: 大野城市
+  operator_kind: municipality
+  official_url: https://www.city.onojo.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '402192'
+    name: 大野城市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402192'
+    bank_url: https://www.city.onojo.fukuoka.jp/
+    bank_status: none
+    map_query: 福岡県大野城市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.onojo.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.onojo.fukuoka.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402206
+  name: 宗像市空き家バンク
+  operator: 宗像市
+  operator_kind: municipality
+  official_url: https://www.city.munakata.lg.jp/
+  policy: link_only
+  municipality:
+    code: '402206'
+    name: 宗像市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402206'
+    bank_url: https://www.city.munakata.lg.jp/
+    bank_status: none
+    map_query: 福岡県宗像市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.munakata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.munakata.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402214
+  name: 太宰府市空き家バンク
+  operator: 太宰府市
+  operator_kind: municipality
+  official_url: https://www.city.dazaifu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '402214'
+    name: 太宰府市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402214'
+    bank_url: https://www.city.dazaifu.lg.jp/
+    bank_status: none
+    map_query: 福岡県太宰府市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.dazaifu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.dazaifu.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402231
+  name: 古賀市空き家バンク
+  operator: 古賀市
+  operator_kind: municipality
+  official_url: https://www.city.koga.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '402231'
+    name: 古賀市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402231'
+    bank_url: https://www.city.koga.fukuoka.jp/
+    bank_status: none
+    map_query: 福岡県古賀市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.koga.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.koga.fukuoka.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402249
+  name: 福津市空き家バンク
+  operator: 福津市
+  operator_kind: municipality
+  official_url: https://www.city.fukutsu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '402249'
+    name: 福津市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402249'
+    bank_url: https://www.city.fukutsu.lg.jp/
+    bank_status: none
+    map_query: 福岡県福津市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.fukutsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.fukutsu.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402257
+  name: うきは市空き家バンク
+  operator: うきは市
+  operator_kind: municipality
+  official_url: https://www.city.ukiha.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '402257'
+    name: うきは市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402257'
+    bank_url: https://www.city.ukiha.fukuoka.jp/
+    bank_status: none
+    map_query: 福岡県うきは市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.ukiha.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.ukiha.fukuoka.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402265
+  name: 宮若市空き家バンク
+  operator: 宮若市
+  operator_kind: municipality
+  official_url: https://www.city.miyawaka.lg.jp/
+  policy: link_only
+  municipality:
+    code: '402265'
+    name: 宮若市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402265'
+    bank_url: https://www.city.miyawaka.lg.jp/
+    bank_status: none
+    map_query: 福岡県宮若市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.miyawaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.miyawaka.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402273
+  name: 嘉麻市空き家バンク
+  operator: 嘉麻市
+  operator_kind: municipality
+  official_url: https://www.city.kama.lg.jp/
+  policy: link_only
+  municipality:
+    code: '402273'
+    name: 嘉麻市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402273'
+    bank_url: https://www.city.kama.lg.jp/life/1/11/131/
+    bank_status: info
+    map_query: 福岡県嘉麻市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.kama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.kama.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402281
+  name: 朝倉市空き家バンク
+  operator: 朝倉市
+  operator_kind: municipality
+  official_url: https://www.city.asakura.lg.jp/
+  policy: link_only
+  municipality:
+    code: '402281'
+    name: 朝倉市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402281'
+    bank_url: https://www.city.asakura.lg.jp/akiya/
+    bank_status: spa_unsupported
+    map_query: 福岡県朝倉市
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.asakura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.asakura.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402290
+  name: みやま市空き家バンク
+  operator: みやま市
+  operator_kind: municipality
+  official_url: https://www.city.miyama.lg.jp/
+  policy: link_only
+  municipality:
+    code: '402290'
+    name: みやま市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402290'
+    bank_url: https://www.city.miyama.lg.jp/sp001/010/20201218181720.html
+    bank_status: info
+    map_query: 福岡県みやま市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.miyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.miyama.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402303
+  name: 糸島市空き家バンク
+  operator: 糸島市
+  operator_kind: municipality
+  official_url: https://www.city.itoshima.lg.jp/
+  policy: link_only
+  municipality:
+    code: '402303'
+    name: 糸島市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402303'
+    bank_url: https://www.city.itoshima.lg.jp/
+    bank_status: none
+    map_query: 福岡県糸島市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.itoshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.itoshima.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-402311
+  name: 那珂川市空き家バンク
+  operator: 那珂川市
+  operator_kind: municipality
+  official_url: https://www.city.nakagawa.lg.jp/
+  policy: link_only
+  municipality:
+    code: '402311'
+    name: 那珂川市
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '402311'
+    bank_url: https://www.city.nakagawa.lg.jp/soshiki/35/akiyabosyu.html
+    bank_status: info
+    map_query: 福岡県那珂川市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.nakagawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.nakagawa.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-403415
+  name: 宇美町空き家バンク
+  operator: 宇美町
+  operator_kind: municipality
+  official_url: https://www.town.umi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '403415'
+    name: 宇美町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '403415'
+    bank_url: https://www.town.umi.lg.jp/
+    bank_status: none
+    map_query: 福岡県宇美町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.umi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.umi.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-403423
+  name: 篠栗町空き家バンク
+  operator: 篠栗町
+  operator_kind: municipality
+  official_url: https://www.town.sasaguri.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '403423'
+    name: 篠栗町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '403423'
+    bank_url: https://www.town.sasaguri.fukuoka.jp/
+    bank_status: none
+    map_query: 福岡県篠栗町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.sasaguri.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.sasaguri.fukuoka.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-403431
+  name: 志免町空き家バンク
+  operator: 志免町
+  operator_kind: municipality
+  official_url: https://www.town.shime.lg.jp/
+  policy: link_only
+  municipality:
+    code: '403431'
+    name: 志免町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '403431'
+    bank_url: https://www.town.shime.lg.jp/
+    bank_status: none
+    map_query: 福岡県志免町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shime.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.shime.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-403440
+  name: 須恵町空き家バンク
+  operator: 須恵町
+  operator_kind: municipality
+  official_url: https://www.town.sue.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '403440'
+    name: 須恵町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '403440'
+    bank_url: https://www.town.sue.fukuoka.jp/
+    bank_status: none
+    map_query: 福岡県須恵町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.sue.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.sue.fukuoka.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-403458
+  name: 新宮町空き家バンク
+  operator: 新宮町
+  operator_kind: municipality
+  official_url: https://www.town.shingu.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '403458'
+    name: 新宮町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '403458'
+    bank_url: https://www.town.shingu.fukuoka.jp/
+    bank_status: none
+    map_query: 福岡県新宮町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.shingu.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.shingu.fukuoka.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-403482
+  name: 久山町空き家バンク
+  operator: 久山町
+  operator_kind: municipality
+  official_url: https://www.town.hisayama.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '403482'
+    name: 久山町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '403482'
+    bank_url: https://www.town.hisayama.fukuoka.jp/gyosei/kurashi/sumai/3/index.html
+    bank_status: info
+    map_query: 福岡県久山町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.hisayama.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.hisayama.fukuoka.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-403491
+  name: 粕屋町空き家バンク
+  operator: 粕屋町
+  operator_kind: municipality
+  official_url: https://www.town.kasuya.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '403491'
+    name: 粕屋町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '403491'
+    bank_url: https://www.town.kasuya.fukuoka.jp/
+    bank_status: none
+    map_query: 福岡県粕屋町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kasuya.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kasuya.fukuoka.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-403814
+  name: 芦屋町空き家バンク
+  operator: 芦屋町
+  operator_kind: municipality
+  official_url: https://www.town.ashiya.lg.jp/
+  policy: link_only
+  municipality:
+    code: '403814'
+    name: 芦屋町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '403814'
+    bank_url: https://www.town.ashiya.lg.jp/life/1/11/52/
+    bank_status: info
+    map_query: 福岡県芦屋町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ashiya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.ashiya.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-403822
+  name: 水巻町空き家バンク
+  operator: 水巻町
+  operator_kind: municipality
+  official_url: https://www.town.mizumaki.lg.jp/
+  policy: link_only
+  municipality:
+    code: '403822'
+    name: 水巻町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '403822'
+    bank_url: https://www.town.mizumaki.lg.jp/iju/
+    bank_status: info
+    map_query: 福岡県水巻町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.mizumaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.mizumaki.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-403831
+  name: 岡垣町空き家バンク
+  operator: 岡垣町
+  operator_kind: municipality
+  official_url: https://www.town.okagaki.lg.jp/
+  policy: link_only
+  municipality:
+    code: '403831'
+    name: 岡垣町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '403831'
+    bank_url: https://www.town.okagaki.lg.jp/010/050/070/20181029151015.html
+    bank_status: info
+    map_query: 福岡県岡垣町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.okagaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.okagaki.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-403849
+  name: 遠賀町空き家バンク
+  operator: 遠賀町
+  operator_kind: municipality
+  official_url: https://www.town.onga.lg.jp/
+  policy: link_only
+  municipality:
+    code: '403849'
+    name: 遠賀町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '403849'
+    bank_url: https://www.town.onga.lg.jp/
+    bank_status: none
+    map_query: 福岡県遠賀町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.onga.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.onga.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-404012
+  name: 小竹町空き家バンク
+  operator: 小竹町
+  operator_kind: municipality
+  official_url: https://town.kotake.lg.jp/
+  policy: link_only
+  municipality:
+    code: '404012'
+    name: 小竹町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '404012'
+    bank_url: https://town.kotake.lg.jp/
+    bank_status: none
+    map_query: 福岡県小竹町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン town.kotake.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://town.kotake.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-404021
+  name: 鞍手町空き家バンク
+  operator: 鞍手町
+  operator_kind: municipality
+  official_url: https://www.town.kurate.lg.jp/
+  policy: crawl
+  municipality:
+    code: '404021'
+    name: 鞍手町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '404021'
+    bank_url: https://www.town.kurate.lg.jp/syoukai/akiyabank/bukken_ichiran.html
+    bank_status: available
+    map_query: 福岡県鞍手町
+  operator_evidence:
+    quote: 公式ドメイン www.town.kurate.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kurate.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.kurate.lg.jp/syoukai/akiyabank/bukken_ichiran.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.kurate.lg.jp
+  max_pages: 30
+- id: fukuoka-404217
+  name: 桂川町空き家バンク
+  operator: 桂川町
+  operator_kind: municipality
+  official_url: https://www.town.keisen.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '404217'
+    name: 桂川町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '404217'
+    bank_url: https://www.town.keisen.fukuoka.jp/akiyabank/
+    bank_status: info
+    map_query: 福岡県桂川町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.keisen.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.keisen.fukuoka.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-404471
+  name: 筑前町空き家バンク
+  operator: 筑前町
+  operator_kind: municipality
+  official_url: https://www.town.chikuzen.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '404471'
+    name: 筑前町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '404471'
+    bank_url: https://www.town.chikuzen.fukuoka.jp/
+    bank_status: none
+    map_query: 福岡県筑前町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.chikuzen.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.chikuzen.fukuoka.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-404489
+  name: 東峰村空き家バンク
+  operator: 東峰村
+  operator_kind: municipality
+  official_url: https://vill.toho-info.com/
+  policy: link_only
+  municipality:
+    code: '404489'
+    name: 東峰村
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '404489'
+    bank_url: https://vill.toho-info.com/
+    bank_status: none
+    map_query: 福岡県東峰村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 福岡県内市町村へのリンク集に掲載された公式サイト（vill.toho-info.com）
+    url: https://www.pref.fukuoka.lg.jp/contents/shichoson01.html
+    checked_on: '2026-09-11'
+- id: fukuoka-405035
+  name: 大刀洗町空き家バンク
+  operator: 大刀洗町
+  operator_kind: municipality
+  official_url: https://www.town.tachiarai.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '405035'
+    name: 大刀洗町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '405035'
+    bank_url: https://www.town.tachiarai.fukuoka.jp/
+    bank_status: none
+    map_query: 福岡県大刀洗町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.tachiarai.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.tachiarai.fukuoka.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-405221
+  name: 大木町空き家バンク
+  operator: 大木町
+  operator_kind: municipality
+  official_url: https://www.town.ooki.lg.jp/
+  policy: crawl
+  municipality:
+    code: '405221'
+    name: 大木町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '405221'
+    bank_url: https://www.town.ooki.lg.jp/cgi-bin/recruit.php/2/list?page_no=1
+    bank_status: available
+    map_query: 福岡県大木町
+  operator_evidence:
+    quote: 公式ドメイン www.town.ooki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.ooki.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.ooki.lg.jp/cgi-bin/recruit.php/2/list?page_no=1
+    kind: listing_index
+  allow_hosts:
+  - www.town.ooki.lg.jp
+  max_pages: 30
+- id: fukuoka-405442
+  name: 広川町空き家バンク
+  operator: 広川町
+  operator_kind: municipality
+  official_url: https://www.town.hirokawa.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '405442'
+    name: 広川町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '405442'
+    bank_url: https://www.town.hirokawa.fukuoka.jp/
+    bank_status: none
+    map_query: 福岡県広川町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.hirokawa.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.hirokawa.fukuoka.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-406015
+  name: 香春町空き家バンク
+  operator: 香春町
+  operator_kind: municipality
+  official_url: https://www.town.kawara.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '406015'
+    name: 香春町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '406015'
+    bank_url: https://www.town.kawara.fukuoka.jp/s045/kanko/040/090/20260401160635.html
+    bank_status: info
+    map_query: 福岡県香春町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kawara.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.kawara.fukuoka.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-406023
+  name: 添田町空き家バンク
+  operator: 添田町
+  operator_kind: municipality
+  official_url: https://www.town.soeda.fukuoka.jp/
+  policy: crawl
+  municipality:
+    code: '406023'
+    name: 添田町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '406023'
+    bank_url: https://www.town.soeda.fukuoka.jp/site/soeda-life/1107.html
+    bank_status: available
+    map_query: 福岡県添田町
+  operator_evidence:
+    quote: 公式ドメイン www.town.soeda.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.soeda.fukuoka.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.soeda.fukuoka.jp/site/soeda-life/1107.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.soeda.fukuoka.jp
+  max_pages: 30
+- id: fukuoka-406040
+  name: 糸田町空き家バンク
+  operator: 糸田町
+  operator_kind: municipality
+  official_url: https://www.town.itoda.lg.jp/
+  policy: link_only
+  municipality:
+    code: '406040'
+    name: 糸田町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '406040'
+    bank_url: https://www.town.itoda.lg.jp/
+    bank_status: none
+    map_query: 福岡県糸田町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.itoda.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.itoda.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-406058
+  name: 川崎町空き家バンク
+  operator: 川崎町
+  operator_kind: municipality
+  official_url: https://www.town-kawasaki.com/
+  policy: link_only
+  municipality:
+    code: '406058'
+    name: 川崎町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '406058'
+    bank_url: https://www.town-kawasaki.com/
+    bank_status: none
+    map_query: 福岡県川崎町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 福岡県内市町村へのリンク集に掲載された公式サイト（www.town-kawasaki.com）
+    url: https://www.pref.fukuoka.lg.jp/contents/shichoson01.html
+    checked_on: '2026-09-11'
+- id: fukuoka-406082
+  name: 大任町空き家バンク
+  operator: 大任町
+  operator_kind: municipality
+  official_url: https://www.town.oto.fukuoka.jp/
+  policy: crawl
+  municipality:
+    code: '406082'
+    name: 大任町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '406082'
+    bank_url: https://www.town.oto.fukuoka.jp/dynamic/info/pub/default.aspx?c_id=16
+    bank_status: available
+    map_query: 福岡県大任町
+  operator_evidence:
+    quote: 公式ドメイン www.town.oto.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.oto.fukuoka.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.oto.fukuoka.jp/dynamic/info/pub/default.aspx?c_id=16
+    kind: listing_index
+  allow_hosts:
+  - www.town.oto.fukuoka.jp
+  max_pages: 30
+- id: fukuoka-406091
+  name: 赤村空き家バンク
+  operator: 赤村
+  operator_kind: municipality
+  official_url: https://www.akamura.net/
+  policy: link_only
+  municipality:
+    code: '406091'
+    name: 赤村
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '406091'
+    bank_url: https://www.akamura.net/
+    bank_status: none
+    map_query: 福岡県赤村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 福岡県内市町村へのリンク集に掲載された公式サイト（www.akamura.net）
+    url: https://www.pref.fukuoka.lg.jp/contents/shichoson01.html
+    checked_on: '2026-09-11'
+- id: fukuoka-406104
+  name: 福智町空き家バンク
+  operator: 福智町
+  operator_kind: municipality
+  official_url: https://www.town.fukuchi.lg.jp/
+  policy: crawl
+  municipality:
+    code: '406104'
+    name: 福智町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '406104'
+    bank_url: http://fukuchi-life.com/
+    bank_status: available
+    map_query: 福岡県福智町
+  operator_evidence:
+    quote: 公式サイト（www.town.fukuchi.lg.jp）から空き家バンクとして案内されているリンク
+    url: https://www.town.fukuchi.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: http://fukuchi-life.com/
+    kind: listing_index
+  allow_hosts:
+  - fukuchi-life.com
+  max_pages: 30
+- id: fukuoka-406210
+  name: 苅田町空き家バンク
+  operator: 苅田町
+  operator_kind: municipality
+  official_url: https://www.town.kanda.lg.jp/
+  policy: link_only
+  municipality:
+    code: '406210'
+    name: 苅田町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '406210'
+    bank_url: https://www.town.kanda.lg.jp/life/1/5/24/
+    bank_status: info
+    map_query: 福岡県苅田町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.kanda.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.kanda.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-406252
+  name: みやこ町空き家バンク
+  operator: みやこ町
+  operator_kind: municipality
+  official_url: https://www.town.miyako.lg.jp/
+  policy: link_only
+  municipality:
+    code: '406252'
+    name: みやこ町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '406252'
+    bank_url: https://www.town.miyako.lg.jp/gyouseikeiei/akiya_bk/top2.html
+    bank_status: info
+    map_query: 福岡県みやこ町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.miyako.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.miyako.lg.jp/
+    checked_on: '2026-09-11'
+  external_links:
+  - label: LIFULL HOME'S空き家バンク
+    url: https://www.homes.co.jp/akiyabank/
+- id: fukuoka-406422
+  name: 吉富町空き家バンク
+  operator: 吉富町
+  operator_kind: municipality
+  official_url: https://www.town.yoshitomi.lg.jp/
+  policy: link_only
+  municipality:
+    code: '406422'
+    name: 吉富町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '406422'
+    bank_url: https://www.town.yoshitomi.lg.jp/
+    bank_status: none
+    map_query: 福岡県吉富町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.yoshitomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.yoshitomi.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-406465
+  name: 上毛町空き家バンク
+  operator: 上毛町
+  operator_kind: municipality
+  official_url: https://www.town.koge.lg.jp/
+  policy: link_only
+  municipality:
+    code: '406465'
+    name: 上毛町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '406465'
+    bank_url: https://www.town.koge.lg.jp/ijyu_teiju/akiyaakitibank/index.html
+    bank_status: info
+    map_query: 福岡県上毛町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.koge.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.koge.lg.jp/
+    checked_on: '2026-09-11'
+- id: fukuoka-406473
+  name: 築上町空き家バンク
+  operator: 築上町
+  operator_kind: municipality
+  official_url: https://www.town.chikujo.fukuoka.jp/
+  policy: link_only
+  municipality:
+    code: '406473'
+    name: 築上町
+    prefecture: 福岡県
+    prefecture_slug: fukuoka
+    slug: '406473'
+    bank_url: https://www.town.chikujo.fukuoka.jp/li/010/120/030/index.html
+    bank_status: info
+    map_query: 福岡県築上町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.chikujo.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.chikujo.fukuoka.jp/
+    checked_on: '2026-09-11'

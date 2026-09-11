@@ -1,5 +1,559 @@
 {
   "prefectures": {
+    "aichi": {
+      "discover": "2026-09-10T23:10:03+00:00",
+      "discover_stats": {
+        "adopted_crawl": 6,
+        "adopted_link_only": 48,
+        "minutes": 3.8,
+        "pending": 0,
+        "requests": 491,
+        "skipped_existing": 0,
+        "total": 54
+      },
+      "elapsed_minutes": 7.1,
+      "name": "愛知県"
+    },
+    "akita": {
+      "discover": "2026-09-10T21:56:24+00:00",
+      "discover_stats": {
+        "adopted_crawl": 2,
+        "adopted_link_only": 23,
+        "minutes": 1.9,
+        "pending": 0,
+        "requests": 235,
+        "skipped_existing": 0,
+        "total": 25
+      },
+      "elapsed_minutes": 2.5,
+      "name": "秋田県"
+    },
+    "aomori": {
+      "discover": "2026-09-10T21:47:57+00:00",
+      "discover_stats": {
+        "adopted_crawl": 4,
+        "adopted_link_only": 35,
+        "minutes": 3.1,
+        "pending": 1,
+        "requests": 348,
+        "skipped_existing": 0,
+        "total": 40
+      },
+      "elapsed_minutes": 3.5,
+      "name": "青森県"
+    },
+    "chiba": {
+      "discover": "2026-09-10T22:25:15+00:00",
+      "discover_stats": {
+        "adopted_crawl": 15,
+        "adopted_link_only": 39,
+        "minutes": 3.7,
+        "pending": 0,
+        "requests": 490,
+        "skipped_existing": 0,
+        "total": 54
+      },
+      "elapsed_minutes": 5.4,
+      "name": "千葉県"
+    },
+    "ehime": {
+      "discover": "2026-09-11T00:41:04+00:00",
+      "discover_stats": {
+        "adopted_crawl": 2,
+        "adopted_link_only": 18,
+        "minutes": 1.5,
+        "pending": 0,
+        "requests": 155,
+        "skipped_existing": 0,
+        "total": 20
+      },
+      "elapsed_minutes": 7.3,
+      "name": "愛媛県"
+    },
+    "fukui": {
+      "discover": "2026-09-10T22:47:18+00:00",
+      "discover_stats": {
+        "adopted_crawl": 5,
+        "adopted_link_only": 12,
+        "minutes": 1.5,
+        "pending": 0,
+        "requests": 153,
+        "skipped_existing": 0,
+        "total": 17
+      },
+      "elapsed_minutes": 4.0,
+      "name": "福井県"
+    },
+    "fukuoka": {
+      "discover": "2026-09-11T00:58:54+00:00",
+      "discover_stats": {
+        "adopted_crawl": 9,
+        "adopted_link_only": 51,
+        "minutes": 4.0,
+        "pending": 0,
+        "requests": 522,
+        "skipped_existing": 0,
+        "total": 60
+      },
+      "elapsed_minutes": 10.6,
+      "name": "福岡県"
+    },
+    "fukushima": {
+      "discover": "2026-09-10T22:03:47+00:00",
+      "discover_stats": {
+        "adopted_crawl": 17,
+        "adopted_link_only": 42,
+        "minutes": 4.1,
+        "pending": 0,
+        "requests": 542,
+        "skipped_existing": 0,
+        "total": 59
+      },
+      "elapsed_minutes": 4.8,
+      "name": "福島県"
+    },
+    "gifu": {
+      "discover": "2026-09-10T22:57:52+00:00",
+      "discover_stats": {
+        "adopted_crawl": 7,
+        "adopted_link_only": 34,
+        "minutes": 3.2,
+        "pending": 1,
+        "requests": 402,
+        "skipped_existing": 0,
+        "total": 42
+      },
+      "elapsed_minutes": 6.2,
+      "name": "岐阜県"
+    },
+    "gunma": {
+      "discover": "2026-09-10T22:14:45+00:00",
+      "discover_stats": {
+        "adopted_crawl": 4,
+        "adopted_link_only": 30,
+        "minutes": 2.7,
+        "pending": 1,
+        "requests": 304,
+        "skipped_existing": 0,
+        "total": 35
+      },
+      "elapsed_minutes": 4.0,
+      "name": "群馬県"
+    },
+    "hiroshima": {
+      "discover": "2026-09-11T00:19:50+00:00",
+      "discover_stats": {
+        "adopted_crawl": 2,
+        "adopted_link_only": 21,
+        "minutes": 1.8,
+        "pending": 0,
+        "requests": 202,
+        "skipped_existing": 0,
+        "total": 23
+      },
+      "elapsed_minutes": 7.1,
+      "name": "広島県"
+    },
+    "hokkaido": {
+      "discover": "2026-09-10T21:44:43+00:00",
+      "discover_stats": {
+        "adopted_crawl": 33,
+        "adopted_link_only": 146,
+        "minutes": 11.6,
+        "pending": 6,
+        "requests": 1638,
+        "skipped_existing": 0,
+        "total": 185
+      },
+      "elapsed_minutes": 11.7,
+      "name": "北海道"
+    },
+    "hyogo": {
+      "discover": "2026-09-10T23:39:24+00:00",
+      "discover_stats": {
+        "adopted_crawl": 8,
+        "adopted_link_only": 31,
+        "minutes": 2.6,
+        "pending": 2,
+        "requests": 331,
+        "skipped_existing": 0,
+        "total": 41
+      },
+      "elapsed_minutes": 6.8,
+      "name": "兵庫県"
+    },
+    "ibaraki": {
+      "discover": "2026-09-10T22:07:41+00:00",
+      "discover_stats": {
+        "adopted_crawl": 11,
+        "adopted_link_only": 32,
+        "minutes": 3.1,
+        "pending": 1,
+        "requests": 404,
+        "skipped_existing": 0,
+        "total": 44
+      },
+      "elapsed_minutes": 4.1,
+      "name": "茨城県"
+    },
+    "ishikawa": {
+      "discover": "2026-09-10T22:43:23+00:00",
+      "discover_stats": {
+        "adopted_crawl": 3,
+        "adopted_link_only": 16,
+        "minutes": 1.6,
+        "pending": 0,
+        "requests": 171,
+        "skipped_existing": 0,
+        "total": 19
+      },
+      "elapsed_minutes": 4.1,
+      "name": "石川県"
+    },
+    "iwate": {
+      "discover": "2026-09-10T21:50:53+00:00",
+      "discover_stats": {
+        "adopted_crawl": 9,
+        "adopted_link_only": 24,
+        "minutes": 2.6,
+        "pending": 0,
+        "requests": 276,
+        "skipped_existing": 0,
+        "total": 33
+      },
+      "elapsed_minutes": 3.0,
+      "name": "岩手県"
+    },
+    "kagawa": {
+      "discover": "既存",
+      "name": "香川県"
+    },
+    "kagoshima": {
+      "discover": "2026-09-11T02:17:25+00:00",
+      "discover_stats": {
+        "adopted_crawl": 10,
+        "adopted_link_only": 33,
+        "minutes": 2.3,
+        "pending": 0,
+        "requests": 326,
+        "skipped_existing": 0,
+        "total": 43
+      },
+      "elapsed_minutes": 10.6,
+      "name": "鹿児島県"
+    },
+    "kanagawa": {
+      "discover": "2026-09-10T22:35:26+00:00",
+      "discover_stats": {
+        "adopted_crawl": 6,
+        "adopted_link_only": 27,
+        "minutes": 2.6,
+        "pending": 0,
+        "requests": 276,
+        "skipped_existing": 0,
+        "total": 33
+      },
+      "elapsed_minutes": 4.7,
+      "name": "神奈川県"
+    },
+    "kochi": {
+      "discover": "2026-09-11T00:48:56+00:00",
+      "discover_stats": {
+        "adopted_crawl": 12,
+        "adopted_link_only": 22,
+        "minutes": 2.1,
+        "pending": 0,
+        "requests": 269,
+        "skipped_existing": 0,
+        "total": 34
+      },
+      "elapsed_minutes": 8.1,
+      "name": "高知県"
+    },
+    "kumamoto": {
+      "discover": "2026-09-11T01:27:32+00:00",
+      "discover_stats": {
+        "adopted_crawl": 8,
+        "adopted_link_only": 36,
+        "minutes": 3.0,
+        "pending": 1,
+        "requests": 399,
+        "skipped_existing": 0,
+        "total": 45
+      },
+      "elapsed_minutes": 10.4,
+      "name": "熊本県"
+    },
+    "kyoto": {
+      "discover": "2026-09-10T23:25:58+00:00",
+      "discover_stats": {
+        "adopted_crawl": 2,
+        "adopted_link_only": 24,
+        "minutes": 2.1,
+        "pending": 0,
+        "requests": 240,
+        "skipped_existing": 0,
+        "total": 26
+      },
+      "elapsed_minutes": 5.9,
+      "name": "京都府"
+    },
+    "mie": {
+      "discover": "2026-09-10T23:15:18+00:00",
+      "discover_stats": {
+        "adopted_crawl": 7,
+        "adopted_link_only": 22,
+        "minutes": 1.9,
+        "pending": 0,
+        "requests": 262,
+        "skipped_existing": 0,
+        "total": 29
+      },
+      "elapsed_minutes": 5.4,
+      "name": "三重県"
+    },
+    "miyagi": {
+      "discover": "2026-09-10T21:54:00+00:00",
+      "discover_stats": {
+        "adopted_crawl": 6,
+        "adopted_link_only": 29,
+        "minutes": 2.7,
+        "pending": 0,
+        "requests": 294,
+        "skipped_existing": 0,
+        "total": 35
+      },
+      "elapsed_minutes": 3.2,
+      "name": "宮城県"
+    },
+    "miyazaki": {
+      "discover": "2026-09-11T02:07:07+00:00",
+      "discover_stats": {
+        "adopted_crawl": 4,
+        "adopted_link_only": 22,
+        "minutes": 23.1,
+        "pending": 0,
+        "requests": 231,
+        "skipped_existing": 0,
+        "total": 26
+      },
+      "elapsed_minutes": 31.1,
+      "name": "宮崎県"
+    },
+    "nagano": {
+      "discover": "既存",
+      "name": "長野県"
+    },
+    "nagasaki": {
+      "discover": "2026-09-11T01:17:30+00:00",
+      "discover_stats": {
+        "adopted_crawl": 5,
+        "adopted_link_only": 16,
+        "minutes": 2.8,
+        "pending": 0,
+        "requests": 250,
+        "skipped_existing": 0,
+        "total": 21
+      },
+      "elapsed_minutes": 9.8,
+      "name": "長崎県"
+    },
+    "nara": {
+      "discover": "2026-09-10T23:46:02+00:00",
+      "discover_stats": {
+        "adopted_crawl": 1,
+        "adopted_link_only": 38,
+        "minutes": 2.5,
+        "pending": 0,
+        "requests": 332,
+        "skipped_existing": 0,
+        "total": 39
+      },
+      "elapsed_minutes": 6.9,
+      "name": "奈良県"
+    },
+    "niigata": {
+      "discover": "2026-09-10T22:39:29+00:00",
+      "discover_stats": {
+        "adopted_crawl": 7,
+        "adopted_link_only": 22,
+        "minutes": 1.9,
+        "pending": 1,
+        "requests": 237,
+        "skipped_existing": 0,
+        "total": 30
+      },
+      "elapsed_minutes": 4.2,
+      "name": "新潟県"
+    },
+    "oita": {
+      "discover": "2026-09-11T01:36:23+00:00",
+      "discover_stats": {
+        "adopted_crawl": 6,
+        "adopted_link_only": 12,
+        "minutes": 1.5,
+        "pending": 0,
+        "requests": 155,
+        "skipped_existing": 0,
+        "total": 18
+      },
+      "elapsed_minutes": 9.2,
+      "name": "大分県"
+    },
+    "okayama": {
+      "discover": "2026-09-11T00:12:57+00:00",
+      "discover_stats": {
+        "adopted_crawl": 4,
+        "adopted_link_only": 23,
+        "minutes": 2.0,
+        "pending": 0,
+        "requests": 249,
+        "skipped_existing": 0,
+        "total": 27
+      },
+      "elapsed_minutes": 7.1,
+      "name": "岡山県"
+    },
+    "osaka": {
+      "discover": "2026-09-10T23:32:46+00:00",
+      "discover_stats": {
+        "adopted_crawl": 1,
+        "adopted_link_only": 42,
+        "minutes": 2.9,
+        "pending": 0,
+        "requests": 386,
+        "skipped_existing": 0,
+        "total": 43
+      },
+      "elapsed_minutes": 7.0,
+      "name": "大阪府"
+    },
+    "saga": {
+      "discover": "2026-09-11T01:07:40+00:00",
+      "discover_stats": {
+        "adopted_crawl": 3,
+        "adopted_link_only": 17,
+        "minutes": 2.1,
+        "pending": 0,
+        "requests": 194,
+        "skipped_existing": 0,
+        "total": 20
+      },
+      "elapsed_minutes": 9.1,
+      "name": "佐賀県"
+    },
+    "saitama": {
+      "discover": "2026-09-10T22:20:03+00:00",
+      "discover_stats": {
+        "adopted_crawl": 8,
+        "adopted_link_only": 55,
+        "minutes": 4.0,
+        "pending": 0,
+        "requests": 519,
+        "skipped_existing": 0,
+        "total": 63
+      },
+      "elapsed_minutes": 5.5,
+      "name": "埼玉県"
+    },
+    "shiga": {
+      "discover": "2026-09-10T23:20:11+00:00",
+      "discover_stats": {
+        "adopted_crawl": 4,
+        "adopted_link_only": 15,
+        "minutes": 1.4,
+        "pending": 0,
+        "requests": 171,
+        "skipped_existing": 0,
+        "total": 19
+      },
+      "elapsed_minutes": 5.1,
+      "name": "滋賀県"
+    },
+    "shimane": {
+      "discover": "2026-09-11T00:06:04+00:00",
+      "discover_stats": {
+        "adopted_crawl": 5,
+        "adopted_link_only": 13,
+        "minutes": 2.0,
+        "pending": 1,
+        "requests": 164,
+        "skipped_existing": 0,
+        "total": 19
+      },
+      "elapsed_minutes": 6.9,
+      "name": "島根県"
+    },
+    "shizuoka": {
+      "discover": "2026-09-10T23:03:06+00:00",
+      "discover_stats": {
+        "adopted_crawl": 3,
+        "adopted_link_only": 32,
+        "minutes": 2.3,
+        "pending": 0,
+        "requests": 294,
+        "skipped_existing": 0,
+        "total": 35
+      },
+      "elapsed_minutes": 5.5,
+      "name": "静岡県"
+    },
+    "tochigi": {
+      "discover": "2026-09-10T22:10:57+00:00",
+      "discover_stats": {
+        "adopted_crawl": 7,
+        "adopted_link_only": 18,
+        "minutes": 2.3,
+        "pending": 0,
+        "requests": 230,
+        "skipped_existing": 0,
+        "total": 25
+      },
+      "elapsed_minutes": 3.4,
+      "name": "栃木県"
+    },
+    "tokushima": {
+      "discover": "2026-09-11T00:33:55+00:00",
+      "discover_stats": {
+        "adopted_crawl": 6,
+        "adopted_link_only": 18,
+        "minutes": 2.0,
+        "pending": 0,
+        "requests": 222,
+        "skipped_existing": 0,
+        "total": 24
+      },
+      "elapsed_minutes": 7.6,
+      "name": "徳島県"
+    },
+    "tokyo": {
+      "discover": "2026-09-10T22:30:50+00:00",
+      "discover_stats": {
+        "adopted_crawl": 5,
+        "adopted_link_only": 56,
+        "minutes": 3.9,
+        "pending": 1,
+        "requests": 531,
+        "skipped_existing": 0,
+        "total": 62
+      },
+      "elapsed_minutes": 6.0,
+      "name": "東京都"
+    },
+    "tottori": {
+      "discover": "2026-09-10T23:59:18+00:00",
+      "discover_stats": {
+        "adopted_crawl": 4,
+        "adopted_link_only": 14,
+        "minutes": 1.6,
+        "pending": 1,
+        "requests": 163,
+        "skipped_existing": 0,
+        "total": 19
+      },
+      "elapsed_minutes": 6.3,
+      "name": "鳥取県"
+    },
     "toyama": {
       "crawl": "2026-09-10T21:27:17+00:00",
       "crawl_stats": {
@@ -38,7 +592,63 @@
         "swapped": 0
       },
       "name": "富山県"
+    },
+    "wakayama": {
+      "discover": "2026-09-10T23:53:07+00:00",
+      "discover_stats": {
+        "adopted_crawl": 4,
+        "adopted_link_only": 26,
+        "minutes": 2.6,
+        "pending": 0,
+        "requests": 271,
+        "skipped_existing": 0,
+        "total": 30
+      },
+      "elapsed_minutes": 7.2,
+      "name": "和歌山県"
+    },
+    "yamagata": {
+      "discover": "2026-09-10T21:59:06+00:00",
+      "discover_stats": {
+        "adopted_crawl": 9,
+        "adopted_link_only": 26,
+        "minutes": 2.2,
+        "pending": 0,
+        "requests": 269,
+        "skipped_existing": 0,
+        "total": 35
+      },
+      "elapsed_minutes": 2.8,
+      "name": "山形県"
+    },
+    "yamaguchi": {
+      "discover": "2026-09-11T00:26:31+00:00",
+      "discover_stats": {
+        "adopted_crawl": 5,
+        "adopted_link_only": 14,
+        "minutes": 1.4,
+        "pending": 0,
+        "requests": 165,
+        "skipped_existing": 0,
+        "total": 19
+      },
+      "elapsed_minutes": 6.8,
+      "name": "山口県"
+    },
+    "yamanashi": {
+      "discover": "2026-09-10T22:52:00+00:00",
+      "discover_stats": {
+        "adopted_crawl": 6,
+        "adopted_link_only": 21,
+        "minutes": 2.2,
+        "pending": 0,
+        "requests": 222,
+        "skipped_existing": 0,
+        "total": 27
+      },
+      "elapsed_minutes": 4.8,
+      "name": "山梨県"
     }
   },
-  "updated_at": "2026-09-10T21:30:21+00:00"
+  "updated_at": "2026-09-11T02:25:40+00:00"
 }

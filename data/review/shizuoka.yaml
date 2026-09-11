@@ -1,0 +1,494 @@
+prefecture: 静岡県
+prefecture_slug: shizuoka
+created_at: '2026-09-10T23:03:06+00:00'
+candidates:
+- key: '221007'
+  label: 静岡県 静岡市
+  url: https://www.city.shizuoka.lg.jp/p005794.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.81
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shizuoka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.shizuoka.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '221309'
+  label: 静岡県 浜松市
+  url: https://www.city.hamamatsu.shizuoka.jp/kurashi-tetsuzuki/safety/akiya.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hamamatsu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.hamamatsu.shizuoka.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222038'
+  label: 静岡県 沼津市
+  url: https://www.city.numazu.shizuoka.jp/kurashi/sumai/akiya/index.htm
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.numazu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.numazu.shizuoka.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222054'
+  label: 静岡県 熱海市
+  url: https://www.city.atami.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.atami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.atami.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222062'
+  label: 静岡県 三島市
+  url: https://www.city.mishima.shizuoka.jp/life/1/6/41/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.mishima.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.mishima.shizuoka.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222071'
+  label: 静岡県 富士宮市
+  url: https://www.city.fujinomiya.lg.jp/kurashi/sumai/akiya/index.html
+  page_class: spa
+  class_label: JavaScript 描画（未対応）
+  confidence: 0.75
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.fujinomiya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.fujinomiya.lg.jp/
+  reason: JavaScript 描画のため静的 HTML に物件が無い。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222089'
+  label: 静岡県 伊東市
+  url: https://www.city.ito.shizuoka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.ito.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.ito.shizuoka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222097'
+  label: 静岡県 島田市
+  url: https://www.city.shimada.shizuoka.jp/gyosei-docs/akiyabanku.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shimada.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.shimada.shizuoka.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222101'
+  label: 静岡県 富士市
+  url: https://www.city.fuji.shizuoka.jp/kurashi/sumai/akiya/index.html
+  page_class: spa
+  class_label: JavaScript 描画（未対応）
+  confidence: 0.75
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.fuji.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.fuji.shizuoka.jp/
+  reason: JavaScript 描画のため静的 HTML に物件が無い。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222119'
+  label: 静岡県 磐田市
+  url: https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/juutaku_pet_seikatsu/1010112/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.iwata.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.iwata.shizuoka.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222127'
+  label: 静岡県 焼津市
+  url: https://www.city.yaizu.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yaizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.yaizu.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222135'
+  label: 静岡県 掛川市
+  url: https://www.city.kakegawa.shizuoka.jp/gyosei/docs/8086.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kakegawa.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kakegawa.shizuoka.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222143'
+  label: 静岡県 藤枝市
+  url: https://www.city.fujieda.shizuoka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.fujieda.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.fujieda.shizuoka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222151'
+  label: 静岡県 御殿場市
+  url: https://www.city.gotemba.lg.jp/kurashi/category/b-7/b-7-5
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 静岡県 県内市町リンク集に掲載された公式サイト（www.city.gotemba.lg.jp）
+  evidence_url: https://www.pref.shizuoka.jp/kensei/link/1007806.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222160'
+  label: 静岡県 袋井市
+  url: https://www.city.fukuroi.shizuoka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.fukuroi.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.fukuroi.shizuoka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222194'
+  label: 静岡県 下田市
+  url: https://shimoda-c22219.akiya-athome.jp/
+  page_class: third_party
+  class_label: 第三者プラットフォーム
+  confidence: 0.99
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.shimoda.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.shimoda.shizuoka.jp/
+  reason: 掲載は民間プラットフォーム。巡回せずリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222208'
+  label: 静岡県 裾野市
+  url: https://www.city.susono.shizuoka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.susono.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.susono.shizuoka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222216'
+  label: 静岡県 湖西市
+  url: https://www.city.kosai.shizuoka.jp/event/hikkoshi_sumai/7865.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.88
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kosai.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kosai.shizuoka.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222224'
+  label: 静岡県 伊豆市
+  url: https://www.city.izu.shizuoka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.izu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.izu.shizuoka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222232'
+  label: 静岡県 御前崎市
+  url: https://www.city.omaezaki.shizuoka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.omaezaki.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.omaezaki.shizuoka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222241'
+  label: 静岡県 菊川市
+  url: https://www.city.kikugawa.shizuoka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.kikugawa.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.kikugawa.shizuoka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222259'
+  label: 静岡県 伊豆の国市
+  url: https://www.city.izunokuni.shizuoka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.izunokuni.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.izunokuni.shizuoka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '222267'
+  label: 静岡県 牧之原市
+  url: https://www.city.makinohara.shizuoka.jp/site/makinohara-life/32178.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.makinohara.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.makinohara.shizuoka.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '223018'
+  label: 静岡県 東伊豆町
+  url: https://www.town.higashiizu.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.higashiizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.higashiizu.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '223026'
+  label: 静岡県 河津町
+  url: https://www.town.kawazu.shizuoka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kawazu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kawazu.shizuoka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '223042'
+  label: 静岡県 南伊豆町
+  url: http://www.town.minamiizu.shizuoka.jp/docs/2013030500011/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.minamiizu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.minamiizu.shizuoka.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '223051'
+  label: 静岡県 松崎町
+  url: https://www.town.matsuzaki.shizuoka.jp/docs/2016012100063/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.matsuzaki.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.matsuzaki.shizuoka.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '223069'
+  label: 静岡県 西伊豆町
+  url: https://www.town.nishiizu.shizuoka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nishiizu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.nishiizu.shizuoka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '223255'
+  label: 静岡県 函南町
+  url: https://www.town.kannami.shizuoka.jp/life_event/sumai/4637.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kannami.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kannami.shizuoka.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '223417'
+  label: 静岡県 清水町
+  url: https://www.town.shimizu.shizuoka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.shimizu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.shimizu.shizuoka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '223425'
+  label: 静岡県 長泉町
+  url: https://www.town.nagaizumi.lg.jp/moving/1/10118.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nagaizumi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.nagaizumi.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '223441'
+  label: 静岡県 小山町
+  url: https://www.fuji-oyama.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 静岡県 県内市町リンク集に掲載された公式サイト（www.fuji-oyama.jp）
+  evidence_url: https://www.pref.shizuoka.jp/kensei/link/1007806.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '224243'
+  label: 静岡県 吉田町
+  url: https://www.town.yoshida.shizuoka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yoshida.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.yoshida.shizuoka.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '224294'
+  label: 静岡県 川根本町
+  url: https://www.town.kawanehon.shizuoka.jp/kurashi_tetsuduki/11/1/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.kawanehon.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.kawanehon.shizuoka.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '224618'
+  label: 静岡県 森町
+  url: https://www.town.morimachi.shizuoka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 静岡県 県内市町リンク集に掲載された公式サイト（www.town.morimachi.shizuoka.jp）
+  evidence_url: https://www.pref.shizuoka.jp/kensei/link/1007806.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

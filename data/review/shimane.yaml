@@ -1,0 +1,270 @@
+prefecture: 島根県
+prefecture_slug: shimane
+created_at: '2026-09-11T02:30:10+00:00'
+candidates:
+- key: '322016'
+  label: 島根県 松江市
+  url: https://www.city.matsue.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.matsue.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.matsue.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '322024'
+  label: 島根県 浜田市
+  url: https://www.city.hamada.shimane.jp/www/contents/1462928457251/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.hamada.shimane.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.hamada.shimane.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '322032'
+  label: 島根県 出雲市
+  url: https://izumo-akiyataisaku.jp/bank/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式サイト（www.city.izumo.shimane.jp）から空き家バンクとして案内されているリンク
+  evidence_url: https://www.city.izumo.shimane.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '322041'
+  label: 島根県 益田市
+  url: https://www.city.masuda.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.masuda.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.masuda.lg.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '322059'
+  label: 島根県 大田市
+  url: https://www.city.oda.lg.jp/ohda_city/city_purpose/131/9514
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.oda.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.oda.lg.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '322067'
+  label: 島根県 安来市
+  url: https://www.city.yasugi.shimane.jp/kurashi/sumai/others/akiya.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.yasugi.shimane.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.yasugi.shimane.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '322075'
+  label: 島根県 江津市
+  url: https://www.city.gotsu.lg.jp/site/akiya/28358.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.83
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.gotsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.city.gotsu.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '322091'
+  label: 島根県 雲南市
+  url: https://www.city.unnan.shimane.jp/unnan/kurashi/sumai/akiya/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.city.unnan.shimane.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.city.unnan.shimane.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '323438'
+  label: 島根県 奥出雲町
+  url: https://www.town.okuizumo.shimane.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.okuizumo.shimane.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.okuizumo.shimane.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '323861'
+  label: 島根県 飯南町
+  url: https://www.iinan.jp/life/1/8/35/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 島根県リンク（市町村）に掲載された公式サイト（www.iinan.jp）
+  evidence_url: https://www.pref.shimane.lg.jp/link01.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '324418'
+  label: 島根県 川本町
+  url: https://www.town.shimane-kawamoto.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 島根県リンク（市町村）に掲載された公式サイト（www.town.shimane-kawamoto.lg.jp）
+  evidence_url: https://www.pref.shimane.lg.jp/link01.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '324485'
+  label: 島根県 美郷町
+  url: https://www.town.misato.shimane.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.misato.shimane.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.misato.shimane.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '324493'
+  label: 島根県 邑南町
+  url: https://www.town.ohnan.lg.jp/soshiki/11/1042.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 島根県リンク（市町村）に掲載された公式サイト（www.town.ohnan.lg.jp）
+  evidence_url: https://www.pref.shimane.lg.jp/link01.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '325015'
+  label: 島根県 津和野町
+  url: https://www.town.tsuwano.lg.jp/www/contents/1640736634362/index.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.tsuwano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.tsuwano.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '325058'
+  label: 島根県 吉賀町
+  url: https://www.town.yoshika.lg.jp/iju/stay/akiyabank/akiyajouhou/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.82
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.yoshika.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_url: https://www.town.yoshika.lg.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '325252'
+  label: 島根県 海士町
+  url: https://www.town.ama.shimane.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.ama.shimane.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.ama.shimane.jp/
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '325261'
+  label: 島根県 西ノ島町
+  url: https://www.town.nishinoshima.shimane.jp/teiju/akiya/akiyaichiran/
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.82
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.nishinoshima.shimane.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.nishinoshima.shimane.jp/
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '325279'
+  label: 島根県 知夫村
+  url: http://www.vill.chibu.lg.jp/gyosei/settlement/akiya/
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 島根県リンク（市町村）に掲載された公式サイト（www.vill.chibu.lg.jp）
+  evidence_url: https://www.pref.shimane.lg.jp/link01.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null
+- key: '325287'
+  label: 島根県 隠岐の島町
+  url: https://www.town.okinoshima.shimane.jp/kurashi/iju-teiju/akiya_bank/index.html
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 公式ドメイン www.town.okinoshima.shimane.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_url: https://www.town.okinoshima.shimane.jp/
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
+  decision: null
+  note: null

@@ -1,0 +1,412 @@
+# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。
+sources:
+- id: shimane-322016
+  name: 松江市空き家バンク
+  operator: 松江市
+  operator_kind: municipality
+  official_url: https://www.city.matsue.lg.jp/
+  policy: link_only
+  municipality:
+    code: '322016'
+    name: 松江市
+    prefecture: 島根県
+    prefecture_slug: shimane
+    slug: '322016'
+    bank_url: https://www.city.matsue.lg.jp/
+    bank_status: none
+    map_query: 島根県松江市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.matsue.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.matsue.lg.jp/
+    checked_on: '2026-09-11'
+- id: shimane-322024
+  name: 浜田市空き家バンク
+  operator: 浜田市
+  operator_kind: municipality
+  official_url: https://www.city.hamada.shimane.jp/
+  policy: link_only
+  municipality:
+    code: '322024'
+    name: 浜田市
+    prefecture: 島根県
+    prefecture_slug: shimane
+    slug: '322024'
+    bank_url: https://www.city.hamada.shimane.jp/www/contents/1462928457251/index.html
+    bank_status: info
+    map_query: 島根県浜田市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.hamada.shimane.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.hamada.shimane.jp/
+    checked_on: '2026-09-11'
+- id: shimane-322032
+  name: 出雲市空き家バンク
+  operator: 出雲市
+  operator_kind: municipality
+  official_url: https://www.city.izumo.shimane.jp/
+  policy: crawl
+  municipality:
+    code: '322032'
+    name: 出雲市
+    prefecture: 島根県
+    prefecture_slug: shimane
+    slug: '322032'
+    bank_url: https://izumo-akiyataisaku.jp/bank/
+    bank_status: available
+    map_query: 島根県出雲市
+  operator_evidence:
+    quote: 公式サイト（www.city.izumo.shimane.jp）から空き家バンクとして案内されているリンク
+    url: https://www.city.izumo.shimane.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://izumo-akiyataisaku.jp/bank/
+    kind: listing_index
+  allow_hosts:
+  - izumo-akiyataisaku.jp
+  max_pages: 30
+- id: shimane-322041
+  name: 益田市空き家バンク
+  operator: 益田市
+  operator_kind: municipality
+  official_url: https://www.city.masuda.lg.jp/
+  policy: link_only
+  municipality:
+    code: '322041'
+    name: 益田市
+    prefecture: 島根県
+    prefecture_slug: shimane
+    slug: '322041'
+    bank_url: https://www.city.masuda.lg.jp/
+    bank_status: none
+    map_query: 島根県益田市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.masuda.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.masuda.lg.jp/
+    checked_on: '2026-09-11'
+- id: shimane-322059
+  name: 大田市空き家バンク
+  operator: 大田市
+  operator_kind: municipality
+  official_url: https://www.city.oda.lg.jp/
+  policy: link_only
+  municipality:
+    code: '322059'
+    name: 大田市
+    prefecture: 島根県
+    prefecture_slug: shimane
+    slug: '322059'
+    bank_url: https://www.city.oda.lg.jp/ohda_city/city_purpose/131/9514
+    bank_status: info
+    map_query: 島根県大田市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.oda.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.oda.lg.jp/
+    checked_on: '2026-09-11'
+- id: shimane-322067
+  name: 安来市空き家バンク
+  operator: 安来市
+  operator_kind: municipality
+  official_url: https://www.city.yasugi.shimane.jp/
+  policy: link_only
+  municipality:
+    code: '322067'
+    name: 安来市
+    prefecture: 島根県
+    prefecture_slug: shimane
+    slug: '322067'
+    bank_url: https://www.city.yasugi.shimane.jp/kurashi/sumai/others/akiya.html
+    bank_status: info
+    map_query: 島根県安来市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.yasugi.shimane.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.yasugi.shimane.jp/
+    checked_on: '2026-09-11'
+- id: shimane-322075
+  name: 江津市空き家バンク
+  operator: 江津市
+  operator_kind: municipality
+  official_url: https://www.city.gotsu.lg.jp/
+  policy: crawl
+  municipality:
+    code: '322075'
+    name: 江津市
+    prefecture: 島根県
+    prefecture_slug: shimane
+    slug: '322075'
+    bank_url: https://www.city.gotsu.lg.jp/site/akiya/28358.html
+    bank_status: available
+    map_query: 島根県江津市
+  operator_evidence:
+    quote: 公式ドメイン www.city.gotsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.city.gotsu.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.city.gotsu.lg.jp/site/akiya/28358.html
+    kind: listing_index
+  allow_hosts:
+  - www.city.gotsu.lg.jp
+  max_pages: 30
+- id: shimane-322091
+  name: 雲南市空き家バンク
+  operator: 雲南市
+  operator_kind: municipality
+  official_url: https://www.city.unnan.shimane.jp/
+  policy: link_only
+  municipality:
+    code: '322091'
+    name: 雲南市
+    prefecture: 島根県
+    prefecture_slug: shimane
+    slug: '322091'
+    bank_url: https://www.city.unnan.shimane.jp/unnan/kurashi/sumai/akiya/index.html
+    bank_status: info
+    map_query: 島根県雲南市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.city.unnan.shimane.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.city.unnan.shimane.jp/
+    checked_on: '2026-09-11'
+- id: shimane-323438
+  name: 奥出雲町空き家バンク
+  operator: 奥出雲町
+  operator_kind: municipality
+  official_url: https://www.town.okuizumo.shimane.jp/
+  policy: link_only
+  municipality:
+    code: '323438'
+    name: 奥出雲町
+    prefecture: 島根県
+    prefecture_slug: shimane
+    slug: '323438'
+    bank_url: https://www.town.okuizumo.shimane.jp/
+    bank_status: none
+    map_query: 島根県奥出雲町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.okuizumo.shimane.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.okuizumo.shimane.jp/
+    checked_on: '2026-09-11'
+- id: shimane-323861
+  name: 飯南町空き家バンク
+  operator: 飯南町
+  operator_kind: municipality
+  official_url: https://www.iinan.jp/
+  policy: link_only
+  municipality:
+    code: '323861'
+    name: 飯南町
+    prefecture: 島根県
+    prefecture_slug: shimane
+    slug: '323861'
+    bank_url: https://www.iinan.jp/life/1/8/35/
+    bank_status: info
+    map_query: 島根県飯南町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 島根県リンク（市町村）に掲載された公式サイト（www.iinan.jp）
+    url: https://www.pref.shimane.lg.jp/link01.html
+    checked_on: '2026-09-11'
+- id: shimane-324418
+  name: 川本町空き家バンク
+  operator: 川本町
+  operator_kind: municipality
+  official_url: https://www.town.shimane-kawamoto.lg.jp/
+  policy: link_only
+  municipality:
+    code: '324418'
+    name: 川本町
+    prefecture: 島根県
+    prefecture_slug: shimane
+    slug: '324418'
+    bank_url: https://www.town.shimane-kawamoto.lg.jp/
+    bank_status: none
+    map_query: 島根県川本町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 島根県リンク（市町村）に掲載された公式サイト（www.town.shimane-kawamoto.lg.jp）
+    url: https://www.pref.shimane.lg.jp/link01.html
+    checked_on: '2026-09-11'
+- id: shimane-324485
+  name: 美郷町空き家バンク
+  operator: 美郷町
+  operator_kind: municipality
+  official_url: https://www.town.misato.shimane.jp/
+  policy: link_only
+  municipality:
+    code: '324485'
+    name: 美郷町
+    prefecture: 島根県
+    prefecture_slug: shimane
+    slug: '324485'
+    bank_url: https://www.town.misato.shimane.jp/
+    bank_status: none
+    map_query: 島根県美郷町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.misato.shimane.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.misato.shimane.jp/
+    checked_on: '2026-09-11'
+- id: shimane-324493
+  name: 邑南町空き家バンク
+  operator: 邑南町
+  operator_kind: municipality
+  official_url: https://www.town.ohnan.lg.jp/
+  policy: crawl
+  municipality:
+    code: '324493'
+    name: 邑南町
+    prefecture: 島根県
+    prefecture_slug: shimane
+    slug: '324493'
+    bank_url: https://www.town.ohnan.lg.jp/soshiki/11/1042.html
+    bank_status: available
+    map_query: 島根県邑南町
+  operator_evidence:
+    quote: 島根県リンク（市町村）に掲載された公式サイト（www.town.ohnan.lg.jp）
+    url: https://www.pref.shimane.lg.jp/link01.html
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.ohnan.lg.jp/soshiki/11/1042.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.ohnan.lg.jp
+  max_pages: 30
+- id: shimane-325015
+  name: 津和野町空き家バンク
+  operator: 津和野町
+  operator_kind: municipality
+  official_url: https://www.town.tsuwano.lg.jp/
+  policy: crawl
+  municipality:
+    code: '325015'
+    name: 津和野町
+    prefecture: 島根県
+    prefecture_slug: shimane
+    slug: '325015'
+    bank_url: https://www.town.tsuwano.lg.jp/www/contents/1640736634362/index.html
+    bank_status: available
+    map_query: 島根県津和野町
+  operator_evidence:
+    quote: 公式ドメイン www.town.tsuwano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.tsuwano.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.tsuwano.lg.jp/www/contents/1640736634362/index.html
+    kind: listing_index
+  allow_hosts:
+  - www.town.tsuwano.lg.jp
+  max_pages: 30
+- id: shimane-325058
+  name: 吉賀町空き家バンク
+  operator: 吉賀町
+  operator_kind: municipality
+  official_url: https://www.town.yoshika.lg.jp/
+  policy: crawl
+  municipality:
+    code: '325058'
+    name: 吉賀町
+    prefecture: 島根県
+    prefecture_slug: shimane
+    slug: '325058'
+    bank_url: https://www.town.yoshika.lg.jp/iju/stay/akiyabank/akiyajouhou/
+    bank_status: available
+    map_query: 島根県吉賀町
+  operator_evidence:
+    quote: 公式ドメイン www.town.yoshika.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+    url: https://www.town.yoshika.lg.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.yoshika.lg.jp/iju/stay/akiyabank/akiyajouhou/
+    kind: listing_index
+  allow_hosts:
+  - www.town.yoshika.lg.jp
+  max_pages: 30
+- id: shimane-325252
+  name: 海士町空き家バンク
+  operator: 海士町
+  operator_kind: municipality
+  official_url: https://www.town.ama.shimane.jp/
+  policy: link_only
+  municipality:
+    code: '325252'
+    name: 海士町
+    prefecture: 島根県
+    prefecture_slug: shimane
+    slug: '325252'
+    bank_url: https://www.town.ama.shimane.jp/
+    bank_status: none
+    map_query: 島根県海士町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.ama.shimane.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.ama.shimane.jp/
+    checked_on: '2026-09-11'
+- id: shimane-325261
+  name: 西ノ島町空き家バンク
+  operator: 西ノ島町
+  operator_kind: municipality
+  official_url: https://www.town.nishinoshima.shimane.jp/
+  policy: crawl
+  municipality:
+    code: '325261'
+    name: 西ノ島町
+    prefecture: 島根県
+    prefecture_slug: shimane
+    slug: '325261'
+    bank_url: https://www.town.nishinoshima.shimane.jp/teiju/akiya/akiyaichiran/
+    bank_status: available
+    map_query: 島根県西ノ島町
+  operator_evidence:
+    quote: 公式ドメイン www.town.nishinoshima.shimane.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.nishinoshima.shimane.jp/
+    checked_on: '2026-09-11'
+  pages:
+  - url: https://www.town.nishinoshima.shimane.jp/teiju/akiya/akiyaichiran/
+    kind: listing_index
+  allow_hosts:
+  - www.town.nishinoshima.shimane.jp
+  max_pages: 30
+- id: shimane-325279
+  name: 知夫村空き家バンク
+  operator: 知夫村
+  operator_kind: municipality
+  official_url: https://www.vill.chibu.lg.jp/
+  policy: link_only
+  municipality:
+    code: '325279'
+    name: 知夫村
+    prefecture: 島根県
+    prefecture_slug: shimane
+    slug: '325279'
+    bank_url: http://www.vill.chibu.lg.jp/gyosei/settlement/akiya/
+    bank_status: info
+    map_query: 島根県知夫村
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 島根県リンク（市町村）に掲載された公式サイト（www.vill.chibu.lg.jp）
+    url: https://www.pref.shimane.lg.jp/link01.html
+    checked_on: '2026-09-11'
+- id: shimane-325287
+  name: 隠岐の島町空き家バンク
+  operator: 隠岐の島町
+  operator_kind: municipality
+  official_url: https://www.town.okinoshima.shimane.jp/
+  policy: link_only
+  municipality:
+    code: '325287'
+    name: 隠岐の島町
+    prefecture: 島根県
+    prefecture_slug: shimane
+    slug: '325287'
+    bank_url: https://www.town.okinoshima.shimane.jp/kurashi/iju-teiju/akiya_bank/index.html
+    bank_status: info
+    map_query: 島根県隠岐の島町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+  operator_evidence:
+    quote: 公式ドメイン www.town.okinoshima.shimane.jp（city/town/vill の地理型ドメイン、自治体に限定）
+    url: https://www.town.okinoshima.shimane.jp/
+    checked_on: '2026-09-11'

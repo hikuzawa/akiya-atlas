@@ -1,0 +1,1033 @@
+{
+  "findings": [
+    {
+      "alternatives": [],
+      "bank_url": "https://www.city.utsunomiya.lg.jp/kurashi/anshin/1016717/index.html",
+      "code": "092011",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.utsunomiya.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
+      "evidence_url": "https://www.city.utsunomiya.lg.jp/",
+      "external_links": [],
+      "listing_rows": 0,
+      "listing_score": 0.0,
+      "name": "宇都宮市",
+      "name_kana": "ｳﾂﾉﾐﾔｼ",
+      "official_url": "www.city.utsunomiya.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://ashikaga-c09202.akiya-athome.jp/",
+      "code": "092029",
+      "confidence": 0.99,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.ashikaga.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.ashikaga.tochigi.jp/",
+      "external_links": [
+        {
+          "label": "最近見た物件 0 件",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/mypage/history/list/"
+        },
+        {
+          "label": "検討リスト 0 件",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/mypage/favorite/list/"
+        },
+        {
+          "label": "保存した条件 0 件",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/mypage/hope/list/"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/"
+        },
+        {
+          "label": "マンション(売買)",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/buy/mansion/rail/"
+        },
+        {
+          "label": "戸建(売買)",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/buy/house/rail/"
+        },
+        {
+          "label": "土地(売買)",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/buy/land/rail/"
+        },
+        {
+          "label": "事業・投資物件(売買)",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/buy/invest/rail/"
+        },
+        {
+          "label": "住まい(賃貸)",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/rent/live/rail/"
+        },
+        {
+          "label": "事業用(賃貸)",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/rent/business/rail/"
+        },
+        {
+          "label": "マンション(売買)",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/buy/mansion/area/"
+        },
+        {
+          "label": "戸建(売買)",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/buy/house/area/"
+        },
+        {
+          "label": "土地(売買)",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/buy/land/area/"
+        },
+        {
+          "label": "事業・投資物件(売買)",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/buy/invest/area/"
+        },
+        {
+          "label": "住まい(賃貸)",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/rent/live/area/"
+        },
+        {
+          "label": "事業用(賃貸)",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/rent/business/area/"
+        },
+        {
+          "label": "マンション(売買)",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/buy/mansion/map/"
+        },
+        {
+          "label": "戸建(売買)",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/buy/house/map/"
+        },
+        {
+          "label": "土地(売買)",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/buy/land/map/"
+        },
+        {
+          "label": "事業・投資物件(売買)",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/buy/invest/map/"
+        },
+        {
+          "label": "住まい(賃貸)",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/rent/live/map/"
+        },
+        {
+          "label": "事業用(賃貸)",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/rent/business/map/"
+        },
+        {
+          "label": "◆ 子育て世帯等限定 ◆  空き家バンクリフォーム費補助金 最大１００万円 ！ ",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/contents/news/detail/?id=1805"
+        },
+        {
+          "label": "◆ 移住者限定 ◆ 空き家バンク改修費補助金 最大５０万円 ！",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/contents/news/detail/?id=1537"
+        },
+        {
+          "label": "◆物件登録募集中【お気軽にご相談ください Tel. 0284-20-2266】",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/contents/news/detail/?id=916"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-47966"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47601"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47470"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47297"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47244"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47197"
+        },
+        {
+          "label": "もっと見る",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/buy/buy/newest/list"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-19495"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-19603"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-22551"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-28242"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-28396"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-28399"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-28885"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-29497"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-30956"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-35631"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-36847"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-37056"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-37416"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-39721"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-40125"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-41635"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-41871"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-42053"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-43879"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-44228"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-45692"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-45833"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-46352"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46616"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46866"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-47189"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/bukken/detail/rent/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%B1%85%E4%BD%8F%E7%94%A8-5240"
+        },
+        {
+          "label": "戸建て（売買）",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/buy/house/area/tochigiken/ashikagashi/list?gyosei_cd[]=09202"
+        },
+        {
+          "label": "戸建て（賃貸）",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/rent/live/area/tochigiken/ashikagashi/list?gyosei_cd[]=09202"
+        },
+        {
+          "label": "土地（売買）",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/buy/land/area/tochigiken/ashikagashi/list?gyosei_cd[]=09202"
+        },
+        {
+          "label": "土地（賃貸）",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/rent/business/area/tochigiken/ashikagashi/list?gyosei_cd[]=09202"
+        },
+        {
+          "label": "プライバシーポリシー",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/contents/static/privacy-policy/"
+        },
+        {
+          "label": "mail：kenchiku@city.ashikaga.lg.jp",
+          "url": "https://ashikaga-c09202.akiya-athome.jp/shop/contact/shop/"
+        }
+      ],
+      "listing_rows": 69,
+      "listing_score": 1.0,
+      "name": "足利市",
+      "name_kana": "ｱｼｶｶﾞｼ",
+      "official_url": "www.city.ashikaga.tochigi.jp",
+      "operator_kind": "municipality",
+      "page_class": "third_party",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "掲載は民間プラットフォーム。巡回せずリンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.city.tochigi.lg.jp/soshiki/43/72461.html"
+      ],
+      "bank_url": "http://www.tochigi-akiya.jp/",
+      "code": "092037",
+      "confidence": 0.9324999999999999,
+      "cross_linked": true,
+      "evidence_quote": "公式サイト（www.city.tochigi.lg.jp）から空き家バンクとして案内されているリンク",
+      "evidence_url": "https://www.city.tochigi.lg.jp/",
+      "external_links": [],
+      "listing_rows": 59,
+      "listing_score": 1.0,
+      "name": "栃木市",
+      "name_kana": "ﾄﾁｷﾞｼ",
+      "official_url": "www.city.tochigi.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": "listing_index",
+      "pagination_pattern": null,
+      "policy": "crawl",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+    },
+    {
+      "alternatives": [
+        "https://www.city.sano.lg.jp/filmcommission/3/other/shimoakiyama/sitemap.dir.xml",
+        "https://www.city.sano.lg.jp/filmcommission/3/nature_landscape/akiyama_riv/sitemap.dir.xml",
+        "https://www.city.sano.lg.jp/filmcommission/3/cityscape_building/akiyamagakuryou/sitemap.dir.xml"
+      ],
+      "bank_url": "https://www.city.sano.lg.jp/cgi-bin/recruit.php/2/list",
+      "code": "092045",
+      "confidence": 0.9324999999999999,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.sano.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
+      "evidence_url": "https://www.city.sano.lg.jp/",
+      "external_links": [],
+      "listing_rows": 72,
+      "listing_score": 1.0,
+      "name": "佐野市",
+      "name_kana": "ｻﾉｼ",
+      "official_url": "www.city.sano.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": "listing_index",
+      "pagination_pattern": null,
+      "policy": "crawl",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+    },
+    {
+      "alternatives": [
+        "https://www.city.kanuma.tochigi.jp/office0228/charge-0.html",
+        "https://www.city.kanuma.tochigi.jp/0131/info-0000002392-0.html",
+        "https://www.city.kanuma.tochigi.jp/0126/info-0000010291-0.html",
+        "https://www.city.kanuma.tochigi.jp/0126/info-0000009270-0.html",
+        "https://www.city.kanuma.tochigi.jp/0131/info-0000006656-0.html"
+      ],
+      "bank_url": "https://www.city.kanuma.tochigi.jp/0131/genre2-0-001.html",
+      "code": "092053",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.kanuma.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.kanuma.tochigi.jp/",
+      "external_links": [],
+      "listing_rows": 0,
+      "listing_score": 0.012,
+      "name": "鹿沼市",
+      "name_kana": "ｶﾇﾏｼ",
+      "official_url": "www.city.kanuma.tochigi.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.city.nikko.lg.jp/",
+      "code": "092061",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.nikko.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
+      "evidence_url": "https://www.city.nikko.lg.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "日光市",
+      "name_kana": "ﾆｯｺｳｼ",
+      "official_url": "www.city.nikko.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.city.oyama.tochigi.jp/",
+      "code": "092088",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.oyama.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.oyama.tochigi.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "小山市",
+      "name_kana": "ｵﾔﾏｼ",
+      "official_url": "www.city.oyama.tochigi.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://moka-c09209.akiya-athome.jp/buy/house/area/tochigiken/mokashi/list?gyosei_cd[]=09209",
+        "https://moka-c09209.akiya-athome.jp/rent/live/area/tochigiken/mokashi/list?gyosei_cd[]=09209"
+      ],
+      "bank_url": "https://moka-c09209.akiya-athome.jp/",
+      "code": "092096",
+      "confidence": 0.99,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.moka.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
+      "evidence_url": "https://www.city.moka.lg.jp/",
+      "external_links": [
+        {
+          "label": "最近見た物件 0 件",
+          "url": "https://moka-c09209.akiya-athome.jp/mypage/history/list/"
+        },
+        {
+          "label": "検討リスト 0 件",
+          "url": "https://moka-c09209.akiya-athome.jp/mypage/favorite/list/"
+        },
+        {
+          "label": "保存した条件 0 件",
+          "url": "https://moka-c09209.akiya-athome.jp/mypage/hope/list/"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://moka-c09209.akiya-athome.jp/"
+        },
+        {
+          "label": "マンション(売買)",
+          "url": "https://moka-c09209.akiya-athome.jp/buy/mansion/rail/"
+        },
+        {
+          "label": "戸建(売買)",
+          "url": "https://moka-c09209.akiya-athome.jp/buy/house/rail/"
+        },
+        {
+          "label": "土地(売買)",
+          "url": "https://moka-c09209.akiya-athome.jp/buy/land/rail/"
+        },
+        {
+          "label": "事業・投資物件(売買)",
+          "url": "https://moka-c09209.akiya-athome.jp/buy/invest/rail/"
+        },
+        {
+          "label": "住まい(賃貸)",
+          "url": "https://moka-c09209.akiya-athome.jp/rent/live/rail/"
+        },
+        {
+          "label": "事業用(賃貸)",
+          "url": "https://moka-c09209.akiya-athome.jp/rent/business/rail/"
+        },
+        {
+          "label": "マンション(売買)",
+          "url": "https://moka-c09209.akiya-athome.jp/buy/mansion/area/"
+        },
+        {
+          "label": "戸建(売買)",
+          "url": "https://moka-c09209.akiya-athome.jp/buy/house/area/"
+        },
+        {
+          "label": "土地(売買)",
+          "url": "https://moka-c09209.akiya-athome.jp/buy/land/area/"
+        },
+        {
+          "label": "事業・投資物件(売買)",
+          "url": "https://moka-c09209.akiya-athome.jp/buy/invest/area/"
+        },
+        {
+          "label": "住まい(賃貸)",
+          "url": "https://moka-c09209.akiya-athome.jp/rent/live/area/"
+        },
+        {
+          "label": "事業用(賃貸)",
+          "url": "https://moka-c09209.akiya-athome.jp/rent/business/area/"
+        },
+        {
+          "label": "マンション(売買)",
+          "url": "https://moka-c09209.akiya-athome.jp/buy/mansion/map/"
+        },
+        {
+          "label": "戸建(売買)",
+          "url": "https://moka-c09209.akiya-athome.jp/buy/house/map/"
+        },
+        {
+          "label": "土地(売買)",
+          "url": "https://moka-c09209.akiya-athome.jp/buy/land/map/"
+        },
+        {
+          "label": "事業・投資物件(売買)",
+          "url": "https://moka-c09209.akiya-athome.jp/buy/invest/map/"
+        },
+        {
+          "label": "住まい(賃貸)",
+          "url": "https://moka-c09209.akiya-athome.jp/rent/live/map/"
+        },
+        {
+          "label": "事業用(賃貸)",
+          "url": "https://moka-c09209.akiya-athome.jp/rent/business/map/"
+        },
+        {
+          "label": "空き家バンクがＲ＆Ｃマガジンに掲載されました。",
+          "url": "https://moka-c09209.akiya-athome.jp/contents/news/detail/?id=1049"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://moka-c09209.akiya-athome.jp/bukken/detail/buy/%E7%9C%9F%E5%B2%A1%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46362"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://moka-c09209.akiya-athome.jp/bukken/detail/buy/%E7%9C%9F%E5%B2%A1%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46557"
+        },
+        {
+          "label": "akiya-athome.jp",
+          "url": "https://moka-c09209.akiya-athome.jp/bukken/detail/rent/%E7%9C%9F%E5%B2%A1%E5%B8%82%E4%BA%8B%E6%A5%AD%E7%94%A8-8565"
+        },
+        {
+          "label": "◆売買物件一覧",
+          "url": "https://moka-c09209.akiya-athome.jp/buy/house/area/tochigiken/mokashi/list?gyosei_cd[]=09209"
+        },
+        {
+          "label": "◆賃貸物件一覧",
+          "url": "https://moka-c09209.akiya-athome.jp/rent/live/area/tochigiken/mokashi/list?gyosei_cd[]=09209"
+        },
+        {
+          "label": "◆賃貸事業用物件一覧（空き店舗）",
+          "url": "https://moka-c09209.akiya-athome.jp/rent/business/rail/mokatetsudomokasen/station?ensen_cd[]=0e1d"
+        },
+        {
+          "label": "  空き家バンク以外の\n真岡市の\n中古一戸建てを探す\n（athome）",
+          "url": "https://www.athome.co.jp/kodate/chuko/tochigi/moka-city/list/?kwd=101"
+        },
+        {
+          "label": "  空き家バンク以外の\n真岡市の土地を探す\n（athome）",
+          "url": "https://www.athome.co.jp/tochi/tochigi/moka-city/list/?kwd=101"
+        },
+        {
+          "label": "  空き家バンク以外の\n真岡市の\n賃貸居住用物件を探す\n（athome）",
+          "url": "https://www.athome.co.jp/chintai/tochigi/moka-city/list/?kwd=101"
+        },
+        {
+          "label": "プライバシーポリシー",
+          "url": "https://moka-c09209.akiya-athome.jp/contents/static/privacy-policy/"
+        }
+      ],
+      "listing_rows": 9,
+      "listing_score": 0.81,
+      "name": "真岡市",
+      "name_kana": "ﾓｵｶｼ",
+      "official_url": "www.city.moka.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": "third_party",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "掲載は民間プラットフォーム。巡回せずリンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.city.ohtawara.tochigi.jp/docs/2014092500025/",
+      "code": "092100",
+      "confidence": 0.8484999999999999,
+      "cross_linked": false,
+      "evidence_quote": "栃木県 リンク集（市町一覧）に掲載された公式サイト（www.city.ohtawara.tochigi.jp）",
+      "evidence_url": "https://www.pref.tochigi.lg.jp/c05/intro/tochigi/link/lkshityouson.html",
+      "external_links": [],
+      "listing_rows": 8,
+      "listing_score": 0.92,
+      "name": "大田原市",
+      "name_kana": "ｵｵﾀﾜﾗｼ",
+      "official_url": "www.city.ohtawara.tochigi.jp",
+      "operator_kind": "municipality",
+      "page_class": "listing_index",
+      "pagination_pattern": null,
+      "policy": "crawl",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.city.yaita.tochigi.jp/site/ijuuteiju/akiya-shien.html",
+      "code": "092118",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.yaita.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.yaita.tochigi.jp/",
+      "external_links": [],
+      "listing_rows": 0,
+      "listing_score": 0.0,
+      "name": "矢板市",
+      "name_kana": "ﾔｲﾀｼ",
+      "official_url": "www.city.yaita.tochigi.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.city.nasushiobara.tochigi.jp/kurashi_tetsuzuki/sumai_kurashi/akiya/index.html",
+      "code": "092134",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.nasushiobara.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.city.nasushiobara.tochigi.jp/",
+      "external_links": [],
+      "listing_rows": 0,
+      "listing_score": 0.0,
+      "name": "那須塩原市",
+      "name_kana": "ﾅｽｼｵﾊﾞﾗｼ",
+      "official_url": "www.city.nasushiobara.tochigi.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.city.sakura.lg.jp/hojokin_joseikin/sumai/akiyabank/sitemap.dir.xml"
+      ],
+      "bank_url": "https://www.city.sakura.lg.jp/",
+      "code": "092142",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.sakura.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
+      "evidence_url": "https://www.city.sakura.lg.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "さくら市",
+      "name_kana": "ｻｸﾗｼ",
+      "official_url": "www.city.sakura.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/",
+        "https://www.city.nasukarasuyama.lg.jp/inq.php?mode=detail&code=27&code2=0",
+        "https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/page001338.html",
+        "https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/page000922.html",
+        "https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/page000923.html"
+      ],
+      "bank_url": "https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/page004598.html",
+      "code": "092151",
+      "confidence": 0.8975,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.nasukarasuyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
+      "evidence_url": "https://www.city.nasukarasuyama.lg.jp/",
+      "external_links": [],
+      "listing_rows": 15,
+      "listing_score": 1.0,
+      "name": "那須烏山市",
+      "name_kana": "ﾅｽｶﾗｽﾔﾏｼ",
+      "official_url": "www.city.nasukarasuyama.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": "listing_index",
+      "pagination_pattern": null,
+      "policy": "crawl",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.city.shimotsuke.lg.jp/",
+      "code": "092169",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.city.shimotsuke.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
+      "evidence_url": "https://www.city.shimotsuke.lg.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "下野市",
+      "name_kana": "ｼﾓﾂｹｼ",
+      "official_url": "www.city.shimotsuke.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.town.kaminokawa.lg.jp/0077/genre2-0-001.html"
+      ],
+      "bank_url": "https://www.town.kaminokawa.lg.jp/0004/info-0000001920-0.html",
+      "code": "093017",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.town.kaminokawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
+      "evidence_url": "https://www.town.kaminokawa.lg.jp/",
+      "external_links": [],
+      "listing_rows": 0,
+      "listing_score": 0.0,
+      "name": "上三川町",
+      "name_kana": "ｶﾐﾉｶﾜﾏﾁ",
+      "official_url": "www.town.kaminokawa.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.town.mashiko.lg.jp/mashikonokurashi/akiya.php",
+      "code": "093424",
+      "confidence": 0.9324999999999999,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.town.mashiko.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
+      "evidence_url": "https://www.town.mashiko.lg.jp/",
+      "external_links": [],
+      "listing_rows": 35,
+      "listing_score": 1.0,
+      "name": "益子町",
+      "name_kana": "ﾏｼｺﾏﾁ",
+      "official_url": "www.town.mashiko.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": "listing_index",
+      "pagination_pattern": "https?://www\\.town\\.mashiko\\.lg\\.jp/mashikonokurashi/akiya\\.php/?\\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\\d+",
+      "policy": "crawl",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.town.motegi.tochigi.jp/",
+      "code": "093432",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.town.motegi.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.town.motegi.tochigi.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "茂木町",
+      "name_kana": "ﾓﾃｷﾞﾏﾁ",
+      "official_url": "www.town.motegi.tochigi.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.town.ichikai.tochigi.jp/",
+      "code": "093441",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.town.ichikai.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.town.ichikai.tochigi.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "市貝町",
+      "name_kana": "ｲﾁｶｲﾏﾁ",
+      "official_url": "www.town.ichikai.tochigi.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.town.tochigi-haga.lg.jp/menu/kurashi/sekatsu/sumai/akiyataisaku.html",
+        "https://www.town.tochigi-haga.lg.jp/kurashi/kurashi/seikatsu/pet/kyoukenbyoucyuusya-aki.html"
+      ],
+      "bank_url": "https://www.town.tochigi-haga.lg.jp/kurashi/sumai/akiya_bank/top.html",
+      "code": "093459",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "栃木県 リンク集（市町一覧）に掲載された公式サイト（www.town.tochigi-haga.lg.jp）",
+      "evidence_url": "https://www.pref.tochigi.lg.jp/c05/intro/tochigi/link/lkshityouson.html",
+      "external_links": [
+        {
+          "label": "（外部サイト）",
+          "url": "http://www.homes.co.jp/akiyabank/tochigi/haga_haga/"
+        },
+        {
+          "label": "LIFULLHOME'S空き家バンクホームページ（外部サイト）",
+          "url": "https://www.homes.co.jp/akiyabank/tochigi/haga_haga/"
+        },
+        {
+          "label": "（外部サイト）",
+          "url": "http://haga-t09345.akiya-athome.jp/"
+        },
+        {
+          "label": "アットホーム空き家バンクホームページ（外部サイト）",
+          "url": "https://haga-t09345.akiya-athome.jp/"
+        }
+      ],
+      "listing_rows": 0,
+      "listing_score": 0.0,
+      "name": "芳賀町",
+      "name_kana": "ﾊｶﾞﾏﾁ",
+      "official_url": "www.town.tochigi-haga.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.town.mibu.tochigi.jp/docs/2026071700012/",
+        "https://www.town.mibu.tochigi.jp/docs/2023032000013/",
+        "https://www.town.mibu.tochigi.jp/docs/2026062400013/"
+      ],
+      "bank_url": "https://www.town.mibu.tochigi.jp/docs/2020052100013/",
+      "code": "093611",
+      "confidence": 0.8484999999999999,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.town.mibu.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.town.mibu.tochigi.jp/",
+      "external_links": [],
+      "listing_rows": 8,
+      "listing_score": 0.98,
+      "name": "壬生町",
+      "name_kana": "ﾐﾌﾞﾏﾁ",
+      "official_url": "www.town.mibu.tochigi.jp",
+      "operator_kind": "municipality",
+      "page_class": "listing_index",
+      "pagination_pattern": null,
+      "policy": "crawl",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+    },
+    {
+      "alternatives": [
+        "https://www.town.nogi.lg.jp/business/machidukuri/page007426.html",
+        "https://www.town.nogi.lg.jp/ijyu/ijyu_live/live_koujyo/page002831.html",
+        "https://www.town.nogi.lg.jp/cyousei/akiya_taisaku/page005935.html"
+      ],
+      "bank_url": "https://www.town.nogi.lg.jp/ijyu/ijyu_news/page002793.html",
+      "code": "093645",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.town.nogi.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
+      "evidence_url": "https://www.town.nogi.lg.jp/",
+      "external_links": [],
+      "listing_rows": 0,
+      "listing_score": 0.006,
+      "name": "野木町",
+      "name_kana": "ﾉｷﾞﾏﾁ",
+      "official_url": "www.town.nogi.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    },
+    {
+      "alternatives": [
+        "https://www.town.shioya.tochigi.jp/info/1076"
+      ],
+      "bank_url": "https://www.town.shioya.tochigi.jp/info/1080",
+      "code": "093840",
+      "confidence": 0.8765,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.town.shioya.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.town.shioya.tochigi.jp/",
+      "external_links": [],
+      "listing_rows": 12,
+      "listing_score": 0.8,
+      "name": "塩谷町",
+      "name_kana": "ｼｵﾔﾏﾁ",
+      "official_url": "www.town.shioya.tochigi.jp",
+      "operator_kind": "municipality",
+      "page_class": "listing_index",
+      "pagination_pattern": null,
+      "policy": "crawl",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.town.takanezawa.tochigi.jp/",
+      "code": "093866",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.town.takanezawa.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
+      "evidence_url": "https://www.town.takanezawa.tochigi.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "高根沢町",
+      "name_kana": "ﾀｶﾈｻﾞﾜﾏﾁ",
+      "official_url": "www.town.takanezawa.tochigi.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [],
+      "bank_url": "https://www.town.nasu.lg.jp/",
+      "code": "094072",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "公式ドメイン www.town.nasu.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
+      "evidence_url": "https://www.town.nasu.lg.jp/",
+      "external_links": [],
+      "listing_rows": null,
+      "listing_score": null,
+      "name": "那須町",
+      "name_kana": "ﾅｽﾏﾁ",
+      "official_url": "www.town.nasu.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+    },
+    {
+      "alternatives": [
+        "http://www.town.tochigi-nakagawa.lg.jp/0074/info-0000002073-0.html",
+        "http://www.town.tochigi-nakagawa.lg.jp/0074/info-0000000330-0.html",
+        "http://www.town.tochigi-nakagawa.lg.jp/0074/info-0000000331-0.html",
+        "http://www.town.tochigi-nakagawa.lg.jp/0074/info-0000000332-0.html"
+      ],
+      "bank_url": "http://www.town.tochigi-nakagawa.lg.jp/0074/genre2-0-001.html",
+      "code": "094111",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "evidence_quote": "栃木県 リンク集（市町一覧）に掲載された公式サイト（www.town.tochigi-nakagawa.lg.jp）",
+      "evidence_url": "https://www.pref.tochigi.lg.jp/c05/intro/tochigi/link/lkshityouson.html",
+      "external_links": [],
+      "listing_rows": 0,
+      "listing_score": 0.0,
+      "name": "那珂川町",
+      "name_kana": "ﾅｶｶﾞﾜﾏﾁ",
+      "official_url": "www.town.tochigi-nakagawa.lg.jp",
+      "operator_kind": "municipality",
+      "page_class": "not_listing",
+      "pagination_pattern": null,
+      "policy": "link_only",
+      "prefecture": "栃木県",
+      "prefecture_slug": "tochigi",
+      "proposed_action": "承認",
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+    }
+  ]
+}
