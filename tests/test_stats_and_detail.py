@@ -44,12 +44,44 @@ def test_stats_of_gives_median_min_and_bands() -> None:
     st = stats_of(rows)
     assert st["listings"] == 4 and st["priced"] == 3
     assert st["price_min"] == 1_000_000 and st["price_median"] == 3_000_000
-    assert st["price_text_min"] == "100万円" and st["price_text_median"] == "300万円"
+    assert st["paid"] == 3 and st["free"] == 0
     assert st["built_count"] == 2 and st["built_min"] == 1970 and st["built_max"] == 1990
     assert st["built_median"] == 1980  # 2 件のときは中間
     assert sum(st["band_counts"]) == 3 and st["band_labels"][st["band_top"]]
     assert st["sale"] == 3 and st["rent"] == 1 and st["with_detail"] == 0
     assert stats_of([])["price_median"] is None
+
+
+def test_free_listings_are_counted_apart_from_the_cheapest() -> None:
+    """0 円（無償譲渡）は最安・中央値に混ぜず、件数として別に出す。"""
+    rows = [
+        _listing("1", deal_type="sale", price=_fv(0, "0円")),
+        _listing("2", deal_type="sale", price=_fv(0, "0円(無償)")),
+        _listing("3", deal_type="sale", price=_fv(1_200_000, "120万円")),
+        _listing("4", deal_type="sale", price=_fv(4_000_000, "400万円")),
+        _listing("5", deal_type="sale", price=_fv(9_000_000, "900万円")),
+    ]
+    st = stats_of(rows)
+    assert st["priced"] == 5 and st["paid"] == 3 and st["free"] == 2
+    assert st["price_min"] == 1_200_000  # 0 円は最安にしない
+    assert st["price_median"] == 4_000_000
+    # 価格が全部無償なら、最安も中央値も出さない
+    only_free = stats_of([_listing("6", deal_type="sale", price=_fv(0, "0円"))])
+    assert only_free["free"] == 1 and only_free["price_min"] is None
+    assert only_free["price_median"] is None
+
+
+def test_money_is_formatted_in_one_place() -> None:
+    """金額の整形は sitemill の yen だけを使う（テンプレートは |yen）。"""
+    from pathlib import Path as _Path
+
+    from sitemill.build.site import yen
+
+    assert yen(400_000) == "40万円" and yen(9_000) == "9,000円"
+    for name in ("index.html", "prefecture.html", "municipality.html"):
+        text = _Path("templates", name).read_text(encoding="utf-8")
+        assert "price_text_" not in text, name  # 整形済み文字列は渡さない
+        assert "|yen" in text, name
 
 
 def _client() -> PoliteClient:

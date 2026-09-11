@@ -18,7 +18,10 @@
   {% if muni_row.subsidy_demolition %}{% set ns.kinds = ns.kinds + [("ok", "解体")] %}{% endif %}
   {% set cells = [{"value": muni_row.count|number, "unit": "件", "label": "掲載中（売買 " ~ muni_row.sale|number ~ " ／ 賃貸 " ~ muni_row.rent|number ~ "）", "kind": "kaki"}] %}
   {% if stats.price_median %}
-    {% set cells = cells + [{"value": stats.price_text_median, "label": "売買価格の中央値（" ~ stats.priced ~ " 件に記載。最安 " ~ stats.price_text_min ~ "）", "kind": "text", "bars": {"counts": stats.band_counts, "labels": stats.band_labels, "top": stats.band_top, "title": "売買価格の分布"}}] %}
+    {% set cells = cells + [{"value": stats.price_median|yen, "label": "売買価格の中央値（有償 " ~ stats.paid ~ " 件。最安 " ~ stats.price_min|yen ~ "）", "kind": "text", "bars": {"counts": stats.band_counts, "labels": stats.band_labels, "top": stats.band_top, "title": "売買価格の分布"}}] %}
+  {% endif %}
+  {% if stats.free %}
+    {% set cells = cells + [{"value": stats.free|number, "unit": "件", "label": "無償譲渡（価格 0 円の物件）"}] %}
   {% endif %}
   {% if stats.built_count >= 2 %}
     {% set cells = cells + [{"value": stats.built_min ~ "〜" ~ stats.built_max, "unit": "年", "label": "築年の範囲（" ~ stats.built_count ~ " 件に記載。中央 " ~ stats.built_median ~ " 年）", "kind": "range"}] %}

@@ -80,6 +80,26 @@ def _register(app: typer.Typer) -> None:
         for n in table.ignored:
             typer.echo(f"  無視: {n}")
 
+    @app.command("weekly-report")
+    def weekly_report_cmd(
+        days: Annotated[int, typer.Option("--days", help="さかのぼる日数")] = 7,
+        save: Annotated[bool, typer.Option("--save", help="data/runs に記録を残す")] = True,
+    ) -> None:
+        """日次パイプラインの直近 N 日をまとめる（実行時間・差分・費用・自己修復・取り下げ）。"""
+        from akiya_atlas import weekly
+
+        rt = commands.Runtime.open()
+        for line in weekly.report(rt.ws, days=days):
+            typer.echo(line)
+        est = weekly.month_estimate(weekly.collect(rt.ws, days=days))
+        typer.echo("")
+        typer.echo(
+            f"1 か月に直すと: 約 {est['minutes']:.0f} 分 / 約 ${est['cost']:.2f}"
+            "（GitHub Actions の無料枠は月 2,000 分）"
+        )
+        if save:
+            typer.echo(f"記録: {weekly.write_snapshot(rt.ws, days=days).name}")
+
     @app.command("takedowns")
     def takedowns_cmd(
         repo: Annotated[

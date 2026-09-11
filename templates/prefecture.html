@@ -16,7 +16,10 @@
     {"value": stats.subsidy_municipalities|number, "unit": "市町村", "label": "移住・改修・解体の補助制度あり"}
   ] %}
   {% if stats.price_median %}
-  {% set cells = cells + [{"value": stats.price_text_median, "label": "売買価格の中央値（" ~ stats.priced ~ " 件に記載。最安 " ~ stats.price_text_min ~ "）", "kind": "text", "bars": {"counts": stats.band_counts, "labels": stats.band_labels, "top": stats.band_top, "title": "売買価格の分布"}}] %}
+  {% set cells = cells + [{"value": stats.price_median|yen, "label": "売買価格の中央値（有償 " ~ stats.paid ~ " 件。最安 " ~ stats.price_min|yen ~ "）", "kind": "text", "bars": {"counts": stats.band_counts, "labels": stats.band_labels, "top": stats.band_top, "title": "売買価格の分布"}}] %}
+  {% endif %}
+  {% if stats.free %}
+  {% set cells = cells + [{"value": stats.free|number, "unit": "件", "label": "無償譲渡（価格 0 円の物件）"}] %}
   {% endif %}
   {% if fetched %}{% set cells = cells + [{"value": fetched, "label": "最終取得", "kind": "text"}] %}{% endif %}
   {{ ui.stat_strip(cells, prefecture.name ~ "の掲載状況") }}
