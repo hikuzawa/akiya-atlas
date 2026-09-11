@@ -209,7 +209,10 @@ def test_heal_drops_a_page_that_never_mentions_akiya(ws: Workspace) -> None:
     _mock(
         {
             # 公式トップは「空き家」の語でこのページに案内するが、ページ本文は空き家の話ではない
-            "/": "<html><body><a href='/kurashi/fuhoutouki.html'>空き家の適正管理</a></body></html>",
+            "/": (
+                "<html><body><a href='/kurashi/fuhoutouki.html'>空き家の適正管理</a>"
+                "</body></html>"
+            ),
             "/kurashi/fuhoutouki.html": NOT_AKIYA,
         }
     )
