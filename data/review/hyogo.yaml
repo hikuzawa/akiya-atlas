@@ -1,6 +1,6 @@
 prefecture: 兵庫県
 prefecture_slug: hyogo
-created_at: '2026-09-11T02:36:37+00:00'
+created_at: '2026-09-11T06:32:53+00:00'
 candidates:
 - key: '281000'
   label: 兵庫県 神戸市
@@ -46,15 +46,15 @@ candidates:
   note: null
 - key: '282031'
   label: 兵庫県 明石市
-  url: https://www.city.akashi.lg.jp/tosei/kouen_ka/boen/akihigan.html
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.81
+  url: https://www.city.akashi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.city.akashi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
   evidence_url: https://www.city.akashi.lg.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null
@@ -214,15 +214,15 @@ candidates:
   note: null
 - key: '282162'
   label: 兵庫県 高砂市
-  url: https://www.city.takasago.lg.jp/gyoseisite/kurashi_tetsuzuki/taishinakiyakenchiku/10720.html
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.81
+  url: https://www.city.takasago.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.city.takasago.lg.jp（.lg.jp、地方公共団体専用ドメイン）
   evidence_url: https://www.city.takasago.lg.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null

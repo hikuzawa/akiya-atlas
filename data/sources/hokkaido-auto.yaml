@@ -85,13 +85,13 @@ sources:
     url: https://hakodate-c01202.akiya-athome.jp/rent/live/map/
   - label: 事業用(賃貸)
     url: https://hakodate-c01202.akiya-athome.jp/rent/business/map/
-  - label: 登録番号４は，成約しました。（湯浜）
+  - label: 登録番号4は,成約しました。(湯浜)
     url: https://hakodate-c01202.akiya-athome.jp/contents/news/detail/?id=1847
-  - label: 登録番号１は，成約しました。（桔梗２丁目）
+  - label: 登録番号1は,成約しました。(桔梗2丁目)
     url: https://hakodate-c01202.akiya-athome.jp/contents/news/detail/?id=1754
-  - label: 登録番号３は，成約しました。（本通３丁目）
+  - label: 登録番号3は,成約しました。(本通3丁目)
     url: https://hakodate-c01202.akiya-athome.jp/contents/news/detail/?id=1722
-  - label: 登録番号２は，成約しました。（谷地頭町）
+  - label: 登録番号2は,成約しました。(谷地頭町)
     url: https://hakodate-c01202.akiya-athome.jp/contents/news/detail/?id=1694
   - label: 函館市空き家バンクを公開しました。
     url: https://hakodate-c01202.akiya-athome.jp/contents/news/detail/?id=1571
@@ -101,27 +101,27 @@ sources:
     url: https://hakodate-c01202.akiya-athome.jp/bukken/detail/buy/%E5%87%BD%E9%A4%A8%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47838
   - label: akiya-athome.jp
     url: https://hakodate-c01202.akiya-athome.jp/bukken/detail/buy/%E5%87%BD%E9%A4%A8%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47922
-  - label: '  空き家バンク以外の
+  - label: '空き家バンク以外の
 
       函館市の
 
       中古一戸建てを探す
 
-      （athome）'
+      (athome)'
     url: https://www.athome.co.jp/kodate/chuko/hokkaido/hakodate-city/list/
-  - label: '  空き家バンク以外の
+  - label: '空き家バンク以外の
 
       函館市の土地を探す
 
-      （athome）'
+      (athome)'
     url: https://www.athome.co.jp/tochi/hokkaido/hakodate-city/list/
-  - label: '  空き家バンク以外の
+  - label: '空き家バンク以外の
 
       函館市の
 
       賃貸居住用物件を探す
 
-      （athome）'
+      (athome)'
     url: https://www.athome.co.jp/chintai/hokkaido/hakodate-city/list/
   - label: プライバシーポリシー
     url: https://hakodate-c01202.akiya-athome.jp/contents/static/privacy-policy/
@@ -1804,26 +1804,21 @@ sources:
   operator: 雨竜町
   operator_kind: municipality
   official_url: https://www.town.uryu.hokkaido.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '014362'
     name: 雨竜町
     prefecture: 北海道
     prefecture_slug: hokkaido
     slug: '014362'
-    bank_url: https://www.town.uryu.hokkaido.jp/docs/shushubi-fuhoutouki-noyaki.html
-    bank_status: available
+    bank_url: https://www.town.uryu.hokkaido.jp/
+    bank_status: none
     map_query: 北海道雨竜町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.uryu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.uryu.hokkaido.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.town.uryu.hokkaido.jp/docs/shushubi-fuhoutouki-noyaki.html
-    kind: listing_index
-  allow_hosts:
-  - www.town.uryu.hokkaido.jp
-  max_pages: 30
 - id: hokkaido-014371
   name: 北竜町空き家バンク
   operator: 北竜町
@@ -1845,9 +1840,9 @@ sources:
     url: https://www.town.hokuryu.hokkaido.jp/
     checked_on: '2026-09-11'
   external_links:
-  - label: ' アットホーム空き家バンク '
+  - label: アットホーム空き家バンク
     url: https://www.akiya-athome.jp/
-  - label: ' LIFULL HOME’S空き家バンク '
+  - label: LIFULL HOME’S空き家バンク
     url: https://www.homes.co.jp/akiyabank/
 - id: hokkaido-014389
   name: 沼田町空き家バンク
@@ -1934,26 +1929,21 @@ sources:
   operator: 比布町
   operator_kind: municipality
   official_url: https://www.town.pippu.hokkaido.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: 014559
     name: 比布町
     prefecture: 北海道
     prefecture_slug: hokkaido
     slug: 014559
-    bank_url: https://www.town.pippu.hokkaido.jp/cms/section/soumu/elhgch0000002kni.html
-    bank_status: available
+    bank_url: https://www.town.pippu.hokkaido.jp/
+    bank_status: none
     map_query: 北海道比布町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.pippu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.pippu.hokkaido.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.town.pippu.hokkaido.jp/cms/section/soumu/elhgch0000002kni.html
-    kind: listing_index
-  allow_hosts:
-  - www.town.pippu.hokkaido.jp
-  max_pages: 30
 - id: hokkaido-014567
   name: 愛別町空き家バンク
   operator: 愛別町
@@ -3255,26 +3245,21 @@ sources:
   operator: 士幌町
   operator_kind: municipality
   official_url: https://www.shihoro.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '016322'
     name: 士幌町
     prefecture: 北海道
     prefecture_slug: hokkaido
     slug: '016322'
-    bank_url: https://www.shihoro.jp/life/detail.php?content=928
-    bank_status: available
+    bank_url: https://www.shihoro.jp/
+    bank_status: none
     map_query: 北海道士幌町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.shihoro.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.shihoro.jp/life/detail.php?content=928
-    kind: listing_index
-  allow_hosts:
-  - www.shihoro.jp
-  max_pages: 30
 - id: hokkaido-016331
   name: 上士幌町空き家バンク
   operator: 上士幌町
@@ -3325,26 +3310,21 @@ sources:
   operator: 新得町
   operator_kind: municipality
   official_url: https://www.shintoku-town.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '016357'
     name: 新得町
     prefecture: 北海道
     prefecture_slug: hokkaido
     slug: '016357'
-    bank_url: https://www.shintoku-town.jp/kurashi-tetuduki/ie_tochi/akiya_akiti_akisitu/
-    bank_status: available
+    bank_url: https://www.shintoku-town.jp/
+    bank_status: none
     map_query: 北海道新得町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.shintoku-town.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.shintoku-town.jp/kurashi-tetuduki/ie_tochi/akiya_akiti_akisitu/
-    kind: listing_index
-  allow_hosts:
-  - www.shintoku-town.jp
-  max_pages: 30
 - id: hokkaido-016365
   name: 清水町空き家バンク
   operator: 清水町

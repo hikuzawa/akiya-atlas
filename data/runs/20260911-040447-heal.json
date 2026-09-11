@@ -1,0 +1,28 @@
+{
+  "command": "heal",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-11T04:06:52Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "長崎県対馬市: 同じ一覧が最良のまま（物件行 2）。0 件の原因は抽出側の可能性",
+    "長崎県雲仙市: 同じ一覧が最良のまま（物件行 68）。0 件の原因は抽出側の可能性",
+    "長崎県南島原市: 同じ一覧が最良のまま（物件行 6）。0 件の原因は抽出側の可能性",
+    "長崎県波佐見町: 同じ一覧が最良のまま（物件行 11）。0 件の原因は抽出側の可能性"
+  ],
+  "service": "akiya-atlas",
+  "stages": {
+    "heal": {
+      "checked": 4,
+      "downgraded": 0,
+      "requests": 37,
+      "swapped": 0
+    }
+  },
+  "started_at": "2026-09-11T04:04:47Z"
+}

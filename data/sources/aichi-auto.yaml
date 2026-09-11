@@ -105,26 +105,21 @@ sources:
   operator: 半田市
   operator_kind: municipality
   official_url: https://www.city.handa.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '232050'
     name: 半田市
     prefecture: 愛知県
     prefecture_slug: aichi
     slug: '232050'
-    bank_url: https://www.city.handa.lg.jp/machi/sumai/1003262/index.html
-    bank_status: available
+    bank_url: https://www.city.handa.lg.jp/
+    bank_status: none
     map_query: 愛知県半田市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.handa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.handa.lg.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.handa.lg.jp/machi/sumai/1003262/index.html
-    kind: listing_index
-  allow_hosts:
-  - www.city.handa.lg.jp
-  max_pages: 30
 - id: aichi-232068
   name: 春日井市空き家バンク
   operator: 春日井市
@@ -170,26 +165,21 @@ sources:
   operator: 津島市
   operator_kind: municipality
   official_url: https://www.city.tsushima.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '232084'
     name: 津島市
     prefecture: 愛知県
     prefecture_slug: aichi
     slug: '232084'
-    bank_url: https://www.city.tsushima.lg.jp/kurashi/sumaikenchiku/akiya/index.html
-    bank_status: available
+    bank_url: https://www.city.tsushima.lg.jp/
+    bank_status: none
     map_query: 愛知県津島市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.tsushima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tsushima.lg.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.tsushima.lg.jp/kurashi/sumaikenchiku/akiya/index.html
-    kind: listing_index
-  allow_hosts:
-  - www.city.tsushima.lg.jp
-  max_pages: 30
 - id: aichi-232092
   name: 碧南市空き家バンク
   operator: 碧南市
@@ -275,26 +265,21 @@ sources:
   operator: 西尾市
   operator_kind: municipality
   official_url: https://www.city.nishio.aichi.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '232131'
     name: 西尾市
     prefecture: 愛知県
     prefecture_slug: aichi
     slug: '232131'
-    bank_url: https://www.city.nishio.aichi.jp/kurashi/sumai/1001387/index.html
-    bank_status: available
+    bank_url: https://www.city.nishio.aichi.jp/
+    bank_status: none
     map_query: 愛知県西尾市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.nishio.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.nishio.aichi.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.nishio.aichi.jp/kurashi/sumai/1001387/index.html
-    kind: listing_index
-  allow_hosts:
-  - www.city.nishio.aichi.jp
-  max_pages: 30
 - id: aichi-232149
   name: 蒲郡市空き家バンク
   operator: 蒲郡市
@@ -321,9 +306,9 @@ sources:
   - www.city.gamagori.lg.jp
   max_pages: 30
   external_links:
-  - label: LIFULL HOMES　空き家バンク
+  - label: LIFULL HOMES 空き家バンク
     url: https://www.homes.co.jp/akiyabank/aichi/gamagori/
-  - label: アットホーム　空き家バンク
+  - label: アットホーム 空き家バンク
     url: https://gamagori-c23214.akiya-athome.jp/
 - id: aichi-232157
   name: 犬山市空き家バンク
@@ -533,26 +518,21 @@ sources:
   operator: 尾張旭市
   operator_kind: municipality
   official_url: https://www.city.owariasahi.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '232262'
     name: 尾張旭市
     prefecture: 愛知県
     prefecture_slug: aichi
     slug: '232262'
-    bank_url: https://www.city.owariasahi.lg.jp/life/4/10/62/
-    bank_status: available
+    bank_url: https://www.city.owariasahi.lg.jp/
+    bank_status: none
     map_query: 愛知県尾張旭市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.owariasahi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.owariasahi.lg.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.owariasahi.lg.jp/life/4/10/62/
-    kind: listing_index
-  allow_hosts:
-  - www.city.owariasahi.lg.jp
-  max_pages: 30
 - id: aichi-232271
   name: 高浜市空き家バンク
   operator: 高浜市

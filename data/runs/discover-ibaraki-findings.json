@@ -430,33 +430,27 @@
       "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.city.hitachinaka.lg.jp/machizukuri/sumai/1003440/index.html",
-        "https://www.city.hitachinaka.lg.jp/machizukuri/sumai/1003440/1014275.html",
-        "https://www.city.hitachinaka.lg.jp/machizukuri/sumai/1003440/1010216.html",
-        "https://www.city.hitachinaka.lg.jp/machizukuri/sumai/1003440/1003442.html",
-        "https://www.city.hitachinaka.lg.jp/machizukuri/sumai/1003440/1003453.html"
-      ],
-      "bank_url": "https://www.city.hitachinaka.lg.jp/machizukuri/sumai/1003440/1003452.html",
+      "alternatives": [],
+      "bank_url": "https://www.city.hitachinaka.lg.jp/",
       "code": "082210",
-      "confidence": 0.887,
+      "confidence": 0.6,
       "cross_linked": false,
       "evidence_quote": "公式ドメイン www.city.hitachinaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.hitachinaka.lg.jp/",
       "external_links": [],
-      "listing_rows": 0,
-      "listing_score": 0.015,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "ひたちなか市",
       "name_kana": "ﾋﾀﾁﾅｶｼ",
       "official_url": "www.city.hitachinaka.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_detail",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
     },
     {
       "alternatives": [

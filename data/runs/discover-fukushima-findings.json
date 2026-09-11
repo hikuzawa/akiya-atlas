@@ -24,33 +24,27 @@
       "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.city.aizuwakamatsu.fukushima.jp/docs/2020031600039/",
-        "https://www.city.aizuwakamatsu.fukushima.jp/docs/2023092100036/",
-        "https://www.city.aizuwakamatsu.fukushima.jp/docs/2018062700040/",
-        "https://www.city.aizuwakamatsu.fukushima.jp/docs/2018061500016/",
-        "https://www.city.aizuwakamatsu.fukushima.jp/docs/2023031600016/"
-      ],
-      "bank_url": "https://www.city.aizuwakamatsu.fukushima.jp/docs/2020031600022/",
+      "alternatives": [],
+      "bank_url": "https://www.city.aizuwakamatsu.fukushima.jp/",
       "code": "072028",
-      "confidence": 0.8135,
+      "confidence": 0.6,
       "cross_linked": false,
       "evidence_quote": "公式ドメイン www.city.aizuwakamatsu.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.aizuwakamatsu.fukushima.jp/",
       "external_links": [],
-      "listing_rows": 3,
-      "listing_score": 0.24,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "会津若松市",
       "name_kana": "ｱｲﾂﾞﾜｶﾏﾂｼ",
       "official_url": "www.city.aizuwakamatsu.fukushima.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "福島県",
       "prefecture_slug": "fukushima",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
     },
     {
       "alternatives": [

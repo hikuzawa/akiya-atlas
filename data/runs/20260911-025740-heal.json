@@ -1,0 +1,23 @@
+{
+  "command": "heal",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-11T02:57:44Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "heal": {
+      "checked": 0,
+      "downgraded": 0,
+      "requests": 0,
+      "swapped": 0
+    }
+  },
+  "started_at": "2026-09-11T02:57:40Z"
+}

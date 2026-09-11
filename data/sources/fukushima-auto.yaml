@@ -25,26 +25,21 @@ sources:
   operator: 会津若松市
   operator_kind: municipality
   official_url: https://www.city.aizuwakamatsu.fukushima.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: 072028
     name: 会津若松市
     prefecture: 福島県
     prefecture_slug: fukushima
     slug: 072028
-    bank_url: https://www.city.aizuwakamatsu.fukushima.jp/docs/2020031600022/
-    bank_status: available
+    bank_url: https://www.city.aizuwakamatsu.fukushima.jp/
+    bank_status: none
     map_query: 福島県会津若松市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.aizuwakamatsu.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.aizuwakamatsu.fukushima.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.aizuwakamatsu.fukushima.jp/docs/2020031600022/
-    kind: listing_index
-  allow_hosts:
-  - www.city.aizuwakamatsu.fukushima.jp
-  max_pages: 30
 - id: fukushima-072036
   name: 郡山市空き家バンク
   operator: 郡山市
@@ -219,7 +214,7 @@ sources:
     url: https://www.city.tamura.lg.jp/
     checked_on: '2026-09-11'
   external_links:
-  - label: 空き家・空き地登録物件一覧　（全国版アットホーム空き家バンクへリンクします）
+  - label: 空き家・空き地登録物件一覧 (全国版アットホーム空き家バンクへリンクします)
     url: https://tamura-c07211.akiya-athome.jp/
 - id: fukushima-072125
   name: 南相馬市空き家バンク
@@ -482,113 +477,113 @@ sources:
   - www.town.tadami.lg.jp
   max_pages: 30
   external_links:
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-49410/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-49282/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-49098/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-48366/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-44844/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-44213/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-45551/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-38173/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-37995/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-37464/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-37327/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-33640/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-32598/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-26360/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-24041/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-17887/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-45575/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-42971/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-33641/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-33518/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-24838/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-17357/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-43546/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-45533/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-31732/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-37802/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-38163/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-31158/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-33444/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-29611/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-29843/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-27701/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-30578/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-33266/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-27486/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-21016/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-26128/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-20583/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-22661/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-22030/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-29945/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-16035/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-21258/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-12769/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-19559/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-12770/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-15982/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-17534/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-15571/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-11816/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-15543/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-16037/
-  - label: 詳細（外部サイト）
+  - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-7623/
 - id: fukushima-073687
   name: 南会津町空き家バンク
@@ -729,9 +724,9 @@ sources:
   - www.town.aizubange.fukushima.jp
   max_pages: 30
   external_links:
-  - label: Lifullhome'S空き家バンク（外部リンク）
+  - label: Lifullhome'S空き家バンク(外部リンク)
     url: https://www.homes.co.jp/akiyabank/
-  - label: Lifullhome'S空き家バンク（会津坂下町のトップページ）（外部リンク）
+  - label: Lifullhome'S空き家バンク(会津坂下町のトップページ)(外部リンク)
     url: https://www.homes.co.jp/akiyabank/fukushima/kawanuma_aizubange/
 - id: fukushima-074225
   name: 湯川村空き家バンク
@@ -862,7 +857,7 @@ sources:
     url: https://www.vill.showa.fukushima.jp/
     checked_on: '2026-09-11'
   external_links:
-  - label: ●現在募集中の物件はこちら（外部サイト）
+  - label: ●現在募集中の物件はこちら(外部サイト)
     url: https://showa-v07446.akiya-athome.jp/
 - id: fukushima-074471
   name: 会津美里町空き家バンク

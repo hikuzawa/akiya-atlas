@@ -330,26 +330,21 @@ sources:
   operator: 飛騨市
   operator_kind: municipality
   official_url: https://www.city.hida.gifu.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '212172'
     name: 飛騨市
     prefecture: 岐阜県
     prefecture_slug: gifu
     slug: '212172'
-    bank_url: https://www.city.hida.gifu.jp/soshiki/23/akiyanitsuite.html
-    bank_status: available
+    bank_url: https://www.city.hida.gifu.jp/
+    bank_status: none
     map_query: 岐阜県飛騨市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.hida.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hida.gifu.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.hida.gifu.jp/soshiki/23/akiyanitsuite.html
-    kind: listing_index
-  allow_hosts:
-  - www.city.hida.gifu.jp
-  max_pages: 30
 - id: gifu-212181
   name: 本巣市空き家バンク
   operator: 本巣市

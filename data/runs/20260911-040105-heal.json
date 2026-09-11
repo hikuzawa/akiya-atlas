@@ -1,0 +1,27 @@
+{
+  "command": "heal",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-11T04:02:29Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "福岡県中間市: 同じ一覧が最良のまま（物件行 6）。0 件の原因は抽出側の可能性",
+    "福岡県小郡市: 同じ一覧が最良のまま（物件行 4）。0 件の原因は抽出側の可能性",
+    "福岡県大任町: 同じ一覧が最良のまま（物件行 7）。0 件の原因は抽出側の可能性"
+  ],
+  "service": "akiya-atlas",
+  "stages": {
+    "heal": {
+      "checked": 3,
+      "downgraded": 0,
+      "requests": 25,
+      "swapped": 0
+    }
+  },
+  "started_at": "2026-09-11T04:01:05Z"
+}

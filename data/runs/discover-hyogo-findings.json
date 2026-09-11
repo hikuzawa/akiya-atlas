@@ -84,32 +84,27 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.city.akashi.lg.jp/tosei/juutaku_ka/akiya/akiya.html",
-        "https://www.city.akashi.lg.jp/community/jinken_ka/jinken/heiwakinenshikiten.html",
-        "https://www.city.akashi.lg.jp/tosei/juutaku_ka/shise/koho/oshirase/r03/bosyuu/akiya_r0706_1.html",
-        "https://www.city.akashi.lg.jp/community/danjyo_ka/joseikatuyaku/documents/tayounahatarakikatasuishinnjigyo.html"
-      ],
-      "bank_url": "https://www.city.akashi.lg.jp/tosei/kouen_ka/boen/akihigan.html",
+      "alternatives": [],
+      "bank_url": "https://www.city.akashi.lg.jp/",
       "code": "282031",
-      "confidence": 0.8065,
+      "confidence": 0.6,
       "cross_linked": false,
       "evidence_quote": "公式ドメイン www.city.akashi.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.akashi.lg.jp/",
       "external_links": [],
-      "listing_rows": 2,
-      "listing_score": 0.22,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "明石市",
       "name_kana": "ｱｶｼｼ",
       "official_url": "www.city.akashi.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "兵庫県",
       "prefecture_slug": "hyogo",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
     },
     {
       "alternatives": [
@@ -396,30 +391,27 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.city.takasago.lg.jp/gyoseisite/kurashi_tetsuzuki/taishinakiyakenchiku/index.html",
-        "https://www.city.takasago.lg.jp/gyoseisite/kurashi_tetsuzuki/taishinakiyakenchiku/kenchiku/index.html"
-      ],
-      "bank_url": "https://www.city.takasago.lg.jp/gyoseisite/kurashi_tetsuzuki/taishinakiyakenchiku/10720.html",
+      "alternatives": [],
+      "bank_url": "https://www.city.takasago.lg.jp/",
       "code": "282162",
-      "confidence": 0.8065,
+      "confidence": 0.6,
       "cross_linked": false,
       "evidence_quote": "公式ドメイン www.city.takasago.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.takasago.lg.jp/",
       "external_links": [],
-      "listing_rows": 2,
-      "listing_score": 0.19,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "高砂市",
       "name_kana": "ﾀｶｻｺﾞｼ",
       "official_url": "www.city.takasago.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "兵庫県",
       "prefecture_slug": "hyogo",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
     },
     {
       "alternatives": [],

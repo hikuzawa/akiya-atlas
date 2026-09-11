@@ -850,33 +850,27 @@
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
     },
     {
-      "alternatives": [
-        "https://www.city.katori.lg.jp/living/sumai/akiya_taisaku/index.html",
-        "https://www.city.katori.lg.jp/living/kankyohozen/akiti.html",
-        "https://www.city.katori.lg.jp/living/kankyoeisei/noyaki.html",
-        "https://www.city.katori.lg.jp/sightseeing/gyoji/aki/cosmos.html",
-        "https://www.city.katori.lg.jp/living/sumai/akiya_taisaku/hudousansoudan.html"
-      ],
-      "bank_url": "https://www.city.katori.lg.jp/sightseeing/matsuri/introduction/aki.html",
+      "alternatives": [],
+      "bank_url": "https://www.city.katori.lg.jp/",
       "code": "122360",
-      "confidence": 0.8065,
+      "confidence": 0.6,
       "cross_linked": false,
       "evidence_quote": "公式ドメイン www.city.katori.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.katori.lg.jp/",
       "external_links": [],
-      "listing_rows": 2,
-      "listing_score": 0.22,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "香取市",
       "name_kana": "ｶﾄﾘｼ",
       "official_url": "www.city.katori.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
     },
     {
       "alternatives": [
@@ -905,31 +899,27 @@
       "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.city.isumi.lg.jp/gyosei/kosodate_kyoiku/playland/misaki/sitemap.dir.xml",
-        "https://www.city.isumi.lg.jp/gyosei/shiseijoho/isumishinitsuite/renrakusakiichiran/sitemap.dir.xml",
-        "https://www.city.isumi.lg.jp/gyosei/lifescene/ninshin_shussan/parenting/misakikouen/sitemap.dir.xml"
-      ],
-      "bank_url": "https://www.city.isumi.lg.jp/soshikikarasagasu/shogaigakushuka/misakikominkan/1/2/6877.html",
+      "alternatives": [],
+      "bank_url": "https://www.city.isumi.lg.jp/",
       "code": "122386",
-      "confidence": 0.8135,
+      "confidence": 0.6,
       "cross_linked": false,
       "evidence_quote": "公式ドメイン www.city.isumi.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.isumi.lg.jp/",
       "external_links": [],
-      "listing_rows": 3,
-      "listing_score": 0.24,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "いすみ市",
       "name_kana": "ｲｽﾐｼ",
       "official_url": "www.city.isumi.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
-      "pagination_pattern": "https?://www\\.city\\.isumi\\.lg\\.jp/soshikikarasagasu/shogaigakushuka/misakikominkan/1/2/6877\\.html/?\\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\\d+",
-      "policy": "crawl",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
     },
     {
       "alternatives": [],

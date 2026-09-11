@@ -50,26 +50,21 @@ sources:
   operator: 大船渡市
   operator_kind: municipality
   official_url: https://www.city.ofunato.iwate.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '032034'
     name: 大船渡市
     prefecture: 岩手県
     prefecture_slug: iwate
     slug: '032034'
-    bank_url: https://www.city.ofunato.iwate.jp/genre/category/kurashi/residence/karaietotaisaku
-    bank_status: available
+    bank_url: https://www.city.ofunato.iwate.jp/
+    bank_status: none
     map_query: 岩手県大船渡市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.ofunato.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ofunato.iwate.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.ofunato.iwate.jp/genre/category/kurashi/residence/karaietotaisaku
-    kind: listing_index
-  allow_hosts:
-  - www.city.ofunato.iwate.jp
-  max_pages: 30
 - id: iwate-032051
   name: 花巻市空き家バンク
   operator: 花巻市
@@ -436,26 +431,21 @@ sources:
   operator: 紫波町
   operator_kind: municipality
   official_url: https://www.town.shiwa.iwate.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: 033219
     name: 紫波町
     prefecture: 岩手県
     prefecture_slug: iwate
     slug: 033219
-    bank_url: https://www.town.shiwa.iwate.jp/soshiki/3_1/2_akiya/99999/
-    bank_status: available
+    bank_url: https://www.town.shiwa.iwate.jp/
+    bank_status: none
     map_query: 岩手県紫波町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.shiwa.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.shiwa.iwate.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.town.shiwa.iwate.jp/soshiki/3_1/2_akiya/99999/
-    kind: listing_index
-  allow_hosts:
-  - www.town.shiwa.iwate.jp
-  max_pages: 30
 - id: iwate-033227
   name: 矢巾町空き家バンク
   operator: 矢巾町

@@ -85,11 +85,11 @@ sources:
     url: https://ashikaga-c09202.akiya-athome.jp/rent/live/map/
   - label: 事業用(賃貸)
     url: https://ashikaga-c09202.akiya-athome.jp/rent/business/map/
-  - label: '◆ 子育て世帯等限定 ◆  空き家バンクリフォーム費補助金 最大１００万円 ！ '
+  - label: ◆ 子育て世帯等限定 ◆ 空き家バンクリフォーム費補助金 最大100万円 !
     url: https://ashikaga-c09202.akiya-athome.jp/contents/news/detail/?id=1805
-  - label: ◆ 移住者限定 ◆ 空き家バンク改修費補助金 最大５０万円 ！
+  - label: ◆ 移住者限定 ◆ 空き家バンク改修費補助金 最大50万円 !
     url: https://ashikaga-c09202.akiya-athome.jp/contents/news/detail/?id=1537
-  - label: ◆物件登録募集中【お気軽にご相談ください Tel. 0284-20-2266】
+  - label: ◆物件登録募集中【お気軽にご相談ください Tel. 】
     url: https://ashikaga-c09202.akiya-athome.jp/contents/news/detail/?id=916
   - label: akiya-athome.jp
     url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-47966
@@ -159,17 +159,17 @@ sources:
     url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/buy/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%A3%B2%E5%9C%B0-47189
   - label: akiya-athome.jp
     url: https://ashikaga-c09202.akiya-athome.jp/bukken/detail/rent/%E8%B6%B3%E5%88%A9%E5%B8%82%E5%B1%85%E4%BD%8F%E7%94%A8-5240
-  - label: 戸建て（売買）
+  - label: 戸建て(売買)
     url: https://ashikaga-c09202.akiya-athome.jp/buy/house/area/tochigiken/ashikagashi/list?gyosei_cd[]=09202
-  - label: 戸建て（賃貸）
+  - label: 戸建て(賃貸)
     url: https://ashikaga-c09202.akiya-athome.jp/rent/live/area/tochigiken/ashikagashi/list?gyosei_cd[]=09202
-  - label: 土地（売買）
+  - label: 土地(売買)
     url: https://ashikaga-c09202.akiya-athome.jp/buy/land/area/tochigiken/ashikagashi/list?gyosei_cd[]=09202
-  - label: 土地（賃貸）
+  - label: 土地(賃貸)
     url: https://ashikaga-c09202.akiya-athome.jp/rent/business/area/tochigiken/ashikagashi/list?gyosei_cd[]=09202
   - label: プライバシーポリシー
     url: https://ashikaga-c09202.akiya-athome.jp/contents/static/privacy-policy/
-  - label: mail：kenchiku@city.ashikaga.lg.jp
+  - label: mail:kenchiku@city.ashikaga.lg.jp
     url: https://ashikaga-c09202.akiya-athome.jp/shop/contact/shop/
 - id: tochigi-092037
   name: 栃木市空き家バンク
@@ -346,7 +346,7 @@ sources:
     url: https://moka-c09209.akiya-athome.jp/rent/live/map/
   - label: 事業用(賃貸)
     url: https://moka-c09209.akiya-athome.jp/rent/business/map/
-  - label: 空き家バンクがＲ＆Ｃマガジンに掲載されました。
+  - label: 空き家バンクがR&Cマガジンに掲載されました。
     url: https://moka-c09209.akiya-athome.jp/contents/news/detail/?id=1049
   - label: akiya-athome.jp
     url: https://moka-c09209.akiya-athome.jp/bukken/detail/buy/%E7%9C%9F%E5%B2%A1%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46362
@@ -358,29 +358,29 @@ sources:
     url: https://moka-c09209.akiya-athome.jp/buy/house/area/tochigiken/mokashi/list?gyosei_cd[]=09209
   - label: ◆賃貸物件一覧
     url: https://moka-c09209.akiya-athome.jp/rent/live/area/tochigiken/mokashi/list?gyosei_cd[]=09209
-  - label: ◆賃貸事業用物件一覧（空き店舗）
+  - label: ◆賃貸事業用物件一覧(空き店舗)
     url: https://moka-c09209.akiya-athome.jp/rent/business/rail/mokatetsudomokasen/station?ensen_cd[]=0e1d
-  - label: '  空き家バンク以外の
+  - label: '空き家バンク以外の
 
       真岡市の
 
       中古一戸建てを探す
 
-      （athome）'
+      (athome)'
     url: https://www.athome.co.jp/kodate/chuko/tochigi/moka-city/list/?kwd=101
-  - label: '  空き家バンク以外の
+  - label: '空き家バンク以外の
 
       真岡市の土地を探す
 
-      （athome）'
+      (athome)'
     url: https://www.athome.co.jp/tochi/tochigi/moka-city/list/?kwd=101
-  - label: '  空き家バンク以外の
+  - label: '空き家バンク以外の
 
       真岡市の
 
       賃貸居住用物件を探す
 
-      （athome）'
+      (athome)'
     url: https://www.athome.co.jp/chintai/tochigi/moka-city/list/?kwd=101
   - label: プライバシーポリシー
     url: https://moka-c09209.akiya-athome.jp/contents/static/privacy-policy/
@@ -624,13 +624,13 @@ sources:
     url: https://www.pref.tochigi.lg.jp/c05/intro/tochigi/link/lkshityouson.html
     checked_on: '2026-09-11'
   external_links:
-  - label: （外部サイト）
+  - label: (外部サイト)
     url: http://www.homes.co.jp/akiyabank/tochigi/haga_haga/
-  - label: LIFULLHOME'S空き家バンクホームページ（外部サイト）
+  - label: LIFULLHOME'S空き家バンクホームページ(外部サイト)
     url: https://www.homes.co.jp/akiyabank/tochigi/haga_haga/
-  - label: （外部サイト）
+  - label: (外部サイト)
     url: http://haga-t09345.akiya-athome.jp/
-  - label: アットホーム空き家バンクホームページ（外部サイト）
+  - label: アットホーム空き家バンクホームページ(外部サイト)
     url: https://haga-t09345.akiya-athome.jp/
 - id: tochigi-093611
   name: 壬生町空き家バンク

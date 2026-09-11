@@ -1010,30 +1010,27 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.city.kiyose.lg.jp/kurashi/sumai/1013812/index.html",
-        "https://www.city.kiyose.lg.jp/bunkasportskankou/shinaimidokoro/keyaki/index.html"
-      ],
-      "bank_url": "https://www.city.kiyose.lg.jp/kurashi/sumai/1003908.html",
+      "alternatives": [],
+      "bank_url": "https://www.city.kiyose.lg.jp/",
       "code": "132217",
-      "confidence": 0.8065,
+      "confidence": 0.6,
       "cross_linked": false,
       "evidence_quote": "公式ドメイン www.city.kiyose.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.kiyose.lg.jp/",
       "external_links": [],
-      "listing_rows": 2,
-      "listing_score": 0.19,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "清瀬市",
       "name_kana": "ｷﾖｾｼ",
       "official_url": "www.city.kiyose.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
     },
     {
       "alternatives": [
@@ -1186,30 +1183,27 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.city.nishitokyo.lg.jp/kurasi/jutaku/akiyabank/index.html",
-        "https://www.city.nishitokyo.lg.jp/kurasi/jutaku/akiyakanren/index.html"
-      ],
-      "bank_url": "https://www.city.nishitokyo.lg.jp/kurasi/koen/ikegaki.html",
+      "alternatives": [],
+      "bank_url": "https://www.city.nishitokyo.lg.jp/",
       "code": "132292",
-      "confidence": 0.8065,
+      "confidence": 0.6,
       "cross_linked": false,
       "evidence_quote": "公式ドメイン www.city.nishitokyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.nishitokyo.lg.jp/",
       "external_links": [],
-      "listing_rows": 2,
-      "listing_score": 0.22,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "西東京市",
       "name_kana": "ﾆｼﾄｳｷｮｳｼ",
       "official_url": "www.city.nishitokyo.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
     },
     {
       "alternatives": [

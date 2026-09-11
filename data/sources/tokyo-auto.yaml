@@ -830,26 +830,21 @@ sources:
   operator: 清瀬市
   operator_kind: municipality
   official_url: https://www.city.kiyose.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '132217'
     name: 清瀬市
     prefecture: 東京都
     prefecture_slug: tokyo
     slug: '132217'
-    bank_url: https://www.city.kiyose.lg.jp/kurashi/sumai/1003908.html
-    bank_status: available
+    bank_url: https://www.city.kiyose.lg.jp/
+    bank_status: none
     map_query: 東京都清瀬市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.kiyose.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kiyose.lg.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.kiyose.lg.jp/kurashi/sumai/1003908.html
-    kind: listing_index
-  allow_hosts:
-  - www.city.kiyose.lg.jp
-  max_pages: 30
 - id: tokyo-132225
   name: 東久留米市空き家バンク
   operator: 東久留米市
@@ -975,26 +970,21 @@ sources:
   operator: 西東京市
   operator_kind: municipality
   official_url: https://www.city.nishitokyo.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '132292'
     name: 西東京市
     prefecture: 東京都
     prefecture_slug: tokyo
     slug: '132292'
-    bank_url: https://www.city.nishitokyo.lg.jp/kurasi/koen/ikegaki.html
-    bank_status: available
+    bank_url: https://www.city.nishitokyo.lg.jp/
+    bank_status: none
     map_query: 東京都西東京市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.nishitokyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nishitokyo.lg.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.nishitokyo.lg.jp/kurasi/koen/ikegaki.html
-    kind: listing_index
-  allow_hosts:
-  - www.city.nishitokyo.lg.jp
-  max_pages: 30
 - id: tokyo-133035
   name: 瑞穂町空き家バンク
   operator: 瑞穂町

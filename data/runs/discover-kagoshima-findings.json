@@ -453,29 +453,27 @@
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
     },
     {
-      "alternatives": [
-        "https://www.city.minamisatsuma.lg.jp/living/sumai-tochi/akiyabank/"
-      ],
-      "bank_url": "https://www.city.minamisatsuma.lg.jp/living/sumai-tochi/akiyataisaku/",
+      "alternatives": [],
+      "bank_url": "https://www.city.minamisatsuma.lg.jp/",
       "code": "462209",
-      "confidence": 0.8065,
+      "confidence": 0.6,
       "cross_linked": false,
       "evidence_quote": "公式ドメイン www.city.minamisatsuma.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.minamisatsuma.lg.jp/",
       "external_links": [],
-      "listing_rows": 2,
-      "listing_score": 0.16,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "南さつま市",
       "name_kana": "ﾐﾅﾐｻﾂﾏｼ",
       "official_url": "www.city.minamisatsuma.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
     },
     {
       "alternatives": [

@@ -65,26 +65,21 @@ sources:
   operator: 明石市
   operator_kind: municipality
   official_url: https://www.city.akashi.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '282031'
     name: 明石市
     prefecture: 兵庫県
     prefecture_slug: hyogo
     slug: '282031'
-    bank_url: https://www.city.akashi.lg.jp/tosei/kouen_ka/boen/akihigan.html
-    bank_status: available
+    bank_url: https://www.city.akashi.lg.jp/
+    bank_status: none
     map_query: 兵庫県明石市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.akashi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.akashi.lg.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.akashi.lg.jp/tosei/kouen_ka/boen/akihigan.html
-    kind: listing_index
-  allow_hosts:
-  - www.city.akashi.lg.jp
-  max_pages: 30
 - id: hyogo-282049
   name: 西宮市空き家バンク
   operator: 西宮市
@@ -246,7 +241,7 @@ sources:
     url: https://www.city.ako.lg.jp/
     checked_on: '2026-09-11'
   external_links:
-  - label: 一般社団法人兵庫県宅地建物取引業協会西播磨支部（ハトマーク）の業者一覧（外部サイトへリンク）
+  - label: 一般社団法人兵庫県宅地建物取引業協会西播磨支部(ハトマーク)の業者一覧(外部サイトへリンク)
     url: https://www.hatomarksite.com/search/zentaku/agent/area/
 - id: hyogo-282138
   name: 西脇市空き家バンク
@@ -313,26 +308,21 @@ sources:
   operator: 高砂市
   operator_kind: municipality
   official_url: https://www.city.takasago.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '282162'
     name: 高砂市
     prefecture: 兵庫県
     prefecture_slug: hyogo
     slug: '282162'
-    bank_url: https://www.city.takasago.lg.jp/gyoseisite/kurashi_tetsuzuki/taishinakiyakenchiku/10720.html
-    bank_status: available
+    bank_url: https://www.city.takasago.lg.jp/
+    bank_status: none
     map_query: 兵庫県高砂市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.takasago.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.takasago.lg.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.takasago.lg.jp/gyoseisite/kurashi_tetsuzuki/taishinakiyakenchiku/10720.html
-    kind: listing_index
-  allow_hosts:
-  - www.city.takasago.lg.jp
-  max_pages: 30
 - id: hyogo-282171
   name: 川西市空き家バンク
   operator: 川西市
@@ -383,9 +373,9 @@ sources:
   - www.city.ono.hyogo.jp
   max_pages: 30
   external_links:
-  - label: 全国版空き家バンクトップページ（LIFULL HOME'Sのサイト）（外部リンク）
+  - label: 全国版空き家バンクトップページ(LIFULL HOME'Sのサイト)(外部リンク)
     url: https://www.homes.co.jp/akiyabank/
-  - label: 全国版空き家バンクトップページ（アットホームのサイト）（外部リンク）
+  - label: 全国版空き家バンクトップページ(アットホームのサイト)(外部リンク)
     url: https://www.akiya-athome.jp/
 - id: hyogo-282197
   name: 三田市空き家バンク
@@ -757,9 +747,9 @@ sources:
   - www.town.fukusaki.hyogo.jp
   max_pages: 30
   external_links:
-  - label: 全国版　空き家・空き地バンク　（at homeのホームページ）(外部サイトへリンク)
+  - label: 全国版 空き家・空き地バンク (at homeのホームページ)(外部サイトへリンク)
     url: https://www.akiya-athome.jp
-  - label: 空き家バンク（LIFULL HOME'Sのホームページ）（外部サイトへリンク）
+  - label: 空き家バンク(LIFULL HOME'Sのホームページ)(外部サイトへリンク)
     url: https://www.homes.co.jp/akiyabank
 - id: hyogo-284467
   name: 神河町空き家バンク

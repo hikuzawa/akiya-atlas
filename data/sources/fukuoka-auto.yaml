@@ -309,26 +309,21 @@ sources:
   operator: 小郡市
   operator_kind: municipality
   official_url: https://www.city.ogori.fukuoka.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '402168'
     name: 小郡市
     prefecture: 福岡県
     prefecture_slug: fukuoka
     slug: '402168'
-    bank_url: https://www.city.ogori.fukuoka.jp/197/796/2190
-    bank_status: available
+    bank_url: https://www.city.ogori.fukuoka.jp/
+    bank_status: none
     map_query: 福岡県小郡市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.ogori.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ogori.fukuoka.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.ogori.fukuoka.jp/197/796/2190
-    kind: listing_index
-  allow_hosts:
-  - www.city.ogori.fukuoka.jp
-  max_pages: 30
 - id: fukuoka-402176
   name: 筑紫野市空き家バンク
   operator: 筑紫野市

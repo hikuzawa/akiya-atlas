@@ -1,6 +1,16 @@
 {
   "prefectures": {
     "aichi": {
+      "crawl": "2026-09-11T03:32:46+00:00",
+      "crawl_stats": {
+        "changed": 6,
+        "errors": 0,
+        "fetched": 6,
+        "not_modified": 0,
+        "requests": 12,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T23:10:03+00:00",
       "discover_stats": {
         "adopted_crawl": 6,
@@ -11,10 +21,35 @@
         "skipped_existing": 0,
         "total": 54
       },
-      "elapsed_minutes": 7.1,
+      "elapsed_minutes": 2.9,
+      "extract": "2026-09-11T03:33:33+00:00",
+      "extract_stats": {
+        "input_tokens": 20960,
+        "items": 30,
+        "llm_calls": 6,
+        "output_tokens": 4488,
+        "pages": 6
+      },
+      "heal": "2026-09-11T03:35:30+00:00",
+      "heal_stats": {
+        "checked": 4,
+        "downgraded": 0,
+        "requests": 36,
+        "swapped": 0
+      },
       "name": "愛知県"
     },
     "akita": {
+      "crawl": "2026-09-11T02:56:31+00:00",
+      "crawl_stats": {
+        "changed": 2,
+        "errors": 0,
+        "fetched": 2,
+        "not_modified": 0,
+        "requests": 4,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T21:56:24+00:00",
       "discover_stats": {
         "adopted_crawl": 2,
@@ -25,10 +60,35 @@
         "skipped_existing": 0,
         "total": 25
       },
-      "elapsed_minutes": 2.5,
+      "elapsed_minutes": 1.4,
+      "extract": "2026-09-11T02:57:40+00:00",
+      "extract_stats": {
+        "input_tokens": 12127,
+        "items": 56,
+        "llm_calls": 2,
+        "output_tokens": 8888,
+        "pages": 2
+      },
+      "heal": "2026-09-11T02:57:44+00:00",
+      "heal_stats": {
+        "checked": 0,
+        "downgraded": 0,
+        "requests": 0,
+        "swapped": 0
+      },
       "name": "秋田県"
     },
     "aomori": {
+      "crawl": "2026-09-11T02:50:06+00:00",
+      "crawl_stats": {
+        "changed": 4,
+        "errors": 0,
+        "fetched": 4,
+        "not_modified": 0,
+        "requests": 8,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T21:47:57+00:00",
       "discover_stats": {
         "adopted_crawl": 4,
@@ -39,10 +99,35 @@
         "skipped_existing": 0,
         "total": 40
       },
-      "elapsed_minutes": 3.5,
+      "elapsed_minutes": 2.1,
+      "extract": "2026-09-11T02:50:54+00:00",
+      "extract_stats": {
+        "input_tokens": 26955,
+        "items": 39,
+        "llm_calls": 4,
+        "output_tokens": 6983,
+        "pages": 4
+      },
+      "heal": "2026-09-11T02:52:04+00:00",
+      "heal_stats": {
+        "checked": 2,
+        "downgraded": 0,
+        "requests": 20,
+        "swapped": 0
+      },
       "name": "青森県"
     },
     "chiba": {
+      "crawl": "2026-09-11T03:13:30+00:00",
+      "crawl_stats": {
+        "changed": 15,
+        "errors": 1,
+        "fetched": 15,
+        "not_modified": 0,
+        "requests": 31,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T22:25:15+00:00",
       "discover_stats": {
         "adopted_crawl": 15,
@@ -53,10 +138,35 @@
         "skipped_existing": 0,
         "total": 54
       },
-      "elapsed_minutes": 5.4,
+      "elapsed_minutes": 2.6,
+      "extract": "2026-09-11T03:14:25+00:00",
+      "extract_stats": {
+        "input_tokens": 63443,
+        "items": 87,
+        "llm_calls": 15,
+        "output_tokens": 14842,
+        "pages": 15
+      },
+      "heal": "2026-09-11T03:15:49+00:00",
+      "heal_stats": {
+        "checked": 3,
+        "downgraded": 0,
+        "requests": 27,
+        "swapped": 0
+      },
       "name": "千葉県"
     },
     "ehime": {
+      "crawl": "2026-09-11T03:58:09+00:00",
+      "crawl_stats": {
+        "changed": 2,
+        "errors": 0,
+        "fetched": 2,
+        "not_modified": 0,
+        "requests": 4,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-11T00:41:04+00:00",
       "discover_stats": {
         "adopted_crawl": 2,
@@ -67,10 +177,35 @@
         "skipped_existing": 0,
         "total": 20
       },
-      "elapsed_minutes": 7.3,
+      "elapsed_minutes": 0.5,
+      "extract": "2026-09-11T03:58:23+00:00",
+      "extract_stats": {
+        "input_tokens": 7276,
+        "items": 2,
+        "llm_calls": 2,
+        "output_tokens": 419,
+        "pages": 2
+      },
+      "heal": "2026-09-11T03:58:27+00:00",
+      "heal_stats": {
+        "checked": 0,
+        "downgraded": 0,
+        "requests": 0,
+        "swapped": 0
+      },
       "name": "愛媛県"
     },
     "fukui": {
+      "crawl": "2026-09-11T03:24:12+00:00",
+      "crawl_stats": {
+        "changed": 5,
+        "errors": 0,
+        "fetched": 5,
+        "not_modified": 0,
+        "requests": 10,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T22:47:18+00:00",
       "discover_stats": {
         "adopted_crawl": 5,
@@ -81,10 +216,35 @@
         "skipped_existing": 0,
         "total": 17
       },
-      "elapsed_minutes": 4.0,
+      "elapsed_minutes": 1.4,
+      "extract": "2026-09-11T03:25:20+00:00",
+      "extract_stats": {
+        "input_tokens": 28869,
+        "items": 126,
+        "llm_calls": 5,
+        "output_tokens": 19538,
+        "pages": 5
+      },
+      "heal": "2026-09-11T03:25:24+00:00",
+      "heal_stats": {
+        "checked": 0,
+        "downgraded": 0,
+        "requests": 0,
+        "swapped": 0
+      },
       "name": "福井県"
     },
     "fukuoka": {
+      "crawl": "2026-09-11T04:00:23+00:00",
+      "crawl_stats": {
+        "changed": 9,
+        "errors": 0,
+        "fetched": 9,
+        "not_modified": 0,
+        "requests": 18,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-11T00:58:54+00:00",
       "discover_stats": {
         "adopted_crawl": 9,
@@ -95,10 +255,35 @@
         "skipped_existing": 0,
         "total": 60
       },
-      "elapsed_minutes": 10.6,
+      "elapsed_minutes": 2.3,
+      "extract": "2026-09-11T04:01:05+00:00",
+      "extract_stats": {
+        "input_tokens": 35739,
+        "items": 120,
+        "llm_calls": 9,
+        "output_tokens": 18157,
+        "pages": 9
+      },
+      "heal": "2026-09-11T04:02:29+00:00",
+      "heal_stats": {
+        "checked": 3,
+        "downgraded": 0,
+        "requests": 25,
+        "swapped": 0
+      },
       "name": "福岡県"
     },
     "fukushima": {
+      "crawl": "2026-09-11T02:59:25+00:00",
+      "crawl_stats": {
+        "changed": 17,
+        "errors": 0,
+        "fetched": 17,
+        "not_modified": 0,
+        "requests": 34,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T22:03:47+00:00",
       "discover_stats": {
         "adopted_crawl": 17,
@@ -110,9 +295,34 @@
         "total": 59
       },
       "elapsed_minutes": 4.8,
+      "extract": "2026-09-11T03:03:19+00:00",
+      "extract_stats": {
+        "input_tokens": 100438,
+        "items": 409,
+        "llm_calls": 17,
+        "output_tokens": 64182,
+        "pages": 17
+      },
+      "heal": "2026-09-11T03:03:59+00:00",
+      "heal_stats": {
+        "checked": 1,
+        "downgraded": 0,
+        "requests": 11,
+        "swapped": 0
+      },
       "name": "福島県"
     },
     "gifu": {
+      "crawl": "2026-09-11T03:29:46+00:00",
+      "crawl_stats": {
+        "changed": 7,
+        "errors": 0,
+        "fetched": 7,
+        "not_modified": 0,
+        "requests": 14,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T22:57:52+00:00",
       "discover_stats": {
         "adopted_crawl": 7,
@@ -123,10 +333,35 @@
         "skipped_existing": 0,
         "total": 42
       },
-      "elapsed_minutes": 6.2,
+      "elapsed_minutes": 1.4,
+      "extract": "2026-09-11T03:30:23+00:00",
+      "extract_stats": {
+        "input_tokens": 28660,
+        "items": 38,
+        "llm_calls": 7,
+        "output_tokens": 5935,
+        "pages": 7
+      },
+      "heal": "2026-09-11T03:31:03+00:00",
+      "heal_stats": {
+        "checked": 2,
+        "downgraded": 2,
+        "requests": 10,
+        "swapped": 0
+      },
       "name": "岐阜県"
     },
     "gunma": {
+      "crawl": "2026-09-11T03:08:52+00:00",
+      "crawl_stats": {
+        "changed": 4,
+        "errors": 0,
+        "fetched": 4,
+        "not_modified": 0,
+        "requests": 8,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T22:14:45+00:00",
       "discover_stats": {
         "adopted_crawl": 4,
@@ -137,10 +372,35 @@
         "skipped_existing": 0,
         "total": 35
       },
-      "elapsed_minutes": 4.0,
+      "elapsed_minutes": 1.7,
+      "extract": "2026-09-11T03:09:23+00:00",
+      "extract_stats": {
+        "input_tokens": 17983,
+        "items": 9,
+        "llm_calls": 4,
+        "output_tokens": 1545,
+        "pages": 4
+      },
+      "heal": "2026-09-11T03:10:22+00:00",
+      "heal_stats": {
+        "checked": 1,
+        "downgraded": 0,
+        "requests": 15,
+        "swapped": 0
+      },
       "name": "群馬県"
     },
     "hiroshima": {
+      "crawl": "2026-09-11T03:52:21+00:00",
+      "crawl_stats": {
+        "changed": 2,
+        "errors": 0,
+        "fetched": 2,
+        "not_modified": 0,
+        "requests": 4,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-11T00:19:50+00:00",
       "discover_stats": {
         "adopted_crawl": 2,
@@ -151,10 +411,35 @@
         "skipped_existing": 0,
         "total": 23
       },
-      "elapsed_minutes": 7.1,
+      "elapsed_minutes": 2.6,
+      "extract": "2026-09-11T03:54:39+00:00",
+      "extract_stats": {
+        "input_tokens": 23720,
+        "items": 176,
+        "llm_calls": 2,
+        "output_tokens": 28150,
+        "pages": 2
+      },
+      "heal": "2026-09-11T03:54:43+00:00",
+      "heal_stats": {
+        "checked": 0,
+        "downgraded": 0,
+        "requests": 0,
+        "swapped": 0
+      },
       "name": "広島県"
     },
     "hokkaido": {
+      "crawl": "2026-09-11T02:37:42+00:00",
+      "crawl_stats": {
+        "changed": 33,
+        "errors": 0,
+        "fetched": 33,
+        "not_modified": 0,
+        "requests": 66,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T21:44:43+00:00",
       "discover_stats": {
         "adopted_crawl": 33,
@@ -165,10 +450,33 @@
         "skipped_existing": 0,
         "total": 185
       },
-      "elapsed_minutes": 11.7,
+      "elapsed_minutes": 2.8,
+      "extract": "2026-09-11T02:47:13+00:00",
+      "extract_stats": {
+        "input_tokens": 0,
+        "llm_calls": 0,
+        "output_tokens": 0
+      },
+      "heal": "2026-09-11T02:49:57+00:00",
+      "heal_stats": {
+        "checked": 5,
+        "downgraded": 0,
+        "requests": 51,
+        "swapped": 0
+      },
       "name": "北海道"
     },
     "hyogo": {
+      "crawl": "2026-09-11T03:41:27+00:00",
+      "crawl_stats": {
+        "changed": 8,
+        "errors": 0,
+        "fetched": 8,
+        "not_modified": 0,
+        "requests": 16,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T23:39:24+00:00",
       "discover_stats": {
         "adopted_crawl": 8,
@@ -179,10 +487,35 @@
         "skipped_existing": 0,
         "total": 41
       },
-      "elapsed_minutes": 6.8,
+      "elapsed_minutes": 3.5,
+      "extract": "2026-09-11T03:42:26+00:00",
+      "extract_stats": {
+        "input_tokens": 45967,
+        "items": 85,
+        "llm_calls": 8,
+        "output_tokens": 14247,
+        "pages": 8
+      },
+      "heal": "2026-09-11T03:44:47+00:00",
+      "heal_stats": {
+        "checked": 4,
+        "downgraded": 0,
+        "requests": 43,
+        "swapped": 0
+      },
       "name": "兵庫県"
     },
     "ibaraki": {
+      "crawl": "2026-09-11T03:04:12+00:00",
+      "crawl_stats": {
+        "changed": 11,
+        "errors": 0,
+        "fetched": 11,
+        "not_modified": 0,
+        "requests": 22,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T22:07:41+00:00",
       "discover_stats": {
         "adopted_crawl": 11,
@@ -193,10 +526,35 @@
         "skipped_existing": 0,
         "total": 44
       },
-      "elapsed_minutes": 4.1,
+      "elapsed_minutes": 2.4,
+      "extract": "2026-09-11T03:05:30+00:00",
+      "extract_stats": {
+        "input_tokens": 48737,
+        "items": 136,
+        "llm_calls": 11,
+        "output_tokens": 22919,
+        "pages": 11
+      },
+      "heal": "2026-09-11T03:06:23+00:00",
+      "heal_stats": {
+        "checked": 1,
+        "downgraded": 0,
+        "requests": 15,
+        "swapped": 0
+      },
       "name": "茨城県"
     },
     "ishikawa": {
+      "crawl": "2026-09-11T03:23:05+00:00",
+      "crawl_stats": {
+        "changed": 3,
+        "errors": 0,
+        "fetched": 3,
+        "not_modified": 0,
+        "requests": 6,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T22:43:23+00:00",
       "discover_stats": {
         "adopted_crawl": 3,
@@ -207,10 +565,35 @@
         "skipped_existing": 0,
         "total": 19
       },
-      "elapsed_minutes": 4.1,
+      "elapsed_minutes": 1.1,
+      "extract": "2026-09-11T03:23:50+00:00",
+      "extract_stats": {
+        "input_tokens": 10723,
+        "items": 26,
+        "llm_calls": 3,
+        "output_tokens": 3769,
+        "pages": 3
+      },
+      "heal": "2026-09-11T03:24:03+00:00",
+      "heal_stats": {
+        "checked": 1,
+        "downgraded": 0,
+        "requests": 4,
+        "swapped": 0
+      },
       "name": "石川県"
     },
     "iwate": {
+      "crawl": "2026-09-11T02:52:16+00:00",
+      "crawl_stats": {
+        "changed": 9,
+        "errors": 0,
+        "fetched": 9,
+        "not_modified": 0,
+        "requests": 18,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T21:50:53+00:00",
       "discover_stats": {
         "adopted_crawl": 9,
@@ -221,14 +604,43 @@
         "skipped_existing": 0,
         "total": 33
       },
-      "elapsed_minutes": 3.0,
+      "elapsed_minutes": 2.5,
+      "extract": "2026-09-11T02:53:07+00:00",
+      "extract_stats": {
+        "input_tokens": 38732,
+        "items": 53,
+        "llm_calls": 9,
+        "output_tokens": 9198,
+        "pages": 9
+      },
+      "heal": "2026-09-11T02:54:37+00:00",
+      "heal_stats": {
+        "checked": 3,
+        "downgraded": 0,
+        "requests": 27,
+        "swapped": 0
+      },
       "name": "岩手県"
     },
     "kagawa": {
+      "crawl": "2026-09-11T03:57:59+00:00",
       "discover": "既存",
+      "elapsed_minutes": 0.1,
+      "extract": "2026-09-11T03:57:59+00:00",
+      "heal": "2026-09-11T03:57:59+00:00",
       "name": "香川県"
     },
     "kagoshima": {
+      "crawl": "2026-09-11T04:15:46+00:00",
+      "crawl_stats": {
+        "changed": 10,
+        "errors": 0,
+        "fetched": 10,
+        "not_modified": 0,
+        "requests": 20,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-11T02:17:25+00:00",
       "discover_stats": {
         "adopted_crawl": 10,
@@ -239,10 +651,35 @@
         "skipped_existing": 0,
         "total": 43
       },
-      "elapsed_minutes": 10.6,
+      "elapsed_minutes": 2.0,
+      "extract": "2026-09-11T04:17:10+00:00",
+      "extract_stats": {
+        "input_tokens": 53620,
+        "items": 267,
+        "llm_calls": 10,
+        "output_tokens": 43238,
+        "pages": 10
+      },
+      "heal": "2026-09-11T04:17:31+00:00",
+      "heal_stats": {
+        "checked": 1,
+        "downgraded": 0,
+        "requests": 6,
+        "swapped": 0
+      },
       "name": "鹿児島県"
     },
     "kanagawa": {
+      "crawl": "2026-09-11T03:18:12+00:00",
+      "crawl_stats": {
+        "changed": 6,
+        "errors": 0,
+        "fetched": 6,
+        "not_modified": 0,
+        "requests": 12,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T22:35:26+00:00",
       "discover_stats": {
         "adopted_crawl": 6,
@@ -253,10 +690,35 @@
         "skipped_existing": 0,
         "total": 33
       },
-      "elapsed_minutes": 4.7,
+      "elapsed_minutes": 2.7,
+      "extract": "2026-09-11T03:19:10+00:00",
+      "extract_stats": {
+        "input_tokens": 24792,
+        "items": 59,
+        "llm_calls": 6,
+        "output_tokens": 10183,
+        "pages": 6
+      },
+      "heal": "2026-09-11T03:20:44+00:00",
+      "heal_stats": {
+        "checked": 3,
+        "downgraded": 0,
+        "requests": 29,
+        "swapped": 0
+      },
       "name": "神奈川県"
     },
     "kochi": {
+      "crawl": "2026-09-11T03:58:40+00:00",
+      "crawl_stats": {
+        "changed": 12,
+        "errors": 0,
+        "fetched": 12,
+        "not_modified": 0,
+        "requests": 24,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-11T00:48:56+00:00",
       "discover_stats": {
         "adopted_crawl": 12,
@@ -267,10 +729,35 @@
         "skipped_existing": 0,
         "total": 34
       },
-      "elapsed_minutes": 8.1,
+      "elapsed_minutes": 1.7,
+      "extract": "2026-09-11T04:00:06+00:00",
+      "extract_stats": {
+        "input_tokens": 58804,
+        "items": 236,
+        "llm_calls": 12,
+        "output_tokens": 35822,
+        "pages": 12
+      },
+      "heal": "2026-09-11T04:00:10+00:00",
+      "heal_stats": {
+        "checked": 0,
+        "downgraded": 0,
+        "requests": 0,
+        "swapped": 0
+      },
       "name": "高知県"
     },
     "kumamoto": {
+      "crawl": "2026-09-11T04:07:09+00:00",
+      "crawl_stats": {
+        "changed": 10,
+        "errors": 0,
+        "fetched": 10,
+        "not_modified": 0,
+        "requests": 17,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-11T01:27:32+00:00",
       "discover_stats": {
         "adopted_crawl": 8,
@@ -281,10 +768,35 @@
         "skipped_existing": 0,
         "total": 45
       },
-      "elapsed_minutes": 10.4,
+      "elapsed_minutes": 2.9,
+      "extract": "2026-09-11T04:08:13+00:00",
+      "extract_stats": {
+        "input_tokens": 32974,
+        "items": 36,
+        "llm_calls": 10,
+        "output_tokens": 6024,
+        "pages": 10
+      },
+      "heal": "2026-09-11T04:09:46+00:00",
+      "heal_stats": {
+        "checked": 3,
+        "downgraded": 0,
+        "requests": 26,
+        "swapped": 0
+      },
       "name": "熊本県"
     },
     "kyoto": {
+      "crawl": "2026-09-11T03:38:47+00:00",
+      "crawl_stats": {
+        "changed": 2,
+        "errors": 0,
+        "fetched": 2,
+        "not_modified": 0,
+        "requests": 4,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T23:25:58+00:00",
       "discover_stats": {
         "adopted_crawl": 2,
@@ -295,10 +807,35 @@
         "skipped_existing": 0,
         "total": 26
       },
-      "elapsed_minutes": 5.9,
+      "elapsed_minutes": 1.5,
+      "extract": "2026-09-11T03:39:16+00:00",
+      "extract_stats": {
+        "input_tokens": 10903,
+        "items": 6,
+        "llm_calls": 2,
+        "output_tokens": 1139,
+        "pages": 2
+      },
+      "heal": "2026-09-11T03:40:08+00:00",
+      "heal_stats": {
+        "checked": 1,
+        "downgraded": 0,
+        "requests": 15,
+        "swapped": 0
+      },
       "name": "京都府"
     },
     "mie": {
+      "crawl": "2026-09-11T03:35:39+00:00",
+      "crawl_stats": {
+        "changed": 7,
+        "errors": 0,
+        "fetched": 7,
+        "not_modified": 0,
+        "requests": 14,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T23:15:18+00:00",
       "discover_stats": {
         "adopted_crawl": 7,
@@ -309,10 +846,35 @@
         "skipped_existing": 0,
         "total": 29
       },
-      "elapsed_minutes": 5.4,
+      "elapsed_minutes": 1.0,
+      "extract": "2026-09-11T03:36:27+00:00",
+      "extract_stats": {
+        "input_tokens": 31344,
+        "items": 70,
+        "llm_calls": 7,
+        "output_tokens": 11027,
+        "pages": 7
+      },
+      "heal": "2026-09-11T03:36:30+00:00",
+      "heal_stats": {
+        "checked": 0,
+        "downgraded": 0,
+        "requests": 0,
+        "swapped": 0
+      },
       "name": "三重県"
     },
     "miyagi": {
+      "crawl": "2026-09-11T02:54:47+00:00",
+      "crawl_stats": {
+        "changed": 6,
+        "errors": 0,
+        "fetched": 6,
+        "not_modified": 0,
+        "requests": 12,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T21:54:00+00:00",
       "discover_stats": {
         "adopted_crawl": 6,
@@ -323,10 +885,35 @@
         "skipped_existing": 0,
         "total": 35
       },
-      "elapsed_minutes": 3.2,
+      "elapsed_minutes": 1.7,
+      "extract": "2026-09-11T02:56:18+00:00",
+      "extract_stats": {
+        "input_tokens": 37994,
+        "items": 139,
+        "llm_calls": 6,
+        "output_tokens": 22286,
+        "pages": 6
+      },
+      "heal": "2026-09-11T02:56:21+00:00",
+      "heal_stats": {
+        "checked": 0,
+        "downgraded": 0,
+        "requests": 0,
+        "swapped": 0
+      },
       "name": "宮城県"
     },
     "miyazaki": {
+      "crawl": "2026-09-11T04:14:33+00:00",
+      "crawl_stats": {
+        "changed": 4,
+        "errors": 0,
+        "fetched": 4,
+        "not_modified": 0,
+        "requests": 8,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-11T02:07:07+00:00",
       "discover_stats": {
         "adopted_crawl": 4,
@@ -337,14 +924,65 @@
         "skipped_existing": 0,
         "total": 26
       },
-      "elapsed_minutes": 31.1,
+      "elapsed_minutes": 1.2,
+      "extract": "2026-09-11T04:15:18+00:00",
+      "extract_stats": {
+        "input_tokens": 17455,
+        "items": 88,
+        "llm_calls": 4,
+        "output_tokens": 12758,
+        "pages": 4
+      },
+      "heal": "2026-09-11T04:15:34+00:00",
+      "heal_stats": {
+        "checked": 1,
+        "downgraded": 0,
+        "requests": 4,
+        "swapped": 0
+      },
       "name": "宮崎県"
     },
     "nagano": {
+      "crawl": "2026-09-11T03:28:32+00:00",
+      "crawl_stats": {
+        "changed": 5,
+        "errors": 0,
+        "fetched": 75,
+        "not_modified": 5,
+        "requests": 96,
+        "unchanged": 75,
+        "workers": 8
+      },
       "discover": "既存",
+      "elapsed_minutes": 3.1,
+      "extract": "2026-09-11T03:29:33+00:00",
+      "extract_stats": {
+        "input_tokens": 18563,
+        "items": 13,
+        "llm_calls": 5,
+        "output_tokens": 2311,
+        "pages": 5
+      },
+      "heal": "2026-09-11T03:29:37+00:00",
+      "heal_stats": {
+        "checked": 0,
+        "downgraded": 0,
+        "requests": 0,
+        "swapped": 0
+      },
       "name": "長野県"
     },
     "nagasaki": {
+      "crawl": "2026-09-11T04:04:33+00:00",
+      "crawl_stats": {
+        "changed": 4,
+        "errors": 0,
+        "fetched": 5,
+        "not_modified": 0,
+        "requests": 10,
+        "unchanged": 1,
+        "workers": 8
+      },
       "discover": "2026-09-11T01:17:30+00:00",
       "discover_stats": {
         "adopted_crawl": 5,
@@ -355,10 +993,35 @@
         "skipped_existing": 0,
         "total": 21
       },
-      "elapsed_minutes": 9.8,
+      "elapsed_minutes": 2.6,
+      "extract": "2026-09-11T04:04:47+00:00",
+      "extract_stats": {
+        "input_tokens": 10640,
+        "items": 1,
+        "llm_calls": 4,
+        "output_tokens": 183,
+        "pages": 4
+      },
+      "heal": "2026-09-11T04:06:52+00:00",
+      "heal_stats": {
+        "checked": 4,
+        "downgraded": 0,
+        "requests": 37,
+        "swapped": 0
+      },
       "name": "長崎県"
     },
     "nara": {
+      "crawl": "2026-09-11T03:45:01+00:00",
+      "crawl_stats": {
+        "changed": 2,
+        "errors": 0,
+        "fetched": 2,
+        "not_modified": 0,
+        "requests": 3,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T23:46:02+00:00",
       "discover_stats": {
         "adopted_crawl": 1,
@@ -369,10 +1032,35 @@
         "skipped_existing": 0,
         "total": 39
       },
-      "elapsed_minutes": 6.9,
+      "elapsed_minutes": 1.0,
+      "extract": "2026-09-11T03:45:46+00:00",
+      "extract_stats": {
+        "input_tokens": 8252,
+        "items": 8,
+        "llm_calls": 2,
+        "output_tokens": 1363,
+        "pages": 2
+      },
+      "heal": "2026-09-11T03:45:50+00:00",
+      "heal_stats": {
+        "checked": 0,
+        "downgraded": 0,
+        "requests": 0,
+        "swapped": 0
+      },
       "name": "奈良県"
     },
     "niigata": {
+      "crawl": "2026-09-11T03:20:56+00:00",
+      "crawl_stats": {
+        "changed": 7,
+        "errors": 0,
+        "fetched": 7,
+        "not_modified": 0,
+        "requests": 14,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T22:39:29+00:00",
       "discover_stats": {
         "adopted_crawl": 7,
@@ -383,10 +1071,35 @@
         "skipped_existing": 0,
         "total": 30
       },
-      "elapsed_minutes": 4.2,
+      "elapsed_minutes": 2.2,
+      "extract": "2026-09-11T03:22:21+00:00",
+      "extract_stats": {
+        "input_tokens": 55556,
+        "items": 140,
+        "llm_calls": 7,
+        "output_tokens": 23447,
+        "pages": 7
+      },
+      "heal": "2026-09-11T03:22:56+00:00",
+      "heal_stats": {
+        "checked": 1,
+        "downgraded": 0,
+        "requests": 10,
+        "swapped": 0
+      },
       "name": "新潟県"
     },
     "oita": {
+      "crawl": "2026-09-11T04:10:05+00:00",
+      "crawl_stats": {
+        "changed": 9,
+        "errors": 0,
+        "fetched": 9,
+        "not_modified": 0,
+        "requests": 15,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-11T01:36:23+00:00",
       "discover_stats": {
         "adopted_crawl": 6,
@@ -397,10 +1110,35 @@
         "skipped_existing": 0,
         "total": 18
       },
-      "elapsed_minutes": 9.2,
+      "elapsed_minutes": 4.6,
+      "extract": "2026-09-11T04:13:27+00:00",
+      "extract_stats": {
+        "input_tokens": 32194,
+        "items": 113,
+        "llm_calls": 9,
+        "output_tokens": 18250,
+        "pages": 9
+      },
+      "heal": "2026-09-11T04:14:22+00:00",
+      "heal_stats": {
+        "checked": 2,
+        "downgraded": 0,
+        "requests": 17,
+        "swapped": 0
+      },
       "name": "大分県"
     },
     "okayama": {
+      "crawl": "2026-09-11T03:50:10+00:00",
+      "crawl_stats": {
+        "changed": 4,
+        "errors": 0,
+        "fetched": 4,
+        "not_modified": 0,
+        "requests": 8,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-11T00:12:57+00:00",
       "discover_stats": {
         "adopted_crawl": 4,
@@ -411,10 +1149,63 @@
         "skipped_existing": 0,
         "total": 27
       },
-      "elapsed_minutes": 7.1,
+      "elapsed_minutes": 2.1,
+      "extract": "2026-09-11T03:51:31+00:00",
+      "extract_stats": {
+        "input_tokens": 43051,
+        "items": 99,
+        "llm_calls": 4,
+        "output_tokens": 16712,
+        "pages": 4
+      },
+      "heal": "2026-09-11T03:52:05+00:00",
+      "heal_stats": {
+        "checked": 1,
+        "downgraded": 0,
+        "requests": 10,
+        "swapped": 0
+      },
       "name": "岡山県"
     },
+    "okinawa": {
+      "crawl": "2026-09-11T04:17:41+00:00",
+      "crawl_stats": {
+        "changed": 0,
+        "errors": 0,
+        "fetched": 1,
+        "not_modified": 0,
+        "requests": 2,
+        "unchanged": 1,
+        "workers": 8
+      },
+      "discover": "既存",
+      "elapsed_minutes": 0.3,
+      "extract": "2026-09-11T04:17:45+00:00",
+      "extract_stats": {
+        "input_tokens": 0,
+        "llm_calls": 0,
+        "output_tokens": 0
+      },
+      "heal": "2026-09-11T04:17:49+00:00",
+      "heal_stats": {
+        "checked": 0,
+        "downgraded": 0,
+        "requests": 0,
+        "swapped": 0
+      },
+      "name": "沖縄県"
+    },
     "osaka": {
+      "crawl": "2026-09-11T03:40:18+00:00",
+      "crawl_stats": {
+        "changed": 1,
+        "errors": 0,
+        "fetched": 1,
+        "not_modified": 0,
+        "requests": 2,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T23:32:46+00:00",
       "discover_stats": {
         "adopted_crawl": 1,
@@ -425,10 +1216,35 @@
         "skipped_existing": 0,
         "total": 43
       },
-      "elapsed_minutes": 7.0,
+      "elapsed_minutes": 1.1,
+      "extract": "2026-09-11T03:40:25+00:00",
+      "extract_stats": {
+        "input_tokens": 5548,
+        "items": 0,
+        "llm_calls": 1,
+        "output_tokens": 9,
+        "pages": 1
+      },
+      "heal": "2026-09-11T03:41:16+00:00",
+      "heal_stats": {
+        "checked": 1,
+        "downgraded": 0,
+        "requests": 15,
+        "swapped": 0
+      },
       "name": "大阪府"
     },
     "saga": {
+      "crawl": "2026-09-11T04:02:39+00:00",
+      "crawl_stats": {
+        "changed": 3,
+        "errors": 0,
+        "fetched": 3,
+        "not_modified": 0,
+        "requests": 6,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-11T01:07:40+00:00",
       "discover_stats": {
         "adopted_crawl": 3,
@@ -439,10 +1255,35 @@
         "skipped_existing": 0,
         "total": 20
       },
-      "elapsed_minutes": 9.1,
+      "elapsed_minutes": 1.8,
+      "extract": "2026-09-11T04:02:53+00:00",
+      "extract_stats": {
+        "input_tokens": 8427,
+        "items": 15,
+        "llm_calls": 3,
+        "output_tokens": 1739,
+        "pages": 3
+      },
+      "heal": "2026-09-11T04:04:17+00:00",
+      "heal_stats": {
+        "checked": 2,
+        "downgraded": 0,
+        "requests": 24,
+        "swapped": 0
+      },
       "name": "佐賀県"
     },
     "saitama": {
+      "crawl": "2026-09-11T03:10:33+00:00",
+      "crawl_stats": {
+        "changed": 8,
+        "errors": 0,
+        "fetched": 8,
+        "not_modified": 0,
+        "requests": 16,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T22:20:03+00:00",
       "discover_stats": {
         "adopted_crawl": 8,
@@ -453,10 +1294,35 @@
         "skipped_existing": 0,
         "total": 63
       },
-      "elapsed_minutes": 5.5,
+      "elapsed_minutes": 2.8,
+      "extract": "2026-09-11T03:11:12+00:00",
+      "extract_stats": {
+        "input_tokens": 27072,
+        "items": 19,
+        "llm_calls": 8,
+        "output_tokens": 3560,
+        "pages": 8
+      },
+      "heal": "2026-09-11T03:13:11+00:00",
+      "heal_stats": {
+        "checked": 3,
+        "downgraded": 0,
+        "requests": 30,
+        "swapped": 0
+      },
       "name": "埼玉県"
     },
     "shiga": {
+      "crawl": "2026-09-11T03:36:40+00:00",
+      "crawl_stats": {
+        "changed": 4,
+        "errors": 0,
+        "fetched": 4,
+        "not_modified": 0,
+        "requests": 8,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T23:20:11+00:00",
       "discover_stats": {
         "adopted_crawl": 4,
@@ -467,10 +1333,35 @@
         "skipped_existing": 0,
         "total": 19
       },
-      "elapsed_minutes": 5.1,
+      "elapsed_minutes": 2.1,
+      "extract": "2026-09-11T03:37:18+00:00",
+      "extract_stats": {
+        "input_tokens": 16514,
+        "items": 19,
+        "llm_calls": 4,
+        "output_tokens": 2634,
+        "pages": 4
+      },
+      "heal": "2026-09-11T03:38:38+00:00",
+      "heal_stats": {
+        "checked": 2,
+        "downgraded": 0,
+        "requests": 24,
+        "swapped": 0
+      },
       "name": "滋賀県"
     },
     "shimane": {
+      "crawl": "2026-09-11T03:48:34+00:00",
+      "crawl_stats": {
+        "changed": 6,
+        "errors": 0,
+        "fetched": 6,
+        "not_modified": 0,
+        "requests": 12,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-11T00:06:04+00:00",
       "discover_stats": {
         "adopted_crawl": 5,
@@ -481,10 +1372,35 @@
         "skipped_existing": 0,
         "total": 19
       },
-      "elapsed_minutes": 6.9,
+      "elapsed_minutes": 1.6,
+      "extract": "2026-09-11T03:49:56+00:00",
+      "extract_stats": {
+        "input_tokens": 23700,
+        "items": 138,
+        "llm_calls": 6,
+        "output_tokens": 20456,
+        "pages": 6
+      },
+      "heal": "2026-09-11T03:50:00+00:00",
+      "heal_stats": {
+        "checked": 0,
+        "downgraded": 0,
+        "requests": 0,
+        "swapped": 0
+      },
       "name": "島根県"
     },
     "shizuoka": {
+      "crawl": "2026-09-11T03:31:12+00:00",
+      "crawl_stats": {
+        "changed": 3,
+        "errors": 0,
+        "fetched": 3,
+        "not_modified": 0,
+        "requests": 6,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T23:03:06+00:00",
       "discover_stats": {
         "adopted_crawl": 3,
@@ -495,10 +1411,35 @@
         "skipped_existing": 0,
         "total": 35
       },
-      "elapsed_minutes": 5.5,
+      "elapsed_minutes": 1.6,
+      "extract": "2026-09-11T03:32:07+00:00",
+      "extract_stats": {
+        "input_tokens": 12117,
+        "items": 33,
+        "llm_calls": 3,
+        "output_tokens": 4833,
+        "pages": 3
+      },
+      "heal": "2026-09-11T03:32:36+00:00",
+      "heal_stats": {
+        "checked": 1,
+        "downgraded": 0,
+        "requests": 8,
+        "swapped": 0
+      },
       "name": "静岡県"
     },
     "tochigi": {
+      "crawl": "2026-09-11T03:06:36+00:00",
+      "crawl_stats": {
+        "changed": 8,
+        "errors": 0,
+        "fetched": 8,
+        "not_modified": 0,
+        "requests": 15,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T22:10:57+00:00",
       "discover_stats": {
         "adopted_crawl": 7,
@@ -509,10 +1450,35 @@
         "skipped_existing": 0,
         "total": 25
       },
-      "elapsed_minutes": 3.4,
+      "elapsed_minutes": 2.3,
+      "extract": "2026-09-11T03:07:49+00:00",
+      "extract_stats": {
+        "input_tokens": 31473,
+        "items": 98,
+        "llm_calls": 8,
+        "output_tokens": 16361,
+        "pages": 8
+      },
+      "heal": "2026-09-11T03:08:43+00:00",
+      "heal_stats": {
+        "checked": 1,
+        "downgraded": 0,
+        "requests": 10,
+        "swapped": 0
+      },
       "name": "栃木県"
     },
     "tokushima": {
+      "crawl": "2026-09-11T03:56:17+00:00",
+      "crawl_stats": {
+        "changed": 6,
+        "errors": 0,
+        "fetched": 6,
+        "not_modified": 0,
+        "requests": 12,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-11T00:33:55+00:00",
       "discover_stats": {
         "adopted_crawl": 6,
@@ -523,10 +1489,35 @@
         "skipped_existing": 0,
         "total": 24
       },
-      "elapsed_minutes": 7.6,
+      "elapsed_minutes": 1.8,
+      "extract": "2026-09-11T03:57:27+00:00",
+      "extract_stats": {
+        "input_tokens": 29750,
+        "items": 67,
+        "llm_calls": 6,
+        "output_tokens": 11158,
+        "pages": 6
+      },
+      "heal": "2026-09-11T03:57:56+00:00",
+      "heal_stats": {
+        "checked": 1,
+        "downgraded": 0,
+        "requests": 10,
+        "swapped": 0
+      },
       "name": "徳島県"
     },
     "tokyo": {
+      "crawl": "2026-09-11T03:15:59+00:00",
+      "crawl_stats": {
+        "changed": 5,
+        "errors": 0,
+        "fetched": 5,
+        "not_modified": 0,
+        "requests": 10,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T22:30:50+00:00",
       "discover_stats": {
         "adopted_crawl": 5,
@@ -537,10 +1528,35 @@
         "skipped_existing": 0,
         "total": 62
       },
-      "elapsed_minutes": 6.0,
+      "elapsed_minutes": 2.2,
+      "extract": "2026-09-11T03:16:33+00:00",
+      "extract_stats": {
+        "input_tokens": 22220,
+        "items": 16,
+        "llm_calls": 5,
+        "output_tokens": 2672,
+        "pages": 5
+      },
+      "heal": "2026-09-11T03:18:03+00:00",
+      "heal_stats": {
+        "checked": 3,
+        "downgraded": 0,
+        "requests": 28,
+        "swapped": 0
+      },
       "name": "東京都"
     },
     "tottori": {
+      "crawl": "2026-09-11T03:46:57+00:00",
+      "crawl_stats": {
+        "changed": 4,
+        "errors": 0,
+        "fetched": 4,
+        "not_modified": 0,
+        "requests": 8,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T23:59:18+00:00",
       "discover_stats": {
         "adopted_crawl": 4,
@@ -551,7 +1567,22 @@
         "skipped_existing": 0,
         "total": 19
       },
-      "elapsed_minutes": 6.3,
+      "elapsed_minutes": 1.6,
+      "extract": "2026-09-11T03:48:19+00:00",
+      "extract_stats": {
+        "input_tokens": 17454,
+        "items": 100,
+        "llm_calls": 4,
+        "output_tokens": 15092,
+        "pages": 4
+      },
+      "heal": "2026-09-11T03:48:23+00:00",
+      "heal_stats": {
+        "checked": 0,
+        "downgraded": 0,
+        "requests": 0,
+        "swapped": 0
+      },
       "name": "鳥取県"
     },
     "toyama": {
@@ -594,6 +1625,16 @@
       "name": "富山県"
     },
     "wakayama": {
+      "crawl": "2026-09-11T03:45:59+00:00",
+      "crawl_stats": {
+        "changed": 4,
+        "errors": 0,
+        "fetched": 4,
+        "not_modified": 0,
+        "requests": 8,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T23:53:07+00:00",
       "discover_stats": {
         "adopted_crawl": 4,
@@ -604,10 +1645,35 @@
         "skipped_existing": 0,
         "total": 30
       },
-      "elapsed_minutes": 7.2,
+      "elapsed_minutes": 0.9,
+      "extract": "2026-09-11T03:46:42+00:00",
+      "extract_stats": {
+        "input_tokens": 16167,
+        "items": 43,
+        "llm_calls": 4,
+        "output_tokens": 6710,
+        "pages": 4
+      },
+      "heal": "2026-09-11T03:46:46+00:00",
+      "heal_stats": {
+        "checked": 0,
+        "downgraded": 0,
+        "requests": 0,
+        "swapped": 0
+      },
       "name": "和歌山県"
     },
     "yamagata": {
+      "crawl": "2026-09-11T02:57:57+00:00",
+      "crawl_stats": {
+        "changed": 9,
+        "errors": 0,
+        "fetched": 9,
+        "not_modified": 0,
+        "requests": 18,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T21:59:06+00:00",
       "discover_stats": {
         "adopted_crawl": 9,
@@ -618,10 +1684,35 @@
         "skipped_existing": 0,
         "total": 35
       },
-      "elapsed_minutes": 2.8,
+      "elapsed_minutes": 1.4,
+      "extract": "2026-09-11T02:59:06+00:00",
+      "extract_stats": {
+        "input_tokens": 46477,
+        "items": 158,
+        "llm_calls": 9,
+        "output_tokens": 24910,
+        "pages": 9
+      },
+      "heal": "2026-09-11T02:59:09+00:00",
+      "heal_stats": {
+        "checked": 0,
+        "downgraded": 0,
+        "requests": 0,
+        "swapped": 0
+      },
       "name": "山形県"
     },
     "yamaguchi": {
+      "crawl": "2026-09-11T03:54:59+00:00",
+      "crawl_stats": {
+        "changed": 7,
+        "errors": 0,
+        "fetched": 7,
+        "not_modified": 0,
+        "requests": 12,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-11T00:26:31+00:00",
       "discover_stats": {
         "adopted_crawl": 5,
@@ -632,10 +1723,35 @@
         "skipped_existing": 0,
         "total": 19
       },
-      "elapsed_minutes": 6.8,
+      "elapsed_minutes": 1.4,
+      "extract": "2026-09-11T03:55:42+00:00",
+      "extract_stats": {
+        "input_tokens": 25721,
+        "items": 73,
+        "llm_calls": 7,
+        "output_tokens": 11680,
+        "pages": 7
+      },
+      "heal": "2026-09-11T03:56:07+00:00",
+      "heal_stats": {
+        "checked": 1,
+        "downgraded": 0,
+        "requests": 7,
+        "swapped": 0
+      },
       "name": "山口県"
     },
     "yamanashi": {
+      "crawl": "2026-09-11T03:25:34+00:00",
+      "crawl_stats": {
+        "changed": 6,
+        "errors": 0,
+        "fetched": 6,
+        "not_modified": 0,
+        "requests": 12,
+        "unchanged": 0,
+        "workers": 8
+      },
       "discover": "2026-09-10T22:52:00+00:00",
       "discover_stats": {
         "adopted_crawl": 6,
@@ -646,9 +1762,24 @@
         "skipped_existing": 0,
         "total": 27
       },
-      "elapsed_minutes": 4.8,
+      "elapsed_minutes": 1.1,
+      "extract": "2026-09-11T03:26:26+00:00",
+      "extract_stats": {
+        "input_tokens": 25487,
+        "items": 72,
+        "llm_calls": 6,
+        "output_tokens": 10719,
+        "pages": 6
+      },
+      "heal": "2026-09-11T03:26:30+00:00",
+      "heal_stats": {
+        "checked": 0,
+        "downgraded": 0,
+        "requests": 0,
+        "swapped": 0
+      },
       "name": "山梨県"
     }
   },
-  "updated_at": "2026-09-11T02:25:40+00:00"
+  "updated_at": "2026-09-11T04:17:49+00:00"
 }

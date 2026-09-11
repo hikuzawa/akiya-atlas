@@ -49,33 +49,27 @@
       "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.city.nagahama.lg.jp/0000010668.html",
-        "https://www.city.nagahama.lg.jp/0000016705.html",
-        "https://www.city.nagahama.lg.jp/0000009967.html",
-        "https://www.city.nagahama.lg.jp/0000016178.html",
-        "https://www.city.nagahama.lg.jp/0000008645.html"
-      ],
-      "bank_url": "https://www.city.nagahama.lg.jp/0000016895.html",
+      "alternatives": [],
+      "bank_url": "https://www.city.nagahama.lg.jp/",
       "code": "252034",
-      "confidence": 0.8065,
+      "confidence": 0.6,
       "cross_linked": false,
       "evidence_quote": "公式ドメイン www.city.nagahama.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.nagahama.lg.jp/",
       "external_links": [],
-      "listing_rows": 2,
-      "listing_score": 0.22,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "長浜市",
       "name_kana": "ﾅｶﾞﾊﾏｼ",
       "official_url": "www.city.nagahama.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "滋賀県",
       "prefecture_slug": "shiga",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
     },
     {
       "alternatives": [
@@ -306,33 +300,27 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.city.maibara.lg.jp/kurashi/akiya2/index.html",
-        "https://www.city.maibara.lg.jp/kurashi/sumai/akiya/index.html",
-        "https://www.city.maibara.lg.jp/kurashi/akiya2/akiyasien/index.html",
-        "https://www.city.maibara.lg.jp/kurashi/akiya2/akiyaippan/index.html",
-        "https://www.city.maibara.lg.jp/kurashi/akiya2/akiyarenkei/index.html"
-      ],
-      "bank_url": "https://www.city.maibara.lg.jp/kurashi/akiya2/23371.html",
+      "alternatives": [],
+      "bank_url": "https://www.city.maibara.lg.jp/",
       "code": "252140",
-      "confidence": 0.8065,
+      "confidence": 0.6,
       "cross_linked": false,
       "evidence_quote": "公式ドメイン www.city.maibara.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.maibara.lg.jp/",
       "external_links": [],
-      "listing_rows": 2,
-      "listing_score": 0.19,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "米原市",
       "name_kana": "ﾏｲﾊﾞﾗｼ",
       "official_url": "www.city.maibara.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
-      "pagination_pattern": "https?://www\\.city\\.maibara\\.lg\\.jp/kurashi/akiya2/23371\\.html/?\\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\\d+",
-      "policy": "crawl",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
       "prefecture": "滋賀県",
       "prefecture_slug": "shiga",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
     },
     {
       "alternatives": [

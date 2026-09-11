@@ -1,6 +1,6 @@
 prefecture: 徳島県
 prefecture_slug: tokushima
-created_at: '2026-09-11T00:33:55+00:00'
+created_at: '2026-09-11T06:32:54+00:00'
 candidates:
 - key: '362018'
   label: 徳島県 徳島市
@@ -158,15 +158,15 @@ candidates:
   note: null
 - key: '363413'
   label: 徳島県 石井町
-  url: https://www.town.ishii.lg.jp/docs/2025022700019/
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.81
+  url: https://www.town.ishii.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.town.ishii.lg.jp（.lg.jp、地方公共団体専用ドメイン）
   evidence_url: https://www.town.ishii.lg.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null

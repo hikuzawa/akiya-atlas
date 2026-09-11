@@ -530,31 +530,27 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [
-        "http://www.vill.inakadate.lg.jp/docs/2024121900016/",
-        "http://www.vill.inakadate.lg.jp/docs/2018042300017/",
-        "http://www.vill.inakadate.lg.jp/docs/2018011500011/"
-      ],
-      "bank_url": "http://www.vill.inakadate.lg.jp/docs/2018042300024/",
+      "alternatives": [],
+      "bank_url": "https://www.vill.inakadate.lg.jp/",
       "code": "023671",
-      "confidence": 0.8205,
+      "confidence": 0.6,
       "cross_linked": false,
       "evidence_quote": "青森県 市町村ホームページに掲載された公式サイト（www.vill.inakadate.lg.jp）",
       "evidence_url": "https://www.pref.aomori.lg.jp/soshiki/zaimu/shichoson/shichoson.html",
       "external_links": [],
-      "listing_rows": 4,
-      "listing_score": 0.32,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "田舎館村",
       "name_kana": "ｲﾅｶﾀﾞﾃﾑﾗ",
       "official_url": "www.vill.inakadate.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "青森県",
       "prefecture_slug": "aomori",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
     },
     {
       "alternatives": [],

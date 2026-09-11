@@ -350,26 +350,21 @@ sources:
   operator: 南足柄市
   operator_kind: municipality
   official_url: https://www.city.minamiashigara.kanagawa.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '142174'
     name: 南足柄市
     prefecture: 神奈川県
     prefecture_slug: kanagawa
     slug: '142174'
-    bank_url: https://www.city.minamiashigara.kanagawa.jp/kurashi/sumai/akiya/
-    bank_status: available
+    bank_url: https://www.city.minamiashigara.kanagawa.jp/
+    bank_status: none
     map_query: 神奈川県南足柄市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.minamiashigara.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.minamiashigara.kanagawa.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.minamiashigara.kanagawa.jp/kurashi/sumai/akiya/
-    kind: listing_index
-  allow_hosts:
-  - www.city.minamiashigara.kanagawa.jp
-  max_pages: 30
 - id: kanagawa-142182
   name: 綾瀬市空き家バンク
   operator: 綾瀬市
@@ -605,30 +600,21 @@ sources:
   operator: 真鶴町
   operator_kind: municipality
   official_url: https://www.town.manazuru.kanagawa.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '143839'
     name: 真鶴町
     prefecture: 神奈川県
     prefecture_slug: kanagawa
     slug: '143839'
-    bank_url: https://www.town.manazuru.kanagawa.jp/kurashsi_tetsuduki/sumaikurashi/2081.html
-    bank_status: available
+    bank_url: https://www.town.manazuru.kanagawa.jp/
+    bank_status: none
     map_query: 神奈川県真鶴町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.manazuru.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.manazuru.kanagawa.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.town.manazuru.kanagawa.jp/kurashsi_tetsuduki/sumaikurashi/2081.html
-    kind: listing_index
-    follow:
-    - pattern: https?://www\.town\.manazuru\.kanagawa\.jp/kurashsi_tetsuduki/sumaikurashi/2081\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
-      kind: listing_index
-      max_links: 20
-  allow_hosts:
-  - www.town.manazuru.kanagawa.jp
-  max_pages: 30
 - id: kanagawa-143847
   name: 湯河原町空き家バンク
   operator: 湯河原町

@@ -922,26 +922,26 @@
     },
     {
       "alternatives": [],
-      "bank_url": "https://www.city.yoshikawa.saitama.jp/index.cfm/23,0,230,1052,html",
+      "bank_url": "https://www.city.yoshikawa.saitama.jp/",
       "code": "112437",
-      "confidence": 0.8135,
+      "confidence": 0.6,
       "cross_linked": false,
       "evidence_quote": "公式ドメイン www.city.yoshikawa.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.yoshikawa.saitama.jp/",
       "external_links": [],
-      "listing_rows": 3,
-      "listing_score": 0.24,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "吉川市",
       "name_kana": "ﾖｼｶﾜｼ",
       "official_url": "www.city.yoshikawa.saitama.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "埼玉県",
       "prefecture_slug": "saitama",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
     },
     {
       "alternatives": [
@@ -1294,30 +1294,27 @@
       "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.town.minano.saitama.jp/section/seikatu/38277/",
-        "https://www.town.minano.saitama.jp/section/seikatu/34152/"
-      ],
-      "bank_url": "https://www.town.minano.saitama.jp/section/seikatu/28267/",
+      "alternatives": [],
+      "bank_url": "https://www.town.minano.saitama.jp/",
       "code": "113620",
-      "confidence": 0.8065,
+      "confidence": 0.6,
       "cross_linked": false,
       "evidence_quote": "公式ドメイン www.town.minano.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.minano.saitama.jp/",
       "external_links": [],
-      "listing_rows": 2,
-      "listing_score": 0.16,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "皆野町",
       "name_kana": "ﾐﾅﾉﾏﾁ",
       "official_url": "www.town.minano.saitama.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "埼玉県",
       "prefecture_slug": "saitama",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
     },
     {
       "alternatives": [],

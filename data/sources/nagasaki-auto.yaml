@@ -145,26 +145,21 @@ sources:
   operator: 対馬市
   operator_kind: municipality
   official_url: https://www.city.tsushima.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '422096'
     name: 対馬市
     prefecture: 長崎県
     prefecture_slug: nagasaki
     slug: '422096'
-    bank_url: https://www.city.tsushima.lg.jp/kurashi/sumaikenchiku/akiya/index.html
-    bank_status: available
+    bank_url: https://www.city.tsushima.lg.jp/
+    bank_status: none
     map_query: 長崎県対馬市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.tsushima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tsushima.lg.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.tsushima.lg.jp/kurashi/sumaikenchiku/akiya/index.html
-    kind: listing_index
-  allow_hosts:
-  - www.city.tsushima.lg.jp
-  max_pages: 30
 - id: nagasaki-422100
   name: 壱岐市空き家バンク
   operator: 壱岐市

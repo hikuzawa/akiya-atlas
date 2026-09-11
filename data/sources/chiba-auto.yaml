@@ -421,9 +421,9 @@ sources:
   - www.city.abiko.chiba.jp
   max_pages: 30
   external_links:
-  - label: 我孫子市空き家バンク（全国版）アットホームから見る（外部サイト）
+  - label: 我孫子市空き家バンク(全国版)アットホームから見る(外部サイト)
     url: https://abiko-c12222.akiya-athome.jp/
-  - label: 我孫子市空き家バンク（全国版）LIFULLから見る（外部サイト）
+  - label: 我孫子市空き家バンク(全国版)LIFULLから見る(外部サイト)
     url: https://www.homes.co.jp/akiyabank/chiba/abiko/
 - id: chiba-122238
   name: 鴨川市空き家バンク
@@ -511,9 +511,9 @@ sources:
   - www.city.futtsu.lg.jp
   max_pages: 30
   external_links:
-  - label: アットホーム空き家バンク （別ウインドウで開く）
+  - label: アットホーム空き家バンク (別ウインドウで開く)
     url: https://futtsu-c12226.akiya-athome.jp/bukken/detail/buy/34071
-  - label: LIFULL HOME'S空き家バンク （別ウインドウで開く）
+  - label: LIFULL HOME'S空き家バンク (別ウインドウで開く)
     url: https://www.homes.co.jp/akiyabank/b-37324/
 - id: chiba-122271
   name: 浦安市空き家バンク
@@ -581,9 +581,9 @@ sources:
   - www.city.sodegaura.lg.jp
   max_pages: 30
   external_links:
-  - label: 全国版空き家バンクトップページ（アットホーム）のリンク
+  - label: 全国版空き家バンクトップページ(アットホーム)のリンク
     url: https://sodegaura-c12229.akiya-athome.jp/
-  - label: 全国版空き家バンクトップぺージ（ライフルホームズ）のリンク
+  - label: 全国版空き家バンクトップぺージ(ライフルホームズ)のリンク
     url: https://www.homes.co.jp/akiyabank/chiba/sodegaura/
 - id: chiba-122301
   name: 八街市空き家バンク
@@ -666,9 +666,9 @@ sources:
     url: https://www.city.tomisato.lg.jp/
     checked_on: '2026-09-11'
   external_links:
-  - label: 全国版空き家バンク(LIFFUL HOME'S) （別ウインドウで開く）
+  - label: 全国版空き家バンク(LIFFUL HOME'S) (別ウインドウで開く)
     url: https://www.homes.co.jp/akiyabank/chiba/tomisato/
-  - label: 全国版空き家バンク(at home) （別ウインドウで開く）
+  - label: 全国版空き家バンク(at home) (別ウインドウで開く)
     url: https://www.akiya-athome.jp/buy/12/
 - id: chiba-122343
   name: 南房総市空き家バンク
@@ -720,26 +720,21 @@ sources:
   operator: 香取市
   operator_kind: municipality
   official_url: https://www.city.katori.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '122360'
     name: 香取市
     prefecture: 千葉県
     prefecture_slug: chiba
     slug: '122360'
-    bank_url: https://www.city.katori.lg.jp/sightseeing/matsuri/introduction/aki.html
-    bank_status: available
+    bank_url: https://www.city.katori.lg.jp/
+    bank_status: none
     map_query: 千葉県香取市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.katori.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.katori.lg.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.katori.lg.jp/sightseeing/matsuri/introduction/aki.html
-    kind: listing_index
-  allow_hosts:
-  - www.city.katori.lg.jp
-  max_pages: 30
 - id: chiba-122378
   name: 山武市空き家バンク
   operator: 山武市
@@ -765,30 +760,21 @@ sources:
   operator: いすみ市
   operator_kind: municipality
   official_url: https://www.city.isumi.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '122386'
     name: いすみ市
     prefecture: 千葉県
     prefecture_slug: chiba
     slug: '122386'
-    bank_url: https://www.city.isumi.lg.jp/soshikikarasagasu/shogaigakushuka/misakikominkan/1/2/6877.html
-    bank_status: available
+    bank_url: https://www.city.isumi.lg.jp/
+    bank_status: none
     map_query: 千葉県いすみ市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.isumi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.isumi.lg.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.isumi.lg.jp/soshikikarasagasu/shogaigakushuka/misakikominkan/1/2/6877.html
-    kind: listing_index
-    follow:
-    - pattern: https?://www\.city\.isumi\.lg\.jp/soshikikarasagasu/shogaigakushuka/misakikominkan/1/2/6877\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
-      kind: listing_index
-      max_links: 20
-  allow_hosts:
-  - www.city.isumi.lg.jp
-  max_pages: 30
 - id: chiba-122394
   name: 大網白里市空き家バンク
   operator: 大網白里市

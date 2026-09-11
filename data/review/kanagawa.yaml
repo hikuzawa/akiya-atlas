@@ -1,6 +1,6 @@
 prefecture: 神奈川県
 prefecture_slug: kanagawa
-created_at: '2026-09-10T22:35:26+00:00'
+created_at: '2026-09-11T06:32:53+00:00'
 candidates:
 - key: '141003'
   label: 神奈川県 横浜市
@@ -242,15 +242,15 @@ candidates:
   note: null
 - key: '142174'
   label: 神奈川県 南足柄市
-  url: https://www.city.minamiashigara.kanagawa.jp/kurashi/sumai/akiya/
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.82
+  url: https://www.city.minamiashigara.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.city.minamiashigara.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
   evidence_url: https://www.city.minamiashigara.kanagawa.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null
@@ -410,15 +410,15 @@ candidates:
   note: null
 - key: '143839'
   label: 神奈川県 真鶴町
-  url: https://www.town.manazuru.kanagawa.jp/kurashsi_tetsuduki/sumaikurashi/2081.html
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.81
+  url: https://www.town.manazuru.kanagawa.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.town.manazuru.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
   evidence_url: https://www.town.manazuru.kanagawa.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null

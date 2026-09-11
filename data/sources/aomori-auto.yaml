@@ -101,13 +101,13 @@ sources:
     url: https://www.city.goshogawara.lg.jp/
     checked_on: '2026-09-11'
   external_links:
-  - label: アットホーム全国版空き家・空き地バンク（外部リンク）
+  - label: アットホーム全国版空き家・空き地バンク(外部リンク)
     url: https://www.akiya-athome.jp/
-  - label: アットホーム全国版空き家・空き地バンク（五所川原市のトップページ）（外部リンク）
+  - label: アットホーム全国版空き家・空き地バンク(五所川原市のトップページ)(外部リンク)
     url: https://goshogawara-c02205.akiya-athome.jp/
-  - label: LIFULL HOME'S空き家バンク（外部リンク）
+  - label: LIFULL HOME'S空き家バンク(外部リンク)
     url: https://www.homes.co.jp/akiyabank/
-  - label: LIFULL HOME'S空き家バンク（五所川原市のトップページ）（外部リンク） ​
+  - label: LIFULL HOME'S空き家バンク(五所川原市のトップページ)(外部リンク) ​
     url: https://www.homes.co.jp/akiyabank/aomori/goshogawara/
 - id: aomori-022063
   name: 十和田市空き家バンク
@@ -150,9 +150,9 @@ sources:
     url: https://www.city.misawa.lg.jp/
     checked_on: '2026-09-11'
   external_links:
-  - label: 全国版空き家バンク　アットホーム　三沢市トップページ（外部リンク）
+  - label: 全国版空き家バンク アットホーム 三沢市トップページ(外部リンク)
     url: https://misawa-c02207.akiya-athome.jp/
-  - label: 全国版空き家バンク　LIFULL HOME'S　三沢市トップページ（外部リンク）
+  - label: 全国版空き家バンク LIFULL HOME'S 三沢市トップページ(外部リンク)
     url: https://www.homes.co.jp/akiyabank/aomori/misawa/
 - id: aomori-022080
   name: むつ市空き家バンク
@@ -408,26 +408,21 @@ sources:
   operator: 田舎館村
   operator_kind: municipality
   official_url: https://www.vill.inakadate.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '023671'
     name: 田舎館村
     prefecture: 青森県
     prefecture_slug: aomori
     slug: '023671'
-    bank_url: http://www.vill.inakadate.lg.jp/docs/2018042300024/
-    bank_status: available
+    bank_url: https://www.vill.inakadate.lg.jp/
+    bank_status: none
     map_query: 青森県田舎館村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 青森県 市町村ホームページに掲載された公式サイト（www.vill.inakadate.lg.jp）
     url: https://www.pref.aomori.lg.jp/soshiki/zaimu/shichoson/shichoson.html
     checked_on: '2026-09-11'
-  pages:
-  - url: http://www.vill.inakadate.lg.jp/docs/2018042300024/
-    kind: listing_index
-  allow_hosts:
-  - www.vill.inakadate.lg.jp
-  max_pages: 30
 - id: aomori-023817
   name: 板柳町空き家バンク
   operator: 板柳町
@@ -537,7 +532,7 @@ sources:
   - www.town.shichinohe.lg.jp
   max_pages: 30
   external_links:
-  - label: LIFULL HOME'S空き家バンク（外部リンク）
+  - label: LIFULL HOME'S空き家バンク(外部リンク)
     url: https://www.homes.co.jp/akiyabank/
 - id: aomori-024058
   name: 六戸町空き家バンク

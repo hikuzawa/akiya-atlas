@@ -1,6 +1,6 @@
 prefecture: 北海道
 prefecture_slug: hokkaido
-created_at: '2026-09-11T02:33:53+00:00'
+created_at: '2026-09-11T06:32:53+00:00'
 candidates:
 - key: '011002'
   label: 北海道 札幌市
@@ -1166,15 +1166,15 @@ candidates:
   note: null
 - key: '014362'
   label: 北海道 雨竜町
-  url: https://www.town.uryu.hokkaido.jp/docs/shushubi-fuhoutouki-noyaki.html
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.81
+  url: https://www.town.uryu.hokkaido.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.town.uryu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
   evidence_url: https://www.town.uryu.hokkaido.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null
@@ -1250,15 +1250,15 @@ candidates:
   note: null
 - key: 014559
   label: 北海道 比布町
-  url: https://www.town.pippu.hokkaido.jp/cms/section/soumu/elhgch0000002kni.html
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.82
+  url: https://www.town.pippu.hokkaido.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.town.pippu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
   evidence_url: https://www.town.pippu.hokkaido.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null
@@ -2118,15 +2118,15 @@ candidates:
   note: null
 - key: '016322'
   label: 北海道 士幌町
-  url: https://www.shihoro.jp/life/detail.php?content=928
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.81
+  url: https://www.shihoro.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.shihoro.jp）
   evidence_url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null
@@ -2160,15 +2160,15 @@ candidates:
   note: null
 - key: '016357'
   label: 北海道 新得町
-  url: https://www.shintoku-town.jp/kurashi-tetuduki/ie_tochi/akiya_akiti_akisitu/
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.81
+  url: https://www.shintoku-town.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.shintoku-town.jp）
   evidence_url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null

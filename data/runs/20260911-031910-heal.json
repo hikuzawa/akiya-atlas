@@ -1,0 +1,27 @@
+{
+  "command": "heal",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-11T03:20:44Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "神奈川県逗子市: 同じ一覧が最良のまま（物件行 20）。0 件の原因は抽出側の可能性",
+    "神奈川県南足柄市: 同じ一覧が最良のまま（物件行 4）。0 件の原因は抽出側の可能性",
+    "神奈川県真鶴町: 同じ一覧が最良のまま（物件行 3）。0 件の原因は抽出側の可能性"
+  ],
+  "service": "akiya-atlas",
+  "stages": {
+    "heal": {
+      "checked": 3,
+      "downgraded": 0,
+      "requests": 29,
+      "swapped": 0
+    }
+  },
+  "started_at": "2026-09-11T03:19:10Z"
+}

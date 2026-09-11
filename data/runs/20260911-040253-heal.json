@@ -1,0 +1,26 @@
+{
+  "command": "heal",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-11T04:04:17Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "佐賀県伊万里市: 同じ一覧が最良のまま（物件行 37）。0 件の原因は抽出側の可能性",
+    "佐賀県江北町: 同じ一覧が最良のまま（物件行 5）。0 件の原因は抽出側の可能性"
+  ],
+  "service": "akiya-atlas",
+  "stages": {
+    "heal": {
+      "checked": 2,
+      "downgraded": 0,
+      "requests": 24,
+      "swapped": 0
+    }
+  },
+  "started_at": "2026-09-11T04:02:53Z"
+}

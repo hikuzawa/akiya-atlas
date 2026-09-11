@@ -1,0 +1,128 @@
+{
+  "command": "extract",
+  "errors": [],
+  "extraction_metrics": {
+    "fields": {
+      "address": {
+        "not_found": 0,
+        "notes": {},
+        "parsed": 87,
+        "quote_not_in_source": 0,
+        "total": 87,
+        "unparsed": 0
+      },
+      "built_year": {
+        "not_found": 64,
+        "notes": {
+          "unknown": 4
+        },
+        "parsed": 19,
+        "quote_not_in_source": 0,
+        "total": 87,
+        "unparsed": 4
+      },
+      "floor_area_m2": {
+        "not_found": 65,
+        "notes": {
+          "multiple": 2,
+          "quote_not_in_source": 1
+        },
+        "parsed": 19,
+        "quote_not_in_source": 1,
+        "total": 87,
+        "unparsed": 2
+      },
+      "land_area_m2": {
+        "not_found": 59,
+        "notes": {
+          "from_tsubo": 1,
+          "no_unit": 1
+        },
+        "parsed": 27,
+        "quote_not_in_source": 0,
+        "total": 87,
+        "unparsed": 1
+      },
+      "layout": {
+        "not_found": 66,
+        "notes": {
+          "quote_not_in_source": 2
+        },
+        "parsed": 19,
+        "quote_not_in_source": 2,
+        "total": 87,
+        "unparsed": 0
+      },
+      "listing_no": {
+        "not_found": 0,
+        "notes": {},
+        "parsed": 87,
+        "quote_not_in_source": 0,
+        "total": 87,
+        "unparsed": 0
+      },
+      "price": {
+        "not_found": 32,
+        "notes": {},
+        "parsed": 55,
+        "quote_not_in_source": 0,
+        "total": 87,
+        "unparsed": 0
+      },
+      "rent_monthly": {
+        "not_found": 74,
+        "notes": {
+          "multiple": 1,
+          "quote_not_in_source": 1
+        },
+        "parsed": 11,
+        "quote_not_in_source": 1,
+        "total": 87,
+        "unparsed": 1
+      },
+      "status_text": {
+        "not_found": 43,
+        "notes": {},
+        "parsed": 44,
+        "quote_not_in_source": 0,
+        "total": 87,
+        "unparsed": 0
+      },
+      "structure": {
+        "not_found": 72,
+        "notes": {},
+        "parsed": 15,
+        "quote_not_in_source": 0,
+        "total": 87,
+        "unparsed": 0
+      }
+    },
+    "flags": {},
+    "items": 87,
+    "pages": 15,
+    "summary_replaced": 0,
+    "truncated_pages": 0
+  },
+  "finished_at": "2026-09-11T03:14:25Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 15,
+    "input_tokens": 63443,
+    "output_tokens": 14842
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "extract": {
+      "items": 87,
+      "pages": 15
+    },
+    "ingest": {
+      "created": 87,
+      "skipped": 0,
+      "unchanged": 0,
+      "updated": 0
+    }
+  },
+  "started_at": "2026-09-11T03:13:30Z"
+}

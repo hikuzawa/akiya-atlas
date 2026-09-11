@@ -754,26 +754,21 @@ sources:
   operator: 吉川市
   operator_kind: municipality
   official_url: https://www.city.yoshikawa.saitama.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '112437'
     name: 吉川市
     prefecture: 埼玉県
     prefecture_slug: saitama
     slug: '112437'
-    bank_url: https://www.city.yoshikawa.saitama.jp/index.cfm/23,0,230,1052,html
-    bank_status: available
+    bank_url: https://www.city.yoshikawa.saitama.jp/
+    bank_status: none
     map_query: 埼玉県吉川市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.yoshikawa.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.yoshikawa.saitama.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.yoshikawa.saitama.jp/index.cfm/23,0,230,1052,html
-    kind: listing_index
-  allow_hosts:
-  - www.city.yoshikawa.saitama.jp
-  max_pages: 30
 - id: saitama-112453
   name: ふじみ野市空き家バンク
   operator: ふじみ野市
@@ -1082,26 +1077,21 @@ sources:
   operator: 皆野町
   operator_kind: municipality
   official_url: https://www.town.minano.saitama.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '113620'
     name: 皆野町
     prefecture: 埼玉県
     prefecture_slug: saitama
     slug: '113620'
-    bank_url: https://www.town.minano.saitama.jp/section/seikatu/28267/
-    bank_status: available
+    bank_url: https://www.town.minano.saitama.jp/
+    bank_status: none
     map_query: 埼玉県皆野町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.minano.saitama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.minano.saitama.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.town.minano.saitama.jp/section/seikatu/28267/
-    kind: listing_index
-  allow_hosts:
-  - www.town.minano.saitama.jp
-  max_pages: 30
 - id: saitama-113638
   name: 長瀞町空き家バンク
   operator: 長瀞町

@@ -57,26 +57,26 @@
     },
     {
       "alternatives": [],
-      "bank_url": "https://www.city.ofunato.iwate.jp/genre/category/kurashi/residence/karaietotaisaku",
+      "bank_url": "https://www.city.ofunato.iwate.jp/",
       "code": "032034",
-      "confidence": 0.8065,
+      "confidence": 0.6,
       "cross_linked": false,
       "evidence_quote": "公式ドメイン www.city.ofunato.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.ofunato.iwate.jp/",
       "external_links": [],
-      "listing_rows": 2,
-      "listing_score": 0.16,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "大船渡市",
       "name_kana": "ｵｵﾌﾅﾄｼ",
       "official_url": "www.city.ofunato.iwate.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "岩手県",
       "prefecture_slug": "iwate",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
     },
     {
       "alternatives": [
@@ -553,29 +553,27 @@
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
     },
     {
-      "alternatives": [
-        "https://www.town.shiwa.iwate.jp/soshiki/3_1/2_akiya/4555.html/"
-      ],
-      "bank_url": "https://www.town.shiwa.iwate.jp/soshiki/3_1/2_akiya/99999/",
+      "alternatives": [],
+      "bank_url": "https://www.town.shiwa.iwate.jp/",
       "code": "033219",
-      "confidence": 0.8065,
+      "confidence": 0.6,
       "cross_linked": false,
       "evidence_quote": "公式ドメイン www.town.shiwa.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.shiwa.iwate.jp/",
       "external_links": [],
-      "listing_rows": 2,
-      "listing_score": 0.19,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "紫波町",
       "name_kana": "ｼﾜﾁｮｳ",
       "official_url": "www.town.shiwa.iwate.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "岩手県",
       "prefecture_slug": "iwate",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
     },
     {
       "alternatives": [],

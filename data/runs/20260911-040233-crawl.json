@@ -1,0 +1,26 @@
+{
+  "command": "crawl",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-11T04:02:39Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "crawl": {
+      "changed": 3,
+      "errors": 0,
+      "fetched": 3,
+      "not_modified": 0,
+      "requests": 6,
+      "unchanged": 0,
+      "workers": 8
+    }
+  },
+  "started_at": "2026-09-11T04:02:33Z"
+}

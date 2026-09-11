@@ -122,7 +122,7 @@ sources:
   external_links:
   - label: LIFULL HOME'S 空き家バンク
     url: https://www.homes.co.jp/akiyabank/
-  - label: アットホーム　空き家バンク
+  - label: アットホーム 空き家バンク
     url: https://www.akiya-athome.jp/
 - id: kagoshima-462101
   name: 指宿市空き家バンク
@@ -319,57 +319,52 @@ sources:
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/46264
   - label: akiya-athome.jp
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/46260
-  - label: 空き家物件（No.123）（外部サイトへリンク）
+  - label: 空き家物件(No.123)(外部サイトへリンク)
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/44801
   - label: akiya-athome.jp
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/43840
-  - label: 空き家物件（No.118）（外部サイトへリンク）
+  - label: 空き家物件(No.118)(外部サイトへリンク)
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/42485
-  - label: 空き家物件（No.112)（外部サイトへリンク）
+  - label: 空き家物件(No.112)(外部サイトへリンク)
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/37925
-  - label: 空き家物件（No.107)（外部サイトへリンク）
+  - label: 空き家物件(No.107)(外部サイトへリンク)
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/39711
-  - label: 空き家物件（No.102)（外部サイトへリンク）
+  - label: 空き家物件(No.102)(外部サイトへリンク)
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/37922
-  - label: 空き家物件（No.100)（外部サイトへリンク）
+  - label: 空き家物件(No.100)(外部サイトへリンク)
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/36782
-  - label: 空き家物件（No.94)（外部サイトへリンク）
+  - label: 空き家物件(No.94)(外部サイトへリンク)
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/35544
-  - label: 空き家物件(NO59)（外部サイトへリンク）
+  - label: 空き家物件(NO59)(外部サイトへリンク)
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/19123
-  - label: 空き家物件（NO41）（外部サイトへリンク）
+  - label: 空き家物件(NO41)(外部サイトへリンク)
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/6916
-  - label: 空き家物件（NO11）（外部サイトへリンク）
+  - label: 空き家物件(NO11)(外部サイトへリンク)
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/4317
-  - label: at-home「空き家バンク」（外部サイトへリンク）
+  - label: at-home「空き家バンク」(外部サイトへリンク)
     url: https://www.akiya-athome.jp/buy/46/219/
-  - label: LIFULL-HOME'S「空き家バンク」（外部サイトへリンク）
+  - label: LIFULL-HOME'S「空き家バンク」(外部サイトへリンク)
     url: https://www.homes.co.jp/akiyabank/kagoshima/ichikikushikino/
 - id: kagoshima-462209
   name: 南さつま市空き家バンク
   operator: 南さつま市
   operator_kind: municipality
   official_url: https://www.city.minamisatsuma.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '462209'
     name: 南さつま市
     prefecture: 鹿児島県
     prefecture_slug: kagoshima
     slug: '462209'
-    bank_url: https://www.city.minamisatsuma.lg.jp/living/sumai-tochi/akiyataisaku/
-    bank_status: available
+    bank_url: https://www.city.minamisatsuma.lg.jp/
+    bank_status: none
     map_query: 鹿児島県南さつま市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.minamisatsuma.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.minamisatsuma.lg.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.minamisatsuma.lg.jp/living/sumai-tochi/akiyataisaku/
-    kind: listing_index
-  allow_hosts:
-  - www.city.minamisatsuma.lg.jp
-  max_pages: 30
 - id: kagoshima-462217
   name: 志布志市空き家バンク
   operator: 志布志市
@@ -471,9 +466,9 @@ sources:
     url: https://www.city.aira.lg.jp/
     checked_on: '2026-09-11'
   external_links:
-  - label: 全国版空き家バンク（ライフル版）（外部サイトへリンク）
+  - label: 全国版空き家バンク(ライフル版)(外部サイトへリンク)
     url: https://www.homes.co.jp/akiyabank/
-  - label: 全国版空き家バンク(アットホーム版)（外部サイトへリンク）
+  - label: 全国版空き家バンク(アットホーム版)(外部サイトへリンク)
     url: https://aira-c46225.akiya-athome.jp
 - id: kagoshima-463035
   name: 三島村空き家バンク
