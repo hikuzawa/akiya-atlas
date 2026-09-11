@@ -192,26 +192,35 @@ def test_heal_downgrades_to_info_when_no_listing_exists(ws: Workspace) -> None:
     assert "bank_status: info" in auto and "policy: link_only" in auto
 
 
-# 空き家に一度も触れないのに金額が並ぶページ（北海道雨竜町の不法投棄・野焼きの案内が実例）
+# 一覧らしく見えるが物件ではないページ（北海道雨竜町の不法投棄・野焼きの案内が実例）
 NOT_AKIYA = (
-    "<html><body><h1>不法投棄と野焼きの防止</h1><table>"
+    "<html><body><h1>不法投棄と野焼きの防止</h1><p>"
+    + "廃棄物の処理及び清掃に関する法律により、みだりに廃棄物を捨てることは禁じられています。" * 4
+    + "</p><table>"
     "<tr><th>区分</th><th>過料</th><th>面積</th></tr>"
     "<tr><td>No.1</td><td>不法投棄 50万円</td><td>敷地 80㎡ 築20年</td><td>大字1地区</td></tr>"
     "<tr><td>No.2</td><td>野焼き 30万円</td><td>敷地 90㎡ 築25年</td><td>大字2地区</td></tr>"
     "</table></body></html>"
 )
+# 本文を取り出せないページ（JavaScript で描画するなど）。抽出側の問題なので採用は保つ
+UNREADABLE = (
+    "<html><body><h1>空き家バンク</h1>"
+    "<div id='app'></div><script>renderList()</script>"
+    "<table><tr><td>No.1</td><td>350万円</td><td>木造 80㎡ 築30年</td><td>大字1地区</td></tr>"
+    "<tr><td>No.2</td><td>420万円</td><td>木造 90㎡ 築35年</td><td>大字2地区</td></tr></table>"
+    "</body></html>"
+)
 
 
 @respx.mock
-def test_heal_drops_a_page_that_never_mentions_akiya(ws: Workspace) -> None:
-    """一覧らしく見えても空き家の話でないページは、0 件が続くので取り下げる。"""
+def test_heal_drops_a_page_whose_body_has_no_listings(ws: Workspace) -> None:
+    """本文は読めているのに 1 件も取れないページは、一覧ではないので取り下げる。"""
     wrong = BASE + "/kurashi/fuhoutouki.html"
     _mock(
         {
             # 公式トップは「空き家」の語でこのページに案内するが、ページ本文は空き家の話ではない
             "/": (
-                "<html><body><a href='/kurashi/fuhoutouki.html'>空き家の適正管理</a>"
-                "</body></html>"
+                "<html><body><a href='/kurashi/fuhoutouki.html'>空き家の適正管理</a></body></html>"
             ),
             "/kurashi/fuhoutouki.html": NOT_AKIYA,
         }
@@ -225,9 +234,27 @@ def test_heal_drops_a_page_that_never_mentions_akiya(ws: Workspace) -> None:
     assert result["checked"] == 1 and result["downgraded"] == [SID]
     data = json.loads((ws.runs_dir / "discover-nagano-findings.json").read_text(encoding="utf-8"))
     row = data["findings"][0]
-    assert row["policy"] == "link_only" and "空き家の記載が無い" in row["reason"]
+    assert row["policy"] == "link_only" and "物件を 1 件も取れない" in row["reason"]
     auto = (ws.sources_dir / "nagano-auto.yaml").read_text(encoding="utf-8")
     assert "bank_status: none" in auto and "policy: link_only" in auto
+
+
+@respx.mock
+def test_heal_keeps_a_page_whose_body_cannot_be_read(ws: Workspace) -> None:
+    """本文を取り出せないときは一覧かどうか判断できない。取り下げずに保留と報告する。"""
+    wrong = BASE + "/akiya/list.html"
+    _mock({"/": TOP, "/akiya/hojo.html": HOJO, "/akiya/guide.html": GUIDE_WITH_LIST})
+    respx.get(f"{BASE}/akiya/list.html").mock(
+        return_value=httpx.Response(
+            200, text=UNREADABLE, headers={"content-type": "text/html; charset=utf-8"}
+        )
+    )
+    expand._write_rows(ws, "nagano", "長野県", [_row(wrong)])
+    _mark_crawled(ws, wrong)
+    with _client() as c:
+        result = expand.heal(ws, client=c)
+    assert result["checked"] == 1 and not result["downgraded"] and not result["recrawl"]
+    assert any("保留" in line for line in result["changed"])
 
 
 @respx.mock
