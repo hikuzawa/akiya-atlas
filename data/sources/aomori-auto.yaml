@@ -830,7 +830,7 @@ sources:
     slug: '024457'
     bank_url: https://www.town.aomori-nanbu.lg.jp/site/nanbugurashi/10472.html
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 青森県南部町
   operator_evidence:
     quote: 青森県 市町村ホームページに掲載された公式サイト（www.town.aomori-nanbu.lg.jp）
@@ -839,6 +839,10 @@ sources:
   pages:
   - url: https://www.town.aomori-nanbu.lg.jp/site/nanbugurashi/10472.html
     kind: listing_index
+    follow:
+    - pattern: ^https?://www\.town\.aomori\-nanbu\.lg\.jp/page/\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.town.aomori-nanbu.lg.jp
   max_pages: 30

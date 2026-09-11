@@ -35,7 +35,7 @@ sources:
     slug: '152021'
     bank_url: https://www.city.nagaoka.niigata.jp/akiya/
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 新潟県長岡市
   operator_evidence:
     quote: 公式ドメイン www.city.nagaoka.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
@@ -44,6 +44,10 @@ sources:
   pages:
   - url: https://www.city.nagaoka.niigata.jp/akiya/
     kind: listing_index
+    follow:
+    - pattern: ^https?://www\.city\.nagaoka\.niigata\.jp/akiya/tochio/to\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.city.nagaoka.niigata.jp
   max_pages: 30
