@@ -1,6 +1,6 @@
 prefecture: 北海道
 prefecture_slug: hokkaido
-created_at: '2026-09-11T06:39:43+00:00'
+created_at: '2026-09-11T09:31:23+00:00'
 candidates:
 - key: '011002'
   label: 北海道 札幌市
@@ -914,16 +914,16 @@ candidates:
   note: null
 - key: '014036'
   label: 北海道 泊村
-  url: www.vill.tomari.hokkaido.jp
+  url: https://www.vill.tomari.hokkaido.jp/
   page_class: null
   class_label: null
-  confidence: 0.2
-  operator_kind: unknown
-  evidence_quote: null
-  evidence_url: null
-  reason: 同じ公式サイト www.vill.tomari.hokkaido.jp に複数の市町村が解決した（泊村(014036)・泊村(016969)）。取り違えの恐れ
-  proposed_policy: pending
-  proposed_action: URL修正
+  confidence: 0.6
+  operator_kind: municipality
+  evidence_quote: 古宇郡泊村。同サイトに所在地として「古宇郡泊村」と記載があり、北海道の市町村リンク集（道内179市町村）にも掲載されている（www.vill.tomari.hokkaido.jp）
+  evidence_url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
+  proposed_action: 承認
   decision: null
   note: null
 - key: '014044'
@@ -2506,89 +2506,5 @@ candidates:
   reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
   proposed_policy: link_only
   proposed_action: 承認
-  decision: null
-  note: null
-- key: 016951
-  label: 北海道 色丹村
-  url: null
-  page_class: null
-  class_label: null
-  confidence: 0.2
-  operator_kind: unknown
-  evidence_quote: null
-  evidence_url: null
-  reason: 公式 URL を自動解決できなかった（運営主体を判定できない）
-  proposed_policy: pending
-  proposed_action: URL修正
-  decision: null
-  note: null
-- key: 016969
-  label: 北海道 泊村
-  url: www.vill.tomari.hokkaido.jp
-  page_class: null
-  class_label: null
-  confidence: 0.2
-  operator_kind: unknown
-  evidence_quote: null
-  evidence_url: null
-  reason: 同じ公式サイト www.vill.tomari.hokkaido.jp に複数の市町村が解決した（泊村(014036)・泊村(016969)）。取り違えの恐れ
-  proposed_policy: pending
-  proposed_action: URL修正
-  decision: null
-  note: null
-- key: 016977
-  label: 北海道 留夜別村
-  url: null
-  page_class: null
-  class_label: null
-  confidence: 0.2
-  operator_kind: unknown
-  evidence_quote: null
-  evidence_url: null
-  reason: 公式 URL を自動解決できなかった（運営主体を判定できない）
-  proposed_policy: pending
-  proposed_action: URL修正
-  decision: null
-  note: null
-- key: 016985
-  label: 北海道 留別村
-  url: null
-  page_class: null
-  class_label: null
-  confidence: 0.2
-  operator_kind: unknown
-  evidence_quote: null
-  evidence_url: null
-  reason: 公式 URL を自動解決できなかった（運営主体を判定できない）
-  proposed_policy: pending
-  proposed_action: URL修正
-  decision: null
-  note: null
-- key: 016993
-  label: 北海道 紗那村
-  url: null
-  page_class: null
-  class_label: null
-  confidence: 0.2
-  operator_kind: unknown
-  evidence_quote: null
-  evidence_url: null
-  reason: 公式 URL を自動解決できなかった（運営主体を判定できない）
-  proposed_policy: pending
-  proposed_action: URL修正
-  decision: null
-  note: null
-- key: '017001'
-  label: 北海道 蘂取村
-  url: null
-  page_class: null
-  class_label: null
-  confidence: 0.2
-  operator_kind: unknown
-  evidence_quote: null
-  evidence_url: null
-  reason: 公式 URL を自動解決できなかった（運営主体を判定できない）
-  proposed_policy: pending
-  proposed_action: URL修正
   decision: null
   note: null

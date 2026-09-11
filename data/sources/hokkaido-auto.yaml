@@ -1490,6 +1490,27 @@ sources:
     quote: 公式ドメイン www.town.iwanai.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.iwanai.hokkaido.jp/
     checked_on: '2026-09-11'
+- id: hokkaido-014036
+  name: 泊村空き家バンク
+  operator: 泊村
+  operator_kind: municipality
+  official_url: https://www.vill.tomari.hokkaido.jp/
+  policy: link_only
+  municipality:
+    code: '014036'
+    name: 泊村
+    prefecture: 北海道
+    prefecture_slug: hokkaido
+    slug: '014036'
+    bank_url: https://www.vill.tomari.hokkaido.jp/
+    bank_status: none
+    extract_pending: false
+    map_query: 北海道泊村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+  operator_evidence:
+    quote: 古宇郡泊村。同サイトに所在地として「古宇郡泊村」と記載があり、北海道の市町村リンク集（道内179市町村）にも掲載されている（www.vill.tomari.hokkaido.jp）
+    url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
+    checked_on: '2026-09-11'
 - id: hokkaido-014044
   name: 神恵内村空き家バンク
   operator: 神恵内村
