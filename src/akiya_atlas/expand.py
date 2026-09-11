@@ -1099,6 +1099,14 @@ def reassess_finding(
     return f
 
 
+def _page_mentions_bank(url: str | None, client: PoliteClient) -> bool:
+    """そのページが空き家（バンク・情報）に触れているか。誤採用の見分けに使う。"""
+    if not url:
+        return False
+    res = client.get(url)
+    return bool(res.ok and _BANK_MENTION.search(page_text(res.text)))
+
+
 def _reset_source_state(ws: Workspace, source_id: str, keep: set[str]) -> int:
     """差し替えた source の古い URL の巡回状態を消す（新しい一覧は次の crawl で取り直す）。"""
     from sitemill.diff.state import CrawlState
@@ -1213,11 +1221,26 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
                     f"{name}: 一覧を差し替え {old_url} → {new.bank_url}"
                     f"（物件行 {new.listing_rows}）"
                 )
-            elif new.policy == "crawl":
+            elif new.policy == "crawl" and _page_mentions_bank(new.bank_url, client):
                 result["changed"].append(
                     f"{name}: 同じ一覧が最良のまま（物件行 {new.listing_rows}）。"
                     "0 件の原因は抽出側の可能性"
                 )
+            elif new.policy == "crawl":
+                # 空き家に一度も触れないページを一覧と見なしていた（例: 不法投棄の案内に
+                # 金額が並ぶ）。0 件が続くので、公式へのリンクだけにする
+                fixed = decide(
+                    new.muni, new.official, None, cross_linked=False, bank_host_official=False
+                )
+                fixed.official_url = new.official_url
+                fixed.evidence_quote = new.evidence_quote
+                fixed.evidence_url = new.evidence_url
+                fixed.reason = "空き家の記載が無いページを一覧と誤認していた。公式へのリンクのみ"
+                rows[i] = _finding_to_row(fixed)
+                touched = True
+                result["downgraded"].append(sid)
+                _reset_source_state(ws, sid, set())
+                result["changed"].append(f"{name}: 空き家の記載が無い誤採用を取り下げ（{old_url}）")
             else:
                 rows[i] = _finding_to_row(new)
                 touched = True
