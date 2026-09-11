@@ -119,23 +119,48 @@ uv run akiya-atlas rediscover 新潟県 --code 152021
 
 いずれも無くてもパイプラインは動く。登録は `gh secret set <名前> --repo hikuzawa/akiya-atlas`。
 
-## 5. sitemill に v0.1 のタグを打つ判断
+## 5. エンジン（sitemill）の版を上げる
 
-自動改善ループの着手条件（sitemill ADR 0014 §6）と揃えてある。次をすべて満たしたら打つ。
+**CI は sitemill のタグを見る。main の変更は自動では入らない**（2026-09-12 に `v0.1.0` へ固定）。
+sitemill の main では別サービス向けの拡張を進めるため、空き家の日次実行を固定版から切り離してある。
+手元の開発は `../sitemill` への path 依存のままなので、ローカルでは main の変更がすぐ効く。
+**手元で通っても CI では通らない**ことがある点に注意する。
+
+### 5-1. エンジンの修正を空き家側に取り込む手順
+
+1. sitemill 側で修正を main に入れ、テストを通す
+2. 新しいタグを打って push する（版の付け方は後述）
+
+   ```bash
+   cd sitemill && git tag -a v0.1.1 -m "..." && git push origin v0.1.1
+   ```
+
+3. akiya-atlas 側で、CI が見るタグを 3 つのワークフローすべてで書き換える
+
+   ```bash
+   cd akiya-atlas
+   sed -i 's/ref: v0.1.0/ref: v0.1.1/' .github/workflows/pipeline.yml .github/workflows/checks.yml .github/workflows/weekly.yml
+   ```
+
+4. 手元で `uv run pytest -q` と `uv run sitemill build` を通す（path 依存なので main の内容で検証される。
+   タグと main がずれているときは、sitemill 側でタグを打った時点の内容と一致しているか確認する）
+5. コミットして push する。`checks` が新しいタグで通ることを確認する
+6. 日次が失敗したら、前のタグに戻す（3 の逆）。データは触らない
+
+### 5-2. 版の付け方
+
+- **パッチ（v0.1.x）**: 抽出や分類の直し、性能改善など、生成物の形が変わらないもの
+- **マイナー（v0.x.0）**: `Service` の口が増える、設定項目が増えるなど、サービス側の対応が要るもの
+- タグは sitemill の main から打つ。akiya-atlas 側の都合でエンジンを分岐させない
+
+### 5-3. 次の版に進む条件
+
+自動改善ループの着手条件（sitemill ADR 0014 §6）と揃えてある。
 
 1. 日次パイプラインが **2 週間** 失敗 Issue なしで回っていること（週次 Issue の「失敗した工程 0 件」が 2 回続く）
 2. `eval` の fixture が主要な型（表形式・カード形式・詳細ページ）を各 3 件以上含むこと → **達成済み**（9 件）
 3. 1 か月の LLM 費用の上限を決め、実測がその半分以下であること
 4. 変更してよい範囲の許可リストがコードの定数として書かれ、テストで守られていること
-
-打つときは sitemill 側で行う。
-
-```bash
-cd sitemill && git tag -a v0.1 -m "..." && git push origin v0.1
-```
-
-タグを打ったら、akiya-atlas の `pyproject.toml` の依存を path からタグ固定に切り替えるかを
-判断する（ADR 0006）。
 
 ## 6. 費用の確認先
 

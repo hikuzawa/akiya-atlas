@@ -31,5 +31,5 @@ sitemill の最初の利用者。自治体が独自に運営する空き家バ�
 - `.env.example` にはプレースホルダー（空の値）だけを置く。値を書いた時点でコミット前フックが止める
 - コミット前フックは `.githooks/pre-commit`（`uv run sitemill scan-secrets --staged`、gitleaks があれば併用）。clone 後に一度 `git config core.hooksPath .githooks` で有効化する。CI でも全履歴を走査する
 - 取得した生 HTML はコミットしない。テストに要る数ページだけ `tests/fixtures/html/` に置く
-- sitemill は今のフェーズでは `../sitemill` への editable 依存。安定したら git タグ固定に切り替える（ADR 0006）
+- **CI は sitemill のタグ固定（現在 `v0.1.0`）。sitemill の main の変更は自動では反映されない**（ADR 0006）。手元は `../sitemill` への editable 依存のままなので、ローカルで通っても CI で通らないことがある。エンジンの修正を取り込むときは、sitemill でタグを打ってから `.github/workflows/` 3 本の `ref:` を上げる（手順は `docs/runbook/operations.md` の 5 章）
 - 区切りごとに `uv run pytest` と `uv run ruff check` を通してからコミットする。コミットはこのディレクトリ内で行う
