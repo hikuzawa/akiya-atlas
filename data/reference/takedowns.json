@@ -1,6 +1,14 @@
 {
   "_about": "取り下げ依頼で非表示にするページ。Issue を閉じると次回の実行で戻る",
-  "updated_at": "2026-09-11T20:26:41+00:00",
+  "updated_at": "2026-09-12T20:12:01+00:00",
   "other_open_issues": {},
-  "takedowns": []
+  "takedowns": [
+    {
+      "issue": 3,
+      "url": "https://akiya-atlas.com/nagano/",
+      "path": "/nagano/",
+      "received_at": "2026-09-12T03:31:55.548Z",
+      "title": "[お問い合わせ] 掲載物件の成約に伴う取り下げ依頼"
+    }
+  ]
 }
