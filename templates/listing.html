@@ -72,7 +72,8 @@
 
 <section class="section narrow cta" aria-labelledby="owner-title">
   <h2 id="owner-title">この地域に空き家をお持ちの方へ</h2>
-  {{ ui.ad_notice(offers) }}
+  {# 物件ページは購入・入居を検討する人が読むページなので広告は置かない（ADR 0010）。
+     広告リンクが無いので広告表記も出さない。所有者向けの導線は /owners/ に集約する #}
   <p>査定・解体の流れと補助制度を <a href="/owners/">所有者向けの案内</a> にまとめています。</p>
 </section>
 

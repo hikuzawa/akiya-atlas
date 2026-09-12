@@ -3,8 +3,9 @@
 <nav class="breadcrumb" aria-label="現在地"><ol><li><a href="/">トップ</a></li><li>所有者の方へ</li></ol></nav>
 <div class="page-head">
   <h1>相続した空き家、どうする？</h1>
+  {# 広告表記は見出しの直後（ファーストビュー）に置く。ad_check.py が位置を検査する #}
+  {{ ui.ad_notice(ad_offers) }}
   <p class="lead">選択肢は「住む・使う」「貸す」「売る」「自治体の空き家バンクに登録」「解体して土地を活用」「当面は管理する」の 6 つ。どれを選ぶにも、まず自治体の空き家バンクと補助制度を確認すると選択肢が広がります。ここでは一般的な流れと各自治体の制度をまとめています。法律・税務・査定額の個別のご相談は、専門家や自治体の窓口へ。</p>
-  {{ ui.ad_notice(offers) }}
 </div>
 
 <section class="section" aria-labelledby="options-title">
@@ -28,27 +29,31 @@
         </ul>
       </div>
     </details>
+    {{ ui.offer_slot(slots["owners-cleanup"], "owners-cleanup", "家財の片づけ・遺品整理の相談先です。") }}
+    {{ ui.offer_slot(slots["owners-renovation"], "owners-renovation", "住む・貸すために直す場合の相談先です。") }}
   </div>
 </section>
 
 <section class="section" aria-labelledby="flow-sale-title">
   {{ ui.section_head("flow-sale-title", "売却・賃貸までの流れ", "スマホでは横にスクロールできます。下の「手順を文章で見る」でも読めます") }}
   <div class="chart-card">{{ flow_sale|chart }}</div>
+  {{ ui.offer_slot(slots["owners-flow-sale"], "owners-flow-sale", "「査定・相談（複数社）」の段階で使えます。自治体の空き家バンクへの登録と併用できます。") }}
 </section>
 
 <section class="section" aria-labelledby="flow-demo-title">
   {{ ui.section_head("flow-demo-title", "解体までの流れ") }}
   <div class="chart-card">{{ flow_demolition|chart }}</div>
+  {{ ui.offer_slot(slots["owners-flow-demolition"], "owners-flow-demolition", "「見積を複数社で比較」の段階で使えます。補助金の申請は先に自治体の窓口で条件をご確認ください。") }}
 </section>
 
 <section class="section" aria-labelledby="offers-title">
-  {{ ui.section_head("offers-title", "相談先", "提携先が決まるまでは「準備中」です。ダミーのリンクは置きません") }}
+  {{ ui.section_head("offers-title", "相談先", "「広告」と付いたものはアフィリエイトリンクです。提携先が決まるまでは「準備中」と表示し、ダミーのリンクは置きません") }}
   <ul class="offers">
-    {% for o in offers %}
+    {% for o in slots["owners-consult"] %}
     <li class="offer">
       <h3>{{ o.label }}{{ ui.badge("plain", o.kind) }}</h3>
       <p class="desc">{{ o.description }}</p>
-      {% if o.ready %}<p><a class="btn btn-primary" href="{{ o.path }}" rel="sponsored noopener" target="_blank">{{ o.label }}を見る{{ ui.icon("ext") }}</a></p>
+      {% if o.ready %}{{ ui.offer_slot([o], "owners-consult") }}
       {% else %}<p>{{ ui.badge("mute", "準備中") }}</p>{% endif %}
     </li>
     {% endfor %}

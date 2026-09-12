@@ -156,6 +156,57 @@ def _register(app: typer.Typer) -> None:
             typer.echo(f"停止: {e}", err=True)
             raise typer.Exit(code=3) from e
 
+    @app.command("ad-check")
+    def ad_check_cmd(
+        dist: Annotated[Path, typer.Option("--dist", help="検査する生成物のディレクトリ")] = Path(
+            "dist"
+        ),
+    ) -> None:
+        """広告掲載の検査（ADR 0010）。広告表記の有無と位置、/go/ 経由、宣言との一致を確かめる。
+
+        CI では build の直後に走る。1 件でも問題があれば 1 で終了してビルドを止める。
+        """
+        from akiya_atlas import ad_check
+
+        problems, summary = ad_check.check(dist)
+        if problems:
+            typer.echo(f"広告掲載の検査に失敗（{len(problems)} 件）:", err=True)
+            for msg in problems[:50]:
+                typer.echo(f"  - {msg}", err=True)
+            if len(problems) > 50:
+                typer.echo(f"  ... 他 {len(problems) - 50} 件", err=True)
+            raise typer.Exit(code=1)
+        typer.echo(f"広告掲載の検査 OK: {summary}")
+
+    @app.command("ad-urls")
+    def ad_urls_cmd(
+        offer: Annotated[
+            str | None, typer.Option("--offer", help="案件 ID で絞り込む（例: kaitai-110）")
+        ] = None,
+        dist: Annotated[Path, typer.Option("--dist", help="読む生成物のディレクトリ")] = Path(
+            "dist"
+        ),
+    ) -> None:
+        """ASP に届け出る掲載 URL の一覧を出す（反映後に人が提出する）。"""
+        from akiya_atlas import ad_check, affiliates
+
+        rt = commands.Runtime.open()
+        rows = ad_check.ad_urls(dist, rt.ws.site.base_url, offer_id=offer)
+        if not rows:
+            typer.echo("掲載中の広告はありません（計測 URL が入っていない、または未ビルド）")
+            return
+        current = ""
+        for item, url in rows:
+            if item.id != current:
+                current = item.id
+                asp = affiliates.asp_of(item)
+                where = f"{asp.name} の{asp.submit_label}" if asp else "ASP の管理画面"
+                typer.echo("")
+                head = f"{item.name or item.label}（{item.id} / プログラム {item.program_id}）"
+                typer.echo(f"# {head}")
+                typer.echo(f"# 提出先: {where}")
+            typer.echo(url)
+
 
 def main() -> None:
     from sitemill.cli import app

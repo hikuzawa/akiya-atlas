@@ -214,7 +214,7 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
     assert "<img" not in listing  # 写真は載せない
     assert "sm-embed-fallback" in listing  # 地図キーが無いので外部リンクにフォールバック
     assert "空き家アトラス 運営" in listing  # 運営者情報はフッターの信頼ブロックに出る
-    assert "本ページには広告" not in listing  # ASP 未契約の間は広告表記を出さない
+    assert "data-ad-notice" not in listing  # 物件ページには広告を置かない（ADR 0010）
 
     muni = (dist / "nagano/202193-tomi/index.html").read_text(encoding="utf-8")
     assert "掲載終了の可能性" in muni and "空き家改修補助" in muni
@@ -222,7 +222,7 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
 
     owners = (dist / "owners/index.html").read_text(encoding="utf-8")
     assert "準備中" in owners and "/go/" not in owners  # ダミーリンクを置かない
-    assert "本ページには広告" not in owners  # 広告リンクが有効になるまで表記も出さない
+    assert "data-ad-notice" not in owners  # 広告リンクが有効になるまで表記も出さない
 
     about = (dist / "about/index.html").read_text(encoding="utf-8")
     assert "プライバシーポリシー" in about and "docs.google.com/forms" in about

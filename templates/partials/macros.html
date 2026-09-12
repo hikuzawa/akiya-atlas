@@ -17,11 +17,28 @@
 <a class="{{ cls }}" href="{{ url }}" rel="noopener" target="_blank">{{ label }}{{ icon("ext") }}<span class="visually-hidden">（外部サイトが開きます）</span></a>
 {%- endmacro %}
 
-{# 広告（アフィリエイトリンク）を含むページの明示。景品表示法のステマ規制で、広告であることを
-   一般消費者が容易に判別できる必要があるため、広告リンクより前に置く。ASP 未契約の間は
-   有効なオファーが 0 件なので何も出ない（表記だけが先に出ることを避ける） #}
+{# 広告（アフィリエイトリンク）を含むページの明示。景品表示法のステマ規制と A8 の掲載規約で、
+   広告であることを一般消費者が容易に判別できる位置に出す必要があるため、本文の冒頭かつ
+   最初の広告リンクより前に置く。渡すのは「そのページに実際に出る案件」だけ（affiliates.page_offers）。
+   広告リンクが無いページには出さない。位置と有無は ad_check.py がビルド時に検査する #}
 {% macro ad_notice(offers) -%}
-{% if offers|selectattr("ready")|list %}<p class="meta ad-notice">本ページには広告（アフィリエイトリンク）を含みます。</p>{% endif %}
+{% if offers|selectattr("ready")|list %}<p class="ad-notice" data-ad-notice>広告：本ページにはアフィリエイトリンクを含みます。リンク先での申込みにより当サイトが報酬を受け取ることがあります。</p>{% endif %}
+{%- endmacro %}
+
+{# 広告の枠（ADR 0010）。placement は affiliates.PLACEMENTS の id。offers が空なら何も出ない。
+   リンクは必ず /go/<offer>/<placement>/ の転送ページ経由にして、どの枠から押されたかを数える #}
+{% macro offer_slot(offers, placement, note=none) -%}
+{% if offers %}
+<div class="offer-slot">
+  {% for o in offers %}
+  <p class="offer-cta">
+    <a class="btn btn-primary" href="/go/{{ o.id }}/{{ placement }}/" rel="sponsored noopener" target="_blank">{{ o.label }}を見る{{ icon("ext") }}<span class="visually-hidden">（広告。外部サイトが開きます）</span></a>
+    <span class="ad-tag" aria-hidden="true">広告</span>
+  </p>
+  {% endfor %}
+  {% if note %}<p class="meta">{{ note }}</p>{% endif %}
+</div>
+{% endif %}
 {%- endmacro %}
 
 {% macro section_head(id, title, note=none) -%}

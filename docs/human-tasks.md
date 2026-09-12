@@ -24,12 +24,15 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 
 ## 収益化のために必要
 10. **ASP アカウント**（不動産一括査定・解体一括見積・空き家買取の各案件）を契約し、計測 URL を `src/akiya_atlas/affiliates.py` の `Offer.url` に入れる。入れるまで CTA は「準備中」表示。
-11. 各 ASP の掲載ルール（「広告」表記など）に合わせてテンプレートの文言を確認する。景品表示法のステマ規制向けの表記は `templates/partials/macros.html` の `ad_notice` にあり、`Offer.url` が入った時点で `/owners/` と物件ページに自動で出る（`docs/design/` の方針どおり、表記だけが先に出ることはない）。
+    - A8.net の解体案件（解体工事110番、プログラム `s00000015223012`）は 2026-09-12 に承認済み。`kaitai-110` として登録してあり、**計測 URL だけが未設定**。A8 の管理画面で発行して渡せば公開される
+    - 案件の渡し方・登録手順・飛び先 URL の確認・掲載 URL の届け出は `docs/runbook/affiliates.md`
+11. **掲載 URL の届け出**: 反映後に `uv run akiya-atlas ad-urls --offer <案件>` の出力を、A8 の「広告掲載URL管理」に登録する。
+12. 各 ASP の掲載ルールは `affiliates.py` の `ASPS` にデータとして持ち、ビルド時に検査する（ADR 0010）。規約の変更通知が来たらここを直す。広告表記は `templates/partials/macros.html` の `ad_notice` にあり、`Offer.url` が入った時点で `/owners/` の冒頭に自動で出る（表記だけが先に出ることはない）。
 
 ## 任意・後で
-12. Street View を使う場合は Geocoding API の有効化（所在地から緯度経度を得るため）。
-13. 公式 SNS（YouTube / Instagram / X）の埋め込みを使う場合、Instagram と X は oEmbed の利用登録が要る。
-14. Raspberry Pi で回す場合は uv を入れ、`akiya-atlas` を clone して `.env` を置き、cron で `uv run sitemill run` を実行する。
+13. Street View を使う場合は Geocoding API の有効化（所在地から緯度経度を得るため）。
+14. 公式 SNS（YouTube / Instagram / X）の埋め込みを使う場合、Instagram と X は oEmbed の利用登録が要る。
+15. Raspberry Pi で回す場合は uv を入れ、`akiya-atlas` を clone して `.env` を置き、cron で `uv run sitemill run` を実行する。
 
 ## AI 側で次に行う作業（人の作業を待たずに進められるもの）
 - 伊那市の物件情報サイト（SPA）の JSON API の有無と規約確認。使えなければ link_only のまま

@@ -22,7 +22,7 @@ from sitemill.models import Embed, OperatorInfo, Page, PageMeta, Source, SourceL
 from sitemill.parse.jp.address import has_street_number
 from sitemill.settings import Workspace
 
-from akiya_atlas.affiliates import OFFERS
+from akiya_atlas import affiliates
 from akiya_atlas.data import Dataset
 from akiya_atlas.schema import FIELD_LABELS, Listing, Municipality
 
@@ -63,7 +63,7 @@ class Ctx:
         op = self.ws.site.operator
         return {
             "chart_css": chart_css(),
-            "offers": OFFERS,
+            "offers": affiliates.OFFERS,
             "has_maps": bool(self.maps_key),  # 地図を埋め込むかどうか（Cookie の記載が変わる）
             "contact_label": getattr(op, "contact_label", None) or "お問い合わせフォーム",
         }
@@ -677,11 +677,34 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                 "flow_sale": flow_diagram("売却・賃貸までの流れ", SALE_FLOW, per_row=3),
                 "flow_demolition": flow_diagram("解体までの流れ", DEMOLITION_FLOW, per_row=3),
                 "subsidies": subsidies,
+                # 枠ごとの掲載案件（ADR 0010）。相談先だけは契約前のものも「準備中」として並べる
+                "slots": {
+                    p.id: affiliates.offers_for(p.id, include_pending=(p.id == "owners-consult"))
+                    for p in affiliates.PLACEMENTS
+                },
+                # 広告表記の有無はこのページに実際に出る広告リンクで決める
+                "ad_offers": affiliates.page_offers("/owners/"),
             },
             trust_signals=trust(ctx, sources=all_sources, count=len(subsidies)),
             priority=0.9,
         )
     )
+    # 広告の転送ページ（ADR 0010）。1 枠 1 枚。noindex なので sitemap には出ない
+    for target in affiliates.go_targets():
+        pages.append(
+            _page(
+                ctx,
+                path=target.url_path.strip("/") + "/index.html",
+                template="go.html",
+                title=f"{target.offer.label}（広告）へ移動します",
+                description="広告主のサイトへ移動します。",
+                context={"offer": target.offer, "placement": target.placement},
+                trust_signals=trust(ctx, sources=[], count=None),
+                noindex=True,
+                priority=0.1,
+                changefreq="monthly",
+            )
+        )
     pages.append(
         _page(
             ctx,

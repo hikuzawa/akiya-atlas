@@ -4,9 +4,9 @@
 
 ## 決定
 - 主な成約ポイントは「空き家の所有者」向けページ `/owners/`。査定・解体の手続きフロー図（SVG 自動生成）、補助金の一覧、CTA を置く
-- ASP 契約が無い間は CTA を「準備中」と表示し、ダミーリンクは置かない。契約後は `affiliates.py` の Offer に URL を入れ、`/go/<offer>` 経由（`_redirects`）で送客する
+- ASP 契約が無い間は CTA を「準備中」と表示し、ダミーリンクは置かない。契約後は `affiliates.py` の Offer に URL を入れ、`/go/<offer>` 経由で送客する（掲載場所・規約の検査・クリックの計測は ADR 0010 で具体化した）
 - 信頼シグナルは全ページ必須: 最終更新日時、一次情報リンク、運営者情報、データ件数。テンプレートの base に固定し、ビルド時に検査する
 - 運営者情報は当面「準備中」。確定したら `site.toml` の `[operator]` だけを変える
 
 ## 影響
-- 収益導線の計測は `/go/` のクリックを Pages Functions で数える方式を後で追加する（sitemill ADR 0007）
+- 収益導線の計測は `/go/<offer>/<placement>/` の転送ページと Cloudflare Web Analytics で行う（ADR 0010）。Pages Functions は必要になったときの置き換え先

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{# 広告の転送ページ（ADR 0010）。/go/<offer>/<placement>/ で 1 枠につき 1 枚生成する。
+   ここを 1 枚挟むことで計測ビーコンが 1 回動き、どのページのどの枠から押されたかが数えられる。
+   noindex（sitemap にも出ない）。JavaScript を切っていてもボタンで進める #}
+{% block content %}
+<div class="page-head go-page">
+  <h1>広告主のサイトへ移動します</h1>
+  {{ ui.ad_notice([offer]) }}
+  <p class="lead">{{ offer.advertiser }}が提供する「{{ offer.name }}」のページへ移動します。数秒たっても移動しないときは、下のボタンを押してください。</p>
+</div>
+<div class="surface go-body">
+  <p class="offer-cta">
+    <a class="btn btn-primary" id="go-link" href="{{ offer.url }}" rel="sponsored nofollow noopener">{{ offer.label }}のページへ進む{{ ui.icon("ext") }}<span class="visually-hidden">（広告。外部サイトが開きます）</span></a>
+    <span class="ad-tag" aria-hidden="true">広告</span>
+  </p>
+  <p class="meta">移動先は当サイトの運営者とは別の事業者のサイトです。申込みの条件・費用・個人情報の扱いは移動先の表示をご確認ください。</p>
+  <p><a href="/owners/">所有者向けの案内に戻る</a></p>
+</div>
+<script>
+// 計測タグはページの読み込み完了で送られるため、その後に転送する（送る前に離れると数えられない）。
+(function () {
+  var a = document.getElementById("go-link");
+  if (!a) return;
+  var go = function () { window.setTimeout(function () { window.location.replace(a.href); }, 300); };
+  if (document.readyState === "complete") { go(); } else { window.addEventListener("load", go); }
+})();
+</script>
+{% endblock %}

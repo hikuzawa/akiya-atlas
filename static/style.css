@@ -288,6 +288,22 @@ details.fold .fold-body { padding: 0 0 16px; }
 .offer h3 { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .offer .desc { color: var(--ink-2); }
 
+/* ---------- 広告（ADR 0010） ---------- */
+/* 広告表記。本文の冒頭に置き、地の文に埋もれないよう枠と地色をつける（位置は ad_check.py が検査する） */
+.ad-notice {
+  margin: 12px 0 0; padding: 10px 14px; font-size: .95rem; line-height: 1.7;
+  color: var(--ink); background: var(--warn-100); border: 1px solid var(--warn); border-radius: var(--radius);
+}
+.offer-slot { margin-top: 16px; display: grid; gap: 6px; }
+.offer-cta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 0; }
+/* リンクそのものにも広告と分かる印を添える（表記から遠い位置で押されるため） */
+.ad-tag {
+  font-size: .8rem; font-weight: 700; letter-spacing: .04em; padding: 2px 8px; border-radius: 999px;
+  color: var(--warn); background: var(--warn-100); border: 1px solid var(--warn);
+}
+.go-page .lead { font-size: 1.05rem; }
+.go-body { display: grid; gap: 12px; margin-top: 16px; }
+
 /* ---------- 信頼ブロック（sitemill マクロ） ---------- */
 .trust { background: var(--surface); border: 2px solid var(--green-700); border-radius: var(--radius); padding: 16px 18px; }
 .trust-title { font-size: 1.1rem; margin: 0 0 10px; display: flex; align-items: center; gap: 8px; }

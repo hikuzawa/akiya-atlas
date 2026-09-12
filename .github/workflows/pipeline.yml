@@ -7,6 +7,8 @@
 #     ダッシュボードでの手作業も、トークンをローカルに置くことも要らない。
 #   - build の直後に、canonical / sitemap / robots が site.toml の base_url を指すことを検査する
 #     （ドメイン切替のときに古いホストが残ったまま配置されるのを止める）。
+#   - 併せて広告掲載の検査を行う（ADR 0010）。広告表記が欠ける・位置が下がる・ASP へ直リンクする
+#     といった状態では配置しない。
 #   - 手動実行の mode=deploy-only は、巡回・抽出・heal・データのコミットを行わず、main の現在のデータで
 #     build → 検査 → deploy だけを行う（テンプレートやデザインの変更を反映するとき）。既定は full。
 # 前提（人間側の作業、docs/human-tasks.md）:
@@ -122,6 +124,10 @@ jobs:
         working-directory: akiya-atlas
         # 本番ドメインを固定する。base_url を変えるときはここも一緒に変える
         run: uv run python .github/scripts/check_public_urls.py --expect-base https://akiya-atlas.com
+
+      - name: 広告掲載の検査（広告表記の有無と位置・/go/ 経由・宣言との一致。ADR 0010）
+        working-directory: akiya-atlas
+        run: uv run akiya-atlas ad-check
 
       - name: Eval (fixture、劣化検知)
         if: inputs.mode != 'deploy-only' # deploy-only では飛ばす
