@@ -237,16 +237,12 @@ def fact_rows(ls: Listing) -> list[dict[str, Any]]:
 
 def operator_info(ws: Workspace) -> OperatorInfo:
     op = ws.site.operator
-    fields: dict[str, Any] = {
-        "name": op.name,
-        "contact": op.contact,
-        "url": op.url or ws.site.url("/about/"),
-    }
-    # 連絡先のラベルは sitemill v0.1.1（release/0.1）で入った項目。手元の path 依存は main を
-    # 見ているので、cherry-pick が main に入るまでは無い版で動く必要がある
-    if "contact_label" in OperatorInfo.model_fields:
-        fields["contact_label"] = getattr(op, "contact_label", None)
-    return OperatorInfo(**fields)
+    return OperatorInfo(
+        name=op.name,
+        contact=op.contact,
+        contact_label=op.contact_label,
+        url=op.url or ws.site.url("/about/"),
+    )
 
 
 def source_links(ctx: Ctx, muni: Municipality) -> list[SourceLink]:
