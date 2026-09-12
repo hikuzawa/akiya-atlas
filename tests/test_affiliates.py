@@ -153,6 +153,8 @@ def test_published_offer_goes_through_a_redirect_page(
     go = (dist / "go/kaitai-110/owners-flow-demolition/index.html").read_text(encoding="utf-8")
     assert TRACKING in go and "noindex" in go
     assert "シェアリングテクノロジー株式会社" in go and "data-ad-notice" in go
+    # 計測ビーコンが送られたのを見てから転送する（ADR 0011）。打ち切りの上限も入れる
+    assert "/cdn-cgi/rum" in go and "1500" in go
     # 転送ページは検索結果に出さない
     assert "/go/" not in (dist / "sitemap.xml").read_text(encoding="utf-8")
     # 枠を含まない素の導線は _redirects に残す

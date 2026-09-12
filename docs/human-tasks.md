@@ -13,7 +13,7 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
    両リポジトリの git 作者設定はローカルで済ませてある。
 4. ~~**Cloudflare アカウント**と API トークン（Account > Cloudflare Pages: Edit）・アカウント ID を発行する~~ → 済み（2026-09-10、Secrets に登録済み）。Pages プロジェクト `akiya-atlas` は手で作らなくてよい（2026-09-10 に CI が作成済み。既定ホストは `akiya-atlas-asb.pages.dev`。`akiya-atlas.pages.dev` は第三者の英語サイト「Akiya Atlas」が使用中で取得できない）。`pipeline.yml` が deploy の直前に「無ければ作成、あれば何もしない」で用意する（`wrangler pages project create`）。
 5. ~~**GitHub Secrets** を akiya-atlas に登録する~~ → 済み（2026-09-10）: `ANTHROPIC_API_KEY`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`。
-6. **Cloudflare Web Analytics** を有効にしてビーコントークンを取得し、Secrets の `CF_WEB_ANALYTICS_TOKEN` と `.env` に入れる（無くても動く。計測タグが出ないだけ）。
+6. ~~**Cloudflare Web Analytics** を有効にする~~ → 済み（2026-09-12）。RUM の「自動挿入」モードで有効化済みで、Cloudflare が配信時に計測タグを差し込む（apex と pages.dev の両方で確認済み）。**`CF_WEB_ANALYTICS_TOKEN` は設定しない**（入れるとタグが 2 つ出て二重計測になる。ADR 0011）。
 7. **Google Maps Platform**: Maps Embed API を有効にし、HTTP リファラで `akiya-atlas-asb.pages.dev` と `akiya-atlas.com` に制限した公開キーを発行して `GOOGLE_MAPS_EMBED_KEY` に入れる（無い間は地図は外部リンクにフォールバック）。
 8. ~~**ドメイン `akiya-atlas.com`** を取得し、Pages にカスタムドメイン（apex と www）を追加する~~ → 済み（2026-09-10）。`site.toml` の `base_url` は `https://akiya-atlas.com` に切替済みで、CI が配置前に本番ドメインを固定検査する。
 9. **www と pages.dev から apex への 301（Bulk Redirects、約 5 分）**。Pages の `_redirects` はドメイン単位のリダイレクトに非対応（公式の Advanced redirects 表で ❌。wrangler はエラーを出さずに受理するが効かない）なので、Cloudflare ダッシュボードのアカウントレベル「Bulk redirects」で行う。
@@ -49,6 +49,6 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 | `CLOUDFLARE_API_TOKEN` | Cloudflare ダッシュボード → My Profile → API Tokens → Create Token → テンプレート「Cloudflare Pages — Edit」（Account Resources に対象アカウント） | `gh secret set CLOUDFLARE_API_TOKEN --repo hikuzawa/akiya-atlas`（プロンプトに貼り付け） |
 | `CLOUDFLARE_ACCOUNT_ID` | Cloudflare ダッシュボード → Workers & Pages の概要ページ右側「Account ID」 | `gh secret set CLOUDFLARE_ACCOUNT_ID --repo hikuzawa/akiya-atlas` |
 | `GOOGLE_MAPS_EMBED_KEY`（任意） | Google Cloud Console → APIs & Services → Credentials。Maps Embed API のみ、HTTP リファラで制限 | `gh secret set GOOGLE_MAPS_EMBED_KEY --repo hikuzawa/akiya-atlas` |
-| `CF_WEB_ANALYTICS_TOKEN`（任意） | Cloudflare → Web Analytics → サイト追加 → JS スニペット内の token | `gh secret set CF_WEB_ANALYTICS_TOKEN --repo hikuzawa/akiya-atlas` |
+| `CF_WEB_ANALYTICS_TOKEN` | **登録しない**。計測は Cloudflare の RUM 自動挿入で行うため、値を入れるとタグが 2 つ出て二重計測になる（ADR 0011） | — |
 
 注意: `.env.example` には値を書かない（git にコミットされる）。値は `.env` だけに置く。

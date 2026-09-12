@@ -228,6 +228,8 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
     assert "プライバシーポリシー" in about and "docs.google.com/forms" in about
     # 地図キーが無い間は埋め込まないので、Google の Cookie と通信には触れない
     assert "本サイトは Cookie を使用していません" in about
+    # 計測は Cloudflare の自動挿入。トークンが無くても使用している事実は開示する（ADR 0011）
+    assert "Cloudflare Web Analytics を使用しています" in about
     assert "ページを開いただけでは Google への通信は発生しません" in about
     assert 'data-generated="sitemill.charts"' in owners
 

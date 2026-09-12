@@ -33,6 +33,10 @@ BAND_NONE = "価格記載なし・応相談"
 BUILT_EDGES = [1971, 1981, 1991, 2001]
 BUILT_LABELS = ["〜1970年", "1971〜80年", "1981〜90年", "1991〜2000年", "2001年〜"]
 MIN_CHART_POINTS = 3
+# 計測は Cloudflare の RUM 自動挿入で行う（ADR 0011）。配信時にビーコンが差し込まれるので、
+# sitemill 側のタグは出さない（CF_WEB_ANALYTICS_TOKEN を入れると二重計測になる）。
+# プライバシーポリシーの記載はトークンの有無ではなくこの値で決める
+ANALYTICS_AUTO_INSERT = True
 SALE_FLOW = [
     "現地と権利関係の確認",
     "自治体の空き家バンクに登録",
@@ -64,6 +68,7 @@ class Ctx:
         return {
             "chart_css": chart_css(),
             "offers": affiliates.OFFERS,
+            "analytics_auto": ANALYTICS_AUTO_INSERT,
             "has_maps": bool(self.maps_key),  # 地図を埋め込むかどうか（Cookie の記載が変わる）
             "contact_label": getattr(op, "contact_label", None) or "お問い合わせフォーム",
         }
