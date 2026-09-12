@@ -137,7 +137,8 @@ OFFERS: tuple[Offer, ...] = (
         name="どんな構造の建物でもお任せください！【解体工事110番】",
         advertiser="シェアリングテクノロジー株式会社",
         program_id="s00000015223012",
-        url=None,  # 計測 URL が届いたらここに入れる。入れた時点で公開される
+        # テキスト素材の計測 URL。バナー素材とは a8mat が別なので、テキスト導線にはこちらを使う
+        url="https://px.a8.net/svt/ejp?a8mat=4BC9F9+52S3HU+39GM+1ZG8B6",
         landing_prefix="https://aff.life-110.com/?st_site=kaitai_kouji&st_aff=a8",
         reward_condition="WEB または電話申込後、30 日以内に見積もり対応加盟店の手配完了",
         cookie_days=90,
@@ -145,7 +146,11 @@ OFFERS: tuple[Offer, ...] = (
             "リスティング広告での集客は不可（本サイトは自然検索のみ）",
             "芸能人の画像を使用しない",
             "サイトロゴを編集しない",
+            # 2026-09-12 に確認済み: px.a8.net から 2 回転送され landing_prefix の配下に着く
             "飛び先は landing_prefix の配下であること（登録時に 1 度だけ人が確認する）",
+            # インプレッション計測用の 1×1 画像は置かない。成果の計測には不要で、掲載ページの
+            # すべての表示で a8.net への通信が発生し「Cookie を使っていない」開示と噛み合わないため
+            "インプレッション計測タグ（0.gif）は使用しない",
         ),
         placements=("owners-consult", "owners-flow-demolition"),
         rank=10,

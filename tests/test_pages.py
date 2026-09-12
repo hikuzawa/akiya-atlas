@@ -190,6 +190,8 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
         "nagano/202193-tomi/8/index.html",
         "nagano/202177-saku/293/index.html",
         "owners/index.html",
+        "go/kaitai-110/owners-consult/index.html",
+        "go/kaitai-110/owners-flow-demolition/index.html",
         "about/index.html",
         "data/index.html",
         "404.html",
@@ -202,7 +204,7 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
     ]
     for rel in expected:
         assert (dist / rel).is_file(), rel
-    assert report.stages["build"]["pages"] == 12
+    assert report.stages["build"]["pages"] == 14  # 転送ページ 2 枚を含む（ADR 0010）
 
     listing = (dist / "nagano/202193-tomi/322/index.html").read_text(encoding="utf-8")
     assert (
@@ -221,8 +223,9 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
     assert "アットホーム 空き家バンク（東御市）" in muni and 'rel="noopener nofollow"' in muni
 
     owners = (dist / "owners/index.html").read_text(encoding="utf-8")
-    assert "準備中" in owners and "/go/" not in owners  # ダミーリンクを置かない
-    assert "data-ad-notice" not in owners  # 広告リンクが有効になるまで表記も出さない
+    # 契約済みの解体は広告リンク、未契約の査定・買取は「準備中」（ダミーリンクを置かない）
+    assert "/go/kaitai-110/owners-consult/" in owners and "準備中" in owners
+    assert "data-ad-notice" in owners and "px.a8.net" not in owners
 
     about = (dist / "about/index.html").read_text(encoding="utf-8")
     assert "プライバシーポリシー" in about and "docs.google.com/forms" in about
@@ -233,8 +236,9 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
     assert "ページを開いただけでは Google への通信は発生しません" in about
     assert 'data-generated="sitemill.charts"' in owners
 
-    # ASP 未契約の間は /go/ を出さない。www / pages.dev → apex は Bulk Redirects で行う
-    assert (dist / "_redirects").read_text(encoding="utf-8") == ""
+    # _redirects に出るのは ASP の /go/ だけ。www / pages.dev → apex は Bulk Redirects で行う
+    redirects = (dist / "_redirects").read_text(encoding="utf-8").strip().splitlines()
+    assert len(redirects) == 1 and redirects[0].startswith("/go/kaitai-110 https://px.a8.net/")
     sitemap = (dist / "sitemap.xml").read_text(encoding="utf-8")
     assert f"{ws.site.base_url}/nagano/202193-tomi/322/" in sitemap  # 基準 URL は site.toml に従う
 

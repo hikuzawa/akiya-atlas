@@ -47,12 +47,16 @@ sources:
 
 
 def _ready_offers() -> tuple[Offer, ...]:
-    """本番の解体案件に計測 URL だけを入れたもの。"""
-    live = [
+    """本番の解体案件の計測 URL を、試験用の値に差し替えたもの。"""
+    return tuple(
         Offer(**{**vars(o), "url": TRACKING}) if o.id == "kaitai-110" else o
         for o in affiliates.OFFERS
-    ]
-    return tuple(live)
+    )
+
+
+def _pending_offers() -> tuple[Offer, ...]:
+    """どの案件も契約前の状態（計測 URL が無い）。"""
+    return tuple(Offer(**{**vars(o), "url": None}) for o in affiliates.OFFERS)
 
 
 @pytest.fixture
@@ -87,16 +91,13 @@ def ws(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Workspace:
 
 def test_one_offer_per_kind_in_a_slot() -> None:
     """同じ種別が複数あっても、枠に出るのは rank の小さい 1 件だけ（ADR 0010）。"""
-    base = affiliates.OFFERS[1]  # kaitai-110
+    base = next(o for o in affiliates.OFFERS if o.id == "kaitai-110")
     other = Offer(**{**vars(base), "id": "kaitai-other", "label": "別の解体見積", "rank": 5})
     with pytest.MonkeyPatch.context() as mp:
-        mp.setattr(affiliates, "OFFERS", (base, other))
-        assert [o.id for o in affiliates.offers_for("owners-consult")] == []  # 契約前は出ない
-        mp.setattr(
-            affiliates,
-            "OFFERS",
-            (Offer(**{**vars(base), "url": TRACKING}), Offer(**{**vars(other), "url": TRACKING})),
-        )
+        pending = (Offer(**{**vars(base), "url": None}), Offer(**{**vars(other), "url": None}))
+        mp.setattr(affiliates, "OFFERS", pending)
+        assert affiliates.offers_for("owners-flow-demolition") == []  # 契約前は出ない
+        mp.setattr(affiliates, "OFFERS", (base, Offer(**{**vars(other), "url": TRACKING})))
         chosen = affiliates.offers_for("owners-flow-demolition")
         assert [o.id for o in chosen] == ["kaitai-other"]  # rank 5 < 10
 
@@ -119,8 +120,9 @@ def test_slot_rejects_a_kind_it_does_not_accept() -> None:
         affiliates.offers_for("owners-nowhere")
 
 
-def test_pending_offer_is_not_published(ws: Workspace) -> None:
+def test_pending_offer_is_not_published(ws: Workspace, monkeypatch: pytest.MonkeyPatch) -> None:
     """計測 URL が入るまでは広告リンクも広告表記も出ない（ダミーリンクを置かない）。"""
+    monkeypatch.setattr(affiliates, "OFFERS", _pending_offers())
     commands.cmd_build(commands.Runtime(ws=ws, service=service))
     dist = ws.dist_dir
     owners = (dist / "owners/index.html").read_text(encoding="utf-8")
