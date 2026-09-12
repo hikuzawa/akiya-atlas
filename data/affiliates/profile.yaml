@@ -84,7 +84,10 @@ exclusions:
 
 thresholds:
   min_approval_rate: 30 # 確定率がこれ未満なら除外（記載が無いものは落とさない）
-  min_epc_yen: null # EPC の下限。使わないなら null
+  # EPC の下限は使わない。これは「除外」のしきい値だが、運用方針は「確定率と EPC の
+  # 両方が読めていて EPC が下限（暫定 5）を下回るものは保留」なので意味が違う。
+  # 判定側が対応したら 5 を入れる（docs/affiliate-criteria.md）
+  min_epc_yen: null
   min_reward_yen: 500 # これ未満の報酬は手間に合わない
   min_score: 55 # これ未満は「保留」。除外ではない
   warn_approval_rate: 60 # これを下回ったら表に注記を出す
