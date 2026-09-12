@@ -11,8 +11,10 @@ language = "ja"
 description = "自治体が運営する空き家バンクを、都道府県・市町村・価格帯・補助金の有無で横断検索できます。物件の要約と一次情報へのリンクだけを載せています。"
 
 [operator]
-name = "準備中"
-contact = "準備中"
+name = "空き家アトラス 運営"
+# 連絡先は Google フォーム（tools/contact_form/ の setup() で作成）。
+# フッターの信頼シグナルと /about/ に出る。ここを変えると全ページに反映される。
+contact = "https://docs.google.com/forms/d/e/1FAIpQLSdp-CJo64kiw2ifE3zlVY8Dpi6DU0PAZD4gYzsauC8vpokP9g/viewform"
 
 [paths]
 data = "data"

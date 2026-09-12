@@ -6,7 +6,7 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 ## 今すぐ必要（縦断パイプラインを完走させるため）
 1. ~~**Anthropic API キー**を `akiya-atlas/.env` に書く~~ → 済み（2026-09-10）。**ただし鍵の作り直しを推奨**: 一度 `.env.example` に書かれた値がローカルの git 履歴に入り（push 前に履歴から除去済み）、監査ログにも表示されたため。作り直したら `.env` を更新し、下の表のコマンドで GitHub Secret も更新する。
    これが無いと `sitemill extract` は「.env に何を書くか」を表示して止まる。抽出モデルは `site.toml` の `[llm] model`（既定 `claude-haiku-4-5`）で変えられる。
-2. **運営者名と連絡手段**を決め、`site.toml` の `[operator]` に書く（現在は「準備中」）。全ページのフッターと `/about/` に出る。連絡手段は `tools/contact_form/` の Apps Script（`setup()` を一度実行するとフォーム・回答シート・送信時トリガーができ、ログにフォーム URL が出る。手順は同ディレクトリの README）で作り、その URL を `contact` に入れる。
+2. ~~**運営者名と連絡手段**を決め、`site.toml` の `[operator]` に書く~~ → 済み（2026-09-12）。運営者は「空き家アトラス 運営」、連絡先は `tools/contact_form/` の Apps Script が作った Google フォーム。フッターと `/about/` に出る。お預かりする情報の扱いは `/about/` のプライバシーポリシーに記載済み
 
 ## 公開までに必要
 3. ~~**GitHub リポジトリ**を作成し push する~~ → 済み（2026-09-10）。sitemill は public（https://github.com/hikuzawa/sitemill）、akiya-atlas は private（https://github.com/hikuzawa/akiya-atlas）。sitemill が public のため、CI からの sitemill checkout に読み取り用 PAT は不要。
@@ -24,7 +24,7 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 
 ## 収益化のために必要
 10. **ASP アカウント**（不動産一括査定・解体一括見積・空き家買取の各案件）を契約し、計測 URL を `src/akiya_atlas/affiliates.py` の `Offer.url` に入れる。入れるまで CTA は「準備中」表示。
-11. 各 ASP の掲載ルール（「広告」表記など）に合わせてテンプレートの文言を確認する。
+11. 各 ASP の掲載ルール（「広告」表記など）に合わせてテンプレートの文言を確認する。景品表示法のステマ規制向けの表記は `templates/partials/macros.html` の `ad_notice` にあり、`Offer.url` が入った時点で `/owners/` と物件ページに自動で出る（`docs/design/` の方針どおり、表記だけが先に出ることはない）。
 
 ## 任意・後で
 12. Street View を使う場合は Geocoding API の有効化（所在地から緯度経度を得るため）。

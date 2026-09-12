@@ -112,10 +112,12 @@ uv run akiya-atlas rediscover 新潟県 --code 152021
 
 | 作業 | いまの状態 | 影響 |
 | --- | --- | --- |
-| **運営者名と連絡先** | `site.toml` の `[operator]` が「準備中」 | 全ページのフッターと `/about/` に「準備中」と出る。信頼シグナルとして最優先 |
-| **ASP の計測 URL** | `src/akiya_atlas/affiliates.py` の `Offer.url` が未設定 | 所有者向けの CTA が「準備中」のまま。ダミーリンクは置かない方針 |
+| ~~**運営者名と連絡先**~~ | 済（2026-09-12）。`site.toml` の `[operator]` に「空き家アトラス 運営」とお問い合わせフォームの URL を入れた | 全ページのフッターと `/about/` に出る。フォームは `tools/contact_form/` のApps Script が作ったもので、届いた依頼は takedown / needs-human / municipality の Issue になる |
+| **ASP の計測 URL** | `src/akiya_atlas/affiliates.py` の `Offer.url` が未設定 | 所有者向けの CTA が「準備中」のまま。ダミーリンクは置かない方針。URL を入れると `/owners/` と物件ページに「本ページには広告（アフィリエイトリンク）を含みます」が自動で出る |
 | **Google Maps のキー** | `GOOGLE_MAPS_EMBED_KEY` 未登録 | 地図が外部リンクのフォールバック表示になる |
 | **Cloudflare Web Analytics** | `CF_WEB_ANALYTICS_TOKEN` 未登録 | 閲覧数が計測されない |
+
+プライバシーポリシーは `/about/` に載せてある。お問い合わせの扱い（AI での分類・自動返信、Issue への転記）を変えたときは、`tools/contact_form/` の実装と `/about/` の記載の両方を直す。
 
 いずれも無くてもパイプラインは動く。登録は `gh secret set <名前> --repo hikuzawa/akiya-atlas`。
 

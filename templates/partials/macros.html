@@ -17,6 +17,13 @@
 <a class="{{ cls }}" href="{{ url }}" rel="noopener" target="_blank">{{ label }}{{ icon("ext") }}<span class="visually-hidden">（外部サイトが開きます）</span></a>
 {%- endmacro %}
 
+{# 広告（アフィリエイトリンク）を含むページの明示。景品表示法のステマ規制で、広告であることを
+   一般消費者が容易に判別できる必要があるため、広告リンクより前に置く。ASP 未契約の間は
+   有効なオファーが 0 件なので何も出ない（表記だけが先に出ることを避ける） #}
+{% macro ad_notice(offers) -%}
+{% if offers|selectattr("ready")|list %}<p class="meta ad-notice">本ページには広告（アフィリエイトリンク）を含みます。</p>{% endif %}
+{%- endmacro %}
+
 {% macro section_head(id, title, note=none) -%}
 <div class="section-head"><h2 id="{{ id }}">{{ title }}</h2>{% if note %}<span class="note">{{ note }}</span>{% endif %}</div>
 {%- endmacro %}

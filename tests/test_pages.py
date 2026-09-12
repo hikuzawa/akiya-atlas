@@ -213,7 +213,8 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
     assert "https://akiya.city.tomi.nagano.jp/2026/08/1000no277.html" in listing
     assert "<img" not in listing  # 写真は載せない
     assert "sm-embed-fallback" in listing  # 地図キーが無いので外部リンクにフォールバック
-    assert "準備中" in listing  # 運営者情報は仮置き
+    assert "空き家アトラス 運営" in listing  # 運営者情報はフッターの信頼ブロックに出る
+    assert "本ページには広告" not in listing  # ASP 未契約の間は広告表記を出さない
 
     muni = (dist / "nagano/202193-tomi/index.html").read_text(encoding="utf-8")
     assert "掲載終了の可能性" in muni and "空き家改修補助" in muni
@@ -221,6 +222,10 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
 
     owners = (dist / "owners/index.html").read_text(encoding="utf-8")
     assert "準備中" in owners and "/go/" not in owners  # ダミーリンクを置かない
+    assert "本ページには広告" not in owners  # 広告リンクが有効になるまで表記も出さない
+
+    about = (dist / "about/index.html").read_text(encoding="utf-8")
+    assert "プライバシーポリシー" in about and "docs.google.com/forms" in about
     assert 'data-generated="sitemill.charts"' in owners
 
     # ASP 未契約の間は /go/ を出さない。www / pages.dev → apex は Bulk Redirects で行う

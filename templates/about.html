@@ -11,8 +11,13 @@
   <div class="surface">
     <dl class="facts">
       <div class="row"><dt>運営者</dt><dd>{{ site.operator.name }}</dd></div>
-      <div class="row"><dt>連絡先</dt><dd>{{ site.operator.contact }}</dd></div>
+      <div class="row"><dt>連絡先</dt><dd>
+        {%- if site.operator.contact.startswith("http") %}
+        <a href="{{ site.operator.contact }}" rel="noopener" target="_blank">お問い合わせフォーム{{ ui.icon("ext") }}<span class="visually-hidden">（外部サイトが開きます）</span></a>
+        {%- else %}{{ site.operator.contact }}{% endif %}
+      </dd></div>
     </dl>
+    <p class="meta">掲載内容の訂正・削除のご依頼、自治体からのご連絡、巡回の停止のご依頼は、このフォームからお願いします。送信いただくと受領の自動返信をお送りします（分類と文面の作成に AI を使用しています）。お預かりする情報の扱いは下のプライバシーポリシーに記載しています。</p>
   </div>
 </section>
 
@@ -41,6 +46,21 @@
   {{ ui.section_head("disclaimer-title", "免責") }}
   <div class="surface">
     <p>掲載内容の正確性には努めていますが、自治体ページの更新や抽出の誤りにより実際と異なる場合があります。物件の申込みや契約は、必ず自治体および関係者に直接ご確認ください。本サイトは物件の仲介を行いません。</p>
+  </div>
+</section>
+
+<section class="section narrow" aria-labelledby="privacy-title">
+  {{ ui.section_head("privacy-title", "プライバシーポリシー", "お預かりする情報と、外部サービスの利用について") }}
+  <div class="surface">
+    <p>お問い合わせフォームに入力された内容（お名前、メールアドレス、種別、お問い合わせ内容、送信日時）は、Google フォームを通じて運営者の Google スプレッドシートに保存し、お問い合わせへの対応と、対応の記録のために利用します。</p>
+    <p>自動返信の文面の作成とお問い合わせ内容の分類には AI（Anthropic 社の Claude）を使用しており、お問い合わせ内容は Anthropic 社の API に送信されます。自動返信にはその旨を明記しています。</p>
+    <p>掲載内容の訂正・削除のご依頼など、運営者の対応が必要なものは、対応の記録として、お問い合わせ内容の一部（対象の URL と本文）を運営者の非公開の作業管理ツール（GitHub Issue）に転記します。お名前とメールアドレスは転記しません。</p>
+    <p>お預かりした情報は対応の完了後も記録として一定期間保管し、法令に基づく場合を除いて第三者には提供しません。削除をご希望の場合は、同じフォームからお知らせください。</p>
+    <ul>
+      <li>本サイトは Cookie を使用していません。{% if analytics %}アクセス状況の把握に Cloudflare Web Analytics を使用していますが、Cookie を使わず、個人を特定する情報は収集しません。{% endif %}</li>
+      <li>地図を表示するページでは Google Maps の埋め込みを使用します。表示のときに Google への通信が発生し、Google のプライバシーポリシーが適用されます。地図を表示しないページでは通信は発生しません。</li>
+      <li>{% if offers|selectattr("ready")|list %}広告（アフィリエイトリンク）を掲載するページには「本ページには広告（アフィリエイトリンク）を含みます」と明記しています。{% else %}広告（アフィリエイトリンク）は現在掲載していません。掲載する場合は、そのページに「本ページには広告（アフィリエイトリンク）を含みます」と明記します。{% endif %}</li>
+    </ul>
   </div>
 </section>
 {% endblock %}
