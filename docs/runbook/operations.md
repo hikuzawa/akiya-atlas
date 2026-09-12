@@ -130,32 +130,70 @@ sitemill の main では別サービス向けの拡張を進めるため、空�
 
 ### 5-1. エンジンの修正を空き家側に取り込む手順
 
-1. sitemill 側で修正を main に入れ、テストを通す
-2. 新しいタグを打って push する（版の付け方は後述）
+1. sitemill 側で修正を入れ、テストを通す（main が別作業で使えないときは 5-2 を見る）
+2. 新しいタグを打って push する（版の付け方は 5-3）
 
    ```bash
-   cd sitemill && git tag -a v0.1.1 -m "..." && git push origin v0.1.1
+   git tag -a v0.1.1 -m "..." && git push origin v0.1.1
    ```
 
 3. akiya-atlas 側で、CI が見るタグを 3 つのワークフローすべてで書き換える
 
    ```bash
-   cd akiya-atlas
    sed -i 's/ref: v0.1.0/ref: v0.1.1/' .github/workflows/pipeline.yml .github/workflows/checks.yml .github/workflows/weekly.yml
    ```
 
-4. 手元で `uv run pytest -q` と `uv run sitemill build` を通す（path 依存なので main の内容で検証される。
-   タグと main がずれているときは、sitemill 側でタグを打った時点の内容と一致しているか確認する）
+   `CLAUDE.md` の「現在 vX.Y.Z」の記載も同じときに直す（akiya-atlas と sitemill の両方）。
+4. 手元で `uv run pytest -q` と `uv run sitemill build` を通す。path 依存なので**検証されるのは
+   main の内容で、CI が使うタグではない**。main がタグより進んでいるときは 5-2 の最後のやり方で
+   固定版を入れて確かめる
 5. コミットして push する。`checks` が新しいタグで通ることを確認する
-6. 日次が失敗したら、前のタグに戻す（3 の逆）。データは触らない
+6. 反映は `gh workflow run pipeline -f mode=deploy-only -f deploy=true`。本番で該当箇所を目で確かめる
+7. 日次が失敗したら、前のタグに戻す（3 の逆）。データは触らない
 
-### 5-2. 版の付け方
+### 5-2. main が別の作業で使われているときは保守ブランチで出す
+
+sitemill の main で別サービス向けの改修が進んでいる間は、そこに空き家向けの修正を混ぜない。
+**作業ツリー `C:\projects\sitemill` は別のセッションが編集していることがあるので触らない。**
+今のタグから保守ブランチを worktree で切って直す。
+
+```bash
+git -C ../sitemill worktree add -b release/0.1 ../sitemill-rel01 v0.1.0
+```
+
+1. 切った先（`../sitemill-rel01`）で直し、`uv sync` してから `uv run pytest -q` と `uv run ruff check src tests` を通す
+2. コミットしてタグを打ち、ブランチとタグの両方を push する（`git push origin release/0.1` と `git push origin v0.1.1`）
+3. worktree を消す。**worktree の中からは消せない**ので、先に別のディレクトリへ移ってから実行する
+
+   ```bash
+   git -C ../sitemill worktree remove ../sitemill-rel01 && git -C ../sitemill worktree prune
+   ```
+
+   Windows では空のディレクトリが残ることがある。`git worktree list` に出なくなっていれば git の状態は正しい
+4. **main への取り込みは自分でやらない。** sitemill に「release/0.1 の修正を main に cherry-pick する」
+   Issue を立て、main を触っているセッションに任せる。両方から同じファイルを直すと衝突する
+5. 手元の検証は path 依存（main）では通らない。固定版を仮想環境に入れて確かめ、終わったら戻す
+
+   ```bash
+   uv pip install "sitemill @ git+https://github.com/hikuzawa/sitemill@v0.1.1"
+   .venv/Scripts/python -m pytest -q
+   .venv/Scripts/sitemill build
+   uv sync
+   ```
+
+   `uv run` は実行のたびに path 依存へ戻すので、この間は `.venv/Scripts/` から直に呼ぶ。
+
+sitemill の設定や型に項目が増えたときは、その項目が main に入るまで手元では欠ける。akiya 側は
+「入っている版でだけ渡す」書き方にしておく（例: `pages.py` の `operator_info` が `contact_label` を
+`OperatorInfo.model_fields` にあるときだけ渡す）。cherry-pick が main に入ったら素直な呼び出しに戻してよい。
+
+### 5-3. 版の付け方
 
 - **パッチ（v0.1.x）**: 抽出や分類の直し、性能改善など、生成物の形が変わらないもの
 - **マイナー（v0.x.0）**: `Service` の口が増える、設定項目が増えるなど、サービス側の対応が要るもの
 - タグは sitemill の main から打つ。akiya-atlas 側の都合でエンジンを分岐させない
 
-### 5-3. 次の版に進む条件
+### 5-4. 次の版に進む条件
 
 自動改善ループの着手条件（sitemill ADR 0014 §6）と揃えてある。
 

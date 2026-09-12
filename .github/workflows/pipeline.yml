@@ -62,7 +62,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: hikuzawa/sitemill # public。既定の github.token で checkout できる
-          ref: v0.1.0 # タグ固定（ADR 0006）。sitemill の main の変更は自動では入らない
+          ref: v0.1.1 # タグ固定（ADR 0006）。sitemill の main の変更は自動では入らない
           path: sitemill
 
       - name: Install uv

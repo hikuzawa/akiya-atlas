@@ -226,6 +226,9 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
 
     about = (dist / "about/index.html").read_text(encoding="utf-8")
     assert "プライバシーポリシー" in about and "docs.google.com/forms" in about
+    # 地図キーが無い間は埋め込まないので、Google の Cookie と通信には触れない
+    assert "本サイトは Cookie を使用していません" in about
+    assert "ページを開いただけでは Google への通信は発生しません" in about
     assert 'data-generated="sitemill.charts"' in owners
 
     # ASP 未契約の間は /go/ を出さない。www / pages.dev → apex は Bulk Redirects で行う

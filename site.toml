@@ -15,6 +15,8 @@ name = "空き家アトラス 運営"
 # 連絡先は Google フォーム（tools/contact_form/ の setup() で作成）。
 # フッターの信頼シグナルと /about/ に出る。ここを変えると全ページに反映される。
 contact = "https://docs.google.com/forms/d/e/1FAIpQLSdp-CJo64kiw2ifE3zlVY8Dpi6DU0PAZD4gYzsauC8vpokP9g/viewform"
+# フッターと /about/ でこの URL に添える文字列（sitemill v0.1.1 以降）
+contact_label = "お問い合わせフォーム"
 
 [paths]
 data = "data"

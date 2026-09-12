@@ -13,7 +13,7 @@
       <div class="row"><dt>運営者</dt><dd>{{ site.operator.name }}</dd></div>
       <div class="row"><dt>連絡先</dt><dd>
         {%- if site.operator.contact.startswith("http") %}
-        <a href="{{ site.operator.contact }}" rel="noopener" target="_blank">お問い合わせフォーム{{ ui.icon("ext") }}<span class="visually-hidden">（外部サイトが開きます）</span></a>
+        <a href="{{ site.operator.contact }}" rel="noopener" target="_blank">{{ contact_label }}{{ ui.icon("ext") }}<span class="visually-hidden">（外部サイトが開きます）</span></a>
         {%- else %}{{ site.operator.contact }}{% endif %}
       </dd></div>
     </dl>
@@ -57,8 +57,8 @@
     <p>掲載内容の訂正・削除のご依頼など、運営者の対応が必要なものは、対応の記録として、お問い合わせ内容の一部（対象の URL と本文）を運営者の非公開の作業管理ツール（GitHub Issue）に転記します。お名前とメールアドレスは転記しません。</p>
     <p>お預かりした情報は対応の完了後も記録として一定期間保管し、法令に基づく場合を除いて第三者には提供しません。削除をご希望の場合は、同じフォームからお知らせください。</p>
     <ul>
-      <li>本サイトは Cookie を使用していません。{% if analytics %}アクセス状況の把握に Cloudflare Web Analytics を使用していますが、Cookie を使わず、個人を特定する情報は収集しません。{% endif %}</li>
-      <li>地図を表示するページでは Google Maps の埋め込みを使用します。表示のときに Google への通信が発生し、Google のプライバシーポリシーが適用されます。地図を表示しないページでは通信は発生しません。</li>
+      <li>{% if has_maps %}本サイト自体は Cookie を使用していません。ただし地図を表示するページでは、Google Maps の埋め込みを通じて Google が Cookie などを使用する場合があります。{% else %}本サイトは Cookie を使用していません。{% endif %}{% if analytics %}アクセス状況の把握に Cloudflare Web Analytics を使用していますが、Cookie を使わず、個人を特定する情報は収集しません。{% endif %}</li>
+      <li>{% if has_maps %}地図を表示するページでは Google Maps の埋め込みを使用します。表示のときに Google への通信が発生し、Google のプライバシーポリシーが適用されます。{% else %}地図は Google Maps への外部リンクとして掲載しており、ページを開いただけでは Google への通信は発生しません。{% endif %}</li>
       <li>{% if offers|selectattr("ready")|list %}広告（アフィリエイトリンク）を掲載するページには「本ページには広告（アフィリエイトリンク）を含みます」と明記しています。{% else %}広告（アフィリエイトリンク）は現在掲載していません。掲載する場合は、そのページに「本ページには広告（アフィリエイトリンク）を含みます」と明記します。{% endif %}</li>
     </ul>
   </div>

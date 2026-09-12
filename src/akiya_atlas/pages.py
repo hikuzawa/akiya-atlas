@@ -60,7 +60,13 @@ class Ctx:
 
     @property
     def base_context(self) -> dict[str, Any]:
-        return {"chart_css": chart_css(), "offers": OFFERS}
+        op = self.ws.site.operator
+        return {
+            "chart_css": chart_css(),
+            "offers": OFFERS,
+            "has_maps": bool(self.maps_key),  # 地図を埋め込むかどうか（Cookie の記載が変わる）
+            "contact_label": getattr(op, "contact_label", None) or "お問い合わせフォーム",
+        }
 
 
 def price_band(ls: Listing) -> str:
@@ -225,11 +231,17 @@ def fact_rows(ls: Listing) -> list[dict[str, Any]]:
 
 
 def operator_info(ws: Workspace) -> OperatorInfo:
-    return OperatorInfo(
-        name=ws.site.operator.name,
-        contact=ws.site.operator.contact,
-        url=ws.site.operator.url or ws.site.url("/about/"),
-    )
+    op = ws.site.operator
+    fields: dict[str, Any] = {
+        "name": op.name,
+        "contact": op.contact,
+        "url": op.url or ws.site.url("/about/"),
+    }
+    # 連絡先のラベルは sitemill v0.1.1（release/0.1）で入った項目。手元の path 依存は main を
+    # 見ているので、cherry-pick が main に入るまでは無い版で動く必要がある
+    if "contact_label" in OperatorInfo.model_fields:
+        fields["contact_label"] = getattr(op, "contact_label", None)
+    return OperatorInfo(**fields)
 
 
 def source_links(ctx: Ctx, muni: Municipality) -> list[SourceLink]:
