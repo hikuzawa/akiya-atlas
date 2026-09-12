@@ -1,0 +1,138 @@
+# 空き家アトラスの案件判定プロファイル
+#
+# ASP の検索結果を貼ると、この物差しで判定して申請順に並べる（sitemill ADR 0019）。
+# 判定の考え方は docs/affiliate-criteria.md、掲載の枠と「1 種別 1 社」は ADR 0010、
+# 承認後の登録手順は docs/runbook/affiliates.md。
+#
+#   uv run sitemill offers screen -p data/affiliates/profile.yaml -i paste.txt --asp a8
+#     -o data/affiliates/report.md --json data/affiliates/screened.json
+#   uv run sitemill offers emit <案件名の一部> -p data/affiliates/profile.yaml
+#     --json data/affiliates/screened.json --offer-id <id>
+#
+# ここに書いた語と数字がそのまま判定になる。判定を変えたいときはコードではなくここを直す。
+# kind と placements は src/akiya_atlas/affiliates.py の KIND_* / PLACEMENTS と必ずそろえる。
+
+name: akiya-owner
+site: 空き家の所有者向けページ（査定・解体・片付け・リフォームの相談先）
+
+# 成果が出る地域。ここに無い地域に限定された案件は除外する。
+# 空にすると地域では落とさない（全国向けサイト）。
+region:
+  service_area: [長野県, 全国]
+  reason: サイトの物件は長野県が中心で、対象地域外の案件はクリックされても成果にならない
+
+# サイトの導線。kind は掲載側の種別（akiya-atlas なら affiliates.py の KIND_*）とそろえる。
+# どの導線にも当てはまらない案件は除外する。
+funnels:
+  - kind: 査定
+    label: 売るか貸すかを決める前の査定
+    keywords: [一括査定, 不動産査定, 査定, 不動産売却, 売却査定, 土地売却, マンション売却]
+    placements: [owners-consult, owners-flow-sale]
+  - kind: 解体
+    label: 解体までの流れ
+    keywords: [解体, 取り壊し, 取壊し, 除却, 空き家解体, 建物解体, 廃屋]
+    placements: [owners-consult, owners-flow-demolition]
+  - kind: 買取
+    label: 仲介では売りにくい物件の買取
+    keywords: [買取, 直接買取, 現金化, 訳あり不動産, 空き家買取]
+    placements: [owners-consult]
+  - kind: 遺品整理
+    label: 片づけ
+    keywords: [遺品整理, 生前整理, 不用品回収, 片付け, 片づけ, ごみ屋敷, 残置物]
+    placements: [owners-cleanup]
+  - kind: リフォーム
+    label: 住む・貸すためのリフォーム
+    keywords: [リフォーム, リノベーション, 修繕, 耐震, 外壁塗装, 雨漏り, シロアリ]
+    placements: [owners-renovation]
+
+# 成果条件の重さ。上から順に当て、最初に当たった段を採る。
+# score は 1.0（軽い＝申込だけで成果）〜 0.0（重い＝契約しないと成果にならない）。
+conditions:
+  - id: 無料の見積・査定・資料請求
+    score: 1.0
+    keywords: [一括見積, 無料見積, 見積依頼, 無料査定, 査定依頼, 資料請求, 無料相談, 無料診断]
+  - id: 申込後に事業者の手配まで
+    score: 0.8
+    keywords: [手配完了, 申込後, 業者紹介, 加盟店, マッチング, 電話申込, 問い合わせ完了]
+  - id: 面談・現地調査まで
+    score: 0.5
+    keywords: [面談, 来店, 訪問, 現地調査, 立会, 商談, 打ち合わせ, 内見]
+  - id: 契約・成約まで
+    score: 0.15
+    keywords: [成約, 契約成立, 売買契約, 工事実施, 施工完了, 入金確認, 決済完了]
+
+# 1 つでも当たれば除外する。理由はそのまま出力の「除外」表に出る。
+exclusions:
+  - id: 情報商材・スクール
+    reason: 情報商材・スクール系はサイトの信頼性を損なう
+    keywords:
+      [情報商材, 副業, 稼げる, 稼ぐ, 不労所得, 月収, 億, スクール, 塾, オンラインサロン, 転売, せどり]
+  - id: 投資勧誘
+    reason: 投資勧誘は空き家の所有者の相談先ではなく、サイトの信頼性を損なう
+    keywords:
+      [投資セミナー, 不動産投資, 投資用, 利回り, 資産運用, FX, 暗号資産, 仮想通貨, NISA, 年金対策]
+  - id: 所有者向けでない
+    reason: 買い手・借り手向けの案件で、所有者向け導線に置く場所がない
+    keywords: [引越し見積, 引っ越し, 賃貸物件検索, 住宅ローン, カードローン, 電力切替, ウォーターサーバー]
+  - id: 費用が先に出る
+    reason: 相談した所有者に先に費用が出る形は、相談先として案内できない
+    keywords: [入会金, 月額費用, 有料会員, サブスクリプション]
+
+thresholds:
+  min_approval_rate: 30 # 確定率がこれ未満なら除外（記載が無いものは落とさない）
+  min_epc_yen: null # EPC の下限。使わないなら null
+  min_reward_yen: 500 # これ未満の報酬は手間に合わない
+  min_score: 55 # これ未満は「保留」。除外ではない
+  warn_approval_rate: 60 # これを下回ったら表に注記を出す
+  unknown_approval_score: 0.4 # 確定率の記載が無いときの配点比
+  unknown_condition_score: 0.5 # 成果条件が読めなかったときの配点比
+
+# 満点 100 の内訳
+weights:
+  funnel: 40 # 導線に合うか
+  condition: 25 # 成果条件の重さ
+  approval_rate: 20 # 確定率
+  earning: 15 # EPC（無ければ報酬額）
+
+earning:
+  epc_full_yen: 100 # EPC がこれ以上で満点
+  reward_full_yen: 10000 # 報酬額がこれ以上で満点
+
+# 承認された案件を掲載側へ渡す形。`{...}` は選定に使った構造化データから埋まる。
+# 契約後にしか分からない項目（計測 URL など）は空のままにしておく。
+emit:
+  # akiya-atlas の docs/runbook/affiliates.md 1 章の受け渡し様式と 1 対 1
+  handoff:
+    offer_id: "{offer_id}"
+    name: "{name}"
+    advertiser: "{advertiser}"
+    asp: "{asp}"
+    program_id: "" # ASP の管理画面から転記する
+    kind: "{kind}"
+    tracking_url: "" # 発行された計測 URL。埋まるまで「準備中」表示のまま
+    landing_prefix: "" # 飛び先 URL の制約。登録時に 1 度だけ人が確認する
+    reward_condition: "{condition}"
+    cookie_days: "{cookie_days}"
+    constraints: [] # 機械で確かめられない制約（リスティング NG など）を文章で
+    placements: "{placements}"
+    approved_on: "{today}"
+  # akiya-atlas の src/akiya_atlas/affiliates.py の OFFERS に足すコード片
+  code: |
+    Offer(
+        id="{offer_id}",
+        label="",  # ボタンに出す短い名前（案件名そのままにしない）
+        kind="{kind}",
+        description="",  # 所有者に向けた 1〜2 文。数字と事実だけを書く
+        asp="{asp}",
+        name="{name}",
+        advertiser="{advertiser}",
+        program_id="",
+        url=None,  # 計測 URL が届いたらここに入れる。入れた時点で公開される
+        landing_prefix="",
+        reward_condition="{condition}",
+        cookie_days={cookie_days},
+        constraints=(),
+        placements=({placements},),
+        rank=100,
+        approved_on="{today}",
+    )
