@@ -47,9 +47,13 @@ sources:
 
 
 def _ready_offers() -> tuple[Offer, ...]:
-    """本番の解体案件の計測 URL を、試験用の値に差し替えたもの。"""
+    """解体案件だけを試験用の計測 URL で公開した状態。他の案件は契約前として伏せる。
+
+    本番の案件が増えても、この試験が見るのは 1 件だけにする（枠と転送ページの対応を見たいので、
+    公開中の件数に左右されないようにする）。
+    """
     return tuple(
-        Offer(**{**vars(o), "url": TRACKING}) if o.id == "kaitai-110" else o
+        Offer(**{**vars(o), "url": TRACKING if o.id == "kaitai-110" else None})
         for o in affiliates.OFFERS
     )
 
@@ -176,6 +180,24 @@ def test_published_offer_goes_through_a_redirect_page(
         "https://akiya-atlas.com/go/kaitai-110/owners-consult/",
         "https://akiya-atlas.com/go/kaitai-110/owners-flow-demolition/",
     ]
+
+
+def test_check_reads_a_tracking_url_with_several_parameters(
+    ws: Workspace, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """計測 URL に & が複数あると href は &amp; になる。検査は同じ URL として読む。
+
+    A8 の URL には & が無いので気づかなかった。もしもの URL で最初に出た。
+    """
+    tracking = "https://af.moshimo.com/af/c/click?a_id=1&p_id=2&pc_id=3&pl_id=4"
+    base = next(o for o in affiliates.OFFERS if o.id == "katazuke-center")
+    monkeypatch.setattr(affiliates, "OFFERS", (Offer(**{**vars(base), "url": tracking}),))
+    commands.cmd_build(commands.Runtime(ws=ws, service=service))
+
+    go = (ws.dist_dir / "go/katazuke-center/owners-consult/index.html").read_text(encoding="utf-8")
+    assert "&amp;p_id=2" in go  # HTML としては escape されている
+    problems, summary = ad_check.check(ws.dist_dir)
+    assert problems == [] and "katazuke-center" in summary
 
 
 def test_check_stops_the_build_when_the_disclosure_is_missing(

@@ -11,6 +11,7 @@ from sitemill import commands
 from sitemill.models import FieldStatus, FieldValue
 from sitemill.settings import Workspace
 
+from akiya_atlas import affiliates
 from akiya_atlas.data import Dataset
 from akiya_atlas.pages import price_band
 from akiya_atlas.schema import Listing, record_id_for
@@ -204,7 +205,7 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
     ]
     for rel in expected:
         assert (dist / rel).is_file(), rel
-    assert report.stages["build"]["pages"] == 14  # 転送ページ 2 枚を含む（ADR 0010）
+    assert report.stages["build"]["pages"] == 16  # 公開中 2 案件の転送ページ 4 枚を含む（ADR 0010）
 
     listing = (dist / "nagano/202193-tomi/322/index.html").read_text(encoding="utf-8")
     assert (
@@ -236,9 +237,10 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
     assert "ページを開いただけでは Google への通信は発生しません" in about
     assert 'data-generated="sitemill.charts"' in owners
 
-    # _redirects に出るのは ASP の /go/ だけ。www / pages.dev → apex は Bulk Redirects で行う
+    # _redirects に出るのは公開中の案件の /go/ だけ。www / pages.dev → apex は Bulk Redirects で行う
     redirects = (dist / "_redirects").read_text(encoding="utf-8").strip().splitlines()
-    assert len(redirects) == 1 and redirects[0].startswith("/go/kaitai-110 https://px.a8.net/")
+    assert redirects and all(r.startswith("/go/") and r.endswith(" 302") for r in redirects)
+    assert {r.split()[0] for r in redirects} == {o.path for o in affiliates.active_offers()}
     sitemap = (dist / "sitemap.xml").read_text(encoding="utf-8")
     assert f"{ws.site.base_url}/nagano/202193-tomi/322/" in sitemap  # 基準 URL は site.toml に従う
 

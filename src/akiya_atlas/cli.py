@@ -200,7 +200,12 @@ def _register(app: typer.Typer) -> None:
             if item.id != current:
                 current = item.id
                 asp = affiliates.asp_of(item)
-                where = f"{asp.name} の{asp.submit_label}" if asp else "ASP の管理画面"
+                if asp is None:
+                    where = "ASP の管理画面"
+                elif asp.submit_label:
+                    where = f"{asp.name} の{asp.submit_label}"
+                else:
+                    where = f"{asp.name}（掲載 URL の個別届け出は不要）"
                 typer.echo("")
                 head = f"{item.name or item.label}（{item.id} / プログラム {item.program_id}）"
                 typer.echo(f"# {head}")

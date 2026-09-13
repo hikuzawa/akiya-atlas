@@ -17,6 +17,7 @@ CI では build の直後に走る（`.github/workflows/pipeline.yml`）。
 from __future__ import annotations
 
 import re
+from html import unescape
 from pathlib import Path
 
 from akiya_atlas import affiliates
@@ -47,10 +48,14 @@ def _links(html: str, *, prefixes: tuple[str, ...]) -> list[tuple[int, str, str]
     for m in _A_TAG.finditer(html):
         tag = m.group(0)
         href_m = _HREF.search(tag)
-        if not href_m or not href_m.group(1).startswith(prefixes):
+        if not href_m:
+            continue
+        # 計測 URL に & が複数あると href は &amp; になる。宣言した URL と同じ形に戻してから見る
+        href = unescape(href_m.group(1))
+        if not href.startswith(prefixes):
             continue
         rel_m = _REL.search(tag)
-        out.append((m.start(), href_m.group(1), rel_m.group(1) if rel_m else ""))
+        out.append((m.start(), href, rel_m.group(1) if rel_m else ""))
     return out
 
 
@@ -160,7 +165,7 @@ def _check_coverage(dist: Path, files: dict[str, str]) -> list[str]:
             problems.append(f"転送ページ {target.url_path} が生成されていない")
             continue
         go_html = go_file.read_text(encoding="utf-8")
-        if target.offer.url and target.offer.url not in go_html:
+        if target.offer.url and target.offer.url not in unescape(go_html):
             problems.append(f"転送ページ {target.url_path} に計測 URL が入っていない")
         if "noindex" not in go_html:
             problems.append(f"転送ページ {target.url_path} が noindex になっていない")

@@ -44,7 +44,8 @@ class Asp:
     allowed_link_hosts: tuple[str, ...] = ()
     # 掲載ページに出してはいけない表現。A8 は文言の定めが無いので空
     forbidden_phrases: tuple[str, ...] = ()
-    # 掲載 URL を届け出る画面の呼び名（`akiya-atlas ad-urls` の出力に添える）
+    # 掲載 URL を届け出る画面の呼び名（`akiya-atlas ad-urls` の出力に添える）。
+    # 空なら、その ASP には掲載 URL の個別届け出が無い
     submit_label: str = ""
 
 
@@ -57,6 +58,18 @@ ASPS: dict[str, Asp] = {
         allowed_link_hosts=("px.a8.net", "www16.a8.net", "www17.a8.net", "www18.a8.net"),
         forbidden_phrases=(),
         submit_label="広告掲載URL管理",
+    ),
+    "moshimo": Asp(
+        id="moshimo",
+        name="もしもアフィリエイト",
+        # 景品表示法のステマ規制とガイドラインで、広告と分かる表示が要る
+        requires_ad_notice=True,
+        requires_sponsored_rel=True,
+        # 広告リンクは af.moshimo.com の click。i.moshimo.com の 1x1 画像は使わない
+        allowed_link_hosts=("af.moshimo.com",),
+        forbidden_phrases=(),
+        # 掲載 URL の個別届け出は無い。提携はメディア単位で、申請時にサイトが広告主へ通知される
+        submit_label="",
     ),
 }
 
@@ -155,6 +168,39 @@ OFFERS: tuple[Offer, ...] = (
         placements=("owners-consult", "owners-flow-demolition"),
         rank=10,
         approved_on="2026-09-12",
+    ),
+    Offer(
+        id="katazuke-center",
+        label="空き家片付けセンター",
+        kind=KIND_IHIN,
+        description=(
+            "残置物の撤去・片づけから、買取・管理・再活用までの相談をまとめて受け付けます。"
+            "申込みは WEB のフォームから。"
+        ),
+        asp="moshimo",
+        name="空き家片付けセンター｜空き家の相談・空き家買取・残置物撤去等の申込",
+        advertiser="株式会社つなぐ",
+        program_id="6468",
+        url="https://af.moshimo.com/af/c/click?a_id=5801836&p_id=6468&pc_id=18273&pl_id=82753",
+        landing_prefix="https://akiyakatadzuke.com/",
+        reward_condition=(
+            "問い合わせ（申込）完了時。承認は本人確認のうえ成約・入金まで（承認期限 30 日）"
+        ),
+        cookie_days=90,
+        constraints=(
+            "リスティング（検索連動型）広告での集客は不可。サービス名・ブランド名・社名は"
+            "除外ワードに設定する（本サイトは自然検索のみ）",
+            "アダルト系サイトへの掲載は不可",
+            "電話申込は成果対象外。WEB のフォームへ案内する",
+            # 2026-09-13 に確認済み: af.moshimo.com から www 経由で landing_prefix に着く
+            "飛び先は landing_prefix の配下であること（登録時に 1 度だけ人が確認する）",
+            # A8 と同じ理由。掲載ページのすべての表示で ASP への通信が発生し、
+            # 「本サイトは Cookie を使っていない」という開示と噛み合わないため
+            "インプレッション計測タグ（i.moshimo.com の 1x1 画像）は使用しない",
+        ),
+        placements=("owners-consult", "owners-cleanup"),
+        rank=10,
+        approved_on="2026-09-13",
     ),
     Offer(
         id="kaitori",
