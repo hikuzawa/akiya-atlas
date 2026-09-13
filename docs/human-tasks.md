@@ -22,6 +22,13 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
    3. 確認: `curl -sI https://www.akiya-atlas.com/nagano/?x=1` が 301 で `location: https://akiya-atlas.com/nagano/?x=1`、`curl -sI https://akiya-atlas-asb.pages.dev/` が 301 で apex を指す。
    www だけならゾーンの Redirect Rules テンプレート「Redirect from WWW to Root」でもよいが、pages.dev は Bulk Redirects でしか扱えない。
 
+9. ~~**Google Search Console** の登録と取り込み~~ → 済み（2026-09-14）。
+   検索パフォーマンスとインデックス状況を日次で取り込み、週次 Issue に出す（sitemill ADR 0023）。
+   - サービスアカウントを Search Console のプロパティに「制限付き」で追加済み
+   - 鍵は `.env` と GitHub Secrets の `GOOGLE_SEARCH_CONSOLE_KEY`（JSON を base64 にした 1 行）
+   - `site.toml` に `[search_console]` は書かない。`base_url` のホストから `sc-domain:akiya-atlas.com` を組み立てる
+   - 取り込んだ記録は `data/search/` にコミットされる。鍵が無い間は取り込みだけが飛び、日次は止まらない
+
 ## 収益化のために必要
 10. **ASP アカウント**（不動産一括査定・解体一括見積・空き家買取の各案件）を契約し、計測 URL を `src/akiya_atlas/affiliates.py` の `Offer.url` に入れる。入れるまで CTA は「準備中」表示。
     - A8.net の解体案件（解体工事110番、プログラム `s00000015223012`）は 2026-09-12 に承認済み。`kaitai-110` として登録してあり、**計測 URL だけが未設定**。A8 の管理画面で発行して渡せば公開される
@@ -49,6 +56,7 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 | `CLOUDFLARE_API_TOKEN` | Cloudflare ダッシュボード → My Profile → API Tokens → Create Token → テンプレート「Cloudflare Pages — Edit」（Account Resources に対象アカウント） | `gh secret set CLOUDFLARE_API_TOKEN --repo hikuzawa/akiya-atlas`（プロンプトに貼り付け） |
 | `CLOUDFLARE_ACCOUNT_ID` | Cloudflare ダッシュボード → Workers & Pages の概要ページ右側「Account ID」 | `gh secret set CLOUDFLARE_ACCOUNT_ID --repo hikuzawa/akiya-atlas` |
 | `GOOGLE_MAPS_EMBED_KEY`（任意） | Google Cloud Console → APIs & Services → Credentials。Maps Embed API のみ、HTTP リファラで制限 | `gh secret set GOOGLE_MAPS_EMBED_KEY --repo hikuzawa/akiya-atlas` |
+| `GOOGLE_SEARCH_CONSOLE_KEY` | Google Cloud のサービスアカウントの JSON を base64 にした 1 行。Search Console のプロパティに「制限付き」で追加しておく | `base64 -w0 key.json \| gh secret set GOOGLE_SEARCH_CONSOLE_KEY --repo hikuzawa/akiya-atlas` |
 | `CF_WEB_ANALYTICS_TOKEN` | **登録しない**。計測は Cloudflare の RUM 自動挿入で行うため、値を入れるとタグが 2 つ出て二重計測になる（ADR 0011） | — |
 
 注意: `.env.example` には値を書かない（git にコミットされる）。値は `.env` だけに置く。

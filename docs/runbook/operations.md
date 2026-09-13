@@ -24,11 +24,16 @@ uv run akiya-atlas weekly-report --days 7
 既定は CI（日次パイプライン）の実行だけを数える。手元で流したバックフィルなどを含めたいときは
 `--source all`、手元の作業だけなら `--source local`。
 
+週次 Issue の後ろには**検索の状況**が付く（sitemill ADR 0023）。日次が取り込んだ Search Console の
+記録を読むだけなので、鍵が無くても出る。まず見るのは「検査した N ページのうち M ページが登録済み」の
+行で、公開直後は 0 が続くのが普通。全ページを一度に検査しているわけではない（1 日 200 件ずつ回る）ので、
+**検査していない分を「登録されていない」と読まない**。数字が貯まるまで目安は置かない。
+
 ### 1-2. 正常値の目安
 
 | 見るところ | 目安 | 外れたときの意味 |
 | --- | --- | --- |
-| 1 日の実行時間 | 8〜15 分 | 30 分を超えるなら、どこかの source でページ数が増えたか、相手サイトが遅い |
+| 1 日の実行時間 | 35〜45 分（うち Search Console の URL 検査が 25 分前後） | 検査を除いて 30 分を超えるなら、どこかの source でページ数が増えたか、相手サイトが遅い |
 | 取得したサイト数 | 268 から、巡回間隔の適応が効くと 120〜160 へ下がる | 増え続けるなら適応が効いていない（`adaptive_interval` の設定を確認） |
 | 変化したサイト数 | 1 日 4〜46 | 0 が数日続くなら、取得はできているのに差分検知が壊れている疑い |
 | 1 日の費用 | $0.2〜1.0（変化したページ数に比例） | $3 を超える日が続くなら、毎日作り直されるページ（日付入りなど）を掴んでいる |
@@ -38,7 +43,10 @@ uv run akiya-atlas weekly-report --days 7
 | 生成ページ数 | 6,000 前後 | 急に減ったら、データの取りこぼしかビルドの失敗 |
 
 実行時間の内訳は、巡回 3〜4 分、抽出 2 分前後、自己修復は 0 件の source 1 件につき約 34 秒（いまは 9 件で 5 分）、
-ビルド 30 秒、eval 30 秒、Actions の準備 1〜2 分。
+ビルド 30 秒、eval 30 秒、Actions の準備 1〜2 分、Search Console の取り込み 25 分前後。
+取り込みの大半は URL 検査で、1 件 7 秒前後 × 200 件。5,896 ページを一巡するのに 30 日かかる。
+短くしたいときは `sitemill search fetch --inspect <件数>` を減らす（0 で検査を止める）。
+30 分で打ち切る設定にしてあり、打ち切られた日の検査は翌日に回る（日次全体は止まらない）。
 
 ### 1-3. 異常のときにまず見る場所
 
@@ -113,9 +121,10 @@ uv run akiya-atlas rediscover 新潟県 --code 152021
 | 作業 | いまの状態 | 影響 |
 | --- | --- | --- |
 | ~~**運営者名と連絡先**~~ | 済（2026-09-12）。`site.toml` の `[operator]` に「空き家アトラス 運営」とお問い合わせフォームの URL を入れた | 全ページのフッターと `/about/` に出る。フォームは `tools/contact_form/` のApps Script が作ったもので、届いた依頼は takedown / needs-human / municipality の Issue になる |
-| **ASP の計測 URL** | `src/akiya_atlas/affiliates.py` の `Offer.url` が未設定 | 所有者向けの CTA が「準備中」のまま。ダミーリンクは置かない方針。URL を入れると `/owners/` と物件ページに「本ページには広告（アフィリエイトリンク）を含みます」が自動で出る |
+| **ASP の計測 URL**（残り 2 種別） | 解体（A8）と片付け（もしも）は掲載中。査定・買取・リフォームは未契約 | 未契約の種別は `/owners/` の相談先に「準備中」と出る。ダミーリンクは置かない |
+| ~~**Search Console**~~ | 済（2026-09-14）。サービスアカウントの鍵を `.env` と Secrets の `GOOGLE_SEARCH_CONSOLE_KEY` に登録し、日次が取り込む | 週次 Issue に検索の状況が出る。鍵が無いと取り込みだけが飛び、日次は止まらない |
 | **Google Maps のキー** | `GOOGLE_MAPS_EMBED_KEY` 未登録 | 地図が外部リンクのフォールバック表示になる |
-| **Cloudflare Web Analytics** | `CF_WEB_ANALYTICS_TOKEN` 未登録 | 閲覧数が計測されない |
+| ~~**Cloudflare Web Analytics**~~ | 済（2026-09-12）。RUM の自動挿入で有効。**`CF_WEB_ANALYTICS_TOKEN` は登録しない**（入れるとタグが 2 つ出て二重計測。ADR 0011） | 閲覧数と `/go/` のクリック数が取れる |
 
 プライバシーポリシーは `/about/` に載せてある。お問い合わせの扱い（AI での分類・自動返信、Issue への転記）を変えたときは、`tools/contact_form/` の実装と `/about/` の記載の両方を直す。
 
@@ -134,13 +143,13 @@ sitemill の main では別サービス向けの拡張を進めるため、空�
 2. 新しいタグを打って push する（版の付け方は 5-3）
 
    ```bash
-   git tag -a v0.1.1 -m "..." && git push origin v0.1.1
+   git tag -a v0.4.2 -m "..." && git push origin v0.4.2
    ```
 
 3. akiya-atlas 側で、CI が見るタグを 3 つのワークフローすべてで書き換える
 
    ```bash
-   sed -i 's/ref: v0.1.0/ref: v0.1.1/' .github/workflows/pipeline.yml .github/workflows/checks.yml .github/workflows/weekly.yml
+   sed -i 's/ref: v0.4.1/ref: v0.4.2/' .github/workflows/pipeline.yml .github/workflows/checks.yml .github/workflows/weekly.yml
    ```
 
    `CLAUDE.md` の「現在 vX.Y.Z」の記載も同じときに直す（akiya-atlas と sitemill の両方）。
@@ -162,7 +171,7 @@ git -C ../sitemill worktree add -b release/0.1 ../sitemill-rel01 v0.1.0
 ```
 
 1. 切った先（`../sitemill-rel01`）で直し、`uv sync` してから `uv run pytest -q` と `uv run ruff check src tests` を通す
-2. コミットしてタグを打ち、ブランチとタグの両方を push する（`git push origin release/0.1` と `git push origin v0.1.1`）
+2. コミットしてタグを打ち、ブランチとタグの両方を push する（`git push origin release/0.1` と `git push origin v0.4.2`）
 3. worktree を消す。**worktree の中からは消せない**ので、先に別のディレクトリへ移ってから実行する
 
    ```bash
@@ -175,7 +184,7 @@ git -C ../sitemill worktree add -b release/0.1 ../sitemill-rel01 v0.1.0
 5. 手元の検証は path 依存（main）では通らない。固定版を仮想環境に入れて確かめ、終わったら戻す
 
    ```bash
-   uv pip install "sitemill @ git+https://github.com/hikuzawa/sitemill@v0.1.1"
+   uv pip install "sitemill @ git+https://github.com/hikuzawa/sitemill@v0.4.1"
    .venv/Scripts/python -m pytest -q
    .venv/Scripts/sitemill build
    uv sync
@@ -183,10 +192,14 @@ git -C ../sitemill worktree add -b release/0.1 ../sitemill-rel01 v0.1.0
 
    `uv run` は実行のたびに path 依存へ戻すので、この間は `.venv/Scripts/` から直に呼ぶ。
 
-**`uv.lock` は commit しない。** 手元で `uv run` を回すと、lock の `sitemill` の版が
-`../sitemill` の main の版（例 0.2.0）に書き換わる。CI が checkout するのはタグ（v0.1.1 は 0.1.0）
-なので、書き換わった lock を commit すると CI の `uv sync --frozen` が落ちる。
-`git checkout -- uv.lock` で戻してからコミットする。
+**`uv.lock` の扱いは 2 通りある。**
+
+- **版を上げるときは更新して commit する。** エンジンの依存が増えることがある（v0.4.1 で
+  `google-auth` が増えた）。lock を直さないと、CI の `uv sync --frozen` が「lock が古い」で落ちる。
+  `uv lock` を実行し、`sitemill` の版がタグと同じになっていることを確かめてからコミットする
+- **それ以外では commit しない。** 手元で `uv run` を回すだけでも、lock の `sitemill` の版が
+  `../sitemill`（main）の版に書き換わる。main がタグより先に進んでいるときにその lock を入れると、
+  タグを checkout する CI で落ちる。`git checkout -- uv.lock` で戻す
 
 sitemill の設定や型に項目が増えたときは、その項目が main に入るまで手元では欠ける。akiya 側は
 「入っている版でだけ渡す」書き方にしておく（例: `pages.py` の `operator_info` が `contact_label` を
@@ -212,7 +225,7 @@ sitemill の設定や型に項目が増えたときは、その項目が main �
 | 何の費用 | どこで見るか | 目安 |
 | --- | --- | --- |
 | LLM（抽出） | Anthropic Console → Usage（Cost で日別） | 月 $10〜30 |
-| GitHub Actions | リポジトリ → Settings → Billing、または Organization の Billing → Actions | private の無料枠は月 2,000 分。日次は月 450〜540 分の見込み |
+| GitHub Actions | リポジトリ → Settings → Billing、または Organization の Billing → Actions | private の無料枠は月 2,000 分。日次は月 1,050〜1,350 分の見込み（Search Console の取り込みを入れて 3 倍に増えた）。無料枠に近づいたら `--inspect` を減らす |
 | Cloudflare Pages | Cloudflare ダッシュボード → Workers & Pages → 使用量 | 無料枠は月 500 ビルド。日次 1 回なので余裕 |
 | ドメイン | 取得元の更新料 | 年 1 回 |
 

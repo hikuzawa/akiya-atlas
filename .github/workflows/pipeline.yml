@@ -64,7 +64,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: hikuzawa/sitemill # public。既定の github.token で checkout できる
-          ref: v0.1.1 # タグ固定（ADR 0006）。sitemill の main の変更は自動では入らない
+          ref: v0.4.1 # タグ固定（ADR 0006）。sitemill の main の変更は自動では入らない
           path: sitemill
 
       - name: Install uv
@@ -129,6 +129,17 @@ jobs:
         working-directory: akiya-atlas
         run: uv run akiya-atlas ad-check
 
+      - name: Search Console の取り込み（検索パフォーマンス・サイトマップ・URL 検査。sitemill ADR 0023）
+        if: inputs.mode != 'deploy-only'
+        working-directory: akiya-atlas
+        env:
+          GOOGLE_SEARCH_CONSOLE_KEY: ${{ secrets.GOOGLE_SEARCH_CONSOLE_KEY }}
+        # 鍵が無い・API が落ちている間も日次全体は止めない（取り込みは翌日やり直せる）
+        continue-on-error: true
+        # URL 検査は 1 件 7 秒前後 × 200 件で 25 分ほどかかる。長引いたら打ち切って翌日に回す
+        timeout-minutes: 30
+        run: uv run sitemill search fetch
+
       - name: Eval (fixture、劣化検知)
         if: inputs.mode != 'deploy-only' # deploy-only では飛ばす
         working-directory: akiya-atlas
@@ -143,7 +154,7 @@ jobs:
         run: |
           git config user.name "sitemill-bot"
           git config user.email "sitemill-bot@users.noreply.github.com"
-          git add data/state data/records data/runs data/reference/takedowns.json
+          git add data/state data/records data/runs data/search data/reference/takedowns.json
           git diff --cached --quiet || git commit -m "data: $(date -u +%Y-%m-%dT%H:%MZ) の巡回・抽出結果"
           # 人の作業が同時に main へ push されると拒否される。origin/main を取り込み直して最大 3 回まで再試行し、
           # data ファイル自体が競合したら諦める（巡回状態と物件は次回の巡回で再生成される）

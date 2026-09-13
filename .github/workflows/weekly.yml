@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: hikuzawa/sitemill
-          ref: v0.1.1 # タグ固定（ADR 0006）。sitemill の main の変更は自動では入らない
+          ref: v0.4.1 # タグ固定（ADR 0006）。sitemill の main の変更は自動では入らない
           path: sitemill
 
       - name: Install uv
@@ -46,6 +46,12 @@ jobs:
         working-directory: akiya-atlas
         run: |
           uv run akiya-atlas weekly-report --days "${{ inputs.days || 7 }}" --source ci --no-save > summary.md
+          # 検索の状況（sitemill ADR 0023）。日次が取り込んだ記録だけを読むので鍵は要らず、
+          # まだ 0 件でも「いつから数えているか」を添えて出る
+          {
+            echo ""
+            uv run sitemill search report --days "${{ inputs.days || 7 }}"
+          } >> summary.md
           cat summary.md
 
       - name: Issue に投稿する
