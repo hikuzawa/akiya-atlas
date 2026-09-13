@@ -44,10 +44,14 @@ funnels:
     label: 仲介では売りにくい物件の買取
     keywords: [買取, 直接買取, 現金化, 訳あり不動産, 空き家買取]
     placements: [owners-consult]
+  - kind: 片付け
+    label: 空き家の片づけ・残置物の撤去
+    keywords: [空き家片付け, 空き家片づけ, 残置物, 不用品回収, 家財処分, 片付け, 片づけ, ごみ屋敷]
+    placements: [owners-consult, owners-cleanup]
   - kind: 遺品整理
-    label: 片づけ
-    keywords: [遺品整理, 生前整理, 不用品回収, 片付け, 片づけ, ごみ屋敷, 残置物]
-    placements: [owners-cleanup]
+    label: 遺品整理・生前整理
+    keywords: [遺品整理, 生前整理]
+    placements: [owners-consult, owners-cleanup]
   - kind: リフォーム
     label: 住む・貸すためのリフォーム
     keywords: [リフォーム, リノベーション, 修繕, 耐震, 外壁塗装, 雨漏り, シロアリ]

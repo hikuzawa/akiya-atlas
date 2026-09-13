@@ -21,9 +21,12 @@ from sitemill.models import Redirect
 KIND_SATEI = "査定"
 KIND_KAITAI = "解体"
 KIND_KAITORI = "買取"
+# 空き家の片づけ・残置物の撤去と、遺品整理は分ける。利用者にとって別のもので、
+# 所有者が求めるのは前者が多い（ADR 0010 の追記、2026-09-13）
+KIND_KATAZUKE = "片付け"
 KIND_IHIN = "遺品整理"
 KIND_REFORM = "リフォーム"
-ALL_KINDS = (KIND_SATEI, KIND_KAITAI, KIND_KAITORI, KIND_IHIN, KIND_REFORM)
+ALL_KINDS = (KIND_SATEI, KIND_KAITAI, KIND_KAITORI, KIND_KATAZUKE, KIND_IHIN, KIND_REFORM)
 
 
 @dataclass(frozen=True)
@@ -90,7 +93,12 @@ PLACEMENTS: tuple[Placement, ...] = (
         "owners-flow-sale", "/owners/", "「売却・賃貸までの流れ」の直後", (KIND_SATEI, KIND_KAITORI)
     ),
     Placement("owners-flow-demolition", "/owners/", "「解体までの流れ」の直後", (KIND_KAITAI,)),
-    Placement("owners-cleanup", "/owners/", "「6 つの選択肢」の片づけの文脈", (KIND_IHIN,)),
+    Placement(
+        "owners-cleanup",
+        "/owners/",
+        "「6 つの選択肢」の片づけの文脈",
+        (KIND_KATAZUKE, KIND_IHIN),
+    ),
     Placement(
         "owners-renovation", "/owners/", "「6 つの選択肢」の住む・貸すの文脈", (KIND_REFORM,)
     ),
@@ -172,7 +180,7 @@ OFFERS: tuple[Offer, ...] = (
     Offer(
         id="katazuke-center",
         label="空き家片付けセンター",
-        kind=KIND_IHIN,
+        kind=KIND_KATAZUKE,
         description=(
             "残置物の撤去・片づけから、買取・管理・再活用までの相談をまとめて受け付けます。"
             "申込みは WEB のフォームから。"
