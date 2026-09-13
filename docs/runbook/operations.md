@@ -183,6 +183,11 @@ git -C ../sitemill worktree add -b release/0.1 ../sitemill-rel01 v0.1.0
 
    `uv run` は実行のたびに path 依存へ戻すので、この間は `.venv/Scripts/` から直に呼ぶ。
 
+**`uv.lock` は commit しない。** 手元で `uv run` を回すと、lock の `sitemill` の版が
+`../sitemill` の main の版（例 0.2.0）に書き換わる。CI が checkout するのはタグ（v0.1.1 は 0.1.0）
+なので、書き換わった lock を commit すると CI の `uv sync --frozen` が落ちる。
+`git checkout -- uv.lock` で戻してからコミットする。
+
 sitemill の設定や型に項目が増えたときは、その項目が main に入るまで手元では欠ける。akiya 側は
 「入っている版でだけ渡す」書き方にしておく（例: `pages.py` の `operator_info` が `contact_label` を
 `OperatorInfo.model_fields` にあるときだけ渡す）。cherry-pick が main に入ったら素直な呼び出しに戻してよい。
