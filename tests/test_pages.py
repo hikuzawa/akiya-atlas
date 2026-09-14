@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import shutil
+from datetime import UTC, datetime
 from pathlib import Path
 
 import pytest
@@ -257,6 +258,55 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
     assert {r.split()[0] for r in redirects} == {o.path for o in affiliates.active_offers()}
     sitemap = (dist / "sitemap.xml").read_text(encoding="utf-8")
     assert f"{ws.site.base_url}/nagano/202193-tomi/322/" in sitemap  # 基準 URL は site.toml に従う
+
+
+def test_extracted_subsidies_reach_the_page_and_do_not_shadow_hand_written_ones(
+    ws: Workspace,
+) -> None:
+    """全国収集で取り込んだ制度（data/subsidies/*.jsonl）がページに出るまでを通しで見る。
+
+    抽出 → 保存 → 手書きとの重ね合わせ → 生成、の 4 段。同じ名前の制度は手で書いた方を残す
+    （人が確かめた要約を、抽出した要約で上書きしない）。
+    """
+    from sitemill.extract import ExtractedItem
+    from sitemill.models import ExtractorInfo, Provenance
+
+    from akiya_atlas.subsidies import ingest_subsidies
+
+    def _item(name: str, kind: str, summary: str) -> ExtractedItem:
+        free = {"name": name, "kind": kind, "scope": "空き家", "summary": summary}
+        return ExtractedItem(fields={}, free=free, raw=dict(free))
+
+    source = next(s for s in service.sources(ws) if s.id == "nagano-tomi")
+    prov = Provenance(
+        source_id=source.id,
+        source_url="https://www.city.tomi.nagano.jp/z",
+        fetched_at=datetime(2026, 9, 14, 1, 2, 3, tzinfo=UTC),
+        content_hash="deadbeef",
+        extractor=ExtractorInfo(
+            provider="anthropic",
+            model="m",
+            prompt_version="subsidy_v1",
+            extracted_at=datetime(2026, 9, 14, 1, 5, 0, tzinfo=UTC),
+        ),
+    )
+    counts = ingest_subsidies(
+        ws,
+        source=source,
+        url="https://www.city.tomi.nagano.jp/z",
+        items=[
+            _item("空き家解体費補助金", "解体", "解体費の一部を補助"),
+            _item("空き家改修補助", "改修", "抽出した要約"),  # 手書きと同名
+        ],
+        provenance=prov,
+    )
+    assert counts["created"] == 2
+
+    commands.cmd_build(commands.Runtime(ws=ws, service=service))
+    html = (ws.dist_dir / "nagano/202193-tomi/index.html").read_text(encoding="utf-8")
+    assert "空き家解体費補助金" in html and "解体費の一部を補助" in html  # 取り込んだ制度が出る
+    assert html.count("空き家改修補助") == 1 and "抽出した要約" not in html  # 手書きが残る
+    assert "確認日 2026-09-14" in html  # 取得した日を鮮度として出す
 
 
 def test_subsidies_are_shown_in_two_groups_by_scope(ws: Workspace) -> None:
