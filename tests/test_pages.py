@@ -51,6 +51,12 @@ sources:
           url: https://www.city.tomi.nagano.jp/x
           summary: 改修費の一部を補助
           checked_on: 2026-09-10
+        - name: 住宅耐震改修補助
+          kind: 改修
+          scope: 住宅一般
+          url: https://www.city.tomi.nagano.jp/y
+          summary: 耐震改修費の一部を補助
+          checked_on: 2026-09-10
   - id: nagano-saku
     name: 佐久市空き家バンク
     operator: 佐久市
@@ -251,6 +257,20 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
     assert {r.split()[0] for r in redirects} == {o.path for o in affiliates.active_offers()}
     sitemap = (dist / "sitemap.xml").read_text(encoding="utf-8")
     assert f"{ws.site.base_url}/nagano/202193-tomi/322/" in sitemap  # 基準 URL は site.toml に従う
+
+
+def test_subsidies_are_shown_in_two_groups_by_scope(ws: Workspace) -> None:
+    """空き家に直接関わる制度と住宅一般の制度は、混ぜずに分けて並べる（ADR 0012 の追記）。
+
+    見せ方を変えるときも、この区別は残す（住宅一般の制度は相続した家に使えるが、
+    空き家向けの制度と同じものだと読ませてはいけない）。
+    """
+    commands.cmd_build(commands.Runtime(ws=ws, service=service))
+    for rel in ("nagano/202193-tomi/index.html", "owners/nagano/index.html"):
+        html = (ws.dist_dir / rel).read_text(encoding="utf-8")
+        akiya, general = html.find("空き家改修補助"), html.find("住宅耐震改修補助")
+        assert akiya > 0 and general > akiya, rel  # 空き家向けが先
+        assert "空き家に限らず住宅一般に使える制度です" in html, rel  # 間に断りが入る
 
 
 def test_pii_check_passes_clean_and_flags_personal_info(ws: Workspace) -> None:
