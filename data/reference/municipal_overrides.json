@@ -92,6 +92,39 @@
       "evidence": "物件ごとの登録カードを PDF でのみ公開している。PDF は解析せず、公式ページへ案内する",
       "source": "https://www.city.ono.hyogo.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/2/5107.html",
       "checked_on": "2026-09-12"
+    },
+    {
+      "code": "402150",
+      "name": "中間市",
+      "prefecture": "福岡県",
+      "link_only": true,
+      "official_url": "https://www.city.nakama.lg.jp/",
+      "bank_url": "https://www.city.nakama.lg.jp/akiya/search/search.php",
+      "evidence": "空き家バンクの掲載ページが専用の検索フォーム（<form action=\"search.php\" name=\"search_akiya\" method=\"get\">）で、検索しないと物件が出ない。検索の自動送信はしない方針のため、公式ページへの案内にとどめる",
+      "source": "https://www.city.nakama.lg.jp/akiya/search/search.php",
+      "checked_on": "2026-09-14"
+    },
+    {
+      "code": "442143",
+      "name": "国東市",
+      "prefecture": "大分県",
+      "link_only": true,
+      "official_url": "https://www.city.kunisaki.oita.jp/",
+      "bank_url": "https://www.city.kunisaki.oita.jp/akiyabank/search.php",
+      "evidence": "空き家バンクの掲載ページが専用の検索フォーム（<form action=\"search.php\" name=\"search_akiya\" method=\"get\">）で、検索しないと物件が出ない。検索の自動送信はしない方針のため、公式ページへの案内にとどめる",
+      "source": "https://www.city.kunisaki.oita.jp/akiyabank/search.php",
+      "checked_on": "2026-09-14"
+    },
+    {
+      "code": "174611",
+      "name": "穴水町",
+      "prefecture": "石川県",
+      "link_only": true,
+      "official_url": "https://www.town.anamizu.lg.jp/",
+      "bank_url": "https://www.town.anamizu.lg.jp/akiyabank/",
+      "evidence": "掲載ページがエリア・物件形態・価格帯の絞り込み画面で、検索しないと物件が出ない（本文は選択肢と「検索」ボタンだけ）。検索の自動送信はしない方針のため、公式ページへの案内にとどめる",
+      "source": "https://www.town.anamizu.lg.jp/akiyabank/",
+      "checked_on": "2026-09-14"
     }
   ]
 }

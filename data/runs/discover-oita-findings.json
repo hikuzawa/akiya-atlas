@@ -344,35 +344,29 @@
       "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.city.kunisaki.oita.jp/site/akiyabank/",
-        "https://www.city.kunisaki.oita.jp/",
-        "https://www.city.kunisaki.oita.jp/map/",
-        "https://www.city.kunisaki.oita.jp/life/",
-        "https://www.city.kunisaki.oita.jp/life/1/"
-      ],
+      "alternatives": [],
       "bank_url": "https://www.city.kunisaki.oita.jp/akiyabank/search.php",
       "code": "442143",
-      "confidence": 0.8345,
+      "confidence": 0.6,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_quote": "公式ドメイン www.city.kunisaki.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）",
-      "evidence_url": "https://www.city.kunisaki.oita.jp/",
+      "evidence_quote": "空き家バンクの掲載ページが専用の検索フォーム（<form action=\"search.php\" name=\"search_akiya\" method=\"get\">）で、検索しないと物件が出ない。検索の自動送信はしない方針のため、公式ページへの案内にとどめる（www.city.kunisaki.oita.jp）",
+      "evidence_url": "https://www.city.kunisaki.oita.jp/akiyabank/search.php",
       "external_links": [],
-      "extract_gap": true,
-      "listing_rows": 6,
-      "listing_score": 0.63,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "国東市",
       "name_kana": "ｸﾆｻｷｼ",
       "official_url": "www.city.kunisaki.oita.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "大分県",
       "prefecture_slug": "oita",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "空き家バンクの掲載ページが専用の検索フォーム（<form action=\"search.php\" name=\"search_akiya\" method=\"get\">）で、検索しないと物件が出ない。検索の自動送信はしない方針のため、公式ページへの案内にとどめる"
     },
     {
       "alternatives": [

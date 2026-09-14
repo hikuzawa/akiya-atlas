@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kanazawa.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kanazawa.ishikawa.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: ishikawa-172022
   name: 七尾市空き家バンク
   operator: 七尾市
@@ -41,7 +41,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nanao.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nanao.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: ishikawa-172031
   name: 小松市空き家バンク
   operator: 小松市
@@ -62,7 +62,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.komatsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.komatsu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: ishikawa-172049
   name: 輪島市空き家バンク
   operator: 輪島市
@@ -83,7 +83,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.wajima.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.wajima.ishikawa.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: ishikawa-172057
   name: 珠洲市空き家バンク
   operator: 珠洲市
@@ -104,7 +104,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.suzu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.suzu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: ishikawa-172065
   name: 加賀市空き家バンク
   operator: 加賀市
@@ -125,7 +125,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kaga.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kaga.ishikawa.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: ishikawa-172073
   name: 羽咋市空き家バンク
   operator: 羽咋市
@@ -146,7 +146,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hakui.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hakui.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: ishikawa-172090
   name: かほく市空き家バンク
   operator: かほく市
@@ -167,7 +167,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kahoku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kahoku.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: ishikawa-172103
   name: 白山市空き家バンク
   operator: 白山市
@@ -188,7 +188,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hakusan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hakusan.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: ishikawa-172111
   name: 能美市空き家バンク
   operator: 能美市
@@ -208,7 +208,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nomi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
   pages:
   - url: https://www.city.nomi.lg.jp/docs/1083.html
     kind: listing_index
@@ -239,7 +239,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nonoichi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nonoichi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: ishikawa-173240
   name: 川北町空き家バンク
   operator: 川北町
@@ -260,7 +260,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kawakita.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kawakita.ishikawa.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: ishikawa-173614
   name: 津幡町空き家バンク
   operator: 津幡町
@@ -280,7 +280,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tsubata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.tsubata.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
   pages:
   - url: https://www.town.tsubata.lg.jp/site/welcome/1222.html
     kind: listing_index
@@ -307,7 +307,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.uchinada.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.uchinada.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: ishikawa-173843
   name: 志賀町空き家バンク
   operator: 志賀町
@@ -328,7 +328,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shika.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.shika.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: ishikawa-173860
   name: 宝達志水町空き家バンク
   operator: 宝達志水町
@@ -349,7 +349,7 @@ sources:
   operator_evidence:
     quote: 石川県内市町のページに掲載された公式サイト（www.hodatsushimizu.jp）
     url: https://www.pref.ishikawa.lg.jp/shimachi.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: ishikawa-174076
   name: 中能登町空き家バンク
   operator: 中能登町
@@ -370,13 +370,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nakanoto.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nakanoto.ishikawa.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: ishikawa-174611
   name: 穴水町空き家バンク
   operator: 穴水町
   operator_kind: municipality
   official_url: https://www.town.anamizu.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '174611'
     name: 穴水町
@@ -384,19 +384,14 @@ sources:
     prefecture_slug: ishikawa
     slug: '174611'
     bank_url: https://www.town.anamizu.lg.jp/akiyabank/
-    bank_status: available
-    extract_pending: true
+    bank_status: none
+    extract_pending: false
     map_query: 石川県穴水町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
-    quote: 公式ドメイン www.town.anamizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
-    url: https://www.town.anamizu.lg.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.town.anamizu.lg.jp/akiyabank/
-    kind: listing_index
-  allow_hosts:
-  - www.town.anamizu.lg.jp
-  max_pages: 30
+    quote: 掲載ページがエリア・物件形態・価格帯の絞り込み画面で、検索しないと物件が出ない（本文は選択肢と「検索」ボタンだけ）。検索の自動送信はしない方針のため、公式ページへの案内にとどめる（www.town.anamizu.lg.jp）
+    url: https://www.town.anamizu.lg.jp/akiyabank/
+    checked_on: '2026-09-14'
 - id: ishikawa-174637
   name: 能登町空き家バンク
   operator: 能登町
@@ -417,4 +412,4 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.noto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.noto.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
