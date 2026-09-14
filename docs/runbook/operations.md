@@ -204,16 +204,25 @@ git -C ../sitemill worktree add -b release/0.1 ../sitemill-rel01 v0.1.0
    Windows では空のディレクトリが残ることがある。`git worktree list` に出なくなっていれば git の状態は正しい
 4. **main への取り込みは自分でやらない。** sitemill に「release/0.1 の修正を main に cherry-pick する」
    Issue を立て、main を触っているセッションに任せる。両方から同じファイルを直すと衝突する
-5. 手元の検証は path 依存（main）では通らない。固定版を仮想環境に入れて確かめ、終わったら戻す
+5. 手元の検証は path 依存（main）では通らない。**CI が使う版で確かめてからタグを上げる。**
+   タグの中身を作業ツリーの外に取り出し、`PYTHONPATH` で手前に置くのが軽い（共有ツリーにも
+   `.venv` にも触らないので、別セッションが sitemill を編集中でも安全）。
+
+   ```bash
+   mkdir -p /tmp/sitemill-v041 && git -C ../sitemill archive v0.4.1 | tar -x -C /tmp/sitemill-v041
+   PYTHONPATH=/tmp/sitemill-v041/src uv run pytest -q
+   PYTHONPATH=/tmp/sitemill-v041/src uv run sitemill build
+   ```
+
+   `sitemill.__file__` を出して、取り出した方を読んでいることを確かめてから測る。
+   仮想環境ごと入れ替えたいときは次のやり方もあるが、`uv run` は実行のたびに path 依存へ
+   戻すので、この間は `.venv/Scripts/` から直に呼ぶ。
 
    ```bash
    uv pip install "sitemill @ git+https://github.com/hikuzawa/sitemill@v0.4.1"
    .venv/Scripts/python -m pytest -q
-   .venv/Scripts/sitemill build
    uv sync
    ```
-
-   `uv run` は実行のたびに path 依存へ戻すので、この間は `.venv/Scripts/` から直に呼ぶ。
 
 **`uv.lock` の扱いは 2 通りある。**
 
