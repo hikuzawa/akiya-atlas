@@ -86,14 +86,19 @@
   {% if r.price == "記載なし" %}
   <div class="card-price none">価格 記載なし<span class="deal">{{ r.deal }}</span></div>
   {% else %}
-  <div class="card-price">{{ r.price }}<span class="deal">{{ r.deal }}</span></div>
+  <div class="card-price{% if r.price_exact is defined and not r.price_exact %} asquote{% endif %}">{{ r.price }}<span class="deal">{{ r.deal }}</span></div>
   {% endif %}
   <div class="card-title"><a href="{{ r.url }}">{{ r.title }}</a></div>
+  {# 見出しに所在地が入っていることが多い（「蒲郡市金平町内野の住宅」）。同じ語を二度出さない。
+     面積・築年・構造・間取りは取れている割合が低い（13〜25%）ので、有るものだけ並べる #}
   <ul class="card-facts">
     {% if place %}<li>{{ icon("map") }}{{ place }}</li>{% endif %}
-    {% if r.address %}<li>{{ icon("pin") }}{{ r.address }}</li>{% endif %}
+    {% if r.address and r.address not in r.title %}<li>{{ icon("pin") }}{{ r.address }}</li>{% endif %}
     {% if r.floor_area %}<li>{{ icon("area") }}延床 {{ r.floor_area }}</li>{% endif %}
+    {% if r.land_area_m2 %}<li>{{ icon("area") }}土地 {{ r.land_area_m2|round|int }}㎡</li>{% endif %}
     {% if r.built_year %}<li>{{ icon("calendar") }}{{ r.built_year }}年築</li>{% endif %}
+    {% if r.layout %}<li>{{ icon("home") }}{{ r.layout }}</li>{% endif %}
+    {% if r.structure %}<li>{{ icon("building") }}{{ r.structure }}</li>{% endif %}
   </ul>
   <div class="card-foot">
     <div class="badges">

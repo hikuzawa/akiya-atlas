@@ -176,6 +176,9 @@ main { padding: 20px 0 56px; }
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 16px 14px; display: grid; gap: 8px; box-shadow: var(--shadow); position: relative; }
 .card.is-stale { opacity: .78; }
 .card-price { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 10px; font-size: 1.85rem; font-weight: 700; color: var(--kaki); line-height: 1.1; font-variant-numeric: tabular-nums; }
+/* 数値にできず原文をそのまま出す価格（「53,000円/月、礼金1ヶ月」など）。
+   大きいままだと 2 行に割れて崩れるので、原文の全文は残したまま文字を落とす */
+.card-price.asquote { font-size: 1.15rem; line-height: 1.4; }
 .card-price .deal { font-size: 1rem; font-weight: 400; color: var(--ink-2); }
 .card-price.none { font-size: 1.1rem; color: var(--ink-2); font-weight: 400; }
 .card-title { font-size: 1.12rem; font-weight: 700; line-height: 1.45; }

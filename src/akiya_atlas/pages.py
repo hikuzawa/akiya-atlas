@@ -142,6 +142,9 @@ def listing_row(muni: Municipality, ls: Listing) -> dict[str, Any]:
         "deal": ls.deal_label,
         "deal_type": ls.deal_type,
         "price": price_text(ls),
+        # 数値にできたか。できなければ price は原文の引用そのままで、長いことがある
+        # （「53,000円/月、礼金1ヶ月」など）。カードはこのとき文字を小さくして崩さない
+        "price_exact": bool(ls.price.ok or ls.rent_monthly.ok),
         "band": price_band(ls),
         # 表示用の文字列だけだと合計や中央値が出せないので、数値もそのまま渡す
         "price_yen": ls.price.value if ls.price.ok else None,
