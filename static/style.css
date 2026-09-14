@@ -104,6 +104,23 @@ main { padding: 20px 0 56px; }
 .page-head { margin-bottom: 20px; }
 .page-head .sub { color: var(--ink-2); margin-top: 6px; max-width: 60ch; }
 .page-head .lead { margin-top: 8px; max-width: 60ch; }
+/* 物件ページの所在地。番地を出さないことをその場で断る */
+.page-head .where { margin-top: 8px; display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; font-size: 1.05rem; }
+.page-head .where .icon { align-self: center; }
+.page-head .where .v { font-weight: 700; }
+.page-head .where .meta { font-size: .9rem; }
+/* 公式の窓口。電話番号を持っている市町村だけ番号を大きく出す（今は 0 件） */
+.contact-box { display: grid; gap: 10px; }
+.contact-box .tel { font-family: var(--font-display); font-size: 1.7rem; font-weight: 700; color: var(--green-700); letter-spacing: .02em; }
+.contact-box dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; font-size: .95rem; }
+.contact-box dt { color: var(--ink-2); }
+.contact-box dd { margin: 0; }
+/* 下部の固定バー（モバイルのみ）。主要導線を画面内に留める */
+.stickybar { position: sticky; bottom: 0; z-index: 20; display: grid; grid-auto-flow: column; gap: 8px; padding: 8px 12px calc(8px + env(safe-area-inset-bottom)); background: var(--surface); border-top: 1px solid var(--line); box-shadow: 0 -2px 8px rgba(30,31,27,.08); margin: 24px -16px 0; }
+.stickybar a { min-height: 44px; display: flex; align-items: center; justify-content: center; gap: 6px; border-radius: 8px; font-size: .92rem; font-weight: 700; text-decoration: none; padding: 6px 10px; text-align: center; }
+.stickybar .go { background: var(--green-700); color: var(--surface); }
+.stickybar .sub { border: 2px solid var(--green-700); color: var(--green-700); background: var(--surface); }
+@media (min-width: 48rem) { .stickybar { position: static; box-shadow: none; border: 0; margin: 24px 0 0; justify-content: start; grid-auto-columns: max-content; } }
 .operator-line { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-top: 12px; }
 .operator-line .who { color: var(--ink-2); }
 .section { margin-top: 40px; }
@@ -114,7 +131,9 @@ main { padding: 20px 0 56px; }
 .lead { font-size: 1.05rem; }
 
 /* ---------- 数字の帯 ---------- */
-.strip { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; margin: 16px 0 0; }
+/* 項目が 1 つだけの物件が多い（スペック 5 項目のうち 0〜1 個が 77.7%）。auto-fit にして、
+   1 つのときは横いっぱいに広げ、空の升目が残らないようにする */
+.strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; margin: 16px 0 0; }
 .strip-cell { background: var(--green-100); padding: 12px 14px 10px; min-height: 92px; display: flex; flex-direction: column; justify-content: flex-start; }
 .strip-value { font-size: 2.1rem; font-weight: 700; line-height: 1.1; font-variant-numeric: tabular-nums; color: var(--ink); overflow-wrap: anywhere; }
 .strip-value.kaki { color: var(--kaki); }
@@ -131,6 +150,9 @@ main { padding: 20px 0 56px; }
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 11px 18px; border-radius: 8px; font-weight: 700; text-decoration: none; min-height: 48px; line-height: 1.3; border: 2px solid transparent; }
 .btn-primary { background: var(--green-700); color: #fff; }
 .btn-primary:hover { filter: brightness(1.08); }
+/* 主ボタンほど強くない外部リンク（自治体の窓口など） */
+.btn-ghost { background: var(--surface); color: var(--green-700); border-color: var(--green-700); }
+.btn-ghost:hover { background: var(--green-100); }
 .btn-secondary { background: var(--surface); color: var(--green-700); border-color: var(--green-700); }
 .btn-secondary:hover { background: var(--green-100); }
 .btn .icon { width: 1.1em; height: 1.1em; }

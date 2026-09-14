@@ -8,11 +8,17 @@
 {% set land = by["土地面積"] if "土地面積" in by else none %}
 {% set built = by["築年"] if "築年" in by else none %}
 {% set layout = by["間取り"] if "間取り" in by else none %}
+{% set addr = by["所在地"] if "所在地" in by else none %}
 <nav class="breadcrumb" aria-label="現在地"><ol><li><a href="/">トップ</a></li><li><a href="/{{ muni.prefecture_slug }}/">{{ muni.prefecture }}</a></li><li><a href="/{{ muni.path }}">{{ muni.name }}</a></li><li>物件 {{ listing.listing_no }}</li></ol></nav>
 <div class="page-head narrow">
   <h1>{{ listing.display_title }}</h1>
   <p class="sub">{{ muni.name }} {{ muni.bank_label }} 物件番号 {{ listing.listing_no }} ／ {{ listing.deal_label }}</p>
-  {% if is_stale %}<div class="badges">{{ ui.badge("warn", "掲載終了の可能性（最近の巡回で確認できていません）", "warn") }}</div>{% endif %}
+  {# 所在地は 94.8% の物件で取れている。番地は出さないことをその場で断る #}
+  {% if addr and addr.ok %}<p class="where">{{ ui.icon("pin") }}<span class="v">{{ addr.value }}</span><span class="meta">（番地は掲載していません）</span></p>{% endif %}
+  <div class="badges">
+    {% if muni.subsidies %}{{ ui.badge("ok", "補助制度あり（" ~ muni.name ~ "）", "tag") }}{% endif %}
+    {% if is_stale %}{{ ui.badge("warn", "掲載終了の可能性（最近の巡回で確認できていません）", "warn") }}{% endif %}
+  </div>
   {% set cells = [] %}
   {% if price and price.ok %}{% set cells = cells + [{"value": price.value, "label": "価格", "kind": "kaki"}] %}
   {% elif rent and rent.ok %}{% set cells = cells + [{"value": rent.value, "label": "賃料（月額）", "kind": "kaki"}] %}
@@ -70,12 +76,35 @@
   {% else %}<p class="surface">本サイトで確認できた補助制度はまだありません。</p>{% endif %}
 </section>
 
+<section class="section narrow" aria-labelledby="contact-title">
+  {{ ui.section_head("contact-title", muni.name ~ "の相談窓口") }}
+  <div class="surface contact-box">
+    {# 電話番号は持っている市町村だけ出す。今は 0 件なので、実際には公式サイトへの導線だけが出る。
+       PII 検査（描画後のページも対象）で許可されていない番号はビルドが止まるため、
+       data/reference/municipal_phones.json に登録された番号に限る #}
+    {% if muni.contact %}<p class="tel">{{ muni.contact }}</p>{% endif %}
+    <dl>
+      <dt>担当</dt><dd>{{ muni.name }}（{{ muni.bank_label }}の運営）</dd>
+      <dt>申込み</dt><dd>物件の内覧・申込みは自治体の窓口で受け付けています</dd>
+    </dl>
+    <p class="primary-link">{{ ui.ext_link(muni.official_url, muni.name ~ "の公式サイトで窓口を確認する", "btn btn-ghost") }}</p>
+  </div>
+</section>
+
 <section class="section narrow cta" aria-labelledby="owner-title">
   <h2 id="owner-title">この地域に空き家をお持ちの方へ</h2>
   {# 物件ページは購入・入居を検討する人が読むページなので広告は置かない（ADR 0010）。
      広告リンクが無いので広告表記も出さない。所有者向けの導線は /owners/ に集約する #}
   <p>査定・解体の流れと補助制度を <a href="{{ owners_url }}">所有者向けの案内</a> にまとめています。</p>
 </section>
+
+{# 主要導線をモバイルの画面内に留める。地図・補助金の検索ページは無いので、
+   この物件で実際に進める先（公式ページ・この市の一覧・補助制度）だけを置く #}
+<nav class="stickybar narrow" aria-label="この物件の主な導線">
+  <a class="go" href="{{ listing.primary_url }}" rel="noopener" target="_blank">公式ページ{{ ui.icon("ext") }}</a>
+  {% if muni.subsidies %}<a class="sub" href="#subsidy-title">補助制度</a>{% endif %}
+  <a class="sub" href="/{{ muni.path }}">{{ muni.name }}の一覧</a>
+</nav>
 
 <p class="meta narrow" style="margin-top: 24px">取得日時: {{ fetched_at }}{% if extractor %} ／ 抽出: {{ extractor }}（引用の検証と数値化はプログラムで実施）{% endif %}</p>
 {% endblock %}
