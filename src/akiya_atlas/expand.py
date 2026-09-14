@@ -387,9 +387,28 @@ def _fetch_and_score(
     )
 
 
-def _rank_key(t: _Tried) -> tuple[int, float, int, int, int]:
-    """一覧分類 > 一覧らしさ > 空き家バンクへの言及 > 1 ページ目 > アンカー語の点数、の順で選ぶ。"""
+def has_listing_evidence(score: ListingScore) -> bool:
+    """行が並んでいるだけでなく、物件そのものの手がかりがあるか。
+
+    制度案内・移住ポータル・第三者サービスの紹介にも、表と価格は出る。行数だけで一覧と決めると
+    それらを掴む（枚方市の譲渡所得の特別控除、瀬戸内市の移住ポータル、岩泉町の 0 円マッチングの
+    紹介、奥多摩町のメニューだけのページが実例）。物件番号があるか、物件価格が行数に見合う数だけ
+    あって補助金の語に埋もれていないことを求める。
+    """
+    if score.listing_no_count >= 2:
+        return True
+    if score.subsidy_hits > score.property_prices:
+        return False
+    return score.property_prices >= 3 and score.property_prices >= score.rows
+
+
+def _rank_key(t: _Tried) -> tuple[int, int, float, int, int, int]:
+    """物件の手がかり > 一覧分類 > 一覧らしさ > 空き家バンクへの言及 > 1 ページ目 > アンカー語。
+
+    同じ「一覧らしい」でも、物件番号や物件価格を伴うページを先に採る。
+    """
     return (
+        1 if t.is_listing_page and has_listing_evidence(t.listing) else 0,
         1 if t.is_listing_page else 0,
         t.listing.score if t.is_listing_page else 0.0,  # 非物件ページの微小な点数は比べない
         1 if t.mentions_bank else 0,
@@ -421,8 +440,13 @@ def select_bank_page(
             continue
         tried.append(t)
         pag = t.listing.pagination
-        if t.is_listing_page and t.listing.rows >= 3 and pag.current_page == 1:
-            break  # 十分に一覧らしい 1 ページ目が見つかった
+        if (
+            t.is_listing_page
+            and t.listing.rows >= 3
+            and has_listing_evidence(t.listing)
+            and pag.current_page == 1
+        ):
+            break  # 物件の手がかりを伴う 1 ページ目が見つかった。これ以上は探さない
     if not tried:
         probe.url = cands[0].url
         return probe
@@ -1419,8 +1443,10 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
                         f"{name}: ページ自身が掲載なしと書いている。"
                         f"そのまま（次の点検は {EMPTY_RECHECK_DAYS} 日後）"
                     )
-                elif score is not None and score.listing_no_count == 0 and score.rows < 5:
-                    # 物件番号も無く行も少ない＝一覧らしさが弱い。公式へのリンクだけにする
+                elif score is not None and not has_listing_evidence(score):
+                    # 行はあっても物件番号も物件価格も伴わない＝一覧ではない。
+                    # 公式へのリンクだけにする
+                    # （制度説明・移住ポータル・第三者サービスの紹介を掴んでいた実例がある）
                     fixed = decide(
                         new.muni, new.official, None, cross_linked=False, bank_host_official=False
                     )

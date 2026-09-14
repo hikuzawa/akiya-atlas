@@ -1,15 +1,9 @@
 {
-  "ci": true,
+  "ci": false,
   "command": "crawl",
-  "errors": [
-    "https://www.town.mutsuzawa.chiba.jp/akiya/page/2: HTTP 404",
-    "http://www.town.toyako.hokkaido.jp/settle/abandoned_house: robots.txt 503: 今回は巡回しない",
-    "https://minamioguni-rashiku.com/vacant-house/: robots.txt を取得できないため今回は巡回しない",
-    "https://akiya.vill.yahiko.niigata.jp/: robots.txt を取得できないため今回は巡回しない",
-    "https://akiyabank.city-nakatsu.jp/: robots.txt を取得できないため今回は巡回しない"
-  ],
+  "errors": [],
   "extraction_metrics": null,
-  "finished_at": "2026-09-13T20:08:14Z",
+  "finished_at": "2026-09-14T06:56:43Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -20,15 +14,14 @@
   "service": "akiya-atlas",
   "stages": {
     "crawl": {
-      "changed": 2,
-      "errors": 5,
-      "fetched": 286,
-      "not_modified": 67,
-      "requests": 625,
-      "skipped_link_only": 1473,
-      "unchanged": 351,
+      "changed": 1,
+      "errors": 0,
+      "fetched": 1,
+      "not_modified": 0,
+      "requests": 2,
+      "unchanged": 0,
       "workers": 8
     }
   },
-  "started_at": "2026-09-13T20:04:48Z"
+  "started_at": "2026-09-14T06:56:38Z"
 }

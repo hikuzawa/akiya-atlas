@@ -241,35 +241,29 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.city.hirakata.osaka.jp/0000016455.html",
-        "https://www.city.hirakata.osaka.jp/0000051815.html",
-        "https://www.city.hirakata.osaka.jp/0000017721.html",
-        "https://www.city.hirakata.osaka.jp/0000048904.html",
-        "https://www.city.hirakata.osaka.jp/0000049194.html"
-      ],
-      "bank_url": "https://www.city.hirakata.osaka.jp/0000023818.html",
+      "alternatives": [],
+      "bank_url": "https://www.city.hirakata.osaka.jp/",
       "code": "272108",
-      "confidence": 0.8065,
+      "confidence": 0.6,
       "cross_linked": false,
       "detail_pattern": null,
       "evidence_quote": "公式ドメイン www.city.hirakata.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.hirakata.osaka.jp/",
       "external_links": [],
-      "extract_gap": true,
-      "listing_rows": 2,
-      "listing_score": 0.21,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "枚方市",
       "name_kana": "ﾋﾗｶﾀｼ",
       "official_url": "www.city.hirakata.osaka.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "大阪府",
       "prefecture_slug": "osaka",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
     },
     {
       "alternatives": [

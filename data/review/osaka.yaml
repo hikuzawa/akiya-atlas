@@ -1,6 +1,6 @@
 prefecture: 大阪府
 prefecture_slug: osaka
-created_at: '2026-09-11T09:59:27+00:00'
+created_at: '2026-09-14T06:55:54+00:00'
 candidates:
 - key: '271004'
   label: 大阪府 大阪市
@@ -144,15 +144,15 @@ candidates:
   note: null
 - key: '272108'
   label: 大阪府 枚方市
-  url: https://www.city.hirakata.osaka.jp/0000023818.html
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.81
+  url: https://www.city.hirakata.osaka.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.city.hirakata.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
   evidence_url: https://www.city.hirakata.osaka.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null

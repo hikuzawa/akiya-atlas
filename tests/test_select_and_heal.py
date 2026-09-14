@@ -14,8 +14,9 @@ from pathlib import Path
 import httpx
 import pytest
 import respx
-from sitemill.classify import PlatformRegistry
+from sitemill.classify import PlatformRegistry, listing_score
 from sitemill.clock import jst_today
+from sitemill.diff.normalize import page_text
 from sitemill.diff.state import CrawlState
 from sitemill.fetch.client import PoliteClient
 from sitemill.settings import Workspace
@@ -349,3 +350,33 @@ def test_two_municipalities_on_one_official_site_go_to_human_review() -> None:
     ]
     _flag_shared_official_urls(urls)
     assert [f.policy for f in urls] == ["pending", "pending"]
+
+
+# 一覧ではないのに巡回対象として採用されていた実例（2026-09-14 に判明）。
+# 行数だけで一覧と決めていたため、制度説明・ポータル・第三者サービスの紹介を掴んでいた。
+NOT_LISTINGS = [
+    ("iwaizumi_platform", "岩泉町", "第三者サービス（0 円物件マッチング）の紹介"),
+    ("hirakata_tax", "枚方市", "譲渡所得の特別控除の制度説明"),
+    ("setouchi_portal", "瀬戸内市", "移住ポータルのトップ"),
+    ("okutama_menu", "奥多摩町", "本文がメニューだけのページ"),
+]
+REAL_LISTINGS = [("hita_index", "日田市"), ("aki_cards", "安芸市")]
+
+
+def _score_of(name: str):
+    html = (REPO / "tests" / "fixtures" / "html" / f"{name}.html").read_text(
+        encoding="utf-8", errors="ignore"
+    )
+    return listing_score(html, page_text(html))
+
+
+@pytest.mark.parametrize(("name", "muni", "why"), NOT_LISTINGS)
+def test_pages_without_property_evidence_are_not_listings(name: str, muni: str, why: str) -> None:
+    """行が並んでいても、物件番号も物件価格も伴わないページは一覧として採らない。"""
+    assert not expand.has_listing_evidence(_score_of(name)), f"{muni}: {why}"
+
+
+@pytest.mark.parametrize(("name", "muni"), REAL_LISTINGS)
+def test_real_listings_keep_their_evidence(name: str, muni: str) -> None:
+    """本物の一覧は物件番号か物件価格を伴うので、これまでどおり採る。"""
+    assert expand.has_listing_evidence(_score_of(name)), muni

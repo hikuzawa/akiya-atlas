@@ -2250,24 +2250,6 @@
       "status": 304,
       "url": "https://www.city.hidaka.lg.jp/soshiki/toshiseibi/toshikeikaku/jutakuseisakukoen/sumai/akiya/10387.html"
     },
-    "https://www.city.hirakata.osaka.jp/0000023818.html": {
-      "changed_at": "2026-09-11T05:54:48Z",
-      "content_hash": "sha256:e7f90727b2abd7fdf224f5367d602d2bf57680a64bdbf1820ae9f872699ab3fa",
-      "error": null,
-      "error_count": 0,
-      "etag": null,
-      "extracted_at": "2026-09-14T04:28:27Z",
-      "extracted_hash": "sha256:e7f90727b2abd7fdf224f5367d602d2bf57680a64bdbf1820ae9f872699ab3fa",
-      "fetched_at": "2026-09-13T20:06:50Z",
-      "kind": "listing_index",
-      "last_modified": "Sun, 13 Sep 2026 15:11:03 GMT",
-      "pending_extract": false,
-      "prompt_version": "listing_v1",
-      "seen_count": 4,
-      "source_id": "osaka-272108",
-      "status": 200,
-      "url": "https://www.city.hirakata.osaka.jp/0000023818.html"
-    },
     "https://www.city.hita.oita.jp/site/iju/2680.html": {
       "changed_at": "2026-09-11T05:54:41Z",
       "content_hash": "sha256:da308f4d04af5302420db852dd1e8ff0adf83d0b594a40156dbc1fac00205b13",
@@ -3330,23 +3312,23 @@
       "status": 200,
       "url": "https://www.city.sano.lg.jp/cgi-bin/recruit.php/2/list"
     },
-    "https://www.city.setouchi.lg.jp/site/portal/": {
-      "changed_at": "2026-09-11T05:54:44Z",
-      "content_hash": "sha256:be00de9e482e8a42d9e045b2f8bdca73f7053a88a66cdc345a67d4aa3422eaca",
+    "https://www.city.setouchi.lg.jp/site/portal/138698.html": {
+      "changed_at": "2026-09-14T06:56:40Z",
+      "content_hash": "sha256:e6d676544eec6dba71e3729f1fecb0bd36ae5e6c5139578d16f9119ae1d93fe6",
       "error": null,
       "error_count": 0,
-      "etag": "\"1d176-65b62c4614bf3\"",
-      "extracted_at": "2026-09-14T04:28:52Z",
-      "extracted_hash": "sha256:be00de9e482e8a42d9e045b2f8bdca73f7053a88a66cdc345a67d4aa3422eaca",
-      "fetched_at": "2026-09-13T20:06:43Z",
+      "etag": "\"79c2-65b6b27ac7bbd\"",
+      "extracted_at": "2026-09-14T06:56:45Z",
+      "extracted_hash": "sha256:e6d676544eec6dba71e3729f1fecb0bd36ae5e6c5139578d16f9119ae1d93fe6",
+      "fetched_at": "2026-09-14T06:56:40Z",
       "kind": "listing_index",
-      "last_modified": "Sun, 13 Sep 2026 20:00:19 GMT",
+      "last_modified": "Mon, 14 Sep 2026 06:00:45 GMT",
       "pending_extract": false,
       "prompt_version": "listing_v1",
-      "seen_count": 4,
+      "seen_count": 1,
       "source_id": "okayama-332127",
       "status": 200,
-      "url": "https://www.city.setouchi.lg.jp/site/portal/"
+      "url": "https://www.city.setouchi.lg.jp/site/portal/138698.html"
     },
     "https://www.city.shima.mie.jp/cgi-bin/recruit.php/1/list": {
       "changed_at": "2026-09-11T03:35:35Z",
@@ -4535,24 +4517,6 @@
       "source_id": "fukushima-075019",
       "status": 304,
       "url": "https://www.town.ishikawa.fukushima.jp/akiya-bank/index.html"
-    },
-    "https://www.town.iwaizumi.lg.jp/docs/2026070300060/": {
-      "changed_at": "2026-09-11T05:53:51Z",
-      "content_hash": "sha256:aed86d74913d348019ba15b0a7d9f6f6dce96159f808650e22d08f4fb3a36188",
-      "error": null,
-      "error_count": 0,
-      "etag": "\"6a9fbb34-696e\"",
-      "extracted_at": "2026-09-14T04:28:14Z",
-      "extracted_hash": "sha256:aed86d74913d348019ba15b0a7d9f6f6dce96159f808650e22d08f4fb3a36188",
-      "fetched_at": "2026-09-13T20:05:51Z",
-      "kind": "listing_index",
-      "last_modified": "Tue, 08 Sep 2026 07:37:24 GMT",
-      "pending_extract": false,
-      "prompt_version": "listing_v1",
-      "seen_count": 4,
-      "source_id": "iwate-034835",
-      "status": 304,
-      "url": "https://www.town.iwaizumi.lg.jp/docs/2026070300060/"
     },
     "https://www.town.kaiyo.lg.jp/docs/2016040400050/": {
       "changed_at": "2026-09-11T05:03:01Z",
