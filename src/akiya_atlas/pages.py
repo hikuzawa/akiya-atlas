@@ -24,7 +24,7 @@ from sitemill.settings import Workspace
 
 from akiya_atlas import affiliates
 from akiya_atlas.data import Dataset
-from akiya_atlas.schema import FIELD_LABELS, Listing, Municipality
+from akiya_atlas.schema import FIELD_LABELS, Listing, Municipality, Subsidy
 
 PRICE_EDGES = [1_000_000, 3_000_000, 5_000_000, 10_000_000]
 PRICE_LABELS = ["100万円未満", "100〜300万円", "300〜500万円", "500〜1,000万円", "1,000万円以上"]
@@ -320,6 +320,21 @@ def count_chart(title: str, munis: list[Municipality], ds: Dataset) -> Chart | N
     return hbar_chart(title, bars, unit="件", desc="市町村ごとの掲載件数")
 
 
+def subsidy_row(muni: Municipality, subsidy: Subsidy) -> dict[str, Any]:
+    """カードに出す補助制度 1 件。
+
+    鮮度（`stale`）と募集終了（`closed`）は表示のときに決まる計算値で `model_dump` に入らないので、
+    ここで足す。市町村ページのようにモデルのまま渡す画面では属性から読める。
+    """
+    return {
+        **subsidy.model_dump(mode="json"),
+        "muni": muni.name,
+        "muni_url": f"/{muni.path}",
+        "closed": subsidy.closed,
+        "stale": subsidy.stale,
+    }
+
+
 def muni_row(ctx: Ctx, muni: Municipality) -> dict[str, Any]:
     rows = visible_listings(muni, ctx.ds.listings_for(muni, active_only=True), ctx.hidden)
     return {
@@ -499,11 +514,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
     # 都道府県ごとの所有者向けページ（ADR 0012）。県内の補助制度か、その県だけの広告案件が
     # あるときにだけ作る。中身の無いページを 47 枚作らない
     pref_subsidies: dict[str, list[dict[str, Any]]] = {
-        slug: [
-            {"muni": m.name, "muni_url": f"/{m.path}", **sub.model_dump(mode="json")}
-            for m in ds.municipalities_in(slug)
-            for sub in m.subsidies
-        ]
+        slug: [subsidy_row(m, sub) for m in ds.municipalities_in(slug) for sub in m.subsidies]
         for slug, _ in ds.prefectures()
     }
     owner_pages: dict[str, str] = {
@@ -684,11 +695,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                 )
             )
 
-    subsidies = [
-        {"muni": m.name, "muni_url": f"/{m.path}", **s.model_dump(mode="json")}
-        for m in ds.municipalities
-        for s in m.subsidies
-    ]
+    subsidies = [subsidy_row(m, s) for m in ds.municipalities for s in m.subsidies]
     pages.append(
         _page(
             ctx,

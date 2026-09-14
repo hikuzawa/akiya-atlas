@@ -9,6 +9,7 @@ from datetime import date
 from typing import Any, Literal
 
 from pydantic import BaseModel, Field
+from sitemill.clock import jst_today
 from sitemill.models import FieldValue
 
 DealType = Literal["sale", "rent", "both", "unknown"]
@@ -19,15 +20,42 @@ CLOSED_MARKERS = re.compile(
 )
 
 
+# 補助制度をこの日数より前にしか確認できていなければ「情報が古い可能性」と出す。
+# 金額・条件・年度が変わる情報なので、消さずに鮮度を示す
+SUBSIDY_STALE_DAYS = 180
+SUBSIDY_KINDS = ("移住", "改修", "解体", "家財", "取得", "その他", "判定できず")
+
+
 class Subsidy(BaseModel):
-    """市町村単位の補助制度。出典 URL と確認日を必ず持つ。"""
+    """市町村単位の補助制度。出典 URL と確認日を必ず持つ。
+
+    金額・年度・募集期間は原文の引用のまま持ち、値にするのは締切だけ（quote-then-parse、ADR 0004）。
+    種別を決められないときは「判定できず」にして、根拠の原文を `kind_quote` に残す。
+    """
 
     name: str
-    kind: Literal["移住", "改修", "解体", "家財", "取得", "その他"]
+    kind: Literal["移住", "改修", "解体", "家財", "取得", "その他", "判定できず"]
     url: str
     summary: str = ""
     amount_text: str | None = None
     checked_on: date | None = None
+    kind_quote: str | None = None  # 種別を判定できなかったときの根拠
+    year_text: str | None = None  # 「令和8年度」などの年度の原文
+    period_text: str | None = None  # 募集期間の原文
+    period_end: date | None = None  # 締切。原文から日付を取れたときだけ入る
+    source_id: str | None = None  # 取り込み元の source。手で書いたものは None
+
+    @property
+    def closed(self) -> bool:
+        """募集が終わっているか。締切を読めたときだけ判定する（読めなければ不明のまま）。"""
+        return self.period_end is not None and self.period_end < jst_today()
+
+    @property
+    def stale(self) -> bool:
+        """確認から日が経っているか。金額や年度が変わっている可能性を示す。"""
+        if self.checked_on is None:
+            return True
+        return (jst_today() - self.checked_on).days > SUBSIDY_STALE_DAYS
 
 
 class Municipality(BaseModel):

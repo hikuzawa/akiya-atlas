@@ -53,6 +53,19 @@ def _register(app: typer.Typer) -> None:
             for line in expand.rediscover_codes(rt.ws, prefecture, code, client=client):
                 typer.echo(line)
 
+    @app.command("subsidy-pages")
+    def subsidy_pages_cmd(
+        prefecture: Annotated[str, typer.Argument(help="都道府県名")],
+        limit: Annotated[
+            int, typer.Option("--limit", help="1 自治体あたりに拾うページ数の上限")
+        ] = 4,
+    ) -> None:
+        """空き家バンクのページから補助制度のページを見つけ、巡回の対象に足す。"""
+        rt = commands.Runtime.open()
+        with rt.client() as client:
+            for line in expand.collect_subsidy_pages(rt.ws, prefecture, client=client, limit=limit):
+                typer.echo(line)
+
     @app.command("official-urls")
     def official_urls_cmd(
         prefecture: Annotated[str, typer.Argument(help="都道府県名")],

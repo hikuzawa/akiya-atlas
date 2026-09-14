@@ -23,6 +23,7 @@ from akiya_atlas import affiliates, pages
 from akiya_atlas.data import Dataset, load_municipalities, load_sources, records_path
 from akiya_atlas.schema import normalize_listing_no, record_id_for
 from akiya_atlas.spec import spec_for_kind
+from akiya_atlas.subsidies import ingest_subsidies
 
 log = logging.getLogger(__name__)
 
@@ -292,6 +293,11 @@ class AkiyaAtlasService:
         items: Sequence[ExtractedItem],
         provenance: Provenance,
     ) -> dict[str, int]:
+        if kind == "subsidy":
+            # 補助制度は物件と別の置き場に入れる（data/subsidies/<source>.jsonl）
+            return ingest_subsidies(
+                ws, source=source, url=url, items=list(items), provenance=provenance
+            )
         munis = {m.id: m for m in load_municipalities(ws)}
         muni = munis.get(source.id)
         code = muni.code if muni else "000000"

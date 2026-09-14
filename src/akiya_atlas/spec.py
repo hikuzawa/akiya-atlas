@@ -7,7 +7,15 @@ from importlib import resources
 from typing import Any
 
 from sitemill.extract import ExtractionSpec, QuoteField
-from sitemill.parse.jp import parse_area_m2, parse_year, parse_yen
+from sitemill.parse.jp import (
+    normalize_text,
+    parse_area_m2,
+    parse_date,
+    parse_year,
+    parse_yen,
+)
+
+from akiya_atlas.schema import SUBSIDY_KINDS
 
 # 「坪単価 75,000円」「駐車場用賃料 月1万円」のような、物件価格ではない金額を弾く。
 # 原文にはこうした数字も並ぶので、引用が取れても値にしない（ADR 0004 の quote-then-parse）
@@ -46,6 +54,7 @@ def parse_rent(quote: str) -> tuple[int | None, str | None]:
 
 
 PROMPT_VERSION = "listing_v1"
+SUBSIDY_PROMPT_VERSION = "subsidy_v1"
 
 
 def _nullable(kind: str, description: str) -> dict[str, Any]:
@@ -141,7 +150,80 @@ LISTING_SPEC = ExtractionSpec(
     summary_fallback=summary_fallback,
 )
 
-SPECS_BY_KIND = {"listing_index": LISTING_SPEC, "listing_detail": LISTING_SPEC}
+SUBSIDY_ITEM_SCHEMA: dict[str, Any] = {
+    "type": "object",
+    "properties": {
+        "name": {"type": "string"},
+        "kind": {"type": "string", "enum": list(SUBSIDY_KINDS)},
+        "kind_quote": {"type": ["string", "null"]},
+        "summary": {"type": "string"},
+        "amount_quote": {"type": ["string", "null"]},
+        "year_quote": {"type": ["string", "null"]},
+        "period_quote": {"type": ["string", "null"]},
+    },
+    "required": [
+        "name",
+        "kind",
+        "kind_quote",
+        "summary",
+        "amount_quote",
+        "year_quote",
+        "period_quote",
+    ],
+    "additionalProperties": False,
+}
+
+SUBSIDY_SCHEMA: dict[str, Any] = {
+    "type": "object",
+    "properties": {"subsidies": {"type": "array", "items": SUBSIDY_ITEM_SCHEMA}},
+    "required": ["subsidies"],
+    "additionalProperties": False,
+}
+
+# 「令和8年4月1日」「2026年3月31日」のような日付。締切を取るために全部拾う
+_DATE_LIKE = re.compile(
+    r"(?:令和|平成|昭和|R|H)?\s*(?:\d{1,4}|元)\s*年\s*\d{1,2}\s*月\s*\d{1,2}\s*日"
+)
+
+
+def parse_period_end(quote: str) -> tuple[Any, str | None]:
+    """募集期間の引用から締切を取る。日付が複数あれば最も後ろの日付を締切とみなす。
+
+    「予算がなくなり次第終了」「随時受付」のように日付が無い書き方は値にしない。
+    引用は残るので、画面には原文のまま出せる（ADR 0004）。
+    """
+    found = []
+    for m in _DATE_LIKE.finditer(normalize_text(quote or "")):
+        value, _ = parse_date(m.group(0))
+        if value is not None:
+            found.append(value)
+    if not found:
+        return None, "no_date"
+    return max(found), None
+
+
+SUBSIDY_SPEC = ExtractionSpec(
+    name="subsidy",
+    prompt_version=SUBSIDY_PROMPT_VERSION,
+    system_prompt=load_prompt(SUBSIDY_PROMPT_VERSION),
+    output_schema=SUBSIDY_SCHEMA,
+    quote_fields=(
+        QuoteField("amount_quote", "amount_text", None),
+        QuoteField("year_quote", "year_text", None),
+        QuoteField("period_quote", "period_end", parse_period_end),
+    ),
+    items_key="subsidies",
+    free_text_fields=("name", "kind", "kind_quote", "summary"),
+    summary_field="summary",
+    summary_max_chars=100,
+    verbatim_overlap_chars=30,
+)
+
+SPECS_BY_KIND = {
+    "listing_index": LISTING_SPEC,
+    "listing_detail": LISTING_SPEC,
+    "subsidy": SUBSIDY_SPEC,
+}
 
 
 def spec_for_kind(kind: str) -> ExtractionSpec | None:

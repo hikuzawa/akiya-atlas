@@ -14,6 +14,7 @@ from sitemill.settings import Workspace
 from sitemill.store.records import RecordStore
 
 from akiya_atlas.schema import Listing, Municipality
+from akiya_atlas.subsidies import load_subsidies
 
 
 def load_entries(ws: Workspace) -> list[dict[str, Any]]:
@@ -93,6 +94,12 @@ class Dataset:
         listings: list[Listing] = []
         for m in municipalities:
             listings.extend(load_listings(ws, m.id))
+        # 取り込んだ補助制度を手で書いたものに重ねる。同じ名前は手で書いた方を残す
+        for m in municipalities:
+            named = {" ".join(x.name.split()) for x in m.subsidies}
+            extra = [x for x in load_subsidies(ws, m.id) if " ".join(x.name.split()) not in named]
+            if extra:
+                m.subsidies = [*m.subsidies, *extra]
         state = CrawlState.load(ws.state_dir / "crawl.json")
         return cls(sources=sources, municipalities=municipalities, listings=listings, state=state)
 

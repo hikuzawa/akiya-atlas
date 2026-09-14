@@ -157,10 +157,21 @@
 <ul class="subsidy-cards">
 {% for s in subsidies %}
 <li class="subsidy-card">
-  <div class="badges">{{ badge("ok", s.kind ~ "補助" if s.kind not in ("その他",) else "その他の補助", "tag") }}{% if with_muni %}<a class="badge badge-plain" href="{{ s.muni_url }}">{{ s.muni }}</a>{% endif %}</div>
+  <div class="badges">
+    {%- if s.kind == "判定できず" %}{{ badge("mute", "種別を判定できず", "tag") }}
+    {%- else %}{{ badge("ok" if not s.closed else "mute", s.kind ~ "補助" if s.kind != "その他" else "その他の補助", "tag") }}{% endif %}
+    {%- if s.closed %}{{ badge("mute", "募集終了") }}{% endif %}
+    {%- if s.stale %}{{ badge("warn", "情報が古い可能性", "warn") }}{% endif %}
+    {%- if with_muni %}<a class="badge badge-plain" href="{{ s.muni_url }}">{{ s.muni }}</a>{% endif %}
+  </div>
   <div class="name"><a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.name }}{{ icon("ext") }}<span class="visually-hidden">（外部サイトが開きます）</span></a></div>
   {% if s.summary %}<div class="desc">{{ s.summary }}{% if s.amount_text %}（{{ s.amount_text }}）{% endif %}</div>{% endif %}
-  <div class="foot">{% if s.checked_on %}<span>{{ icon("clock") }}確認日 {{ s.checked_on }}</span>{% endif %}</div>
+  <div class="foot">
+    {%- if s.year_text %}<span>{{ s.year_text }}</span>{% endif %}
+    {%- if s.period_text %}<span>募集 {{ s.period_text }}</span>{% endif %}
+    {%- if s.checked_on %}<span>{{ icon("clock") }}確認日 {{ s.checked_on }}</span>{% endif %}
+  </div>
+  {% if s.kind == "判定できず" and s.kind_quote %}<div class="meta">種別を決められませんでした（原文: {{ s.kind_quote }}）</div>{% endif %}
 </li>
 {% endfor %}
 </ul>

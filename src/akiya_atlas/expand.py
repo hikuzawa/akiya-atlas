@@ -79,6 +79,8 @@ class MunicipalityFinding:
     pagination_pattern: str | None = None
     detail_pattern: str | None = None  # 一覧から詳細ページへ辿る URL の形
     alternatives: list[str] = field(default_factory=list)
+    # 補助制度のページ（空き家バンクのページから辿ったもの）。kind=subsidy として巡回する
+    subsidy_urls: list[str] = field(default_factory=list)
     # 一覧は確認できているのに 1 件も取り込めていない（抽出側の課題。ページの文面を分ける）
     extract_gap: bool = False
 
@@ -513,6 +515,52 @@ def select_bank_page(
             label = clean_link_label(ln.text) or platforms.match(ln.url) or ""
             probe.externals.append(ExternalLink(label=label, url=ln.url))
     return probe
+
+
+# 「補助」「助成」を含むリンクのうち、空き家に関わるものだけを補助制度のページとみなす。
+# 子育て・就学などの補助は対象外（プロンプトでも弾くが、取りに行く前に減らす）
+_SUBSIDY_ANCHOR = re.compile(r"補助|助成")
+_SUBSIDY_TOPIC = re.compile(
+    r"空き?家|空家|住宅|改修|修繕|リフォーム|耐震|解体|除却|移住|定住|取得|片付|家財"
+)
+_HOUSING_CATEGORY = re.compile(r"空き?家|空家|住まい|住宅|移住|定住|くらし|暮らし")
+
+
+def find_subsidy_pages(
+    starts: list[str], client: PoliteClient, *, limit: int = 4, max_fetch: int = 6
+) -> list[tuple[str, str]]:
+    """既に分かっているページから 1 段だけ辿って、補助制度のページへのリンクを拾う。
+
+    サイト全体は探さない。空き家バンクのページと公式トップの 2 か所から辿る（1 自治体 2 回の取得）。
+    ここで見つからない制度は拾えないので、充足率は実測して判断する。
+    """
+    out: dict[str, str] = {}
+    seen: set[str] = set(starts)
+    queue = [(u, 0) for u in starts if u]
+    hops = 0
+    while queue and len(out) < limit and hops < max_fetch:
+        url, depth = queue.pop(0)
+        res = client.get(url)
+        hops += 1
+        if not res.ok or not res.text:
+            continue
+        host = host_of(url)
+        for link in extract_links(res.text, url):
+            text = (link.text or "").strip()
+            if not text or _DOC_URL.search(link.url) or host_of(link.url) != host:
+                continue
+            if link.url in seen:
+                continue
+            if _SUBSIDY_ANCHOR.search(text) and _SUBSIDY_TOPIC.search(text + " " + link.url):
+                seen.add(link.url)
+                out[link.url] = text
+                if len(out) >= limit:
+                    break
+            elif depth == 0 and _HOUSING_CATEGORY.search(text):
+                # 「住まい」「空き家」などの分類ページ。ここから補助制度に届くことが多い
+                seen.add(link.url)
+                queue.append((link.url, 1))
+    return list(out.items())
 
 
 def find_bank_page(
@@ -1003,7 +1051,10 @@ def finding_to_source_dict(f: MunicipalityFinding, *, prefecture_name: str) -> d
             follow.append({"pattern": f.detail_pattern, "kind": "listing_detail", "max_links": 60})
         if follow:
             page["follow"] = follow
-        entry["pages"] = [page]
+        pages = [page]
+        # 補助制度のページ。物件とは別の仕様で抽出する（spec.SUBSIDY_SPEC）
+        pages += [{"url": u, "kind": "subsidy"} for u in f.subsidy_urls]
+        entry["pages"] = pages
         entry["allow_hosts"] = [host_of(f.bank_url)]
         entry["max_pages"] = 30
     if externals:
@@ -1122,6 +1173,7 @@ def _finding_to_row(f: MunicipalityFinding) -> dict:
         "pagination_pattern": f.pagination_pattern,
         "detail_pattern": f.detail_pattern,
         "extract_gap": f.extract_gap,
+        "subsidy_urls": list(f.subsidy_urls),
         "alternatives": list(f.alternatives),
     }
 
@@ -1163,6 +1215,7 @@ def _row_to_finding(row: dict) -> MunicipalityFinding:
         pagination_pattern=row.get("pagination_pattern"),
         detail_pattern=row.get("detail_pattern"),
         extract_gap=bool(row.get("extract_gap")),
+        subsidy_urls=list(row.get("subsidy_urls") or []),
         alternatives=list(row.get("alternatives", [])),
     )
 
@@ -1321,6 +1374,48 @@ def _describe(f: MunicipalityFinding, old_url: str | None) -> str:
         f"{f.muni.name}: {old_url or '-'} → {f.bank_url or '-'} policy={f.policy} "
         f"status={bank_status_of(f)} 物件行={f.listing_rows} 分ページ={pages}"
     )
+
+
+def collect_subsidy_pages(
+    ws: Workspace, prefecture: str, *, client: PoliteClient, limit: int = 4
+) -> list[str]:
+    """県内の各自治体の空き家バンクのページから補助制度のページを見つけ、巡回対象に足す。
+
+    1 自治体につき 1 ページだけ取得する（バンクのページ）。見つかった URL は findings に残し、
+    sources の pages に kind=subsidy として出る。巡回と抽出は通常の日次に任せる。
+    """
+    from sitemill.store.jsonio import read_json
+
+    munis = municipalities_for(prefecture, default_code_table_path(ws.root))
+    if not munis:
+        return [f"{prefecture}: 市町村が見つからない"]
+    pref_name, pref_slug = munis[0].prefecture, munis[0].prefecture_slug
+    data = read_json(_findings_path(ws, pref_slug)) or {"findings": []}
+    rows: list[dict] = list(data["findings"])
+    lines: list[str] = []
+    found_total = 0
+    looked = 0
+    for i, row in enumerate(rows):
+        if row.get("policy") != "crawl" or not row.get("bank_url"):
+            continue
+        looked += 1
+        official = str(row.get("official_url") or "")
+        if official and not official.startswith("http"):
+            official = "https://" + official + "/"
+        pages = find_subsidy_pages([str(row["bank_url"]), official], client, limit=limit)
+        if not pages:
+            continue
+        rows[i] = {**row, "subsidy_urls": [u for u, _ in pages]}
+        found_total += len(pages)
+        labels = "、".join(text for _, text in pages)
+        lines.append(f"{row.get('name')}: 補助制度のページ {len(pages)} 件（{labels}）")
+    if found_total:
+        _write_rows(ws, pref_slug, pref_name, rows)
+    lines.append(
+        f"{pref_name}: 巡回中の {looked} 自治体を見て、{found_total} ページを見つけた"
+        f"（{sum(1 for r in rows if r.get('subsidy_urls'))} 自治体）"
+    )
+    return lines
 
 
 def rediscover_codes(

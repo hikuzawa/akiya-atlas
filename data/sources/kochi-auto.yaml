@@ -14,12 +14,13 @@ sources:
     slug: '392014'
     bank_url: https://www.city.kochi.kochi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 高知県高知市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.kochi.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kochi.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-392022
   name: 室戸市空き家バンク
   operator: 室戸市
@@ -34,12 +35,13 @@ sources:
     slug: '392022'
     bank_url: https://www.city.muroto.kochi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 高知県室戸市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.muroto.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.muroto.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-392031
   name: 安芸市空き家バンク
   operator: 安芸市
@@ -54,14 +56,17 @@ sources:
     slug: '392031'
     bank_url: https://www.city.aki.kochi.jp/iju/reside/list.php
     bank_status: available
+    extract_pending: false
     map_query: 高知県安芸市
   operator_evidence:
     quote: 公式ドメイン www.city.aki.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.aki.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
   pages:
   - url: https://www.city.aki.kochi.jp/iju/reside/list.php
     kind: listing_index
+  - url: https://www.city.aki.kochi.jp/life/dtl.php?hdnKey=8109
+    kind: subsidy
   allow_hosts:
   - www.city.aki.kochi.jp
   max_pages: 30
@@ -79,14 +84,21 @@ sources:
     slug: '392049'
     bank_url: https://www.city.nankoku.lg.jp/life/life_dtl.php?hdnKey=10096
     bank_status: available
+    extract_pending: false
     map_query: 高知県南国市
   operator_evidence:
     quote: 公式ドメイン www.city.nankoku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nankoku.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
   pages:
   - url: https://www.city.nankoku.lg.jp/life/life_dtl.php?hdnKey=10096
     kind: listing_index
+  - url: https://www.city.nankoku.lg.jp/life/life_dtl.php?hdnKey=10050
+    kind: subsidy
+  - url: https://www.city.nankoku.lg.jp/life/life_dtl.php?hdnKey=10034
+    kind: subsidy
+  - url: https://www.city.nankoku.lg.jp/life/life_dtl.php?hdnKey=9275
+    kind: subsidy
   allow_hosts:
   - www.city.nankoku.lg.jp
   max_pages: 30
@@ -104,12 +116,13 @@ sources:
     slug: '392057'
     bank_url: https://www.city.tosa.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 高知県土佐市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.tosa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tosa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-392065
   name: 須崎市空き家バンク
   operator: 須崎市
@@ -124,12 +137,13 @@ sources:
     slug: '392065'
     bank_url: https://www.city.susaki.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 高知県須崎市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.susaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.susaki.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-392081
   name: 宿毛市空き家バンク
   operator: 宿毛市
@@ -144,12 +158,13 @@ sources:
     slug: '392081'
     bank_url: https://www.city.sukumo.kochi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 高知県宿毛市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.sukumo.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.sukumo.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-392090
   name: 土佐清水市空き家バンク
   operator: 土佐清水市
@@ -164,12 +179,13 @@ sources:
     slug: '392090'
     bank_url: https://www.city.tosashimizu.kochi.jp/kurashi/iju/open-house/
     bank_status: info
+    extract_pending: false
     map_query: 高知県土佐清水市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.tosashimizu.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.tosashimizu.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-392103
   name: 四万十市空き家バンク
   operator: 四万十市
@@ -184,12 +200,13 @@ sources:
     slug: '392103'
     bank_url: https://www.city.shimanto.lg.jp/site/iju-teiju-subsite/3879.html
     bank_status: info
+    extract_pending: false
     map_query: 高知県四万十市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.shimanto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.shimanto.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-392111
   name: 香南市空き家バンク
   operator: 香南市
@@ -204,12 +221,13 @@ sources:
     slug: '392111'
     bank_url: https://www.city.konan.lg.jp/kurashi/juutaku/1008730.html
     bank_status: info
+    extract_pending: false
     map_query: 高知県香南市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.konan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.konan.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-392120
   name: 香美市空き家バンク
   operator: 香美市
@@ -224,14 +242,21 @@ sources:
     slug: '392120'
     bank_url: https://www.city.kami.lg.jp/site/akiya/akiya.html
     bank_status: available
+    extract_pending: false
     map_query: 高知県香美市
   operator_evidence:
     quote: 公式ドメイン www.city.kami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kami.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
   pages:
   - url: https://www.city.kami.lg.jp/site/akiya/akiya.html
     kind: listing_index
+  - url: https://www.city.kami.lg.jp/soshiki/9/akiyahojo.html
+    kind: subsidy
+  - url: https://www.city.kami.lg.jp/soshiki/9/taishin.html
+    kind: subsidy
+  - url: https://www.city.kami.lg.jp/soshiki/9/rokyu.html
+    kind: subsidy
   allow_hosts:
   - www.city.kami.lg.jp
   max_pages: 30
@@ -249,12 +274,13 @@ sources:
     slug: '393011'
     bank_url: https://www.town.toyo.kochi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 高知県東洋町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 高知県 県内市町村に掲載された公式サイト（www.town.toyo.kochi.jp）
     url: https://www.pref.kochi.lg.jp/link/kennai_shichoson.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-393029
   name: 奈半利町空き家バンク
   operator: 奈半利町
@@ -269,12 +295,13 @@ sources:
     slug: '393029'
     bank_url: https://www.town.nahari.kochi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 高知県奈半利町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.nahari.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nahari.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-393037
   name: 田野町空き家バンク
   operator: 田野町
@@ -289,14 +316,23 @@ sources:
     slug: '393037'
     bank_url: https://tanocho.jp/life/akiya.php
     bank_status: available
+    extract_pending: false
     map_query: 高知県田野町
   operator_evidence:
     quote: 高知県 県内市町村に掲載された公式サイト（tanocho.jp）
     url: https://www.pref.kochi.lg.jp/link/kennai_shichoson.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
   pages:
   - url: https://tanocho.jp/life/akiya.php
     kind: listing_index
+  - url: https://tanocho.jp/life/detail.php?hdnKey=583
+    kind: subsidy
+  - url: https://tanocho.jp/life/detail.php?hdnKey=584
+    kind: subsidy
+  - url: https://tanocho.jp/life/detail.php?hdnKey=585
+    kind: subsidy
+  - url: https://tanocho.jp/life/detail.php?hdnKey=580
+    kind: subsidy
   allow_hosts:
   - tanocho.jp
   max_pages: 30
@@ -314,12 +350,13 @@ sources:
     slug: '393045'
     bank_url: https://www.town.yasuda.kochi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 高知県安田町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.yasuda.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yasuda.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-393053
   name: 北川村空き家バンク
   operator: 北川村
@@ -334,12 +371,13 @@ sources:
     slug: '393053'
     bank_url: https://iju.kitagawamura.jp/reside/
     bank_status: info
+    extract_pending: false
     map_query: 高知県北川村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式サイト（www.kitagawamura.jp）から空き家バンクとして案内されているリンク
     url: https://www.kitagawamura.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-393061
   name: 馬路村空き家バンク
   operator: 馬路村
@@ -354,12 +392,13 @@ sources:
     slug: '393061'
     bank_url: https://vill.umaji.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 高知県馬路村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン vill.umaji.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://vill.umaji.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-393070
   name: 芸西村空き家バンク
   operator: 芸西村
@@ -374,14 +413,21 @@ sources:
     slug: '393070'
     bank_url: https://www.vill.geisei.kochi.jp/pages/m001580.php
     bank_status: available
+    extract_pending: false
     map_query: 高知県芸西村
   operator_evidence:
     quote: 公式ドメイン www.vill.geisei.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.geisei.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
   pages:
   - url: https://www.vill.geisei.kochi.jp/pages/m001580.php
     kind: listing_index
+  - url: https://www.vill.geisei.kochi.jp/pages/m001633.php
+    kind: subsidy
+  - url: https://www.vill.geisei.kochi.jp/pages/m001632.php
+    kind: subsidy
+  - url: https://www.vill.geisei.kochi.jp/pages/m000427.php
+    kind: subsidy
   allow_hosts:
   - www.vill.geisei.kochi.jp
   max_pages: 30
@@ -399,11 +445,12 @@ sources:
     slug: '393410'
     bank_url: https://www.town.motoyama.kochi.jp/kurashi_tetsuzuki/iju_teiju/613.html
     bank_status: available
+    extract_pending: false
     map_query: 高知県本山町
   operator_evidence:
     quote: 公式ドメイン www.town.motoyama.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.motoyama.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
   pages:
   - url: https://www.town.motoyama.kochi.jp/kurashi_tetsuzuki/iju_teiju/613.html
     kind: listing_index
@@ -428,11 +475,12 @@ sources:
     slug: '393444'
     bank_url: https://www.town.otoyo.kochi.jp/iju/akiya_dtl.php?id=207
     bank_status: available
+    extract_pending: false
     map_query: 高知県大豊町
   operator_evidence:
     quote: 公式ドメイン www.town.otoyo.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.otoyo.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
   pages:
   - url: https://www.town.otoyo.kochi.jp/iju/akiya_dtl.php?id=207
     kind: listing_detail
@@ -453,12 +501,13 @@ sources:
     slug: '393631'
     bank_url: https://www.town.tosa.kochi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 高知県土佐町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.tosa.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.tosa.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-393649
   name: 大川村空き家バンク
   operator: 大川村
@@ -473,12 +522,13 @@ sources:
     slug: '393649'
     bank_url: https://www.vill.okawa.kochi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 高知県大川村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.okawa.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.okawa.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-393860
   name: いの町空き家バンク
   operator: いの町
@@ -493,12 +543,13 @@ sources:
     slug: '393860'
     bank_url: https://www.town.ino.kochi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 高知県いの町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.ino.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ino.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-393878
   name: 仁淀川町空き家バンク
   operator: 仁淀川町
@@ -513,12 +564,13 @@ sources:
     slug: '393878'
     bank_url: https://www.town.niyodogawa.lg.jp/iju/list_akiya.php
     bank_status: info
+    extract_pending: false
     map_query: 高知県仁淀川町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.niyodogawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.niyodogawa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-394017
   name: 中土佐町空き家バンク
   operator: 中土佐町
@@ -533,14 +585,17 @@ sources:
     slug: '394017'
     bank_url: https://www.town.nakatosa.lg.jp/life/detail.php?hdnKey=1667
     bank_status: available
+    extract_pending: false
     map_query: 高知県中土佐町
   operator_evidence:
     quote: 公式ドメイン www.town.nakatosa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.nakatosa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
   pages:
   - url: https://www.town.nakatosa.lg.jp/life/detail.php?hdnKey=1667
     kind: listing_index
+  - url: https://www.town.nakatosa.lg.jp/life/detail.php?hdnKey=778
+    kind: subsidy
   allow_hosts:
   - www.town.nakatosa.lg.jp
   max_pages: 30
@@ -558,14 +613,19 @@ sources:
     slug: '394025'
     bank_url: https://www.town.sakawa.lg.jp/life/dtl.php?hdnKey=1336
     bank_status: available
+    extract_pending: false
     map_query: 高知県佐川町
   operator_evidence:
     quote: 公式ドメイン www.town.sakawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.sakawa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
   pages:
   - url: https://www.town.sakawa.lg.jp/life/dtl.php?hdnKey=1336
     kind: listing_index
+  - url: https://www.town.sakawa.lg.jp/life/dtl.php?hdnKey=2416
+    kind: subsidy
+  - url: https://www.town.sakawa.lg.jp/life/dtl.php?hdnKey=2418
+    kind: subsidy
   allow_hosts:
   - www.town.sakawa.lg.jp
   max_pages: 30
@@ -583,11 +643,12 @@ sources:
     slug: '394033'
     bank_url: https://www.town.ochi.kochi.jp/ijyu/house
     bank_status: available
+    extract_pending: false
     map_query: 高知県越知町
   operator_evidence:
     quote: 公式ドメイン www.town.ochi.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ochi.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
   pages:
   - url: https://www.town.ochi.kochi.jp/ijyu/house
     kind: listing_index
@@ -608,12 +669,13 @@ sources:
     slug: '394050'
     bank_url: https://www.town.yusuhara.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 高知県梼原町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.yusuhara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.yusuhara.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-394106
   name: 日高村空き家バンク
   operator: 日高村
@@ -628,12 +690,13 @@ sources:
     slug: '394106'
     bank_url: https://www.vill.hidaka.kochi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 高知県日高村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.hidaka.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.hidaka.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-394114
   name: 津野町空き家バンク
   operator: 津野町
@@ -648,12 +711,13 @@ sources:
     slug: '394114'
     bank_url: https://www.town.tsuno.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 高知県津野町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.tsuno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.tsuno.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-394122
   name: 四万十町空き家バンク
   operator: 四万十町
@@ -668,14 +732,23 @@ sources:
     slug: '394122'
     bank_url: https://www.town.shimanto.lg.jp/life/detail.php?hdnKey=10395
     bank_status: available
+    extract_pending: false
     map_query: 高知県四万十町
   operator_evidence:
     quote: 公式ドメイン www.town.shimanto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.shimanto.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
   pages:
   - url: https://www.town.shimanto.lg.jp/life/detail.php?hdnKey=10395
     kind: listing_index
+  - url: https://www.town.shimanto.lg.jp/life/detail.php?hdnKey=11772
+    kind: subsidy
+  - url: https://www.town.shimanto.lg.jp/life/detail.php?hdnKey=4090
+    kind: subsidy
+  - url: https://www.town.shimanto.lg.jp/life/detail.php?hdnKey=11725
+    kind: subsidy
+  - url: https://www.town.shimanto.lg.jp/life/detail.php?hdnKey=11416
+    kind: subsidy
   allow_hosts:
   - www.town.shimanto.lg.jp
   max_pages: 30
@@ -693,11 +766,12 @@ sources:
     slug: '394246'
     bank_url: https://www.town.otsuki.kochi.jp/iju/info/akiya.php
     bank_status: available
+    extract_pending: false
     map_query: 高知県大月町
   operator_evidence:
     quote: 公式ドメイン www.town.otsuki.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.otsuki.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
   pages:
   - url: https://www.town.otsuki.kochi.jp/iju/info/akiya.php
     kind: listing_index
@@ -718,12 +792,13 @@ sources:
     slug: '394271'
     bank_url: https://www.vill.mihara.kochi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 高知県三原村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.mihara.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.mihara.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
 - id: kochi-394289
   name: 黒潮町空き家バンク
   operator: 黒潮町
@@ -738,9 +813,10 @@ sources:
     slug: '394289'
     bank_url: https://www.town.kuroshio.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 高知県黒潮町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.kuroshio.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kuroshio.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-14'
