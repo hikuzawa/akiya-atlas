@@ -266,6 +266,14 @@ main { padding: 20px 0 56px; }
 .more button:hover { background: var(--green-100); }
 
 /* ---------- 折りたたみ ---------- */
+/* 補助制度のグループ見出し。件数を必ず添える（畳んだときの誤読を防ぐ） */
+.group-head { margin: 14px 0 8px; font-weight: 700; display: flex; align-items: baseline; gap: 8px; }
+.group-head b { font-family: var(--font-display); color: var(--kaki); font-size: 1.15rem; }
+.group-head:first-child { margin-top: 0; }
+/* 畳んだ制度一覧。開いたときに中のカードが詰まらないよう下に余白 */
+.more-subsidies .fold-body { padding-bottom: 14px; }
+.kind-why { margin-top: 10px; }
+.kind-why summary { font-weight: 400; font-size: .92rem; }
 details.fold { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 0 16px; margin-top: 10px; }
 details.fold summary { cursor: pointer; padding: 14px 0; font-weight: 700; list-style: none; display: flex; align-items: center; gap: 10px; min-height: 48px; }
 details.fold summary::-webkit-details-marker { display: none; }

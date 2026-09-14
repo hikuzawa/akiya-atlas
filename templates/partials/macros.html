@@ -160,13 +160,32 @@
 {# 補助制度のカード一覧。with_muni=true のとき市町村名も出す #}
 {# 補助制度を 2 つに分けて並べる。空き家に直接関わる制度と、住宅一般の制度。
    後者も相続した家を直して住む・安全にするときに使えるので、消さずに分けて出す #}
+{# 空き家に直接関わる制度と、住宅一般の制度を分けて並べる。住宅一般の制度は相続した家にも
+   使えるが、空き家向けと同じものとして読ませない（tests/test_pages.py が並び順と断り文を見る）。
+   全国収集後は 1 自治体 10 件超・県ページで数十件になる見込みで、全部展開すると県ページが
+   スマホ 13 画面分になる。先頭 SUBSIDY_OPEN 件だけ開き、残りは details で畳む（追加 JS 無し）。
+   畳んだ中身も HTML には出ているので、検索エンジンからは読める #}
+{% set SUBSIDY_OPEN = 5 %}
+
+{% macro subsidy_group(items, label, with_muni=false) -%}
+{# 件数は必ず見出しに出す。畳んだときに「これだけしかない」と読ませないため #}
+<p class="group-head">{{ label }}<b>{{ items|length }}件</b></p>
+{{ subsidy_cards(items[:SUBSIDY_OPEN], with_muni) }}
+{% if items|length > SUBSIDY_OPEN %}
+<details class="fold more-subsidies">
+  <summary>残りの {{ items|length - SUBSIDY_OPEN }} 件を見る</summary>
+  <div class="fold-body">{{ subsidy_cards(items[SUBSIDY_OPEN:], with_muni) }}</div>
+</details>
+{% endif %}
+{%- endmacro %}
+
 {% macro subsidy_groups(subsidies, with_muni=false) -%}
 {% set akiya = subsidies|rejectattr("scope", "equalto", "住宅一般")|list %}
 {% set general = subsidies|selectattr("scope", "equalto", "住宅一般")|list %}
-{% if akiya %}{{ subsidy_cards(akiya, with_muni) }}{% endif %}
+{% if akiya %}{{ subsidy_group(akiya, "空き家向けの補助制度 ", with_muni) }}{% endif %}
 {% if general %}
 <p class="meta">{% if akiya %}ここから下は{% endif %}空き家に限らず住宅一般に使える制度です。相続した家を直して住む・安全にするときに使えます。</p>
-{{ subsidy_cards(general, with_muni) }}
+{{ subsidy_group(general, "住宅一般の補助制度 ", with_muni) }}
 {% endif %}
 {%- endmacro %}
 
@@ -188,7 +207,13 @@
     {%- if s.period_text %}<span>募集 {{ s.period_text }}</span>{% endif %}
     {%- if s.checked_on %}<span>{{ icon("clock") }}確認日 {{ s.checked_on }}</span>{% endif %}
   </div>
-  {% if s.kind == "判定できず" and s.kind_quote %}<div class="meta">種別を決められませんでした（原文: {{ s.kind_quote }}）</div>{% endif %}
+  {# 根拠の原文は長いことが多く、開いたままだと 1 枚で画面 1.5 個分を占める。既定は閉じる #}
+  {% if s.kind == "判定できず" and s.kind_quote %}
+  <details class="fold kind-why">
+    <summary>種別を決められませんでした（根拠を見る）</summary>
+    <div class="fold-body"><p class="meta">原文: {{ s.kind_quote }}</p></div>
+  </details>
+  {% endif %}
 </li>
 {% endfor %}
 </ul>
