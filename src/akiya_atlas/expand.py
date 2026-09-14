@@ -26,7 +26,7 @@ from sitemill.classify import (
     classify_page,
     listing_score,
 )
-from sitemill.clock import jst_now
+from sitemill.clock import jst_now, jst_today
 from sitemill.diff.normalize import page_text
 from sitemill.fetch.client import FetchResult, PoliteClient
 from sitemill.fetch.links import extract_links, host_of
@@ -1253,6 +1253,11 @@ MIN_BODY_TEXT = 200  # これ未満なら本文を取り出せていないとみ
 # 「現在、登録物件はありません」のように、掲載が無いことをページ自身が書いている
 _EMPTY_NOTICE = re.compile(r"(?:物件|情報)[はも]?(?:、|\s)*(?:ありません|ございません|None)")
 
+# ページ自身が「現在は募集していません」と書いている source を、次に見にいくまでの日数。
+# 結論が変わりにくいので毎晩は取りにいかない。
+# 巡回の間隔と同じ考え方で、sitemill ADR 0015 の下限（週 1 回）に合わせる
+EMPTY_RECHECK_DAYS = 7
+
 
 def _page_signals(url: str | None, client: PoliteClient) -> tuple[str, ListingScore | None]:
     """抽出に渡るのと同じ本文と、一覧らしさ。0 件の理由を見分けるために使う。"""
@@ -1371,6 +1376,13 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
             states = [ds.state.get(p.url) for p in src.pages]
             if not any(st is not None and st.fetched_at is not None for st in states):
                 continue  # まだ巡回していない source は対象外
+            seen = row.get("empty_checked_on")
+            if seen:
+                try:
+                    if (jst_today() - date.fromisoformat(str(seen))).days < EMPTY_RECHECK_DAYS:
+                        continue  # 掲載なしと明記されていた source。週 1 回だけ見る
+                except ValueError:
+                    pass
             result["checked"] += 1
             before = dict(row)
             said = len(result["changed"])
@@ -1399,7 +1411,14 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
                         "抽出側の問題として保留"
                     )
                 elif _EMPTY_NOTICE.search(text):
-                    result["changed"].append(f"{name}: ページ自身が掲載なしと書いている。そのまま")
+                    # 掲載が無いと書いてある。差し替えも取り下げもせず、次は 7 日後に見る。
+                    # 日付だけを findings に残す（sources/review の中身は変わらない）
+                    rows[i] = {**row, "empty_checked_on": jst_today().isoformat()}
+                    touched = True
+                    result["changed"].append(
+                        f"{name}: ページ自身が掲載なしと書いている。"
+                        f"そのまま（次の点検は {EMPTY_RECHECK_DAYS} 日後）"
+                    )
                 elif score is not None and score.listing_no_count == 0 and score.rows < 5:
                     # 物件番号も無く行も少ない＝一覧らしさが弱い。公式へのリンクだけにする
                     fixed = decide(

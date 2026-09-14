@@ -15,6 +15,7 @@ import httpx
 import pytest
 import respx
 from sitemill.classify import PlatformRegistry
+from sitemill.clock import jst_today
 from sitemill.diff.state import CrawlState
 from sitemill.fetch.client import PoliteClient
 from sitemill.settings import Workspace
@@ -266,6 +267,15 @@ def test_heal_keeps_a_bank_that_says_it_has_no_listings_now(ws: Workspace) -> No
         result = expand.heal(ws, client=c)
     assert result["checked"] == 1 and not result["downgraded"]
     assert any("掲載なしと書いている" in line for line in result["changed"])
+
+    # 点検した日を残し、次の 1 週間は見にいかない（毎晩取りにいくと通信の無駄になる）
+    findings = json.loads(
+        (ws.runs_dir / "discover-nagano-findings.json").read_text(encoding="utf-8")
+    )
+    assert findings["findings"][0]["empty_checked_on"] == jst_today().isoformat()
+    with _client() as c:
+        again = expand.heal(ws, client=c)
+    assert again["checked"] == 0 and not again["changed"]
 
 
 @respx.mock
