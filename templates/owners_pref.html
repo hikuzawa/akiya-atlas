@@ -25,7 +25,7 @@
 <section class="section" aria-labelledby="subsidy-title">
   {{ ui.section_head("subsidy-title", prefecture.name ~ "の補助制度", "本サイトが確認したもの。出典と確認日付き") }}
   {% if subsidies %}
-  {{ ui.subsidy_cards(subsidies, with_muni=true) }}
+  {{ ui.subsidy_groups(subsidies, with_muni=true) }}
   {% else %}
   <p class="surface">この県で確認できた補助制度はまだありません。市町村の窓口にお問い合わせください。</p>
   {% endif %}

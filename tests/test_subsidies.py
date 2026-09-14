@@ -13,7 +13,7 @@ from akiya_atlas.subsidies import item_to_subsidy
 
 
 def _item(**raw: object) -> ExtractedItem:
-    free = {k: raw.get(k) for k in ("name", "kind", "kind_quote", "summary")}
+    free = {k: raw.get(k) for k in ("name", "kind", "scope", "kind_quote", "summary")}
     fields = {}
     for target, quote, value in (
         ("amount_text", raw.get("amount"), raw.get("amount")),
@@ -86,6 +86,32 @@ def test_freshness_and_closing_are_shown_not_deleted() -> None:
     assert ended.closed and not ended.stale
     open_one = Subsidy(name="z", kind="移住", url="https://e.example/", checked_on=date.today())
     assert not open_one.closed and not open_one.stale
+
+
+def test_general_housing_programmes_are_marked_apart_from_vacant_house_ones() -> None:
+    """耐震やブロック塀のような住宅一般の制度は、空き家向けと分けて並べるために印を持つ。"""
+    general = item_to_subsidy(
+        _item(name="住宅等耐震改修費補助金", kind="改修", scope="住宅一般"),
+        source_id="x",
+        url="u",
+        checked_on=date.today(),
+    )
+    assert general is not None and general.scope == "住宅一般"
+    vacant = item_to_subsidy(
+        _item(name="空き家改修補助金", kind="改修", scope="空き家"),
+        source_id="x",
+        url="u",
+        checked_on=date.today(),
+    )
+    assert vacant is not None and vacant.scope == "空き家"
+    # 判断が無い・読めないときは空き家の側に寄せる（取りこぼしを避ける）
+    unknown = item_to_subsidy(
+        _item(name="よく分からない補助金", kind="その他", scope="???"),
+        source_id="x",
+        url="u",
+        checked_on=date.today(),
+    )
+    assert unknown is not None and unknown.scope == "空き家"
 
 
 def test_a_row_without_a_name_is_skipped() -> None:

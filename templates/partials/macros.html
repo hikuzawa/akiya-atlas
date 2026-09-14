@@ -153,6 +153,18 @@
 {%- endmacro %}
 
 {# 補助制度のカード一覧。with_muni=true のとき市町村名も出す #}
+{# 補助制度を 2 つに分けて並べる。空き家に直接関わる制度と、住宅一般の制度。
+   後者も相続した家を直して住む・安全にするときに使えるので、消さずに分けて出す #}
+{% macro subsidy_groups(subsidies, with_muni=false) -%}
+{% set akiya = subsidies|rejectattr("scope", "equalto", "住宅一般")|list %}
+{% set general = subsidies|selectattr("scope", "equalto", "住宅一般")|list %}
+{% if akiya %}{{ subsidy_cards(akiya, with_muni) }}{% endif %}
+{% if general %}
+<p class="meta">{% if akiya %}ここから下は{% endif %}空き家に限らず住宅一般に使える制度です。相続した家を直して住む・安全にするときに使えます。</p>
+{{ subsidy_cards(general, with_muni) }}
+{% endif %}
+{%- endmacro %}
+
 {% macro subsidy_cards(subsidies, with_muni=false) -%}
 <ul class="subsidy-cards">
 {% for s in subsidies %}

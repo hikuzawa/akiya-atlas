@@ -48,7 +48,7 @@
 <section class="section" aria-labelledby="subsidy-title">
   {{ ui.section_head("subsidy-title", "補助制度", "本サイトが確認したもの。最新は自治体ページで") }}
   {% if subsidies %}
-  {{ ui.subsidy_cards(subsidies) }}
+  {{ ui.subsidy_groups(subsidies) }}
   {% else %}
   <p class="surface">本サイトで確認できた補助制度はまだありません。最新情報は自治体ページをご確認ください。</p>
   {% endif %}

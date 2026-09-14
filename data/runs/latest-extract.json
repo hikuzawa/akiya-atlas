@@ -15,12 +15,12 @@
       "amount_text": {
         "not_found": 6,
         "notes": {
-          "quote_joined": 3,
-          "quote_not_in_source": 9
+          "quote_joined": 2,
+          "quote_not_in_source": 10
         },
-        "parsed": 13,
-        "quote_not_in_source": 9,
-        "total": 28,
+        "parsed": 11,
+        "quote_not_in_source": 10,
+        "total": 27,
         "unparsed": 0
       },
       "built_year": {
@@ -66,16 +66,16 @@
         "unparsed": 0
       },
       "period_end": {
-        "not_found": 17,
+        "not_found": 16,
         "notes": {
-          "no_date": 3,
+          "no_date": 4,
           "quote_joined": 1,
           "quote_not_in_source": 2
         },
-        "parsed": 6,
+        "parsed": 5,
         "quote_not_in_source": 2,
-        "total": 28,
-        "unparsed": 3
+        "total": 27,
+        "unparsed": 4
       },
       "price": {
         "not_found": 42,
@@ -120,9 +120,9 @@
         "notes": {
           "quote_not_in_source": 1
         },
-        "parsed": 8,
+        "parsed": 7,
         "quote_not_in_source": 1,
-        "total": 28,
+        "total": 27,
         "unparsed": 0
       }
     },
@@ -130,31 +130,31 @@
       "summary_truncated": 2,
       "summary_verbatim_overlap": 3
     },
-    "items": 177,
+    "items": 176,
     "pages": 29,
     "summary_replaced": 3,
     "truncated_pages": 0
   },
-  "finished_at": "2026-09-14T10:51:10Z",
+  "finished_at": "2026-09-14T11:54:02Z",
   "llm": {
-    "cached_calls": 4,
+    "cached_calls": 29,
     "calls": 29,
-    "input_tokens": 122161,
-    "output_tokens": 26601
+    "input_tokens": 128944,
+    "output_tokens": 26558
   },
   "notes": [],
   "service": "akiya-atlas",
   "stages": {
     "extract": {
-      "items": 177,
+      "items": 176,
       "pages": 29
     },
     "ingest": {
-      "created": 18,
+      "created": 27,
       "skipped": 0,
-      "unchanged": 106,
-      "updated": 53
+      "unchanged": 149,
+      "updated": 0
     }
   },
-  "started_at": "2026-09-14T10:49:56Z"
+  "started_at": "2026-09-14T11:53:35Z"
 }

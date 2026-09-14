@@ -66,7 +66,7 @@
 <section class="section narrow" aria-labelledby="subsidy-title">
   {{ ui.section_head("subsidy-title", muni.name ~ "の補助制度") }}
   {% if muni.subsidies %}
-  {{ ui.subsidy_cards(muni.subsidies) }}
+  {{ ui.subsidy_groups(muni.subsidies) }}
   {% else %}<p class="surface">本サイトで確認できた補助制度はまだありません。</p>{% endif %}
 </section>
 

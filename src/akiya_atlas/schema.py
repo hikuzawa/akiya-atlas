@@ -35,6 +35,8 @@ class Subsidy(BaseModel):
 
     name: str
     kind: Literal["移住", "改修", "解体", "家財", "取得", "その他", "判定できず"]
+    # 空き家に直接関わる制度か、誰の住宅でも使える制度か。画面では分けて並べる
+    scope: Literal["空き家", "住宅一般"] = "空き家"
     url: str
     summary: str = ""
     amount_text: str | None = None

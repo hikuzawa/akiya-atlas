@@ -50,10 +50,14 @@ def item_to_subsidy(
     kind = (item.free.get("kind") or item.raw.get("kind") or "").strip()
     if kind not in SUBSIDY_KINDS:
         kind = "判定できず"
+    scope = (item.free.get("scope") or item.raw.get("scope") or "").strip()
+    if scope not in ("空き家", "住宅一般"):
+        scope = "空き家"  # 判断が無ければ空き家の側に寄せる（取りこぼしを避ける）
     period = item.fields.get("period_end")
     return Subsidy(
         name=name,
         kind=kind,  # type: ignore[arg-type]
+        scope=scope,  # type: ignore[arg-type]
         url=url,
         summary=(item.free.get("summary") or "")[:100],
         amount_text=item.value("amount_text") or _quote_of(item, "amount_text"),

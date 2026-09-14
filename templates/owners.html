@@ -63,7 +63,7 @@
 <section class="section" aria-labelledby="subsidy-title">
   {{ ui.section_head("subsidy-title", "自治体の補助制度", "本サイトが確認したもの。出典と確認日付き") }}
   {% if subsidies %}
-  {{ ui.subsidy_cards(subsidies, with_muni=true) }}
+  {{ ui.subsidy_groups(subsidies, with_muni=true) }}
   {% else %}
   <p class="surface">補助制度の情報はまだ登録されていません。</p>
   {% endif %}

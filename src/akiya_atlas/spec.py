@@ -155,6 +155,7 @@ SUBSIDY_ITEM_SCHEMA: dict[str, Any] = {
     "properties": {
         "name": {"type": "string"},
         "kind": {"type": "string", "enum": list(SUBSIDY_KINDS)},
+        "scope": {"type": "string", "enum": ["空き家", "住宅一般"]},
         "kind_quote": {"type": ["string", "null"]},
         "summary": {"type": "string"},
         "amount_quote": {"type": ["string", "null"]},
@@ -162,13 +163,8 @@ SUBSIDY_ITEM_SCHEMA: dict[str, Any] = {
         "period_quote": {"type": ["string", "null"]},
     },
     "required": [
-        "name",
-        "kind",
-        "kind_quote",
-        "summary",
-        "amount_quote",
-        "year_quote",
-        "period_quote",
+        "name", "kind", "scope", "kind_quote", "summary",
+        "amount_quote", "year_quote", "period_quote",
     ],
     "additionalProperties": False,
 }
@@ -213,7 +209,7 @@ SUBSIDY_SPEC = ExtractionSpec(
         QuoteField("period_quote", "period_end", parse_period_end),
     ),
     items_key="subsidies",
-    free_text_fields=("name", "kind", "kind_quote", "summary"),
+    free_text_fields=("name", "kind", "scope", "kind_quote", "summary"),
     summary_field="summary",
     summary_max_chars=100,
     verbatim_overlap_chars=30,
