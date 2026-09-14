@@ -117,6 +117,51 @@ def test_report_and_month_estimate(ws: Workspace) -> None:
     assert est["cost"] == pytest.approx((100_000 / 1e6 + 50_000 / 1e6 * 5) * 30)
 
 
+def test_reselections_are_listed_for_the_week(ws: Workspace) -> None:
+    """heal が掲載ページを選び直したら、週次に自治体・旧 URL・新 URL・理由が出る。"""
+    now = datetime(2026, 9, 14, 12, tzinfo=UTC)
+    rows = [
+        {
+            "at": (now - timedelta(days=2)).isoformat(),
+            "source_id": "niigata-152021",
+            "name": "新潟県長岡市",
+            "old_url": "https://example.lg.jp/old",
+            "new_url": "https://example.lg.jp/new",
+            "reason": "詳細ページを辿るようにした（7 本）",
+        },
+        {
+            "at": (now - timedelta(days=30)).isoformat(),  # 期間の外
+            "source_id": "niigata-152030",
+            "name": "新潟県三条市",
+            "reason": "古い記録",
+        },
+    ]
+    path = ws.runs_dir / "heal-reselections.jsonl"
+    path.write_text(
+        "".join(json.dumps(r, ensure_ascii=False) + chr(10) for r in rows), encoding="utf-8"
+    )
+
+    picked = weekly.reselections(ws, days=7, now=now)
+    assert [r["source_id"] for r in picked] == ["niigata-152021"]
+
+    text = chr(10).join(weekly.report(ws, days=7, now=now))
+    assert "## 今週 heal が選び直した自治体（1 件）" in text
+    assert "新潟県長岡市" in text and "https://example.lg.jp/new" in text
+    assert "詳細ページを辿るようにした" in text
+    assert "三条市" not in text
+
+
+def test_report_says_when_it_cannot_count_actions_minutes(
+    ws: Workspace, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """リポジトリが分からないときは 0 分と書かず、集計していないことを書く。"""
+    monkeypatch.delenv("GH_REPO", raising=False)  # 環境に設定があっても外部に出ない
+    text = chr(10).join(weekly.report(ws, days=7, repo=None))
+    assert "## GitHub Actions の実行時間" in text
+    assert "集計していません" in text
+    assert "0 分" not in text.split("## GitHub Actions")[1]
+
+
 def test_snapshot_is_written(ws: Workspace) -> None:
     _run(ws, "20260911-030000-crawl", datetime.now(UTC), 1.0, stages={"crawl": {"fetched": 3}})
     path = weekly.write_snapshot(ws, days=7, source="all")

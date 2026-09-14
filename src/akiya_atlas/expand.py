@@ -6,6 +6,7 @@
 
 from __future__ import annotations
 
+import json
 import logging
 import re
 import socket
@@ -25,6 +26,7 @@ from sitemill.classify import (
     classify_page,
     listing_score,
 )
+from sitemill.clock import jst_now
 from sitemill.diff.normalize import page_text
 from sitemill.fetch.client import FetchResult, PoliteClient
 from sitemill.fetch.links import extract_links, host_of
@@ -1342,7 +1344,13 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
     ds = Dataset.load(ws)
     platforms = PlatformRegistry()
     wanted = set(source_ids or [])
-    result: dict = {"checked": 0, "changed": [], "recrawl": [], "downgraded": []}
+    result: dict = {
+        "checked": 0,
+        "changed": [],
+        "recrawl": [],
+        "downgraded": [],
+        "reselected": [],  # data/sources を書き換えた 1 件ずつの記録（週次レポートが読む）
+    }
     for path in sorted(ws.runs_dir.glob("discover-*-findings.json")):
         pref_slug = path.name[len("discover-") : -len("-findings.json")]
         data = read_json(path) or {"findings": []}
@@ -1364,6 +1372,8 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
             if not any(st is not None and st.fetched_at is not None for st in states):
                 continue  # まだ巡回していない source は対象外
             result["checked"] += 1
+            before = dict(row)
+            said = len(result["changed"])
             new = reassess_finding(row, client, platforms, overrides)
             old_url = row.get("bank_url")
             old_detail = row.get("detail_pattern")
@@ -1443,6 +1453,40 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
                 result["changed"].append(
                     f"{name}: 一覧が見つからず {bank_status_of(new)} に変更（{new.reason}）"
                 )
+            # この source の行が変わったなら、何をどう変えたかを 1 件の記録にする。
+            # data/sources はこの後まとめて書き直されるので、書き換えの根拠をここで残す
+            after = rows[i]
+            if after != before:
+                note = result["changed"][-1] if len(result["changed"]) > said else ""
+                result["reselected"].append(
+                    {
+                        "at": jst_now().isoformat(timespec="seconds"),
+                        "source_id": sid,
+                        "code": str(before.get("code") or ""),
+                        "name": name,
+                        "old_url": before.get("bank_url"),
+                        "new_url": after.get("bank_url"),
+                        "old_policy": before.get("policy"),
+                        "new_policy": after.get("policy"),
+                        "reason": note.split(": ", 1)[-1] if note else "",
+                    }
+                )
         if touched:
             _write_rows(ws, pref_slug, pref_name, rows)
+    if result["reselected"]:
+        _append_reselections(ws, result["reselected"])
     return result
+
+
+def _append_reselections(ws: Workspace, rows: list[dict]) -> None:
+    """heal が data/sources を書き換えた記録を追記する。
+
+    実行レポートの notes にも同じ内容が文章で残るが、こちらは後から機械で追える形にする
+    （週次レポートの「今週 heal が選び直した自治体」がこれを読む）。置き場は data/runs で、
+    日次のコミット対象に入っている。
+    """
+    path = ws.runs_dir / "heal-reselections.jsonl"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8", newline="\n") as f:
+        for row in rows:
+            f.write(json.dumps(row, ensure_ascii=False) + "\n")

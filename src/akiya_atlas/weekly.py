@@ -7,6 +7,8 @@
 from __future__ import annotations
 
 import json
+import os
+import subprocess
 from dataclasses import dataclass, field
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
@@ -122,8 +124,112 @@ def takedown_count(ws: Workspace) -> tuple[int, dict[str, int]]:
     return len(tl.items), tl.other_issues
 
 
+def reselections(
+    ws: Workspace, *, days: int = 7, now: datetime | None = None
+) -> list[dict[str, Any]]:
+    """heal が data/sources を書き換えた記録のうち、直近 days 日のもの。"""
+    path = ws.runs_dir / "heal-reselections.jsonl"
+    if not path.is_file():
+        return []
+    edge = (now or datetime.now(UTC)) - timedelta(days=days)
+    out: list[dict[str, Any]] = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        try:
+            row = json.loads(line)
+        except ValueError:
+            continue
+        at = _dt(row.get("at"))
+        if at is None or at >= edge:
+            out.append(row)
+    return out
+
+
+def _gh_json(args: list[str]) -> Any:
+    """gh の出力を JSON として読む。取れなければ None を返す。"""
+    try:
+        proc = subprocess.run(
+            ["gh", *args], capture_output=True, text=True, encoding="utf-8", timeout=60
+        )
+    except (OSError, subprocess.SubprocessError):
+        return None
+    if proc.returncode != 0 or not proc.stdout.strip():
+        return None
+    try:
+        return json.loads(proc.stdout)
+    except ValueError:
+        return None
+
+
+def actions_minutes(
+    repo: str, *, days: int = 7, now: datetime | None = None, limit: int = 100
+) -> dict[str, Any]:
+    """直近 days 日に GitHub Actions が使った分数（課金される値）を合計する。
+
+    無料枠 2,000 分に近づいたら気づけるようにする。取れなかったときは error を返し、
+    「0 分」とは区別する（数字が無いことと、集計が壊れていることを混ぜない）。
+    """
+    since = ((now or datetime.now(UTC)) - timedelta(days=days)).date().isoformat()
+    runs = _gh_json(
+        [
+            "api",
+            "-X",
+            "GET",
+            f"repos/{repo}/actions/runs",
+            "-f",
+            f"created=>={since}",
+            "-f",
+            f"per_page={limit}",
+            "--jq",
+            "[.workflow_runs[] | {id: .id, name: .name}]",
+        ]
+    )
+    if runs is None:
+        return {"error": "GitHub API から実行一覧を取れなかった"}
+    by_workflow: dict[str, float] = {}
+    total = 0.0
+    measured = False  # 課金値が取れず、実測時間で数えた回があるか
+    for run in runs:
+        got = _gh_json(
+            [
+                "api",
+                f"repos/{repo}/actions/runs/{run['id']}/timing",
+                "--jq",
+                "{billable: ([.billable[]?.total_ms] | add // 0), ran: (.run_duration_ms // 0)}",
+            ]
+        )
+        if not isinstance(got, dict):
+            continue
+        # 課金される値が 0 で返るアカウント設定がある。そのときは実測の所要時間で数える
+        ms = float(got.get("billable") or 0)
+        if ms <= 0:
+            ms = float(got.get("ran") or 0)
+            measured = measured or ms > 0
+        minutes = ms / 60000.0
+        total += minutes
+        by_workflow[run["name"]] = by_workflow.get(run["name"], 0.0) + minutes
+    return {
+        "minutes": total,
+        "runs": len(runs),
+        "by_workflow": by_workflow,
+        "truncated": len(runs) >= limit,
+        "measured": measured,
+    }
+
+
+def _cell(value: Any) -> str:
+    text = str(value or "").replace("|", "｜").strip()
+    return text or "—"
+
+
 def report(
-    ws: Workspace, *, days: int = 7, now: datetime | None = None, source: str = "ci"
+    ws: Workspace,
+    *,
+    days: int = 7,
+    now: datetime | None = None,
+    source: str = "ci",
+    repo: str | None = None,
 ) -> list[str]:
     """報告用の行を返す（Markdown の表）。"""
     rows = collect(ws, days=days, now=now, source=source)
@@ -164,6 +270,42 @@ def report(
         f"- 1 日あたりの平均: {total.seconds / max(len(rows), 1) / 60:.1f} 分 / "
         f"${total.cost / max(len(rows), 1):.2f}",
     ]
+
+    picks = reselections(ws, days=days, now=now)
+    out += ["", f"## 今週 heal が選び直した自治体（{len(picks)} 件）", ""]
+    if picks:
+        out += ["| 自治体 | 旧 URL | 新 URL | 理由 |", "| --- | --- | --- | --- |"]
+        for r in picks:
+            out.append(
+                f"| {_cell(r.get('name') or r.get('source_id'))} | {_cell(r.get('old_url'))} "
+                f"| {_cell(r.get('new_url'))} | {_cell(r.get('reason'))} |"
+            )
+    else:
+        out.append("この期間に掲載ページを選び直した自治体はありません。")
+
+    repo = repo or os.environ.get("GH_REPO", "")
+    out += ["", "## GitHub Actions の実行時間", ""]
+    if not repo:
+        out.append("リポジトリが分からないので集計していません（`--repo` か `GH_REPO` で渡す）。")
+        return out
+    used = actions_minutes(repo, days=days, now=now)
+    if used.get("error"):
+        out.append(f"取れませんでした（{used['error']}）。残りは Billing の画面で確かめる。")
+        return out
+    monthly = used["minutes"] / max(days, 1) * 30
+    out += [
+        f"- 直近 {days} 日: **{used['minutes']:.0f} 分**（{used['runs']} 回の実行）",
+        f"- 1 か月に直すと **{monthly:.0f} 分**。private の無料枠 2,000 分の {monthly / 20:.0f}%",
+    ]
+    if used.get("measured"):
+        out.append(
+            "  - GitHub が課金値を 0 で返すので、実行の所要時間で数えている"
+            "（請求の値とは数分ずれる）"
+        )
+    for name, minutes in sorted(used["by_workflow"].items(), key=lambda kv: -kv[1]):
+        out.append(f"  - {name}: {minutes:.0f} 分")
+    if used.get("truncated"):
+        out.append("  - 実行の数が上限に当たったので、ここに出ているのは一部（実際はもっと多い）")
     return out
 
 

@@ -89,12 +89,18 @@ def _register(app: typer.Typer) -> None:
         source: Annotated[
             str, typer.Option("--source", help="ci（日次のみ）/ local（手元のみ）/ all")
         ] = "ci",
+        repo: Annotated[
+            str,
+            typer.Option(
+                "--repo", help="Actions の実行時間を集計する owner/repo（既定は GH_REPO）"
+            ),
+        ] = "",
     ) -> None:
         """日次パイプラインの直近 N 日をまとめる（実行時間・差分・費用・自己修復・取り下げ）。"""
         from akiya_atlas import weekly
 
         rt = commands.Runtime.open()
-        for line in weekly.report(rt.ws, days=days, source=source):
+        for line in weekly.report(rt.ws, days=days, source=source, repo=repo or None):
             typer.echo(line)
         est = weekly.month_estimate(weekly.collect(rt.ws, days=days, source=source))
         typer.echo("")
@@ -215,6 +221,13 @@ def _register(app: typer.Typer) -> None:
 
 def main() -> None:
     from sitemill.cli import app
+
+    # Windows の既定は cp932 で、表に出る記号（全角ダッシュなど）で落ちる。
+    # 手順書は手元での実行を前提にしているので、出力を UTF-8 に寄せる
+    for stream in (sys.stdout, sys.stderr):
+        reconfigure = getattr(stream, "reconfigure", None)
+        if reconfigure is not None:
+            reconfigure(encoding="utf-8", errors="replace")
 
     root = Path(__file__).resolve().parents[2]
     if (root / "site.toml").is_file() and "--root" not in sys.argv:
