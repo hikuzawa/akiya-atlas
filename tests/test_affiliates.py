@@ -106,6 +106,20 @@ def test_one_offer_per_kind_in_a_slot() -> None:
         assert [o.id for o in chosen] == ["kaitai-other"]  # rank 5 < 10
 
 
+def test_score_orders_the_slot_until_someone_sets_a_rank() -> None:
+    """rank を書かなければ選定の点数で並ぶ。数値を入れたらそちらが勝つ（ADR 0010）。"""
+    base = next(o for o in affiliates.OFFERS if o.id == "kaitai-110")
+    high = Offer(**{**vars(base), "id": "kaitai-high", "rank": None, "score": 86, "url": TRACKING})
+    low = Offer(**{**vars(base), "id": "kaitai-low", "rank": None, "score": 61, "url": TRACKING})
+    assert high.order < low.order  # 点数が高い方が前
+    with pytest.MonkeyPatch.context() as mp:
+        mp.setattr(affiliates, "OFFERS", (low, high))
+        assert [o.id for o in affiliates.offers_for("owners-flow-demolition")] == ["kaitai-high"]
+        # 実績を見て低い点数の方を前に出したくなったら rank で上書きする
+        mp.setattr(affiliates, "OFFERS", (Offer(**{**vars(low), "rank": 1}), high))
+        assert [o.id for o in affiliates.offers_for("owners-flow-demolition")] == ["kaitai-low"]
+
+
 def test_slot_rejects_a_kind_it_does_not_accept() -> None:
     """枠に置ける種別は宣言で決まる。解体の枠に査定は入らない。"""
     satei = Offer(

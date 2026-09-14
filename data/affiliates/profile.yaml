@@ -149,6 +149,7 @@ emit:
         cookie_days={cookie_days},
         constraints=(),
         placements=({placements},),
-        rank=100,
+        score={score},  # 選定の点数。並び順の初期値になる
+        rank=None,  # 実績を見て順番を変えたくなったら数値を入れる（小さいほど前）
         approved_on="{today}",
     )

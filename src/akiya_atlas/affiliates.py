@@ -125,12 +125,26 @@ class Offer:
     cookie_days: int | None = None  # 再訪問期間
     constraints: tuple[str, ...] = ()  # 機械で確かめられない制約を文章で残す
     placements: tuple[str, ...] = ()
-    rank: int = 100  # 同じ種別が複数あるときは小さい方だけを出す
+    # 選定ツールの点数（sitemill ADR 0019。0 は未評価）。登録のとき `offers emit` が入れる
+    score: int = 0
+    # 同じ種別が複数あるときは小さい方だけを出す。None なら点数から決める（点数が高いほど前）
+    rank: int | None = None
     approved_on: str = ""
 
     @property
     def ready(self) -> bool:
         return bool(self.url)
+
+    @property
+    def order(self) -> int:
+        """枠の中での並び。小さいほど前。
+
+        最初は選定の点数を初期値にする（根拠のある値が自動で入る）。掲載後は `/go/` の
+        クリック数と ASP の成果数を見て `rank` を手で入れ、そちらを優先する（ADR 0010）。
+        """
+        if self.rank is not None:
+            return self.rank
+        return max(1, 100 - self.score)
 
     @property
     def path(self) -> str:
@@ -238,9 +252,9 @@ def offers_for(placement: str, *, include_pending: bool = False) -> list[Offer]:
         if placement in o.placements and o.kind in allowed and (o.ready or include_pending)
     ]
     chosen: dict[str, Offer] = {}
-    for o in sorted(cands, key=lambda o: (not o.ready, o.rank, o.id)):
+    for o in sorted(cands, key=lambda o: (not o.ready, o.order, o.id)):
         chosen.setdefault(o.kind, o)
-    return sorted(chosen.values(), key=lambda o: (ALL_KINDS.index(o.kind), o.rank))
+    return sorted(chosen.values(), key=lambda o: (ALL_KINDS.index(o.kind), o.order))
 
 
 def placed(offer: Offer) -> list[str]:
