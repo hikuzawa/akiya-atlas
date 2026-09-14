@@ -72,7 +72,7 @@
       "rent_quote": null,
       "status_quote": null,
       "structure_quote": null,
-      "summary": "小才角地区の売買物件。価格250万円。",
+      "summary": "小才角地区の売買物件。価格2,500,000円。",
       "title": "小才角の売買物件"
     },
     {
@@ -87,7 +87,7 @@
       "rent_quote": null,
       "status_quote": null,
       "structure_quote": null,
-      "summary": "古満目地区の売買物件。価格50万円。",
+      "summary": "古満目地区の売買物件。価格500,000円。",
       "title": "古満目の売買物件"
     },
     {
@@ -117,7 +117,7 @@
       "rent_quote": null,
       "status_quote": null,
       "structure_quote": null,
-      "summary": "古満目地区の売買物件。価格150万円。",
+      "summary": "古満目地区の売買物件。価格1,500,000円。",
       "title": "古満目の売買物件"
     },
     {
@@ -192,7 +192,7 @@
       "rent_quote": null,
       "status_quote": null,
       "structure_quote": null,
-      "summary": "柏島地区の売買物件。価格30万円。",
+      "summary": "柏島地区の売買物件。価格300,000円。",
       "title": "柏島の売買物件"
     },
     {
@@ -387,7 +387,7 @@
       "rent_quote": null,
       "status_quote": null,
       "structure_quote": null,
-      "summary": "頭集地区の売買物件。価格550万円。",
+      "summary": "頭集地区の売買物件。価格5,500,000円。",
       "title": "頭集の売買物件"
     },
     {
@@ -432,7 +432,7 @@
       "rent_quote": null,
       "status_quote": null,
       "structure_quote": null,
-      "summary": "小才角地区の売買物件。価格380万円。",
+      "summary": "小才角地区の売買物件。価格3,800,000円。",
       "title": "小才角の売買物件"
     },
     {
@@ -507,7 +507,7 @@
       "rent_quote": null,
       "status_quote": null,
       "structure_quote": null,
-      "summary": "小才角地区の売買物件。価格60万円。",
+      "summary": "小才角地区の売買物件。価格600,000円。",
       "title": "小才角の売買物件"
     },
     {
@@ -552,7 +552,7 @@
       "rent_quote": null,
       "status_quote": null,
       "structure_quote": null,
-      "summary": "一切地区の売買物件。価格100万円。",
+      "summary": "一切地区の売買物件。価格1,000,000円。",
       "title": "一切の売買物件"
     },
     {
@@ -642,7 +642,7 @@
       "rent_quote": null,
       "status_quote": null,
       "structure_quote": null,
-      "summary": "姫ノ井地区の売買物件。価格100万円。応相談。",
+      "summary": "姫ノ井地区の売買物件。価格1,000,000円。応相談。",
       "title": "姫ノ井の売買物件"
     },
     {
@@ -702,7 +702,7 @@
       "rent_quote": null,
       "status_quote": null,
       "structure_quote": null,
-      "summary": "弘見地区の売買物件。価格350万円。",
+      "summary": "弘見地区の売買物件。価格3,500,000円。",
       "title": "弘見の売買物件"
     },
     {
@@ -807,7 +807,7 @@
       "rent_quote": null,
       "status_quote": null,
       "structure_quote": null,
-      "summary": "姫ノ井地区の売買物件。価格1080万円。",
+      "summary": "姫ノ井地区の売買物件。価格10,800,000円。",
       "title": "姫ノ井の売買物件"
     },
     {
@@ -912,8 +912,8 @@
       "rent_quote": "28,000円",
       "status_quote": null,
       "structure_quote": null,
-      "summary": "姫ノ井地区の特定優良賃貸住宅。月額28,000円。",
-      "title": "姫ノ井の町管理住宅"
+      "summary": "姫ノ井地区の町管理特定優良賃貸住宅。月額28,000円。",
+      "title": "姫ノ井の特定優良賃貸住宅"
     },
     {
       "address_quote": "鉾土",
@@ -927,8 +927,8 @@
       "rent_quote": "40,000円",
       "status_quote": null,
       "structure_quote": null,
-      "summary": "鉾土地区の中間管理住宅。月額40,000円。",
-      "title": "鉾土の町管理住宅"
+      "summary": "鉾土地区の町管理中間管理住宅。月額40,000円。",
+      "title": "鉾土の中間管理住宅"
     },
     {
       "address_quote": "鉾土",
@@ -942,7 +942,7 @@
       "rent_quote": "入居者の世帯所得により算定",
       "status_quote": null,
       "structure_quote": null,
-      "summary": "鉾土地区の公営住宅。家賃は入居者の世帯所得により算定。",
+      "summary": "鉾土地区の町管理公営住宅。家賃は入居者の世帯所得により算定。",
       "title": "鉾土の公営住宅"
     },
     {
@@ -957,7 +957,7 @@
       "rent_quote": "入居者の世帯所得により算定",
       "status_quote": null,
       "structure_quote": null,
-      "summary": "頭集地区の公営住宅。家賃は入居者の世帯所得により算定。",
+      "summary": "頭集地区の町管理公営住宅。家賃は入居者の世帯所得により算定。",
       "title": "頭集の公営住宅"
     },
     {
@@ -972,8 +972,8 @@
       "rent_quote": "30,000円",
       "status_quote": null,
       "structure_quote": null,
-      "summary": "成畑地区の中間管理住宅。月額30,000円。",
-      "title": "成畑の町管理住宅"
+      "summary": "成畑地区の町管理中間管理住宅。月額30,000円。",
+      "title": "成畑の中間管理住宅"
     },
     {
       "address_quote": "姫ノ井",
@@ -987,7 +987,7 @@
       "rent_quote": "入居者の世帯所得により算定",
       "status_quote": null,
       "structure_quote": null,
-      "summary": "姫ノ井地区の公営住宅。家賃は入居者の世帯所得により算定。",
+      "summary": "姫ノ井地区の町管理公営住宅。家賃は入居者の世帯所得により算定。",
       "title": "姫ノ井の公営住宅"
     },
     {
@@ -1002,8 +1002,8 @@
       "rent_quote": "30,000円",
       "status_quote": null,
       "structure_quote": null,
-      "summary": "姫ノ井地区の特定優良賃貸住宅。月額30,000円。",
-      "title": "姫ノ井の町管理住宅"
+      "summary": "姫ノ井地区の町管理特定優良賃貸住宅。月額30,000円。",
+      "title": "姫ノ井の特定優良賃貸住宅"
     },
     {
       "address_quote": "姫ノ井",
@@ -1017,8 +1017,8 @@
       "rent_quote": "30,000円",
       "status_quote": null,
       "structure_quote": null,
-      "summary": "姫ノ井地区の特定優良賃貸住宅。月額30,000円。",
-      "title": "姫ノ井の町管理住宅"
+      "summary": "姫ノ井地区の町管理特定優良賃貸住宅。月額30,000円。",
+      "title": "姫ノ井の特定優良賃貸住宅"
     },
     {
       "address_quote": "姫ノ井",
@@ -1032,7 +1032,7 @@
       "rent_quote": "入居者の世帯所得により算定",
       "status_quote": null,
       "structure_quote": null,
-      "summary": "姫ノ井地区の公営住宅。家賃は入居者の世帯所得により算定。",
+      "summary": "姫ノ井地区の町管理公営住宅。家賃は入居者の世帯所得により算定。",
       "title": "姫ノ井の公営住宅"
     },
     {
@@ -1047,7 +1047,7 @@
       "rent_quote": "入居者の世帯所得により算定",
       "status_quote": null,
       "structure_quote": null,
-      "summary": "弘見地区の公営住宅。家賃は入居者の世帯所得により算定。",
+      "summary": "弘見地区の町管理公営住宅。家賃は入居者の世帯所得により算定。",
       "title": "弘見の公営住宅"
     },
     {
@@ -1062,8 +1062,8 @@
       "rent_quote": "28,000円",
       "status_quote": null,
       "structure_quote": null,
-      "summary": "姫ノ井地区の特定優良賃貸住宅。月額28,000円。",
-      "title": "姫ノ井の町管理住宅"
+      "summary": "姫ノ井地区の町管理特定優良賃貸住宅。月額28,000円。",
+      "title": "姫ノ井の特定優良賃貸住宅"
     }
   ]
 }
