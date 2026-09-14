@@ -5,7 +5,7 @@ sources:
   operator: 高知市
   operator_kind: municipality
   official_url: https://www.city.kochi.kochi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '392014'
     name: 高知市
@@ -21,6 +21,16 @@ sources:
     quote: 公式ドメイン www.city.kochi.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kochi.kochi.jp/
     checked_on: '2026-09-14'
+  pages:
+  - url: https://www.city.kochi.kochi.jp/soshiki/103/mokukatsu.html
+    kind: subsidy
+  - url: https://www.city.kochi.kochi.jp/soshiki/186/r8tikudentikouhukettei.html
+    kind: subsidy
+  - url: https://www.city.kochi.kochi.jp/soshiki/58/mokuzouzyokyaku0504.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.kochi.kochi.jp
+  max_pages: 30
 - id: kochi-392022
   name: 室戸市空き家バンク
   operator: 室戸市
@@ -128,7 +138,7 @@ sources:
   operator: 須崎市
   operator_kind: municipality
   official_url: https://www.city.susaki.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '392065'
     name: 須崎市
@@ -144,6 +154,18 @@ sources:
     quote: 公式ドメイン www.city.susaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.susaki.lg.jp/
     checked_on: '2026-09-14'
+  pages:
+  - url: https://www.city.susaki.lg.jp/life/detail.php?hdnKey=5642
+    kind: subsidy
+  - url: https://www.city.susaki.lg.jp/life/detail.php?hdnKey=5568
+    kind: subsidy
+  - url: https://www.city.susaki.lg.jp/life/detail.php?hdnKey=5129
+    kind: subsidy
+  - url: https://www.city.susaki.lg.jp/life/detail.php?hdnKey=5960
+    kind: subsidy
+  allow_hosts:
+  - www.city.susaki.lg.jp
+  max_pages: 30
 - id: kochi-392081
   name: 宿毛市空き家バンク
   operator: 宿毛市
@@ -286,7 +308,7 @@ sources:
   operator: 奈半利町
   operator_kind: municipality
   official_url: https://www.town.nahari.kochi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '393029'
     name: 奈半利町
@@ -302,6 +324,12 @@ sources:
     quote: 公式ドメイン www.town.nahari.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nahari.kochi.jp/
     checked_on: '2026-09-14'
+  pages:
+  - url: https://www.town.nahari.kochi.jp/iju/dtl.php?hdnKey=1698
+    kind: subsidy
+  allow_hosts:
+  - www.town.nahari.kochi.jp
+  max_pages: 30
 - id: kochi-393037
   name: 田野町空き家バンク
   operator: 田野町
@@ -383,7 +411,7 @@ sources:
   operator: 馬路村
   operator_kind: municipality
   official_url: https://vill.umaji.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '393061'
     name: 馬路村
@@ -399,6 +427,12 @@ sources:
     quote: 公式ドメイン vill.umaji.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://vill.umaji.lg.jp/
     checked_on: '2026-09-14'
+  pages:
+  - url: https://vill.umaji.lg.jp/emigration/1252/
+    kind: subsidy
+  allow_hosts:
+  - vill.umaji.lg.jp
+  max_pages: 30
 - id: kochi-393070
   name: 芸西村空き家バンク
   operator: 芸西村
@@ -492,7 +526,7 @@ sources:
   operator: 土佐町
   operator_kind: municipality
   official_url: https://www.town.tosa.kochi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '393631'
     name: 土佐町
@@ -508,6 +542,18 @@ sources:
     quote: 公式ドメイン www.town.tosa.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.tosa.kochi.jp/
     checked_on: '2026-09-14'
+  pages:
+  - url: https://www.town.tosa.kochi.jp/life/detail.php?hdnKey=229
+    kind: subsidy
+  - url: https://www.town.tosa.kochi.jp/life/detail.php?hdnKey=221
+    kind: subsidy
+  - url: https://www.town.tosa.kochi.jp/life/detail.php?hdnKey=338
+    kind: subsidy
+  - url: https://www.town.tosa.kochi.jp/iju/info/detail.php?hdnKey=229
+    kind: subsidy
+  allow_hosts:
+  - www.town.tosa.kochi.jp
+  max_pages: 30
 - id: kochi-393649
   name: 大川村空き家バンク
   operator: 大川村
@@ -534,7 +580,7 @@ sources:
   operator: いの町
   operator_kind: municipality
   official_url: https://www.town.ino.kochi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '393860'
     name: いの町
@@ -550,6 +596,18 @@ sources:
     quote: 公式ドメイン www.town.ino.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ino.kochi.jp/
     checked_on: '2026-09-14'
+  pages:
+  - url: https://www.town.ino.kochi.jp/kurashi/kankyo_kankyo/12088/
+    kind: subsidy
+  - url: https://www.town.ino.kochi.jp/kurashi/kankyo_kankyo/12718/
+    kind: subsidy
+  - url: https://www.town.ino.kochi.jp/shigoto/nogyo/13877/
+    kind: subsidy
+  - url: https://www.town.ino.kochi.jp/shigoto/kensetsu/10940/
+    kind: subsidy
+  allow_hosts:
+  - www.town.ino.kochi.jp
+  max_pages: 30
 - id: kochi-393878
   name: 仁淀川町空き家バンク
   operator: 仁淀川町
@@ -783,7 +841,7 @@ sources:
   operator: 三原村
   operator_kind: municipality
   official_url: https://www.vill.mihara.kochi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '394271'
     name: 三原村
@@ -799,12 +857,18 @@ sources:
     quote: 公式ドメイン www.vill.mihara.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.mihara.kochi.jp/
     checked_on: '2026-09-14'
+  pages:
+  - url: https://www.vill.mihara.kochi.jp/life/detail.php?hdnKey=446
+    kind: subsidy
+  allow_hosts:
+  - www.vill.mihara.kochi.jp
+  max_pages: 30
 - id: kochi-394289
   name: 黒潮町空き家バンク
   operator: 黒潮町
   operator_kind: municipality
   official_url: https://www.town.kuroshio.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '394289'
     name: 黒潮町
@@ -820,3 +884,9 @@ sources:
     quote: 公式ドメイン www.town.kuroshio.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kuroshio.lg.jp/
     checked_on: '2026-09-14'
+  pages:
+  - url: https://www.town.kuroshio.lg.jp/pb/cont/509
+    kind: subsidy
+  allow_hosts:
+  - www.town.kuroshio.lg.jp
+  max_pages: 30

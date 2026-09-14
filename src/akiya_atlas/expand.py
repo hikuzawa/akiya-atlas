@@ -1012,7 +1012,9 @@ def finding_to_source_dict(f: MunicipalityFinding, *, prefecture_name: str) -> d
         "operator": m.name,
         "operator_kind": op_kind,
         "official_url": ("https://" + f.official_url + "/") if f.official_url else f.bank_url,
-        "policy": "crawl" if status == "available" else "link_only",
+        # 巡回してよいか（＝巡回するページがあるか）。物件一覧が取れるかは bank_status が持つ。
+        # 補助金のページだけを巡回する自治体もここで crawl になる（ADR 0013）
+        "policy": "crawl" if (status == "available" or f.subsidy_urls) else "link_only",
         "municipality": {
             "code": m.code,
             "name": m.name,
@@ -1035,6 +1037,7 @@ def finding_to_source_dict(f: MunicipalityFinding, *, prefecture_name: str) -> d
             "url": f.evidence_url or entry["official_url"],
             "checked_on": date.today().isoformat(),
         }
+    pages: list[dict] = []
     if status == "available" and f.bank_url:
         kind = (
             "listing_detail"
@@ -1051,11 +1054,13 @@ def finding_to_source_dict(f: MunicipalityFinding, *, prefecture_name: str) -> d
             follow.append({"pattern": f.detail_pattern, "kind": "listing_detail", "max_links": 60})
         if follow:
             page["follow"] = follow
-        pages = [page]
-        # 補助制度のページ。物件とは別の仕様で抽出する（spec.SUBSIDY_SPEC）
-        pages += [{"url": u, "kind": "subsidy"} for u in f.subsidy_urls]
+        pages.append(page)
+    # 補助制度のページ。物件とは別の仕様で抽出する（spec.SUBSIDY_SPEC）。
+    # 物件一覧が取れない自治体でも、公式サイトの補助金ページは巡回する（ADR 0013）
+    pages += [{"url": u, "kind": "subsidy"} for u in f.subsidy_urls]
+    if pages:
         entry["pages"] = pages
-        entry["allow_hosts"] = [host_of(f.bank_url)]
+        entry["allow_hosts"] = sorted({host_of(p["url"]) for p in pages})
         entry["max_pages"] = 30
     if externals:
         entry["external_links"] = [
@@ -1162,6 +1167,8 @@ def _finding_to_row(f: MunicipalityFinding) -> dict:
         "evidence_url": f.evidence_url,
         "cross_linked": f.cross_linked,
         "policy": str(f.policy),
+        # 物件一覧が取れるか（ADR 0013）。policy は「巡回してよいか」なので別に持つ
+        "bank_status": bank_status_of(f),
         "reason": f.reason,
         "proposed_action": f.proposed_action,
         "external_links": [
@@ -1396,7 +1403,9 @@ def collect_subsidy_pages(
     found_total = 0
     looked = 0
     for i, row in enumerate(rows):
-        if row.get("policy") != "crawl" or not row.get("bank_url"):
+        # 物件一覧が取れない自治体でも、公式サイトの補助金ページは探す（ADR 0013）。
+        # 運営主体を判定できていない pending は対象にしない
+        if row.get("policy") == "pending" or not (row.get("official_url") or row.get("bank_url")):
             continue
         looked += 1
         official = str(row.get("official_url") or "")
@@ -1483,7 +1492,11 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
         overrides = OfficialOverrides.load(ws, pref_slug)
         touched = False
         for i, row in enumerate(rows):
-            if row.get("policy") != "crawl":
+            # 物件一覧が取れる source だけを直す。補助金のページだけを巡回している自治体は、
+            # 物件が 0 件なのが正しい状態なので対象にしない（ADR 0013）
+            # 古い findings には bank_status が無いので、その場で計算し直す
+            status = row.get("bank_status") or bank_status_of(_row_to_finding(row))
+            if row.get("policy") != "crawl" or status != "available":
                 continue
             sid = f"{pref_slug}-{row.get('code')}"
             if wanted and sid not in wanted:

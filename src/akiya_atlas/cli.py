@@ -66,6 +66,30 @@ def _register(app: typer.Typer) -> None:
             for line in expand.collect_subsidy_pages(rt.ws, prefecture, client=client, limit=limit):
                 typer.echo(line)
 
+    @app.command("subsidy-backfill")
+    def subsidy_backfill_cmd(
+        only: Annotated[
+            list[str] | None,
+            typer.Option("--only", help="県名・スラッグ・2 桁コード（省略時は全県）"),
+        ] = None,
+        limit: Annotated[
+            int, typer.Option("--limit", help="1 自治体あたりに拾うページ数の上限")
+        ] = 4,
+        force: Annotated[bool, typer.Option("--force", help="済みの県もやり直す")] = False,
+        status: Annotated[bool, typer.Option("--status", help="進捗だけ出す")] = False,
+    ) -> None:
+        """県ごとに 補助制度のページの探索 → 巡回 → 抽出 を回す（再開可能）。"""
+        from akiya_atlas import subsidy_backfill
+
+        rt = commands.Runtime.open()
+        if status:
+            for line in subsidy_backfill.status_table(rt.ws):
+                typer.echo(line)
+            return
+        subsidy_backfill.run_subsidy_backfill(
+            rt, only=only, limit=limit, force=force, echo=typer.echo
+        )
+
     @app.command("official-urls")
     def official_urls_cmd(
         prefecture: Annotated[str, typer.Argument(help="都道府県名")],
