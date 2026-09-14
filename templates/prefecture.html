@@ -13,7 +13,7 @@
   {% set cells = [
     {"value": total|number, "unit": "件", "label": "掲載物件", "kind": "kaki"},
     {"value": stats.open_municipalities ~ " / " ~ stats.municipalities, "label": "物件を公開している市町村（巡回中 " ~ stats.crawled_municipalities ~ "）"},
-    {"value": stats.subsidy_municipalities|number, "unit": "市町村", "label": "移住・改修・解体の補助制度あり"}
+    {"value": stats.subsidy_municipalities|number, "unit": "市町村", "label": "本サイトが確認した補助制度あり（未調査の市町村を含みます）"}
   ] %}
   {% if stats.price_median %}
   {% set cells = cells + [{"value": stats.price_median|yen, "label": "売買価格の中央値（有償 " ~ stats.paid ~ " 件。最安 " ~ stats.price_min|yen ~ "）", "kind": "text", "bars": {"counts": stats.band_counts, "labels": stats.band_labels, "top": stats.band_top, "title": "売買価格の分布"}}] %}
@@ -95,7 +95,7 @@
     <summary>一覧表で見る <span class="count">（全 {{ municipalities|length }} 市町村）</span></summary>
     <div class="fold-body table-wrap">
       <table class="data-table">
-        <caption>市町村別の掲載状況と補助制度</caption>
+        <caption>市町村別の掲載状況と、本サイトが確認した補助制度</caption>
         <thead><tr><th scope="col">市町村</th><th scope="col">掲載</th><th scope="col">売買</th><th scope="col">賃貸</th><th scope="col">移住補助</th><th scope="col">改修補助</th><th scope="col">解体補助</th><th scope="col">最終取得</th></tr></thead>
         <tbody>
         {% for m in municipalities %}

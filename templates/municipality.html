@@ -29,7 +29,7 @@
     {% set cells = cells + [{"value": stats.built_min, "unit": "年", "label": "築年（1 件に記載）"}] %}
   {% endif %}
   {% if ns.kinds %}
-    {% set cells = cells + [{"label": "補助制度あり（" ~ subsidies|length ~ " 件）", "badges": ns.kinds}] %}
+    {% set cells = cells + [{"label": "本サイトが確認した補助制度（" ~ subsidies|length ~ " 件）", "badges": ns.kinds}] %}
   {% endif %}
   {% set cells = cells + [{"value": muni_row.last_fetched, "label": "最終取得（公式ページを毎日確認）", "kind": "text"}] %}
   {{ ui.stat_strip(cells, muni.name ~ "の掲載状況") }}
