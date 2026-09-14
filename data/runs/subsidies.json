@@ -7,7 +7,7 @@
         "workers": 8
       },
       "discover_requests": 137,
-      "done": "2026-09-14T12:33:47+00:00",
+      "done": "2026-09-14T20:16:30+00:00",
       "extract": {},
       "llm": {
         "cached_calls": 0,
@@ -16,11 +16,11 @@
         "input_tokens": 0,
         "output_tokens": 0
       },
-      "minutes": 6.9,
+      "minutes": 1.1,
       "municipalities": 15,
       "name": "徳島県",
       "subsidies": 42
     }
   },
-  "updated_at": "2026-09-14T12:33:47+00:00"
+  "updated_at": "2026-09-14T20:16:30+00:00"
 }

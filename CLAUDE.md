@@ -16,7 +16,7 @@ sitemill の最初の利用者。自治体が独自に運営する空き家バ�
 ## コマンド（このディレクトリで実行）
 - `uv sync` / `uv run pytest` / `uv run ruff check src tests`
 - `uv run sitemill discover|crawl|extract|heal|build|run|eval` / `uv run sitemill deploy --dry-run`（`run` は crawl→extract→heal→build。`--workers` でホスト並列数）
-- `uv run akiya-atlas expand <県>|rediscover <県> --code ...|official-urls <県> <URL>|backfill [--status]|takedowns|ad-check|ad-urls`（都道府県の自動発見、特定市町村の選び直し、県リンク集からの公式URL表、全国バックフィル、取り下げ依頼の取り込み）。初回バックフィルの手順は `docs/runbook/backfill.md`
+- `uv run akiya-atlas expand <県>|rediscover <県> --code ...|official-urls <県> <URL>|backfill [--status]|subsidy-pages <県>|subsidy-backfill [--status]|takedowns|ad-check|ad-urls`（都道府県の自動発見、特定市町村の選び直し、県リンク集からの公式URL表、全国バックフィル、補助制度ページの探索と全国収集、取り下げ依頼の取り込み）。初回バックフィルの手順は `docs/runbook/backfill.md`、補助制度の全国収集は `docs/runbook/subsidies.md`
 - 生成物の確認は `dist/` の HTML をブラウザペインで直接開くか、`uv run python -m http.server -d dist 8000`
 
 ## 守ること

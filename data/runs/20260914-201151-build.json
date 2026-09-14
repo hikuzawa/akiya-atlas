@@ -1,9 +1,9 @@
 {
   "ci": false,
-  "command": "crawl",
+  "command": "build",
   "errors": [],
   "extraction_metrics": null,
-  "finished_at": "2026-09-14T20:16:21Z",
+  "finished_at": "2026-09-14T20:12:23Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -13,11 +13,10 @@
   "notes": [],
   "service": "akiya-atlas",
   "stages": {
-    "crawl": {
-      "requests": 0,
-      "skipped_not_due": 15,
-      "workers": 8
+    "build": {
+      "files": 5987,
+      "pages": 5933
     }
   },
-  "started_at": "2026-09-14T20:16:19Z"
+  "started_at": "2026-09-14T20:11:51Z"
 }

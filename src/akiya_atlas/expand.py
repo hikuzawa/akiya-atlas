@@ -1384,12 +1384,19 @@ def _describe(f: MunicipalityFinding, old_url: str | None) -> str:
 
 
 def collect_subsidy_pages(
-    ws: Workspace, prefecture: str, *, client: PoliteClient, limit: int = 4
+    ws: Workspace,
+    prefecture: str,
+    *,
+    client: PoliteClient,
+    limit: int = 4,
+    workers: int = 1,
 ) -> list[str]:
-    """県内の各自治体の空き家バンクのページから補助制度のページを見つけ、巡回対象に足す。
+    """県内の各自治体の公式サイトから補助制度のページを見つけ、巡回対象に足す。
 
-    1 自治体につき 1 ページだけ取得する（バンクのページ）。見つかった URL は findings に残し、
+    1 自治体につき数ページだけ取得する。見つかった URL は findings に残し、
     sources の pages に kind=subsidy として出る。巡回と抽出は通常の日次に任せる。
+    市町村 ≒ 別ホストなので、市町村単位で並列に見る（発見と同じ。sitemill ADR 0013）。
+    1 ホストあたりの間隔は PoliteClient が守るので、並列にしても縮まらない。
     """
     from sitemill.store.jsonio import read_json
 
@@ -1399,19 +1406,33 @@ def collect_subsidy_pages(
     pref_name, pref_slug = munis[0].prefecture, munis[0].prefecture_slug
     data = read_json(_findings_path(ws, pref_slug)) or {"findings": []}
     rows: list[dict] = list(data["findings"])
-    lines: list[str] = []
-    found_total = 0
-    looked = 0
-    for i, row in enumerate(rows):
-        # 物件一覧が取れない自治体でも、公式サイトの補助金ページは探す（ADR 0013）。
-        # 運営主体を判定できていない pending は対象にしない
-        if row.get("policy") == "pending" or not (row.get("official_url") or row.get("bank_url")):
-            continue
-        looked += 1
+    # 物件一覧が取れない自治体でも、公式サイトの補助金ページは探す（ADR 0013）。
+    # 運営主体を判定できていない pending は対象にしない
+    targets = [
+        (i, row)
+        for i, row in enumerate(rows)
+        if row.get("policy") != "pending" and (row.get("official_url") or row.get("bank_url"))
+    ]
+
+    def look(item: tuple[int, dict]) -> tuple[int, dict, list[tuple[str, str]]]:
+        i, row = item
         official = str(row.get("official_url") or "")
         if official and not official.startswith("http"):
             official = "https://" + official + "/"
-        pages = find_subsidy_pages([str(row["bank_url"]), official], client, limit=limit)
+        starts = [str(row.get("bank_url") or ""), official]
+        return i, row, find_subsidy_pages(starts, client, limit=limit)
+
+    if workers > 1 and len(targets) > 1:
+        from concurrent.futures import ThreadPoolExecutor
+
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            results = list(pool.map(look, targets))
+    else:
+        results = [look(t) for t in targets]
+
+    lines: list[str] = []
+    found_total = 0
+    for i, row, pages in results:
         if not pages:
             continue
         rows[i] = {**row, "subsidy_urls": [u for u, _ in pages]}
@@ -1421,7 +1442,7 @@ def collect_subsidy_pages(
     if found_total:
         _write_rows(ws, pref_slug, pref_name, rows)
     lines.append(
-        f"{pref_name}: 巡回中の {looked} 自治体を見て、{found_total} ページを見つけた"
+        f"{pref_name}: 対象の {len(targets)} 自治体を見て、{found_total} ページを見つけた"
         f"（{sum(1 for r in rows if r.get('subsidy_urls'))} 自治体）"
     )
     return lines

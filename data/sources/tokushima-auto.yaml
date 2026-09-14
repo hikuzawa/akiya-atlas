@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tokushima.tokushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.tokushima.tokushima.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: tokushima-362026
   name: 鳴門市空き家バンク
   operator: 鳴門市
@@ -41,7 +41,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.naruto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.naruto.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.naruto.lg.jp/faq/365/
     kind: subsidy
@@ -74,7 +74,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.komatsushima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.komatsushima.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: tokushima-362042
   name: 阿南市空き家バンク
   operator: 阿南市
@@ -95,7 +95,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.anan.tokushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.anan.tokushima.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.anan.tokushima.jp/docs/2026021800038/
     kind: subsidy
@@ -128,7 +128,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yoshinogawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.yoshinogawa.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: tokushima-362069
   name: 阿波市空き家バンク
   operator: 阿波市
@@ -148,7 +148,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.awa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.awa.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.awa.lg.jp/docs/2025111300021/
     kind: listing_index
@@ -183,7 +183,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.mima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.mima.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.mima.lg.jp/iju/kurashi-docs/30291.html
     kind: subsidy
@@ -212,7 +212,7 @@ sources:
   operator_evidence:
     quote: 徳島県の市町村一覧に掲載された公式サイト（www.miyoshi.i-tokushima.jp）
     url: https://www.pref.tokushima.lg.jp/kenseijoho/kanrennochiiki/shichouson/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: tokushima-363014
   name: 勝浦町空き家バンク
   operator: 勝浦町
@@ -233,7 +233,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.katsuura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.katsuura.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.katsuura.lg.jp/docs/2026021000087/
     kind: subsidy
@@ -266,7 +266,7 @@ sources:
   operator_evidence:
     quote: 徳島県の市町村一覧に掲載された公式サイト（www.kamikatsu.jp）
     url: https://www.pref.tokushima.lg.jp/kenseijoho/kanrennochiiki/shichouson/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: tokushima-363219
   name: 佐那河内村空き家バンク
   operator: 佐那河内村
@@ -287,7 +287,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.sanagochi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.sanagochi.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: tokushima-363413
   name: 石井町空き家バンク
   operator: 石井町
@@ -308,7 +308,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ishii.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.ishii.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.ishii.lg.jp/docs/2025051200016/
     kind: subsidy
@@ -335,7 +335,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kamiyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kamiyama.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.kamiyama.lg.jp/docs/2025062500013/
     kind: subsidy
@@ -365,7 +365,7 @@ sources:
   operator_evidence:
     quote: 徳島県の市町村一覧に掲載された公式サイト（www.town.tokushima-naka.lg.jp）
     url: https://www.pref.tokushima.lg.jp/kenseijoho/kanrennochiiki/shichouson/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.tokushima-naka.lg.jp/iju/iinaka-kurashi/sumai/akiya/index.html
     kind: listing_index
@@ -393,7 +393,7 @@ sources:
   operator_evidence:
     quote: 徳島県の市町村一覧に掲載された公式サイト（www.town.tokushima-mugi.lg.jp）
     url: https://www.pref.tokushima.lg.jp/kenseijoho/kanrennochiiki/shichouson/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.tokushima-mugi.lg.jp/doc/2024112500010/
     kind: listing_index
@@ -423,7 +423,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.minami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.minami.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.minami.lg.jp/docs/4937966.html
     kind: listing_index
@@ -449,7 +449,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kaiyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kaiyo.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.kaiyo.lg.jp/docs/2016040400050/
     kind: listing_index
@@ -482,7 +482,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.matsushige.tokushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.matsushige.tokushima.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.matsushige.tokushima.jp/docs/2016032500010/file_contents/kijitu.jtd
     kind: subsidy
@@ -511,11 +511,11 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kitajima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kitajima.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
-  - url: https://www.town.kitajima.lg.jp/docs/5878357.html
-    kind: subsidy
   - url: https://www.town.kitajima.lg.jp/docs/5875045.html
+    kind: subsidy
+  - url: https://www.town.kitajima.lg.jp/docs/5878357.html
     kind: subsidy
   - url: https://www.town.kitajima.lg.jp/docs/5875344.html
     kind: subsidy
@@ -547,7 +547,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.aizumi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.aizumi.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.aizumi.lg.jp/docs/2018111400020/
     kind: subsidy
@@ -574,7 +574,7 @@ sources:
   operator_evidence:
     quote: 徳島県の市町村一覧に掲載された公式サイト（www.town.itano.tokushima.jp）
     url: https://www.pref.tokushima.lg.jp/kenseijoho/kanrennochiiki/shichouson/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: tokushima-364053
   name: 上板町空き家バンク
   operator: 上板町
@@ -595,7 +595,7 @@ sources:
   operator_evidence:
     quote: 徳島県の市町村一覧に掲載された公式サイト（www.townkamiita.jp）
     url: https://www.pref.tokushima.lg.jp/kenseijoho/kanrennochiiki/shichouson/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.townkamiita.jp/docs/2024051700038/
     kind: subsidy
@@ -624,7 +624,7 @@ sources:
   operator_evidence:
     quote: 徳島県の市町村一覧に掲載された公式サイト（www.town.tokushima-tsurugi.lg.jp）
     url: https://www.pref.tokushima.lg.jp/kenseijoho/kanrennochiiki/shichouson/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: tokushima-364894
   name: 東みよし町空き家バンク
   operator: 東みよし町
@@ -645,7 +645,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.higashimiyoshi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.higashimiyoshi.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.higashimiyoshi.lg.jp/docs/mokujuukyou-r1.html
     kind: subsidy

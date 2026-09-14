@@ -72,10 +72,15 @@ def run_subsidy_backfill(
     only: Sequence[str] | None = None,
     limit: int = 4,
     force: bool = False,
+    workers: int | None = None,
     echo: Callable[[str], None] = print,
 ) -> dict[str, Any]:
-    """県を順に処理し、進捗を都度保存する。1 県で失敗しても止めない。"""
+    """県を順に処理し、進捗を都度保存する。1 県で失敗しても止めない。
+
+    県の中では市町村単位で並列に動く（探索・巡回・抽出とも）。県は順に処理する。
+    """
     ws = rt.ws
+    workers = max(1, workers or ws.site.crawl.max_workers)
     prog = load_progress(ws)
     table = prog["prefectures"]
     failed: list[str] = []
@@ -87,14 +92,14 @@ def run_subsidy_backfill(
         t0 = time.monotonic()
         try:
             with rt.client() as client:
-                lines = collect_subsidy_pages(ws, name, client=client, limit=limit)
+                lines = collect_subsidy_pages(ws, name, client=client, limit=limit, workers=workers)
                 found_requests = client.request_count
             for line in lines[-1:]:
                 echo(f"{name}: {line}")
             ids = subsidy_source_ids(ws, slug)
             if ids:
-                crawl = commands.cmd_crawl(rt, ids)
-                extract = commands.cmd_extract(rt, ids)
+                crawl = commands.cmd_crawl(rt, ids, workers=workers)
+                extract = commands.cmd_extract(rt, ids, workers=workers)
                 llm = extract.llm.model_dump() if extract.llm else {}
                 cost = (
                     llm.get("input_tokens", 0) / 1e6 * PRICE_IN

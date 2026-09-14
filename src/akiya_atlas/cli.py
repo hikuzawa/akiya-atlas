@@ -59,12 +59,22 @@ def _register(app: typer.Typer) -> None:
         limit: Annotated[
             int, typer.Option("--limit", help="1 自治体あたりに拾うページ数の上限")
         ] = 4,
+        workers: Annotated[
+            int, typer.Option("--workers", help="市町村の並列数（既定は site.toml の max_workers）")
+        ] = 0,
     ) -> None:
         """空き家バンクのページから補助制度のページを見つけ、巡回の対象に足す。"""
         rt = commands.Runtime.open()
         with rt.client() as client:
-            for line in expand.collect_subsidy_pages(rt.ws, prefecture, client=client, limit=limit):
-                typer.echo(line)
+            lines = expand.collect_subsidy_pages(
+                rt.ws,
+                prefecture,
+                client=client,
+                limit=limit,
+                workers=workers or rt.ws.site.crawl.max_workers,
+            )
+        for line in lines:
+            typer.echo(line)
 
     @app.command("subsidy-backfill")
     def subsidy_backfill_cmd(
@@ -77,6 +87,9 @@ def _register(app: typer.Typer) -> None:
         ] = 4,
         force: Annotated[bool, typer.Option("--force", help="済みの県もやり直す")] = False,
         status: Annotated[bool, typer.Option("--status", help="進捗だけ出す")] = False,
+        workers: Annotated[
+            int, typer.Option("--workers", help="市町村の並列数（既定は site.toml の max_workers）")
+        ] = 0,
     ) -> None:
         """県ごとに 補助制度のページの探索 → 巡回 → 抽出 を回す（再開可能）。"""
         from akiya_atlas import subsidy_backfill
@@ -87,7 +100,7 @@ def _register(app: typer.Typer) -> None:
                 typer.echo(line)
             return
         subsidy_backfill.run_subsidy_backfill(
-            rt, only=only, limit=limit, force=force, echo=typer.echo
+            rt, only=only, limit=limit, force=force, workers=workers or None, echo=typer.echo
         )
 
     @app.command("official-urls")
