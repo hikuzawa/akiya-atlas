@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{# 都道府県ごとの所有者向けページ（ADR 0012）。全国版（/owners/）の焼き直しにしない。
+   県内の補助制度・窓口・件数と、その県で使える相談先だけを置く #}
+{% block content %}
+<nav class="breadcrumb" aria-label="現在地"><ol><li><a href="/">トップ</a></li><li><a href="/owners/">所有者の方へ</a></li><li>{{ prefecture.name }}</li></ol></nav>
+<div class="page-head">
+  <h1>{{ prefecture.name }}で空き家をお持ちの方へ</h1>
+  <p class="lead">県内の自治体の補助制度と、空き家バンクの窓口をまとめています。売る・貸す・解体するの流れは <a href="/owners/">全国共通の案内</a> をご覧ください。法律・税務・査定額の個別のご相談は、専門家や自治体の窓口へ。</p>
+  {# 広告表記は見出しの直後（ファーストビュー）。ad_check.py が位置を検査する #}
+  {{ ui.ad_notice(ad_offers) }}
+  {{ ui.stat_strip([
+    {"value": stats.with_bank ~ " / " ~ stats.municipalities, "label": "空き家バンクのある市町村"},
+    {"value": stats.listings|number, "unit": "件", "label": "本サイトが確認した掲載物件"},
+    {"value": stats.subsidy_municipalities|number, "unit": "市町村", "label": "補助制度あり"}
+  ], prefecture.name ~ "の数字") }}
+</div>
+
+{% if slots["owners-pref-consult"] %}
+<section class="section" aria-labelledby="consult-title">
+  {{ ui.section_head("consult-title", "この地域の相談先", "「広告」と付いたものはアフィリエイトリンクです") }}
+  {{ ui.offer_slot(slots["owners-pref-consult"], "owners-pref-consult", prefecture.name ~ "を対象にしている事業者です。") }}
+</section>
+{% endif %}
+
+<section class="section" aria-labelledby="subsidy-title">
+  {{ ui.section_head("subsidy-title", prefecture.name ~ "の補助制度", "本サイトが確認したもの。出典と確認日付き") }}
+  {% if subsidies %}
+  {{ ui.subsidy_cards(subsidies, with_muni=true) }}
+  {% else %}
+  <p class="surface">この県で確認できた補助制度はまだありません。市町村の窓口にお問い合わせください。</p>
+  {% endif %}
+</section>
+
+<section class="section" aria-labelledby="window-title">
+  {{ ui.section_head("window-title", "空き家バンクの窓口", "登録・相談は各市町村の窓口へ") }}
+  <ul class="muni-cards">
+    {% for m in municipalities %}{{ ui.muni_card(m) }}{% endfor %}
+  </ul>
+</section>
+{% endblock %}

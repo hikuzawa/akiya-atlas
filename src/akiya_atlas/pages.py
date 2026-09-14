@@ -496,6 +496,26 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
     all_active = [ls for m in ds.municipalities for ls in _listings(m, active_only=True)]
     all_sources = [link for m in ds.municipalities for link in source_links(ctx, m)]
 
+    # 都道府県ごとの所有者向けページ（ADR 0012）。県内の補助制度か、その県だけの広告案件が
+    # あるときにだけ作る。中身の無いページを 47 枚作らない
+    pref_subsidies: dict[str, list[dict[str, Any]]] = {
+        slug: [
+            {"muni": m.name, "muni_url": f"/{m.path}", **sub.model_dump(mode="json")}
+            for m in ds.municipalities_in(slug)
+            for sub in m.subsidies
+        ]
+        for slug, _ in ds.prefectures()
+    }
+    owner_pages: dict[str, str] = {
+        slug: name
+        for slug, name in ds.prefectures()
+        if pref_subsidies[slug] or affiliates.offers_for("owners-pref-consult", pref=name)
+    }
+
+    def _owners_url(pref_slug: str) -> str:
+        """その県の所有者向けページ。無ければ全国のページに送る。"""
+        return f"/owners/{pref_slug}/" if pref_slug in owner_pages else "/owners/"
+
     pref_rows = []
     for slug, name in ds.prefectures():
         munis = ds.municipalities_in(slug)
@@ -614,6 +634,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                     "chart_built": built_chart(f"{muni.name} 築年の分布", active),
                     "min_points": MIN_CHART_POINTS,
                     "no_listings_reason": no_listings_reason(ctx, muni),
+                    "owners_url": _owners_url(muni.prefecture_slug),
                 },
                 trust_signals=trust(
                     ctx,
@@ -641,6 +662,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         "listing": ls,
                         "row": listing_row(muni, ls),
                         "facts": fact_rows(ls),
+                        "owners_url": _owners_url(muni.prefecture_slug),
                         "map": listing_map(ctx, muni, ls),
                         "fetched_at": datetime_ja(_dt(prov.get("fetched_at"))),
                         "extractor": (prov.get("extractor") or {}).get("model"),
@@ -690,6 +712,48 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
             priority=0.9,
         )
     )
+
+    # 都道府県ごとの所有者向けページ（ADR 0012）
+    for slug, name in owner_pages.items():
+        munis = ds.municipalities_in(slug)
+        with_bank = [m for m in munis if m.bank_url]
+        pref_active = [ls for m in munis for ls in _listings(m, active_only=True)]
+        path = f"/owners/{slug}/"
+        pages.append(
+            _page(
+                ctx,
+                path=f"owners/{slug}/index.html",
+                template="owners_pref.html",
+                title=f"{name}で空き家をお持ちの方へ（補助制度と相談先）",
+                description=(
+                    f"{name}の空き家の所有者向けに、県内の自治体の補助制度と"
+                    "空き家バンクの窓口をまとめました。"
+                ),
+                context={
+                    "prefecture": {"slug": slug, "name": name},
+                    "subsidies": pref_subsidies[slug],
+                    "municipalities": [muni_row(ctx, m) for m in with_bank],
+                    "stats": {
+                        "listings": len(pref_active),
+                        "municipalities": len(munis),
+                        "with_bank": len(with_bank),
+                        "subsidy_municipalities": sum(1 for m in munis if m.has_subsidy),
+                    },
+                    "slots": {
+                        "owners-pref-consult": affiliates.offers_for(
+                            "owners-pref-consult", pref=name
+                        )
+                    },
+                    "ad_offers": affiliates.page_offers(path, pref=name, pref_slug=slug),
+                },
+                trust_signals=trust(
+                    ctx,
+                    sources=[link for m in munis for link in source_links(ctx, m)],
+                    count=len(pref_active),
+                ),
+                priority=0.7,
+            )
+        )
     # 広告の転送ページ（ADR 0010）。1 枠 1 枚。noindex なので sitemap には出ない
     for target in affiliates.go_targets():
         pages.append(

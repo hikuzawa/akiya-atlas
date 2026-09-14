@@ -74,7 +74,7 @@
   <h2 id="owner-title">この地域に空き家をお持ちの方へ</h2>
   {# 物件ページは購入・入居を検討する人が読むページなので広告は置かない（ADR 0010）。
      広告リンクが無いので広告表記も出さない。所有者向けの導線は /owners/ に集約する #}
-  <p>査定・解体の流れと補助制度を <a href="/owners/">所有者向けの案内</a> にまとめています。</p>
+  <p>査定・解体の流れと補助制度を <a href="{{ owners_url }}">所有者向けの案内</a> にまとめています。</p>
 </section>
 
 <p class="meta narrow" style="margin-top: 24px">取得日時: {{ fetched_at }}{% if extractor %} ／ 抽出: {{ extractor }}（引用の検証と数値化はプログラムで実施）{% endif %}</p>

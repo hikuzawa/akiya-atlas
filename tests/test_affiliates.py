@@ -214,6 +214,62 @@ def test_check_reads_a_tracking_url_with_several_parameters(
     assert problems == [] and "katazuke-center" in summary
 
 
+def test_a_region_limited_offer_shows_only_on_its_prefecture(
+    ws: Workspace, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """対応地域を持つ案件は、その県の所有者向けページにだけ出る（ADR 0012）。"""
+    local = Offer(
+        id="katazuke-nagano",
+        label="長野の空き家片付け",
+        kind=affiliates.KIND_KATAZUKE,
+        description="県内の片づけ・残置物撤去の相談先。",
+        asp="a8",
+        advertiser="テスト事業者",
+        url=TRACKING,
+        regions=("長野県",),
+        region_quote="長野県内のみ対応",
+        placements=("owners-pref-consult",),
+    )
+    monkeypatch.setattr(affiliates, "OFFERS", (local,))
+    commands.cmd_build(commands.Runtime(ws=ws, service=service))
+    dist = ws.dist_dir
+
+    pref = (dist / "owners/nagano/index.html").read_text(encoding="utf-8")
+    assert "/go/katazuke-nagano/owners-pref-consult/" in pref
+    assert "data-ad-notice" in pref  # 広告が出るページには表記を出す
+    nationwide = (dist / "owners/index.html").read_text(encoding="utf-8")
+    assert "/go/katazuke-nagano/" not in nationwide  # 全国のページには出さない
+    assert "data-ad-notice" not in nationwide
+
+    problems, _ = ad_check.check(dist)
+    assert problems == []
+    urls = [u for _, u in ad_check.ad_urls(dist, "https://akiya-atlas.com")]
+    assert "https://akiya-atlas.com/owners/nagano/" in urls
+
+
+def test_offers_for_prefers_a_local_offer_over_a_nationwide_one() -> None:
+    """同じ種別なら、その県の案件を全国対応より先に採る（ADR 0012）。"""
+    base = next(o for o in affiliates.OFFERS if o.id == "katazuke-center")
+    everywhere = Offer(**{**vars(base), "id": "zenkoku", "url": TRACKING, "score": 90})
+    local = Offer(
+        **{
+            **vars(base),
+            "id": "nagano-only",
+            "url": TRACKING,
+            "score": 40,
+            "regions": ("長野県",),
+            "placements": ("owners-pref-consult",),
+        }
+    )
+    everywhere = Offer(**{**vars(everywhere), "placements": ("owners-pref-consult",)})
+    with pytest.MonkeyPatch.context() as mp:
+        mp.setattr(affiliates, "OFFERS", (everywhere, local))
+        chosen = affiliates.offers_for("owners-pref-consult", pref="長野県")
+        assert [o.id for o in chosen] == ["nagano-only"]  # 点数が低くても地元が先
+        other = affiliates.offers_for("owners-pref-consult", pref="愛知県")
+        assert [o.id for o in other] == ["zenkoku"]  # 対象外の県では全国対応に落ちる
+
+
 def test_check_stops_the_build_when_the_disclosure_is_missing(
     ws: Workspace, monkeypatch: pytest.MonkeyPatch
 ) -> None:

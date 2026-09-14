@@ -82,9 +82,18 @@ class Placement:
     """広告を置ける枠。どのページのどの文脈に、どの種別を置けるかを決める（ADR 0010）。"""
 
     id: str
-    page_path: str  # 掲載されるページの URL パス。掲載 URL の届け出と検査に使う
+    # 掲載されるページの URL パス。掲載 URL の届け出と検査に使う。
+    # `{pref}` を含む枠は都道府県ごとのページに出る（ADR 0012）
+    page_path: str
     label: str  # 人が読む説明
     kinds: tuple[str, ...]  # この枠に置いてよい種別
+
+    @property
+    def per_prefecture(self) -> bool:
+        return "{pref}" in self.page_path
+
+    def path_for(self, pref_slug: str = "") -> str:
+        return self.page_path.format(pref=pref_slug) if self.per_prefecture else self.page_path
 
 
 PLACEMENTS: tuple[Placement, ...] = (
@@ -102,6 +111,8 @@ PLACEMENTS: tuple[Placement, ...] = (
     Placement(
         "owners-renovation", "/owners/", "「6 つの選択肢」の住む・貸すの文脈", (KIND_REFORM,)
     ),
+    # 都道府県ごとの所有者向けページ（ADR 0012）。地域限定の案件はここにだけ出す
+    Placement("owners-pref-consult", "/owners/{pref}/", "都道府県ページの「相談先」", ALL_KINDS),
 )
 PLACEMENT_BY_ID = {p.id: p for p in PLACEMENTS}
 
@@ -127,6 +138,9 @@ class Offer:
     placements: tuple[str, ...] = ()
     # 選定ツールの点数（sitemill ADR 0019。0 は未評価）。登録のとき `offers emit` が入れる
     score: int = 0
+    # 対応する都道府県名。空なら全国対応（ADR 0012）。「首都圏」のような語は登録時に人が展開する
+    regions: tuple[str, ...] = ()
+    region_quote: str = ""  # 対応エリアの原文。推測で広げないための根拠
     # 同じ種別が複数あるときは小さい方だけを出す。None なら点数から決める（点数が高いほど前）
     rank: int | None = None
     approved_on: str = ""
@@ -238,9 +252,13 @@ def active_offers() -> list[Offer]:
     return [o for o in OFFERS if o.ready]
 
 
-def offers_for(placement: str, *, include_pending: bool = False) -> list[Offer]:
-    """枠に出す案件。同じ種別は rank の小さい 1 件だけに絞る（ADR 0010）。
+def offers_for(
+    placement: str, *, pref: str | None = None, include_pending: bool = False
+) -> list[Offer]:
+    """枠に出す案件。同じ種別は 1 件だけに絞る（ADR 0010）。
 
+    `pref` は都道府県名。対応地域を持つ案件はその県のページにだけ出し、同じ種別なら全国対応より
+    先に採る（ADR 0012）。地域限定が無ければ全国対応に落ち、どちらも無ければその種別は出さない。
     include_pending=True のときは契約前の案件も「準備中」として返す（相談先の一覧）。
     """
     if placement not in PLACEMENT_BY_ID:
@@ -249,12 +267,19 @@ def offers_for(placement: str, *, include_pending: bool = False) -> list[Offer]:
     cands = [
         o
         for o in OFFERS
-        if placement in o.placements and o.kind in allowed and (o.ready or include_pending)
+        if placement in o.placements
+        and o.kind in allowed
+        and (o.ready or include_pending)
+        and (not o.regions or (pref is not None and pref in o.regions))
     ]
+
+    def _local(o: Offer) -> int:
+        return 0 if o.regions else 1  # その県の案件を先に
+
     chosen: dict[str, Offer] = {}
-    for o in sorted(cands, key=lambda o: (not o.ready, o.order, o.id)):
+    for o in sorted(cands, key=lambda o: (not o.ready, _local(o), o.order, o.id)):
         chosen.setdefault(o.kind, o)
-    return sorted(chosen.values(), key=lambda o: (ALL_KINDS.index(o.kind), o.order))
+    return sorted(chosen.values(), key=lambda o: (ALL_KINDS.index(o.kind), _local(o), o.order))
 
 
 def placed(offer: Offer) -> list[str]:
@@ -262,13 +287,16 @@ def placed(offer: Offer) -> list[str]:
     return [p for p in offer.placements if offer.ready and p in PLACEMENT_BY_ID]
 
 
-def page_offers(page_path: str) -> list[Offer]:
-    """そのページに広告リンクが出る案件。広告表記を出すかの判断に使う。"""
+def page_offers(page_path: str, *, pref: str | None = None, pref_slug: str = "") -> list[Offer]:
+    """そのページに広告リンクが出る案件。広告表記を出すかの判断に使う。
+
+    都道府県ごとのページでは `pref`（県名）と `pref_slug`（URL の断片）を渡す（ADR 0012）。
+    """
     seen: dict[str, Offer] = {}
     for p in PLACEMENTS:
-        if p.page_path != page_path:
+        if p.path_for(pref_slug) != page_path:
             continue
-        for o in offers_for(p.id):
+        for o in offers_for(p.id, pref=pref):
             seen[o.id] = o
     return list(seen.values())
 

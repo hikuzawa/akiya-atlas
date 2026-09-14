@@ -144,21 +144,39 @@ def _check_direct_links(files: dict[str, str]) -> list[str]:
     return problems
 
 
+def pages_of(placement: affiliates.Placement, by_path: dict[str, str]) -> list[str]:
+    """その枠が置かれているページのパス。
+
+    都道府県ごとの枠（`/owners/{pref}/`）は県の数だけページがあり、しかも地域限定の案件は
+    その県のページにしか出ない（ADR 0012）。生成物から実際にあるページを拾う。
+    """
+    if not placement.per_prefecture:
+        return [placement.page_path] if placement.page_path in by_path else []
+    prefix, suffix = placement.page_path.split("{pref}")
+    return sorted(
+        path
+        for path in by_path
+        if path != prefix and path.startswith(prefix) and path.endswith(suffix)
+    )
+
+
 def _check_coverage(dist: Path, files: dict[str, str]) -> list[str]:
     """宣言した枠が実際に出ているか、転送ページが生成されているか。"""
     problems: list[str] = []
     by_path = {_url_path(rel): html for rel, html in files.items()}
     for target in affiliates.go_targets():
-        page = by_path.get(target.placement.page_path)
-        if page is None:
+        paths = pages_of(target.placement, by_path)
+        if not paths:
             problems.append(
                 f"{target.placement.page_path} が生成されていない"
                 f"（{target.offer.id} の枠 {target.placement.id} の掲載先）"
             )
-        elif target.url_path not in page:
+        elif not any(target.url_path in by_path[path] for path in paths):
+            # 都道府県ごとの枠では、地域限定の案件はその県のページにだけ出る。
+            # どのページにも出ていなければ宣言と食い違っている
+            where = target.placement.page_path if len(paths) > 1 else paths[0]
             problems.append(
-                f"{target.placement.page_path}: {target.offer.id} の枠 "
-                f"{target.placement.id} のリンクが出ていない"
+                f"{where}: {target.offer.id} の枠 {target.placement.id} のリンクが出ていない"
             )
         go_file = dist / target.url_path.strip("/") / "index.html"
         if not go_file.is_file():
@@ -244,9 +262,9 @@ def ad_urls(dist: Path, base_url: str, *, offer_id: str | None = None) -> list[t
         for target in affiliates.go_targets():
             if target.offer.id != offer.id:
                 continue
-            page = target.placement.page_path
-            if page not in paths and target.url_path in by_path.get(page, ""):
-                paths.append(page)
+            for page in pages_of(target.placement, by_path):
+                if page not in paths and target.url_path in by_path[page]:
+                    paths.append(page)
             paths.append(target.url_path)
         for p in dict.fromkeys(paths):
             out.append((offer, base + p))

@@ -205,7 +205,15 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
     ]
     for rel in expected:
         assert (dist / rel).is_file(), rel
-    assert report.stages["build"]["pages"] == 16  # 公開中 2 案件の転送ページ 4 枚を含む（ADR 0010）
+    # 転送ページ 4 枚（公開中 2 案件）と、長野県の所有者向けページ 1 枚を含む（ADR 0010・0012）
+    assert report.stages["build"]["pages"] == 17
+
+    # 補助制度のある県には所有者向けページを作り、市町村ページの導線をそちらに向ける（ADR 0012）
+    pref_owners = (dist / "owners/nagano/index.html").read_text(encoding="utf-8")
+    assert "長野県で空き家をお持ちの方へ" in pref_owners and "空き家改修補助" in pref_owners
+    assert "data-ad-notice" not in pref_owners  # その県の広告案件がまだ無いので表記も出さない
+    muni_page = (dist / "nagano/202193-tomi/index.html").read_text(encoding="utf-8")
+    assert 'href="/owners/nagano/"' in muni_page
 
     listing = (dist / "nagano/202193-tomi/322/index.html").read_text(encoding="utf-8")
     assert (
