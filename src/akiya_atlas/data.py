@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import hashlib
+import logging
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
@@ -13,8 +15,10 @@ from sitemill.models import Source
 from sitemill.settings import Workspace
 from sitemill.store.records import RecordStore
 
-from akiya_atlas.schema import Listing, Municipality
+from akiya_atlas.schema import Listing, Municipality, normalize_listing_no
 from akiya_atlas.subsidies import load_subsidies
+
+log = logging.getLogger(__name__)
 
 
 def load_entries(ws: Workspace) -> list[dict[str, Any]]:
@@ -66,7 +70,29 @@ def load_listings(ws: Workspace, source_id: str) -> list[Listing]:
             out.append(Listing.model_validate(row))
         except ValidationError as e:  # 壊れた行は捨てずに警告として残す
             raise ValueError(f"{source_id}: レコードが不正 ({row.get('record_id')}): {e}") from e
+    _make_slugs_unique(out)
     return out
+
+
+def _make_slugs_unique(rows: list[Listing]) -> None:
+    """同じ自治体でスラグがぶつかる物件に、番号からのしるしを足す。
+
+    記号を落とすと同じ綴りになる番号が実在する（砂川市の「H30-15」と「(H30-15)」）。
+    ぶつかったままだとページのパスが重なってビルドが止まるので、ここで分ける。
+    **先に見つけた物件の URL は変えない**（公開済みの URL を動かさないため）。あとから
+    来たほうに、番号そのものから作ったしるしを足す。
+    """
+    groups: dict[str, list[Listing]] = {}
+    for ls in rows:
+        groups.setdefault(ls.slug, []).append(ls)
+    for slug, group in groups.items():
+        if len(group) < 2:
+            continue
+        group.sort(key=lambda ls: (ls.first_seen_at or "9999", ls.record_id))
+        for ls in group[1:]:
+            mark = hashlib.sha1(normalize_listing_no(ls.listing_no).encode("utf-8")).hexdigest()[:4]
+            ls.slug_uniq = f"{slug}-{mark}"
+            log.warning("スラグが重なったので分けた: %s → %s", slug, ls.slug_uniq)
 
 
 @dataclass

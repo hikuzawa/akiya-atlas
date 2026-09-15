@@ -401,6 +401,27 @@ def test_page_says_not_yet_imported_when_the_listing_exists_but_we_read_nothing(
     assert not plain.extract_pending
 
 
+def test_numbers_that_collapse_to_the_same_slug_get_separate_pages(ws: Workspace) -> None:
+    """記号を落とすと同じ綴りになる物件番号でも、ページのパスは分かれる。
+
+    砂川市に「H30-15」と「(H30-15)」が並んだときに日次のビルドが止まった。先に見つけた
+    ほうの URL は変えず、あとから来たほうにしるしを足す。
+    """
+    rows = []
+    for no, seen in (("H30-15", "2026-09-01"), ("(H30-15)", "2026-09-12")):
+        row = _listing("nagano-tomi", "202193", no)
+        row["first_seen_at"] = f"{seen}T00:00:00+00:00"
+        rows.append(row)
+    (ws.data_dir / "records" / "nagano-tomi.jsonl").write_text(
+        "\n".join(json.dumps(r, ensure_ascii=False) for r in rows) + "\n", encoding="utf-8"
+    )
+    commands.cmd_build(commands.Runtime(ws=ws, service=service))  # パスが重なれば失敗する
+    dist = ws.dist_dir / "nagano" / "202193-tomi"
+    assert (dist / "h30-15" / "index.html").is_file()  # 先に見つけたほうは変わらない
+    later = [d.name for d in dist.iterdir() if d.name.startswith("h30-15-")]
+    assert len(later) == 1, later
+
+
 def test_takedown_hides_the_listing_from_pages_and_search(ws: Workspace) -> None:
     """取り下げ依頼のあったページは次のビルドから消える（Issue を閉じれば戻る）。"""
     import json as _json
