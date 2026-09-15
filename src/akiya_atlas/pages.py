@@ -248,6 +248,27 @@ def operator_info(ws: Workspace) -> OperatorInfo:
     )
 
 
+# 信頼ブロックに並べる一次情報リンクの上限。全件は /data/ の出典一覧にある。
+# sitemill の検査（build/trust.py）が見るのは data-sitemill-trust の有無だけで、
+# 出典の列挙は要求していない。全件を並べると県ページで footer が 7,331px になり、
+# 本文（7,549px）と同じ大きさになっていた
+TRUST_SOURCES_SHOWN = 5
+DATA_PAGE_PATH = "/data/"
+
+
+def trust_sources(links: list[SourceLink]) -> list[SourceLink]:
+    """信頼ブロックに出す出典。最近確認したものを数件出し、全件は出典一覧へ送る。
+
+    代表を「最近確認した順」にするのは、信頼シグナルの目的が「いつの情報か」を示すことだから。
+    """
+    if len(links) <= TRUST_SOURCES_SHOWN + 1:
+        return links
+    fresh = sorted(links, key=lambda x: (x.fetched_at is not None, x.fetched_at), reverse=True)
+    shown = fresh[:TRUST_SOURCES_SHOWN]
+    shown.append(SourceLink(label=f"出典一覧（全 {len(links)} 件）", url=DATA_PAGE_PATH))
+    return shown
+
+
 def source_links(ctx: Ctx, muni: Municipality) -> list[SourceLink]:
     src = ctx.ds.by_source.get(muni.id)
     links: list[SourceLink] = []
@@ -577,7 +598,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                 ],
                 "chart_counts": count_chart("市町村別の掲載件数", ds.municipalities, ds),
             },
-            trust_signals=trust(ctx, sources=all_sources, count=len(all_active)),
+            trust_signals=trust(ctx, sources=trust_sources(all_sources), count=len(all_active)),
             priority=1.0,
             changefreq="daily",
         )
@@ -611,7 +632,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                 },
                 trust_signals=trust(
                     ctx,
-                    sources=[link for m in munis for link in source_links(ctx, m)],
+                    sources=trust_sources([link for m in munis for link in source_links(ctx, m)]),
                     count=len(active),
                 ),
                 priority=0.8,
@@ -718,7 +739,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                 # 広告表記の有無はこのページに実際に出る広告リンクで決める
                 "ad_offers": affiliates.page_offers("/owners/"),
             },
-            trust_signals=trust(ctx, sources=all_sources, count=len(subsidies)),
+            trust_signals=trust(ctx, sources=trust_sources(all_sources), count=len(subsidies)),
             priority=0.9,
         )
     )
@@ -758,7 +779,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                 },
                 trust_signals=trust(
                     ctx,
-                    sources=[link for m in munis for link in source_links(ctx, m)],
+                    sources=trust_sources([link for m in munis for link in source_links(ctx, m)]),
                     count=len(pref_active),
                 ),
                 priority=0.7,
@@ -788,7 +809,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
             title="このサイトについて・運営者情報",
             description="空き家アトラスの運営者情報、掲載方針、巡回ボットについて。",
             context={"user_agent": ws.site.user_agent},
-            trust_signals=trust(ctx, sources=all_sources, count=len(all_active)),
+            trust_signals=trust(ctx, sources=trust_sources(all_sources), count=len(all_active)),
             priority=0.3,
             changefreq="monthly",
         )
@@ -801,7 +822,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
             title="データについて（出典・取得日時・ライセンス）",
             description="掲載データの出典、取得日時、巡回方針、ライセンス判定の一覧。",
             context={"sources": [source_row(ctx, s) for s in ds.sources]},
-            trust_signals=trust(ctx, sources=all_sources, count=len(all_active)),
+            trust_signals=trust(ctx, sources=trust_sources(all_sources), count=len(all_active)),
             priority=0.3,
         )
     )
@@ -813,7 +834,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
             title="ページが見つかりません",
             description="お探しのページは見つかりませんでした。",
             context={},
-            trust_signals=trust(ctx, sources=all_sources, count=len(all_active)),
+            trust_signals=trust(ctx, sources=trust_sources(all_sources), count=len(all_active)),
             priority=0.0,
             changefreq="yearly",
             noindex=True,
