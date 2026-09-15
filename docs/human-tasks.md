@@ -66,6 +66,29 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 取り下げ依頼（お問い合わせから起票される Issue）の読み取りに要るため。取り下げ依頼を黙って
 読み飛ばすより、止まって気づけるほうがよい。
 
+## リポジトリを作り直した（2026-09-16）
+
+個人メールと再配布できない fixture を履歴から消したが、**マージ済み PR の参照（`refs/pull/*`）が
+書き換え前の履歴を保持し続ける**ことが分かった。force push でも GC でも消えない。public にすると
+`git fetch origin refs/pull/2/head` で旧履歴を丸ごと復元できてしまうので、作り直した。
+
+- 旧: `hikuzawa/akiya-atlas-archive`（private のまま保存。**Actions は無効化済み**。
+  有効のままだと日次のスケジュールがこちらでも動き、本番へ配置してしまう）
+- 新: `hikuzawa/akiya-atlas`（書き換え済みの main だけ。PR 参照ゼロ）
+
+失ったのはマージ済み PR 2 件と Issue 3 件（pipeline-failure 2・週次まとめ 1）。
+**Secret は引き継がれないので再登録が要る。**
+
+| Secret | 取り直し方 |
+| --- | --- |
+| `ANTHROPIC_API_KEY` | `.env` にある。下のコマンドで登録 |
+| `GOOGLE_SEARCH_CONSOLE_KEY` | `.env` にある。下のコマンドで登録 |
+| `CLOUDFLARE_ACCOUNT_ID` | **`.env` は空**。Cloudflare ダッシュボード → Workers & Pages の右側からコピー |
+| `CLOUDFLARE_API_TOKEN` | **`.env` は空。値は二度と読めない**ので、テンプレート「Cloudflare Pages — Edit」で作り直す（古いトークンは使わなくなるので失効させてよい） |
+| `OPS_REPO_TOKEN` | 新規発行（下の表） |
+
+Cloudflare の 2 つが揃うまで、日次は build と検査まで通って**配置だけスキップ**される（run は成功扱い）。
+
 ## 公開リポジトリになった（2026-09-16）
 
 `hikuzawa/akiya-atlas` は public、`hikuzawa/akiya-atlas-ops` は private。
