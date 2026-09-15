@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.osaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.osaka.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-271403
   name: 堺市空き家バンク
   operator: 堺市
@@ -41,13 +41,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sakai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.sakai.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272027
   name: 岸和田市空き家バンク
   operator: 岸和田市
   operator_kind: municipality
   official_url: https://www.city.kishiwada.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '272027'
     name: 岸和田市
@@ -62,13 +62,23 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kishiwada.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kishiwada.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.kishiwada.lg.jp/page/122-furyoakiya-hojo.html
+    kind: subsidy
+  - url: https://www.city.kishiwada.lg.jp/page/122-akiya-reform.html
+    kind: subsidy
+  - url: https://www.city.kishiwada.lg.jp/page/122-taishin-shindanhojyo.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.kishiwada.lg.jp
+  max_pages: 30
 - id: osaka-272035
   name: 豊中市空き家バンク
   operator: 豊中市
   operator_kind: municipality
   official_url: https://www.city.toyonaka.osaka.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '272035'
     name: 豊中市
@@ -83,7 +93,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.toyonaka.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.toyonaka.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.toyonaka.osaka.jp/kurashi/jutaku/registration/yachinhozyo.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.toyonaka.osaka.jp
+  max_pages: 30
 - id: osaka-272043
   name: 池田市空き家バンク
   operator: 池田市
@@ -104,7 +120,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ikeda.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ikeda.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272051
   name: 吹田市空き家バンク
   operator: 吹田市
@@ -125,7 +141,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.suita.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.suita.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272060
   name: 泉大津市空き家バンク
   operator: 泉大津市
@@ -146,7 +162,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.izumiotsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.izumiotsu.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272078
   name: 高槻市空き家バンク
   operator: 高槻市
@@ -167,7 +183,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.takatsuki.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.takatsuki.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272086
   name: 貝塚市空き家バンク
   operator: 貝塚市
@@ -188,7 +204,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kaizuka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kaizuka.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272094
   name: 守口市空き家バンク
   operator: 守口市
@@ -209,13 +225,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.moriguchi.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.moriguchi.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272108
   name: 枚方市空き家バンク
   operator: 枚方市
   operator_kind: municipality
   official_url: https://www.city.hirakata.osaka.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '272108'
     name: 枚方市
@@ -230,7 +246,19 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hirakata.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hirakata.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.hirakata.osaka.jp/category/11-12-0-0-0-0-0-0-0-0.html
+    kind: subsidy
+  - url: https://www.city.hirakata.osaka.jp/0000035020.html
+    kind: subsidy
+  - url: https://www.city.hirakata.osaka.jp/0000028668.html
+    kind: subsidy
+  - url: https://www.city.hirakata.osaka.jp/0000048602.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.hirakata.osaka.jp
+  max_pages: 30
 - id: osaka-272116
   name: 茨木市空き家バンク
   operator: 茨木市
@@ -251,7 +279,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ibaraki.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ibaraki.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272124
   name: 八尾市空き家バンク
   operator: 八尾市
@@ -272,7 +300,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yao.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.yao.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272132
   name: 泉佐野市空き家バンク
   operator: 泉佐野市
@@ -293,7 +321,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.izumisano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.izumisano.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272141
   name: 富田林市空き家バンク
   operator: 富田林市
@@ -314,7 +342,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tondabayashi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tondabayashi.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272159
   name: 寝屋川市空き家バンク
   operator: 寝屋川市
@@ -335,13 +363,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.neyagawa.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.neyagawa.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272167
   name: 河内長野市空き家バンク
   operator: 河内長野市
   operator_kind: municipality
   official_url: https://www.city.kawachinagano.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '272167'
     name: 河内長野市
@@ -356,7 +384,15 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kawachinagano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kawachinagano.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.kawachinagano.lg.jp/site/ijyuuteijyuu/122477.html
+    kind: subsidy
+  - url: https://www.city.kawachinagano.lg.jp/life/1/8/47/
+    kind: subsidy
+  allow_hosts:
+  - www.city.kawachinagano.lg.jp
+  max_pages: 30
 - id: osaka-272175
   name: 松原市空き家バンク
   operator: 松原市
@@ -377,7 +413,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.matsubara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.matsubara.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272183
   name: 大東市空き家バンク
   operator: 大東市
@@ -398,7 +434,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.daito.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.daito.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272191
   name: 和泉市空き家バンク
   operator: 和泉市
@@ -419,7 +455,7 @@ sources:
   operator_evidence:
     quote: 大阪府内の市町村に掲載された公式サイト（www.city.osaka-izumi.lg.jp）
     url: https://www.pref.osaka.lg.jp/o070050/koho/links/city.html
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272205
   name: 箕面市空き家バンク
   operator: 箕面市
@@ -440,7 +476,7 @@ sources:
   operator_evidence:
     quote: 大阪府内の市町村に掲載された公式サイト（www.city.minoh.lg.jp）
     url: https://www.pref.osaka.lg.jp/o070050/koho/links/city.html
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272213
   name: 柏原市空き家バンク
   operator: 柏原市
@@ -461,7 +497,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kashiwara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kashiwara.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272221
   name: 羽曳野市空き家バンク
   operator: 羽曳野市
@@ -482,13 +518,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.habikino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.habikino.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272230
   name: 門真市空き家バンク
   operator: 門真市
   operator_kind: municipality
   official_url: https://www.city.kadoma.osaka.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '272230'
     name: 門真市
@@ -503,7 +539,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kadoma.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kadoma.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.kadoma.osaka.jp/soshiki/machizukuri/4/3/2/2/2/2443.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.kadoma.osaka.jp
+  max_pages: 30
 - id: osaka-272248
   name: 摂津市空き家バンク
   operator: 摂津市
@@ -524,7 +566,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.settsu.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.settsu.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272256
   name: 高石市空き家バンク
   operator: 高石市
@@ -545,13 +587,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.takaishi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.takaishi.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272264
   name: 藤井寺市空き家バンク
   operator: 藤井寺市
   operator_kind: municipality
   official_url: https://www.city.fujiidera.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '272264'
     name: 藤井寺市
@@ -566,13 +608,21 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.fujiidera.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.fujiidera.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.fujiidera.lg.jp/soshiki/toshiseibi/toshikeikaku/akiya/12528.html
+    kind: subsidy
+  - url: https://www.city.fujiidera.lg.jp/soshiki/toshiseibi/toshikeikaku/akiya/12615.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.fujiidera.lg.jp
+  max_pages: 30
 - id: osaka-272272
   name: 東大阪市空き家バンク
   operator: 東大阪市
   operator_kind: municipality
   official_url: https://www.city.higashiosaka.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '272272'
     name: 東大阪市
@@ -587,7 +637,19 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.higashiosaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.higashiosaka.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.higashiosaka.lg.jp/0000043138.html
+    kind: subsidy
+  - url: https://www.city.higashiosaka.lg.jp/0000033566.html
+    kind: subsidy
+  - url: https://www.city.higashiosaka.lg.jp/0000005735.html
+    kind: subsidy
+  - url: https://www.city.higashiosaka.lg.jp/0000005746.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.higashiosaka.lg.jp
+  max_pages: 30
 - id: osaka-272281
   name: 泉南市空き家バンク
   operator: 泉南市
@@ -608,7 +670,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sennan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.sennan.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272299
   name: 四條畷市空き家バンク
   operator: 四條畷市
@@ -629,13 +691,13 @@ sources:
   operator_evidence:
     quote: 大阪府内の市町村に掲載された公式サイト（www.city.shijonawate.lg.jp）
     url: https://www.pref.osaka.lg.jp/o070050/koho/links/city.html
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272302
   name: 交野市空き家バンク
   operator: 交野市
   operator_kind: municipality
   official_url: https://www.city.katano.osaka.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '272302'
     name: 交野市
@@ -650,7 +712,17 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.katano.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.katano.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.katano.osaka.jp/docs/2023032800071/
+    kind: subsidy
+  - url: https://www.city.katano.osaka.jp/docs/2023032800101/
+    kind: subsidy
+  - url: https://www.city.katano.osaka.jp/docs/2022030300026/
+    kind: subsidy
+  allow_hosts:
+  - www.city.katano.osaka.jp
+  max_pages: 30
 - id: osaka-272311
   name: 大阪狭山市空き家バンク
   operator: 大阪狭山市
@@ -671,7 +743,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.osakasayama.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.osakasayama.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-272329
   name: 阪南市空き家バンク
   operator: 阪南市
@@ -692,13 +764,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hannan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hannan.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-273015
   name: 島本町空き家バンク
   operator: 島本町
   operator_kind: municipality
   official_url: https://www.town.shimamoto.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '273015'
     name: 島本町
@@ -713,7 +785,15 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shimamoto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.shimamoto.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.shimamoto.lg.jp/life/1/8/37/
+    kind: subsidy
+  - url: https://www.town.shimamoto.lg.jp/soshiki/14/2662.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.shimamoto.lg.jp
+  max_pages: 30
 - id: osaka-273210
   name: 豊能町空き家バンク
   operator: 豊能町
@@ -734,7 +814,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.toyono.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.toyono.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-273228
   name: 能勢町空き家バンク
   operator: 能勢町
@@ -755,7 +835,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nose.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nose.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-273414
   name: 忠岡町空き家バンク
   operator: 忠岡町
@@ -776,7 +856,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tadaoka.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.tadaoka.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-273619
   name: 熊取町空き家バンク
   operator: 熊取町
@@ -797,7 +877,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kumatori.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kumatori.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-273627
   name: 田尻町空き家バンク
   operator: 田尻町
@@ -818,13 +898,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tajiri.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.tajiri.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: osaka-273660
   name: 岬町空き家バンク
   operator: 岬町
   operator_kind: municipality
   official_url: https://www.town.misaki.osaka.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '273660'
     name: 岬町
@@ -839,13 +919,25 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.misaki.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.misaki.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.misaki.osaka.jp/kurashi/jutaku/4475.html
+    kind: subsidy
+  - url: https://www.town.misaki.osaka.jp/soshiki/matidukuri/kikaku/teiju/3910.html
+    kind: subsidy
+  - url: https://www.town.misaki.osaka.jp/soshiki/matidukuri/kikaku/teiju/354.html
+    kind: subsidy
+  - url: https://www.town.misaki.osaka.jp/soshiki/matidukuri/kikaku/teiju/356.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.misaki.osaka.jp
+  max_pages: 30
 - id: osaka-273813
   name: 太子町空き家バンク
   operator: 太子町
   operator_kind: municipality
   official_url: https://www.town.taishi.osaka.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '273813'
     name: 太子町
@@ -860,13 +952,19 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.taishi.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.taishi.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: http://www.town.taishi.osaka.jp/busyo/machidukurisuisinbu/chiikiseibika/akiyabank/5625.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.taishi.osaka.jp
+  max_pages: 30
 - id: osaka-273821
   name: 河南町空き家バンク
   operator: 河南町
   operator_kind: municipality
   official_url: https://www.town.kanan.osaka.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '273821'
     name: 河南町
@@ -881,7 +979,15 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kanan.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kanan.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.kanan.osaka.jp/kurashi_tetsuzuki/sumai/2837.html
+    kind: subsidy
+  - url: https://www.town.kanan.osaka.jp/kurashi_tetsuzuki/sumai/6583.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.kanan.osaka.jp
+  max_pages: 30
 - id: osaka-273830
   name: 千早赤阪村空き家バンク
   operator: 千早赤阪村
@@ -902,4 +1008,4 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.chihayaakasaka.osaka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.chihayaakasaka.osaka.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'

@@ -1,0 +1,73 @@
+{
+  "ci": false,
+  "command": "extract",
+  "errors": [
+    "https://www.kesennuma.miyagi.jp/sec/s022/20180322192508.html: API エラー 200: {'type': 'error', 'error': {'details': None, 'type': 'invalid_request_error', 'message': 'Invalid request data'}, 'request_id': 'req_011Cf4B2wvoqc7L3NB9y4yMZ'}"
+  ],
+  "extraction_metrics": {
+    "fields": {
+      "amount_text": {
+        "not_found": 7,
+        "notes": {
+          "quote_joined": 10,
+          "quote_not_in_source": 26
+        },
+        "parsed": 32,
+        "quote_not_in_source": 26,
+        "total": 65,
+        "unparsed": 0
+      },
+      "period_end": {
+        "not_found": 31,
+        "notes": {
+          "no_date": 9,
+          "quote_joined": 1,
+          "quote_not_in_source": 2
+        },
+        "parsed": 23,
+        "quote_not_in_source": 2,
+        "total": 65,
+        "unparsed": 9
+      },
+      "year_text": {
+        "not_found": 47,
+        "notes": {},
+        "parsed": 18,
+        "quote_not_in_source": 0,
+        "total": 65,
+        "unparsed": 0
+      }
+    },
+    "flags": {
+      "summary_truncated": 3,
+      "summary_verbatim_overlap": 3
+    },
+    "items": 65,
+    "pages": 50,
+    "summary_replaced": 3,
+    "truncated_pages": 1
+  },
+  "finished_at": "2026-09-14T23:09:26Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 50,
+    "input_tokens": 215145,
+    "output_tokens": 12502
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "extract": {
+      "items": 65,
+      "llm_errors": 1,
+      "pages": 50
+    },
+    "ingest": {
+      "created": 58,
+      "skipped": 0,
+      "unchanged": 0,
+      "updated": 7
+    }
+  },
+  "started_at": "2026-09-14T23:08:39Z"
+}

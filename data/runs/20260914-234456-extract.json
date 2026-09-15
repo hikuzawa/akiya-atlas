@@ -1,0 +1,152 @@
+{
+  "ci": false,
+  "command": "extract",
+  "errors": [],
+  "extraction_metrics": {
+    "fields": {
+      "address": {
+        "not_found": 0,
+        "notes": {},
+        "parsed": 13,
+        "quote_not_in_source": 0,
+        "total": 13,
+        "unparsed": 0
+      },
+      "amount_text": {
+        "not_found": 14,
+        "notes": {
+          "quote_joined": 4,
+          "quote_not_in_source": 8
+        },
+        "parsed": 14,
+        "quote_not_in_source": 8,
+        "total": 36,
+        "unparsed": 0
+      },
+      "built_year": {
+        "not_found": 4,
+        "notes": {
+          "no_year": 8
+        },
+        "parsed": 1,
+        "quote_not_in_source": 0,
+        "total": 13,
+        "unparsed": 8
+      },
+      "floor_area_m2": {
+        "not_found": 13,
+        "notes": {},
+        "parsed": 0,
+        "quote_not_in_source": 0,
+        "total": 13,
+        "unparsed": 0
+      },
+      "land_area_m2": {
+        "not_found": 11,
+        "notes": {
+          "from_tsubo": 2
+        },
+        "parsed": 2,
+        "quote_not_in_source": 0,
+        "total": 13,
+        "unparsed": 0
+      },
+      "layout": {
+        "not_found": 13,
+        "notes": {},
+        "parsed": 0,
+        "quote_not_in_source": 0,
+        "total": 13,
+        "unparsed": 0
+      },
+      "listing_no": {
+        "not_found": 0,
+        "notes": {},
+        "parsed": 13,
+        "quote_not_in_source": 0,
+        "total": 13,
+        "unparsed": 0
+      },
+      "period_end": {
+        "not_found": 31,
+        "notes": {
+          "no_date": 3,
+          "quote_not_in_source": 1
+        },
+        "parsed": 1,
+        "quote_not_in_source": 1,
+        "total": 36,
+        "unparsed": 3
+      },
+      "price": {
+        "not_found": 0,
+        "notes": {},
+        "parsed": 13,
+        "quote_not_in_source": 0,
+        "total": 13,
+        "unparsed": 0
+      },
+      "rent_monthly": {
+        "not_found": 13,
+        "notes": {},
+        "parsed": 0,
+        "quote_not_in_source": 0,
+        "total": 13,
+        "unparsed": 0
+      },
+      "status_text": {
+        "not_found": 13,
+        "notes": {},
+        "parsed": 0,
+        "quote_not_in_source": 0,
+        "total": 13,
+        "unparsed": 0
+      },
+      "structure": {
+        "not_found": 0,
+        "notes": {},
+        "parsed": 13,
+        "quote_not_in_source": 0,
+        "total": 13,
+        "unparsed": 0
+      },
+      "year_text": {
+        "not_found": 31,
+        "notes": {
+          "quote_not_in_source": 1
+        },
+        "parsed": 4,
+        "quote_not_in_source": 1,
+        "total": 36,
+        "unparsed": 0
+      }
+    },
+    "flags": {},
+    "items": 49,
+    "pages": 19,
+    "summary_replaced": 0,
+    "truncated_pages": 0
+  },
+  "finished_at": "2026-09-14T23:45:30Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 19,
+    "input_tokens": 71462,
+    "output_tokens": 7578
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "extract": {
+      "items": 49,
+      "pages": 19
+    },
+    "ingest": {
+      "created": 33,
+      "skipped": 0,
+      "unchanged": 0,
+      "updated": 16
+    }
+  },
+  "started_at": "2026-09-14T23:44:56Z"
+}

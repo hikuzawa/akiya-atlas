@@ -5,7 +5,7 @@ sources:
   operator: 秋田市
   operator_kind: municipality
   official_url: https://www.city.akita.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 052019
     name: 秋田市
@@ -14,12 +14,19 @@ sources:
     slug: 052019
     bank_url: https://www.city.akita.lg.jp/kurashi/sumai/1039236.html
     bank_status: info
+    extract_pending: false
     map_query: 秋田県秋田市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.akita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.akita.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.akita.lg.jp/kurashi/sumai/1007487/index.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.akita.lg.jp
+  max_pages: 30
 - id: akita-052027
   name: 能代市空き家バンク
   operator: 能代市
@@ -34,14 +41,23 @@ sources:
     slug: '052027'
     bank_url: https://www.city.noshiro.lg.jp/sangyo/iju-teiju/akiya-bank/11098
     bank_status: available
+    extract_pending: false
     map_query: 秋田県能代市
   operator_evidence:
     quote: 公式ドメイン www.city.noshiro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.noshiro.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.noshiro.lg.jp/sangyo/iju-teiju/akiya-bank/11098
     kind: listing_index
+  - url: https://www.city.noshiro.lg.jp/kurashi/zaitaku/kenchiku-jutaku/9571
+    kind: subsidy
+  - url: https://www.city.noshiro.lg.jp/kurashi/zaitaku/kenchiku-jutaku/4940
+    kind: subsidy
+  - url: https://www.city.noshiro.lg.jp/sangyo/iju-teiju/22619
+    kind: subsidy
+  - url: https://www.city.noshiro.lg.jp/sangyo/iju-teiju/24305
+    kind: subsidy
   allow_hosts:
   - www.city.noshiro.lg.jp
   max_pages: 30
@@ -50,7 +66,7 @@ sources:
   operator: 横手市
   operator_kind: municipality
   official_url: https://www.city.yokote.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '052035'
     name: 横手市
@@ -59,12 +75,21 @@ sources:
     slug: '052035'
     bank_url: https://www.city.yokote.lg.jp/kurashi/1001142/1001280/index.html
     bank_status: info
+    extract_pending: false
     map_query: 秋田県横手市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.yokote.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.yokote.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.yokote.lg.jp/kurashi/1001142/1001273/1001275/1002707.html
+    kind: subsidy
+  - url: https://www.city.yokote.lg.jp/shisei/1001173/1013251.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.yokote.lg.jp
+  max_pages: 30
 - id: akita-052043
   name: 大館市空き家バンク
   operator: 大館市
@@ -79,18 +104,19 @@ sources:
     slug: '052043'
     bank_url: https://www.city.odate.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 秋田県大館市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.odate.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.odate.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: akita-052060
   name: 男鹿市空き家バンク
   operator: 男鹿市
   operator_kind: municipality
   official_url: https://www.city.oga.akita.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '052060'
     name: 男鹿市
@@ -99,18 +125,27 @@ sources:
     slug: '052060'
     bank_url: https://www.city.oga.akita.jp/ijuteiju/index.html
     bank_status: info
+    extract_pending: false
     map_query: 秋田県男鹿市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.oga.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.oga.akita.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.oga.akita.jp/ijuteiju/live/advice/index.html
+    kind: subsidy
+  - url: https://www.city.oga.akita.jp/soshik/kikakuseisakuka/teijushien/1034.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.oga.akita.jp
+  max_pages: 30
 - id: akita-052078
   name: 湯沢市空き家バンク
   operator: 湯沢市
   operator_kind: municipality
   official_url: https://www.city-yuzawa.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 052078
     name: 湯沢市
@@ -119,12 +154,21 @@ sources:
     slug: 052078
     bank_url: https://www.city-yuzawa.jp/life/1/14/89/
     bank_status: info
+    extract_pending: false
     map_query: 秋田県湯沢市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 秋田県 県内市町村のウェブサイトに掲載された公式サイト（www.city-yuzawa.jp）
     url: https://www.pref.akita.lg.jp/pages/archive/46079
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city-yuzawa.jp/soshiki/16/1499.html
+    kind: subsidy
+  - url: https://www.city-yuzawa.jp/site/iju-teiju/1430.html
+    kind: subsidy
+  allow_hosts:
+  - www.city-yuzawa.jp
+  max_pages: 30
 - id: akita-052094
   name: 鹿角市空き家バンク
   operator: 鹿角市
@@ -139,18 +183,19 @@ sources:
     slug: 052094
     bank_url: https://www.city.kazuno.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 秋田県鹿角市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.kazuno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kazuno.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: akita-052108
   name: 由利本荘市空き家バンク
   operator: 由利本荘市
   operator_kind: municipality
   official_url: https://www.city.yurihonjo.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 052108
     name: 由利本荘市
@@ -159,12 +204,19 @@ sources:
     slug: 052108
     bank_url: https://www.city.yurihonjo.lg.jp/1000006/1008699/index.html
     bank_status: info
+    extract_pending: false
     map_query: 秋田県由利本荘市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.yurihonjo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.yurihonjo.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.yurihonjo.lg.jp/1000006/1008699/1008698.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.yurihonjo.lg.jp
+  max_pages: 30
 - id: akita-052116
   name: 潟上市空き家バンク
   operator: 潟上市
@@ -179,18 +231,19 @@ sources:
     slug: '052116'
     bank_url: https://www.city.katagami.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 秋田県潟上市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.katagami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.katagami.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: akita-052124
   name: 大仙市空き家バンク
   operator: 大仙市
   operator_kind: municipality
   official_url: https://www.city.daisen.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '052124'
     name: 大仙市
@@ -199,18 +252,25 @@ sources:
     slug: '052124'
     bank_url: https://www.city.daisen.lg.jp/genre/machizukuri/akiyabank
     bank_status: info
+    extract_pending: false
     map_query: 秋田県大仙市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.daisen.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.daisen.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.daisen.lg.jp/archive/p20260603093745
+    kind: subsidy
+  allow_hosts:
+  - www.city.daisen.lg.jp
+  max_pages: 30
 - id: akita-052132
   name: 北秋田市空き家バンク
   operator: 北秋田市
   operator_kind: municipality
   official_url: https://www.city.kitaakita.akita.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '052132'
     name: 北秋田市
@@ -219,12 +279,25 @@ sources:
     slug: '052132'
     bank_url: https://www.city.kitaakita.akita.jp/
     bank_status: none
+    extract_pending: false
     map_query: 秋田県北秋田市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.kitaakita.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kitaakita.akita.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.kitaakita.akita.jp/genre/syoubou_honbu/kasaikeihouki
+    kind: subsidy
+  - url: https://www.city.kitaakita.akita.jp/archive/contents-5641
+    kind: subsidy
+  - url: https://www.city.kitaakita.akita.jp/archive/contents-6584
+    kind: subsidy
+  - url: https://www.city.kitaakita.akita.jp/archive/contents-5638
+    kind: subsidy
+  allow_hosts:
+  - www.city.kitaakita.akita.jp
+  max_pages: 30
 - id: akita-052141
   name: にかほ市空き家バンク
   operator: にかほ市
@@ -239,12 +312,13 @@ sources:
     slug: '052141'
     bank_url: https://www.city.nikaho.akita.jp/
     bank_status: none
+    extract_pending: false
     map_query: 秋田県にかほ市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.nikaho.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.nikaho.akita.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: akita-052159
   name: 仙北市空き家バンク
   operator: 仙北市
@@ -259,18 +333,19 @@ sources:
     slug: 052159
     bank_url: https://www.city.semboku.akita.jp/
     bank_status: none
+    extract_pending: false
     map_query: 秋田県仙北市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 秋田県 県内市町村のウェブサイトに掲載された公式サイト（www.city.semboku.akita.jp）
     url: https://www.pref.akita.lg.jp/pages/archive/46079
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: akita-053031
   name: 小坂町空き家バンク
   operator: 小坂町
   operator_kind: municipality
   official_url: https://www.town.kosaka.akita.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '053031'
     name: 小坂町
@@ -279,12 +354,25 @@ sources:
     slug: '053031'
     bank_url: https://www.town.kosaka.akita.jp/iju_teiju/jutaku/754.html
     bank_status: info
+    extract_pending: false
     map_query: 秋田県小坂町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.kosaka.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kosaka.akita.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.kosaka.akita.jp/kurashi_gyosei/kurashi_tetsuzuki/jutaku/1480.html
+    kind: subsidy
+  - url: https://www.town.kosaka.akita.jp/kurashi_gyosei/kurashi_tetsuzuki/jutaku/681.html
+    kind: subsidy
+  - url: https://www.town.kosaka.akita.jp/kurashi_gyosei/kurashi_tetsuzuki/jutaku/684.html
+    kind: subsidy
+  - url: https://www.town.kosaka.akita.jp/iju_teiju/jutaku/1479.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.kosaka.akita.jp
+  max_pages: 30
 - id: akita-053279
   name: 上小阿仁村空き家バンク
   operator: 上小阿仁村
@@ -299,12 +387,13 @@ sources:
     slug: 053279
     bank_url: https://www.vill.kamikoani.akita.jp/
     bank_status: none
+    extract_pending: false
     map_query: 秋田県上小阿仁村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.kamikoani.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.kamikoani.akita.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: akita-053465
   name: 藤里町空き家バンク
   operator: 藤里町
@@ -319,12 +408,13 @@ sources:
     slug: '053465'
     bank_url: https://www.town.fujisato.akita.jp/
     bank_status: none
+    extract_pending: false
     map_query: 秋田県藤里町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.fujisato.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.fujisato.akita.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: akita-053481
   name: 三種町空き家バンク
   operator: 三種町
@@ -339,11 +429,12 @@ sources:
     slug: 053481
     bank_url: https://www.town.mitane.akita.jp/kurashi_furusatokaiki/akiya_bank/2305.html
     bank_status: available
+    extract_pending: false
     map_query: 秋田県三種町
   operator_evidence:
     quote: 公式ドメイン www.town.mitane.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.mitane.akita.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.mitane.akita.jp/kurashi_furusatokaiki/akiya_bank/2305.html
     kind: listing_index
@@ -351,6 +442,12 @@ sources:
     - pattern: https?://www\.town\.mitane\.akita\.jp/kurashi_furusatokaiki/akiya_bank/2305\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
       kind: listing_index
       max_links: 20
+  - url: https://www.town.mitane.akita.jp/kurashi_furusatokaiki/jutaku_joho/2317.html
+    kind: subsidy
+  - url: https://www.town.mitane.akita.jp/kurashi_furusatokaiki/jutaku_joho/2466.html
+    kind: subsidy
+  - url: https://www.town.mitane.akita.jp/kurashi_furusatokaiki/jutaku_joho/2467.html
+    kind: subsidy
   allow_hosts:
   - www.town.mitane.akita.jp
   max_pages: 30
@@ -368,18 +465,19 @@ sources:
     slug: 053490
     bank_url: https://www.town.happo.lg.jp/genre/iju-teiju/hatarakitai
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 秋田県八峰町
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.happo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.happo.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: akita-053619
   name: 五城目町空き家バンク
   operator: 五城目町
   operator_kind: municipality
   official_url: https://www.town.gojome.akita.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 053619
     name: 五城目町
@@ -388,12 +486,25 @@ sources:
     slug: 053619
     bank_url: https://www.town.gojome.akita.jp/kurashi/2662
     bank_status: info
+    extract_pending: false
     map_query: 秋田県五城目町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.gojome.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.gojome.akita.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.gojome.akita.jp/izyuu/kigyouizyuuhozyoseid/
+    kind: subsidy
+  - url: https://www.town.gojome.akita.jp/izyuu/kigyouizyuuhozyoseid/3131
+    kind: subsidy
+  - url: https://www.town.gojome.akita.jp/kurashi/sumai/3039
+    kind: subsidy
+  - url: https://www.town.gojome.akita.jp/kurashi/sinseisyo/3039
+    kind: subsidy
+  allow_hosts:
+  - www.town.gojome.akita.jp
+  max_pages: 30
   external_links:
   - label: 全国版空き家・空き地バンク
     url: https://gojome-t05361.akiya-athome.jp/
@@ -402,7 +513,7 @@ sources:
   operator: 八郎潟町
   operator_kind: municipality
   official_url: https://www.town.hachirogata.akita.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '053635'
     name: 八郎潟町
@@ -411,18 +522,31 @@ sources:
     slug: '053635'
     bank_url: https://www.town.hachirogata.akita.jp/index.html
     bank_status: info
+    extract_pending: false
     map_query: 秋田県八郎潟町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.hachirogata.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.hachirogata.akita.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.hachirogata.akita.jp/kurashi/1001529/1003076.html
+    kind: subsidy
+  - url: https://www.town.hachirogata.akita.jp/kurashi/1001529/1004326.html
+    kind: subsidy
+  - url: https://www.town.hachirogata.akita.jp/kurashi/1001474/1004011.html
+    kind: subsidy
+  - url: https://www.town.hachirogata.akita.jp/kurashi/1001474/1003614.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.hachirogata.akita.jp
+  max_pages: 30
 - id: akita-053660
   name: 井川町空き家バンク
   operator: 井川町
   operator_kind: municipality
   official_url: https://www.town.ikawa.akita.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '053660'
     name: 井川町
@@ -431,12 +555,23 @@ sources:
     slug: '053660'
     bank_url: https://www.town.ikawa.akita.jp/life/1/4/25/
     bank_status: info
+    extract_pending: false
     map_query: 秋田県井川町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.ikawa.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ikawa.akita.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.ikawa.akita.jp/page/1600.html
+    kind: subsidy
+  - url: https://www.town.ikawa.akita.jp/page/1599.html
+    kind: subsidy
+  - url: https://www.town.ikawa.akita.jp/page/1408.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.ikawa.akita.jp
+  max_pages: 30
 - id: akita-053686
   name: 大潟村空き家バンク
   operator: 大潟村
@@ -451,18 +586,19 @@ sources:
     slug: 053686
     bank_url: https://www.vill.ogata.akita.jp/
     bank_status: none
+    extract_pending: false
     map_query: 秋田県大潟村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.ogata.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.ogata.akita.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: akita-054348
   name: 美郷町空き家バンク
   operator: 美郷町
   operator_kind: municipality
   official_url: https://www.town.misato.akita.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 054348
     name: 美郷町
@@ -471,12 +607,21 @@ sources:
     slug: 054348
     bank_url: https://www.town.misato.akita.jp/archive/contents-962
     bank_status: info
+    extract_pending: false
     map_query: 秋田県美郷町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.misato.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.misato.akita.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.misato.akita.jp/archive/contents-658
+    kind: subsidy
+  - url: https://www.town.misato.akita.jp/archive/contents-4806
+    kind: subsidy
+  allow_hosts:
+  - www.town.misato.akita.jp
+  max_pages: 30
 - id: akita-054631
   name: 羽後町空き家バンク
   operator: 羽後町
@@ -491,12 +636,13 @@ sources:
     slug: '054631'
     bank_url: https://www.town.ugo.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 秋田県羽後町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.ugo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.ugo.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: akita-054640
   name: 東成瀬村空き家バンク
   operator: 東成瀬村
@@ -511,9 +657,10 @@ sources:
     slug: '054640'
     bank_url: https://vill.higashinaruse.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 秋田県東成瀬村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン vill.higashinaruse.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://vill.higashinaruse.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'

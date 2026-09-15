@@ -14,18 +14,19 @@ sources:
     slug: '182010'
     bank_url: https://www.city.fukui.lg.jp/kurasi/jutaku/akiyataisaku/index.html
     bank_status: info
+    extract_pending: false
     map_query: 福井県福井市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.fukui.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.fukui.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukui-182028
   name: 敦賀市空き家バンク
   operator: 敦賀市
   operator_kind: municipality
   official_url: https://www.city.tsuruga.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '182028'
     name: 敦賀市
@@ -34,18 +35,27 @@ sources:
     slug: '182028'
     bank_url: https://www.city.tsuruga.lg.jp/life/1/5/28/
     bank_status: info
+    extract_pending: false
     map_query: 福井県敦賀市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.tsuruga.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tsuruga.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.tsuruga.lg.jp/page/1575.html
+    kind: subsidy
+  - url: https://www.city.tsuruga.lg.jp/page/1582.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.tsuruga.lg.jp
+  max_pages: 30
 - id: fukui-182044
   name: 小浜市空き家バンク
   operator: 小浜市
   operator_kind: municipality
   official_url: https://www1.city.obama.fukui.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '182044'
     name: 小浜市
@@ -54,18 +64,25 @@ sources:
     slug: '182044'
     bank_url: https://www1.city.obama.fukui.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福井県小浜市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 福井県内市町リンク集に掲載された公式サイト（www1.city.obama.fukui.jp）
     url: https://www.pref.fukui.lg.jp/doc/dx-suishin/shimachi_list.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www1.city.obama.fukui.jp/kurashi/sumaiakiya/juutaku_hojo/index.html
+    kind: subsidy
+  allow_hosts:
+  - www1.city.obama.fukui.jp
+  max_pages: 30
 - id: fukui-182052
   name: 大野市空き家バンク
   operator: 大野市
   operator_kind: municipality
   official_url: https://www.city.ono.fukui.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '182052'
     name: 大野市
@@ -74,12 +91,21 @@ sources:
     slug: '182052'
     bank_url: https://www.city.ono.fukui.jp/kurashi/kankyo-sumai/akiya/kazaishobunhojo.html
     bank_status: info
+    extract_pending: false
     map_query: 福井県大野市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.ono.fukui.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ono.fukui.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.ono.fukui.jp/kurashi/kankyo-sumai/akiya/akiya-shindan.html
+    kind: subsidy
+  - url: https://www.city.ono.fukui.jp/kurashi/kankyo-sumai/zero_carbon/taiyoko.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.ono.fukui.jp
+  max_pages: 30
 - id: fukui-182061
   name: 勝山市空き家バンク
   operator: 勝山市
@@ -94,11 +120,12 @@ sources:
     slug: '182061'
     bank_url: https://www.city.katsuyama.fukui.jp/soshiki/16/410.html
     bank_status: available
+    extract_pending: false
     map_query: 福井県勝山市
   operator_evidence:
     quote: 公式ドメイン www.city.katsuyama.fukui.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.katsuyama.fukui.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.katsuyama.fukui.jp/soshiki/16/410.html
     kind: listing_index
@@ -110,7 +137,7 @@ sources:
   operator: 鯖江市
   operator_kind: municipality
   official_url: https://www.city.sabae.fukui.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '182079'
     name: 鯖江市
@@ -119,12 +146,19 @@ sources:
     slug: '182079'
     bank_url: https://www.city.sabae.fukui.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福井県鯖江市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.sabae.fukui.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.sabae.fukui.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.sabae.fukui.jp/kurashi_tetsuduki/tochi/jutaku_hojokin/index.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.sabae.fukui.jp
+  max_pages: 30
 - id: fukui-182087
   name: あわら市空き家バンク
   operator: あわら市
@@ -139,14 +173,23 @@ sources:
     slug: '182087'
     bank_url: https://www.city.awara.lg.jp/mokuteki/life/jyutaku1/p001478.html
     bank_status: available
+    extract_pending: false
     map_query: 福井県あわら市
   operator_evidence:
     quote: 公式ドメイン www.city.awara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.awara.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.awara.lg.jp/mokuteki/life/jyutaku1/p001478.html
     kind: listing_index
+  - url: https://www.city.awara.lg.jp/mokuteki/life/jyutaku1/p011117.html
+    kind: subsidy
+  - url: https://www.city.awara.lg.jp/mokuteki/health/health04/health0404/p000081.html
+    kind: subsidy
+  - url: https://www.city.awara.lg.jp/mokuteki/industry/industry0401/p010615.html
+    kind: subsidy
+  - url: https://www.city.awara.lg.jp/mokuteki/life/life13/koyouroudou/p001367.html
+    kind: subsidy
   allow_hosts:
   - www.city.awara.lg.jp
   max_pages: 30
@@ -171,12 +214,13 @@ sources:
     slug: '182095'
     bank_url: https://www.city.echizen.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福井県越前市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.echizen.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.echizen.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukui-182109
   name: 坂井市空き家バンク
   operator: 坂井市
@@ -191,12 +235,13 @@ sources:
     slug: '182109'
     bank_url: https://www.city.sakai.lg.jp/kurashi/jutaku/akiya.html
     bank_status: info
+    extract_pending: false
     map_query: 福井県坂井市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.sakai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.sakai.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukui-183229
   name: 永平寺町空き家バンク
   operator: 永平寺町
@@ -211,11 +256,12 @@ sources:
     slug: '183229'
     bank_url: https://www.town.eiheiji.lg.jp/200/206/209/p011270.html
     bank_status: available
+    extract_pending: false
     map_query: 福井県永平寺町
   operator_evidence:
     quote: 公式ドメイン www.town.eiheiji.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.eiheiji.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.eiheiji.lg.jp/200/206/209/p011270.html
     kind: listing_index
@@ -223,6 +269,12 @@ sources:
     - pattern: https?://www\.town\.eiheiji\.lg\.jp/200/206/209/p011270\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
       kind: listing_index
       max_links: 20
+  - url: https://www.town.eiheiji.lg.jp/200/206/235/237/p010707.html
+    kind: subsidy
+  - url: https://www.town.eiheiji.lg.jp/200/206/209/p011273.html
+    kind: subsidy
+  - url: https://www.town.eiheiji.lg.jp/200/206/209/p011995.html
+    kind: subsidy
   allow_hosts:
   - www.town.eiheiji.lg.jp
   max_pages: 30
@@ -240,18 +292,19 @@ sources:
     slug: '183822'
     bank_url: https://www.town.ikeda.fukui.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福井県池田町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.ikeda.fukui.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ikeda.fukui.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukui-184047
   name: 南越前町空き家バンク
   operator: 南越前町
   operator_kind: municipality
   official_url: https://www.town.minamiechizen.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '184047'
     name: 南越前町
@@ -260,12 +313,21 @@ sources:
     slug: '184047'
     bank_url: https://www.town.minamiechizen.lg.jp/izyu/akiyajyouhou/index.html
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 福井県南越前町
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.minamiechizen.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.minamiechizen.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.minamiechizen.lg.jp/izyu/jyuutakuhojyokinn/index.html
+    kind: subsidy
+  - url: https://www.town.minamiechizen.lg.jp/izyu/zyutaku1/p002788.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.minamiechizen.lg.jp
+  max_pages: 30
 - id: fukui-184233
   name: 越前町空き家バンク
   operator: 越前町
@@ -280,12 +342,13 @@ sources:
     slug: '184233'
     bank_url: https://www.town.echizen.fukui.jp/chousei/12/p010070.html
     bank_status: info
+    extract_pending: false
     map_query: 福井県越前町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.echizen.fukui.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.echizen.fukui.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukui-184420
   name: 美浜町空き家バンク
   operator: 美浜町
@@ -300,11 +363,12 @@ sources:
     slug: '184420'
     bank_url: https://www.town.fukui-mihama.lg.jp/site/iju/487.html
     bank_status: available
+    extract_pending: false
     map_query: 福井県美浜町
   operator_evidence:
     quote: 福井県内市町リンク集に掲載された公式サイト（www.town.fukui-mihama.lg.jp）
     url: https://www.pref.fukui.lg.jp/doc/dx-suishin/shimachi_list.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.fukui-mihama.lg.jp/site/iju/487.html
     kind: listing_index
@@ -328,18 +392,19 @@ sources:
     slug: '184811'
     bank_url: https://www.town.takahama.fukui.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福井県高浜町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.takahama.fukui.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.takahama.fukui.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukui-184837
   name: おおい町空き家バンク
   operator: おおい町
   operator_kind: municipality
   official_url: https://www.town.ohi.fukui.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '184837'
     name: おおい町
@@ -348,12 +413,19 @@ sources:
     slug: '184837'
     bank_url: https://www.town.ohi.fukui.jp/1221/7029/index.html
     bank_status: info
+    extract_pending: false
     map_query: 福井県おおい町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 福井県内市町リンク集に掲載された公式サイト（www.town.ohi.fukui.jp）
     url: https://www.pref.fukui.lg.jp/doc/dx-suishin/shimachi_list.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.ohi.fukui.jp/1221/7028/p24059.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.ohi.fukui.jp
+  max_pages: 30
 - id: fukui-185019
   name: 若狭町空き家バンク
   operator: 若狭町
@@ -368,11 +440,12 @@ sources:
     slug: '185019'
     bank_url: https://www.town.fukui-wakasa.lg.jp/kurashi_tetsuzuki/sumai/1825.html
     bank_status: available
+    extract_pending: false
     map_query: 福井県若狭町
   operator_evidence:
     quote: 福井県内市町リンク集に掲載された公式サイト（www.town.fukui-wakasa.lg.jp）
     url: https://www.pref.fukui.lg.jp/doc/dx-suishin/shimachi_list.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.fukui-wakasa.lg.jp/kurashi_tetsuzuki/sumai/1825.html
     kind: listing_index
@@ -380,6 +453,8 @@ sources:
     - pattern: https?://www\.town\.fukui\-wakasa\.lg\.jp/kurashi_tetsuzuki/sumai/1825\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
       kind: listing_index
       max_links: 20
+  - url: https://www.town.fukui-wakasa.lg.jp/kurashi_tetsuzuki/kankyohozen/2797.html
+    kind: subsidy
   allow_hosts:
   - www.town.fukui-wakasa.lg.jp
   max_pages: 30

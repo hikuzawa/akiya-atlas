@@ -20,13 +20,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.morioka.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.morioka.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: iwate-032026
   name: 宮古市空き家バンク
   operator: 宮古市
   operator_kind: municipality
   official_url: https://www.city.miyako.iwate.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '032026'
     name: 宮古市
@@ -41,7 +41,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.miyako.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.miyako.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.miyako.iwate.jp/gyosei/soshiki/toshi/akiya/1211.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.miyako.iwate.jp
+  max_pages: 30
   external_links:
   - label: akiya-athome.jp
     url: https://www.akiya-athome.jp/
@@ -67,7 +73,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ofunato.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ofunato.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: iwate-032051
   name: 花巻市空き家バンク
   operator: 花巻市
@@ -88,7 +94,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hanamaki.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hanamaki.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: iwate-032069
   name: 北上市空き家バンク
   operator: 北上市
@@ -109,7 +115,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kitakami.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kitakami.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: iwate-032077
   name: 久慈市空き家バンク
   operator: 久慈市
@@ -130,7 +136,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kuji.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kuji.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: iwate-032085
   name: 遠野市空き家バンク
   operator: 遠野市
@@ -151,13 +157,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tono.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.tono.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: iwate-032093
   name: 一関市空き家バンク
   operator: 一関市
   operator_kind: municipality
   official_url: https://www.city.ichinoseki.iwate.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 032093
     name: 一関市
@@ -172,7 +178,17 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ichinoseki.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ichinoseki.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.ichinoseki.iwate.jp/archive/contents-107662
+    kind: subsidy
+  - url: https://www.city.ichinoseki.iwate.jp/archive/p20260312144712
+    kind: subsidy
+  - url: https://www.city.ichinoseki.iwate.jp/archive/contents-177933
+    kind: subsidy
+  allow_hosts:
+  - www.city.ichinoseki.iwate.jp
+  max_pages: 30
 - id: iwate-032107
   name: 陸前高田市空き家バンク
   operator: 陸前高田市
@@ -193,13 +209,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.rikuzentakata.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.rikuzentakata.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: iwate-032115
   name: 釜石市空き家バンク
   operator: 釜石市
   operator_kind: municipality
   official_url: https://www.city.kamaishi.iwate.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '032115'
     name: 釜石市
@@ -214,7 +230,19 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kamaishi.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kamaishi.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.kamaishi.iwate.jp/docs/2026052000025/
+    kind: subsidy
+  - url: https://www.city.kamaishi.iwate.jp/docs/2024090600030/
+    kind: subsidy
+  - url: https://www.city.kamaishi.iwate.jp/docs/2025042000021/
+    kind: subsidy
+  - url: https://www.city.kamaishi.iwate.jp/docs/2026042400071/
+    kind: subsidy
+  allow_hosts:
+  - www.city.kamaishi.iwate.jp
+  max_pages: 30
 - id: iwate-032131
   name: 二戸市空き家バンク
   operator: 二戸市
@@ -235,7 +263,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ninohe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.ninohe.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: iwate-032140
   name: 八幡平市空き家バンク
   operator: 八幡平市
@@ -255,10 +283,18 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hachimantai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hachimantai.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.hachimantai.lg.jp/site/ijyu-4/1816.html
     kind: listing_index
+  - url: https://www.city.hachimantai.lg.jp/soshiki/machi/11371.html
+    kind: subsidy
+  - url: https://www.city.hachimantai.lg.jp/site/ijyu-4/list39-847.html
+    kind: subsidy
+  - url: https://www.city.hachimantai.lg.jp/soshiki/kensetsuka/11079.html
+    kind: subsidy
+  - url: https://www.city.hachimantai.lg.jp/soshiki/kensetsuka/1967.html
+    kind: subsidy
   allow_hosts:
   - www.city.hachimantai.lg.jp
   max_pages: 30
@@ -320,7 +356,7 @@ sources:
   operator: 奥州市
   operator_kind: municipality
   official_url: https://www.city.oshu.iwate.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 032158
     name: 奥州市
@@ -335,7 +371,19 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.oshu.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.oshu.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.oshu.iwate.jp/kurashi_tetsuzuki/sumai/2/7113.html
+    kind: subsidy
+  - url: https://www.city.oshu.iwate.jp/kurashi_tetsuzuki/sumai/2/7118.html
+    kind: subsidy
+  - url: https://www.city.oshu.iwate.jp/kurashi_tetsuzuki/sumai/7137.html
+    kind: subsidy
+  - url: https://www.city.oshu.iwate.jp/kurashi_tetsuzuki/sumai/18355.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.oshu.iwate.jp
+  max_pages: 30
 - id: iwate-032166
   name: 滝沢市空き家バンク
   operator: 滝沢市
@@ -355,10 +403,18 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.takizawa.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.takizawa.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.takizawa.iwate.jp/kurashi/tochi-sumai/contents-12872
     kind: listing_index
+  - url: https://www.city.takizawa.iwate.jp/kurashi/tochi-sumai/contents-15183/
+    kind: subsidy
+  - url: https://www.city.takizawa.iwate.jp/kurashi/tochi-sumai/contents-14571/
+    kind: subsidy
+  - url: https://www.city.takizawa.iwate.jp/kurashi/tochi-sumai/contents-15337/
+    kind: subsidy
+  - url: https://www.city.takizawa.iwate.jp/kurashi/tochi-sumai/p20250530154958
+    kind: subsidy
   allow_hosts:
   - www.city.takizawa.iwate.jp
   max_pages: 30
@@ -386,10 +442,12 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shizukuishi.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.shizukuishi.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.shizukuishi.iwate.jp/docs/2014121000281/
     kind: listing_index
+  - url: https://www.town.shizukuishi.iwate.jp/docs/2016072600053/
+    kind: subsidy
   allow_hosts:
   - www.town.shizukuishi.iwate.jp
   max_pages: 30
@@ -416,7 +474,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kuzumaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kuzumaki.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: iwate-033031
   name: 岩手町空き家バンク
   operator: 岩手町
@@ -436,7 +494,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン town.iwate.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://town.iwate.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://town.iwate.iwate.jp/akiya/
     kind: listing_index
@@ -463,7 +521,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shiwa.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.shiwa.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: iwate-033227
   name: 矢巾町空き家バンク
   operator: 矢巾町
@@ -484,13 +542,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yahaba.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yahaba.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: iwate-033669
   name: 西和賀町空き家バンク
   operator: 西和賀町
   operator_kind: municipality
   official_url: https://www.town.nishiwaga.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 033669
     name: 西和賀町
@@ -505,13 +563,19 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nishiwaga.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.nishiwaga.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.nishiwaga.lg.jp/kurashi_tetsuzuki/iju_teiju/1481.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.nishiwaga.lg.jp
+  max_pages: 30
 - id: iwate-033812
   name: 金ケ崎町空き家バンク
   operator: 金ケ崎町
   operator_kind: municipality
   official_url: https://www.town.kanegasaki.iwate.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 033812
     name: 金ケ崎町
@@ -526,13 +590,25 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kanegasaki.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kanegasaki.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.kanegasaki.iwate.jp/articles/2025031700024/
+    kind: subsidy
+  - url: https://www.town.kanegasaki.iwate.jp/docs/2023033100026/
+    kind: subsidy
+  - url: https://www.town.kanegasaki.iwate.jp/articles/2018061500061/
+    kind: subsidy
+  - url: https://www.town.kanegasaki.iwate.jp/docs/2019090400018/
+    kind: subsidy
+  allow_hosts:
+  - www.town.kanegasaki.iwate.jp
+  max_pages: 30
 - id: iwate-034029
   name: 平泉町空き家バンク
   operator: 平泉町
   operator_kind: municipality
   official_url: https://www.town.hiraizumi.iwate.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 034029
     name: 平泉町
@@ -547,7 +623,19 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hiraizumi.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.hiraizumi.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.hiraizumi.iwate.jp/%E5%B9%B3%E6%B3%89%E7%94%BA%E8%8B%A5%E8%80%85%E3%83%BB%E7%A7%BB%E4%BD%8F%E8%80%85%E7%A9%BA%E3%81%8D%E5%AE%B6%E4%BD%8F%E3%81%BE%E3%81%84%E6%94%AF%E6%8F%B4%E4%BA%8B%E6%A5%AD%E8%B2%BB%E8%A3%9C%E5%8A%A9-23406/
+    kind: subsidy
+  - url: https://www.town.hiraizumi.iwate.jp/%E4%BD%8F%E5%AE%85%E7%94%A8%E6%96%B0%E3%82%A8%E3%83%8D%E3%83%AB%E3%82%AE%EF%BC%8D%E8%A8%AD%E5%82%99%E5%B0%8E%E5%85%A5%E4%BF%83%E9%80%B2%E4%BA%8B%E6%A5%AD%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6-24513/
+    kind: subsidy
+  - url: https://www.town.hiraizumi.iwate.jp/%E6%9C%A8%E9%80%A0%E4%BD%8F%E5%AE%85%E8%80%90%E9%9C%87%E8%A8%BA%E6%96%AD%E3%81%A8%E8%80%90%E9%9C%87%E6%94%B9%E4%BF%AE%E5%8A%A9%E6%88%90%E4%BA%8B%E6%A5%AD%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6-23391/
+    kind: subsidy
+  - url: https://www.town.hiraizumi.iwate.jp/%E5%B9%B3%E6%B3%89%E7%94%BA%E4%BD%8F%E5%AE%85%E7%9C%81%E3%82%A8%E3%83%8D%E3%83%AB%E3%82%AE%E3%83%BC%E6%94%B9%E4%BF%AE%E6%8E%A8%E9%80%B2%E4%BA%8B%E6%A5%AD%E8%B2%BB%E8%A3%9C%E5%8A%A9%E9%87%91-24249/
+    kind: subsidy
+  allow_hosts:
+  - www.town.hiraizumi.iwate.jp
+  max_pages: 30
 - id: iwate-034410
   name: 住田町空き家バンク
   operator: 住田町
@@ -567,10 +655,16 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.sumita.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.sumita.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.sumita.iwate.jp/docs/2022121400017/
     kind: listing_detail
+  - url: https://www.town.sumita.iwate.jp/docs/2022060300041/
+    kind: subsidy
+  - url: https://www.town.sumita.iwate.jp/docs/2025060300028/
+    kind: subsidy
+  - url: https://www.town.sumita.iwate.jp/docs/2023030700014/
+    kind: subsidy
   allow_hosts:
   - www.town.sumita.iwate.jp
   max_pages: 30
@@ -594,7 +688,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.otsuchi.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.otsuchi.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: iwate-034827
   name: 山田町空き家バンク
   operator: 山田町
@@ -615,7 +709,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yamada.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yamada.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: iwate-034835
   name: 岩泉町空き家バンク
   operator: 岩泉町
@@ -636,7 +730,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.iwaizumi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.iwaizumi.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: iwate-034843
   name: 田野畑村空き家バンク
   operator: 田野畑村
@@ -657,7 +751,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.tanohata.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.tanohata.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: iwate-034851
   name: 普代村空き家バンク
   operator: 普代村
@@ -678,7 +772,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.fudai.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.fudai.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: iwate-035017
   name: 軽米町空き家バンク
   operator: 軽米町
@@ -698,7 +792,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.karumai.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.karumai.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.karumai.iwate.jp/article/kurashitetsuduki/living/jyutaku/entry-basename.html
     kind: listing_index
@@ -725,13 +819,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.noda.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.noda.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: iwate-035068
   name: 九戸村空き家バンク
   operator: 九戸村
   operator_kind: municipality
   official_url: https://www.vill.kunohe.iwate.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 035068
     name: 九戸村
@@ -746,13 +840,19 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.kunohe.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.kunohe.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.vill.kunohe.iwate.jp/docs/1459.html
+    kind: subsidy
+  allow_hosts:
+  - www.vill.kunohe.iwate.jp
+  max_pages: 30
 - id: iwate-035076
   name: 洋野町空き家バンク
   operator: 洋野町
   operator_kind: municipality
   official_url: https://www.town.hirono.iwate.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '035076'
     name: 洋野町
@@ -767,7 +867,15 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hirono.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.hirono.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.hirono.iwate.jp/doc/2019060600035/
+    kind: subsidy
+  - url: https://www.town.hirono.iwate.jp/doc/2020060100050/
+    kind: subsidy
+  allow_hosts:
+  - www.town.hirono.iwate.jp
+  max_pages: 30
   external_links:
   - label: homes.co.jp
     url: https://www.homes.co.jp/akiyabank/iwate/kunohe_hirono/
@@ -776,7 +884,7 @@ sources:
   operator: 一戸町
   operator_kind: municipality
   official_url: https://www.town.ichinohe.iwate.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '035246'
     name: 一戸町
@@ -791,7 +899,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ichinohe.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ichinohe.iwate.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.ichinohe.iwate.jp/kurashi_tetsuzuki/iju_teiju/3858.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.ichinohe.iwate.jp
+  max_pages: 30
   external_links:
   - label: akiya-athome.jp
     url: https://ichinohe-t03524.akiya-athome.jp/buy/house/area/iwateken/ninohegunichinohemachi/list?gyosei_cd%5B%5D=03524

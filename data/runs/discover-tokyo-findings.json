@@ -50,7 +50,10 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "JavaScript 描画のため静的 HTML に物件が無い。リンクのみ"
+      "reason": "JavaScript 描画のため静的 HTML に物件が無い。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.chuo.lg.jp/kenkouiryou/fukushiippan/seikatsushien/saport_hojo_hukushi.html"
+      ]
     },
     {
       "alternatives": [],
@@ -102,7 +105,10 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.shinjuku.lg.jp/seikatsu/shoenergy.html"
+      ]
     },
     {
       "alternatives": [],
@@ -125,7 +131,10 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.bunkyo.lg.jp/b032/p000746.html"
+      ]
     },
     {
       "alternatives": [],
@@ -148,7 +157,10 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.taito.lg.jp/kenchiku/kankyo/jyoseiseido/datsutanso.html"
+      ]
     },
     {
       "alternatives": [
@@ -200,7 +212,10 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "JavaScript 描画のため静的 HTML に物件が無い。リンクのみ"
+      "reason": "JavaScript 描画のため静的 HTML に物件が無い。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.koto.lg.jp/396201/machizukuri/kenchiku/kowasu/83146.html"
+      ]
     },
     {
       "alternatives": [],
@@ -223,7 +238,10 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-kenchiku/kankyo-kenchiku-assen/index.html"
+      ]
     },
     {
       "alternatives": [
@@ -323,7 +341,10 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.shibuya.tokyo.jp/kurashi/jutaku/yushi/"
+      ]
     },
     {
       "alternatives": [],
@@ -571,7 +592,12 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.edogawa.tokyo.jp/e021/kurashi/sumai/taishin/jokyaku/mokuzojose.html",
+        "https://www.city.edogawa.tokyo.jp/kurashi/sumai/taishin/index.html",
+        "https://www.city.edogawa.tokyo.jp/e021/kurashi/sumai/taishin/taishin_josei.html"
+      ]
     },
     {
       "alternatives": [],
@@ -619,7 +645,11 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.tachikawa.lg.jp/kurashi/seikatsu/1001871/1024675.html",
+        "https://www.city.tachikawa.lg.jp/bosai/bohan/1008439/1024725.html"
+      ]
     },
     {
       "alternatives": [],
@@ -688,7 +718,11 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.city.ome.tokyo.jp/soshiki/45/680.html",
+        "https://www.city.ome.tokyo.jp/soshiki/45/679.html"
+      ]
     },
     {
       "alternatives": [
@@ -715,7 +749,10 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.fuchu.tokyo.jp/kurashi/machi/jutaku/index.html"
+      ]
     },
     {
       "alternatives": [
@@ -769,7 +806,10 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "JavaScript 描画のため静的 HTML に物件が無い。リンクのみ"
+      "reason": "JavaScript 描画のため静的 HTML に物件が無い。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.chofu.lg.jp/kurashi/sumai/hojo/index.html"
+      ]
     },
     {
       "alternatives": [],
@@ -865,7 +905,11 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.hino.lg.jp/sangyo/chusho/1029316.html",
+        "https://www.city.hino.lg.jp/kurashi/annzen/1030555.html"
+      ]
     },
     {
       "alternatives": [],
@@ -1030,7 +1074,10 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.kiyose.lg.jp/kurashi/sumai/1014152/index.html"
+      ]
     },
     {
       "alternatives": [
@@ -1203,7 +1250,13 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.nishitokyo.lg.jp/kurasi/jutaku/nyuukyosyabosyuu.html",
+        "https://www.city.nishitokyo.lg.jp/kurasi/jutaku/taishin/shoyusha/josei_haken/mokuzo/taisin_sindan.html",
+        "https://www.city.nishitokyo.lg.jp/kurasi/jutaku/taishin/shoyusha/josei_haken/mokuzo/mokuzou_kaisyu.html",
+        "https://www.city.nishitokyo.lg.jp/kurasi/jutaku/taishin/shoyusha/josei_haken/mokuzo/taisin_shelter.html"
+      ]
     },
     {
       "alternatives": [
@@ -1230,7 +1283,10 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.town.mizuho.tokyo.jp/kankyo/005/002/index.html"
+      ]
     },
     {
       "alternatives": [
@@ -1259,7 +1315,12 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.town.hinode.tokyo.jp/0000002750.html",
+        "https://www.town.hinode.tokyo.jp/0000000191.html",
+        "https://www.town.hinode.tokyo.jp/0000000200.html"
+      ]
     },
     {
       "alternatives": [
@@ -1287,7 +1348,10 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.vill.hinohara.tokyo.jp/0000001578.html"
+      ]
     },
     {
       "alternatives": [],
@@ -1383,7 +1447,11 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "http://www.niijima.com/gyousei/hojokin_joseikin/hojoshurui/akiyajyokyaku.html",
+        "https://www.niijima.com/gyousei/hojokin_joseikin/hojoshurui/akiyajyokyaku.html"
+      ]
     },
     {
       "alternatives": [],

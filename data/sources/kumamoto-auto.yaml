@@ -5,7 +5,7 @@ sources:
   operator: 熊本市
   operator_kind: municipality
   official_url: https://www.city.kumamoto.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '431001'
     name: 熊本市
@@ -14,12 +14,25 @@ sources:
     slug: '431001'
     bank_url: https://www.city.kumamoto.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県熊本市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.city.kumamoto.jp）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.kumamoto.jp/list04114.html
+    kind: subsidy
+  - url: https://www.city.kumamoto.jp/list00051.html
+    kind: subsidy
+  - url: https://www.city.kumamoto.jp/kiji00355862/index.html
+    kind: subsidy
+  - url: https://www.city.kumamoto.jp/kiji00324944/index.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.kumamoto.jp
+  max_pages: 30
 - id: kumamoto-432024
   name: 八代市空き家バンク
   operator: 八代市
@@ -34,12 +47,13 @@ sources:
     slug: '432024'
     bank_url: https://www.city.yatsushiro.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県八代市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.yatsushiro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.yatsushiro.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: kumamoto-432032
   name: 人吉市空き家バンク
   operator: 人吉市
@@ -54,12 +68,13 @@ sources:
     slug: '432032'
     bank_url: https://www.city.hitoyoshi.lg.jp/toppage/boshu/37095
     bank_status: info
+    extract_pending: false
     map_query: 熊本県人吉市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.hitoyoshi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hitoyoshi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 全国版空き家バンクサイト(ライフルホーム)(外部リンク)
     url: https://www.homes.co.jp/akiyabank/
@@ -77,12 +92,13 @@ sources:
     slug: '432041'
     bank_url: https://www.city.arao.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県荒尾市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.arao.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.arao.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: kumamoto-432059
   name: 水俣市空き家バンク
   operator: 水俣市
@@ -97,18 +113,19 @@ sources:
     slug: '432059'
     bank_url: https://www.city.minamata.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県水俣市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.minamata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.minamata.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: kumamoto-432067
   name: 玉名市空き家バンク
   operator: 玉名市
   operator_kind: municipality
   official_url: https://www.city.tamana.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '432067'
     name: 玉名市
@@ -117,18 +134,31 @@ sources:
     slug: '432067'
     bank_url: https://www.city.tamana.lg.jp/q/aview/596/36528.html
     bank_status: info
+    extract_pending: false
     map_query: 熊本県玉名市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.tamana.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tamana.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.tamana.lg.jp/q/aview/596/21680.html
+    kind: subsidy
+  - url: https://www.city.tamana.lg.jp/q/aview/596/28799.html
+    kind: subsidy
+  - url: https://www.city.tamana.lg.jp/q/aview/355/21680.html
+    kind: subsidy
+  - url: https://www.city.tamana.lg.jp/q/aview/592/21680.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.tamana.lg.jp
+  max_pages: 30
 - id: kumamoto-432083
   name: 山鹿市空き家バンク
   operator: 山鹿市
   operator_kind: municipality
   official_url: https://www.city.yamaga.kumamoto.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '432083'
     name: 山鹿市
@@ -137,18 +167,25 @@ sources:
     slug: '432083'
     bank_url: https://www.yamaga-gurashi.com/house/index.html
     bank_status: info
+    extract_pending: false
     map_query: 熊本県山鹿市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式サイト（www.city.yamaga.kumamoto.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.yamaga.kumamoto.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.yamaga.kumamoto.jp/kiji0032042/index.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.yamaga.kumamoto.jp
+  max_pages: 30
 - id: kumamoto-432105
   name: 菊池市空き家バンク
   operator: 菊池市
   operator_kind: municipality
   official_url: https://www.city.kikuchi.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '432105'
     name: 菊池市
@@ -157,12 +194,19 @@ sources:
     slug: '432105'
     bank_url: https://www.city.kikuchi.lg.jp/category/list/1320.html
     bank_status: info
+    extract_pending: false
     map_query: 熊本県菊池市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.kikuchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kikuchi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.kikuchi.lg.jp/article/list/1043.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.kikuchi.lg.jp
+  max_pages: 30
 - id: kumamoto-432113
   name: 宇土市空き家バンク
   operator: 宇土市
@@ -177,23 +221,29 @@ sources:
     slug: '432113'
     bank_url: https://kumamoto-akiya360.jp/property/p1000000398/
     bank_status: available
+    extract_pending: false
     map_query: 熊本県宇土市
   operator_evidence:
     quote: 公式サイト（www.city.uto.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.uto.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://kumamoto-akiya360.jp/property/p1000000398/
     kind: listing_index
+  - url: https://www.city.uto.lg.jp/article/view/1605/16809.html
+    kind: subsidy
+  - url: https://www.city.uto.lg.jp/article/view/1605/14216.html
+    kind: subsidy
   allow_hosts:
   - kumamoto-akiya360.jp
+  - www.city.uto.lg.jp
   max_pages: 30
 - id: kumamoto-432121
   name: 上天草市空き家バンク
   operator: 上天草市
   operator_kind: municipality
   official_url: https://www.city.kamiamakusa.kumamoto.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '432121'
     name: 上天草市
@@ -202,18 +252,25 @@ sources:
     slug: '432121'
     bank_url: https://www.city.kamiamakusa.kumamoto.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県上天草市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.kamiamakusa.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kamiamakusa.kumamoto.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.kamiamakusa.kumamoto.jp/q/aview/310/22518.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.kamiamakusa.kumamoto.jp
+  max_pages: 30
 - id: kumamoto-432130
   name: 宇城市空き家バンク
   operator: 宇城市
   operator_kind: municipality
   official_url: https://www.city.uki.kumamoto.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '432130'
     name: 宇城市
@@ -222,12 +279,23 @@ sources:
     slug: '432130'
     bank_url: https://www.city.uki.kumamoto.jp/toppage/ijuteiju/akiya/iju_akiya/oshirase_bank/2302102
     bank_status: info
+    extract_pending: false
     map_query: 熊本県宇城市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.uki.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.uki.kumamoto.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.uki.kumamoto.jp/resource.php?e=5dace208e13855ac11fc1e24ae32faa222517c224187efe95f8cfb73731c63331088f41229aa51192405cb882b1de8bc
+    kind: subsidy
+  - url: https://www.city.uki.kumamoto.jp/resource.php?e=e5aa8e4907dab09c9a91f46bf2646fdf150f89a635139370c7d83cb2d515ff694218ddd4e7ed065f4e4160784cccf894
+    kind: subsidy
+  - url: https://www.city.uki.kumamoto.jp/toppage/ijuteiju/akiya/iju_akiya/oshirase_bank/2302195
+    kind: subsidy
+  allow_hosts:
+  - www.city.uki.kumamoto.jp
+  max_pages: 30
 - id: kumamoto-432148
   name: 阿蘇市空き家バンク
   operator: 阿蘇市
@@ -242,11 +310,12 @@ sources:
     slug: '432148'
     bank_url: https://www.city.aso.kumamoto.jp/akiya/
     bank_status: available
+    extract_pending: false
     map_query: 熊本県阿蘇市
   operator_evidence:
     quote: 公式ドメイン www.city.aso.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.aso.kumamoto.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.aso.kumamoto.jp/akiya/
     kind: listing_index
@@ -267,12 +336,13 @@ sources:
     slug: '432156'
     bank_url: https://www.city.amakusa.kumamoto.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県天草市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.amakusa.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.amakusa.kumamoto.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: kumamoto-432164
   name: 合志市空き家バンク
   operator: 合志市
@@ -287,12 +357,13 @@ sources:
     slug: '432164'
     bank_url: https://www.city.koshi.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県合志市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.koshi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.koshi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: kumamoto-433489
   name: 美里町空き家バンク
   operator: 美里町
@@ -307,12 +378,13 @@ sources:
     slug: '433489'
     bank_url: https://www.town.kumamoto-misato.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県美里町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.town.kumamoto-misato.lg.jp）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: kumamoto-433641
   name: 玉東町空き家バンク
   operator: 玉東町
@@ -327,12 +399,13 @@ sources:
     slug: '433641'
     bank_url: https://www.town.gyokuto.kumamoto.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県玉東町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.gyokuto.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.gyokuto.kumamoto.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: kumamoto-433675
   name: 南関町空き家バンク
   operator: 南関町
@@ -347,23 +420,29 @@ sources:
     slug: '433675'
     bank_url: https://kumamoto-akiya360.jp/property/p1000000851/
     bank_status: available
+    extract_pending: false
     map_query: 熊本県南関町
   operator_evidence:
     quote: 公式サイト（www.town.nankan.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.town.nankan.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://kumamoto-akiya360.jp/property/p1000000851/
     kind: listing_index
+  - url: https://www.town.nankan.lg.jp/kurashi/kurashisodan/2203.html
+    kind: subsidy
+  - url: https://www.town.nankan.lg.jp/kurashi/kurashisodan/page2764.html
+    kind: subsidy
   allow_hosts:
   - kumamoto-akiya360.jp
+  - www.town.nankan.lg.jp
   max_pages: 30
 - id: kumamoto-433683
   name: 長洲町空き家バンク
   operator: 長洲町
   operator_kind: municipality
   official_url: https://www.town.nagasu.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '433683'
     name: 長洲町
@@ -372,12 +451,25 @@ sources:
     slug: '433683'
     bank_url: https://www.town.nagasu.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県長洲町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.nagasu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.nagasu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.nagasu.lg.jp/soshiki/machizukuri/teiju/kiji0032064/
+    kind: subsidy
+  - url: https://www.town.nagasu.lg.jp/soshiki/machizukuri/teiju/175677286914918/
+    kind: subsidy
+  - url: https://www.town.nagasu.lg.jp/soshiki/machizukuri/teiju/kiji0037437/
+    kind: subsidy
+  - url: https://www.town.nagasu.lg.jp/soshiki/machizukuri/teiju/kiji0037438/
+    kind: subsidy
+  allow_hosts:
+  - www.town.nagasu.lg.jp
+  max_pages: 30
 - id: kumamoto-433691
   name: 和水町空き家バンク
   operator: 和水町
@@ -392,14 +484,23 @@ sources:
     slug: '433691'
     bank_url: https://www.town.nagomi.lg.jp/iju/teijyuu/akiya/16/
     bank_status: available
+    extract_pending: false
     map_query: 熊本県和水町
   operator_evidence:
     quote: 公式ドメイン www.town.nagomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.nagomi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.nagomi.lg.jp/iju/teijyuu/akiya/16/
     kind: listing_index
+  - url: https://www.town.nagomi.lg.jp/iju/hojyokin/akiyahojyokin/
+    kind: subsidy
+  - url: https://www.town.nagomi.lg.jp/iju/hojyokin/mirai/
+    kind: subsidy
+  - url: https://www.town.nagomi.lg.jp/iju/hojyokin/akiyahojyokin/kiji00377/
+    kind: subsidy
+  - url: https://www.town.nagomi.lg.jp/iju/hojyokin/mirai/kiji00376/
+    kind: subsidy
   allow_hosts:
   - www.town.nagomi.lg.jp
   max_pages: 30
@@ -417,18 +518,19 @@ sources:
     slug: '434035'
     bank_url: https://www.town.ozu.kumamoto.jp/page/1176.html
     bank_status: info
+    extract_pending: false
     map_query: 熊本県大津町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.ozu.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ozu.kumamoto.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: kumamoto-434043
   name: 菊陽町空き家バンク
   operator: 菊陽町
   operator_kind: municipality
   official_url: https://www.town.kikuyo.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '434043'
     name: 菊陽町
@@ -437,12 +539,19 @@ sources:
     slug: '434043'
     bank_url: https://www.town.kikuyo.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県菊陽町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.kikuyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kikuyo.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.kikuyo.lg.jp/kiji0031553/index.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.kikuyo.lg.jp
+  max_pages: 30
 - id: kumamoto-434230
   name: 南小国町空き家バンク
   operator: 南小国町
@@ -457,11 +566,12 @@ sources:
     slug: '434230'
     bank_url: https://minamioguni-rashiku.com/vacant-house/
     bank_status: available
+    extract_pending: false
     map_query: 熊本県南小国町
   operator_evidence:
     quote: 公式サイト（www.town.minamioguni.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.town.minamioguni.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://minamioguni-rashiku.com/vacant-house/
     kind: listing_index
@@ -469,15 +579,18 @@ sources:
     - pattern: https?://minamioguni\-rashiku\.com/vacant\-house/page/\d+/?$
       kind: listing_index
       max_links: 20
+  - url: https://www.town.minamioguni.lg.jp/joseikin/index.html
+    kind: subsidy
   allow_hosts:
   - minamioguni-rashiku.com
+  - www.town.minamioguni.lg.jp
   max_pages: 30
 - id: kumamoto-434248
   name: 小国町空き家バンク
   operator: 小国町
   operator_kind: municipality
   official_url: https://www.town.kumamoto-oguni.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '434248'
     name: 小国町
@@ -486,18 +599,25 @@ sources:
     slug: '434248'
     bank_url: https://www.town.kumamoto-oguni.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県小国町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.town.kumamoto-oguni.lg.jp）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.kumamoto-oguni.lg.jp/toppage/toppage_oshirase/22289
+    kind: subsidy
+  allow_hosts:
+  - www.town.kumamoto-oguni.lg.jp
+  max_pages: 30
 - id: kumamoto-434256
   name: 産山村空き家バンク
   operator: 産山村
   operator_kind: municipality
   official_url: https://www.ubuyama-v.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '434256'
     name: 産山村
@@ -506,12 +626,25 @@ sources:
     slug: '434256'
     bank_url: http://www.ubuyama-v.jp/kurashi_tetsuzuki/sumai_iju/1/index.html
     bank_status: info
+    extract_pending: false
     map_query: 熊本県産山村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.ubuyama-v.jp）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.ubuyama-v.jp/kurashi_tetsuzuki/seikatsukankyo/reformsupport/index.html
+    kind: subsidy
+  - url: https://www.ubuyama-v.jp/kurashi_tetsuzuki/sumai_iju/reform/index.html
+    kind: subsidy
+  - url: http://www.ubuyama-v.jp/kurashi_tetsuzuki/sumai_iju/reform/1041.html
+    kind: subsidy
+  - url: https://www.ubuyama-v.jp/soshikikarasagasu/kikakushinkoka/sumai_iju/2/1299.html
+    kind: subsidy
+  allow_hosts:
+  - www.ubuyama-v.jp
+  max_pages: 30
 - id: kumamoto-434281
   name: 高森町空き家バンク
   operator: 高森町
@@ -526,12 +659,13 @@ sources:
     slug: '434281'
     bank_url: https://www.town.takamori.kumamoto.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県高森町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.town.takamori.kumamoto.jp）。サイトを取得できなかったためリンクのみ（HTTP 403）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: kumamoto-434329
   name: 西原村空き家バンク
   operator: 西原村
@@ -546,14 +680,17 @@ sources:
     slug: '434329'
     bank_url: https://www.vill.nishihara.kumamoto.jp/dynamic/ijyu/info/pub/default.aspx?c_id=32
     bank_status: available
+    extract_pending: false
     map_query: 熊本県西原村
   operator_evidence:
     quote: 公式ドメイン www.vill.nishihara.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.nishihara.kumamoto.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.vill.nishihara.kumamoto.jp/dynamic/ijyu/info/pub/default.aspx?c_id=32
     kind: listing_index
+  - url: https://www.vill.nishihara.kumamoto.jp/ijyu/kiji003262/index.html
+    kind: subsidy
   allow_hosts:
   - www.vill.nishihara.kumamoto.jp
   max_pages: 30
@@ -571,18 +708,19 @@ sources:
     slug: '434337'
     bank_url: https://www.vill.minamiaso.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県南阿蘇村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.minamiaso.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.minamiaso.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: kumamoto-434418
   name: 御船町空き家バンク
   operator: 御船町
   operator_kind: municipality
   official_url: https://www.town.mifune.kumamoto.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '434418'
     name: 御船町
@@ -591,18 +729,25 @@ sources:
     slug: '434418'
     bank_url: https://www.town.mifune.kumamoto.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県御船町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.mifune.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.mifune.kumamoto.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.mifune.kumamoto.jp/page7168.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.mifune.kumamoto.jp
+  max_pages: 30
 - id: kumamoto-434426
   name: 嘉島町空き家バンク
   operator: 嘉島町
   operator_kind: municipality
   official_url: https://www.town.kumamoto-kashima.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '434426'
     name: 嘉島町
@@ -611,12 +756,19 @@ sources:
     slug: '434426'
     bank_url: https://www.town.kumamoto-kashima.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県嘉島町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.town.kumamoto-kashima.lg.jp）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.kumamoto-kashima.lg.jp/q/aview/104/1272.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.kumamoto-kashima.lg.jp
+  max_pages: 30
 - id: kumamoto-434434
   name: 益城町空き家バンク
   operator: 益城町
@@ -631,12 +783,13 @@ sources:
     slug: '434434'
     bank_url: https://www.town.mashiki.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県益城町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.mashiki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.mashiki.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: kumamoto-434442
   name: 甲佐町空き家バンク
   operator: 甲佐町
@@ -651,12 +804,13 @@ sources:
     slug: '434442'
     bank_url: https://www.town.kosa.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県甲佐町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.kosa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kosa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: kumamoto-434477
   name: 山都町空き家バンク
   operator: 山都町
@@ -671,18 +825,19 @@ sources:
     slug: '434477'
     bank_url: https://www.town.kumamoto-yamato.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県山都町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.town.kumamoto-yamato.lg.jp）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: kumamoto-434680
   name: 氷川町空き家バンク
   operator: 氷川町
   operator_kind: municipality
   official_url: https://www.town.hikawa.kumamoto.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '434680'
     name: 氷川町
@@ -691,18 +846,25 @@ sources:
     slug: '434680'
     bank_url: https://www.town.hikawa.kumamoto.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県氷川町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.hikawa.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.hikawa.kumamoto.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.hikawa.kumamoto.jp/kiji0032590/index.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.hikawa.kumamoto.jp
+  max_pages: 30
 - id: kumamoto-434825
   name: 芦北町空き家バンク
   operator: 芦北町
   operator_kind: municipality
   official_url: https://www.town.ashikita.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '434825'
     name: 芦北町
@@ -711,18 +873,25 @@ sources:
     slug: '434825'
     bank_url: https://www.town.ashikita.lg.jp/toppage/bosyu/2068558
     bank_status: info
+    extract_pending: false
     map_query: 熊本県芦北町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.ashikita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.ashikita.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.ashikita.lg.jp/toppage/bosyu/2072708
+    kind: subsidy
+  allow_hosts:
+  - www.town.ashikita.lg.jp
+  max_pages: 30
 - id: kumamoto-434841
   name: 津奈木町空き家バンク
   operator: 津奈木町
   operator_kind: municipality
   official_url: https://www.town.tsunagi.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '434841'
     name: 津奈木町
@@ -731,12 +900,21 @@ sources:
     slug: '434841'
     bank_url: https://www.town.tsunagi.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県津奈木町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.tsunagi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.tsunagi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.tsunagi.lg.jp/page4668.html
+    kind: subsidy
+  - url: https://www.town.tsunagi.lg.jp/teiju/page2570.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.tsunagi.lg.jp
+  max_pages: 30
 - id: kumamoto-435015
   name: 錦町空き家バンク
   operator: 錦町
@@ -751,12 +929,13 @@ sources:
     slug: '435015'
     bank_url: https://www.town.kumamoto-nishiki.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県錦町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.town.kumamoto-nishiki.lg.jp）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: kumamoto-435058
   name: 多良木町空き家バンク
   operator: 多良木町
@@ -771,12 +950,13 @@ sources:
     slug: '435058'
     bank_url: https://www.town.taragi.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県多良木町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.taragi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.taragi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: kumamoto-435066
   name: 湯前町空き家バンク
   operator: 湯前町
@@ -791,12 +971,13 @@ sources:
     slug: '435066'
     bank_url: https://www.town.yunomae.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県湯前町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.yunomae.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.yunomae.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: kumamoto-435074
   name: 水上村空き家バンク
   operator: 水上村
@@ -811,14 +992,17 @@ sources:
     slug: '435074'
     bank_url: https://www.vill.mizukami.lg.jp/dynamic/info/pub/default.aspx?c_id=22
     bank_status: available
+    extract_pending: false
     map_query: 熊本県水上村
   operator_evidence:
     quote: 公式ドメイン www.vill.mizukami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.mizukami.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.vill.mizukami.lg.jp/dynamic/info/pub/default.aspx?c_id=22
     kind: listing_index
+  - url: https://www.vill.mizukami.lg.jp/kiji0031085/index.html
+    kind: subsidy
   allow_hosts:
   - www.vill.mizukami.lg.jp
   max_pages: 30
@@ -827,7 +1011,7 @@ sources:
   operator: 相良村
   operator_kind: municipality
   official_url: https://www.vill.sagara.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '435104'
     name: 相良村
@@ -836,12 +1020,19 @@ sources:
     slug: '435104'
     bank_url: https://www.vill.sagara.lg.jp/iju/
     bank_status: info
+    extract_pending: false
     map_query: 熊本県相良村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.sagara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.sagara.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.vill.sagara.lg.jp/q/aview/201/333.html
+    kind: subsidy
+  allow_hosts:
+  - www.vill.sagara.lg.jp
+  max_pages: 30
 - id: kumamoto-435112
   name: 五木村空き家バンク
   operator: 五木村
@@ -856,11 +1047,12 @@ sources:
     slug: '435112'
     bank_url: https://www.vill.itsuki.lg.jp/dynamic/teijuu/info/pub/detail.aspx?c_id=17&id=27
     bank_status: available
+    extract_pending: false
     map_query: 熊本県五木村
   operator_evidence:
     quote: 公式ドメイン www.vill.itsuki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.itsuki.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.vill.itsuki.lg.jp/dynamic/teijuu/info/pub/detail.aspx?c_id=17&id=27
     kind: listing_index
@@ -881,12 +1073,13 @@ sources:
     slug: '435121'
     bank_url: https://www.vill.yamae.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県山江村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.yamae.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.yamae.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: kumamoto-435139
   name: 球磨村空き家バンク
   operator: 球磨村
@@ -901,18 +1094,19 @@ sources:
     slug: '435139'
     bank_url: https://www.kumamura.com/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県球磨村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.kumamura.com）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: kumamoto-435147
   name: あさぎり町空き家バンク
   operator: あさぎり町
   operator_kind: municipality
   official_url: https://www.town.asagiri.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '435147'
     name: あさぎり町
@@ -921,12 +1115,19 @@ sources:
     slug: '435147'
     bank_url: https://www.town.asagiri.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県あさぎり町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.asagiri.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.asagiri.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.asagiri.lg.jp/kiji0033879/index.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.asagiri.lg.jp
+  max_pages: 30
 - id: kumamoto-435317
   name: 苓北町空き家バンク
   operator: 苓北町
@@ -941,9 +1142,10 @@ sources:
     slug: '435317'
     bank_url: https://reihoku-kumamoto.jp/
     bank_status: none
+    extract_pending: false
     map_query: 熊本県苓北町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（reihoku-kumamoto.jp）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'

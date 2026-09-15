@@ -14,14 +14,17 @@ sources:
     slug: '162019'
     bank_url: https://www.city.toyama.lg.jp/akiyabk/index.html
     bank_status: available
+    extract_pending: false
     map_query: 富山県富山市
   operator_evidence:
     quote: 公式ドメイン www.city.toyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.toyama.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.toyama.lg.jp/akiyabk/index.html
     kind: listing_index
+  - url: https://www.city.toyama.lg.jp/kurashi/sumai/1010270/index.html
+    kind: subsidy
   allow_hosts:
   - www.city.toyama.lg.jp
   max_pages: 30
@@ -39,18 +42,19 @@ sources:
     slug: '162027'
     bank_url: https://www.city.takaoka.toyama.jp/
     bank_status: none
+    extract_pending: false
     map_query: 富山県高岡市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.takaoka.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.takaoka.toyama.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: toyama-162043
   name: 魚津市空き家バンク
   operator: 魚津市
   operator_kind: municipality
   official_url: https://www.city.uozu.toyama.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '162043'
     name: 魚津市
@@ -59,12 +63,25 @@ sources:
     slug: '162043'
     bank_url: https://www.city.uozu.toyama.jp/
     bank_status: none
+    extract_pending: false
     map_query: 富山県魚津市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.uozu.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.uozu.toyama.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.uozu.toyama.jp/guide/svGuideDtl.aspx?servno=18039&topkb=G
+    kind: subsidy
+  - url: https://www.city.uozu.toyama.jp/guide/svGuideDtl.aspx?servno=18040&topkb=G
+    kind: subsidy
+  - url: https://www.city.uozu.toyama.jp/guide/svGuideDtl.aspx?servno=18100&cdkb=ctg&cd=2002&topkb=G
+    kind: subsidy
+  - url: https://www.city.uozu.toyama.jp/guide/svGuideDtl.aspx?servno=21761&cdkb=ctg&cd=2002&topkb=G
+    kind: subsidy
+  allow_hosts:
+  - www.city.uozu.toyama.jp
+  max_pages: 30
 - id: toyama-162051
   name: 氷見市空き家バンク
   operator: 氷見市
@@ -79,12 +96,13 @@ sources:
     slug: '162051'
     bank_url: https://www.city.himi.toyama.jp/
     bank_status: none
+    extract_pending: false
     map_query: 富山県氷見市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.himi.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.himi.toyama.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: toyama-162060
   name: 滑川市空き家バンク
   operator: 滑川市
@@ -99,11 +117,12 @@ sources:
     slug: '162060'
     bank_url: https://namerikawa-akiya.com/
     bank_status: available
+    extract_pending: false
     map_query: 富山県滑川市
   operator_evidence:
     quote: 公式サイト（www.city.namerikawa.toyama.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.namerikawa.toyama.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://namerikawa-akiya.com/
     kind: listing_index
@@ -124,12 +143,13 @@ sources:
     slug: '162078'
     bank_url: https://www.city.kurobe.toyama.jp/
     bank_status: none
+    extract_pending: false
     map_query: 富山県黒部市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.kurobe.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kurobe.toyama.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: toyama-162086
   name: 砺波市空き家バンク
   operator: 砺波市
@@ -144,12 +164,13 @@ sources:
     slug: '162086'
     bank_url: https://www.city.tonami.lg.jp/service/77804p/
     bank_status: info
+    extract_pending: false
     map_query: 富山県砺波市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.tonami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tonami.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: toyama-162094
   name: 小矢部市空き家バンク
   operator: 小矢部市
@@ -164,14 +185,21 @@ sources:
     slug: '162094'
     bank_url: https://www.city.oyabe.toyama.jp/ijyu/1001572/1003141/1004072.html
     bank_status: available
+    extract_pending: false
     map_query: 富山県小矢部市
   operator_evidence:
     quote: 公式ドメイン www.city.oyabe.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.oyabe.toyama.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.oyabe.toyama.jp/ijyu/1001572/1003141/1004072.html
     kind: listing_index
+  - url: https://www.city.oyabe.toyama.jp/ijyu/1001583/index.html
+    kind: subsidy
+  - url: https://www.city.oyabe.toyama.jp/kurashi/1001729/1001737/1001739.html
+    kind: subsidy
+  - url: https://www.city.oyabe.toyama.jp/kurashi/1001729/1001737/1001738.html
+    kind: subsidy
   allow_hosts:
   - www.city.oyabe.toyama.jp
   max_pages: 30
@@ -189,18 +217,19 @@ sources:
     slug: '162108'
     bank_url: https://www.city.nanto.toyama.jp/
     bank_status: none
+    extract_pending: false
     map_query: 富山県南砺市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.nanto.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.nanto.toyama.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: toyama-162116
   name: 射水市空き家バンク
   operator: 射水市
   operator_kind: municipality
   official_url: https://www.city.imizu.toyama.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '162116'
     name: 射水市
@@ -209,12 +238,25 @@ sources:
     slug: '162116'
     bank_url: https://www.city.imizu.toyama.jp/guide/svGuideDtl.aspx?servno=51303
     bank_status: info
+    extract_pending: false
     map_query: 富山県射水市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.imizu.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.imizu.toyama.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.imizu.toyama.jp/guide/svGuideDtl.aspx?servno=18555
+    kind: subsidy
+  - url: https://www.city.imizu.toyama.jp/guide/svGuideDtl.aspx?servno=19338
+    kind: subsidy
+  - url: https://www.city.imizu.toyama.jp/guide/svGuideDtl.aspx?servno=52939
+    kind: subsidy
+  - url: https://www.city.imizu.toyama.jp/guide/svGuideDtl.aspx?servno=14411
+    kind: subsidy
+  allow_hosts:
+  - www.city.imizu.toyama.jp
+  max_pages: 30
 - id: toyama-163210
   name: 舟橋村空き家バンク
   operator: 舟橋村
@@ -229,12 +271,13 @@ sources:
     slug: '163210'
     bank_url: https://www.vill.funahashi.toyama.jp/
     bank_status: none
+    extract_pending: false
     map_query: 富山県舟橋村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.funahashi.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.funahashi.toyama.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: toyama-163228
   name: 上市町空き家バンク
   operator: 上市町
@@ -249,14 +292,21 @@ sources:
     slug: '163228'
     bank_url: https://www.town.kamiichi.toyama.jp/page/1646.html
     bank_status: available
+    extract_pending: false
     map_query: 富山県上市町
   operator_evidence:
     quote: 公式ドメイン www.town.kamiichi.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kamiichi.toyama.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.kamiichi.toyama.jp/page/1646.html
     kind: listing_index
+  - url: https://www.town.kamiichi.toyama.jp/page/1710.html
+    kind: subsidy
+  - url: https://www.town.kamiichi.toyama.jp/page/1753.html
+    kind: subsidy
+  - url: https://www.town.kamiichi.toyama.jp/page/1770.html
+    kind: subsidy
   allow_hosts:
   - www.town.kamiichi.toyama.jp
   max_pages: 30
@@ -268,7 +318,7 @@ sources:
   operator: 立山町
   operator_kind: municipality
   official_url: https://www.town.tateyama.toyama.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '163236'
     name: 立山町
@@ -277,12 +327,23 @@ sources:
     slug: '163236'
     bank_url: https://www.town.tateyama.toyama.jp/kurashi_tetsuzuki/sumai_machizukuri/akiya/index.html
     bank_status: info
+    extract_pending: false
     map_query: 富山県立山町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.tateyama.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.tateyama.toyama.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.tateyama.toyama.jp/kurashi_tetsuzuki/sumai_machizukuri/akiya/1627.html
+    kind: subsidy
+  - url: https://www.town.tateyama.toyama.jp/kurashi_tetsuzuki/sumai_machizukuri/akiya/2144.html
+    kind: subsidy
+  - url: https://www.town.tateyama.toyama.jp/soshikikarasagasu/kensetsuka/kenchikujutakukakari/1/1/851.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.tateyama.toyama.jp
+  max_pages: 30
 - id: toyama-163422
   name: 入善町空き家バンク
   operator: 入善町
@@ -297,11 +358,12 @@ sources:
     slug: '163422'
     bank_url: https://www.town.nyuzen.toyama.jp/gyosei/machizukuri/sumai/1/1856.html
     bank_status: available
+    extract_pending: false
     map_query: 富山県入善町
   operator_evidence:
     quote: 公式ドメイン www.town.nyuzen.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nyuzen.toyama.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.nyuzen.toyama.jp/gyosei/machizukuri/sumai/1/1856.html
     kind: listing_index
@@ -331,9 +393,10 @@ sources:
     slug: '163431'
     bank_url: https://www.town.asahi.toyama.jp/
     bank_status: none
+    extract_pending: false
     map_query: 富山県朝日町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.asahi.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.asahi.toyama.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'

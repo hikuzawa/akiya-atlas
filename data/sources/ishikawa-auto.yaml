@@ -20,13 +20,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kanazawa.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kanazawa.ishikawa.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: ishikawa-172022
   name: 七尾市空き家バンク
   operator: 七尾市
   operator_kind: municipality
   official_url: https://www.city.nanao.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '172022'
     name: 七尾市
@@ -41,13 +41,23 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nanao.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nanao.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.nanao.lg.jp/toshikenchiku/kurashi/sumai/sumai/burokkubei.html
+    kind: subsidy
+  - url: https://www.city.nanao.lg.jp/toshikenchiku/hisaijuutakutaishin.html
+    kind: subsidy
+  - url: https://www.city.nanao.lg.jp/toshikenchiku/kurashi/dosyasaigaitokubetukuiki_saiken.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.nanao.lg.jp
+  max_pages: 30
 - id: ishikawa-172031
   name: 小松市空き家バンク
   operator: 小松市
   operator_kind: municipality
   official_url: https://www.city.komatsu.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '172031'
     name: 小松市
@@ -62,13 +72,25 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.komatsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.komatsu.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.komatsu.lg.jp/soshiki/1027/teijuusokushinshienseido/728.html
+    kind: subsidy
+  - url: https://www.city.komatsu.lg.jp/soshiki/1027/reiwa6notohantoujishinshien/16971.html
+    kind: subsidy
+  - url: https://www.city.komatsu.lg.jp/soshiki/1027/teijuusokushinshienseido/732.html
+    kind: subsidy
+  - url: https://www.city.komatsu.lg.jp/soshiki/1027/komatsushinoakiyataisakunitsuite/18521.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.komatsu.lg.jp
+  max_pages: 30
 - id: ishikawa-172049
   name: 輪島市空き家バンク
   operator: 輪島市
   operator_kind: municipality
   official_url: https://www.city.wajima.ishikawa.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '172049'
     name: 輪島市
@@ -83,13 +105,25 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.wajima.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.wajima.ishikawa.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.wajima.ishikawa.jp/article/2026082100016/
+    kind: subsidy
+  - url: https://www.city.wajima.ishikawa.jp/article/2026021100015/
+    kind: subsidy
+  - url: https://www.city.wajima.ishikawa.jp/article/2025112100019/
+    kind: subsidy
+  - url: https://www.city.wajima.ishikawa.jp/docs/2015050100011/
+    kind: subsidy
+  allow_hosts:
+  - www.city.wajima.ishikawa.jp
+  max_pages: 30
 - id: ishikawa-172057
   name: 珠洲市空き家バンク
   operator: 珠洲市
   operator_kind: municipality
   official_url: https://www.city.suzu.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '172057'
     name: 珠洲市
@@ -104,7 +138,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.suzu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.suzu.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.suzu.lg.jp/soshiki/1/1490.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.suzu.lg.jp
+  max_pages: 30
 - id: ishikawa-172065
   name: 加賀市空き家バンク
   operator: 加賀市
@@ -125,7 +165,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kaga.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kaga.ishikawa.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: ishikawa-172073
   name: 羽咋市空き家バンク
   operator: 羽咋市
@@ -146,13 +186,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hakui.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hakui.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: ishikawa-172090
   name: かほく市空き家バンク
   operator: かほく市
   operator_kind: municipality
   official_url: https://www.city.kahoku.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '172090'
     name: かほく市
@@ -167,13 +207,25 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kahoku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kahoku.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.kahoku.lg.jp/001/156/157/d000913.html
+    kind: subsidy
+  - url: https://www.city.kahoku.lg.jp/001/156/157/d000210.html
+    kind: subsidy
+  - url: https://www.city.kahoku.lg.jp/001/156/161/index.html
+    kind: subsidy
+  - url: https://www.city.kahoku.lg.jp/hokkuhoku/index.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.kahoku.lg.jp
+  max_pages: 30
 - id: ishikawa-172103
   name: 白山市空き家バンク
   operator: 白山市
   operator_kind: municipality
   official_url: https://www.city.hakusan.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '172103'
     name: 白山市
@@ -188,7 +240,15 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hakusan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hakusan.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.hakusan.lg.jp/machi/akiya/1009715.html
+    kind: subsidy
+  - url: https://www.city.hakusan.lg.jp/machi/ijyu/1005388/1009390.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.hakusan.lg.jp
+  max_pages: 30
 - id: ishikawa-172111
   name: 能美市空き家バンク
   operator: 能美市
@@ -208,7 +268,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nomi.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.nomi.lg.jp/docs/1083.html
     kind: listing_index
@@ -216,6 +276,14 @@ sources:
     - pattern: https?://www\.city\.nomi\.lg\.jp/docs/1083\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
       kind: listing_index
       max_links: 20
+  - url: https://www.city.nomi.lg.jp/kurashi/sumai/barrierfree/
+    kind: subsidy
+  - url: https://www.city.nomi.lg.jp/kurashi/sumai/taishinkaishu/
+    kind: subsidy
+  - url: https://www.city.nomi.lg.jp/kurashi/sumai/akiyahojokin/
+    kind: subsidy
+  - url: https://www.city.nomi.lg.jp/docs/2515.html
+    kind: subsidy
   allow_hosts:
   - www.city.nomi.lg.jp
   max_pages: 30
@@ -224,7 +292,7 @@ sources:
   operator: 野々市市
   operator_kind: municipality
   official_url: https://www.city.nonoichi.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '172120'
     name: 野々市市
@@ -239,7 +307,15 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nonoichi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nonoichi.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.nonoichi.lg.jp/soshiki/30/51950.html
+    kind: subsidy
+  - url: https://www.city.nonoichi.lg.jp/soshiki/30/1191.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.nonoichi.lg.jp
+  max_pages: 30
 - id: ishikawa-173240
   name: 川北町空き家バンク
   operator: 川北町
@@ -260,7 +336,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kawakita.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kawakita.ishikawa.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: ishikawa-173614
   name: 津幡町空き家バンク
   operator: 津幡町
@@ -280,7 +356,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tsubata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.tsubata.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.tsubata.lg.jp/site/welcome/1222.html
     kind: listing_index
@@ -292,7 +368,7 @@ sources:
   operator: 内灘町
   operator_kind: municipality
   official_url: https://www.town.uchinada.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '173657'
     name: 内灘町
@@ -307,13 +383,19 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.uchinada.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.uchinada.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.uchinada.lg.jp/soshiki/kikaku/2058.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.uchinada.lg.jp
+  max_pages: 30
 - id: ishikawa-173843
   name: 志賀町空き家バンク
   operator: 志賀町
   operator_kind: municipality
   official_url: https://www.town.shika.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '173843'
     name: 志賀町
@@ -328,13 +410,19 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shika.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.shika.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.shika.lg.jp/page/2196.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.shika.lg.jp
+  max_pages: 30
 - id: ishikawa-173860
   name: 宝達志水町空き家バンク
   operator: 宝達志水町
   operator_kind: municipality
   official_url: https://www.hodatsushimizu.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '173860'
     name: 宝達志水町
@@ -349,7 +437,17 @@ sources:
   operator_evidence:
     quote: 石川県内市町のページに掲載された公式サイト（www.hodatsushimizu.jp）
     url: https://www.pref.ishikawa.lg.jp/shimachi.html
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.hodatsushimizu.jp/soshiki/johosuishinka/2/akiya/656.html
+    kind: subsidy
+  - url: https://www.hodatsushimizu.jp/gyosei/kurashi_tetsuzuki/7/2633.html
+    kind: subsidy
+  - url: https://www.hodatsushimizu.jp/gyosei/kurashi_tetsuzuki/9/1860.html
+    kind: subsidy
+  allow_hosts:
+  - www.hodatsushimizu.jp
+  max_pages: 30
 - id: ishikawa-174076
   name: 中能登町空き家バンク
   operator: 中能登町
@@ -370,7 +468,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nakanoto.ishikawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nakanoto.ishikawa.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: ishikawa-174611
   name: 穴水町空き家バンク
   operator: 穴水町
@@ -391,7 +489,7 @@ sources:
   operator_evidence:
     quote: 掲載ページがエリア・物件形態・価格帯の絞り込み画面で、検索しないと物件が出ない（本文は選択肢と「検索」ボタンだけ）。検索の自動送信はしない方針のため、公式ページへの案内にとどめる（www.town.anamizu.lg.jp）
     url: https://www.town.anamizu.lg.jp/akiyabank/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: ishikawa-174637
   name: 能登町空き家バンク
   operator: 能登町
@@ -412,4 +510,4 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.noto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.noto.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'

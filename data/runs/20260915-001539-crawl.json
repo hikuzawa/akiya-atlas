@@ -1,0 +1,29 @@
+{
+  "ci": false,
+  "command": "crawl",
+  "errors": [
+    "https://www.vill.shimokitayama.nara.jp/kurashi/roukyu.html: HTTP 404"
+  ],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-15T00:16:05Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "crawl": {
+      "changed": 30,
+      "errors": 1,
+      "fetched": 30,
+      "not_modified": 0,
+      "requests": 43,
+      "unchanged": 0,
+      "workers": 8
+    }
+  },
+  "started_at": "2026-09-15T00:15:39Z"
+}

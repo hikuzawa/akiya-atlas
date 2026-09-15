@@ -5,7 +5,7 @@ sources:
   operator: 甲府市
   operator_kind: municipality
   official_url: https://www.city.kofu.yamanashi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '192015'
     name: 甲府市
@@ -14,12 +14,21 @@ sources:
     slug: '192015'
     bank_url: https://www.city.kofu.yamanashi.jp/nanboku/machi/sumai/kekaku/aki.html
     bank_status: info
+    extract_pending: false
     map_query: 山梨県甲府市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.kofu.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kofu.yamanashi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.kofu.yamanashi.jp/akiyataisaku/bankuzyosei.html
+    kind: subsidy
+  - url: https://www.city.kofu.yamanashi.jp/ijuuteijuu/kosodatesetaizyuutakusyutokuuketuke.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.kofu.yamanashi.jp
+  max_pages: 30
   external_links:
   - label: ハトマークサイト山梨(別サイトへリンク)
     url: http://www.hatomarksite.com/search/yamanashi/
@@ -37,12 +46,13 @@ sources:
     slug: '192023'
     bank_url: https://www.city.fujiyoshida.yamanashi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山梨県富士吉田市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.fujiyoshida.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.fujiyoshida.yamanashi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: yamanashi-192040
   name: 都留市空き家バンク
   operator: 都留市
@@ -57,18 +67,19 @@ sources:
     slug: '192040'
     bank_url: https://www.city.tsuru.yamanashi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山梨県都留市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.tsuru.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.tsuru.yamanashi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: yamanashi-192058
   name: 山梨市空き家バンク
   operator: 山梨市
   operator_kind: municipality
   official_url: https://www.city.yamanashi.yamanashi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '192058'
     name: 山梨市
@@ -77,12 +88,25 @@ sources:
     slug: '192058'
     bank_url: https://www.city.yamanashi.yamanashi.jp/life/1/6/175/
     bank_status: info
+    extract_pending: false
     map_query: 山梨県山梨市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.yamanashi.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.yamanashi.yamanashi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.yamanashi.yamanashi.jp/site/iju/2121.html
+    kind: subsidy
+  - url: https://www.city.yamanashi.yamanashi.jp/site/iju/17231.html
+    kind: subsidy
+  - url: https://www.city.yamanashi.yamanashi.jp/soshiki/16/1756.html
+    kind: subsidy
+  - url: https://www.city.yamanashi.yamanashi.jp/soshiki/20/1432.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.yamanashi.yamanashi.jp
+  max_pages: 30
 - id: yamanashi-192066
   name: 大月市空き家バンク
   operator: 大月市
@@ -97,14 +121,19 @@ sources:
     slug: '192066'
     bank_url: https://www.city.otsuki.yamanashi.jp/shisei/shisaku_keikaku/akiyabanku.html
     bank_status: available
+    extract_pending: false
     map_query: 山梨県大月市
   operator_evidence:
     quote: 公式ドメイン www.city.otsuki.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.otsuki.yamanashi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.otsuki.yamanashi.jp/shisei/shisaku_keikaku/akiyabanku.html
     kind: listing_index
+  - url: https://www.city.otsuki.yamanashi.jp/shisei/shisaku_keikaku/2025-0401-1721-6.html
+    kind: subsidy
+  - url: https://www.city.otsuki.yamanashi.jp/shisei/shisaku_keikaku/2025-0402-0928-6.html
+    kind: subsidy
   allow_hosts:
   - www.city.otsuki.yamanashi.jp
   max_pages: 30
@@ -127,12 +156,13 @@ sources:
     slug: '192074'
     bank_url: https://www.city.nirasaki.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山梨県韮崎市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.nirasaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nirasaki.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: yamanashi-192082
   name: 南アルプス市空き家バンク
   operator: 南アルプス市
@@ -147,14 +177,17 @@ sources:
     slug: '192082'
     bank_url: https://www.city.minami-alps.yamanashi.jp/iju/akiyabank/
     bank_status: available
+    extract_pending: false
     map_query: 山梨県南アルプス市
   operator_evidence:
     quote: 山梨県市町村リンクページに掲載された公式サイト（www.city.minami-alps.yamanashi.jp）
     url: https://www.pref.yamanashi.jp/link/link_city.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.minami-alps.yamanashi.jp/iju/akiyabank/
     kind: listing_index
+  - url: https://www.city.minami-alps.yamanashi.jp/iju/akiyabank/akiya-hojyo.html
+    kind: subsidy
   allow_hosts:
   - www.city.minami-alps.yamanashi.jp
   max_pages: 30
@@ -172,14 +205,17 @@ sources:
     slug: '192091'
     bank_url: https://www.city.hokuto.yamanashi.jp/teijyu_ijyu/bank/
     bank_status: available
+    extract_pending: false
     map_query: 山梨県北杜市
   operator_evidence:
     quote: 公式ドメイン www.city.hokuto.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hokuto.yamanashi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.hokuto.yamanashi.jp/teijyu_ijyu/bank/
     kind: listing_index
+  - url: https://www.city.hokuto.yamanashi.jp/docs/1909.html
+    kind: subsidy
   allow_hosts:
   - www.city.hokuto.yamanashi.jp
   max_pages: 30
@@ -188,7 +224,7 @@ sources:
   operator: 甲斐市
   operator_kind: municipality
   official_url: https://www.city.kai.yamanashi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '192104'
     name: 甲斐市
@@ -197,12 +233,21 @@ sources:
     slug: '192104'
     bank_url: https://www.city.kai.yamanashi.jp/life/1/12/61/
     bank_status: info
+    extract_pending: false
     map_query: 山梨県甲斐市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.kai.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kai.yamanashi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.kai.yamanashi.jp/page/4680.html
+    kind: subsidy
+  - url: https://www.city.kai.yamanashi.jp/page/4681.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.kai.yamanashi.jp
+  max_pages: 30
 - id: yamanashi-192112
   name: 笛吹市空き家バンク
   operator: 笛吹市
@@ -217,12 +262,13 @@ sources:
     slug: '192112'
     bank_url: https://www.city.fuefuki.yamanashi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山梨県笛吹市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.fuefuki.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.fuefuki.yamanashi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: yamanashi-192121
   name: 上野原市空き家バンク
   operator: 上野原市
@@ -237,14 +283,17 @@ sources:
     slug: '192121'
     bank_url: https://www.city.uenohara.yamanashi.jp/site/iju/1514.html
     bank_status: available
+    extract_pending: false
     map_query: 山梨県上野原市
   operator_evidence:
     quote: 公式ドメイン www.city.uenohara.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.uenohara.yamanashi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.uenohara.yamanashi.jp/site/iju/1514.html
     kind: listing_index
+  - url: https://www.city.uenohara.yamanashi.jp/site/iju/1516.html
+    kind: subsidy
   allow_hosts:
   - www.city.uenohara.yamanashi.jp
   max_pages: 30
@@ -262,18 +311,19 @@ sources:
     slug: '192139'
     bank_url: https://www.city.koshu.yamanashi.jp/category/bunya/sumai/akiya/
     bank_status: info
+    extract_pending: false
     map_query: 山梨県甲州市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.koshu.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.koshu.yamanashi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: yamanashi-192147
   name: 中央市空き家バンク
   operator: 中央市
   operator_kind: municipality
   official_url: https://www.city.chuo.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '192147'
     name: 中央市
@@ -282,12 +332,19 @@ sources:
     slug: '192147'
     bank_url: https://www.city.chuo.lg.jp/kurashi/sumai/akiyatoutaisaku/index.html
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 山梨県中央市
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.chuo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.chuo.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.chuo.lg.jp/kenkouiryou/fukushiippan/seikatsushien/saport_hojo_hukushi.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.chuo.lg.jp
+  max_pages: 30
 - id: yamanashi-193461
   name: 市川三郷町空き家バンク
   operator: 市川三郷町
@@ -302,18 +359,19 @@ sources:
     slug: '193461'
     bank_url: https://www.town.ichikawamisato.yamanashi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山梨県市川三郷町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.ichikawamisato.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ichikawamisato.yamanashi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: yamanashi-193640
   name: 早川町空き家バンク
   operator: 早川町
   operator_kind: municipality
   official_url: https://www.town.hayakawa.yamanashi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '193640'
     name: 早川町
@@ -322,12 +380,23 @@ sources:
     slug: '193640'
     bank_url: https://www.town.hayakawa.yamanashi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山梨県早川町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.hayakawa.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.hayakawa.yamanashi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.hayakawa.yamanashi.jp/people/residence/2017-1013-1336-55.html
+    kind: subsidy
+  - url: https://www.town.hayakawa.yamanashi.jp/people/residence/2023-0411-1351-11.html
+    kind: subsidy
+  - url: https://www.town.hayakawa.yamanashi.jp/people/residence/supplementary.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.hayakawa.yamanashi.jp
+  max_pages: 30
 - id: yamanashi-193658
   name: 身延町空き家バンク
   operator: 身延町
@@ -342,11 +411,12 @@ sources:
     slug: '193658'
     bank_url: https://www.town.minobu.lg.jp/akiya/ijyu/10369.html
     bank_status: available
+    extract_pending: false
     map_query: 山梨県身延町
   operator_evidence:
     quote: 公式ドメイン www.town.minobu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.minobu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.minobu.lg.jp/akiya/ijyu/10369.html
     kind: listing_detail
@@ -367,12 +437,13 @@ sources:
     slug: '193666'
     bank_url: https://www.town.nanbu.yamanashi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山梨県南部町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.nanbu.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nanbu.yamanashi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: yamanashi-193682
   name: 富士川町空き家バンク
   operator: 富士川町
@@ -387,12 +458,13 @@ sources:
     slug: '193682'
     bank_url: https://www.town.fujikawa.yamanashi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山梨県富士川町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.fujikawa.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.fujikawa.yamanashi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: yamanashi-193844
   name: 昭和町空き家バンク
   operator: 昭和町
@@ -407,12 +479,13 @@ sources:
     slug: '193844'
     bank_url: https://www.town.showa.yamanashi.jp/soshiki/9/1800.html
     bank_status: info
+    extract_pending: false
     map_query: 山梨県昭和町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.showa.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.showa.yamanashi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: yamanashi-194221
   name: 道志村空き家バンク
   operator: 道志村
@@ -427,11 +500,12 @@ sources:
     slug: '194221'
     bank_url: http://www.vill.doshi.lg.jp/burner/log.php?id=27&url=http%3A%2F%2Fwww.vill.doshi.lg.jp%2Fakiyabank%2F
     bank_status: available
+    extract_pending: false
     map_query: 山梨県道志村
   operator_evidence:
     quote: 山梨県市町村リンクページに掲載された公式サイト（www.vill.doshi.lg.jp）
     url: https://www.pref.yamanashi.jp/link/link_city.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: http://www.vill.doshi.lg.jp/burner/log.php?id=27&url=http%3A%2F%2Fwww.vill.doshi.lg.jp%2Fakiyabank%2F
     kind: listing_index
@@ -452,18 +526,19 @@ sources:
     slug: '194239'
     bank_url: https://www.town.nishikatsura.yamanashi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山梨県西桂町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.nishikatsura.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nishikatsura.yamanashi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: yamanashi-194247
   name: 忍野村空き家バンク
   operator: 忍野村
   operator_kind: municipality
   official_url: https://www.vill.oshino.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '194247'
     name: 忍野村
@@ -472,18 +547,25 @@ sources:
     slug: '194247'
     bank_url: https://www.vill.oshino.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山梨県忍野村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.oshino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.oshino.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.vill.oshino.lg.jp/page/8242.html
+    kind: subsidy
+  allow_hosts:
+  - www.vill.oshino.lg.jp
+  max_pages: 30
 - id: yamanashi-194255
   name: 山中湖村空き家バンク
   operator: 山中湖村
   operator_kind: municipality
   official_url: https://www.vill.yamanakako.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '194255'
     name: 山中湖村
@@ -492,12 +574,19 @@ sources:
     slug: '194255'
     bank_url: https://www.vill.yamanakako.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山梨県山中湖村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.yamanakako.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.yamanakako.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.vill.yamanakako.lg.jp/info/164
+    kind: subsidy
+  allow_hosts:
+  - www.vill.yamanakako.lg.jp
+  max_pages: 30
 - id: yamanashi-194298
   name: 鳴沢村空き家バンク
   operator: 鳴沢村
@@ -512,18 +601,19 @@ sources:
     slug: '194298'
     bank_url: https://www.vill.narusawa.yamanashi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山梨県鳴沢村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.narusawa.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.narusawa.yamanashi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: yamanashi-194301
   name: 富士河口湖町空き家バンク
   operator: 富士河口湖町
   operator_kind: municipality
   official_url: https://www.town.fujikawaguchiko.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '194301'
     name: 富士河口湖町
@@ -532,12 +622,25 @@ sources:
     slug: '194301'
     bank_url: https://www.town.fujikawaguchiko.lg.jp/life/info.php?if_id=67&no=12
     bank_status: info
+    extract_pending: false
     map_query: 山梨県富士河口湖町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.fujikawaguchiko.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.fujikawaguchiko.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.fujikawaguchiko.lg.jp/life/info.php?if_id=7201
+    kind: subsidy
+  - url: https://www.town.fujikawaguchiko.lg.jp/life/info.php?if_id=39
+    kind: subsidy
+  - url: https://www.town.fujikawaguchiko.lg.jp/ka/info.php?if_id=2935&ka_id=14
+    kind: subsidy
+  - url: https://www.town.fujikawaguchiko.lg.jp/life/info.php?if_id=334&no=12
+    kind: subsidy
+  allow_hosts:
+  - www.town.fujikawaguchiko.lg.jp
+  max_pages: 30
 - id: yamanashi-194425
   name: 小菅村空き家バンク
   operator: 小菅村
@@ -552,12 +655,13 @@ sources:
     slug: '194425'
     bank_url: https://www.vill.kosuge.yamanashi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 山梨県小菅村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 山梨県市町村リンクページに掲載された公式サイト（www.vill.kosuge.yamanashi.jp）
     url: https://www.pref.yamanashi.jp/link/link_city.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: yamanashi-194433
   name: 丹波山村空き家バンク
   operator: 丹波山村
@@ -572,9 +676,10 @@ sources:
     slug: '194433'
     bank_url: https://www.vill.tabayama.yamanashi.jp/gyousei/akiya/index.html
     bank_status: info
+    extract_pending: false
     map_query: 山梨県丹波山村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.tabayama.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.tabayama.yamanashi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'

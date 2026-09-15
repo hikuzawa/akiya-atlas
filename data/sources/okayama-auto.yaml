@@ -20,13 +20,13 @@ sources:
   operator_evidence:
     quote: 岡山県 市町村に掲載された公式サイト（www.city.okayama.jp）
     url: https://www.pref.okayama.jp/page/1000.html
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: okayama-332020
   name: 倉敷市空き家バンク
   operator: 倉敷市
   operator_kind: municipality
   official_url: https://www.city.kurashiki.okayama.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '332020'
     name: 倉敷市
@@ -41,7 +41,17 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kurashiki.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kurashiki.okayama.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.kurashiki.okayama.jp/kurashi/sumai/1006343/1013283/index.html
+    kind: subsidy
+  - url: https://www.city.kurashiki.okayama.jp/kurashi/sumai/1006343/1013283/1024780.html
+    kind: subsidy
+  - url: https://www.city.kurashiki.okayama.jp/kurashi/sumai/1006343/1013283/1024781.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.kurashiki.okayama.jp
+  max_pages: 30
 - id: okayama-332038
   name: 津山市空き家バンク
   operator: 津山市
@@ -62,7 +72,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tsuyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tsuyama.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: okayama-332046
   name: 玉野市空き家バンク
   operator: 玉野市
@@ -83,13 +93,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tamano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tamano.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: okayama-332054
   name: 笠岡市空き家バンク
   operator: 笠岡市
   operator_kind: municipality
   official_url: https://www.city.kasaoka.okayama.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '332054'
     name: 笠岡市
@@ -104,13 +114,21 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kasaoka.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kasaoka.okayama.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.kasaoka.okayama.jp/soshiki/28/44807.html
+    kind: subsidy
+  - url: https://www.city.kasaoka.okayama.jp/soshiki/28/1362.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.kasaoka.okayama.jp
+  max_pages: 30
 - id: okayama-332071
   name: 井原市空き家バンク
   operator: 井原市
   operator_kind: municipality
   official_url: https://www.city.ibara.okayama.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '332071'
     name: 井原市
@@ -125,7 +143,19 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ibara.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ibara.okayama.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.ibara.okayama.jp/life/1/7/46/
+    kind: subsidy
+  - url: https://www.city.ibara.okayama.jp/soshiki/3/1669.html
+    kind: subsidy
+  - url: https://www.city.ibara.okayama.jp/soshiki/3/2121.html
+    kind: subsidy
+  - url: https://www.city.ibara.okayama.jp/soshiki/27/15877.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.ibara.okayama.jp
+  max_pages: 30
 - id: okayama-332089
   name: 総社市空き家バンク
   operator: 総社市
@@ -146,7 +176,7 @@ sources:
   operator_evidence:
     quote: 岡山県 市町村に掲載された公式サイト（www.city.soja.okayama.jp）
     url: https://www.pref.okayama.jp/page/1000.html
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: okayama-332097
   name: 高梁市空き家バンク
   operator: 高梁市
@@ -167,7 +197,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.city.takahashi.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.takahashi.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: okayama-332101
   name: 新見市空き家バンク
   operator: 新見市
@@ -188,13 +218,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.niimi.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.niimi.okayama.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: okayama-332119
   name: 備前市空き家バンク
   operator: 備前市
   operator_kind: municipality
   official_url: https://www.city.bizen.okayama.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '332119'
     name: 備前市
@@ -209,7 +239,17 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.bizen.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.bizen.okayama.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.bizen.okayama.jp/site/bizen/list16-77.html
+    kind: subsidy
+  - url: https://www.city.bizen.okayama.jp/site/bizen/9668.html
+    kind: subsidy
+  - url: https://www.city.bizen.okayama.jp/site/bizen/38033.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.bizen.okayama.jp
+  max_pages: 30
 - id: okayama-332127
   name: 瀬戸内市空き家バンク
   operator: 瀬戸内市
@@ -229,10 +269,18 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.setouchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.setouchi.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.setouchi.lg.jp/site/portal/138698.html
     kind: listing_index
+  - url: https://www.city.setouchi.lg.jp/site/portal/137469.html
+    kind: subsidy
+  - url: https://www.city.setouchi.lg.jp/site/portal/142345.html
+    kind: subsidy
+  - url: https://www.city.setouchi.lg.jp/site/portal/142343.html
+    kind: subsidy
+  - url: https://www.city.setouchi.lg.jp/soshiki/8/3241.html
+    kind: subsidy
   allow_hosts:
   - www.city.setouchi.lg.jp
   max_pages: 30
@@ -256,13 +304,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.akaiwa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.akaiwa.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: okayama-332143
   name: 真庭市空き家バンク
   operator: 真庭市
   operator_kind: municipality
   official_url: https://www.city.maniwa.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '332143'
     name: 真庭市
@@ -277,7 +325,19 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.maniwa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.maniwa.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.maniwa.lg.jp/soshiki/44/97095.html
+    kind: subsidy
+  - url: https://www.city.maniwa.lg.jp/soshiki/44/112683.html
+    kind: subsidy
+  - url: https://www.city.maniwa.lg.jp/soshiki/44/112902.html
+    kind: subsidy
+  - url: https://www.city.maniwa.lg.jp/soshiki/44/97065.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.maniwa.lg.jp
+  max_pages: 30
 - id: okayama-332151
   name: 美作市空き家バンク
   operator: 美作市
@@ -297,7 +357,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.mimasaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.mimasaka.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.mimasaka.lg.jp/mokutekibetsu/ijuteiju/5854.html
     kind: listing_index
@@ -323,10 +383,16 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.asakuchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.asakuchi.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.asakuchi.lg.jp/page/13085.html
     kind: listing_index
+  - url: https://www.city.asakuchi.lg.jp/page/1035.html
+    kind: subsidy
+  - url: https://www.city.asakuchi.lg.jp/page/19896.html
+    kind: subsidy
+  - url: https://www.city.asakuchi.lg.jp/page/1034.html
+    kind: subsidy
   allow_hosts:
   - www.city.asakuchi.lg.jp
   max_pages: 30
@@ -350,7 +416,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.wake.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.wake.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: okayama-334235
   name: 早島町空き家バンク
   operator: 早島町
@@ -371,13 +437,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hayashima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.hayashima.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: okayama-334456
   name: 里庄町空き家バンク
   operator: 里庄町
   operator_kind: municipality
   official_url: https://www.town.satosho.okayama.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '334456'
     name: 里庄町
@@ -392,13 +458,21 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.satosho.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.satosho.okayama.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.satosho.okayama.jp/soshiki/15/11455.html
+    kind: subsidy
+  - url: https://www.town.satosho.okayama.jp/soshiki/15/8644.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.satosho.okayama.jp
+  max_pages: 30
 - id: okayama-334618
   name: 矢掛町空き家バンク
   operator: 矢掛町
   operator_kind: municipality
   official_url: https://www.town.yakage.okayama.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '334618'
     name: 矢掛町
@@ -413,7 +487,19 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yakage.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yakage.okayama.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.yakage.okayama.jp/life/teijyu/akiyahojoshinsei.html
+    kind: subsidy
+  - url: https://www.town.yakage.okayama.jp/life/teijyu/akiyakatsuyou.html
+    kind: subsidy
+  - url: https://www.town.yakage.okayama.jp/life/teijyu/teijuujosei.html
+    kind: subsidy
+  - url: https://www.town.yakage.okayama.jp/life/teijyu/hojyo.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.yakage.okayama.jp
+  max_pages: 30
 - id: okayama-335860
   name: 新庄村空き家バンク
   operator: 新庄村
@@ -434,13 +520,13 @@ sources:
   operator_evidence:
     quote: 岡山県 市町村に掲載された公式サイト（www.vill.shinjo.okayama.jp）
     url: https://www.pref.okayama.jp/page/1000.html
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: okayama-336068
   name: 鏡野町空き家バンク
   operator: 鏡野町
   operator_kind: municipality
   official_url: https://www.town.kagamino.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '336068'
     name: 鏡野町
@@ -455,7 +541,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kagamino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kagamino.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.kagamino.lg.jp/soshiki/22/1122.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.kagamino.lg.jp
+  max_pages: 30
 - id: okayama-336220
   name: 勝央町空き家バンク
   operator: 勝央町
@@ -476,7 +568,7 @@ sources:
   operator_evidence:
     quote: 岡山県 市町村に掲載された公式サイト（www.town.shoo.lg.jp）
     url: https://www.pref.okayama.jp/page/1000.html
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: okayama-336238
   name: 奈義町空き家バンク
   operator: 奈義町
@@ -497,7 +589,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nagi.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nagi.okayama.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: okayama-336432
   name: 西粟倉村空き家バンク
   operator: 西粟倉村
@@ -518,7 +610,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.nishiawakura.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.nishiawakura.okayama.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: okayama-336637
   name: 久米南町空き家バンク
   operator: 久米南町
@@ -539,7 +631,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kumenan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kumenan.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: okayama-336661
   name: 美咲町空き家バンク
   operator: 美咲町
@@ -560,7 +652,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.town.okayama-misaki.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.town.okayama-misaki.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: okayama-336815
   name: 吉備中央町空き家バンク
   operator: 吉備中央町
@@ -580,10 +672,16 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kibichuo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kibichuo.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.kibichuo.lg.jp/site/teijyu/1576.html
     kind: listing_index
+  - url: https://www.town.kibichuo.lg.jp/site/teijyu/190.html
+    kind: subsidy
+  - url: https://www.town.kibichuo.lg.jp/site/teijyu/12507.html
+    kind: subsidy
+  - url: https://www.town.kibichuo.lg.jp/site/teijyu/711.html
+    kind: subsidy
   allow_hosts:
   - www.town.kibichuo.lg.jp
   max_pages: 30
