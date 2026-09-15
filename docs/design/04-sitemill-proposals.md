@@ -67,3 +67,11 @@ akiya-atlas のデザイン見直しで出た判断のうち、サービスに�
 `build/trust.py` の検査は `data-sitemill-trust` の有無しか見ていない。全件を並べると
 フッターが本文と同じ大きさになる。**代表を数件＋一覧ページへの導線**が既定の作法として
 使えるなら、共通マクロ側に「N 件まで＋残りの件数と導線」の形を用意する余地がある（提案）。
+
+### E-5. ライト固定のサイトでダーク分岐を出さない選択肢
+
+`sitemill.charts.svg.chart_css()` は `prefers-color-scheme: dark` と `:root[data-theme="dark"]` の
+2 つの分岐を必ず出力する。ライト固定にしたサイト（akiya-atlas、ADR 0015）では、この宣言が
+効かないまま全ページの `<style>` に載る。`<html data-theme="light">` を付ければ空振りするので
+実害は無いが、**サイト側が配色を 1 つに決めているなら出力しない**選択肢があるとよい。
+`site.toml` の `[site]` か `chart_css(scheme="light")` のような形（提案）。
