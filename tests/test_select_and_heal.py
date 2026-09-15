@@ -363,19 +363,28 @@ NOT_LISTINGS = [
 REAL_LISTINGS = [("hita_index", "日田市"), ("aki_cards", "安芸市")]
 
 
+# 保存済み HTML は非公開の akiya-atlas-ops にある（tests/fixtures/README.md）。
+# 無ければこの試験は skip する。巡回・抽出・ビルドには要らない
+FIXTURE_HTML = REPO / "tests" / "fixtures" / "html"
+needs_fixtures = pytest.mark.skipif(
+    not FIXTURE_HTML.is_dir(),
+    reason=f"{FIXTURE_HTML} が無い（akiya-atlas-ops から複写する。tests/fixtures/README.md）",
+)
+
+
 def _score_of(name: str):
-    html = (REPO / "tests" / "fixtures" / "html" / f"{name}.html").read_text(
-        encoding="utf-8", errors="ignore"
-    )
+    html = (FIXTURE_HTML / f"{name}.html").read_text(encoding="utf-8", errors="ignore")
     return listing_score(html, page_text(html))
 
 
+@needs_fixtures
 @pytest.mark.parametrize(("name", "muni", "why"), NOT_LISTINGS)
 def test_pages_without_property_evidence_are_not_listings(name: str, muni: str, why: str) -> None:
     """行が並んでいても、物件番号も物件価格も伴わないページは一覧として採らない。"""
     assert not expand.has_listing_evidence(_score_of(name)), f"{muni}: {why}"
 
 
+@needs_fixtures
 @pytest.mark.parametrize(("name", "muni"), REAL_LISTINGS)
 def test_real_listings_keep_their_evidence(name: str, muni: str) -> None:
     """本物の一覧は物件番号か物件価格を伴うので、これまでどおり採る。"""

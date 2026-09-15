@@ -25,7 +25,7 @@ SOFTWARE.
 このライセンスが及ぶ範囲（Scope）
 
 MIT が適用されるのは、このリポジトリで書いたコードと文書だけです:
-`src/`, `templates/`, `static/`, `tools/`, `tests/`（`tests/fixtures/html/` を除く）,
+`src/`, `templates/`, `static/`, `tools/`, `tests/`,
 `.github/`, `docs/`, ルートの設定ファイル。
 
 次のものには適用されません。それぞれの権利者の条件に従ってください:
@@ -37,6 +37,6 @@ MIT が適用されるのは、このリポジトリで書いたコードと文�
 - `data/reference/000925835.xlsx` および正規化した団体コード表
   出典: 総務省「都道府県コード及び市区町村コード」（令和6年1月1日）。
   政府標準利用規約（第2.0版）。詳細は `data/reference/SOURCES.md`。
-- `tests/fixtures/html/`
-  各自治体・運営者の公開ページを保存したもの。著作権は各運営者にあります。
-  詳細と出典は `tests/fixtures/html/SOURCES.md`。
+
+なお、抽出のテストに使う保存済み HTML（各自治体の公開ページ）は、再配布しない約束の
+ためこのリポジトリには含めていません。非公開の `akiya-atlas-ops` にあります。

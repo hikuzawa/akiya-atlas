@@ -40,7 +40,7 @@ CI）です。空き家バンクは自治体ごとに別々に運営されてい
 | `src/` `templates/` `static/` `tools/` `.github/` `docs/` `tests/`（fixtures を除く） | このリポジトリ | MIT（`LICENSE`） |
 | `data/records/` `data/subsidies/` `data/sources/` `data/review/` | 各自治体の公開ページ | 事実の記録。原文の権利は各自治体・運営者に帰属。各レコードに出典 URL と取得日 |
 | `data/reference/`（団体コード表） | 総務省「都道府県コード及び市区町村コード」（令和6年1月1日） | 政府標準利用規約（第2.0版）。`data/reference/SOURCES.md` |
-| `tests/fixtures/html/` | 各自治体・運営者の公開ページ | 権利は各運営者に帰属。抽出のテスト用。`tests/fixtures/html/SOURCES.md` |
+| `tests/fixtures/eval/` | 抽出結果の期待値（引用と値のみ） | MIT |
 
 コードを再利用するときは MIT の条件で自由にどうぞ。**データをそのまま再配布する
 ことは想定していません。** 各自治体のページが一次情報であり、本サイトの値は

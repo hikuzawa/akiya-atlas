@@ -63,7 +63,7 @@ A8.net で最初の案件（解体工事110番、シェアリングテクノロ�
 
 ## 影響
 
-- 案件の受け渡しは `docs/runbook/affiliates.md` の様式に固定する。掲載 URL の届け出一覧は
+- 案件の受け渡しは `akiya-atlas-ops/docs/affiliates.md` の様式に固定する。掲載 URL の届け出一覧は
   `uv run akiya-atlas ad-urls` で出す
 - クリック数が貯まるのは `CF_WEB_ANALYTICS_TOKEN` を入れてから（`docs/human-tasks.md` 6）。
   それまで導線と検査は動くが、数は取れない

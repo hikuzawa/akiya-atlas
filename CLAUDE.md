@@ -11,7 +11,7 @@ sitemill の最初の利用者。自治体が独自に運営する空き家バ�
 - `site.toml` サイト設定。基準 URL はここ 1 か所だけで差し替える
 - `src/akiya_atlas/ad_check.py` 広告掲載の検査（広告表記の有無と位置・`/go/` 経由・ASP 規約との一致）。CI では build の直後に走る
 - `docs/adr/` 設計判断
-- `tests/fixtures/html/` 保存済み HTML（出典 URL と取得日を `SOURCES.md` に記す）、`tests/fixtures/eval/` 抽出精度の計測ケース
+- `tests/fixtures/eval/` 抽出精度の計測ケース（保存済み HTML は git 管理外。非公開の `akiya-atlas-ops` から持ってくる）
 
 ## コマンド（このディレクトリで実行）
 - `uv sync` / `uv run pytest` / `uv run ruff check src tests`
@@ -28,10 +28,11 @@ sitemill の最初の利用者。自治体が独自に運営する空き家バ�
 - すべてのページに信頼シグナル（更新日時・一次情報リンク・運営者・件数）を出す。欠けるとビルドが失敗する
 - 実在の物件・場所を AI 画像生成で描かない。図解は SVG のコード生成に限り「自動生成」と明記する
 - 所有者向け CTA は ASP 契約が無い間は「準備中」。ダミーリンクは置かない
-- 広告（アフィリエイト）は `/owners/` の枠にだけ置く。物件・市町村・トップには置かない。リンクは必ず `/go/<案件>/<枠>/` の転送ページ経由にし、広告表記をページ冒頭に出す。掲載場所と ASP 規約は `src/akiya_atlas/affiliates.py` のデータで決まり、欠ければ `ad-check` がビルドを止める（ADR 0010）。案件の追加手順は `docs/runbook/affiliates.md`
+- 広告（アフィリエイト）は `/owners/` の枠にだけ置く。物件・市町村・トップには置かない。リンクは必ず `/go/<案件>/<枠>/` の転送ページ経由にし、広告表記をページ冒頭に出す。掲載場所と ASP 規約は `src/akiya_atlas/affiliates.py` のデータで決まり、欠ければ `ad-check` がビルドを止める（ADR 0010）。案件の追加手順は `akiya-atlas-ops/docs/affiliates.md`
 - 秘密情報は `.env` にだけ置く（手で書く。パスワードマネージャーや環境変数を探索しない）。鍵が無ければ止めて「.env に何を書くか」を提示する
 - `.env.example` にはプレースホルダー（空の値）だけを置く。値を書いた時点でコミット前フックが止める
 - コミット前フックは `.githooks/pre-commit`（`uv run sitemill scan-secrets --staged`、gitleaks があれば併用）。clone 後に一度 `git config core.hooksPath .githooks` で有効化する。CI でも全履歴を走査する
-- 取得した生 HTML はコミットしない。テストに要る数ページだけ `tests/fixtures/html/` に置く
+- 取得した生 HTML はコミットしない。**このリポジトリは public**。テストに要る数ページは非公開の `akiya-atlas-ops` の `fixtures/html/` に置き、`tests/fixtures/html/` へ複写して使う（git 管理外。無ければテストと eval は skip する）
+- 公開できないものは `akiya-atlas-ops`（private）に置く。保存済み HTML（再配布しない約束）、ASP の申請状況と選定の実データ（他社の数字）、お問い合わせから起票される Issue（プライバシーポリシーで「非公開」と公言している）
 - **CI は sitemill のタグ固定（現在 `v0.5.2`）。sitemill の main の変更は自動では反映されない**（ADR 0006）。手元は `../sitemill` への editable 依存のままなので、ローカルで通っても CI で通らないことがある。エンジンの修正を取り込むときは、sitemill でタグを打ってから `.github/workflows/` 3 本の `ref:` を上げる（手順は `docs/runbook/operations.md` の 5 章）
 - 区切りごとに `uv run pytest` と `uv run ruff check` を通してからコミットする。コミットはこのディレクトリ内で行う

@@ -459,7 +459,6 @@ function createIssue_(category, result, sub, s, log) {
     received_at: sub.receivedAt.toISOString(),
     confidence: result ? Number(result.confidence) || 0 : 0,
   };
-  const sheetUrl = s.sheetId ? 'https://docs.google.com/spreadsheets/d/' + s.sheetId : '(未設定)';
   const lines = [
     '<!-- ' + JSON.stringify(meta).replace(/-->/g, '--&gt;') + ' -->',
     '## 種別',
@@ -479,7 +478,9 @@ function createIssue_(category, result, sub, s, log) {
     '## 受付情報',
     '- 受付日時: ' + received + ' JST',
     '- 自動返信: ' + (log.action || '（未処理）'),
-    '- 氏名と連絡先はこの Issue には書かない。回答スプレッドシートの同時刻の行を参照: ' + sheetUrl,
+    // スプレッドシートの ID は Issue に書かない。氏名・メール・本文が入っているシートなので、
+    // 共有設定が緩んだときに備えて、在りかを Issue 側に残さない
+    '- 氏名と連絡先はこの Issue には書かない。回答スプレッドシートの同時刻の行を参照する',
     log.error ? '- エラー: ' + log.error : '',
   ];
   const r = githubRequest_('post', '/repos/' + s.githubRepo + '/issues', { title: title, body: lines.join('\n'), labels: [label] }, s);

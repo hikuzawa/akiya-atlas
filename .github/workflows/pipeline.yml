@@ -9,6 +9,8 @@
 #     （ドメイン切替のときに古いホストが残ったまま配置されるのを止める）。
 #   - 併せて広告掲載の検査を行う（ADR 0010）。広告表記が欠ける・位置が下がる・ASP へ直リンクする
 #     といった状態では配置しない。
+#   - Search Console の取り込み（URL 検査で 25 分）は search.yml に分けた。日次の 7 割を占めていて、
+#     配置をそれだけ遅らせていたため。巡回・配置と、計測の取り込みは別の関心事。
 #   - 手動実行の mode=deploy-only は、巡回・抽出・heal・データのコミットを行わず、main の現在のデータで
 #     build → 検査 → deploy だけを行う（テンプレートやデザインの変更を反映するとき）。既定は full。
 # 前提（人間側の作業、docs/human-tasks.md）:
@@ -67,6 +69,16 @@ jobs:
           ref: v0.5.2 # タグ固定（ADR 0006）。sitemill の main の変更は自動では入らない
           path: sitemill
 
+      - name: Checkout akiya-atlas-ops（保存済み HTML と取り下げ依頼の置き場。private）
+        uses: actions/checkout@v4
+        with:
+          repository: hikuzawa/akiya-atlas-ops
+          token: ${{ secrets.OPS_REPO_TOKEN }}
+          path: ops
+
+      - name: 保存済み HTML を所定の位置へ（git 管理外。tests/fixtures/README.md）
+        run: cp -r ops/fixtures/html akiya-atlas/tests/fixtures/html
+
       - name: Install uv
         uses: astral-sh/setup-uv@v5
         with:
@@ -109,9 +121,11 @@ jobs:
       - name: 取り下げ依頼を取り込む（takedown ラベルの Issue → 非表示にするページ）
         working-directory: akiya-atlas
         env:
-          GH_TOKEN: ${{ github.token }}
+          # お問い合わせから起票される Issue は非公開の ops 側にある（サイトのプライバシー
+          # ポリシーで「非公開の作業管理ツール」と公言しているため）。読むのに PAT が要る
+          GH_TOKEN: ${{ secrets.OPS_REPO_TOKEN }}
         # 依頼が無くても失敗しない。needs-human と municipality の Issue は数えるだけ
-        run: uv run akiya-atlas takedowns --repo "${{ github.repository }}"
+        run: uv run akiya-atlas takedowns --repo hikuzawa/akiya-atlas-ops
 
       - name: Build
         working-directory: akiya-atlas
@@ -128,17 +142,6 @@ jobs:
       - name: 広告掲載の検査（広告表記の有無と位置・/go/ 経由・宣言との一致。ADR 0010）
         working-directory: akiya-atlas
         run: uv run akiya-atlas ad-check
-
-      - name: Search Console の取り込み（検索パフォーマンス・サイトマップ・URL 検査。sitemill ADR 0023）
-        if: inputs.mode != 'deploy-only'
-        working-directory: akiya-atlas
-        env:
-          GOOGLE_SEARCH_CONSOLE_KEY: ${{ secrets.GOOGLE_SEARCH_CONSOLE_KEY }}
-        # 鍵が無い・API が落ちている間も日次全体は止めない（取り込みは翌日やり直せる）
-        continue-on-error: true
-        # URL 検査は 1 件 7 秒前後 × 200 件で 25 分ほどかかる。長引いたら打ち切って翌日に回す
-        timeout-minutes: 30
-        run: uv run sitemill search fetch
 
       - name: Eval (fixture、劣化検知)
         if: inputs.mode != 'deploy-only' # deploy-only では飛ばす

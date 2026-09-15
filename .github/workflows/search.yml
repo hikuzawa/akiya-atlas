@@ -1,0 +1,96 @@
+# Search Console の取り込み（検索パフォーマンス・サイトマップ・URL 検査。sitemill ADR 0023）。
+#
+# pipeline.yml から分けてある。URL 検査は 1 件 7 秒前後（ほぼ API の応答待ち）で、200 件だと
+# 25 分かかる。これが日次 35 分の 7 割を占め、しかも配置より前にあったので、サイトの公開が
+# そのぶん遅れていた。取り込みは配置の成否と関係がないので、別のワークフローにして日次の後ろに置く。
+#
+# 相手サイトには一切アクセスしない（Google の API と、手元の sitemap だけを読む）。
+# 1 日の件数は site.toml の [site.search_console] inspect_per_day（既定 200）。全 6,126 URL の
+# 一巡に 31 日かかる。一巡が終わるまでは減らさない（減らすと「インデックスされているか」の
+# 答えがそのぶん先になる）。
+name: search
+
+on:
+  schedule:
+    - cron: "0 20 * * *" # 05:00 JST。日次パイプライン（03:00 JST）の後
+  workflow_dispatch:
+    inputs:
+      inspect:
+        description: "URL 検査を回す件数（空なら site.toml の既定。0 で行わない）"
+        type: string
+        default: ""
+
+permissions:
+  contents: write # data/search を書き戻す
+
+concurrency:
+  group: search
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout akiya-atlas
+        uses: actions/checkout@v4
+        with:
+          path: akiya-atlas
+          fetch-depth: 0 # data/search の push が fast-forward か判定できるように
+
+      - name: Checkout sitemill (path 依存の隣に置く。ADR 0006)
+        uses: actions/checkout@v4
+        with:
+          repository: hikuzawa/sitemill
+          ref: v0.5.2 # タグ固定（ADR 0006）。sitemill の main の変更は自動では入らない
+          path: sitemill
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Sync
+        working-directory: akiya-atlas
+        run: uv sync --frozen
+
+      # 検査する URL は build が出す sitemap から取るので、先にビルドする。
+      # 配置はしない（配置は pipeline.yml の仕事）
+      - name: Build（sitemap を作るためだけ。配置はしない）
+        working-directory: akiya-atlas
+        run: uv run sitemill build
+
+      - name: Search Console の取り込み
+        working-directory: akiya-atlas
+        env:
+          GOOGLE_SEARCH_CONSOLE_KEY: ${{ secrets.GOOGLE_SEARCH_CONSOLE_KEY }}
+        # 鍵が無い・API が落ちている間も失敗にしない（取り込みは翌日やり直せる）
+        continue-on-error: true
+        timeout-minutes: 45
+        run: |
+          if [ -n "${{ inputs.inspect }}" ]; then
+            uv run sitemill search fetch --inspect "${{ inputs.inspect }}"
+          else
+            uv run sitemill search fetch
+          fi
+
+      - name: Commit data/search
+        working-directory: akiya-atlas
+        run: |
+          git config user.name "sitemill-bot"
+          git config user.email "sitemill-bot@users.noreply.github.com"
+          git add data/search
+          git diff --cached --quiet && exit 0
+          git commit -m "data: Search Console の取り込み $(date -u +%Y-%m-%dT%H:%MZ)"
+          # 日次パイプラインと同時に走ると push が競合する。取り込み直して 3 回まで試す
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            echo "push が拒否された（試行 $attempt/3）。origin/main を取り込んで再試行する"
+            git fetch origin main
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo "::error::data/search が origin/main と競合した"
+              exit 1
+            fi
+          done
+          echo "::error::3 回試しても push できなかった"
+          exit 1

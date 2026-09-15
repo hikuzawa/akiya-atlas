@@ -3,7 +3,7 @@
 契約前は「準備中」を出し、ダミーリンクは置かない。
 
 ここは「何をどこに出すか」のデータだけを持つ。実際に出ているかの検査は `ad_check.py`、
-案件を追加するときの受け渡し様式は `docs/runbook/affiliates.md`。
+案件を追加するときの受け渡し様式は `akiya-atlas-ops/docs/affiliates.md`。
 
 - 広告リンクは必ず `/go/<offer_id>/<placement>/` を経由する（直リンクを置かない）。
   転送ページで計測ビーコンが 1 回動くので、どのページのどの枠から何回押されたかが後で分かる。
@@ -119,7 +119,7 @@ PLACEMENT_BY_ID = {p.id: p for p in PLACEMENTS}
 
 @dataclass(frozen=True)
 class Offer:
-    """1 案件。`docs/runbook/affiliates.md` の受け渡し様式と 1 対 1 で対応する。"""
+    """1 案件。`akiya-atlas-ops/docs/affiliates.md` の受け渡し様式と 1 対 1 で対応する。"""
 
     id: str
     label: str  # ボタンに出す短い名前

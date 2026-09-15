@@ -6,6 +6,10 @@ __pycache__/
 *.egg-info/
 .env
 .coverage
+# 保存済み HTML（自治体のページ）。再配布しない約束なので public のここには置かない。
+# 非公開の akiya-atlas-ops の fixtures/html/ から複写する（tests/fixtures/README.md）
+tests/fixtures/html/
+
 # 生成物とローカルキャッシュ（コミットしない）
 dist/
 data/raw/

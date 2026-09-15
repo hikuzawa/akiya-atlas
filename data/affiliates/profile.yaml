@@ -1,8 +1,8 @@
 # 空き家アトラスの案件判定プロファイル
 #
 # ASP の検索結果を貼ると、この物差しで判定して申請順に並べる（sitemill ADR 0019）。
-# 判定の考え方は docs/affiliate-criteria.md、掲載の枠と「1 種別 1 社」は ADR 0010、
-# 承認後の登録手順は docs/runbook/affiliates.md。
+# 判定の考え方は akiya-atlas-ops/docs/affiliate-criteria.md、掲載の枠と「1 種別 1 社」は ADR 0010、
+# 承認後の登録手順は akiya-atlas-ops/docs/affiliates.md。
 #
 #   uv run sitemill offers screen -p data/affiliates/profile.yaml -i paste.txt --asp a8
 #     -o data/affiliates/report.md --json data/affiliates/screened.json
@@ -117,7 +117,7 @@ earning:
 # 承認された案件を掲載側へ渡す形。`{...}` は選定に使った構造化データから埋まる。
 # 契約後にしか分からない項目（計測 URL など）は空のままにしておく。
 emit:
-  # akiya-atlas の docs/runbook/affiliates.md 1 章の受け渡し様式と 1 対 1
+  # akiya-atlas の akiya-atlas-ops/docs/affiliates.md 1 章の受け渡し様式と 1 対 1
   handoff:
     offer_id: "{offer_id}"
     name: "{name}"

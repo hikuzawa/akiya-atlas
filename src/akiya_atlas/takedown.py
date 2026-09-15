@@ -36,13 +36,17 @@ def takedowns_path(ws: Workspace) -> Path:
 
 @dataclass
 class Takedown:
-    """1 件の取り下げ依頼。URL は本サイトのページを指す。"""
+    """1 件の取り下げ依頼。URL は本サイトのページを指す。
+
+    この一覧は public のリポジトリにコミットされる。**依頼の題名は持たない。**
+    題名はお問い合わせの本文から作られるので、依頼の中身が公開側に出てしまう。
+    非表示にするのに要るのは URL とパスだけで、題名は Issue を見れば分かる。
+    """
 
     issue: int
     url: str
     path: str
     received_at: str = ""
-    title: str = ""
 
     def to_json(self) -> dict[str, Any]:
         return {
@@ -50,7 +54,6 @@ class Takedown:
             "url": self.url,
             "path": self.path,
             "received_at": self.received_at,
-            "title": self.title,
         }
 
 
@@ -79,8 +82,13 @@ class TakedownList:
         if not path.is_file():
             return cls()
         data = json.loads(path.read_text(encoding="utf-8"))
+        # 知らない項目は捨てる。以前は題名も持っていたので、古い一覧でも読めるようにする
+        keys = {"issue", "url", "path", "received_at"}
         return cls(
-            items=[Takedown(**{k: v for k, v in row.items()}) for row in data.get("takedowns", [])],
+            items=[
+                Takedown(**{k: v for k, v in row.items() if k in keys})
+                for row in data.get("takedowns", [])
+            ],
             other_issues=data.get("other_open_issues", {}),
         )
 
@@ -151,7 +159,6 @@ def collect(issues: list[dict[str, Any]], *, base_url: str) -> TakedownList:
                     url=url,
                     path=path,
                     received_at=str(meta.get("received_at") or ""),
-                    title=str(issue.get("title") or ""),
                 )
             )
     return out
@@ -171,7 +178,7 @@ def fetch_issues(repo: str, *, limit: int = 100) -> list[dict[str, Any]]:
             "--limit",
             str(limit),
             "--json",
-            "number,title,body,labels",
+            "number,body,labels",
         ],
         capture_output=True,
         text=True,

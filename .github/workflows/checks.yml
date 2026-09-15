@@ -17,6 +17,10 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      # 保存済み HTML は非公開の ops 側にある。fork からの PR には Secret が渡らないので、
+      # そのときは checkout を飛ばし、該当の試験は skip される（tests/fixtures/README.md）
+      OPS_TOKEN: ${{ secrets.OPS_REPO_TOKEN }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -27,6 +31,16 @@ jobs:
           repository: hikuzawa/sitemill
           ref: v0.5.2 # タグ固定（ADR 0006）。sitemill の main の変更は自動では入らない
           path: sitemill
+      - name: Checkout akiya-atlas-ops（保存済み HTML。private）
+        if: env.OPS_TOKEN != ''
+        uses: actions/checkout@v4
+        with:
+          repository: hikuzawa/akiya-atlas-ops
+          token: ${{ secrets.OPS_REPO_TOKEN }}
+          path: ops
+      - name: 保存済み HTML を所定の位置へ（git 管理外）
+        if: env.OPS_TOKEN != ''
+        run: cp -r ops/fixtures/html akiya-atlas/tests/fixtures/html
       - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true

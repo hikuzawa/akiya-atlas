@@ -32,7 +32,7 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 ## 収益化のために必要
 10. **ASP アカウント**（不動産一括査定・解体一括見積・空き家買取の各案件）を契約し、計測 URL を `src/akiya_atlas/affiliates.py` の `Offer.url` に入れる。入れるまで CTA は「準備中」表示。
     - A8.net の解体案件（解体工事110番、プログラム `s00000015223012`）は 2026-09-12 に承認済み。`kaitai-110` として登録してあり、**計測 URL だけが未設定**。A8 の管理画面で発行して渡せば公開される
-    - 案件の渡し方・登録手順・飛び先 URL の確認・掲載 URL の届け出は `docs/runbook/affiliates.md`
+    - 案件の渡し方・登録手順・飛び先 URL の確認・掲載 URL の届け出は `akiya-atlas-ops/docs/affiliates.md`
 11. **掲載 URL の届け出**: 反映後に `uv run akiya-atlas ad-urls --offer <案件>` の出力を、A8 の「広告掲載URL管理」に登録する。
 12. 各 ASP の掲載ルールは `affiliates.py` の `ASPS` にデータとして持ち、ビルド時に検査する（ADR 0010）。規約の変更通知が来たらここを直す。広告表記は `templates/partials/macros.html` の `ad_notice` にあり、`Offer.url` が入った時点で `/owners/` の冒頭に自動で出る（表記だけが先に出ることはない）。
 
@@ -57,6 +57,30 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 | `CLOUDFLARE_ACCOUNT_ID` | Cloudflare ダッシュボード → Workers & Pages の概要ページ右側「Account ID」 | `gh secret set CLOUDFLARE_ACCOUNT_ID --repo hikuzawa/akiya-atlas` |
 | `GOOGLE_MAPS_EMBED_KEY`（任意） | Google Cloud Console → APIs & Services → Credentials。Maps Embed API のみ、HTTP リファラで制限 | `gh secret set GOOGLE_MAPS_EMBED_KEY --repo hikuzawa/akiya-atlas` |
 | `GOOGLE_SEARCH_CONSOLE_KEY` | Google Cloud のサービスアカウントの JSON を base64 にした 1 行。Search Console のプロパティに「制限付き」で追加しておく | `base64 -w0 key.json \| gh secret set GOOGLE_SEARCH_CONSOLE_KEY --repo hikuzawa/akiya-atlas` |
+| `OPS_REPO_TOKEN` | **必須**。GitHub → Settings → Developer settings → Personal access tokens （fine-grained）。対象リポジトリを `hikuzawa/akiya-atlas-ops` だけに絞り、権限は **Contents: Read-only** と **Issues: Read-only** | `gh secret set OPS_REPO_TOKEN --repo hikuzawa/akiya-atlas` |
 | `CF_WEB_ANALYTICS_TOKEN` | **登録しない**。計測は Cloudflare の RUM 自動挿入で行うため、値を入れるとタグが 2 つ出て二重計測になる（ADR 0011） | — |
 
 注意: `.env.example` には値を書かない（git にコミットされる）。値は `.env` だけに置く。
+
+`OPS_REPO_TOKEN` が無いと日次パイプラインは**失敗する**。保存済み HTML の checkout と、
+取り下げ依頼（お問い合わせから起票される Issue）の読み取りに要るため。取り下げ依頼を黙って
+読み飛ばすより、止まって気づけるほうがよい。
+
+## 公開リポジトリになった（2026-09-16）
+
+`hikuzawa/akiya-atlas` は public、`hikuzawa/akiya-atlas-ops` は private。
+公開できないものは ops 側に置く（保存済み HTML・ASP の申請状況と選定の実データ・お問い合わせ Issue）。
+
+人がやる作業:
+
+1. お問い合わせフォーム（Apps Script）のスクリプトプロパティ `GITHUB_REPO` を
+   `hikuzawa/akiya-atlas-ops` に変更する。フォームの編集画面 → 拡張機能 → Apps Script →
+   プロジェクトの設定 → スクリプト プロパティ。**変更するまで、新しいお問い合わせは public 側に
+   起票される**
+2. Apps Script の `GITHUB_TOKEN` に ops リポジトリの Issues: Read and write の権限があることを
+   確認する（ラベルの作成にも要る）。`setup()` を 1 度実行するとラベルが作られる
+3. `OPS_REPO_TOKEN` を akiya-atlas の Secret に登録する（上の表）
+4. public にした直後に `pipeline` を `mode=deploy-only` で 1 本手動実行し、ジョブが起動することを
+   確かめる（Actions の支払いが止まっていたため）
+5. public にしたら Settings → Code security で Secret scanning と Push protection を有効にする
+   （public なら無料）
