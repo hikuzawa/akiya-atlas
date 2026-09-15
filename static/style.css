@@ -3,7 +3,8 @@
    色はすべて変数から。本文 18px / 行間 1.85。年配の利用者向けにコントラストと大きさを優先する。 */
 
 :root {
-  color-scheme: light dark;
+  /* ライト固定（ADR 0015）。フォームや스크롤バーも白基調で描かせる */
+  color-scheme: light;
   --paper: #F6F3EC;
   --surface: #FFFFFF;
   --surface-2: #EFEBE2;
@@ -31,30 +32,6 @@
      BIZ UDPGothic を試すときは --font-display の先頭に加え、base.html で非同期読み込みにする */
   --font: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", "Yu Gothic UI", "Noto Sans JP", system-ui, sans-serif;
   --font-display: var(--font);
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #121816; --surface: #1B2320; --surface-2: #222C28; --line: #2E3A35;
-    --ink: #F1EEE6; --ink-2: #C9C6BC;
-    --green-900: #0E1F1A; --green-700: #8FC2B3; --green-500: #6FA595; --green-100: #22332D;
-    --kaki: #E9A27E; --kaki-100: #3A251A;
-    --ok: #9BD3A5; --ok-100: #1F3A25; --info: #A9C0E6; --info-100: #1F2C42;
-    --warn: #F1CB78; --warn-100: #3D3110; --mute: #B8B5AC; --mute-100: #2A2F2C;
-    --map-1: #22332D; --map-2: #35544A; --map-3: #3F6B5D; --map-4: #7FA99B; --map-5: #B9D2C9;
-    --header-ink: #F1EEE6; --header-muted: #8FC2B3;
-    --shadow: none;
-  }
-}
-:root[data-theme="dark"] {
-  --paper: #121816; --surface: #1B2320; --surface-2: #222C28; --line: #2E3A35;
-  --ink: #F1EEE6; --ink-2: #C9C6BC;
-  --green-900: #0E1F1A; --green-700: #8FC2B3; --green-500: #6FA595; --green-100: #22332D;
-  --kaki: #E9A27E; --kaki-100: #3A251A;
-  --ok: #9BD3A5; --ok-100: #1F3A25; --info: #A9C0E6; --info-100: #1F2C42;
-  --warn: #F1CB78; --warn-100: #3D3110; --mute: #B8B5AC; --mute-100: #2A2F2C;
-  --map-1: #22332D; --map-2: #35544A; --map-3: #3F6B5D; --map-4: #7FA99B; --map-5: #B9D2C9;
-  --header-ink: #F1EEE6; --header-muted: #8FC2B3;
-  --shadow: none;
 }
 
 /* ---------- 基本 ---------- */
@@ -134,6 +111,8 @@ main { padding: 20px 0 56px; }
 /* 項目が 1 つだけの物件が多い（スペック 5 項目のうち 0〜1 個が 77.7%）。auto-fit にして、
    1 つのときは横いっぱいに広げ、空の升目が残らないようにする */
 .strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; margin: 16px 0 0; }
+/* 升目が奇数のとき、最後の 1 つを横いっぱいに広げて空きを作らない */
+.strip-cell:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .strip-cell { background: var(--green-100); padding: 12px 14px 10px; min-height: 92px; display: flex; flex-direction: column; justify-content: flex-start; }
 .strip-value { font-size: 2.1rem; font-weight: 700; line-height: 1.1; font-variant-numeric: tabular-nums; color: var(--ink); overflow-wrap: anywhere; }
 .strip-value.kaki { color: var(--kaki); }
@@ -158,8 +137,6 @@ main { padding: 20px 0 56px; }
 .btn .icon { width: 1.1em; height: 1.1em; }
 .primary-link { margin: 14px 0 0; }
 .ext-note { font-size: .9rem; font-weight: 400; opacity: .9; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn-primary { background: #2E6B5E; color: #FFFFFF; } }
-:root[data-theme="dark"] .btn-primary { background: #2E6B5E; color: #FFFFFF; }
 
 /* ---------- バッジ ---------- */
 .badges { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -212,9 +189,6 @@ main { padding: 20px 0 56px; }
 .tile.l0 { background: repeating-linear-gradient(45deg, var(--mute-100) 0 4px, var(--surface) 4px 8px); }
 .tile.na { color: var(--ink-2); border-style: dashed; }
 /* ダークでは段階 3 は明るい文字、段階 4・5 は暗い文字（いずれも 4.5:1 以上） */
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tile.l3 { color: var(--ink); } :root:not([data-theme="light"]) .tile.l4, :root:not([data-theme="light"]) .tile.l5 { color: #121816; } }
-:root[data-theme="dark"] .tile.l3 { color: var(--ink); }
-:root[data-theme="dark"] .tile.l4, :root[data-theme="dark"] .tile.l5 { color: #121816; }
 .legend { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: .95rem; color: var(--ink-2); align-items: center; margin-top: 12px; }
 .legend i { display: inline-block; width: 22px; height: 16px; border: 1px solid var(--line); vertical-align: -3px; margin-right: 6px; border-radius: 3px; }
 .legend i.l0 { background: repeating-linear-gradient(45deg, var(--mute-100) 0 4px, var(--surface) 4px 8px); }
@@ -338,6 +312,24 @@ details.fold .fold-body { padding: 0 0 16px; }
 .kind-counts { list-style: none; margin: 0 0 4px; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .kind-counts li { display: inline-flex; align-items: baseline; gap: 7px; padding: 7px 14px; background: var(--green-100); border-radius: 999px; font-size: .92rem; }
 .kind-counts .n { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; color: var(--kaki); }
+
+/* ---------- トップの入口（ADR 0015） ---------- */
+/* 検索から着地した人に、最初の 1 画面で行き先を 3 つ示す */
+.lead-note { display: flex; align-items: flex-start; gap: 8px; margin-top: 8px; color: var(--ink-2); max-width: 60ch; }
+.lead-note .icon { flex: none; margin-top: .3em; color: var(--green-700); }
+.entries { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 10px; }
+.entry {
+  display: grid; gap: 2px; padding: 14px 16px; min-height: 44px; text-decoration: none;
+  background: var(--surface); border: 2px solid var(--green-700); border-radius: var(--radius); color: var(--ink);
+}
+.entry:hover { background: var(--green-100); }
+.entry .t { font-weight: 700; color: var(--green-700); display: flex; align-items: center; gap: 8px; }
+.entry .d { font-size: .88rem; color: var(--ink-2); }
+/* このサイトの作り方 */
+.how { list-style: none; margin: 0; padding: 16px; display: grid; gap: 12px; }
+.how li { display: flex; align-items: flex-start; gap: 10px; }
+.how .icon { flex: none; margin-top: .3em; color: var(--green-700); }
+@media (min-width: 48rem) { .entries { grid-template-columns: repeat(3, 1fr); } }
 
 /* ---------- 物件の 1 行表示（ADR 0014） ---------- */
 /* カード型は 6 項目のうち 0〜1 個しか取れない物件が 65% を占め、下半分が空いていた。

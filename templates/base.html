@@ -1,7 +1,10 @@
 {% import "sitemill/macros.html" as sm %}
 {% import "partials/macros.html" as ui %}
 <!doctype html>
-<html lang="ja">
+{# ライト固定（ADR 0015）。この属性は sitemill の図解 CSS（chart_css）が持つダーク分岐
+   （:root:not([data-theme="light"]) と :root[data-theme="dark"]）を両方とも空振りさせる。
+   sitemill を触らずに、ページ全体を白基調で統一するため #}
+<html lang="ja" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
