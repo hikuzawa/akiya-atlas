@@ -229,6 +229,10 @@ git -C ../sitemill worktree add -b release/0.1 ../sitemill-rel01 v0.1.0
 - **版を上げるときは更新して commit する。** エンジンの依存が増えることがある（v0.4.1 で
   `google-auth` が増えた）。lock を直さないと、CI の `uv sync --frozen` が「lock が古い」で落ちる。
   `uv lock` を実行し、`sitemill` の版がタグと同じになっていることを確かめてからコミットする
+- **タグの版と main の版が違うときは `uv lock` では作れない。** lock に書かれるのは
+  `../sitemill`（main）の版なので、タグの版と食い違う。`git -C ../sitemill show <タグ>:pyproject.toml`
+  で版を確かめ、`uv.lock` の `name = "sitemill"` の `version` を手でその値に合わせる。依存そのものは
+  タグ間で変わらないことが多いので、書き換えるのはこの 1 行だけでよい（2026-09-15 の v0.5.2 で実施）
 - **それ以外では commit しない。** 手元で `uv run` を回すだけでも、lock の `sitemill` の版が
   `../sitemill`（main）の版に書き換わる。main がタグより先に進んでいるときにその lock を入れると、
   タグを checkout する CI で落ちる。`git checkout -- uv.lock` で戻す
