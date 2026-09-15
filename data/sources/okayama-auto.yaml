@@ -273,14 +273,6 @@ sources:
   pages:
   - url: https://www.city.setouchi.lg.jp/site/portal/138698.html
     kind: listing_index
-  - url: https://www.city.setouchi.lg.jp/site/portal/137469.html
-    kind: subsidy
-  - url: https://www.city.setouchi.lg.jp/site/portal/142345.html
-    kind: subsidy
-  - url: https://www.city.setouchi.lg.jp/site/portal/142343.html
-    kind: subsidy
-  - url: https://www.city.setouchi.lg.jp/soshiki/8/3241.html
-    kind: subsidy
   allow_hosts:
   - www.city.setouchi.lg.jp
   max_pages: 30

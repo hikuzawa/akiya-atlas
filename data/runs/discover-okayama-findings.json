@@ -285,6 +285,7 @@
         "https://www.city.setouchi.lg.jp/site/portal/138315.html",
         "https://www.city.setouchi.lg.jp/site/portal/138421.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.city.setouchi.lg.jp/site/portal/138698.html",
       "code": "332127",
       "confidence": 0.796,
@@ -307,12 +308,7 @@
       "prefecture_slug": "okayama",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.setouchi.lg.jp/site/portal/137469.html",
-        "https://www.city.setouchi.lg.jp/site/portal/142345.html",
-        "https://www.city.setouchi.lg.jp/site/portal/142343.html",
-        "https://www.city.setouchi.lg.jp/soshiki/8/3241.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [

@@ -2871,29 +2871,22 @@ sources:
   operator: 遠別町
   operator_kind: municipality
   official_url: https://www.town.embetsu.hokkaido.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: 014869
     name: 遠別町
     prefecture: 北海道
     prefecture_slug: hokkaido
     slug: 014869
-    bank_url: https://www.town.embetsu.hokkaido.jp/docs/page2014021400020.html
-    bank_status: available
-    extract_pending: true
+    bank_url: https://www.town.embetsu.hokkaido.jp/
+    bank_status: none
+    extract_pending: false
     map_query: 北海道遠別町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.embetsu.hokkaido.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
     checked_on: '2026-09-15'
-  pages:
-  - url: https://www.town.embetsu.hokkaido.jp/docs/page2014021400020.html
-    kind: listing_index
-  - url: https://www.town.embetsu.hokkaido.jp/docs/4100.html
-    kind: subsidy
-  allow_hosts:
-  - www.town.embetsu.hokkaido.jp
-  max_pages: 30
 - id: hokkaido-014877
   name: 天塩町空き家バンク
   operator: 天塩町

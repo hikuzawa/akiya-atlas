@@ -3107,34 +3107,31 @@
       ]
     },
     {
-      "alternatives": [
-        "https://www.town.embetsu.hokkaido.jp/docs/page2014020500028.html"
-      ],
-      "bank_url": "https://www.town.embetsu.hokkaido.jp/docs/page2014021400020.html",
+      "alternatives": [],
+      "bank_status": "none",
+      "bank_url": "https://www.town.embetsu.hokkaido.jp/",
       "code": "014869",
-      "confidence": 0.8205,
+      "confidence": 0.6,
       "cross_linked": false,
       "detail_pattern": null,
       "evidence_quote": "北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.embetsu.hokkaido.jp）",
       "evidence_url": "https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html",
       "external_links": [],
-      "extract_gap": true,
-      "listing_rows": 4,
-      "listing_score": 0.57,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "遠別町",
       "name_kana": "ｴﾝﾍﾞﾂﾁｮｳ",
       "official_url": "www.town.embetsu.hokkaido.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "北海道",
       "prefecture_slug": "hokkaido",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.embetsu.hokkaido.jp/docs/4100.html"
-      ]
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],

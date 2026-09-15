@@ -1355,6 +1355,7 @@
     },
     {
       "alternatives": [],
+      "bank_status": "available",
       "bank_url": "https://www.town.okutama.tokyo.jp/kosodate/ijuteijujoho/3/index.html",
       "code": "133086",
       "confidence": 0.8065,
@@ -1376,7 +1377,8 @@
       "prefecture": "東京都",
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],

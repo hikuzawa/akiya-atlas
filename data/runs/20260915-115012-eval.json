@@ -1,0 +1,151 @@
+{
+  "accuracy": {
+    "address": {
+      "correct": 12,
+      "rate": 1.0,
+      "total": 12
+    },
+    "built_year": {
+      "correct": 3,
+      "rate": 1.0,
+      "total": 3
+    },
+    "floor_area_m2": {
+      "correct": 5,
+      "rate": 1.0,
+      "total": 5
+    },
+    "land_area_m2": {
+      "correct": 3,
+      "rate": 1.0,
+      "total": 3
+    },
+    "layout": {
+      "correct": 2,
+      "rate": 1.0,
+      "total": 2
+    },
+    "price": {
+      "correct": 17,
+      "rate": 1.0,
+      "total": 17
+    },
+    "rent_monthly": {
+      "correct": 15,
+      "rate": 1.0,
+      "total": 15
+    },
+    "structure": {
+      "correct": 1,
+      "rate": 1.0,
+      "total": 1
+    }
+  },
+  "cases": 10,
+  "metrics": {
+    "fields": {
+      "address": {
+        "not_found": 65,
+        "notes": {},
+        "parsed": 430,
+        "quote_not_in_source": 0,
+        "total": 495,
+        "unparsed": 0
+      },
+      "built_year": {
+        "not_found": 493,
+        "notes": {},
+        "parsed": 2,
+        "quote_not_in_source": 0,
+        "total": 495,
+        "unparsed": 0
+      },
+      "floor_area_m2": {
+        "not_found": 490,
+        "notes": {},
+        "parsed": 5,
+        "quote_not_in_source": 0,
+        "total": 495,
+        "unparsed": 0
+      },
+      "land_area_m2": {
+        "not_found": 319,
+        "notes": {
+          "no_number": 2,
+          "no_unit": 1
+        },
+        "parsed": 173,
+        "quote_not_in_source": 0,
+        "total": 495,
+        "unparsed": 3
+      },
+      "layout": {
+        "not_found": 492,
+        "notes": {},
+        "parsed": 3,
+        "quote_not_in_source": 0,
+        "total": 495,
+        "unparsed": 0
+      },
+      "listing_no": {
+        "not_found": 2,
+        "notes": {},
+        "parsed": 493,
+        "quote_not_in_source": 0,
+        "total": 495,
+        "unparsed": 0
+      },
+      "price": {
+        "not_found": 102,
+        "notes": {
+          "negotiable": 38,
+          "no_number": 33,
+          "not_a_price": 11
+        },
+        "parsed": 311,
+        "quote_not_in_source": 0,
+        "total": 495,
+        "unparsed": 82
+      },
+      "rent_monthly": {
+        "not_found": 389,
+        "notes": {
+          "negotiable": 2,
+          "no_number": 7,
+          "range": 1
+        },
+        "parsed": 96,
+        "quote_not_in_source": 0,
+        "total": 495,
+        "unparsed": 10
+      },
+      "status_text": {
+        "not_found": 470,
+        "notes": {},
+        "parsed": 25,
+        "quote_not_in_source": 0,
+        "total": 495,
+        "unparsed": 0
+      },
+      "structure": {
+        "not_found": 493,
+        "notes": {
+          "quote_not_in_source": 1
+        },
+        "parsed": 1,
+        "quote_not_in_source": 1,
+        "total": 495,
+        "unparsed": 0
+      }
+    },
+    "flags": {},
+    "items": 495,
+    "pages": 10,
+    "summary_replaced": 0,
+    "truncated_pages": 0
+  },
+  "mismatches": [],
+  "recorded": [],
+  "skipped": [],
+  "unmatched_expected": []
+}
