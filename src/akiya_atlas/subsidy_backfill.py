@@ -26,6 +26,9 @@ log = logging.getLogger(__name__)
 PRICE_IN = 1.0
 PRICE_OUT = 5.0
 
+# 抽出がこの県数だけ続けて全滅したら中断する。鍵切れなら、続けても巡回を無駄にするだけ
+STOP_AFTER_DEAD = 2
+
 
 def progress_path(ws: Workspace):
     return ws.runs_dir / "subsidies.json"
@@ -66,6 +69,16 @@ def count_subsidies(ws: Workspace, ids: Sequence[str]) -> int:
     return total
 
 
+def extract_failed(entry: dict[str, Any]) -> bool:
+    """その県の抽出が 1 ページも通らなかったか（鍵切れ・API の障害）。
+
+    1 ページだけ落ちるのは相手ページの都合なので、県の失敗とはみなさない。そのページは
+    pending のまま残り、日次が次に拾う。
+    """
+    stage = entry.get("extract") or {}
+    return bool(stage.get("llm_errors")) and not stage.get("pages")
+
+
 def run_subsidy_backfill(
     rt: commands.Runtime,
     *,
@@ -84,6 +97,7 @@ def run_subsidy_backfill(
     prog = load_progress(ws)
     table = prog["prefectures"]
     failed: list[str] = []
+    dead = 0  # 抽出が続けて全滅した県の数
     for name, slug in prefectures(only):
         entry = table.setdefault(slug, {"name": name})
         if not force and entry.get("done"):
@@ -121,9 +135,28 @@ def run_subsidy_backfill(
             log.exception("%s: 失敗", name)
             echo(f"{name}: 失敗（続行）: {entry['error']}")
             continue
+        entry["minutes"] = round((time.monotonic() - t0) / 60, 1)
+        if extract_failed(entry):
+            # 1 ページも抽出できなかった県は「済み」にしない。鍵切れや API の障害が
+            # 原因のことがあり、済みにすると再実行で飛ばしてしまう。巡回したページは
+            # pending のまま残るので、直してから実行すれば巡回し直さずに取り直せる
+            entry.pop("done", None)
+            entry["error"] = f"抽出が {entry['extract']['llm_errors']} ページとも失敗した"
+            save_progress(ws, prog)
+            failed.append(name)
+            dead += 1
+            echo(f"{name}: {entry['error']}")
+            if dead >= STOP_AFTER_DEAD:
+                echo(
+                    f"抽出が {dead} 県続けて失敗したので中断する。"
+                    "API の鍵と残高を確かめてから同じコマンドを再実行する"
+                    "（巡回済みのページは残るので、取り直しに巡回は要らない）"
+                )
+                break
+            continue
+        dead = 0
         entry.pop("error", None)
         entry["done"] = _now()
-        entry["minutes"] = round((time.monotonic() - t0) / 60, 1)
         save_progress(ws, prog)
         echo(
             f"{name}: 完了 {entry['minutes']}分 / 自治体 {entry['municipalities']} "
