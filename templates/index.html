@@ -2,7 +2,9 @@
 {% block content %}
 <section class="hero" aria-labelledby="hero-title">
   <h1 id="hero-title">自治体が運営する空き家バンクを、まとめて探せます</h1>
-  <p class="lead">{{ stats.prefectures|number }} 県 {{ stats.municipalities|number }} 市町村の公式ページを毎日巡回し、物件の要約と一次情報へのリンクだけを載せています。物件の紹介・仲介は行っていません。</p>
+  {# 巡回しているのは空き家バンクの物件ページを確認できた市町村だけ（全 1,741 のうち 262）。
+     全市町村を巡回しているように読ませない #}
+  <p class="lead">全国 {{ stats.municipalities|number }} 市町村のうち、自治体の空き家バンクで物件を確認できた {{ stats.crawled_municipalities|number }} 市町村の公式ページを毎日巡回し、物件の要約と一次情報へのリンクだけを載せています。残りの市町村についても、窓口と補助制度を調べてまとめています。物件の紹介・仲介は行っていません。</p>
   {{ ui.stat_strip([
     {"value": stats.listings|number, "unit": "件", "label": "掲載物件（自治体の公式ページで確認できたもの）", "kind": "kaki"},
     {"value": stats.prefectures|number, "unit": "都道府県", "label": "対象の都道府県"},
