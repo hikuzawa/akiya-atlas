@@ -32,9 +32,7 @@
 </section>
 
 <section class="section" aria-labelledby="window-title">
-  {{ ui.section_head("window-title", "空き家バンクの窓口", "登録・相談は各市町村の窓口へ") }}
-  <ul class="muni-cards">
-    {% for m in municipalities %}{{ ui.muni_card(m) }}{% endfor %}
-  </ul>
+  {{ ui.section_head("window-title", "空き家バンクの窓口 " ~ municipalities|length ~ " 市町村", "登録・相談は各市町村の窓口へ") }}
+  {{ ui.muni_windows(municipalities) }}
 </section>
 {% endblock %}

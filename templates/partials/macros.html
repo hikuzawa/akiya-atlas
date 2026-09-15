@@ -166,6 +166,31 @@
 </li>
 {%- endmacro %}
 
+{# 県の所有者向けページの窓口一覧。市町村数が多く（北海道 179）、カードで並べると
+   32,000px（約 40 画面）になってページの 7 割を占めていた。
+   実データでは掲載物件があるのは 16%、掲載も補助も無い（＝名前とリンクだけ）が半数なので、
+   カードではなく名前の並びにして全件を出す。所有者は「自分の市町村」を探しに来るので、
+   一部を畳んで隠すより、全件が見える方が目的に合う（ADR 0014）。
+   掲載のある市町村だけ件数を添えて先頭に出す #}
+{% macro muni_windows(municipalities) -%}
+{# 掲載のある市町村は件数の多い順。残りは市町村コード順（＝おおむね地域順）のまま #}
+{% set listed = municipalities|selectattr("count")|sort(attribute="count", reverse=true)|list %}
+{% set rest = municipalities|rejectattr("count")|list %}
+{% if listed %}
+<p class="group-head">物件が掲載されている市町村<b>{{ listed|length }}</b></p>
+<ul class="muni-chips listed">
+{% for m in listed %}<li><a href="{{ m.url }}">{{ m.name }}<span class="n">{{ m.count|number }}</span></a></li>{% endfor %}
+</ul>
+{% endif %}
+{% if rest %}
+<p class="group-head">{% if listed %}そのほかの窓口{% else %}窓口{% endif %}<b>{{ rest|length }}</b></p>
+<p class="meta">本サイトが掲載できる物件はまだありませんが、窓口では登録と相談を受け付けています。</p>
+<ul class="muni-chips">
+{% for m in rest %}<li><a href="{{ m.url }}">{{ m.name }}</a></li>{% endfor %}
+</ul>
+{% endif %}
+{%- endmacro %}
+
 {# 都道府県カード（トップ）。p は pref_rows の行。max_count は最大件数（棒の長さの基準） #}
 {% macro pref_card(p, max_count) -%}
 <li class="card muni-card pref-card">

@@ -321,6 +321,19 @@ details.fold .fold-body { padding: 0 0 16px; }
 .offer h3 { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .offer .desc { color: var(--ink-2); }
 
+/* 窓口の一覧。市町村名を並べるだけにして全件を出す（北海道 179 件）。
+   タップ領域は 44px、名前は折り返さない */
+.muni-chips { list-style: none; margin: 0 0 4px; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.muni-chips a {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 6px 14px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 999px;
+  color: var(--ink); text-decoration: none; font-size: .95rem; white-space: nowrap;
+}
+.muni-chips a:hover { background: var(--green-100); border-color: var(--green-700); }
+.muni-chips .n { font-family: var(--font-display); font-weight: 700; color: var(--kaki); font-size: .95rem; }
+/* 掲載のある市町村は先に出し、枠を濃くして見分けられるようにする（色だけに頼らず件数も添える） */
+.muni-chips.listed a { border-color: var(--green-700); border-width: 2px; }
+
 /* ---------- 物件の 1 行表示（ADR 0014） ---------- */
 /* カード型は 6 項目のうち 0〜1 個しか取れない物件が 65% を占め、下半分が空いていた。
    1 行にして同じ画面に 8 件（カードは 3.5 件）入るようにし、価格と地区名を縦に揃える */
