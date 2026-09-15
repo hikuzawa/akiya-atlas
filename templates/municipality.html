@@ -61,8 +61,8 @@
   {% if no_listings_reason == "empty" %}
   <div class="notice warn" role="note"><p>現在、募集中の物件はありません。以下には過去の掲載（成約済など）を含みます。最新は {{ ui.ext_link(muni.bank_url, "公式ページ", "") }} でご確認ください。</p></div>
   {% endif %}
-  <ul class="cards">
-    {% for r in listings %}{{ ui.listing_card(r, subsidy=has_subsidy) }}{% endfor %}
+  <ul class="lines">
+    {% for r in listings %}{{ ui.listing_line(r, subsidy=has_subsidy) }}{% endfor %}
   </ul>
   {% elif no_listings_reason == "unavailable" %}
   <p class="surface">現在、物件情報を取り込めていません。{{ ui.ext_link(muni.bank_url, "公式ページを見る", "") }}</p>

@@ -78,6 +78,8 @@
 </div>
 {%- endmacro %}
 
+{# トップの「最近確認した物件」は横スクロールで数件だけ見せる場所なので、こちらはカードのまま。
+   縦に何十件も並べる市町村ページは下の listing_line を使う #}
 {# 物件カード。r は pages.listing_row の行。place は都道府県・市町村名（横断一覧のとき）。subsidy は市町村に補助制度があるか #}
 {% macro listing_card(r, place=none, subsidy=false) -%}
 {% set stale = r.status != "active" %}
@@ -111,6 +113,37 @@
     </div>
     <span>確認 {{ r.updated }}</span>
   </div>
+</li>
+{%- endmacro %}
+
+{# 物件の一覧。1 件 1 行で出す（ADR 0014）。実データでは 6 項目のうち 0〜1 個しか
+   取れていない物件が 65% を占め、カード型だと下半分が空いて 1 画面 3.5 件しか入らなかった。
+   1 行なら同じ画面に 8 件入り、価格と地区名が縦に揃うので見比べられる。
+   r は pages.listing_row の行。place は都道府県・市町村名（横断一覧のとき）。
+   subsidy は市町村に補助制度があるか #}
+{% macro listing_line(r, place=none, subsidy=false) -%}
+{% set stale = r.status != "active" %}
+{# 状態と付加情報は色だけに頼らず、meta 行に文字で入れる #}
+{% set ns = namespace(m=[]) %}
+{% if r.status == "closed" %}{% set ns.m = ns.m + ["成約済・募集終了"] %}
+{% elif stale %}{% set ns.m = ns.m + ["掲載終了の可能性"] %}{% endif %}
+{% if r.status_text %}{% set ns.m = ns.m + [r.status_text] %}{% endif %}
+{% if place %}{% set ns.m = ns.m + [place] %}{% endif %}
+{% if r.address and r.address not in r.title %}{% set ns.m = ns.m + [r.address] %}{% endif %}
+{% if r.built_year %}{% set ns.m = ns.m + [r.built_year ~ "年築"] %}{% endif %}
+{% if r.floor_area %}{% set ns.m = ns.m + ["延床 " ~ r.floor_area] %}{% endif %}
+{% if r.layout %}{% set ns.m = ns.m + [r.layout] %}{% endif %}
+{% if r.structure %}{% set ns.m = ns.m + [r.structure] %}{% endif %}
+{% if subsidy %}{% set ns.m = ns.m + ["補助制度あり"] %}{% endif %}
+<li class="lrow{% if stale %} is-stale{% endif %}">
+  <a href="{{ r.url }}">
+    {# 価格が数値にできず原文のまま（「53,000円/月、礼金1ヶ月」など）のときは、
+       見出しを同じ行に並べず次の行へ流す。並べると見出しが省略されてしまう #}
+    <span class="lp{% if r.price_exact is defined and not r.price_exact %} asquote{% endif %}">{{ r.price }}</span>
+    <span class="ld">{{ r.deal }}</span>
+    <span class="lt">{{ r.title }}</span>
+    <span class="lm">{% for x in ns.m %}{{ x }}{% if not loop.last %} ・ {% endif %}{% endfor %}<span class="lu">確認 {{ r.updated }}</span></span>
+  </a>
 </li>
 {%- endmacro %}
 
