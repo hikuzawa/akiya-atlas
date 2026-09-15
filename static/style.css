@@ -334,6 +334,11 @@ details.fold .fold-body { padding: 0 0 16px; }
 /* 掲載のある市町村は先に出し、枠を濃くして見分けられるようにする（色だけに頼らず件数も添える） */
 .muni-chips.listed a { border-color: var(--green-700); border-width: 2px; }
 
+/* 種別ごとの件数。制度名を出さずに「どんな制度があるか」を示す */
+.kind-counts { list-style: none; margin: 0 0 4px; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.kind-counts li { display: inline-flex; align-items: baseline; gap: 7px; padding: 7px 14px; background: var(--green-100); border-radius: 999px; font-size: .92rem; }
+.kind-counts .n { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; color: var(--kaki); }
+
 /* ---------- 物件の 1 行表示（ADR 0014） ---------- */
 /* カード型は 6 項目のうち 0〜1 個しか取れない物件が 65% を占め、下半分が空いていた。
    1 行にして同じ画面に 8 件（カードは 3.5 件）入るようにし、価格と地区名を縦に揃える */

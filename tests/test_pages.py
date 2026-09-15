@@ -202,6 +202,7 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
         "go/kaitai-110/owners-flow-demolition/index.html",
         "about/index.html",
         "data/index.html",
+        "data/nagano/index.html",
         "404.html",
         "search/index.json",
         "sitemap.xml",
@@ -212,8 +213,9 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
     ]
     for rel in expected:
         assert (dist / rel).is_file(), rel
-    # 転送ページ 4 枚（公開中 2 案件）と、長野県の所有者向けページ 1 枚を含む（ADR 0010・0012）
-    assert report.stages["build"]["pages"] == 17
+    # 転送ページ 4 枚（公開中 2 案件）、長野県の所有者向けページ 1 枚、
+    # 県ごとの出典一覧 1 枚を含む（ADR 0010・0012・0014）
+    assert report.stages["build"]["pages"] == 18
 
     # 補助制度のある県には所有者向けページを作り、市町村ページの導線をそちらに向ける（ADR 0012）
     pref_owners = (dist / "owners/nagano/index.html").read_text(encoding="utf-8")
@@ -307,6 +309,26 @@ def test_extracted_subsidies_reach_the_page_and_do_not_shadow_hand_written_ones(
     assert "空き家解体費補助金" in html and "解体費の一部を補助" in html  # 取り込んだ制度が出る
     assert html.count("空き家改修補助") == 1 and "抽出した要約" not in html  # 手書きが残る
     assert "確認日 2026-09-14" in html  # 取得した日を鮮度として出す
+
+
+def test_national_pages_send_the_full_lists_to_prefecture_pages(ws: Workspace) -> None:
+    """全国ページに全件を並べない（ADR 0014）。
+
+    /owners/ は補助制度の件数と県への導線だけを持ち、制度名は県ページに置く。
+    /data/ は出典一覧の目次で、出典そのものは /data/<県>/ に置く。
+    どちらも「畳む」ではなく「載せない」。details は表示を隠すだけで転送量は減らないため。
+    """
+    commands.cmd_build(commands.Runtime(ws=ws, service=service))
+    owners = (ws.dist_dir / "owners/index.html").read_text(encoding="utf-8")
+    assert "/owners/nagano/" in owners  # 県への導線がある
+    assert "空き家改修補助" not in owners  # 制度名は載せない
+    assert "subsidy-title" in owners  # 件数と種別の内訳は残す
+
+    data = (ws.dist_dir / "data/index.html").read_text(encoding="utf-8")
+    assert "/data/nagano/" in data
+    assert "東御市空き家バンク" not in data  # 出典そのものは県ページへ
+    pref = (ws.dist_dir / "data/nagano/index.html").read_text(encoding="utf-8")
+    assert "東御市空き家バンク" in pref
 
 
 def test_subsidies_are_shown_in_two_groups_by_scope(ws: Workspace) -> None:

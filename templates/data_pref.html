@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+{# 県ごとの出典一覧（ADR 0014）。全国 1,741 件を 1 ページに置くと gzip 後で 132KB になるため、
+   /data/ を目次にして県ごとに分けた。信頼ブロックからもこのページへ送る #}
+<nav class="breadcrumb" aria-label="現在地"><ol><li><a href="/">トップ</a></li><li><a href="/data/">データについて</a></li><li>{{ prefecture.name }}</li></ol></nav>
+<div class="page-head narrow">
+  <h1>{{ prefecture.name }}の出典一覧</h1>
+  <p class="sub">{{ prefecture.name }}で本サイトが巡回している一次情報です。運営主体の根拠、巡回方針、最終取得日時、ライセンス判定を示します。全国の目次は <a href="/data/">データについて</a>。</p>
+</div>
+
+<section class="section narrow" aria-labelledby="sources-title">
+  {{ ui.section_head("sources-title", prefecture.name ~ "の出典", sources|length ~ " 件") }}
+  {% for s in sources %}
+  <article class="surface source">
+    <h3>{{ s.name }}{% if s.municipality_url %}（<a href="{{ s.municipality_url }}">{{ s.municipality }}</a>）{% endif %}</h3>
+    <dl class="facts">
+      <div class="row"><dt>運営主体</dt><dd>{{ s.operator }}（{{ s.operator_kind }}）</dd></div>
+      {% if s.evidence %}
+      <div class="row"><dt>根拠</dt><dd>「{{ s.evidence.quote }}」 — <a href="{{ s.evidence.url }}" rel="noopener" target="_blank">出典{{ ui.icon("ext") }}</a>{% if s.evidence.checked_on %}（確認日 {{ s.evidence.checked_on }}）{% endif %}</dd></div>
+      {% endif %}
+      <div class="row"><dt>巡回方針</dt><dd>{{ s.policy }}</dd></div>
+      {% if s.pages %}
+      <div class="row"><dt>巡回ページ</dt><dd><ul>{% for p in s.pages %}<li><a href="{{ p.url }}" rel="noopener" target="_blank">{{ p.url }}</a> <span class="meta">{{ p.kind }}</span></li>{% endfor %}</ul></dd></div>
+      {% endif %}
+      <div class="row"><dt>最終取得</dt><dd>{{ s.last_fetched }}</dd></div>
+      <div class="row"><dt>ライセンス判定</dt><dd>{{ s.license }}</dd></div>
+      {% if s.external %}
+      <div class="row"><dt>関連する民間サイト（リンクのみ）</dt><dd><ul>{% for e in s.external %}<li><a href="{{ e.url }}" rel="noopener nofollow" target="_blank">{{ e.label }}</a>{% if e.note %} — {{ e.note }}{% endif %}</li>{% endfor %}</ul></dd></div>
+      {% endif %}
+    </dl>
+  </article>
+  {% endfor %}
+</section>
+{% endblock %}

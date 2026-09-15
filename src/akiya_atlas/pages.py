@@ -256,16 +256,18 @@ TRUST_SOURCES_SHOWN = 5
 DATA_PAGE_PATH = "/data/"
 
 
-def trust_sources(links: list[SourceLink]) -> list[SourceLink]:
+def trust_sources(links: list[SourceLink], *, pref_slug: str = "") -> list[SourceLink]:
     """信頼ブロックに出す出典。最近確認したものを数件出し、全件は出典一覧へ送る。
 
     代表を「最近確認した順」にするのは、信頼シグナルの目的が「いつの情報か」を示すことだから。
+    県が決まっているページは、その県の出典一覧（/data/<県>/）へ送る。
     """
     if len(links) <= TRUST_SOURCES_SHOWN + 1:
         return links
     fresh = sorted(links, key=lambda x: (x.fetched_at is not None, x.fetched_at), reverse=True)
     shown = fresh[:TRUST_SOURCES_SHOWN]
-    shown.append(SourceLink(label=f"出典一覧（全 {len(links)} 件）", url=DATA_PAGE_PATH))
+    url = f"{DATA_PAGE_PATH}{pref_slug}/" if pref_slug else DATA_PAGE_PATH
+    shown.append(SourceLink(label=f"出典一覧（全 {len(links)} 件）", url=url))
     return shown
 
 
@@ -632,7 +634,9 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                 },
                 trust_signals=trust(
                     ctx,
-                    sources=trust_sources([link for m in munis for link in source_links(ctx, m)]),
+                    sources=trust_sources(
+                        [link for m in munis for link in source_links(ctx, m)], pref_slug=slug
+                    ),
                     count=len(active),
                 ),
                 priority=0.8,
@@ -730,7 +734,11 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
             context={
                 "flow_sale": flow_diagram("売却・賃貸までの流れ", SALE_FLOW, per_row=3),
                 "flow_demolition": flow_diagram("解体までの流れ", DEMOLITION_FLOW, per_row=3),
-                "subsidies": subsidies,
+                # 制度そのものは県ページに置く。ここは件数と種別の内訳、県への導線だけ
+                "subsidy_total": len(subsidies),
+                "subsidy_municipalities": sum(1 for m in ds.municipalities if m.subsidies),
+                "subsidy_kinds": subsidy_kind_counts(ctx),
+                "prefectures": [r for r in prefecture_rows(ctx) if r["subsidies"]],
                 # 枠ごとの掲載案件（ADR 0010）。相談先だけは契約前のものも「準備中」として並べる
                 "slots": {
                     p.id: affiliates.offers_for(p.id, include_pending=(p.id == "owners-consult"))
@@ -779,7 +787,9 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                 },
                 trust_signals=trust(
                     ctx,
-                    sources=trust_sources([link for m in munis for link in source_links(ctx, m)]),
+                    sources=trust_sources(
+                        [link for m in munis for link in source_links(ctx, m)], pref_slug=slug
+                    ),
                     count=len(pref_active),
                 ),
                 priority=0.7,
@@ -799,6 +809,43 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                 noindex=True,
                 priority=0.1,
                 changefreq="monthly",
+            )
+        )
+    # 県ごとの出典一覧（ADR 0014）。/data/ は目次にして、中身はここに分ける
+    by_pref: dict[str, list[Source]] = {}
+    for src in ds.sources:
+        muni = ds.muni_by_source.get(src.id)
+        if muni is not None:
+            by_pref.setdefault(muni.prefecture_slug, []).append(src)
+    pref_names = {m.prefecture_slug: m.prefecture for m in ds.municipalities}
+    for slug, srcs in sorted(by_pref.items()):
+        name = pref_names.get(slug, slug)
+        pages.append(
+            _page(
+                ctx,
+                path=f"data/{slug}/index.html",
+                template="data_pref.html",
+                title=f"{name}の出典一覧（取得日時・ライセンス）",
+                description=f"{name}で巡回している一次情報の出典、取得日時、巡回方針、ライセンス判定。",
+                context={
+                    "prefecture": {"slug": slug, "name": name},
+                    "sources": [source_row(ctx, s) for s in srcs],
+                },
+                trust_signals=trust(
+                    ctx,
+                    sources=trust_sources(
+                        [
+                            link
+                            for s in srcs
+                            if (m := ds.muni_by_source.get(s.id))
+                            for link in source_links(ctx, m)
+                        ],
+                        pref_slug=slug,
+                    ),
+                    count=len(srcs),
+                ),
+                priority=0.3,
+                changefreq="weekly",
             )
         )
     pages.append(
@@ -821,7 +868,10 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
             template="data.html",
             title="データについて（出典・取得日時・ライセンス）",
             description="掲載データの出典、取得日時、巡回方針、ライセンス判定の一覧。",
-            context={"sources": [source_row(ctx, s) for s in ds.sources]},
+            context={
+                "sources_total": len(ds.sources),
+                "prefectures": [r for r in prefecture_rows(ctx) if r["sources"]],
+            },
             trust_signals=trust(ctx, sources=trust_sources(all_sources), count=len(all_active)),
             priority=0.3,
         )
@@ -841,6 +891,39 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
         )
     )
     return pages
+
+
+def prefecture_rows(ctx: Ctx) -> list[dict[str, Any]]:
+    """都道府県ごとの補助制度数と出典数。/owners/ と /data/ の目次に使う。
+
+    全国 2,939 件を 1 ページに並べると gzip 後でも 322KB になり、物件ページの 60 倍になる。
+    件数だけ出して県ページへ送る（ADR 0014）。
+    """
+    rows: dict[str, dict[str, Any]] = {}
+    for m in ctx.ds.municipalities:
+        row = rows.setdefault(
+            m.prefecture_slug,
+            {
+                "slug": m.prefecture_slug,
+                "name": m.prefecture,
+                "subsidies": 0,
+                "municipalities": 0,
+                "sources": 0,
+            },
+        )
+        row["subsidies"] += len(m.subsidies)
+        row["municipalities"] += 1 if m.subsidies else 0
+        row["sources"] += 1 if ctx.ds.by_source.get(m.id) else 0
+    return sorted(rows.values(), key=lambda r: r["slug"])
+
+
+def subsidy_kind_counts(ctx: Ctx) -> list[dict[str, Any]]:
+    """種別ごとの件数。制度名を出さずに「どんな制度があるか」を示す。"""
+    counts: dict[str, int] = {}
+    for m in ctx.ds.municipalities:
+        for sub in m.subsidies:
+            counts[sub.kind] = counts.get(sub.kind, 0) + 1
+    return [{"kind": k, "count": v} for k, v in sorted(counts.items(), key=lambda kv: -kv[1])]
 
 
 def source_row(ctx: Ctx, src: Source) -> dict[str, Any]:

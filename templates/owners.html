@@ -61,11 +61,25 @@
 </section>
 
 <section class="section" aria-labelledby="subsidy-title">
-  {{ ui.section_head("subsidy-title", "自治体の補助制度", "本サイトが確認したもの。出典と確認日付き") }}
-  {% if subsidies %}
-  {{ ui.subsidy_groups(subsidies, with_muni=true) }}
-  {% else %}
-  <p class="surface">補助制度の情報はまだ登録されていません。</p>
-  {% endif %}
+  {{ ui.section_head("subsidy-title", "自治体の補助制度", "本サイトが確認したもの。制度の中身は県ごとのページに") }}
+  {# 全国 2,939 件をここに並べると gzip 後でも 322KB になる（物件ページの 60 倍）。
+     件数と種別の内訳だけ出して、県ごとのページへ送る（ADR 0014） #}
+  {{ ui.stat_strip([
+    {"value": subsidy_total|number, "unit": "件", "label": "本サイトが確認した補助制度", "kind": "kaki"},
+    {"value": subsidy_municipalities|number, "unit": "市町村", "label": "制度が見つかった市町村"}
+  ], "補助制度の数") }}
+  <p class="group-head">種別の内訳</p>
+  <ul class="kind-counts">
+    {% for k in subsidy_kinds %}
+    <li><span class="k">{{ k.kind if k.kind != "判定できず" else "種別を判定できず" }}</span><span class="n">{{ k.count|number }}</span></li>
+    {% endfor %}
+  </ul>
+  <p class="group-head">お住まいの県から探す<b>{{ prefectures|length }}</b></p>
+  <p class="meta">制度の名称・金額・募集期間・出典は、県ごとのページに載せています。</p>
+  <ul class="muni-chips">
+    {% for p in prefectures %}
+    <li><a href="/owners/{{ p.slug }}/">{{ p.name }}<span class="n">{{ p.subsidies|number }}</span></a></li>
+    {% endfor %}
+  </ul>
 </section>
 {% endblock %}
