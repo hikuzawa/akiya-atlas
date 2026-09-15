@@ -15,6 +15,7 @@ from sitemill.settings import Workspace
 
 from akiya_atlas import ad_check, affiliates
 from akiya_atlas.affiliates import Asp, Offer
+from akiya_atlas.municipalities import PREFECTURE_NAMES
 from akiya_atlas.schema import Listing, record_id_for
 from akiya_atlas.service import service
 
@@ -245,6 +246,20 @@ def test_a_region_limited_offer_shows_only_on_its_prefecture(
     assert problems == []
     urls = [u for _, u in ad_check.ad_urls(dist, "https://akiya-atlas.com")]
     assert "https://akiya-atlas.com/owners/nagano/" in urls
+
+
+def test_registered_regions_are_real_prefecture_names() -> None:
+    """`regions` の値は 47 都道府県名でなければならない（ADR 0012）。
+
+    「札幌市」「北海道県」のような値を書いても例外は出ず、案件がどの県のページにも
+    出ないまま気づかれない。登録のときに止める。
+    """
+    known = set(PREFECTURE_NAMES.values())
+    for offer in affiliates.OFFERS:
+        assert set(offer.regions) <= known, f"{offer.id}: 都道府県名でない値がある"
+        if offer.regions:
+            # 対応エリアの原文が無いまま地域を絞ると、推定で広げたのか読めなくなる
+            assert offer.region_quote, f"{offer.id}: regions があるのに region_quote が空"
 
 
 def test_offers_for_prefers_a_local_offer_over_a_nationwide_one() -> None:

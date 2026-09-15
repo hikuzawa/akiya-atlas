@@ -18,7 +18,18 @@
 {% if slots["owners-pref-consult"] %}
 <section class="section" aria-labelledby="consult-title">
   {{ ui.section_head("consult-title", "この地域の相談先", "「広告」と付いたものはアフィリエイトリンクです") }}
-  {{ ui.offer_slot(slots["owners-pref-consult"], "owners-pref-consult", prefecture.name ~ "を対象にしている事業者です。") }}
+  {# 全国版と同じく、ボタンだけでなく何をする事業者かを 1 段落で書く。地域限定の案件は
+     対応できる範囲が県内でも一様でないので、その差を説明文に含める（ADR 0012） #}
+  <ul class="offers">
+    {% for o in slots["owners-pref-consult"] %}
+    <li class="offer">
+      <h3>{{ o.label }}{{ ui.badge("plain", o.kind) }}</h3>
+      <p class="desc">{{ o.description }}</p>
+      {{ ui.offer_slot([o], "owners-pref-consult") }}
+    </li>
+    {% endfor %}
+  </ul>
+  <p class="meta">{{ prefecture.name }}を対象にしている事業者です。対応できる地域や条件は事業者ごとに違うので、申し込む前に各社のページでご確認ください。</p>
 </section>
 {% endif %}
 

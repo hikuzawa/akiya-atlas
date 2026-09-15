@@ -213,9 +213,10 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
     ]
     for rel in expected:
         assert (dist / rel).is_file(), rel
-    # 転送ページ 4 枚（公開中 2 案件）、長野県の所有者向けページ 1 枚、
-    # 県ごとの出典一覧 1 枚を含む（ADR 0010・0012・0014）
-    assert report.stages["build"]["pages"] == 18
+    # 転送ページ 5 枚（公開中 3 案件）、長野県の所有者向けページ 1 枚、
+    # 県ごとの出典一覧 1 枚を含む（ADR 0010・0012・0014）。5 枚目は北海道限定の案件の分で、
+    # このデータには北海道が無いので掲載先のページは無いが、転送ページは案件ごとに作られる
+    assert report.stages["build"]["pages"] == 19
 
     # 補助制度のある県には所有者向けページを作り、市町村ページの導線をそちらに向ける（ADR 0012）
     pref_owners = (dist / "owners/nagano/index.html").read_text(encoding="utf-8")
