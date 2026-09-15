@@ -1,0 +1,40 @@
+{
+  "ci": false,
+  "command": "extract",
+  "errors": [
+    "https://www.city.kurayoshi.lg.jp/6143.htm: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GQnUj6zaMoPprk2xQF'}",
+    "https://www.city.kurayoshi.lg.jp/6146.htm: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GQp9gbbdExSzLEm2Yy'}",
+    "https://www.town.misasa.tottori.jp/315/319/2054/2018/1325/24840.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GQnftTWwhptD9vxUZW'}",
+    "https://www.e-hokuei.net/soshiki/10/1580.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GQnmLwW7tK7o81QiYF'}",
+    "https://www.e-hokuei.net/soshiki/9/1737.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GQpF9RQCaYCpAnmP8q'}",
+    "https://www.e-hokuei.net/soshiki/9/1738.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GQqgTxFnw5kE4tFFy5'}",
+    "https://www.e-hokuei.net/soshiki/9/1742.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GQrt9GbhD4aZ13YDGD'}",
+    "https://www.daisen.jp/10/2/9/a141/: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GQnYCPAYjDRsX4kNFn'}",
+    "https://www.daisen.jp/10/2/9/c142/: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GQpMqRiTAcG4i7D8XV'}",
+    "https://www.town.nanbu.tottori.jp/admin/mirai/permanent/01/: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GQnTjr67NCGezRtAfc'}",
+    "https://www.town.nichinan.lg.jp/soshikikarasagasu/kensetsuka/sumai_kenchiku/16732.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GQnaBqjNTZZ4favPqE'}"
+  ],
+  "extraction_metrics": {
+    "fields": {},
+    "flags": {},
+    "items": 0,
+    "pages": 0,
+    "summary_replaced": 0,
+    "truncated_pages": 0
+  },
+  "finished_at": "2026-09-15T00:19:24Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "extract": {
+      "llm_errors": 11
+    }
+  },
+  "started_at": "2026-09-15T00:19:14Z"
+}

@@ -1,0 +1,52 @@
+{
+  "ci": false,
+  "command": "extract",
+  "errors": [
+    "https://www.city.shimonoseki.lg.jp/soshiki/70/135017.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtYqxrAihuTyaM12fM'}",
+    "https://www.city.shimonoseki.lg.jp/soshiki/70/2583.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtaD5G2JhXkYmzhYPB'}",
+    "https://www.city.shimonoseki.lg.jp/soshiki/70/2590.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtbNGnuUBEQNB1DCqT'}",
+    "https://www.city.shimonoseki.lg.jp/soshiki/70/2600.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4Gtcp5uRyW5wFaibKVw'}",
+    "https://www.city.hagi.lg.jp/soshiki/111/h65247.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtYshaqAQMBzx7DA4N'}",
+    "https://www.city.hofu.yamaguchi.jp/site/akiya/hojokin-kaitai8.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtZ3sBTMncS8vYGybd'}",
+    "https://www.city.hofu.yamaguchi.jp/site/akiya/hojokin-rikatsuyou.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtakZYHKiv9xoHnwzi'}",
+    "https://www.city.hofu.yamaguchi.jp/soshiki/31/taishinhojo.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtcDs7X4mxdzU6kW68'}",
+    "https://www.city.hikari.lg.jp/kurashi_tetsuzuki/jutaku/4660.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtYriKE2Pm9jv6EHuT'}",
+    "https://www.city.nagato.yamaguchi.jp/soshiki/62/22704.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtYugfdNrTJBQ6QeRd'}",
+    "https://www.city.nagato.yamaguchi.jp/soshiki/62/22705.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtaVSRJGivTqDtmNek'}",
+    "https://www.city.nagato.yamaguchi.jp/soshiki/62/52794.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtbhcgPdDqQMFtsrBA'}",
+    "https://www.city.nagato.yamaguchi.jp/soshiki/62/57332.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtdEe3uNCYSb4vjWhP'}",
+    "https://www.city.shunan.lg.jp/soshiki/36/102004.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtYwRTM23fq9fWUPV4'}",
+    "https://www.city.shunan.lg.jp/soshiki/36/83697.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtaYfDFW5K9WW9zX2r'}",
+    "https://www.city.shunan.lg.jp/soshiki/36/84066.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4Gtc1iKBSAygwMgXvhP'}",
+    "https://www.city.sanyo-onoda.lg.jp/soshiki/84/atochikatuyouhojo.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtYxAVJWgrtbGQibok'}",
+    "https://www.city.sanyo-onoda.lg.jp/soshiki/84/reiwa7akiya-renovation.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtabPZJ3zAWFX5B6vU'}",
+    "https://www.city.sanyo-onoda.lg.jp/soshiki/84/reiwa7kazai.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4Gtc8R3MBYgUGbKJnUv'}",
+    "https://www.city.sanyo-onoda.lg.jp/soshiki/84/reiwa7zyokyakusokusin1027.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtdWWV2CnrrB57YCX3'}",
+    "https://www.town.waki.lg.jp/soshiki/3/185.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtYwg35TPmUcMzQipp'}",
+    "https://www.town.waki.lg.jp/soshiki/3/8480.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtaThf5C4Su3GgVXdH'}",
+    "https://www.town.hirao.lg.jp/kurashi/jyutaku/akiya/1457314714412.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4GtaMFmhDqKCakoVgyr'}"
+  ],
+  "extraction_metrics": {
+    "fields": {},
+    "flags": {},
+    "items": 0,
+    "pages": 0,
+    "summary_replaced": 0,
+    "truncated_pages": 0
+  },
+  "finished_at": "2026-09-15T00:25:41Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "extract": {
+      "llm_errors": 23
+    }
+  },
+  "started_at": "2026-09-15T00:25:31Z"
+}

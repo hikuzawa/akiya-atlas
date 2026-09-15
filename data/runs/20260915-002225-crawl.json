@@ -1,0 +1,30 @@
+{
+  "ci": false,
+  "command": "crawl",
+  "errors": [
+    "https://www.city.setouchi.lg.jp/soshiki/8/3241.html: HTTP 404"
+  ],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-15T00:22:51Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "crawl": {
+      "changed": 32,
+      "errors": 1,
+      "fetched": 35,
+      "new_seeds": 4,
+      "not_modified": 0,
+      "requests": 47,
+      "unchanged": 3,
+      "workers": 8
+    }
+  },
+  "started_at": "2026-09-15T00:22:25Z"
+}

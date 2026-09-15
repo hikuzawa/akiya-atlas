@@ -1,0 +1,42 @@
+{
+  "ci": false,
+  "command": "extract",
+  "errors": [
+    "https://www.city.nago.okinawa.jp/kurashi/2018072000178/: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4JmLbJjfWcH3Mr8actp'}",
+    "https://www.city.itoman.lg.jp/life/2/6/37/: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4JmKKf1ebZWzGydZLtE'}",
+    "https://www.city.okinawa.okinawa.jp/k042/contents/p00029.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4JmKETLoSHEeii6YhA5'}",
+    "https://www.city.okinawa.okinawa.jp/k042/contents/p00032.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4JmLUcP88ypY2AEyZTb'}",
+    "https://www.vill.higashi.okinawa.jp/kurashi_tetsuzuki/sumai/577.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4JmKJuw2oUWMTyxSxXZ'}",
+    "https://www.town.kadena.okinawa.jp/life/kur7775.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4JmKKQhYaEokRA3WHUL'}",
+    "https://www.town.kadena.okinawa.jp/life/kur7885.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4JmLoDMzmup3fqYsTAH'}",
+    "https://www.town.kadena.okinawa.jp/life/kur8040.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4JmNEHHk6GuPbqRebRX'}",
+    "https://www.town.kadena.okinawa.jp/life/kur8570.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4JmQF5cR4MFviJHHAPB'}",
+    "https://www.vill.zamami.okinawa.jp/article/1784192523/: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4JmKCiPFq9iCCbSv65i'}",
+    "https://www.vill.zamami.okinawa.jp/kurashi/life/1771923529/: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4JmLLvndeubfCnVuCD1'}",
+    "https://www.town.yaese.lg.jp/docs/2021080600070/: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4JmKHvmTdnfWKBizkgA'}",
+    "https://www.town.taketomi.lg.jp/topics/taketomireform/: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4JmKJB6EhcqxEDSpFEs'}"
+  ],
+  "extraction_metrics": {
+    "fields": {},
+    "flags": {},
+    "items": 0,
+    "pages": 0,
+    "summary_replaced": 0,
+    "truncated_pages": 0
+  },
+  "finished_at": "2026-09-15T00:50:17Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "extract": {
+      "llm_errors": 13
+    }
+  },
+  "started_at": "2026-09-15T00:50:06Z"
+}

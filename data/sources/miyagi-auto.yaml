@@ -14,18 +14,19 @@ sources:
     slug: 041009
     bank_url: https://www.city.sendai.jp/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県仙台市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 宮城県 県内市町村リンク集に掲載された公式サイト（www.city.sendai.jp）
     url: https://www.pref.miyagi.jp/soshiki/kohou/link01.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: miyagi-042021
   name: 石巻市空き家バンク
   operator: 石巻市
   operator_kind: municipality
   official_url: https://www.city.ishinomaki.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '042021'
     name: 石巻市
@@ -34,12 +35,19 @@ sources:
     slug: '042021'
     bank_url: https://www.city.ishinomaki.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県石巻市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.ishinomaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.ishinomaki.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.ishinomaki.lg.jp/cont/10051050/igyuu/20210811161432.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.ishinomaki.lg.jp
+  max_pages: 30
 - id: miyagi-042030
   name: 塩竈市空き家バンク
   operator: 塩竈市
@@ -54,18 +62,19 @@ sources:
     slug: '042030'
     bank_url: https://www.city.shiogama.miyagi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県塩竈市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.shiogama.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.shiogama.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: miyagi-042056
   name: 気仙沼市空き家バンク
   operator: 気仙沼市
   operator_kind: municipality
   official_url: https://www.kesennuma.miyagi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '042056'
     name: 気仙沼市
@@ -74,12 +83,23 @@ sources:
     slug: '042056'
     bank_url: https://www.kesennuma.miyagi.jp/li/life/090/010/index.html
     bank_status: info
+    extract_pending: false
     map_query: 宮城県気仙沼市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 宮城県 県内市町村リンク集に掲載された公式サイト（www.kesennuma.miyagi.jp）
     url: https://www.pref.miyagi.jp/soshiki/kohou/link01.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.kesennuma.miyagi.jp/sec/s022/20180322192508.html
+    kind: subsidy
+  - url: https://www.kesennuma.miyagi.jp/sec/s020/20180322192507.html
+    kind: subsidy
+  - url: https://www.kesennuma.miyagi.jp/sec/s022/20180322192507.html
+    kind: subsidy
+  allow_hosts:
+  - www.kesennuma.miyagi.jp
+  max_pages: 30
 - id: miyagi-042064
   name: 白石市空き家バンク
   operator: 白石市
@@ -94,18 +114,19 @@ sources:
     slug: '042064'
     bank_url: https://www.city.shiroishi.miyagi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県白石市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.shiroishi.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.shiroishi.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: miyagi-042072
   name: 名取市空き家バンク
   operator: 名取市
   operator_kind: municipality
   official_url: https://www.city.natori.miyagi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '042072'
     name: 名取市
@@ -114,12 +135,19 @@ sources:
     slug: '042072'
     bank_url: https://www.city.natori.miyagi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県名取市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.natori.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.natori.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.natori.miyagi.jp/site/iju/4250.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.natori.miyagi.jp
+  max_pages: 30
 - id: miyagi-042081
   name: 角田市空き家バンク
   operator: 角田市
@@ -134,12 +162,13 @@ sources:
     slug: 042081
     bank_url: https://www.city.kakuda.lg.jp/soshiki/4/418.html
     bank_status: info
+    extract_pending: false
     map_query: 宮城県角田市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.kakuda.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kakuda.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: miyagi-042099
   name: 多賀城市空き家バンク
   operator: 多賀城市
@@ -154,12 +183,13 @@ sources:
     slug: 042099
     bank_url: https://www.city.tagajo.miyagi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県多賀城市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.tagajo.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.tagajo.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: miyagi-042111
   name: 岩沼市空き家バンク
   operator: 岩沼市
@@ -174,12 +204,13 @@ sources:
     slug: '042111'
     bank_url: https://www.city.iwanuma.miyagi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県岩沼市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.iwanuma.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.iwanuma.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: miyagi-042129
   name: 登米市空き家バンク
   operator: 登米市
@@ -194,14 +225,23 @@ sources:
     slug: 042129
     bank_url: https://www.city.tome.miyagi.jp/jyutakutoshi/shisejoho/ijuteju/bank/akiyabank/index.html
     bank_status: available
+    extract_pending: false
     map_query: 宮城県登米市
   operator_evidence:
     quote: 公式ドメイン www.city.tome.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.tome.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.tome.miyagi.jp/jyutakutoshi/shisejoho/ijuteju/bank/akiyabank/index.html
     kind: listing_index
+  - url: https://www.city.tome.miyagi.jp/jyutakutoshi/shisejoho/ijuteju/bank/akiyakaisyu.html
+    kind: subsidy
+  - url: https://www.city.tome.miyagi.jp/kankyo/shisejoho/machizukuri/kankyo/hojojose/jyuutakuyosinene.html
+    kind: subsidy
+  - url: https://www.city.tome.miyagi.jp/machi/shisejoho/ijuteju/jutakushutoku/documents/kouhusinnseisyo.rtf
+    kind: subsidy
+  - url: https://www.city.tome.miyagi.jp/machi/shisejoho/ijuteju/otameshi/taikensankasokushinjigyo.html
+    kind: subsidy
   allow_hosts:
   - www.city.tome.miyagi.jp
   max_pages: 30
@@ -224,18 +264,19 @@ sources:
     slug: '042137'
     bank_url: https://www.kuriharacity.jp/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県栗原市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 宮城県 県内市町村リンク集に掲載された公式サイト（www.kuriharacity.jp）
     url: https://www.pref.miyagi.jp/soshiki/kohou/link01.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: miyagi-042145
   name: 東松島市空き家バンク
   operator: 東松島市
   operator_kind: municipality
   official_url: https://www.city.higashimatsushima.miyagi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '042145'
     name: 東松島市
@@ -244,12 +285,25 @@ sources:
     slug: '042145'
     bank_url: https://www.city.higashimatsushima.miyagi.jp/kurashi/sumiyoimachini/sumai/akiya/akiyabanktoha.html
     bank_status: info
+    extract_pending: false
     map_query: 宮城県東松島市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.higashimatsushima.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.higashimatsushima.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.higashimatsushima.miyagi.jp/kurashi/anzen-anshin/bosai-saigai/saigainisonaete/mokuzotaishinjosei.html
+    kind: subsidy
+  - url: https://www.city.higashimatsushima.miyagi.jp/kurashi/anzen-anshin/bosai-saigai/saigainisonaete/kikenblockbei.html
+    kind: subsidy
+  - url: https://www.city.higashimatsushima.miyagi.jp/shisei/shisaku-keikaku/ijuteiju/teijukasokushinjigyo.html
+    kind: subsidy
+  - url: https://www.city.higashimatsushima.miyagi.jp/kurashi/sumiyoimachini/sumai/akiya/akiya_hojyo.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.higashimatsushima.miyagi.jp
+  max_pages: 30
 - id: miyagi-042153
   name: 大崎市空き家バンク
   operator: 大崎市
@@ -264,12 +318,13 @@ sources:
     slug: '042153'
     bank_url: https://www.city.osaki.miyagi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県大崎市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.osaki.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.osaki.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: miyagi-042161
   name: 富谷市空き家バンク
   operator: 富谷市
@@ -284,18 +339,19 @@ sources:
     slug: '042161'
     bank_url: https://www.tomiya-city.miyagi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県富谷市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 宮城県 県内市町村リンク集に掲載された公式サイト（www.tomiya-city.miyagi.jp）
     url: https://www.pref.miyagi.jp/soshiki/kohou/link01.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: miyagi-043010
   name: 蔵王町空き家バンク
   operator: 蔵王町
   operator_kind: municipality
   official_url: https://www.town.zao.miyagi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '043010'
     name: 蔵王町
@@ -304,12 +360,25 @@ sources:
     slug: '043010'
     bank_url: https://www.town.zao.miyagi.jp/kurashi_guide/shisaku_machi/shisaku_machi/akiyabank.html
     bank_status: info
+    extract_pending: false
     map_query: 宮城県蔵王町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.zao.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.zao.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.zao.miyagi.jp/kurashi_guide/shisaku_machi/shisaku_machi/tvhozyokin.html
+    kind: subsidy
+  - url: https://www.town.zao.miyagi.jp/kurashi_guide/shisaku_machi/shisaku_machi/teijuhozyokin.html
+    kind: subsidy
+  - url: https://www.town.zao.miyagi.jp/kurashi_guide/seikatsu_kankyo/jutaku/taishin.html
+    kind: subsidy
+  - url: https://www.town.zao.miyagi.jp/section/kankyo/kankyou/kankyou20230327.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.zao.miyagi.jp
+  max_pages: 30
   external_links:
   - label: 蔵王町空き家情報公開サイト(外部サイト)
     url: https://zao-t04301.akiya-athome.jp
@@ -327,11 +396,12 @@ sources:
     slug: 043028
     bank_url: https://town.shichikashuku.miyagi.jp/its/news.cgi?act=house
     bank_status: available
+    extract_pending: false
     map_query: 宮城県七ヶ宿町
   operator_evidence:
     quote: 公式ドメイン town.shichikashuku.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://town.shichikashuku.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://town.shichikashuku.miyagi.jp/its/news.cgi?act=house
     kind: listing_index
@@ -343,7 +413,7 @@ sources:
   operator: 大河原町
   operator_kind: municipality
   official_url: https://www.town.ogawara.miyagi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '043214'
     name: 大河原町
@@ -352,18 +422,27 @@ sources:
     slug: '043214'
     bank_url: https://www.town.ogawara.miyagi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県大河原町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.ogawara.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ogawara.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.ogawara.miyagi.jp/2917.htm
+    kind: subsidy
+  - url: https://www.town.ogawara.miyagi.jp/2916.htm
+    kind: subsidy
+  allow_hosts:
+  - www.town.ogawara.miyagi.jp
+  max_pages: 30
 - id: miyagi-043222
   name: 村田町空き家バンク
   operator: 村田町
   operator_kind: municipality
   official_url: https://www.town.murata.miyagi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '043222'
     name: 村田町
@@ -372,12 +451,19 @@ sources:
     slug: '043222'
     bank_url: https://www.town.murata.miyagi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県村田町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.murata.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.murata.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.murata.miyagi.jp/kurashi/tochi/teijyu_hojyokin/index.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.murata.miyagi.jp
+  max_pages: 30
 - id: miyagi-043231
   name: 柴田町空き家バンク
   operator: 柴田町
@@ -392,18 +478,19 @@ sources:
     slug: '043231'
     bank_url: https://www.town.shibata.miyagi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県柴田町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.shibata.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.shibata.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: miyagi-043249
   name: 川崎町空き家バンク
   operator: 川崎町
   operator_kind: municipality
   official_url: https://www.town.kawasaki.miyagi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 043249
     name: 川崎町
@@ -412,18 +499,25 @@ sources:
     slug: 043249
     bank_url: https://www.town.kawasaki.miyagi.jp/soshiki/spring/307.html
     bank_status: info
+    extract_pending: false
     map_query: 宮城県川崎町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.kawasaki.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kawasaki.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.kawasaki.miyagi.jp/soshiki/chishin/92.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.kawasaki.miyagi.jp
+  max_pages: 30
 - id: miyagi-043419
   name: 丸森町空き家バンク
   operator: 丸森町
   operator_kind: municipality
   official_url: https://www.town.marumori.miyagi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 043419
     name: 丸森町
@@ -432,12 +526,25 @@ sources:
     slug: 043419
     bank_url: https://www.town.marumori.miyagi.jp/life/detail.php?content=1422
     bank_status: info
+    extract_pending: false
     map_query: 宮城県丸森町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.marumori.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.marumori.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.marumori.miyagi.jp/life/detail.php?content=1310
+    kind: subsidy
+  - url: https://www.town.marumori.miyagi.jp/life/detail.php?content=506
+    kind: subsidy
+  - url: https://www.town.marumori.miyagi.jp/life/detail.php?content=784
+    kind: subsidy
+  - url: https://www.town.marumori.miyagi.jp/detail.php?content=1310
+    kind: subsidy
+  allow_hosts:
+  - www.town.marumori.miyagi.jp
+  max_pages: 30
   external_links:
   - label: LIFULL HOME'S 空き家バンク
     url: https://www.homes.co.jp/akiyabank/miyagi/igu_marumori/
@@ -446,7 +553,7 @@ sources:
   operator: 亘理町
   operator_kind: municipality
   official_url: https://www.town.watari.miyagi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '043613'
     name: 亘理町
@@ -455,12 +562,25 @@ sources:
     slug: '043613'
     bank_url: https://www.town.watari.miyagi.jp/life/detail.php?content=409
     bank_status: info
+    extract_pending: false
     map_query: 宮城県亘理町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.watari.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.watari.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.watari.miyagi.jp/detail.php?content=79
+    kind: subsidy
+  - url: https://www.town.watari.miyagi.jp/detail.php?content=340
+    kind: subsidy
+  - url: https://www.town.watari.miyagi.jp/life/detail.php?content=79
+    kind: subsidy
+  - url: https://www.town.watari.miyagi.jp/life/detail.php?content=340
+    kind: subsidy
+  allow_hosts:
+  - www.town.watari.miyagi.jp
+  max_pages: 30
   external_links:
   - label: アットホーム全国版空き家バンク
     url: https://watari-t04361.akiya-athome.jp/
@@ -471,7 +591,7 @@ sources:
   operator: 山元町
   operator_kind: municipality
   official_url: https://www.town.yamamoto.miyagi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '043621'
     name: 山元町
@@ -480,18 +600,31 @@ sources:
     slug: '043621'
     bank_url: https://www.town.yamamoto.miyagi.jp/life/1/4/15/
     bank_status: info
+    extract_pending: false
     map_query: 宮城県山元町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.yamamoto.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yamamoto.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.yamamoto.miyagi.jp/site/ijuteiju/12607.html
+    kind: subsidy
+  - url: https://www.town.yamamoto.miyagi.jp/site/ijuteiju/36.html
+    kind: subsidy
+  - url: https://www.town.yamamoto.miyagi.jp/site/ijuteiju/list67-297.html
+    kind: subsidy
+  - url: https://www.town.yamamoto.miyagi.jp/soshiki/9/34104.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.yamamoto.miyagi.jp
+  max_pages: 30
 - id: miyagi-044016
   name: 松島町空き家バンク
   operator: 松島町
   operator_kind: municipality
   official_url: https://www.town.miyagi-matsushima.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '044016'
     name: 松島町
@@ -500,12 +633,19 @@ sources:
     slug: '044016'
     bank_url: https://www.town.miyagi-matsushima.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県松島町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 宮城県 県内市町村リンク集に掲載された公式サイト（www.town.miyagi-matsushima.lg.jp）
     url: https://www.pref.miyagi.jp/soshiki/kohou/link01.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.miyagi-matsushima.lg.jp/site/ijyuu/1001.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.miyagi-matsushima.lg.jp
+  max_pages: 30
 - id: miyagi-044041
   name: 七ヶ浜町空き家バンク
   operator: 七ヶ浜町
@@ -520,12 +660,13 @@ sources:
     slug: '044041'
     bank_url: https://www.shichigahama.com/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県七ヶ浜町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 宮城県 県内市町村リンク集に掲載された公式サイト（www.shichigahama.com）
     url: https://www.pref.miyagi.jp/soshiki/kohou/link01.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: miyagi-044067
   name: 利府町空き家バンク
   operator: 利府町
@@ -540,12 +681,13 @@ sources:
     slug: '044067'
     bank_url: https://www.town.rifu.miyagi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県利府町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.rifu.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.rifu.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: miyagi-044211
   name: 大和町空き家バンク
   operator: 大和町
@@ -560,12 +702,13 @@ sources:
     slug: '044211'
     bank_url: https://www.town.taiwa.miyagi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県大和町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.taiwa.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.taiwa.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: miyagi-044229
   name: 大郷町空き家バンク
   operator: 大郷町
@@ -580,14 +723,23 @@ sources:
     slug: 044229
     bank_url: https://www.town.miyagi-osato.lg.jp/soshiki/machidukuri/akiya-bank02.html
     bank_status: available
+    extract_pending: false
     map_query: 宮城県大郷町
   operator_evidence:
     quote: 宮城県 県内市町村リンク集に掲載された公式サイト（www.town.miyagi-osato.lg.jp）
     url: https://www.pref.miyagi.jp/soshiki/kohou/link01.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.miyagi-osato.lg.jp/soshiki/machidukuri/akiya-bank02.html
     kind: listing_index
+  - url: https://www.town.miyagi-osato.lg.jp/soshiki/machidukuri/akiyakazaidougusyobun.html
+    kind: subsidy
+  - url: https://www.town.miyagi-osato.lg.jp/soshiki/machidukuri/housereform.html
+    kind: subsidy
+  - url: https://www.town.miyagi-osato.lg.jp/soshiki/tiikiseibi/kaisyu.html
+    kind: subsidy
+  - url: https://www.town.miyagi-osato.lg.jp/soshiki/tiikiseibi/shindan.html
+    kind: subsidy
   allow_hosts:
   - www.town.miyagi-osato.lg.jp
   max_pages: 30
@@ -596,7 +748,7 @@ sources:
   operator: 大衡村
   operator_kind: municipality
   official_url: https://www.village.ohira.miyagi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '044245'
     name: 大衡村
@@ -605,12 +757,23 @@ sources:
     slug: '044245'
     bank_url: https://www.village.ohira.miyagi.jp/1/3/2126.html
     bank_status: info
+    extract_pending: false
     map_query: 宮城県大衡村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 宮城県 県内市町村リンク集に掲載された公式サイト（www.village.ohira.miyagi.jp）
     url: https://www.pref.miyagi.jp/soshiki/kohou/link01.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.village.ohira.miyagi.jp/7/6/2/1011.html
+    kind: subsidy
+  - url: https://www.village.ohira.miyagi.jp/7/6/2/1013.html
+    kind: subsidy
+  - url: https://www.village.ohira.miyagi.jp/7/6/2/2/924.html
+    kind: subsidy
+  allow_hosts:
+  - www.village.ohira.miyagi.jp
+  max_pages: 30
 - id: miyagi-044440
   name: 色麻町空き家バンク
   operator: 色麻町
@@ -625,18 +788,19 @@ sources:
     slug: '044440'
     bank_url: https://www.town.shikama.miyagi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県色麻町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.shikama.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.shikama.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: miyagi-044458
   name: 加美町空き家バンク
   operator: 加美町
   operator_kind: municipality
   official_url: https://www.town.kami.miyagi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 044458
     name: 加美町
@@ -645,12 +809,19 @@ sources:
     slug: 044458
     bank_url: https://www.town.kami.miyagi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県加美町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.kami.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kami.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.kami.miyagi.jp/kurashi_tetsuzuki_ijuu/ijuu_teijuu/2056.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.kami.miyagi.jp
+  max_pages: 30
 - id: miyagi-045012
   name: 涌谷町空き家バンク
   operator: 涌谷町
@@ -665,14 +836,21 @@ sources:
     slug: '045012'
     bank_url: https://www.town.wakuya.miyagi.jp/kurashi/sekatsu/akiya/akiyabank.html
     bank_status: available
+    extract_pending: false
     map_query: 宮城県涌谷町
   operator_evidence:
     quote: 公式ドメイン www.town.wakuya.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.wakuya.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.wakuya.miyagi.jp/kurashi/sekatsu/akiya/akiyabank.html
     kind: listing_index
+  - url: https://www.town.wakuya.miyagi.jp/kurashi/sekatsu/sumai/taishin.html
+    kind: subsidy
+  - url: https://www.town.wakuya.miyagi.jp/kurashi/sekatsu/sumai/hatsuden.html
+    kind: subsidy
+  - url: https://www.town.wakuya.miyagi.jp/kurashi/sekatsu/kaisyuu.html
+    kind: subsidy
   allow_hosts:
   - www.town.wakuya.miyagi.jp
   max_pages: 30
@@ -690,12 +868,13 @@ sources:
     slug: '045055'
     bank_url: https://www.town.misato.miyagi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 宮城県美里町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.misato.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.misato.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: miyagi-045811
   name: 女川町空き家バンク
   operator: 女川町
@@ -710,14 +889,19 @@ sources:
     slug: 045811
     bank_url: https://www.town.onagawa.miyagi.jp/onagawa_akiya.html
     bank_status: available
+    extract_pending: false
     map_query: 宮城県女川町
   operator_evidence:
     quote: 公式ドメイン www.town.onagawa.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.onagawa.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.onagawa.miyagi.jp/onagawa_akiya.html
     kind: listing_index
+  - url: https://www.town.onagawa.miyagi.jp/05_03_08.html
+    kind: subsidy
+  - url: https://www.town.onagawa.miyagi.jp/11_32.html
+    kind: subsidy
   allow_hosts:
   - www.town.onagawa.miyagi.jp
   max_pages: 30
@@ -735,11 +919,12 @@ sources:
     slug: '046060'
     bank_url: https://www.town.minamisanriku.miyagi.jp/kurashi/sumai/2/6790.html
     bank_status: available
+    extract_pending: false
     map_query: 宮城県南三陸町
   operator_evidence:
     quote: 公式ドメイン www.town.minamisanriku.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.minamisanriku.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.minamisanriku.miyagi.jp/kurashi/sumai/2/6790.html
     kind: listing_index
@@ -747,6 +932,14 @@ sources:
     - pattern: https?://www\.town\.minamisanriku\.miyagi\.jp/kurashi/sumai/2/6790\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
       kind: listing_index
       max_links: 20
+  - url: https://www.town.minamisanriku.miyagi.jp/soshiki/1002/11/1/2229.html
+    kind: subsidy
+  - url: https://www.town.minamisanriku.miyagi.jp/soshiki/1002/11/1/1380.html
+    kind: subsidy
+  - url: https://www.town.minamisanriku.miyagi.jp/kurashi/sumai/2/6476.html
+    kind: subsidy
+  - url: https://www.town.minamisanriku.miyagi.jp/kurashi/sumai/2/7344.html
+    kind: subsidy
   allow_hosts:
   - www.town.minamisanriku.miyagi.jp
   max_pages: 30

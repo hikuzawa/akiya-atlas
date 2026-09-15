@@ -53,7 +53,11 @@
       "prefecture": "福井県",
       "prefecture_slug": "fukui",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.tsuruga.lg.jp/page/1575.html",
+        "https://www.city.tsuruga.lg.jp/page/1582.html"
+      ]
     },
     {
       "alternatives": [
@@ -79,7 +83,10 @@
       "prefecture": "福井県",
       "prefecture_slug": "fukui",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www1.city.obama.fukui.jp/kurashi/sumaiakiya/juutaku_hojo/index.html"
+      ]
     },
     {
       "alternatives": [
@@ -108,7 +115,11 @@
       "prefecture": "福井県",
       "prefecture_slug": "fukui",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.ono.fukui.jp/kurashi/kankyo-sumai/akiya/akiya-shindan.html",
+        "https://www.city.ono.fukui.jp/kurashi/kankyo-sumai/zero_carbon/taiyoko.html"
+      ]
     },
     {
       "alternatives": [],
@@ -154,7 +165,10 @@
       "prefecture": "福井県",
       "prefecture_slug": "fukui",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.sabae.fukui.jp/kurashi_tetsuduki/tochi/jutaku_hojokin/index.html"
+      ]
     },
     {
       "alternatives": [
@@ -196,7 +210,13 @@
       "prefecture": "福井県",
       "prefecture_slug": "fukui",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.city.awara.lg.jp/mokuteki/life/jyutaku1/p011117.html",
+        "https://www.city.awara.lg.jp/mokuteki/health/health04/health0404/p000081.html",
+        "https://www.city.awara.lg.jp/mokuteki/industry/industry0401/p010615.html",
+        "https://www.city.awara.lg.jp/mokuteki/life/life13/koyouroudou/p001367.html"
+      ]
     },
     {
       "alternatives": [],
@@ -273,7 +293,12 @@
       "prefecture": "福井県",
       "prefecture_slug": "fukui",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.town.eiheiji.lg.jp/200/206/235/237/p010707.html",
+        "https://www.town.eiheiji.lg.jp/200/206/209/p011273.html",
+        "https://www.town.eiheiji.lg.jp/200/206/209/p011995.html"
+      ]
     },
     {
       "alternatives": [],
@@ -319,7 +344,11 @@
       "prefecture": "福井県",
       "prefecture_slug": "fukui",
       "proposed_action": "承認",
-      "reason": "JavaScript 描画のため静的 HTML に物件が無い。リンクのみ"
+      "reason": "JavaScript 描画のため静的 HTML に物件が無い。リンクのみ",
+      "subsidy_urls": [
+        "https://www.town.minamiechizen.lg.jp/izyu/jyuutakuhojyokinn/index.html",
+        "https://www.town.minamiechizen.lg.jp/izyu/zyutaku1/p002788.html"
+      ]
     },
     {
       "alternatives": [
@@ -426,7 +455,10 @@
       "prefecture": "福井県",
       "prefecture_slug": "fukui",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.town.ohi.fukui.jp/1221/7028/p24059.html"
+      ]
     },
     {
       "alternatives": [
@@ -451,7 +483,10 @@
       "prefecture": "福井県",
       "prefecture_slug": "fukui",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.town.fukui-wakasa.lg.jp/kurashi_tetsuzuki/kankyohozen/2797.html"
+      ]
     }
   ]
 }

@@ -5,7 +5,7 @@ sources:
   operator: 静岡市
   operator_kind: municipality
   official_url: https://www.city.shizuoka.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '221007'
     name: 静岡市
@@ -14,18 +14,25 @@ sources:
     slug: '221007'
     bank_url: https://www.city.shizuoka.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 静岡県静岡市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.shizuoka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.shizuoka.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.shizuoka.lg.jp/ijuteiju/p000001.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.shizuoka.lg.jp
+  max_pages: 30
 - id: shizuoka-221309
   name: 浜松市空き家バンク
   operator: 浜松市
   operator_kind: municipality
   official_url: https://www.city.hamamatsu.shizuoka.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '221309'
     name: 浜松市
@@ -34,18 +41,25 @@ sources:
     slug: '221309'
     bank_url: https://www.city.hamamatsu.shizuoka.jp/kurashi-tetsuzuki/safety/akiya.html
     bank_status: info
+    extract_pending: false
     map_query: 静岡県浜松市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.hamamatsu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hamamatsu.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.hamamatsu.shizuoka.jp/simink/akiya/akiyahozixyo.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.hamamatsu.shizuoka.jp
+  max_pages: 30
 - id: shizuoka-222038
   name: 沼津市空き家バンク
   operator: 沼津市
   operator_kind: municipality
   official_url: https://www.city.numazu.shizuoka.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '222038'
     name: 沼津市
@@ -54,12 +68,25 @@ sources:
     slug: '222038'
     bank_url: https://www.city.numazu.shizuoka.jp/kurashi/sumai/akiya/index.htm
     bank_status: info
+    extract_pending: false
     map_query: 静岡県沼津市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.numazu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.numazu.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.numazu.shizuoka.jp/shisei/office/ichiran/toshikei/jyutakuseisaku/taishinka.htm
+    kind: subsidy
+  - url: https://www.city.numazu.shizuoka.jp/kurashi/sumai/akiya/kaitai/jokyaku.htm
+    kind: subsidy
+  - url: https://www.city.numazu.shizuoka.jp/kurashi/sumai/akiya/hojoseido/sozokutoki.htm
+    kind: subsidy
+  - url: https://www.city.numazu.shizuoka.jp/kurashi/sumai/akiya/hojoseido/zanchibutsu.htm
+    kind: subsidy
+  allow_hosts:
+  - www.city.numazu.shizuoka.jp
+  max_pages: 30
 - id: shizuoka-222054
   name: 熱海市空き家バンク
   operator: 熱海市
@@ -74,18 +101,19 @@ sources:
     slug: '222054'
     bank_url: https://www.city.atami.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 静岡県熱海市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.atami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.atami.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shizuoka-222062
   name: 三島市空き家バンク
   operator: 三島市
   operator_kind: municipality
   official_url: https://www.city.mishima.shizuoka.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '222062'
     name: 三島市
@@ -94,18 +122,31 @@ sources:
     slug: '222062'
     bank_url: https://www.city.mishima.shizuoka.jp/life/1/6/41/
     bank_status: info
+    extract_pending: false
     map_query: 静岡県三島市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.mishima.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.mishima.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.mishima.shizuoka.jp/page/3289.html
+    kind: subsidy
+  - url: https://www.city.mishima.shizuoka.jp/page/2282.html
+    kind: subsidy
+  - url: https://www.city.mishima.shizuoka.jp/page/2523.html
+    kind: subsidy
+  - url: https://www.city.mishima.shizuoka.jp/page/2536.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.mishima.shizuoka.jp
+  max_pages: 30
 - id: shizuoka-222071
   name: 富士宮市空き家バンク
   operator: 富士宮市
   operator_kind: municipality
   official_url: https://www.city.fujinomiya.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '222071'
     name: 富士宮市
@@ -114,12 +155,21 @@ sources:
     slug: '222071'
     bank_url: https://www.city.fujinomiya.lg.jp/kurashi/sumai/akiya/index.html
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 静岡県富士宮市
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.fujinomiya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.fujinomiya.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.fujinomiya.lg.jp/1040610000/p004062.html
+    kind: subsidy
+  - url: https://www.city.fujinomiya.lg.jp/1040610000/p000592.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.fujinomiya.lg.jp
+  max_pages: 30
 - id: shizuoka-222089
   name: 伊東市空き家バンク
   operator: 伊東市
@@ -134,18 +184,19 @@ sources:
     slug: '222089'
     bank_url: https://www.city.ito.shizuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 静岡県伊東市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.ito.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ito.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shizuoka-222097
   name: 島田市空き家バンク
   operator: 島田市
   operator_kind: municipality
   official_url: https://www.city.shimada.shizuoka.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '222097'
     name: 島田市
@@ -154,18 +205,31 @@ sources:
     slug: '222097'
     bank_url: https://www.city.shimada.shizuoka.jp/gyosei-docs/akiyabanku.html
     bank_status: info
+    extract_pending: false
     map_query: 静岡県島田市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.shimada.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.shimada.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.shimada.shizuoka.jp/kurashi/tetuduki/sumai/zyutakuhozyo/
+    kind: subsidy
+  - url: https://www.city.shimada.shizuoka.jp/gyosei-docs/ijushien-hojokintou.html
+    kind: subsidy
+  - url: https://www.city.shimada.shizuoka.jp/kurashi-docs/281945682.html
+    kind: subsidy
+  - url: https://www.city.shimada.shizuoka.jp/kurashi-docs/445924540.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.shimada.shizuoka.jp
+  max_pages: 30
 - id: shizuoka-222101
   name: 富士市空き家バンク
   operator: 富士市
   operator_kind: municipality
   official_url: https://www.city.fuji.shizuoka.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '222101'
     name: 富士市
@@ -174,18 +238,31 @@ sources:
     slug: '222101'
     bank_url: https://www.city.fuji.shizuoka.jp/kurashi/sumai/akiya/index.html
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 静岡県富士市
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.fuji.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.fuji.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.fuji.shizuoka.jp/kurashi/sumai/taishin/index.html
+    kind: subsidy
+  - url: https://www.city.fuji.shizuoka.jp/1035250000/p000750.html
+    kind: subsidy
+  - url: https://www.city.fuji.shizuoka.jp/1040300000/p000751.html
+    kind: subsidy
+  - url: https://www.city.fuji.shizuoka.jp/1005330000/p000753.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.fuji.shizuoka.jp
+  max_pages: 30
 - id: shizuoka-222119
   name: 磐田市空き家バンク
   operator: 磐田市
   operator_kind: municipality
   official_url: https://www.city.iwata.shizuoka.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '222119'
     name: 磐田市
@@ -194,12 +271,23 @@ sources:
     slug: '222119'
     bank_url: https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/juutaku_pet_seikatsu/1010112/index.html
     bank_status: info
+    extract_pending: false
     map_query: 静岡県磐田市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.iwata.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.iwata.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/juutaku_pet_seikatsu/1010112/1001515.html
+    kind: subsidy
+  - url: https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/juutaku_pet_seikatsu/1010112/1015282.html
+    kind: subsidy
+  - url: https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/juutaku_pet_seikatsu/juutaku/1001513.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.iwata.shizuoka.jp
+  max_pages: 30
 - id: shizuoka-222127
   name: 焼津市空き家バンク
   operator: 焼津市
@@ -214,18 +302,19 @@ sources:
     slug: '222127'
     bank_url: https://www.city.yaizu.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 静岡県焼津市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.yaizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.yaizu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shizuoka-222135
   name: 掛川市空き家バンク
   operator: 掛川市
   operator_kind: municipality
   official_url: https://www.city.kakegawa.shizuoka.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '222135'
     name: 掛川市
@@ -234,12 +323,23 @@ sources:
     slug: '222135'
     bank_url: https://www.city.kakegawa.shizuoka.jp/gyosei/docs/8086.html
     bank_status: info
+    extract_pending: false
     map_query: 静岡県掛川市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.kakegawa.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kakegawa.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.kakegawa.shizuoka.jp/gyosei/docs/600548.html
+    kind: subsidy
+  - url: https://www.city.kakegawa.shizuoka.jp/gyosei/docs/1007160.html
+    kind: subsidy
+  - url: https://www.city.kakegawa.shizuoka.jp/gyosei/docs/796743.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.kakegawa.shizuoka.jp
+  max_pages: 30
 - id: shizuoka-222143
   name: 藤枝市空き家バンク
   operator: 藤枝市
@@ -254,18 +354,19 @@ sources:
     slug: '222143'
     bank_url: https://www.city.fujieda.shizuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 静岡県藤枝市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.fujieda.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.fujieda.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shizuoka-222151
   name: 御殿場市空き家バンク
   operator: 御殿場市
   operator_kind: municipality
   official_url: https://www.city.gotemba.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '222151'
     name: 御殿場市
@@ -274,12 +375,25 @@ sources:
     slug: '222151'
     bank_url: https://www.city.gotemba.lg.jp/kurashi/category/b-7/b-7-5
     bank_status: info
+    extract_pending: false
     map_query: 静岡県御殿場市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 静岡県 県内市町リンク集に掲載された公式サイト（www.city.gotemba.lg.jp）
     url: https://www.pref.shizuoka.jp/kensei/link/1007806.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.gotemba.lg.jp/kurashi/b-7/b-7-5/12230.html
+    kind: subsidy
+  - url: https://www.city.gotemba.lg.jp/kurashi/b-7/b-7-5/18389.html
+    kind: subsidy
+  - url: https://www.city.gotemba.lg.jp/kurashi/b-7/b-7-2/3715.html
+    kind: subsidy
+  - url: https://www.city.gotemba.lg.jp/kurashi/b-7/b-7-2/6445.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.gotemba.lg.jp
+  max_pages: 30
 - id: shizuoka-222160
   name: 袋井市空き家バンク
   operator: 袋井市
@@ -294,12 +408,13 @@ sources:
     slug: '222160'
     bank_url: https://www.city.fukuroi.shizuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 静岡県袋井市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.fukuroi.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.fukuroi.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shizuoka-222194
   name: 下田市空き家バンク
   operator: 下田市
@@ -314,12 +429,13 @@ sources:
     slug: '222194'
     bank_url: https://shimoda-c22219.akiya-athome.jp/
     bank_status: third_party_only
+    extract_pending: false
     map_query: 静岡県下田市
     bank_note: 物件は民間プラットフォームで公開されています。本サイトでは巡回・要約せず、リンクのみ掲載します。
   operator_evidence:
     quote: 公式ドメイン www.city.shimoda.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.shimoda.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: akiya-athome.jp
     url: https://shimoda-c22219.akiya-athome.jp/
@@ -433,12 +549,13 @@ sources:
     slug: '222208'
     bank_url: https://www.city.susono.shizuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 静岡県裾野市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.susono.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.susono.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shizuoka-222216
   name: 湖西市空き家バンク
   operator: 湖西市
@@ -453,11 +570,12 @@ sources:
     slug: '222216'
     bank_url: https://www.city.kosai.shizuoka.jp/event/hikkoshi_sumai/7865.html
     bank_status: available
+    extract_pending: false
     map_query: 静岡県湖西市
   operator_evidence:
     quote: 公式ドメイン www.city.kosai.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kosai.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.kosai.shizuoka.jp/event/hikkoshi_sumai/7865.html
     kind: listing_index
@@ -482,12 +600,13 @@ sources:
     slug: '222224'
     bank_url: https://www.city.izu.shizuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 静岡県伊豆市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.izu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.izu.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shizuoka-222232
   name: 御前崎市空き家バンク
   operator: 御前崎市
@@ -502,12 +621,13 @@ sources:
     slug: '222232'
     bank_url: https://www.city.omaezaki.shizuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 静岡県御前崎市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.omaezaki.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.omaezaki.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shizuoka-222241
   name: 菊川市空き家バンク
   operator: 菊川市
@@ -522,12 +642,13 @@ sources:
     slug: '222241'
     bank_url: https://www.city.kikugawa.shizuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 静岡県菊川市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.kikugawa.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kikugawa.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shizuoka-222259
   name: 伊豆の国市空き家バンク
   operator: 伊豆の国市
@@ -542,12 +663,13 @@ sources:
     slug: '222259'
     bank_url: https://www.city.izunokuni.shizuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 静岡県伊豆の国市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.izunokuni.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.izunokuni.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shizuoka-222267
   name: 牧之原市空き家バンク
   operator: 牧之原市
@@ -562,14 +684,21 @@ sources:
     slug: '222267'
     bank_url: https://www.city.makinohara.shizuoka.jp/site/makinohara-life/32178.html
     bank_status: available
+    extract_pending: false
     map_query: 静岡県牧之原市
   operator_evidence:
     quote: 公式ドメイン www.city.makinohara.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.makinohara.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.makinohara.shizuoka.jp/site/makinohara-life/32178.html
     kind: listing_index
+  - url: https://www.city.makinohara.shizuoka.jp/site/makinohara-life/51999.html
+    kind: subsidy
+  - url: https://www.city.makinohara.shizuoka.jp/site/makinohara-life/48565.html
+    kind: subsidy
+  - url: https://www.city.makinohara.shizuoka.jp/site/makinohara-life/44452.html
+    kind: subsidy
   allow_hosts:
   - www.city.makinohara.shizuoka.jp
   max_pages: 30
@@ -638,18 +767,19 @@ sources:
     slug: '223018'
     bank_url: https://www.town.higashiizu.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 静岡県東伊豆町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.higashiizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.higashiizu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shizuoka-223026
   name: 河津町空き家バンク
   operator: 河津町
   operator_kind: municipality
   official_url: https://www.town.kawazu.shizuoka.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '223026'
     name: 河津町
@@ -658,18 +788,27 @@ sources:
     slug: '223026'
     bank_url: https://www.town.kawazu.shizuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 静岡県河津町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.kawazu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kawazu.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.kawazu.shizuoka.jp/choumin/kenchiku-jyosei/
+    kind: subsidy
+  - url: https://www.town.kawazu.shizuoka.jp/ijuu/akiyakatsuyoshien/
+    kind: subsidy
+  allow_hosts:
+  - www.town.kawazu.shizuoka.jp
+  max_pages: 30
 - id: shizuoka-223042
   name: 南伊豆町空き家バンク
   operator: 南伊豆町
   operator_kind: municipality
   official_url: https://www.town.minamiizu.shizuoka.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '223042'
     name: 南伊豆町
@@ -678,18 +817,31 @@ sources:
     slug: '223042'
     bank_url: http://www.town.minamiizu.shizuoka.jp/docs/2013030500011/
     bank_status: info
+    extract_pending: false
     map_query: 静岡県南伊豆町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.minamiizu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.minamiizu.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.minamiizu.shizuoka.jp/docs/2015032700017/
+    kind: subsidy
+  - url: http://www.town.minamiizu.shizuoka.jp/docs/2015032700017/
+    kind: subsidy
+  - url: http://www.town.minamiizu.shizuoka.jp/docs/2013031301211/
+    kind: subsidy
+  - url: http://www.town.minamiizu.shizuoka.jp/docs/2013031200354/
+    kind: subsidy
+  allow_hosts:
+  - www.town.minamiizu.shizuoka.jp
+  max_pages: 30
 - id: shizuoka-223051
   name: 松崎町空き家バンク
   operator: 松崎町
   operator_kind: municipality
   official_url: https://www.town.matsuzaki.shizuoka.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '223051'
     name: 松崎町
@@ -698,12 +850,23 @@ sources:
     slug: '223051'
     bank_url: https://www.town.matsuzaki.shizuoka.jp/docs/2016012100063/
     bank_status: info
+    extract_pending: false
     map_query: 静岡県松崎町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.matsuzaki.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.matsuzaki.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.matsuzaki.shizuoka.jp/docs/2026033000020/
+    kind: subsidy
+  - url: https://www.town.matsuzaki.shizuoka.jp/docs/2019040200019/
+    kind: subsidy
+  - url: https://www.town.matsuzaki.shizuoka.jp/docs/2018060500048/
+    kind: subsidy
+  allow_hosts:
+  - www.town.matsuzaki.shizuoka.jp
+  max_pages: 30
   external_links:
   - label: 全国版空き家バンク LIFULL HOME'S【ライフルホームズ】
     url: https://www.homes.co.jp/akiyabank/
@@ -723,12 +886,13 @@ sources:
     slug: '223069'
     bank_url: https://www.town.nishiizu.shizuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 静岡県西伊豆町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.nishiizu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nishiizu.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shizuoka-223255
   name: 函南町空き家バンク
   operator: 函南町
@@ -743,12 +907,13 @@ sources:
     slug: '223255'
     bank_url: https://www.town.kannami.shizuoka.jp/life_event/sumai/4637.html
     bank_status: info
+    extract_pending: false
     map_query: 静岡県函南町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.kannami.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kannami.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: LIFULLHOME'S
     url: https://www.homes.co.jp/akiyabank/
@@ -766,12 +931,13 @@ sources:
     slug: '223417'
     bank_url: https://www.town.shimizu.shizuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 静岡県清水町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.shimizu.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.shimizu.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shizuoka-223425
   name: 長泉町空き家バンク
   operator: 長泉町
@@ -786,18 +952,19 @@ sources:
     slug: '223425'
     bank_url: https://www.town.nagaizumi.lg.jp/moving/1/10118.html
     bank_status: info
+    extract_pending: false
     map_query: 静岡県長泉町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.nagaizumi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.nagaizumi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shizuoka-223441
   name: 小山町空き家バンク
   operator: 小山町
   operator_kind: municipality
   official_url: https://www.fuji-oyama.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '223441'
     name: 小山町
@@ -806,12 +973,21 @@ sources:
     slug: '223441'
     bank_url: https://www.fuji-oyama.jp/
     bank_status: none
+    extract_pending: false
     map_query: 静岡県小山町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 静岡県 県内市町リンク集に掲載された公式サイト（www.fuji-oyama.jp）
     url: https://www.pref.shizuoka.jp/kensei/link/1007806.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.fuji-oyama.jp/page/4844.html
+    kind: subsidy
+  - url: https://www.fuji-oyama.jp/page/1230.html
+    kind: subsidy
+  allow_hosts:
+  - www.fuji-oyama.jp
+  max_pages: 30
 - id: shizuoka-224243
   name: 吉田町空き家バンク
   operator: 吉田町
@@ -826,18 +1002,19 @@ sources:
     slug: '224243'
     bank_url: https://www.town.yoshida.shizuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 静岡県吉田町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.yoshida.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yoshida.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shizuoka-224294
   name: 川根本町空き家バンク
   operator: 川根本町
   operator_kind: municipality
   official_url: https://www.town.kawanehon.shizuoka.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '224294'
     name: 川根本町
@@ -846,12 +1023,21 @@ sources:
     slug: '224294'
     bank_url: https://www.town.kawanehon.shizuoka.jp/kurashi_tetsuduki/11/1/index.html
     bank_status: info
+    extract_pending: false
     map_query: 静岡県川根本町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.kawanehon.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kawanehon.shizuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.kawanehon.shizuoka.jp/kurashi_tetsuduki/hojokinitiran/16599.html
+    kind: subsidy
+  - url: https://www.town.kawanehon.shizuoka.jp/kurashi_tetsuduki/hojokinitiran/15430.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.kawanehon.shizuoka.jp
+  max_pages: 30
 - id: shizuoka-224618
   name: 森町空き家バンク
   operator: 森町
@@ -866,9 +1052,10 @@ sources:
     slug: '224618'
     bank_url: https://www.town.morimachi.shizuoka.jp/
     bank_status: none
+    extract_pending: false
     map_query: 静岡県森町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 静岡県 県内市町リンク集に掲載された公式サイト（www.town.morimachi.shizuoka.jp）
     url: https://www.pref.shizuoka.jp/kensei/link/1007806.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'

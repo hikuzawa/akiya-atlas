@@ -21,7 +21,10 @@
       "prefecture": "京都府",
       "prefecture_slug": "kyoto",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.kyoto.lg.jp/menu1/category/12-5-0-0-0-0-0-0-0-0.html"
+      ]
     },
     {
       "alternatives": [],
@@ -92,7 +95,11 @@
       "prefecture": "京都府",
       "prefecture_slug": "kyoto",
       "proposed_action": "承認",
-      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.ayabe.lg.jp/0000002702.html",
+        "https://www.city.ayabe.lg.jp/0000001759.html"
+      ]
     },
     {
       "alternatives": [
@@ -121,7 +128,13 @@
       "prefecture": "京都府",
       "prefecture_slug": "kyoto",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.uji.kyoto.jp/soshiki/48/88936.html",
+        "https://www.city.uji.kyoto.jp/soshiki/48/78118.html",
+        "https://www.city.uji.kyoto.jp/soshiki/48/87967.html",
+        "https://www.city.uji.kyoto.jp/soshiki/48/87999.html"
+      ]
     },
     {
       "alternatives": [
@@ -150,7 +163,12 @@
       "prefecture": "京都府",
       "prefecture_slug": "kyoto",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.miyazu.kyoto.jp/soshiki/5/29665.html",
+        "https://www.city.miyazu.kyoto.jp/site/ijuteiju/16993.html",
+        "https://www.city.miyazu.kyoto.jp/site/ijuteiju/18285.html"
+      ]
     },
     {
       "alternatives": [],
@@ -196,7 +214,10 @@
       "prefecture": "京都府",
       "prefecture_slug": "kyoto",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.joyo.kyoto.jp/0000010991.html"
+      ]
     },
     {
       "alternatives": [],
@@ -219,7 +240,10 @@
       "prefecture": "京都府",
       "prefecture_slug": "kyoto",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.muko.kyoto.jp/soshiki/26/1202.html"
+      ]
     },
     {
       "alternatives": [
@@ -552,7 +576,10 @@
       "prefecture": "京都府",
       "prefecture_slug": "kyoto",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.town.seika.kyoto.jp/kurashi/tochi/5395.html"
+      ]
     },
     {
       "alternatives": [
@@ -661,7 +688,10 @@
       "prefecture": "京都府",
       "prefecture_slug": "kyoto",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.town.yosano.lg.jp/life/house/entry_837_1/"
+      ]
     }
   ]
 }

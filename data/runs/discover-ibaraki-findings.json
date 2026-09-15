@@ -21,7 +21,12 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.mito.lg.jp/page/90090.html",
+        "https://www.city.mito.lg.jp/life/1/13/59/",
+        "https://www.city.mito.lg.jp/page/3548.html"
+      ]
     },
     {
       "alternatives": [],
@@ -67,7 +72,10 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.tsuchiura.lg.jp/kurashi-tetsuzuki/shieijutaku/page022866.html"
+      ]
     },
     {
       "alternatives": [
@@ -125,7 +133,11 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.city.ishioka.lg.jp/kurashi_tetsuzuki/sumai/akiyabank/page005160.html",
+        "https://www.city.ishioka.lg.jp/shigoto_sangyo_machi/page012534.html"
+      ]
     },
     {
       "alternatives": [
@@ -150,7 +162,10 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.yuki.lg.jp/kurashi-tetsuzuki/kurashi-tetsuzuki-news/page010250.html"
+      ]
     },
     {
       "alternatives": [
@@ -179,7 +194,13 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.ryugasaki.ibaraki.jp/kurashi/seikatsu/akiya-bank/akiyakaitaihojyo.html",
+        "https://www.city.ryugasaki.ibaraki.jp/kurashi/emigration/residence/housing-subsidy.html",
+        "https://www.city.ryugasaki.ibaraki.jp/kurashi/emigration/residence/qa-housing-subsidy.html",
+        "https://www.city.ryugasaki.ibaraki.jp/kurashi/emigration/residence/U34hojyo.html"
+      ]
     },
     {
       "alternatives": [
@@ -256,7 +277,12 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.city.hitachiota.ibaraki.jp/kurashi/sumai-traffic/akiya-bank/page003097.html",
+        "https://www.city.hitachiota.ibaraki.jp/kurashi/sumai-traffic/akiya-bank/page005374.html",
+        "https://www.city.hitachiota.ibaraki.jp/kurashi/sumai-traffic/akiya-bank/page003669.html"
+      ]
     },
     {
       "alternatives": [
@@ -285,7 +311,10 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.takahagi.ibaraki.jp/kurashi/sumai/page008101.html"
+      ]
     },
     {
       "alternatives": [
@@ -371,7 +400,10 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.toride.ibaraki.jp/toshikeikaku/kurashi/sumai/sumai/hojosedo/jutakuhojosedo.html"
+      ]
     },
     {
       "alternatives": [
@@ -398,7 +430,11 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.city.ushiku.lg.jp/kurashi-tetsuduki/seikatsu/sumai-joho/akiya-taisaku/page014699.html",
+        "https://www.city.ushiku.lg.jp/kurashi-tetsuduki/seikatsu/sumai-joho/page013005.html"
+      ]
     },
     {
       "alternatives": [
@@ -427,7 +463,11 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.tsukuba.lg.jp/kurashi/kankyo/akiya/1011892.html",
+        "https://www.city.tsukuba.lg.jp/kurashi/kankyo/akiya/1014738.html"
+      ]
     },
     {
       "alternatives": [],
@@ -450,7 +490,10 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.hitachinaka.lg.jp/machizukuri/sumai/1003440/1010453.html"
+      ]
     },
     {
       "alternatives": [
@@ -505,7 +548,10 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.itako.lg.jp/ku-te/ku-te-info/page008934.html"
+      ]
     },
     {
       "alternatives": [
@@ -534,7 +580,10 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.moriya.ibaraki.jp/faq/kurashi_tetsuzuki/1006297/1006298/1006299/1006304.html"
+      ]
     },
     {
       "alternatives": [],
@@ -584,7 +633,11 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.city.naka.lg.jp/kurashi-tetsuduki/sumai/akiya/page004354.html",
+        "https://www.city.naka.lg.jp/kurashi-tetsuduki/douro/tatemono/page007566.html"
+      ]
     },
     {
       "alternatives": [
@@ -609,7 +662,11 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.chikusei.lg.jp/kurashi-tetsuzuki/jusho-sumai/page013600.html",
+        "https://www.city.chikusei.lg.jp/chikuseikatsu/seikatsu-news/page008626.html"
+      ]
     },
     {
       "alternatives": [],
@@ -632,7 +689,11 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.bando.lg.jp/page/page005532.html",
+        "https://www.city.bando.lg.jp/page/page007979.html"
+      ]
     },
     {
       "alternatives": [
@@ -661,7 +722,11 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.inashiki.lg.jp/page/page004263.html",
+        "https://www.city.inashiki.lg.jp/page/page004266.html"
+      ]
     },
     {
       "alternatives": [
@@ -689,7 +754,11 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.kasumigaura.lg.jp/page/page001082.html",
+        "https://www.city.kasumigaura.lg.jp/page/page004836.html"
+      ]
     },
     {
       "alternatives": [
@@ -714,7 +783,12 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.city.sakuragawa.lg.jp/page/page005326.html",
+        "https://www.city.sakuragawa.lg.jp/akiya_bank/page009698.html",
+        "https://www.city.sakuragawa.lg.jp/akiya_bank/page009018.html"
+      ]
     },
     {
       "alternatives": [
@@ -743,7 +817,10 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.kamisu.ibaraki.jp/living/1001425/1001426/index.html"
+      ]
     },
     {
       "alternatives": [
@@ -801,7 +878,13 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.hokota.lg.jp/page/page005680.html",
+        "https://www.city.hokota.lg.jp/page/page001029.html",
+        "https://www.city.hokota.lg.jp/page/page000300.html",
+        "https://www.city.hokota.lg.jp/page/page007854.html"
+      ]
     },
     {
       "alternatives": [
@@ -827,7 +910,11 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.tsukubamirai.lg.jp/jyumin/sumai-hikkoshi/akiya-taisaku/page002819.html",
+        "https://www.city.tsukubamirai.lg.jp/jyumin/sumai-hikkoshi/akiya-taisaku/page003876.html"
+      ]
     },
     {
       "alternatives": [
@@ -852,7 +939,13 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.city.omitama.lg.jp/0680/info-0000010593-0.html",
+        "https://www.city.omitama.lg.jp/0680/info-0000010592-0.html",
+        "https://www.city.omitama.lg.jp/0708/info-0000010593-0.html",
+        "https://www.city.omitama.lg.jp/0708/info-0000010592-0.html"
+      ]
     },
     {
       "alternatives": [
@@ -881,7 +974,11 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.town.ibaraki.lg.jp/gyousei/kurashitetuduki/jyutaku/003535.html",
+        "https://www.town.ibaraki.lg.jp/gyousei/news/division4/toshikenseibi/003535.html"
+      ]
     },
     {
       "alternatives": [
@@ -907,7 +1004,13 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.town.oarai.lg.jp/cat1/sumai/ijuuteijuu/5569/",
+        "https://www.town.oarai.lg.jp/cat1/sumai/ijuuteijuu/2349/",
+        "https://www.town.oarai.lg.jp/cat1/sumai/akiya/3620/",
+        "https://www.town.oarai.lg.jp/cat1/sumai/akiya/3595/"
+      ]
     },
     {
       "alternatives": [],
@@ -959,7 +1062,12 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.vill.tokai.ibaraki.jp/kurashi_tetsuzuki/sumai_pet/sumai/5854.html",
+        "https://www.vill.tokai.ibaraki.jp/kurashi_tetsuzuki/sumai_pet/akiya/7428.html",
+        "https://www.vill.tokai.ibaraki.jp/kurashi_tetsuzuki/bohan_kotsuanzen/10473.html"
+      ]
     },
     {
       "alternatives": [
@@ -988,7 +1096,13 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.town.daigo.ibaraki.jp/page/page008070.html",
+        "https://www.town.daigo.ibaraki.jp/page/page006159.html",
+        "https://www.town.daigo.ibaraki.jp/page/page005358.html",
+        "https://www.town.daigo.ibaraki.jp/page/page005686.html"
+      ]
     },
     {
       "alternatives": [],
@@ -1011,7 +1125,11 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.vill.miho.lg.jp/kurashi-kankyou/sumai-kekkontaisaku/page000965.html",
+        "https://www.vill.miho.lg.jp/kurashi-kankyou/sumai-kekkontaisaku/sumai-taishintaisaku/page005929.html"
+      ]
     },
     {
       "alternatives": [
@@ -1078,7 +1196,13 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.town.ibaraki-kawachi.lg.jp/page/page001494.html",
+        "https://www.town.ibaraki-kawachi.lg.jp/page/page001058.html",
+        "https://www.town.ibaraki-kawachi.lg.jp/page/page002651.html",
+        "https://www.town.ibaraki-kawachi.lg.jp/page/page002668.html"
+      ]
     },
     {
       "alternatives": [
@@ -1107,7 +1231,11 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.town.ibaraki-yachiyo.lg.jp/page/page009607.html",
+        "https://www.town.ibaraki-yachiyo.lg.jp/page/page009606.html"
+      ]
     },
     {
       "alternatives": [],
@@ -1182,7 +1310,12 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.town.tone.ibaraki.jp/kurashi/sumaidouro/akiya/page001599.html",
+        "https://www.town.tone.ibaraki.jp/chosei/jugyou-keikaku/toshikeikaku/page006558.html",
+        "https://www.town.tone.ibaraki.jp/kurashi/ijuu-teijuu/page004383.html"
+      ]
     }
   ]
 }

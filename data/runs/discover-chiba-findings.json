@@ -48,7 +48,11 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.choshi.chiba.jp/kurashi/page020017_00002.html",
+        "https://www.city.choshi.chiba.jp/kurashi/page140026.html"
+      ]
     },
     {
       "alternatives": [
@@ -73,7 +77,10 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.ichikawa.lg.jp/blog/%e2%89%aa%e5%b8%82%e5%b7%9d%e5%b8%82%e2%89%ab%e3%81%82%e3%82%93%e3%81%97%e3%82%93%e4%bd%8f%e5%ae%85%e5%8a%a9%e6%88%90%e4%ba%8b%e6%a5%ad%e3%83%bb%e4%bd%8f%e5%ae%85%e6%96%ad%e7%86%b1%e6%94%b9%e4%bf%ae-2/"
+      ]
     },
     {
       "alternatives": [],
@@ -121,7 +128,10 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.city.tateyama.chiba.jp/shoukan/page100249.html"
+      ]
     },
     {
       "alternatives": [],
@@ -219,7 +229,10 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.city.mobara.chiba.jp/0000007699.html"
+      ]
     },
     {
       "alternatives": [
@@ -245,7 +258,12 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.narita.chiba.jp/kurashi/page172700.html",
+        "https://www.city.narita.chiba.jp/kurashi/page172500.html",
+        "https://www.city.narita.chiba.jp/kurashi/page111200.html"
+      ]
     },
     {
       "alternatives": [
@@ -293,7 +311,12 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.togane.chiba.jp/0000001004.html",
+        "https://www.city.togane.chiba.jp/0000001003.html",
+        "https://www.city.togane.chiba.jp/0000003809.html"
+      ]
     },
     {
       "alternatives": [],
@@ -367,7 +390,10 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "JavaScript 描画のため静的 HTML に物件が無い。リンクのみ"
+      "reason": "JavaScript 描画のため静的 HTML に物件が無い。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.kashiwa.lg.jp/jukankyo/living_environment/jutaku/1576.html"
+      ]
     },
     {
       "alternatives": [],
@@ -390,7 +416,10 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.katsuura.lg.jp/page/4261.html"
+      ]
     },
     {
       "alternatives": [],
@@ -461,7 +490,11 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.yachiyo.lg.jp/soshiki/44/3992.html",
+        "https://www.city.yachiyo.lg.jp/site/promo/48330.html"
+      ]
     },
     {
       "alternatives": [
@@ -495,7 +528,11 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.city.abiko.chiba.jp/kurashi/sumai/josei/reform/index.html",
+        "https://www.city.abiko.chiba.jp/jigyousha/jigyoushaboshu/touroku.html"
+      ]
     },
     {
       "alternatives": [
@@ -521,7 +558,12 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.kamogawa.lg.jp/site/shinsei/217.html",
+        "https://www.city.kamogawa.lg.jp/site/shinsei/1210.html",
+        "https://www.city.kamogawa.lg.jp/site/shinsei/1175.html"
+      ]
     },
     {
       "alternatives": [
@@ -569,7 +611,10 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.kimitsu.lg.jp/soshiki/16/76874.html"
+      ]
     },
     {
       "alternatives": [
@@ -607,7 +652,13 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "http://www.city.futtsu.lg.jp/0000006240.html",
+        "http://www.city.futtsu.lg.jp/0000007172.html",
+        "https://www.city.futtsu.lg.jp/0000007172.html",
+        "https://www.city.futtsu.lg.jp/0000006240.html"
+      ]
     },
     {
       "alternatives": [],
@@ -653,7 +704,13 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.yotsukaido.chiba.jp/kurashi/sumai/kenchiku/sansedai.html",
+        "https://www.city.yotsukaido.chiba.jp/kurashi/sumai/kenchiku/jyuutakureform.html",
+        "https://www.city.yotsukaido.chiba.jp/kurashi/sumai/kenchiku/taisinhojo.html",
+        "https://www.city.yotsukaido.chiba.jp/kurashi/kankyo/energy_saving_eco/jutaku_syouene.html"
+      ]
     },
     {
       "alternatives": [
@@ -687,7 +744,10 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.city.sodegaura.lg.jp/life/16/145/1242/"
+      ]
     },
     {
       "alternatives": [],
@@ -710,7 +770,12 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.yachimata.lg.jp/soshiki/24/54025.html",
+        "https://www.city.yachimata.lg.jp/soshiki/24/53974.html",
+        "https://www.city.yachimata.lg.jp/soshiki/24/53976.html"
+      ]
     },
     {
       "alternatives": [
@@ -736,7 +801,11 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.inzai.lg.jp/category/1-3-10-0-0.html",
+        "https://www.city.inzai.lg.jp/soshiki/7-3-2-0-0_3.html"
+      ]
     },
     {
       "alternatives": [
@@ -795,7 +864,12 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.tomisato.lg.jp/0000017057.html",
+        "https://www.city.tomisato.lg.jp/0000004721.html",
+        "https://www.city.tomisato.lg.jp/0000004165.html"
+      ]
     },
     {
       "alternatives": [],
@@ -818,7 +892,10 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.minamiboso.chiba.jp/0000020142.html"
+      ]
     },
     {
       "alternatives": [
@@ -847,7 +924,10 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.city.sosa.lg.jp/page/page006146.html"
+      ]
     },
     {
       "alternatives": [],
@@ -870,7 +950,11 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.katori.lg.jp/living/anzen_anshin/20190529130743844.html",
+        "https://www.city.katori.lg.jp/living/sumai/ekijyoukajyosei.html"
+      ]
     },
     {
       "alternatives": [
@@ -896,7 +980,13 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.sammu.lg.jp/kurashi/jyutaku/akiya/page008129.html",
+        "https://www.city.sammu.lg.jp/kurashi/jyutaku/akiya/page007180.html",
+        "https://www.city.sammu.lg.jp/kurashi/jyutaku/akiya/page007179.html",
+        "https://www.city.sammu.lg.jp/kurashi/kankyo/page005781.html"
+      ]
     },
     {
       "alternatives": [],
@@ -942,7 +1032,11 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.oamishirasato.lg.jp/0000014470.html",
+        "https://www.city.oamishirasato.lg.jp/0000015147.html"
+      ]
     },
     {
       "alternatives": [],
@@ -965,7 +1059,11 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.town.shisui.chiba.jp/docs/2024042200059/",
+        "https://www.town.shisui.chiba.jp/docs/2020021000016/"
+      ]
     },
     {
       "alternatives": [
@@ -990,7 +1088,13 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.town.sakae.chiba.jp/kurashi/seikatsukankyo/page008273.html",
+        "https://www.town.sakae.chiba.jp/kurashi/teijushien/page004068.html",
+        "https://www.town.sakae.chiba.jp/kurashi/teijushien/page001350.html",
+        "https://www.town.sakae.chiba.jp/kurashi/teijushien/page001351.html"
+      ]
     },
     {
       "alternatives": [
@@ -1042,7 +1146,10 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.town.tako.chiba.jp/docs/2026020300010/"
+      ]
     },
     {
       "alternatives": [
@@ -1071,7 +1178,13 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.town.tohnosho.chiba.jp/kurashi_tetsuzuki/iju_teiju/akiyabank/3702.html",
+        "https://www.town.tohnosho.chiba.jp/kurashi_tetsuzuki/iju_teiju/7774.html",
+        "https://www.town.tohnosho.chiba.jp/kurashi_tetsuzuki/iju_teiju/6180.html",
+        "https://www.town.tohnosho.chiba.jp/kurashi_tetsuzuki/iju_teiju/6224.html"
+      ]
     },
     {
       "alternatives": [],
@@ -1120,7 +1233,10 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.town.shibayama.lg.jp/0000003385.html"
+      ]
     },
     {
       "alternatives": [],
@@ -1192,7 +1308,11 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.town.mutsuzawa.chiba.jp/kurashi/%e4%bd%8f%e5%ae%85%e7%94%a8%e7%81%ab%e7%81%bd%e8%ad%a6%e5%a0%b1%e5%99%a8%e8%b3%bc%e5%85%a5%e3%81%ab%e8%a6%81%e3%81%97%e3%81%9f%e8%b2%bb%e7%94%a8%e3%81%ae%e4%b8%80%e9%83%a8%e3%82%92%e8%a3%9c%e5%8a%a9.html",
+        "https://www.town.mutsuzawa.chiba.jp/kurashi/%e4%bb%a4%e5%92%8c%ef%bc%97%e5%b9%b4%e5%ba%a6%e3%80%80%e4%bd%8f%e5%ae%85%e7%94%a8%e8%a8%ad%e5%82%99%e7%ad%89%e8%84%b1%e7%82%ad%e7%b4%a0%e5%8c%96%e4%bf%83%e9%80%b2%e4%ba%8b%e6%a5%ad%e8%a3%9c%e5%8a%a9.html"
+      ]
     },
     {
       "alternatives": [
@@ -1219,7 +1339,11 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.vill.chosei.chiba.jp/0000001829.html",
+        "https://www.vill.chosei.chiba.jp/0000001902.html"
+      ]
     },
     {
       "alternatives": [
@@ -1245,7 +1369,12 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.town.shirako.lg.jp/0000006051.html",
+        "https://www.town.shirako.lg.jp/0000006228.html",
+        "https://www.town.shirako.lg.jp/0000006144.html"
+      ]
     },
     {
       "alternatives": [
@@ -1270,7 +1399,11 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.town.nagara.chiba.jp/soshiki/2/56.html",
+        "https://www.town.nagara.chiba.jp/soshiki/2/2300.html"
+      ]
     },
     {
       "alternatives": [],
@@ -1345,7 +1478,11 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.town.onjuku.chiba.jp/sub1/7/75.html",
+        "https://www.town.onjuku.chiba.jp/sub1/7/93.html"
+      ]
     },
     {
       "alternatives": [],
@@ -1368,7 +1505,13 @@
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.town.kyonan.chiba.jp/soshiki/16/0010221.html",
+        "https://www.town.kyonan.chiba.jp/soshiki/13/1814.html",
+        "https://www.town.kyonan.chiba.jp/soshiki/13/2280.html",
+        "https://www.town.kyonan.chiba.jp/soshiki/13/0011365.html"
+      ]
     }
   ]
 }

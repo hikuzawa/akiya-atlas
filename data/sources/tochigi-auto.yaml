@@ -5,7 +5,7 @@ sources:
   operator: 宇都宮市
   operator_kind: municipality
   official_url: https://www.city.utsunomiya.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 092011
     name: 宇都宮市
@@ -14,18 +14,25 @@ sources:
     slug: 092011
     bank_url: https://www.city.utsunomiya.lg.jp/kurashi/anshin/1016717/index.html
     bank_status: info
+    extract_pending: false
     map_query: 栃木県宇都宮市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.utsunomiya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.utsunomiya.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.utsunomiya.lg.jp/kurashi/anshin/1016717/1023258/index.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.utsunomiya.lg.jp
+  max_pages: 30
 - id: tochigi-092029
   name: 足利市空き家バンク
   operator: 足利市
   operator_kind: municipality
   official_url: https://www.city.ashikaga.tochigi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 092029
     name: 足利市
@@ -34,12 +41,21 @@ sources:
     slug: 092029
     bank_url: https://ashikaga-c09202.akiya-athome.jp/
     bank_status: third_party_only
+    extract_pending: false
     map_query: 栃木県足利市
     bank_note: 物件は民間プラットフォームで公開されています。本サイトでは巡回・要約せず、リンクのみ掲載します。
   operator_evidence:
     quote: 公式ドメイン www.city.ashikaga.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ashikaga.tochigi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://ashikaga-c09202.akiya-athome.jp/contents/news/detail/?id=1805
+    kind: subsidy
+  - url: https://ashikaga-c09202.akiya-athome.jp/contents/news/detail/?id=1537
+    kind: subsidy
+  allow_hosts:
+  - ashikaga-c09202.akiya-athome.jp
+  max_pages: 30
   external_links:
   - label: 最近見た物件 0 件
     url: https://ashikaga-c09202.akiya-athome.jp/mypage/history/list/
@@ -185,14 +201,17 @@ sources:
     slug: 092037
     bank_url: http://www.tochigi-akiya.jp/
     bank_status: available
+    extract_pending: false
     map_query: 栃木県栃木市
   operator_evidence:
     quote: 公式サイト（www.city.tochigi.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.tochigi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: http://www.tochigi-akiya.jp/
     kind: listing_index
+  - url: http://www.tochigi-akiya.jp/subsidy/index.php
+    kind: subsidy
   allow_hosts:
   - www.tochigi-akiya.jp
   max_pages: 30
@@ -210,14 +229,17 @@ sources:
     slug: 092045
     bank_url: https://www.city.sano.lg.jp/cgi-bin/recruit.php/2/list
     bank_status: available
+    extract_pending: false
     map_query: 栃木県佐野市
   operator_evidence:
     quote: 公式ドメイン www.city.sano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.sano.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.sano.lg.jp/cgi-bin/recruit.php/2/list
     kind: listing_index
+  - url: https://www.city.sano.lg.jp/ijuteiju/sumu/housing_bank/943.html
+    kind: subsidy
   allow_hosts:
   - www.city.sano.lg.jp
   max_pages: 30
@@ -226,7 +248,7 @@ sources:
   operator: 鹿沼市
   operator_kind: municipality
   official_url: https://www.city.kanuma.tochigi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 092053
     name: 鹿沼市
@@ -235,12 +257,25 @@ sources:
     slug: 092053
     bank_url: https://www.city.kanuma.tochigi.jp/0131/genre2-0-001.html
     bank_status: info
+    extract_pending: false
     map_query: 栃木県鹿沼市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.kanuma.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kanuma.tochigi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: http://www.city.kanuma.tochigi.jp/0131/info-0000006111-3.html
+    kind: subsidy
+  - url: https://www.city.kanuma.tochigi.jp/0126/info-0000008637-0.html
+    kind: subsidy
+  - url: https://www.city.kanuma.tochigi.jp/0126/info-0000005780-0.html
+    kind: subsidy
+  - url: https://www.city.kanuma.tochigi.jp/0126/info-0000004578-0.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.kanuma.tochigi.jp
+  max_pages: 30
 - id: tochigi-092061
   name: 日光市空き家バンク
   operator: 日光市
@@ -255,18 +290,19 @@ sources:
     slug: 092061
     bank_url: https://www.city.nikko.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 栃木県日光市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.nikko.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nikko.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: tochigi-092088
   name: 小山市空き家バンク
   operator: 小山市
   operator_kind: municipality
   official_url: https://www.city.oyama.tochigi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 092088
     name: 小山市
@@ -275,12 +311,19 @@ sources:
     slug: 092088
     bank_url: https://www.city.oyama.tochigi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 栃木県小山市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.oyama.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.oyama.tochigi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.oyama.tochigi.jp/kurashi/sumai-hikkoshi/sumai/page006083.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.oyama.tochigi.jp
+  max_pages: 30
 - id: tochigi-092096
   name: 真岡市空き家バンク
   operator: 真岡市
@@ -295,12 +338,13 @@ sources:
     slug: 092096
     bank_url: https://moka-c09209.akiya-athome.jp/
     bank_status: third_party_only
+    extract_pending: false
     map_query: 栃木県真岡市
     bank_note: 物件は民間プラットフォームで公開されています。本サイトでは巡回・要約せず、リンクのみ掲載します。
   operator_evidence:
     quote: 公式ドメイン www.city.moka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.moka.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 最近見た物件 0 件
     url: https://moka-c09209.akiya-athome.jp/mypage/history/list/
@@ -398,14 +442,19 @@ sources:
     slug: 092100
     bank_url: https://www.city.ohtawara.tochigi.jp/docs/2014092500025/
     bank_status: available
+    extract_pending: false
     map_query: 栃木県大田原市
   operator_evidence:
     quote: 栃木県 リンク集（市町一覧）に掲載された公式サイト（www.city.ohtawara.tochigi.jp）
     url: https://www.pref.tochigi.lg.jp/c05/intro/tochigi/link/lkshityouson.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.ohtawara.tochigi.jp/docs/2014092500025/
     kind: listing_index
+  - url: https://www.city.ohtawara.tochigi.jp/docs/2019082600020/
+    kind: subsidy
+  - url: https://www.city.ohtawara.tochigi.jp/docs/2013082767417/
+    kind: subsidy
   allow_hosts:
   - www.city.ohtawara.tochigi.jp
   max_pages: 30
@@ -414,7 +463,7 @@ sources:
   operator: 矢板市
   operator_kind: municipality
   official_url: https://www.city.yaita.tochigi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 092118
     name: 矢板市
@@ -423,18 +472,31 @@ sources:
     slug: 092118
     bank_url: https://www.city.yaita.tochigi.jp/site/ijuuteiju/akiya-shien.html
     bank_status: info
+    extract_pending: false
     map_query: 栃木県矢板市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.yaita.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.yaita.tochigi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.yaita.tochigi.jp/soshiki/toshiseibi/akiya-katuyouhojo.html
+    kind: subsidy
+  - url: https://www.city.yaita.tochigi.jp/soshiki/toshiseibi/akiya-kaitaihojo.html
+    kind: subsidy
+  - url: https://www.city.yaita.tochigi.jp/soshiki/toshiseibi/kuranobi.html
+    kind: subsidy
+  - url: https://www.city.yaita.tochigi.jp/soshiki/toshiseibi/kuranobir5.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.yaita.tochigi.jp
+  max_pages: 30
 - id: tochigi-092134
   name: 那須塩原市空き家バンク
   operator: 那須塩原市
   operator_kind: municipality
   official_url: https://www.city.nasushiobara.tochigi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 092134
     name: 那須塩原市
@@ -443,12 +505,25 @@ sources:
     slug: 092134
     bank_url: https://www.city.nasushiobara.tochigi.jp/kurashi_tetsuzuki/sumai_kurashi/akiya/index.html
     bank_status: info
+    extract_pending: false
     map_query: 栃木県那須塩原市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.nasushiobara.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.nasushiobara.tochigi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.nasushiobara.tochigi.jp/kurashi_tetsuzuki/sumai_kurashi/akiya/8757.html
+    kind: subsidy
+  - url: https://www.city.nasushiobara.tochigi.jp/kurashi_tetsuzuki/ijuuteijuu/19203.html
+    kind: subsidy
+  - url: https://www.city.nasushiobara.tochigi.jp/kurashi_tetsuzuki/ijuuteijuu/19205.html
+    kind: subsidy
+  - url: https://www.city.nasushiobara.tochigi.jp/kurashi_tetsuzuki/sumai_kurashi/akiya/2/8054.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.nasushiobara.tochigi.jp
+  max_pages: 30
 - id: tochigi-092142
   name: さくら市空き家バンク
   operator: さくら市
@@ -463,12 +538,13 @@ sources:
     slug: 092142
     bank_url: https://www.city.sakura.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 栃木県さくら市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.sakura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.sakura.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: tochigi-092151
   name: 那須烏山市空き家バンク
   operator: 那須烏山市
@@ -483,14 +559,17 @@ sources:
     slug: 092151
     bank_url: https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/page004598.html
     bank_status: available
+    extract_pending: false
     map_query: 栃木県那須烏山市
   operator_evidence:
     quote: 公式ドメイン www.city.nasukarasuyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nasukarasuyama.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/page004598.html
     kind: listing_index
+  - url: https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/page001804.html
+    kind: subsidy
   allow_hosts:
   - www.city.nasukarasuyama.lg.jp
   max_pages: 30
@@ -508,18 +587,19 @@ sources:
     slug: 092169
     bank_url: https://www.city.shimotsuke.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 栃木県下野市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.shimotsuke.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.shimotsuke.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: tochigi-093017
   name: 上三川町空き家バンク
   operator: 上三川町
   operator_kind: municipality
   official_url: https://www.town.kaminokawa.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 093017
     name: 上三川町
@@ -528,12 +608,23 @@ sources:
     slug: 093017
     bank_url: https://www.town.kaminokawa.lg.jp/0004/info-0000001920-0.html
     bank_status: info
+    extract_pending: false
     map_query: 栃木県上三川町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.kaminokawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kaminokawa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.kaminokawa.lg.jp/0081/info-0000004180-0.html
+    kind: subsidy
+  - url: https://www.town.kaminokawa.lg.jp/0077/info-0000002298-0.html
+    kind: subsidy
+  - url: https://www.town.kaminokawa.lg.jp/0077/info-0000002297-0.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.kaminokawa.lg.jp
+  max_pages: 30
 - id: tochigi-093424
   name: 益子町空き家バンク
   operator: 益子町
@@ -548,11 +639,12 @@ sources:
     slug: 093424
     bank_url: https://www.town.mashiko.lg.jp/mashikonokurashi/akiya.php
     bank_status: available
+    extract_pending: false
     map_query: 栃木県益子町
   operator_evidence:
     quote: 公式ドメイン www.town.mashiko.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.mashiko.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.mashiko.lg.jp/mashikonokurashi/akiya.php
     kind: listing_index
@@ -577,18 +669,19 @@ sources:
     slug: 093432
     bank_url: https://www.town.motegi.tochigi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 栃木県茂木町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.motegi.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.motegi.tochigi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: tochigi-093441
   name: 市貝町空き家バンク
   operator: 市貝町
   operator_kind: municipality
   official_url: https://www.town.ichikai.tochigi.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 093441
     name: 市貝町
@@ -597,18 +690,29 @@ sources:
     slug: 093441
     bank_url: https://www.town.ichikai.tochigi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 栃木県市貝町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.ichikai.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ichikai.tochigi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.ichikai.tochigi.jp/info/1220
+    kind: subsidy
+  - url: https://www.town.ichikai.tochigi.jp/info/391
+    kind: subsidy
+  - url: https://www.town.ichikai.tochigi.jp/info/772
+    kind: subsidy
+  allow_hosts:
+  - www.town.ichikai.tochigi.jp
+  max_pages: 30
 - id: tochigi-093459
   name: 芳賀町空き家バンク
   operator: 芳賀町
   operator_kind: municipality
   official_url: https://www.town.tochigi-haga.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 093459
     name: 芳賀町
@@ -617,12 +721,21 @@ sources:
     slug: 093459
     bank_url: https://www.town.tochigi-haga.lg.jp/kurashi/sumai/akiya_bank/top.html
     bank_status: info
+    extract_pending: false
     map_query: 栃木県芳賀町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 栃木県 リンク集（市町一覧）に掲載された公式サイト（www.town.tochigi-haga.lg.jp）
     url: https://www.pref.tochigi.lg.jp/c05/intro/tochigi/link/lkshityouson.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.tochigi-haga.lg.jp/kurashi/sumai/akiyabank_reform/reform_main.html
+    kind: subsidy
+  - url: https://www.town.tochigi-haga.lg.jp/kurashi/sumai/akiya/kaitai.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.tochigi-haga.lg.jp
+  max_pages: 30
   external_links:
   - label: (外部サイト)
     url: http://www.homes.co.jp/akiyabank/tochigi/haga_haga/
@@ -646,14 +759,19 @@ sources:
     slug: 093611
     bank_url: https://www.town.mibu.tochigi.jp/docs/2020052100013/
     bank_status: available
+    extract_pending: false
     map_query: 栃木県壬生町
   operator_evidence:
     quote: 公式ドメイン www.town.mibu.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.mibu.tochigi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.mibu.tochigi.jp/docs/2020052100013/
     kind: listing_index
+  - url: https://www.town.mibu.tochigi.jp/docs/2023032000013/
+    kind: subsidy
+  - url: https://www.town.mibu.tochigi.jp/docs/2026062400013/
+    kind: subsidy
   allow_hosts:
   - www.town.mibu.tochigi.jp
   max_pages: 30
@@ -662,7 +780,7 @@ sources:
   operator: 野木町
   operator_kind: municipality
   official_url: https://www.town.nogi.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 093645
     name: 野木町
@@ -671,12 +789,25 @@ sources:
     slug: 093645
     bank_url: https://www.town.nogi.lg.jp/ijyu/ijyu_news/page002793.html
     bank_status: info
+    extract_pending: false
     map_query: 栃木県野木町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.nogi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.nogi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.nogi.lg.jp/kurashi/kankyou/ondanka/page005123.html
+    kind: subsidy
+  - url: https://www.town.nogi.lg.jp/ijyu/ijyu_live/live_shien/shien_ijyunoippo/page002746.html
+    kind: subsidy
+  - url: https://www.town.nogi.lg.jp/kurashi/kankyou/ondanka/hojo/page006445.html
+    kind: subsidy
+  - url: https://www.town.nogi.lg.jp/ijyu/ijyu_news/page003572.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.nogi.lg.jp
+  max_pages: 30
 - id: tochigi-093840
   name: 塩谷町空き家バンク
   operator: 塩谷町
@@ -691,14 +822,21 @@ sources:
     slug: 093840
     bank_url: https://www.town.shioya.tochigi.jp/info/1080
     bank_status: available
+    extract_pending: false
     map_query: 栃木県塩谷町
   operator_evidence:
     quote: 公式ドメイン www.town.shioya.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.shioya.tochigi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.shioya.tochigi.jp/info/1080
     kind: listing_index
+  - url: https://www.town.shioya.tochigi.jp/info/2064
+    kind: subsidy
+  - url: https://www.town.shioya.tochigi.jp/info/2509
+    kind: subsidy
+  - url: https://www.town.shioya.tochigi.jp/info/2488
+    kind: subsidy
   allow_hosts:
   - www.town.shioya.tochigi.jp
   max_pages: 30
@@ -716,12 +854,13 @@ sources:
     slug: 093866
     bank_url: https://www.town.takanezawa.tochigi.jp/
     bank_status: none
+    extract_pending: false
     map_query: 栃木県高根沢町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.takanezawa.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.takanezawa.tochigi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: tochigi-094072
   name: 那須町空き家バンク
   operator: 那須町
@@ -736,18 +875,19 @@ sources:
     slug: 094072
     bank_url: https://www.town.nasu.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 栃木県那須町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.nasu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.nasu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: tochigi-094111
   name: 那珂川町空き家バンク
   operator: 那珂川町
   operator_kind: municipality
   official_url: https://www.town.tochigi-nakagawa.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 094111
     name: 那珂川町
@@ -756,9 +896,20 @@ sources:
     slug: 094111
     bank_url: http://www.town.tochigi-nakagawa.lg.jp/0074/genre2-0-001.html
     bank_status: info
+    extract_pending: false
     map_query: 栃木県那珂川町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 栃木県 リンク集（市町一覧）に掲載された公式サイト（www.town.tochigi-nakagawa.lg.jp）
     url: https://www.pref.tochigi.lg.jp/c05/intro/tochigi/link/lkshityouson.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: http://www.town.tochigi-nakagawa.lg.jp/0074/info-0000000331-0.html
+    kind: subsidy
+  - url: http://www.town.tochigi-nakagawa.lg.jp/0074/info-0000000332-0.html
+    kind: subsidy
+  - url: http://www.town.tochigi-nakagawa.lg.jp/0073/info-0000000328-0.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.tochigi-nakagawa.lg.jp
+  max_pages: 30

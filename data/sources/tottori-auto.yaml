@@ -14,11 +14,12 @@ sources:
     slug: '312011'
     bank_url: https://www.city.tottori.lg.jp/page/5828.html
     bank_status: available
+    extract_pending: false
     map_query: 鳥取県鳥取市
   operator_evidence:
     quote: 公式ドメイン www.city.tottori.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tottori.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.tottori.lg.jp/page/5828.html
     kind: listing_index
@@ -39,12 +40,13 @@ sources:
     slug: '312029'
     bank_url: https://www.city.yonago.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 鳥取県米子市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.yonago.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.yonago.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: tottori-312037
   name: 倉吉市空き家バンク
   operator: 倉吉市
@@ -59,14 +61,19 @@ sources:
     slug: '312037'
     bank_url: https://www.city.kurayoshi.lg.jp/4975.htm
     bank_status: available
+    extract_pending: false
     map_query: 鳥取県倉吉市
   operator_evidence:
     quote: 公式ドメイン www.city.kurayoshi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kurayoshi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.kurayoshi.lg.jp/4975.htm
     kind: listing_index
+  - url: https://www.city.kurayoshi.lg.jp/6146.htm
+    kind: subsidy
+  - url: https://www.city.kurayoshi.lg.jp/6143.htm
+    kind: subsidy
   allow_hosts:
   - www.city.kurayoshi.lg.jp
   max_pages: 30
@@ -84,12 +91,13 @@ sources:
     slug: '312045'
     bank_url: https://www.city.sakaiminato.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 鳥取県境港市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.city.sakaiminato.lg.jp）。サイトを取得できなかったためリンクのみ（robots.txt により拒否）
     url: https://www.pref.tottori.lg.jp/9577.htm
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: tottori-313025
   name: 岩美町空き家バンク
   operator: 岩美町
@@ -104,12 +112,13 @@ sources:
     slug: '313025'
     bank_url: https://www.iwami.gr.jp/
     bank_status: none
+    extract_pending: false
     map_query: 鳥取県岩美町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.iwami.gr.jp）
     url: https://www.pref.tottori.lg.jp/9577.htm
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: tottori-313254
   name: 若桜町空き家バンク
   operator: 若桜町
@@ -124,12 +133,13 @@ sources:
     slug: '313254'
     bank_url: https://www.town.wakasa.tottori.jp/
     bank_status: none
+    extract_pending: false
     map_query: 鳥取県若桜町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.wakasa.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.wakasa.tottori.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: tottori-313289
   name: 智頭町空き家バンク
   operator: 智頭町
@@ -144,12 +154,13 @@ sources:
     slug: '313289'
     bank_url: https://www.town.chizu.tottori.jp/
     bank_status: none
+    extract_pending: false
     map_query: 鳥取県智頭町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.chizu.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.chizu.tottori.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: tottori-313297
   name: 八頭町空き家バンク
   operator: 八頭町
@@ -164,12 +175,13 @@ sources:
     slug: '313297'
     bank_url: https://www.town.yazu.tottori.jp/
     bank_status: none
+    extract_pending: false
     map_query: 鳥取県八頭町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.yazu.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yazu.tottori.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: tottori-313645
   name: 三朝町空き家バンク
   operator: 三朝町
@@ -184,14 +196,17 @@ sources:
     slug: '313645'
     bank_url: https://www.town.misasa.tottori.jp/315/319/2054/2002/2021/1920/
     bank_status: available
+    extract_pending: false
     map_query: 鳥取県三朝町
   operator_evidence:
     quote: 公式ドメイン www.town.misasa.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.misasa.tottori.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.misasa.tottori.jp/315/319/2054/2002/2021/1920/
     kind: listing_index
+  - url: https://www.town.misasa.tottori.jp/315/319/2054/2018/1325/24840.html
+    kind: subsidy
   allow_hosts:
   - www.town.misasa.tottori.jp
   max_pages: 30
@@ -209,12 +224,13 @@ sources:
     slug: '313700'
     bank_url: https://www.yurihama.jp/
     bank_status: none
+    extract_pending: false
     map_query: 鳥取県湯梨浜町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.yurihama.jp）
     url: https://www.pref.tottori.lg.jp/9577.htm
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: tottori-313718
   name: 琴浦町空き家バンク
   operator: 琴浦町
@@ -229,11 +245,12 @@ sources:
     slug: '313718'
     bank_url: https://www.town.kotoura.tottori.jp/ijuteiju/ohnav/
     bank_status: available
+    extract_pending: false
     map_query: 鳥取県琴浦町
   operator_evidence:
     quote: 公式ドメイン www.town.kotoura.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kotoura.tottori.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.kotoura.tottori.jp/ijuteiju/ohnav/
     kind: listing_index
@@ -245,7 +262,7 @@ sources:
   operator: 北栄町
   operator_kind: municipality
   official_url: https://www.e-hokuei.net/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '313726'
     name: 北栄町
@@ -254,12 +271,25 @@ sources:
     slug: '313726'
     bank_url: https://www.e-hokuei.net/
     bank_status: none
+    extract_pending: false
     map_query: 鳥取県北栄町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.e-hokuei.net）
     url: https://www.pref.tottori.lg.jp/9577.htm
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.e-hokuei.net/soshiki/10/1580.html
+    kind: subsidy
+  - url: https://www.e-hokuei.net/soshiki/9/1737.html
+    kind: subsidy
+  - url: https://www.e-hokuei.net/soshiki/9/1742.html
+    kind: subsidy
+  - url: https://www.e-hokuei.net/soshiki/9/1738.html
+    kind: subsidy
+  allow_hosts:
+  - www.e-hokuei.net
+  max_pages: 30
 - id: tottori-313840
   name: 日吉津村空き家バンク
   operator: 日吉津村
@@ -274,18 +304,19 @@ sources:
     slug: '313840'
     bank_url: https://www.hiezu.jp/
     bank_status: none
+    extract_pending: false
     map_query: 鳥取県日吉津村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.hiezu.jp）
     url: https://www.pref.tottori.lg.jp/9577.htm
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: tottori-313866
   name: 大山町空き家バンク
   operator: 大山町
   operator_kind: municipality
   official_url: https://www.daisen.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '313866'
     name: 大山町
@@ -294,18 +325,27 @@ sources:
     slug: '313866'
     bank_url: https://www.daisen.jp/10/2/9/m107/
     bank_status: info
+    extract_pending: false
     map_query: 鳥取県大山町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.daisen.jp）
     url: https://www.pref.tottori.lg.jp/9577.htm
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.daisen.jp/10/2/9/a141/
+    kind: subsidy
+  - url: https://www.daisen.jp/10/2/9/c142/
+    kind: subsidy
+  allow_hosts:
+  - www.daisen.jp
+  max_pages: 30
 - id: tottori-313891
   name: 南部町空き家バンク
   operator: 南部町
   operator_kind: municipality
   official_url: https://www.town.nanbu.tottori.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '313891'
     name: 南部町
@@ -314,12 +354,19 @@ sources:
     slug: '313891'
     bank_url: https://www.town.nanbu.tottori.jp/
     bank_status: none
+    extract_pending: false
     map_query: 鳥取県南部町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.nanbu.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nanbu.tottori.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.nanbu.tottori.jp/admin/mirai/permanent/01/
+    kind: subsidy
+  allow_hosts:
+  - www.town.nanbu.tottori.jp
+  max_pages: 30
 - id: tottori-313904
   name: 伯耆町空き家バンク
   operator: 伯耆町
@@ -334,18 +381,19 @@ sources:
     slug: '313904'
     bank_url: https://www.houki-town.jp/
     bank_status: none
+    extract_pending: false
     map_query: 鳥取県伯耆町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.houki-town.jp）
     url: https://www.pref.tottori.lg.jp/9577.htm
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: tottori-314013
   name: 日南町空き家バンク
   operator: 日南町
   operator_kind: municipality
   official_url: https://www.town.nichinan.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '314013'
     name: 日南町
@@ -354,12 +402,19 @@ sources:
     slug: '314013'
     bank_url: https://www.town.nichinan.lg.jp/mokutekibetsu/5/index.html
     bank_status: info
+    extract_pending: false
     map_query: 鳥取県日南町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.nichinan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.nichinan.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.nichinan.lg.jp/soshikikarasagasu/kensetsuka/sumai_kenchiku/16732.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.nichinan.lg.jp
+  max_pages: 30
 - id: tottori-314021
   name: 日野町空き家バンク
   operator: 日野町
@@ -374,12 +429,13 @@ sources:
     slug: '314021'
     bank_url: http://www.town.hino.tottori.jp/2467.htm
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 鳥取県日野町
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.hino.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.hino.tottori.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: tottori-314030
   name: 江府町空き家バンク
   operator: 江府町
@@ -394,9 +450,10 @@ sources:
     slug: '314030'
     bank_url: https://www.town-kofu.jp/
     bank_status: none
+    extract_pending: false
     map_query: 鳥取県江府町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.town-kofu.jp）
     url: https://www.pref.tottori.lg.jp/9577.htm
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'

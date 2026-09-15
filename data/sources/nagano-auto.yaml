@@ -14,12 +14,13 @@ sources:
     slug: '202011'
     bank_url: https://www.city.nagano.nagano.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県長野市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.nagano.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.nagano.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -29,7 +30,7 @@ sources:
   operator: 松本市
   operator_kind: municipality
   official_url: https://www.city.matsumoto.nagano.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '202029'
     name: 松本市
@@ -38,12 +39,19 @@ sources:
     slug: '202029'
     bank_url: https://www.city.matsumoto.nagano.jp/soshiki/85/3266.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県松本市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.matsumoto.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.matsumoto.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.matsumoto.nagano.jp/site/matsumotogurashi/4079.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.matsumoto.nagano.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -53,7 +61,7 @@ sources:
   operator: 上田市
   operator_kind: municipality
   official_url: https://www.city.ueda.nagano.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '202037'
     name: 上田市
@@ -62,12 +70,23 @@ sources:
     slug: '202037'
     bank_url: https://www.city.ueda.nagano.jp/soshiki/akiya/97119.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県上田市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.ueda.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ueda.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.ueda.nagano.jp/site/akiyabank-ueda2021/46604.html
+    kind: subsidy
+  - url: https://www.city.ueda.nagano.jp/soshiki/akiya/82325.html
+    kind: subsidy
+  - url: https://www.city.ueda.nagano.jp/soshiki/akiya/23509.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.ueda.nagano.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -86,12 +105,13 @@ sources:
     slug: '202045'
     bank_url: https://www.city.okaya.lg.jp/kurashi_tetsuzuki/seikatsu_sodan/akiya/index.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県岡谷市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.okaya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.okaya.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -101,7 +121,7 @@ sources:
   operator: 飯田市
   operator_kind: municipality
   official_url: https://www.city.iida.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '202053'
     name: 飯田市
@@ -110,12 +130,19 @@ sources:
     slug: '202053'
     bank_url: https://www.city.iida.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県飯田市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.iida.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.iida.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.iida.lg.jp/site/yuiturn/ijyuushiennkinn2.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.iida.lg.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -125,7 +152,7 @@ sources:
   operator: 諏訪市
   operator_kind: municipality
   official_url: https://www.city.suwa.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '202061'
     name: 諏訪市
@@ -134,12 +161,25 @@ sources:
     slug: '202061'
     bank_url: https://www.city.suwa.lg.jp/life/1/14/
     bank_status: info
+    extract_pending: false
     map_query: 長野県諏訪市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.suwa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.suwa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.suwa.lg.jp/soshiki/21/1295.html
+    kind: subsidy
+  - url: https://www.city.suwa.lg.jp/site/iju/62959.html
+    kind: subsidy
+  - url: https://www.city.suwa.lg.jp/soshiki/21/1262.html
+    kind: subsidy
+  - url: https://www.city.suwa.lg.jp/soshiki/7/1821.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.suwa.lg.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -158,12 +198,13 @@ sources:
     slug: '202070'
     bank_url: https://rakuen-akiya.jp/
     bank_status: third_party_only
+    extract_pending: false
     map_query: 長野県須坂市
     bank_note: 物件は民間プラットフォームで公開されています。本サイトでは巡回・要約せず、リンクのみ掲載します。
   operator_evidence:
     quote: 公式サイト（www.city.suzaka.nagano.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.suzaka.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: ''
     url: https://rakuen-akiya.jp/
@@ -216,7 +257,7 @@ sources:
   operator: 小諸市
   operator_kind: municipality
   official_url: https://www.city.komoro.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '202088'
     name: 小諸市
@@ -225,12 +266,23 @@ sources:
     slug: '202088'
     bank_url: https://www.city.komoro.lg.jp/kurasu/index.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県小諸市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.komoro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.komoro.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.komoro.lg.jp/cgi-bin/recruit.php/1/list?page_no=5604
+    kind: subsidy
+  - url: https://www.city.komoro.lg.jp/kurasu/info/pickup/13223.html
+    kind: subsidy
+  - url: https://www.city.komoro.lg.jp/kurasu/info/pickup/10858.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.komoro.lg.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -249,12 +301,13 @@ sources:
     slug: '202100'
     bank_url: https://www.city.komagane.nagano.jp/gyosei/kosodate_bunka_sports/kyoikuiinkai/hatarakikatakaikaku/sitemap.dir.xml
     bank_status: info
+    extract_pending: false
     map_query: 長野県駒ヶ根市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.komagane.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.komagane.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -264,7 +317,7 @@ sources:
   operator: 中野市
   operator_kind: municipality
   official_url: https://www.city.nakano.nagano.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '202118'
     name: 中野市
@@ -273,12 +326,25 @@ sources:
     slug: '202118'
     bank_url: https://www.city.nakano.nagano.jp/docs/2023120700047/
     bank_status: info
+    extract_pending: false
     map_query: 長野県中野市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.nakano.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.nakano.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.nakano.nagano.jp/docs/2021032900029/
+    kind: subsidy
+  - url: https://www.city.nakano.nagano.jp/docs/2024040800015/
+    kind: subsidy
+  - url: https://www.city.nakano.nagano.jp/docs/2026061000023/
+    kind: subsidy
+  - url: https://www.city.nakano.nagano.jp/docs/2024032400049/
+    kind: subsidy
+  allow_hosts:
+  - www.city.nakano.nagano.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -288,7 +354,7 @@ sources:
   operator: 茅野市
   operator_kind: municipality
   official_url: https://www.city.chino.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '202142'
     name: 茅野市
@@ -297,12 +363,25 @@ sources:
     slug: '202142'
     bank_url: https://www.city.chino.lg.jp/site/akiya/
     bank_status: info
+    extract_pending: false
     map_query: 長野県茅野市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.chino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.chino.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.chino.lg.jp/site/akiya/akiya-hojo.html
+    kind: subsidy
+  - url: https://www.city.chino.lg.jp/site/akiya/akiya-anshinryutsu.html
+    kind: subsidy
+  - url: https://www.city.chino.lg.jp/soshiki/toshikeikaku/taishin2026.html
+    kind: subsidy
+  - url: https://www.city.chino.lg.jp/site/chinomiryoku/iju-gakuseishienkin0831.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.chino.lg.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -312,7 +391,7 @@ sources:
   operator: 塩尻市
   operator_kind: municipality
   official_url: https://www.city.shiojiri.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '202151'
     name: 塩尻市
@@ -321,12 +400,25 @@ sources:
     slug: '202151'
     bank_url: https://www.city.shiojiri.lg.jp/site/akiya/
     bank_status: info
+    extract_pending: false
     map_query: 長野県塩尻市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.shiojiri.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.shiojiri.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.shiojiri.lg.jp/soshiki/34/3438.html
+    kind: subsidy
+  - url: https://www.city.shiojiri.lg.jp/soshiki/12/51133.html
+    kind: subsidy
+  - url: https://www.city.shiojiri.lg.jp/soshiki/34/2959.html
+    kind: subsidy
+  - url: https://www.city.shiojiri.lg.jp/soshiki/34/58337.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.shiojiri.lg.jp
+  max_pages: 30
   external_links:
   - label: 「楽園信州空き家バンク」長野県移住者向け空き家ポータルサイト
     url: https://rakuen-akiya.jp/
@@ -335,7 +427,7 @@ sources:
   operator: 千曲市
   operator_kind: municipality
   official_url: https://www.city.chikuma.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '202185'
     name: 千曲市
@@ -344,12 +436,21 @@ sources:
     slug: '202185'
     bank_url: https://www.city.chikuma.lg.jp/soshiki/kenchiku/akiya/index.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県千曲市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.chikuma.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.chikuma.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.chikuma.lg.jp/soshiki/kenchiku/akiya/10691.html
+    kind: subsidy
+  - url: https://www.city.chikuma.lg.jp/soshiki/kenchiku/akiya/8636.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.chikuma.lg.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -368,12 +469,13 @@ sources:
     slug: '202207'
     bank_url: https://www.city.azumino.nagano.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県安曇野市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.azumino.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.azumino.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -383,7 +485,7 @@ sources:
   operator: 小海町
   operator_kind: municipality
   official_url: https://www.koumi-town.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '203033'
     name: 小海町
@@ -392,12 +494,19 @@ sources:
     slug: '203033'
     bank_url: https://www.koumi-town.jp/office2/archives/top-news/post-1466.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県小海町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.koumi-town.jp）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.koumi-town.jp/office2/archives/ijyuteijyu/post-1575.html
+    kind: subsidy
+  allow_hosts:
+  - www.koumi-town.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -416,12 +525,13 @@ sources:
     slug: '203041'
     bank_url: https://www.vill.kawakami.nagano.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県川上村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.kawakami.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.kawakami.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -431,7 +541,7 @@ sources:
   operator: 南牧村
   operator_kind: municipality
   official_url: https://www.minamimakimura.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '203050'
     name: 南牧村
@@ -440,12 +550,19 @@ sources:
     slug: '203050'
     bank_url: https://www.minamimakimura.jp/main/
     bank_status: info
+    extract_pending: false
     map_query: 長野県南牧村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.minamimakimura.jp）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.minamimakimura.jp/main/gov/jumin/news/1312.html
+    kind: subsidy
+  allow_hosts:
+  - www.minamimakimura.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -464,12 +581,13 @@ sources:
     slug: '203068'
     bank_url: https://www.minamiaiki.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県南相木村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.minamiaiki.jp）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -488,14 +606,17 @@ sources:
     slug: '203076'
     bank_url: http://www.vill.kitaaiki.nagano.jp/docs/11593.html
     bank_status: available
+    extract_pending: false
     map_query: 長野県北相木村
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.vill.kitaaiki.nagano.jp）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: http://www.vill.kitaaiki.nagano.jp/docs/11593.html
     kind: listing_detail
+  - url: http://www.vill.kitaaiki.nagano.jp/docs/kitaaikireforme.html
+    kind: subsidy
   allow_hosts:
   - www.vill.kitaaiki.nagano.jp
   max_pages: 30
@@ -504,7 +625,7 @@ sources:
   operator: 佐久穂町
   operator_kind: municipality
   official_url: https://www.town.sakuho.nagano.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '203092'
     name: 佐久穂町
@@ -513,12 +634,25 @@ sources:
     slug: '203092'
     bank_url: https://www.town.sakuho.nagano.jp/kurashi_tetsuzuki/sumai_seikatsu/akiya_akichi
     bank_status: info
+    extract_pending: false
     map_query: 長野県佐久穂町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.sakuho.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.sakuho.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.sakuho.nagano.jp/kurashi_tetsuzuki/sumai_seikatsu/akiya_akichi/sogoseisaku_7433.html
+    kind: subsidy
+  - url: https://www.town.sakuho.nagano.jp/kurashi_tetsuzuki/sumai_seikatsu/akiya_akichi/sogoseisaku_7384.html
+    kind: subsidy
+  - url: https://www.town.sakuho.nagano.jp/kurashi_tetsuzuki/sumai_seikatsu/jutaku/kensetsu_7675.html
+    kind: subsidy
+  - url: https://www.town.sakuho.nagano.jp/kurashi_tetsuzuki/sumai_seikatsu/jutaku/kensetsu_7662.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.sakuho.nagano.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -537,12 +671,13 @@ sources:
     slug: '203211'
     bank_url: https://www.town.karuizawa.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県軽井沢町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.karuizawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.karuizawa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -561,12 +696,13 @@ sources:
     slug: '203238'
     bank_url: https://www.town.miyota.nagano.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県御代田町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.miyota.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.miyota.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -576,7 +712,7 @@ sources:
   operator: 立科町
   operator_kind: municipality
   official_url: https://www.town.tateshina.nagano.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '203246'
     name: 立科町
@@ -585,12 +721,25 @@ sources:
     slug: '203246'
     bank_url: https://www.town.tateshina.nagano.jp/seikatsu/hikkoshisumai/1727.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県立科町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.tateshina.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.tateshina.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.tateshina.nagano.jp/seikatsu/hikkoshisumai/1723.html
+    kind: subsidy
+  - url: https://www.town.tateshina.nagano.jp/seikatsu/hikkoshisumai/2581.html
+    kind: subsidy
+  - url: https://www.town.tateshina.nagano.jp/seikatsu/hikkoshisumai/1726.html
+    kind: subsidy
+  - url: https://www.town.tateshina.nagano.jp/seikatsu/hikkoshisumai/2580.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.tateshina.nagano.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -609,12 +758,13 @@ sources:
     slug: '203491'
     bank_url: https://www.vill.aoki.nagano.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県青木村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.aoki.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.aoki.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -633,11 +783,12 @@ sources:
     slug: '203505'
     bank_url: https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/index.html
     bank_status: available
+    extract_pending: false
     map_query: 長野県長和町
   operator_evidence:
     quote: 公式ドメイン www.town.nagawa.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nagawa.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/index.html
     kind: listing_index
@@ -649,7 +800,7 @@ sources:
   operator: 下諏訪町
   operator_kind: municipality
   official_url: https://www.town.shimosuwa.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '203611'
     name: 下諏訪町
@@ -658,12 +809,25 @@ sources:
     slug: '203611'
     bank_url: https://www.town.shimosuwa.lg.jp/www/genre/1000100000031/index.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県下諏訪町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.shimosuwa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.shimosuwa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.shimosuwa.lg.jp/www/contents/1001000000642/index.html
+    kind: subsidy
+  - url: https://www.town.shimosuwa.lg.jp/www/contents/1001000000926/index.html
+    kind: subsidy
+  - url: https://www.town.shimosuwa.lg.jp/www/contents/1679305198909/index.html
+    kind: subsidy
+  - url: https://www.town.shimosuwa.lg.jp/www/contents/1708912411033/index.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.shimosuwa.lg.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -682,12 +846,13 @@ sources:
     slug: '203629'
     bank_url: https://www.town.fujimi.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県富士見町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.fujimi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.fujimi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -706,12 +871,13 @@ sources:
     slug: '203637'
     bank_url: https://www.vill.hara.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県原村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.hara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.hara.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -730,12 +896,13 @@ sources:
     slug: '203823'
     bank_url: https://www.town.tatsuno.lg.jp/gyosei/kurashi_tetsuzuki/3685.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県辰野町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.tatsuno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.tatsuno.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -754,12 +921,13 @@ sources:
     slug: '203831'
     bank_url: https://www.town.minowa.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県箕輪町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.minowa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.minowa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -769,7 +937,7 @@ sources:
   operator: 飯島町
   operator_kind: municipality
   official_url: https://www.town.iijima.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '203840'
     name: 飯島町
@@ -778,12 +946,23 @@ sources:
     slug: '203840'
     bank_url: https://www.town.iijima.lg.jp/soshikiichiran/kensetsusuidoka/tosikeikakukakari/sumai/akiya/index.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県飯島町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.iijima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.iijima.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.iijima.lg.jp/soshikiichiran/kensetsusuidoka/tosikeikakukakari/sumai/akiya/2922.html
+    kind: subsidy
+  - url: https://www.town.iijima.lg.jp/soshikiichiran/kikakuseisakuka/kikakuseisakukajinkoutaisakuijyuteijyusuisinnkakari/settlement/5116.html
+    kind: subsidy
+  - url: https://www.town.iijima.lg.jp/soshikiichiran/kensetsusuidoka/tosikeikakukakari/sumai/taishin/821.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.iijima.lg.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -793,7 +972,7 @@ sources:
   operator: 南箕輪村
   operator_kind: municipality
   official_url: https://www.vill.minamiminowa.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '203858'
     name: 南箕輪村
@@ -802,12 +981,19 @@ sources:
     slug: '203858'
     bank_url: https://www.vill.minamiminowa.lg.jp/soshiki/chiiki/akiya-201704-202302.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県南箕輪村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.minamiminowa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.minamiminowa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.vill.minamiminowa.lg.jp/soshiki/chiiki/6.html
+    kind: subsidy
+  allow_hosts:
+  - www.vill.minamiminowa.lg.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -817,7 +1003,7 @@ sources:
   operator: 中川村
   operator_kind: municipality
   official_url: https://www.vill.nakagawa.nagano.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '203866'
     name: 中川村
@@ -826,12 +1012,23 @@ sources:
     slug: '203866'
     bank_url: https://www.vill.nakagawa.nagano.jp/life/1/15/170/
     bank_status: info
+    extract_pending: false
     map_query: 長野県中川村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.nakagawa.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.nakagawa.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.vill.nakagawa.nagano.jp/site/sousei/1134.html
+    kind: subsidy
+  - url: https://www.vill.nakagawa.nagano.jp/soshiki/kensetsu/13165.html
+    kind: subsidy
+  - url: https://www.vill.nakagawa.nagano.jp/site/sousei/1135.html
+    kind: subsidy
+  allow_hosts:
+  - www.vill.nakagawa.nagano.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -850,12 +1047,13 @@ sources:
     slug: '203882'
     bank_url: https://www.vill.miyada.nagano.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県宮田村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.miyada.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.miyada.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -874,12 +1072,13 @@ sources:
     slug: '204021'
     bank_url: https://www.town.matsukawa.lg.jp/choseijoho/matsukawamachinoshokai/hokashichosontonokoryu/makinoharashi/sitemap.dir.xml
     bank_status: info
+    extract_pending: false
     map_query: 長野県松川町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.matsukawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.matsukawa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -898,12 +1097,13 @@ sources:
     slug: '204030'
     bank_url: http://ushimaki.net/
     bank_status: info
+    extract_pending: false
     map_query: 長野県高森町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.town.nagano-takamori.lg.jp）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -913,7 +1113,7 @@ sources:
   operator: 阿南町
   operator_kind: municipality
   official_url: https://www.town.anan.nagano.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '204048'
     name: 阿南町
@@ -922,12 +1122,23 @@ sources:
     slug: '204048'
     bank_url: http://www.town.anan.nagano.jp/category/living-adm/immigration/empty_house_bank/
     bank_status: info
+    extract_pending: false
     map_query: 長野県阿南町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.town.anan.nagano.jp）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: http://www.town.anan.nagano.jp/anan_town/akiyariyo_hozyo/
+    kind: subsidy
+  - url: http://www.town.anan.nagano.jp/anan_town/rehome_kakuju/
+    kind: subsidy
+  - url: http://www.town.anan.nagano.jp/anan_town/mokuzohokyo/
+    kind: subsidy
+  allow_hosts:
+  - www.town.anan.nagano.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -946,12 +1157,13 @@ sources:
     slug: '204072'
     bank_url: https://www.vill.achi.lg.jp/site/teiju/achikazoku-seido-akiya.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県阿智村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.achi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.achi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: rakuen-akiya.jp
     url: https://rakuen-akiya.jp/housesearch/area/?vender_jiscode[]=20407
@@ -972,12 +1184,13 @@ sources:
     slug: '204099'
     bank_url: https://www.hirayamura.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県平谷村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.hirayamura.jp）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -996,12 +1209,13 @@ sources:
     slug: '204102'
     bank_url: https://www.nebamura.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県根羽村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.nebamura.jp）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1020,12 +1234,13 @@ sources:
     slug: '204111'
     bank_url: https://www.vill-shimojo.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県下條村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.vill-shimojo.jp）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1044,14 +1259,19 @@ sources:
     slug: '204129'
     bank_url: https://www.urugi.jp/top/administration_living/migration_settlement/
     bank_status: available
+    extract_pending: false
     map_query: 長野県売木村
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.urugi.jp）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.urugi.jp/top/administration_living/migration_settlement/
     kind: listing_detail
+  - url: https://www.urugi.jp/top/administration_living/migration_settlement/unoccupied_house_repair_subsidy
+    kind: subsidy
+  - url: https://www.urugi.jp/top/administration_living/migration_settlement/living_support_system
+    kind: subsidy
   allow_hosts:
   - www.urugi.jp
   max_pages: 30
@@ -1060,7 +1280,7 @@ sources:
   operator: 天龍村
   operator_kind: municipality
   official_url: https://www.vill-tenryu.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '204137'
     name: 天龍村
@@ -1069,12 +1289,23 @@ sources:
     slug: '204137'
     bank_url: http://www.vill-tenryu.jp/administrative/relocation-settlement/explore-village-life/ijyu_akiyabank/
     bank_status: info
+    extract_pending: false
     map_query: 長野県天龍村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.vill-tenryu.jp）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.vill-tenryu.jp/administrative/living-procedures/housing/ijyu_hojo/
+    kind: subsidy
+  - url: https://www.vill-tenryu.jp/administrative/living-procedures/grants-subsidies/ijyu_akiyahojo/
+    kind: subsidy
+  - url: https://www.vill-tenryu.jp/administrative/living-procedures/grants-subsidies/ijyu_hojo-life/
+    kind: subsidy
+  allow_hosts:
+  - www.vill-tenryu.jp
+  max_pages: 30
   external_links:
   - label: rakuen-akiya.jp
     url: https://rakuen-akiya.jp/
@@ -1083,7 +1314,7 @@ sources:
   operator: 泰阜村
   operator_kind: municipality
   official_url: https://www.vill.yasuoka.nagano.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '204145'
     name: 泰阜村
@@ -1092,12 +1323,19 @@ sources:
     slug: '204145'
     bank_url: https://www.vill.yasuoka.nagano.jp/docs/55996.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県泰阜村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.yasuoka.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.yasuoka.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.vill.yasuoka.nagano.jp/docs/28982.html
+    kind: subsidy
+  allow_hosts:
+  - www.vill.yasuoka.nagano.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1116,12 +1354,13 @@ sources:
     slug: '204153'
     bank_url: https://www.vill.takagi.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県喬木村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.takagi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.takagi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1131,7 +1370,7 @@ sources:
   operator: 豊丘村
   operator_kind: municipality
   official_url: https://www.vill.nagano-toyooka.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '204161'
     name: 豊丘村
@@ -1140,12 +1379,25 @@ sources:
     slug: '204161'
     bank_url: https://www.vill.nagano-toyooka.lg.jp/21oidenansyo/03josei/02akiya/index.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県豊丘村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.vill.nagano-toyooka.lg.jp）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.vill.nagano-toyooka.lg.jp/21oidenansyo/03josei/02akiya/
+    kind: subsidy
+  - url: https://www.vill.nagano-toyooka.lg.jp/09sumai/07juutaku/index.html
+    kind: subsidy
+  - url: https://www.vill.nagano-toyooka.lg.jp/21oidenansyo/03josei/index.html
+    kind: subsidy
+  - url: https://www.vill.nagano-toyooka.lg.jp/21oidenansyo/03josei/01youchi/index.html
+    kind: subsidy
+  allow_hosts:
+  - www.vill.nagano-toyooka.lg.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1155,7 +1407,7 @@ sources:
   operator: 大鹿村
   operator_kind: municipality
   official_url: https://www.vill.ooshika.nagano.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '204170'
     name: 大鹿村
@@ -1164,12 +1416,23 @@ sources:
     slug: '204170'
     bank_url: https://www.vill.ooshika.nagano.jp/akiyabanku_toroku/
     bank_status: info
+    extract_pending: false
     map_query: 長野県大鹿村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.ooshika.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.ooshika.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.vill.ooshika.nagano.jp/shinchiku_hojo/
+    kind: subsidy
+  - url: https://www.vill.ooshika.nagano.jp/rehome_hozyo/
+    kind: subsidy
+  - url: https://www.vill.ooshika.nagano.jp/%e7%a9%ba%e3%81%8d%e5%ae%b6%e5%af%be%e7%ad%96%e4%ba%8b%e6%a5%ad%e8%a3%9c%e5%8a%a9%ef%bc%88%e7%a9%ba%e3%81%8d%e5%ae%b6%e3%81%ae%e3%83%aa%e3%83%95%e3%82%a9%e3%83%bc%e3%83%a0%e3%83%bb%e7%89%87%e4%bb%98/
+    kind: subsidy
+  allow_hosts:
+  - www.vill.ooshika.nagano.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1188,11 +1451,12 @@ sources:
     slug: '204226'
     bank_url: https://www.town.agematsu.nagano.jp/kurashi/sumai_seikatsu/tochi/akiya.html
     bank_status: available
+    extract_pending: false
     map_query: 長野県上松町
   operator_evidence:
     quote: 公式ドメイン www.town.agematsu.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.agematsu.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.agematsu.nagano.jp/kurashi/sumai_seikatsu/tochi/akiya.html
     kind: listing_index
@@ -1218,12 +1482,13 @@ sources:
     slug: '204234'
     bank_url: https://rakuen-akiya.jp/housesearch/area/?vender_jiscode[]=20423
     bank_status: third_party_only
+    extract_pending: false
     map_query: 長野県南木曽町
     bank_note: 物件は民間プラットフォームで公開されています。本サイトでは巡回・要約せず、リンクのみ掲載します。
   operator_evidence:
     quote: 公式サイト（www.town.nagiso.nagano.jp）から空き家バンクとして案内されているリンク
     url: https://www.town.nagiso.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: ''
     url: https://rakuen-akiya.jp/
@@ -1285,12 +1550,13 @@ sources:
     slug: '204251'
     bank_url: https://www.vill.kiso.nagano.jp/kurashi_joho/iju_teiju/akiyabank_touroku.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県木祖村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.kiso.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.kiso.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1300,7 +1566,7 @@ sources:
   operator: 王滝村
   operator_kind: municipality
   official_url: https://www.vill.otaki.nagano.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '204293'
     name: 王滝村
@@ -1309,12 +1575,21 @@ sources:
     slug: '204293'
     bank_url: https://www.vill.otaki.nagano.jp/kurashi/sumai/ijyu/akiyabank.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県王滝村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.otaki.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.otaki.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.vill.otaki.nagano.jp/kurashi/sumai/ijyu/akiya-katazukehojokin.html
+    kind: subsidy
+  - url: https://www.vill.otaki.nagano.jp/kurashi/sumai/ijyu/akiya-kaisyuhojokin.html
+    kind: subsidy
+  allow_hosts:
+  - www.vill.otaki.nagano.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州空き家バンクサイト
     url: https://rakuen-akiya.jp/housesearch/vender/?vender_id=9056
@@ -1335,12 +1610,13 @@ sources:
     slug: '204307'
     bank_url: https://www.vill.okuwa.lg.jp/kurashi/akiyabank/index.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県大桑村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.okuwa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.okuwa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1359,11 +1635,12 @@ sources:
     slug: '204323'
     bank_url: https://www.town-kiso.com/kurashi/sumai/akiya/
     bank_status: available
+    extract_pending: false
     map_query: 長野県木曽町
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.town-kiso.com）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town-kiso.com/kurashi/sumai/akiya/
     kind: listing_index
@@ -1384,12 +1661,13 @@ sources:
     slug: '204463'
     bank_url: https://www.vill.omi.nagano.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県麻績村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.omi.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.omi.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1399,7 +1677,7 @@ sources:
   operator: 生坂村
   operator_kind: municipality
   official_url: https://www.village.ikusaka.nagano.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '204480'
     name: 生坂村
@@ -1408,12 +1686,25 @@ sources:
     slug: '204480'
     bank_url: https://www.village.ikusaka.nagano.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県生坂村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.village.ikusaka.nagano.jp）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.village.ikusaka.nagano.jp/gyousei/muradukuri/juutakuhojo.html
+    kind: subsidy
+  - url: https://www.village.ikusaka.nagano.jp/gyousei/muradukuri/datutanso_hojo.html
+    kind: subsidy
+  - url: https://www.village.ikusaka.nagano.jp/gyousei/sinkouka/reform.htm
+    kind: subsidy
+  - url: https://www.village.ikusaka.nagano.jp/gyousei/sinkouka/taisinsindan.htm
+    kind: subsidy
+  allow_hosts:
+  - www.village.ikusaka.nagano.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1432,12 +1723,13 @@ sources:
     slug: '204501'
     bank_url: https://www.vill.yamagata.nagano.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県山形村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.yamagata.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.yamagata.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1447,7 +1739,7 @@ sources:
   operator: 朝日村
   operator_kind: municipality
   official_url: https://www.vill.asahi.nagano.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '204510'
     name: 朝日村
@@ -1456,12 +1748,21 @@ sources:
     slug: '204510'
     bank_url: https://www.vill.asahi.nagano.jp/material/files/group/11/akiyabankuriyou.pdf
     bank_status: info
+    extract_pending: false
     map_query: 長野県朝日村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.asahi.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.asahi.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.vill.asahi.nagano.jp/official/lifescenekarasagasu/hikkoshi_sumai/1768.html
+    kind: subsidy
+  - url: https://www.vill.asahi.nagano.jp/official/lifescenekarasagasu/hikkoshi_sumai/1860.html
+    kind: subsidy
+  allow_hosts:
+  - www.vill.asahi.nagano.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1480,12 +1781,13 @@ sources:
     slug: '204528'
     bank_url: https://www.vill.chikuhoku.lg.jp/ijyu-teijyu/akiya/
     bank_status: info
+    extract_pending: false
     map_query: 長野県筑北村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.chikuhoku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.chikuhoku.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1495,7 +1797,7 @@ sources:
   operator: 池田町
   operator_kind: municipality
   official_url: https://www.ikedamachi.net/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '204811'
     name: 池田町
@@ -1504,12 +1806,25 @@ sources:
     slug: '204811'
     bank_url: https://www.ikedamachi.net/0000000829.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県池田町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.ikedamachi.net）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.ikedamachi.net/0000001660.html
+    kind: subsidy
+  - url: https://www.ikedamachi.net/0000001555.html
+    kind: subsidy
+  - url: https://www.ikedamachi.net/0000002681.html
+    kind: subsidy
+  - url: https://www.ikedamachi.net/0000002162.html
+    kind: subsidy
+  allow_hosts:
+  - www.ikedamachi.net
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1528,12 +1843,13 @@ sources:
     slug: '204820'
     bank_url: https://www.vill.matsukawa.nagano.jp/search/?q=空き家バンク
     bank_status: info
+    extract_pending: false
     map_query: 長野県松川村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.matsukawa.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.matsukawa.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1552,12 +1868,13 @@ sources:
     slug: '204854'
     bank_url: https://www.vill.hakuba.lg.jp/gyosei/furusatonozei_ijuteiju/ijuteiju/sumu/akiyabank/sitemap.dir.xml
     bank_status: info
+    extract_pending: false
     map_query: 長野県白馬村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.hakuba.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.hakuba.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1576,12 +1893,13 @@ sources:
     slug: '204862'
     bank_url: https://www.vill.otari.nagano.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県小谷村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.otari.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.otari.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1591,7 +1909,7 @@ sources:
   operator: 坂城町
   operator_kind: municipality
   official_url: https://www.town.sakaki.nagano.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '205214'
     name: 坂城町
@@ -1600,12 +1918,25 @@ sources:
     slug: '205214'
     bank_url: https://www.town.sakaki.nagano.jp/life/1/4/22/
     bank_status: info
+    extract_pending: false
     map_query: 長野県坂城町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.sakaki.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.sakaki.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.sakaki.nagano.jp/page/1209.html
+    kind: subsidy
+  - url: https://www.town.sakaki.nagano.jp/page/10076.html
+    kind: subsidy
+  - url: https://www.town.sakaki.nagano.jp/page/1523.html
+    kind: subsidy
+  - url: https://www.town.sakaki.nagano.jp/page/10082.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.sakaki.nagano.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1615,7 +1946,7 @@ sources:
   operator: 小布施町
   operator_kind: municipality
   official_url: https://www.town.obuse.nagano.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '205419'
     name: 小布施町
@@ -1624,12 +1955,23 @@ sources:
     slug: '205419'
     bank_url: https://www.town.obuse.nagano.jp/docs/36516.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県小布施町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.obuse.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.obuse.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.obuse.nagano.jp/docs/328278.html
+    kind: subsidy
+  - url: https://www.town.obuse.nagano.jp/docs/2079.html
+    kind: subsidy
+  - url: https://www.town.obuse.nagano.jp/docs/2081.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.obuse.nagano.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1639,7 +1981,7 @@ sources:
   operator: 高山村
   operator_kind: municipality
   official_url: https://www.vill.takayama.nagano.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '205435'
     name: 高山村
@@ -1648,12 +1990,19 @@ sources:
     slug: '205435'
     bank_url: https://www.vill.takayama.nagano.jp/akiyabank/
     bank_status: info
+    extract_pending: false
     map_query: 長野県高山村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.takayama.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.takayama.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.vill.takayama.nagano.jp/docs/8079270.html
+    kind: subsidy
+  allow_hosts:
+  - www.vill.takayama.nagano.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1672,12 +2021,13 @@ sources:
     slug: '205613'
     bank_url: https://www.town.yamanouchi.nagano.jp/
     bank_status: none
+    extract_pending: false
     map_query: 長野県山ノ内町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.yamanouchi.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yamanouchi.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1687,7 +2037,7 @@ sources:
   operator: 木島平村
   operator_kind: municipality
   official_url: https://www.vill.kijimadaira.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '205621'
     name: 木島平村
@@ -1696,12 +2046,19 @@ sources:
     slug: '205621'
     bank_url: https://www.vill.kijimadaira.lg.jp/articles/2026090700017/
     bank_status: info
+    extract_pending: false
     map_query: 長野県木島平村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.kijimadaira.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.kijimadaira.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.vill.kijimadaira.lg.jp/articles/2026080600020/
+    kind: subsidy
+  allow_hosts:
+  - www.vill.kijimadaira.lg.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1711,7 +2068,7 @@ sources:
   operator: 野沢温泉村
   operator_kind: municipality
   official_url: https://www.vill.nozawaonsen.nagano.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '205630'
     name: 野沢温泉村
@@ -1720,12 +2077,21 @@ sources:
     slug: '205630'
     bank_url: https://www.vill.nozawaonsen.nagano.jp/www/contents/1050000000007/index.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県野沢温泉村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.nozawaonsen.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.nozawaonsen.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.vill.nozawaonsen.nagano.jp/www/contents/1763425500195/index.html
+    kind: subsidy
+  - url: https://www.vill.nozawaonsen.nagano.jp/www/contents/1050000000014/index.html
+    kind: subsidy
+  allow_hosts:
+  - www.vill.nozawaonsen.nagano.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1735,7 +2101,7 @@ sources:
   operator: 信濃町
   operator_kind: municipality
   official_url: https://www.town.shinano.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '205834'
     name: 信濃町
@@ -1744,12 +2110,25 @@ sources:
     slug: '205834'
     bank_url: https://www.town.shinano.lg.jp/docs/369.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県信濃町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.shinano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.shinano.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.shinano.lg.jp/docs/9923205.html
+    kind: subsidy
+  - url: https://www.town.shinano.lg.jp/docs/14079915.html
+    kind: subsidy
+  - url: https://www.town.shinano.lg.jp/docs/12097277.html
+    kind: subsidy
+  - url: https://www.town.shinano.lg.jp/docs/724.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.shinano.lg.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1768,11 +2147,12 @@ sources:
     slug: '205885'
     bank_url: http://ogawamura.jp/house/
     bank_status: available
+    extract_pending: false
     map_query: 長野県小川村
   operator_evidence:
     quote: 公式サイト（www.vill.ogawa.nagano.jp）から空き家バンクとして案内されているリンク
     url: https://www.vill.ogawa.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: http://ogawamura.jp/house/
     kind: listing_index
@@ -1788,7 +2168,7 @@ sources:
   operator: 飯綱町
   operator_kind: municipality
   official_url: https://www.town.iizuna.nagano.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '205907'
     name: 飯綱町
@@ -1797,12 +2177,25 @@ sources:
     slug: '205907'
     bank_url: https://www.town.iizuna.nagano.jp/docs/14258.html
     bank_status: info
+    extract_pending: false
     map_query: 長野県飯綱町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.iizuna.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.iizuna.nagano.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.iizuna.nagano.jp/docs/taishin.html
+    kind: subsidy
+  - url: https://www.town.iizuna.nagano.jp/docs/2662.html
+    kind: subsidy
+  - url: https://www.town.iizuna.nagano.jp/docs/13726.html
+    kind: subsidy
+  - url: https://www.town.iizuna.nagano.jp/docs/895.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.iizuna.nagano.jp
+  max_pages: 30
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1821,14 +2214,23 @@ sources:
     slug: '206024'
     bank_url: http://www.vill.sakae.nagano.jp/docs/1028.html
     bank_status: available
+    extract_pending: false
     map_query: 長野県栄村
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.vill.sakae.nagano.jp）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: http://www.vill.sakae.nagano.jp/docs/1028.html
     kind: listing_index
+  - url: http://www.vill.sakae.nagano.jp/docs/3529.html
+    kind: subsidy
+  - url: http://www.vill.sakae.nagano.jp/docs/2062.html
+    kind: subsidy
+  - url: http://www.vill.sakae.nagano.jp/docs/2063.html
+    kind: subsidy
+  - url: http://www.vill.sakae.nagano.jp/docs/2668.html
+    kind: subsidy
   allow_hosts:
   - www.vill.sakae.nagano.jp
   max_pages: 30

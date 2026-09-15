@@ -1,5 +1,1083 @@
 {
   "prefectures": {
+    "aichi": {
+      "crawl": {
+        "changed": 61,
+        "errors": 0,
+        "fetched": 63,
+        "not_modified": 0,
+        "requests": 92,
+        "unchanged": 2,
+        "workers": 8
+      },
+      "discover_requests": 291,
+      "done": "2026-09-15T00:04:39+00:00",
+      "extract": {
+        "items": 101,
+        "pages": 61
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 61,
+        "cost_usd": 0.333,
+        "input_tokens": 247437,
+        "output_tokens": 17121
+      },
+      "minutes": 3.2,
+      "municipalities": 28,
+      "name": "愛知県",
+      "pages": 61,
+      "subsidies": 96
+    },
+    "akita": {
+      "crawl": {
+        "changed": 38,
+        "errors": 0,
+        "fetched": 38,
+        "not_modified": 1,
+        "requests": 53,
+        "unchanged": 1,
+        "workers": 8
+      },
+      "discover_requests": 141,
+      "done": "2026-09-14T23:11:41+00:00",
+      "extract": {
+        "items": 105,
+        "pages": 38
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 38,
+        "cost_usd": 0.2087,
+        "input_tokens": 126921,
+        "output_tokens": 16352
+      },
+      "minutes": 2.3,
+      "municipalities": 14,
+      "name": "秋田県",
+      "pages": 37,
+      "subsidies": 53
+    },
+    "aomori": {
+      "crawl": {
+        "changed": 38,
+        "errors": 0,
+        "fetched": 45,
+        "not_modified": 0,
+        "requests": 63,
+        "unchanged": 7,
+        "workers": 8
+      },
+      "discover_requests": 223,
+      "done": "2026-09-14T23:04:34+00:00",
+      "extract": {
+        "items": 45,
+        "pages": 38
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 38,
+        "cost_usd": 0.1778,
+        "input_tokens": 133805,
+        "output_tokens": 8803
+      },
+      "minutes": 2.8,
+      "municipalities": 18,
+      "name": "青森県",
+      "pages": 39,
+      "subsidies": 44
+    },
+    "chiba": {
+      "crawl": {
+        "changed": 74,
+        "errors": 2,
+        "fetched": 85,
+        "not_modified": 1,
+        "requests": 124,
+        "unchanged": 12,
+        "workers": 8
+      },
+      "discover_requests": 316,
+      "done": "2026-09-14T23:35:24+00:00",
+      "extract": {
+        "items": 81,
+        "pages": 74
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 74,
+        "cost_usd": 0.3754,
+        "input_tokens": 289125,
+        "output_tokens": 17256
+      },
+      "minutes": 3.7,
+      "municipalities": 34,
+      "name": "千葉県",
+      "pages": 75,
+      "subsidies": 78
+    },
+    "ehime": {
+      "crawl": {
+        "changed": 12,
+        "errors": 0,
+        "fetched": 12,
+        "not_modified": 0,
+        "requests": 18,
+        "unchanged": 0,
+        "workers": 8
+      },
+      "discover_requests": 112,
+      "done": "2026-09-15T00:29:25+00:00",
+      "extract": {
+        "pages": 12,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.0609,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 2.4,
+      "municipalities": 6,
+      "name": "愛媛県",
+      "pages": 12,
+      "subsidies": 21
+    },
+    "fukui": {
+      "crawl": {
+        "changed": 17,
+        "errors": 0,
+        "fetched": 19,
+        "not_modified": 1,
+        "requests": 29,
+        "unchanged": 3,
+        "workers": 8
+      },
+      "discover_requests": 107,
+      "done": "2026-09-14T23:48:48+00:00",
+      "extract": {
+        "items": 29,
+        "pages": 17
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 17,
+        "cost_usd": 0.0823,
+        "input_tokens": 59106,
+        "output_tokens": 4630
+      },
+      "minutes": 1.5,
+      "municipalities": 9,
+      "name": "福井県",
+      "pages": 17,
+      "subsidies": 29
+    },
+    "fukuoka": {
+      "crawl": {
+        "changed": 62,
+        "errors": 0,
+        "fetched": 65,
+        "not_modified": 1,
+        "requests": 95,
+        "unchanged": 4,
+        "workers": 8
+      },
+      "discover_requests": 350,
+      "done": "2026-09-15T00:34:05+00:00",
+      "extract": {
+        "pages": 62,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.3147,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 3.1,
+      "municipalities": 26,
+      "name": "福岡県",
+      "pages": 62,
+      "subsidies": 84
+    },
+    "fukushima": {
+      "crawl": {
+        "changed": 85,
+        "errors": 2,
+        "fetched": 95,
+        "not_modified": 3,
+        "requests": 140,
+        "unchanged": 13,
+        "workers": 8
+      },
+      "discover_requests": 357,
+      "done": "2026-09-14T23:19:28+00:00",
+      "extract": {
+        "items": 198,
+        "pages": 85
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 85,
+        "cost_usd": 0.5099,
+        "input_tokens": 333289,
+        "output_tokens": 35329
+      },
+      "minutes": 5.1,
+      "municipalities": 40,
+      "name": "福島県",
+      "pages": 86,
+      "subsidies": 130
+    },
+    "gifu": {
+      "crawl": {
+        "changed": 64,
+        "errors": 1,
+        "fetched": 69,
+        "not_modified": 0,
+        "requests": 96,
+        "unchanged": 5,
+        "workers": 8
+      },
+      "discover_requests": 243,
+      "done": "2026-09-14T23:58:30+00:00",
+      "extract": {
+        "items": 96,
+        "pages": 64
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 64,
+        "cost_usd": 0.3205,
+        "input_tokens": 236203,
+        "output_tokens": 16852
+      },
+      "minutes": 3.1,
+      "municipalities": 28,
+      "name": "岐阜県",
+      "pages": 65,
+      "subsidies": 90
+    },
+    "gunma": {
+      "crawl": {
+        "changed": 40,
+        "errors": 0,
+        "fetched": 42,
+        "not_modified": 0,
+        "requests": 57,
+        "unchanged": 2,
+        "workers": 8
+      },
+      "discover_requests": 192,
+      "done": "2026-09-14T23:27:43+00:00",
+      "extract": {
+        "items": 53,
+        "pages": 40
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 40,
+        "cost_usd": 0.2122,
+        "input_tokens": 164481,
+        "output_tokens": 9543
+      },
+      "minutes": 2.4,
+      "municipalities": 15,
+      "name": "群馬県",
+      "pages": 40,
+      "subsidies": 52
+    },
+    "hiroshima": {
+      "crawl": {
+        "changed": 34,
+        "errors": 0,
+        "fetched": 35,
+        "not_modified": 0,
+        "requests": 47,
+        "unchanged": 1,
+        "workers": 8
+      },
+      "discover_requests": 111,
+      "done": "2026-09-15T00:24:31+00:00",
+      "extract": {
+        "pages": 34,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.1726,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 1.5,
+      "municipalities": 12,
+      "name": "広島県",
+      "pages": 34,
+      "subsidies": 38
+    },
+    "hokkaido": {
+      "crawl": {
+        "changed": 164,
+        "errors": 3,
+        "fetched": 178,
+        "not_modified": 1,
+        "requests": 261,
+        "unchanged": 15,
+        "workers": 8
+      },
+      "discover_requests": 1065,
+      "done": "2026-09-14T23:01:49+00:00",
+      "extract": {
+        "items": 256,
+        "pages": 164
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 164,
+        "cost_usd": 0.9795,
+        "input_tokens": 761714,
+        "output_tokens": 43563
+      },
+      "minutes": 9.8,
+      "municipalities": 78,
+      "name": "北海道",
+      "pages": 166,
+      "subsidies": 226
+    },
+    "hyogo": {
+      "crawl": {
+        "changed": 49,
+        "errors": 1,
+        "fetched": 52,
+        "not_modified": 1,
+        "requests": 75,
+        "unchanged": 4,
+        "workers": 8
+      },
+      "discover_requests": 236,
+      "done": "2026-09-15T00:14:11+00:00",
+      "extract": {
+        "pages": 50,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.2538,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 2.3,
+      "municipalities": 20,
+      "name": "兵庫県",
+      "pages": 50,
+      "subsidies": 103
+    },
+    "ibaraki": {
+      "crawl": {
+        "changed": 72,
+        "errors": 0,
+        "fetched": 78,
+        "not_modified": 0,
+        "requests": 109,
+        "unchanged": 6,
+        "workers": 8
+      },
+      "discover_requests": 245,
+      "done": "2026-09-14T23:22:49+00:00",
+      "extract": {
+        "items": 109,
+        "pages": 72
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 72,
+        "cost_usd": 0.3803,
+        "input_tokens": 286392,
+        "output_tokens": 18789
+      },
+      "minutes": 3.4,
+      "municipalities": 31,
+      "name": "茨城県",
+      "pages": 71,
+      "subsidies": 93
+    },
+    "ishikawa": {
+      "crawl": {
+        "changed": 29,
+        "errors": 0,
+        "fetched": 30,
+        "not_modified": 0,
+        "requests": 41,
+        "unchanged": 1,
+        "workers": 8
+      },
+      "discover_requests": 114,
+      "done": "2026-09-14T23:47:20+00:00",
+      "extract": {
+        "items": 64,
+        "pages": 29
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 29,
+        "cost_usd": 0.1392,
+        "input_tokens": 92706,
+        "output_tokens": 9304
+      },
+      "minutes": 1.8,
+      "municipalities": 11,
+      "name": "石川県",
+      "pages": 29,
+      "subsidies": 61
+    },
+    "iwate": {
+      "crawl": {
+        "changed": 37,
+        "errors": 0,
+        "fetched": 39,
+        "not_modified": 2,
+        "requests": 55,
+        "unchanged": 4,
+        "workers": 8
+      },
+      "discover_requests": 167,
+      "done": "2026-09-14T23:06:46+00:00",
+      "extract": {
+        "items": 46,
+        "pages": 37
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 37,
+        "cost_usd": 0.1753,
+        "input_tokens": 129149,
+        "output_tokens": 9224
+      },
+      "minutes": 2.2,
+      "municipalities": 14,
+      "name": "岩手県",
+      "pages": 37,
+      "subsidies": 46
+    },
+    "kagawa": {
+      "crawl": {
+        "changed": 32,
+        "errors": 0,
+        "fetched": 33,
+        "not_modified": 0,
+        "requests": 46,
+        "unchanged": 1,
+        "workers": 8
+      },
+      "discover_requests": 90,
+      "done": "2026-09-15T00:26:58+00:00",
+      "extract": {
+        "pages": 33,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.1675,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 1.3,
+      "municipalities": 13,
+      "name": "香川県",
+      "pages": 33,
+      "subsidies": 45
+    },
+    "kagoshima": {
+      "crawl": {
+        "changed": 59,
+        "errors": 0,
+        "fetched": 63,
+        "not_modified": 3,
+        "requests": 93,
+        "unchanged": 7,
+        "workers": 8
+      },
+      "discover_requests": 246,
+      "done": "2026-09-15T00:48:17+00:00",
+      "extract": {
+        "pages": 58,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.2944,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 2.4,
+      "municipalities": 26,
+      "name": "鹿児島県",
+      "pages": 58,
+      "subsidies": 84
+    },
+    "kanagawa": {
+      "crawl": {
+        "changed": 35,
+        "errors": 0,
+        "fetched": 39,
+        "not_modified": 0,
+        "requests": 58,
+        "unchanged": 4,
+        "workers": 8
+      },
+      "discover_requests": 186,
+      "done": "2026-09-14T23:41:04+00:00",
+      "extract": {
+        "items": 63,
+        "pages": 35
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 35,
+        "cost_usd": 0.1822,
+        "input_tokens": 130483,
+        "output_tokens": 10334
+      },
+      "minutes": 2.4,
+      "municipalities": 18,
+      "name": "神奈川県",
+      "pages": 35,
+      "subsidies": 59
+    },
+    "kochi": {
+      "crawl": {
+        "changed": 1,
+        "errors": 0,
+        "fetched": 2,
+        "new_seeds": 1,
+        "not_modified": 0,
+        "requests": 3,
+        "skipped_not_due": 15,
+        "unchanged": 1,
+        "workers": 8
+      },
+      "discover_requests": 188,
+      "done": "2026-09-15T00:31:02+00:00",
+      "extract": {
+        "pages": 41,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.2081,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 1.6,
+      "municipalities": 16,
+      "name": "高知県",
+      "pages": 41,
+      "subsidies": 58
+    },
+    "kumamoto": {
+      "crawl": {
+        "changed": 44,
+        "errors": 2,
+        "fetched": 49,
+        "not_modified": 0,
+        "requests": 77,
+        "unchanged": 5,
+        "workers": 8
+      },
+      "discover_requests": 249,
+      "done": "2026-09-15T00:39:25+00:00",
+      "extract": {
+        "pages": 43,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.2182,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 2.4,
+      "municipalities": 23,
+      "name": "熊本県",
+      "pages": 43,
+      "subsidies": 60
+    },
+    "kyoto": {
+      "crawl": {
+        "changed": 14,
+        "errors": 0,
+        "fetched": 14,
+        "not_modified": 0,
+        "requests": 22,
+        "unchanged": 0,
+        "workers": 8
+      },
+      "discover_requests": 142,
+      "done": "2026-09-15T00:09:45+00:00",
+      "extract": {
+        "pages": 14,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.0711,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 1.5,
+      "municipalities": 8,
+      "name": "京都府",
+      "pages": 14,
+      "subsidies": 23
+    },
+    "mie": {
+      "crawl": {
+        "changed": 33,
+        "errors": 0,
+        "fetched": 39,
+        "not_modified": 0,
+        "requests": 55,
+        "unchanged": 6,
+        "workers": 8
+      },
+      "discover_requests": 178,
+      "done": "2026-09-15T00:06:53+00:00",
+      "extract": {
+        "items": 53,
+        "pages": 33
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 33,
+        "cost_usd": 0.2012,
+        "input_tokens": 157135,
+        "output_tokens": 8805
+      },
+      "minutes": 2.2,
+      "municipalities": 16,
+      "name": "三重県",
+      "pages": 33,
+      "subsidies": 50
+    },
+    "miyagi": {
+      "crawl": {
+        "changed": 51,
+        "errors": 0,
+        "fetched": 53,
+        "not_modified": 3,
+        "requests": 75,
+        "unchanged": 5,
+        "workers": 8
+      },
+      "discover_requests": 194,
+      "done": "2026-09-14T23:09:26+00:00",
+      "extract": {
+        "items": 65,
+        "llm_errors": 1,
+        "pages": 50
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 50,
+        "cost_usd": 0.2777,
+        "input_tokens": 215145,
+        "output_tokens": 12502
+      },
+      "minutes": 2.7,
+      "municipalities": 19,
+      "name": "宮城県",
+      "pages": 51,
+      "subsidies": 58
+    },
+    "miyazaki": {
+      "crawl": {
+        "changed": 17,
+        "errors": 0,
+        "fetched": 18,
+        "not_modified": 0,
+        "requests": 26,
+        "unchanged": 1,
+        "workers": 8
+      },
+      "discover_requests": 148,
+      "done": "2026-09-15T00:45:54+00:00",
+      "extract": {
+        "pages": 17,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.0863,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 5.0,
+      "municipalities": 8,
+      "name": "宮崎県",
+      "pages": 17,
+      "subsidies": 21
+    },
+    "nagano": {
+      "crawl": {
+        "changed": 99,
+        "errors": 0,
+        "fetched": 102,
+        "not_modified": 0,
+        "requests": 138,
+        "unchanged": 3,
+        "workers": 8
+      },
+      "discover_requests": 414,
+      "done": "2026-09-14T23:55:27+00:00",
+      "extract": {
+        "items": 158,
+        "pages": 99
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 99,
+        "cost_usd": 0.484,
+        "input_tokens": 345283,
+        "output_tokens": 27736
+      },
+      "minutes": 4.6,
+      "municipalities": 36,
+      "name": "長野県",
+      "pages": 99,
+      "subsidies": 157
+    },
+    "nagasaki": {
+      "crawl": {
+        "changed": 22,
+        "errors": 0,
+        "fetched": 24,
+        "not_modified": 3,
+        "requests": 38,
+        "unchanged": 5,
+        "workers": 8
+      },
+      "discover_requests": 127,
+      "done": "2026-09-15T00:37:02+00:00",
+      "extract": {
+        "pages": 23,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.1167,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 1.4,
+      "municipalities": 11,
+      "name": "長崎県",
+      "pages": 23,
+      "subsidies": 26
+    },
+    "nara": {
+      "crawl": {
+        "changed": 30,
+        "errors": 1,
+        "fetched": 30,
+        "not_modified": 0,
+        "requests": 43,
+        "unchanged": 0,
+        "workers": 8
+      },
+      "discover_requests": 217,
+      "done": "2026-09-15T00:16:16+00:00",
+      "extract": {
+        "pages": 31,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.1573,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 2.1,
+      "municipalities": 11,
+      "name": "奈良県",
+      "pages": 31,
+      "subsidies": 40
+    },
+    "niigata": {
+      "crawl": {
+        "changed": 46,
+        "errors": 1,
+        "fetched": 49,
+        "not_modified": 8,
+        "requests": 77,
+        "unchanged": 11,
+        "workers": 8
+      },
+      "discover_requests": 161,
+      "done": "2026-09-14T23:44:00+00:00",
+      "extract": {
+        "items": 162,
+        "pages": 46
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 46,
+        "cost_usd": 0.3402,
+        "input_tokens": 216587,
+        "output_tokens": 24713
+      },
+      "minutes": 2.9,
+      "municipalities": 18,
+      "name": "新潟県",
+      "pages": 45,
+      "subsidies": 108
+    },
+    "oita": {
+      "crawl": {
+        "changed": 30,
+        "errors": 0,
+        "fetched": 31,
+        "not_modified": 1,
+        "requests": 45,
+        "unchanged": 2,
+        "workers": 8
+      },
+      "discover_requests": 115,
+      "done": "2026-09-15T00:40:51+00:00",
+      "extract": {
+        "pages": 29,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.1472,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 1.4,
+      "municipalities": 12,
+      "name": "大分県",
+      "pages": 29,
+      "subsidies": 46
+    },
+    "okayama": {
+      "crawl": {
+        "changed": 32,
+        "errors": 1,
+        "fetched": 35,
+        "new_seeds": 4,
+        "not_modified": 0,
+        "requests": 47,
+        "unchanged": 3,
+        "workers": 8
+      },
+      "discover_requests": 155,
+      "done": "2026-09-15T00:23:03+00:00",
+      "extract": {
+        "pages": 33,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.1675,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 1.7,
+      "municipalities": 11,
+      "name": "岡山県",
+      "pages": 33,
+      "subsidies": 61
+    },
+    "okinawa": {
+      "crawl": {
+        "changed": 13,
+        "errors": 1,
+        "fetched": 14,
+        "not_modified": 0,
+        "requests": 24,
+        "unchanged": 1,
+        "workers": 8
+      },
+      "discover_requests": 230,
+      "done": "2026-09-15T00:50:17+00:00",
+      "extract": {
+        "pages": 14,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.0711,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 2.0,
+      "municipalities": 9,
+      "name": "沖縄県",
+      "pages": 14,
+      "subsidies": 10
+    },
+    "osaka": {
+      "crawl": {
+        "changed": 29,
+        "errors": 0,
+        "fetched": 29,
+        "not_modified": 0,
+        "requests": 41,
+        "unchanged": 0,
+        "workers": 8
+      },
+      "discover_requests": 229,
+      "done": "2026-09-15T00:11:51+00:00",
+      "extract": {
+        "pages": 29,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.1472,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 2.1,
+      "municipalities": 12,
+      "name": "大阪府",
+      "pages": 29,
+      "subsidies": 51
+    },
+    "saga": {
+      "crawl": {
+        "changed": 36,
+        "errors": 0,
+        "fetched": 38,
+        "not_modified": 1,
+        "requests": 54,
+        "unchanged": 3,
+        "workers": 8
+      },
+      "discover_requests": 118,
+      "done": "2026-09-15T00:35:37+00:00",
+      "extract": {
+        "pages": 36,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.1827,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 1.5,
+      "municipalities": 15,
+      "name": "佐賀県",
+      "pages": 36,
+      "subsidies": 57
+    },
+    "saitama": {
+      "crawl": {
+        "changed": 68,
+        "errors": 0,
+        "fetched": 70,
+        "not_modified": 1,
+        "requests": 103,
+        "unchanged": 3,
+        "workers": 8
+      },
+      "discover_requests": 366,
+      "done": "2026-09-14T23:31:41+00:00",
+      "extract": {
+        "items": 96,
+        "pages": 68
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 68,
+        "cost_usd": 0.357,
+        "input_tokens": 265526,
+        "output_tokens": 18297
+      },
+      "minutes": 4.0,
+      "municipalities": 30,
+      "name": "埼玉県",
+      "pages": 68,
+      "subsidies": 94
+    },
+    "shiga": {
+      "crawl": {
+        "changed": 27,
+        "errors": 0,
+        "fetched": 27,
+        "not_modified": 1,
+        "requests": 39,
+        "unchanged": 1,
+        "workers": 8
+      },
+      "discover_requests": 115,
+      "done": "2026-09-15T00:08:16+00:00",
+      "extract": {
+        "pages": 26,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.132,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 1.4,
+      "municipalities": 10,
+      "name": "滋賀県",
+      "pages": 26,
+      "subsidies": 63
+    },
+    "shimane": {
+      "crawl": {
+        "changed": 28,
+        "errors": 2,
+        "fetched": 32,
+        "not_modified": 0,
+        "requests": 45,
+        "unchanged": 4,
+        "workers": 8
+      },
+      "discover_requests": 116,
+      "done": "2026-09-15T00:21:22+00:00",
+      "extract": {
+        "pages": 29,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.1472,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 2.0,
+      "municipalities": 11,
+      "name": "島根県",
+      "pages": 29,
+      "subsidies": 58
+    },
+    "shizuoka": {
+      "crawl": {
+        "changed": 47,
+        "errors": 0,
+        "fetched": 47,
+        "not_modified": 0,
+        "requests": 65,
+        "unchanged": 0,
+        "workers": 8
+      },
+      "discover_requests": 191,
+      "done": "2026-09-15T00:01:28+00:00",
+      "extract": {
+        "items": 107,
+        "pages": 47
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 47,
+        "cost_usd": 0.2521,
+        "input_tokens": 169697,
+        "output_tokens": 16487
+      },
+      "minutes": 3.0,
+      "municipalities": 16,
+      "name": "静岡県",
+      "pages": 46,
+      "subsidies": 73
+    },
+    "tochigi": {
+      "crawl": {
+        "changed": 41,
+        "errors": 0,
+        "fetched": 45,
+        "not_modified": 2,
+        "requests": 65,
+        "unchanged": 6,
+        "workers": 8
+      },
+      "discover_requests": 156,
+      "done": "2026-09-14T23:25:21+00:00",
+      "extract": {
+        "items": 52,
+        "pages": 41
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 41,
+        "cost_usd": 0.2136,
+        "input_tokens": 162771,
+        "output_tokens": 10156
+      },
+      "minutes": 2.5,
+      "municipalities": 17,
+      "name": "栃木県",
+      "pages": 41,
+      "subsidies": 51
+    },
     "tokushima": {
       "crawl": {
         "requests": 0,
@@ -19,8 +1097,208 @@
       "minutes": 1.1,
       "municipalities": 15,
       "name": "徳島県",
+      "pages": 40,
       "subsidies": 42
+    },
+    "tokyo": {
+      "crawl": {
+        "changed": 30,
+        "errors": 0,
+        "fetched": 32,
+        "not_modified": 0,
+        "requests": 53,
+        "unchanged": 2,
+        "workers": 8
+      },
+      "discover_requests": 356,
+      "done": "2026-09-14T23:38:39+00:00",
+      "extract": {
+        "items": 65,
+        "pages": 30
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 30,
+        "cost_usd": 0.1701,
+        "input_tokens": 123506,
+        "output_tokens": 9310
+      },
+      "minutes": 3.3,
+      "municipalities": 19,
+      "name": "東京都",
+      "pages": 30,
+      "subsidies": 63
+    },
+    "tottori": {
+      "crawl": {
+        "changed": 11,
+        "errors": 0,
+        "fetched": 13,
+        "not_modified": 0,
+        "requests": 19,
+        "unchanged": 2,
+        "workers": 8
+      },
+      "discover_requests": 109,
+      "done": "2026-09-15T00:19:24+00:00",
+      "extract": {
+        "pages": 11,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.0558,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 1.3,
+      "municipalities": 6,
+      "name": "鳥取県",
+      "pages": 11,
+      "subsidies": 19
+    },
+    "toyama": {
+      "crawl": {
+        "changed": 19,
+        "errors": 0,
+        "fetched": 21,
+        "not_modified": 0,
+        "requests": 27,
+        "unchanged": 2,
+        "workers": 8
+      },
+      "discover_requests": 83,
+      "done": "2026-09-14T23:45:30+00:00",
+      "extract": {
+        "items": 49,
+        "pages": 19
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 19,
+        "cost_usd": 0.1094,
+        "input_tokens": 71462,
+        "output_tokens": 7578
+      },
+      "minutes": 1.5,
+      "municipalities": 6,
+      "name": "富山県",
+      "pages": 18,
+      "subsidies": 33
+    },
+    "wakayama": {
+      "crawl": {
+        "changed": 30,
+        "errors": 0,
+        "fetched": 30,
+        "not_modified": 4,
+        "requests": 47,
+        "unchanged": 4,
+        "workers": 8
+      },
+      "discover_requests": 163,
+      "done": "2026-09-15T00:18:05+00:00",
+      "extract": {
+        "pages": 30,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.1523,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 1.8,
+      "municipalities": 13,
+      "name": "和歌山県",
+      "pages": 30,
+      "subsidies": 42
+    },
+    "yamagata": {
+      "crawl": {
+        "changed": 47,
+        "errors": 0,
+        "fetched": 51,
+        "not_modified": 3,
+        "requests": 77,
+        "unchanged": 7,
+        "workers": 8
+      },
+      "discover_requests": 197,
+      "done": "2026-09-14T23:14:19+00:00",
+      "extract": {
+        "items": 85,
+        "pages": 47
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 47,
+        "cost_usd": 0.2347,
+        "input_tokens": 163093,
+        "output_tokens": 14327
+      },
+      "minutes": 2.6,
+      "municipalities": 23,
+      "name": "山形県",
+      "pages": 47,
+      "subsidies": 80
+    },
+    "yamaguchi": {
+      "crawl": {
+        "changed": 23,
+        "errors": 2,
+        "fetched": 23,
+        "not_modified": 1,
+        "requests": 35,
+        "unchanged": 1,
+        "workers": 8
+      },
+      "discover_requests": 110,
+      "done": "2026-09-15T00:25:41+00:00",
+      "extract": {
+        "pages": 25,
+        "recovered": true
+      },
+      "llm": {
+        "cost_usd": 0.1269,
+        "note": "残高切れのあとで抽出し直したぶん（按分）"
+      },
+      "minutes": 1.2,
+      "municipalities": 9,
+      "name": "山口県",
+      "pages": 25,
+      "subsidies": 26
+    },
+    "yamanashi": {
+      "crawl": {
+        "changed": 23,
+        "errors": 0,
+        "fetched": 26,
+        "not_modified": 1,
+        "requests": 39,
+        "unchanged": 4,
+        "workers": 8
+      },
+      "discover_requests": 146,
+      "done": "2026-09-14T23:50:50+00:00",
+      "extract": {
+        "items": 34,
+        "pages": 23
+      },
+      "llm": {
+        "cached_calls": 0,
+        "calls": 23,
+        "cost_usd": 0.1149,
+        "input_tokens": 83419,
+        "output_tokens": 6302
+      },
+      "minutes": 2.0,
+      "municipalities": 12,
+      "name": "山梨県",
+      "pages": 23,
+      "subsidies": 29
     }
   },
-  "updated_at": "2026-09-14T20:16:30+00:00"
+  "recovery": {
+    "cost_usd": 3.4512,
+    "pages": 635,
+    "reason": "API の残高切れで 635 ページの抽出が失敗し、あとから抽出し直した"
+  },
+  "updated_at": "2026-09-15T00:50:17+00:00"
 }

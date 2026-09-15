@@ -56,7 +56,11 @@
       "prefecture": "宮崎県",
       "prefecture_slug": "miyazaki",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.city.miyakonojo.miyazaki.jp/soshiki/101/73059.html",
+        "https://www.city.miyakonojo.miyazaki.jp/soshiki/101/53500.html"
+      ]
     },
     {
       "alternatives": [
@@ -85,7 +89,12 @@
       "prefecture": "宮崎県",
       "prefecture_slug": "miyazaki",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.nobeoka.miyazaki.jp/soshiki/98/46788.html",
+        "https://www.city.nobeoka.miyazaki.jp/site/miryoku/48275.html",
+        "https://www.city.nobeoka.miyazaki.jp/soshiki/98/1896.html"
+      ]
     },
     {
       "alternatives": [],
@@ -133,7 +142,11 @@
       "prefecture": "宮崎県",
       "prefecture_slug": "miyazaki",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.kobayashi.lg.jp/kurashi_tetsuzuki/sumai/3740.html",
+        "https://www.city.kobayashi.lg.jp/kurashi_tetsuzuki/sumai/3742.html"
+      ]
     },
     {
       "alternatives": [
@@ -168,7 +181,12 @@
       "prefecture": "宮崎県",
       "prefecture_slug": "miyazaki",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.hyugacity.jp/display.php?cont=240527131708",
+        "https://www.hyugacity.jp/display.php?cont=161017114834",
+        "https://www.hyugacity.jp/display.php?cont=230704164206"
+      ]
     },
     {
       "alternatives": [],
@@ -216,7 +234,10 @@
       "prefecture": "宮崎県",
       "prefecture_slug": "miyazaki",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.saito.lg.jp/kurashi/ijuteiju/post_1270.html"
+      ]
     },
     {
       "alternatives": [
@@ -241,7 +262,11 @@
       "prefecture": "宮崎県",
       "prefecture_slug": "miyazaki",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.ebino.lg.jp/soshiki/kikaku/3/1/591.html",
+        "https://www.city.ebino.lg.jp/life_scene/sumai_hikkoshi/2898.html"
+      ]
     },
     {
       "alternatives": [],
@@ -416,7 +441,12 @@
       "prefecture": "宮崎県",
       "prefecture_slug": "miyazaki",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.vill.nishimera.lg.jp/village/a-00-villagelife/10001115",
+        "https://www.vill.nishimera.lg.jp/village/a-00-villagelife/10001093",
+        "https://www.vill.nishimera.lg.jp/village/a-00-villagelife/10000887"
+      ]
     },
     {
       "alternatives": [],
@@ -525,7 +555,10 @@
       "prefecture": "宮崎県",
       "prefecture_slug": "miyazaki",
       "proposed_action": "承認",
-      "reason": "JavaScript 描画のため静的 HTML に物件が無い。リンクのみ"
+      "reason": "JavaScript 描画のため静的 HTML に物件が無い。リンクのみ",
+      "subsidy_urls": [
+        "https://www.town.kadogawa.lg.jp/live/akiya/page003582.html"
+      ]
     },
     {
       "alternatives": [

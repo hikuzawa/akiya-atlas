@@ -1,0 +1,30 @@
+{
+  "ci": false,
+  "command": "crawl",
+  "errors": [
+    "https://www.town.nagomi.lg.jp/iju/hojyokin/akiyahojyokin/kiji00377/: HTTP 404",
+    "https://www.vill.sagara.lg.jp/q/aview/201/333.html: HTTP 404"
+  ],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-15T00:39:14Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "crawl": {
+      "changed": 44,
+      "errors": 2,
+      "fetched": 49,
+      "not_modified": 0,
+      "requests": 77,
+      "unchanged": 5,
+      "workers": 8
+    }
+  },
+  "started_at": "2026-09-15T00:38:42Z"
+}

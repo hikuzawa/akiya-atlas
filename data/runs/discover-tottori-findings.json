@@ -76,7 +76,11 @@
       "prefecture": "鳥取県",
       "prefecture_slug": "tottori",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.city.kurayoshi.lg.jp/6146.htm",
+        "https://www.city.kurayoshi.lg.jp/6143.htm"
+      ]
     },
     {
       "alternatives": [],
@@ -221,7 +225,10 @@
       "prefecture": "鳥取県",
       "prefecture_slug": "tottori",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.town.misasa.tottori.jp/315/319/2054/2018/1325/24840.html"
+      ]
     },
     {
       "alternatives": [],
@@ -297,7 +304,13 @@
       "prefecture": "鳥取県",
       "prefecture_slug": "tottori",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.e-hokuei.net/soshiki/10/1580.html",
+        "https://www.e-hokuei.net/soshiki/9/1737.html",
+        "https://www.e-hokuei.net/soshiki/9/1742.html",
+        "https://www.e-hokuei.net/soshiki/9/1738.html"
+      ]
     },
     {
       "alternatives": [],
@@ -349,7 +362,11 @@
       "prefecture": "鳥取県",
       "prefecture_slug": "tottori",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.daisen.jp/10/2/9/a141/",
+        "https://www.daisen.jp/10/2/9/c142/"
+      ]
     },
     {
       "alternatives": [],
@@ -372,7 +389,10 @@
       "prefecture": "鳥取県",
       "prefecture_slug": "tottori",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.town.nanbu.tottori.jp/admin/mirai/permanent/01/"
+      ]
     },
     {
       "alternatives": [],
@@ -420,7 +440,10 @@
       "prefecture": "鳥取県",
       "prefecture_slug": "tottori",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.town.nichinan.lg.jp/soshikikarasagasu/kensetsuka/sumai_kenchiku/16732.html"
+      ]
     },
     {
       "alternatives": [],

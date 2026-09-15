@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kochi.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kochi.kochi.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.kochi.kochi.jp/soshiki/103/mokukatsu.html
     kind: subsidy
@@ -51,7 +51,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.muroto.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.muroto.kochi.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: kochi-392031
   name: 安芸市空き家バンク
   operator: 安芸市
@@ -71,7 +71,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.aki.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.aki.kochi.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.aki.kochi.jp/iju/reside/list.php
     kind: listing_index
@@ -99,7 +99,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nankoku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nankoku.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.nankoku.lg.jp/life/life_dtl.php?hdnKey=10096
     kind: listing_index
@@ -132,7 +132,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tosa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tosa.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: kochi-392065
   name: 須崎市空き家バンク
   operator: 須崎市
@@ -153,7 +153,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.susaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.susaki.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.susaki.lg.jp/life/detail.php?hdnKey=5642
     kind: subsidy
@@ -186,7 +186,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sukumo.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.sukumo.kochi.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: kochi-392090
   name: 土佐清水市空き家バンク
   operator: 土佐清水市
@@ -207,7 +207,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tosashimizu.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.tosashimizu.kochi.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: kochi-392103
   name: 四万十市空き家バンク
   operator: 四万十市
@@ -228,7 +228,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.shimanto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.shimanto.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: kochi-392111
   name: 香南市空き家バンク
   operator: 香南市
@@ -249,7 +249,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.konan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.konan.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: kochi-392120
   name: 香美市空き家バンク
   operator: 香美市
@@ -269,7 +269,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kami.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.kami.lg.jp/site/akiya/akiya.html
     kind: listing_index
@@ -302,7 +302,7 @@ sources:
   operator_evidence:
     quote: 高知県 県内市町村に掲載された公式サイト（www.town.toyo.kochi.jp）
     url: https://www.pref.kochi.lg.jp/link/kennai_shichoson.html
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: kochi-393029
   name: 奈半利町空き家バンク
   operator: 奈半利町
@@ -323,8 +323,10 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nahari.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nahari.kochi.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
+  - url: https://www.town.nahari.kochi.jp/life/dtl.php?hdnKey=1705
+    kind: subsidy
   - url: https://www.town.nahari.kochi.jp/iju/dtl.php?hdnKey=1698
     kind: subsidy
   allow_hosts:
@@ -349,7 +351,7 @@ sources:
   operator_evidence:
     quote: 高知県 県内市町村に掲載された公式サイト（tanocho.jp）
     url: https://www.pref.kochi.lg.jp/link/kennai_shichoson.html
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://tanocho.jp/life/akiya.php
     kind: listing_index
@@ -384,7 +386,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yasuda.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yasuda.kochi.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: kochi-393053
   name: 北川村空き家バンク
   operator: 北川村
@@ -405,7 +407,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.kitagawamura.jp）から空き家バンクとして案内されているリンク
     url: https://www.kitagawamura.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: kochi-393061
   name: 馬路村空き家バンク
   operator: 馬路村
@@ -426,7 +428,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン vill.umaji.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://vill.umaji.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://vill.umaji.lg.jp/emigration/1252/
     kind: subsidy
@@ -452,7 +454,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.geisei.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.geisei.kochi.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.vill.geisei.kochi.jp/pages/m001580.php
     kind: listing_index
@@ -484,7 +486,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.motoyama.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.motoyama.kochi.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.motoyama.kochi.jp/kurashi_tetsuzuki/iju_teiju/613.html
     kind: listing_index
@@ -514,7 +516,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.otoyo.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.otoyo.kochi.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.otoyo.kochi.jp/iju/akiya_dtl.php?id=207
     kind: listing_detail
@@ -541,7 +543,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tosa.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.tosa.kochi.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.tosa.kochi.jp/life/detail.php?hdnKey=229
     kind: subsidy
@@ -574,7 +576,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.okawa.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.okawa.kochi.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: kochi-393860
   name: いの町空き家バンク
   operator: いの町
@@ -595,7 +597,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ino.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ino.kochi.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.ino.kochi.jp/kurashi/kankyo_kankyo/12088/
     kind: subsidy
@@ -628,7 +630,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.niyodogawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.niyodogawa.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: kochi-394017
   name: 中土佐町空き家バンク
   operator: 中土佐町
@@ -648,7 +650,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nakatosa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.nakatosa.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.nakatosa.lg.jp/life/detail.php?hdnKey=1667
     kind: listing_index
@@ -676,7 +678,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.sakawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.sakawa.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.sakawa.lg.jp/life/dtl.php?hdnKey=1336
     kind: listing_index
@@ -706,7 +708,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ochi.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ochi.kochi.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.ochi.kochi.jp/ijyu/house
     kind: listing_index
@@ -733,7 +735,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yusuhara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.yusuhara.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: kochi-394106
   name: 日高村空き家バンク
   operator: 日高村
@@ -754,7 +756,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.hidaka.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.hidaka.kochi.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: kochi-394114
   name: 津野町空き家バンク
   operator: 津野町
@@ -775,7 +777,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tsuno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.tsuno.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
 - id: kochi-394122
   name: 四万十町空き家バンク
   operator: 四万十町
@@ -795,7 +797,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shimanto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.shimanto.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.shimanto.lg.jp/life/detail.php?hdnKey=10395
     kind: listing_index
@@ -829,7 +831,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.otsuki.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.otsuki.kochi.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.otsuki.kochi.jp/iju/info/akiya.php
     kind: listing_index
@@ -856,7 +858,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.mihara.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.mihara.kochi.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.vill.mihara.kochi.jp/life/detail.php?hdnKey=446
     kind: subsidy
@@ -883,7 +885,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kuroshio.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kuroshio.lg.jp/
-    checked_on: '2026-09-14'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.kuroshio.lg.jp/pb/cont/509
     kind: subsidy

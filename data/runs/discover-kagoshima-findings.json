@@ -52,7 +52,11 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.kanoya.lg.jp/bouhan/kurashi/tochi/sonota/kaitaitekkyo.html",
+        "https://www.city.kanoya.lg.jp/bouhan/atotirikatsuyouhojokin.html"
+      ]
     },
     {
       "alternatives": [
@@ -81,7 +85,12 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.city.makurazaki.lg.jp/site/ijyu/11314.html",
+        "https://www.city.makurazaki.lg.jp/site/ijyu/15647.html",
+        "https://www.city.makurazaki.lg.jp/site/ijyu/15653.html"
+      ]
     },
     {
       "alternatives": [
@@ -110,7 +119,13 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.city.akune.lg.jp/kurashi_tetsuzuki/2/5917.html",
+        "https://www.city.akune.lg.jp/kurashi_tetsuzuki/2/3195.html",
+        "https://www.city.akune.lg.jp/kurashi_tetsuzuki/2/5047.html",
+        "https://www.city.akune.lg.jp/kurashi_tetsuzuki/2/6337.html"
+      ]
     },
     {
       "alternatives": [
@@ -144,7 +159,13 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.city.kagoshima-izumi.lg.jp/page/page_013366.html",
+        "https://www.city.kagoshima-izumi.lg.jp/page/page_06573.html",
+        "https://www.city.kagoshima-izumi.lg.jp/page/page_20115.html",
+        "https://www.city.kagoshima-izumi.lg.jp/kurashi/tochi/juutakueco/index.html"
+      ]
     },
     {
       "alternatives": [
@@ -217,7 +238,13 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.city.tarumizu.lg.jp/chiiki/kurashi/sangyo/akiya/hojokin.html",
+        "https://www.city.tarumizu.lg.jp/chiiki/kurashi/sangyo/akiya/chintai.html",
+        "https://www.city.tarumizu.lg.jp/chiiki/kurashi/sangyo/akiya/jyutaku_syutoku.html",
+        "https://www.city.tarumizu.lg.jp/chiiki/kurashi/sangyo/iju/iju_shugyo.html"
+      ]
     },
     {
       "alternatives": [
@@ -268,7 +295,13 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.hioki.kagoshima.jp/teiju/ijuteju/akiya/diyreform.html",
+        "https://www.city.hioki.kagoshima.jp/kenchiku/kurashi/tetsuzuki/sumai/taishin/shindan.html",
+        "https://www.city.hioki.kagoshima.jp/teiju/ijuteju/shien/akiya.html",
+        "https://www.city.hioki.kagoshima.jp/teiju/ijuteju/shien/sinnijyuuhojokinn.html"
+      ]
     },
     {
       "alternatives": [
@@ -295,7 +328,10 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.soo.kagoshima.jp/kurashi/kurashisumai/zyuutakuhozyo/index.html"
+      ]
     },
     {
       "alternatives": [
@@ -322,7 +358,10 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city-kirishima.jp/shido/machizukuri/kenchiku/taishin/sukehosedo.html"
+      ]
     },
     {
       "alternatives": [
@@ -450,7 +489,11 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "http://www.city.ichikikushikino.lg.jp/kankyo1/kurashi/seikatsu/hojo/kojihojokin.html",
+        "http://www.city.ichikikushikino.lg.jp/tokei3/kurashi/machizukuri/jutaku.html"
+      ]
     },
     {
       "alternatives": [],
@@ -473,7 +516,10 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.minamisatsuma.lg.jp/living/sumai-tochi/jutaku-hojokin/"
+      ]
     },
     {
       "alternatives": [
@@ -502,7 +548,12 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.shibushi.lg.jp/site/iju/25497.html",
+        "https://www.city.shibushi.lg.jp/site/iju/1283.html",
+        "https://www.city.shibushi.lg.jp/site/iju/25521.html"
+      ]
     },
     {
       "alternatives": [
@@ -527,7 +578,10 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.amami.lg.jp/pjsenryaku/ui-turn/documents/kounyu_reformjosei.html"
+      ]
     },
     {
       "alternatives": [],
@@ -550,7 +604,11 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.minamikyushu.lg.jp/ijuteijusite/otokuniijusuru/2/2624.html",
+        "https://www.city.minamikyushu.lg.jp/ijuteijusite/otokuniijusuru/3849.html"
+      ]
     },
     {
       "alternatives": [],
@@ -611,7 +669,13 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "JavaScript 描画のため静的 HTML に物件が無い。リンクのみ"
+      "reason": "JavaScript 描画のため静的 HTML に物件が無い。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.aira.lg.jp/kenchiku/kurashi/sumai/kenchiku/akiyakaitaihojo.html",
+        "https://www.city.aira.lg.jp/kenchiku/kurashi/sumai/jutaku/taishinhojo.html",
+        "https://www.city.aira.lg.jp/kenchiku/kurashi/sumai/kenchiku/burokkubeijokyaku.html",
+        "https://www.city.aira.lg.jp/bosai/saigaikyuuzyo-tekkyo.html"
+      ]
     },
     {
       "alternatives": [],
@@ -682,7 +746,12 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.satsuma-net.jp/soshiki/yakuba/1013/1_1/ijuteiju_site/ijushien/jutaku/5320.html",
+        "https://www.satsuma-net.jp/teiju/ijushien/2/133.html",
+        "https://www.satsuma-net.jp/soshiki/yakuba/1013/1_1/hontai_site/sumai/josei/6324.html"
+      ]
     },
     {
       "alternatives": [],
@@ -705,7 +774,13 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.town.nagashima.lg.jp/topinfo_chisei/%e7%a9%ba%e3%81%8d%e5%ae%b6%e6%94%b9%e4%bf%ae%e8%b2%bb/",
+        "https://www.town.nagashima.lg.jp/wp-content/uploads/2025/09/空き家改修費補助金交付要綱.rtf",
+        "https://www.town.nagashima.lg.jp/wp-content/uploads/2025/09/様式第１号-長島町空き家改修費補助金交付申請書.rtf",
+        "https://www.town.nagashima.lg.jp/wp-content/uploads/2025/09/様式第５号-長島町空き家改修費補助金変更等承認申請書.rtf"
+      ]
     },
     {
       "alternatives": [],
@@ -728,7 +803,11 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.town.yusui.kagoshima.jp/soshiki/34/768.html",
+        "https://www.town.yusui.kagoshima.jp/soshiki/34/7952.html"
+      ]
     },
     {
       "alternatives": [
@@ -784,7 +863,12 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.higashikushira.com/docs/2024061300013/",
+        "https://www.higashikushira.com/docs/2025010700014/",
+        "https://www.higashikushira.com/docs/2018061300012/"
+      ]
     },
     {
       "alternatives": [
@@ -810,7 +894,11 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.town.kinko.lg.jp/seisaku-h/kurashi/tochi/shisaku/kaitainitsuite.html",
+        "https://www.town.kinko.lg.jp/seisaku-h/kurashi/tochi/shisaku/jutakushutoku.html"
+      ]
     },
     {
       "alternatives": [
@@ -835,7 +923,10 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.town.minamiosumi.lg.jp/kikaku/iju.html"
+      ]
     },
     {
       "alternatives": [],
@@ -904,7 +995,10 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "http://www.town.minamitane.kagoshima.jp/industry/etc/ijyuteijyusokushinhojyo.html"
+      ]
     },
     {
       "alternatives": [
@@ -954,7 +1048,10 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.vill.yamato.lg.jp/hpkanri/kurashi/iju/index.html"
+      ]
     },
     {
       "alternatives": [],
@@ -1003,7 +1100,10 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.town.setouchi.lg.jp/cho/kurashi/sumai/rokyuukikenakiya.html"
+      ]
     },
     {
       "alternatives": [
@@ -1102,7 +1202,10 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.town.amagi.lg.jp/docs/946.html"
+      ]
     },
     {
       "alternatives": [
@@ -1129,7 +1232,11 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.town.isen.kagoshima.jp/kensetu/r6/akyakaisyu.html",
+        "https://www.town.isen.kagoshima.jp/mirai/r7/izyuuteizyuu.html"
+      ]
     },
     {
       "alternatives": [
@@ -1205,7 +1312,10 @@
       "prefecture": "鹿児島県",
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.yoron.jp/kiji0039193/index.html"
+      ]
     }
   ]
 }

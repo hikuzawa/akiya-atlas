@@ -1,0 +1,72 @@
+{
+  "ci": false,
+  "command": "extract",
+  "errors": [],
+  "extraction_metrics": {
+    "fields": {
+      "amount_text": {
+        "not_found": 28,
+        "notes": {
+          "quote_joined": 12,
+          "quote_not_in_source": 17
+        },
+        "parsed": 40,
+        "quote_not_in_source": 17,
+        "total": 85,
+        "unparsed": 0
+      },
+      "period_end": {
+        "not_found": 49,
+        "notes": {
+          "no_date": 11,
+          "quote_joined": 1,
+          "quote_not_in_source": 3
+        },
+        "parsed": 22,
+        "quote_not_in_source": 3,
+        "total": 85,
+        "unparsed": 11
+      },
+      "year_text": {
+        "not_found": 52,
+        "notes": {
+          "quote_not_in_source": 1
+        },
+        "parsed": 32,
+        "quote_not_in_source": 1,
+        "total": 85,
+        "unparsed": 0
+      }
+    },
+    "flags": {
+      "summary_truncated": 3,
+      "summary_verbatim_overlap": 1
+    },
+    "items": 85,
+    "pages": 47,
+    "summary_replaced": 1,
+    "truncated_pages": 0
+  },
+  "finished_at": "2026-09-14T23:14:19Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 47,
+    "input_tokens": 163093,
+    "output_tokens": 14327
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "extract": {
+      "items": 85,
+      "pages": 47
+    },
+    "ingest": {
+      "created": 80,
+      "skipped": 0,
+      "unchanged": 0,
+      "updated": 5
+    }
+  },
+  "started_at": "2026-09-14T23:13:41Z"
+}

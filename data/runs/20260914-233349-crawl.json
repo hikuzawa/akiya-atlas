@@ -1,0 +1,30 @@
+{
+  "ci": false,
+  "command": "crawl",
+  "errors": [
+    "https://www.city.ichikawa.lg.jp/blog/%e2%89%aa%e5%b8%82%e5%b7%9d%e5%b8%82%e2%89%ab%e3%81%82%e3%82%93%e3%81%97%e3%82%93%e4%bd%8f%e5%ae%85%e5%8a%a9%e6%88%90%e4%ba%8b%e6%a5%ad%e3%83%bb%e4%bd%8f%e5%ae%85%e6%96%ad%e7%86%b1%e6%94%b9%e4%bf%ae-2/: HTTP 404",
+    "https://www.town.mutsuzawa.chiba.jp/akiya/page/2: HTTP 404"
+  ],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-14T23:34:38Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "crawl": {
+      "changed": 74,
+      "errors": 2,
+      "fetched": 85,
+      "not_modified": 1,
+      "requests": 124,
+      "unchanged": 12,
+      "workers": 8
+    }
+  },
+  "started_at": "2026-09-14T23:33:49Z"
+}

@@ -1,0 +1,30 @@
+{
+  "ci": false,
+  "command": "crawl",
+  "errors": [
+    "https://www.town.yoshika.lg.jp/kurashi/josei/saiseikanou/y_solar.html: HTTP 404",
+    "https://www.town.yoshika.lg.jp/kurashi/josei/saiseikanou/y_wbiomass.html: HTTP 404"
+  ],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-15T00:21:11Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "crawl": {
+      "changed": 28,
+      "errors": 2,
+      "fetched": 32,
+      "not_modified": 0,
+      "requests": 45,
+      "unchanged": 4,
+      "workers": 8
+    }
+  },
+  "started_at": "2026-09-15T00:20:29Z"
+}

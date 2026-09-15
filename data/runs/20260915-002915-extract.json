@@ -1,0 +1,41 @@
+{
+  "ci": false,
+  "command": "extract",
+  "errors": [
+    "https://www.city.yawatahama.ehime.jp/doc/2022040100135/: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4HB3mxgCB5afeQByEXn'}",
+    "https://www.city.yawatahama.ehime.jp/doc/2022072100011/: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4HB5arPeGRwB8hbVcwB'}",
+    "https://www.city.yawatahama.ehime.jp/doc/2022072100035/: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4HB7hMRCJhxoWNTgM2Y'}",
+    "https://www.city.saijo.ehime.jp/soshiki/ijyusuishin/iju-kaisyushien.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4HB3qBV8rgMA8FKQfeM'}",
+    "https://www.city.seiyo.ehime.jp/kakuka/kensetsu/kensetsu/sumai/393.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4HB3nx58SEkG42nr7PG'}",
+    "https://www.city.seiyo.ehime.jp/kakuka/shobo_honbu/osirase/18037.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4HB5eKZYwnZ7V33B7iS'}",
+    "https://www.kumakogen.jp/soshiki/8/1709.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4HB3rfppduMSFJ7xcQC'}",
+    "https://www.kumakogen.jp/soshiki/8/9034.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4HB5fKGGawuZYEnfSR6'}",
+    "https://www.town.masaki.ehime.jp/soshiki/11/taisin.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4HB3pgtDjpYwWJk8bpn'}",
+    "https://www.town.masaki.ehime.jp/soshiki/11/zyokyaku.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4HB5KivF6VqqeUuEY8U'}",
+    "https://www.town.uchiko.ehime.jp/soshiki/8/sinnchikujyuutakuhojyo.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4HB3oT7ihEWRrXnNEZN'}",
+    "https://www.town.uchiko.ehime.jp/soshiki/9/26kaisyu.html: API エラー 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4HB5aMreTomVDxm6Mk1'}"
+  ],
+  "extraction_metrics": {
+    "fields": {},
+    "flags": {},
+    "items": 0,
+    "pages": 0,
+    "summary_replaced": 0,
+    "truncated_pages": 0
+  },
+  "finished_at": "2026-09-15T00:29:25Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "extract": {
+      "llm_errors": 12
+    }
+  },
+  "started_at": "2026-09-15T00:29:15Z"
+}

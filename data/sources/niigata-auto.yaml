@@ -5,7 +5,7 @@ sources:
   operator: 新潟市
   operator_kind: municipality
   official_url: https://www.city.niigata.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '151009'
     name: 新潟市
@@ -20,7 +20,15 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.niigata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.niigata.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.niigata.lg.jp/kurashi/kankyo/datutanso/shien/saiene2026.html
+    kind: subsidy
+  - url: https://www.city.niigata.lg.jp/kurashi/jyutaku/kenchiku/kenchikuhojo/index.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.niigata.lg.jp
+  max_pages: 30
 - id: niigata-152021
   name: 長岡市空き家バンク
   operator: 長岡市
@@ -40,7 +48,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nagaoka.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.nagaoka.niigata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.nagaoka.niigata.jp/akiya/
     kind: listing_index
@@ -48,6 +56,8 @@ sources:
     - pattern: ^https?://www\.city\.nagaoka\.niigata\.jp/akiya/tochio/to\d+\.html$
       kind: listing_detail
       max_links: 60
+  - url: https://www.city.nagaoka.niigata.jp/kurashi/life03/vacant-register.html
+    kind: subsidy
   allow_hosts:
   - www.city.nagaoka.niigata.jp
   max_pages: 30
@@ -56,7 +66,7 @@ sources:
   operator: 三条市
   operator_kind: municipality
   official_url: https://www.city.sanjo.niigata.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '152048'
     name: 三条市
@@ -71,13 +81,25 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sanjo.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.sanjo.niigata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.sanjo.niigata.jp/soshiki/shimimbu/chiikikeieika/chukathu/1022.html
+    kind: subsidy
+  - url: https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/akiyaakichi/15199.html
+    kind: subsidy
+  - url: https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/akiyaakichi/18216.html
+    kind: subsidy
+  - url: https://www.city.sanjo.niigata.jp/soshiki/shimimbu/chiikikeieika/community/1096.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.sanjo.niigata.jp
+  max_pages: 30
 - id: niigata-152056
   name: 柏崎市空き家バンク
   operator: 柏崎市
   operator_kind: municipality
   official_url: https://www.city.kashiwazaki.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '152056'
     name: 柏崎市
@@ -92,7 +114,19 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kashiwazaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kashiwazaki.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.kashiwazaki.lg.jp/kurashi_tetsuzuki/hojo/sumai_seikatsu/41577.html
+    kind: subsidy
+  - url: https://www.city.kashiwazaki.lg.jp/kurashi_tetsuzuki/hojo/sumai_seikatsu/41584.html
+    kind: subsidy
+  - url: https://www.city.kashiwazaki.lg.jp/kurashi_tetsuzuki/hojo/sumai_seikatsu/41652.html
+    kind: subsidy
+  - url: https://www.city.kashiwazaki.lg.jp/kurashi_tetsuzuki/hojo/sumai_seikatsu/41609.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.kashiwazaki.lg.jp
+  max_pages: 30
 - id: niigata-152064
   name: 新発田市空き家バンク
   operator: 新発田市
@@ -113,13 +147,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.shibata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.shibata.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: niigata-152081
   name: 小千谷市空き家バンク
   operator: 小千谷市
   operator_kind: municipality
   official_url: https://www.city.ojiya.niigata.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '152081'
     name: 小千谷市
@@ -134,7 +168,19 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ojiya.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ojiya.niigata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.ojiya.niigata.jp/site/iju/kazaisyobun.html
+    kind: subsidy
+  - url: https://www.city.ojiya.niigata.jp/site/iju/akiya-reform.html
+    kind: subsidy
+  - url: https://www.city.ojiya.niigata.jp/soshiki/kensetsu/teiju-sokusin.html
+    kind: subsidy
+  - url: https://www.city.ojiya.niigata.jp/soshiki/kensetsu/main-jyutakuhojyo.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.ojiya.niigata.jp
+  max_pages: 30
   external_links:
   - label: at home 全国版空き家・空き地バンク
     url: https://www.akiya-athome.jp/buy/15/?gyosei_cd%5B%5D=15208&proc_search=
@@ -158,7 +204,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kamo.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kamo.niigata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: niigata-152102
   name: 十日町市空き家バンク
   operator: 十日町市
@@ -178,7 +224,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tokamachi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tokamachi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.tokamachi.lg.jp/cgi-bin/recruit.php/1/list
     kind: listing_index
@@ -190,7 +236,7 @@ sources:
   operator: 見附市
   operator_kind: municipality
   official_url: https://www.city.mitsuke.niigata.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '152111'
     name: 見附市
@@ -205,7 +251,19 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.mitsuke.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.mitsuke.niigata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.mitsuke.niigata.jp/soshiki/20/1053.html
+    kind: subsidy
+  - url: https://www.city.mitsuke.niigata.jp/life/1/9/53/
+    kind: subsidy
+  - url: https://www.city.mitsuke.niigata.jp/life/5/34/192/
+    kind: subsidy
+  - url: https://www.city.mitsuke.niigata.jp/soshiki/20/1132.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.mitsuke.niigata.jp
+  max_pages: 30
 - id: niigata-152129
   name: 村上市空き家バンク
   operator: 村上市
@@ -225,10 +283,16 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.murakami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.murakami.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.murakami.lg.jp/site/akiya-bank/m-akiya-bank-bukken.html
     kind: listing_index
+  - url: https://www.city.murakami.lg.jp/site/akiya-bank/akiya-kaisyuhihojo.html
+    kind: subsidy
+  - url: https://www.city.murakami.lg.jp/site/eco/solar-r08.html
+    kind: subsidy
+  - url: https://www.city.murakami.lg.jp/soshiki/12/akiyakaitaihojyokin.html
+    kind: subsidy
   allow_hosts:
   - www.city.murakami.lg.jp
   max_pages: 30
@@ -251,10 +315,14 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tsubame.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.tsubame.niigata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.tsubame.niigata.jp/cgi-bin/recruit.php/3/list?page_no=1
     kind: listing_index
+  - url: https://www.city.tsubame.niigata.jp/soshiki/toshi_seibi/3/1/53/8812.html
+    kind: subsidy
+  - url: https://www.city.tsubame.niigata.jp/life/6/4/8675.html
+    kind: subsidy
   allow_hosts:
   - www.city.tsubame.niigata.jp
   max_pages: 30
@@ -263,7 +331,7 @@ sources:
   operator: 糸魚川市
   operator_kind: municipality
   official_url: https://www.city.itoigawa.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '152161'
     name: 糸魚川市
@@ -278,7 +346,17 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.itoigawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.itoigawa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.itoigawa.lg.jp/page/1544.html
+    kind: subsidy
+  - url: https://www.city.itoigawa.lg.jp/page/12739.html
+    kind: subsidy
+  - url: https://www.city.itoigawa.lg.jp/page/1538.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.itoigawa.lg.jp
+  max_pages: 30
 - id: niigata-152170
   name: 妙高市空き家バンク
   operator: 妙高市
@@ -298,10 +376,12 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.myoko.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.myoko.niigata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.myoko.niigata.jp/myoko-life/house/
     kind: listing_index
+  - url: https://www.city.myoko.niigata.jp/docs/67814.html
+    kind: subsidy
   allow_hosts:
   - www.city.myoko.niigata.jp
   max_pages: 30
@@ -310,7 +390,7 @@ sources:
   operator: 五泉市
   operator_kind: municipality
   official_url: https://www.city.gosen.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '152188'
     name: 五泉市
@@ -325,7 +405,15 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.gosen.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.gosen.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.gosen.lg.jp/event_recruitment/10814.html
+    kind: subsidy
+  - url: https://www.city.gosen.lg.jp/life_procedures/2/2/2796.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.gosen.lg.jp
+  max_pages: 30
 - id: niigata-152226
   name: 上越市空き家バンク
   operator: 上越市
@@ -346,7 +434,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.joetsu.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.joetsu.niigata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: niigata-152234
   name: 阿賀野市空き家バンク
   operator: 阿賀野市
@@ -367,7 +455,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.agano.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.agano.niigata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: niigata-152242
   name: 佐渡市空き家バンク
   operator: 佐渡市
@@ -388,7 +476,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sado.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.sado.niigata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: niigata-152251
   name: 魚沼市空き家バンク
   operator: 魚沼市
@@ -409,13 +497,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.uonuma.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.uonuma.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: niigata-152269
   name: 南魚沼市空き家バンク
   operator: 南魚沼市
   operator_kind: municipality
   official_url: https://www.city.minamiuonuma.niigata.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '152269'
     name: 南魚沼市
@@ -430,13 +518,19 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.minamiuonuma.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.minamiuonuma.niigata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.minamiuonuma.niigata.jp/ijyuteijyu/docs/39601.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.minamiuonuma.niigata.jp
+  max_pages: 30
 - id: niigata-152277
   name: 胎内市空き家バンク
   operator: 胎内市
   operator_kind: municipality
   official_url: https://www.city.tainai.niigata.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '152277'
     name: 胎内市
@@ -451,7 +545,13 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tainai.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.tainai.niigata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.tainai.niigata.jp/kurashi/sekatsu/akiya/kaitai.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.tainai.niigata.jp
+  max_pages: 30
   external_links:
   - label: アットホーム(外部サイト)
     url: https://tainai-c15227.akiya-athome.jp/
@@ -475,7 +575,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.seiro.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.seiro.niigata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: niigata-153427
   name: 弥彦村空き家バンク
   operator: 弥彦村
@@ -495,19 +595,24 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.vill.yahiko.niigata.jp）から空き家バンクとして案内されているリンク
     url: https://www.vill.yahiko.niigata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://akiya.vill.yahiko.niigata.jp/
     kind: listing_index
+  - url: https://akiya.vill.yahiko.niigata.jp/support/
+    kind: subsidy
+  - url: https://www.vill.yahiko.niigata.jp/news/detail.html?content=1411
+    kind: subsidy
   allow_hosts:
   - akiya.vill.yahiko.niigata.jp
+  - www.vill.yahiko.niigata.jp
   max_pages: 30
 - id: niigata-153613
   name: 田上町空き家バンク
   operator: 田上町
   operator_kind: municipality
   official_url: https://www.town.tagami.niigata.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '153613'
     name: 田上町
@@ -522,13 +627,19 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tagami.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.tagami.niigata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.tagami.niigata.jp/docs/8298.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.tagami.niigata.jp
+  max_pages: 30
 - id: niigata-153851
   name: 阿賀町空き家バンク
   operator: 阿賀町
   operator_kind: municipality
   official_url: https://www.town.aga.niigata.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '153851'
     name: 阿賀町
@@ -543,13 +654,21 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.aga.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.aga.niigata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.aga.niigata.jp/lifeseane/hikkoshi_sumai/777.html
+    kind: subsidy
+  - url: https://www.town.aga.niigata.jp/kurashi_tetsuzuki/jutaku_doro/643.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.aga.niigata.jp
+  max_pages: 30
 - id: niigata-154059
   name: 出雲崎町空き家バンク
   operator: 出雲崎町
   operator_kind: municipality
   official_url: https://www.town.izumozaki.niigata.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '154059'
     name: 出雲崎町
@@ -564,7 +683,19 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.izumozaki.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.izumozaki.niigata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: http://www.town.izumozaki.niigata.jp/kurashi/sumai/super-reform.html
+    kind: subsidy
+  - url: http://www.town.izumozaki.niigata.jp/kurashi/sumai/jyutaku-reform.html
+    kind: subsidy
+  - url: http://www.town.izumozaki.niigata.jp/kurashi/sumai/taisin-sindan.html
+    kind: subsidy
+  - url: http://www.town.izumozaki.niigata.jp/kurashi/sumai/taisin-kaishu.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.izumozaki.niigata.jp
+  max_pages: 30
 - id: niigata-154610
   name: 湯沢町空き家バンク
   operator: 湯沢町
@@ -585,7 +716,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yuzawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.yuzawa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: niigata-154822
   name: 津南町空き家バンク
   operator: 津南町
@@ -606,7 +737,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tsunan.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.tsunan.niigata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: niigata-155047
   name: 刈羽村空き家バンク
   operator: 刈羽村
@@ -627,7 +758,7 @@ sources:
   operator_evidence:
     quote: 新潟県 リンク集：県内市町村に掲載された公式サイト（www.vill.kariwa.niigata.jp）。サイトを取得できなかったためリンクのみ（robots.txt により拒否）
     url: https://www.pref.niigata.lg.jp/site/link/link-sichoson.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: niigata-155811
   name: 関川村空き家バンク
   operator: 関川村
@@ -647,10 +778,18 @@ sources:
   operator_evidence:
     quote: 新潟県 リンク集：県内市町村に掲載された公式サイト（www.vill.sekikawa.niigata.jp）
     url: https://www.pref.niigata.lg.jp/site/link/link-sichoson.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: http://www.vill.sekikawa.niigata.jp/life/13/696/index.html
     kind: listing_index
+  - url: http://www.vill.sekikawa.niigata.jp/life/13/1328/index.html
+    kind: subsidy
+  - url: http://www.vill.sekikawa.niigata.jp/life/13/269/index.html
+    kind: subsidy
+  - url: http://www.vill.sekikawa.niigata.jp/life/13/bb3953ab80a8/index.html
+    kind: subsidy
+  - url: http://www.vill.sekikawa.niigata.jp/life/3289/3290/124fb460eefa/index.html
+    kind: subsidy
   allow_hosts:
   - www.vill.sekikawa.niigata.jp
   max_pages: 30
@@ -674,4 +813,4 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.awashimaura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.awashimaura.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'

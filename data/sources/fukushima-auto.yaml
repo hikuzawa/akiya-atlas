@@ -14,18 +14,19 @@ sources:
     slug: '072010'
     bank_url: https://www.city.fukushima.fukushima.jp/kurashi/sumai/2/index.html
     bank_status: info
+    extract_pending: false
     map_query: 福島県福島市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.fukushima.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.fukushima.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukushima-072028
   name: 会津若松市空き家バンク
   operator: 会津若松市
   operator_kind: municipality
   official_url: https://www.city.aizuwakamatsu.fukushima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 072028
     name: 会津若松市
@@ -34,18 +35,27 @@ sources:
     slug: 072028
     bank_url: https://www.city.aizuwakamatsu.fukushima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県会津若松市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.aizuwakamatsu.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.aizuwakamatsu.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.aizuwakamatsu.fukushima.jp/docs/2018061500016/
+    kind: subsidy
+  - url: https://www.city.aizuwakamatsu.fukushima.jp/docs/2023031600016/
+    kind: subsidy
+  allow_hosts:
+  - www.city.aizuwakamatsu.fukushima.jp
+  max_pages: 30
 - id: fukushima-072036
   name: 郡山市空き家バンク
   operator: 郡山市
   operator_kind: municipality
   official_url: https://www.city.koriyama.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '072036'
     name: 郡山市
@@ -54,12 +64,25 @@ sources:
     slug: '072036'
     bank_url: https://www.city.koriyama.lg.jp/life/1/10/51/
     bank_status: info
+    extract_pending: false
     map_query: 福島県郡山市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.koriyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.koriyama.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.koriyama.lg.jp/soshiki/128/188771.html
+    kind: subsidy
+  - url: https://www.city.koriyama.lg.jp/soshiki/128/187451.html
+    kind: subsidy
+  - url: https://www.city.koriyama.lg.jp/soshiki/128/185279.html
+    kind: subsidy
+  - url: https://www.city.koriyama.lg.jp/soshiki/128/185265.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.koriyama.lg.jp
+  max_pages: 30
 - id: fukushima-072044
   name: いわき市空き家バンク
   operator: いわき市
@@ -74,12 +97,13 @@ sources:
     slug: '072044'
     bank_url: https://www.city.iwaki.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県いわき市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.iwaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.iwaki.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukushima-072052
   name: 白河市空き家バンク
   operator: 白河市
@@ -94,11 +118,12 @@ sources:
     slug: '072052'
     bank_url: https://www.city.shirakawa.fukushima.jp/page/page005272.html
     bank_status: available
+    extract_pending: false
     map_query: 福島県白河市
   operator_evidence:
     quote: 公式ドメイン www.city.shirakawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.shirakawa.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.shirakawa.fukushima.jp/page/page005272.html
     kind: listing_index
@@ -110,7 +135,7 @@ sources:
   operator: 須賀川市
   operator_kind: municipality
   official_url: https://www.city.sukagawa.fukushima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 072079
     name: 須賀川市
@@ -119,18 +144,27 @@ sources:
     slug: 072079
     bank_url: https://www.city.sukagawa.fukushima.jp/kurashi/hikkoshi_sumai/1002444/index.html
     bank_status: info
+    extract_pending: false
     map_query: 福島県須賀川市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.sukagawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.sukagawa.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.sukagawa.fukushima.jp/kurashi/hikkoshi_sumai/1002444/1016860.html
+    kind: subsidy
+  - url: https://www.city.sukagawa.fukushima.jp/kurashi/hikkoshi_sumai/1002444/1018683.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.sukagawa.fukushima.jp
+  max_pages: 30
 - id: fukushima-072087
   name: 喜多方市空き家バンク
   operator: 喜多方市
   operator_kind: municipality
   official_url: https://www.city.kitakata.fukushima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 072087
     name: 喜多方市
@@ -139,12 +173,21 @@ sources:
     slug: 072087
     bank_url: https://www.city.kitakata.fukushima.jp/soshiki/toshiseibi/2339.html
     bank_status: info
+    extract_pending: false
     map_query: 福島県喜多方市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.kitakata.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kitakata.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.kitakata.fukushima.jp/soshiki/toshiseibi/16510.html
+    kind: subsidy
+  - url: https://www.city.kitakata.fukushima.jp/site/iju-info/20333.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.kitakata.fukushima.jp
+  max_pages: 30
 - id: fukushima-072095
   name: 相馬市空き家バンク
   operator: 相馬市
@@ -159,12 +202,13 @@ sources:
     slug: 072095
     bank_url: https://www.city.soma.fukushima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県相馬市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.soma.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.soma.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukushima-072109
   name: 二本松市空き家バンク
   operator: 二本松市
@@ -179,14 +223,23 @@ sources:
     slug: 072109
     bank_url: https://www.city.nihonmatsu.lg.jp/ijyu_teijyu/kurasu/page000100.html
     bank_status: available
+    extract_pending: false
     map_query: 福島県二本松市
   operator_evidence:
     quote: 公式ドメイン www.city.nihonmatsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nihonmatsu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.nihonmatsu.lg.jp/ijyu_teijyu/kurasu/page000100.html
     kind: listing_index
+  - url: https://www.city.nihonmatsu.lg.jp/ijyu_teijyu/kurasu/page011942.html
+    kind: subsidy
+  - url: https://www.city.nihonmatsu.lg.jp/ijyu_teijyu/kurasu/page007221.html
+    kind: subsidy
+  - url: https://www.city.nihonmatsu.lg.jp/ijyu_teijyu/kurasu/page001080.html
+    kind: subsidy
+  - url: https://www.city.nihonmatsu.lg.jp/kurashi_tetsuduki/jyutaku_kouen/page008267.html
+    kind: subsidy
   allow_hosts:
   - www.city.nihonmatsu.lg.jp
   max_pages: 30
@@ -198,7 +251,7 @@ sources:
   operator: 田村市
   operator_kind: municipality
   official_url: https://www.city.tamura.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '072117'
     name: 田村市
@@ -207,12 +260,19 @@ sources:
     slug: '072117'
     bank_url: https://www.city.tamura.lg.jp/soshiki/1/akiyaakichi.html
     bank_status: info
+    extract_pending: false
     map_query: 福島県田村市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.tamura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tamura.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.tamura.lg.jp/soshiki/1/shinenergy_1_1.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.tamura.lg.jp
+  max_pages: 30
   external_links:
   - label: 空き家・空き地登録物件一覧 (全国版アットホーム空き家バンクへリンクします)
     url: https://tamura-c07211.akiya-athome.jp/
@@ -230,11 +290,12 @@ sources:
     slug: '072125'
     bank_url: https://www.minamisoma-akiya.org/
     bank_status: available
+    extract_pending: false
     map_query: 福島県南相馬市
   operator_evidence:
     quote: 公式サイト（www.city.minamisoma.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.minamisoma.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.minamisoma-akiya.org/
     kind: listing_index
@@ -246,7 +307,7 @@ sources:
   operator: 伊達市
   operator_kind: municipality
   official_url: https://www.city.fukushima-date.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '072133'
     name: 伊達市
@@ -255,18 +316,29 @@ sources:
     slug: '072133'
     bank_url: https://www.city.fukushima-date.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県伊達市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.city.fukushima-date.lg.jp）
     url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.fukushima-date.lg.jp/site/iju/35971.html
+    kind: subsidy
+  - url: https://www.city.fukushima-date.lg.jp/site/iju/35727.html
+    kind: subsidy
+  - url: https://www.city.fukushima-date.lg.jp/site/iju/75114.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.fukushima-date.lg.jp
+  max_pages: 30
 - id: fukushima-072141
   name: 本宮市空き家バンク
   operator: 本宮市
   operator_kind: municipality
   official_url: https://www.city.motomiya.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '072141'
     name: 本宮市
@@ -275,12 +347,25 @@ sources:
     slug: '072141'
     bank_url: https://www.city.motomiya.lg.jp/site/akiyapo-taru/tiikirennkei.html
     bank_status: info
+    extract_pending: false
     map_query: 福島県本宮市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.motomiya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.motomiya.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.motomiya.lg.jp/life/1/6/27/
+    kind: subsidy
+  - url: https://www.city.motomiya.lg.jp/site/akiyapo-taru/akiyakaisyu.html
+    kind: subsidy
+  - url: https://www.city.motomiya.lg.jp/soshiki/50/heikaisyu.html
+    kind: subsidy
+  - url: https://www.city.motomiya.lg.jp/soshiki/10/taiyoukouhojo.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.motomiya.lg.jp
+  max_pages: 30
 - id: fukushima-073016
   name: 桑折町空き家バンク
   operator: 桑折町
@@ -295,18 +380,19 @@ sources:
     slug: '073016'
     bank_url: https://www.town.koori.fukushima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県桑折町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.koori.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.koori.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukushima-073032
   name: 国見町空き家バンク
   operator: 国見町
   operator_kind: municipality
   official_url: https://www.town.kunimi.fukushima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '073032'
     name: 国見町
@@ -315,12 +401,23 @@ sources:
     slug: '073032'
     bank_url: https://www.town.kunimi.fukushima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県国見町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.kunimi.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kunimi.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.kunimi.fukushima.jp/soshiki/2/16213.html
+    kind: subsidy
+  - url: https://www.town.kunimi.fukushima.jp/soshiki/2/16189.html
+    kind: subsidy
+  - url: https://www.town.kunimi.fukushima.jp/soshiki/2/18671.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.kunimi.fukushima.jp
+  max_pages: 30
 - id: fukushima-073083
   name: 川俣町空き家バンク
   operator: 川俣町
@@ -335,14 +432,17 @@ sources:
     slug: 073083
     bank_url: https://www.town.kawamata.lg.jp/site/kurashi-tetsuzuki/akiyatoubanktourokubukken.html
     bank_status: available
+    extract_pending: false
     map_query: 福島県川俣町
   operator_evidence:
     quote: 公式ドメイン www.town.kawamata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kawamata.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.kawamata.lg.jp/site/kurashi-tetsuzuki/akiyatoubanktourokubukken.html
     kind: listing_index
+  - url: https://www.town.kawamata.lg.jp/site/kurashi-tetsuzuki/akiyataisakusogoshienzigyo.html
+    kind: subsidy
   allow_hosts:
   - www.town.kawamata.lg.jp
   max_pages: 30
@@ -360,14 +460,19 @@ sources:
     slug: 073229
     bank_url: https://www.vill.otama.fukushima.jp/kurashi/teijyuusien/akiya_information/akiyabukkenn/
     bank_status: available
+    extract_pending: false
     map_query: 福島県大玉村
   operator_evidence:
     quote: 公式ドメイン www.vill.otama.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.otama.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.vill.otama.fukushima.jp/kurashi/teijyuusien/akiya_information/akiyabukkenn/
     kind: listing_index
+  - url: https://www.vill.otama.fukushima.jp/kurashi/teijyuusien/jyuutakusyutoku/
+    kind: subsidy
+  - url: https://www.vill.otama.fukushima.jp/kurashi/teijyuusien/akiya_hojyo/
+    kind: subsidy
   allow_hosts:
   - www.vill.otama.fukushima.jp
   max_pages: 30
@@ -385,18 +490,19 @@ sources:
     slug: '073423'
     bank_url: https://www.town.kagamiishi.fukushima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県鏡石町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.kagamiishi.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kagamiishi.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukushima-073440
   name: 天栄村空き家バンク
   operator: 天栄村
   operator_kind: municipality
   official_url: https://www.vill.tenei.fukushima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '073440'
     name: 天栄村
@@ -405,18 +511,29 @@ sources:
     slug: '073440'
     bank_url: https://www.vill.tenei.fukushima.jp/site/iju/list22-74.html
     bank_status: info
+    extract_pending: false
     map_query: 福島県天栄村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.tenei.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.tenei.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.vill.tenei.fukushima.jp/site/iju/iju-akiyabank2019.html
+    kind: subsidy
+  - url: https://www.vill.tenei.fukushima.jp/site/iju/iju-suppor1.html
+    kind: subsidy
+  - url: https://www.vill.tenei.fukushima.jp/site/iju/ijukiboushakoutuuhi.html
+    kind: subsidy
+  allow_hosts:
+  - www.vill.tenei.fukushima.jp
+  max_pages: 30
 - id: fukushima-073628
   name: 下郷町空き家バンク
   operator: 下郷町
   operator_kind: municipality
   official_url: https://www.town.shimogo.fukushima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 073628
     name: 下郷町
@@ -425,12 +542,23 @@ sources:
     slug: 073628
     bank_url: https://www.town.shimogo.fukushima.jp/life/sumai/1153.html
     bank_status: info
+    extract_pending: false
     map_query: 福島県下郷町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.shimogo.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.shimogo.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.shimogo.fukushima.jp/life/sumai/387.html
+    kind: subsidy
+  - url: https://www.town.shimogo.fukushima.jp/life/sumai/1319.html
+    kind: subsidy
+  - url: https://www.town.shimogo.fukushima.jp/lifescene/hikkoshi_sumai/1318.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.shimogo.fukushima.jp
+  max_pages: 30
 - id: fukushima-073644
   name: 檜枝岐村空き家バンク
   operator: 檜枝岐村
@@ -445,12 +573,13 @@ sources:
     slug: '073644'
     bank_url: https://www.vill.hinoemata.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県檜枝岐村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.hinoemata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.hinoemata.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukushima-073679
   name: 只見町空き家バンク
   operator: 只見町
@@ -465,14 +594,17 @@ sources:
     slug: 073679
     bank_url: https://www.town.tadami.lg.jp/akiyabank/index.html
     bank_status: available
+    extract_pending: false
     map_query: 福島県只見町
   operator_evidence:
     quote: 公式ドメイン www.town.tadami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.tadami.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.tadami.lg.jp/akiyabank/index.html
     kind: listing_index
+  - url: https://www.town.tadami.lg.jp/abouttown/ui-jyutaku.html
+    kind: subsidy
   allow_hosts:
   - www.town.tadami.lg.jp
   max_pages: 30
@@ -599,14 +731,17 @@ sources:
     slug: 073687
     bank_url: https://www.town.minamiaizu.lg.jp/cgi-bin/recruit.php/1/list
     bank_status: available
+    extract_pending: false
     map_query: 福島県南会津町
   operator_evidence:
     quote: 公式ドメイン www.town.minamiaizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.minamiaizu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.minamiaizu.lg.jp/cgi-bin/recruit.php/1/list
     kind: listing_index
+  - url: https://www.town.minamiaizu.lg.jp/official/soshikikarasagasu/sogoseisakuka/iju/3038.html
+    kind: subsidy
   allow_hosts:
   - www.town.minamiaizu.lg.jp
   max_pages: 30
@@ -624,14 +759,23 @@ sources:
     slug: '074021'
     bank_url: https://www.vill.kitashiobara.fukushima.jp/site/iju/1412.html
     bank_status: available
+    extract_pending: false
     map_query: 福島県北塩原村
   operator_evidence:
     quote: 公式ドメイン www.vill.kitashiobara.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.kitashiobara.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.vill.kitashiobara.fukushima.jp/site/iju/1412.html
     kind: listing_index
+  - url: https://www.vill.kitashiobara.fukushima.jp/soshiki/kensetsu/5461.html
+    kind: subsidy
+  - url: https://www.vill.kitashiobara.fukushima.jp/soshiki/kensetsu/5472.html
+    kind: subsidy
+  - url: https://www.vill.kitashiobara.fukushima.jp/soshiki/kensetsu/5480.html
+    kind: subsidy
+  - url: https://www.vill.kitashiobara.fukushima.jp/site/iju/1120.html
+    kind: subsidy
   allow_hosts:
   - www.vill.kitashiobara.fukushima.jp
   max_pages: 30
@@ -643,7 +787,7 @@ sources:
   operator: 西会津町
   operator_kind: municipality
   official_url: https://www.town.nishiaizu.fukushima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '074055'
     name: 西会津町
@@ -652,18 +796,25 @@ sources:
     slug: '074055'
     bank_url: https://www.town.nishiaizu.fukushima.jp/site/iju/5211.html
     bank_status: info
+    extract_pending: false
     map_query: 福島県西会津町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.nishiaizu.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nishiaizu.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.nishiaizu.fukushima.jp/site/iju/3442.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.nishiaizu.fukushima.jp
+  max_pages: 30
 - id: fukushima-074071
   name: 磐梯町空き家バンク
   operator: 磐梯町
   operator_kind: municipality
   official_url: https://www.town.bandai.fukushima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '074071'
     name: 磐梯町
@@ -672,12 +823,21 @@ sources:
     slug: '074071'
     bank_url: https://www.town.bandai.fukushima.jp/site/kurashi-kankyo/2020akiyabanku.html
     bank_status: info
+    extract_pending: false
     map_query: 福島県磐梯町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.bandai.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.bandai.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.bandai.fukushima.jp/site/kurashi-kankyo/akiya_taisaku_hojokin.html
+    kind: subsidy
+  - url: https://www.town.bandai.fukushima.jp/site/kurashi-kankyo/jyu-takuhojyokin.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.bandai.fukushima.jp
+  max_pages: 30
 - id: fukushima-074080
   name: 猪苗代町空き家バンク
   operator: 猪苗代町
@@ -692,12 +852,13 @@ sources:
     slug: 074080
     bank_url: https://www.town.inawashiro.fukushima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県猪苗代町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.inawashiro.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.inawashiro.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukushima-074217
   name: 会津坂下町空き家バンク
   operator: 会津坂下町
@@ -712,14 +873,21 @@ sources:
     slug: '074217'
     bank_url: https://www.town.aizubange.fukushima.jp/site/akiya-bank/
     bank_status: available
+    extract_pending: false
     map_query: 福島県会津坂下町
   operator_evidence:
     quote: 公式ドメイン www.town.aizubange.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.aizubange.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.aizubange.fukushima.jp/site/akiya-bank/
     kind: listing_index
+  - url: https://www.town.aizubange.fukushima.jp/soshiki/2/13535.html
+    kind: subsidy
+  - url: https://www.town.aizubange.fukushima.jp/soshiki/2/15872.html
+    kind: subsidy
+  - url: https://www.town.aizubange.fukushima.jp/soshiki/28/18883.html
+    kind: subsidy
   allow_hosts:
   - www.town.aizubange.fukushima.jp
   max_pages: 30
@@ -733,7 +901,7 @@ sources:
   operator: 湯川村
   operator_kind: municipality
   official_url: https://www.vill.yugawa.fukushima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '074225'
     name: 湯川村
@@ -742,12 +910,19 @@ sources:
     slug: '074225'
     bank_url: https://www.vill.yugawa.fukushima.jp/site/bank/
     bank_status: info
+    extract_pending: false
     map_query: 福島県湯川村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.yugawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.yugawa.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.vill.yugawa.fukushima.jp/soshiki/sangyo-kensetsu/akiyaakichibannkutourokusuisinnzigyouhozyokinn.html
+    kind: subsidy
+  allow_hosts:
+  - www.vill.yugawa.fukushima.jp
+  max_pages: 30
   external_links:
   - label: 空き家・空き地バンク
     url: https://yugawa-v07422.akiya-athome.jp/
@@ -767,14 +942,19 @@ sources:
     slug: '074233'
     bank_url: https://www.town.yanaizu.fukushima.jp/docs/2016032200019/
     bank_status: available
+    extract_pending: false
     map_query: 福島県柳津町
   operator_evidence:
     quote: 公式ドメイン www.town.yanaizu.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yanaizu.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.yanaizu.fukushima.jp/docs/2016032200019/
     kind: listing_index
+  - url: https://www.town.yanaizu.fukushima.jp/docs/2017091800028/
+    kind: subsidy
+  - url: https://www.town.yanaizu.fukushima.jp/docs/2025041000015/
+    kind: subsidy
   allow_hosts:
   - www.town.yanaizu.fukushima.jp
   max_pages: 30
@@ -788,7 +968,7 @@ sources:
   operator: 三島町
   operator_kind: municipality
   official_url: https://www.town.mishima.fukushima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '074446'
     name: 三島町
@@ -797,12 +977,21 @@ sources:
     slug: '074446'
     bank_url: https://www.town.mishima.fukushima.jp/site/ijyu/57.html
     bank_status: info
+    extract_pending: false
     map_query: 福島県三島町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.mishima.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.mishima.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.mishima.fukushima.jp/site/ijyu/3021.html
+    kind: subsidy
+  - url: https://www.town.mishima.fukushima.jp/site/ijyu/4049.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.mishima.fukushima.jp
+  max_pages: 30
   external_links:
   - label: 現在募集中の物件はこちら
     url: https://www.homes.co.jp/akiyabank/fukushima/onuma_mishima/
@@ -820,14 +1009,19 @@ sources:
     slug: '074454'
     bank_url: https://www.town.kaneyama.fukushima.jp/site/akiyajyoho/akiya-2.html
     bank_status: available
+    extract_pending: false
     map_query: 福島県金山町
   operator_evidence:
     quote: 公式ドメイン www.town.kaneyama.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kaneyama.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.kaneyama.fukushima.jp/site/akiyajyoho/akiya-2.html
     kind: listing_index
+  - url: https://www.town.kaneyama.fukushima.jp/site/akiyajyoho/izyuu.html
+    kind: subsidy
+  - url: https://www.town.kaneyama.fukushima.jp/soshiki/33/taisinsindan.html
+    kind: subsidy
   allow_hosts:
   - www.town.kaneyama.fukushima.jp
   max_pages: 30
@@ -850,12 +1044,13 @@ sources:
     slug: '074462'
     bank_url: https://www.vill.showa.fukushima.jp/procedure/152/
     bank_status: info
+    extract_pending: false
     map_query: 福島県昭和村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.showa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.showa.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   external_links:
   - label: ●現在募集中の物件はこちら(外部サイト)
     url: https://showa-v07446.akiya-athome.jp/
@@ -873,12 +1068,13 @@ sources:
     slug: '074471'
     bank_url: https://www.town.aizumisato.fukushima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県会津美里町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.aizumisato.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.aizumisato.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukushima-074616
   name: 西郷村空き家バンク
   operator: 西郷村
@@ -893,12 +1089,13 @@ sources:
     slug: '074616'
     bank_url: https://www.vill.nishigo.fukushima.jp/kurashi_tetsuzuki/sumai/5267.html
     bank_status: info
+    extract_pending: false
     map_query: 福島県西郷村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.nishigo.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.nishigo.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukushima-074641
   name: 泉崎村空き家バンク
   operator: 泉崎村
@@ -913,14 +1110,19 @@ sources:
     slug: '074641'
     bank_url: https://www.vill.izumizaki.fukushima.jp/kurashi-tetsuduki/kenchiku-jutaku/page002028.html
     bank_status: available
+    extract_pending: false
     map_query: 福島県泉崎村
   operator_evidence:
     quote: 公式ドメイン www.vill.izumizaki.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.izumizaki.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.vill.izumizaki.fukushima.jp/kurashi-tetsuduki/kenchiku-jutaku/page002028.html
     kind: listing_index
+  - url: https://www.vill.izumizaki.fukushima.jp/kurashi-tetsuduki/news/page002025.html
+    kind: subsidy
+  - url: https://www.vill.izumizaki.fukushima.jp/kurashi-tetsuduki/news/page002026.html
+    kind: subsidy
   allow_hosts:
   - www.vill.izumizaki.fukushima.jp
   max_pages: 30
@@ -938,18 +1140,19 @@ sources:
     slug: 074659
     bank_url: https://www.vill-nakajima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県中島村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.vill-nakajima.jp）
     url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukushima-074667
   name: 矢吹町空き家バンク
   operator: 矢吹町
   operator_kind: municipality
   official_url: https://www.town.yabuki.fukushima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '074667'
     name: 矢吹町
@@ -958,18 +1161,27 @@ sources:
     slug: '074667'
     bank_url: https://www.town.yabuki.fukushima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県矢吹町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.yabuki.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yabuki.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.yabuki.fukushima.jp/page/page000589.html
+    kind: subsidy
+  - url: https://www.town.yabuki.fukushima.jp/page/page000588.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.yabuki.fukushima.jp
+  max_pages: 30
 - id: fukushima-074811
   name: 棚倉町空き家バンク
   operator: 棚倉町
   operator_kind: municipality
   official_url: https://www.town.tanagura.fukushima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 074811
     name: 棚倉町
@@ -978,12 +1190,19 @@ sources:
     slug: 074811
     bank_url: https://www.town.tanagura.fukushima.jp/jumin/sumai-kankyo-eisei/akiyataisaku/
     bank_status: info
+    extract_pending: false
     map_query: 福島県棚倉町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.tanagura.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.tanagura.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.tanagura.fukushima.jp/jumin/sumai-kankyo-eisei/akiyataisaku/page001646.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.tanagura.fukushima.jp
+  max_pages: 30
 - id: fukushima-074829
   name: 矢祭町空き家バンク
   operator: 矢祭町
@@ -998,14 +1217,23 @@ sources:
     slug: 074829
     bank_url: https://www.town.yamatsuri.fukushima.jp/page/page000628.html
     bank_status: available
+    extract_pending: false
     map_query: 福島県矢祭町
   operator_evidence:
     quote: 公式ドメイン www.town.yamatsuri.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yamatsuri.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.yamatsuri.fukushima.jp/page/page000628.html
     kind: listing_index
+  - url: https://www.town.yamatsuri.fukushima.jp/page/page001135.html
+    kind: subsidy
+  - url: https://www.town.yamatsuri.fukushima.jp/page/page000953.html
+    kind: subsidy
+  - url: https://www.town.yamatsuri.fukushima.jp/page/page000613.html
+    kind: subsidy
+  - url: https://www.town.yamatsuri.fukushima.jp/page/page000612.html
+    kind: subsidy
   allow_hosts:
   - www.town.yamatsuri.fukushima.jp
   max_pages: 30
@@ -1014,7 +1242,7 @@ sources:
   operator: 塙町
   operator_kind: municipality
   official_url: https://www.town.hanawa.fukushima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 074837
     name: 塙町
@@ -1023,12 +1251,21 @@ sources:
     slug: 074837
     bank_url: https://www.town.hanawa.fukushima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県塙町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.hanawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.hanawa.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.hanawa.fukushima.jp/page/page002540.html
+    kind: subsidy
+  - url: https://www.town.hanawa.fukushima.jp/page/page000979.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.hanawa.fukushima.jp
+  max_pages: 30
 - id: fukushima-074845
   name: 鮫川村空き家バンク
   operator: 鮫川村
@@ -1043,12 +1280,13 @@ sources:
     slug: 074845
     bank_url: https://www.vill.samegawa.fukushima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県鮫川村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.samegawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.samegawa.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukushima-075019
   name: 石川町空き家バンク
   operator: 石川町
@@ -1063,14 +1301,19 @@ sources:
     slug: 075019
     bank_url: https://www.town.ishikawa.fukushima.jp/akiya-bank/index.html
     bank_status: available
+    extract_pending: false
     map_query: 福島県石川町
   operator_evidence:
     quote: 公式ドメイン www.town.ishikawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ishikawa.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.ishikawa.fukushima.jp/akiya-bank/index.html
     kind: listing_index
+  - url: https://www.town.ishikawa.fukushima.jp/admin/city/01/18.html
+    kind: subsidy
+  - url: https://www.town.ishikawa.fukushima.jp/admin/project/03/ijyuteijyu.html
+    kind: subsidy
   allow_hosts:
   - www.town.ishikawa.fukushima.jp
   max_pages: 30
@@ -1088,14 +1331,23 @@ sources:
     slug: '075027'
     bank_url: https://www.vill.tamakawa.fukushima.jp/akiya/vacant-house-bank/
     bank_status: available
+    extract_pending: false
     map_query: 福島県玉川村
   operator_evidence:
     quote: 公式ドメイン www.vill.tamakawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.tamakawa.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.vill.tamakawa.fukushima.jp/akiya/vacant-house-bank/
     kind: listing_index
+  - url: https://www.vill.tamakawa.fukushima.jp/guide/plan/001638.html
+    kind: subsidy
+  - url: https://www.vill.tamakawa.fukushima.jp/guide/plan/000070.html
+    kind: subsidy
+  - url: https://www.vill.tamakawa.fukushima.jp/guide/project/002274.html
+    kind: subsidy
+  - url: https://www.vill.tamakawa.fukushima.jp/guide/region/003850.html
+    kind: subsidy
   allow_hosts:
   - www.vill.tamakawa.fukushima.jp
   max_pages: 30
@@ -1104,7 +1356,7 @@ sources:
   operator: 平田村
   operator_kind: municipality
   official_url: https://www.vill.hirata.fukushima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '075035'
     name: 平田村
@@ -1113,12 +1365,23 @@ sources:
     slug: '075035'
     bank_url: https://www.vill.hirata.fukushima.jp/life/1/4/20/
     bank_status: info
+    extract_pending: false
     map_query: 福島県平田村
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.hirata.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.hirata.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.vill.hirata.fukushima.jp/soshiki/1/53.html
+    kind: subsidy
+  - url: https://www.vill.hirata.fukushima.jp/soshiki/2/53.html
+    kind: subsidy
+  - url: https://www.vill.hirata.fukushima.jp/soshiki/2/106.html
+    kind: subsidy
+  allow_hosts:
+  - www.vill.hirata.fukushima.jp
+  max_pages: 30
 - id: fukushima-075043
   name: 浅川町空き家バンク
   operator: 浅川町
@@ -1133,18 +1396,19 @@ sources:
     slug: '075043'
     bank_url: https://www.town.asakawa.fukushima.jp/akiya/
     bank_status: info
+    extract_pending: false
     map_query: 福島県浅川町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.asakawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.asakawa.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukushima-075051
   name: 古殿町空き家バンク
   operator: 古殿町
   operator_kind: municipality
   official_url: https://www.town.furudono.fukushima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '075051'
     name: 古殿町
@@ -1153,12 +1417,19 @@ sources:
     slug: '075051'
     bank_url: https://www.town.furudono.fukushima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県古殿町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.furudono.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.furudono.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.furudono.fukushima.jp/kurashi/jyuutaku-tochi-koutu/tyousannzaisiyouhojy/319
+    kind: subsidy
+  allow_hosts:
+  - www.town.furudono.fukushima.jp
+  max_pages: 30
 - id: fukushima-075213
   name: 三春町空き家バンク
   operator: 三春町
@@ -1173,12 +1444,13 @@ sources:
     slug: '075213'
     bank_url: https://www.town.miharu.fukushima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県三春町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.miharu.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.miharu.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukushima-075221
   name: 小野町空き家バンク
   operator: 小野町
@@ -1193,18 +1465,19 @@ sources:
     slug: '075221'
     bank_url: https://www.town.ono.fukushima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県小野町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.ono.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ono.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukushima-075418
   name: 広野町空き家バンク
   operator: 広野町
   operator_kind: municipality
   official_url: https://www.town.hirono.fukushima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 075418
     name: 広野町
@@ -1213,18 +1486,25 @@ sources:
     slug: 075418
     bank_url: https://www.town.hirono.fukushima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県広野町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.hirono.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.hirono.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.hirono.fukushima.jp/kurashi/sumai/1001540/index.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.hirono.fukushima.jp
+  max_pages: 30
 - id: fukushima-075426
   name: 楢葉町空き家バンク
   operator: 楢葉町
   operator_kind: municipality
   official_url: https://www.town.naraha.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '075426'
     name: 楢葉町
@@ -1233,18 +1513,27 @@ sources:
     slug: '075426'
     bank_url: https://www.town.naraha.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県楢葉町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.naraha.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.naraha.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.naraha.lg.jp/life/cat322/008510.html
+    kind: subsidy
+  - url: https://www.town.naraha.lg.jp/life/cat322/008509.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.naraha.lg.jp
+  max_pages: 30
 - id: fukushima-075434
   name: 富岡町空き家バンク
   operator: 富岡町
   operator_kind: municipality
   official_url: https://www.tomioka-town.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '075434'
     name: 富岡町
@@ -1253,12 +1542,19 @@ sources:
     slug: '075434'
     bank_url: https://www.tomioka-town.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県富岡町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.tomioka-town.jp）
     url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.tomioka-town.jp/soshiki/kikaku/1332.html
+    kind: subsidy
+  allow_hosts:
+  - www.tomioka-town.jp
+  max_pages: 30
 - id: fukushima-075442
   name: 川内村空き家バンク
   operator: 川内村
@@ -1273,12 +1569,13 @@ sources:
     slug: '075442'
     bank_url: https://www.kawauchimura.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県川内村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.kawauchimura.jp）
     url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukushima-075451
   name: 大熊町空き家バンク
   operator: 大熊町
@@ -1293,18 +1590,19 @@ sources:
     slug: '075451'
     bank_url: https://www.town.okuma.fukushima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県大熊町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.okuma.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.okuma.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: fukushima-075469
   name: 双葉町空き家バンク
   operator: 双葉町
   operator_kind: municipality
   official_url: https://www.town.fukushima-futaba.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 075469
     name: 双葉町
@@ -1313,12 +1611,19 @@ sources:
     slug: 075469
     bank_url: https://www.town.fukushima-futaba.lg.jp/10084.htm
     bank_status: spa_unsupported
+    extract_pending: false
     map_query: 福島県双葉町
     bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
     quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.town.fukushima-futaba.lg.jp）
     url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.fukushima-futaba.lg.jp/10274.htm
+    kind: subsidy
+  allow_hosts:
+  - www.town.fukushima-futaba.lg.jp
+  max_pages: 30
 - id: fukushima-075477
   name: 浪江町空き家バンク
   operator: 浪江町
@@ -1333,14 +1638,21 @@ sources:
     slug: '075477'
     bank_url: https://www.town.namie.fukushima.jp/soshiki/23/25795.html
     bank_status: available
+    extract_pending: false
     map_query: 福島県浪江町
   operator_evidence:
     quote: 公式ドメイン www.town.namie.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.namie.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.namie.fukushima.jp/soshiki/23/25795.html
     kind: listing_index
+  - url: https://www.town.namie.fukushima.jp/soshiki/23/38833.html
+    kind: subsidy
+  - url: https://www.town.namie.fukushima.jp/soshiki/20/33719.html
+    kind: subsidy
+  - url: https://www.town.namie.fukushima.jp/soshiki/23/39232.html
+    kind: subsidy
   allow_hosts:
   - www.town.namie.fukushima.jp
   max_pages: 30
@@ -1349,7 +1661,7 @@ sources:
   operator: 葛尾村
   operator_kind: municipality
   official_url: https://www.katsurao.org/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 075485
     name: 葛尾村
@@ -1358,18 +1670,27 @@ sources:
     slug: 075485
     bank_url: https://www.katsurao.org/
     bank_status: none
+    extract_pending: false
     map_query: 福島県葛尾村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.katsurao.org）
     url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.katsurao.org/soshiki/21/reiwa8saiene.html
+    kind: subsidy
+  - url: https://www.katsurao.org/soshiki/1/kikaku-jutakusyutoku.html
+    kind: subsidy
+  allow_hosts:
+  - www.katsurao.org
+  max_pages: 30
 - id: fukushima-075612
   name: 新地町空き家バンク
   operator: 新地町
   operator_kind: municipality
   official_url: https://www.shinchi-town.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '075612'
     name: 新地町
@@ -1378,18 +1699,25 @@ sources:
     slug: '075612'
     bank_url: https://www.shinchi-town.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県新地町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.shinchi-town.jp）
     url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.shinchi-town.jp/soshiki/2/taiyoukou20260501.html
+    kind: subsidy
+  allow_hosts:
+  - www.shinchi-town.jp
+  max_pages: 30
 - id: fukushima-075647
   name: 飯舘村空き家バンク
   operator: 飯舘村
   operator_kind: municipality
   official_url: https://www.vill.iitate.fukushima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '075647'
     name: 飯舘村
@@ -1398,9 +1726,16 @@ sources:
     slug: '075647'
     bank_url: https://www.vill.iitate.fukushima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 福島県飯舘村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.iitate.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.iitate.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.vill.iitate.fukushima.jp/site/iju/3782.html
+    kind: subsidy
+  allow_hosts:
+  - www.vill.iitate.fukushima.jp
+  max_pages: 30

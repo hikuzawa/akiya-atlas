@@ -5,7 +5,7 @@ sources:
   operator: 広島市
   operator_kind: municipality
   official_url: https://www.city.hiroshima.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '341002'
     name: 広島市
@@ -14,18 +14,25 @@ sources:
     slug: '341002'
     bank_url: https://www.city.hiroshima.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 広島県広島市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.hiroshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hiroshima.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.hiroshima.lg.jp/living/sumai/1021346/index.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.hiroshima.lg.jp
+  max_pages: 30
 - id: hiroshima-342025
   name: 呉市空き家バンク
   operator: 呉市
   operator_kind: municipality
   official_url: https://www.city.kure.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '342025'
     name: 呉市
@@ -34,18 +41,25 @@ sources:
     slug: '342025'
     bank_url: https://www.city.kure.lg.jp/soshiki/46/akiyabankutopepezi.html
     bank_status: info
+    extract_pending: false
     map_query: 広島県呉市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.kure.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kure.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.kure.lg.jp/soshiki/46/index1.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.kure.lg.jp
+  max_pages: 30
 - id: hiroshima-342033
   name: 竹原市空き家バンク
   operator: 竹原市
   operator_kind: municipality
   official_url: https://www.city.takehara.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '342033'
     name: 竹原市
@@ -54,12 +68,23 @@ sources:
     slug: '342033'
     bank_url: https://www.city.takehara.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 広島県竹原市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.takehara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.takehara.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.takehara.lg.jp/aishihokorashi_takeharagurashi/support/7745.html
+    kind: subsidy
+  - url: https://www.city.takehara.lg.jp/aishihokorashi_takeharagurashi/support/7744.html
+    kind: subsidy
+  - url: https://www.city.takehara.lg.jp/soshikikarasagasu/toshiseibika/gyomuannai/2/1/1786.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.takehara.lg.jp
+  max_pages: 30
 - id: hiroshima-342041
   name: 三原市空き家バンク
   operator: 三原市
@@ -74,11 +99,12 @@ sources:
     slug: '342041'
     bank_url: https://www.city.mihara.hiroshima.jp/soshiki/21/akiyainfo.html
     bank_status: available
+    extract_pending: false
     map_query: 広島県三原市
   operator_evidence:
     quote: 公式ドメイン www.city.mihara.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.mihara.hiroshima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.city.mihara.hiroshima.jp/soshiki/21/akiyainfo.html
     kind: listing_index
@@ -90,7 +116,7 @@ sources:
   operator: 尾道市
   operator_kind: municipality
   official_url: https://www.city.onomichi.hiroshima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '342050'
     name: 尾道市
@@ -99,12 +125,25 @@ sources:
     slug: '342050'
     bank_url: https://www.city.onomichi.hiroshima.jp/life/1/49/212/
     bank_status: info
+    extract_pending: false
     map_query: 広島県尾道市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.onomichi.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.onomichi.hiroshima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.onomichi.hiroshima.jp/soshiki/33/24757.html
+    kind: subsidy
+  - url: https://www.city.onomichi.hiroshima.jp/soshiki/33/31884.html
+    kind: subsidy
+  - url: https://www.city.onomichi.hiroshima.jp/soshiki/33/24758.html
+    kind: subsidy
+  - url: https://www.city.onomichi.hiroshima.jp/soshiki/33/79848.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.onomichi.hiroshima.jp
+  max_pages: 30
 - id: hiroshima-342076
   name: 福山市空き家バンク
   operator: 福山市
@@ -119,12 +158,13 @@ sources:
     slug: '342076'
     bank_url: https://www.city.fukuyama.hiroshima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 広島県福山市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.fukuyama.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.fukuyama.hiroshima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: hiroshima-342084
   name: 府中市空き家バンク
   operator: 府中市
@@ -139,12 +179,13 @@ sources:
     slug: '342084'
     bank_url: https://www.city.fuchu.hiroshima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 広島県府中市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.fuchu.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.fuchu.hiroshima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: hiroshima-342092
   name: 三次市空き家バンク
   operator: 三次市
@@ -159,18 +200,19 @@ sources:
     slug: '342092'
     bank_url: https://www.city.miyoshi.hiroshima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 広島県三次市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.miyoshi.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.miyoshi.hiroshima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: hiroshima-342106
   name: 庄原市空き家バンク
   operator: 庄原市
   operator_kind: municipality
   official_url: https://www.city.shobara.hiroshima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '342106'
     name: 庄原市
@@ -179,12 +221,25 @@ sources:
     slug: '342106'
     bank_url: https://www.city.shobara.hiroshima.jp/main/life/settlement/cat02/index.html
     bank_status: info
+    extract_pending: false
     map_query: 広島県庄原市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.shobara.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.shobara.hiroshima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.shobara.hiroshima.jp/main/life/settlement/cat02/post_1422.html
+    kind: subsidy
+  - url: https://www.city.shobara.hiroshima.jp/main/life/settlement/post_2059.html
+    kind: subsidy
+  - url: https://www.city.shobara.hiroshima.jp/main/life/residence/post_1548.html
+    kind: subsidy
+  - url: https://www.city.shobara.hiroshima.jp/main/life/residence/post_379.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.shobara.hiroshima.jp
+  max_pages: 30
 - id: hiroshima-342114
   name: 大竹市空き家バンク
   operator: 大竹市
@@ -199,12 +254,13 @@ sources:
     slug: '342114'
     bank_url: https://www.city.otake.hiroshima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 広島県大竹市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.otake.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.otake.hiroshima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: hiroshima-342122
   name: 東広島市空き家バンク
   operator: 東広島市
@@ -219,18 +275,19 @@ sources:
     slug: '342122'
     bank_url: https://www.city.higashihiroshima.lg.jp/kurashi/sumai/6/22359.html
     bank_status: info
+    extract_pending: false
     map_query: 広島県東広島市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.higashihiroshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.higashihiroshima.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: hiroshima-342131
   name: 廿日市市空き家バンク
   operator: 廿日市市
   operator_kind: municipality
   official_url: https://www.city.hatsukaichi.hiroshima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '342131'
     name: 廿日市市
@@ -239,12 +296,25 @@ sources:
     slug: '342131'
     bank_url: https://www.city.hatsukaichi.hiroshima.jp/life/1/16/254/
     bank_status: info
+    extract_pending: false
     map_query: 広島県廿日市市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.hatsukaichi.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hatsukaichi.hiroshima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.hatsukaichi.hiroshima.jp/soshiki/53/45673.html
+    kind: subsidy
+  - url: https://www.city.hatsukaichi.hiroshima.jp/soshiki/53/23634.html
+    kind: subsidy
+  - url: https://www.city.hatsukaichi.hiroshima.jp/soshiki/53/124263.html
+    kind: subsidy
+  - url: https://www.city.hatsukaichi.hiroshima.jp/site/citypromotion/63597.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.hatsukaichi.hiroshima.jp
+  max_pages: 30
 - id: hiroshima-342149
   name: 安芸高田市空き家バンク
   operator: 安芸高田市
@@ -259,14 +329,23 @@ sources:
     slug: '342149'
     bank_url: https://www.akitakata.jp/ja/shisei/section/kikaku/main/
     bank_status: available
+    extract_pending: false
     map_query: 広島県安芸高田市
   operator_evidence:
     quote: 広島県 県内の市・町に掲載された公式サイト（www.akitakata.jp）
     url: https://www.pref.hiroshima.lg.jp/soshiki/19/1168589482341.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.akitakata.jp/ja/shisei/section/kikaku/main/
     kind: listing_index
+  - url: https://www.akitakata.jp/ja/shisei/section/kikaku/akiyakaisyu/
+    kind: subsidy
+  - url: https://www.akitakata.jp/ja/shisei/section/kikaku/syatakukaisyu/
+    kind: subsidy
+  - url: https://www.akitakata.jp/ja/shisei/section/kikaku/sintikuhojyo/
+    kind: subsidy
+  - url: https://www.akitakata.jp/ja/shisei/section/kikaku/yuuryou/
+    kind: subsidy
   allow_hosts:
   - www.akitakata.jp
   max_pages: 30
@@ -275,7 +354,7 @@ sources:
   operator: 江田島市
   operator_kind: municipality
   official_url: https://www.city.etajima.hiroshima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '342157'
     name: 江田島市
@@ -284,18 +363,29 @@ sources:
     slug: '342157'
     bank_url: https://www.city.etajima.hiroshima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 広島県江田島市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.etajima.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.etajima.hiroshima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.etajima.hiroshima.jp/cms/articles/show/8056
+    kind: subsidy
+  - url: https://www.city.etajima.hiroshima.jp/cms/articles/show/821
+    kind: subsidy
+  - url: https://www.city.etajima.hiroshima.jp/cms/articles/show/995
+    kind: subsidy
+  allow_hosts:
+  - www.city.etajima.hiroshima.jp
+  max_pages: 30
 - id: hiroshima-343021
   name: 府中町空き家バンク
   operator: 府中町
   operator_kind: municipality
   official_url: https://www.town.fuchu.hiroshima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '343021'
     name: 府中町
@@ -304,12 +394,25 @@ sources:
     slug: '343021'
     bank_url: https://www.town.fuchu.hiroshima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 広島県府中町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.fuchu.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.fuchu.hiroshima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.fuchu.hiroshima.jp/site/kosodate/8458.html
+    kind: subsidy
+  - url: https://www.town.fuchu.hiroshima.jp/site/kennchikuka/8352.html
+    kind: subsidy
+  - url: https://www.town.fuchu.hiroshima.jp/site/kennchikuka/8353.html
+    kind: subsidy
+  - url: https://www.town.fuchu.hiroshima.jp/site/kennchikuka/17208.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.fuchu.hiroshima.jp
+  max_pages: 30
 - id: hiroshima-343048
   name: 海田町空き家バンク
   operator: 海田町
@@ -324,12 +427,13 @@ sources:
     slug: '343048'
     bank_url: https://www.town.kaita.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 広島県海田町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.kaita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kaita.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: hiroshima-343072
   name: 熊野町空き家バンク
   operator: 熊野町
@@ -344,18 +448,19 @@ sources:
     slug: '343072'
     bank_url: https://www.town.kumano.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 広島県熊野町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.kumano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kumano.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: hiroshima-343099
   name: 坂町空き家バンク
   operator: 坂町
   operator_kind: municipality
   official_url: https://www.town.saka.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '343099'
     name: 坂町
@@ -364,18 +469,27 @@ sources:
     slug: '343099'
     bank_url: https://www.town.saka.lg.jp/2017/03/09/post-2/
     bank_status: info
+    extract_pending: false
     map_query: 広島県坂町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.saka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.saka.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.saka.lg.jp/category/%e3%81%8f%e3%82%89%e3%81%97%e3%83%bb%e6%89%8b%e7%b6%9a%e3%81%8d/%e4%bd%8f%e3%81%be%e3%81%84%e3%83%bb%e4%b8%8a%e4%b8%8b%e6%b0%b4%e9%81%93/%e4%bd%8f%e5%ae%85%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e8%a3%9c%e5%8a%a9%e5%88%b6%e5%ba%a6/
+    kind: subsidy
+  - url: https://www.town.saka.lg.jp/category/%e9%98%b2%e7%81%bd%e3%83%bb%e9%98%b2%e7%8a%af/%e9%98%b2%e7%8a%af%e3%83%bb%e4%ba%a4%e9%80%9a%e5%ae%89%e5%85%a8/%e5%9d%82%e7%94%ba%e4%bd%8f%e5%ae%85%e7%94%a8%e9%98%b2%e7%8a%af%e5%af%be%e7%ad%96%e8%a3%9c%e5%8a%a9%e9%87%91/
+    kind: subsidy
+  allow_hosts:
+  - www.town.saka.lg.jp
+  max_pages: 30
 - id: hiroshima-343684
   name: 安芸太田町空き家バンク
   operator: 安芸太田町
   operator_kind: municipality
   official_url: https://www.akiota.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '343684'
     name: 安芸太田町
@@ -384,12 +498,19 @@ sources:
     slug: '343684'
     bank_url: https://www.akiota.jp/rss/10/list5.xml
     bank_status: info
+    extract_pending: false
     map_query: 広島県安芸太田町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 広島県 県内の市・町に掲載された公式サイト（www.akiota.jp）
     url: https://www.pref.hiroshima.lg.jp/soshiki/19/1168589482341.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.akiota.jp/soshiki/9/1441.html
+    kind: subsidy
+  allow_hosts:
+  - www.akiota.jp
+  max_pages: 30
 - id: hiroshima-343692
   name: 北広島町空き家バンク
   operator: 北広島町
@@ -404,12 +525,13 @@ sources:
     slug: '343692'
     bank_url: https://www.town.kitahiroshima.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 広島県北広島町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.kitahiroshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kitahiroshima.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: hiroshima-344311
   name: 大崎上島町空き家バンク
   operator: 大崎上島町
@@ -424,18 +546,19 @@ sources:
     slug: '344311'
     bank_url: https://www.town.osakikamijima.hiroshima.jp/
     bank_status: none
+    extract_pending: false
     map_query: 広島県大崎上島町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.osakikamijima.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.osakikamijima.hiroshima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: hiroshima-344621
   name: 世羅町空き家バンク
   operator: 世羅町
   operator_kind: municipality
   official_url: https://www.town.sera.hiroshima.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '344621'
     name: 世羅町
@@ -444,12 +567,23 @@ sources:
     slug: '344621'
     bank_url: https://www.town.sera.hiroshima.jp/soshiki/17/19.html
     bank_status: info
+    extract_pending: false
     map_query: 広島県世羅町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.sera.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.sera.hiroshima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.sera.hiroshima.jp/soshiki/14/15857.html
+    kind: subsidy
+  - url: https://www.town.sera.hiroshima.jp/soshiki/14/12415.html
+    kind: subsidy
+  - url: https://www.town.sera.hiroshima.jp/soshiki/14/513.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.sera.hiroshima.jp
+  max_pages: 30
 - id: hiroshima-345458
   name: 神石高原町空き家バンク
   operator: 神石高原町
@@ -464,9 +598,10 @@ sources:
     slug: '345458'
     bank_url: https://www.jinsekigun.jp/
     bank_status: none
+    extract_pending: false
     map_query: 広島県神石高原町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 広島県 県内の市・町に掲載された公式サイト（www.jinsekigun.jp）
     url: https://www.pref.hiroshima.lg.jp/soshiki/19/1168589482341.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'

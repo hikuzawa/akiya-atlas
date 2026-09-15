@@ -14,18 +14,19 @@ sources:
     slug: '252018'
     bank_url: https://www.city.otsu.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 滋賀県大津市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.otsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.otsu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shiga-252026
   name: 彦根市空き家バンク
   operator: 彦根市
   operator_kind: municipality
   official_url: https://www.city.hikone.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '252026'
     name: 彦根市
@@ -34,18 +35,25 @@ sources:
     slug: '252026'
     bank_url: https://www.city.hikone.lg.jp/life/6/1/index.html
     bank_status: info
+    extract_pending: false
     map_query: 滋賀県彦根市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.hikone.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hikone.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.hikone.lg.jp/life/6/2/index.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.hikone.lg.jp
+  max_pages: 30
 - id: shiga-252034
   name: 長浜市空き家バンク
   operator: 長浜市
   operator_kind: municipality
   official_url: https://www.city.nagahama.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '252034'
     name: 長浜市
@@ -54,12 +62,25 @@ sources:
     slug: '252034'
     bank_url: https://www.city.nagahama.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 滋賀県長浜市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.nagahama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nagahama.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.nagahama.lg.jp/category/10-9-1-0-0-0-0-0-0-0.html
+    kind: subsidy
+  - url: https://www.city.nagahama.lg.jp/0000006656.html
+    kind: subsidy
+  - url: https://www.city.nagahama.lg.jp/0000015227.html
+    kind: subsidy
+  - url: https://www.city.nagahama.lg.jp/0000008444.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.nagahama.lg.jp
+  max_pages: 30
 - id: shiga-252042
   name: 近江八幡市空き家バンク
   operator: 近江八幡市
@@ -74,12 +95,13 @@ sources:
     slug: '252042'
     bank_url: https://www.city.omihachiman.lg.jp/mokutekibetu/hikkoshi/sonota/29291.html
     bank_status: info
+    extract_pending: false
     map_query: 滋賀県近江八幡市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.omihachiman.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.omihachiman.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shiga-252069
   name: 草津市空き家バンク
   operator: 草津市
@@ -94,18 +116,19 @@ sources:
     slug: '252069'
     bank_url: https://www.city.kusatsu.shiga.jp/
     bank_status: none
+    extract_pending: false
     map_query: 滋賀県草津市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.kusatsu.shiga.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kusatsu.shiga.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shiga-252077
   name: 守山市空き家バンク
   operator: 守山市
   operator_kind: municipality
   official_url: https://www.city.moriyama.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '252077'
     name: 守山市
@@ -114,12 +137,21 @@ sources:
     slug: '252077'
     bank_url: https://www.city.moriyama.lg.jp/kurashitetsuzuki/juken/1001868/index.html
     bank_status: info
+    extract_pending: false
     map_query: 滋賀県守山市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.moriyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.moriyama.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.moriyama.lg.jp/kurashitetsuzuki/juken/1001868/1001882.html
+    kind: subsidy
+  - url: https://www.city.moriyama.lg.jp/kurashitetsuzuki/juken/1001870/index.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.moriyama.lg.jp
+  max_pages: 30
 - id: shiga-252085
   name: 栗東市空き家バンク
   operator: 栗東市
@@ -134,12 +166,13 @@ sources:
     slug: '252085'
     bank_url: https://www.city.ritto.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 滋賀県栗東市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.ritto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.ritto.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shiga-252093
   name: 甲賀市空き家バンク
   operator: 甲賀市
@@ -154,18 +187,19 @@ sources:
     slug: '252093'
     bank_url: https://www.city.koka.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 滋賀県甲賀市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.koka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.koka.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shiga-252107
   name: 野洲市空き家バンク
   operator: 野洲市
   operator_kind: municipality
   official_url: https://www.city.yasu.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '252107'
     name: 野洲市
@@ -174,12 +208,19 @@ sources:
     slug: '252107'
     bank_url: https://www.city.yasu.lg.jp/soshiki/juutaku/akiya/1697072106430.html
     bank_status: info
+    extract_pending: false
     map_query: 滋賀県野洲市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.yasu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.yasu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.yasu.lg.jp/soshiki/juutaku/akiya/1681267068214.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.yasu.lg.jp
+  max_pages: 30
   external_links:
   - label: 滋賀県 野洲市の空き家物件一覧(ホームズ)
     url: https://www.homes.co.jp/akiyabank/shiga/yasu/
@@ -197,12 +238,13 @@ sources:
     slug: '252115'
     bank_url: https://www.city.konan.lg.jp/kurashi/juutaku/1008730.html
     bank_status: info
+    extract_pending: false
     map_query: 滋賀県湖南市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.konan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.konan.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shiga-252123
   name: 高島市空き家バンク
   operator: 高島市
@@ -217,12 +259,13 @@ sources:
     slug: '252123'
     bank_url: https://www.city.takashima.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 滋賀県高島市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.takashima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.takashima.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shiga-252131
   name: 東近江市空き家バンク
   operator: 東近江市
@@ -237,18 +280,19 @@ sources:
     slug: '252131'
     bank_url: https://www.city.higashiomi.shiga.jp/
     bank_status: none
+    extract_pending: false
     map_query: 滋賀県東近江市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.higashiomi.shiga.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.higashiomi.shiga.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shiga-252140
   name: 米原市空き家バンク
   operator: 米原市
   operator_kind: municipality
   official_url: https://www.city.maibara.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '252140'
     name: 米原市
@@ -257,12 +301,25 @@ sources:
     slug: '252140'
     bank_url: https://www.city.maibara.lg.jp/
     bank_status: none
+    extract_pending: false
     map_query: 滋賀県米原市
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.maibara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.maibara.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.city.maibara.lg.jp/kurashi/sumai/josei/index.html
+    kind: subsidy
+  - url: https://www.city.maibara.lg.jp/kurashi/sumai/22490.html
+    kind: subsidy
+  - url: https://www.city.maibara.lg.jp/soshiki/keizai_kankyo/shoko_kanko/ijyu/1akiyasien/17569.html
+    kind: subsidy
+  - url: https://www.city.maibara.lg.jp/soshiki/matiseibi/toshi_keikaku/jutaku/231.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.maibara.lg.jp
+  max_pages: 30
 - id: shiga-253839
   name: 日野町空き家バンク
   operator: 日野町
@@ -277,14 +334,21 @@ sources:
     slug: '253839'
     bank_url: https://www.town.shiga-hino.lg.jp/0000002170.html
     bank_status: available
+    extract_pending: false
     map_query: 滋賀県日野町
   operator_evidence:
     quote: 滋賀県 県内の市町一覧に掲載された公式サイト（www.town.shiga-hino.lg.jp）
     url: https://www.pref.shiga.lg.jp/ab00/7739.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.shiga-hino.lg.jp/0000002170.html
     kind: listing_index
+  - url: https://www.town.shiga-hino.lg.jp/soshiki/10-2-0-0-0_40.html
+    kind: subsidy
+  - url: https://www.town.shiga-hino.lg.jp/category/27-10-1-0-0-0-0-0-0-0.html
+    kind: subsidy
+  - url: https://www.town.shiga-hino.lg.jp/0000008223.html
+    kind: subsidy
   allow_hosts:
   - www.town.shiga-hino.lg.jp
   max_pages: 30
@@ -296,7 +360,7 @@ sources:
   operator: 竜王町
   operator_kind: municipality
   official_url: https://www.town.ryuoh.shiga.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '253847'
     name: 竜王町
@@ -305,12 +369,25 @@ sources:
     slug: '253847'
     bank_url: https://www.town.ryuoh.shiga.jp/
     bank_status: none
+    extract_pending: false
     map_query: 滋賀県竜王町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 滋賀県 県内の市町一覧に掲載された公式サイト（www.town.ryuoh.shiga.jp）
     url: https://www.pref.shiga.lg.jp/ab00/7739.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.ryuoh.shiga.jp/life/seikatsu_kankyo_pet/smart_life_style.html
+    kind: subsidy
+  - url: http://www.town.ryuoh.shiga.jp/life/sumai/reform.html
+    kind: subsidy
+  - url: http://www.town.ryuoh.shiga.jp/life/sumai/iju_hojokin.html
+    kind: subsidy
+  - url: http://www.town.ryuoh.shiga.jp/life/bousai/taishin.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.ryuoh.shiga.jp
+  max_pages: 30
 - id: shiga-254258
   name: 愛荘町空き家バンク
   operator: 愛荘町
@@ -325,11 +402,12 @@ sources:
     slug: '254258'
     bank_url: https://www.town.aisho.shiga.jp/kurashi_tetsuzuki/sumai/akiya/10206.html
     bank_status: available
+    extract_pending: false
     map_query: 滋賀県愛荘町
   operator_evidence:
     quote: 公式ドメイン www.town.aisho.shiga.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.aisho.shiga.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
   pages:
   - url: https://www.town.aisho.shiga.jp/kurashi_tetsuzuki/sumai/akiya/10206.html
     kind: listing_index
@@ -337,6 +415,12 @@ sources:
     - pattern: https?://www\.town\.aisho\.shiga\.jp/kurashi_tetsuzuki/sumai/akiya/10206\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
       kind: listing_index
       max_links: 20
+  - url: https://www.town.aisho.shiga.jp/kurashi_tetsuzuki/sumai/4/9225.html
+    kind: subsidy
+  - url: https://www.town.aisho.shiga.jp/kurashi_tetsuzuki/sumai/akiya/7557.html
+    kind: subsidy
+  - url: https://www.town.aisho.shiga.jp/kurashi_tetsuzuki/sumai/akiya/7558.html
+    kind: subsidy
   allow_hosts:
   - www.town.aisho.shiga.jp
   max_pages: 30
@@ -345,7 +429,7 @@ sources:
   operator: 豊郷町
   operator_kind: municipality
   official_url: https://www.town.toyosato.shiga.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '254410'
     name: 豊郷町
@@ -354,12 +438,19 @@ sources:
     slug: '254410'
     bank_url: https://www.town.toyosato.shiga.jp/category/24-1-1-0-0-0-0-0-0-0.html
     bank_status: info
+    extract_pending: false
     map_query: 滋賀県豊郷町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.toyosato.shiga.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.toyosato.shiga.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.toyosato.shiga.jp/0000003494.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.toyosato.shiga.jp
+  max_pages: 30
 - id: shiga-254428
   name: 甲良町空き家バンク
   operator: 甲良町
@@ -374,18 +465,19 @@ sources:
     slug: '254428'
     bank_url: https://www.kouratown.jp/
     bank_status: none
+    extract_pending: false
     map_query: 滋賀県甲良町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 滋賀県 県内の市町一覧に掲載された公式サイト（www.kouratown.jp）
     url: https://www.pref.shiga.lg.jp/ab00/7739.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
 - id: shiga-254436
   name: 多賀町空き家バンク
   operator: 多賀町
   operator_kind: municipality
   official_url: https://www.town.taga.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '254436'
     name: 多賀町
@@ -394,9 +486,20 @@ sources:
     slug: '254436'
     bank_url: https://www.town.taga.lg.jp/kurashi_tetsuzuki/sumai/4/1522.html
     bank_status: info
+    extract_pending: false
     map_query: 滋賀県多賀町
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.taga.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.taga.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-09-15'
+  pages:
+  - url: https://www.town.taga.lg.jp/soshiki/kikaku/1/10/622.html
+    kind: subsidy
+  - url: https://www.town.taga.lg.jp/kurashi_tetsuzuki/sumai/1/1452.html
+    kind: subsidy
+  - url: https://www.town.taga.lg.jp/kurashi_tetsuzuki/sumai/4/1789.html
+    kind: subsidy
+  allow_hosts:
+  - www.town.taga.lg.jp
+  max_pages: 30

@@ -93,7 +93,10 @@
       "prefecture": "沖縄県",
       "prefecture_slug": "okinawa",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.nago.okinawa.jp/kurashi/2018072000178/"
+      ]
     },
     {
       "bank_url": "https://www.city.itoman.lg.jp/",
@@ -112,7 +115,10 @@
       "prefecture": "沖縄県",
       "prefecture_slug": "okinawa",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.city.itoman.lg.jp/life/2/6/37/"
+      ]
     },
     {
       "bank_url": "https://www.city.okinawa.okinawa.jp/kurashi/sumai/akiya/index.html",
@@ -131,7 +137,11 @@
       "prefecture": "沖縄県",
       "prefecture_slug": "okinawa",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.city.okinawa.okinawa.jp/k042/contents/p00032.html",
+        "https://www.city.okinawa.okinawa.jp/k042/contents/p00029.html"
+      ]
     },
     {
       "bank_url": "https://www.city.tomigusuku.lg.jp/",
@@ -264,7 +274,10 @@
       "prefecture": "沖縄県",
       "prefecture_slug": "okinawa",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.vill.higashi.okinawa.jp/kurashi_tetsuzuki/sumai/577.html"
+      ]
     },
     {
       "bank_url": "https://www.nakijin.jp/index.html",
@@ -416,7 +429,13 @@
       "prefecture": "沖縄県",
       "prefecture_slug": "okinawa",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.town.kadena.okinawa.jp/life/kur8570.html",
+        "https://www.town.kadena.okinawa.jp/life/kur7885.html",
+        "https://www.town.kadena.okinawa.jp/life/kur7775.html",
+        "https://www.town.kadena.okinawa.jp/life/kur8040.html"
+      ]
     },
     {
       "bank_url": "https://www.chatan.jp/",
@@ -568,7 +587,11 @@
       "prefecture": "沖縄県",
       "prefecture_slug": "okinawa",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.vill.zamami.okinawa.jp/article/1784192523/",
+        "https://www.vill.zamami.okinawa.jp/kurashi/life/1771923529/"
+      ]
     },
     {
       "bank_url": "https://www.vill.aguni.okinawa.jp/kurashi/1042.html",
@@ -701,7 +724,10 @@
       "prefecture": "沖縄県",
       "prefecture_slug": "okinawa",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "http://www.town.kumejima.okinawa.jp/docs/2020051300049/"
+      ]
     },
     {
       "bank_url": "https://www.town.yaese.lg.jp/",
@@ -720,7 +746,10 @@
       "prefecture": "沖縄県",
       "prefecture_slug": "okinawa",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www.town.yaese.lg.jp/docs/2021080600070/"
+      ]
     },
     {
       "bank_url": "https://www.vill.tarama.okinawa.jp/",
@@ -758,7 +787,10 @@
       "prefecture": "沖縄県",
       "prefecture_slug": "okinawa",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": [
+        "https://www.town.taketomi.lg.jp/topics/taketomireform/"
+      ]
     },
     {
       "bank_url": "https://www.jma-net.go.jp/ishigaki/",

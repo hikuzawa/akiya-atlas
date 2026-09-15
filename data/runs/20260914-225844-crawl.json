@@ -1,0 +1,31 @@
+{
+  "ci": false,
+  "command": "crawl",
+  "errors": [
+    "https://www.e-rumoi.jp/keizai/page17_00252.html: HTTP 404",
+    "https://www.town.tohma.hokkaido.jp/search/node?keys=住宅補助: robots.txt により拒否",
+    "https://www.town.minamifurano.hokkaido.jp/kurashi-info/%e4%bd%8f%e5%ae%85-2/%e4%bd%8f%e5%ae%85%e3%83%aa%e3%83%95%e3%82%a9%e3%83%bc%e3%83%a0%e5%8a%a9%e6%88%90%e9%87%91%e4%ba%8b%e6%a5%ad/: HTTP 404"
+  ],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-14T23:00:10Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "crawl": {
+      "changed": 164,
+      "errors": 3,
+      "fetched": 178,
+      "not_modified": 1,
+      "requests": 261,
+      "unchanged": 15,
+      "workers": 8
+    }
+  },
+  "started_at": "2026-09-14T22:58:44Z"
+}
