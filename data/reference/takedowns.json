@@ -1,12 +1,10 @@
 {
   "_about": "取り下げ依頼で非表示にするページ。Issue を閉じると次回の実行で戻る",
-  "updated_at": "2026-09-15T11:28:22+00:00",
-  "other_open_issues": {
-    "pipeline-failure": 1
-  },
+  "updated_at": "2026-09-15T22:37:51+00:00",
+  "other_open_issues": {},
   "takedowns": [
     {
-      "issue": 3,
+      "issue": 1,
       "url": "https://akiya-atlas.com/nagano/",
       "path": "/nagano/",
       "received_at": "2026-09-12T03:31:55.548Z"
