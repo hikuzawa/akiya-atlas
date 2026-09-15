@@ -1,31 +1,56 @@
 {% extends "base.html" %}
 {% block content %}
+{# トップの役割は「このサイトが何か」を伝えて入口に送ること（ADR 0015）。物件を探す画面ではない。
+   「空き家バンク」で検索して着地した人が最初の 1 画面で分かるべきは、
+   (1) ここは何か (2) ここは何ではないか (3) 自分に関係があるか (4) 次にどこへ行くか の 4 つ。
+   価格の中央値・無償譲渡・最終更新は「探す」段階の数字なので第 1 画面から外した #}
 <section class="hero" aria-labelledby="hero-title">
   <h1 id="hero-title">自治体が運営する空き家バンクを、まとめて探せます</h1>
-  {# 巡回しているのは空き家バンクの物件ページを確認できた市町村だけ（全 1,741 のうち 262）。
-     全市町村を巡回しているように読ませない #}
-  <p class="lead">全国 {{ stats.municipalities|number }} 市町村のうち、自治体の空き家バンクで物件を確認できた {{ stats.crawled_municipalities|number }} 市町村の公式ページを毎日巡回し、物件の要約と一次情報へのリンクだけを載せています。残りの市町村についても、窓口と補助制度を調べてまとめています。物件の紹介・仲介は行っていません。</p>
+  {# 巡回しているのは空き家バンクの物件ページを確認できた市町村だけ。全市町村を巡回しているように
+     読ませない。第 1 画面に入口まで収めるためリードは 1 文に絞り、内訳は「このサイトの作り方」へ送る。
+     補助制度の件数は、それを見に行く入口の説明文に置いた #}
+  <p class="lead">全国 {{ stats.crawled_municipalities|number }} 市町村の空き家バンクを毎日巡回しています。<b>紹介・仲介は行いません。</b></p>
   {{ ui.stat_strip([
-    {"value": stats.listings|number, "unit": "件", "label": "掲載物件（自治体の公式ページで確認できたもの）", "kind": "kaki"},
-    {"value": stats.prefectures|number, "unit": "都道府県", "label": "対象の都道府県"},
-    {"value": stats.open_municipalities|number, "unit": "市町村", "label": "物件を公開している市町村（巡回中 " ~ stats.crawled_municipalities|number ~ " ／ 全 " ~ stats.municipalities|number ~ "）"},
-    {"value": stats.price_median|yen, "label": "売買価格の中央値（有償 " ~ stats.paid|number ~ " 件。最安 " ~ stats.price_min|yen ~ "）", "kind": "text"},
-    {"value": stats.free|number, "unit": "件", "label": "無償譲渡（価格 0 円の物件）"},
-    {"value": trust.updated_at|date_ja, "label": "最終更新（毎日 03 時ごろに巡回）", "kind": "text"}
+    {"value": stats.listings|number, "unit": "件", "label": "掲載物件", "kind": "kaki"},
+    {"value": stats.open_municipalities|number, "unit": "市町村", "label": "物件を見られる市町村"}
   ], "収録状況") }}
+  {# 3 つの入口。検索から来る人は「探す人」だけでなく「所有者」も一定数いる #}
+  <ul class="entries">
+    <li><a class="entry" href="#pref-title">
+      <span class="t">{{ ui.icon("map") }}都道府県から探す</span>
+      <span class="d">物件のある {{ prefectures|selectattr("count")|list|length }} 県から</span></a></li>
+    <li><a class="entry" href="/owners/#subsidy-title">
+      <span class="t">{{ ui.icon("tag") }}補助制度を調べる</span>
+      <span class="d">{{ stats.subsidies|number }} 件（改修・解体・移住など）</span></a></li>
+    <li><a class="entry" href="/owners/">
+      <span class="t">{{ ui.icon("home") }}空き家をお持ちの方へ</span>
+      <span class="d">売る・貸す・解体する前に</span></a></li>
+  </ul>
 </section>
 
 <section class="section" aria-labelledby="pref-title">
-  {{ ui.section_head("pref-title", "都道府県から探す", "件数は本サイトが確認できた掲載物件の数") }}
-  {% set max_count = prefectures|map(attribute="count")|max if prefectures else 0 %}
-  <ul class="cards">
-    {% for p in prefectures %}{{ ui.pref_card(p, max_count) }}{% endfor %}
+  {{ ui.section_head("pref-title", "都道府県から探す", "数字は本サイトが確認できた掲載物件の数") }}
+  {# 47 枚のカードは場所を取るので、名前と件数のチップにする（窓口一覧と同じ形） #}
+  {% set open_prefs = prefectures|selectattr("count")|sort(attribute="count", reverse=true)|list %}
+  {% set quiet_prefs = prefectures|rejectattr("count")|list %}
+  <ul class="muni-chips listed">
+    {% for p in open_prefs %}<li><a href="{{ p.url }}">{{ p.name }}<span class="n">{{ p.count|number }}</span></a></li>{% endfor %}
   </ul>
+  {% if quiet_prefs %}
+  <p class="group-head">現在は掲載物件のない県<b>{{ quiet_prefs|length }}</b></p>
+  <p class="meta">空き家バンクの窓口と補助制度はまとめています。</p>
+  <ul class="muni-chips">
+    {% for p in quiet_prefs %}<li><a href="{{ p.url }}">{{ p.name }}</a></li>{% endfor %}
+  </ul>
+  {% endif %}
 </section>
 
 <section id="search" class="section" aria-labelledby="search-title">
   {{ ui.section_head("search-title", "条件で絞り込む", "都道府県・市町村・価格帯・種別・補助金") }}
-  <div class="surface">
+  {# 入口の邪魔をしないよう既定は畳む。使う人は開ける（追加の JS は無し） #}
+  <details class="fold" id="search-fold">
+    <summary>条件を指定して探す</summary>
+    <div class="fold-body">
     <form class="search-form" data-search-form>
       <label>都道府県
         <select name="pref" data-filter="pref_slug"><option value="">すべて</option>
@@ -56,25 +81,33 @@
       <label class="check"><input type="checkbox" name="detail" data-filter="detail"> 自治体の詳細ページがあるものだけ</label>
     </form>
     <p class="search-status" data-search-status aria-live="polite">読み込み中…</p>
-    <ol class="cards results" data-search-results></ol>
+    <ol class="lines results" data-search-results></ol>
     <p class="more" data-search-more hidden><button type="button">さらに表示</button></p>
     <noscript><p>検索には JavaScript が必要です。<a href="/nagano/">都道府県ページ</a>から一覧をご覧ください。</p></noscript>
-  </div>
+    </div>
+  </details>
 </section>
 
 {% if recent %}
 <section class="section" aria-labelledby="recent-title">
   {{ ui.section_head("recent-title", "最近確認した物件", "巡回で最近確認できたもの") }}
+  {# 横スクロールで数件を見せる場所。1 行表示の利点（一覧性）が効かないのでカードのまま #}
   <ul class="scroller">
     {% for r in recent %}{{ ui.listing_card(r, place=r.place, subsidy=r.subsidy) }}{% endfor %}
   </ul>
 </section>
 {% endif %}
 
-<section class="section cta" aria-labelledby="owner-title">
-  <h2 id="owner-title">相続した空き家、どうする？</h2>
-  <p>住む・貸す・売る・自治体の空き家バンクに登録・解体・当面は管理。6 つの選択肢と、査定・解体の流れ、自治体の補助制度をまとめています。</p>
-  <p><a class="btn btn-primary" href="/owners/">選択肢を見る{{ ui.icon("arrow") }}</a></p>
+<section class="section" aria-labelledby="how-title">
+  {{ ui.section_head("how-title", "このサイトの作り方") }}
+  <ul class="how surface">
+    <li>{{ ui.icon("clock") }}<span>自治体の公式ページを<strong>毎日巡回</strong>し、変化のあったところだけ取り込みます。最終更新は {{ trust.updated_at|date_ja }}。</span></li>
+    <li>{{ ui.icon("ext") }}<span>物件ごとに<strong>一次情報へのリンク</strong>と取得日時を必ず出します。写真と詳細本文は転載しません。</span></li>
+    <li>{{ ui.icon("check") }}<span>価格・面積・築年は<strong>自治体ページの原文から取れた値だけ</strong>を載せます。推定値は混ぜません。</span></li>
+    <li>{{ ui.icon("building") }}<span>巡回しているのは、空き家バンクで物件を確認できた {{ stats.crawled_municipalities|number }} 市町村です。残る {{ (stats.municipalities - stats.crawled_municipalities)|number }} 市町村も<strong>窓口と補助制度はまとめています</strong>（登録制・物件ページが無いなどの理由で巡回していません）。</span></li>
+    <li>{{ ui.icon("pin") }}<span>申込み・内覧は<strong>各自治体の窓口</strong>で受け付けています。本サイトからは申し込めません。</span></li>
+  </ul>
+  <p class="meta">出典とライセンス判定は <a href="/data/">データについて</a>、運営者情報は <a href="/about/">このサイトについて</a> に。</p>
 </section>
 <script src="/static/search.js" defer></script>
 {% endblock %}

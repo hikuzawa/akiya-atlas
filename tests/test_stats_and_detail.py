@@ -81,7 +81,9 @@ def test_money_is_formatted_in_one_place() -> None:
     for name in ("index.html", "prefecture.html", "municipality.html"):
         text = _Path("templates", name).read_text(encoding="utf-8")
         assert "price_text_" not in text, name  # 整形済み文字列は渡さない
-        assert "|yen" in text, name
+    # 金額を出すページは |yen を通す。トップは入口に徹して金額を出さない（ADR 0015）ので対象外
+    for name in ("prefecture.html", "municipality.html"):
+        assert "|yen" in _Path("templates", name).read_text(encoding="utf-8"), name
 
 
 def _client() -> PoliteClient:

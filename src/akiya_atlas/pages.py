@@ -587,6 +587,8 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         1 for m in ds.municipalities if _listings(m, active_only=True)
                     ),
                     "subsidy_municipalities": sum(1 for m in ds.municipalities if m.has_subsidy),
+                    # 補助制度の総数。トップは「何があるか」を数で示して県へ送る（ADR 0014）
+                    "subsidies": sum(len(m.subsidies) for m in ds.municipalities),
                 },
                 "recent": [
                     {
