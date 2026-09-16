@@ -120,7 +120,8 @@ class OfficialOverrides:
     source_name: str = ""
     fixed: dict[str, dict] = field(default_factory=dict)  # code -> 固定した公式URLと根拠
     no_website: dict[str, dict] = field(default_factory=dict)  # code -> サイトが無い根拠
-    link_only: dict[str, dict] = field(default_factory=dict)  # code -> 巡回しない理由（PDF など）
+    # code -> 物件一覧を巡回しない理由（PDF など）。補助制度のページは別に巡回する
+    link_only: dict[str, dict] = field(default_factory=dict)
 
     @classmethod
     def load(cls, ws: Workspace, pref_slug: str) -> OfficialOverrides:
@@ -734,12 +735,13 @@ def assess_municipality(
         return decide(muni, None, None, cross_linked=False, bank_host_official=False)
     note = ov.link_only.get(muni.code)
     if note:
-        # 一覧が PDF だけ、のように巡回しないと決めた自治体。公式へのリンクだけ出す
+        # 一覧が PDF だけ、のように物件一覧を巡回しないと決めた自治体。物件は公式へのリンクだけ
+        # 出す。補助制度のページはこの判定と別に探す（collect_subsidy_pages、ADR 0013）
         f = decide(muni, resolved.host, None, cross_linked=False, bank_host_official=False)
         f.official_url = resolved.host.host
         f.evidence_quote = resolved.evidence_quote
         f.evidence_url = resolved.evidence_url
-        f.reason = str(note.get("evidence") or "巡回しない（確定情報）")
+        f.reason = str(note.get("evidence") or "物件一覧は巡回しない（確定情報）")
         f.bank_url = str(note.get("bank_url") or resolved.url)
         return f
     probe = find_bank_page(resolved.url, resolved.host, client, platforms)
