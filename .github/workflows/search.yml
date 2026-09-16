@@ -12,7 +12,8 @@ name: search
 
 on:
   schedule:
-    - cron: "0 20 * * *" # 05:00 JST。日次パイプライン（03:00 JST）の後
+    # 毎時 0 分を避ける（pipeline.yml と同じ理由。2026-09-17 は 0 分起動で 2 時間 42 分遅れた）
+    - cron: "41 20 * * *" # 05:41 JST。日次パイプライン（03:23 JST）の後
   workflow_dispatch:
     inputs:
       inspect:

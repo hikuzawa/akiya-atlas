@@ -23,7 +23,8 @@ run-name: "pipeline (${{ inputs.mode || 'full' }})"
 
 on:
   schedule:
-    - cron: "0 18 * * *" # 03:00 JST
+    # 毎時 0 分は GitHub の定時実行が混み、遅れやすい。0 分で起動していた 2026-09-17 は 2 時間 54 分遅れた
+    - cron: "23 18 * * *" # 03:23 JST
   workflow_dispatch:
     inputs:
       deploy:
