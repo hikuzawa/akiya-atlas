@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{# 退役した物件の URL に残す「掲載終了」ページ（ADR 0016）。
+   物件ページを巡回しなくなった情報源のレコードは公開しない。ただし既に索引された URL を 404 に
+   すると検索結果から来た人が行き止まりになるので、noindex で残して市町村と一次情報へ送る。
+   物件の中身（価格・所在地など）は出さない。公開しないと決めたデータだから #}
+{% block content %}
+<nav class="breadcrumb" aria-label="現在地"><ol><li><a href="/">トップ</a></li><li><a href="/{{ muni.prefecture_slug }}/">{{ muni.prefecture }}</a></li><li><a href="/{{ muni.path }}">{{ muni.name }}</a></li><li>物件 {{ listing_no }}</li></ol></nav>
+<div class="page-head narrow">
+  <h1>この物件の掲載は終了しました</h1>
+  <p class="lead">{{ muni.name }}の空き家バンクの物件 {{ listing_no }} は、本サイトでの掲載を終えています。本サイトが{{ muni.name }}の物件ページを巡回しなくなったためで、物件そのものの募集状況を表すものではありません。</p>
+</div>
+<section class="section narrow" aria-labelledby="next-title">
+  {{ ui.section_head("next-title", "最新の情報は") }}
+  <ul class="how surface">
+    {% if muni.bank_url %}<li>{{ ui.icon("ext") }}<span><a href="{{ muni.bank_url }}" rel="noopener">{{ muni.name }}の{{ muni.bank_label }}</a>（自治体の公式ページ）で確認できます。</span></li>{% endif %}
+    <li>{{ ui.icon("pin") }}<span><a href="/{{ muni.path }}">{{ muni.name }}のページ</a>に、窓口と補助制度をまとめています。</span></li>
+  </ul>
+</section>
+{% endblock %}

@@ -107,6 +107,11 @@ class Municipality(BaseModel):
         return f"{self.prefecture_slug}/{self.slug}/"
 
 
+# 物件ページを巡回しなくなった情報源のレコード（ADR 0016）。stale（30 日見えない）とは別。
+# stale は「掲載終了の可能性」の注記つきで出し続けるが、retired は公開しない
+STATUS_RETIRED = "retired"
+
+
 class Listing(BaseModel):
     """1 物件。写真と本文は持たない。値は引用付きの FieldValue（ADR 0004）。"""
 
@@ -166,6 +171,11 @@ class Listing(BaseModel):
     def is_active(self) -> bool:
         """現在掲載中（stale でも成約済でもない）か。"""
         return self.status == "active" and not self.is_closed
+
+    @property
+    def is_retired(self) -> bool:
+        """物件ページを巡回しなくなった情報源のレコードか（ADR 0016）。公開しない。"""
+        return self.status == STATUS_RETIRED
 
 
 FIELD_LABELS = {

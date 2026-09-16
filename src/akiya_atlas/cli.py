@@ -234,6 +234,31 @@ def _register(app: typer.Typer) -> None:
             raise typer.Exit(code=1)
         typer.echo(f"広告掲載の検査 OK: {summary}")
 
+    @app.command("publish-check")
+    def publish_check_cmd(
+        dist: Annotated[Path, typer.Option("--dist", help="検査する生成物のディレクトリ")] = Path(
+            "dist"
+        ),
+    ) -> None:
+        """公開直前の性質の検査（ADR 0016）。
+
+        巡回をやめた自治体の物件・固定した扱い・取り下げ・巡回数を確かめる。
+
+        CI では広告掲載の検査の直後、配置の前に走る。1 件でも破れていれば 1 で終了して配置を止める。
+        """
+        from akiya_atlas import publish_check
+
+        rt = commands.Runtime.open()
+        problems, summary = publish_check.check(rt.ws, dist)
+        if problems:
+            typer.echo(f"公開前の性質の検査に失敗（{len(problems)} 件）:", err=True)
+            for msg in problems[:50]:
+                typer.echo(f"  - {msg}", err=True)
+            if len(problems) > 50:
+                typer.echo(f"  ... 他 {len(problems) - 50} 件", err=True)
+            raise typer.Exit(code=1)
+        typer.echo(f"公開前の性質の検査 OK: {summary}")
+
     @app.command("ad-urls")
     def ad_urls_cmd(
         offer: Annotated[

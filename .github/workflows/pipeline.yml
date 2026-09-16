@@ -143,6 +143,13 @@ jobs:
         working-directory: akiya-atlas
         run: uv run akiya-atlas ad-check
 
+      # 守りたい性質は、書き込む道具ではなく公開する直前に確かめる（ADR 0016、sitemill ADR 0024）。
+      # 巡回をやめた自治体の物件・人が固定した扱い・取り下げ・公言している巡回数。
+      # 破れていたら配置しない。取り込み側の歯止めは、別の経路で戻ったものを守らない
+      - name: 公開前の性質の検査（ADR 0016）
+        working-directory: akiya-atlas
+        run: uv run akiya-atlas publish-check
+
       - name: Eval (fixture、劣化検知)
         if: inputs.mode != 'deploy-only' # deploy-only では飛ばす
         working-directory: akiya-atlas

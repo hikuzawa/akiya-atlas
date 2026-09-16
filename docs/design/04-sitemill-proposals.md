@@ -75,3 +75,40 @@ akiya-atlas のデザイン見直しで出た判断のうち、サービスに�
 効かないまま全ページの `<style>` に載る。`<html data-theme="light">` を付ければ空振りするので
 実害は無いが、**サイト側が配色を 1 つに決めているなら出力しない**選択肢があるとよい。
 `site.toml` の `[site]` か `chart_css(scheme="light")` のような形（提案）。
+
+## F. 生 HTML のキャッシュが、コミット済みの巡回状態より古くなる穴（2026-09-16）
+
+sitemill ADR 0024 の「コミットするものはキャッシュしない」は守れていても、**キャッシュしてよい
+もの（生 HTML）が、コミットしたもの（巡回状態）より古くなる**経路が残っている。akiya-atlas では
+起きた形跡は無いが、形は japan-open-today の事故と同じ（キャッシュの復元が新しい事実を古い版で
+置き換える）。v0.5.2 のコードで確かめた。
+
+### どう起きるか
+
+1. `fetch/crawler.py` は、生 HTML のキャッシュ（`data/raw`）が**あれば**条件付き GET を使い、
+   ETag は**コミット済みの** `data/state/crawl.json` から取る
+2. サービスの `pipeline.yml` は、状態のコミットを配置より前に行う。一方 `actions/cache` の保存は
+   **ジョブが成功したときだけ**
+3. 状態をコミットした後に配置で失敗すると、新しい ETag はコミットされ、新しい生 HTML は保存されない
+4. 次の実行は 1 つ前の生 HTML を復元し、新しい ETag で 304 を受け、**古い HTML を今の内容として使う**
+   （リンクの発見と、`pending_extract` が残っていれば抽出）
+5. `commands.py` の抽出は `raw.load_text()` の中身を確かめずに読み、provenance には**状態の新しい**
+   `content_hash` を書く。古い HTML から取った値が、正しい抽出に見える
+
+### 直し方の提案
+
+**生 HTML のメタデータには既に `content_hash` が入っている**（`raw.save()` の第 4 引数）。
+状態の `content_hash` と突き合わせるだけで塞がる。
+
+- **取得（`crawler.py`）**: キャッシュのメタの `content_hash` が `st.content_hash` と違えば、
+  条件付き GET を使わない（`use_conditional = False`）。取り直して保存し直す
+- **抽出（`commands.py` の `run_source`）**: 読んだ生 HTML のメタの `content_hash` が
+  `st.content_hash` と違えば抽出せず、`raw_mismatch` として数えて次の巡回に回す
+  （`missing_cache` と同じ扱い）
+- ハッシュは生バイト列の sha256 ではなく、**取得時と同じ `normalize_for_hash` を通したもの**で比べる。
+  メタに保存済みの値をそのまま使えば、正規化の規則を 2 か所に持たずに済む
+
+どちらも生 HTML の中身を変えないので、サービス側の変更は要らない。テストは respx で「状態の
+ハッシュと違うキャッシュ＋304 を返すサーバー」を作れば再現できる。
+
+japan-open-today のセッションが sitemill を触っているので、そちらで実装してもらう想定（ユーザーが渡す）。

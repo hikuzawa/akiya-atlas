@@ -21,7 +21,7 @@ from sitemill.store.records import RecordStore
 
 from akiya_atlas import affiliates, pages
 from akiya_atlas.data import Dataset, load_municipalities, load_sources, records_path
-from akiya_atlas.schema import normalize_listing_no, record_id_for
+from akiya_atlas.schema import STATUS_RETIRED, normalize_listing_no, record_id_for
 from akiya_atlas.spec import spec_for_kind
 from akiya_atlas.subsidies import ingest_subsidies
 
@@ -274,6 +274,70 @@ def mark_duplicates(ws: Workspace) -> dict[str, int]:
     return counts
 
 
+# 物件を持つページの種類。これを 1 つも巡回していない情報源の物件は公開しない（ADR 0016）
+LISTING_PAGE_KINDS = frozenset({"listing_index", "listing_detail"})
+
+
+def crawls_listings(source: Source) -> bool:
+    """その情報源が、いま物件のページを巡回しているか。
+
+    `policy: crawl` だけでは決められない。補助制度の収集が、物件一覧を巡回しないと決めた自治体でも
+    補助制度のページだけを巡回するために `crawl` にしている（2026-09-15、651 市町村）。
+    """
+    return source.crawlable and any(
+        str(getattr(p.kind, "value", p.kind)) in LISTING_PAGE_KINDS for p in source.pages
+    )
+
+
+def retire_unlisted(ws: Workspace, *, now: datetime) -> dict[str, int]:
+    """物件ページを巡回しなくなった情報源のレコードを退役させる。巡回に戻れば戻す（ADR 0016）。
+
+    巡回をやめる判断（link_only にする・物件ページを seed から外す）は data/sources を書き換える
+    だけで、それ以前に取り込んだレコードには触れない。stale になるのは 30 日後で、
+    それまで物件ページは公開され続ける。兵庫県小野市では 2026-09-12 に
+    「物件一覧が PDF だけなので巡回しない」と決めたのに、
+    9/11 に取り込んだ 1 件が 9/16 まで公開されていた。
+
+    退役は削除ではない。巡回に戻して再び見えたら active に、見えていなければ stale に戻す。
+    """
+    counts = {"retired": 0, "restored": 0}
+    now_s = now.isoformat()
+    for source in load_sources(ws):
+        path = records_path(ws, source.id)
+        if not path.is_file():
+            continue
+        store = RecordStore(path)
+        changed = False
+        listing = crawls_listings(source)
+        for record in store.records.values():
+            status = record.get("status")
+            if not listing and status in ("active", "stale"):
+                record["status"] = STATUS_RETIRED
+                record.setdefault("history", []).append(
+                    {"at": now_s, "event": "retired", "reason": "物件ページを巡回していない"}
+                )
+                counts["retired"] += 1
+                changed = True
+            elif listing and status == STATUS_RETIRED:
+                retired_at = max(
+                    (
+                        h.get("at", "")
+                        for h in record.get("history", [])
+                        if h.get("event") == "retired"
+                    ),
+                    default="",
+                )
+                # 退役の後に取り込み直されていれば掲載中、そうでなければ stale（次に見えたら戻る）
+                seen_again = (record.get("last_seen_at") or "") > retired_at
+                record["status"] = "active" if seen_again else "stale"
+                record.setdefault("history", []).append({"at": now_s, "event": "restored"})
+                counts["restored"] += 1
+                changed = True
+        if changed:
+            store.save()
+    return counts
+
+
 class AkiyaAtlasService:
     id = "akiya-atlas"
 
@@ -356,6 +420,11 @@ class AkiyaAtlasService:
             if stale:
                 log.info("%s: %d 件を stale に", source.id, stale)
             store.save()
+        # 巡回の対象から外れた情報源のレコードを退役させる（ADR 0016）。重複の判定より前に置く
+        # （重複は active 同士でしか見ないので、退役したものを正にしない）
+        moved = retire_unlisted(ws, now=now)
+        if moved["retired"] or moved["restored"]:
+            log.info("退役: %d 件、巡回に戻って復帰: %d 件", moved["retired"], moved["restored"])
         # 全 source が揃ってから、同じ物件が 2 か所に出ていないかを見る（ADR 0009）
         dups = mark_duplicates(ws)
         if dups["hidden"] or dups["restored"]:

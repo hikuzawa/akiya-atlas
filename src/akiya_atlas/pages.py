@@ -647,7 +647,11 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
         )
 
     for muni in ds.municipalities:
-        listings = _listings(muni)
+        # 退役した物件（物件ページを巡回しなくなった情報源のもの）は一覧にも個別ページにも出さない。
+        # 既に索引された URL が 404 にならないよう、noindex の「掲載終了」ページだけを残す
+        # （ADR 0016）
+        listings = [ls for ls in _listings(muni) if not ls.is_retired]
+        retired = [ls for ls in _listings(muni) if ls.is_retired]
         active = [ls for ls in listings if ls.is_active]
         # 成約済（closed）は現行・掲載終了候補が 1 件も無いときだけ「過去の掲載」として載せる。
         # 個別ページも作らない（売却済み物件のページで索引を膨らませない）
@@ -722,6 +726,30 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         updated=_dt(ls.last_seen_at),
                     ),
                     priority=0.6,
+                )
+            )
+        for ls in retired:
+            # 404 の代わりに 200 + noindex。Cloudflare Pages の静的配信では 410 を返せない。
+            # noindex のページはサイトマップにも出ない（sitemill build/site.py）
+            pages.append(
+                _page(
+                    ctx,
+                    path=listing_path(muni, ls),
+                    template="listing_retired.html",
+                    title=f"掲載を終了した物件（{muni.name} 空き家バンク {ls.listing_no}）",
+                    description=(
+                        f"{muni.name}の空き家バンク物件 {ls.listing_no} は、"
+                        "本サイトでの掲載を終了しました。"
+                    ),
+                    context={"muni": muni, "listing_no": ls.listing_no},
+                    trust_signals=trust(
+                        ctx,
+                        sources=source_links(ctx, muni),
+                        count=None,
+                        updated=_dt(ls.last_seen_at),
+                    ),
+                    priority=0.1,
+                    noindex=True,
                 )
             )
 
