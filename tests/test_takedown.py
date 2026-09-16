@@ -71,3 +71,46 @@ def test_round_trip_through_the_file(tmp_path) -> None:  # noqa: ANN001
     again = TakedownList.load(ws)
     assert again.paths == {"/nagano/203076/25/"}
     assert again.items[0].issue == 21
+
+
+def test_a_takedown_broader_than_one_municipality_is_held_back() -> None:
+    """自動で効くのは物件 1 件か市町村 1 つのページだけ（ADR 0016 追記）。
+
+    2026-09-12 の依頼は「当町の成約済み物件を」と書きつつ県のページ /nagano/ を指していて、
+    長野県の 241 件が 9/17 まで隠れた。範囲外は隠さず、人の判断に回す。
+    """
+    issues = [
+        _issue(31, ["takedown"], [f"{BASE}/nagano/"]),  # 県のページ
+        _issue(32, ["takedown"], [f"{BASE}/"]),  # トップ
+        _issue(33, ["takedown"], [f"{BASE}/owners/nagano/"]),  # 所有者向けの県ページ
+        _issue(34, ["takedown"], [f"{BASE}/hyogo/282189/"]),  # 市町村（6 桁）
+        _issue(35, ["takedown"], [f"{BASE}/nagano/202193-tomi/"]),  # 市町村（コード-名前）
+        _issue(36, ["takedown"], [f"{BASE}/nagano/202193-tomi/322/"]),  # 物件
+    ]
+    result = collect(issues, base_url=BASE)
+    assert result.paths == {"/hyogo/282189/", "/nagano/202193-tomi/", "/nagano/202193-tomi/322/"}
+    assert sorted(t.path for t in result.unscoped) == ["/", "/nagano/", "/owners/nagano/"]
+
+
+def test_an_out_of_scope_row_written_by_hand_is_not_applied(tmp_path) -> None:  # noqa: ANN001
+    """一覧を手で書き換えて範囲外のパスを入れても、読むときに効かせない。"""
+    import json
+
+    from sitemill.settings import Workspace
+
+    (tmp_path / "site.toml").write_text(
+        '[site]\nid="x"\nname="x"\nbase_url="https://akiya-atlas.com"\n'
+        'service="akiya_atlas.service:service"\n[operator]\nname="x"\ncontact="x"\n',
+        encoding="utf-8",
+    )
+    ws = Workspace.open(tmp_path)
+    ws.ensure_dirs()
+    result = collect([_issue(41, ["takedown"], [f"{BASE}/nagano/"])], base_url=BASE)
+    result.save(ws)
+    path = tmp_path / "data/reference/takedowns.json"
+    data = json.loads(path.read_text(encoding="utf-8"))
+    assert data["takedowns"] == [] and data["unscoped"][0]["path"] == "/nagano/"
+    # 9/12 から 9/17 までの一覧と同じ形（範囲外のパスが takedowns に入っている）
+    data["takedowns"] = data.pop("unscoped")
+    path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+    assert TakedownList.load(ws).paths == set()

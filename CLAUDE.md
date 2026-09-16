@@ -31,6 +31,7 @@ sitemill の最初の利用者。自治体が独自に運営する空き家バ�
 - 広告（アフィリエイト）は `/owners/` の枠にだけ置く。物件・市町村・トップには置かない。リンクは必ず `/go/<案件>/<枠>/` の転送ページ経由にし、広告表記をページ冒頭に出す。掲載場所と ASP 規約は `src/akiya_atlas/affiliates.py` のデータで決まり、欠ければ `ad-check` がビルドを止める（ADR 0010）。案件の追加手順は `akiya-atlas-ops/docs/affiliates.md`
 - 守りたい性質は、書き込む道具ではなく**公開する直前に**確かめる（ADR 0016、sitemill ADR 0024）。`akiya-atlas publish-check` が配置の前に、巡回をやめた自治体の物件・`municipal_overrides.json` の扱い・取り下げ・公言している巡回数を見て、破れていれば配置を止める。データで確かめられる分は `tests/test_publish_check.py` でコミット済みのデータにも当てる。性質を足すときは、何が起きてなぜ既存の歯止めで見えなかったかを ADR に一緒に書く
 - 巡回をやめる判断（`link_only`、物件ページを seed から外す）は、取り込み済みの物件に触れない。`finalize` の `retire_unlisted` が `status: retired` にして公開から外す（削除しない。URL には noindex の掲載終了ページが残り、サイトマップからは外れる）。「物件を巡回しているか」は `policy` ではなくseed のページ種別で判定する（補助制度のために `crawl` になっている自治体がある）
+- 取り下げ依頼が自動で効くのは、**物件 1 件か市町村 1 つのページを指すものだけ**（ADR 0016 追記）。県・トップなどを指す依頼は隠さず `takedowns.json` の `unscoped` に残し、人が対象を確かめて Issue の URL を直す。県のページを指す依頼 1 件で長野県の全物件が 5 日間隠れたことがある。取り込みと公開前検査は非表示のページ数を必ず出す
 - CI の `actions/cache` の `path` にコミット対象（`data/records`・`data/state`・`data/sources`・`data/review`・`data/subsidies`・`data/search`・`data/runs`・`data/reference`）を含めない。今は `data/raw` と `data/llm_cache` だけ（sitemill ADR 0024）
 - 秘密情報は `.env` にだけ置く（手で書く。パスワードマネージャーや環境変数を探索しない）。鍵が無ければ止めて「.env に何を書くか」を提示する
 - `.env.example` にはプレースホルダー（空の値）だけを置く。値を書いた時点でコミット前フックが止める

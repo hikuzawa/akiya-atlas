@@ -10,7 +10,9 @@
    （兵庫県小野市: 2026-09-12 に巡回をやめたのに、9/11 に取り込んだ 1 件が 9/16 まで公開されていた）
 2. 人が固定した扱い（`data/reference/municipal_overrides.json`）が守られている。
    `link_only` の自治体は物件ページを巡回しない。`no_website` の自治体はサイトに載せない
-3. 取り下げ依頼のパス（自身と配下）の物件ページを、インデックスできる形で公開しない
+3. 取り下げ依頼のパス（自身と配下）の物件ページを、インデックスできる形で公開しない。
+   逆に、掲載中の物件のページが無いなら、物件 1 件か市町村 1 つを指す取り下げ依頼で説明できる
+   （隠しすぎ。長野県: 県のページを指す依頼 1 件で 241 件が 9/12 から 9/17 まで隠れていた）
 4. 「◯市町村の空き家バンクを巡回」の数が、巡回中（`bank_status: available`）の数と一致し、
    その全部が実際に物件ページを巡回している
 
@@ -27,10 +29,11 @@ from pathlib import Path
 from sitemill.models import Source
 from sitemill.settings import Workspace
 
-from akiya_atlas.data import load_entries, municipality_from_entry, records_path
-from akiya_atlas.pages import hidden_paths, is_hidden
+from akiya_atlas.data import Dataset, load_entries, municipality_from_entry, records_path
+from akiya_atlas.pages import hidden_listing_counts, hidden_paths, is_hidden, listing_url_path
 from akiya_atlas.schema import Municipality
 from akiya_atlas.service import crawls_listings
+from akiya_atlas.takedown import TakedownList, in_scope
 
 OVERRIDES = Path("data/reference/municipal_overrides.json")
 _NOINDEX = re.compile(r"""<meta\s+name=["']robots["']\s+content=["'][^"']*noindex""", re.I)
@@ -138,7 +141,9 @@ def _sitemap_paths(dist: Path, base_url: str) -> set[str]:
     return out
 
 
-def check_dist(ws: Workspace, dist: Path, loaded: Loaded | None = None) -> list[str]:
+def check_dist(
+    ws: Workspace, dist: Path, loaded: Loaded | None = None, ds: Dataset | None = None
+) -> list[str]:
     problems: list[str] = []
     if not dist.is_dir():
         return [f"{dist} が無い。先に build を実行する"]
@@ -198,6 +203,24 @@ def check_dist(ws: Workspace, dist: Path, loaded: Loaded | None = None) -> list[
             if url.count("/") >= 4 and is_hidden(url, hidden):  # /<県>/<市町村>/<物件>/
                 problems.append(f"{url}: 取り下げ依頼の対象なのに、サイトマップに載っている")
 
+    # 3b. 隠しすぎていない（ADR 0016 追記）。掲載中の物件でページが無いものは、物件 1 件か
+    # 市町村 1 つを指す取り下げ依頼で説明できなければならない。2026-09-12 の依頼は県のページを指し、
+    # 長野県の 241 件を隠していたが、「隠すべきものが出ていないか」だけを見る検査では気づけなかった
+    for h in hidden:
+        if not in_scope(h):
+            problems.append(f"{h}: 取り下げの範囲が物件か市町村のページより広い")
+    ds = ds or Dataset.load(ws)
+    for m in ds.municipalities:
+        for ls in ds.listings_for(m, active_only=True):
+            url = listing_url_path(m, ls)
+            if (dist / url.strip("/") / "index.html").is_file():
+                continue
+            if not any(in_scope(h) and is_hidden(url, (h,)) for h in hidden):
+                problems.append(
+                    f"{url}: 掲載中の物件なのにページが無い。"
+                    "物件か市町村を指す取り下げ依頼でも説明できない"
+                )
+
     # 4. 公言している巡回数
     top = dist / "index.html"
     crawled = sum(1 for m in munis if m.crawled)
@@ -218,7 +241,8 @@ def check_dist(ws: Workspace, dist: Path, loaded: Loaded | None = None) -> list[
 def check(ws: Workspace, dist: Path) -> tuple[list[str], str]:
     """問題の一覧と、通ったときの要約 1 行を返す。"""
     loaded = load(ws)
-    problems = list(dict.fromkeys(check_data(ws, loaded) + check_dist(ws, dist, loaded)))
+    ds = Dataset.load(ws)
+    problems = list(dict.fromkeys(check_data(ws, loaded) + check_dist(ws, dist, loaded, ds)))
     sources, munis = loaded
     retired_pages = sum(
         1
@@ -227,9 +251,13 @@ def check(ws: Workspace, dist: Path) -> tuple[list[str], str]:
         for p in _listing_pages(dist, m.path)
         if not _indexable(p)
     )
+    hidden = hidden_paths(ws)
+    counts = hidden_listing_counts(ds, hidden)
+    unscoped = len(TakedownList.load(ws).unscoped)
     summary = (
         f"巡回中 {sum(1 for m in munis if m.crawled)} 市町村／"
         f"固定した扱い {len(_overrides(ws))} 件／"
-        f"取り下げ {len(hidden_paths(ws))} 件／掲載終了（noindex）{retired_pages} ページ"
+        f"取り下げ {len(hidden)} 件で {sum(counts.values())} ページを非表示"
+        f"（範囲外で保留 {unscoped} 件）／掲載終了（noindex）{retired_pages} ページ"
     )
     return problems, summary

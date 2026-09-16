@@ -120,6 +120,22 @@ def listing_url_path(muni: Municipality, ls: Listing) -> str:
     return f"/{muni.path}{ls.slug}/"
 
 
+def hidden_listing_counts(ds: Dataset, hidden: tuple[str, ...]) -> dict[str, int]:
+    """取り下げ依頼（パス）ごとに、非表示になる掲載中の物件の数（ADR 0016 追記）。
+
+    取り下げは静かに効くので、数を出さないと隠しすぎに気づけない。2026-09-12 の依頼は県のページを
+    指していて、長野県の 241 件が 9/17 まで誰にも気づかれずに隠れていた。
+    """
+    counts = dict.fromkeys(hidden, 0)
+    for muni in ds.municipalities:
+        for ls in ds.listings_for(muni, active_only=True):
+            url = listing_url_path(muni, ls)
+            for h in hidden:
+                if is_hidden(url, (h,)):
+                    counts[h] += 1
+    return counts
+
+
 def price_text(ls: Listing) -> str:
     parts = []
     if ls.price.ok:

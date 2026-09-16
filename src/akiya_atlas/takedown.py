@@ -26,8 +26,22 @@ from urllib.parse import urlsplit
 from sitemill.settings import Workspace
 
 META_LINE = re.compile(r"<!--\s*(\{.*?\})\s*-->", re.S)
-LISTING_PATH = re.compile(r"^/(?P<pref>[a-z-]+)/(?P<muni>[0-9]{6})/(?P<slug>[^/]+)/$")
-MUNI_PATH = re.compile(r"^/(?P<pref>[a-z-]+)/(?P<muni>[0-9]{6})/$")
+# 取り下げが自動で効くのは、物件 1 件か市町村 1 つのページだけ（ADR 0016 追記）。
+# 市町村のスラッグは 6 桁のコードか「コード-名前」（長野の初期 5 市。202193-tomi など）
+_MUNI = r"(?P<muni>[0-9]{6}(?:-[a-z0-9-]+)?)"
+LISTING_PATH = re.compile(rf"^/(?P<pref>[a-z-]+)/{_MUNI}/(?P<slug>[^/]+)/$")
+MUNI_PATH = re.compile(rf"^/(?P<pref>[a-z-]+)/{_MUNI}/$")
+
+
+def in_scope(path: str) -> bool:
+    """自動で非表示にしてよい範囲か（物件ページか市町村ページ）。
+
+    県のページ・トップ・所有者向けページなどの URL は、依頼の対象を特定できない。2026-09-12 の依頼は
+    「当町の成約済み物件を」と書きつつ県のページ /nagano/ を指していて、
+    配下の 241 件がすべて隠れた。
+    範囲外は隠さず、人の判断に回す。
+    """
+    return bool(LISTING_PATH.match(path) or MUNI_PATH.match(path))
 
 
 def takedowns_path(ws: Workspace) -> Path:
@@ -62,6 +76,8 @@ class TakedownList:
     """非表示にするページの一覧。パスで引く。"""
 
     items: list[Takedown] = field(default_factory=list)
+    # 対象を特定できず、自動では隠さなかった依頼（県のページ・トップなど）。人が対象を決める
+    unscoped: list[Takedown] = field(default_factory=list)
     other_issues: dict[str, int] = field(default_factory=dict)  # 読むだけのラベルの件数
 
     @property
@@ -74,6 +90,8 @@ class TakedownList:
             "updated_at": datetime.now(UTC).replace(microsecond=0).isoformat(),
             "other_open_issues": self.other_issues,
             "takedowns": [t.to_json() for t in sorted(self.items, key=lambda t: t.path)],
+            # 自動では隠さなかった依頼。Issue の対象 URL を物件か市町村のページに直せば次回から効く
+            "unscoped": [t.to_json() for t in sorted(self.unscoped, key=lambda t: t.path)],
         }
 
     @classmethod
@@ -88,6 +106,12 @@ class TakedownList:
             items=[
                 Takedown(**{k: v for k, v in row.items() if k in keys})
                 for row in data.get("takedowns", [])
+                # 範囲外の行が一覧に入っていても（手編集など）、読むときに効かせない
+                if in_scope(str(row.get("path", "")))
+            ],
+            unscoped=[
+                Takedown(**{k: v for k, v in row.items() if k in keys})
+                for row in data.get("unscoped", [])
             ],
             other_issues=data.get("other_open_issues", {}),
         )
@@ -151,16 +175,15 @@ def collect(issues: list[dict[str, Any]], *, base_url: str) -> TakedownList:
             path = site_path(url, base_url)
             if path is None:
                 continue  # 外部サイトの URL は本サイトでは消せない
-            if path in out.paths:
+            if path in out.paths or any(t.path == path for t in out.unscoped):
                 continue
-            out.items.append(
-                Takedown(
-                    issue=int(issue.get("number") or 0),
-                    url=url,
-                    path=path,
-                    received_at=str(meta.get("received_at") or ""),
-                )
+            entry = Takedown(
+                issue=int(issue.get("number") or 0),
+                url=url,
+                path=path,
+                received_at=str(meta.get("received_at") or ""),
             )
+            (out.items if in_scope(path) else out.unscoped).append(entry)
     return out
 
 

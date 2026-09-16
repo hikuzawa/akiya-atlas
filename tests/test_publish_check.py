@@ -167,3 +167,36 @@ def test_the_check_notices_when_the_crawled_count_on_the_top_page_drifts(ws: Wor
     top.write_text(html.replace("全国 1 市町村", "全国 1,741 市町村"), encoding="utf-8")
     problems, _ = publish_check.check(ws, ws.dist_dir)
     assert any("1,741" in p for p in problems)
+
+
+def _takedown(ws: Workspace, path: str) -> None:
+    (ws.root / "data/reference").mkdir(parents=True, exist_ok=True)
+    (ws.root / "data/reference/takedowns.json").write_text(
+        json.dumps(
+            {"takedowns": [{"issue": 1, "url": f"https://akiya-atlas.com{path}", "path": path}]},
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
+
+
+def test_a_takedown_of_one_municipality_hides_only_it_and_says_how_many(ws: Workspace) -> None:
+    """市町村を指す取り下げは、その市町村の物件だけを隠し、何ページ隠したかを要約に出す。"""
+    _takedown(ws, "/nagano/202193-tomi/")
+    commands.cmd_build(commands.Runtime(ws=ws, service=service))
+    assert not (ws.dist_dir / LISTING).exists()
+    problems, summary = publish_check.check(ws, ws.dist_dir)
+    assert problems == []
+    assert "取り下げ 1 件で 1 ページを非表示" in summary
+
+
+def test_the_check_notices_listings_hidden_beyond_any_takedown(ws: Workspace) -> None:
+    """隠しすぎの再現。掲載中の物件のページが、物件か市町村を指す取り下げで説明できずに無い。
+
+    長野県では県のページを指す取り下げ 1 件で 241 件が消えていたが、「隠すべきものが出ていないか」
+    だけを見る検査は何も言わなかった。
+    """
+    commands.cmd_build(commands.Runtime(ws=ws, service=service))
+    (ws.dist_dir / LISTING).unlink()  # どの経路で消えたかは問わない
+    problems, _ = publish_check.check(ws, ws.dist_dir)
+    assert any("掲載中の物件なのにページが無い" in p for p in problems)

@@ -172,13 +172,30 @@ def _register(app: typer.Typer) -> None:
 
         takedown ラベルだけを対象にする。needs-human と municipality は数えるだけで何もしない。
         """
+        import os
+
         from akiya_atlas import takedown
+        from akiya_atlas.data import Dataset
+        from akiya_atlas.pages import hidden_listing_counts
 
         rt = commands.Runtime.open()
         result = takedown.sync(rt.ws, repo, limit=limit)
-        typer.echo(f"非表示にするページ: {len(result.items)} 件")
+        # どの依頼で何ページ隠れるかを必ず出す。静かに効くと、隠しすぎに誰も気づけない
+        # （ADR 0016 追記）
+        counts = hidden_listing_counts(Dataset.load(rt.ws), tuple(t.path for t in result.items))
+        typer.echo(
+            f"取り下げ依頼 {len(result.items)} 件により、"
+            f"掲載中の物件 {sum(counts.values())} ページを非表示"
+        )
         for t in result.items:
-            typer.echo(f"  #{t.issue} {t.path}")
+            typer.echo(f"  #{t.issue} {t.path}: {counts.get(t.path, 0)} ページ")
+        in_ci = os.environ.get("GITHUB_ACTIONS") == "true"
+        for t in result.unscoped:
+            msg = (
+                f"取り下げ依頼 #{t.issue} の対象 {t.path} は物件か市町村のページではないため、"
+                "自動では隠さない。対象を確かめて Issue の URL を直す"
+            )
+            typer.echo(f"::warning::{msg}" if in_ci else f"  ! {msg}")
         for name, n in sorted(result.other_issues.items()):
             typer.echo(f"  （{name} の開いている Issue {n} 件は読むだけ）")
 
