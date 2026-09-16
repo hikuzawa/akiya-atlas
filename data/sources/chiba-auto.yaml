@@ -1258,10 +1258,6 @@ sources:
   pages:
   - url: https://www.town.mutsuzawa.chiba.jp/akiya
     kind: listing_index
-    follow:
-    - pattern: https?://www\.town\.mutsuzawa\.chiba\.jp/akiya/page/\d+/?$
-      kind: listing_index
-      max_links: 20
   - url: https://www.town.mutsuzawa.chiba.jp/kurashi/%e4%bd%8f%e5%ae%85%e7%94%a8%e7%81%ab%e7%81%bd%e8%ad%a6%e5%a0%b1%e5%99%a8%e8%b3%bc%e5%85%a5%e3%81%ab%e8%a6%81%e3%81%97%e3%81%9f%e8%b2%bb%e7%94%a8%e3%81%ae%e4%b8%80%e9%83%a8%e3%82%92%e8%a3%9c%e5%8a%a9.html
     kind: subsidy
   - url: https://www.town.mutsuzawa.chiba.jp/kurashi/%e4%bb%a4%e5%92%8c%ef%bc%97%e5%b9%b4%e5%ba%a6%e3%80%80%e4%bd%8f%e5%ae%85%e7%94%a8%e8%a8%ad%e5%82%99%e7%ad%89%e8%84%b1%e7%82%ad%e7%b4%a0%e5%8c%96%e4%bf%83%e9%80%b2%e4%ba%8b%e6%a5%ad%e8%a3%9c%e5%8a%a9.html

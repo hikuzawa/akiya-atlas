@@ -1304,7 +1304,7 @@
       "official_url": "www.town.mutsuzawa.chiba.jp",
       "operator_kind": "municipality",
       "page_class": "listing_index",
-      "pagination_pattern": "https?://www\\.town\\.mutsuzawa\\.chiba\\.jp/akiya/page/\\d+/?$",
+      "pagination_pattern": null,
       "policy": "crawl",
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",

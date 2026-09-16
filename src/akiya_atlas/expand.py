@@ -492,7 +492,9 @@ def select_bank_page(
         best.listing.pagination.is_paginated
         and best.classified.page_class is PageClass.listing_index
     ):
-        probe.pagination_pattern = best.listing.pagination.follow_pattern
+        probe.pagination_pattern = verified_pagination(
+            best.html, best.url, best.listing.pagination.follow_pattern, client
+        )
     seen = {best.url}
     for u in [t.url for t in tried] + [c.url for c in cands]:
         if u not in seen:
@@ -831,6 +833,33 @@ def _detail_follow(f: MunicipalityFinding) -> list[FollowRule]:
     if not f.detail_pattern:
         return []
     return [FollowRule(pattern=f.detail_pattern, kind=PageKind.listing_detail, max_links=60)]
+
+
+def verified_pagination(
+    html: str, url: str, pattern: str | None, client: PoliteClient
+) -> str | None:
+    """ページ送りの辿り方を、2 ページ目が実在するときだけ採る。
+
+    一覧の「次のページ」リンクが、存在しないページを指していることがある。千葉県睦沢町は一覧自身の
+    `rel="next"` が 404 を返す /akiya/page/2 を指していて、物件は 1 ページ目にすべて載っているのに、
+    2026-09-11 から毎日 404 を取りに行っていた（相手サイトへの無駄なアクセス）。
+
+    形に合うリンクのうち最初の 1 件だけを取得する。404 / 410 なら辿り方を作らない。
+    それ以外の失敗（タイムアウトなど）は一時的かもしれないので、辿り方を残す。
+    """
+    if not pattern:
+        return None
+    rx = re.compile(pattern)
+    targets = sorted({ln.url for ln in extract_links(html, url) if rx.search(ln.url)} - {url})
+    if not targets:
+        return pattern
+    res = client.get(targets[0], check_robots=True)
+    if res.status in (404, 410):
+        log.info(
+            "%s: 次のページ %s が HTTP %d のため、ページ送りを辿らない", url, targets[0], res.status
+        )
+        return None
+    return pattern
 
 
 def _pagination_follow(f: MunicipalityFinding) -> list[FollowRule]:

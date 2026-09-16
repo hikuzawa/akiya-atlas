@@ -3,6 +3,7 @@
 from sitemill.classify import ClassifiedPage, PageClass
 from sitemill.models import CrawlPolicy, OperatorKind
 
+from akiya_atlas import expand
 from akiya_atlas.expand import decide, finding_to_candidate, finding_to_source
 from akiya_atlas.municipalities import MunicipalityRef
 from akiya_atlas.official_domains import classify_host
@@ -240,3 +241,55 @@ def test_external_link_label_drops_contact_numbers() -> None:
     label = clean_link_label("◆物件登録募集中【お気軽にご相談ください Tel. 0284-20-2266】")
     assert "0284" not in label and "物件登録募集中" in label
     assert clean_link_label("空き家バンク（アットホーム）") == "空き家バンク(アットホーム)"
+
+
+class _StatusClient:
+    """取得した URL を覚え、決めた HTTP ステータスを返すだけのクライアント（ネットワーク不要）。"""
+
+    def __init__(self, status: int) -> None:
+        self.status = status
+        self.fetched: list[str] = []
+
+    def get(self, url: str, **_: object) -> object:
+        from types import SimpleNamespace
+
+        self.fetched.append(url)
+        return SimpleNamespace(status=self.status, ok=self.status == 200)
+
+
+MUTSUZAWA_INDEX = """<html><body><h1>睦沢町「空き家物件情報」</h1>
+<p>No.803 睦沢町川島 売買 700 万円</p>
+<a class="nextpostslink" rel="next" aria-label="次のページ"
+   href="https://www.town.mutsuzawa.chiba.jp/akiya/page/2">»</a>
+</body></html>"""
+MUTSUZAWA_PATTERN = r"https?://www\.town\.mutsuzawa\.chiba\.jp/akiya/page/\d+/?$"
+
+
+def test_pagination_is_dropped_when_the_next_page_does_not_exist() -> None:
+    """睦沢町の再現。「次のページ」リンクが 404 を指すなら、辿り方を作らない。
+
+    作ってしまうと、存在しないページを毎日取りに行く（2026-09-11 から 12 回連続で 404）。
+    """
+    client = _StatusClient(404)
+    url = "https://www.town.mutsuzawa.chiba.jp/akiya"
+    assert expand.verified_pagination(MUTSUZAWA_INDEX, url, MUTSUZAWA_PATTERN, client) is None
+    assert client.fetched == [
+        "https://www.town.mutsuzawa.chiba.jp/akiya/page/2"
+    ]  # 確かめるのは 1 回だけ
+
+
+def test_pagination_is_kept_when_the_next_page_exists_or_fails_for_other_reasons() -> None:
+    """2 ページ目が返るなら辿る。404 以外の失敗は一時的かもしれないので、辿り方を残す。"""
+    url = "https://www.town.mutsuzawa.chiba.jp/akiya"
+    for status in (200, 500, 0):
+        got = expand.verified_pagination(
+            MUTSUZAWA_INDEX, url, MUTSUZAWA_PATTERN, _StatusClient(status)
+        )
+        assert got == MUTSUZAWA_PATTERN, status
+    # 形は分かったが実例のリンクが無いときは、取得せずにそのまま残す
+    quiet = _StatusClient(404)
+    assert (
+        expand.verified_pagination("<html></html>", url, MUTSUZAWA_PATTERN, quiet)
+        == MUTSUZAWA_PATTERN
+    )
+    assert quiet.fetched == []
