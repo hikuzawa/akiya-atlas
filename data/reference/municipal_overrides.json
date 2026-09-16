@@ -5,7 +5,8 @@
     "no_website": "公式サイトが存在しない。発見の対象から外し、サイトにも載せない",
     "evidence": "そう判断できる根拠",
     "source": "根拠の出典 URL",
-    "link_only": "物件一覧を巡回しないと決めた自治体（一覧が PDF だけ、検索しないと物件が出ない、など）。物件は公式へのリンクだけを出す。補助制度のページは別に探して巡回する（ADR 0013）ので、見つかった自治体は policy が crawl になる。そのときも pages は kind: subsidy だけで、物件一覧は入らない"
+    "link_only": "物件一覧を巡回しないと決めた自治体（一覧が PDF だけ、検索しないと物件が出ない、など）。物件は公式へのリンクだけを出す。補助制度のページは別に探して巡回する（ADR 0013）ので、見つかった自治体は policy が crawl になる。そのときも pages は kind: subsidy だけで、物件一覧は入らない",
+    "page_note": "link_only の自治体の画面に出す案内文。なぜ物件を載せないのかまで書く。無ければ「物件ページを見つけられませんでした」になる（すぐ後ろに公式への主ボタンが出る）"
   },
   "municipalities": [
     {
@@ -79,6 +80,7 @@
       "official_url": "https://www.city-yanai.jp/",
       "bank_url": "https://www.city-yanai.jp/site/yanai-gurashi/akiya-ichiran.html",
       "evidence": "物件一覧を PDF（3.63MB、文字と画像が混在）でのみ公開している。PDF は解析せず、公式ページへ案内する",
+      "page_note": "物件一覧は PDF で公開されています。本サイトでは PDF の内容を要約しないため、公式ページでご確認ください。",
       "source": "https://www.city-yanai.jp/site/yanai-gurashi/akiya-ichiran.html",
       "checked_on": "2026-09-12"
     },
@@ -90,6 +92,7 @@
       "official_url": "https://www.city.ono.hyogo.jp/",
       "bank_url": "https://www.city.ono.hyogo.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/2/5107.html",
       "evidence": "物件ごとの登録カードを PDF でのみ公開している。PDF は解析せず、公式ページへ案内する",
+      "page_note": "物件一覧は PDF で公開されています。本サイトでは PDF の内容を要約しないため、公式ページでご確認ください。",
       "source": "https://www.city.ono.hyogo.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/2/5107.html",
       "checked_on": "2026-09-12"
     },
@@ -101,6 +104,7 @@
       "official_url": "https://www.city.nakama.lg.jp/",
       "bank_url": "https://www.city.nakama.lg.jp/akiya/search/search.php",
       "evidence": "空き家バンクの掲載ページが専用の検索フォーム（<form action=\"search.php\" name=\"search_akiya\" method=\"get\">）で、検索しないと物件が出ない。検索の自動送信はしない方針のため、公式ページへの案内にとどめる",
+      "page_note": "物件は公式サイトの検索画面から探す方式です。本サイトでは検索を自動で行わないため、公式ページでご確認ください。",
       "source": "https://www.city.nakama.lg.jp/akiya/search/search.php",
       "checked_on": "2026-09-14"
     },
@@ -112,6 +116,7 @@
       "official_url": "https://www.city.kunisaki.oita.jp/",
       "bank_url": "https://www.city.kunisaki.oita.jp/akiyabank/search.php",
       "evidence": "空き家バンクの掲載ページが専用の検索フォーム（<form action=\"search.php\" name=\"search_akiya\" method=\"get\">）で、検索しないと物件が出ない。検索の自動送信はしない方針のため、公式ページへの案内にとどめる",
+      "page_note": "物件は公式サイトの検索画面から探す方式です。本サイトでは検索を自動で行わないため、公式ページでご確認ください。",
       "source": "https://www.city.kunisaki.oita.jp/akiyabank/search.php",
       "checked_on": "2026-09-14"
     },
@@ -123,6 +128,7 @@
       "official_url": "https://www.town.anamizu.lg.jp/",
       "bank_url": "https://www.town.anamizu.lg.jp/akiyabank/",
       "evidence": "掲載ページがエリア・物件形態・価格帯の絞り込み画面で、検索しないと物件が出ない（本文は選択肢と「検索」ボタンだけ）。検索の自動送信はしない方針のため、公式ページへの案内にとどめる",
+      "page_note": "物件は公式サイトの検索画面から探す方式です。本サイトでは検索を自動で行わないため、公式ページでご確認ください。",
       "source": "https://www.town.anamizu.lg.jp/akiyabank/",
       "checked_on": "2026-09-14"
     }

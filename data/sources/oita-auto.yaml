@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.oita.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.oita.oita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.oita.oita.jp/o168/kurashi/anshinanzen/bedshelter.html
     kind: subsidy
@@ -53,7 +53,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.beppu.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.beppu.oita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.beppu.oita.jp/seikatu/sumai_tosi/sumai/detail193.html
     kind: subsidy
@@ -85,7 +85,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.city-nakatsu.jp）から空き家バンクとして案内されているリンク
     url: https://www.city-nakatsu.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://akiyabank.city-nakatsu.jp/
     kind: listing_index
@@ -114,7 +114,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hita.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hita.oita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.hita.oita.jp/site/iju/2680.html
     kind: listing_index
@@ -148,7 +148,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.city.saiki.oita.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.saiki.oita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://saiki-iju.com/house/
     kind: listing_index
@@ -178,7 +178,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.usuki.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.usuki.oita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.usuki.oita.jp/docs/2021051200056/
     kind: listing_index
@@ -211,7 +211,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tsukumi.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.tsukumi.oita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: oita-442089
   name: 竹田市空き家バンク
   operator: 竹田市
@@ -232,7 +232,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.taketa.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.taketa.oita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.taketa.oita.jp/kurashi_tetsuzuki/jogesuido/10121.html
     kind: subsidy
@@ -259,7 +259,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.bungotakada.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.bungotakada.oita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.bungotakada.oita.jp/soshiki/5/1721.html
     kind: subsidy
@@ -288,7 +288,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kitsuki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kitsuki.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: oita-442119
   name: 宇佐市空き家バンク
   operator: 宇佐市
@@ -309,7 +309,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.usa.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.usa.oita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.usa.oita.jp/sougo/soshiki/10/machizukurisuishinka/2/2/3/2675.html
     kind: subsidy
@@ -343,7 +343,7 @@ sources:
   operator_evidence:
     quote: 大分県 県内市町村（リンク集）に掲載された公式サイト（www.bungo-ohno.jp）
     url: https://www.pref.oita.jp/soshiki/75008/kennai-sityoson.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.bungo-ohno.jp/docs/2022041800027/
     kind: subsidy
@@ -370,7 +370,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.city.yufu.oita.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.yufu.oita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://yufu-iju.jp/immigration/support/
     kind: subsidy
@@ -395,11 +395,11 @@ sources:
     bank_status: none
     extract_pending: false
     map_query: 大分県国東市
-    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
+    bank_note: 物件は公式サイトの検索画面から探す方式です。本サイトでは検索を自動で行わないため、公式ページでご確認ください。
   operator_evidence:
     quote: 空き家バンクの掲載ページが専用の検索フォーム（<form action="search.php" name="search_akiya" method="get">）で、検索しないと物件が出ない。検索の自動送信はしない方針のため、公式ページへの案内にとどめる（www.city.kunisaki.oita.jp）
     url: https://www.city.kunisaki.oita.jp/akiyabank/search.php
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: oita-443221
   name: 姫島村空き家バンク
   operator: 姫島村
@@ -420,7 +420,7 @@ sources:
   operator_evidence:
     quote: 大分県 県内市町村（リンク集）に掲載された公式サイト（www.himeshima.jp）
     url: https://www.pref.oita.jp/soshiki/75008/kennai-sityoson.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.himeshima.jp/kurashi/akiyahojokin/
     kind: subsidy
@@ -454,7 +454,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hiji.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.hiji.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: oita-444618
   name: 九重町空き家バンク
   operator: 九重町
@@ -475,7 +475,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kokonoe.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kokonoe.oita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.town.kokonoe.oita.jp/docs/2026081800030/
     kind: subsidy
@@ -501,7 +501,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kusu.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kusu.oita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.town.kusu.oita.jp/cgi-bin/recruit.php/1/detail/8?ck=1
     kind: listing_detail

@@ -1134,7 +1134,7 @@ def discover_and_write(
     # 確信度の閾値は使わない（運営主体の確認が採用の条件。ADR 0007 の原則）。
     del adopt_threshold
     _write_findings(ws, pref_slug, report.findings)
-    adopted, candidates = _outputs_from_findings(report.findings, pref_name)
+    adopted, candidates = _outputs_from_findings(report.findings, pref_name, overrides)
     _write_sources_and_review(ws, pref_name, pref_slug, adopted, candidates)
 
     write_json(
@@ -1238,7 +1238,9 @@ def _write_findings(ws: Workspace, pref_slug: str, findings: list[MunicipalityFi
 
 
 def _outputs_from_findings(
-    findings: list[MunicipalityFinding], pref_name: str
+    findings: list[MunicipalityFinding],
+    pref_name: str,
+    overrides: OfficialOverrides | None = None,
 ) -> tuple[list[dict], list[ReviewCandidate]]:
     adopted: list[dict] = []
     candidates: list[ReviewCandidate] = []
@@ -1247,8 +1249,26 @@ def _outputs_from_findings(
             continue  # 公式サイトが無い市町村。sources にも review にも出さない
         candidates.append(finding_to_candidate(f))
         if f.policy in ("crawl", "link_only"):
-            adopted.append(finding_to_source_dict(f, prefecture_name=pref_name))
+            entry = finding_to_source_dict(f, prefecture_name=pref_name)
+            _apply_page_note(entry, overrides)
+            adopted.append(entry)
     return adopted, candidates
+
+
+def _apply_page_note(entry: dict, overrides: OfficialOverrides | None) -> None:
+    """物件一覧を巡回しないと決めた自治体には、その理由を画面の案内文として出す。
+
+    状態だけで決まる既定文は「物件ページを見つけられませんでした」で、PDF や検索フォームで
+    公開されていると分かっている自治体には事実と違う。上書きファイルの page_note があれば
+    それに差し替える。案内文のすぐ後ろには公式ページへの主ボタンが出る（テンプレート側）。
+    """
+    if overrides is None:
+        return
+    muni = entry.get("municipality") or {}
+    row = overrides.link_only.get(str(muni.get("code") or ""))
+    note = str((row or {}).get("page_note") or "").strip()
+    if note and muni.get("bank_status") != "available":
+        muni["bank_note"] = note
 
 
 def _write_sources_and_review(
@@ -1281,7 +1301,8 @@ def rebuild_outputs(ws: Workspace, prefecture: str) -> tuple[int, int]:
     pref_slug = munis[0].prefecture_slug if munis else prefecture
     data = read_json(_findings_path(ws, pref_slug)) or {"findings": []}
     findings = [_row_to_finding(r) for r in data["findings"]]
-    adopted, candidates = _outputs_from_findings(findings, pref_name)
+    overrides = OfficialOverrides.load(ws, pref_slug)
+    adopted, candidates = _outputs_from_findings(findings, pref_name, overrides)
     _write_sources_and_review(ws, pref_name, pref_slug, adopted, candidates)
     return len(adopted), sum(1 for c in candidates if c.proposed_policy == "pending")
 
@@ -1373,7 +1394,9 @@ def _write_rows(ws: Workspace, pref_slug: str, pref_name: str, rows: list[dict])
     """findings 行をそのまま保存し、sources/review を作り直す。"""
     write_json(_findings_path(ws, pref_slug), {"findings": rows})
     findings = [_row_to_finding(r) for r in rows]
-    adopted, candidates = _outputs_from_findings(findings, pref_name)
+    adopted, candidates = _outputs_from_findings(
+        findings, pref_name, OfficialOverrides.load(ws, pref_slug)
+    )
     _write_sources_and_review(ws, pref_name, pref_slug, adopted, candidates)
 
 
