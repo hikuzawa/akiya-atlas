@@ -39,5 +39,5 @@ sitemill の最初の利用者。自治体が独自に運営する空き家バ�
 - 取得した生 HTML はコミットしない。**このリポジトリは public**。テストに要る数ページは非公開の `akiya-atlas-ops` の `fixtures/html/` に置き、`tests/fixtures/html/` へ複写して使う（git 管理外。無ければテストと eval は skip する）
 - 公開できないものは `akiya-atlas-ops`（private）に置く。保存済み HTML（再配布しない約束）、ASP の申請状況と選定の実データ（他社の数字）、お問い合わせから起票される Issue（プライバシーポリシーで「非公開」と公言している）
 - **CI は sitemill のタグ固定（現在 `v0.6.0`）。sitemill の main の変更は自動では反映されない**（ADR 0006）。手元は `../sitemill` への editable 依存のままなので、ローカルで通っても CI で通らないことがある。エンジンの修正を取り込むときは、sitemill でタグを打ってから `.github/workflows/` 4 本（checks・pipeline・search・weekly）の `ref:` を上げる（手順は `docs/runbook/operations.md` の 5 章）
-- **このディレクトリは複数のセッションが同時に使う**（worktree 分離は効かない）。他人の未コミットの変更は自分の build やテストにも入るので、結果を使う前に `git status` を見る。他人の変更には触らず、コミットは自分のファイルを明示指定、`pull --rebase` が止まるなら `fetch` ＋ `merge --ff-only`。詳しくは親フォルダの CLAUDE.md「作業環境の制約」
+- **このディレクトリは複数のセッションが同時に使う**（worktree 分離は効かない）。他人の未コミットの変更は自分の build やテストにも入るので、結果を使う前に `git status` を見る。他人の変更には触らず、コミットは `git commit -m ... -- 自分のファイル` の形にする（`git add` のあとの素の `git commit` は、他人が `add` 済みの変更まで含める。2026-09-17 に実際に起きた）。`pull --rebase` が止まるなら `fetch` ＋ `merge --ff-only`。詳しくは親フォルダの CLAUDE.md「作業環境の制約」
 - 区切りごとに `uv run pytest` と `uv run ruff check` を通してからコミットする。コミットはこのディレクトリ内で行う
