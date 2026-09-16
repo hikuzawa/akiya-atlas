@@ -209,7 +209,12 @@ def normalize_listing_no(text: str) -> str:
 
 
 def record_id_for(source_id: str, listing_no: str) -> str:
-    key = f"{source_id}:{normalize_listing_no(listing_no)}"
+    """物件の id。大文字と小文字は区別しない（飯山市の「A358」と「a358」は同じ物件）。
+
+    大文字にそろえるのは id の中だけ。normalize_listing_no（スラグの元）でそろえると、
+    「地No.5」のように日本語を含む番号は URL の印が変わってしまう。
+    """
+    key = f"{source_id}:{normalize_listing_no(listing_no).upper()}"
     return hashlib.sha1(key.encode("utf-8")).hexdigest()[:16]
 
 

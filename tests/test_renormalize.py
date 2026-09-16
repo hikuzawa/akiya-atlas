@@ -36,11 +36,19 @@ def test_wrapping_brackets_are_not_part_of_the_number() -> None:
     assert record_id_for("s", "<R8-8>") == record_id_for("s", "R8-8")
 
 
+def test_case_does_not_split_a_listing() -> None:
+    """飯山市は同じ物件が「A358」と「a358」で取り込まれ、2 件ずつ載った。"""
+    assert record_id_for("nagano-iiyama", "a358") == record_id_for("nagano-iiyama", "A358")
+
+
 def test_published_urls_do_not_move() -> None:
-    """括弧を外しても、URL の元になるスラグは変わらない（もともと記号として落としていた）。"""
+    """括弧を外しても、大小文字をそろえても、URL の元になるスラグは変わらない。"""
     assert listing_slug("<R8-8>", "x") == listing_slug("R8-8", "x") == "r8-8"
     assert listing_slug("(2606-5)", "x") == "2606-5"
     assert listing_slug("【164】", "x").startswith("164-")  # 以前どおり印つき
+    # 日本語を含む番号の印は、大文字にそろえる前の綴りから作る（そろえると URL が動く）
+    mark = hashlib.sha1("地No.5".encode()).hexdigest()[:4]
+    assert listing_slug("地No.5", "x") == f"no-5-{mark}"
 
 
 @pytest.fixture
