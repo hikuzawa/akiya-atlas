@@ -425,13 +425,14 @@ def test_page_says_not_yet_imported_when_the_listing_exists_but_we_read_nothing(
 
 
 def test_numbers_that_collapse_to_the_same_slug_get_separate_pages(ws: Workspace) -> None:
-    """記号を落とすと同じ綴りになる物件番号でも、ページのパスは分かれる。
+    """記号を落とすと同じ綴りになる別々の物件番号でも、ページのパスは分かれる。
 
-    砂川市に「H30-15」と「(H30-15)」が並んだときに日次のビルドが止まった。先に見つけた
-    ほうの URL は変えず、あとから来たほうにしるしを足す。
+    先に見つけたほうの URL は変えず、あとから来たほうにしるしを足す。なお砂川市で起きた
+    「H30-15」と「<H30-15>」は別の物件ではなく同じ物件の表記ゆれで、正規化で 1 件にまとまる
+    （tests/test_renormalize.py）。ここで見るのは「H30-15」と「H30.15」のような本当に別の番号。
     """
     rows = []
-    for no, seen in (("H30-15", "2026-09-01"), ("(H30-15)", "2026-09-12")):
+    for no, seen in (("H30-15", "2026-09-01"), ("H30.15", "2026-09-12")):
         row = _listing("nagano-tomi", "202193", no)
         row["first_seen_at"] = f"{seen}T00:00:00+00:00"
         rows.append(row)

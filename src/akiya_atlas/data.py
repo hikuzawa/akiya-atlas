@@ -77,10 +77,11 @@ def load_listings(ws: Workspace, source_id: str) -> list[Listing]:
 def _make_slugs_unique(rows: list[Listing]) -> None:
     """同じ自治体でスラグがぶつかる物件に、番号からのしるしを足す。
 
-    記号を落とすと同じ綴りになる番号が実在する（砂川市の「H30-15」と「(H30-15)」）。
-    ぶつかったままだとページのパスが重なってビルドが止まるので、ここで分ける。
-    **先に見つけた物件の URL は変えない**（公開済みの URL を動かさないため）。あとから
-    来たほうに、番号そのものから作ったしるしを足す。
+    ぶつかったままだとページのパスが重なってビルドが止まるので、ここで分ける。同じ物件の表記
+    ゆれ（「R8-8」と「<R8-8>」）は normalize_listing_no で 1 件にまとまるので、ここに来るのは
+    本当に別の物件だけのはず（来たら警告で分かる）。
+    **掲載中で、先に見つけた物件の URL は変えない**（公開済みの URL を動かさないため）。
+    掲載中の物件を優先するのは、掲載を終えた古いレコードに URL を取られないようにするため。
     """
     groups: dict[str, list[Listing]] = {}
     for ls in rows:
@@ -88,7 +89,7 @@ def _make_slugs_unique(rows: list[Listing]) -> None:
     for slug, group in groups.items():
         if len(group) < 2:
             continue
-        group.sort(key=lambda ls: (ls.first_seen_at or "9999", ls.record_id))
+        group.sort(key=lambda ls: (not ls.is_active, ls.first_seen_at or "9999", ls.record_id))
         for ls in group[1:]:
             mark = hashlib.sha1(normalize_listing_no(ls.listing_no).encode("utf-8")).hexdigest()[:4]
             ls.slug_uniq = f"{slug}-{mark}"

@@ -214,6 +214,30 @@ def _register(app: typer.Typer) -> None:
         for name, n in sorted(result.other_issues.items()):
             typer.echo(f"  （{name} の開いている Issue {n} 件は読むだけ）")
 
+    @app.command("renormalize-records")
+    def renormalize_records_cmd(
+        apply_: Annotated[
+            bool, typer.Option("--apply", help="書き換える（省略時は内容を出すだけ）")
+        ] = False,
+    ) -> None:
+        """物件番号の正規化を改めたあと、保存済みレコードの id を付け直し、割れた物件をまとめる。"""
+        from akiya_atlas import renormalize
+
+        rt = commands.Runtime.open()
+        result = renormalize.plan(rt.ws)
+        if result.empty:
+            typer.echo("付け直すレコードは無い")
+            return
+        for source in sorted(set(result.renamed) | set(result.merged)):
+            typer.echo(
+                f"{source}: id を付け直す {result.renamed.get(source, 0)} 件 / "
+                f"同じ物件をまとめる {result.merged.get(source, 0)} 件"
+            )
+        if apply_:
+            typer.echo(f"書き換えた: {renormalize.apply(result)} ファイル")
+        else:
+            typer.echo("（--apply で書き換える）")
+
     @app.command("backfill")
     def backfill_cmd(
         only: Annotated[

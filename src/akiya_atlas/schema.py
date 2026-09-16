@@ -192,8 +192,17 @@ FIELD_LABELS = {
 
 
 def normalize_listing_no(text: str) -> str:
-    """物件番号の表記ゆれ（全角・空白・接頭辞）を吸収してキーにする。"""
+    """物件番号の表記ゆれ（全角・空白・接頭辞・囲みの括弧）を吸収してキーにする。
+
+    番号を囲むだけの `<>` と `()` は外す。砂川市は一覧で「<R8-8>」と書いていて、抽出が 9/15 から
+    括弧ごと引用するようになった。外さないと id が変わり、同じ物件が 2 件に割れて二重に載る。
+    全角の（）＜＞は NFKC で半角になるので同じ扱い。【】は外さない（スラグに印が付く形で公開済みで、
+    外すと URL が変わる）。
+    """
     t = unicodedata.normalize("NFKC", text).strip()
+    wrapped = re.fullmatch(r"<\s*(.+?)\s*>|\(\s*(.+?)\s*\)", t)
+    if wrapped:
+        t = wrapped.group(1) or wrapped.group(2)
     t = re.sub(r"^(物件番号|物件No\.?|No\.?|№|番号)\s*[:：]?\s*", "", t, flags=re.I)
     t = re.sub(r"\s+", "", t)
     return t.strip("：:.- ")
