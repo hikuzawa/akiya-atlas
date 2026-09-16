@@ -504,6 +504,69 @@ def ensure_no_pii(ds: Dataset, ws: Workspace) -> None:
         raise BuildError(f"個人情報らしき文字列がレコードに含まれるためビルドを中止: {details}")
 
 
+def _office(name: str) -> str:
+    """「市の公式ページ」の「市」。市町村区で終わらない名前は「自治体」。"""
+    return name[-1] if name and name[-1] in "市町村区" else "自治体"
+
+
+def municipality_meta(
+    muni: Municipality,
+    active: list[Listing],
+    reason: str | None,
+    fetched: datetime | None,
+) -> tuple[str, str]:
+    """市町村ページのタイトルと説明文（docs/improvements/0001）。
+
+    「◯◯町 空き家バンク」で検索した人には、自治体の公式ページと並んで表示される。以前の
+    「◯◯町の空き家バンク（◯◯県）」は公式ページとほぼ同じ見出しで、説明文も町名以外は全ページ同じ
+    だった。市町村ページは表示 277・クリック 10（CTR 3.6%、2026-09-11〜17）で、表示が最も多い
+    高知県安芸市（32 回・平均 8.6 位）はクリック 0。
+
+    検索語と一致する「◯◯の空き家バンク」は残し、そのページにしか無い事実（掲載件数・価格・確認日・
+    補助制度の件数）を足す。**持っていない数字は書かない**: 掲載 0 件なら件数を謳わず、取り込めて
+    いない（`reason == "unavailable"`）なら「掲載なし」と言わず、巡回していない町に確認日を
+    付けない。
+    """
+    n = len(active)
+    subs = len(muni.subsidies)
+    office = _office(muni.name)
+    where = f"{muni.prefecture}{muni.name}"
+    base = f"{muni.name}の空き家バンク"
+    if n:
+        title = f"{base} 掲載{n}件（{muni.prefecture}）"
+    elif subs:
+        title = f"{base}と補助制度（{muni.prefecture}）"
+    else:
+        title = f"{base}（{muni.prefecture}）"
+
+    checked = f"（{date_ja(fetched).split('年', 1)[1]}確認）" if fetched and muni.crawled else ""
+    subs_text = f"補助制度{subs}件と、" if subs else ""
+    if n:
+        st = stats_of(active)
+        prices = []
+        if st["price_min"] is not None:
+            prices.append(f"売買は{yen(st['price_min'])}から")
+        if st["free"]:
+            prices.append(f"無償譲渡{st['free']}件")
+        text = f"{where}の空き家バンクに掲載中の{n}件を一覧にしました{checked}。"
+        if prices:
+            text += "、".join(prices) + "。"
+        text += f"{subs_text}{office}の公式ページへのリンク付き。"
+    elif reason == "empty":
+        text = (
+            f"{where}の空き家バンクは、いま掲載中の物件がありません{checked}。"
+            f"{subs_text}{office}の公式ページへのリンクをまとめています。"
+        )
+    else:
+        # 巡回していない、または取り込めていない。物件の有無は言わない
+        what = f"窓口と補助制度{subs}件" if subs else "窓口"
+        text = (
+            f"{where}の空き家バンクの{what}をまとめました。"
+            f"物件は{office}の公式ページでご確認ください。"
+        )
+    return title, text[:150]
+
+
 def no_listings_reason(ctx: Ctx, muni: Municipality) -> str | None:
     """巡回対象なのに現在の掲載が 0 件のとき、その理由を区別する。
 
@@ -676,13 +739,15 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
         fetched = ds.last_fetched(muni.id)
         if fetched is not None:
             updated_candidates.append(fetched)
+        reason = no_listings_reason(ctx, muni)
+        title, description = municipality_meta(muni, active, reason, fetched)
         pages.append(
             _page(
                 ctx,
                 path=f"{muni.path}index.html",
                 template="municipality.html",
-                title=f"{muni.name}の空き家バンク（{muni.prefecture}）",
-                description=f"{muni.prefecture}{muni.name}の空き家バンク掲載物件の要約と、移住・改修などの補助制度、一次情報へのリンク。",
+                title=title,
+                description=description,
                 context={
                     "muni": muni,
                     "muni_row": muni_row(ctx, muni),
@@ -694,7 +759,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                     "chart_price": price_chart(f"{muni.name} 売買価格の分布", active),
                     "chart_built": built_chart(f"{muni.name} 築年の分布", active),
                     "min_points": MIN_CHART_POINTS,
-                    "no_listings_reason": no_listings_reason(ctx, muni),
+                    "no_listings_reason": reason,
                     "owners_url": _owners_url(muni.prefecture_slug),
                 },
                 trust_signals=trust(

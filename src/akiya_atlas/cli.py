@@ -157,6 +157,24 @@ def _register(app: typer.Typer) -> None:
         if save:
             typer.echo(f"記録: {weekly.write_snapshot(rt.ws, days=days, source=source).name}")
 
+    @app.command("improvement-report")
+    def improvement_report_cmd(
+        baseline: Annotated[Path, typer.Argument(help="docs/improvements/NNNN-baseline.json")],
+        start: Annotated[str, typer.Option("--from", help="変更後の期間の初日（YYYY-MM-DD）")],
+        end: Annotated[str, typer.Option("--to", help="変更後の期間の最終日（YYYY-MM-DD）")],
+    ) -> None:
+        """改善の手動検証。変更前に固定したページの組で、変更後の検索の数字を並べる。"""
+        from datetime import date
+
+        from akiya_atlas import improvements
+
+        rt = commands.Runtime.open()
+        lines = improvements.compare(
+            rt.ws, baseline, date.fromisoformat(start), date.fromisoformat(end)
+        )
+        for line in lines:
+            typer.echo(line)
+
     @app.command("takedowns")
     def takedowns_cmd(
         repo: Annotated[
