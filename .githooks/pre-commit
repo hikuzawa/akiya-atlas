@@ -4,6 +4,11 @@
 # gitleaks が入っていれば併用する。無くても sitemill scan-secrets が動く。
 set -e
 if command -v gitleaks >/dev/null 2>&1; then
-  gitleaks protect --staged --redact --no-banner
+  # gitleaks 8.19 で protect は git に置き換わり、8.30 で削除された。どちらでも動くようにする
+  if gitleaks git --help >/dev/null 2>&1; then
+    gitleaks git --staged --redact --no-banner
+  else
+    gitleaks protect --staged --redact --no-banner
+  fi
 fi
 uv run --quiet sitemill scan-secrets --staged
