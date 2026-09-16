@@ -177,3 +177,109 @@ def test_snapshot_is_written(ws: Workspace) -> None:
     path = weekly.write_snapshot(ws, days=7, source="all")
     data = json.loads(path.read_text(encoding="utf-8"))
     assert data["days"] == 7 and data["per_day"] and "month_estimate" in data
+
+
+def test_repeated_failures_are_grouped_by_kind(ws: Workspace) -> None:
+    """同じ失敗の繰り返しは「N 種類・延べ M 件」にまとめる。
+
+    睦沢町の 404 が毎回並び、1 週間の失敗 98 件の先頭を占めて他が埋もれていた（2026-09-17）。
+    """
+    now = datetime(2026, 9, 17, 12, 0, tzinfo=UTC)
+    same = "https://www.town.mutsuzawa.chiba.jp/akiya/page/2: HTTP 404"
+    for day in range(3):
+        _run(
+            ws,
+            f"2026091{4 + day}-030000-crawl",
+            now - timedelta(days=day),
+            1.0,
+            errors=[same] + (["https://example.lg.jp/x.html: HTTP 403"] if day == 0 else []),
+        )
+    text = "\n".join(weekly.report(ws, days=7, now=now, source="all"))
+    assert "**2 種類・延べ 4 件**" in text
+    assert f"  - 3 回: crawl: {same}" in text
+    assert text.count("mutsuzawa") == 1  # 繰り返しを 1 行にまとめる
+
+
+def test_llm_cost_has_its_own_section_and_the_old_free_tier_line_is_gone(
+    ws: Workspace, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """LLM の費用は Actions の節と分ける。public なので無料枠の割合は出さない。"""
+    now = datetime(2026, 9, 17, 12, 0, tzinfo=UTC)
+    _run(
+        ws,
+        "20260917-030000-extract",
+        now,
+        10.0,
+        llm={"calls": 5, "input_tokens": 100_000, "output_tokens": 50_000},
+    )
+    monkeypatch.setattr(
+        weekly,
+        "actions_minutes",
+        lambda repo, **_: {
+            "minutes": 66.0,
+            "runs": 22,
+            "by_workflow": {"pipeline": 66.0},
+            "truncated": False,
+            "measured": False,
+            "covered_days": 5.0,
+            "partial": True,
+            "monthly": 66.0 / 5.0 * 30,
+        },
+    )
+    text = "\n".join(weekly.report(ws, days=7, now=now, source="all", repo="o/r"))
+    llm, actions = text.split("## LLM の費用（Anthropic）")[1].split("## GitHub Actions の実行時間")
+    assert "$0.35" in llm and "1 か月に直すと **約 $10.50**" in llm
+    assert "$" not in actions  # Actions の節に費用を並べない
+    assert "無料枠" not in text and "private" not in text
+    assert "1 か月に直すと **約 396 分**" in actions  # 5 日分で割る（7 で割ると 283 分）
+    assert "旧リポジトリ（akiya-atlas-archive）の実行は含まない" in actions
+
+
+def test_no_monthly_estimate_until_a_few_days_have_passed(
+    ws: Workspace, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """作り直した直後は日数が足りない。1 日分を 30 倍した数字は出さない（1,987 分と出た）。"""
+    monkeypatch.setattr(
+        weekly,
+        "actions_minutes",
+        lambda repo, **_: {
+            "minutes": 67.0,
+            "runs": 24,
+            "by_workflow": {},
+            "truncated": False,
+            "measured": False,
+            "covered_days": 1.0,
+            "partial": True,
+            "monthly": 67.0 * 30,
+        },
+    )
+    now = datetime(2026, 9, 17, 12, 0, tzinfo=UTC)
+    actions = (
+        chr(10)
+        .join(weekly.report(ws, days=7, now=now, repo="o/r"))
+        .split("## GitHub Actions の実行時間")[1]
+    )
+    assert "1 か月の見込みは出さない" in actions and "2010" not in actions
+    assert "2026-09-16（JST）" in actions
+
+
+def test_actions_minutes_divides_by_the_days_the_repository_has_existed(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """作り直す前の実行は API から見えないので、見えている日数で割る。"""
+    calls = []
+
+    def fake(args: list[str]) -> object:
+        calls.append(args)
+        if any(a.endswith("/actions/runs") for a in args):
+            return [{"id": 1, "name": "pipeline"}, {"id": 2, "name": "search"}]
+        return {"billable": 0, "ran": 30 * 60_000}  # 30 分ずつ
+
+    monkeypatch.setattr(weekly, "_gh_json", fake)
+    now = weekly.REPOSITORY_SINCE + timedelta(days=2)
+    got = weekly.actions_minutes("o/r", days=7, now=now)
+    assert got["minutes"] == pytest.approx(60.0)
+    assert got["partial"] and got["covered_days"] == pytest.approx(2.0)
+    assert got["monthly"] == pytest.approx(60.0 / 2.0 * 30)
+    later = weekly.actions_minutes("o/r", days=7, now=weekly.REPOSITORY_SINCE + timedelta(days=30))
+    assert not later["partial"] and later["monthly"] == pytest.approx(60.0 / 7 * 30)

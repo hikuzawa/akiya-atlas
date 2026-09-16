@@ -152,12 +152,8 @@ def _register(app: typer.Typer) -> None:
         rt = commands.Runtime.open()
         for line in weekly.report(rt.ws, days=days, source=source, repo=repo or None):
             typer.echo(line)
-        est = weekly.month_estimate(weekly.collect(rt.ws, days=days, source=source))
-        typer.echo("")
-        typer.echo(
-            f"1 か月に直すと: 約 {est['minutes']:.0f} 分 / 約 ${est['cost']:.2f}"
-            "（GitHub Actions の無料枠は月 2,000 分）"
-        )
+        # 月の見込みは report の中で 1 つだけ出す（Actions は API の実行時間、LLM は別の節）。
+        # ここで data/runs から別の見込みを出すと、同じ報告に 2 つの数字が並んで読み違える
         if save:
             typer.echo(f"記録: {weekly.write_snapshot(rt.ws, days=days, source=source).name}")
 

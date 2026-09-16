@@ -20,6 +20,16 @@ from sitemill.settings import Workspace
 PRICE_IN = 1.0
 PRICE_OUT = 5.0
 
+# いまのリポジトリ（hikuzawa/akiya-atlas）を作り直した時刻。GitHub の API はこれより前の実行を
+# 返さない（旧リポジトリ akiya-atlas-archive にある）。期間がこれをまたぐときは、実行時間を
+# この時刻以降の日数で割る。7 で割ると、実行が無かった日を 0 分として数えて少なく見積もる
+REPOSITORY_SINCE = datetime(2026, 9, 15, 22, 51, 43, tzinfo=UTC)
+# 1 か月の見込みを出すのに要る日数。作り直した直後の 1 日は確認の手動実行が集中していて、
+# 30 倍すると 1,987 分と出た（2026-09-17）。数日たまるまでは見込みを出さない
+MIN_DAYS_FOR_MONTHLY = 3.0
+# 同じ失敗の繰り返しは、ここに挙げる件数だけ種類ごとに出す
+ERROR_KINDS_SHOWN = 5
+
 
 def _dt(value: str | None) -> datetime | None:
     if not value:
@@ -209,12 +219,18 @@ def _gh_json(args: list[str]) -> Any:
 def actions_minutes(
     repo: str, *, days: int = 7, now: datetime | None = None, limit: int = 100
 ) -> dict[str, Any]:
-    """直近 days 日に GitHub Actions が使った分数（課金される値）を合計する。
+    """直近 days 日に GitHub Actions が使った分数を合計し、1 か月に直した見込みを出す。
 
-    無料枠 2,000 分に近づいたら気づけるようにする。取れなかったときは error を返し、
-    「0 分」とは区別する（数字が無いことと、集計が壊れていることを混ぜない）。
+    public リポジトリなので標準ランナーの時間は枠を消費しない。数えるのは実行の重さの推移を
+    見るため。取れなかったときは error を返し、「0 分」とは区別する（数字が無いことと、
+    集計が壊れていることを混ぜない）。
     """
-    since = ((now or datetime.now(UTC)) - timedelta(days=days)).date().isoformat()
+    now = now or datetime.now(UTC)
+    window_start = now - timedelta(days=days)
+    # 作り直す前の実行は API から見えないので、見えている期間だけで割る
+    covered_from = max(window_start, REPOSITORY_SINCE)
+    covered_days = max((now - covered_from).total_seconds() / 86400, 1.0)
+    since = window_start.date().isoformat()
     runs = _gh_json(
         [
             "api",
@@ -259,7 +275,22 @@ def actions_minutes(
         "by_workflow": by_workflow,
         "truncated": len(runs) >= limit,
         "measured": measured,
+        "covered_days": covered_days,
+        "partial": covered_from > window_start,
+        "monthly": total / covered_days * 30,
     }
+
+
+def error_kinds(errors: list[str]) -> list[tuple[str, int]]:
+    """同じ失敗の繰り返しをまとめる。多い順。
+
+    毎日同じ URL が 404 を返すと、1 週間で同じ行が数十件並び、他の失敗が埋もれる。
+    千葉県睦沢町の存在しないページ送りは、1 週間の失敗 98 件のうち毎回の先頭を占めていた。
+    """
+    counts: dict[str, int] = {}
+    for err in errors:
+        counts[err] = counts.get(err, 0) + 1
+    return sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))
 
 
 def _cell(value: Any) -> str:
@@ -282,7 +313,8 @@ def report(
     out = [
         f"## {kind}の直近 {days} 日",
         "",
-        "| 日付 | 実行 | 取得 | 変化 | 抽出 | 取込 | 新規/更新 | LLM | 費用 | heal | ページ |",
+        "| 日付 | 処理時間 | 取得 | 変化 | 抽出 | 取込 | 新規/更新 "
+        "| LLM 呼び出し | LLM 費用 | heal | ページ |",
         "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
     ]
     total = DayRow(date="合計")
@@ -308,10 +340,32 @@ def report(
         f"- 自己修復: 点検 {total.heal_checked} 件 / 変更 {total.heal_changed} 件 / "
         f"状態を見直し {total.heal_downgraded} 件 / 再巡回 {total.heal_recrawl} 件",
         *takedown_lines(scope),
-        f"- 失敗した工程: {len(total.errors)} 件"
-        + (f" — {total.errors[:3]}" if total.errors else ""),
-        f"- 1 日あたりの平均: {total.seconds / max(len(rows), 1) / 60:.1f} 分 / "
-        f"${total.cost / max(len(rows), 1):.2f}",
+        f"- 処理時間の 1 日平均: {total.seconds / max(len(rows), 1) / 60:.1f} 分"
+        "（巡回から配置までの工程の合計。Actions の実行時間とは別）",
+    ]
+    kinds = error_kinds(total.errors)
+    if kinds:
+        out.append(f"- 失敗した工程: **{len(kinds)} 種類・延べ {len(total.errors)} 件**")
+        for message, n in kinds[:ERROR_KINDS_SHOWN]:
+            out.append(f"  - {n} 回: {message}")
+        if len(kinds) > ERROR_KINDS_SHOWN:
+            rest = sum(n for _, n in kinds[ERROR_KINDS_SHOWN:])
+            out.append(f"  - 他 {len(kinds) - ERROR_KINDS_SHOWN} 種類・延べ {rest} 件")
+    else:
+        out.append("- 失敗した工程: なし")
+
+    # LLM の費用は Actions の実行時間と別の節に置く（並べると同じ請求に見える）
+    per_day = total.cost / max(len(rows), 1)
+    out += [
+        "",
+        "## LLM の費用（Anthropic）",
+        "",
+        f"- 直近 {days} 日: **${total.cost:.2f}**（呼び出し {total.llm_calls} 回、"
+        f"入力 {total.input_tokens:,} / 出力 {total.output_tokens:,} トークン）",
+        f"- 1 日平均 ${per_day:.2f}。1 か月に直すと **約 ${per_day * 30:.2f}**",
+        f"  - 単価は Haiku 4.5（入力 ${PRICE_IN:g} / 出力 ${PRICE_OUT:g}、"
+        "100 万トークンあたり）で計算。"
+        "請求の値とはずれることがある",
     ]
 
     picks = reselections(ws, days=days, now=now)
@@ -335,11 +389,24 @@ def report(
     if used.get("error"):
         out.append(f"取れませんでした（{used['error']}）。残りは Billing の画面で確かめる。")
         return out
-    monthly = used["minutes"] / max(days, 1) * 30
-    out += [
-        f"- 直近 {days} 日: **{used['minutes']:.0f} 分**（{used['runs']} 回の実行）",
-        f"- 1 か月に直すと **{monthly:.0f} 分**。private の無料枠 2,000 分の {monthly / 20:.0f}%",
-    ]
+    out.append(f"- 直近 {days} 日: **{used['minutes']:.0f} 分**（{used['runs']} 回の実行）")
+    since_jst = (REPOSITORY_SINCE + timedelta(hours=9)).date().isoformat()
+    if used["covered_days"] < MIN_DAYS_FOR_MONTHLY:
+        out.append(
+            f"- 1 か月の見込みは出さない。いまのリポジトリを作り直した {since_jst}（JST）から "
+            f"{used['covered_days']:.1f} 日分しかなく、確認の手動実行が多い時期を 30 倍すると外れる"
+            f"（{MIN_DAYS_FOR_MONTHLY:g} 日分たまってから出す）"
+        )
+    else:
+        out.append(f"- 1 か月に直すと **約 {used['monthly']:.0f} 分**")
+        if used.get("partial"):
+            out.append(
+                f"  - いまのリポジトリを作り直した {since_jst}（JST）以降の "
+                f"{used['covered_days']:.1f} 日分だけで計算した"
+            )
+    if used.get("partial"):
+        out.append("  - 旧リポジトリ（akiya-atlas-archive）の実行は含まない")
+    out.append("  - public リポジトリなので、標準ランナーの実行時間は課金されない")
     if used.get("measured"):
         out.append(
             "  - GitHub が課金値を 0 で返すので、実行の所要時間で数えている"
@@ -353,7 +420,7 @@ def report(
 
 
 def month_estimate(rows: list[DayRow]) -> dict[str, float]:
-    """1 か月に直した見込み（GitHub Actions の無料枠 2,000 分との比較用）。"""
+    """data/runs の処理時間と LLM 費用を 1 か月に直した見込み（記録用。報告には出さない）。"""
     if not rows:
         return {"minutes": 0.0, "cost": 0.0}
     days = len(rows)
