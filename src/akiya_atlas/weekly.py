@@ -117,11 +117,55 @@ def collect(
     return [rows[k] for k in sorted(rows)]
 
 
-def takedown_count(ws: Workspace) -> tuple[int, dict[str, int]]:
+@dataclass
+class TakedownScope:
+    """取り下げがいま隠しているもの。依頼の件数ではなく、ページで数える。"""
+
+    pages: int = 0
+    per_request: list[tuple[int, int]] = field(default_factory=list)  # (Issue 番号, ページ数)
+    unscoped: int = 0  # 対象が広すぎて自動では適用しなかった依頼
+    other_issues: dict[str, int] = field(default_factory=dict)
+
+
+def takedown_scope(ws: Workspace) -> TakedownScope:
+    """取り下げで非表示になっている掲載中の物件ページを数える（ADR 0016 追記）。
+
+    2026-09-12 のテスト送信は県のページを指していて、長野県の物件を 5 日間隠した。そのあいだ
+    週次には「非表示にしているページ: 1 件」と出ていた。数えていたのは依頼の件数だった。
+    """
+    from akiya_atlas.data import Dataset
+    from akiya_atlas.pages import hidden_listing_counts
     from akiya_atlas.takedown import TakedownList
 
     tl = TakedownList.load(ws)
-    return len(tl.items), tl.other_issues
+    paths = tuple(t.path for t in tl.items)
+    counts = hidden_listing_counts(Dataset.load(ws), paths) if paths else {}
+    return TakedownScope(
+        pages=sum(counts.values()),
+        per_request=[(t.issue, counts.get(t.path, 0)) for t in tl.items],
+        unscoped=len(tl.unscoped),
+        other_issues=dict(tl.other_issues),
+    )
+
+
+def takedown_lines(scope: TakedownScope) -> list[str]:
+    """報告用の行。公開リポジトリの Issue や実行の要約に出すので、対象のパスは書かない。
+
+    パスを書くと、隠した物件がどれかを公開の場で示すことになる。依頼の中身は非公開の ops 側で見る。
+    """
+    out = [
+        f"- 取り下げにより {scope.pages} ページを非表示（依頼 {len(scope.per_request)} 件）"
+        + (f"（他ラベルの開いている Issue: {scope.other_issues}）" if scope.other_issues else "")
+    ]
+    if scope.per_request:
+        each = "、".join(f"#{issue} {n} ページ" for issue, n in scope.per_request)
+        out.append(f"  - 依頼ごと（ops の Issue）: {each}")
+    if scope.unscoped:
+        out.append(
+            f"- 対象が物件・市町村のページではないため、自動では適用していない依頼: "
+            f"{scope.unscoped} 件（ops で対象を確かめる）"
+        )
+    return out
 
 
 def reselections(
@@ -233,7 +277,7 @@ def report(
 ) -> list[str]:
     """報告用の行を返す（Markdown の表）。"""
     rows = collect(ws, days=days, now=now, source=source)
-    hidden, others = takedown_count(ws)
+    scope = takedown_scope(ws)
     kind = {"ci": "日次パイプライン", "local": "手元の実行", "all": "すべての実行"}[source]
     out = [
         f"## {kind}の直近 {days} 日",
@@ -262,9 +306,8 @@ def report(
     out += [
         "",
         f"- 自己修復: 点検 {total.heal_checked} 件 / 変更 {total.heal_changed} 件 / "
-        f"取り下げ {total.heal_downgraded} 件 / 再巡回 {total.heal_recrawl} 件",
-        f"- 取り下げ依頼で非表示にしているページ: {hidden} 件"
-        + (f"（他ラベルの開いている Issue: {others}）" if others else ""),
+        f"状態を見直し {total.heal_downgraded} 件 / 再巡回 {total.heal_recrawl} 件",
+        *takedown_lines(scope),
         f"- 失敗した工程: {len(total.errors)} 件"
         + (f" — {total.errors[:3]}" if total.errors else ""),
         f"- 1 日あたりの平均: {total.seconds / max(len(rows), 1) / 60:.1f} 分 / "
@@ -324,7 +367,7 @@ def write_snapshot(ws: Workspace, *, days: int = 7, source: str = "ci") -> Path:
     """まとめを data/runs/weekly-<日付>.json に残す（次回との比較用）。"""
     rows = collect(ws, days=days, source=source)
     path = ws.runs_dir / f"weekly-{datetime.now(UTC).date().isoformat()}.json"
-    hidden, others = takedown_count(ws)
+    scope = takedown_scope(ws)
     path.write_text(
         json.dumps(
             {
@@ -333,8 +376,10 @@ def write_snapshot(ws: Workspace, *, days: int = 7, source: str = "ci") -> Path:
                 "generated_at": datetime.now(UTC).replace(microsecond=0).isoformat(),
                 "per_day": [vars(r) | {"cost": round(r.cost, 4)} for r in rows],
                 "month_estimate": month_estimate(rows),
-                "takedowns_hidden": hidden,
-                "other_open_issues": others,
+                "takedown_hidden_pages": scope.pages,
+                "takedown_requests": len(scope.per_request),
+                "takedown_unscoped": scope.unscoped,
+                "other_open_issues": scope.other_issues,
             },
             ensure_ascii=False,
             indent=2,

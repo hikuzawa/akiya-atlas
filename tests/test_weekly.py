@@ -111,10 +111,20 @@ def test_report_and_month_estimate(ws: Workspace) -> None:
     assert "すべての実行の直近 7 日" in text and "2026-09-11" in text
     ci_text = "\n".join(weekly.report(ws, days=7, now=now, source="ci"))
     assert "日次パイプラインの直近 7 日" in ci_text  # 見出しで対象が分かる
-    assert "取り下げ依頼で非表示にしているページ: 0 件" in text
+    assert "取り下げにより 0 ページを非表示（依頼 0 件）" in text
     est = weekly.month_estimate(weekly.collect(ws, days=7, now=now, source="all"))
     assert est["minutes"] == pytest.approx(300.0)  # 10 分/日 × 30
     assert est["cost"] == pytest.approx((100_000 / 1e6 + 50_000 / 1e6 * 5) * 30)
+
+
+def test_takedown_lines_count_pages_and_never_name_the_page() -> None:
+    """週次は公開リポジトリの Issue に出る。何ページ隠れたかは出し、どのページかは出さない。"""
+    scope = weekly.TakedownScope(pages=192, per_request=[(1, 191), (4, 1)], unscoped=2)
+    text = "\n".join(weekly.takedown_lines(scope))
+    assert "取り下げにより 192 ページを非表示（依頼 2 件）" in text
+    assert "#1 191 ページ" in text and "#4 1 ページ" in text  # 1 件で大量に隠していれば目立つ
+    assert "自動では適用していない依頼: 2 件" in text
+    assert "/nagano/" not in text and "http" not in text
 
 
 def test_reselections_are_listed_for_the_week(ws: Workspace) -> None:

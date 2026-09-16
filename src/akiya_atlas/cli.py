@@ -183,19 +183,34 @@ def _register(app: typer.Typer) -> None:
         # どの依頼で何ページ隠れるかを必ず出す。静かに効くと、隠しすぎに誰も気づけない
         # （ADR 0016 追記）
         counts = hidden_listing_counts(Dataset.load(rt.ws), tuple(t.path for t in result.items))
-        typer.echo(
-            f"取り下げ依頼 {len(result.items)} 件により、"
-            f"掲載中の物件 {sum(counts.values())} ページを非表示"
-        )
-        for t in result.items:
-            typer.echo(f"  #{t.issue} {t.path}: {counts.get(t.path, 0)} ページ")
         in_ci = os.environ.get("GITHUB_ACTIONS") == "true"
+        typer.echo(
+            f"取り下げにより {sum(counts.values())} ページを非表示（依頼 {len(result.items)} 件）"
+        )
+        # 公開リポジトリの実行ログは誰でも読める。CI では隠した物件のパスを出さない
+        for t in result.items:
+            where = "" if in_ci else f" {t.path}"
+            typer.echo(f"  #{t.issue}{where}: {counts.get(t.path, 0)} ページ")
         for t in result.unscoped:
+            where = "" if in_ci else f"（{t.path}）"
             msg = (
-                f"取り下げ依頼 #{t.issue} の対象 {t.path} は物件か市町村のページではないため、"
+                f"取り下げ依頼 #{t.issue}{where} の対象は物件か市町村のページではないため、"
                 "自動では隠さない。対象を確かめて Issue の URL を直す"
             )
             typer.echo(f"::warning::{msg}" if in_ci else f"  ! {msg}")
+        # 実行のページ（Actions の要約）にも同じ数を出す。ログは誰も読まない
+        summary = os.environ.get("GITHUB_STEP_SUMMARY")
+        if summary:
+            from akiya_atlas.weekly import TakedownScope, takedown_lines
+
+            scope = TakedownScope(
+                pages=sum(counts.values()),
+                per_request=[(t.issue, counts.get(t.path, 0)) for t in result.items],
+                unscoped=len(result.unscoped),
+                other_issues=dict(result.other_issues),
+            )
+            with open(summary, "a", encoding="utf-8") as fh:
+                fh.write("### 取り下げ\n\n" + "\n".join(takedown_lines(scope)) + "\n\n")
         for name, n in sorted(result.other_issues.items()):
             typer.echo(f"  （{name} の開いている Issue {n} 件は読むだけ）")
 

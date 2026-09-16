@@ -474,6 +474,26 @@ def test_takedown_hides_the_listing_from_pages_and_search(ws: Workspace) -> None
     assert "/nagano/202193-tomi/322/" not in sitemap
 
 
+def test_weekly_counts_the_pages_a_takedown_hides(ws: Workspace) -> None:
+    """依頼 1 件でも市町村ページを指せば、その市町村の掲載中の物件がすべて隠れる。
+
+    週次はそれを依頼の件数ではなく、ページで数える。
+    """
+    from akiya_atlas import weekly
+    from akiya_atlas.takedown import Takedown, TakedownList
+
+    takedown = Takedown(
+        issue=9,
+        url="https://akiya-atlas.com/nagano/202193-tomi/",
+        path="/nagano/202193-tomi/",
+        received_at="2026-09-17T00:00:00Z",
+    )
+    TakedownList(items=[takedown]).save(ws)
+    scope = weekly.takedown_scope(ws)
+    assert scope.per_request == [(9, 2)]  # 東御市の掲載中は 2 件（成約済み・掲載終了は数えない）
+    assert scope.pages == 2
+
+
 def test_price_quote_is_shown_without_brackets() -> None:
     """数値化できない価格は原文の引用を出す。囲みの角括弧は表示崩れに見えるので外す。"""
     from sitemill.models import FieldStatus, FieldValue
