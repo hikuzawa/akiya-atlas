@@ -8,13 +8,12 @@ from typing import Any
 
 from sitemill.extract import ExtractionSpec, QuoteField
 from sitemill.parse.jp import (
-    normalize_text,
     parse_area_m2,
-    parse_date,
     parse_year,
     parse_yen,
 )
 
+from akiya_atlas.deadline import parse_period_end
 from akiya_atlas.schema import SUBSIDY_KINDS
 
 # 「坪単価 75,000円」「駐車場用賃料 月1万円」のような、物件価格ではない金額を弾く。
@@ -175,28 +174,6 @@ SUBSIDY_SCHEMA: dict[str, Any] = {
     "required": ["subsidies"],
     "additionalProperties": False,
 }
-
-# 「令和8年4月1日」「2026年3月31日」のような日付。締切を取るために全部拾う
-_DATE_LIKE = re.compile(
-    r"(?:令和|平成|昭和|R|H)?\s*(?:\d{1,4}|元)\s*年\s*\d{1,2}\s*月\s*\d{1,2}\s*日"
-)
-
-
-def parse_period_end(quote: str) -> tuple[Any, str | None]:
-    """募集期間の引用から締切を取る。日付が複数あれば最も後ろの日付を締切とみなす。
-
-    「予算がなくなり次第終了」「随時受付」のように日付が無い書き方は値にしない。
-    引用は残るので、画面には原文のまま出せる（ADR 0004）。
-    """
-    found = []
-    for m in _DATE_LIKE.finditer(normalize_text(quote or "")):
-        value, _ = parse_date(m.group(0))
-        if value is not None:
-            found.append(value)
-    if not found:
-        return None, "no_date"
-    return max(found), None
-
 
 SUBSIDY_SPEC = ExtractionSpec(
     name="subsidy",

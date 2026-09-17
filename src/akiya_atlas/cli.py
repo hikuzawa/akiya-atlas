@@ -259,6 +259,44 @@ def _register(app: typer.Typer) -> None:
         else:
             typer.echo("（--apply で書き換える）")
 
+    @app.command("subsidy-deadlines")
+    def subsidy_deadlines_cmd(
+        apply_: Annotated[
+            bool, typer.Option("--apply", help="書き換える（省略時は内容を出すだけ）")
+        ] = False,
+    ) -> None:
+        """保存済みの募集期間の引用から、補助制度の締切を読み直す（LLM は呼ばない）。"""
+        from datetime import UTC, datetime
+
+        from sitemill.clock import jst_today
+
+        from akiya_atlas import publish_check, subsidies
+
+        rt = commands.Runtime.open()
+        sources, _ = publish_check.load(rt.ws)
+        result = subsidies.reparse_deadlines(rt.ws, sources, now=datetime.now(UTC), apply=apply_)
+        today = jst_today().isoformat()
+
+        def state(d: str | None) -> str:
+            return "不明" if d is None else ("募集終了" if d < today else "受付中")
+
+        moves: dict[tuple[str, str], int] = {}
+        for c in result.changes:
+            key = (state(c.before), state(c.after))
+            moves[key] = moves.get(key, 0) + 1
+            typer.echo(
+                f"{c.source_id} {c.name[:24]}: {c.before} → {c.after}  「{c.period_text[:60]}」"
+            )
+        typer.echo("")
+        for (a, b), n in sorted(moves.items()):
+            typer.echo(f"{a} → {b}: {n} 件")
+        typer.echo(
+            f"変更 {len(result.changes)} 件 / 本文と照合できず値にしない {result.unverified} 件"
+            f" / 本文のキャッシュが無い {result.no_cache} 件"
+        )
+        if not apply_:
+            typer.echo("（--apply で書き換える）")
+
     @app.command("backfill")
     def backfill_cmd(
         only: Annotated[

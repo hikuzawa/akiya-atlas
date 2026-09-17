@@ -11,16 +11,22 @@ from __future__ import annotations
 
 import hashlib
 import logging
+from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
 from typing import Any
 
 from sitemill.clock import to_jst
+from sitemill.diff.normalize import squash
 from sitemill.extract import ExtractedItem
+from sitemill.extract.pipeline import prepare_input
+from sitemill.extract.quotes import verify_quote
 from sitemill.models import Provenance, Source
 from sitemill.settings import Workspace
+from sitemill.store.raw import RawCache
 from sitemill.store.records import RecordStore
 
+from akiya_atlas.deadline import parse_period_end
 from akiya_atlas.schema import SUBSIDY_KINDS, Subsidy
 
 log = logging.getLogger(__name__)
@@ -116,3 +122,99 @@ def load_subsidies(ws: Workspace, source_id: str) -> list[Subsidy]:
         except ValueError:
             log.warning("%s: 読めない補助制度の行を飛ばした", source_id)
     return out
+
+
+# ---------------------------------------------------------------------------
+# 締切の読み直し（2026-09-17）
+# ---------------------------------------------------------------------------
+
+
+@dataclass
+class DeadlineChange:
+    source_id: str
+    name: str
+    period_text: str
+    before: str | None
+    after: str | None
+
+
+@dataclass
+class DeadlineReparse:
+    changes: list[DeadlineChange] = field(default_factory=list)
+    # 締切が空の行は、引用が本文に無かった（quote_not_in_source）のか読めなかったのかが
+    # 残っていない。
+    # 新しい読み取りで日付が取れても、本文と照合できなかったものは値にしない
+    unverified: int = 0
+    no_cache: int = 0
+
+
+def _quote_in_page(
+    raw: RawCache, row: dict[str, Any], source: Source | None, max_chars: int
+) -> bool | None:
+    """引用が抽出時の本文に実在するか。本文のキャッシュが無ければ None。"""
+    prov = row.get("provenance") or {}
+    url, digest = prov.get("source_url"), prov.get("content_hash")
+    if not url or not raw.matches_state(row["source_id"], url, digest):
+        return None
+    html = raw.load_text(row["source_id"], url)
+    if html is None:
+        return None
+    page = prepare_input(
+        html,
+        url=url,
+        kind="subsidy",
+        selector=source.content_selector if source else None,
+        max_chars=max_chars,
+    )
+    found, _ = verify_quote(row["period_text"], squash(page.text))
+    return found
+
+
+def reparse_deadlines(
+    ws: Workspace, sources: dict[str, Source], *, now: datetime, apply: bool
+) -> DeadlineReparse:
+    """保存済みの募集期間の引用から、締切を読み直す。LLM は呼ばない。
+
+    締切が入っていた行は、引用が本文と照合済みなので、新しい読み取りの結果で置き換える
+    （値が消えることもある）。締切が空だった行は、本文のキャッシュと照合できたときだけ値にする。
+    """
+    raw = RawCache(ws.raw_dir)
+    max_chars = ws.site.llm.max_input_chars
+    result = DeadlineReparse()
+    for path in sorted((ws.data_dir / "subsidies").glob("*.jsonl")):
+        store = RecordStore(path)
+        touched = False
+        for row in store.all():
+            text = row.get("period_text")
+            if not text:
+                continue
+            before = row.get("period_end")
+            value, _ = parse_period_end(text)
+            after = value.isoformat() if value is not None else None
+            if after == before:
+                continue
+            if before is None:
+                found = _quote_in_page(raw, row, sources.get(row["source_id"]), max_chars)
+                if found is None:
+                    result.no_cache += 1
+                    continue
+                if not found:
+                    result.unverified += 1
+                    continue
+            result.changes.append(
+                DeadlineChange(row["source_id"], row.get("name", ""), text, before, after)
+            )
+            if apply:
+                row["period_end"] = after
+                row.setdefault("history", []).append(
+                    {
+                        "at": now.isoformat(),
+                        "event": "updated",
+                        "fields": ["period_end"],
+                        "reason": "deadline_reparsed",
+                    }
+                )
+                touched = True
+        if touched:
+            store.save()
+    return result
