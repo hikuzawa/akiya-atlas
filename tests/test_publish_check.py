@@ -104,6 +104,68 @@ def test_committed_data_keeps_the_published_properties() -> None:
     assert publish_check.check_data(Workspace.open(REPO)) == []
 
 
+def _muni_source(sid: str, code: str, name: str, pref: str, slug: str, official: str) -> dict:
+    return {
+        "id": sid,
+        "name": f"{name}空き家バンク",
+        "operator": name,
+        "operator_kind": "municipality",
+        "policy": "link_only",
+        "official_url": official,
+        "municipality": {
+            "code": code,
+            "name": name,
+            "prefecture": pref,
+            "prefecture_slug": slug,
+            "slug": code,
+            "bank_url": official,
+            "bank_status": "none",
+        },
+    }
+
+
+def test_two_municipalities_on_one_official_site_are_stopped(ws: Workspace) -> None:
+    """長崎県対馬市が愛知県津島市のサイトを指していた（2026-09-17）。県をまたぐ同名は、ここで止める。"""
+    sources = ws.root / "data" / "sources"
+    (sources / "aichi-auto.yaml").write_text(
+        yaml.safe_dump(
+            {"sources": [_muni_source("aichi-232084", "232084", "津島市", "愛知県", "aichi",
+                                      "https://www.city.tsushima.lg.jp/")]},
+            allow_unicode=True,
+        ),
+        encoding="utf-8",
+    )  # fmt: skip
+    (sources / "nagasaki-auto.yaml").write_text(
+        yaml.safe_dump(
+            {"sources": [_muni_source("nagasaki-422096", "422096", "対馬市", "長崎県", "nagasaki",
+                                      "https://city.tsushima.lg.jp/")]},  # www の有無は同じサイト
+            allow_unicode=True,
+        ),
+        encoding="utf-8",
+    )  # fmt: skip
+    problems = publish_check.check_data(ws)
+    assert any("city.tsushima.lg.jp" in p and "津島市" in p and "対馬市" in p for p in problems)
+
+
+def test_a_fixed_official_site_must_stay_fixed(ws: Workspace) -> None:
+    """上書きファイルで直した公式サイトが、選び直しなどで元に戻っていたら止める。"""
+    (ws.root / "data" / "reference").mkdir(parents=True, exist_ok=True)
+    (ws.root / "data" / "reference" / "municipal_overrides.json").write_text(
+        json.dumps(
+            {"municipalities": [{"code": "202193", "name": "東御市", "prefecture": "長野県",
+                                 "official_url": "https://www.city.tomi.nagano.jp/"}]},
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )  # fmt: skip
+    assert not [p for p in publish_check.check_data(ws) if "固定した" in p]
+    src = {**SOURCE, "official_url": "https://www.city.tomi.lg.jp/"}  # 別のホストに戻った
+    (ws.root / "data" / "sources" / "nagano.yaml").write_text(
+        yaml.safe_dump({"sources": [src]}, allow_unicode=True), encoding="utf-8"
+    )
+    assert any("固定した" in p and "city.tomi.lg.jp" in p for p in publish_check.check_data(ws))
+
+
 def test_the_check_stops_a_listing_whose_source_is_no_longer_crawled(ws: Workspace) -> None:
     """小野市の再現。巡回をやめても退役させなければ、物件ページが公開されたままになる。"""
     commands.cmd_build(commands.Runtime(ws=ws, service=service))

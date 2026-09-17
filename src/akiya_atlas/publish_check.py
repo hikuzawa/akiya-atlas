@@ -9,14 +9,19 @@
 1. 物件ページを巡回していない情報源の物件は、インデックスできる形で公開しない
    （兵庫県小野市: 2026-09-12 に巡回をやめたのに、9/11 に取り込んだ 1 件が 9/16 まで公開されていた）
 2. 人が固定した扱い（`data/reference/municipal_overrides.json`）が守られている。
-   `link_only` の自治体は物件ページを巡回しない。`no_website` の自治体はサイトに載せない
+   `link_only` の自治体は物件ページを巡回しない。`no_website` の自治体はサイトに載せない。
+   `official_url` を固定した自治体は、その公式サイトを指している（直したのに選び直しで戻らない）
 3. 取り下げ依頼のパス（自身と配下）の物件ページを、インデックスできる形で公開しない。
    逆に、掲載中の物件のページが無いなら、物件 1 件か市町村 1 つを指す取り下げ依頼で説明できる
    （隠しすぎ。長野県: 県のページを指す依頼 1 件で 241 件が 9/12 から 9/17 まで隠れていた）
 4. 「◯市町村の空き家バンクを巡回」の数が、巡回中（`bank_status: available`）の数と一致し、
    その全部が実際に物件ページを巡回している
+5. 2 つの市町村が同じ公式サイト（ホスト）を指していない（全国で）。読みから推測した `.lg.jp` が
+   同じ読みの別の自治体に当たると、県をまたいで重なる（2026-09-17: 長崎県対馬市が愛知県津島市の
+   サイトを指すなど 7 件。docs/data-issues.md）。取り込み側の名前の確認は漢字まで同じ同名
+   （伊達市・府中市）を見分けられないので、ここで止める
 
-1・2・4 の一部はデータだけで確かめられるので、コミット済みのデータに対するテストにも当てる
+1・2・4・5 はデータだけで確かめられるので、コミット済みのデータに対するテストにも当てる
 （`tests/test_publish_check.py`）。push のたびに気づける。
 """
 
@@ -25,6 +30,7 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from sitemill.models import Source
 from sitemill.settings import Workspace
@@ -40,6 +46,12 @@ _NOINDEX = re.compile(r"""<meta\s+name=["']robots["']\s+content=["'][^"']*noinde
 _LOC = re.compile(r"<loc>([^<]+)</loc>")
 # トップのリード文。「巡回している市町村数」を公言している場所（ADR 0015）
 _CRAWLED_CLAIM = re.compile(r"全国\s*([\d,]+)\s*市町村の空き家バンクを毎日巡回")
+
+
+def _site_host(url: str) -> str:
+    """公式サイトの比較用のホスト。`www.` の有無は同じサイトとして扱う。"""
+    host = (urlsplit(url if "://" in url else f"https://{url}").hostname or "").lower()
+    return host.removeprefix("www.")
 
 
 def _overrides(ws: Workspace) -> list[dict]:
@@ -104,6 +116,28 @@ def check_data(ws: Workspace, loaded: Loaded | None = None) -> list[str]:
             problems.append(
                 f"{code} {name}: municipal_overrides で no_website（サイトに載せない）なのに、"
                 "data/sources に市町村がある"
+            )
+        if ov.get("official_url") and not ov.get("no_website"):
+            want = _site_host(str(ov["official_url"]))
+            for m in by_code.get(code, []):
+                if _site_host(m.official_url) != want:
+                    problems.append(
+                        f"{code} {name}: municipal_overrides で公式サイトを {want} に固定したのに、"
+                        f"{_site_host(m.official_url)} を指している"
+                    )
+
+    # 5. 同じ公式サイトを 2 つの市町村が指していない（全国で）
+    by_host: dict[str, list[Municipality]] = {}
+    for m in munis:
+        host = _site_host(m.official_url)
+        if host:
+            by_host.setdefault(host, []).append(m)
+    for host, group in sorted(by_host.items()):
+        if len(group) > 1:
+            names = "・".join(f"{m.prefecture}{m.name}" for m in group)
+            problems.append(
+                f"{host}: {names} が同じ公式サイトを指している。どれかは別の自治体のサイトを"
+                "自分の公式サイトとして載せている（docs/data-issues.md）"
             )
 
     # 4. 巡回中と言っている市町村は、実際に物件ページを巡回している
