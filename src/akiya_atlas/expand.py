@@ -11,6 +11,7 @@ import logging
 import re
 import socket
 import unicodedata
+from collections.abc import Collection
 from dataclasses import dataclass, field
 from datetime import UTC, date, datetime
 from pathlib import Path
@@ -85,16 +86,42 @@ class MunicipalityFinding:
     extract_gap: bool = False
 
 
+def _name_key(text: str) -> str:
+    """市町村名の照合用。全角半角と「ヶ・ケ」「ヵ・カ」の書き分け、空白を吸収する。"""
+    t = unicodedata.normalize("NFKC", text).replace("ヶ", "ケ").replace("ヵ", "カ")
+    return re.sub(r"\s+", "", t)
+
+
+def page_names_municipality(text: str | None, muni: MunicipalityRef) -> bool:
+    """そのページにこの市町村の名前が出てくるか。
+
+    読みから推測した URL は、同じ読みの別の自治体に当たることがある。2026-09-17 に 7 件、
+    `www.city.konan.lg.jp`（愛知県江南市）を滋賀県湖南市と高知県香南市の公式サイトとして
+    採用していた。当たったページには湖南市・香南市の名前が 1 回も出ていなかった
+    （docs/data-issues.md）。名前が出ないサイトは、その市町村のものとして使わない。
+    """
+    return bool(text) and _name_key(muni.name) in _name_key(text or "")
+
+
 def resolve_official_url(
     muni: MunicipalityRef, client: PoliteClient, *, max_probes: int = 16
 ) -> tuple[str, OfficialHost] | None:
-    """候補 URL を順に叩き、到達できた公式ドメインを返す。"""
+    """候補 URL を順に叩き、到達できて、その市町村の名前が出てくる公式ドメインを返す。"""
     for url in candidate_official_urls(muni)[:max_probes]:
         res = client.get(url, check_robots=True)
         if res.ok or res.not_modified:
             oh = classify_host(host_of(res.final_url), muni.prefecture_slug)
-            if oh.is_official:
-                return res.final_url, oh
+            if not oh.is_official:
+                continue
+            if not page_names_municipality(res.text, muni):
+                log.info(
+                    "%s %s: 推測した %s に市町村名が出ないので使わない（同じ読みの別の自治体か）",
+                    muni.code,
+                    muni.name,
+                    oh.host,
+                )
+                continue
+            return res.final_url, oh
     return None
 
 
@@ -1353,6 +1380,9 @@ def _official_from_row(
         for scheme in ("https", "http"):
             res = client.get(f"{scheme}://{host}/")
             if res.ok:
+                # 前回採用したホストでも、市町村名が出なければ使い回さず解決し直す
+                if not page_names_municipality(res.text, muni):
+                    break
                 return oh, res.final_url, row.get("evidence_quote"), row.get("evidence_url")
     resolved = resolve_official(muni, client, overrides)
     if resolved is None:
@@ -1444,6 +1474,7 @@ def collect_subsidy_pages(
     client: PoliteClient,
     limit: int = 4,
     workers: int = 1,
+    codes: Collection[str] | None = None,
 ) -> list[str]:
     """県内の各自治体の公式サイトから補助制度のページを見つけ、巡回対象に足す。
 
@@ -1451,6 +1482,7 @@ def collect_subsidy_pages(
     sources の pages に kind=subsidy として出る。巡回と抽出は通常の日次に任せる。
     市町村 ≒ 別ホストなので、市町村単位で並列に見る（発見と同じ。sitemill ADR 0013）。
     1 ホストあたりの間隔は PoliteClient が守るので、並列にしても縮まらない。
+    `codes` を渡すとその市町村だけ見る（選び直した市町村の補助制度を取り直すとき）。
     """
     from sitemill.store.jsonio import read_json
 
@@ -1465,7 +1497,9 @@ def collect_subsidy_pages(
     targets = [
         (i, row)
         for i, row in enumerate(rows)
-        if row.get("policy") != "pending" and (row.get("official_url") or row.get("bank_url"))
+        if row.get("policy") != "pending"
+        and (row.get("official_url") or row.get("bank_url"))
+        and (not codes or str(row.get("code")) in codes)
     ]
 
     def look(item: tuple[int, dict]) -> tuple[int, dict, list[tuple[str, str]]]:

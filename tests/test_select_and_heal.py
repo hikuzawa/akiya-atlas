@@ -40,8 +40,10 @@ def _rows(n: int, start: int = 1, closed: bool = False) -> str:
     )
 
 
+# 公式トップには自治体の名前が出る（出ないサイトは、その自治体のものとして使わない）
 TOP = (
-    "<html><body><a href='/akiya/hojo.html'>空き家改修補助金</a>"
+    "<html><head><title>架空市公式ホームページ</title></head><body>"
+    "<a href='/akiya/hojo.html'>空き家改修補助金</a>"
     "<a href='/akiya/guide.html'>空き家バンク</a></body></html>"
 )
 LIST = (
@@ -222,7 +224,8 @@ def test_heal_drops_a_page_whose_body_has_no_listings(ws: Workspace) -> None:
         {
             # 公式トップは「空き家」の語でこのページに案内するが、ページ本文は空き家の話ではない
             "/": (
-                "<html><body><a href='/kurashi/fuhoutouki.html'>空き家の適正管理</a></body></html>"
+                "<html><head><title>架空市</title></head><body>"
+                "<a href='/kurashi/fuhoutouki.html'>空き家の適正管理</a></body></html>"
             ),
             "/kurashi/fuhoutouki.html": NOT_AKIYA,
         }

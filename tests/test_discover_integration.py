@@ -62,7 +62,9 @@ def test_discover_writes_sources_and_review(ws: Workspace) -> None:
         respx.get(f"https://{host}/robots.txt").mock(return_value=httpx.Response(404))
     # あ市: 公式が同一ホストの空き家バンク一覧にリンク → crawl
     respx.get("https://www.city.a.nagano.jp/").mock(
-        return_value=httpx.Response(200, text='<a href="/akiya/">空き家バンク</a>')
+        return_value=httpx.Response(
+            200, text='<title>あ市</title><a href="/akiya/">空き家バンク</a>'
+        )
     )
     respx.get("https://www.city.a.nagano.jp/akiya/").mock(
         return_value=httpx.Response(200, text=INDEX)
@@ -70,7 +72,8 @@ def test_discover_writes_sources_and_review(ws: Workspace) -> None:
     # い市: 公式が民間プラットフォームにリンク → link_only
     respx.get("https://www.city.i.nagano.jp/").mock(
         return_value=httpx.Response(
-            200, text='<a href="https://x.akiya-athome.jp/">空き家バンク（アットホーム）</a>'
+            200,
+            text='<title>い市</title><a href="https://x.akiya-athome.jp/">空き家バンク（アットホーム）</a>',
         )
     )
     respx.get("https://x.akiya-athome.jp/").mock(

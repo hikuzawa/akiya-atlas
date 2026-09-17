@@ -62,6 +62,12 @@ def _register(app: typer.Typer) -> None:
         workers: Annotated[
             int, typer.Option("--workers", help="市町村の並列数（既定は site.toml の max_workers）")
         ] = 0,
+        code: Annotated[
+            list[str] | None,
+            typer.Option(
+                "--code", "-c", help="この市町村コードだけ見る（複数可。省略時は県内すべて）"
+            ),
+        ] = None,
     ) -> None:
         """空き家バンクのページから補助制度のページを見つけ、巡回の対象に足す。"""
         rt = commands.Runtime.open()
@@ -72,6 +78,7 @@ def _register(app: typer.Typer) -> None:
                 client=client,
                 limit=limit,
                 workers=workers or rt.ws.site.crawl.max_workers,
+                codes=set(code) if code else None,
             )
         for line in lines:
             typer.echo(line)
