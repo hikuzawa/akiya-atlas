@@ -48,8 +48,16 @@ STALE_AFTER_DAYS = 30
 LOT_LIKE = re.compile(r"(?<![\d.])\d{1,5}-\d{1,4}(?![\d.㎡m])")
 
 
+# 店の呼び名に付いた敬称。「醤油屋さん」「呉服屋さん」のように、漢字 2〜3 文字＋「屋」に付く形だけ
+# 外す。氏名検出は漢字 2〜4 文字＋「さん」を人名とみなすので、この形が題名や要約に入ると日次の
+# ビルドが止まる（2026-09-17 の「元醤油屋さんの広々物件」。長崎県南島原市）。
+# **2 文字の「◯屋さん」は外さない**。土屋さん・古屋さんのような姓を見逃さないため。
+# 要約はこちらが書く文なので、店に敬称を付けない形にそろえる（引用は書き換えない）
+SHOP_HONORIFIC = re.compile(r"([一-龥]{2,3}屋)さん")
+
+
 def scrub_lot_numbers(content: dict[str, Any]) -> bool:
-    """題名・要約に残った地番と電話番号を落とす。変更があれば True。
+    """題名・要約に残った地番・電話番号と、店に付いた敬称を落とす。変更があれば True。
 
     電話番号は仲介業者や担当者の連絡先のことがあり、そのまま載せると公開前の PII 検査で止まる。
     一次情報へのリンクは別に出しているので、本文から連絡先を持ち出す必要はない。
@@ -59,7 +67,7 @@ def scrub_lot_numbers(content: dict[str, Any]) -> bool:
         text = content.get(key)
         if not text:
             continue
-        scrubbed = PHONE_RE.sub("", LOT_LIKE.sub("", str(text)))
+        scrubbed = SHOP_HONORIFIC.sub(r"\1", PHONE_RE.sub("", LOT_LIKE.sub("", str(text))))
         if scrubbed != text:
             content[key] = re.sub(r"[ 　]{2,}", " ", scrubbed).strip() or None
             changed = True

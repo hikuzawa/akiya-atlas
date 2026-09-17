@@ -40,6 +40,25 @@ def test_sanitize_removes_street_number_from_address_title_summary() -> None:
     assert not sanitize_address_fields({"address": _addr("飯山市大字飯山")})
 
 
+def test_a_shop_loses_its_honorific_but_a_surname_keeps_it() -> None:
+    """「元醤油屋さんの広々物件」で日次のビルドが止まった（2026-09-17、長崎県南島原市）。
+
+    氏名検出は漢字 2〜4 文字＋「さん」を人名とみなす。要約はこちらが書く文なので、店に敬称を
+    付けない形にそろえる。ただし 2 文字の「◯屋さん」は姓のことがあるので外さない（土屋・古屋）。
+    """
+    content = {
+        "title": "有家町中須川の元醤油屋さんの広々物件",
+        "summary": "有家町中須川にある元醤油屋さんの物件。呉服屋さんの隣。",
+    }
+    assert sanitize_address_fields(content)
+    assert content["title"] == "有家町中須川の元醤油屋の広々物件"
+    assert "呉服屋の隣" in content["summary"] and "さん" not in content["summary"]
+    assert not sanitize_address_fields(content)  # 冪等
+
+    keep = {"title": "土屋さんの紹介物件", "summary": "パン屋さん近くの土地。"}
+    assert not sanitize_address_fields(keep)  # 姓と、漢字 1 文字の店名はそのまま
+
+
 def test_committed_records_keep_no_street_numbers() -> None:
     checked = 0
     for path in sorted((REPO / "data" / "records").glob("*.jsonl")):
