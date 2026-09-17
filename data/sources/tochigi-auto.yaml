@@ -529,7 +529,7 @@ sources:
   operator: さくら市
   operator_kind: municipality
   official_url: https://www.city.tochigi-sakura.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: 092142
     name: さくら市
@@ -545,6 +545,14 @@ sources:
     quote: 栃木県 リンク集（市町一覧）に掲載された公式サイト。ページの題名は「さくら市公式ホームページ」（www.city.tochigi-sakura.lg.jp）
     url: https://www.pref.tochigi.lg.jp/c05/intro/tochigi/link/lkshityouson.html
     checked_on: '2026-09-17'
+  pages:
+  - url: https://www.city.tochigi-sakura.lg.jp/life/000015/000123/p005084.html
+    kind: subsidy
+  - url: https://www.city.tochigi-sakura.lg.jp/life/000015/000123/p001697.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.tochigi-sakura.lg.jp
+  max_pages: 30
 - id: tochigi-092151
   name: 那須烏山市空き家バンク
   operator: 那須烏山市

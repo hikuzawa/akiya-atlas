@@ -226,7 +226,7 @@ sources:
   operator: 坂井市
   operator_kind: municipality
   official_url: https://www.city.fukui-sakai.lg.jp/
-  policy: link_only
+  policy: crawl
   municipality:
     code: '182109'
     name: 坂井市
@@ -242,6 +242,12 @@ sources:
     quote: 福井県内市町リンク集に掲載された公式サイト。ページの題名は「福井県坂井市-笑顔で暮せるまち-」（www.city.fukui-sakai.lg.jp）
     url: https://www.pref.fukui.lg.jp/doc/dx-suishin/shimachi_list.html
     checked_on: '2026-09-17'
+  pages:
+  - url: https://www.city.fukui-sakai.lg.jp/iju/akiya/qa/demolish.html
+    kind: subsidy
+  allow_hosts:
+  - www.city.fukui-sakai.lg.jp
+  max_pages: 30
   external_links:
   - label: アットホームバナー
     url: https://sakai-c18210.akiya-athome.jp/
