@@ -189,3 +189,51 @@ def test_reparse_fixes_start_dates_and_values_empty_ones_only_when_the_quote_is_
     assert saved["1"]["history"][-1]["reason"] == "deadline_reparsed"
     assert saved["2"]["period_end"] == "2026-08-31"
     assert saved["3"]["period_end"] is None and "history" not in saved["3"]
+
+
+TODAY = date(2026, 9, 17)  # 令和 8 年度
+
+
+@pytest.mark.parametrize(
+    ("year_text", "past"),
+    [
+        ("令和7年度", True),
+        ("令和6年度", True),
+        ("2025年度", True),
+        ("平成24年度~30年度", True),
+        ("令和4年度~令和6年度", True),
+        ("令和8年度", False),
+        ("令和8(2026)年度", False),
+        # 終わりの年度が今年度以降
+        ("令和7年度~令和9年度", False),
+        ("令和2年度~8年度", False),
+        # 始まりだけを書いた制度は続いているとみなす
+        ("令和7年度から", False),
+        ("平成24年度から", False),
+        ("令和7年度~", False),
+        (None, False),
+        ("通年", False),
+    ],
+)
+def test_past_fiscal_year_only_when_every_written_year_is_before_this_one(
+    year_text: str | None, past: bool
+) -> None:
+    from akiya_atlas.deadline import maybe_past_fiscal_year
+
+    assert maybe_past_fiscal_year(year_text, TODAY) is past
+
+
+def test_the_fiscal_year_turns_in_april() -> None:
+    from akiya_atlas.deadline import maybe_past_fiscal_year
+
+    assert not maybe_past_fiscal_year("令和7年度", date(2026, 3, 31))
+    assert maybe_past_fiscal_year("令和7年度", date(2026, 4, 1))
+
+
+def test_a_readable_deadline_wins_over_the_past_year_mark() -> None:
+    """締切が読めれば「募集終了」か受付中かが分かるので、過年度の印は出さない。"""
+    from akiya_atlas.schema import Subsidy
+
+    base = {"name": "x", "kind": "改修", "url": "https://e.example/", "year_text": "令和7年度"}
+    assert Subsidy(**base).maybe_past_year
+    assert not Subsidy(**base, period_end=date(2025, 12, 26)).maybe_past_year

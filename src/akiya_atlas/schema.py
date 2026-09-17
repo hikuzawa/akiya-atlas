@@ -12,6 +12,8 @@ from pydantic import BaseModel, Field
 from sitemill.clock import jst_today
 from sitemill.models import FieldValue
 
+from akiya_atlas.deadline import maybe_past_fiscal_year
+
 DealType = Literal["sale", "rent", "both", "unknown"]
 DEAL_LABELS = {"sale": "売買", "rent": "賃貸", "both": "売買・賃貸", "unknown": "種別不明"}
 # 成約・売約済みなど「現在は募集していない」ことを示す語。原文の見出しに現れる。
@@ -51,6 +53,11 @@ class Subsidy(BaseModel):
     def closed(self) -> bool:
         """募集が終わっているか。締切を読めたときだけ判定する（読めなければ不明のまま）。"""
         return self.period_end is not None and self.period_end < jst_today()
+
+    @property
+    def maybe_past_year(self) -> bool:
+        """締切を読めず、年度の原文が今年度より前の年度だけを指しているか（断定はしない）。"""
+        return self.period_end is None and maybe_past_fiscal_year(self.year_text, jst_today())
 
     @property
     def stale(self) -> bool:

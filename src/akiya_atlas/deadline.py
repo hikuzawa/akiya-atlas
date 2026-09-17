@@ -141,3 +141,55 @@ def parse_period_end(quote: str) -> tuple[date | None, str | None]:
     if _STILL_OPEN.search(t):
         return None, "still_open"
     return deadline, None
+
+
+# ---------------------------------------------------------------------------
+# 過年度の可能性（2026-09-17）
+# ---------------------------------------------------------------------------
+
+# 「令和7年度」「令和8(2026)年度」「2025年度」。「令和2年度~8年度」の「8年度」は元号を引き継ぐ
+_FISCAL_YEAR = re.compile(
+    r"(?:(?P<era>令和|平成|昭和)\s*(?P<eray>元|\d{1,2})\s*(?:\(\s*\d{4}\s*\)\s*)?"
+    r"|(?P<wy>(?:19|20)\d{2})\s*"
+    rf"|(?:(?<=[{_DASH}])|(?<=から))\s*(?P<sy>\d{{1,2}})\s*)年度"
+)
+# 年度のあとに「から」「~」「以降」が続き、終わりの年度が書かれていない（いまも続く制度）
+_OPEN_ENDED = re.compile(rf"\s*(?:から|より|以降|[{_DASH}])")
+
+
+def fiscal_year_of(today: date) -> int:
+    """日本の年度（4 月始まり）。"""
+    return today.year if today.month >= 4 else today.year - 1
+
+
+def latest_fiscal_year(year_text: str | None) -> tuple[int | None, bool]:
+    """年度の原文から、書かれた最も後の年度と、終わりの年度が無い書き方（「令和7年度から」）かを返す。"""
+    t = normalize_text(year_text or "")
+    years: list[int] = []
+    base: int | None = None
+    last_end = 0
+    for m in _FISCAL_YEAR.finditer(t):
+        if m.group("wy"):
+            years.append(int(m.group("wy")))
+        elif m.group("era"):
+            base = _ERA_BASE[m.group("era")]
+            years.append(base + (1 if m.group("eray") == "元" else int(m.group("eray"))))
+        elif base is not None:
+            years.append(base + int(m.group("sy")))
+        else:
+            continue
+        last_end = m.end()
+    if not years:
+        return None, False
+    return max(years), bool(_OPEN_ENDED.match(t, last_end)) and "年度" not in t[last_end:]
+
+
+def maybe_past_fiscal_year(year_text: str | None, today: date) -> bool:
+    """年度の原文が今年度より前の年度だけを指しているか。
+
+    締切を読めない制度で、ページが「令和7年度」のままなら、終わった年度の案内が残っている
+    可能性がある。断定はしない（年度を更新し忘れただけで、今年度も同じ制度があることも多い）。
+    「令和7年度から」のように始まりだけを書いた制度は、続いているとみなす。
+    """
+    year, open_ended = latest_fiscal_year(year_text)
+    return year is not None and not open_ended and year < fiscal_year_of(today)

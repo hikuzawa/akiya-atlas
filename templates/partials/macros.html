@@ -255,6 +255,8 @@
     {%- if s.kind == "判定できず" %}{{ badge("mute", "種別を判定できず", "tag") }}
     {%- else %}{{ badge("ok" if not s.closed else "mute", s.kind ~ "補助" if s.kind != "その他" else "その他の補助", "tag") }}{% endif %}
     {%- if s.closed %}{{ badge("mute", "募集終了") }}{% endif %}
+    {#- 締切を読めず、年度が今年度より前だけ。古い案内が残っているかもしれないが、断定しない #}
+    {%- if s.maybe_past_year %}{{ badge("warn", "過年度の可能性", "warn") }}{% endif %}
     {%- if s.stale %}{{ badge("warn", "情報が古い可能性", "warn") }}{% endif %}
     {%- if with_muni %}<a class="badge badge-plain" href="{{ s.muni_url }}">{{ s.muni }}</a>{% endif %}
   </div>

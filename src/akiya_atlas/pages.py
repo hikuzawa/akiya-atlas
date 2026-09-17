@@ -365,14 +365,16 @@ def count_chart(title: str, munis: list[Municipality], ds: Dataset) -> Chart | N
 def subsidy_row(muni: Municipality, subsidy: Subsidy) -> dict[str, Any]:
     """カードに出す補助制度 1 件。
 
-    鮮度（`stale`）と募集終了（`closed`）は表示のときに決まる計算値で `model_dump` に入らないので、
-    ここで足す。市町村ページのようにモデルのまま渡す画面では属性から読める。
+    鮮度（`stale`）・募集終了（`closed`）・過年度の可能性（`maybe_past_year`）は表示のときに
+    決まる計算値で `model_dump` に入らないので、ここで足す。市町村ページのようにモデルのまま渡す
+    画面では属性から読める。
     """
     return {
         **subsidy.model_dump(mode="json"),
         "muni": muni.name,
         "muni_url": f"/{muni.path}",
         "closed": subsidy.closed,
+        "maybe_past_year": subsidy.maybe_past_year,
         "stale": subsidy.stale,
     }
 
