@@ -243,20 +243,35 @@
     },
     {
       "alternatives": [
-        "https://www.city.sakai.lg.jp/kurashi/jutaku/jutaku/akiya_rikatsuyou/package.html"
+        "https://www.city.fukui-sakai.lg.jp/anzen/bosai-bohan/bohan/koutuu/2026aki.html",
+        "https://www.city.fukui-sakai.lg.jp/kazei/kurashi/zeikin/kojin/shinkoku-hukakizitsu.html",
+        "https://www.city.fukui-sakai.lg.jp/kurashi/sumai/sumai/akiya/index.html",
+        "https://www.city.fukui-sakai.lg.jp/iju/kurashi/sumai/sumai/akiya/bank.html"
       ],
-      "bank_url": "https://www.city.sakai.lg.jp/kurashi/jutaku/akiya.html",
+      "bank_status": "info",
+      "bank_url": "https://www.city.fukui-sakai.lg.jp/iju/kurashi/sumai/sumai/akiya/list.html",
       "code": "182109",
       "confidence": 0.6,
       "cross_linked": false,
-      "evidence_quote": "公式ドメイン www.city.sakai.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
-      "evidence_url": "https://www.city.sakai.lg.jp/",
-      "external_links": [],
+      "detail_pattern": null,
+      "evidence_quote": "福井県内市町リンク集に掲載された公式サイト。ページの題名は「福井県坂井市-笑顔で暮せるまち-」（www.city.fukui-sakai.lg.jp）",
+      "evidence_url": "https://www.pref.fukui.lg.jp/doc/dx-suishin/shimachi_list.html",
+      "external_links": [
+        {
+          "label": "アットホームバナー",
+          "url": "https://sakai-c18210.akiya-athome.jp/"
+        },
+        {
+          "label": "ライフルズホームバナー",
+          "url": "https://www.homes.co.jp/akiyabank/fukui/sakai"
+        }
+      ],
+      "extract_gap": false,
       "listing_rows": 0,
       "listing_score": 0.0,
       "name": "坂井市",
       "name_kana": "ｻｶｲｼ",
-      "official_url": "www.city.sakai.lg.jp",
+      "official_url": "www.city.fukui-sakai.lg.jp",
       "operator_kind": "municipality",
       "page_class": "not_listing",
       "pagination_pattern": null,
@@ -264,7 +279,8 @@
       "prefecture": "福井県",
       "prefecture_slug": "fukui",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [

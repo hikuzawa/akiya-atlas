@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nagasaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nagasaki.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.nagasaki.lg.jp/page/1921.html
     kind: subsidy
@@ -47,7 +47,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sasebo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.sasebo.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: nagasaki-422037
   name: 島原市空き家バンク
   operator: 島原市
@@ -68,7 +68,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.shimabara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.shimabara.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.shimabara.lg.jp/page3626.html?type=top
     kind: subsidy
@@ -97,7 +97,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.isahaya.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.isahaya.nagasaki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: nagasaki-422053
   name: 大村市空き家バンク
   operator: 大村市
@@ -118,7 +118,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.omura.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.omura.nagasaki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: nagasaki-422070
   name: 平戸市空き家バンク
   operator: 平戸市
@@ -139,7 +139,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hirado.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hirado.nagasaki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: nagasaki-422088
   name: 松浦市空き家バンク
   operator: 松浦市
@@ -160,12 +160,12 @@ sources:
   operator_evidence:
     quote: 長崎県 県内市町に掲載された公式サイト（www.city-matsuura.jp）
     url: https://www.pref.nagasaki.jp/pages/page-31.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: nagasaki-422096
   name: 対馬市空き家バンク
   operator: 対馬市
   operator_kind: municipality
-  official_url: https://www.city.tsushima.lg.jp/
+  official_url: https://www.city.tsushima.nagasaki.jp/
   policy: crawl
   municipality:
     code: '422096'
@@ -173,20 +173,23 @@ sources:
     prefecture: 長崎県
     prefecture_slug: nagasaki
     slug: '422096'
-    bank_url: https://www.city.tsushima.lg.jp/
-    bank_status: none
+    bank_url: https://www.city.tsushima.nagasaki.jp/ijyu/kurashi/sumai/akiya/5195.html
+    bank_status: available
     extract_pending: false
     map_query: 長崎県対馬市
-    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
-    quote: 公式ドメイン www.city.tsushima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
-    url: https://www.city.tsushima.lg.jp/
-    checked_on: '2026-09-15'
+    quote: 長崎県 県内市町に掲載された公式サイト。ページの題名は「ホーム／対馬市」（www.city.tsushima.nagasaki.jp）
+    url: https://www.pref.nagasaki.jp/pages/page-31.html
+    checked_on: '2026-09-17'
   pages:
-  - url: https://www.city.tsushima.lg.jp/kurashi/sumaikenchiku/67.html
-    kind: subsidy
+  - url: https://www.city.tsushima.nagasaki.jp/ijyu/kurashi/sumai/akiya/5195.html
+    kind: listing_index
+    follow:
+    - pattern: https?://www\.city\.tsushima\.nagasaki\.jp/ijyu/kurashi/sumai/akiya/5195\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
+      kind: listing_index
+      max_links: 20
   allow_hosts:
-  - www.city.tsushima.lg.jp
+  - www.city.tsushima.nagasaki.jp
   max_pages: 30
 - id: nagasaki-422100
   name: 壱岐市空き家バンク
@@ -208,7 +211,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.iki.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.iki.nagasaki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.iki.nagasaki.jp/mokuteki/hikkoshi/5910.html
     kind: subsidy
@@ -235,7 +238,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.goto.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.goto.nagasaki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: nagasaki-422126
   name: 西海市空き家バンク
   operator: 西海市
@@ -256,7 +259,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.saikai.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.saikai.nagasaki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.saikai.nagasaki.jp/kurashi/jutaku/3724.html
     kind: subsidy
@@ -284,7 +287,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.unzen.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.unzen.nagasaki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.unzen.nagasaki.jp/dynamic/ijuu/info/pub/default.aspx?c_id=30&pg=1
     kind: listing_index
@@ -314,7 +317,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.minamishimabara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.minamishimabara.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.minamishimabara.lg.jp/kiji0037240/index.html
     kind: listing_index
@@ -349,7 +352,7 @@ sources:
   operator_evidence:
     quote: 長崎県 県内市町に掲載された公式サイト（webtown.nagayo.jp）
     url: https://www.pref.nagasaki.jp/pages/page-31.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: nagasaki-423084
   name: 時津町空き家バンク
   operator: 時津町
@@ -370,7 +373,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.togitsu.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.togitsu.nagasaki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: nagasaki-423211
   name: 東彼杵町空き家バンク
   operator: 東彼杵町
@@ -391,7 +394,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.higashisonogi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.higashisonogi.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: nagasaki-423220
   name: 川棚町空き家バンク
   operator: 川棚町
@@ -411,7 +414,7 @@ sources:
   operator_evidence:
     quote: 長崎県 県内市町に掲載された公式サイト（www.kawatana.jp）
     url: https://www.pref.nagasaki.jp/pages/page-31.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.kawatana.jp/akiyabank/post-1375.html
     kind: listing_index
@@ -443,7 +446,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hasami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.hasami.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.town.hasami.lg.jp/kiji0031056/index.html
     kind: listing_index
@@ -474,7 +477,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ojika.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.ojika.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: nagasaki-423912
   name: 佐々町空き家バンク
   operator: 佐々町
@@ -495,7 +498,7 @@ sources:
   operator_evidence:
     quote: 長崎県 県内市町に掲載された公式サイト（www.sazacho-nagasaki.jp）
     url: https://www.pref.nagasaki.jp/pages/page-31.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.sazacho-nagasaki.jp/kiji0036200/index.html
     kind: subsidy
@@ -522,7 +525,7 @@ sources:
   operator_evidence:
     quote: 長崎県 県内市町に掲載された公式サイト（official.shinkamigoto.net）
     url: https://www.pref.nagasaki.jp/pages/page-31.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://official.shinkamigoto.net/goto_kurashi_full.php?eid=02640&wcid=i00002x6
     kind: subsidy

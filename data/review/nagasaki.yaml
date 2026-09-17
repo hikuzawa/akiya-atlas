@@ -1,6 +1,6 @@
 prefecture: 長崎県
 prefecture_slug: nagasaki
-created_at: '2026-09-15T00:36:31+00:00'
+created_at: '2026-09-17T09:36:51+00:00'
 candidates:
 - key: '422011'
   label: 長崎県 長崎市
@@ -102,15 +102,15 @@ candidates:
   note: null
 - key: '422096'
   label: 長崎県 対馬市
-  url: https://www.city.tsushima.lg.jp/
-  page_class: null
-  class_label: null
-  confidence: 0.6
+  url: https://www.city.tsushima.nagasaki.jp/ijyu/kurashi/sumai/akiya/5195.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.93
   operator_kind: municipality
-  evidence_quote: 公式ドメイン www.city.tsushima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
-  evidence_url: https://www.city.tsushima.lg.jp/
-  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
-  proposed_policy: link_only
+  evidence_quote: 長崎県 県内市町に掲載された公式サイト。ページの題名は「ホーム／対馬市」（www.city.tsushima.nagasaki.jp）
+  evidence_url: https://www.pref.nagasaki.jp/pages/page-31.html
+  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
+  proposed_policy: crawl
   proposed_action: 承認
   decision: null
   note: null

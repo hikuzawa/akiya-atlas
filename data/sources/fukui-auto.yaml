@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.fukui.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.fukui.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: fukui-182028
   name: 敦賀市空き家バンク
   operator: 敦賀市
@@ -41,7 +41,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tsuruga.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tsuruga.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.tsuruga.lg.jp/page/1575.html
     kind: subsidy
@@ -70,7 +70,7 @@ sources:
   operator_evidence:
     quote: 福井県内市町リンク集に掲載された公式サイト（www1.city.obama.fukui.jp）
     url: https://www.pref.fukui.lg.jp/doc/dx-suishin/shimachi_list.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www1.city.obama.fukui.jp/kurashi/sumaiakiya/juutaku_hojo/index.html
     kind: subsidy
@@ -97,7 +97,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ono.fukui.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ono.fukui.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.ono.fukui.jp/kurashi/kankyo-sumai/akiya/akiya-shindan.html
     kind: subsidy
@@ -125,7 +125,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.katsuyama.fukui.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.katsuyama.fukui.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.katsuyama.fukui.jp/soshiki/16/410.html
     kind: listing_index
@@ -152,7 +152,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sabae.fukui.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.sabae.fukui.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.sabae.fukui.jp/kurashi_tetsuduki/tochi/jutaku_hojokin/index.html
     kind: subsidy
@@ -178,7 +178,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.awara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.awara.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.awara.lg.jp/mokuteki/life/jyutaku1/p001478.html
     kind: listing_index
@@ -220,12 +220,12 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.echizen.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.echizen.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: fukui-182109
   name: 坂井市空き家バンク
   operator: 坂井市
   operator_kind: municipality
-  official_url: https://www.city.sakai.lg.jp/
+  official_url: https://www.city.fukui-sakai.lg.jp/
   policy: link_only
   municipality:
     code: '182109'
@@ -233,15 +233,20 @@ sources:
     prefecture: 福井県
     prefecture_slug: fukui
     slug: '182109'
-    bank_url: https://www.city.sakai.lg.jp/kurashi/jutaku/akiya.html
+    bank_url: https://www.city.fukui-sakai.lg.jp/iju/kurashi/sumai/sumai/akiya/list.html
     bank_status: info
     extract_pending: false
     map_query: 福井県坂井市
     bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
-    quote: 公式ドメイン www.city.sakai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
-    url: https://www.city.sakai.lg.jp/
-    checked_on: '2026-09-15'
+    quote: 福井県内市町リンク集に掲載された公式サイト。ページの題名は「福井県坂井市-笑顔で暮せるまち-」（www.city.fukui-sakai.lg.jp）
+    url: https://www.pref.fukui.lg.jp/doc/dx-suishin/shimachi_list.html
+    checked_on: '2026-09-17'
+  external_links:
+  - label: アットホームバナー
+    url: https://sakai-c18210.akiya-athome.jp/
+  - label: ライフルズホームバナー
+    url: https://www.homes.co.jp/akiyabank/fukui/sakai
 - id: fukui-183229
   name: 永平寺町空き家バンク
   operator: 永平寺町
@@ -261,7 +266,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.eiheiji.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.eiheiji.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.town.eiheiji.lg.jp/200/206/209/p011270.html
     kind: listing_index
@@ -298,7 +303,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ikeda.fukui.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ikeda.fukui.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: fukui-184047
   name: 南越前町空き家バンク
   operator: 南越前町
@@ -319,7 +324,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.minamiechizen.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.minamiechizen.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.town.minamiechizen.lg.jp/izyu/jyuutakuhojyokinn/index.html
     kind: subsidy
@@ -348,7 +353,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.echizen.fukui.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.echizen.fukui.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: fukui-184420
   name: 美浜町空き家バンク
   operator: 美浜町
@@ -368,7 +373,7 @@ sources:
   operator_evidence:
     quote: 福井県内市町リンク集に掲載された公式サイト（www.town.fukui-mihama.lg.jp）
     url: https://www.pref.fukui.lg.jp/doc/dx-suishin/shimachi_list.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.town.fukui-mihama.lg.jp/site/iju/487.html
     kind: listing_index
@@ -398,7 +403,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.takahama.fukui.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.takahama.fukui.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: fukui-184837
   name: おおい町空き家バンク
   operator: おおい町
@@ -419,7 +424,7 @@ sources:
   operator_evidence:
     quote: 福井県内市町リンク集に掲載された公式サイト（www.town.ohi.fukui.jp）
     url: https://www.pref.fukui.lg.jp/doc/dx-suishin/shimachi_list.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.town.ohi.fukui.jp/1221/7028/p24059.html
     kind: subsidy
@@ -445,7 +450,7 @@ sources:
   operator_evidence:
     quote: 福井県内市町リンク集に掲載された公式サイト（www.town.fukui-wakasa.lg.jp）
     url: https://www.pref.fukui.lg.jp/doc/dx-suishin/shimachi_list.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.town.fukui-wakasa.lg.jp/kurashi_tetsuzuki/sumai/1825.html
     kind: listing_index

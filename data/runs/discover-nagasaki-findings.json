@@ -205,30 +205,37 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [],
-      "bank_url": "https://www.city.tsushima.lg.jp/",
+      "alternatives": [
+        "https://www.city.tsushima.nagasaki.jp/ijyu/kurashi/sumai/akiya/index.html",
+        "https://www.city.tsushima.nagasaki.jp/index.html",
+        "https://www.city.tsushima.nagasaki.jp/sitemap.html",
+        "https://www.city.tsushima.nagasaki.jp/language.html",
+        "https://www.city.tsushima.nagasaki.jp/calendar.html"
+      ],
+      "bank_status": "available",
+      "bank_url": "https://www.city.tsushima.nagasaki.jp/ijyu/kurashi/sumai/akiya/5195.html",
       "code": "422096",
-      "confidence": 0.6,
+      "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_quote": "公式ドメイン www.city.tsushima.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
-      "evidence_url": "https://www.city.tsushima.lg.jp/",
+      "detail_pattern": null,
+      "evidence_quote": "長崎県 県内市町に掲載された公式サイト。ページの題名は「ホーム／対馬市」（www.city.tsushima.nagasaki.jp）",
+      "evidence_url": "https://www.pref.nagasaki.jp/pages/page-31.html",
       "external_links": [],
-      "listing_rows": null,
-      "listing_score": null,
+      "extract_gap": false,
+      "listing_rows": 38,
+      "listing_score": 1.0,
       "name": "対馬市",
       "name_kana": "ﾂｼﾏｼ",
-      "official_url": "www.city.tsushima.lg.jp",
+      "official_url": "www.city.tsushima.nagasaki.jp",
       "operator_kind": "municipality",
-      "page_class": null,
-      "pagination_pattern": null,
-      "policy": "link_only",
+      "page_class": "listing_index",
+      "pagination_pattern": "https?://www\\.city\\.tsushima\\.nagasaki\\.jp/ijyu/kurashi/sumai/akiya/5195\\.html/?\\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\\d+",
+      "policy": "crawl",
       "prefecture": "長崎県",
       "prefecture_slug": "nagasaki",
       "proposed_action": "承認",
-      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
-      "subsidy_urls": [
-        "https://www.city.tsushima.lg.jp/kurashi/sumaikenchiku/67.html"
-      ]
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [

@@ -1,6 +1,6 @@
 prefecture: 滋賀県
 prefecture_slug: shiga
-created_at: '2026-09-15T00:07:45+00:00'
+created_at: '2026-09-17T09:37:34+00:00'
 candidates:
 - key: '252018'
   label: 滋賀県 大津市
@@ -130,14 +130,14 @@ candidates:
   note: null
 - key: '252115'
   label: 滋賀県 湖南市
-  url: https://www.city.konan.lg.jp/kurashi/juutaku/1008730.html
-  page_class: not_listing
-  class_label: 物件ページではない
+  url: https://www.city.shiga-konan.lg.jp/
+  page_class: null
+  class_label: null
   confidence: 0.6
   operator_kind: municipality
-  evidence_quote: 公式ドメイン www.city.konan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
-  evidence_url: https://www.city.konan.lg.jp/
-  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  evidence_quote: 滋賀県 県内の市町一覧に掲載された公式サイト。ページの題名は「ホーム／湖南市」（www.city.shiga-konan.lg.jp）
+  evidence_url: https://www.pref.shiga.lg.jp/ab00/7739.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
   proposed_policy: link_only
   proposed_action: 承認
   decision: null

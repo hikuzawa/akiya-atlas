@@ -701,29 +701,31 @@
       ]
     },
     {
-      "alternatives": [
-        "https://www.city.sakura.lg.jp/hojokin_joseikin/sumai/akiyabank/sitemap.dir.xml"
-      ],
-      "bank_url": "https://www.city.sakura.lg.jp/",
+      "alternatives": [],
+      "bank_status": "info",
+      "bank_url": "https://www.city.tochigi-sakura.lg.jp/life/000015/000123/index.html",
       "code": "092142",
       "confidence": 0.6,
       "cross_linked": false,
-      "evidence_quote": "公式ドメイン www.city.sakura.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
-      "evidence_url": "https://www.city.sakura.lg.jp/",
+      "detail_pattern": null,
+      "evidence_quote": "栃木県 リンク集（市町一覧）に掲載された公式サイト。ページの題名は「さくら市公式ホームページ」（www.city.tochigi-sakura.lg.jp）",
+      "evidence_url": "https://www.pref.tochigi.lg.jp/c05/intro/tochigi/link/lkshityouson.html",
       "external_links": [],
-      "listing_rows": null,
-      "listing_score": null,
+      "extract_gap": false,
+      "listing_rows": 0,
+      "listing_score": 0.0,
       "name": "さくら市",
       "name_kana": "ｻｸﾗｼ",
-      "official_url": "www.city.sakura.lg.jp",
+      "official_url": "www.city.tochigi-sakura.lg.jp",
       "operator_kind": "municipality",
-      "page_class": null,
+      "page_class": "not_listing",
       "pagination_pattern": null,
       "policy": "link_only",
       "prefecture": "栃木県",
       "prefecture_slug": "tochigi",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [
