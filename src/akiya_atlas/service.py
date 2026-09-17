@@ -11,12 +11,14 @@ from pathlib import Path
 from typing import Any
 
 from sitemill.build.pii import PHONE_RE
+from sitemill.diff.normalize import page_text, squash
 from sitemill.diff.state import CrawlState
 from sitemill.extract import ExtractedItem, ExtractionSpec
 from sitemill.fetch.links import host_of
-from sitemill.models import Page, Provenance, Redirect, Source
+from sitemill.models import FieldStatus, FieldValue, Page, Provenance, Redirect, Source
 from sitemill.parse.jp.address import has_street_number, strip_street_number
 from sitemill.settings import Workspace
+from sitemill.store.raw import RawCache
 from sitemill.store.records import RecordStore
 
 from akiya_atlas import affiliates, pages
@@ -139,6 +141,49 @@ def assert_no_street_numbers(records: list[dict[str, Any]], *, where: str) -> No
         raise ValueError(f"{where}: 番地が残っている所在地がある: {bad[:5]}")
 
 
+# 築年の引用が、本文では月日付きの日付の一部になっている。三原市の一覧は見出しの無い列に
+# 掲載日「令和８年 ６月29日」を並べていて、LLM が「令和８年」を築年に選び、80 件が「2026年築」
+# 「2025年築」と出た（2026-09-17）。プロンプトで禁じても選び続けたので、本文で確かめて外す
+# 間にゼロ幅スペースが入ることがある（squash は消さない。三原市の実物）
+_DAY_AFTER = re.compile(r"[\u200b-\u200d\ufeff]*\d{1,2}月\d{1,2}日")
+_BUILT_LABEL = re.compile(r"築|建築|建設|竣工|建物")
+NOTE_LISTING_DATE = "listing_date_not_built_year"
+
+
+def built_year_is_a_date(quote: str, page_squashed: str) -> bool:
+    """築年の引用が、本文で月日付きの日付の一部として現れ、どこにも築年の見出しが付いていないか。
+
+    三原市の「令和6年」は掲載日のほかに「令和6年にキッチン・浴室を改修」にも現れる。
+    どちらも築年ではないので、見出しの付いた出現が 1 つも無ければ値にしない。
+    """
+    q = squash(quote)
+    if not q or _BUILT_LABEL.search(q):
+        return False
+    is_date = False
+    for m in re.finditer(re.escape(q), page_squashed):
+        before = page_squashed[max(0, m.start() - 12) : m.start()]
+        after = page_squashed[m.end() : m.end() + 8]
+        if _BUILT_LABEL.search(before) or after.startswith("築"):
+            return False
+        is_date = is_date or bool(_DAY_AFTER.match(after))
+    return is_date
+
+
+def drop_dates_quoted_as_built_year(items: Sequence[ExtractedItem], page_squashed: str) -> int:
+    """月日付きの日付から切り出した築年を値にしない。外した件数を返す。"""
+    n = 0
+    for item in items:
+        fv = item.fields.get("built_year")
+        if fv is None or not fv.ok or not fv.quote:
+            continue
+        if built_year_is_a_date(fv.quote, page_squashed):
+            item.fields["built_year"] = FieldValue(
+                quote=fv.quote, status=FieldStatus.unparsed, note=NOTE_LISTING_DATE
+            )
+            n += 1
+    return n
+
+
 def item_to_content(
     item: ExtractedItem, *, source: Source, municipality_code: str, url: str, kind: str
 ) -> dict[str, Any] | None:
@@ -187,6 +232,8 @@ def merge_content(existing: dict[str, Any], new: dict[str, Any]) -> dict[str, An
     for key in FIELD_KEYS:
         old, cur = existing.get(key) or {}, new.get(key) or {}
         old_ok, cur_ok = old.get("status") == "parsed", cur.get("status") == "parsed"
+        if cur.get("note") == NOTE_LISTING_DATE:
+            continue  # 誤りと分かって外した値。以前の parsed を残さない
         if old_ok and (not cur_ok or (old_is_detail and not new_is_detail)):
             out[key] = old
     for key in ("title", "summary"):
@@ -368,6 +415,13 @@ class AkiyaAtlasService:
         store = RecordStore(records_path(ws, source.id))
         counts = {"created": 0, "updated": 0, "unchanged": 0, "skipped": 0}
         now = provenance.extractor.extracted_at if provenance.extractor else provenance.fetched_at
+        html = RawCache(ws.raw_dir).load_text(source.id, url)
+        if html is not None:
+            dropped = drop_dates_quoted_as_built_year(
+                items, squash(page_text(html, source.content_selector))
+            )
+            if dropped:
+                log.info("%s %s: 日付を築年にしていた %d 件を外した", source.id, url, dropped)
         for item in items:
             content = item_to_content(
                 item, source=source, municipality_code=code, url=url, kind=kind
