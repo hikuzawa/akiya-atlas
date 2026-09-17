@@ -1,6 +1,6 @@
 prefecture: 千葉県
 prefecture_slug: chiba
-created_at: '2026-09-15T11:24:34+00:00'
+created_at: '2026-09-17T09:57:32+00:00'
 candidates:
 - key: '121002'
   label: 千葉県 千葉市
@@ -704,14 +704,14 @@ candidates:
   note: null
 - key: '124273'
   label: 千葉県 長南町
-  url: https://www.town.chonan.lg.jp/
-  page_class: null
-  class_label: null
+  url: https://www.town.chonan.chiba.jp/kurashi/jutaku/akiya/
+  page_class: not_listing
+  class_label: 物件ページではない
   confidence: 0.6
   operator_kind: municipality
-  evidence_quote: 公式ドメイン www.town.chonan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
-  evidence_url: https://www.town.chonan.lg.jp/
-  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  evidence_quote: 千葉県 市町村一覧に掲載された公式サイト。ページの題名は「長南町公式ホームページ」（www.town.chonan.chiba.jp）
+  evidence_url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
   proposed_policy: link_only
   proposed_action: 承認
   decision: null

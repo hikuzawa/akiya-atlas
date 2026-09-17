@@ -1,6 +1,6 @@
 prefecture: 鳥取県
 prefecture_slug: tottori
-created_at: '2026-09-15T00:18:58+00:00'
+created_at: '2026-09-17T09:58:20+00:00'
 candidates:
 - key: '312011'
   label: 鳥取県 鳥取市
@@ -88,13 +88,13 @@ candidates:
   note: null
 - key: '313289'
   label: 鳥取県 智頭町
-  url: https://www.town.chizu.tottori.jp/
+  url: https://www1.town.chizu.tottori.jp/
   page_class: null
   class_label: null
   confidence: 0.6
   operator_kind: municipality
-  evidence_quote: 公式ドメイン www.town.chizu.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
-  evidence_url: https://www.town.chizu.tottori.jp/
+  evidence_quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト。ページの題名は「鳥取県智頭町ホームページ」（www1.town.chizu.tottori.jp）
+  evidence_url: https://www.pref.tottori.lg.jp/9577.htm
   reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
   proposed_policy: link_only
   proposed_action: 承認

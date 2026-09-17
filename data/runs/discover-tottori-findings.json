@@ -157,19 +157,24 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [],
-      "bank_url": "https://www.town.chizu.tottori.jp/",
+      "alternatives": [
+        "https://www1.town.chizu.tottori.jp/chizu/town/emigration/c469/2024/"
+      ],
+      "bank_status": "none",
+      "bank_url": "https://www1.town.chizu.tottori.jp/",
       "code": "313289",
       "confidence": 0.6,
       "cross_linked": false,
-      "evidence_quote": "公式ドメイン www.town.chizu.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）",
-      "evidence_url": "https://www.town.chizu.tottori.jp/",
+      "detail_pattern": null,
+      "evidence_quote": "鳥取県 県内の市町村（とりネット）に掲載された公式サイト。ページの題名は「鳥取県智頭町ホームページ」（www1.town.chizu.tottori.jp）",
+      "evidence_url": "https://www.pref.tottori.lg.jp/9577.htm",
       "external_links": [],
+      "extract_gap": false,
       "listing_rows": null,
       "listing_score": null,
       "name": "智頭町",
       "name_kana": "ﾁﾂﾞﾁｮｳ",
-      "official_url": "www.town.chizu.tottori.jp",
+      "official_url": "www1.town.chizu.tottori.jp",
       "operator_kind": "municipality",
       "page_class": null,
       "pagination_pattern": null,
@@ -177,7 +182,10 @@
       "prefecture": "鳥取県",
       "prefecture_slug": "tottori",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": [
+        "https://www1.town.chizu.tottori.jp/chizu/town/emigration/01/m161/"
+      ]
     },
     {
       "alternatives": [],

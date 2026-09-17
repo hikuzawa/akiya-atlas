@@ -202,6 +202,26 @@
       "source": "https://www.pref.yamanashi.jp/link/link_city.html",
       "note": "読みから推測した www.city.chuo.lg.jp を公式サイトとして採用していたが、東京都中央区のサイトで、中央市の名前はページに 0 回だった（2026-09-17）。県の一覧の URL に直した",
       "checked_on": "2026-09-17"
+    },
+    {
+      "code": "124273",
+      "name": "長南町",
+      "prefecture": "千葉県",
+      "official_url": "https://www.town.chonan.chiba.jp/",
+      "evidence": "千葉県 市町村一覧に掲載された公式サイト。ページの題名は「長南町公式ホームページ」",
+      "source": "https://www.pref.chiba.lg.jp/kouhou/ichiran.html",
+      "note": "読みから推測した www.town.chonan.lg.jp を公式サイトとして採用していたが、「403 Forbidden」を返し、長南町の名前もページに出なかった（2026-09-17）。県の一覧の URL に直した",
+      "checked_on": "2026-09-17"
+    },
+    {
+      "code": "313289",
+      "name": "智頭町",
+      "prefecture": "鳥取県",
+      "official_url": "https://www1.town.chizu.tottori.jp/",
+      "evidence": "鳥取県 県内の市町村（とりネット）に掲載された公式サイト。ページの題名は「鳥取県智頭町ホームページ」",
+      "source": "https://www.pref.tottori.lg.jp/9577.htm",
+      "note": "www.town.chizu.tottori.jp を公式サイトとして採用していたが、町立図書館の蔵書検索（OPWMAIN.CSP?DB=LIB）に転送するだけのページで、智頭町の名前も出なかった（2026-09-17）。県の一覧の URL に直した",
+      "checked_on": "2026-09-17"
     }
   ]
 }

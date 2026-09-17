@@ -1407,27 +1407,39 @@
       ]
     },
     {
-      "alternatives": [],
-      "bank_url": "https://www.town.chonan.lg.jp/",
+      "alternatives": [
+        "https://www.town.chonan.chiba.jp/kurashi/jutaku/akiya/13138/",
+        "https://www.town.chonan.chiba.jp/kurashi/jutaku/akiya/11961/"
+      ],
+      "bank_status": "info",
+      "bank_url": "https://www.town.chonan.chiba.jp/kurashi/jutaku/akiya/",
       "code": "124273",
       "confidence": 0.6,
       "cross_linked": false,
-      "evidence_quote": "公式ドメイン www.town.chonan.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
-      "evidence_url": "https://www.town.chonan.lg.jp/",
+      "detail_pattern": null,
+      "evidence_quote": "千葉県 市町村一覧に掲載された公式サイト。ページの題名は「長南町公式ホームページ」（www.town.chonan.chiba.jp）",
+      "evidence_url": "https://www.pref.chiba.lg.jp/kouhou/ichiran.html",
       "external_links": [],
-      "listing_rows": null,
-      "listing_score": null,
+      "extract_gap": false,
+      "listing_rows": 0,
+      "listing_score": 0.0,
       "name": "長南町",
       "name_kana": "ﾁｮｳﾅﾝﾏﾁ",
-      "official_url": "www.town.chonan.lg.jp",
+      "official_url": "www.town.chonan.chiba.jp",
       "operator_kind": "municipality",
-      "page_class": null,
+      "page_class": "not_listing",
       "pagination_pattern": null,
       "policy": "link_only",
       "prefecture": "千葉県",
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": [
+        "https://www.town.chonan.chiba.jp/kurashi/jutaku/akiya/17099/",
+        "https://www.town.chonan.chiba.jp/osirase/36289/",
+        "https://www.town.chonan.chiba.jp/kurashi/kinkyuu/35393/",
+        "https://www.town.chonan.chiba.jp/kurashi/jutaku/35296/"
+      ]
     },
     {
       "alternatives": [

@@ -19,7 +19,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tottori.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tottori.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.tottori.lg.jp/page/5828.html
     kind: listing_index
@@ -46,7 +46,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yonago.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.yonago.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: tottori-312037
   name: 倉吉市空き家バンク
   operator: 倉吉市
@@ -66,7 +66,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kurayoshi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kurayoshi.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.city.kurayoshi.lg.jp/4975.htm
     kind: listing_index
@@ -97,7 +97,7 @@ sources:
   operator_evidence:
     quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.city.sakaiminato.lg.jp）。サイトを取得できなかったためリンクのみ（robots.txt により拒否）
     url: https://www.pref.tottori.lg.jp/9577.htm
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: tottori-313025
   name: 岩美町空き家バンク
   operator: 岩美町
@@ -118,7 +118,7 @@ sources:
   operator_evidence:
     quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.iwami.gr.jp）
     url: https://www.pref.tottori.lg.jp/9577.htm
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: tottori-313254
   name: 若桜町空き家バンク
   operator: 若桜町
@@ -139,28 +139,34 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.wakasa.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.wakasa.tottori.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: tottori-313289
   name: 智頭町空き家バンク
   operator: 智頭町
   operator_kind: municipality
-  official_url: https://www.town.chizu.tottori.jp/
-  policy: link_only
+  official_url: https://www1.town.chizu.tottori.jp/
+  policy: crawl
   municipality:
     code: '313289'
     name: 智頭町
     prefecture: 鳥取県
     prefecture_slug: tottori
     slug: '313289'
-    bank_url: https://www.town.chizu.tottori.jp/
+    bank_url: https://www1.town.chizu.tottori.jp/
     bank_status: none
     extract_pending: false
     map_query: 鳥取県智頭町
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
-    quote: 公式ドメイン www.town.chizu.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
-    url: https://www.town.chizu.tottori.jp/
-    checked_on: '2026-09-15'
+    quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト。ページの題名は「鳥取県智頭町ホームページ」（www1.town.chizu.tottori.jp）
+    url: https://www.pref.tottori.lg.jp/9577.htm
+    checked_on: '2026-09-17'
+  pages:
+  - url: https://www1.town.chizu.tottori.jp/chizu/town/emigration/01/m161/
+    kind: subsidy
+  allow_hosts:
+  - www1.town.chizu.tottori.jp
+  max_pages: 30
 - id: tottori-313297
   name: 八頭町空き家バンク
   operator: 八頭町
@@ -181,7 +187,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yazu.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yazu.tottori.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: tottori-313645
   name: 三朝町空き家バンク
   operator: 三朝町
@@ -201,7 +207,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.misasa.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.misasa.tottori.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.town.misasa.tottori.jp/315/319/2054/2002/2021/1920/
     kind: listing_index
@@ -230,7 +236,7 @@ sources:
   operator_evidence:
     quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.yurihama.jp）
     url: https://www.pref.tottori.lg.jp/9577.htm
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: tottori-313718
   name: 琴浦町空き家バンク
   operator: 琴浦町
@@ -250,7 +256,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kotoura.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kotoura.tottori.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.town.kotoura.tottori.jp/ijuteiju/ohnav/
     kind: listing_index
@@ -277,7 +283,7 @@ sources:
   operator_evidence:
     quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.e-hokuei.net）
     url: https://www.pref.tottori.lg.jp/9577.htm
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.e-hokuei.net/soshiki/10/1580.html
     kind: subsidy
@@ -310,7 +316,7 @@ sources:
   operator_evidence:
     quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.hiezu.jp）
     url: https://www.pref.tottori.lg.jp/9577.htm
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: tottori-313866
   name: 大山町空き家バンク
   operator: 大山町
@@ -331,7 +337,7 @@ sources:
   operator_evidence:
     quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.daisen.jp）
     url: https://www.pref.tottori.lg.jp/9577.htm
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.daisen.jp/10/2/9/a141/
     kind: subsidy
@@ -360,7 +366,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nanbu.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nanbu.tottori.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.town.nanbu.tottori.jp/admin/mirai/permanent/01/
     kind: subsidy
@@ -387,7 +393,7 @@ sources:
   operator_evidence:
     quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.houki-town.jp）
     url: https://www.pref.tottori.lg.jp/9577.htm
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: tottori-314013
   name: 日南町空き家バンク
   operator: 日南町
@@ -408,7 +414,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nichinan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.nichinan.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
   pages:
   - url: https://www.town.nichinan.lg.jp/soshikikarasagasu/kensetsuka/sumai_kenchiku/16732.html
     kind: subsidy
@@ -435,7 +441,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hino.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.hino.tottori.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
 - id: tottori-314030
   name: 江府町空き家バンク
   operator: 江府町
@@ -456,4 +462,4 @@ sources:
   operator_evidence:
     quote: 鳥取県 県内の市町村（とりネット）に掲載された公式サイト（www.town-kofu.jp）
     url: https://www.pref.tottori.lg.jp/9577.htm
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-17'
