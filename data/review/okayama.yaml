@@ -1,6 +1,6 @@
 prefecture: 岡山県
 prefecture_slug: okayama
-created_at: '2026-09-16T22:01:57+00:00'
+created_at: '2026-09-17T22:24:08+00:00'
 candidates:
 - key: '331007'
   label: 岡山県 岡山市
@@ -144,10 +144,10 @@ candidates:
   note: null
 - key: '332127'
   label: 岡山県 瀬戸内市
-  url: https://www.city.setouchi.lg.jp/site/portal/138698.html
+  url: https://www.city.setouchi.lg.jp/site/portal/
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.8
+  confidence: 0.83
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.city.setouchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
   evidence_url: https://www.city.setouchi.lg.jp/
