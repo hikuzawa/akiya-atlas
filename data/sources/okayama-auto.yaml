@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 岡山県 市町村に掲載された公式サイト（www.city.okayama.jp）
     url: https://www.pref.okayama.jp/page/1000.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
 - id: okayama-332020
   name: 倉敷市空き家バンク
   operator: 倉敷市
@@ -41,7 +41,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kurashiki.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kurashiki.okayama.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
   pages:
   - url: https://www.city.kurashiki.okayama.jp/kurashi/sumai/1006343/1013283/index.html
     kind: subsidy
@@ -72,7 +72,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tsuyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tsuyama.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
 - id: okayama-332046
   name: 玉野市空き家バンク
   operator: 玉野市
@@ -93,7 +93,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tamano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tamano.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
 - id: okayama-332054
   name: 笠岡市空き家バンク
   operator: 笠岡市
@@ -114,7 +114,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kasaoka.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kasaoka.okayama.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
   pages:
   - url: https://www.city.kasaoka.okayama.jp/soshiki/28/44807.html
     kind: subsidy
@@ -143,7 +143,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ibara.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ibara.okayama.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
   pages:
   - url: https://www.city.ibara.okayama.jp/life/1/7/46/
     kind: subsidy
@@ -176,7 +176,7 @@ sources:
   operator_evidence:
     quote: 岡山県 市町村に掲載された公式サイト（www.city.soja.okayama.jp）
     url: https://www.pref.okayama.jp/page/1000.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
 - id: okayama-332097
   name: 高梁市空き家バンク
   operator: 高梁市
@@ -197,7 +197,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.city.takahashi.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.takahashi.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
 - id: okayama-332101
   name: 新見市空き家バンク
   operator: 新見市
@@ -218,7 +218,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.niimi.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.niimi.okayama.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
 - id: okayama-332119
   name: 備前市空き家バンク
   operator: 備前市
@@ -239,7 +239,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.bizen.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.bizen.okayama.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
   pages:
   - url: https://www.city.bizen.okayama.jp/site/bizen/list16-77.html
     kind: subsidy
@@ -255,27 +255,22 @@ sources:
   operator: 瀬戸内市
   operator_kind: municipality
   official_url: https://www.city.setouchi.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '332127'
     name: 瀬戸内市
     prefecture: 岡山県
     prefecture_slug: okayama
     slug: '332127'
-    bank_url: https://www.city.setouchi.lg.jp/site/portal/
-    bank_status: available
+    bank_url: https://www.city.setouchi.lg.jp/
+    bank_status: none
     extract_pending: false
     map_query: 岡山県瀬戸内市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.setouchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.setouchi.lg.jp/
-    checked_on: '2026-09-17'
-  pages:
-  - url: https://www.city.setouchi.lg.jp/site/portal/
-    kind: listing_index
-  allow_hosts:
-  - www.city.setouchi.lg.jp
-  max_pages: 30
+    checked_on: '2026-09-18'
 - id: okayama-332135
   name: 赤磐市空き家バンク
   operator: 赤磐市
@@ -296,7 +291,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.akaiwa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.akaiwa.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
 - id: okayama-332143
   name: 真庭市空き家バンク
   operator: 真庭市
@@ -317,7 +312,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.maniwa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.maniwa.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
   pages:
   - url: https://www.city.maniwa.lg.jp/soshiki/44/97095.html
     kind: subsidy
@@ -349,7 +344,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.mimasaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.mimasaka.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
   pages:
   - url: https://www.city.mimasaka.lg.jp/mokutekibetsu/ijuteiju/5854.html
     kind: listing_index
@@ -375,7 +370,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.asakuchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.asakuchi.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
   pages:
   - url: https://www.city.asakuchi.lg.jp/page/13085.html
     kind: listing_index
@@ -408,7 +403,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.wake.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.wake.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
 - id: okayama-334235
   name: 早島町空き家バンク
   operator: 早島町
@@ -429,7 +424,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hayashima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.hayashima.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
 - id: okayama-334456
   name: 里庄町空き家バンク
   operator: 里庄町
@@ -450,7 +445,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.satosho.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.satosho.okayama.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
   pages:
   - url: https://www.town.satosho.okayama.jp/soshiki/15/11455.html
     kind: subsidy
@@ -479,7 +474,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yakage.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yakage.okayama.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
   pages:
   - url: https://www.town.yakage.okayama.jp/life/teijyu/akiyahojoshinsei.html
     kind: subsidy
@@ -512,7 +507,7 @@ sources:
   operator_evidence:
     quote: 岡山県 市町村に掲載された公式サイト（www.vill.shinjo.okayama.jp）
     url: https://www.pref.okayama.jp/page/1000.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
 - id: okayama-336068
   name: 鏡野町空き家バンク
   operator: 鏡野町
@@ -533,7 +528,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kagamino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kagamino.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
   pages:
   - url: https://www.town.kagamino.lg.jp/soshiki/22/1122.html
     kind: subsidy
@@ -560,7 +555,7 @@ sources:
   operator_evidence:
     quote: 岡山県 市町村に掲載された公式サイト（www.town.shoo.lg.jp）
     url: https://www.pref.okayama.jp/page/1000.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
 - id: okayama-336238
   name: 奈義町空き家バンク
   operator: 奈義町
@@ -581,7 +576,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nagi.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nagi.okayama.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
 - id: okayama-336432
   name: 西粟倉村空き家バンク
   operator: 西粟倉村
@@ -602,7 +597,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.nishiawakura.okayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.nishiawakura.okayama.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
 - id: okayama-336637
   name: 久米南町空き家バンク
   operator: 久米南町
@@ -623,7 +618,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kumenan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kumenan.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
 - id: okayama-336661
   name: 美咲町空き家バンク
   operator: 美咲町
@@ -644,7 +639,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.town.okayama-misaki.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.town.okayama-misaki.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
 - id: okayama-336815
   name: 吉備中央町空き家バンク
   operator: 吉備中央町
@@ -664,7 +659,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kibichuo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kibichuo.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-18'
   pages:
   - url: https://www.town.kibichuo.lg.jp/site/teijyu/1576.html
     kind: listing_index
