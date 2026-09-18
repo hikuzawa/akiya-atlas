@@ -232,8 +232,37 @@ def item_to_content(
     return content
 
 
+# 値そのもの。ここが動いていなければ、読み手にとっての事実は変わっていない
+FACT_KEYS = ("deal_type", "detail_url", "listing_no", "source_url", "municipality_code")
+
+
+def same_facts(existing: dict[str, Any], new: dict[str, Any]) -> bool:
+    """値と状態がすべて前回と同じか。引用と本文の言い回しは見ない。"""
+    for key in FIELD_KEYS:
+        old, cur = existing.get(key) or {}, new.get(key) or {}
+        if (old.get("value"), old.get("status")) != (cur.get("value"), cur.get("status")):
+            return False
+    return all(existing.get(k) == new.get(k) for k in FACT_KEYS)
+
+
+def keep_wording(existing: dict[str, Any], out: dict[str, Any]) -> None:
+    """保存済みの引用・題名・要約を残す。値が同じことは呼ぶ側で確かめる。"""
+    for key in FIELD_KEYS:
+        if existing.get(key) is not None:
+            out[key] = existing[key]
+    for key in ("title", "summary"):
+        if existing.get(key):
+            out[key] = existing[key]
+
+
 def merge_content(existing: dict[str, Any], new: dict[str, Any]) -> dict[str, Any]:
-    """項目ごとに parsed を優先し、詳細ページ由来を一覧ページ由来より優先する（ADR 0002）。"""
+    """項目ごとに parsed を優先し、詳細ページ由来を一覧ページ由来より優先する（ADR 0002）。
+
+    値が前回と同じなら、言い回しは前回のまま残す。一覧ページに 1 件でも変化があると
+    そのページの全物件を読み直すので、変わっていない物件まで題名・要約・引用が書き換わり、
+    サイトマップの lastmod が「変わった」と言い続ける（2026-09-19 の一晩で、値が動いたのは
+    42 件、言い回しだけが動いたのは 386 件だった。docs/data-issues.md）。
+    """
     out = dict(new)
     new_is_detail = new.get("page_kind") == "listing_detail"
     old_is_detail = existing.get("page_kind") == "listing_detail"
@@ -254,6 +283,9 @@ def merge_content(existing: dict[str, Any], new: dict[str, Any]) -> dict[str, An
         if old_is_detail:
             out["page_kind"] = "listing_detail"
             out["source_url"] = existing.get("source_url", out["source_url"])
+    # 詳細ページが初めて来たときは、そちらの書き方を採る。それ以外で値が同じなら書き換えない
+    if new_is_detail == old_is_detail and same_facts(existing, out):
+        keep_wording(existing, out)
     return out
 
 

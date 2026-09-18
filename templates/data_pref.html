@@ -16,13 +16,13 @@
     <dl class="facts">
       <div class="row"><dt>運営主体</dt><dd>{{ s.operator }}（{{ s.operator_kind }}）</dd></div>
       {% if s.evidence %}
-      <div class="row"><dt>根拠</dt><dd>「{{ s.evidence.quote }}」 — <a href="{{ s.evidence.url }}" rel="noopener" target="_blank">出典{{ ui.icon("ext") }}</a>{% if s.evidence.checked_on %}（確認日 {{ s.evidence.checked_on }}）{% endif %}</dd></div>
+      <div class="row"><dt>根拠</dt><dd>「{{ s.evidence.quote }}」 — <a href="{{ s.evidence.url }}" rel="noopener" target="_blank">出典{{ ui.icon("ext") }}</a>{% if s.evidence.checked_on %}<span data-sitemill-volatile>（確認日 {{ s.evidence.checked_on }}）</span>{% endif %}</dd></div>
       {% endif %}
       <div class="row"><dt>巡回方針</dt><dd>{{ s.policy }}</dd></div>
       {% if s.pages %}
       <div class="row"><dt>巡回ページ</dt><dd><ul>{% for p in s.pages %}<li><a href="{{ p.url }}" rel="noopener" target="_blank">{{ p.url }}</a> <span class="meta">{{ p.kind }}</span></li>{% endfor %}</ul></dd></div>
       {% endif %}
-      <div class="row"><dt>最終取得</dt><dd>{{ s.last_fetched }}</dd></div>
+      <div class="row" data-sitemill-volatile><dt>最終取得</dt><dd>{{ s.last_fetched }}</dd></div>
       <div class="row"><dt>ライセンス判定</dt><dd>{{ s.license }}</dd></div>
       {% if s.external %}
       <div class="row"><dt>関連する民間サイト（リンクのみ）</dt><dd><ul>{% for e in s.external %}<li><a href="{{ e.url }}" rel="noopener nofollow" target="_blank">{{ e.label }}</a>{% if e.note %} — {{ e.note }}{% endif %}</li>{% endfor %}</ul></dd></div>

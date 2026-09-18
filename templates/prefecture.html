@@ -21,7 +21,7 @@
   {% if stats.free %}
   {% set cells = cells + [{"value": stats.free|number, "unit": "件", "label": "無償譲渡（価格 0 円の物件）"}] %}
   {% endif %}
-  {% if fetched %}{% set cells = cells + [{"value": fetched, "label": "最終取得", "kind": "text"}] %}{% endif %}
+  {% if fetched %}{% set cells = cells + [{"value": fetched, "label": "最終取得", "kind": "text", "volatile": true}] %}{% endif %}
   {{ ui.stat_strip(cells, prefecture.name ~ "の掲載状況") }}
 </div>
 
@@ -60,7 +60,7 @@
   {% if zero_munis %}
   <details class="fold">
     <summary>巡回中で、いま掲載物件が 0 件 <span class="count">（{{ zero_munis|length }}）</span></summary>
-    <div class="fold-body"><ul class="link-list">{% for m in zero_munis %}<li><a href="{{ m.url }}">{{ m.name }}</a><span class="meta">取得 {{ m.last_fetched }}</span></li>{% endfor %}</ul></div>
+    <div class="fold-body"><ul class="link-list">{% for m in zero_munis %}<li><a href="{{ m.url }}">{{ m.name }}</a><span class="meta" data-sitemill-volatile>取得 {{ m.last_fetched }}</span></li>{% endfor %}</ul></div>
   </details>
   {% endif %}
   {% if info_munis %}
@@ -107,7 +107,7 @@
           <td>{{ "あり" if m.subsidy_migration else "—" }}</td>
           <td>{{ "あり" if m.subsidy_renovation else "—" }}</td>
           <td>{{ "あり" if m.subsidy_demolition else "—" }}</td>
-          <td>{{ m.last_fetched }}</td>
+          <td data-sitemill-volatile>{{ m.last_fetched }}</td>
         </tr>
         {% endfor %}
         </tbody>

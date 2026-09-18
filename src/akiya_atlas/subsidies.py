@@ -76,6 +76,29 @@ def item_to_subsidy(
     )
 
 
+# 引用した事実。どれかが動いたときだけ、区分と要約も読み直す
+SUBSIDY_FACT_KEYS = ("name", "url", "amount_text", "year_text", "period_text", "period_end")
+
+
+def merge_subsidy(existing: dict[str, Any], new: dict[str, Any]) -> dict[str, Any]:
+    """引用した事実が前回と同じなら、区分・対象・要約は前回のまま残す。
+
+    同じ本文でも LLM は言い直す（2026-09-18 の一晩で、区分が入れ替わったのが 4 件、
+    要約の言い直しが 51 件。区分が変わるとバッジと絞り込みの所属まで変わる）。
+    まだ「判定できず」のものは、判断が付いたときに受け取れるよう凍結しない。
+    """
+    out = dict(new)
+    if not all(existing.get(k) == out.get(k) for k in SUBSIDY_FACT_KEYS):
+        return out
+    for key in ("summary", "scope"):
+        if existing.get(key):
+            out[key] = existing[key]
+    if existing.get("kind") and existing.get("kind") != "判定できず":
+        out["kind"] = existing["kind"]
+        out["kind_quote"] = existing.get("kind_quote")
+    return out
+
+
 def ingest_subsidies(
     ws: Workspace,
     *,
@@ -101,6 +124,7 @@ def ingest_subsidies(
             row.model_dump(mode="json"),
             now=now,
             provenance=provenance.model_dump(mode="json"),
+            merge=merge_subsidy,
         )
         counts[result] += 1
     store.save()

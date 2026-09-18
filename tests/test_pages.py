@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import shutil
 from datetime import UTC, datetime
 from pathlib import Path
@@ -516,3 +517,28 @@ def test_price_quote_is_shown_without_brackets() -> None:
     assert price_text(_mk("［応相談］")) == "応相談"
     assert price_text(_mk("応相談")) == "応相談"
     assert price_text(_mk("[]")) == "—"
+
+
+def test_check_times_are_kept_out_of_the_sitemap_fingerprint(ws: Workspace) -> None:
+    """「いつ確認したか」の表示で lastmod を動かさない（2026-09-19）。
+
+    巡回しただけのページまで毎晩「変わった」になっていた。一晩 972 ページのうち 367 ページは
+    日付・時刻の表示だけが違い、値は動いていなかった（docs/data-issues.md）。取得時刻・確認日には
+    `data-sitemill-volatile` を付け、sitemill の指紋から外す（sitemill ADR 0025）。
+    """
+    from sitemill.build.lastmod import fingerprint
+
+    commands.cmd_build(commands.Runtime(ws=ws, service=service))
+    for rel in (
+        "index.html",
+        "nagano/index.html",
+        "nagano/202193-tomi/index.html",
+        "nagano/202193-tomi/322/index.html",
+        "data/nagano/index.html",
+    ):
+        html = (ws.dist_dir / rel).read_text(encoding="utf-8")
+        assert "data-sitemill-volatile" in html, rel
+        later = re.sub(r"20\d\d年\d{1,2}月\d{1,2}日[^<]*", "2030年1月1日", html)
+        later = re.sub(r"20\d\d-\d\d-\d\d", "2030-01-01", later)
+        assert later != html, rel
+        assert fingerprint(later) == fingerprint(html), rel

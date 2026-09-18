@@ -106,5 +106,5 @@
   <a class="sub" href="/{{ muni.path }}">{{ muni.name }}の一覧</a>
 </nav>
 
-<p class="meta narrow" style="margin-top: 24px">取得日時: {{ fetched_at }}{% if extractor %} ／ 抽出: {{ extractor }}（引用の検証と数値化はプログラムで実施）{% endif %}</p>
+<p class="meta narrow" data-sitemill-volatile style="margin-top: 24px">取得日時: {{ fetched_at }}{% if extractor %} ／ 抽出: {{ extractor }}（引用の検証と数値化はプログラムで実施）{% endif %}</p>
 {% endblock %}

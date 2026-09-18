@@ -101,7 +101,7 @@
 <section class="section" aria-labelledby="how-title">
   {{ ui.section_head("how-title", "このサイトの作り方") }}
   <ul class="how surface">
-    <li>{{ ui.icon("clock") }}<span>自治体の公式ページを<strong>毎日巡回</strong>し、変化のあったところだけ取り込みます。最終更新は {{ trust.updated_at|date_ja }}。</span></li>
+    <li>{{ ui.icon("clock") }}<span>自治体の公式ページを<strong>毎日巡回</strong>し、変化のあったところだけ取り込みます。<span data-sitemill-volatile>最終更新は {{ trust.updated_at|date_ja }}。</span></span></li>
     <li>{{ ui.icon("ext") }}<span>物件ごとに<strong>一次情報へのリンク</strong>と取得日時を必ず出します。写真と詳細本文は転載しません。</span></li>
     <li>{{ ui.icon("check") }}<span>価格・面積・築年は<strong>自治体ページの原文から取れた値だけ</strong>を載せます。推定値は混ぜません。</span></li>
     <li>{{ ui.icon("building") }}<span>巡回しているのは、空き家バンクで物件を確認できた {{ stats.crawled_municipalities|number }} 市町村です。残る {{ (stats.municipalities - stats.crawled_municipalities)|number }} 市町村も<strong>窓口と補助制度はまとめています</strong>（登録制・物件ページが無いなどの理由で巡回していません）。</span></li>

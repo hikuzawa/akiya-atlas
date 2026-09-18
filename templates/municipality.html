@@ -31,7 +31,7 @@
   {% if ns.kinds %}
     {% set cells = cells + [{"label": "本サイトが確認した補助制度（" ~ subsidies|length ~ " 件）", "badges": ns.kinds}] %}
   {% endif %}
-  {% set cells = cells + [{"value": muni_row.last_fetched, "label": "最終取得（公式ページを毎日確認）", "kind": "text"}] %}
+  {% set cells = cells + [{"value": muni_row.last_fetched, "label": "最終取得（公式ページを毎日確認）", "kind": "text", "volatile": true}] %}
   {{ ui.stat_strip(cells, muni.name ~ "の掲載状況") }}
   {% else %}
   {{ ui.status_card(muni) }}

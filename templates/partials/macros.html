@@ -62,7 +62,7 @@
 {% macro stat_strip(cells, label="この地域の数字") -%}
 <div class="strip" role="group" aria-label="{{ label }}">
 {% for c in cells %}
-<div class="strip-cell">
+<div class="strip-cell"{% if c.volatile is defined and c.volatile %} data-sitemill-volatile{% endif %}>
   {% if c.value is defined and c.value is not none %}
   <div class="strip-value {{ c.kind if c.kind is defined else '' }}">{{ c.value }}{% if c.unit is defined and c.unit %}<span class="strip-unit">{{ c.unit }}</span>{% endif %}</div>
   {% endif %}
@@ -111,7 +111,7 @@
       {% elif r.built_year and r.floor_area %}{{ badge("info", "築年・面積あり", "check") }}{% endif %}
       {% if subsidy %}{{ badge("ok", "補助金あり（市町村）", "tag") }}{% endif %}
     </div>
-    <span>確認 {{ r.updated }}</span>
+    <span data-sitemill-volatile>確認 {{ r.updated }}</span>
   </div>
 </li>
 {%- endmacro %}
@@ -142,7 +142,7 @@
     <span class="lp{% if r.price_exact is defined and not r.price_exact %} asquote{% endif %}">{{ r.price }}</span>
     <span class="ld">{{ r.deal }}</span>
     <span class="lt">{{ r.title }}</span>
-    <span class="lm">{% for x in ns.m %}{{ x }}{% if not loop.last %} ・ {% endif %}{% endfor %}<span class="lu">確認 {{ r.updated }}</span></span>
+    <span class="lm">{% for x in ns.m %}{{ x }}{% if not loop.last %} ・ {% endif %}{% endfor %}<span class="lu" data-sitemill-volatile>確認 {{ r.updated }}</span></span>
   </a>
 </li>
 {%- endmacro %}
@@ -161,7 +161,7 @@
       {% if m.subsidy_renovation %}{{ badge("ok", "改修補助") }}{% endif %}
       {% if m.subsidy_demolition %}{{ badge("ok", "解体補助") }}{% endif %}
     </div>
-    <span>取得 {{ m.last_fetched }}</span>
+    <span data-sitemill-volatile>取得 {{ m.last_fetched }}</span>
   </div>
 </li>
 {%- endmacro %}
@@ -265,7 +265,7 @@
   <div class="foot">
     {%- if s.year_text %}<span>{{ s.year_text }}</span>{% endif %}
     {%- if s.period_text %}<span>募集 {{ s.period_text }}</span>{% endif %}
-    {%- if s.checked_on %}<span>{{ icon("clock") }}確認日 {{ s.checked_on }}</span>{% endif %}
+    {%- if s.checked_on %}<span data-sitemill-volatile>{{ icon("clock") }}確認日 {{ s.checked_on }}</span>{% endif %}
   </div>
   {# 根拠の原文は長いことが多く、開いたままだと 1 枚で画面 1.5 個分を占める。既定は閉じる #}
   {% if s.kind == "判定できず" and s.kind_quote %}
