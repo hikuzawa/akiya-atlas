@@ -392,3 +392,39 @@ def test_pages_without_property_evidence_are_not_listings(name: str, muni: str, 
 def test_real_listings_keep_their_evidence(name: str, muni: str) -> None:
     """本物の一覧は物件番号か物件価格を伴うので、これまでどおり採る。"""
     assert expand.has_listing_evidence(_score_of(name)), muni
+
+
+@respx.mock
+def test_heal_refuses_a_replacement_that_is_not_a_listing(ws: Workspace) -> None:
+    """差し替え先にも取り下げと同じ物差しを当てる。
+
+    行数だけで一覧と決めると、制度案内や移住ポータルを掴む。掴んだ翌晩の点検は同じ行数を見て
+    「一覧ではなかった」と取り下げるので、1 日で行って戻る。2026-09-18 に瀬戸内市の移住ポータル
+    （物件行 5）へ差し替え、2026-09-19 に同じ行数で取り下げた実例がある。
+    """
+    wrong = BASE + "/akiya/hojo.html"  # いま採用している補助金ページ（0 件）
+    _mock(
+        {
+            "/": (
+                "<html><head><title>架空市公式ホームページ</title></head><body>"
+                "<a href='/akiya/hojo.html'>空き家改修補助金</a>"
+                "<a href='/kurashi/fuhoutouki.html'>空き家の適正管理</a></body></html>"
+            ),
+            "/akiya/hojo.html": HOJO,
+            "/kurashi/fuhoutouki.html": NOT_AKIYA,  # 表はあるが物件ではない
+        }
+    )
+    for path in ("/sitemap.xml", "/sitemap_index.xml"):
+        respx.get(f"{BASE}{path}").mock(return_value=httpx.Response(404))
+    expand._write_rows(ws, "nagano", "長野県", [_row(wrong)])
+    _mark_crawled(ws, wrong)
+
+    with _client() as c:
+        result = expand.heal(ws, client=c)
+
+    assert result["checked"] == 1 and result["recrawl"] == []
+    assert any("差し替え候補は一覧ではなかった" in m for m in result["changed"]), result["changed"]
+    auto = (ws.sources_dir / "nagano-auto.yaml").read_text(encoding="utf-8")
+    assert "/kurashi/fuhoutouki.html" not in auto  # 一覧ではないので採らない
+    data = json.loads((ws.runs_dir / "discover-nagano-findings.json").read_text(encoding="utf-8"))
+    assert data["findings"][0]["bank_url"] != BASE + "/kurashi/fuhoutouki.html"

@@ -1631,7 +1631,20 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
             old_url = row.get("bank_url")
             old_detail = row.get("detail_pattern")
             name = f"{pref_name}{muni.name}"
-            if new.policy == "crawl" and new.bank_url and new.bank_url != old_url:
+            swap = bool(new.policy == "crawl" and new.bank_url and new.bank_url != old_url)
+            if swap:
+                # 差し替え先にも、取り下げと同じ物差しを当てる。行数だけで一覧と決めると制度案内・
+                # 移住ポータルを掴み、翌晩の点検が同じ行数を見て取り下げる。瀬戸内市は 09-18 に
+                # 差し替えて 09-19 に取り下げで戻った（2026-09-19）
+                _, cand = _page_signals(new.bank_url, client)
+                if cand is None or not has_listing_evidence(cand):
+                    result["changed"].append(
+                        f"{name}: 差し替え候補は一覧ではなかったので採らない"
+                        f"（物件行 {cand.rows if cand else 0}・{new.bank_url}）"
+                    )
+                    new = _row_to_finding(row)  # いまの URL のまま 0 件の理由を見る
+                    swap = False
+            if swap:
                 rows[i] = _finding_to_row(new)
                 touched = True
                 result["recrawl"].append(sid)
