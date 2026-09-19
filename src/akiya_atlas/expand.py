@@ -1425,6 +1425,25 @@ _EMPTY_NOTICE = re.compile(r"(?:物件|情報)[はも]?(?:、|\s)*(?:ありま�
 EMPTY_RECHECK_DAYS = 7
 
 
+def _evidence_of(score: ListingScore | None, url: str | None) -> dict | None:
+    """`has_listing_evidence` が何を見て判断したかを残す。
+
+    発見の側（`decide`）はこの検査を順位付けにしか使っていないので、証拠の無いページでも
+    1 位なら採用されうる。門にしてよいかは、採用したページが後で物件を出したかどうかで
+    決めるしかない。その判断材料として、選び直しの記録に数字を残す（2026-09-19）。
+    """
+    if score is None:
+        return None
+    return {
+        "url": url,
+        "passes": has_listing_evidence(score),
+        "rows": score.rows,
+        "listing_no": score.listing_no_count,
+        "property_prices": score.property_prices,
+        "subsidy_hits": score.subsidy_hits,
+    }
+
+
 def _page_signals(url: str | None, client: PoliteClient) -> tuple[str, ListingScore | None]:
     """抽出に渡るのと同じ本文と、一覧らしさ。0 件の理由を見分けるために使う。"""
     if not url:
@@ -1631,16 +1650,21 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
             old_url = row.get("bank_url")
             old_detail = row.get("detail_pattern")
             name = f"{pref_name}{muni.name}"
+            judged: dict | None = None
             swap = bool(new.policy == "crawl" and new.bank_url and new.bank_url != old_url)
             if swap:
                 # 差し替え先にも、取り下げと同じ物差しを当てる。行数だけで一覧と決めると制度案内・
                 # 移住ポータルを掴み、翌晩の点検が同じ行数を見て取り下げる。瀬戸内市は 09-18 に
                 # 差し替えて 09-19 に取り下げで戻った（2026-09-19）
                 _, cand = _page_signals(new.bank_url, client)
+                judged = _evidence_of(cand, new.bank_url)
                 if cand is None or not has_listing_evidence(cand):
                     result["changed"].append(
                         f"{name}: 差し替え候補は一覧ではなかったので採らない"
-                        f"（物件行 {cand.rows if cand else 0}・{new.bank_url}）"
+                        f"（物件行 {cand.rows if cand else 0}・物件番号 "
+                        f"{cand.listing_no_count if cand else 0}・物件価格 "
+                        f"{cand.property_prices if cand else 0}・補助金語 "
+                        f"{cand.subsidy_hits if cand else 0}・{new.bank_url}）"
                     )
                     new = _row_to_finding(row)  # いまの URL のまま 0 件の理由を見る
                     swap = False
@@ -1656,6 +1680,7 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
             elif new.policy == "crawl":
                 # 0 件の理由は 3 通りある。取り下げてよいのは「一覧ではなかった」ときだけ
                 text, score = _page_signals(new.bank_url, client)
+                judged = _evidence_of(score, new.bank_url)
                 if len(text) < MIN_BODY_TEXT:
                     new.extract_gap = True
                     rows[i] = _finding_to_row(new)
@@ -1744,6 +1769,7 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
                         "old_policy": before.get("policy"),
                         "new_policy": after.get("policy"),
                         "reason": note.split(": ", 1)[-1] if note else "",
+                        "evidence": judged,
                     }
                 )
         if touched:

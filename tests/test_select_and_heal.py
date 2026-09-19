@@ -428,3 +428,48 @@ def test_heal_refuses_a_replacement_that_is_not_a_listing(ws: Workspace) -> None
     assert "/kurashi/fuhoutouki.html" not in auto  # 一覧ではないので採らない
     data = json.loads((ws.runs_dir / "discover-nagano-findings.json").read_text(encoding="utf-8"))
     assert data["findings"][0]["bank_url"] != BASE + "/kurashi/fuhoutouki.html"
+
+
+@respx.mock
+def test_the_reselection_log_keeps_what_the_listing_test_saw(ws: Workspace) -> None:
+    """門にしてよいかを後から実データで決められるよう、判断に使った数字を残す。
+
+    発見の側は `has_listing_evidence` を順位付けにしか使っていないので、証拠の無いページでも
+    1 位なら採用されうる。採用したページが後で物件を出したかどうかと突き合わせたい（2026-09-19）。
+    """
+    wrong = BASE + "/kurashi/fuhoutouki.html"
+    _mock(
+        {
+            "/": (
+                "<html><head><title>架空市</title></head><body>"
+                "<a href='/kurashi/fuhoutouki.html'>空き家の適正管理</a></body></html>"
+            ),
+            "/kurashi/fuhoutouki.html": NOT_AKIYA,
+        }
+    )
+    for path in ("/sitemap.xml", "/sitemap_index.xml"):
+        respx.get(f"{BASE}{path}").mock(return_value=httpx.Response(404))
+    expand._write_rows(ws, "nagano", "長野県", [_row(wrong)])
+    _mark_crawled(ws, wrong)
+
+    with _client() as c:
+        expand.heal(ws, client=c)
+
+    rows = [
+        json.loads(line)
+        for line in (ws.runs_dir / "heal-reselections.jsonl")
+        .read_text(encoding="utf-8")
+        .splitlines()
+        if line.strip()
+    ]
+    evidence = rows[-1]["evidence"]
+    assert evidence["passes"] is False
+    assert evidence["rows"] >= 2 and evidence["listing_no"] == 0
+    assert set(evidence) == {
+        "url",
+        "passes",
+        "rows",
+        "listing_no",
+        "property_prices",
+        "subsidy_hits",
+    }
