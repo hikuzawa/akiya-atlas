@@ -1,13 +1,35 @@
 {% extends "base.html" %}
 {# 都道府県ごとの所有者向けページ（ADR 0012）。全国版（/owners/）の焼き直しにしない。
    県内の補助制度・窓口・件数と、その県で使える相談先だけを置く #}
+{% block bodyclass %} class="has-pagebar"{% endblock %}
+
+{% block hero %}
+<div class="hero">
+  <div class="container hero-inner">
+    <nav class="breadcrumb on-hero" aria-label="現在地"><ol><li><a href="/">トップ</a></li><li><a href="/owners/">所有者の方へ</a></li><li>{{ prefecture.name }}</li></ol></nav>
+    <p class="eyebrow">所有者の方へ ・ {{ prefecture.slug|upper }}</p>
+    <h1>{{ prefecture.name }}で空き家をお持ちの方へ</h1>
+    <p class="note">県内の補助制度と、空き家バンクの窓口をまとめています</p>
+  </div>
+</div>
+{% endblock %}
+
+{% block pagebar %}
+<nav class="pagebar" aria-label="このページの中">
+  <ul>
+    <li><a href="#subsidy-title">{{ ui.icon("tag") }}補助制度</a></li>
+    <li><a href="#window-title">{{ ui.icon("building") }}窓口</a></li>
+    {% if slots["owners-pref-consult"] %}<li><a href="#consult-title">{{ ui.icon("people") }}相談先</a></li>{% endif %}
+    <li><a href="/owners/">{{ ui.icon("doc") }}流れ</a></li>
+  </ul>
+</nav>
+{% endblock %}
+
 {% block content %}
-<nav class="breadcrumb" aria-label="現在地"><ol><li><a href="/">トップ</a></li><li><a href="/owners/">所有者の方へ</a></li><li>{{ prefecture.name }}</li></ol></nav>
+{# 広告表記は本文の冒頭（ファーストビュー）。ad_check.py が位置を検査する #}
+{{ ui.ad_notice(ad_offers) }}
 <div class="page-head">
-  <h1>{{ prefecture.name }}で空き家をお持ちの方へ</h1>
-  <p class="lead">県内の自治体の補助制度と、空き家バンクの窓口をまとめています。売る・貸す・解体するの流れは <a href="/owners/">全国共通の案内</a> をご覧ください。法律・税務・査定額の個別のご相談は、専門家や自治体の窓口へ。</p>
-  {# 広告表記は見出しの直後（ファーストビュー）。ad_check.py が位置を検査する #}
-  {{ ui.ad_notice(ad_offers) }}
+  <p class="lead">売る・貸す・解体するの流れは <a href="/owners/">全国共通の案内</a> をご覧ください。法律・税務・査定額の個別のご相談は、専門家や自治体の窓口へ。</p>
   {{ ui.stat_strip([
     {"value": stats.with_bank ~ " / " ~ stats.municipalities, "label": "空き家バンクのある市町村"},
     {"value": stats.listings|number, "unit": "件", "label": "本サイトが確認した掲載物件"},
@@ -34,7 +56,7 @@
 {% endif %}
 
 <section class="section" aria-labelledby="subsidy-title">
-  {{ ui.section_head("subsidy-title", prefecture.name ~ "の補助制度", "本サイトが確認したもの。出典と確認日付き") }}
+  {{ ui.section_head("subsidy-title", prefecture.name ~ "の補助制度", "本サイトが確認したもの。出典と確認日付き", accent=true) }}
   {% if subsidies %}
   {{ ui.subsidy_groups(subsidies, with_muni=true) }}
   {% else %}

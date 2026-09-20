@@ -41,8 +41,9 @@
 {% endif %}
 {%- endmacro %}
 
-{% macro section_head(id, title, note=none) -%}
-<div class="section-head"><h2 id="{{ id }}">{{ title }}</h2>{% if note %}<span class="note">{{ note }}</span>{% endif %}</div>
+{# accent=true で見出しの色帯を橙にする（案 B の補助制度） #}
+{% macro section_head(id, title, note=none, accent=false) -%}
+<div class="section-head{% if accent %} is-accent{% endif %}"><h2 id="{{ id }}">{{ title }}</h2>{% if note %}<span class="note">{{ note }}</span>{% endif %}</div>
 {%- endmacro %}
 
 {# 価格帯などの小さな分布。counts と labels は同じ長さ。top は最多の添字（柿渋で強調） #}
@@ -58,7 +59,7 @@
 </svg>
 {%- endmacro %}
 
-{# 数字の帯。cells: [{value, unit, label, kind('kaki'|'text'|''), bars:{counts, labels, top, title}, badges:[(kind, text)]}] #}
+{# 数字の帯。cells: [{value, unit, label, kind('accent'|'text'|''), bars:{counts, labels, top, title}, badges:[(kind, text)]}] #}
 {% macro stat_strip(cells, label="この地域の数字") -%}
 <div class="strip" role="group" aria-label="{{ label }}">
 {% for c in cells %}
@@ -79,7 +80,7 @@
 {%- endmacro %}
 
 {# トップの「最近確認した物件」は横スクロールで数件だけ見せる場所なので、こちらはカードのまま。
-   縦に何十件も並べる市町村ページは下の listing_line を使う #}
+   縦に何十件も並べる市町村ページは下の listing_item を使う #}
 {# 物件カード。r は pages.listing_row の行。place は都道府県・市町村名（横断一覧のとき）。subsidy は市町村に補助制度があるか #}
 {% macro listing_card(r, place=none, subsidy=false) -%}
 {% set stale = r.status != "active" %}
@@ -116,33 +117,37 @@
 </li>
 {%- endmacro %}
 
-{# 物件の一覧。1 件 1 行で出す（ADR 0014）。実データでは 6 項目のうち 0〜1 個しか
-   取れていない物件が 65% を占め、カード型だと下半分が空いて 1 画面 3.5 件しか入らなかった。
-   1 行なら同じ画面に 8 件入り、価格と地区名が縦に揃うので見比べられる。
+{# 物件カード（案 B）。左に価格の色面、右に地区名・数値・バッジ。
+   ADR 0014 の 1 行表示より 20px ほど高いが、価格が面になるぶん一覧で追いやすい。
    r は pages.listing_row の行。place は都道府県・市町村名（横断一覧のとき）。
    subsidy は市町村に補助制度があるか #}
-{% macro listing_line(r, place=none, subsidy=false) -%}
+{% macro listing_item(r, place=none, subsidy=false) -%}
 {% set stale = r.status != "active" %}
-{# 状態と付加情報は色だけに頼らず、meta 行に文字で入れる #}
 {% set ns = namespace(m=[]) %}
-{% if r.status == "closed" %}{% set ns.m = ns.m + ["成約済・募集終了"] %}
-{% elif stale %}{% set ns.m = ns.m + ["掲載終了の可能性"] %}{% endif %}
-{% if r.status_text %}{% set ns.m = ns.m + [r.status_text] %}{% endif %}
 {% if place %}{% set ns.m = ns.m + [place] %}{% endif %}
 {% if r.address and r.address not in r.title %}{% set ns.m = ns.m + [r.address] %}{% endif %}
 {% if r.built_year %}{% set ns.m = ns.m + [r.built_year ~ "年築"] %}{% endif %}
 {% if r.floor_area %}{% set ns.m = ns.m + ["延床 " ~ r.floor_area] %}{% endif %}
 {% if r.layout %}{% set ns.m = ns.m + [r.layout] %}{% endif %}
 {% if r.structure %}{% set ns.m = ns.m + [r.structure] %}{% endif %}
-{% if subsidy %}{% set ns.m = ns.m + ["補助制度あり"] %}{% endif %}
-<li class="lrow{% if stale %} is-stale{% endif %}">
+<li class="lcard{% if stale %} is-stale{% endif %}">
   <a href="{{ r.url }}">
-    {# 価格が数値にできず原文のまま（「53,000円/月、礼金1ヶ月」など）のときは、
-       見出しを同じ行に並べず次の行へ流す。並べると見出しが省略されてしまう #}
-    <span class="lp{% if r.price_exact is defined and not r.price_exact %} asquote{% endif %}">{{ r.price }}</span>
-    <span class="ld">{{ r.deal }}</span>
-    <span class="lt">{{ r.title }}</span>
-    <span class="lm">{% for x in ns.m %}{{ x }}{% if not loop.last %} ・ {% endif %}{% endfor %}<span class="lu" data-sitemill-volatile>確認 {{ r.updated }}</span></span>
+    <span class="price{% if r.price == "記載なし" %} none{% elif r.price_exact is defined and not r.price_exact %} asquote{% endif %}">
+      <span class="deal">{{ r.deal }}</span>
+      <span class="v">{{ r.price }}</span>
+    </span>
+    <span class="body">
+      <span class="t">{{ r.title }}</span>
+      {% if ns.m %}<span class="f">{% for x in ns.m %}{{ x }}{% if not loop.last %} ・ {% endif %}{% endfor %}</span>{% endif %}
+      <span class="badges">
+        {% if r.status == "closed" %}{{ badge("warn", "成約済・募集終了") }}
+        {% elif stale %}{{ badge("warn", "掲載終了の可能性", "warn") }}{% endif %}
+        {% if r.status_text %}{{ badge("warn", r.status_text) }}{% endif %}
+        {% if r.has_detail is defined and r.has_detail %}{{ badge("info", "詳細あり", "check") }}{% endif %}
+        {% if subsidy %}{{ badge("accent", "補助金あり") }}{% endif %}
+      </span>
+      <span class="f"><span class="lu" data-sitemill-volatile>確認 {{ r.updated }}</span></span>
+    </span>
   </a>
 </li>
 {%- endmacro %}

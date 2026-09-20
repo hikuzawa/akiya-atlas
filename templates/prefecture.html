@@ -1,29 +1,42 @@
 {% extends "base.html" %}
-{% block content %}
 {% set crawled = municipalities|selectattr("crawled")|list %}
 {% set open_munis = crawled|selectattr("count", "gt", 0)|sort(attribute="count", reverse=true)|list %}
 {% set zero_munis = crawled|selectattr("count", "eq", 0)|list %}
 {% set total = stats.listings %}
 {% set fetched = (open_munis|map(attribute="last_fetched")|list)[0] if open_munis else none %}
+{% block bodyclass %} class="has-pagebar"{% endblock %}
 
-<nav class="breadcrumb" aria-label="現在地"><ol><li><a href="/">トップ</a></li><li>{{ prefecture.name }}</li></ol></nav>
-<div class="page-head">
-  <h1>{{ prefecture.name }}の空き家バンク</h1>
-  <p class="sub">{{ municipalities|length }} 市町村のうち {{ open_munis|length }} 市町村が、自治体運営の空き家バンクで物件を公開しています。件数は本サイトが確認できた物件数で、自治体ページの全件とは異なることがあります。</p>
-  {% set cells = [
-    {"value": total|number, "unit": "件", "label": "掲載物件", "kind": "kaki"},
-    {"value": stats.open_municipalities ~ " / " ~ stats.municipalities, "label": "物件を公開している市町村（巡回中 " ~ stats.crawled_municipalities ~ "）"},
-    {"value": stats.subsidy_municipalities|number, "unit": "市町村", "label": "本サイトが確認した補助制度あり（未調査の市町村を含みます）"}
-  ] %}
-  {% if stats.price_median %}
-  {% set cells = cells + [{"value": stats.price_median|yen, "label": "売買価格の中央値（有償 " ~ stats.paid ~ " 件。最安 " ~ stats.price_min|yen ~ "）", "kind": "text", "bars": {"counts": stats.band_counts, "labels": stats.band_labels, "top": stats.band_top, "title": "売買価格の分布"}}] %}
-  {% endif %}
-  {% if stats.free %}
-  {% set cells = cells + [{"value": stats.free|number, "unit": "件", "label": "無償譲渡（価格 0 円の物件）"}] %}
-  {% endif %}
-  {% if fetched %}{% set cells = cells + [{"value": fetched, "label": "最終取得", "kind": "text", "volatile": true}] %}{% endif %}
-  {{ ui.stat_strip(cells, prefecture.name ~ "の掲載状況") }}
+{% block hero %}
+<div class="hero">
+  <div class="container hero-inner">
+    <nav class="breadcrumb on-hero" aria-label="現在地"><ol><li><a href="/">トップ</a></li><li>{{ prefecture.name }}</li></ol></nav>
+    <p class="eyebrow">{{ prefecture.name }} ・ {{ prefecture.slug|upper }}</p>
+    <h1>{{ prefecture.name }}の空き家バンク</h1>
+    <p class="note">{% if fetched %}公式ページを毎日確認 ・ 最終取得 <span data-sitemill-volatile>{{ fetched }}</span> ・ {% endif %}当サイトは紹介・仲介を行いません</p>
+  </div>
 </div>
+{% endblock %}
+
+{% block pagebar %}
+<nav class="pagebar" aria-label="このページの中">
+  <ul>
+    <li><a href="#map-title">{{ ui.icon("map") }}市町村別</a></li>
+    {% if open_munis %}<li><a href="#open-title">{{ ui.icon("list") }}公開中</a></li>{% endif %}
+    <li><a href="#others-title">{{ ui.icon("building") }}その他</a></li>
+    <li><a href="/owners/{{ prefecture.slug }}/">{{ ui.icon("tag") }}補助制度</a></li>
+  </ul>
+</nav>
+{% endblock %}
+
+{% block content %}
+{# 帯に重なる 3 つ。中央値・無償・最終取得は「価格と築年の分布」に図と並べて置く #}
+<div class="hero-tiles">
+  <div class="htile"><span class="k">掲載物件</span><span class="v">{{ total|number }}<span class="u">件</span></span></div>
+  <div class="htile is-text"><span class="k">物件を公開</span><span class="v">{{ stats.open_municipalities }} / {{ stats.municipalities }}</span></div>
+  <div class="htile is-accent"><span class="k">補助制度あり</span><span class="v">{{ stats.subsidy_municipalities|number }}<span class="u">市町村</span></span></div>
+</div>
+
+<p class="sub">{{ municipalities|length }} 市町村のうち {{ open_munis|length }} 市町村が、自治体運営の空き家バンクで物件を公開しています（巡回中 {{ stats.crawled_municipalities }}）。件数は本サイトが確認できた物件数で、自治体ページの全件とは異なることがあります。補助制度の数は未調査の市町村を含みます。</p>
 
 <section class="section" aria-labelledby="map-title">
   {{ ui.section_head("map-title", "市町村別の掲載件数", "色が濃いほど多い。升目を押すと市町村ページへ") }}
@@ -44,6 +57,14 @@
 {% if chart_price or chart_built %}
 <section class="section" aria-labelledby="dist-title">
   {{ ui.section_head("dist-title", "価格と築年の分布", "数値が記載されている物件だけを数えています") }}
+  {% set cells = [] %}
+  {% if stats.price_median %}
+    {% set cells = cells + [{"value": stats.price_median|yen, "label": "売買価格の中央値（有償 " ~ stats.paid ~ " 件。最安 " ~ stats.price_min|yen ~ "）", "kind": "text", "bars": {"counts": stats.band_counts, "labels": stats.band_labels, "top": stats.band_top, "title": "売買価格の分布"}}] %}
+  {% endif %}
+  {% if stats.free %}
+    {% set cells = cells + [{"value": stats.free|number, "unit": "件", "label": "無償譲渡（価格 0 円の物件）"}] %}
+  {% endif %}
+  {% if cells %}{{ ui.stat_strip(cells, prefecture.name ~ "の価格") }}{% endif %}
   <div class="two-col">
     {% if chart_price %}<div class="chart-card">{{ chart_price|chart }}</div>{% endif %}
     {% if chart_built %}<div class="chart-card">{{ chart_built|chart }}</div>{% endif %}

@@ -1,42 +1,59 @@
 {% extends "base.html" %}
-{% block content %}
-{% set active = listings|selectattr("status", "eq", "active")|list %}
 {% set has_subsidy = subsidies|length > 0 %}
-<nav class="breadcrumb" aria-label="現在地"><ol><li><a href="/">トップ</a></li><li><a href="/{{ muni.prefecture_slug }}/">{{ muni.prefecture }}</a></li><li>{{ muni.name }}</li></ol></nav>
-<div class="page-head">
-  <h1>{{ muni.name }}の空き家バンク</h1>
-  {% if muni.crawled %}
-  <p class="sub">{{ muni.prefecture }}{{ muni.name }}が運営する{{ muni.bank_label }}の掲載物件を要約しています。詳細・写真・申込みは公式ページで。</p>
-  <div class="operator-line">
-    <span class="who">{{ ui.icon("building") }}運営: {{ muni.name }}（自治体・公式）</span>
-    {{ ui.ext_link(muni.bank_url, muni.name ~ "の" ~ muni.bank_label ~ "（公式）で詳細を見る") }}
+{% block bodyclass %} class="has-pagebar"{% endblock %}
+
+{# 案 B: 紺の帯に県名・見出し・最終確認。数字のタイルが帯に重なる #}
+{% block hero %}
+<div class="hero">
+  <div class="container hero-inner">
+    <nav class="breadcrumb on-hero" aria-label="現在地"><ol><li><a href="/">トップ</a></li><li><a href="/{{ muni.prefecture_slug }}/">{{ muni.prefecture }}</a></li><li>{{ muni.name }}</li></ol></nav>
+    <p class="eyebrow">{{ muni.prefecture }} ・ {{ muni.prefecture_slug|upper }}</p>
+    <h1>{{ muni.name }}の空き家バンク</h1>
+    <p class="note">{% if muni.crawled %}公式ページを毎日確認 ・ 最終確認 <span data-sitemill-volatile>{{ muni_row.last_fetched }}</span> ・ {% endif %}当サイトは紹介・仲介を行いません</p>
   </div>
-  {# 数字の帯: 件数 / 価格の中央値・最安 / 築年の範囲 / 補助制度 / 最終取得。値は pages.stats_of #}
-  {% set ns = namespace(kinds=[]) %}
-  {% if muni_row.subsidy_migration %}{% set ns.kinds = ns.kinds + [("ok", "移住")] %}{% endif %}
-  {% if muni_row.subsidy_renovation %}{% set ns.kinds = ns.kinds + [("ok", "改修")] %}{% endif %}
-  {% if muni_row.subsidy_demolition %}{% set ns.kinds = ns.kinds + [("ok", "解体")] %}{% endif %}
-  {% set cells = [{"value": muni_row.count|number, "unit": "件", "label": "掲載中（売買 " ~ muni_row.sale|number ~ " ／ 賃貸 " ~ muni_row.rent|number ~ "）", "kind": "kaki"}] %}
-  {% if stats.price_median %}
-    {% set cells = cells + [{"value": stats.price_median|yen, "label": "売買価格の中央値（有償 " ~ stats.paid ~ " 件。最安 " ~ stats.price_min|yen ~ "）", "kind": "text", "bars": {"counts": stats.band_counts, "labels": stats.band_labels, "top": stats.band_top, "title": "売買価格の分布"}}] %}
-  {% endif %}
-  {% if stats.free %}
-    {% set cells = cells + [{"value": stats.free|number, "unit": "件", "label": "無償譲渡（価格 0 円の物件）"}] %}
-  {% endif %}
-  {% if stats.built_count >= 2 %}
-    {% set cells = cells + [{"value": stats.built_min ~ "〜" ~ stats.built_max, "unit": "年", "label": "築年の範囲（" ~ stats.built_count ~ " 件に記載。中央 " ~ stats.built_median ~ " 年）", "kind": "range"}] %}
-  {% elif stats.built_count == 1 %}
-    {% set cells = cells + [{"value": stats.built_min, "unit": "年", "label": "築年（1 件に記載）"}] %}
-  {% endif %}
-  {% if ns.kinds %}
-    {% set cells = cells + [{"label": "本サイトが確認した補助制度（" ~ subsidies|length ~ " 件）", "badges": ns.kinds}] %}
-  {% endif %}
-  {% set cells = cells + [{"value": muni_row.last_fetched, "label": "最終取得（公式ページを毎日確認）", "kind": "text", "volatile": true}] %}
-  {{ ui.stat_strip(cells, muni.name ~ "の掲載状況") }}
-  {% else %}
-  {{ ui.status_card(muni) }}
-  {% endif %}
 </div>
+{% endblock %}
+
+{% block pagebar %}
+<nav class="pagebar" aria-label="このページの中">
+  <ul>
+    <li><a href="#listing-title">{{ ui.icon("list") }}一覧</a></li>
+    <li><a href="#map-title">{{ ui.icon("map") }}地図</a></li>
+    <li><a href="#subsidy-title">{{ ui.icon("tag") }}補助金</a></li>
+    <li><a href="#window-title">{{ ui.icon("people") }}相談</a></li>
+  </ul>
+</nav>
+{% endblock %}
+
+{% block content %}
+{% if muni.crawled %}
+{# 帯に重なる 3 つの数字。残りの数値は「価格と築年の分布」に図と並べて置く #}
+<div class="hero-tiles">
+  <div class="htile"><span class="k">掲載中</span><span class="v">{{ muni_row.count|number }}<span class="u">件</span></span></div>
+  {% if stats.price_min is not none %}
+  <div class="htile is-text"><span class="k">最安</span><span class="v">{{ stats.price_min|yen }}</span></div>
+  {% elif muni_row.rent %}
+  <div class="htile"><span class="k">賃貸</span><span class="v">{{ muni_row.rent|number }}<span class="u">件</span></span></div>
+  {% else %}
+  <div class="htile"><span class="k">売買</span><span class="v">{{ muni_row.sale|number }}<span class="u">件</span></span></div>
+  {% endif %}
+  <div class="htile is-accent"><span class="k">補助制度</span><span class="v">{{ subsidies|length }}<span class="u">件</span></span></div>
+</div>
+{% endif %}
+
+<div class="layout">
+<section class="map-block" aria-labelledby="map-title">
+  <h2 id="map-title" class="side-h">位置</h2>
+  {{ map|embed }}
+</section>
+
+<div class="main-col">
+
+{% if muni.crawled %}
+<p class="sub">{{ muni.prefecture }}{{ muni.name }}が運営する{{ muni.bank_label }}の掲載物件を要約しています。詳細・写真・申込みは公式ページで。</p>
+{% else %}
+<div class="section">{{ ui.status_card(muni) }}</div>
+{% endif %}
 
 {% if not muni.crawled and external %}
 <section class="section" aria-labelledby="ext-title">
@@ -46,7 +63,7 @@
 {% endif %}
 
 <section class="section" aria-labelledby="subsidy-title">
-  {{ ui.section_head("subsidy-title", "補助制度", "本サイトが確認したもの。最新は自治体ページで") }}
+  {{ ui.section_head("subsidy-title", "使える補助制度", "本サイトが確認したもの。最新は自治体ページで", accent=true) }}
   {% if subsidies %}
   {{ ui.subsidy_groups(subsidies) }}
   {% else %}
@@ -56,13 +73,13 @@
 
 {% if muni.crawled %}
 <section class="section" aria-labelledby="listing-title">
-  {{ ui.section_head("listing-title", "掲載物件", "要約と数値は自治体ページの原文から機械抽出") }}
+  {{ ui.section_head("listing-title", "掲載中の物件", "要約と数値は自治体ページの原文から機械抽出") }}
   {% if listings %}
   {% if no_listings_reason == "empty" %}
   <div class="notice warn" role="note"><p>現在、募集中の物件はありません。以下には過去の掲載（成約済など）を含みます。最新は {{ ui.ext_link(muni.bank_url, "公式ページ", "") }} でご確認ください。</p></div>
   {% endif %}
-  <ul class="lines">
-    {% for r in listings %}{{ ui.listing_line(r, subsidy=has_subsidy) }}{% endfor %}
+  <ul class="lcards">
+    {% for r in listings %}{{ ui.listing_item(r, subsidy=has_subsidy) }}{% endfor %}
   </ul>
   {% elif no_listings_reason == "unavailable" %}
   <p class="surface">現在、物件情報を取り込めていません。{{ ui.ext_link(muni.bank_url, "公式ページを見る", "") }}</p>
@@ -74,6 +91,19 @@
 {% if chart_price or chart_built %}
 <section class="section" aria-labelledby="dist-title">
   {{ ui.section_head("dist-title", "価格と築年の分布", "数値が記載されている物件だけを数えています") }}
+  {% set cells = [] %}
+  {% if stats.price_median %}
+    {% set cells = cells + [{"value": stats.price_median|yen, "label": "売買価格の中央値（有償 " ~ stats.paid ~ " 件。最安 " ~ stats.price_min|yen ~ "）", "kind": "text"}] %}
+  {% endif %}
+  {% if stats.free %}
+    {% set cells = cells + [{"value": stats.free|number, "unit": "件", "label": "無償譲渡（価格 0 円の物件）"}] %}
+  {% endif %}
+  {% if stats.built_count >= 2 %}
+    {% set cells = cells + [{"value": stats.built_min ~ "〜" ~ stats.built_max, "unit": "年", "label": "築年の範囲（" ~ stats.built_count ~ " 件に記載。中央 " ~ stats.built_median ~ " 年）", "kind": "range"}] %}
+  {% elif stats.built_count == 1 %}
+    {% set cells = cells + [{"value": stats.built_min, "unit": "年", "label": "築年（1 件に記載）"}] %}
+  {% endif %}
+  {% if cells %}{{ ui.stat_strip(cells, muni.name ~ "の価格と築年") }}{% endif %}
   <div class="two-col">
     {% if chart_price %}<div class="chart-card">{{ chart_price|chart }}</div>{% endif %}
     {% if chart_built %}<div class="chart-card">{{ chart_built|chart }}</div>{% endif %}
@@ -84,11 +114,6 @@
 {% endif %}
 {% endif %}{# muni.crawled #}
 
-<section class="section" aria-labelledby="map-title">
-  {{ ui.section_head("map-title", "位置") }}
-  {{ map|embed }}
-</section>
-
 {% if external and muni.crawled %}
 <section class="section" aria-labelledby="ext2-title">
   {{ ui.section_head("ext2-title", "民間サイトの掲載", "自治体以外が運営。本サイトでは要約せずリンクのみ") }}
@@ -96,9 +121,27 @@
 </section>
 {% endif %}
 
-<section class="section cta" aria-labelledby="owner-title">
-  <h2 id="owner-title">{{ muni.name }}に空き家をお持ちの方へ</h2>
-  <p>住む・貸す・売る・登録・解体・管理の 6 つの選択肢と、査定・解体の流れ、補助制度をまとめています。</p>
-  <p><a class="btn btn-primary" href="{{ owners_url }}">選択肢を見る{{ ui.icon("arrow") }}</a></p>
-</section>
+</div>{# main-col #}
+
+<div class="side-rest">
+  <section class="window-card" aria-labelledby="window-title">
+    <p class="k" id="window-title">{{ muni.bank_label }}の窓口</p>
+    <p>内覧・申込みは{{ muni.name }}の担当窓口で。当サイトは紹介・仲介を行いません。</p>
+    {% if muni.crawled %}
+    {{ ui.ext_link(muni.bank_url, muni.name ~ "の" ~ muni.bank_label ~ "（公式）", "btn btn-ghost") }}
+    {% endif %}
+    <p class="meta">{{ ui.icon("building") }}運営: {{ muni.name }}（自治体・公式）</p>
+  </section>
+
+  <a class="owner-cta" href="{{ owners_url }}">
+    <span>
+      <span class="k">所有者の方へ</span>
+      <span class="t">{{ muni.name }}に空き家をお持ちですか</span>
+      <span class="s">住む・貸す・売る・登録・解体・管理の 6 つの選択肢と、査定・解体の流れ</span>
+    </span>
+    {{ ui.icon("arrow") }}
+  </a>
+</div>
+
+</div>{# layout #}
 {% endblock %}

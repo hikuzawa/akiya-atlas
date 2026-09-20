@@ -1,32 +1,39 @@
 {% extends "base.html" %}
-{% block content %}
+{% block hero %}
 {# トップの役割は「このサイトが何か」を伝えて入口に送ること（ADR 0015）。物件を探す画面ではない。
    「空き家バンク」で検索して着地した人が最初の 1 画面で分かるべきは、
    (1) ここは何か (2) ここは何ではないか (3) 自分に関係があるか (4) 次にどこへ行くか の 4 つ。
    価格の中央値・無償譲渡・最終更新は「探す」段階の数字なので第 1 画面から外した #}
-<section class="hero" aria-labelledby="hero-title">
-  <h1 id="hero-title">自治体が運営する空き家バンクを、まとめて探せます</h1>
-  {# 巡回しているのは空き家バンクの物件ページを確認できた市町村だけ。全市町村を巡回しているように
-     読ませない。第 1 画面に入口まで収めるためリードは 1 文に絞り、内訳は「このサイトの作り方」へ送る。
-     補助制度の件数は、それを見に行く入口の説明文に置いた #}
-  <p class="lead">全国 {{ stats.crawled_municipalities|number }} 市町村の空き家バンクを毎日巡回しています。<b>紹介・仲介は行いません。</b></p>
-  {{ ui.stat_strip([
-    {"value": stats.listings|number, "unit": "件", "label": "掲載物件", "kind": "kaki"},
-    {"value": stats.open_municipalities|number, "unit": "市町村", "label": "物件を見られる市町村"}
-  ], "収録状況") }}
-  {# 3 つの入口。検索から来る人は「探す人」だけでなく「所有者」も一定数いる #}
-  <ul class="entries">
-    <li><a class="entry" href="#pref-title">
-      <span class="t">{{ ui.icon("map") }}都道府県から探す</span>
-      <span class="d">物件のある {{ prefectures|selectattr("count")|list|length }} 県から</span></a></li>
-    <li><a class="entry" href="/owners/#subsidy-title">
-      <span class="t">{{ ui.icon("tag") }}補助制度を調べる</span>
-      <span class="d">{{ stats.subsidies|number }} 件（改修・解体・移住など）</span></a></li>
-    <li><a class="entry" href="/owners/">
-      <span class="t">{{ ui.icon("home") }}空き家をお持ちの方へ</span>
-      <span class="d">売る・貸す・解体する前に</span></a></li>
-  </ul>
-</section>
+<div class="hero">
+  <div class="container hero-inner">
+    <p class="eyebrow">自治体の空き家バンク ・ 横断検索</p>
+    <h1>自治体が運営する空き家バンクを、まとめて探せます</h1>
+    {# 巡回しているのは空き家バンクの物件ページを確認できた市町村だけ。全市町村を巡回しているように
+       読ませない。内訳は「このサイトの作り方」へ送る #}
+    <p class="note">全国 {{ stats.crawled_municipalities|number }} 市町村の空き家バンクを毎日巡回しています。<b>紹介・仲介は行いません。</b></p>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="hero-tiles">
+  <div class="htile"><span class="k">掲載物件</span><span class="v">{{ stats.listings|number }}<span class="u">件</span></span></div>
+  <div class="htile"><span class="k">物件を見られる市町村</span><span class="v">{{ stats.open_municipalities|number }}<span class="u">市町村</span></span></div>
+  <div class="htile is-accent"><span class="k">補助制度</span><span class="v">{{ stats.subsidies|number }}<span class="u">件</span></span></div>
+</div>
+
+{# 3 つの入口。検索から来る人は「探す人」だけでなく「所有者」も一定数いる #}
+<ul class="entries">
+  <li><a class="entry" href="#pref-title">
+    <span class="t">{{ ui.icon("map") }}都道府県から探す</span>
+    <span class="d">物件のある {{ prefectures|selectattr("count")|list|length }} 県から</span></a></li>
+  <li><a class="entry" href="/owners/#subsidy-title">
+    <span class="t">{{ ui.icon("tag") }}補助制度を調べる</span>
+    <span class="d">{{ stats.subsidies|number }} 件（改修・解体・移住など）</span></a></li>
+  <li><a class="entry" href="/owners/">
+    <span class="t">{{ ui.icon("home") }}空き家をお持ちの方へ</span>
+    <span class="d">売る・貸す・解体する前に</span></a></li>
+</ul>
 
 <section class="section" aria-labelledby="pref-title">
   {{ ui.section_head("pref-title", "都道府県から探す", "数字は本サイトが確認できた掲載物件の数") }}

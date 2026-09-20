@@ -1,10 +1,32 @@
 {% extends "base.html" %}
+{% block bodyclass %} class="has-pagebar"{% endblock %}
+
+{% block hero %}
+<div class="hero">
+  <div class="container hero-inner">
+    <nav class="breadcrumb on-hero" aria-label="現在地"><ol><li><a href="/">トップ</a></li><li>所有者の方へ</li></ol></nav>
+    <p class="eyebrow">所有者の方へ ・ 全国</p>
+    <h1>相続した空き家、どうする？</h1>
+    <p class="note">売る・貸す・解体するの一般的な流れと、自治体の補助制度をまとめています</p>
+  </div>
+</div>
+{% endblock %}
+
+{% block pagebar %}
+<nav class="pagebar" aria-label="このページの中">
+  <ul>
+    <li><a href="#options-title">{{ ui.icon("list") }}選択肢</a></li>
+    <li><a href="#flow-sale-title">{{ ui.icon("doc") }}流れ</a></li>
+    <li><a href="#offers-title">{{ ui.icon("people") }}相談先</a></li>
+    <li><a href="#subsidy-title">{{ ui.icon("tag") }}補助制度</a></li>
+  </ul>
+</nav>
+{% endblock %}
+
 {% block content %}
-<nav class="breadcrumb" aria-label="現在地"><ol><li><a href="/">トップ</a></li><li>所有者の方へ</li></ol></nav>
+{# 広告表記は本文の冒頭（ファーストビュー）に置く。ad_check.py が位置を検査する #}
+{{ ui.ad_notice(ad_offers) }}
 <div class="page-head">
-  <h1>相続した空き家、どうする？</h1>
-  {# 広告表記は見出しの直後（ファーストビュー）に置く。ad_check.py が位置を検査する #}
-  {{ ui.ad_notice(ad_offers) }}
   <p class="lead">選択肢は「住む・使う」「貸す」「売る」「自治体の空き家バンクに登録」「解体して土地を活用」「当面は管理する」の 6 つ。どれを選ぶにも、まず自治体の空き家バンクと補助制度を確認すると選択肢が広がります。ここでは一般的な流れと各自治体の制度をまとめています。法律・税務・査定額の個別のご相談は、専門家や自治体の窓口へ。</p>
 </div>
 
@@ -61,11 +83,11 @@
 </section>
 
 <section class="section" aria-labelledby="subsidy-title">
-  {{ ui.section_head("subsidy-title", "自治体の補助制度", "本サイトが確認したもの。制度の中身は県ごとのページに") }}
+  {{ ui.section_head("subsidy-title", "自治体の補助制度", "本サイトが確認したもの。制度の中身は県ごとのページに", accent=true) }}
   {# 全国 2,939 件をここに並べると gzip 後でも 322KB になる（物件ページの 60 倍）。
      件数と種別の内訳だけ出して、県ごとのページへ送る（ADR 0014） #}
   {{ ui.stat_strip([
-    {"value": subsidy_total|number, "unit": "件", "label": "本サイトが確認した補助制度", "kind": "kaki"},
+    {"value": subsidy_total|number, "unit": "件", "label": "本サイトが確認した補助制度", "kind": "accent"},
     {"value": subsidy_municipalities|number, "unit": "市町村", "label": "制度が見つかった市町村"}
   ], "補助制度の数") }}
   <p class="group-head">種別の内訳</p>

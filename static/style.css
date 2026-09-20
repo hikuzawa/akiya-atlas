@@ -3,33 +3,41 @@
    色はすべて変数から。本文 18px / 行間 1.85。年配の利用者向けにコントラストと大きさを優先する。 */
 
 :root {
-  /* ライト固定（ADR 0015）。フォームや스크롤バーも白基調で描かせる */
+  /* ライト固定（ADR 0015）。フォームやスクロールバーも白基調で描かせる */
   color-scheme: light;
-  --paper: #F6F3EC;
+  /* 案 B の配色（docs/design/06-plan-b.md）。白地・紺・橙。
+     コントラストは docs/design/06-plan-b.md の表で全ペアを計測している */
+  --paper: #FFFFFF;
   --surface: #FFFFFF;
-  --surface-2: #EFEBE2;
-  --line: #D8D1C3;
-  --ink: #1E1F1B;
-  --ink-2: #4D4F48;
-  --green-900: #17362E;
-  --green-700: #1F4E46;
-  --green-500: #3F7466;
-  --green-100: #E1ECE7;
-  --kaki: #A8441A;
-  --kaki-100: #F6E4D8;
+  --surface-2: #F1F3F7;      /* 灰面（窓口カードなど） */
+  --line: #E3E6EC;
+  --ink: #14213D;            /* 本文。白地に 15.97:1 */
+  /* 見本は #5B6577 だが白地 5.88:1 で本文の 7:1 に届かない。灰面でも 7:1 を満たす所まで濃くした */
+  --ink-2: #464F61;          /* 補助文。白地 8.23:1・灰面 7.41:1・淡橙面 7.60:1 */
+  --navy-900: #12294B;       /* ヒーロー帯のホバー・濃い面 */
+  --navy: #1B3A6B;           /* 主色。白地に 11.27:1 */
+  --navy-500: #3A5B8C;
+  --navy-50: #E9EEF5;        /* 淡い青面 */
+  /* 橙は 3 段。見本の #E07A2F は白文字で 3.00:1 しか出ないので、
+     文字とボタン背景には使わず、装飾の細い帯とピンにだけ回す */
+  --accent: #A8441A;         /* 面・大きな数字。白を載せて 5.99:1 */
+  --accent-ink: #8A3714;     /* 小さな文字・2px の罫。白地に 7.96:1、淡橙面に 7.36:1 */
+  --accent-band: #E07A2F;    /* 装飾だけ（細い帯・地図のピン）。文字を載せない */
+  --accent-50: #FFF4EC;      /* 淡い橙面 */
   --ok: #2F6B3A; --ok-100: #E3F0E3;
-  --info: #2B4C7E; --info-100: #E4EBF5;
+  --info: #1B3A6B; --info-100: #E9EEF5;
   --warn: #7A4E00; --warn-100: #FBEBC4;
   --mute: #5A5A55; --mute-100: #ECEAE4;
-  --map-1: #E1ECE7; --map-2: #B9D2C9; --map-3: #7FA99B; --map-4: #3F7466; --map-5: #17362E;
-  --header-ink: #FFFFFF;
-  --header-muted: #B9D2C9;
-  --focus: #A8441A;
-  --shadow: 0 1px 2px rgba(30, 31, 27, .06);
+  --map-1: #E9EEF5; --map-2: #C3D2E6; --map-3: #8FA8C9; --map-4: #4C6E9E; --map-5: #1B3A6B;
+  --header-ink: #14213D;
+  --header-muted: #5B6577;
+  --focus: #8A3714;
+  --shadow: 0 2px 10px rgba(20, 33, 61, .10);
   --max: 72rem;
-  --radius: 10px;
+  --radius: 12px;
+  --radius-lg: 14px;
   /* システムフォントのみ（Web フォントは計測の結果 LCP を悪化させたため不採用。docs/design/05）。
-     BIZ UDPGothic を試すときは --font-display の先頭に加え、base.html で非同期読み込みにする */
+     見本の Noto Sans JP 900 は参考で、太さは 700 / 800 で代用する */
   --font: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", "Yu Gothic UI", "Noto Sans JP", system-ui, sans-serif;
   --font-display: var(--font);
 }
@@ -42,7 +50,7 @@ body {
   font-family: var(--font); font-size: 18px; line-height: 1.85;
   font-feature-settings: "palt" 0;
 }
-a { color: var(--green-700); text-decoration: underline; text-underline-offset: .18em; text-decoration-thickness: 1px; }
+a { color: var(--navy); text-decoration: underline; text-underline-offset: .18em; text-decoration-thickness: 1px; }
 a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 2px; }
 h1, h2, h3 { line-height: 1.35; text-wrap: balance; margin: 0; font-family: var(--font-display); }
@@ -63,15 +71,23 @@ small, .meta { font-size: 1rem; color: var(--ink-2); }
 .icon-sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
 
 /* ---------- ヘッダー ---------- */
-.site-header { background: var(--green-900); color: var(--header-ink); }
-.header-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; padding: 12px 0; }
-.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--header-ink); text-decoration: none; font-weight: 700; font-size: 1.25rem; letter-spacing: .02em; min-height: 44px; }
-.brand .logo { width: 34px; height: 34px; }
-.site-nav { display: flex; flex-wrap: wrap; gap: 4px 6px; margin-left: auto; }
-.site-nav a { color: var(--header-ink); text-decoration: none; padding: 8px 10px; border-radius: 6px; min-height: 44px; display: inline-flex; align-items: center; border-bottom: 3px solid transparent; }
-.site-nav a:hover { background: rgba(255, 255, 255, .08); }
-@media (max-width: 40rem) { .site-nav { margin-left: 0; width: 100%; } .site-nav a { padding: 6px 8px; font-size: 1rem; min-height: 40px; } }
-.site-nav a[aria-current="page"] { border-bottom-color: var(--header-muted); font-weight: 700; }
+/* 案 B は白地のヘッダー。公的機関に見えないよう、紺は小さなロゴ枠とサイト名だけに使う */
+.site-header { background: var(--surface); color: var(--header-ink); border-bottom: 1px solid var(--line); }
+.header-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 16px; padding: 10px 0; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--navy); text-decoration: none; font-weight: 800; font-size: 1.15rem; letter-spacing: .02em; min-height: 44px; }
+.brand .logo-box { width: 32px; height: 32px; border-radius: 8px; background: var(--navy); display: flex; align-items: center; justify-content: center; flex: none; }
+.brand .logo { width: 19px; height: 19px; color: #fff; }
+.brand .tagline { font-size: .78rem; font-weight: 400; color: var(--ink-2); letter-spacing: 0; }
+@media (max-width: 60rem) { .brand .tagline { display: none; } }
+.site-nav { display: flex; flex-wrap: wrap; gap: 2px 4px; margin-left: auto; }
+.site-nav a { color: var(--ink); text-decoration: none; padding: 8px 12px; border-radius: 8px; min-height: 44px; display: inline-flex; align-items: center; font-size: .92rem; font-weight: 700; border-bottom: 3px solid transparent; }
+.site-nav a:hover { background: var(--surface-2); }
+.site-nav a[aria-current="page"] { border-bottom-color: var(--navy); color: var(--navy); }
+@media (max-width: 40rem) {
+  .site-nav { margin-left: auto; flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; max-width: 58vw; }
+  .site-nav::-webkit-scrollbar { display: none; }
+  .site-nav a { padding: 6px 8px; font-size: .85rem; min-height: 40px; white-space: nowrap; }
+}
 
 /* ---------- ページ骨格 ---------- */
 main { padding: 20px 0 56px; }
@@ -88,52 +104,52 @@ main { padding: 20px 0 56px; }
 .page-head .where .meta { font-size: .9rem; }
 /* 公式の窓口。電話番号を持っている市町村だけ番号を大きく出す（今は 0 件） */
 .contact-box { display: grid; gap: 10px; }
-.contact-box .tel { font-family: var(--font-display); font-size: 1.7rem; font-weight: 700; color: var(--green-700); letter-spacing: .02em; }
+.contact-box .tel { font-family: var(--font-display); font-size: 1.7rem; font-weight: 700; color: var(--navy); letter-spacing: .02em; }
 .contact-box dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; font-size: .95rem; }
 .contact-box dt { color: var(--ink-2); }
 .contact-box dd { margin: 0; }
 /* 下部の固定バー（モバイルのみ）。主要導線を画面内に留める */
 .stickybar { position: sticky; bottom: 0; z-index: 20; display: grid; grid-auto-flow: column; gap: 8px; padding: 8px 12px calc(8px + env(safe-area-inset-bottom)); background: var(--surface); border-top: 1px solid var(--line); box-shadow: 0 -2px 8px rgba(30,31,27,.08); margin: 24px -16px 0; }
 .stickybar a { min-height: 44px; display: flex; align-items: center; justify-content: center; gap: 6px; border-radius: 8px; font-size: .92rem; font-weight: 700; text-decoration: none; padding: 6px 10px; text-align: center; }
-.stickybar .go { background: var(--green-700); color: var(--surface); }
-.stickybar .sub { border: 2px solid var(--green-700); color: var(--green-700); background: var(--surface); }
+.stickybar .go { background: var(--navy); color: var(--surface); }
+.stickybar .sub { border: 2px solid var(--navy); color: var(--navy); background: var(--surface); }
 @media (min-width: 48rem) { .stickybar { position: static; box-shadow: none; border: 0; margin: 24px 0 0; justify-content: start; grid-auto-columns: max-content; } }
 .operator-line { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-top: 12px; }
 .operator-line .who { color: var(--ink-2); }
 .section { margin-top: 40px; }
 .section-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin-bottom: 14px; }
-.section-head h2 { padding-left: 12px; border-left: 5px solid var(--green-700); }
+.section-head h2 { padding-left: 12px; border-left: 5px solid var(--navy); }
 .section-head .note { color: var(--ink-2); font-size: 1rem; }
-.surface { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+.surface { background: var(--surface); border: 0; border-radius: var(--radius-lg); padding: 18px; box-shadow: var(--shadow); }
 .lead { font-size: 1.05rem; }
 
 /* ---------- 数字の帯 ---------- */
 /* 項目が 1 つだけの物件が多い（スペック 5 項目のうち 0〜1 個が 77.7%）。auto-fit にして、
    1 つのときは横いっぱいに広げ、空の升目が残らないようにする */
-.strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; margin: 16px 0 0; }
+.strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; margin: 16px 0 0; }
 /* 升目が奇数のとき、最後の 1 つを横いっぱいに広げて空きを作らない */
 .strip-cell:last-child:nth-child(odd) { grid-column: 1 / -1; }
-.strip-cell { background: var(--green-100); padding: 12px 14px 10px; min-height: 92px; display: flex; flex-direction: column; justify-content: flex-start; }
+.strip-cell { background: var(--navy-50); border-radius: var(--radius); padding: 12px 14px 10px; min-height: 92px; display: flex; flex-direction: column; justify-content: flex-start; }
 .strip-value { font-size: 2.1rem; font-weight: 700; line-height: 1.1; font-variant-numeric: tabular-nums; color: var(--ink); overflow-wrap: anywhere; }
-.strip-value.kaki { color: var(--kaki); }
+.strip-value.accent { color: var(--accent); }
 .strip-value.text { font-size: 1.15rem; line-height: 1.35; }
 .strip-value.range { font-size: 1.5rem; }
 .strip-unit { font-size: 1rem; font-weight: 400; margin-left: 2px; color: var(--ink-2); }
 .strip-label { font-size: .95rem; color: var(--ink-2); margin-top: 4px; line-height: 1.4; }
 .strip-cell .badges { margin-top: 6px; }
 .mini-bars { display: block; width: 100%; max-width: 140px; height: 34px; margin-top: 6px; }
-.mini-bars rect { fill: var(--green-700); }
-.mini-bars rect.top { fill: var(--kaki); }
+.mini-bars rect { fill: var(--navy); }
+.mini-bars rect.top { fill: var(--accent); }
 
 /* ---------- ボタン・リンク ---------- */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 11px 18px; border-radius: 8px; font-weight: 700; text-decoration: none; min-height: 48px; line-height: 1.3; border: 2px solid transparent; }
-.btn-primary { background: var(--green-700); color: #fff; }
+.btn-primary { background: var(--navy); color: #fff; }
 .btn-primary:hover { filter: brightness(1.08); }
 /* 主ボタンほど強くない外部リンク（自治体の窓口など） */
-.btn-ghost { background: var(--surface); color: var(--green-700); border-color: var(--green-700); }
-.btn-ghost:hover { background: var(--green-100); }
-.btn-secondary { background: var(--surface); color: var(--green-700); border-color: var(--green-700); }
-.btn-secondary:hover { background: var(--green-100); }
+.btn-ghost { background: var(--surface); color: var(--navy); border-color: var(--navy); }
+.btn-ghost:hover { background: var(--navy-50); }
+.btn-secondary { background: var(--surface); color: var(--navy); border-color: var(--navy); }
+.btn-secondary:hover { background: var(--navy-50); }
 .btn .icon { width: 1.1em; height: 1.1em; }
 .primary-link { margin: 14px 0 0; }
 .ext-note { font-size: .9rem; font-weight: 400; opacity: .9; }
@@ -147,12 +163,13 @@ main { padding: 20px 0 56px; }
 .badge-warn { background: var(--warn-100); color: var(--warn); }
 .badge-mute { background: var(--mute-100); color: var(--mute); }
 .badge-plain { background: var(--surface-2); color: var(--ink-2); font-weight: 400; }
+.badge-accent { background: var(--accent-50); color: var(--accent-ink); }
 
 /* ---------- カード ---------- */
 .cards { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; grid-template-columns: 1fr; }
-.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 16px 14px; display: grid; gap: 8px; box-shadow: var(--shadow); position: relative; }
+.card { background: var(--surface); border: 0; border-radius: var(--radius-lg); padding: 16px 16px 14px; display: grid; gap: 8px; box-shadow: var(--shadow); position: relative; }
 .card.is-stale { opacity: .78; }
-.card-price { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 10px; font-size: 1.85rem; font-weight: 700; color: var(--kaki); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.card-price { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 10px; font-size: 1.85rem; font-weight: 700; color: var(--accent); line-height: 1.1; font-variant-numeric: tabular-nums; }
 /* 数値にできず原文をそのまま出す価格（「53,000円/月、礼金1ヶ月」など）。
    大きいままだと 2 行に割れて崩れるので、原文の全文は残したまま文字を落とす */
 .card-price.asquote { font-size: 1.15rem; line-height: 1.4; }
@@ -167,16 +184,16 @@ main { padding: 20px 0 56px; }
 .card-foot { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; font-size: .95rem; color: var(--ink-2); }
 .card-foot .badges { position: relative; z-index: 1; }
 .card .photo { margin: 0; border-radius: 8px; overflow: hidden; background: var(--surface-2); }
-.muni-card .count { font-size: 2rem; font-weight: 700; color: var(--kaki); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.muni-card .count { font-size: 2rem; font-weight: 700; color: var(--accent); line-height: 1.1; font-variant-numeric: tabular-nums; }
 .muni-card .count small { font-size: 1rem; color: var(--ink-2); font-weight: 400; margin-left: 2px; }
 .pref-card .count { font-size: 2.2rem; }
 .bar { height: 10px; background: var(--surface-2); border-radius: 999px; overflow: hidden; }
-.bar > span { display: block; height: 100%; background: var(--green-700); border-radius: 999px; }
+.bar > span { display: block; height: 100%; background: var(--navy); border-radius: 999px; }
 
 /* ---------- タイル図（都道府県ページの市町村マップ） ---------- */
 .tiles { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 6px; grid-template-columns: repeat(4, 1fr); }
 .tile { display: flex; flex-direction: column; justify-content: space-between; min-height: 74px; padding: 6px 8px; border-radius: 6px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); text-decoration: none; line-height: 1.3; }
-.tile:hover { outline: 2px solid var(--green-700); }
+.tile:hover { outline: 2px solid var(--navy); }
 .tile .name { font-size: .9rem; font-weight: 700; overflow-wrap: anywhere; }
 .tile .val { font-size: 1.3rem; font-weight: 700; font-variant-numeric: tabular-nums; align-self: flex-end; }
 .tile .st { font-size: .85rem; color: var(--ink-2); align-self: flex-end; }
@@ -207,51 +224,55 @@ main { padding: 20px 0 56px; }
 .facts { display: grid; grid-template-columns: 1fr; gap: 0; margin: 0; border-top: 1px solid var(--line); }
 .facts .row { display: grid; grid-template-columns: 7.5em 1fr; gap: 8px; padding: 10px 0; border-bottom: 1px solid var(--line); }
 .facts dt { color: var(--ink-2); }
-.facts dd { margin: 0; }
+/* 出典一覧の巡回ページは長い URL。折り返さないとスマホで横に溢れる（2026-09-20 に発見） */
+.facts dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
 .quote { color: var(--ink-2); font-size: .95rem; }
 .missing { color: var(--ink-2); }
 .missing-list { color: var(--ink-2); font-size: 1rem; margin-top: 10px; }
 
 /* ---------- お知らせ・状態カード ---------- */
-.notice { border: 2px solid var(--green-700); border-radius: var(--radius); padding: 16px 18px; background: var(--surface); margin: 16px 0; }
+.notice { border: 2px solid var(--navy); border-radius: var(--radius); padding: 16px 18px; background: var(--surface); margin: 16px 0; }
 .notice.warn { border-color: var(--warn); background: var(--warn-100); color: var(--ink); }
 .notice p { margin: 6px 0; }
-.status-card { border-left: 6px solid var(--green-700); }
+.status-card { border-left: 6px solid var(--navy); }
 .status-card .st-title { font-size: 1.15rem; font-weight: 700; margin-bottom: 6px; }
 
 /* ---------- 補助制度 ---------- */
 .subsidy-cards { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
-.subsidy-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; display: grid; gap: 6px; }
-.subsidy-card .name { font-weight: 700; font-size: 1.05rem; }
-.subsidy-card .desc { color: var(--ink-2); }
-.subsidy-card .foot { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; font-size: .95rem; color: var(--ink-2); }
+/* 案 B では淡い橙の面。罫線は置かず、面の色だけで物件カードと見分ける */
+.subsidy-card { background: var(--accent-50); border: 0; border-radius: var(--radius-lg); padding: 16px; display: grid; gap: 8px; }
+.subsidy-card .name { font-weight: 800; font-size: 1.08rem; line-height: 1.45; }
+.subsidy-card .name a { color: var(--ink); text-decoration: none; }
+.subsidy-card .name a:hover { text-decoration: underline; }
+.subsidy-card .desc { color: var(--ink); font-size: .95rem; }
+.subsidy-card .foot { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; font-size: .9rem; color: var(--ink-2); }
 
 /* ---------- 検索 ---------- */
 .search-form { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 14px; align-items: end; }
 .search-form label { display: flex; flex-direction: column; gap: 4px; font-size: 1rem; color: var(--ink-2); }
 .search-form select { padding: 10px 12px; font-size: 1.05rem; font-family: inherit; min-height: 48px; background: var(--surface); color: var(--ink); border: 2px solid var(--line); border-radius: 8px; width: 100%; }
-.search-form select:focus { border-color: var(--green-700); }
+.search-form select:focus { border-color: var(--navy); }
 .search-form .check { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: 10px; color: var(--ink); min-height: 44px; }
-.search-form .check input { width: 24px; height: 24px; accent-color: var(--green-700); }
+.search-form .check input { width: 24px; height: 24px; accent-color: var(--navy); }
 .search-status { margin: 14px 0 0; font-weight: 700; }
 .results { margin-top: 12px; }
 .more { margin: 14px 0 0; text-align: center; }
-.more button { font: inherit; font-weight: 700; padding: 11px 22px; border-radius: 8px; border: 2px solid var(--green-700); background: var(--surface); color: var(--green-700); min-height: 48px; cursor: pointer; }
-.more button:hover { background: var(--green-100); }
+.more button { font: inherit; font-weight: 700; padding: 11px 22px; border-radius: 8px; border: 2px solid var(--navy); background: var(--surface); color: var(--navy); min-height: 48px; cursor: pointer; }
+.more button:hover { background: var(--navy-50); }
 
 /* ---------- 折りたたみ ---------- */
 /* 補助制度のグループ見出し。件数を必ず添える（畳んだときの誤読を防ぐ） */
 .group-head { margin: 14px 0 8px; font-weight: 700; display: flex; align-items: baseline; gap: 8px; }
-.group-head b { font-family: var(--font-display); color: var(--kaki); font-size: 1.15rem; }
+.group-head b { font-family: var(--font-display); color: var(--accent-ink); font-size: 1.15rem; }
 .group-head:first-child { margin-top: 0; }
 /* 畳んだ制度一覧。開いたときに中のカードが詰まらないよう下に余白 */
 .more-subsidies .fold-body { padding-bottom: 14px; }
 .kind-why { margin-top: 10px; }
 .kind-why summary { font-weight: 400; font-size: .92rem; }
-details.fold { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 0 16px; margin-top: 10px; }
+details.fold { border: 0; border-radius: var(--radius-lg); background: var(--surface-2); padding: 0 16px; margin-top: 10px; }
 details.fold summary { cursor: pointer; padding: 14px 0; font-weight: 700; list-style: none; display: flex; align-items: center; gap: 10px; min-height: 48px; }
 details.fold summary::-webkit-details-marker { display: none; }
-details.fold summary::before { content: ""; width: 10px; height: 10px; border-right: 2px solid var(--green-700); border-bottom: 2px solid var(--green-700); transform: rotate(-45deg); transition: transform .15s; flex: none; margin-left: 4px; }
+details.fold summary::before { content: ""; width: 10px; height: 10px; border-right: 2px solid var(--navy); border-bottom: 2px solid var(--navy); transform: rotate(-45deg); transition: transform .15s; flex: none; margin-left: 4px; }
 details.fold[open] summary::before { transform: rotate(45deg); }
 details.fold summary .count { color: var(--ink-2); font-weight: 400; }
 details.fold .fold-body { padding: 0 0 16px; }
@@ -259,7 +280,7 @@ details.fold .fold-body { padding: 0 0 16px; }
 .link-list li { padding: 8px 0; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; }
 
 /* ---------- 図解（sitemill.charts）と自前の SVG ---------- */
-.sm-chart { --chart-series-1: var(--green-700); --chart-text: var(--ink-2); --chart-text-strong: var(--ink); --chart-grid: var(--line); --chart-surface: var(--surface); margin: 0; }
+.sm-chart { --chart-series-1: var(--navy); --chart-text: var(--ink-2); --chart-text-strong: var(--ink); --chart-grid: var(--line); --chart-surface: var(--surface); margin: 0; }
 .chart-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px 10px; }
 .chart-card h3 { margin-bottom: 8px; }
 .sm-chart-flow { overflow-x: auto; }
@@ -272,13 +293,13 @@ details.fold .fold-body { padding: 0 0 16px; }
 .diagram-mobile { max-width: 520px; }
 .diagram-desktop { display: none; }
 .diagram figcaption { color: var(--ink-2); font-size: .95rem; margin-top: 6px; }
-.diagram .box { fill: var(--surface); stroke: var(--green-700); stroke-width: 2; }
-.diagram .root { fill: var(--green-700); stroke: none; }
+.diagram .box { fill: var(--surface); stroke: var(--navy); stroke-width: 2; }
+.diagram .root { fill: var(--navy); stroke: none; }
 .diagram .root-text { fill: #fff; font-weight: 700; }
 .diagram .title { fill: var(--ink); font-weight: 700; }
 .diagram .body { fill: var(--ink-2); }
-.diagram .link { stroke: var(--green-700); stroke-width: 2; fill: none; }
-.diagram .num { fill: var(--kaki); font-weight: 700; }
+.diagram .link { stroke: var(--navy); stroke-width: 2; fill: none; }
+.diagram .num { fill: var(--accent); font-weight: 700; }
 .diagram text { font-family: var(--font); }
 
 /* ---------- 地図の埋め込み ---------- */
@@ -291,7 +312,7 @@ details.fold .fold-body { padding: 0 0 16px; }
 
 /* ---------- 所有者向け ---------- */
 .offers { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
-.offer { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; display: grid; gap: 8px; }
+.offer { background: var(--surface); border: 0; border-radius: var(--radius-lg); padding: 16px; display: grid; gap: 8px; box-shadow: var(--shadow); }
 .offer h3 { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .offer .desc { color: var(--ink-2); }
 
@@ -303,59 +324,38 @@ details.fold .fold-body { padding: 0 0 16px; }
   background: var(--surface); border: 1px solid var(--line); border-radius: 999px;
   color: var(--ink); text-decoration: none; font-size: .95rem; white-space: nowrap;
 }
-.muni-chips a:hover { background: var(--green-100); border-color: var(--green-700); }
-.muni-chips .n { font-family: var(--font-display); font-weight: 700; color: var(--kaki); font-size: .95rem; }
+.muni-chips a:hover { background: var(--navy-50); border-color: var(--navy); }
+.muni-chips .n { font-family: var(--font-display); font-weight: 700; color: var(--accent-ink); font-size: .95rem; }
 /* 掲載のある市町村は先に出し、枠を濃くして見分けられるようにする（色だけに頼らず件数も添える） */
-.muni-chips.listed a { border-color: var(--green-700); border-width: 2px; }
+.muni-chips.listed a { border-color: var(--navy); border-width: 2px; }
 
 /* 種別ごとの件数。制度名を出さずに「どんな制度があるか」を示す */
 .kind-counts { list-style: none; margin: 0 0 4px; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
-.kind-counts li { display: inline-flex; align-items: baseline; gap: 7px; padding: 7px 14px; background: var(--green-100); border-radius: 999px; font-size: .92rem; }
-.kind-counts .n { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; color: var(--kaki); }
+.kind-counts li { display: inline-flex; align-items: baseline; gap: 7px; padding: 7px 14px; background: var(--navy-50); border-radius: 999px; font-size: .92rem; }
+.kind-counts .n { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; color: var(--accent-ink); }
 
 /* ---------- トップの入口（ADR 0015） ---------- */
 /* 検索から着地した人に、最初の 1 画面で行き先を 3 つ示す */
 .lead-note { display: flex; align-items: flex-start; gap: 8px; margin-top: 8px; color: var(--ink-2); max-width: 60ch; }
-.lead-note .icon { flex: none; margin-top: .3em; color: var(--green-700); }
-.entries { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 10px; }
+.lead-note .icon { flex: none; margin-top: .3em; color: var(--navy); }
+.entries { list-style: none; margin: 20px 0 0; padding: 0; display: grid; gap: 10px; }
 .entry {
   display: grid; gap: 2px; padding: 14px 16px; min-height: 44px; text-decoration: none;
-  background: var(--surface); border: 2px solid var(--green-700); border-radius: var(--radius); color: var(--ink);
+  background: var(--surface); border: 2px solid var(--navy); border-radius: var(--radius-lg); color: var(--ink); box-shadow: var(--shadow);
 }
-.entry:hover { background: var(--green-100); }
-.entry .t { font-weight: 700; color: var(--green-700); display: flex; align-items: center; gap: 8px; }
+.entry:hover { background: var(--navy-50); }
+.entry .t { font-weight: 700; color: var(--navy); display: flex; align-items: center; gap: 8px; }
 .entry .d { font-size: .88rem; color: var(--ink-2); }
 /* このサイトの作り方 */
 .how { list-style: none; margin: 0; padding: 16px; display: grid; gap: 12px; }
 .how li { display: flex; align-items: flex-start; gap: 10px; }
-.how .icon { flex: none; margin-top: .3em; color: var(--green-700); }
+.how .icon { flex: none; margin-top: .3em; color: var(--navy); }
 @media (min-width: 48rem) { .entries { grid-template-columns: repeat(3, 1fr); } }
 
-/* ---------- 物件の 1 行表示（ADR 0014） ---------- */
-/* カード型は 6 項目のうち 0〜1 個しか取れない物件が 65% を占め、下半分が空いていた。
-   1 行にして同じ画面に 8 件（カードは 3.5 件）入るようにし、価格と地区名を縦に揃える */
-.lines { list-style: none; margin: 0; padding: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
-.lrow + .lrow { border-top: 1px solid var(--line); }
-.lrow > a {
-  display: grid; grid-template-columns: auto auto 1fr; gap: 2px 10px;
-  padding: 12px 14px; min-height: 44px; text-decoration: none; color: var(--ink); align-content: center;
-}
-.lrow > a:hover { background: var(--green-100); }
-.lp { grid-row: 1; font-family: var(--font-display); font-weight: 700; color: var(--kaki); font-size: 1.25rem; line-height: 1.25; white-space: nowrap; }
-/* 数値にできず原文をそのまま出す価格は長い。小さくし、見出しを次の行へ送る */
-.lp.asquote { font-size: 1rem; white-space: normal; }
-.lp.asquote ~ .lt { grid-row: 2; grid-column: 1 / -1; }
-.lp.asquote ~ .lm { grid-row: 3; }
-.ld { grid-row: 1; align-self: center; font-size: .78rem; color: var(--ink-2); font-weight: 600; white-space: nowrap; }
-.lt { grid-row: 1; align-self: center; font-weight: 700; font-size: .96rem; line-height: 1.4; min-width: 0; }
-.lm { grid-row: 2; grid-column: 1 / -1; font-size: .8rem; color: var(--ink-2); line-height: 1.6; }
-.lm .lu { margin-left: 8px; }
-.lrow.is-stale .lp, .lrow.is-stale .lt { color: var(--ink-2); }
-.lrow.is-stale .lp { text-decoration: line-through; }
-@media (min-width: 48rem) {
-  .lrow > a { grid-template-columns: 7.5em auto 1fr; padding: 13px 16px; }
-  .lm { grid-column: 3; grid-row: 2; }
-}
+/* ---------- 検索結果の一覧 ---------- */
+/* 物件の 1 行表示（ADR 0014）は案 B のカード（.lcard）に置き換えた。
+   ここは検索結果（search.js が .card を描く）の入れ物だけが残る */
+.lines { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 
 /* ---------- 広告（ADR 0010） ---------- */
 /* 広告表記。本文の冒頭に置き、地の文に埋もれないよう枠と地色をつける（位置は ad_check.py が検査する） */
@@ -374,9 +374,9 @@ details.fold .fold-body { padding: 0 0 16px; }
 .go-body { display: grid; gap: 12px; margin-top: 16px; }
 
 /* ---------- 信頼ブロック（sitemill マクロ） ---------- */
-.trust { background: var(--surface); border: 2px solid var(--green-700); border-radius: var(--radius); padding: 16px 18px; }
+.trust { background: var(--surface); border: 2px solid var(--navy); border-radius: var(--radius); padding: 16px 18px; }
 .trust-title { font-size: 1.1rem; margin: 0 0 10px; display: flex; align-items: center; gap: 8px; }
-.trust-title::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--green-700); }
+.trust-title::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--navy); }
 .trust-list { display: grid; grid-template-columns: 1fr; gap: 6px; margin: 0; }
 .trust-list dt { color: var(--ink-2); font-size: .95rem; margin-top: 4px; }
 .trust-list dd { margin: 0; overflow-wrap: anywhere; }
@@ -398,11 +398,126 @@ details.fold .fold-body { padding: 0 0 16px; }
 .hero .lead { margin-top: 10px; max-width: 46ch; }
 pre { background: var(--surface-2); padding: 10px 14px; border-radius: 8px; overflow-x: auto; font-size: .95rem; }
 .source { border-top: 1px solid var(--line); padding-top: 12px; margin-top: 12px; }
-.cta { background: var(--green-100); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; display: grid; gap: 10px; }
+.cta { background: var(--navy-50); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; display: grid; gap: 10px; }
 .cta h2 { border: 0; padding: 0; }
 .scroller { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(260px, 80%); gap: 12px; overflow-x: auto; padding: 4px 0 8px; scroll-snap-type: x mandatory; list-style: none; margin: 0; }
 .scroller > li { scroll-snap-align: start; display: grid; }
 .scroller .card { min-height: 100%; }
+
+/* ---------- 案 B の部品（ヒーロー帯・数字タイル・カード） ---------- */
+/* 帯は全幅。中身だけ container に合わせる */
+.hero { background: var(--navy); color: #fff; }
+.hero-inner { padding: 20px 16px 34px; display: flex; flex-direction: column; gap: 6px; }
+.hero .eyebrow { font-size: .8rem; font-weight: 700; letter-spacing: .08em; color: #D5DFEC; }
+.hero h1 { font-size: 2rem; font-weight: 800; line-height: 1.22; color: #fff; }
+.hero .note { font-size: .88rem; color: #D5DFEC; }
+.hero .note a { color: #fff; }
+/* 数字タイルは帯に重ねる。負のマージンぶんは container の中で効かせる */
+.hero-tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: -22px 0 0; }
+/* 1024px 以上では 4 つの入口が帯の直下に入るので、タイルは重ねずに下に置く */
+@media (min-width: 64rem) { .hero-tiles { margin-top: 20px; } }
+.htile { background: var(--surface); border-radius: var(--radius); padding: 12px 12px 10px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.htile .k { font-size: .78rem; font-weight: 700; color: var(--ink-2); letter-spacing: .04em; line-height: 1.3; }
+/* 4,689 のような 4 桁でも 3 列に収まるところまで詰める */
+.htile .v { display: flex; align-items: baseline; gap: 1px; white-space: nowrap; font-size: clamp(1.05rem, 5.2vw, 1.9rem); font-weight: 800; line-height: 1.15; color: var(--navy); font-variant-numeric: tabular-nums; overflow-wrap: normal; }
+.htile .v .u { font-size: .78rem; font-weight: 700; margin-left: 2px; color: var(--ink-2); white-space: nowrap; }
+.htile.is-accent { background: var(--accent); }
+.htile.is-accent .k, .htile.is-accent .v, .htile.is-accent .v .u { color: #fff; }
+/* 「記載なし」「300万円」のような文字の値。3 列で折れないところまで詰める */
+.htile.is-text .v { font-size: clamp(1rem, 4.2vw, 1.35rem); line-height: 1.3; font-weight: 800; overflow-wrap: normal; }
+
+/* 帯の中のパンくず。白地のときより薄い字で、帯の上に置く */
+.breadcrumb.on-hero { color: #D5DFEC; margin: 0 0 2px; font-size: .85rem; }
+.breadcrumb.on-hero a { color: #fff; }
+.breadcrumb.on-hero li + li::before { color: #D5DFEC; }
+/* 右列の見出し。本文の h2 より小さく、地図の上に置く */
+.side-h { font-size: 1.05rem; font-weight: 800; margin: 0 0 8px; }
+/* 所有者向けの面。中身は縦積み */
+.owner-cta > span { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.owner-cta .k, .owner-cta .t, .owner-cta .s { display: block; }
+
+/* 4 つの入口。スマホは下部固定、1024px 以上はヒーロー直下の固定サブナビ */
+.pagebar { background: var(--surface); border-top: 1px solid var(--line); }
+.pagebar ul { list-style: none; margin: 0; padding: 0; display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; }
+.pagebar a { min-height: 56px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; font-size: .74rem; font-weight: 700; color: var(--ink-2); text-decoration: none; padding: 6px 4px; }
+.pagebar a .icon { width: 22px; height: 22px; }
+.pagebar a[aria-current="true"], .pagebar a:hover { color: var(--navy); }
+@media (max-width: 63.99rem) {
+  .pagebar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; padding-bottom: env(safe-area-inset-bottom); box-shadow: 0 -2px 10px rgba(20, 33, 61, .10); }
+  body.has-pagebar { padding-bottom: 64px; }
+}
+@media (min-width: 64rem) {
+  .pagebar { position: sticky; top: 0; z-index: 30; border-top: 0; border-bottom: 1px solid var(--line); }
+  .pagebar ul { max-width: var(--max); margin: 0 auto; padding: 0 16px; grid-auto-columns: max-content; gap: 4px; }
+  .pagebar a { flex-direction: row; gap: 6px; min-height: 52px; font-size: .92rem; padding: 0 14px; border-bottom: 3px solid transparent; }
+  .pagebar a[aria-current="true"] { border-bottom-color: var(--navy); font-weight: 800; }
+  .pagebar a .icon { width: 18px; height: 18px; }
+}
+
+/* 並びは「地図 → 本文 → 窓口・所有者向け」。スマホはこの順のまま 1 列、
+   1024px 以上は本文を左に、地図と窓口を右の列へ送る。地図だけ貼り付く */
+.layout { display: grid; gap: 20px; }
+.layout > .side-rest { display: flex; flex-direction: column; gap: 16px; }
+@media (min-width: 64rem) {
+  .layout { grid-template-columns: minmax(0, 1fr) 360px; gap: 0 36px; align-items: start;
+            grid-template-areas: "main map" "main rest"; grid-template-rows: max-content 1fr; }
+  .layout > .main-col { grid-area: main; }
+  .layout > .map-block { grid-area: map; position: sticky; top: 68px; }
+  .layout > .side-rest { grid-area: rest; margin-top: 16px; }
+  /* 物件ページは右の列が 3 段（公式ページ・地図・窓口）。貼り付くのは公式ページのボタン */
+  .layout.has-cta { grid-template-areas: "main cta" "main map" "main rest";
+                    grid-template-rows: max-content max-content 1fr; }
+  .layout.has-cta > .cta-block { grid-area: cta; position: sticky; top: 68px; }
+  .layout.has-cta > .map-block { position: static; margin-top: 16px; }
+}
+.layout > .cta-block { margin-bottom: 4px; }
+.layout > .main-col > .section:first-child { margin-top: 0; }
+
+/* 見出しの色帯。補助制度は橙、それ以外は紺 */
+.section-head h2 { padding-left: 12px; border-left: 6px solid var(--navy); border-radius: 3px; }
+.section-head.is-accent h2 { border-left-color: var(--accent); }
+
+/* 物件カード。左に価格の色面を置く（案 B） */
+.lcards { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+@media (min-width: 64rem) { .lcards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } }
+.lcard { border-radius: var(--radius-lg); overflow: hidden; background: var(--surface); box-shadow: var(--shadow); }
+.lcard a { display: flex; min-height: 84px; text-decoration: none; color: var(--ink); }
+.lcard .price { width: 112px; flex: none; background: var(--navy); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0; padding: 8px 6px; text-align: center; }
+.lcard .price .deal { font-size: .74rem; color: #D5DFEC; }
+.lcard .price .v { font-size: 1.5rem; font-weight: 800; line-height: 1.15; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.lcard .price .v .u { font-size: .72rem; font-weight: 700; margin-left: 1px; }
+.lcard .price.asquote .v { font-size: .92rem; font-weight: 700; line-height: 1.4; }
+.lcard .price.none { background: var(--surface-2); color: var(--ink-2); }
+.lcard .price.none .v { font-size: .95rem; font-weight: 700; }
+.lcard .price.none .deal { color: var(--ink-2); }
+.lcard .body { padding: 10px 14px; display: flex; flex-direction: column; gap: 3px; flex-grow: 1; min-width: 0; }
+.lcard .t { font-size: 1rem; font-weight: 700; line-height: 1.45; }
+.lcard .f { font-size: .85rem; color: var(--ink-2); line-height: 1.5; }
+.lcard .badges { margin-top: 2px; }
+.lcard a:hover { background: var(--navy-50); }
+.lcard.is-stale { opacity: .78; }
+
+/* 物件ページ。帯の下のバッジ行と、末尾の取得日時 */
+.badges-top { margin-bottom: 4px; }
+.badges-top:empty { display: none; }
+.provenance { margin-top: 24px; }
+/* 窓口カードの中の定義リストとボタン */
+.window-card dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; font-size: .92rem; }
+.window-card dt { color: var(--ink-2); }
+.window-card dd { margin: 0; }
+.window-card .btn { width: 100%; }
+.window-card .tel { font-size: 1.5rem; font-weight: 800; color: var(--navy); letter-spacing: .02em; margin: 0; }
+
+/* 窓口カードと所有者向けの面 */
+.window-card { border-radius: var(--radius-lg); background: var(--surface-2); padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+.window-card .k { font-size: .8rem; font-weight: 800; color: var(--navy); letter-spacing: .08em; }
+.window-card p { font-size: .95rem; margin: 0; }
+.owner-cta { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 18px; border-radius: var(--radius-lg); background: var(--accent); color: #fff; text-decoration: none; }
+.owner-cta .k { font-size: .8rem; font-weight: 800; letter-spacing: .06em; }
+.owner-cta .t { font-size: 1.15rem; font-weight: 800; line-height: 1.4; }
+.owner-cta .s { font-size: .88rem; }
+.owner-cta .icon { width: 22px; height: 22px; flex: none; }
+.owner-cta:hover { background: var(--accent-ink); }
 
 /* ---------- 画面幅 ---------- */
 @media (min-width: 40rem) {
