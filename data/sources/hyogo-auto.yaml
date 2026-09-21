@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kobe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kobe.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.kobe.lg.jp/a01110/hojokin.html
     kind: subsidy
@@ -53,7 +53,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.himeji.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.himeji.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.himeji.lg.jp/kurashi/0000006739.html
     kind: subsidy
@@ -84,7 +84,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.amagasaki.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.amagasaki.hyogo.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.amagasaki.hyogo.jp/kurashi/kankyo/hozen/1003761/1043821.html
     kind: subsidy
@@ -111,7 +111,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.akashi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.akashi.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
 - id: hyogo-282049
   name: 西宮市空き家バンク
   operator: 西宮市
@@ -132,7 +132,7 @@ sources:
   operator_evidence:
     quote: 兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.nishi.or.jp）
     url: https://web.pref.hyogo.lg.jp/link/pref.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
 - id: hyogo-282057
   name: 洲本市空き家バンク
   operator: 洲本市
@@ -153,7 +153,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sumoto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.sumoto.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
 - id: hyogo-282065
   name: 芦屋市空き家バンク
   operator: 芦屋市
@@ -174,7 +174,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ashiya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.ashiya.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
 - id: hyogo-282073
   name: 伊丹市空き家バンク
   operator: 伊丹市
@@ -195,7 +195,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.itami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.itami.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
 - id: hyogo-282081
   name: 相生市空き家バンク
   operator: 相生市
@@ -216,7 +216,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.aioi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.aioi.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
 - id: hyogo-282090
   name: 豊岡市空き家バンク
   operator: 豊岡市
@@ -237,7 +237,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.toyooka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.toyooka.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.toyooka.lg.jp/kurashi/1019537/teiju/1004859.html
     kind: subsidy
@@ -266,7 +266,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kakogawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kakogawa.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.kakogawa.lg.jp/soshikikarasagasu/tosi_kekaku/jyutaku/akiya_akichi/41061.html
     kind: subsidy
@@ -299,7 +299,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ako.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.ako.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.ako.lg.jp/sangyoshinko/kanko/teiju/akiyabankuhojyokin.html
     kind: subsidy
@@ -333,7 +333,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nishiwaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nishiwaki.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.nishiwaki.lg.jp/iju/topics/29752.html
     kind: subsidy
@@ -366,7 +366,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.takarazuka.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.takarazuka.hyogo.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.takarazuka.hyogo.jp/1060678/1060691/1061537/index.html
     kind: subsidy
@@ -395,7 +395,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.miki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.miki.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
 - id: hyogo-282162
   name: 高砂市空き家バンク
   operator: 高砂市
@@ -416,7 +416,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.takasago.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.takasago.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
 - id: hyogo-282171
   name: 川西市空き家バンク
   operator: 川西市
@@ -437,7 +437,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kawanishi.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kawanishi.hyogo.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.kawanishi.hyogo.jp/kurashi/1017490/sumai/1007030.html
     kind: subsidy
@@ -468,7 +468,7 @@ sources:
   operator_evidence:
     quote: 物件ごとの登録カードを PDF でのみ公開している。PDF は解析せず、公式ページへ案内する（www.city.ono.hyogo.jp）
     url: https://www.city.ono.hyogo.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/2/5107.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.ono.hyogo.jp/soshikikarasagasu/chiikishinkobu_machizukurika/gyomuannai/7/11796.html
     kind: subsidy
@@ -497,7 +497,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sanda.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.sanda.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
 - id: hyogo-282201
   name: 加西市空き家バンク
   operator: 加西市
@@ -518,7 +518,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kasai.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kasai.hyogo.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
 - id: hyogo-282219
   name: 丹波篠山市空き家バンク
   operator: 丹波篠山市
@@ -538,7 +538,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.city.tambasasayama.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.tambasasayama.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://classo.jp/
     kind: listing_index
@@ -565,7 +565,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yabu.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.yabu.hyogo.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.yabu.hyogo.jp/kurashi_tetsuzuki/kurashi_sumai/akiya/11835.html
     kind: subsidy
@@ -594,7 +594,7 @@ sources:
   operator_evidence:
     quote: 兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.city.tamba.lg.jp）
     url: https://web.pref.hyogo.lg.jp/link/pref.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
 - id: hyogo-282243
   name: 南あわじ市空き家バンク
   operator: 南あわじ市
@@ -615,7 +615,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.minamiawaji.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.minamiawaji.hyogo.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.minamiawaji.hyogo.jp/soshiki/toshi/akiyakatsuyou2020.html
     kind: subsidy
@@ -646,7 +646,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.asago.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.asago.hyogo.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.asago.hyogo.jp/life/1/16/87/
     kind: subsidy
@@ -679,7 +679,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.awaji.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.awaji.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
 - id: hyogo-282278
   name: 宍粟市空き家バンク
   operator: 宍粟市
@@ -700,7 +700,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.shiso.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.shiso.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.shiso.lg.jp/soshiki/dobokubu/toshiseibika/tantojoho/teijyusuishin/teijyusuishin/9866.html
     kind: subsidy
@@ -733,7 +733,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kato.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
 - id: hyogo-282294
   name: たつの市空き家バンク
   operator: たつの市
@@ -753,7 +753,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tatsuno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tatsuno.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.tatsuno.lg.jp/iju/akiya-bank/1410.html
     kind: listing_index
@@ -791,7 +791,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.inagawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.inagawa.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
 - id: hyogo-283657
   name: 多可町空き家バンク
   operator: 多可町
@@ -812,7 +812,7 @@ sources:
   operator_evidence:
     quote: 兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.town.taka.lg.jp）。サイトを取得できなかったためリンクのみ（robots.txt を取得できないため今回は巡回しない）
     url: https://web.pref.hyogo.lg.jp/link/pref.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
 - id: hyogo-283819
   name: 稲美町空き家バンク
   operator: 稲美町
@@ -832,7 +832,7 @@ sources:
   operator_evidence:
     quote: 兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.town.hyogo-inami.lg.jp）
     url: https://web.pref.hyogo.lg.jp/link/pref.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.town.hyogo-inami.lg.jp/0000003232.html
     kind: listing_index
@@ -863,7 +863,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.harima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.harima.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
 - id: hyogo-284424
   name: 市川町空き家バンク
   operator: 市川町
@@ -884,7 +884,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ichikawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.ichikawa.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.town.ichikawa.lg.jp/info/2030
     kind: subsidy
@@ -914,7 +914,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.fukusaki.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.fukusaki.hyogo.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: http://www.town.fukusaki.hyogo.jp/0000001949.html
     kind: listing_index
@@ -947,7 +947,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kamikawa.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kamikawa.hyogo.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.town.kamikawa.hyogo.jp/0000000317.html
     kind: listing_index
@@ -976,7 +976,7 @@ sources:
   operator_evidence:
     quote: 兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.town.hyogo-taishi.lg.jp）
     url: https://web.pref.hyogo.lg.jp/link/pref.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
 - id: hyogo-284815
   name: 上郡町空き家バンク
   operator: 上郡町
@@ -997,7 +997,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kamigori.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kamigori.hyogo.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
 - id: hyogo-285013
   name: 佐用町空き家バンク
   operator: 佐用町
@@ -1018,7 +1018,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.sayo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.sayo.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
 - id: hyogo-285854
   name: 香美町空き家バンク
   operator: 香美町
@@ -1039,7 +1039,7 @@ sources:
   operator_evidence:
     quote: 兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.town.mikata-kami.lg.jp）
     url: https://web.pref.hyogo.lg.jp/link/pref.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.town.mikata-kami.lg.jp/kurashi-tetsuzuki/iju-teiju-akiya/3294.html
     kind: subsidy
@@ -1066,4 +1066,4 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.town.shinonsen.hyogo.jp）から空き家バンクとして案内されているリンク
     url: https://www.town.shinonsen.hyogo.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-21'

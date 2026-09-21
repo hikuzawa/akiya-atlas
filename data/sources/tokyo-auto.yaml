@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.chiyoda.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.chiyoda.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-131024
   name: 中央区空き家バンク
   operator: 中央区
@@ -41,7 +41,7 @@ sources:
   operator_evidence:
     quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.city.chuo.lg.jp）
     url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.chuo.lg.jp/kenkouiryou/fukushiippan/seikatsushien/saport_hojo_hukushi.html
     kind: subsidy
@@ -68,7 +68,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.minato.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.minato.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-131041
   name: 新宿区空き家バンク
   operator: 新宿区
@@ -89,7 +89,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.shinjuku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.shinjuku.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.shinjuku.lg.jp/seikatsu/shoenergy.html
     kind: subsidy
@@ -116,7 +116,7 @@ sources:
   operator_evidence:
     quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.city.bunkyo.lg.jp）
     url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.bunkyo.lg.jp/b032/p000746.html
     kind: subsidy
@@ -143,7 +143,7 @@ sources:
   operator_evidence:
     quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.city.taito.lg.jp）
     url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.taito.lg.jp/kenchiku/kankyo/jyoseiseido/datsutanso.html
     kind: subsidy
@@ -170,7 +170,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sumida.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.sumida.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-131083
   name: 江東区空き家バンク
   operator: 江東区
@@ -191,7 +191,7 @@ sources:
   operator_evidence:
     quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.city.koto.lg.jp）
     url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.koto.lg.jp/396201/machizukuri/kenchiku/kowasu/83146.html
     kind: subsidy
@@ -218,7 +218,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.shinagawa.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.shinagawa.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-kenchiku/kankyo-kenchiku-assen/index.html
     kind: subsidy
@@ -245,7 +245,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.meguro.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.meguro.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-131113
   name: 大田区空き家バンク
   operator: 大田区
@@ -266,7 +266,7 @@ sources:
   operator_evidence:
     quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.city.ota.tokyo.jp）
     url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-131121
   name: 世田谷区空き家バンク
   operator: 世田谷区
@@ -287,7 +287,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.setagaya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.setagaya.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-131130
   name: 渋谷区空き家バンク
   operator: 渋谷区
@@ -308,7 +308,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.shibuya.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.shibuya.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.shibuya.tokyo.jp/kurashi/jutaku/yushi/
     kind: subsidy
@@ -335,7 +335,7 @@ sources:
   operator_evidence:
     quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.city.tokyo-nakano.lg.jp）
     url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-131156
   name: 杉並区空き家バンク
   operator: 杉並区
@@ -356,7 +356,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.suginami.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.suginami.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-131164
   name: 豊島区空き家バンク
   operator: 豊島区
@@ -377,7 +377,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.toshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.toshima.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-131172
   name: 北区空き家バンク
   operator: 北区
@@ -398,7 +398,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kita.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-131181
   name: 荒川区空き家バンク
   operator: 荒川区
@@ -419,7 +419,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.arakawa.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.arakawa.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-131199
   name: 板橋区空き家バンク
   operator: 板橋区
@@ -440,7 +440,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.itabashi.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.itabashi.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-131202
   name: 練馬区空き家バンク
   operator: 練馬区
@@ -461,7 +461,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nerima.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.nerima.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-131211
   name: 足立区空き家バンク
   operator: 足立区
@@ -482,7 +482,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.adachi.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.adachi.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-131229
   name: 葛飾区空き家バンク
   operator: 葛飾区
@@ -503,7 +503,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.katsushika.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.katsushika.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-131237
   name: 江戸川区空き家バンク
   operator: 江戸川区
@@ -524,7 +524,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.edogawa.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.edogawa.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.edogawa.tokyo.jp/e021/kurashi/sumai/taishin/jokyaku/mokuzojose.html
     kind: subsidy
@@ -555,7 +555,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hachioji.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hachioji.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-132021
   name: 立川市空き家バンク
   operator: 立川市
@@ -576,7 +576,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tachikawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tachikawa.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.tachikawa.lg.jp/kurashi/seikatsu/1001871/1024675.html
     kind: subsidy
@@ -605,7 +605,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.musashino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.musashino.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-132047
   name: 三鷹市空き家バンク
   operator: 三鷹市
@@ -626,7 +626,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.mitaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.mitaka.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-132055
   name: 青梅市空き家バンク
   operator: 青梅市
@@ -646,7 +646,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ome.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ome.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.ome.tokyo.jp/site/ome-style/1420.html
     kind: listing_index
@@ -677,7 +677,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.fuchu.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.fuchu.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.fuchu.tokyo.jp/kurashi/machi/jutaku/index.html
     kind: subsidy
@@ -704,7 +704,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.akishima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.akishima.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-132080
   name: 調布市空き家バンク
   operator: 調布市
@@ -725,7 +725,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.chofu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.chofu.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.chofu.lg.jp/kurashi/sumai/hojo/index.html
     kind: subsidy
@@ -752,7 +752,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.machida.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.machida.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-132101
   name: 小金井市空き家バンク
   operator: 小金井市
@@ -773,7 +773,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.koganei.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.koganei.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-132110
   name: 小平市空き家バンク
   operator: 小平市
@@ -794,7 +794,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kodaira.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kodaira.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-132128
   name: 日野市空き家バンク
   operator: 日野市
@@ -815,7 +815,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hino.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.hino.lg.jp/sangyo/chusho/1029316.html
     kind: subsidy
@@ -844,7 +844,7 @@ sources:
   operator_evidence:
     quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.city.higashimurayama.tokyo.jp）。サイトを取得できなかったためリンクのみ（HTTP 403）
     url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-132144
   name: 国分寺市空き家バンク
   operator: 国分寺市
@@ -865,7 +865,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kokubunji.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kokubunji.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-132152
   name: 国立市空き家バンク
   operator: 国立市
@@ -886,7 +886,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kunitachi.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kunitachi.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-132187
   name: 福生市空き家バンク
   operator: 福生市
@@ -907,7 +907,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.fussa.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.fussa.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-132195
   name: 狛江市空き家バンク
   operator: 狛江市
@@ -928,7 +928,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.komae.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.komae.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-132209
   name: 東大和市空き家バンク
   operator: 東大和市
@@ -949,7 +949,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.higashiyamato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.higashiyamato.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-132217
   name: 清瀬市空き家バンク
   operator: 清瀬市
@@ -970,7 +970,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kiyose.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kiyose.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.kiyose.lg.jp/kurashi/sumai/1014152/index.html
     kind: subsidy
@@ -997,7 +997,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.higashikurume.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.higashikurume.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-132233
   name: 武蔵村山市空き家バンク
   operator: 武蔵村山市
@@ -1018,7 +1018,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.musashimurayama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.musashimurayama.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-132241
   name: 多摩市空き家バンク
   operator: 多摩市
@@ -1039,7 +1039,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tama.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-132250
   name: 稲城市空き家バンク
   operator: 稲城市
@@ -1060,7 +1060,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.inagi.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.inagi.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-132276
   name: 羽村市空き家バンク
   operator: 羽村市
@@ -1081,7 +1081,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hamura.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hamura.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-132284
   name: あきる野市空き家バンク
   operator: あきる野市
@@ -1102,7 +1102,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.akiruno.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.akiruno.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-132292
   name: 西東京市空き家バンク
   operator: 西東京市
@@ -1123,7 +1123,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nishitokyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nishitokyo.lg.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.nishitokyo.lg.jp/kurasi/jutaku/nyuukyosyabosyuu.html
     kind: subsidy
@@ -1156,7 +1156,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.mizuho.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.mizuho.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.town.mizuho.tokyo.jp/kankyo/005/002/index.html
     kind: subsidy
@@ -1183,7 +1183,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hinode.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.hinode.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.town.hinode.tokyo.jp/0000002750.html
     kind: subsidy
@@ -1213,7 +1213,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.hinohara.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.hinohara.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: http://www.vill.hinohara.tokyo.jp/0000000581.html
     kind: listing_index
@@ -1241,7 +1241,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.okutama.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.okutama.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.town.okutama.tokyo.jp/kosodate/ijuteijujoho/3/index.html
     kind: listing_index
@@ -1268,7 +1268,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.oshima.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.oshima.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-133621
   name: 利島村空き家バンク
   operator: 利島村
@@ -1289,7 +1289,7 @@ sources:
   operator_evidence:
     quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.toshimamura.org）
     url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-133639
   name: 新島村空き家バンク
   operator: 新島村
@@ -1310,7 +1310,7 @@ sources:
   operator_evidence:
     quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.niijima.com）
     url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
   pages:
   - url: http://www.niijima.com/gyousei/hojokin_joseikin/hojoshurui/akiyajyokyaku.html
     kind: subsidy
@@ -1339,7 +1339,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.kouzushima.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.kouzushima.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-133817
   name: 三宅村空き家バンク
   operator: 三宅村
@@ -1360,7 +1360,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.miyake.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.miyake.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-133825
   name: 御蔵島村空き家バンク
   operator: 御蔵島村
@@ -1381,7 +1381,7 @@ sources:
   operator_evidence:
     quote: 東京都 リンク集／都内区市町村に掲載された公式サイト（www.vill.mikurasima.tokyo.jp）
     url: https://www.metro.tokyo.lg.jp/sitemap/link/link04
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-134015
   name: 八丈町空き家バンク
   operator: 八丈町
@@ -1402,7 +1402,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hachijo.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.hachijo.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-134023
   name: 青ヶ島村空き家バンク
   operator: 青ヶ島村
@@ -1423,7 +1423,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.aogashima.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.aogashima.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'
 - id: tokyo-134210
   name: 小笠原村空き家バンク
   operator: 小笠原村
@@ -1444,4 +1444,4 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.ogasawara.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.ogasawara.tokyo.jp/
-    checked_on: '2026-09-20'
+    checked_on: '2026-09-21'

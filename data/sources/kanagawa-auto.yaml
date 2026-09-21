@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yokohama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.yokohama.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/jutaku/hojo/index.html
     kind: subsidy
@@ -47,7 +47,7 @@ sources:
   operator_evidence:
     quote: 神奈川県内の市町村に掲載された公式サイト（www.city.kawasaki.jp）
     url: https://www.pref.kanagawa.jp/docs/ie2/cnt/f530001/p780102.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.kawasaki.jp/350/page/0000185058.html
     kind: subsidy
@@ -74,7 +74,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sagamihara.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.sagamihara.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.sagamihara.kanagawa.jp/kurashi/1026489/sumai/1026511/1035079.html
     kind: subsidy
@@ -107,7 +107,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yokosuka.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.yokosuka.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
 - id: kanagawa-142034
   name: 平塚市空き家バンク
   operator: 平塚市
@@ -128,7 +128,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hiratsuka.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hiratsuka.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
 - id: kanagawa-142042
   name: 鎌倉市空き家バンク
   operator: 鎌倉市
@@ -149,7 +149,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kamakura.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kamakura.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
 - id: kanagawa-142051
   name: 藤沢市空き家バンク
   operator: 藤沢市
@@ -170,7 +170,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.fujisawa.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.fujisawa.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.fujisawa.kanagawa.jp/jutaku/akiya/rikatsuyouhojokin.html
     kind: subsidy
@@ -197,7 +197,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.odawara.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.odawara.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
 - id: kanagawa-142077
   name: 茅ヶ崎市空き家バンク
   operator: 茅ヶ崎市
@@ -218,7 +218,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.chigasaki.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.chigasaki.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.chigasaki.kanagawa.jp/shogai/1004360.html
     kind: subsidy
@@ -244,7 +244,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.zushi.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.zushi.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.zushi.kanagawa.jp/kurashi/sumai/1002149/1002164/1002173.html
     kind: listing_index
@@ -273,7 +273,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.miura.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.miura.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
 - id: kanagawa-142115
   name: 秦野市空き家バンク
   operator: 秦野市
@@ -294,7 +294,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hadano.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hadano.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.hadano.kanagawa.jp/kurashi-tetsuzuki/sumai/3/6917.html
     kind: subsidy
@@ -321,7 +321,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.atsugi.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.atsugi.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.atsugi.kanagawa.jp/soshiki/jutakuka/9/3/20447.html
     kind: subsidy
@@ -348,7 +348,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yamato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.yamato.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
 - id: kanagawa-142140
   name: 伊勢原市空き家バンク
   operator: 伊勢原市
@@ -369,7 +369,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.isehara.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.isehara.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
 - id: kanagawa-142158
   name: 海老名市空き家バンク
   operator: 海老名市
@@ -390,7 +390,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ebina.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ebina.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
 - id: kanagawa-142166
   name: 座間市空き家バンク
   operator: 座間市
@@ -411,7 +411,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.zama.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.zama.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.city.zama.kanagawa.jp/kurashi/sumai/taishin/index.html
     kind: subsidy
@@ -442,7 +442,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.minamiashigara.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.minamiashigara.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
   pages:
   - url: http://www.city.minamiashigara.kanagawa.jp/kurashi/gomi/kankyou/p08934.html
     kind: subsidy
@@ -469,7 +469,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ayase.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ayase.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
 - id: kanagawa-143014
   name: 葉山町空き家バンク
   operator: 葉山町
@@ -490,7 +490,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hayama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.hayama.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
 - id: kanagawa-143219
   name: 寒川町空き家バンク
   operator: 寒川町
@@ -511,7 +511,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.samukawa.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.samukawa.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
 - id: kanagawa-143413
   name: 大磯町空き家バンク
   operator: 大磯町
@@ -532,7 +532,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.oiso.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.oiso.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
 - id: kanagawa-143421
   name: 二宮町空き家バンク
   operator: 二宮町
@@ -553,7 +553,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ninomiya.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ninomiya.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.town.ninomiya.kanagawa.jp/0000000157.html
     kind: subsidy
@@ -580,7 +580,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nakai.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nakai.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
 - id: kanagawa-143626
   name: 大井町空き家バンク
   operator: 大井町
@@ -601,7 +601,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.oi.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.oi.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.town.oi.kanagawa.jp/site/iju/sansedaidoukyo-hojokin.html
     kind: subsidy
@@ -633,7 +633,7 @@ sources:
   operator_evidence:
     quote: 神奈川県内の市町村に掲載された公式サイト（town.matsuda.kanagawa.jp）
     url: https://www.pref.kanagawa.jp/docs/ie2/cnt/f530001/p780102.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
   pages:
   - url: https://town.matsuda.kanagawa.jp/site/teiju-syoushi/akiya-chintai.html
     kind: listing_index
@@ -667,7 +667,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yamakita.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yamakita.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
   pages:
   - url: http://www.town.yamakita.kanagawa.jp/0000007345.html
     kind: listing_detail
@@ -698,7 +698,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kaisei.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kaisei.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.town.kaisei.kanagawa.jp/info/489
     kind: subsidy
@@ -725,7 +725,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hakone.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.hakone.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.town.hakone.kanagawa.jp/www/contents/1100000002059/index.html
     kind: subsidy
@@ -758,7 +758,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.manazuru.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.manazuru.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
 - id: kanagawa-143847
   name: 湯河原町空き家バンク
   operator: 湯河原町
@@ -779,7 +779,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yugawara.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yugawara.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.town.yugawara.kanagawa.jp/soshiki/17/14319.html
     kind: subsidy
@@ -808,7 +808,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.aikawa.kanagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.aikawa.kanagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
 - id: kanagawa-144029
   name: 清川村空き家バンク
   operator: 清川村
@@ -828,7 +828,7 @@ sources:
   operator_evidence:
     quote: 神奈川県内の市町村に掲載された公式サイト（www.town.kiyokawa.kanagawa.jp）
     url: https://www.pref.kanagawa.jp/docs/ie2/cnt/f530001/p780102.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-21'
   pages:
   - url: https://www.town.kiyokawa.kanagawa.jp/Life_procedure/sumaijutaku/2375.html
     kind: listing_index
