@@ -1,21 +1,21 @@
 {
-  "checked_at": "2026-09-22T08:57:03.676781+09:00",
+  "checked_at": "2026-09-23T08:37:38.791191+09:00",
   "urls": {
     "http://akiya-atlas.com/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Page with redirect",
-      "last_crawl": "2026-09-20T00:37:06Z",
+      "last_crawl": "2026-09-22T05:37:15Z",
       "google_canonical": "https://akiya-atlas.com/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-09-23"
     },
     "http://www.akiya-atlas.com/": {
-      "verdict": "PASS",
-      "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-12T23:40:07Z",
-      "google_canonical": "http://www.akiya-atlas.com/",
+      "verdict": "NEUTRAL",
+      "coverage_state": "Page with redirect",
+      "last_crawl": "2026-09-21T21:42:00Z",
+      "google_canonical": "https://akiya-atlas.com/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-09-23"
     },
     "https://www.akiya-atlas.com/": {
       "verdict": "NEUTRAL",
@@ -23,7 +23,7 @@
       "last_crawl": "2026-09-21T21:42:00Z",
       "google_canonical": "https://akiya-atlas.com/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-09-23"
     }
   }
 }
