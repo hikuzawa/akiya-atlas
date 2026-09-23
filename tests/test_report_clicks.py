@@ -37,3 +37,11 @@ def test_a_retired_transfer_page_is_still_reported() -> None:
     """枠から外したあとも押されているページは、表に出ないので別行で知らせる。"""
     out = "\n".join(report({"/go/removed-offer/owners-consult/": 3}, 7))
     assert "一覧に無い転送ページ" in out and "/go/removed-offer/owners-consult/" in out
+
+
+def test_the_reach_of_the_owners_pages_is_reported() -> None:
+    """広告の枠は /owners/ 配下にしかない。クリックが 0 のとき、届いていないのか
+    届いても押されないのかで打ち手が違うので、到達率を必ず添える（2026-09-23）。"""
+    out = "\n".join(report({"/": 400, "/owners/": 5, "/owners/chiba/": 1, "/kochi/": 55}, 7))
+    assert "`/owners/` への到達率 **1.3%**" in out
+    assert "（6 / 461 表示。うち県別 1）" in out

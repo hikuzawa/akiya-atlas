@@ -120,6 +120,18 @@ def report(counts: dict[str, int], days: int) -> list[str]:
             lines.append(f"| {offer.label}（{offer.advertiser}） | `{placement}` | {n} |")
     lines += ["", f"- 合計 **{total}** 回"]
 
+    # 広告の枠は `/owners/` 配下にしかない。そこへ届いている割合を添える（2026-09-23）。
+    # クリックが 0 でも、届いていないのか届いても押されないのかで打ち手が違う
+    site = sum(counts.values())
+    if site:
+        owners = {p: n for p, n in counts.items() if p == "/owners/" or p.startswith("/owners/")}
+        reached = sum(owners.values())
+        pref = reached - owners.get("/owners/", 0)
+        lines.append(
+            f"- `/owners/` への到達率 **{reached / site * 100:.1f}%**"
+            f"（{reached} / {site} 表示。うち県別 {pref}）。広告の枠はここにしかない"
+        )
+
     # 一覧に無い `/go/` が数えられていたら出す（枠を外したあとも押されている、など）
     known = {t.url_path for t in targets}
     strays = {p: n for p, n in counts.items() if p.startswith("/go/") and p not in known and n}
