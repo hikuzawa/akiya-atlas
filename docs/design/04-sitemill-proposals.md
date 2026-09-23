@@ -204,6 +204,9 @@ Hoan Home Sapporo|【1件10,000円】札幌の不用品回収・空き家片付�
 
 ## J. Cloudflare Web Analytics の読み取り（2026-09-23、akiya-atlas と japan-open-today で同じものを 2 度書いた）
 
+**済み（sitemill v0.7.6、`sitemill/metrics/rum.py` の `rum_pageloads`）。** 両サービスとも
+自前の GraphQL をやめてこれを呼んでいる。以下は提案時の記録。
+
 親フォルダの配置ルールでは「計測」は sitemill に置くもの。いまは 2 つのサービスが同じ
 `tools/report_clicks.py` を持っていて、GraphQL の問い合わせだけが完全に重複している。
 
