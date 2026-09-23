@@ -283,3 +283,94 @@ def test_actions_minutes_divides_by_the_days_the_repository_has_existed(
     assert got["monthly"] == pytest.approx(60.0 / 2.0 * 30)
     later = weekly.actions_minutes("o/r", days=7, now=weekly.REPOSITORY_SINCE + timedelta(days=30))
     assert not later["partial"] and later["monthly"] == pytest.approx(60.0 / 7 * 30)
+
+
+def _crawl_state(ws: Workspace, urls: dict[str, dict[str, object]]) -> None:
+    (ws.state_dir / "crawl.json").write_text(
+        json.dumps({"urls": urls}, ensure_ascii=False), encoding="utf-8"
+    )
+
+
+def test_a_one_night_robots_failure_is_only_a_number(ws: Workspace) -> None:
+    """1 晩だけ取れなかったホストは数だけ。名前を並べても打ち手が無い。"""
+    now = datetime(2026, 9, 24, 12, 0, tzinfo=UTC)
+    _run(
+        ws,
+        "20260923-210000-crawl",
+        now - timedelta(days=1),
+        5.0,
+        ci=True,
+        errors=[
+            "https://izumo-akiyataisaku.jp/bank/: robots.txt を取得できないため今回は巡回しない",
+            "http://www.chichibuakiyabank.com/: robots.txt を取得できないため今回は巡回しない",
+        ],
+    )
+    _crawl_state(
+        ws,
+        {
+            "https://izumo-akiyataisaku.jp/bank/": {
+                "error": "robots.txt を取得できないため今回は巡回しない",
+                "fetched_at": (now - timedelta(days=1)).isoformat(),
+            }
+        },
+    )
+    hosts, times, stalled = weekly.robots_failures(ws, days=7, now=now)
+    assert hosts == ["izumo-akiyataisaku.jp", "www.chichibuakiyabank.com"]
+    assert times == 2 and stalled == []
+    line = "\n".join(weekly.robots_lines(hosts, times, stalled))
+    assert "**2**（延べ 2 回）" in line and "取得できていない" not in line
+
+
+def test_a_host_stuck_for_three_days_is_named(ws: Workspace) -> None:
+    """続いた分はその自治体の更新が止まっている。週次を読んですぐ分かるよう名前を出す。"""
+    now = datetime(2026, 9, 24, 12, 0, tzinfo=UTC)
+    _run(
+        ws,
+        "20260923-210000-crawl",
+        now - timedelta(days=1),
+        5.0,
+        ci=True,
+        errors=["https://classo.jp/: robots.txt を取得できないため今回は巡回しない"],
+    )
+    _crawl_state(
+        ws,
+        {
+            "https://classo.jp/": {
+                "error": "robots.txt を取得できないため今回は巡回しない",
+                "fetched_at": (now - timedelta(days=4)).isoformat(),
+            },
+            "https://akiya.vill.yahiko.niigata.jp/": {
+                "error": "robots.txt を取得できないため今回は巡回しない",
+                "fetched_at": None,
+            },
+        },
+    )
+    _, _, stalled = weekly.robots_failures(ws, days=7, now=now)
+    line = "\n".join(weekly.robots_lines(["classo.jp"], 1, stalled))
+    assert "classo.jp（最終取得から 4 日）" in line
+    assert "akiya.vill.yahiko.niigata.jp（一度も取得できていない）" in line
+    assert "更新が止まっている" in line
+
+
+def test_the_latest_copy_is_not_counted_twice(ws: Workspace) -> None:
+    """`latest-crawl.json` は直近の実行の写し。数えると延べ回数が倍になる。"""
+    now = datetime(2026, 9, 24, 12, 0, tzinfo=UTC)
+    for name in ("20260923-210000-crawl", "latest-crawl"):
+        _run(
+            ws,
+            name,
+            now - timedelta(days=1),
+            5.0,
+            ci=True,
+            errors=["https://classo.jp/: robots.txt を取得できないため今回は巡回しない"],
+        )
+    hosts, times, _ = weekly.robots_failures(ws, days=7, now=now)
+    assert hosts == ["classo.jp"] and times == 1
+
+
+def test_no_robots_failure_says_so(ws: Workspace) -> None:
+    now = datetime(2026, 9, 24, 12, 0, tzinfo=UTC)
+    hosts, times, stalled = weekly.robots_failures(ws, days=7, now=now)
+    assert weekly.robots_lines(hosts, times, stalled) == [
+        "- robots.txt を取得できなかったホスト: なし"
+    ]
