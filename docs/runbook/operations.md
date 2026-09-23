@@ -35,6 +35,11 @@ uv run akiya-atlas weekly-report --days 7
   並べる。自動で直した内容を後から追うための記録で、元は `data/runs/heal-reselections.jsonl`
 - **GitHub Actions の実行時間**: 直近 7 日の合計と、1 か月に直した見込み、無料枠 2,000 分に対する割合。
   ワークフロー別の内訳も出る
+- **広告のクリック**: 転送ページ（`/go/<案件>/<枠>/`）が開かれた回数を、案件と枠ごとに出す
+  （`tools/report_clicks.py`）。Cloudflare Web Analytics を**ホスト名**で絞って読む。
+  0 回のときは、同じ期間のサイト全体の表示数を添えて「押されていない」のか「計測が届いて
+  いない」のかが分かるようにしている。読み取りには `CLOUDFLARE_API_TOKEN` に
+  **Account Analytics: Read** が要る（配置用の権限だけでは 403）
 
 巡回の実行レポート（`data/runs/*-crawl.json` の `notes`）には、**キャッシュが巡回状態より古くて
 取り直した URL** が出る（sitemill v0.7.3 から。多い日は頭の 10 件）。`crawl.stale_cache` が

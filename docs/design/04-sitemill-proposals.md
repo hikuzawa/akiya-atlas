@@ -201,3 +201,32 @@ Hoan Home Sapporo|【1件10,000円】札幌の不用品回収・空き家片付�
   サービスが生 HTML を読み直さずに済む（例: `context_check(quote, before, after) -> note | None`）
 - ゼロ幅スペース（U+200B）が日付の間に入っていた。`squash` は空白しか消さないので、照合と文脈の判定で
   食い違いうる。`squash` で Cf 類（U+200B〜U+200D・U+FEFF）も消すかは検討に値する
+
+## J. Cloudflare Web Analytics の読み取り（2026-09-23、akiya-atlas と japan-open-today で同じものを 2 度書いた）
+
+親フォルダの配置ルールでは「計測」は sitemill に置くもの。いまは 2 つのサービスが同じ
+`tools/report_clicks.py` を持っていて、GraphQL の問い合わせだけが完全に重複している。
+
+### 共通なところ（engine に置けるもの）
+
+- 終端 `https://api.cloudflare.com/client/v4/graphql`、`rumPageloadEventsAdaptiveGroups`
+- **絞り込みは `siteTag` ではなくホスト名（`requestHost`）**。同じホスト名で Web Analytics の
+  登録が 2 つあると、HTML に挿し込まれる token の側にイベントが 1 件も入らないことがある
+  （japan-open-today で実際に起きた）。ホスト名なら、どちらに入っていても取れる
+- 必要な権限は **Account Analytics: Read**。配置用の権限だけでは 403
+- 返すのは「パス → 表示数」の辞書。取れなければ `None`（週次を止めない）
+
+```python
+def rum_pageloads(secrets, host: str, days: int) -> dict[str, int] | None: ...
+```
+
+### サービス側に残るもの
+
+どのパスを何の名前で並べるか（akiya は案件 × 枠、japan-open-today は飛び先 × 言語）と、
+動作確認で開いた分の差し引き。
+
+### 落とし穴（engine の docstring に書いておきたい）
+
+ビーコンは**ブラウザのナビゲーションと同じ形の要求**にだけ挿し込まれる。素の `fetch()` や
+`curl` で取った HTML には入らないので、「HTML に `data-cf-beacon` があるか」で計測の有無を
+判定すると必ず「無い」と出る。`Accept: text/html` と `Sec-Fetch-Mode: navigate` を付ければ入る。

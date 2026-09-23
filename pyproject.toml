@@ -43,3 +43,5 @@ select = ["E", "F", "I", "UP", "B"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
+# リポジトリ直下を import できるようにする（`tools/` の週次のツールを試験するため）
+pythonpath = ["."]

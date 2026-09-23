@@ -48,6 +48,9 @@ jobs:
           # Actions の実行時間を数えるのに使う（無料枠に近づいたら気づけるように）
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
+          # 広告の転送ページの表示数。読み取りには Account Analytics: Read が要る
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
           uv run akiya-atlas weekly-report --days "${{ inputs.days || 7 }}" --source ci --no-save > summary.md
           # 検索の状況（sitemill ADR 0023）。日次が取り込んだ記録だけを読むので鍵は要らず、
@@ -55,6 +58,12 @@ jobs:
           {
             echo ""
             uv run sitemill search report --days "${{ inputs.days || 7 }}"
+          } >> summary.md
+          # 広告の転送ページの表示数（ADR 0010 追記）。Cloudflare Web Analytics を
+          # ホスト名で絞って読む。権限が足りなければ何を足せばよいかを書いて続ける
+          {
+            echo ""
+            uv run python -m tools.report_clicks --days "${{ inputs.days || 7 }}"
           } >> summary.md
           cat summary.md
 
