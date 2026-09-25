@@ -228,27 +228,37 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [],
-      "bank_url": "https://www.city.joso.lg.jp/search.php?keyword=%E7%A9%BA%E3%81%8D%E5%AE%B6",
+      "alternatives": [
+        "https://www.city.joso.lg.jp/kurashi_gyousei/kurashi/suidou_jyutaku/sumai/vacant_house_bank/",
+        "https://www.city.joso.lg.jp/kurashi_gyousei/kurashi/suidou_jyutaku/sumai/vacant_house_bank/bank_katsuyou.html",
+        "https://www.city.joso.lg.jp/kurashi_gyousei/kurashi/suidou_jyutaku/sumai/vacant_house_bank/vacant_house_qa.html",
+        "https://s-kantan.jp/city-joso-ibaraki-u/profile/userLogin_initDisplay.action?nextURL=CqTLFdO4voahM76isjZmPTQ9f2VYJzSnVtXuWY28Gc9eSTM4t81XFmzxcfpobNgv5gCKYSkp19o5%0D%0ARp8zIhNVF2rHN7gSPBC2qFvcTm57daicfFDTtCZr1w%3D%3DIb3hXO5qBks%3D%0D%0A",
+        "https://www.city.joso.lg.jp/kurashi_gyousei/kurashi/suidou_jyutaku/sumai/vacant_house_bank/r04_bank_subsidiary.html"
+      ],
+      "bank_status": "available",
+      "bank_url": "https://www.city.joso.lg.jp/kurashi_gyousei/kurashi/suidou_jyutaku/sumai/vacant_house_bank/registered_property_info/page000499.html",
       "code": "082112",
-      "confidence": 0.859,
+      "confidence": 0.8484999999999999,
       "cross_linked": false,
+      "detail_pattern": null,
       "evidence_quote": "公式ドメイン www.city.joso.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.joso.lg.jp/",
       "external_links": [],
-      "listing_rows": 0,
-      "listing_score": 0.01,
+      "extract_gap": false,
+      "listing_rows": 8,
+      "listing_score": 0.96,
       "name": "常総市",
       "name_kana": "ｼﾞｮｳｿｳｼ",
       "official_url": "www.city.joso.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_detail",
+      "page_class": "listing_index",
       "pagination_pattern": null,
       "policy": "crawl",
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [

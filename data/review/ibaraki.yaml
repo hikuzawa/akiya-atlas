@@ -116,10 +116,10 @@ candidates:
   note: null
 - key: 082112
   label: 茨城県 常総市
-  url: https://www.city.joso.lg.jp/search.php?keyword=%E7%A9%BA%E3%81%8D%E5%AE%B6
-  page_class: listing_detail
-  class_label: 物件詳細（静的）
-  confidence: 0.86
+  url: https://www.city.joso.lg.jp/kurashi_gyousei/kurashi/suidou_jyutaku/sumai/vacant_house_bank/registered_property_info/page000499.html
+  page_class: listing_index
+  class_label: 物件一覧（静的）
+  confidence: 0.85
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.city.joso.lg.jp（.lg.jp、地方公共団体専用ドメイン）
   evidence_url: https://www.city.joso.lg.jp/

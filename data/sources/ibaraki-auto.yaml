@@ -223,7 +223,7 @@ sources:
     prefecture: 茨城県
     prefecture_slug: ibaraki
     slug: 082112
-    bank_url: https://www.city.joso.lg.jp/search.php?keyword=%E7%A9%BA%E3%81%8D%E5%AE%B6
+    bank_url: https://www.city.joso.lg.jp/kurashi_gyousei/kurashi/suidou_jyutaku/sumai/vacant_house_bank/registered_property_info/page000499.html
     bank_status: available
     extract_pending: false
     map_query: 茨城県常総市
@@ -232,8 +232,8 @@ sources:
     url: https://www.city.joso.lg.jp/
     checked_on: '2026-09-15'
   pages:
-  - url: https://www.city.joso.lg.jp/search.php?keyword=%E7%A9%BA%E3%81%8D%E5%AE%B6
-    kind: listing_detail
+  - url: https://www.city.joso.lg.jp/kurashi_gyousei/kurashi/suidou_jyutaku/sumai/vacant_house_bank/registered_property_info/page000499.html
+    kind: listing_index
   allow_hosts:
   - www.city.joso.lg.jp
   max_pages: 30
