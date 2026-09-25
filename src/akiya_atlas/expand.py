@@ -15,7 +15,7 @@ from collections.abc import Collection
 from dataclasses import dataclass, field
 from datetime import UTC, date, datetime
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import parse_qsl, urlsplit
 
 import yaml
 from sitemill.build.pii import PHONE_RE
@@ -282,6 +282,46 @@ _NOT_LIST_ANCHOR = re.compile(
 )
 # 添付ファイル（申請書・チラシ）は HTML の一覧になり得ないので候補から外す
 _DOC_URL = re.compile(r"\.(?:pdf|docx?|xlsx?|pptx?|zip)(?:[?#].*)?$", re.I)
+# サイト内検索の結果と検索画面。巡回先にしない（2026-09-26）。
+# 「検索フォーム型は自動で検索を送らず、リンクのみにする」方針は上書きファイルで自治体ごとに
+# 決めていたが、発見のコードには歯止めが無く、GET の検索結果 URL を 2 件巡回先に採っていた
+# （常総市の物件一覧 search.php?keyword=空き家、当麻町の補助制度 /search/node?keys=住宅補助）。
+# 検索結果を巡回するのは、検索を自動で送るのと同じことなので、候補の段階で外す
+_SEARCH_PATH = re.compile(
+    r"(?:^|/)(?:search|kensaku|site-?search)(?:/|\.(?:php|html?|cgi|aspx?|jsp)|$)", re.I
+)
+_SEARCH_KEYS = frozenset(
+    {
+        "keys",
+        "keyword",
+        "keywords",
+        "kw",
+        "q",
+        "query",
+        "s",
+        "search",
+        "word",
+        "searchword",
+        "free_word",
+        "freeword",
+    }
+)
+
+
+def is_site_search_url(url: str) -> bool:
+    """サイト内検索の結果か検索画面の URL か。巡回先の候補から外すのに使う。
+
+    パスに `search`（`/search/`・`search.php` など）があるか、検索語の引数
+    （`?keys=` `?keyword=` `?q=` `?s=` など）を持つものを検索とみなす。
+    一覧のページ送り（`?page=2`）や絞り込み（`?area=1`）は検索ではないので通す。
+    """
+    parts = urlsplit(url)
+    if _SEARCH_PATH.search(parts.path):
+        return True
+    keys = {k.lower() for k, _ in parse_qsl(parts.query, keep_blank_values=True)}
+    return bool(keys & _SEARCH_KEYS)
+
+
 MAX_CANDIDATE_FETCH = 5  # 1 市町村あたり実際に取得して一覧らしさを見る候補数の上限
 # 選んだページが一覧でないとき、少なくとも空き家バンクに触れていれば「制度案内（info）」とみなす
 _BANK_MENTION = re.compile(
@@ -317,7 +357,7 @@ def _collect_bank_candidates(
     seen_pages: set[str] = {official_url}
 
     def consider(url: str, text: str, found_on: str) -> None:
-        if _DOC_URL.search(url):
+        if _DOC_URL.search(url) or is_site_search_url(url):
             return
         if host_of(url) != official.host:
             # 公式ドメイン外は「空き家」のアンカーで案内されているか、既知の民間プラットフォーム
@@ -495,6 +535,7 @@ def select_bank_page(
             for ln in extract_links(best.html, best.url)
             if _LIST_ANCHOR.search(ln.text)
             and not _NOT_LIST_ANCHOR.search(ln.text)
+            and not is_site_search_url(ln.url)
             and host_of(ln.url) == host_of(best.url)
             and ln.url != best.url
         ][:2]
@@ -579,6 +620,8 @@ def find_subsidy_pages(
             text = (link.text or "").strip()
             if not text or _DOC_URL.search(link.url) or host_of(link.url) != host:
                 continue
+            if is_site_search_url(link.url):
+                continue  # 検索結果は制度のページではない（当麻町の /search/node?keys=住宅補助）
             if link.url in seen:
                 continue
             if _SUBSIDY_ANCHOR.search(text) and _SUBSIDY_TOPIC.search(text + " " + link.url):
@@ -833,7 +876,7 @@ def detect_detail_follow(
     shapes: dict[str, list[str]] = {}
     for ln in extract_links(html, index_url):
         parts = urlsplit(ln.url)
-        if parts.netloc != base.netloc or _DOC_URL.search(parts.path):
+        if parts.netloc != base.netloc or _DOC_URL.search(parts.path) or is_site_search_url(ln.url):
             continue
         if parts.path.rstrip("/") == base_path or not _DIGITS.search(parts.path):
             continue
