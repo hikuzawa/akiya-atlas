@@ -830,14 +830,14 @@ candidates:
   note: null
 - key: '204820'
   label: 長野県 松川村
-  url: https://www.vill.matsukawa.nagano.jp/search/?q=空き家バンク
-  page_class: not_listing
-  class_label: 物件ページではない
-  confidence: 0.6
+  url: http://rakuen-akiya.jp/
+  page_class: third_party
+  class_label: 第三者プラットフォーム
+  confidence: 0.99
   operator_kind: municipality
-  evidence_quote: 公式ドメイン www.vill.matsukawa.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
+  evidence_quote: 公式サイト（www.vill.matsukawa.nagano.jp）から空き家バンクとして案内されているリンク
   evidence_url: https://www.vill.matsukawa.nagano.jp/
-  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  reason: 掲載は民間プラットフォーム。巡回せずリンクのみ
   proposed_policy: link_only
   proposed_action: 承認
   decision: null

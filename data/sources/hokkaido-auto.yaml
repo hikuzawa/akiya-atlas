@@ -54,91 +54,6 @@ sources:
     quote: 公式ドメイン www.city.hakodate.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hakodate.hokkaido.jp/
     checked_on: '2026-09-15'
-  external_links:
-  - label: 最近見た物件 0 件
-    url: https://hakodate-c01202.akiya-athome.jp/mypage/history/list/
-  - label: 検討リスト 0 件
-    url: https://hakodate-c01202.akiya-athome.jp/mypage/favorite/list/
-  - label: 保存した条件 0 件
-    url: https://hakodate-c01202.akiya-athome.jp/mypage/hope/list/
-  - label: akiya-athome.jp
-    url: https://hakodate-c01202.akiya-athome.jp/
-  - label: マンション(売買)
-    url: https://hakodate-c01202.akiya-athome.jp/buy/mansion/rail/
-  - label: 戸建(売買)
-    url: https://hakodate-c01202.akiya-athome.jp/buy/house/rail/
-  - label: 土地(売買)
-    url: https://hakodate-c01202.akiya-athome.jp/buy/land/rail/
-  - label: 事業・投資物件(売買)
-    url: https://hakodate-c01202.akiya-athome.jp/buy/invest/rail/
-  - label: 住まい(賃貸)
-    url: https://hakodate-c01202.akiya-athome.jp/rent/live/rail/
-  - label: 事業用(賃貸)
-    url: https://hakodate-c01202.akiya-athome.jp/rent/business/rail/
-  - label: マンション(売買)
-    url: https://hakodate-c01202.akiya-athome.jp/buy/mansion/area/
-  - label: 戸建(売買)
-    url: https://hakodate-c01202.akiya-athome.jp/buy/house/area/
-  - label: 土地(売買)
-    url: https://hakodate-c01202.akiya-athome.jp/buy/land/area/
-  - label: 事業・投資物件(売買)
-    url: https://hakodate-c01202.akiya-athome.jp/buy/invest/area/
-  - label: 住まい(賃貸)
-    url: https://hakodate-c01202.akiya-athome.jp/rent/live/area/
-  - label: 事業用(賃貸)
-    url: https://hakodate-c01202.akiya-athome.jp/rent/business/area/
-  - label: マンション(売買)
-    url: https://hakodate-c01202.akiya-athome.jp/buy/mansion/map/
-  - label: 戸建(売買)
-    url: https://hakodate-c01202.akiya-athome.jp/buy/house/map/
-  - label: 土地(売買)
-    url: https://hakodate-c01202.akiya-athome.jp/buy/land/map/
-  - label: 事業・投資物件(売買)
-    url: https://hakodate-c01202.akiya-athome.jp/buy/invest/map/
-  - label: 住まい(賃貸)
-    url: https://hakodate-c01202.akiya-athome.jp/rent/live/map/
-  - label: 事業用(賃貸)
-    url: https://hakodate-c01202.akiya-athome.jp/rent/business/map/
-  - label: 登録番号4は,成約しました。(湯浜)
-    url: https://hakodate-c01202.akiya-athome.jp/contents/news/detail/?id=1847
-  - label: 登録番号1は,成約しました。(桔梗2丁目)
-    url: https://hakodate-c01202.akiya-athome.jp/contents/news/detail/?id=1754
-  - label: 登録番号3は,成約しました。(本通3丁目)
-    url: https://hakodate-c01202.akiya-athome.jp/contents/news/detail/?id=1722
-  - label: 登録番号2は,成約しました。(谷地頭町)
-    url: https://hakodate-c01202.akiya-athome.jp/contents/news/detail/?id=1694
-  - label: 函館市空き家バンクを公開しました。
-    url: https://hakodate-c01202.akiya-athome.jp/contents/news/detail/?id=1571
-  - label: もっと見る
-    url: https://hakodate-c01202.akiya-athome.jp/contents/news/list/
-  - label: akiya-athome.jp
-    url: https://hakodate-c01202.akiya-athome.jp/bukken/detail/buy/%E5%87%BD%E9%A4%A8%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47838
-  - label: akiya-athome.jp
-    url: https://hakodate-c01202.akiya-athome.jp/bukken/detail/buy/%E5%87%BD%E9%A4%A8%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47922
-  - label: '空き家バンク以外の
-
-      函館市の
-
-      中古一戸建てを探す
-
-      (athome)'
-    url: https://www.athome.co.jp/kodate/chuko/hokkaido/hakodate-city/list/
-  - label: '空き家バンク以外の
-
-      函館市の土地を探す
-
-      (athome)'
-    url: https://www.athome.co.jp/tochi/hokkaido/hakodate-city/list/
-  - label: '空き家バンク以外の
-
-      函館市の
-
-      賃貸居住用物件を探す
-
-      (athome)'
-    url: https://www.athome.co.jp/chintai/hokkaido/hakodate-city/list/
-  - label: プライバシーポリシー
-    url: https://hakodate-c01202.akiya-athome.jp/contents/static/privacy-policy/
 - id: hokkaido-012033
   name: 小樽市空き家バンク
   operator: 小樽市
@@ -3791,7 +3706,7 @@ sources:
     prefecture: 北海道
     prefecture_slug: hokkaido
     slug: '016071'
-    bank_url: https://www.town.urakawa.hokkaido.jp/gyosei/search/?q=空き家
+    bank_url: https://www.town.urakawa.hokkaido.jp/iju/bank/
     bank_status: spa_unsupported
     extract_pending: false
     map_query: 北海道浦河町
@@ -3799,7 +3714,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.urakawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.urakawa.hokkaido.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-26'
 - id: hokkaido-016080
   name: 様似町空き家バンク
   operator: 様似町

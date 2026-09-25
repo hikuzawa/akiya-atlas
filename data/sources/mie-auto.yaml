@@ -476,7 +476,7 @@ sources:
     prefecture: 三重県
     prefecture_slug: mie
     slug: '243434'
-    bank_url: https://www2.town.asahi.mie.jp/search3/ftsservlet?keyword=空家&btnG=検索&logical=1&pagesize=50&orderby=0&sort=1&kind=0&item=0&siteId=-1&dateDiff=
+    bank_url: https://www2.town.asahi.mie.jp/www/contents/1671064576640/index.html
     bank_status: info
     extract_pending: false
     map_query: 三重県朝日町
@@ -484,7 +484,7 @@ sources:
   operator_evidence:
     quote: 三重県 県内市町（公式サイト）に掲載された公式サイト（www2.town.asahi.mie.jp）
     url: https://www.pref.mie.lg.jp/link/link1.htm
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-26'
 - id: mie-243442
   name: 川越町空き家バンク
   operator: 川越町
