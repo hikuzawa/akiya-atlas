@@ -137,3 +137,54 @@ def test_no_committed_seed_is_a_site_search() -> None:
         if expand.is_site_search_url(page.url)
     ]
     assert not bad, bad
+
+
+@respx.mock
+def test_a_portal_page_does_not_list_its_own_menu_as_related_sites() -> None:
+    """選んだページ自身が民間プラットフォームのとき、そのサイトのメニューを関連サイトにしない。
+
+    楽園信州・アットホームの自治体ページを空き家バンクとして選ぶと、「最近見た物件 0 件」
+    「お気に入り」「1021 件」などのメニューまで「物件を探せるサイト」に並んでいた
+    （函館市・須坂市・南木曽町・下田市・足利市・真岡市と、選び直した松川村。2026-09-26）。
+    """
+    from sitemill.classify import PlatformRegistry
+
+    from akiya_atlas.official_domains import classify_host
+
+    official_host = "www.vill.kakuu.nagano.jp"
+    portal = "https://rakuen-akiya.jp"
+    respx.get(f"https://{official_host}/robots.txt").mock(return_value=httpx.Response(404))
+    respx.get(f"{portal}/robots.txt").mock(return_value=httpx.Response(404))
+    respx.get(f"https://{official_host}/").mock(
+        return_value=httpx.Response(
+            200,
+            text=(
+                "<html><head><title>架空村</title></head><body>"
+                f"<a href='{portal}/'>楽園信州空き家バンク・空き地バンク</a></body></html>"
+            ),
+            headers={"content-type": "text/html; charset=utf-8"},
+        )
+    )
+    respx.get(f"{portal}/").mock(
+        return_value=httpx.Response(
+            200,
+            text=(
+                "<html><body><h1>楽園信州空き家バンク</h1>"
+                f"<a href='{portal}/favorite/'>お気に入り</a>"
+                f"<a href='{portal}/history/'>閲覧履歴</a>"
+                f"<a href='{portal}/housesearch/all/'>1021 件</a>"
+                # 自社の一般の不動産一覧への誘導。ホストは違うが、市町村の案内ではない
+                "<a href='https://www.athome.co.jp/kodate/chuko/nagano/list/'>"
+                "空き家バンク以外の中古一戸建てを探す (athome)</a>"
+                "</body></html>"
+            ),
+            headers={"content-type": "text/html; charset=utf-8"},
+        )
+    )
+    for path in ("/sitemap.xml", "/sitemap_index.xml"):
+        respx.get(f"https://{official_host}{path}").mock(return_value=httpx.Response(404))
+    official = classify_host(official_host, "nagano")
+    with _client() as c:
+        probe = expand.find_bank_page(f"https://{official_host}/", official, c, PlatformRegistry())
+    assert probe.url == f"{portal}/"
+    assert probe.externals == []  # メニューも、自社の一般の一覧への誘導も拾わない

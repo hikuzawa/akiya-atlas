@@ -584,11 +584,16 @@ def select_bank_page(
     if not probe.host_official:
         found_on_official = bool(best.cand.found_on) and _host_is(best.cand.found_on, official.host)
         probe.cross_linked = found_on_official and bool(_BANK_ANCHOR.search(best.cand.text or ""))
-    # 外部プラットフォームへのリンクを収集
-    for ln in extract_links(best.html, best.url):
-        if platforms.is_platform(ln.url):
-            label = clean_link_label(ln.text) or platforms.match(ln.url) or ""
-            probe.externals.append(ExternalLink(label=label, url=ln.url))
+    # 外部プラットフォームへのリンクを収集する。関連サイトは「市町村が案内している民間サイト」
+    # なので、市町村のページからだけ拾う。選んだページ自身がプラットフォーム（楽園信州・
+    # アットホームの自治体ページ）のときは拾わない。拾うと、そのサイトのメニュー（「最近見た
+    # 物件 0 件」「お気に入り」）や、自社の一般の不動産一覧への誘導（「空き家バンク以外の函館市の
+    # 中古一戸建てを探す」）まで並び、函館市などで 23〜65 件になっていた（2026-09-26）
+    if not platforms.is_platform(best.url):
+        for ln in extract_links(best.html, best.url):
+            if platforms.is_platform(ln.url):
+                label = clean_link_label(ln.text) or platforms.match(ln.url) or ""
+                probe.externals.append(ExternalLink(label=label, url=ln.url))
     return probe
 
 
