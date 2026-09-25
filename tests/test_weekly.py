@@ -372,5 +372,41 @@ def test_no_robots_failure_says_so(ws: Workspace) -> None:
     now = datetime(2026, 9, 24, 12, 0, tzinfo=UTC)
     hosts, times, stalled = weekly.robots_failures(ws, days=7, now=now)
     assert weekly.robots_lines(hosts, times, stalled) == [
-        "- robots.txt を取得できなかったホスト: なし"
+        "- robots.txt で巡回できなかったホスト: なし"
     ]
+
+
+def test_every_robots_reason_counts_not_only_a_failed_fetch(ws: Workspace) -> None:
+    """robots.txt が 202 を返す・拒否される、も続けば同じく更新が止まる。
+
+    最初は「取得できない」だけを拾っていて、robots.txt が 202 を返し続けて 10 日止まっていた
+    茨城県河内町と、拒否された検索ページを巡回先にしていた北海道当麻町を見逃した（2026-09-26）。
+    打ち手が違う（相手に当たり直す／巡回先の URL を見直す）ので、理由も添える。
+    """
+    now = datetime(2026, 9, 26, 12, 0, tzinfo=UTC)
+    kawachi = "https://www.town.ibaraki-kawachi.lg.jp/page/page001058.html"
+    tohma = "https://www.town.tohma.hokkaido.jp/search/node?keys=住宅補助"
+    _run(
+        ws,
+        "20260925-210000-crawl",
+        now - timedelta(days=1),
+        5.0,
+        ci=True,
+        errors=[f"{kawachi}: robots.txt 202: 今回は巡回しない", f"{tohma}: robots.txt により拒否"],
+    )
+    _crawl_state(
+        ws,
+        {
+            kawachi: {
+                "error": "robots.txt 202: 今回は巡回しない",
+                "fetched_at": (now - timedelta(days=10)).isoformat(),
+            },
+            tohma: {"error": "robots.txt により拒否", "fetched_at": None},
+        },
+    )
+    hosts, times, stalled = weekly.robots_failures(ws, days=7, now=now)
+    assert hosts == ["www.town.ibaraki-kawachi.lg.jp", "www.town.tohma.hokkaido.jp"]
+    line = "\n".join(weekly.robots_lines(hosts, times, stalled))
+    assert "www.town.ibaraki-kawachi.lg.jp（最終取得から 10 日）: robots.txt が 202 を返す" in line
+    assert "www.town.tohma.hokkaido.jp（一度も取得できていない）: robots.txt で拒否" in line
+    assert "巡回先の URL を見直す" in line and "相手に当たり直す" in line
