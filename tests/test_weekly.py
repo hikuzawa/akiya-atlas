@@ -410,3 +410,49 @@ def test_every_robots_reason_counts_not_only_a_failed_fetch(ws: Workspace) -> No
     assert "www.town.ibaraki-kawachi.lg.jp（最終取得から 10 日）: robots.txt が 202 を返す" in line
     assert "www.town.tohma.hokkaido.jp（一度も取得できていない）: robots.txt で拒否" in line
     assert "巡回先の URL を見直す" in line and "相手に当たり直す" in line
+
+
+def test_a_page_taken_off_the_crawl_list_stops_being_reported(ws: Workspace) -> None:
+    """巡回先から外した URL の失敗は、状態ファイルに残っても「止まっている」と出さない。
+
+    当麻町の検索 URL を巡回先から外したあと（2026-09-26）、状態ファイルに残った「拒否」の
+    記録のせいで、週次が当麻町を止まっていると出し続けるところだった。
+    """
+    ws.sources_dir.mkdir(parents=True, exist_ok=True)
+    (ws.sources_dir / "hokkaido-auto.yaml").write_text(
+        """
+sources:
+  - id: hokkaido-014541
+    name: 当麻町
+    operator: 当麻町
+    operator_kind: municipality
+    operator_evidence:
+      quote: 公式ドメイン
+      url: https://www.town.tohma.hokkaido.jp/
+    policy: crawl
+    official_url: https://www.town.tohma.hokkaido.jp/
+    pages:
+      - url: https://www.town.tohma.hokkaido.jp/recommend-06
+        kind: subsidy
+""",
+        encoding="utf-8",
+    )
+    now = datetime(2026, 9, 26, 12, 0, tzinfo=UTC)
+    _crawl_state(
+        ws,
+        {
+            # 外した巡回先。拒否の記録だけが残っている
+            "https://www.town.tohma.hokkaido.jp/search/node?keys=住宅補助": {
+                "error": "robots.txt により拒否",
+                "fetched_at": None,
+            },
+            # いまの巡回先で、本当に止まっているもの
+            "https://www.town.tohma.hokkaido.jp/recommend-06": {
+                "error": "robots.txt を取得できないため今回は巡回しない",
+                "fetched_at": (now - timedelta(days=5)).isoformat(),
+            },
+        },
+    )
+    _, _, stalled = weekly.robots_failures(ws, days=7, now=now)
+    assert [(h, age) for h, age, _ in stalled] == [("www.town.tohma.hokkaido.jp", 5)]
+    assert "取得できない" in stalled[0][2]  # 外した URL の「拒否」ではない

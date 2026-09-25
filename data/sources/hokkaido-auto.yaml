@@ -2322,8 +2322,6 @@ sources:
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
     checked_on: '2026-09-15'
   pages:
-  - url: https://www.town.tohma.hokkaido.jp/search/node?keys=住宅補助
-    kind: subsidy
   - url: https://www.town.tohma.hokkaido.jp/recommend-06
     kind: subsidy
   allow_hosts:

@@ -294,6 +294,17 @@ def _host(url: str) -> str:
     return urlsplit(url).hostname or url
 
 
+def _current_seeds(ws: Workspace) -> set[str] | None:
+    """いま巡回先になっている URL。読めなければ None（絞り込まずに全部見る）。"""
+    try:
+        from akiya_atlas.data import load_sources
+
+        seeds = {page.url for source in load_sources(ws) for page in source.pages}
+    except Exception:  # noqa: BLE001 - 週次を止めない。絞り込めなくても数は出す
+        return None
+    return seeds or None  # 巡回先が 1 つも読めないときも絞り込まない
+
+
 def _robots_url(err: str) -> str:
     """実行レポートの 1 行（`URL: robots.txt …`）から URL を取り出す。"""
     return err.split(": " + ROBOTS_MARK, 1)[0]
@@ -354,9 +365,14 @@ def robots_failures(
         urls = (json.loads(state.read_text(encoding="utf-8")) or {}).get("urls") or {}
     except (OSError, json.JSONDecodeError):
         urls = {}
+    # 巡回先から外した URL の状態は、巡回されないまま残る。外したあとまで「止まっている」と
+    # 出し続けないよう、いま巡回先にあるものだけを見る（当麻町の検索 URL を外した 2026-09-26）
+    seeds = _current_seeds(ws)
     for url, st in urls.items():
         error = str(st.get("error") or "")
         if ROBOTS_MARK not in error:
+            continue
+        if seeds is not None and url not in seeds:
             continue
         host = _host(url)
         fetched = _dt(st.get("fetched_at"))
