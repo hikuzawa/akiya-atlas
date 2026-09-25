@@ -112,3 +112,28 @@ def test_a_search_link_is_not_a_bank_candidate() -> None:
     urls = [cand.url for cand in cands]
     assert BASE + "/akiya/list.html" in urls
     assert not any(expand.is_site_search_url(u) for u in urls)
+
+
+def test_no_committed_seed_is_a_site_search() -> None:
+    """発見の歯止めを通らない経路（上書きファイル・手作業）で戻っていないことを、
+    コミット済みのデータで確かめる（ADR 0016 の考え方）。
+
+    物件一覧の場所（bank_url）は見ない。検索フォームしか無い自治体は、上書きファイルで
+    「検索フォームへの案内」と決めて、フォームの URL を載せている（中間市・国東市）。
+    巡回先（pages）に検索が入るのだけが、検索を自動で送ることになる。
+    """
+    from pathlib import Path
+
+    from sitemill.settings import Workspace
+
+    from akiya_atlas.data import load_sources
+
+    root = Path(__file__).resolve().parents[1]
+    ws = Workspace.open(root)
+    bad = [
+        (source.id, page.url)
+        for source in load_sources(ws)
+        for page in source.pages
+        if expand.is_site_search_url(page.url)
+    ]
+    assert not bad, bad
