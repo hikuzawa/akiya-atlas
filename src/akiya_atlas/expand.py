@@ -84,6 +84,10 @@ class MunicipalityFinding:
     subsidy_urls: list[str] = field(default_factory=list)
     # 一覧は確認できているのに 1 件も取り込めていない（抽出側の課題。ページの文面を分ける）
     extract_gap: bool = False
+    # 運営主体（公式サイト）を実際に確かめた日（ISO）。`decide` で公式ホストを解決したときだけ
+    # 入れる。県の YAML を作り直すたびに今日にすると、`--code` で 1 自治体を見ただけで県の全部の
+    # 確認日が進み、`/data/<県>/` の「確認日」が嘘になる（2026-09-26 に 179 件・44 件で起きた）
+    evidence_checked_on: str | None = None
 
 
 def _name_key(text: str) -> str:
@@ -681,6 +685,7 @@ def decide(
         return f
 
     # 公式ドメインが解決できた = 運営主体は自治体（確認済み）
+    f.evidence_checked_on = jst_today().isoformat()
     f.official_url = official.host
     f.operator_kind = OperatorKind.municipality
     f.evidence_quote = official.evidence()
@@ -755,7 +760,9 @@ def finding_to_source(f: MunicipalityFinding, existing_ids: set[str]) -> Source 
         operator=f.muni.name,
         operator_kind=f.operator_kind,
         operator_evidence=OperatorEvidence(
-            quote=f.evidence_quote or "", url=f.evidence_url or f.bank_url, checked_on=date.today()
+            quote=f.evidence_quote or "",
+            url=f.evidence_url or f.bank_url,
+            checked_on=date.fromisoformat(f.evidence_checked_on or jst_today().isoformat()),
         ),
         policy=CrawlPolicy.crawl,
         official_url=f.official_url or f.bank_url,
@@ -1136,7 +1143,8 @@ def finding_to_source_dict(f: MunicipalityFinding, *, prefecture_name: str) -> d
         entry["operator_evidence"] = {
             "quote": f.evidence_quote,
             "url": f.evidence_url or entry["official_url"],
-            "checked_on": date.today().isoformat(),
+            # 確かめた日が行に無ければ空にし、`_write_sources_and_review` が前の値で埋める
+            "checked_on": f.evidence_checked_on,
         }
     pages: list[dict] = []
     if status == "available" and f.bank_url:
@@ -1266,6 +1274,7 @@ def _finding_to_row(f: MunicipalityFinding) -> dict:
         "operator_kind": f.operator_kind.value,
         "evidence_quote": f.evidence_quote,
         "evidence_url": f.evidence_url,
+        "evidence_checked_on": f.evidence_checked_on,
         "cross_linked": f.cross_linked,
         "policy": str(f.policy),
         # 物件一覧が取れるか（ADR 0013）。policy は「巡回してよいか」なので別に持つ
@@ -1309,6 +1318,7 @@ def _row_to_finding(row: dict) -> MunicipalityFinding:
         operator_kind=OperatorKind(row.get("operator_kind", "unknown")),
         evidence_quote=row.get("evidence_quote"),
         evidence_url=row.get("evidence_url"),
+        evidence_checked_on=row.get("evidence_checked_on"),
         cross_linked=row.get("cross_linked", False),
         external_links=[
             ExternalLink(label=clean_link_label(e["label"]), url=e["url"], note=e.get("note"))
@@ -1370,6 +1380,28 @@ def _apply_page_note(entry: dict, overrides: OfficialOverrides | None) -> None:
         muni["bank_note"] = note
 
 
+def _keep_checked_on(auto_path: Path, adopted: list[dict]) -> None:
+    """今回確かめていない source の確認日を、いまの YAML の値のまま残す。
+
+    確かめた日を持つ行（`decide` を通ったもの）はその日を使う。持たない行は、県の YAML を
+    作り直す前に書いてあった日付を引き継ぐ。どちらも無い（初めて載る）ときだけ今日にする。
+    """
+    previous: dict[str, str] = {}
+    if auto_path.is_file():
+        try:
+            old = yaml.safe_load(auto_path.read_text(encoding="utf-8")) or {}
+        except yaml.YAMLError:
+            old = {}
+        for entry in old.get("sources") or []:
+            day = (entry.get("operator_evidence") or {}).get("checked_on")
+            if entry.get("id") and day:
+                previous[str(entry["id"])] = str(day)
+    for entry in adopted:
+        evidence = entry.get("operator_evidence")
+        if evidence is not None and not evidence.get("checked_on"):
+            evidence["checked_on"] = previous.get(str(entry.get("id"))) or jst_today().isoformat()
+
+
 def _write_sources_and_review(
     ws: Workspace,
     pref_name: str,
@@ -1379,6 +1411,7 @@ def _write_sources_and_review(
 ) -> None:
     auto_path = ws.sources_dir / f"{pref_slug}-auto.yaml"
     auto_path.parent.mkdir(parents=True, exist_ok=True)
+    _keep_checked_on(auto_path, adopted)
     header = "# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。\n"
     body = yaml.safe_dump({"sources": adopted}, allow_unicode=True, sort_keys=False, width=200)
     auto_path.write_text(header + body, encoding="utf-8", newline="\n")
