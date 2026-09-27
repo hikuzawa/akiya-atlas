@@ -454,6 +454,62 @@ def _rank_key(t: _Tried) -> tuple[int, int, float, int, int, int]:
     )
 
 
+MAX_LIST_HOPS = 2  # 案内ページから「物件一覧」のリンクを辿る段数
+MIN_BODY_TEXT = 200  # これ未満なら本文を取り出せていないとみなす（抽出側の問題）
+
+
+def _list_links(page: _Tried) -> list:
+    """ページにある「物件一覧」らしいリンク（同一ホスト・検索でない）。先頭の 2 本まで。"""
+    return [
+        ln
+        for ln in extract_links(page.html, page.url)
+        if _LIST_ANCHOR.search(ln.text)
+        and not _NOT_LIST_ANCHOR.search(ln.text)
+        and not is_site_search_url(ln.url)
+        and host_of(ln.url) == host_of(page.url)
+        and ln.url != page.url
+    ][:2]
+
+
+def _hop_to_listing(
+    start: _Tried, client: PoliteClient, platforms: PlatformRegistry, tried: list[_Tried]
+) -> _Tried | None:
+    """案内ページから「物件一覧」のリンクを最大 2 段辿り、一覧を探す。
+
+    奥多摩町は、空家バンクの案内（メニューだけ）→「空家バンク登録物件一覧」（リンクが 1 本
+    あるだけのページ）→ 物件一覧（CGI、17 件）の 2 段だった。1 段で止めていたうえ、案内の
+    メニューの行を数えて「一覧らしい」と見ていたので辿りもせず、案内を巡回して 16 日間 0 件の
+    ままだった（2026-09-27）。一覧らしいページから辿るときと 2 段目では、物件の手がかりを
+    伴う一覧だけを採る。
+    """
+    frontier = [start]
+    seen = {t.url for t in tried}
+    for depth in range(MAX_LIST_HOPS):
+        strict = start.is_listing_page or depth > 0
+        found_next: list[_Tried] = []
+        for page in frontier:
+            for ln in _list_links(page):
+                if ln.url in seen:
+                    continue
+                seen.add(ln.url)
+                hop = _Cand(
+                    url=ln.url, text=ln.text[:80], found_on=page.url, score=start.cand.score
+                )
+                t = _fetch_and_score(ln.url, hop, client, platforms)
+                if t is None:
+                    continue
+                tried.append(t)
+                if (
+                    t.classified.page_class is PageClass.listing_index
+                    and t.listing.is_listing
+                    and (not strict or has_listing_evidence(t.listing))
+                ):
+                    return t
+                found_next.append(t)
+        frontier = found_next
+    return None
+
+
 def select_bank_page(
     cands: list[_Cand],
     official: OfficialHost,
@@ -465,7 +521,7 @@ def select_bank_page(
     """候補を実際に取得し、同一サイト内で最も一覧らしいページを選ぶ。
 
     - 2 ページ目以降を選んだら 1 ページ目に戻す（売却済みアーカイブを避ける）。
-    - 制度案内ページしか無ければ、そこから「物件一覧」リンクを 1 段だけ辿る。
+    - 物件の手がかりを伴う一覧が無ければ、そこから「物件一覧」リンクを 2 段まで辿る。
     """
     probe = BankProbe()
     if not cands:
@@ -496,25 +552,11 @@ def select_bank_page(
             tried.append(first)
             best = first
 
-    if not best.is_listing_page:
-        hops = [
-            ln
-            for ln in extract_links(best.html, best.url)
-            if _LIST_ANCHOR.search(ln.text)
-            and not _NOT_LIST_ANCHOR.search(ln.text)
-            and not is_site_search_url(ln.url)
-            and host_of(ln.url) == host_of(best.url)
-            and ln.url != best.url
-        ][:2]
-        for ln in hops:
-            hop = _Cand(url=ln.url, text=ln.text[:80], found_on=best.url, score=best.cand.score)
-            t = _fetch_and_score(ln.url, hop, client, platforms)
-            if t is None:
-                continue
-            tried.append(t)
-            if t.classified.page_class is PageClass.listing_index and t.listing.is_listing:
-                best = t
-                break
+    # 一覧らしく見えても本文がほとんど無いページ（メニューの行を数えたもの）からは辿る。
+    # 本文のある一覧からは辿らない（実物の小さな一覧から「成約済み物件一覧」へ移らないように）
+    menu_only = best.is_listing_page and len(page_text(best.html)) < MIN_BODY_TEXT
+    if not best.is_listing_page or menu_only:
+        best = _hop_to_listing(best, client, platforms, tried) or best
 
     if best.classified.page_class is PageClass.not_listing and not best.mentions_bank:
         # 一覧でも空き家バンクの案内でもない（例: 農業体験ツアー）→ バンクページは未特定
@@ -1459,7 +1501,6 @@ def reassess_finding(
     return f
 
 
-MIN_BODY_TEXT = 200  # これ未満なら本文を取り出せていないとみなす（抽出側の問題）
 # 「現在、登録物件はありません」のように、掲載が無いことをページ自身が書いている
 _EMPTY_NOTICE = re.compile(r"(?:物件|情報)[はも]?(?:、|\s)*(?:ありません|ございません|None)")
 
