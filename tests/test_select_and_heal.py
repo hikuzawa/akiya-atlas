@@ -300,6 +300,71 @@ def test_heal_keeps_a_page_whose_body_cannot_be_read(ws: Workspace) -> None:
     assert any("保留" in line for line in result["changed"])
 
 
+def _bukken(no: int, price: str) -> str:
+    return (
+        f"<div><h3><a href='/cgi-bin/bukken.php/1/detail/{no}'>物件番号:{no}</a></h3>"
+        f"<dl><dt>価格</dt><dd>{price}</dd><dt>所在地</dt><dd>架空市{no}丁目</dd>"
+        f"<dt>敷地面積等</dt><dd>土地 {150 + no}.5m2</dd></dl></div>"
+    )
+
+
+@respx.mock
+def test_a_swap_two_links_away_shows_up_in_the_weekly(
+    ws: Workspace, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """heal が 2 段先の一覧へ差し替えたら、週次に旧 URL と新 URL が並ぶ。
+
+    行き先が自動で変わるものは、変わったことが見えるようにしておく（2026-09-27）。
+    奥多摩町の形（案内のメニュー → リンクだけのページ → 物件一覧）で確かめる。
+    """
+    from akiya_atlas import weekly
+
+    monkeypatch.delenv("GH_REPO", raising=False)  # 環境に設定があっても外部に出ない
+    hub = BASE + "/akiya/index.html"
+    listing = BASE + "/cgi-bin/bukken.php/1/list?page_no=10"
+    _mock(
+        {
+            "/": (
+                "<html><head><title>架空市公式ホームページ</title></head><body>"
+                "<a href='/akiya/index.html'>空家バンク</a></body></html>"
+            ),
+            "/akiya/index.html": (
+                "<html><head><title>空家バンク</title></head><body><ul>"
+                "<li><a href='/akiya/about.html'>空家バンクとは</a></li>"
+                "<li><a href='/akiya/bukken.html'>空家バンク登録物件一覧</a></li>"
+                "<li><a href='/akiya/zero.html'>0円空家バンク</a></li></ul></body></html>"
+            ),
+            "/akiya/bukken.html": (
+                "<html><body><h1>空家バンク登録物件一覧</h1><p>"
+                "<a href='/cgi-bin/bukken.php/1/list?page_no=10'>空家バンク登録物件一覧</a>"
+                "</p></body></html>"
+            ),
+        }
+    )
+    respx.get(listing).mock(
+        return_value=httpx.Response(
+            200,
+            text="<html><body>"
+            + "".join(_bukken(n, f"{200 + n * 10}万円") for n in range(1, 5))
+            + "</body></html>",
+            headers={"content-type": "text/html; charset=utf-8"},
+        )
+    )
+    for path in ("/sitemap.xml", "/sitemap_index.xml"):
+        respx.get(f"{BASE}{path}").mock(return_value=httpx.Response(404))
+    expand._write_rows(ws, "nagano", "長野県", [_row(hub)])
+    _mark_crawled(ws, hub)
+
+    with _client() as c:
+        result = expand.heal(ws, client=c)
+
+    assert result["recrawl"] == [SID], result["changed"]
+    text = "\n".join(weekly.report(ws, days=7, repo=None))
+    assert "## 今週 heal が選び直した自治体（1 件）" in text
+    row = next(line for line in text.splitlines() if line.startswith("| 長野県架空市 |"))
+    assert f"| {hub} | {listing} |" in row and "一覧を差し替え" in row
+
+
 def _findings_row(ws: Workspace) -> dict:
     path = ws.runs_dir / "discover-nagano-findings.json"
     return json.loads(path.read_text(encoding="utf-8"))["findings"][0]
