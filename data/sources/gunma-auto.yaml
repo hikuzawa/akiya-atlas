@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.maebashi.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.maebashi.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gunma-102024
   name: 高崎市空き家バンク
   operator: 高崎市
@@ -41,7 +41,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.takasaki.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.takasaki.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gunma-102032
   name: 桐生市空き家バンク
   operator: 桐生市
@@ -62,7 +62,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kiryu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kiryu.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.kiryu.lg.jp/shisei/machi/iinekiryu/1015464.html
     kind: subsidy
@@ -94,7 +94,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.isesaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.isesaki.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.isesaki.lg.jp/soshiki/kensetu/jyutaku/akiya/1640.html
     kind: subsidy
@@ -124,7 +124,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ota.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ota.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.ota.gunma.jp/page/1150.html
     kind: listing_index
@@ -182,7 +182,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.numata.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.numata.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gunma-102075
   name: 館林市空き家バンク
   operator: 館林市
@@ -203,7 +203,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tatebayashi.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.tatebayashi.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.tatebayashi.gunma.jp/s069/kurashi/080/060/20200109041000.html
     kind: subsidy
@@ -234,7 +234,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.shibukawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.shibukawa.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.shibukawa.lg.jp/kurashi/000048/000049/p009554.html
     kind: subsidy
@@ -267,7 +267,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.fujioka.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.fujioka.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.fujioka.gunma.jp/soshiki/toshikensetsubu/kenchiku/1/1/hojokin/index.html
     kind: subsidy
@@ -296,7 +296,7 @@ sources:
   operator_evidence:
     quote: 群馬県 県内市町村等ホームページ外部リンク集に掲載された公式サイト（www.city.tomioka.lg.jp）。サイトを取得できなかったためリンクのみ（robots.txt を取得できないため今回は巡回しない）
     url: https://www.pref.gunma.jp/page/14523.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gunma-102113
   name: 安中市空き家バンク
   operator: 安中市
@@ -316,7 +316,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.annaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.annaka.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.annaka.lg.jp/akiya/annakabiyori/28298.html
     kind: listing_detail
@@ -343,7 +343,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.midori.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.midori.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gunma-103446
   name: 榛東村空き家バンク
   operator: 榛東村
@@ -364,7 +364,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.shinto.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.shinto.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.vill.shinto.gunma.jp/life/000049/000050/p000234.html
     kind: subsidy
@@ -394,7 +394,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yoshioka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.yoshioka.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gunma-103667
   name: 上野村空き家バンク
   operator: 上野村
@@ -415,7 +415,7 @@ sources:
   operator_evidence:
     quote: 群馬県 県内市町村等ホームページ外部リンク集に掲載された公式サイト（www.uenomura.jp）
     url: https://www.pref.gunma.jp/page/14523.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gunma-103675
   name: 神流町空き家バンク
   operator: 神流町
@@ -436,7 +436,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kanna.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kanna.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gunma-103829
   name: 下仁田町空き家バンク
   operator: 下仁田町
@@ -457,7 +457,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shimonita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.shimonita.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gunma-103837
   name: 南牧村空き家バンク
   operator: 南牧村
@@ -478,7 +478,7 @@ sources:
   operator_evidence:
     quote: 群馬県 県内市町村等ホームページ外部リンク集に掲載された公式サイト（nanmoku.ne.jp）
     url: https://www.pref.gunma.jp/page/14523.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gunma-103845
   name: 甘楽町空き家バンク
   operator: 甘楽町
@@ -499,7 +499,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kanra.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kanra.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.kanra.lg.jp/kensetu/tosikei/news/20230320125642.html
     kind: subsidy
@@ -532,7 +532,7 @@ sources:
   operator_evidence:
     quote: 群馬県 県内市町村等ホームページ外部リンク集に掲載された公式サイト（www.town.nakanojo.gunma.jp）
     url: https://www.pref.gunma.jp/page/14523.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.nakanojo.gunma.jp/soshiki/4/1495.html
     kind: subsidy
@@ -562,7 +562,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.naganohara.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.naganohara.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.naganohara.gunma.jp/life/?content=256
     kind: listing_index
@@ -591,7 +591,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.tsumagoi.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.tsumagoi.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gunma-104264
   name: 草津町空き家バンク
   operator: 草津町
@@ -612,7 +612,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kusatsu.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kusatsu.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gunma-104281
   name: 高山村空き家バンク
   operator: 高山村
@@ -633,7 +633,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.takayama.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.takayama.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.vill.takayama.gunma.jp/07kensetsu/jutaku-reform/reform.html
     kind: subsidy
@@ -662,7 +662,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.higashiagatsuma.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.higashiagatsuma.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.higashiagatsuma.gunma.jp/www/contents/1491266630427/index.html
     kind: subsidy
@@ -695,7 +695,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.katashina.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.katashina.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gunma-104442
   name: 川場村空き家バンク
   operator: 川場村
@@ -716,7 +716,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.kawaba.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.kawaba.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gunma-104485
   name: 昭和村空き家バンク
   operator: 昭和村
@@ -737,7 +737,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.showa.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.showa.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gunma-104493
   name: みなかみ町空き家バンク
   operator: みなかみ町
@@ -758,7 +758,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.minakami.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.minakami.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gunma-104647
   name: 玉村町空き家バンク
   operator: 玉村町
@@ -779,7 +779,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tamamura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.tamamura.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gunma-105210
   name: 板倉町空き家バンク
   operator: 板倉町
@@ -800,7 +800,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.itakura.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.itakura.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gunma-105228
   name: 明和町空き家バンク
   operator: 明和町
@@ -821,7 +821,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.meiwa.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.meiwa.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.meiwa.gunma.jp/life/soshiki/sangyoukankyo/hojokin/2120.html
     kind: subsidy
@@ -857,7 +857,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.chiyoda.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.chiyoda.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.chiyoda.gunma.jp/kensetsu/toshi/post-801.html
     kind: subsidy
@@ -886,7 +886,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.oizumi.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.oizumi.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gunma-105252
   name: 邑楽町空き家バンク
   operator: 邑楽町
@@ -907,7 +907,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ora.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ora.gunma.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.ora.gunma.jp/s055/060/180/akiyahojokin.html
     kind: subsidy

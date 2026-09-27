@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.naha.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.naha.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-472051
   name: 宜野湾市空き家バンク
   operator: 宜野湾市
@@ -41,7 +41,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ginowan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.ginowan.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-472077
   name: 石垣市空き家バンク
   operator: 石垣市
@@ -62,7 +62,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ishigaki.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ishigaki.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-472085
   name: 浦添市空き家バンク
   operator: 浦添市
@@ -83,7 +83,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.urasoe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.urasoe.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-472093
   name: 名護市空き家バンク
   operator: 名護市
@@ -104,7 +104,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nago.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.nago.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.city.nago.okinawa.jp/kurashi/2018072000178/
     kind: subsidy
@@ -131,7 +131,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.itoman.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.itoman.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.city.itoman.lg.jp/life/2/6/37/
     kind: subsidy
@@ -158,7 +158,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.okinawa.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.okinawa.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.city.okinawa.okinawa.jp/k042/contents/p00032.html
     kind: subsidy
@@ -187,7 +187,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tomigusuku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tomigusuku.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-472131
   name: うるま市空き家バンク
   operator: うるま市
@@ -208,7 +208,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.uruma.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.uruma.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-472140
   name: 宮古島市空き家バンク
   operator: 宮古島市
@@ -229,7 +229,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.miyakojima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.miyakojima.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-472158
   name: 南城市空き家バンク
   operator: 南城市
@@ -250,7 +250,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nanjo.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.nanjo.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473014
   name: 国頭村空き家バンク
   operator: 国頭村
@@ -271,7 +271,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.kunigami.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.kunigami.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473022
   name: 大宜味村空き家バンク
   operator: 大宜味村
@@ -292,7 +292,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.vill.ogimi.okinawa.jp）から空き家バンクとして案内されているリンク
     url: https://www.vill.ogimi.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473031
   name: 東村空き家バンク
   operator: 東村
@@ -313,7 +313,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.higashi.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.higashi.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.vill.higashi.okinawa.jp/kurashi_tetsuzuki/sumai/577.html
     kind: subsidy
@@ -340,7 +340,7 @@ sources:
   operator_evidence:
     quote: 沖縄県 リンク集（市町村ホームページ）に掲載された公式サイト（www.nakijin.jp）
     url: https://www.pref.okinawa.lg.jp/about/1018107.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473081
   name: 本部町空き家バンク
   operator: 本部町
@@ -361,7 +361,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.motobu.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.motobu.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473111
   name: 恩納村空き家バンク
   operator: 恩納村
@@ -382,7 +382,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.onna.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.onna.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473138
   name: 宜野座村空き家バンク
   operator: 宜野座村
@@ -403,7 +403,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.ginoza.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.ginoza.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473146
   name: 金武町空き家バンク
   operator: 金武町
@@ -424,7 +424,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kin.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kin.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473154
   name: 伊江村空き家バンク
   operator: 伊江村
@@ -445,7 +445,7 @@ sources:
   operator_evidence:
     quote: 沖縄県 リンク集（市町村ホームページ）に掲載された公式サイト（www.iejima.org）
     url: https://www.pref.okinawa.lg.jp/about/1018107.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473243
   name: 読谷村空き家バンク
   operator: 読谷村
@@ -466,7 +466,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.yomitan.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.yomitan.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473251
   name: 嘉手納町空き家バンク
   operator: 嘉手納町
@@ -487,7 +487,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kadena.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kadena.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.town.kadena.okinawa.jp/life/kur8570.html
     kind: subsidy
@@ -520,7 +520,7 @@ sources:
   operator_evidence:
     quote: 沖縄県 リンク集（市町村ホームページ）に掲載された公式サイト（www.chatan.jp）
     url: https://www.pref.okinawa.lg.jp/about/1018107.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473278
   name: 北中城村空き家バンク
   operator: 北中城村
@@ -541,7 +541,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.kitanakagusuku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.kitanakagusuku.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473286
   name: 中城村空き家バンク
   operator: 中城村
@@ -562,7 +562,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.nakagusuku.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.nakagusuku.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473294
   name: 西原町空き家バンク
   operator: 西原町
@@ -583,7 +583,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nishihara.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nishihara.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473481
   name: 与那原町空き家バンク
   operator: 与那原町
@@ -604,7 +604,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yonabaru.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yonabaru.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473502
   name: 南風原町空き家バンク
   operator: 南風原町
@@ -625,7 +625,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.haebaru.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.haebaru.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473537
   name: 渡嘉敷村空き家バンク
   operator: 渡嘉敷村
@@ -646,7 +646,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.tokashiki.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.tokashiki.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473545
   name: 座間味村空き家バンク
   operator: 座間味村
@@ -667,7 +667,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.zamami.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.zamami.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.vill.zamami.okinawa.jp/article/1784192523/
     kind: subsidy
@@ -696,7 +696,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.aguni.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.aguni.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473561
   name: 渡名喜村空き家バンク
   operator: 渡名喜村
@@ -717,7 +717,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.tonaki.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.tonaki.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473570
   name: 南大東村空き家バンク
   operator: 南大東村
@@ -738,7 +738,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.minamidaito.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.minamidaito.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473588
   name: 北大東村空き家バンク
   operator: 北大東村
@@ -759,7 +759,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン vill.kitadaito.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://vill.kitadaito.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473596
   name: 伊平屋村空き家バンク
   operator: 伊平屋村
@@ -780,7 +780,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.iheya.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.iheya.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473600
   name: 伊是名村空き家バンク
   operator: 伊是名村
@@ -801,7 +801,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.izena.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.izena.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473618
   name: 久米島町空き家バンク
   operator: 久米島町
@@ -822,7 +822,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kumejima.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kumejima.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: http://www.town.kumejima.okinawa.jp/docs/2020051300049/
     kind: subsidy
@@ -849,7 +849,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yaese.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.yaese.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.town.yaese.lg.jp/docs/2021080600070/
     kind: subsidy
@@ -876,7 +876,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.tarama.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.tarama.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: okinawa-473812
   name: 竹富町空き家バンク
   operator: 竹富町
@@ -896,7 +896,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.taketomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.taketomi.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.town.taketomi.lg.jp/soshiki/machizukuri/akiyakeijiban
     kind: listing_index
@@ -925,4 +925,4 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yonaguni.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yonaguni.okinawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'

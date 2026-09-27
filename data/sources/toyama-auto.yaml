@@ -19,7 +19,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.toyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.toyama.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.toyama.lg.jp/akiyabk/index.html
     kind: listing_index
@@ -48,7 +48,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.takaoka.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.takaoka.toyama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: toyama-162043
   name: 魚津市空き家バンク
   operator: 魚津市
@@ -69,7 +69,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.uozu.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.uozu.toyama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.uozu.toyama.jp/guide/svGuideDtl.aspx?servno=18039&topkb=G
     kind: subsidy
@@ -102,7 +102,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.himi.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.himi.toyama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: toyama-162060
   name: 滑川市空き家バンク
   operator: 滑川市
@@ -122,7 +122,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.city.namerikawa.toyama.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.namerikawa.toyama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://namerikawa-akiya.com/
     kind: listing_index
@@ -149,7 +149,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kurobe.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kurobe.toyama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: toyama-162086
   name: 砺波市空き家バンク
   operator: 砺波市
@@ -170,7 +170,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tonami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tonami.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: toyama-162094
   name: 小矢部市空き家バンク
   operator: 小矢部市
@@ -190,7 +190,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.oyabe.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.oyabe.toyama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.oyabe.toyama.jp/ijyu/1001572/1003141/1004072.html
     kind: listing_index
@@ -223,7 +223,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nanto.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.nanto.toyama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: toyama-162116
   name: 射水市空き家バンク
   operator: 射水市
@@ -244,7 +244,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.imizu.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.imizu.toyama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.imizu.toyama.jp/guide/svGuideDtl.aspx?servno=18555
     kind: subsidy
@@ -277,7 +277,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.funahashi.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.funahashi.toyama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: toyama-163228
   name: 上市町空き家バンク
   operator: 上市町
@@ -297,7 +297,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kamiichi.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kamiichi.toyama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.kamiichi.toyama.jp/page/1646.html
     kind: listing_index
@@ -333,7 +333,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tateyama.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.tateyama.toyama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.tateyama.toyama.jp/kurashi_tetsuzuki/sumai_machizukuri/akiya/1627.html
     kind: subsidy
@@ -363,7 +363,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nyuzen.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nyuzen.toyama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.nyuzen.toyama.jp/gyosei/machizukuri/sumai/1/1856.html
     kind: listing_index
@@ -399,4 +399,4 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.asahi.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.asahi.toyama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'

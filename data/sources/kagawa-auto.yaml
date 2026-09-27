@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.takamatsu.kagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.takamatsu.kagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: kagawa-372021
   name: 丸亀市空き家バンク
   operator: 丸亀市
@@ -41,7 +41,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.marugame.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.marugame.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.city.marugame.lg.jp/page/3254.html
     kind: subsidy
@@ -72,7 +72,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sakaide.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.sakaide.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.city.sakaide.lg.jp/soshiki/seisaku/akiyakaisyuu.html
     kind: subsidy
@@ -105,7 +105,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.zentsuji.kagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.zentsuji.kagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.city.zentsuji.kagawa.jp/site/akiyataisaku/akiyabank-kaisyu.html
     kind: subsidy
@@ -136,7 +136,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kanonji.kagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kanonji.kagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.city.kanonji.kagawa.jp/soshiki/48/14825.html
     kind: subsidy
@@ -165,7 +165,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sanuki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.sanuki.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.city.sanuki.lg.jp/soshiki/seisaku/gyomu/4/3/677.html
     kind: subsidy
@@ -194,7 +194,7 @@ sources:
   operator_evidence:
     quote: 香川県 香川県内市町リンクに掲載された公式サイト（www.higashikagawa.jp）
     url: https://www.pref.kagawa.lg.jp/kocho/shokai/profile/w3cz95150312151105.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.higashikagawa.jp/soshikikarasagasu/toshiseibika/gyomuannai/3/1/1027.html
     kind: subsidy
@@ -221,7 +221,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.mitoyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.mitoyo.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: kagawa-373222
   name: 土庄町空き家バンク
   operator: 土庄町
@@ -242,7 +242,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tonosho.kagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.tonosho.kagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: kagawa-373249
   name: 小豆島町空き家バンク
   operator: 小豆島町
@@ -263,7 +263,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shodoshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.shodoshima.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.town.shodoshima.lg.jp/gyousei/kakuka/sumaiseisakuka/1_2/9084.html
     kind: subsidy
@@ -296,7 +296,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.miki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.miki.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
 - id: kagawa-373648
   name: 直島町空き家バンク
   operator: 直島町
@@ -317,7 +317,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.naoshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.naoshima.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.town.naoshima.lg.jp/tetsuduki/environment/taiyoukou.html
     kind: subsidy
@@ -344,7 +344,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.utazu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.utazu.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.town.utazu.lg.jp/page/1192.html
     kind: subsidy
@@ -371,7 +371,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ayagawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.ayagawa.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.town.ayagawa.lg.jp/docs/2017120800012/
     kind: subsidy
@@ -400,7 +400,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kotohira.kagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kotohira.kagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.town.kotohira.kagawa.jp/site/ijyuu/8762.html
     kind: subsidy
@@ -433,7 +433,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tadotsu.kagawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.tadotsu.kagawa.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.town.tadotsu.kagawa.jp/kurashi_tetsuzuki/jutaku/akiyataisaku/1333.html
     kind: subsidy
@@ -466,7 +466,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.manno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.manno.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-10'
   pages:
   - url: https://www.town.manno.lg.jp/site/miryoku-hasshin/list21-157.html
     kind: subsidy

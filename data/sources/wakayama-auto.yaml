@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.wakayama.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.wakayama.wakayama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: wakayama-302023
   name: 海南市空き家バンク
   operator: 海南市
@@ -41,7 +41,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kainan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kainan.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: wakayama-302031
   name: 橋本市空き家バンク
   operator: 橋本市
@@ -62,7 +62,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hashimoto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hashimoto.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.hashimoto.lg.jp/guide/kensetsubu/kentikujutaku/jutakusisaku/akiya/22005.html
     kind: subsidy
@@ -93,7 +93,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.arida.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.arida.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.arida.lg.jp/kurashi/sumai/1001032.html
     kind: subsidy
@@ -124,7 +124,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.gobo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.gobo.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.gobo.lg.jp/kurasi/jutaku/1654845681826.html
     kind: subsidy
@@ -151,7 +151,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tanabe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tanabe.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: wakayama-302074
   name: 新宮市空き家バンク
   operator: 新宮市
@@ -172,7 +172,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.shingu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.shingu.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.shingu.lg.jp/info/2712
     kind: subsidy
@@ -199,7 +199,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kinokawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kinokawa.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.kinokawa.lg.jp/006/2021-0729-1915-73.html
     kind: subsidy
@@ -239,7 +239,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.iwade.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.iwade.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: wakayama-303046
   name: 紀美野町空き家バンク
   operator: 紀美野町
@@ -259,7 +259,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kimino.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kimino.wakayama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.kimino.wakayama.jp/kurashi/iju/4338.html
     kind: listing_index
@@ -291,7 +291,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.katsuragi.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.katsuragi.wakayama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.katsuragi.wakayama.jp/teijyu/020/010/2023-1011-1627-16.html
     kind: listing_index
@@ -331,7 +331,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kudoyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kudoyama.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.kudoyama.lg.jp/kikaku/seisaku/teiju-sokushin.html
     kind: subsidy
@@ -362,7 +362,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.koya.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.koya.wakayama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: wakayama-303615
   name: 湯浅町空き家バンク
   operator: 湯浅町
@@ -383,7 +383,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yuasa.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yuasa.wakayama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.yuasa.wakayama.jp/soshiki/4/11107.html
     kind: subsidy
@@ -411,7 +411,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hirogawa.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.hirogawa.wakayama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.hirogawa.wakayama.jp/ijyuteijyu/akiyabank/index.html
     kind: listing_index
@@ -444,7 +444,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.aridagawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.aridagawa.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: wakayama-303810
   name: 美浜町空き家バンク
   operator: 美浜町
@@ -465,7 +465,7 @@ sources:
   operator_evidence:
     quote: 和歌山県 市町村のホームページ（リンク集）に掲載された公式サイト（www.town.mihama.wakayama.jp）
     url: https://www.pref.wakayama.lg.jp/link/shichoson.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: wakayama-303828
   name: 日高町空き家バンク
   operator: 日高町
@@ -486,7 +486,7 @@ sources:
   operator_evidence:
     quote: 和歌山県 市町村のホームページ（リンク集）に掲載された公式サイト（www.town.wakayama-hidaka.lg.jp）
     url: https://www.pref.wakayama.lg.jp/link/shichoson.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: wakayama-303836
   name: 由良町空き家バンク
   operator: 由良町
@@ -506,7 +506,7 @@ sources:
   operator_evidence:
     quote: 和歌山県 市町村のホームページ（リンク集）に掲載された公式サイト（www.town.yura.wakayama.jp）
     url: https://www.pref.wakayama.lg.jp/link/shichoson.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: http://www.town.yura.wakayama.jp/docs/2021081200033/
     kind: listing_index
@@ -535,7 +535,7 @@ sources:
   operator_evidence:
     quote: 和歌山県 市町村のホームページ（リンク集）に掲載された公式サイト（www.town.wakayama-inami.lg.jp）
     url: https://www.pref.wakayama.lg.jp/link/shichoson.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: wakayama-303917
   name: みなべ町空き家バンク
   operator: みなべ町
@@ -556,7 +556,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.minabe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.minabe.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: wakayama-303925
   name: 日高川町空き家バンク
   operator: 日高川町
@@ -577,7 +577,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hidakagawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.hidakagawa.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: wakayama-304018
   name: 白浜町空き家バンク
   operator: 白浜町
@@ -598,7 +598,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shirahama.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.shirahama.wakayama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: wakayama-304042
   name: 上富田町空き家バンク
   operator: 上富田町
@@ -619,7 +619,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kamitonda.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kamitonda.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: wakayama-304069
   name: すさみ町空き家バンク
   operator: すさみ町
@@ -640,7 +640,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.susami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.susami.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.susami.lg.jp/kurashi/07/2026-0401-1544-20.html
     kind: subsidy
@@ -669,7 +669,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nachikatsuura.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nachikatsuura.wakayama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: wakayama-304221
   name: 太地町空き家バンク
   operator: 太地町
@@ -690,7 +690,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.taiji.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.taiji.wakayama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: wakayama-304247
   name: 古座川町空き家バンク
   operator: 古座川町
@@ -711,7 +711,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kozagawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kozagawa.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: wakayama-304271
   name: 北山村空き家バンク
   operator: 北山村
@@ -732,7 +732,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.kitayama.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.kitayama.wakayama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: wakayama-304280
   name: 串本町空き家バンク
   operator: 串本町
@@ -753,7 +753,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kushimoto.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kushimoto.wakayama.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.kushimoto.wakayama.jp/sangyo/ringyou/kisyuzai-hojo.html
     kind: subsidy

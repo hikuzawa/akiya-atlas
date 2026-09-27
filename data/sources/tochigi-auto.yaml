@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.utsunomiya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.utsunomiya.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.utsunomiya.lg.jp/kurashi/anshin/1016717/1023258/index.html
     kind: subsidy
@@ -47,7 +47,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ashikaga.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ashikaga.tochigi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://ashikaga-c09202.akiya-athome.jp/contents/news/detail/?id=1805
     kind: subsidy
@@ -75,7 +75,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.city.tochigi.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.tochigi.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: http://www.tochigi-akiya.jp/
     kind: listing_index
@@ -103,7 +103,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.sano.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.sano.lg.jp/cgi-bin/recruit.php/2/list
     kind: listing_index
@@ -132,7 +132,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kanuma.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kanuma.tochigi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: http://www.city.kanuma.tochigi.jp/0131/info-0000006111-3.html
     kind: subsidy
@@ -165,7 +165,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nikko.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nikko.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: tochigi-092088
   name: 小山市空き家バンク
   operator: 小山市
@@ -186,7 +186,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.oyama.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.oyama.tochigi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.oyama.tochigi.jp/kurashi/sumai-hikkoshi/sumai/page006083.html
     kind: subsidy
@@ -213,7 +213,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.moka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.moka.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: tochigi-092100
   name: 大田原市空き家バンク
   operator: 大田原市
@@ -233,7 +233,7 @@ sources:
   operator_evidence:
     quote: 栃木県 リンク集（市町一覧）に掲載された公式サイト（www.city.ohtawara.tochigi.jp）
     url: https://www.pref.tochigi.lg.jp/c05/intro/tochigi/link/lkshityouson.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.ohtawara.tochigi.jp/docs/2014092500025/
     kind: listing_index
@@ -264,7 +264,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yaita.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.yaita.tochigi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.yaita.tochigi.jp/soshiki/toshiseibi/akiya-katuyouhojo.html
     kind: subsidy
@@ -297,7 +297,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nasushiobara.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.nasushiobara.tochigi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.nasushiobara.tochigi.jp/kurashi_tetsuzuki/sumai_kurashi/akiya/8757.html
     kind: subsidy
@@ -358,7 +358,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nasukarasuyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nasukarasuyama.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/page004598.html
     kind: listing_index
@@ -387,7 +387,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.shimotsuke.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.shimotsuke.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: tochigi-093017
   name: 上三川町空き家バンク
   operator: 上三川町
@@ -408,7 +408,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kaminokawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kaminokawa.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.kaminokawa.lg.jp/0081/info-0000004180-0.html
     kind: subsidy
@@ -438,7 +438,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.mashiko.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.mashiko.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.mashiko.lg.jp/mashikonokurashi/akiya.php
     kind: listing_index
@@ -469,7 +469,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.motegi.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.motegi.tochigi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: tochigi-093441
   name: 市貝町空き家バンク
   operator: 市貝町
@@ -490,7 +490,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ichikai.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ichikai.tochigi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.ichikai.tochigi.jp/info/1220
     kind: subsidy
@@ -521,7 +521,7 @@ sources:
   operator_evidence:
     quote: 栃木県 リンク集（市町一覧）に掲載された公式サイト（www.town.tochigi-haga.lg.jp）
     url: https://www.pref.tochigi.lg.jp/c05/intro/tochigi/link/lkshityouson.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.tochigi-haga.lg.jp/kurashi/sumai/akiyabank_reform/reform_main.html
     kind: subsidy
@@ -558,7 +558,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.mibu.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.mibu.tochigi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.mibu.tochigi.jp/docs/2020052100013/
     kind: listing_index
@@ -589,7 +589,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nogi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.nogi.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.nogi.lg.jp/kurashi/kankyou/ondanka/page005123.html
     kind: subsidy
@@ -621,7 +621,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shioya.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.shioya.tochigi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.shioya.tochigi.jp/info/1080
     kind: listing_index
@@ -654,7 +654,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.takanezawa.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.takanezawa.tochigi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: tochigi-094072
   name: 那須町空き家バンク
   operator: 那須町
@@ -675,7 +675,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nasu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.nasu.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: tochigi-094111
   name: 那珂川町空き家バンク
   operator: 那珂川町
@@ -696,7 +696,7 @@ sources:
   operator_evidence:
     quote: 栃木県 リンク集（市町一覧）に掲載された公式サイト（www.town.tochigi-nakagawa.lg.jp）
     url: https://www.pref.tochigi.lg.jp/c05/intro/tochigi/link/lkshityouson.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: http://www.town.tochigi-nakagawa.lg.jp/0074/info-0000000331-0.html
     kind: subsidy

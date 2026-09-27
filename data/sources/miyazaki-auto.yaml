@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.miyazaki.miyazaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.miyazaki.miyazaki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: miyazaki-452025
   name: 都城市空き家バンク
   operator: 都城市
@@ -40,7 +40,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.miyakonojo.miyazaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.miyakonojo.miyazaki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.miyakonojo.miyazaki.jp/site/akiyabank/61033.html
     kind: listing_index
@@ -71,7 +71,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nobeoka.miyazaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.nobeoka.miyazaki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.nobeoka.miyazaki.jp/soshiki/98/46788.html
     kind: subsidy
@@ -102,7 +102,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nichinan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nichinan.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: miyazaki-452050
   name: 小林市空き家バンク
   operator: 小林市
@@ -123,7 +123,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kobayashi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kobayashi.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.kobayashi.lg.jp/kurashi_tetsuzuki/sumai/3740.html
     kind: subsidy
@@ -152,7 +152,7 @@ sources:
   operator_evidence:
     quote: 宮崎県 県内市町村一覧に掲載された公式サイト（www.hyugacity.jp）
     url: https://www.pref.miyazaki.lg.jp/kohosenryaku/kense/shichoson/shichosonmap.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.hyugacity.jp/display.php?cont=240527131708
     kind: subsidy
@@ -188,7 +188,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kushima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kushima.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: miyazaki-452084
   name: 西都市空き家バンク
   operator: 西都市
@@ -209,7 +209,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.saito.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.saito.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.saito.lg.jp/kurashi/ijuteiju/post_1270.html
     kind: subsidy
@@ -236,7 +236,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ebino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.ebino.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.ebino.lg.jp/soshiki/kikaku/3/1/591.html
     kind: subsidy
@@ -265,7 +265,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.mimata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.mimata.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: miyazaki-453617
   name: 高原町空き家バンク
   operator: 高原町
@@ -286,7 +286,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.takaharu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.takaharu.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: miyazaki-453820
   name: 国富町空き家バンク
   operator: 国富町
@@ -307,7 +307,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kunitomi.miyazaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kunitomi.miyazaki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: miyazaki-453838
   name: 綾町空き家バンク
   operator: 綾町
@@ -328,7 +328,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.aya.miyazaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.aya.miyazaki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: miyazaki-454010
   name: 高鍋町空き家バンク
   operator: 高鍋町
@@ -349,7 +349,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.takanabe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.takanabe.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: miyazaki-454028
   name: 新富町空き家バンク
   operator: 新富町
@@ -369,7 +369,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shintomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.shintomi.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.shintomi.lg.jp/kurashi/sumai/1864.html
     kind: listing_detail
@@ -396,7 +396,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.nishimera.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.nishimera.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.vill.nishimera.lg.jp/village/a-00-villagelife/10001115
     kind: subsidy
@@ -426,7 +426,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kijo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kijo.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.kijo.lg.jp/sosikikarasagasu/tiikiseisakuka/3/1/290.html
     kind: listing_index
@@ -457,7 +457,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kawaminami.miyazaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kawaminami.miyazaki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: miyazaki-454061
   name: 都農町空き家バンク
   operator: 都農町
@@ -478,7 +478,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tsuno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.tsuno.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: miyazaki-454214
   name: 門川町空き家バンク
   operator: 門川町
@@ -499,7 +499,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kadogawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kadogawa.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.kadogawa.lg.jp/live/akiya/page003582.html
     kind: subsidy
@@ -531,7 +531,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.vill.morotsuka.miyazaki.jp）から空き家バンクとして案内されているリンク
     url: https://www.vill.morotsuka.miyazaki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: miyazaki-454303
   name: 椎葉村空き家バンク
   operator: 椎葉村
@@ -552,7 +552,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.shiiba.miyazaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.shiiba.miyazaki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: miyazaki-454311
   name: 美郷町空き家バンク
   operator: 美郷町
@@ -572,7 +572,7 @@ sources:
   operator_evidence:
     quote: 宮崎県 県内市町村一覧に掲載された公式サイト（www.town.miyazaki-misato.lg.jp）
     url: https://www.pref.miyazaki.lg.jp/kohosenryaku/kense/shichoson/shichosonmap.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.miyazaki-misato.lg.jp/dynamic/info/pub/default.aspx?c_id=26
     kind: listing_index
@@ -599,7 +599,7 @@ sources:
   operator_evidence:
     quote: 宮崎県 県内市町村一覧に掲載された公式サイト（www.town-takachiho.jp）
     url: https://www.pref.miyazaki.lg.jp/kohosenryaku/kense/shichoson/shichosonmap.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: miyazaki-454427
   name: 日之影町空き家バンク
   operator: 日之影町
@@ -620,7 +620,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hinokage.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.hinokage.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: miyazaki-454435
   name: 五ヶ瀬町空き家バンク
   operator: 五ヶ瀬町
@@ -641,4 +641,4 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.gokase.miyazaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.gokase.miyazaki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'

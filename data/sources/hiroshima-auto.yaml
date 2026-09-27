@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hiroshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hiroshima.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.hiroshima.lg.jp/living/sumai/1021346/index.html
     kind: subsidy
@@ -47,7 +47,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kure.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kure.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.kure.lg.jp/soshiki/46/index1.html
     kind: subsidy
@@ -74,7 +74,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.takehara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.takehara.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.takehara.lg.jp/aishihokorashi_takeharagurashi/support/7745.html
     kind: subsidy
@@ -104,7 +104,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.mihara.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.mihara.hiroshima.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.mihara.hiroshima.jp/soshiki/21/akiyainfo.html
     kind: listing_index
@@ -131,7 +131,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.onomichi.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.onomichi.hiroshima.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.onomichi.hiroshima.jp/soshiki/33/24757.html
     kind: subsidy
@@ -164,7 +164,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.fukuyama.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.fukuyama.hiroshima.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: hiroshima-342084
   name: 府中市空き家バンク
   operator: 府中市
@@ -185,7 +185,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.fuchu.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.fuchu.hiroshima.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: hiroshima-342092
   name: 三次市空き家バンク
   operator: 三次市
@@ -206,7 +206,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.miyoshi.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.miyoshi.hiroshima.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: hiroshima-342106
   name: 庄原市空き家バンク
   operator: 庄原市
@@ -227,7 +227,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.shobara.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.shobara.hiroshima.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.shobara.hiroshima.jp/main/life/settlement/cat02/post_1422.html
     kind: subsidy
@@ -260,7 +260,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.otake.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.otake.hiroshima.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: hiroshima-342122
   name: 東広島市空き家バンク
   operator: 東広島市
@@ -281,7 +281,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.higashihiroshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.higashihiroshima.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: hiroshima-342131
   name: 廿日市市空き家バンク
   operator: 廿日市市
@@ -302,7 +302,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hatsukaichi.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hatsukaichi.hiroshima.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.hatsukaichi.hiroshima.jp/soshiki/53/45673.html
     kind: subsidy
@@ -334,7 +334,7 @@ sources:
   operator_evidence:
     quote: 広島県 県内の市・町に掲載された公式サイト（www.akitakata.jp）
     url: https://www.pref.hiroshima.lg.jp/soshiki/19/1168589482341.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.akitakata.jp/ja/shisei/section/kikaku/main/
     kind: listing_index
@@ -369,7 +369,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.etajima.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.etajima.hiroshima.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.etajima.hiroshima.jp/cms/articles/show/8056
     kind: subsidy
@@ -400,7 +400,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.fuchu.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.fuchu.hiroshima.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.fuchu.hiroshima.jp/site/kosodate/8458.html
     kind: subsidy
@@ -433,7 +433,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kaita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kaita.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: hiroshima-343072
   name: 熊野町空き家バンク
   operator: 熊野町
@@ -454,7 +454,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kumano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kumano.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: hiroshima-343099
   name: 坂町空き家バンク
   operator: 坂町
@@ -475,7 +475,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.saka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.saka.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.saka.lg.jp/category/%e3%81%8f%e3%82%89%e3%81%97%e3%83%bb%e6%89%8b%e7%b6%9a%e3%81%8d/%e4%bd%8f%e3%81%be%e3%81%84%e3%83%bb%e4%b8%8a%e4%b8%8b%e6%b0%b4%e9%81%93/%e4%bd%8f%e5%ae%85%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e8%a3%9c%e5%8a%a9%e5%88%b6%e5%ba%a6/
     kind: subsidy
@@ -504,7 +504,7 @@ sources:
   operator_evidence:
     quote: 広島県 県内の市・町に掲載された公式サイト（www.akiota.jp）
     url: https://www.pref.hiroshima.lg.jp/soshiki/19/1168589482341.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.akiota.jp/soshiki/9/1441.html
     kind: subsidy
@@ -531,7 +531,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kitahiroshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kitahiroshima.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: hiroshima-344311
   name: 大崎上島町空き家バンク
   operator: 大崎上島町
@@ -552,7 +552,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.osakikamijima.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.osakikamijima.hiroshima.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: hiroshima-344621
   name: 世羅町空き家バンク
   operator: 世羅町
@@ -573,7 +573,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.sera.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.sera.hiroshima.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.sera.hiroshima.jp/soshiki/14/15857.html
     kind: subsidy
@@ -604,4 +604,4 @@ sources:
   operator_evidence:
     quote: 広島県 県内の市・町に掲載された公式サイト（www.jinsekigun.jp）
     url: https://www.pref.hiroshima.lg.jp/soshiki/19/1168589482341.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'

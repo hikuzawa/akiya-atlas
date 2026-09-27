@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.mito.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.mito.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.mito.lg.jp/page/90090.html
     kind: subsidy
@@ -51,7 +51,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hitachi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hitachi.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: ibaraki-082031
   name: 土浦市空き家バンク
   operator: 土浦市
@@ -72,7 +72,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tsuchiura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tsuchiura.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.tsuchiura.lg.jp/kurashi-tetsuzuki/shieijutaku/page022866.html
     kind: subsidy
@@ -99,7 +99,7 @@ sources:
   operator_evidence:
     quote: 茨城県 県内の市町村に掲載された公式サイト（www.city.ibaraki-koga.lg.jp）
     url: https://www.pref.ibaraki.jp/towns/index.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: ibaraki-082058
   name: 石岡市空き家バンク
   operator: 石岡市
@@ -119,7 +119,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ishioka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.ishioka.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.ishioka.lg.jp/kurashi_tetsuzuki/sumai/akiyabank/page011717.html
     kind: listing_index
@@ -150,7 +150,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yuki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.yuki.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.yuki.lg.jp/kurashi-tetsuzuki/kurashi-tetsuzuki-news/page010250.html
     kind: subsidy
@@ -177,7 +177,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ryugasaki.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ryugasaki.ibaraki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.ryugasaki.ibaraki.jp/kurashi/seikatsu/akiya-bank/akiyakaitaihojyo.html
     kind: subsidy
@@ -210,7 +210,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.shimotsuma.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.shimotsuma.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: ibaraki-082112
   name: 常総市空き家バンク
   operator: 常総市
@@ -230,7 +230,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.joso.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.joso.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-26'
   pages:
   - url: https://www.city.joso.lg.jp/kurashi_gyousei/kurashi/suidou_jyutaku/sumai/vacant_house_bank/registered_property_info/page000499.html
     kind: listing_index
@@ -256,7 +256,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hitachiota.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hitachiota.ibaraki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.hitachiota.ibaraki.jp/kurashi/sumai-traffic/akiya-bank/page002897.html
     kind: listing_index
@@ -289,7 +289,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.takahagi.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.takahagi.ibaraki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.takahagi.ibaraki.jp/kurashi/sumai/page008101.html
     kind: subsidy
@@ -316,7 +316,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kitaibaraki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kitaibaraki.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: ibaraki-082163
   name: 笠間市空き家バンク
   operator: 笠間市
@@ -336,7 +336,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.city.kasama.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.kasama.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://ijyuu.city-kasama.jp/house-bank/
     kind: listing_index
@@ -366,7 +366,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.toride.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.toride.ibaraki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.toride.ibaraki.jp/toshikeikaku/kurashi/sumai/sumai/hojosedo/jutakuhojosedo.html
     kind: subsidy
@@ -392,7 +392,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ushiku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.ushiku.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.ushiku.lg.jp/kurashi-tetsuduki/seikatsu/sumai-joho/akiya-taisaku/page006233.html
     kind: listing_index
@@ -423,7 +423,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tsukuba.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tsukuba.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.tsukuba.lg.jp/kurashi/kankyo/akiya/1011892.html
     kind: subsidy
@@ -452,7 +452,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hitachinaka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hitachinaka.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.hitachinaka.lg.jp/machizukuri/sumai/1003440/1010453.html
     kind: subsidy
@@ -479,7 +479,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kashima.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kashima.ibaraki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: ibaraki-082236
   name: 潮来市空き家バンク
   operator: 潮来市
@@ -500,7 +500,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.itako.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.itako.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.itako.lg.jp/ku-te/ku-te-info/page008934.html
     kind: subsidy
@@ -527,7 +527,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.moriya.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.moriya.ibaraki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.moriya.ibaraki.jp/faq/kurashi_tetsuzuki/1006297/1006298/1006299/1006304.html
     kind: subsidy
@@ -554,7 +554,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hitachiomiya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hitachiomiya.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: ibaraki-082261
   name: 那珂市空き家バンク
   operator: 那珂市
@@ -574,7 +574,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.naka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.naka.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.naka.lg.jp/kurashi-tetsuduki/sumai/akiya/page004131.html
     kind: listing_index
@@ -605,7 +605,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.chikusei.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.chikusei.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.chikusei.lg.jp/kurashi-tetsuzuki/jusho-sumai/page013600.html
     kind: subsidy
@@ -634,7 +634,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.bando.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.bando.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.bando.lg.jp/page/page005532.html
     kind: subsidy
@@ -663,7 +663,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.inashiki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.inashiki.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.inashiki.lg.jp/page/page004263.html
     kind: subsidy
@@ -692,7 +692,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kasumigaura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kasumigaura.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.kasumigaura.lg.jp/page/page001082.html
     kind: subsidy
@@ -720,7 +720,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sakuragawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.sakuragawa.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.sakuragawa.lg.jp/akiya/akiya.php
     kind: listing_index
@@ -753,7 +753,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kamisu.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kamisu.ibaraki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.kamisu.ibaraki.jp/living/1001425/1001426/index.html
     kind: subsidy
@@ -780,7 +780,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.namegata.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.namegata.ibaraki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: ibaraki-082341
   name: 鉾田市空き家バンク
   operator: 鉾田市
@@ -801,7 +801,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hokota.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hokota.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.hokota.lg.jp/page/page005680.html
     kind: subsidy
@@ -834,7 +834,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tsukubamirai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tsukubamirai.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.tsukubamirai.lg.jp/jyumin/sumai-hikkoshi/akiya-taisaku/page002819.html
     kind: subsidy
@@ -862,7 +862,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.omitama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.omitama.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.omitama.lg.jp/0652/info-0000005214-0.html
     kind: listing_index
@@ -896,7 +896,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ibaraki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.ibaraki.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.ibaraki.lg.jp/gyousei/kurashitetuduki/jyutaku/akiyabank/index.html
     kind: listing_index
@@ -927,7 +927,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.oarai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.oarai.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.oarai.lg.jp/cat1/sumai/ijuuteijuu/5569/
     kind: subsidy
@@ -960,7 +960,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shirosato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.shirosato.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: ibaraki-083411
   name: 東海村空き家バンク
   operator: 東海村
@@ -981,7 +981,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.tokai.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.tokai.ibaraki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.vill.tokai.ibaraki.jp/kurashi_tetsuzuki/sumai_pet/sumai/5854.html
     kind: subsidy
@@ -1012,7 +1012,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.daigo.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.daigo.ibaraki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.daigo.ibaraki.jp/page/page008070.html
     kind: subsidy
@@ -1045,7 +1045,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.miho.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.miho.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.vill.miho.lg.jp/kurashi-kankyou/sumai-kekkontaisaku/page000965.html
     kind: subsidy
@@ -1073,7 +1073,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.ami.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.ami.lg.jp/0000009864.html
     kind: listing_index
@@ -1100,7 +1100,7 @@ sources:
   operator_evidence:
     quote: 茨城県 県内の市町村に掲載された公式サイト（www.town.ibaraki-kawachi.lg.jp）
     url: https://www.pref.ibaraki.jp/towns/index.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.ibaraki-kawachi.lg.jp/page/page001494.html
     kind: subsidy
@@ -1138,7 +1138,7 @@ sources:
   operator_evidence:
     quote: 茨城県 県内の市町村に掲載された公式サイト（www.town.ibaraki-yachiyo.lg.jp）
     url: https://www.pref.ibaraki.jp/towns/index.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.ibaraki-yachiyo.lg.jp/page/page009607.html
     kind: subsidy
@@ -1167,7 +1167,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.goka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.goka.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: ibaraki-085464
   name: 境町空き家バンク
   operator: 境町
@@ -1188,7 +1188,7 @@ sources:
   operator_evidence:
     quote: 茨城県 県内の市町村に掲載された公式サイト（www.town.sakai.ibaraki.jp）。サイトを取得できなかったためリンクのみ（robots.txt を取得できないため今回は巡回しない）
     url: https://www.pref.ibaraki.jp/towns/index.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: ibaraki-085642
   name: 利根町空き家バンク
   operator: 利根町
@@ -1209,7 +1209,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tone.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.tone.ibaraki.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.tone.ibaraki.jp/kurashi/sumaidouro/akiya/page001599.html
     kind: subsidy

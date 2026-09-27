@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.gifu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.gifu.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.gifu.lg.jp/kurashi/sumai/1002445/1002448.html
     kind: subsidy
@@ -49,7 +49,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ogaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.ogaki.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gifu-212032
   name: 高山市空き家バンク
   operator: 高山市
@@ -70,7 +70,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.takayama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.takayama.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.takayama.lg.jp/shisei/1015214/1003942.html
     kind: subsidy
@@ -97,7 +97,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tajimi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tajimi.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.tajimi.lg.jp/kurashi_tetsuduzuki/sumai_seikatsu_dobutsu/1006141/1006145.html
     kind: subsidy
@@ -128,7 +128,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.seki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.seki.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.seki.lg.jp/0000019564.html
     kind: subsidy
@@ -161,7 +161,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nakatsugawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nakatsugawa.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.nakatsugawa.lg.jp/life/life/1/38701.html
     kind: subsidy
@@ -192,7 +192,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.mino.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.mino.gifu.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gifu-212083
   name: 瑞浪市空き家バンク
   operator: 瑞浪市
@@ -213,7 +213,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.mizunami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.mizunami.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.mizunami.lg.jp/kurashi/sumai/1001528/1001531.html
     kind: subsidy
@@ -246,7 +246,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hashima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hashima.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.hashima.lg.jp/6725.html
     kind: subsidy
@@ -273,7 +273,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ena.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.ena.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gifu-212113
   name: 美濃加茂市空き家バンク
   operator: 美濃加茂市
@@ -294,7 +294,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.minokamo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.minokamo.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gifu-212121
   name: 土岐市空き家バンク
   operator: 土岐市
@@ -315,7 +315,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.toki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.toki.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gifu-212130
   name: 各務原市空き家バンク
   operator: 各務原市
@@ -336,7 +336,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kakamigahara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kakamigahara.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gifu-212148
   name: 可児市空き家バンク
   operator: 可児市
@@ -357,7 +357,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kani.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kani.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.kani.lg.jp/3173.htm
     kind: subsidy
@@ -389,7 +389,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yamagata.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.yamagata.gifu.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gifu-212164
   name: 瑞穂市空き家バンク
   operator: 瑞穂市
@@ -410,7 +410,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.mizuho.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.mizuho.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.mizuho.lg.jp/9648.htm
     kind: subsidy
@@ -437,7 +437,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hida.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hida.gifu.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.hida.gifu.jp/site/iju/16458.html
     kind: subsidy
@@ -465,7 +465,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.motosu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.motosu.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.motosu.lg.jp/iju/0000000178.html
     kind: listing_index
@@ -496,7 +496,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.gujo.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.gujo.gifu.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.gujo.gifu.jp/life/detail/post-791.html
     kind: subsidy
@@ -529,7 +529,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.gero.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.gero.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.gero.lg.jp/soshiki/58/1608.html
     kind: subsidy
@@ -555,7 +555,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kaizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kaizu.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.kaizu.lg.jp/kurashi/0000001552.html
     kind: listing_index
@@ -586,7 +586,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ginan.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.ginan.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gifu-213039
   name: 笠松町空き家バンク
   operator: 笠松町
@@ -607,7 +607,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kasamatsu.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kasamatsu.gifu.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gifu-213411
   name: 養老町空き家バンク
   operator: 養老町
@@ -627,7 +627,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yoro.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yoro.gifu.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.yoro.gifu.jp/life/living/1001778/1001779.html
     kind: listing_index
@@ -660,7 +660,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tarui.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.tarui.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.tarui.lg.jp/page/1033.html
     kind: subsidy
@@ -691,7 +691,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.sekigahara.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.sekigahara.gifu.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gifu-213811
   name: 神戸町空き家バンク
   operator: 神戸町
@@ -712,7 +712,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.godo.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.godo.gifu.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.godo.gifu.jp/life/kou_kai/kou_kai12.html
     kind: subsidy
@@ -743,7 +743,7 @@ sources:
   operator_evidence:
     quote: 岐阜県の市町村一覧に掲載された公式サイト（town.wanouchi.gifu.jp）
     url: https://www.pref.gifu.lg.jp/page/6058.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://town.wanouchi.gifu.jp/portal/life-process/subsidy-allowance/about-residence/post0060738/
     kind: subsidy
@@ -774,7 +774,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.anpachi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.anpachi.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.anpachi.lg.jp/0000000195.html
     kind: subsidy
@@ -801,7 +801,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ibigawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.ibigawa.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.ibigawa.lg.jp/page/2271.html
     kind: subsidy
@@ -828,7 +828,7 @@ sources:
   operator_evidence:
     quote: 岐阜県の市町村一覧に掲載された公式サイト（www.town-ono.jp）
     url: https://www.pref.gifu.lg.jp/page/6058.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town-ono.jp/0000001211.html
     kind: subsidy
@@ -861,7 +861,7 @@ sources:
   operator_evidence:
     quote: 岐阜県の市町村一覧に掲載された公式サイト（www.town.ikeda.gifu.jp）
     url: https://www.pref.gifu.lg.jp/page/6058.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gifu-214213
   name: 北方町空き家バンク
   operator: 北方町
@@ -882,7 +882,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kitagata.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kitagata.gifu.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gifu-215015
   name: 坂祝町空き家バンク
   operator: 坂祝町
@@ -903,7 +903,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.sakahogi.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.sakahogi.gifu.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: gifu-215023
   name: 富加町空き家バンク
   operator: 富加町
@@ -924,7 +924,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tomika.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.tomika.gifu.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.tomika.gifu.jp/docs/339.html
     kind: subsidy
@@ -956,7 +956,7 @@ sources:
   operator_evidence:
     quote: 岐阜県の市町村一覧に掲載された公式サイト（www.kawabe-gifu.jp）
     url: https://www.pref.gifu.lg.jp/page/6058.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.kawabe-gifu.jp/?page_id=16351
     kind: listing_index
@@ -987,7 +987,7 @@ sources:
   operator_evidence:
     quote: 岐阜県の市町村一覧に掲載された公式サイト（www.hichiso.jp）
     url: https://www.pref.gifu.lg.jp/page/6058.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.hichiso.jp/fpage/life/life190318/
     kind: subsidy
@@ -1013,7 +1013,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.town.yaotsu.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.town.yaotsu.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://akiya-yaotsu.jp/
     kind: listing_index
@@ -1040,7 +1040,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shirakawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.shirakawa.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.shirakawa.lg.jp/kurashi/sumai/1001762/1001763.html
     kind: subsidy
@@ -1071,7 +1071,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.higashishirakawa.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.higashishirakawa.gifu.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.vill.higashishirakawa.gifu.jp/kurashi/sumai/taishinjyosei/
     kind: subsidy
@@ -1098,7 +1098,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.mitake.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.mitake.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.mitake.lg.jp/portal/life-process/residence-water/residence/post0026054/
     kind: subsidy
@@ -1124,7 +1124,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.shirakawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.shirakawa.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.vill.shirakawa.lg.jp/1402.htm
     kind: listing_index

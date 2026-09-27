@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.city.kumamoto.jp）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.kumamoto.jp/list04114.html
     kind: subsidy
@@ -53,7 +53,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yatsushiro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.yatsushiro.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: kumamoto-432032
   name: 人吉市空き家バンク
   operator: 人吉市
@@ -74,7 +74,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hitoyoshi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hitoyoshi.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   external_links:
   - label: 全国版空き家バンクサイト(ライフルホーム)(外部リンク)
     url: https://www.homes.co.jp/akiyabank/
@@ -98,7 +98,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.arao.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.arao.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: kumamoto-432059
   name: 水俣市空き家バンク
   operator: 水俣市
@@ -119,7 +119,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.minamata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.minamata.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: kumamoto-432067
   name: 玉名市空き家バンク
   operator: 玉名市
@@ -140,7 +140,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tamana.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tamana.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.tamana.lg.jp/q/aview/596/21680.html
     kind: subsidy
@@ -173,7 +173,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.city.yamaga.kumamoto.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.yamaga.kumamoto.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.yamaga.kumamoto.jp/kiji0032042/index.html
     kind: subsidy
@@ -200,7 +200,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kikuchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kikuchi.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.kikuchi.lg.jp/article/list/1043.html
     kind: subsidy
@@ -226,7 +226,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.city.uto.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.uto.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://kumamoto-akiya360.jp/property/p1000000398/
     kind: listing_index
@@ -258,7 +258,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kamiamakusa.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kamiamakusa.kumamoto.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.kamiamakusa.kumamoto.jp/q/aview/310/22518.html
     kind: subsidy
@@ -285,7 +285,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.uki.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.uki.kumamoto.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.uki.kumamoto.jp/resource.php?e=5dace208e13855ac11fc1e24ae32faa222517c224187efe95f8cfb73731c63331088f41229aa51192405cb882b1de8bc
     kind: subsidy
@@ -315,7 +315,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.aso.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.aso.kumamoto.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.aso.kumamoto.jp/akiya/
     kind: listing_index
@@ -342,7 +342,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.amakusa.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.amakusa.kumamoto.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: kumamoto-432164
   name: 合志市空き家バンク
   operator: 合志市
@@ -363,7 +363,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.koshi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.koshi.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: kumamoto-433489
   name: 美里町空き家バンク
   operator: 美里町
@@ -384,7 +384,7 @@ sources:
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.town.kumamoto-misato.lg.jp）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: kumamoto-433641
   name: 玉東町空き家バンク
   operator: 玉東町
@@ -405,7 +405,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.gyokuto.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.gyokuto.kumamoto.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: kumamoto-433675
   name: 南関町空き家バンク
   operator: 南関町
@@ -425,7 +425,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.town.nankan.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.town.nankan.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://kumamoto-akiya360.jp/property/p1000000851/
     kind: listing_index
@@ -457,7 +457,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nagasu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.nagasu.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.nagasu.lg.jp/soshiki/machizukuri/teiju/kiji0032064/
     kind: subsidy
@@ -489,7 +489,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nagomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.nagomi.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.nagomi.lg.jp/iju/teijyuu/akiya/16/
     kind: listing_index
@@ -524,7 +524,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ozu.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ozu.kumamoto.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: kumamoto-434043
   name: 菊陽町空き家バンク
   operator: 菊陽町
@@ -545,7 +545,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kikuyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kikuyo.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.kikuyo.lg.jp/kiji0031553/index.html
     kind: subsidy
@@ -571,7 +571,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.town.minamioguni.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.town.minamioguni.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://minamioguni-rashiku.com/vacant-house/
     kind: listing_index
@@ -605,7 +605,7 @@ sources:
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.town.kumamoto-oguni.lg.jp）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.kumamoto-oguni.lg.jp/toppage/toppage_oshirase/22289
     kind: subsidy
@@ -632,7 +632,7 @@ sources:
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.ubuyama-v.jp）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.ubuyama-v.jp/kurashi_tetsuzuki/seikatsukankyo/reformsupport/index.html
     kind: subsidy
@@ -665,7 +665,7 @@ sources:
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.town.takamori.kumamoto.jp）。サイトを取得できなかったためリンクのみ（HTTP 403）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: kumamoto-434329
   name: 西原村空き家バンク
   operator: 西原村
@@ -685,7 +685,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.nishihara.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.nishihara.kumamoto.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.vill.nishihara.kumamoto.jp/dynamic/ijyu/info/pub/default.aspx?c_id=32
     kind: listing_index
@@ -714,7 +714,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.minamiaso.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.minamiaso.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: kumamoto-434418
   name: 御船町空き家バンク
   operator: 御船町
@@ -735,7 +735,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.mifune.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.mifune.kumamoto.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.mifune.kumamoto.jp/page7168.html
     kind: subsidy
@@ -762,7 +762,7 @@ sources:
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.town.kumamoto-kashima.lg.jp）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.kumamoto-kashima.lg.jp/q/aview/104/1272.html
     kind: subsidy
@@ -789,7 +789,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.mashiki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.mashiki.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: kumamoto-434442
   name: 甲佐町空き家バンク
   operator: 甲佐町
@@ -810,7 +810,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kosa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kosa.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: kumamoto-434477
   name: 山都町空き家バンク
   operator: 山都町
@@ -831,7 +831,7 @@ sources:
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.town.kumamoto-yamato.lg.jp）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: kumamoto-434680
   name: 氷川町空き家バンク
   operator: 氷川町
@@ -852,7 +852,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hikawa.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.hikawa.kumamoto.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.hikawa.kumamoto.jp/kiji0032590/index.html
     kind: subsidy
@@ -879,7 +879,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ashikita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.ashikita.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.ashikita.lg.jp/toppage/bosyu/2072708
     kind: subsidy
@@ -906,7 +906,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tsunagi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.tsunagi.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.tsunagi.lg.jp/page4668.html
     kind: subsidy
@@ -935,7 +935,7 @@ sources:
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.town.kumamoto-nishiki.lg.jp）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: kumamoto-435058
   name: 多良木町空き家バンク
   operator: 多良木町
@@ -956,7 +956,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.taragi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.taragi.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: kumamoto-435066
   name: 湯前町空き家バンク
   operator: 湯前町
@@ -977,7 +977,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yunomae.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.yunomae.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: kumamoto-435074
   name: 水上村空き家バンク
   operator: 水上村
@@ -997,7 +997,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.mizukami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.mizukami.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.vill.mizukami.lg.jp/dynamic/info/pub/default.aspx?c_id=22
     kind: listing_index
@@ -1026,7 +1026,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.sagara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.sagara.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.vill.sagara.lg.jp/q/aview/201/333.html
     kind: subsidy
@@ -1052,7 +1052,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.itsuki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.itsuki.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.vill.itsuki.lg.jp/dynamic/teijuu/info/pub/detail.aspx?c_id=17&id=27
     kind: listing_index
@@ -1079,7 +1079,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.yamae.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.yamae.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: kumamoto-435139
   name: 球磨村空き家バンク
   operator: 球磨村
@@ -1100,7 +1100,7 @@ sources:
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（www.kumamura.com）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: kumamoto-435147
   name: あさぎり町空き家バンク
   operator: あさぎり町
@@ -1121,7 +1121,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.asagiri.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.asagiri.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.asagiri.lg.jp/kiji0033879/index.html
     kind: subsidy
@@ -1148,4 +1148,4 @@ sources:
   operator_evidence:
     quote: 熊本県 県内市町村のホームページ（リンク集）に掲載された公式サイト（reihoku-kumamoto.jp）
     url: https://www.pref.kumamoto.jp/soshiki/1/177925.html
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'

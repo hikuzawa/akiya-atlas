@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kofu.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kofu.yamanashi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.kofu.yamanashi.jp/akiyataisaku/bankuzyosei.html
     kind: subsidy
@@ -52,7 +52,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.fujiyoshida.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.fujiyoshida.yamanashi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: yamanashi-192040
   name: 都留市空き家バンク
   operator: 都留市
@@ -73,7 +73,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tsuru.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.tsuru.yamanashi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: yamanashi-192058
   name: 山梨市空き家バンク
   operator: 山梨市
@@ -94,7 +94,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yamanashi.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.yamanashi.yamanashi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.yamanashi.yamanashi.jp/site/iju/2121.html
     kind: subsidy
@@ -126,7 +126,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.otsuki.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.otsuki.yamanashi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.otsuki.yamanashi.jp/shisei/shisaku_keikaku/akiyabanku.html
     kind: listing_index
@@ -162,7 +162,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nirasaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nirasaki.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: yamanashi-192082
   name: 南アルプス市空き家バンク
   operator: 南アルプス市
@@ -182,7 +182,7 @@ sources:
   operator_evidence:
     quote: 山梨県市町村リンクページに掲載された公式サイト（www.city.minami-alps.yamanashi.jp）
     url: https://www.pref.yamanashi.jp/link/link_city.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.minami-alps.yamanashi.jp/iju/akiyabank/
     kind: listing_index
@@ -210,7 +210,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hokuto.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hokuto.yamanashi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.hokuto.yamanashi.jp/teijyu_ijyu/bank/
     kind: listing_index
@@ -239,7 +239,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kai.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kai.yamanashi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.kai.yamanashi.jp/page/4680.html
     kind: subsidy
@@ -268,7 +268,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.fuefuki.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.fuefuki.yamanashi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: yamanashi-192121
   name: 上野原市空き家バンク
   operator: 上野原市
@@ -288,7 +288,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.uenohara.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.uenohara.yamanashi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.uenohara.yamanashi.jp/site/iju/1514.html
     kind: listing_index
@@ -317,7 +317,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.koshu.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.koshu.yamanashi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: yamanashi-192147
   name: 中央市空き家バンク
   operator: 中央市
@@ -359,7 +359,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ichikawamisato.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ichikawamisato.yamanashi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: yamanashi-193640
   name: 早川町空き家バンク
   operator: 早川町
@@ -380,7 +380,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hayakawa.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.hayakawa.yamanashi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.hayakawa.yamanashi.jp/people/residence/2017-1013-1336-55.html
     kind: subsidy
@@ -410,7 +410,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.minobu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.minobu.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.minobu.lg.jp/akiya/ijyu/10369.html
     kind: listing_detail
@@ -437,7 +437,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nanbu.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nanbu.yamanashi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: yamanashi-193682
   name: 富士川町空き家バンク
   operator: 富士川町
@@ -458,7 +458,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.fujikawa.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.fujikawa.yamanashi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: yamanashi-193844
   name: 昭和町空き家バンク
   operator: 昭和町
@@ -479,7 +479,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.showa.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.showa.yamanashi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: yamanashi-194221
   name: 道志村空き家バンク
   operator: 道志村
@@ -499,7 +499,7 @@ sources:
   operator_evidence:
     quote: 山梨県市町村リンクページに掲載された公式サイト（www.vill.doshi.lg.jp）
     url: https://www.pref.yamanashi.jp/link/link_city.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: http://www.vill.doshi.lg.jp/burner/log.php?id=27&url=http%3A%2F%2Fwww.vill.doshi.lg.jp%2Fakiyabank%2F
     kind: listing_index
@@ -526,7 +526,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nishikatsura.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nishikatsura.yamanashi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: yamanashi-194247
   name: 忍野村空き家バンク
   operator: 忍野村
@@ -547,7 +547,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.oshino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.oshino.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.vill.oshino.lg.jp/page/8242.html
     kind: subsidy
@@ -574,7 +574,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.yamanakako.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.yamanakako.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.vill.yamanakako.lg.jp/info/164
     kind: subsidy
@@ -601,7 +601,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.narusawa.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.narusawa.yamanashi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: yamanashi-194301
   name: 富士河口湖町空き家バンク
   operator: 富士河口湖町
@@ -622,7 +622,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.fujikawaguchiko.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.fujikawaguchiko.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.fujikawaguchiko.lg.jp/life/info.php?if_id=7201
     kind: subsidy
@@ -655,7 +655,7 @@ sources:
   operator_evidence:
     quote: 山梨県市町村リンクページに掲載された公式サイト（www.vill.kosuge.yamanashi.jp）
     url: https://www.pref.yamanashi.jp/link/link_city.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: yamanashi-194433
   name: 丹波山村空き家バンク
   operator: 丹波山村
@@ -676,4 +676,4 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.tabayama.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.tabayama.yamanashi.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'

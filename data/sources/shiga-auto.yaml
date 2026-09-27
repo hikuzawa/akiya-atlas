@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.otsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.otsu.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: shiga-252026
   name: 彦根市空き家バンク
   operator: 彦根市
@@ -41,7 +41,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hikone.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hikone.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.hikone.lg.jp/life/6/2/index.html
     kind: subsidy
@@ -68,7 +68,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nagahama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nagahama.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.nagahama.lg.jp/category/10-9-1-0-0-0-0-0-0-0.html
     kind: subsidy
@@ -101,7 +101,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.omihachiman.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.omihachiman.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: shiga-252069
   name: 草津市空き家バンク
   operator: 草津市
@@ -122,7 +122,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kusatsu.shiga.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kusatsu.shiga.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: shiga-252077
   name: 守山市空き家バンク
   operator: 守山市
@@ -143,7 +143,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.moriyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.moriyama.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.moriyama.lg.jp/kurashitetsuzuki/juken/1001868/1001882.html
     kind: subsidy
@@ -172,7 +172,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ritto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.ritto.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: shiga-252093
   name: 甲賀市空き家バンク
   operator: 甲賀市
@@ -193,7 +193,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.koka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.koka.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: shiga-252107
   name: 野洲市空き家バンク
   operator: 野洲市
@@ -214,7 +214,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yasu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.yasu.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.yasu.lg.jp/soshiki/juutaku/akiya/1681267068214.html
     kind: subsidy
@@ -265,7 +265,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.takashima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.takashima.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: shiga-252131
   name: 東近江市空き家バンク
   operator: 東近江市
@@ -286,7 +286,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.higashiomi.shiga.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.higashiomi.shiga.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: shiga-252140
   name: 米原市空き家バンク
   operator: 米原市
@@ -307,7 +307,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.maibara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.maibara.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.maibara.lg.jp/kurashi/sumai/josei/index.html
     kind: subsidy
@@ -339,7 +339,7 @@ sources:
   operator_evidence:
     quote: 滋賀県 県内の市町一覧に掲載された公式サイト（www.town.shiga-hino.lg.jp）
     url: https://www.pref.shiga.lg.jp/ab00/7739.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.shiga-hino.lg.jp/0000002170.html
     kind: listing_index
@@ -375,7 +375,7 @@ sources:
   operator_evidence:
     quote: 滋賀県 県内の市町一覧に掲載された公式サイト（www.town.ryuoh.shiga.jp）
     url: https://www.pref.shiga.lg.jp/ab00/7739.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.ryuoh.shiga.jp/life/seikatsu_kankyo_pet/smart_life_style.html
     kind: subsidy
@@ -407,7 +407,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.aisho.shiga.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.aisho.shiga.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.aisho.shiga.jp/kurashi_tetsuzuki/sumai/akiya/10206.html
     kind: listing_index
@@ -444,7 +444,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.toyosato.shiga.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.toyosato.shiga.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.toyosato.shiga.jp/0000003494.html
     kind: subsidy
@@ -471,7 +471,7 @@ sources:
   operator_evidence:
     quote: 滋賀県 県内の市町一覧に掲載された公式サイト（www.kouratown.jp）
     url: https://www.pref.shiga.lg.jp/ab00/7739.html
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
 - id: shiga-254436
   name: 多賀町空き家バンク
   operator: 多賀町
@@ -492,7 +492,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.taga.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.taga.lg.jp/
-    checked_on: '2026-09-17'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.taga.lg.jp/soshiki/kikaku/1/10/622.html
     kind: subsidy

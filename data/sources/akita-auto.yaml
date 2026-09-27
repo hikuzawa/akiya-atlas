@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.akita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.akita.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.akita.lg.jp/kurashi/sumai/1007487/index.html
     kind: subsidy
@@ -46,7 +46,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.noshiro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.noshiro.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.noshiro.lg.jp/sangyo/iju-teiju/akiya-bank/11098
     kind: listing_index
@@ -81,7 +81,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yokote.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.yokote.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.yokote.lg.jp/kurashi/1001142/1001273/1001275/1002707.html
     kind: subsidy
@@ -110,7 +110,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.odate.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.odate.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: akita-052060
   name: 男鹿市空き家バンク
   operator: 男鹿市
@@ -131,7 +131,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.oga.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.oga.akita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.oga.akita.jp/ijuteiju/live/advice/index.html
     kind: subsidy
@@ -160,7 +160,7 @@ sources:
   operator_evidence:
     quote: 秋田県 県内市町村のウェブサイトに掲載された公式サイト（www.city-yuzawa.jp）
     url: https://www.pref.akita.lg.jp/pages/archive/46079
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city-yuzawa.jp/soshiki/16/1499.html
     kind: subsidy
@@ -189,7 +189,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kazuno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kazuno.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: akita-052108
   name: 由利本荘市空き家バンク
   operator: 由利本荘市
@@ -210,7 +210,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yurihonjo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.yurihonjo.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.yurihonjo.lg.jp/1000006/1008699/1008698.html
     kind: subsidy
@@ -237,7 +237,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.katagami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.katagami.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: akita-052124
   name: 大仙市空き家バンク
   operator: 大仙市
@@ -258,7 +258,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.daisen.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.daisen.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.daisen.lg.jp/archive/p20260603093745
     kind: subsidy
@@ -285,7 +285,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kitaakita.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kitaakita.akita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.city.kitaakita.akita.jp/genre/syoubou_honbu/kasaikeihouki
     kind: subsidy
@@ -318,7 +318,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nikaho.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.nikaho.akita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: akita-052159
   name: 仙北市空き家バンク
   operator: 仙北市
@@ -339,7 +339,7 @@ sources:
   operator_evidence:
     quote: 秋田県 県内市町村のウェブサイトに掲載された公式サイト（www.city.semboku.akita.jp）
     url: https://www.pref.akita.lg.jp/pages/archive/46079
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: akita-053031
   name: 小坂町空き家バンク
   operator: 小坂町
@@ -360,7 +360,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kosaka.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kosaka.akita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.kosaka.akita.jp/kurashi_gyosei/kurashi_tetsuzuki/jutaku/1480.html
     kind: subsidy
@@ -393,7 +393,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.kamikoani.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.kamikoani.akita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: akita-053465
   name: 藤里町空き家バンク
   operator: 藤里町
@@ -414,7 +414,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.fujisato.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.fujisato.akita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: akita-053481
   name: 三種町空き家バンク
   operator: 三種町
@@ -434,7 +434,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.mitane.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.mitane.akita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.mitane.akita.jp/kurashi_furusatokaiki/akiya_bank/2305.html
     kind: listing_index
@@ -471,7 +471,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.happo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.happo.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: akita-053619
   name: 五城目町空き家バンク
   operator: 五城目町
@@ -492,7 +492,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.gojome.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.gojome.akita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.gojome.akita.jp/izyuu/kigyouizyuuhozyoseid/
     kind: subsidy
@@ -528,7 +528,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hachirogata.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.hachirogata.akita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.hachirogata.akita.jp/kurashi/1001529/1003076.html
     kind: subsidy
@@ -561,7 +561,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ikawa.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ikawa.akita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.ikawa.akita.jp/page/1600.html
     kind: subsidy
@@ -592,7 +592,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.ogata.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.ogata.akita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: akita-054348
   name: 美郷町空き家バンク
   operator: 美郷町
@@ -613,7 +613,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.misato.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.misato.akita.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
   pages:
   - url: https://www.town.misato.akita.jp/archive/contents-658
     kind: subsidy
@@ -642,7 +642,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ugo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.ugo.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
 - id: akita-054640
   name: 東成瀬村空き家バンク
   operator: 東成瀬村
@@ -663,4 +663,4 @@ sources:
   operator_evidence:
     quote: 公式ドメイン vill.higashinaruse.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://vill.higashinaruse.lg.jp/
-    checked_on: '2026-09-15'
+    checked_on: '2026-09-11'
