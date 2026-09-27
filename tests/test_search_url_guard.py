@@ -139,52 +139,69 @@ def test_no_committed_seed_is_a_site_search() -> None:
     assert not bad, bad
 
 
-@respx.mock
-def test_a_portal_page_does_not_list_its_own_menu_as_related_sites() -> None:
-    """選んだページ自身が民間プラットフォームのとき、そのサイトのメニューを関連サイトにしない。
+JOSO_SEARCH = "https://www.city.joso.lg.jp/search.php?keyword=%E7%A9%BA%E3%81%8D%E5%AE%B6"
+JOSO_LIST = (
+    "https://www.city.joso.lg.jp/kurashi_gyousei/kurashi/suidou_jyutaku/sumai/"
+    "vacant_house_bank/registered_property_info/page000499.html"
+)
 
-    楽園信州・アットホームの自治体ページを空き家バンクとして選ぶと、「最近見た物件 0 件」
-    「お気に入り」「1021 件」などのメニューまで「物件を探せるサイト」に並んでいた
-    （函館市・須坂市・南木曽町・下田市・足利市・真岡市と、選び直した松川村。2026-09-26）。
+
+def test_a_record_taken_from_a_search_result_is_rebuilt_from_the_listing_page() -> None:
+    """常総市の形。検索結果を詳細ページとして取り込んだ物件は、一覧ページから取れたら置き換える。
+
+    「詳細ページ由来を一覧ページ由来より優先する」（ADR 0002）がそのまま効くと、
+    一覧ページから取り直しても、要約と一次情報のリンクが検索結果に残り、検索結果の抜粋から
+    取った値も一覧ページの値より優先される（2026-09-27 の実行で 3 件がそうなった）。
     """
-    from sitemill.classify import PlatformRegistry
+    from akiya_atlas.service import merge_content
 
-    from akiya_atlas.official_domains import classify_host
+    from_search = {
+        "source_id": "ibaraki-082112",
+        "municipality_code": "082112",
+        "listing_no": "登録物件040",
+        "deal_type": "sale",
+        "title": "杉山の売買対象の住宅",
+        "summary": "検索結果の抜粋から作った要約",
+        "source_url": JOSO_SEARCH,
+        "detail_url": JOSO_SEARCH,
+        "page_kind": "listing_detail",
+        "price": {"quote": "価格 300万円", "value": 3000000, "status": "parsed"},
+        "land_area_m2": {"quote": "598.68㎡", "value": 598.68, "status": "parsed"},
+    }
+    from_list = {
+        "source_id": "ibaraki-082112",
+        "municipality_code": "082112",
+        "listing_no": "登録物件040",
+        "deal_type": "sale",
+        "title": "杉山の木造1階建て住宅",
+        "summary": "一覧ページから作った要約",
+        "source_url": JOSO_LIST,
+        "detail_url": None,
+        "page_kind": "listing_index",
+        "price": {"quote": "250万円", "value": 2500000, "status": "parsed"},
+        "land_area_m2": None,  # 一覧ページに無い値は、検索結果の抜粋から持ち越さない
+    }
+    assert merge_content(from_search, from_list) == from_list
 
-    official_host = "www.vill.kakuu.nagano.jp"
-    portal = "https://rakuen-akiya.jp"
-    respx.get(f"https://{official_host}/robots.txt").mock(return_value=httpx.Response(404))
-    respx.get(f"{portal}/robots.txt").mock(return_value=httpx.Response(404))
-    respx.get(f"https://{official_host}/").mock(
-        return_value=httpx.Response(
-            200,
-            text=(
-                "<html><head><title>架空村</title></head><body>"
-                f"<a href='{portal}/'>楽園信州空き家バンク・空き地バンク</a></body></html>"
-            ),
-            headers={"content-type": "text/html; charset=utf-8"},
-        )
-    )
-    respx.get(f"{portal}/").mock(
-        return_value=httpx.Response(
-            200,
-            text=(
-                "<html><body><h1>楽園信州空き家バンク</h1>"
-                f"<a href='{portal}/favorite/'>お気に入り</a>"
-                f"<a href='{portal}/history/'>閲覧履歴</a>"
-                f"<a href='{portal}/housesearch/all/'>1021 件</a>"
-                # 自社の一般の不動産一覧への誘導。ホストは違うが、市町村の案内ではない
-                "<a href='https://www.athome.co.jp/kodate/chuko/nagano/list/'>"
-                "空き家バンク以外の中古一戸建てを探す (athome)</a>"
-                "</body></html>"
-            ),
-            headers={"content-type": "text/html; charset=utf-8"},
-        )
-    )
-    for path in ("/sitemap.xml", "/sitemap_index.xml"):
-        respx.get(f"https://{official_host}{path}").mock(return_value=httpx.Response(404))
-    official = classify_host(official_host, "nagano")
-    with _client() as c:
-        probe = expand.find_bank_page(f"https://{official_host}/", official, c, PlatformRegistry())
-    assert probe.url == f"{portal}/"
-    assert probe.externals == []  # メニューも、自社の一般の一覧への誘導も拾わない
+
+def test_no_committed_record_cites_a_site_search() -> None:
+    """一次情報のリンク（source_url・detail_url）が検索結果になっている物件が無いこと。
+
+    巡回先の歯止め（test_no_committed_seed_is_a_site_search）だけでは、歯止めを入れる前に
+    検索結果から取り込んだ物件が残る（常総市の 3 件は、巡回先を直した翌朝も残っていた）。
+    """
+    import json
+    from pathlib import Path
+
+    root = Path(__file__).resolve().parents[1]
+    bad = []
+    for path in sorted((root / "data" / "records").glob("*.jsonl")):
+        for line in path.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            record = json.loads(line)
+            for key in ("source_url", "detail_url"):
+                url = record.get(key)
+                if url and expand.is_site_search_url(url):
+                    bad.append((record["record_id"], key, url))
+    assert not bad, bad

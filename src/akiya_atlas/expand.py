@@ -15,7 +15,7 @@ from collections.abc import Collection
 from dataclasses import dataclass, field
 from datetime import UTC, date, datetime
 from pathlib import Path
-from urllib.parse import parse_qsl, urlsplit
+from urllib.parse import urlsplit
 
 import yaml
 from sitemill.build.pii import PHONE_RE
@@ -51,6 +51,7 @@ from akiya_atlas.municipalities import (
     municipalities_for,
 )
 from akiya_atlas.official_domains import OfficialHost, candidate_official_urls, classify_host
+from akiya_atlas.site_search import is_site_search_url
 
 log = logging.getLogger(__name__)
 
@@ -286,45 +287,7 @@ _NOT_LIST_ANCHOR = re.compile(
 )
 # 添付ファイル（申請書・チラシ）は HTML の一覧になり得ないので候補から外す
 _DOC_URL = re.compile(r"\.(?:pdf|docx?|xlsx?|pptx?|zip)(?:[?#].*)?$", re.I)
-# サイト内検索の結果と検索画面。巡回先にしない（2026-09-26）。
-# 「検索フォーム型は自動で検索を送らず、リンクのみにする」方針は上書きファイルで自治体ごとに
-# 決めていたが、発見のコードには歯止めが無く、GET の検索結果 URL を 2 件巡回先に採っていた
-# （常総市の物件一覧 search.php?keyword=空き家、当麻町の補助制度 /search/node?keys=住宅補助）。
-# 検索結果を巡回するのは、検索を自動で送るのと同じことなので、候補の段階で外す
-_SEARCH_PATH = re.compile(
-    r"(?:^|/)(?:search|kensaku|site-?search)(?:/|\.(?:php|html?|cgi|aspx?|jsp)|$)", re.I
-)
-_SEARCH_KEYS = frozenset(
-    {
-        "keys",
-        "keyword",
-        "keywords",
-        "kw",
-        "q",
-        "query",
-        "s",
-        "search",
-        "word",
-        "searchword",
-        "free_word",
-        "freeword",
-    }
-)
-
-
-def is_site_search_url(url: str) -> bool:
-    """サイト内検索の結果か検索画面の URL か。巡回先の候補から外すのに使う。
-
-    パスに `search`（`/search/`・`search.php` など）があるか、検索語の引数
-    （`?keys=` `?keyword=` `?q=` `?s=` など）を持つものを検索とみなす。
-    一覧のページ送り（`?page=2`）や絞り込み（`?area=1`）は検索ではないので通す。
-    """
-    parts = urlsplit(url)
-    if _SEARCH_PATH.search(parts.path):
-        return True
-    keys = {k.lower() for k, _ in parse_qsl(parts.query, keep_blank_values=True)}
-    return bool(keys & _SEARCH_KEYS)
-
+# サイト内検索の結果と検索画面は、候補の段階で巡回先から外す（is_site_search_url。2026-09-26）
 
 MAX_CANDIDATE_FETCH = 5  # 1 市町村あたり実際に取得して一覧らしさを見る候補数の上限
 # 選んだページが一覧でないとき、少なくとも空き家バンクに触れていれば「制度案内（info）」とみなす

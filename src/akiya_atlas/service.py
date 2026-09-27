@@ -24,6 +24,7 @@ from sitemill.store.records import RecordStore
 from akiya_atlas import affiliates, pages
 from akiya_atlas.data import Dataset, load_municipalities, load_sources, records_path
 from akiya_atlas.schema import STATUS_RETIRED, normalize_listing_no, record_id_for
+from akiya_atlas.site_search import is_site_search_url
 from akiya_atlas.spec import spec_for_kind
 from akiya_atlas.subsidies import ingest_subsidies
 
@@ -262,7 +263,13 @@ def merge_content(existing: dict[str, Any], new: dict[str, Any]) -> dict[str, An
     そのページの全物件を読み直すので、変わっていない物件まで題名・要約・引用が書き換わり、
     サイトマップの lastmod が「変わった」と言い続ける（2026-09-19 の一晩で、値が動いたのは
     42 件、言い回しだけが動いたのは 386 件だった。docs/data-issues.md）。
+
+    サイト内検索の結果から取った内容は、何も残さずに新しい内容で置き換える。検索結果は抜粋で
+    あって詳細ページではない。常総市は 2026-09-26 まで search.php?keyword=空き家 を詳細ページ
+    として巡回していて、一覧ページから取り直しても、要約と一次情報のリンクが検索結果のまま残った。
     """
+    if is_site_search_url(existing.get("source_url") or ""):
+        return dict(new)
     out = dict(new)
     new_is_detail = new.get("page_kind") == "listing_detail"
     old_is_detail = existing.get("page_kind") == "listing_detail"
