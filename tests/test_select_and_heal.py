@@ -300,6 +300,77 @@ def test_heal_keeps_a_page_whose_body_cannot_be_read(ws: Workspace) -> None:
     assert any("保留" in line for line in result["changed"])
 
 
+def _findings_row(ws: Workspace) -> dict:
+    path = ws.runs_dir / "discover-nagano-findings.json"
+    return json.loads(path.read_text(encoding="utf-8"))["findings"][0]
+
+
+@respx.mock
+def test_a_hold_keeps_its_start_date_and_is_logged_once(ws: Workspace) -> None:
+    """保留は始めた日を残し、続く晩は「書き換えた」記録を増やさない（週次が日数を数える）。
+
+    奥多摩町は 09-11 から 16 日間、記録がどこにも無いまま保留されていた。確認日を実際に
+    確かめた日にした（2026-09-26）あとは、確認日だけが進む晩も書き換えとして記録していて、
+    保留が続く自治体が毎晩「選び直した自治体」に並ぶところだった（2026-09-27）。
+    """
+    url = BASE + "/akiya/list.html"
+    _mock({"/": TOP, "/akiya/hojo.html": HOJO, "/akiya/guide.html": GUIDE_WITH_LIST})
+    respx.get(url).mock(
+        return_value=httpx.Response(
+            200, text=UNREADABLE, headers={"content-type": "text/html; charset=utf-8"}
+        )
+    )
+    expand._write_rows(ws, "nagano", "長野県", [_row(url)])
+    _mark_crawled(ws, url)
+    log = ws.runs_dir / "heal-reselections.jsonl"
+    with _client() as c:
+        expand.heal(ws, client=c)
+    row = _findings_row(ws)
+    assert row["held_since"] == jst_today().isoformat() and "保留" in row["held_reason"]
+    assert len(log.read_text(encoding="utf-8").splitlines()) == 1  # 保留を始めた晩は残す
+
+    # 次の晩に当たる状態にする。始めた日は動かず、確認日だけが進む晩は記録しない
+    earlier = {**row, "held_since": "2026-09-11", "evidence_checked_on": "2026-09-26"}
+    expand._write_rows(ws, "nagano", "長野県", [earlier])
+    with _client() as c:
+        expand.heal(ws, client=c)
+    row = _findings_row(ws)
+    assert row["held_since"] == "2026-09-11"
+    assert row["evidence_checked_on"] == jst_today().isoformat()
+    assert len(log.read_text(encoding="utf-8").splitlines()) == 1
+
+
+@respx.mock
+def test_a_hold_ends_when_listings_come_in(ws: Workspace) -> None:
+    """物件が取れるようになったら保留の印を外す。残すと週次が保留として出し続ける。"""
+    from akiya_atlas.schema import Listing, record_id_for
+
+    url = BASE + "/akiya/list.html"
+    held = {**_row(url), "extract_gap": True, "held_since": "2026-09-11", "held_reason": "保留"}
+    expand._write_rows(ws, "nagano", "長野県", [held])
+    _mark_crawled(ws, url)
+    listing = Listing(
+        record_id=record_id_for(SID, "1"),
+        source_id=SID,
+        municipality_code="209999",
+        listing_no="1",
+        source_url=url,
+        first_seen_at="2026-09-27T00:00:00+00:00",
+        last_seen_at="2026-09-27T00:00:00+00:00",
+        deal_type="sale",
+        title="架空市の住宅",
+        summary="架空市の住宅。",
+    ).model_dump(mode="json")
+    (ws.root / "data" / "records" / f"{SID}.jsonl").write_text(
+        json.dumps(listing, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
+    with _client() as c:
+        result = expand.heal(ws, client=c)
+    assert result["checked"] == 0
+    row = _findings_row(ws)
+    assert "held_since" not in row and "held_reason" not in row and not row["extract_gap"]
+
+
 @respx.mock
 def test_heal_skips_sources_with_active_listings_or_not_yet_crawled(ws: Workspace) -> None:
     _mock(SITE)

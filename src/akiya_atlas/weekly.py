@@ -10,10 +10,11 @@ import json
 import os
 import subprocess
 from dataclasses import dataclass, field
-from datetime import UTC, datetime, timedelta
+from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
 from typing import Any
 
+from sitemill.clock import jst_today
 from sitemill.metrics import weekly as engine_weekly
 from sitemill.settings import Workspace
 
@@ -33,6 +34,9 @@ ERROR_KINDS_SHOWN = 5
 # robots.txt で止まっているホストを週次に出すときの言い方（判定そのものはエンジン。v0.7.8）
 ROBOTS_STALE_DAYS = engine_weekly.ROBOTS_STALE_DAYS
 ROBOTS_STALLED_NOTE = "この自治体の掲載は更新が止まっている"
+# heal の保留を名前つきで出すまでの日数（robots.txt で止まっているホストと同じ考え方）
+HOLD_STALE_DAYS = 3
+HOLD_NOTE = "利用者から見ると、この自治体の物件は無いのと同じ"
 
 
 def _dt(value: str | None) -> datetime | None:
@@ -316,6 +320,53 @@ def robots_lines(
     return engine_weekly.robots_lines(hosts, times, stalled, note=ROBOTS_STALLED_NOTE)
 
 
+Hold = tuple[str, str, int, str, str]  # (自治体, 保留を始めた日, 何日目, 理由, 一覧の URL)
+
+
+def heal_holds(ws: Workspace, *, now: datetime | None = None) -> list[Hold]:
+    """heal が「抽出側の問題」として保留している自治体。続いている日数の長い順。
+
+    保留は「一覧はあるのに 1 件も取り込めない」状態で、利用者から見ると物件が無いのと同じ。
+    奥多摩町は 2026-09-11 から 16 日間保留が続いていたのに、記録がどこにも無く、たまたま
+    気づいた（2026-09-27）。heal が findings に残す `held_since` を読む。
+    """
+    today = jst_today(now)
+    out: list[Hold] = []
+    for path in sorted(ws.runs_dir.glob("discover-*-findings.json")):
+        try:
+            rows = json.loads(path.read_text(encoding="utf-8")).get("findings") or []
+        except ValueError:
+            continue
+        for row in rows:
+            since = row.get("held_since")
+            # 巡回をやめた自治体に印だけが残っていても、保留とは言わない
+            if not since or row.get("policy") != "crawl":
+                continue
+            if row.get("bank_status", "available") != "available":
+                continue
+            try:
+                day = (today - date.fromisoformat(str(since))).days + 1
+            except ValueError:
+                continue
+            name = f"{row.get('prefecture', '')}{row.get('name', '')}"
+            reason = row.get("held_reason") or ""
+            out.append((name, str(since), day, reason, row.get("bank_url") or ""))
+    return sorted(out, key=lambda h: (-h[2], h[0]))
+
+
+def hold_lines(holds: list[Hold]) -> list[str]:
+    """週次に出す行。始めて間もない保留は数だけ、続いているものは名前と理由つきで。"""
+    if not holds:
+        return ["- heal が保留している自治体: なし"]
+    out = [f"- heal が保留している自治体: **{len(holds)}**"]
+    stale = [h for h in holds if h[2] >= HOLD_STALE_DAYS]
+    if stale:
+        out.append(f"  - **{HOLD_STALE_DAYS} 日以上続いている**（{HOLD_NOTE}）")
+        for name, since, day, reason, url in stale:
+            out.append(f"    - {name}（{since} から、{day} 日目）: {reason} {url}")
+    return out
+
+
 def error_kinds(errors: list[str]) -> list[tuple[str, int]]:
     """同じ失敗の繰り返しをまとめる。多い順。
 
@@ -389,6 +440,7 @@ def report(
     else:
         out.append("- 失敗した工程: なし")
     out += robots_lines(*robots_failures(ws, days=days, now=now))
+    out += hold_lines(heal_holds(ws, now=now))
 
     # LLM の費用は Actions の実行時間と別の節に置く（並べると同じ請求に見える）
     per_day = total.cost / max(len(rows), 1)

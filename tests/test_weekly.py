@@ -285,6 +285,57 @@ def test_actions_minutes_divides_by_the_days_the_repository_has_existed(
     assert not later["partial"] and later["monthly"] == pytest.approx(60.0 / 7 * 30)
 
 
+def _findings(ws: Workspace, rows: list[dict[str, object]]) -> None:
+    (ws.runs_dir / "discover-tokyo-findings.json").write_text(
+        json.dumps({"findings": rows}, ensure_ascii=False), encoding="utf-8"
+    )
+
+
+def _muni(name: str, since: str | None = None, *, policy: str = "crawl") -> dict[str, object]:
+    row: dict[str, object] = {
+        "prefecture": "東京都",
+        "name": name,
+        "policy": policy,
+        "bank_status": "available" if policy == "crawl" else "none",
+        "bank_url": f"https://www.town.{name}.example.jp/akiya/",
+    }
+    if since:
+        reason = "本文を取り出せないページ（物件行 2）。抽出側の問題として保留"
+        row |= {"held_since": since, "held_reason": reason}
+    return row
+
+
+def test_a_long_hold_is_named_and_a_new_one_is_only_counted(ws: Workspace) -> None:
+    """3 日以上続いた保留は名前を出す。奥多摩町は 16 日間、どこにも出ていなかった。"""
+    now = datetime(2026, 9, 27, 0, 0, tzinfo=UTC)  # JST 09-27 09:00
+    _findings(ws, [_muni("奥多摩町", "2026-09-11"), _muni("架空町", "2026-09-26"), _muni("別町")])
+    holds = weekly.heal_holds(ws, now=now)
+    assert [(h[0], h[2]) for h in holds] == [("東京都奥多摩町", 17), ("東京都架空町", 2)]
+    text = "\n".join(weekly.hold_lines(holds))
+    assert "heal が保留している自治体: **2**" in text
+    assert "東京都奥多摩町（2026-09-11 から、17 日目）: 本文を取り出せないページ" in text
+    assert "架空町" not in text  # 2 日目までは数だけ
+
+
+def test_no_hold_says_so(ws: Workspace) -> None:
+    _findings(ws, [_muni("別町")])
+    assert weekly.hold_lines(weekly.heal_holds(ws)) == ["- heal が保留している自治体: なし"]
+
+
+def test_a_mark_left_on_a_municipality_no_longer_crawled_is_not_a_hold(ws: Workspace) -> None:
+    """巡回をやめた自治体に印だけが残っていても、保留として出さない。"""
+    _findings(ws, [_muni("奥多摩町", "2026-09-11", policy="link_only")])
+    assert weekly.heal_holds(ws) == []
+
+
+def test_the_report_carries_the_hold_line(ws: Workspace, monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.delenv("GH_REPO", raising=False)  # 環境に設定があっても外部に出ない
+    now = datetime(2026, 9, 27, 0, 0, tzinfo=UTC)
+    _findings(ws, [_muni("奥多摩町", "2026-09-11")])
+    text = "\n".join(weekly.report(ws, days=7, now=now, repo=None))
+    assert "東京都奥多摩町（2026-09-11 から、17 日目）" in text
+
+
 def _crawl_state(ws: Workspace, urls: dict[str, dict[str, object]]) -> None:
     (ws.state_dir / "crawl.json").write_text(
         json.dumps({"urls": urls}, ensure_ascii=False), encoding="utf-8"

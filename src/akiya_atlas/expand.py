@@ -89,6 +89,10 @@ class MunicipalityFinding:
     # 入れる。県の YAML を作り直すたびに今日にすると、`--code` で 1 自治体を見ただけで県の全部の
     # 確認日が進み、`/data/<県>/` の「確認日」が嘘になる（2026-09-26 に 179 件・44 件で起きた）
     evidence_checked_on: str | None = None
+    # heal が「抽出側の問題」として保留し始めた日（ISO）と理由。保留が続く間は日付を動かさない。
+    # 奥多摩町は 09-11 から 16 日間、どこにも記録が無いまま保留されていた（週次がこれを読む）
+    held_since: str | None = None
+    held_reason: str | None = None
 
 
 def _name_key(text: str) -> str:
@@ -1300,6 +1304,8 @@ def _finding_to_row(f: MunicipalityFinding) -> dict:
         "pagination_pattern": f.pagination_pattern,
         "detail_pattern": f.detail_pattern,
         "extract_gap": f.extract_gap,
+        # 保留していない行には鍵ごと出さない（全自治体の行に null が並ばないように）
+        **({"held_since": f.held_since, "held_reason": f.held_reason} if f.held_since else {}),
         "subsidy_urls": list(f.subsidy_urls),
         "alternatives": list(f.alternatives),
     }
@@ -1343,6 +1349,8 @@ def _row_to_finding(row: dict) -> MunicipalityFinding:
         pagination_pattern=row.get("pagination_pattern"),
         detail_pattern=row.get("detail_pattern"),
         extract_gap=bool(row.get("extract_gap")),
+        held_since=row.get("held_since"),
+        held_reason=row.get("held_reason"),
         subsidy_urls=list(row.get("subsidy_urls") or []),
         alternatives=list(row.get("alternatives", [])),
     )
@@ -1508,6 +1516,22 @@ _EMPTY_NOTICE = re.compile(r"(?:物件|情報)[はも]?(?:、|\s)*(?:ありま�
 # 結論が変わりにくいので毎晩は取りにいかない。
 # 巡回の間隔と同じ考え方で、sitemill ADR 0015 の下限（週 1 回）に合わせる
 EMPTY_RECHECK_DAYS = 7
+
+_HOLD_KEYS = ("held_since", "held_reason")
+# heal が見るたびに書き直す項目。これだけが変わった晩は、書き換えの記録を残さない。
+# 確認日だけで記録すると、保留が続く自治体が毎晩「選び直した」として週次に並ぶ
+_REFRESHED_EACH_LOOK = ("evidence_checked_on", "held_reason")
+
+
+def _hold(f: MunicipalityFinding, row: dict, reason: str) -> None:
+    """保留の印を付ける。前の晩から続く保留なら、始めた日はそのまま。"""
+    f.extract_gap = True
+    f.held_since = row.get("held_since") or jst_today().isoformat()
+    f.held_reason = reason
+
+
+def _without(row: dict, keys: tuple[str, ...]) -> dict:
+    return {k: v for k, v in row.items() if k not in keys}
 
 
 def _evidence_of(score: ListingScore | None, url: str | None) -> dict | None:
@@ -1716,7 +1740,13 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
                 continue
             muni = ds.muni_by_source.get(sid)
             src = ds.by_source.get(sid)
-            if muni is None or src is None or ds.listings_for(muni, active_only=True):
+            if muni is not None and src is not None and ds.listings_for(muni, active_only=True):
+                if row.get("held_since"):
+                    # 物件が取れるようになった。保留は終わり（週次が出し続けないように外す）
+                    rows[i] = {**_without(row, _HOLD_KEYS), "extract_gap": False}
+                    touched = True
+                continue
+            if muni is None or src is None:
                 continue
             states = [ds.state.get(p.url) for p in src.pages]
             if not any(st is not None and st.fetched_at is not None for st in states):
@@ -1767,17 +1797,19 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
                 text, score = _page_signals(new.bank_url, client)
                 judged = _evidence_of(score, new.bank_url)
                 if len(text) < MIN_BODY_TEXT:
-                    new.extract_gap = True
+                    rows_seen = new.listing_rows
+                    reason = (
+                        f"本文を取り出せないページ（物件行 {rows_seen}）。抽出側の問題として保留"
+                    )
+                    _hold(new, row, reason)
                     rows[i] = _finding_to_row(new)
                     touched = True
-                    result["changed"].append(
-                        f"{name}: 本文を取り出せないページ（物件行 {new.listing_rows}）。"
-                        "抽出側の問題として保留"
-                    )
+                    result["changed"].append(f"{name}: {reason}")
                 elif _EMPTY_NOTICE.search(text):
                     # 掲載が無いと書いてある。差し替えも取り下げもせず、次は 7 日後に見る。
                     # 日付だけを findings に残す（sources/review の中身は変わらない）
-                    rows[i] = {**row, "empty_checked_on": jst_today().isoformat()}
+                    today = jst_today().isoformat()
+                    rows[i] = {**_without(row, _HOLD_KEYS), "empty_checked_on": today}
                     touched = True
                     result["changed"].append(
                         f"{name}: ページ自身が掲載なしと書いている。"
@@ -1822,13 +1854,13 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
                             f"{name}: 詳細ページを辿るようにした（{links} 本）"
                         )
                     else:
-                        new.extract_gap = True
-                        rows[i] = _finding_to_row(new)
-                        touched = True
                         rows_text = score.rows if score else "?"
                         note = (
                             f"一覧に見えるのに 0 件（物件行 {rows_text}）。抽出側の課題として保留"
                         )
+                        _hold(new, row, note)
+                        rows[i] = _finding_to_row(new)
+                        touched = True
                         result["changed"].append(f"{name}: {note}")
             else:
                 rows[i] = _finding_to_row(new)
@@ -1841,7 +1873,7 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
             # この source の行が変わったなら、何をどう変えたかを 1 件の記録にする。
             # data/sources はこの後まとめて書き直されるので、書き換えの根拠をここで残す
             after = rows[i]
-            if after != before:
+            if _without(after, _REFRESHED_EACH_LOOK) != _without(before, _REFRESHED_EACH_LOOK):
                 note = result["changed"][-1] if len(result["changed"]) > said else ""
                 result["reselected"].append(
                     {
