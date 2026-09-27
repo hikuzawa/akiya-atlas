@@ -32,7 +32,7 @@ sources:
   operator: 足利市
   operator_kind: municipality
   official_url: https://www.city.ashikaga.tochigi.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: 092029
     name: 足利市
@@ -48,14 +48,6 @@ sources:
     quote: 公式ドメイン www.city.ashikaga.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ashikaga.tochigi.jp/
     checked_on: '2026-09-11'
-  pages:
-  - url: https://ashikaga-c09202.akiya-athome.jp/contents/news/detail/?id=1805
-    kind: subsidy
-  - url: https://ashikaga-c09202.akiya-athome.jp/contents/news/detail/?id=1537
-    kind: subsidy
-  allow_hosts:
-  - ashikaga-c09202.akiya-athome.jp
-  max_pages: 30
 - id: tochigi-092037
   name: 栃木市空き家バンク
   operator: 栃木市
