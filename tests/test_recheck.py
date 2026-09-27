@@ -78,14 +78,19 @@ def test_the_oldest_are_picked_after_last_nights_failures() -> None:
         _row("200003", "丙村", "2026-09-11"),
         _row("200004", "丁町", "2026-09-27", recheck_failures=1),
         _row("200005", "戊村", "2026-09-01", policy="pending"),
+        # 確かめられなかったばかりの行は待たせる。古い日付のまま毎晩の枠を取り続けないように
+        _row("200006", "己町", "2026-09-01", recheck_last_tried="2026-09-25"),
     ]
-    picked = recheck.pick({"nagano": rows}, limit=2)
+    picked = recheck.pick({"nagano": rows}, limit=2, today=date(2026, 9, 28))
     assert [rows[i]["name"] for _, i in picked] == ["丁町", "乙町", "丙村"]
+    later = recheck.pick({"nagano": rows}, limit=2, today=date(2026, 10, 2))
+    assert [rows[i]["name"] for _, i in later] == ["丁町", "己町", "乙町"]
 
 
 def test_each_result_is_written_where_it_belongs(ws: Workspace) -> None:
     """成り立てば確認日を今日に（findings と YAML の両方）。成り立たなければ日付はそのままで晩数を
-    残す。robots.txt で取れなければ何もしない。1 件ずつ記録に残す。"""
+    残す。robots.txt で取れない・通信できないものは、日付も失敗の数も動かさず、待たせる。
+    1 件ずつ記録に残す。"""
     expand._write_rows(
         ws,
         "nagano",
@@ -94,12 +99,14 @@ def test_each_result_is_written_where_it_belongs(ws: Workspace) -> None:
             _row("200001", "甲市", "2026-09-10"),
             _row("200002", "乙町", "2026-09-10"),
             _row("200003", "丙村", "2026-09-10"),
+            _row("200004", "丁町", "2026-09-10"),
         ],
     )
     results = {
         "甲市": ("ok", ""),
         "乙町": ("fail", "空き家バンクのページを開けない（HTTP 404）"),
         "丙村": ("skip", "robots.txt で公式サイトを取得できない"),
+        "丁町": ("unreachable", "公式サイトに通信できない（ConnectTimeout）"),
     }
     with _client() as c:
         report = recheck.recheck(
@@ -108,17 +115,26 @@ def test_each_result_is_written_where_it_belongs(ws: Workspace) -> None:
             today=date(2026, 9, 28),
             checker=lambda slug, row, *a: results[row["name"]],
         )
-    assert (report.checked, report.ok, report.failed, report.skipped) == (3, 1, 1, 1)
+    counts = (report.checked, report.ok, report.failed, report.skipped, report.unreachable)
+    assert counts == (4, 1, 1, 1, 1)
     rows = _findings(ws)
     assert rows["200001"]["evidence_checked_on"] == "2026-09-28"
     assert rows["200002"]["evidence_checked_on"] == "2026-09-10"
     assert rows["200002"]["recheck_failures"] == 1
     assert rows["200002"]["recheck_failed_since"] == "2026-09-28"
-    assert rows["200003"]["evidence_checked_on"] == "2026-09-10"
-    assert "recheck_failures" not in rows["200003"]
+    for code in ("200003", "200004"):
+        assert rows[code]["evidence_checked_on"] == "2026-09-10"
+        assert "recheck_failures" not in rows[code]
+        assert rows[code]["recheck_last_tried"] == "2026-09-28"
+    assert "通信できない" in rows["200004"]["recheck_waiting_reason"]
     assert _yaml_dates(ws)["nagano-200001"] == "2026-09-28"
     log = (ws.runs_dir / "operator-rechecks.jsonl").read_text(encoding="utf-8").splitlines()
-    assert sorted(json.loads(line)["result"] for line in log) == ["fail", "ok", "skip"]
+    results_logged = sorted(json.loads(line)["result"] for line in log)
+    assert results_logged == ["fail", "ok", "skip", "unreachable"]
+
+    text = "\n".join(weekly.recheck_lines(ws, [json.loads(line) for line in log]))
+    assert "robots.txt で見送り 1・通信できない 1" in text
+    assert "長野県丁町（2026-09-28 から）: 公式サイトに通信できない" in text
 
 
 def test_three_failed_nights_reselect_and_the_weekly_shows_old_and_new(
@@ -178,7 +194,8 @@ def test_the_weekly_names_what_does_not_hold(ws: Workspace) -> None:
         {"result": "skip", "at": "2026-09-28T03:30:00+09:00"},
     ]
     text = "\n".join(weekly.recheck_lines(ws, entries))
-    assert "**3 件**（成り立った 1・成り立たなかった 1・robots.txt で見送り 1）" in text
+    counts = "**3 件**（成り立った 1・成り立たなかった 1・robots.txt で見送り 1・通信できない 0）"
+    assert counts in text
     assert "いちばん古い確認日 2026-09-10" in text
     assert "長野県乙町（2026-09-27 から、2 晩目）: 県の市町村一覧が" in text
 
@@ -246,6 +263,53 @@ def test_check_is_skipped_when_robots_forbids_it(ws: Workspace) -> None:
             "nagano", row, c, expand.OfficialOverrides.load(ws, "nagano"), None
         )
     assert result == "skip"
+
+
+@respx.mock
+def test_a_site_that_drops_the_connection_is_not_a_failure(ws: Workspace) -> None:
+    """時間切れ・接続拒否・403 は、ページの有無について何も言っていない。失敗に数えると
+    3 晩で選び直しが走り、毎回同じ結果を繰り返す（japan-open-today の国内サイトで実例）。"""
+    respx.get(f"https://{HOST}/robots.txt").mock(return_value=httpx.Response(404))
+    respx.get(f"http://{HOST}/robots.txt").mock(return_value=httpx.Response(404))
+    respx.get(f"https://{HOST}/").mock(side_effect=httpx.ConnectTimeout("timed out"))
+    respx.get(f"http://{HOST}/").mock(return_value=httpx.Response(403))
+    row = _row("200001", "架空市", "2026-09-10")
+    with _client() as c:
+        result, reason = recheck.check(
+            "nagano", row, c, expand.OfficialOverrides.load(ws, "nagano"), None
+        )
+    assert result == "unreachable" and "通信できない" in reason
+
+
+@respx.mock
+def test_a_top_page_without_the_name_fails_and_a_move_is_named(
+    ws: Workspace, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """届いたのに名乗りが無ければ成り立たない。解決し直して別のホストになれば、移転として出す。"""
+    respx.get(f"https://{HOST}/robots.txt").mock(return_value=httpx.Response(404))
+    respx.get(f"https://{HOST}/").mock(
+        return_value=httpx.Response(
+            200,
+            text="<html><body>このサイトは移転しました</body></html>",
+            headers={"content-type": "text/html"},
+        )
+    )
+    row = _row("200001", "架空市", "2026-09-10")
+    overrides = expand.OfficialOverrides.load(ws, "nagano")
+    monkeypatch.setattr(expand, "resolve_official", lambda *a, **k: None)
+    with _client() as c:
+        assert recheck.check("nagano", row, c, overrides, None) == (
+            "fail",
+            "公式サイトのトップに市町村名が出ない",
+        )
+    new_host = expand.classify_host("www.city.kakuu.lg.jp", "nagano")
+    moved = expand.OfficialResolution(
+        "https://www.city.kakuu.lg.jp/", new_host, "引用", "https://x/"
+    )
+    monkeypatch.setattr(expand, "resolve_official", lambda *a, **k: moved)
+    with _client() as c:
+        result, reason = recheck.check("nagano", row, c, overrides, None)
+    assert result == "fail" and "公式サイトが www.city.kakuu.lg.jp になっている" in reason
 
 
 def test_an_unchanged_review_keeps_its_time(ws: Workspace) -> None:

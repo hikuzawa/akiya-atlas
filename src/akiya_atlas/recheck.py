@@ -2,13 +2,14 @@
 
 毎晩、確認日（findings の `evidence_checked_on`）の古い順に 20 自治体を見る。LLM は使わない。
 
-- 公式サイト: heal と同じ `_official_from_row`（記録した公式ホストのトップに市町村名が出るか。
-  出なければ解決し直し、ホストが記録と違えば「公式サイトが変わった」）
+- 公式サイト: 記録した公式ホストに届き、トップに市町村名が出るか。届いたのに出なければ解決し直し、
+  別のホストになれば「公式サイトが変わった」
 - 県の一覧で公式と決めたホストは、県の一覧が今もリンクしているか（県ごとに 1 回だけ取得）
 - 根拠の出典ページと空き家バンクのページが今も開けるか
 
 成り立てば確認日を今日にする。成り立たなければ日付は進めず、翌晩も見る。3 晩続いたら選び直し、
-URL が変わったら週次に旧新を出す。robots.txt で取れなかったものは、確かめていないので何もしない。
+URL が変わったら週次に旧新を出す。robots.txt で取れなかったものと、通信できなかったもの
+（時間切れ・接続できない・403・429）は、確かめていないので日付も失敗の数も動かさず、7 日後に見直す。
 """
 
 from __future__ import annotations
@@ -22,7 +23,7 @@ from typing import Any
 
 from sitemill.classify import PlatformRegistry
 from sitemill.clock import jst_now, jst_today
-from sitemill.fetch.client import PoliteClient
+from sitemill.fetch.client import FetchResult, PoliteClient
 from sitemill.fetch.links import extract_links, host_of
 from sitemill.settings import Workspace
 from sitemill.store.jsonio import read_json
@@ -32,15 +33,21 @@ from akiya_atlas.official_domains import classify_host
 
 PER_NIGHT = 20  # 1,736 自治体 ÷ 90 日 ≒ 19.3
 RETRY_NIGHTS = 3  # この晩数だけ続けて成り立たなければ選び直す
+WAIT_DAYS = 7  # 確かめられなかった（robots.txt・通信できない）自治体を、次に見るまでの日数
 LOG_NAME = "operator-rechecks.jsonl"
 FAIL_KEYS = ("recheck_failures", "recheck_failed_since", "recheck_reason")
+WAIT_KEYS = ("recheck_waiting_since", "recheck_waiting_reason", "recheck_last_tried")
+# ページの有無について何も言っていない応答。海外の実行環境（GitHub Actions）からの接続を
+# 落とす国内サイトがある（japan-open-today の takamatsu.or.jp・teshima-navi.jp が 9/13 から
+# 毎晩時間切れ）。「成り立たなかった」に数えると 3 晩で選び直しが走り、毎回同じ結果を繰り返す
+REFUSED = (403, 429)
 
 
 @dataclass
 class Outcome:
     slug: str
     index: int
-    result: str  # ok / fail / skip
+    result: str  # ok / fail / skip / unreachable
     reason: str = ""
 
 
@@ -50,6 +57,7 @@ class RecheckReport:
     ok: int = 0
     failed: int = 0
     skipped: int = 0
+    unreachable: int = 0
     reselected: int = 0
     lines: list[str] = field(default_factory=list)
 
@@ -59,13 +67,25 @@ def eligible(row: dict) -> bool:
     return bool(row.get("official_url")) and row.get("policy") != "pending"
 
 
-def pick(findings: dict[str, list[dict]], limit: int = PER_NIGHT) -> list[tuple[str, int]]:
+def waiting(row: dict, today: date) -> bool:
+    """確かめられなかったばかりの行。日付が古いまま残るので、待たせないと毎晩の枠を取り続ける。"""
+    last = row.get("recheck_last_tried")
+    try:
+        return bool(last) and (today - date.fromisoformat(str(last))).days < WAIT_DAYS
+    except ValueError:
+        return False
+
+
+def pick(
+    findings: dict[str, list[dict]], limit: int = PER_NIGHT, today: date | None = None
+) -> list[tuple[str, int]]:
     """今夜見る行。成り立たなかった行（翌晩の再試行）と、確認日の古い順に limit 件。"""
+    today = today or jst_today()
     retry: list[tuple[str, int]] = []
     queue: list[tuple[str, str, str, int]] = []
     for slug, rows in findings.items():
         for i, row in enumerate(rows):
-            if not eligible(row):
+            if not eligible(row) or waiting(row, today):
                 continue
             if row.get("recheck_failures"):
                 retry.append((slug, i))
@@ -87,6 +107,23 @@ def listed_hosts(ws: Workspace, slug: str, client: PoliteClient) -> set[str] | N
     return {host_of(ln.url) for ln in extract_links(res.text, res.final_url)}
 
 
+def unreachable(res: FetchResult) -> bool:
+    """届かなかった（時間切れ・接続できない・拒否）。ページがあるかどうかは分からない。"""
+    return (res.status == 0 and bool(res.error) and not res.blocked) or res.status in REFUSED
+
+
+def _why(res: FetchResult) -> str:
+    return res.error or f"HTTP {res.status}"
+
+
+def _open_top(client: PoliteClient, host: str) -> FetchResult:
+    res = client.get(f"https://{host}/")
+    if res.ok or res.blocked:
+        return res
+    alt = client.get(f"http://{host}/")
+    return alt if alt.ok else res
+
+
 def check(
     slug: str,
     row: dict,
@@ -94,17 +131,26 @@ def check(
     overrides: expand.OfficialOverrides,
     prefecture_hosts: set[str] | None,
 ) -> tuple[str, str]:
-    """1 自治体を確かめる。(ok/fail/skip, 理由)。"""
+    """1 自治体を確かめる。(ok / fail / skip / unreachable, 理由)。
+
+    記録した公式サイトに実際に届き、トップに市町村名が出ることを見る。解決し直した結果が
+    「同じホスト」でも成り立ったとはしない。固定値と県の一覧は、届かなくても同じホストを返す。
+    """
     host = str(row["official_url"])
-    if not client.robots.allowed(f"https://{host}/"):
-        return "skip", "robots.txt で公式サイトを取得できない"
     muni = expand._row_to_finding(row).muni
-    resolved = expand._official_from_row(muni, row, client, overrides)
-    if resolved is None:
-        return "fail", "公式サイトを開けない、または市町村名が出ない"
-    official = resolved[0]
-    if official.host != host:
-        return "fail", f"公式サイトが {official.host} になっている（記録は {host}）"
+    top = _open_top(client, host)
+    if top.blocked:
+        return "skip", "robots.txt で公式サイトを取得できない"
+    if unreachable(top):
+        return "unreachable", f"公式サイトに通信できない（{_why(top)}）"
+    if not (top.ok and expand.page_names_municipality(top.text, muni)):
+        # 届いたのに名乗りが無い・ページが無い。移転していれば、解決し直すと別のホストになる
+        moved = expand.resolve_official(muni, client, overrides)
+        if moved is not None and moved.host.host != host:
+            return "fail", f"公式サイトが {moved.host.host} になっている（記録は {host}）"
+        if top.ok:
+            return "fail", "公式サイトのトップに市町村名が出ない"
+        return "fail", f"公式サイトを開けない（{_why(top)}）"
     if not classify_host(host, slug).is_official and prefecture_hosts is not None:
         if host not in prefecture_hosts:
             return "fail", "県の市町村一覧が、記録した公式サイトにリンクしていない"
@@ -120,8 +166,9 @@ def check(
         if not client.robots.allowed(url):
             continue  # 公式サイトは確かめられている。ここだけ見送る
         res = client.get(url)
-        if not res.ok and not res.blocked:
-            return "fail", f"{label}を開けない（{res.error or f'HTTP {res.status}'}）"
+        if res.ok or res.blocked or unreachable(res):
+            continue  # 届かないだけなら、無くなったとは言えない
+        return "fail", f"{label}を開けない（{_why(res)}）"
     return "ok", ""
 
 
@@ -166,7 +213,8 @@ def recheck(
     checker: Callable[..., tuple[str, str]] = check,
 ) -> RecheckReport:
     """今夜の分を確かめ直し、findings・sources・記録を書く。"""
-    today_s = (today or jst_today()).isoformat()
+    today = today or jst_today()
+    today_s = today.isoformat()
     paths = sorted(ws.runs_dir.glob("discover-*-findings.json"))
     findings = {
         p.name[len("discover-") : -len("-findings.json")]: list(
@@ -174,7 +222,7 @@ def recheck(
         )
         for p in paths
     }
-    targets = pick(findings, limit)
+    targets = pick(findings, limit, today)
     overrides = {slug: expand.OfficialOverrides.load(ws, slug) for slug in {s for s, _ in targets}}
     # 県の一覧で公式と決めたホストがある県だけ、一覧を 1 回ずつ取る（並列の前に済ませる）
     need_list = {
@@ -213,18 +261,30 @@ def recheck(
             "source_id": f"{o.slug}-{row['code']}",
             "name": name,
         }
-        if o.result == "skip":
-            report.skipped += 1
+        if o.result in ("skip", "unreachable"):
+            # 確かめていないので日付は進めず、失敗にも数えない。WAIT_DAYS 後にまた見る
+            if o.result == "skip":
+                report.skipped += 1
+            else:
+                report.unreachable += 1
+            rows[o.index] = {
+                **row,
+                "recheck_waiting_since": row.get("recheck_waiting_since") or today_s,
+                "recheck_waiting_reason": o.reason,
+                "recheck_last_tried": today_s,
+            }
+            touched.add(o.slug)
             entry["reason"] = o.reason
         elif o.result == "ok":
             report.ok += 1
-            rows[o.index] = {**expand._without(row, FAIL_KEYS), "evidence_checked_on": today_s}
+            done = expand._without(row, FAIL_KEYS + WAIT_KEYS)
+            rows[o.index] = {**done, "evidence_checked_on": today_s}
             touched.add(o.slug)
         else:
             report.failed += 1
             nights = int(row.get("recheck_failures") or 0) + 1
             rows[o.index] = {
-                **row,
+                **expand._without(row, WAIT_KEYS),
                 "recheck_failures": nights,
                 "recheck_failed_since": row.get("recheck_failed_since") or today_s,
                 "recheck_reason": o.reason,
@@ -252,7 +312,8 @@ def recheck(
                 f.write(json.dumps(entry, ensure_ascii=False) + "\n")
     report.lines.insert(
         0,
-        f"運営主体の確かめ直し: {report.checked} 自治体（成り立った {report.ok}・成り立たなかった "
-        f"{report.failed}・robots.txt で見送り {report.skipped}・選び直し {report.reselected}）",
+        f"運営主体の確かめ直し: {report.checked} 自治体（成り立った {report.ok}・"
+        f"成り立たなかった {report.failed}・robots.txt で見送り {report.skipped}・"
+        f"通信できない {report.unreachable}・選び直し {report.reselected}）",
     )
     return report

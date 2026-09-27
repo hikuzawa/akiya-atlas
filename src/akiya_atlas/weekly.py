@@ -396,13 +396,14 @@ def recheck_lines(ws: Workspace, entries: list[dict[str, Any]]) -> list[str]:
     """確かめ直しの 1 行。成り立っていない自治体は名前・始まった日・理由つきで並べる。"""
     rows = [r for r in _all_findings(ws) if r.get("official_url") and r.get("policy") != "pending"]
     oldest = min((str(r.get("evidence_checked_on") or "") for r in rows), default="") or "—"
-    n = {k: sum(1 for e in entries if e.get("result") == k) for k in ("ok", "fail", "skip")}
-    checked = n["ok"] + n["fail"] + n["skip"]
+    kinds = ("ok", "fail", "skip", "unreachable")
+    n = {k: sum(1 for e in entries if e.get("result") == k) for k in kinds}
+    checked = sum(n.values())
     head = "- 運営主体の確かめ直し（ADR 0018）: "
     if checked:
         head += (
             f"**{checked} 件**（成り立った {n['ok']}・成り立たなかった {n['fail']}・"
-            f"robots.txt で見送り {n['skip']}）"
+            f"robots.txt で見送り {n['skip']}・通信できない {n['unreachable']}）"
         )
     else:
         head += "この期間に確かめた自治体はない"
@@ -418,6 +419,19 @@ def recheck_lines(ws: Workspace, entries: list[dict[str, Any]]) -> list[str]:
                 f"    - {r.get('prefecture', '')}{r.get('name', '')}"
                 f"（{r.get('recheck_failed_since')} から、{r['recheck_failures']} 晩目）: "
                 f"{r.get('recheck_reason') or ''}"
+            )
+    waiting = sorted(
+        (r for r in rows if r.get("recheck_waiting_since")),
+        key=lambda r: (str(r["recheck_waiting_since"]), str(r.get("name"))),
+    )
+    if waiting:
+        out.append(
+            "  - **確かめられていない**（robots.txt・通信できない。失敗には数えず 7 日おきに見る）"
+        )
+        for r in waiting:
+            out.append(
+                f"    - {r.get('prefecture', '')}{r.get('name', '')}"
+                f"（{r['recheck_waiting_since']} から）: {r.get('recheck_waiting_reason') or ''}"
             )
     return out
 
