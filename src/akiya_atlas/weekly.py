@@ -14,6 +14,7 @@ from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from typing import Any
 
+from sitemill.metrics import weekly as engine_weekly
 from sitemill.settings import Workspace
 
 # Haiku 4.5 の単価（$/100 万トークン）。モデルを変えたらここも変える
@@ -29,13 +30,9 @@ REPOSITORY_SINCE = datetime(2026, 9, 15, 22, 51, 43, tzinfo=UTC)
 MIN_DAYS_FOR_MONTHLY = 3.0
 # 同じ失敗の繰り返しは、ここに挙げる件数だけ種類ごとに出す
 ERROR_KINDS_SHOWN = 5
-# robots.txt のせいで巡回できない日がこれだけ続いたら、ホスト名を出す
-# （その自治体の更新が止まっている）
-ROBOTS_STALE_DAYS = 3
-# 巡回を見送った理由のうち robots.txt によるもの。エンジン（sitemill.fetch.robots / crawler）は
-# 「取得できない」「robots.txt 202: 今回は巡回しない」のような異常な応答、
-# 「robots.txt により拒否」の 3 通りを書く。どれも続けばその自治体の更新は止まるので、まとめて拾う
-ROBOTS_MARK = "robots.txt"
+# robots.txt で止まっているホストを週次に出すときの言い方（判定そのものはエンジン。v0.7.8）
+ROBOTS_STALE_DAYS = engine_weekly.ROBOTS_STALE_DAYS
+ROBOTS_STALLED_NOTE = "この自治体の掲載は更新が止まっている"
 
 
 def _dt(value: str | None) -> datetime | None:
@@ -288,12 +285,6 @@ def actions_minutes(
     }
 
 
-def _host(url: str) -> str:
-    from urllib.parse import urlsplit
-
-    return urlsplit(url).hostname or url
-
-
 def _current_seeds(ws: Workspace) -> set[str] | None:
     """いま巡回先になっている URL。読めなければ None（絞り込まずに全部見る）。"""
     try:
@@ -305,109 +296,24 @@ def _current_seeds(ws: Workspace) -> set[str] | None:
     return seeds or None  # 巡回先が 1 つも読めないときも絞り込まない
 
 
-def _robots_url(err: str) -> str:
-    """実行レポートの 1 行（`URL: robots.txt …`）から URL を取り出す。"""
-    return err.split(": " + ROBOTS_MARK, 1)[0]
-
-
-def robots_reason(error: str) -> str:
-    """見送った理由を、打ち手が分かる言葉にする。"""
-    import re
-
-    if "拒否" in error:
-        return "robots.txt で拒否。巡回先の URL を見直す"
-    m = re.search(r"robots\.txt (\d{3})", error)
-    if m:
-        return f"robots.txt が {m.group(1)} を返す。相手に当たり直す"
-    return "robots.txt を取得できない。相手に当たり直す"
-
-
 def robots_failures(
     ws: Workspace, *, days: int = 7, now: datetime | None = None
 ) -> tuple[list[str], int, list[tuple[str, int | None, str]]]:
     """robots.txt のせいで巡回できなかったホスト。(ホスト一覧, 延べ回数, 止まっているホスト)。
 
-    robots.txt が読めない・拒否されていると、その回は巡回しない（正しい判断）。**続くとその
-    自治体だけ静かに更新が止まる**ので、週次で気づけるようにする
-    （2026-09-24。8 ホストが 1 晩でまとめて失敗した回があった）。
-
-    最初は「取得できない」だけを拾っていて、robots.txt が 202 を返し続けて 10 日止まっていた
-    茨城県河内町と、拒否された検索ページを巡回先にしていた北海道当麻町を見逃した（2026-09-26）。
-    いまはエンジンが書く robots の理由をすべて拾い、止まっているホストには理由を添える。
-
-    数と延べ回数は期間内の実行レポートから数える。止まっているかどうかは実行レポートでは
-    決められない（巡回間隔の適応で、その晩は対象外だったのか見送ったのかが混ざる）ので、
-    巡回の状態（`data/state/crawl.json`）にいま robots の理由が残っているホストを見て、
-    **最後に取得できた日からの日数**で判断する。`ROBOTS_STALE_DAYS` 日以上なら名前を出す。
-    一度も取得できていないホストは日数を None で返す。
+    中身はエンジン（`sitemill.metrics.weekly.robots_failures`、v0.7.8）に移した。ここで決めるのは
+    「いまの巡回先」の読み方だけ。経緯（8 ホストが 1 晩で失敗した回、202 を返し続けた河内町、
+    拒否された検索 URL を巡回先にしていた当麻町）は、エンジンの docstring と
+    sitemill ADR 0003 の追記。
     """
-    now = now or datetime.now(UTC)
-    since = now - timedelta(days=days)
-    hosts: dict[str, int] = {}
-    for path in sorted(ws.runs_dir.glob("*-crawl.json")):
-        if path.name.startswith(("latest-", "backfill", "discover-")):
-            continue  # 直近の写しと手元の作業。二重に数えない
-        try:
-            data = json.loads(path.read_text(encoding="utf-8"))
-        except (OSError, json.JSONDecodeError):
-            continue
-        started = _dt(data.get("started_at"))
-        if started is None or started < since:
-            continue
-        for err in data.get("errors") or []:
-            if ROBOTS_MARK in str(err):
-                host = _host(_robots_url(str(err)))
-                hosts[host] = hosts.get(host, 0) + 1
-
-    stalled: dict[str, tuple[int | None, str]] = {}
-    state = ws.state_dir / "crawl.json"
-    try:
-        urls = (json.loads(state.read_text(encoding="utf-8")) or {}).get("urls") or {}
-    except (OSError, json.JSONDecodeError):
-        urls = {}
-    # 巡回先から外した URL の状態は、巡回されないまま残る。外したあとまで「止まっている」と
-    # 出し続けないよう、いま巡回先にあるものだけを見る（当麻町の検索 URL を外した 2026-09-26）
-    seeds = _current_seeds(ws)
-    for url, st in urls.items():
-        error = str(st.get("error") or "")
-        if ROBOTS_MARK not in error:
-            continue
-        if seeds is not None and url not in seeds:
-            continue
-        host = _host(url)
-        fetched = _dt(st.get("fetched_at"))
-        age = None if fetched is None else (now - fetched).days
-        known = stalled.get(host)
-        # 同じホストの中では、いちばん長く止まっている URL の日数を採る
-        if known is None or (known[0] is not None and (age is None or age > known[0])):
-            stalled[host] = (age, robots_reason(error))
-    named = sorted(
-        (
-            (h, age, reason)
-            for h, (age, reason) in stalled.items()
-            if age is None or age >= ROBOTS_STALE_DAYS
-        ),
-        key=lambda row: (row[1] is not None, -(row[1] or 0), row[0]),
-    )
-    return sorted(hosts), sum(hosts.values()), named
+    return engine_weekly.robots_failures(ws, days=days, now=now, seeds=_current_seeds(ws))
 
 
 def robots_lines(
     hosts: list[str], times: int, stalled: list[tuple[str, int | None, str]]
 ) -> list[str]:
     """週次に出す行。1 晩だけの見送りは数だけ、続いているものは名前と理由つきで。"""
-    if not hosts and not stalled:
-        return ["- robots.txt で巡回できなかったホスト: なし"]
-    out = [f"- robots.txt で巡回できなかったホスト: **{len(hosts)}**（延べ {times} 回）"]
-    if stalled:
-        out.append(
-            f"  - **{ROBOTS_STALE_DAYS} 日以上取得できていない**"
-            "（この自治体の掲載は更新が止まっている）"
-        )
-        for host, age, reason in stalled:
-            since = "一度も取得できていない" if age is None else f"最終取得から {age} 日"
-            out.append(f"    - {host}（{since}）: {reason}")
-    return out
+    return engine_weekly.robots_lines(hosts, times, stalled, note=ROBOTS_STALLED_NOTE)
 
 
 def error_kinds(errors: list[str]) -> list[tuple[str, int]]:
