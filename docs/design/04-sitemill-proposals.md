@@ -233,3 +233,46 @@ def rum_pageloads(secrets, host: str, days: int) -> dict[str, int] | None: ...
 ビーコンは**ブラウザのナビゲーションと同じ形の要求**にだけ挿し込まれる。素の `fetch()` や
 `curl` で取った HTML には入らないので、「HTML に `data-cf-beacon` があるか」で計測の有無を
 判定すると必ず「無い」と出る。`Accept: text/html` と `Sec-Fetch-Mode: navigate` を付ければ入る。
+
+## K. 根拠を定期的に確かめ直す回し方（2026-09-27、akiya-atlas で先に実装。akiya-atlas ADR 0018）
+
+akiya-atlas は、自治体ごとの運営主体の根拠（公式サイト・名乗り・県の一覧）を 90 日に 1 回確かめ直す
+ようにした（`src/akiya_atlas/recheck.py`）。**回し方はサービスに依らない**。engine に置けば、
+japan-open-today の運営主体の判定（施設の公式サイト）も同じ仕組みで確かめ直せる。
+
+### 共通なところ（engine に置けるもの）
+
+- 対象の選び方: 確認日の古い順に毎晩 N 件（全件 ÷ 周期の日数）。前の晩に成り立たなかったものは、
+  別枠で翌晩も見る
+- 結果は 3 通り: 成り立った（確認日を今日・JST に）／成り立たなかった（日付は進めず、続いた晩数・
+  始まった日・理由を残す）／robots.txt で見送り（確かめていないので何もしない。失敗にも数えない）
+- 続けて成り立たなかった晩数が閾値（akiya-atlas は 3）に達したら、サービスの「選び直し」を呼ぶ。
+  行き先の URL が変わったら旧新を記録する
+- 1 件 1 行の記録（jsonl）と、週次の 1 行（件数・成り立たないものの名前・いちばん古い確認日）、
+  選び直しの表（旧 URL・新 URL・理由。heal の選び直しと同じ形）
+- ホスト単位で並列にする（`PoliteClient` の間隔はそのまま）。akiya-atlas の実測は、20 件を 8 並列で
+  36 秒、LLM の費用 0
+
+```python
+class Recheck(Protocol):
+    def items(self, ws: Workspace) -> list[Item]  # 確認日と、続けて成り立たなかった晩数を持つ
+    def check(self, item: Item, client: PoliteClient) -> tuple[str, str]  # ok / fail / skip と理由
+    def reselect(self, item: Item, client: PoliteClient) -> tuple[Item, dict]  # 旧新の URL を返す
+    def save(self, ws: Workspace, items: list[Item]) -> None
+
+def rotate(ws, recheck: Recheck, *, per_night: int, retry_nights: int, workers: int, today: date): ...
+```
+
+### サービス側に残るもの
+
+- 何を確かめるか（akiya-atlas は公式ドメインの型・トップの名乗り・県の一覧・根拠と空き家バンクの
+  ページ。japan-open-today なら施設の公式サイトと運営主体の名乗り）
+- 選び直しの中身（akiya-atlas は `rediscover` と同じ評価）と、確認日を書く場所
+
+### 落とし穴（engine の docstring に書いておきたい）
+
+- まとまり（akiya-atlas では県）の設定を作り直すたびに全件の確認日を今日にすると、確かめていない
+  ものまで「確かめた」になる。akiya-atlas は 2026-09-26 まで、1,700 件以上がそうなっていた。
+  確認日は、確かめた行だけ進める
+- 日付は JST で書く。UTC で書くと、JST の朝に走る日次は 1 日早い日付になる（akiya-atlas で 4 件あった）
+- 作り直しのたびに review などの「作った時刻」を進めると、中身の変わらない差分が毎晩出る
