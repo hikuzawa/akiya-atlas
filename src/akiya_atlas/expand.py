@@ -616,16 +616,25 @@ _HOUSING_CATEGORY = re.compile(r"空き?家|空家|住まい|住宅|移住|定�
 
 
 def find_subsidy_pages(
-    starts: list[str], client: PoliteClient, *, limit: int = 4, max_fetch: int = 6
+    starts: list[str],
+    client: PoliteClient,
+    *,
+    limit: int = 4,
+    max_fetch: int = 6,
+    platforms: PlatformRegistry | None = None,
 ) -> list[tuple[str, str]]:
     """既に分かっているページから 1 段だけ辿って、補助制度のページへのリンクを拾う。
 
     サイト全体は探さない。空き家バンクのページと公式トップの 2 か所から辿る（1 自治体 2 回の取得）。
     ここで見つからない制度は拾えないので、充足率は実測して判断する。
+    空き家バンクが民間プラットフォームにあるときは、そこから辿らない。同じホストのページだけを
+    拾うので、プラットフォームのお知らせが補助制度のページとして巡回先に入る（足利市の
+    akiya-athome のお知らせ 2 件を 09-15 から毎晩取りにいき、403 で断られていた。2026-09-28）。
     """
+    platforms = platforms or PlatformRegistry()
     out: dict[str, str] = {}
     seen: set[str] = set(starts)
-    queue = [(u, 0) for u in starts if u]
+    queue = [(u, 0) for u in starts if u and not platforms.is_platform(u)]
     hops = 0
     while queue and len(out) < limit and hops < max_fetch:
         url, depth = queue.pop(0)
