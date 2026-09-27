@@ -2,6 +2,7 @@
 
 - `expand <都道府県>`: 全市町村を自動発見し、運営主体を確認できたものを sources に採用する
 - `rediscover <都道府県> --code ...`: 指定した市町村だけ候補を選び直す（誤採用の再評価）
+- `recheck-operators`: 運営主体を確認日の古い順に確かめ直す（毎晩 20 自治体。ADR 0018）
 - `heal` / `crawl` / `extract` / `build` / `run` などは sitemill のものをそのまま使う
 """
 
@@ -52,6 +53,30 @@ def _register(app: typer.Typer) -> None:
         with rt.client() as client:
             for line in expand.rediscover_codes(rt.ws, prefecture, code, client=client):
                 typer.echo(line)
+
+    @app.command("recheck-operators")
+    def recheck_operators_cmd(
+        limit: Annotated[
+            int, typer.Option("--limit", help="確認日の古い順に見る自治体の数（再試行は別枠）")
+        ] = 20,
+        workers: Annotated[
+            int | None,
+            typer.Option("--workers", "-w", help="並列数（既定は site.toml の crawl.max_workers）"),
+        ] = None,
+    ) -> None:
+        """運営主体を確かめ直し、成り立てば確認日を今日にする（ADR 0018）。"""
+        from akiya_atlas import recheck
+
+        rt = commands.Runtime.open()
+        with rt.client() as client:
+            report = recheck.recheck(
+                rt.ws,
+                client=client,
+                limit=limit,
+                workers=workers or rt.ws.site.crawl.max_workers,
+            )
+        for line in report.lines:
+            typer.echo(line)
 
     @app.command("subsidy-pages")
     def subsidy_pages_cmd(

@@ -332,25 +332,20 @@ def heal_holds(ws: Workspace, *, now: datetime | None = None) -> list[Hold]:
     """
     today = jst_today(now)
     out: list[Hold] = []
-    for path in sorted(ws.runs_dir.glob("discover-*-findings.json")):
+    for row in _all_findings(ws):
+        since = row.get("held_since")
+        # 巡回をやめた自治体に印だけが残っていても、保留とは言わない
+        if not since or row.get("policy") != "crawl":
+            continue
+        if row.get("bank_status", "available") != "available":
+            continue
         try:
-            rows = json.loads(path.read_text(encoding="utf-8")).get("findings") or []
+            day = (today - date.fromisoformat(str(since))).days + 1
         except ValueError:
             continue
-        for row in rows:
-            since = row.get("held_since")
-            # 巡回をやめた自治体に印だけが残っていても、保留とは言わない
-            if not since or row.get("policy") != "crawl":
-                continue
-            if row.get("bank_status", "available") != "available":
-                continue
-            try:
-                day = (today - date.fromisoformat(str(since))).days + 1
-            except ValueError:
-                continue
-            name = f"{row.get('prefecture', '')}{row.get('name', '')}"
-            reason = row.get("held_reason") or ""
-            out.append((name, str(since), day, reason, row.get("bank_url") or ""))
+        name = f"{row.get('prefecture', '')}{row.get('name', '')}"
+        reason = row.get("held_reason") or ""
+        out.append((name, str(since), day, reason, row.get("bank_url") or ""))
     return sorted(out, key=lambda h: (-h[2], h[0]))
 
 
@@ -364,6 +359,86 @@ def hold_lines(holds: list[Hold]) -> list[str]:
         out.append(f"  - **{HOLD_STALE_DAYS} 日以上続いている**（{HOLD_NOTE}）")
         for name, since, day, reason, url in stale:
             out.append(f"    - {name}（{since} から、{day} 日目）: {reason} {url}")
+    return out
+
+
+def _all_findings(ws: Workspace) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for path in sorted(ws.runs_dir.glob("discover-*-findings.json")):
+        try:
+            rows += json.loads(path.read_text(encoding="utf-8")).get("findings") or []
+        except ValueError:
+            continue
+    return rows
+
+
+def recheck_entries(
+    ws: Workspace, *, days: int = 7, now: datetime | None = None
+) -> list[dict[str, Any]]:
+    """運営主体の確かめ直し（ADR 0018）の記録のうち、直近 days 日のもの。"""
+    path = ws.runs_dir / "operator-rechecks.jsonl"
+    if not path.is_file():
+        return []
+    edge = (now or datetime.now(UTC)) - timedelta(days=days)
+    out: list[dict[str, Any]] = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        try:
+            row = json.loads(line)
+        except ValueError:
+            continue
+        at = _dt(row.get("at"))
+        if at is None or at >= edge:
+            out.append(row)
+    return out
+
+
+def recheck_lines(ws: Workspace, entries: list[dict[str, Any]]) -> list[str]:
+    """確かめ直しの 1 行。成り立っていない自治体は名前・始まった日・理由つきで並べる。"""
+    rows = [r for r in _all_findings(ws) if r.get("official_url") and r.get("policy") != "pending"]
+    oldest = min((str(r.get("evidence_checked_on") or "") for r in rows), default="") or "—"
+    n = {k: sum(1 for e in entries if e.get("result") == k) for k in ("ok", "fail", "skip")}
+    checked = n["ok"] + n["fail"] + n["skip"]
+    head = "- 運営主体の確かめ直し（ADR 0018）: "
+    if checked:
+        head += (
+            f"**{checked} 件**（成り立った {n['ok']}・成り立たなかった {n['fail']}・"
+            f"robots.txt で見送り {n['skip']}）"
+        )
+    else:
+        head += "この期間に確かめた自治体はない"
+    out = [f"{head}。いちばん古い確認日 {oldest}"]
+    failing = sorted(
+        (r for r in rows if r.get("recheck_failures")),
+        key=lambda r: (-int(r["recheck_failures"]), str(r.get("name"))),
+    )
+    if failing:
+        out.append("  - **成り立っていない**（翌晩も確かめ、3 晩続くと選び直す）")
+        for r in failing:
+            out.append(
+                f"    - {r.get('prefecture', '')}{r.get('name', '')}"
+                f"（{r.get('recheck_failed_since')} から、{r['recheck_failures']} 晩目）: "
+                f"{r.get('recheck_reason') or ''}"
+            )
+    return out
+
+
+def recheck_reselection_lines(entries: list[dict[str, Any]]) -> list[str]:
+    """確かめ直しで選び直した自治体。heal の選び直しと同じ表の形で、変わった URL を旧新で並べる。"""
+    picks = [e for e in entries if e.get("result") == "reselect"]
+    out = ["", f"## 今週 確かめ直しで選び直した自治体（{len(picks)} 件）", ""]
+    if not picks:
+        return out + ["この期間に確かめ直しで選び直した自治体はありません。"]
+    out += ["| 自治体 | 旧 URL | 新 URL | 理由 |", "| --- | --- | --- | --- |"]
+    for e in picks:
+        name, reason = _cell(e.get("name") or e.get("source_id")), e.get("reason") or ""
+        pairs = [
+            ("公式サイト", e.get("old_official"), e.get("new_official")),
+            ("空き家バンク", e.get("old_bank"), e.get("new_bank")),
+        ]
+        changed = [(label, old, new) for label, old, new in pairs if old != new]
+        for label, old, new in changed or pairs[:1]:
+            note = f"{label}が変わった。{reason}" if changed else reason
+            out.append(f"| {name} | {_cell(old)} | {_cell(new)} | {_cell(note)} |")
     return out
 
 
@@ -441,6 +516,8 @@ def report(
         out.append("- 失敗した工程: なし")
     out += robots_lines(*robots_failures(ws, days=days, now=now))
     out += hold_lines(heal_holds(ws, now=now))
+    rechecks = recheck_entries(ws, days=days, now=now)
+    out += recheck_lines(ws, rechecks)
 
     # LLM の費用は Actions の実行時間と別の節に置く（並べると同じ請求に見える）
     per_day = total.cost / max(len(rows), 1)
@@ -467,6 +544,7 @@ def report(
             )
     else:
         out.append("この期間に掲載ページを選び直した自治体はありません。")
+    out += recheck_reselection_lines(rechecks)
 
     repo = repo or os.environ.get("GH_REPO", "")
     out += ["", "## GitHub Actions の実行時間", ""]

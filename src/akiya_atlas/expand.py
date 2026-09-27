@@ -1433,13 +1433,27 @@ def _write_sources_and_review(
     header = "# 自動発見で採用した source（ADR 0007）。毎回の discover で再生成される。\n"
     body = yaml.safe_dump({"sources": adopted}, allow_unicode=True, sort_keys=False, width=200)
     auto_path.write_text(header + body, encoding="utf-8", newline="\n")
+    review_path = ws.root / "data" / "review" / f"{pref_slug}.yaml"
+    created_at = utc_now_iso()
+    # 候補が前回と同じなら、作った時刻も動かさない。heal や確かめ直しが県を書き直すたびに、
+    # 中身の変わらない review が毎晩 1 行だけ差分になっていた
+    if review_path.is_file():
+        try:
+            old = ReviewQueue.load(review_path)
+        except Exception:  # noqa: BLE001 - 読めなければ作り直す
+            old = None
+        same = old is not None and [c.model_dump(mode="json") for c in old.candidates] == [
+            c.model_dump(mode="json") for c in candidates
+        ]
+        if old is not None and same:
+            created_at = old.created_at
     queue = ReviewQueue(
         prefecture=pref_name,
         prefecture_slug=pref_slug,
-        created_at=utc_now_iso(),
+        created_at=created_at,
         candidates=candidates,
     )
-    queue.save(ws.root / "data" / "review" / f"{pref_slug}.yaml")
+    queue.save(review_path)
 
 
 def rebuild_outputs(ws: Workspace, prefecture: str) -> tuple[int, int]:
@@ -1664,6 +1678,24 @@ def collect_subsidy_pages(
     return lines
 
 
+def carry_subsidy_pages(old: dict, new: dict, client: PoliteClient) -> dict:
+    """選び直した行に、補助制度のページを持ち越す。
+
+    発見の評価（`assess_municipality`）は補助制度のページを探さない（ADR 0013）ので、選び直すと
+    空になり、その自治体の補助制度が巡回から黙って外れる。公式サイトが同じなら前の行から持ち越し、
+    変わっていれば新しいサイトで探し直す（前のページは移転前のサイトにある）。
+    """
+    if new.get("subsidy_urls") or not old.get("subsidy_urls"):
+        return new
+    if old.get("official_url") == new.get("official_url"):
+        return {**new, "subsidy_urls": list(old["subsidy_urls"])}
+    if not new.get("official_url"):
+        return new
+    starts = [str(new.get("bank_url") or ""), f"https://{new['official_url']}/"]
+    found = find_subsidy_pages([s for s in starts if s], client, limit=4)
+    return {**new, "subsidy_urls": [u for u, _ in found]}
+
+
 def rediscover_codes(
     ws: Workspace, prefecture: str, codes: list[str], *, client: PoliteClient
 ) -> list[str]:
@@ -1686,9 +1718,12 @@ def rediscover_codes(
         if muni is None:
             lines.append(f"{code}: {pref_name}の市町村ではない")
             continue
-        old_url = rows[index[code]].get("bank_url") if code in index else None
+        old_row = rows[index[code]] if code in index else None
+        old_url = old_row.get("bank_url") if old_row else None
         f = assess_municipality(muni, client, platforms, overrides)
         row = _finding_to_row(f)
+        if old_row is not None:
+            row = carry_subsidy_pages(old_row, row, client)
         if code in index:
             rows[index[code]] = row
         else:

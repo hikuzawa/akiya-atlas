@@ -119,6 +119,14 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: uv run sitemill heal
 
+      - name: 運営主体の確かめ直し（確認日の古い順に 20 自治体。LLM なし。ADR 0018）
+        id: recheck
+        if: inputs.mode != 'deploy-only' # deploy-only では飛ばす
+        working-directory: akiya-atlas
+        # 落ちても今夜のデータの取り込みと配置は続ける。失敗は下の通知ステップが Issue に出す
+        continue-on-error: true
+        run: uv run akiya-atlas recheck-operators --limit 20
+
       - name: 取り下げ依頼を取り込む（takedown ラベルの Issue → 非表示にするページ）
         working-directory: akiya-atlas
         env:
@@ -238,18 +246,21 @@ jobs:
           command: pages deploy akiya-atlas/dist --project-name=akiya-atlas --branch=main
 
       - name: 失敗時に Issue で通知
-        if: failure() || steps.commit.outcome == 'failure'
+        if: failure() || steps.commit.outcome == 'failure' || steps.recheck.outcome == 'failure'
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }} # 作業ディレクトリ直下は git 管理外なので、対象リポジトリを明示する
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           JOB_STATUS: ${{ job.status }}
           COMMIT_OUTCOME: ${{ steps.commit.outcome }}
+          RECHECK_OUTCOME: ${{ steps.recheck.outcome }}
         run: |
           gh label create pipeline-failure --color B60205 --description "日次パイプラインの失敗" 2>/dev/null || true
           num=$(gh issue list --label pipeline-failure --state open --json number --jq '.[0].number // empty')
           if [ "$JOB_STATUS" = "success" ] && [ "$COMMIT_OUTCOME" = "failure" ]; then
             msg="$(date -u +%FT%TZ) に data の push が失敗しました（並行する push と競合。配置は実行済み）: $RUN_URL"
+          elif [ "$JOB_STATUS" = "success" ] && [ "$RECHECK_OUTCOME" = "failure" ]; then
+            msg="$(date -u +%FT%TZ) に運営主体の確かめ直し（ADR 0018）が失敗しました（取り込みと配置は実行済み）: $RUN_URL"
           else
             msg="$(date -u +%FT%TZ) にパイプラインが失敗しました: $RUN_URL"
           fi
