@@ -1544,6 +1544,10 @@ _HOLD_KEYS = ("held_since", "held_reason")
 # heal が見るたびに書き直す項目。これだけが変わった晩は、書き換えの記録を残さない。
 # 確認日だけで記録すると、保留が続く自治体が毎晩「選び直した」として週次に並ぶ
 _REFRESHED_EACH_LOOK = ("evidence_checked_on", "held_reason")
+# 行き先。これが変わった記録だけを、週次の「今週 heal が選び直した自治体」に並べる。
+# 掲載なしの見直し（7 日ごと、行き先は同じ）が毎週同じ 3 件並び、行き先が変わったものが
+# 埋もれていた（2026-09-28）。見直しの件数は週次に別の 1 行で出す
+_DESTINATION = ("bank_url", "policy", "bank_status", "official_url", "detail_pattern")
 
 
 def _hold(f: MunicipalityFinding, row: dict, reason: str) -> None:
@@ -1785,9 +1789,11 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
             muni = ds.muni_by_source.get(sid)
             src = ds.by_source.get(sid)
             if muni is not None and src is not None and ds.listings_for(muni, active_only=True):
-                if row.get("held_since"):
-                    # 物件が取れるようになった。保留は終わり（週次が出し続けないように外す）
-                    rows[i] = {**_without(row, _HOLD_KEYS), "extract_gap": False}
+                if row.get("held_since") or row.get("empty_checked_on"):
+                    # 物件が取れるようになった。保留も「掲載なし」も終わり
+                    # （週次が出し続けないように外す）
+                    ended = _without(row, (*_HOLD_KEYS, "empty_checked_on"))
+                    rows[i] = {**ended, "extract_gap": False}
                     touched = True
                 continue
             if muni is None or src is None:
@@ -1810,6 +1816,7 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
             old_detail = row.get("detail_pattern")
             name = f"{pref_name}{muni.name}"
             judged: dict | None = None
+            kind = ""  # 何をしたか。swap / hold / empty / downgrade / detail
             swap = bool(new.policy == "crawl" and new.bank_url and new.bank_url != old_url)
             if swap:
                 # 差し替え先にも、取り下げと同じ物差しを当てる。行数だけで一覧と決めると制度案内・
@@ -1828,6 +1835,7 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
                     new = _row_to_finding(row)  # いまの URL のまま 0 件の理由を見る
                     swap = False
             if swap:
+                kind = "swap"
                 rows[i] = _finding_to_row(new)
                 touched = True
                 result["recrawl"].append(sid)
@@ -1846,12 +1854,14 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
                         f"本文を取り出せないページ（物件行 {rows_seen}）。抽出側の問題として保留"
                     )
                     _hold(new, row, reason)
+                    kind = "hold"
                     rows[i] = _finding_to_row(new)
                     touched = True
                     result["changed"].append(f"{name}: {reason}")
                 elif _EMPTY_NOTICE.search(text):
                     # 掲載が無いと書いてある。差し替えも取り下げもせず、次は 7 日後に見る。
                     # 日付だけを findings に残す（sources/review の中身は変わらない）
+                    kind = "empty"
                     today = jst_today().isoformat()
                     rows[i] = {**_without(row, _HOLD_KEYS), "empty_checked_on": today}
                     touched = True
@@ -1872,6 +1882,7 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
                     fixed.reason = (
                         "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ"
                     )
+                    kind = "downgrade"
                     rows[i] = _finding_to_row(fixed)
                     touched = True
                     result["downgraded"].append(sid)
@@ -1890,6 +1901,7 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
                         # 一覧は物件名とリンクだけで、価格などは詳細ページにある形（長岡市など）
                         new.detail_pattern, links = found
                         new.extract_gap = False
+                        kind = "detail"
                         rows[i] = _finding_to_row(new)
                         touched = True
                         result["recrawl"].append(sid)
@@ -1903,10 +1915,12 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
                             f"一覧に見えるのに 0 件（物件行 {rows_text}）。抽出側の課題として保留"
                         )
                         _hold(new, row, note)
+                        kind = "hold"
                         rows[i] = _finding_to_row(new)
                         touched = True
                         result["changed"].append(f"{name}: {note}")
             else:
+                kind = "downgrade"
                 rows[i] = _finding_to_row(new)
                 touched = True
                 result["downgraded"].append(sid)
@@ -1931,6 +1945,8 @@ def heal(ws: Workspace, *, client: PoliteClient, source_ids: list[str] | None = 
                         "new_policy": after.get("policy"),
                         "reason": note.split(": ", 1)[-1] if note else "",
                         "evidence": judged,
+                        "kind": kind,
+                        "moved": any(before.get(k) != after.get(k) for k in _DESTINATION),
                     }
                 )
         if touched:

@@ -161,6 +161,80 @@ def test_reselections_are_listed_for_the_week(ws: Workspace) -> None:
     assert "三条市" not in text
 
 
+def test_empty_notice_rechecks_are_a_count_not_a_row(
+    ws: Workspace, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """掲載なしの見直しは表に並べず、件数だけを 1 行で出す（2026-09-28）。
+
+    行き先が変わらない見直しが毎週同じ 3 件並び、行き先が変わったものが埋もれていた。
+    ただ欄から消すと、見直し自体が止まったときに気づけないので、見直した数と、掲載なしと
+    書いている自治体の数を並べる。
+    """
+    monkeypatch.delenv("GH_REPO", raising=False)  # 環境に設定があっても外部に出ない
+    now = datetime(2026, 9, 28, 0, tzinfo=UTC)
+    same = "https://www.town.example.jp/akiya/"
+    empty_reason = "ページ自身が掲載なしと書いている。そのまま（次の点検は 7 日後）"
+    records = [
+        {
+            "at": "2026-09-27T06:22:00+09:00",
+            "name": "千葉県酒々井町",
+            "old_url": same,
+            "new_url": same,
+            "reason": empty_reason,
+            "kind": "empty",
+            "moved": False,
+        },
+        {
+            "at": "2026-09-27T06:22:00+09:00",
+            "name": "兵庫県稲美町",
+            "old_url": same,
+            "new_url": same,
+            "reason": empty_reason,
+        },  # kind を持たない古い記録
+        {
+            "at": "2026-09-27T06:22:00+09:00",
+            "name": "東京都奥多摩町",
+            "old_url": same,
+            "new_url": same,
+            "reason": "本文を取り出せないページ（物件行 2）。抽出側の問題として保留",
+        },
+        {
+            "at": "2026-09-27T06:22:00+09:00",
+            "name": "長野県架空市",
+            "old_url": same,
+            "new_url": "https://www.city.example.jp/list/",
+            "reason": "一覧を差し替え",
+            "kind": "swap",
+            "moved": True,
+        },
+    ]
+    (ws.runs_dir / "heal-reselections.jsonl").write_text(
+        "".join(json.dumps(r, ensure_ascii=False) + chr(10) for r in records), encoding="utf-8"
+    )
+    rows = [
+        {
+            "prefecture": "千葉県",
+            "name": n,
+            "policy": "crawl",
+            "bank_status": "available",
+            "empty_checked_on": "2026-09-27",
+        }
+        for n in ("酒々井町", "稲美町", "逗子市")
+    ]
+    (ws.runs_dir / "discover-chiba-findings.json").write_text(
+        json.dumps({"findings": rows}, ensure_ascii=False), encoding="utf-8"
+    )
+    text = chr(10).join(weekly.report(ws, days=7, now=now, repo=None))
+    assert "## 今週 heal が選び直した自治体（1 件）" in text
+    assert "長野県架空市" in text
+    for name in ("酒々井町 |", "稲美町 |", "奥多摩町 |"):
+        assert name not in text
+    assert (
+        "- 掲載なしの見直し: **2 件**（変化なし。ページ自身が掲載なしと書いている自治体は 3）"
+        "。1 自治体を今週見直していない" in text
+    )
+
+
 def test_report_says_when_it_cannot_count_actions_minutes(
     ws: Workspace, monkeypatch: pytest.MonkeyPatch
 ) -> None:

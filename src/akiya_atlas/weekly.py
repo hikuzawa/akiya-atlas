@@ -186,6 +186,48 @@ def takedown_lines(scope: TakedownScope) -> list[str]:
     return out
 
 
+def moved(record: dict[str, Any]) -> bool:
+    """行き先（一覧の URL・巡回方針・公式サイトなど）が変わった記録か。
+
+    「今週 heal が選び直した自治体」には、これだけを並べる（2026-09-28）。`moved` を持たない
+    古い記録は、URL と巡回方針が変わったかで見る。
+    """
+    if "moved" in record:
+        return bool(record["moved"])
+    urls = record.get("old_url") != record.get("new_url")
+    return urls or record.get("old_policy") != record.get("new_policy")
+
+
+def empty_recheck_line(ws: Workspace, picks: list[dict[str, Any]]) -> str:
+    """掲載なしの見直しの件数。表に並べない代わりに、見直しが止まっていないことをここで見る。
+
+    ページ自身が「現在、登録物件はありません」と書いている自治体は、heal が 7 日ごとに見直す。
+    行き先は変わらないので表からは外したが、欄から消すと見直し自体が止まったときに気づけない。
+    """
+    done = sum(
+        1
+        for r in picks
+        if r.get("kind") == "empty"
+        or ("kind" not in r and "掲載なしと書いている" in str(r.get("reason") or ""))
+    )
+    empty = sum(
+        1
+        for r in _all_findings(ws)
+        if r.get("empty_checked_on")
+        and r.get("policy") == "crawl"
+        and r.get("bank_status", "available") == "available"
+    )
+    if not done and not empty:
+        return "- 掲載なしの見直し: なし（ページ自身が掲載なしと書いている自治体は無い）"
+    line = (
+        f"- 掲載なしの見直し: **{done} 件**（変化なし。ページ自身が掲載なしと書いている"
+        f"自治体は {empty}）"
+    )
+    if done < empty:
+        line += f"。{empty - done} 自治体を今週見直していない（heal が止まっていないか見る）"
+    return line
+
+
 def reselections(
     ws: Workspace, *, days: int = 7, now: datetime | None = None
 ) -> list[dict[str, Any]]:
@@ -530,6 +572,8 @@ def report(
         out.append("- 失敗した工程: なし")
     out += robots_lines(*robots_failures(ws, days=days, now=now))
     out += hold_lines(heal_holds(ws, now=now))
+    picks = reselections(ws, days=days, now=now)
+    out.append(empty_recheck_line(ws, picks))
     rechecks = recheck_entries(ws, days=days, now=now)
     out += recheck_lines(ws, rechecks)
 
@@ -547,11 +591,11 @@ def report(
         "請求の値とはずれることがある",
     ]
 
-    picks = reselections(ws, days=days, now=now)
-    out += ["", f"## 今週 heal が選び直した自治体（{len(picks)} 件）", ""]
-    if picks:
+    changed = [r for r in picks if moved(r)]
+    out += ["", f"## 今週 heal が選び直した自治体（{len(changed)} 件）", ""]
+    if changed:
         out += ["| 自治体 | 旧 URL | 新 URL | 理由 |", "| --- | --- | --- | --- |"]
-        for r in picks:
+        for r in changed:
             out.append(
                 f"| {_cell(r.get('name') or r.get('source_id'))} | {_cell(r.get('old_url'))} "
                 f"| {_cell(r.get('new_url'))} | {_cell(r.get('reason'))} |"

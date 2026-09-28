@@ -277,6 +277,10 @@ def test_heal_keeps_a_bank_that_says_it_has_no_listings_now(ws: Workspace) -> No
         (ws.runs_dir / "discover-nagano-findings.json").read_text(encoding="utf-8")
     )
     assert findings["findings"][0]["empty_checked_on"] == jst_today().isoformat()
+    # 行き先は変わっていない。週次の「選び直した自治体」には並べず、見直しの件数に数える
+    log = (ws.runs_dir / "heal-reselections.jsonl").read_text(encoding="utf-8").splitlines()
+    record = json.loads(log[-1])
+    assert record["kind"] == "empty" and record["moved"] is False
     with _client() as c:
         again = expand.heal(ws, client=c)
     assert again["checked"] == 0 and not again["changed"]
@@ -411,7 +415,13 @@ def test_a_hold_ends_when_listings_come_in(ws: Workspace) -> None:
     from akiya_atlas.schema import Listing, record_id_for
 
     url = BASE + "/akiya/list.html"
-    held = {**_row(url), "extract_gap": True, "held_since": "2026-09-11", "held_reason": "保留"}
+    held = {
+        **_row(url),
+        "extract_gap": True,
+        "held_since": "2026-09-11",
+        "held_reason": "保留",
+        "empty_checked_on": "2026-09-20",  # 掲載なしだった印も、物件が取れたら外す
+    }
     expand._write_rows(ws, "nagano", "長野県", [held])
     _mark_crawled(ws, url)
     listing = Listing(
@@ -434,6 +444,7 @@ def test_a_hold_ends_when_listings_come_in(ws: Workspace) -> None:
     assert result["checked"] == 0
     row = _findings_row(ws)
     assert "held_since" not in row and "held_reason" not in row and not row["extract_gap"]
+    assert "empty_checked_on" not in row
 
 
 @respx.mock
