@@ -264,6 +264,27 @@ def test_build_generates_all_pages_with_trust_and_no_photos(ws: Workspace) -> No
     assert f"{ws.site.base_url}/nagano/202193-tomi/322/" in sitemap  # 基準 URL は site.toml に従う
 
 
+def test_a_listing_page_dates_its_source_by_the_last_read(ws: Workspace) -> None:
+    """取得日時は、出どころのページを最後に読めた時刻（`last_seen_at`）で出す。
+
+    抽出した時刻（provenance）で出すと、中身が変わらず抽出し直さない物件は、毎晩読めていても
+    いつまでも抽出した日のまま出る。同じページに「更新 9/28」と「取得 9/10」が並んでいた
+    （japan-open-today の鮮度の障害と同じ形。2026-09-28）。
+    """
+    path = ws.root / "data" / "records" / "nagano-tomi.jsonl"
+    rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line]
+    for row in rows:
+        if row["listing_no"] == "322":  # 抽出（provenance）は 09-10
+            row["last_seen_at"] = "2026-09-27T21:30:00+00:00"  # 日本時間 09-28 に読めた
+    path.write_text(
+        "\n".join(json.dumps(r, ensure_ascii=False) for r in rows) + "\n", encoding="utf-8"
+    )
+    commands.cmd_build(commands.Runtime(ws=ws, service=service))
+    listing = (ws.dist_dir / "nagano/202193-tomi/322/index.html").read_text(encoding="utf-8")
+    assert "取得日時: 2026年9月28日" in listing
+    assert "2026年9月10日" not in listing
+
+
 def test_extracted_subsidies_reach_the_page_and_do_not_shadow_hand_written_ones(
     ws: Workspace,
 ) -> None:

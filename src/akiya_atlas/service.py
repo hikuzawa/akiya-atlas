@@ -27,6 +27,7 @@ from akiya_atlas.schema import STATUS_RETIRED, normalize_listing_no, record_id_f
 from akiya_atlas.site_search import is_site_search_url
 from akiya_atlas.spec import spec_for_kind
 from akiya_atlas.subsidies import ingest_subsidies
+from akiya_atlas.subsidies import mark_read as mark_subsidies_read
 
 log = logging.getLogger(__name__)
 
@@ -521,6 +522,11 @@ class AkiyaAtlasService:
             if stale:
                 log.info("%s: %d 件を stale に", source.id, stale)
             store.save()
+        # 補助制度の確認日も、出どころのページを読めた日まで進める。物件のレコードが無い
+        # （補助制度だけを巡回している）自治体も含めるので、上の繰り返しとは別に回す
+        read = mark_subsidies_read(ws, (s for s in load_sources(ws) if s.crawlable), state)
+        if read:
+            log.info("補助制度 %d 件の確認日を、出どころを読めた日まで進めた", read)
         # 巡回の対象から外れた情報源のレコードを退役させる（ADR 0016）。重複の判定より前に置く
         # （重複は active 同士でしか見ないので、退役したものを正にしない）
         moved = retire_unlisted(ws, now=now)

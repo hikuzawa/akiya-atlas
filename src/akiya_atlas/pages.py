@@ -792,7 +792,10 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         "facts": fact_rows(ls),
                         "owners_url": _owners_url(muni.prefecture_slug),
                         "map": listing_map(ctx, muni, ls),
-                        "fetched_at": datetime_ja(_dt(prov.get("fetched_at"))),
+                        # 出どころのページを最後に読めた時刻。抽出した時刻（provenance）に
+                        # すると、中身が変わらず抽出し直さない物件はいつまでも古い日付のまま
+                        # 出る（2026-09-28）
+                        "fetched_at": datetime_ja(_dt(ls.last_seen_at)),
                         "extractor": (prov.get("extractor") or {}).get("model"),
                         "is_stale": ls.status != "active",
                     },
@@ -802,7 +805,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                             SourceLink(
                                 label=f"{muni.name} {muni.bank_label}（物件 {ls.listing_no}）",
                                 url=ls.primary_url,
-                                fetched_at=_dt(prov.get("fetched_at")),
+                                fetched_at=_dt(ls.last_seen_at),
                             )
                         ],
                         count=None,

@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import hashlib
 import logging
+from collections.abc import Iterable
 from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
@@ -18,6 +19,7 @@ from typing import Any
 
 from sitemill.clock import to_jst
 from sitemill.diff.normalize import squash
+from sitemill.diff.state import CrawlState
 from sitemill.extract import ExtractedItem
 from sitemill.extract.pipeline import prepare_input
 from sitemill.extract.quotes import verify_quote
@@ -130,6 +132,42 @@ def ingest_subsidies(
     store.save()
     log.info("%s %s: 補助制度 %s", source.id, url, counts)
     return counts
+
+
+def mark_read(ws: Workspace, sources: Iterable[Source], state: CrawlState) -> int:
+    """出どころのページを読めた日まで、補助制度の確認日を進める。進めた件数を返す。
+
+    確認日を「抽出した日」にしていたので、中身が変わらず抽出し直さないページの制度は、毎晩
+    読めていても確認日が動かなかった。180 日たつと一斉に「情報が古い可能性」になるところだった
+    （09-14〜15 の全国収集の 2,638 件が 2027-03-14〜15 に。japan-open-today で起きた鮮度の障害と
+    同じ形。2026-09-28）。物件の `last_seen_at` と同じく、読めていて、抽出したときから中身が
+    変わっていないときだけ進める。取得に失敗したページ、変わってまだ抽出していないページの制度は
+    進めない（古くなったことが「情報が古い可能性」に出る）。
+    """
+    moved = 0
+    for source in sources:
+        path = subsidies_path(ws, source.id)
+        if not path.is_file():
+            continue
+        store = RecordStore(path)
+        touched = False
+        for record in store.records.values():
+            if record.get("status") == "removed":
+                continue
+            prov = record.get("provenance") or {}
+            st = state.get(str(prov.get("source_url") or record.get("url") or ""))
+            if st is None or st.error is not None or st.fetched_at is None:
+                continue
+            if st.content_hash is None or st.content_hash != st.extracted_hash:
+                continue
+            read_on = to_jst(st.fetched_at).date().isoformat()
+            if read_on > str(record.get("checked_on") or ""):
+                record["checked_on"] = read_on
+                moved += 1
+                touched = True
+        if touched:
+            store.save()
+    return moved
 
 
 def load_subsidies(ws: Workspace, source_id: str) -> list[Subsidy]:
