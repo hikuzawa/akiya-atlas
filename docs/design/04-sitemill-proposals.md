@@ -234,6 +234,52 @@ def rum_pageloads(secrets, host: str, days: int) -> dict[str, int] | None: ...
 `curl` で取った HTML には入らないので、「HTML に `data-cf-beacon` があるか」で計測の有無を
 判定すると必ず「無い」と出る。`Accept: text/html` と `Sec-Fetch-Mode: navigate` を付ければ入る。
 
+## L. 出どころのページを読めた時刻で鮮度を進める（2026-09-28、3 か所で別々に持っていた）
+
+同じ考え方を 3 か所で別々に持っている。akiya-atlas の物件（`service.finalize` が `last_seen_at` を
+進める）、akiya-atlas の補助制度（`subsidies.mark_read`。2026-09-28 に足した）、japan-open-today の
+施設。**片方だけ直る事故の元**で、実際に japan-open-today で鮮度の障害が出たあと、akiya-atlas の
+補助制度にも同じ形が見つかった（確認日が抽出した日のままで、2,638 件が 2027-03-14〜15 に一斉に
+「情報が古い可能性」になるところだった。`docs/data-issues.md` の 2026-09-28）。
+
+### 共通なところ（engine に置けるもの）
+
+- 鮮度の基準は「出どころのページを最後に読めた時刻」で、抽出した時刻ではない。抽出は中身が
+  変わったページにしか走らないので、変わらないページの鮮度が止まる
+- 進めてよいのは、巡回状態に失敗が無く（`error` が空）、読めた時刻（`fetched_at`。304 も含む）があり、
+  抽出したときから中身が変わっていない（`content_hash == extracted_hash`）とき
+- 進めないのは、取得に失敗しているページ、中身が変わってまだ抽出していないページ、巡回先から
+  外れたページ（状態が無い）。古くなったことが表示に出るのが正しい
+- 日付で持つ項目は JST で丸める（`sitemill.clock.to_jst`）
+
+```python
+def mark_read(
+    records: Iterable[dict],
+    state: CrawlState,
+    *,
+    source_url: Callable[[dict], str],  # レコードの出どころのページ
+    field: str,  # 進める項目（last_seen_at / checked_on など）
+    as_date: bool = False,  # 日付で持つなら JST の日付にする
+) -> int: ...  # 進めた件数
+```
+
+置き場所は `sitemill/diff/state.py` の近くが自然。サービスは「どのレコードがどのページから来たか」と
+「どの項目を進めるか」だけを渡す。
+
+### サービス側に残るもの
+
+- 進める項目（物件は `last_seen_at`、補助制度は `checked_on`）と、古いとみなす日数（物件 30 日、
+  補助制度 180 日）
+- レコードの出どころの取り方（akiya-atlas は provenance の `source_url`、無ければ `url`）
+
+### 落とし穴（engine の docstring に書いておきたい）
+
+- 抽出した時刻（provenance の `extracted_at`・`fetched_at`）を表示や判定に使うと、変わらない
+  ページで止まる。表示の「取得日時」も同じ（akiya-atlas の物件ページで「更新 9/28」と「取得 9/27」が
+  並んでいた）
+- 一斉に集めたデータは、同じ日に一斉に古くなる。障害は「ある日、全部」の形で出るので、テストでは
+  「読めていれば進む」と「読めていなければ進まない」の両方を当てる
+
 ## K. 根拠を定期的に確かめ直す回し方（2026-09-27、akiya-atlas で先に実装。akiya-atlas ADR 0018）
 
 akiya-atlas は、自治体ごとの運営主体の根拠（公式サイト・名乗り・県の一覧）を 90 日に 1 回確かめ直す
