@@ -1,0 +1,2085 @@
+{
+ "nights": [
+  {
+   "date": "2026-10-01",
+   "planned": [
+    "gunma-100006",
+    "gunma-100002",
+    "nagano-200003",
+    "nagano-200007",
+    "okinawa-470004",
+    "gunma-100001",
+    "gunma-100012",
+    "okinawa-470005",
+    "gunma-100005",
+    "okinawa-470009",
+    "gunma-100009"
+   ],
+   "log": [
+    [
+     "gunma-100006",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100002",
+     "fail",
+     1
+    ],
+    [
+     "nagano-200003",
+     "fail",
+     1
+    ],
+    [
+     "nagano-200007",
+     "unreachable",
+     null
+    ],
+    [
+     "okinawa-470004",
+     "skip",
+     null
+    ],
+    [
+     "gunma-100001",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100012",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470005",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100005",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470009",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100009",
+     "ok",
+     null
+    ]
+   ],
+   "reselect": []
+  },
+  {
+   "date": "2026-10-02",
+   "planned": [
+    "gunma-100002",
+    "nagano-200003",
+    "nagano-200011",
+    "okinawa-470002",
+    "nagano-200004",
+    "okinawa-470006",
+    "nagano-200008",
+    "okinawa-470010",
+    "gunma-100010",
+    "nagano-200001",
+    "okinawa-470003",
+    "gunma-100003"
+   ],
+   "log": [
+    [
+     "gunma-100002",
+     "fail",
+     2
+    ],
+    [
+     "nagano-200003",
+     "fail",
+     2
+    ],
+    [
+     "nagano-200011",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470002",
+     "fail",
+     1
+    ],
+    [
+     "nagano-200004",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470006",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200008",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470010",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100010",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200001",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470003",
+     "unreachable",
+     null
+    ],
+    [
+     "gunma-100003",
+     "ok",
+     null
+    ]
+   ],
+   "reselect": []
+  },
+  {
+   "date": "2026-10-03",
+   "planned": [
+    "gunma-100002",
+    "nagano-200003",
+    "okinawa-470002",
+    "nagano-200005",
+    "okinawa-470007",
+    "gunma-100007",
+    "nagano-200009",
+    "okinawa-470011",
+    "gunma-100011",
+    "nagano-200002",
+    "gunma-100004",
+    "nagano-200006",
+    "okinawa-470008"
+   ],
+   "log": [
+    [
+     "gunma-100002",
+     "fail",
+     3
+    ],
+    [
+     "nagano-200003",
+     "fail",
+     3
+    ],
+    [
+     "okinawa-470002",
+     "fail",
+     2
+    ],
+    [
+     "nagano-200005",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470007",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100007",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200009",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470011",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100011",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200002",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100004",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200006",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470008",
+     "ok",
+     null
+    ]
+   ],
+   "reselect": [
+    {
+     "source_id": "gunma-100002",
+     "name": "群馬県乙町",
+     "old_official": "www.gunma100002.example.jp",
+     "new_official": "moved.www.gunma100002.example.jp",
+     "old_bank": "https://www.gunma100002.example.jp/akiya/",
+     "new_bank": "https://www.gunma100002.example.jp/akiya/",
+     "reason": "3 晩続けて確かめられなかった（公式サイトのトップに市町村名が出ない）"
+    },
+    {
+     "source_id": "nagano-200003",
+     "name": "長野県丙村",
+     "old_official": "www.nagano200003.example.jp",
+     "new_official": null,
+     "old_bank": "https://www.nagano200003.example.jp/akiya/",
+     "new_bank": null,
+     "reason": "3 晩続けて確かめられなかった（公式サイトを開けない（HTTP 404））。選び直しても運営主体が決まらず、人のレビューへ"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-04",
+   "planned": [
+    "okinawa-470002",
+    "gunma-100008",
+    "nagano-200010",
+    "okinawa-470012",
+    "gunma-100001",
+    "gunma-100005",
+    "gunma-100006",
+    "gunma-100009",
+    "gunma-100012",
+    "okinawa-470005",
+    "okinawa-470009"
+   ],
+   "log": [
+    [
+     "okinawa-470002",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100008",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200010",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470012",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100001",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100005",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100006",
+     "unreachable",
+     null
+    ],
+    [
+     "gunma-100009",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100012",
+     "skip",
+     null
+    ],
+    [
+     "okinawa-470005",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470009",
+     "unreachable",
+     null
+    ]
+   ],
+   "reselect": []
+  },
+  {
+   "date": "2026-10-05",
+   "planned": [
+    "gunma-100003",
+    "gunma-100010",
+    "nagano-200001",
+    "nagano-200004",
+    "nagano-200008",
+    "nagano-200011",
+    "okinawa-470006",
+    "okinawa-470010",
+    "gunma-100002",
+    "gunma-100004"
+   ],
+   "log": [
+    [
+     "gunma-100003",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100010",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200001",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200004",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200008",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200011",
+     "skip",
+     null
+    ],
+    [
+     "okinawa-470006",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470010",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100002",
+     "fail",
+     1
+    ],
+    [
+     "gunma-100004",
+     "ok",
+     null
+    ]
+   ],
+   "reselect": []
+  },
+  {
+   "date": "2026-10-06",
+   "planned": [
+    "gunma-100002",
+    "okinawa-470001",
+    "gunma-100007",
+    "gunma-100011",
+    "nagano-200002",
+    "nagano-200005",
+    "nagano-200006",
+    "nagano-200009",
+    "okinawa-470007",
+    "okinawa-470008",
+    "okinawa-470011"
+   ],
+   "log": [
+    [
+     "gunma-100002",
+     "fail",
+     2
+    ],
+    [
+     "okinawa-470001",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100007",
+     "skip",
+     null
+    ],
+    [
+     "gunma-100011",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200002",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200005",
+     "fail",
+     1
+    ],
+    [
+     "nagano-200006",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200009",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470007",
+     "fail",
+     1
+    ],
+    [
+     "okinawa-470008",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470011",
+     "ok",
+     null
+    ]
+   ],
+   "reselect": []
+  },
+  {
+   "date": "2026-10-07",
+   "planned": [
+    "gunma-100002",
+    "nagano-200005",
+    "okinawa-470007",
+    "gunma-100001",
+    "gunma-100005",
+    "gunma-100008",
+    "gunma-100009",
+    "nagano-200010",
+    "okinawa-470002",
+    "okinawa-470005",
+    "okinawa-470012",
+    "gunma-100003",
+    "gunma-100004"
+   ],
+   "log": [
+    [
+     "gunma-100002",
+     "fail",
+     3
+    ],
+    [
+     "nagano-200005",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470007",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100001",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100005",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100008",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100009",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200010",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470002",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470005",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470012",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100003",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100004",
+     "ok",
+     null
+    ]
+   ],
+   "reselect": [
+    {
+     "source_id": "gunma-100002",
+     "name": "群馬県乙町",
+     "old_official": "moved.www.gunma100002.example.jp",
+     "new_official": "moved.moved.www.gunma100002.example.jp",
+     "old_bank": "https://www.gunma100002.example.jp/akiya/",
+     "new_bank": "https://www.gunma100002.example.jp/akiya/",
+     "reason": "3 晩続けて確かめられなかった（公式サイトのトップに市町村名が出ない）"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-08",
+   "planned": [
+    "nagano-200007",
+    "okinawa-470004",
+    "gunma-100010",
+    "nagano-200001",
+    "nagano-200004",
+    "nagano-200008",
+    "okinawa-470006",
+    "okinawa-470010",
+    "gunma-100011",
+    "nagano-200002"
+   ],
+   "log": [
+    [
+     "nagano-200007",
+     "unreachable",
+     null
+    ],
+    [
+     "okinawa-470004",
+     "skip",
+     null
+    ],
+    [
+     "gunma-100010",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200001",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200004",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200008",
+     "unreachable",
+     null
+    ],
+    [
+     "okinawa-470006",
+     "fail",
+     1
+    ],
+    [
+     "okinawa-470010",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100011",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200002",
+     "ok",
+     null
+    ]
+   ],
+   "reselect": []
+  },
+  {
+   "date": "2026-10-09",
+   "planned": [
+    "okinawa-470006",
+    "okinawa-470003",
+    "nagano-200006",
+    "nagano-200009",
+    "okinawa-470001",
+    "okinawa-470008",
+    "okinawa-470011",
+    "gunma-100001",
+    "gunma-100002",
+    "gunma-100003",
+    "gunma-100004"
+   ],
+   "log": [
+    [
+     "okinawa-470006",
+     "fail",
+     2
+    ],
+    [
+     "okinawa-470003",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200006",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200009",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470001",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470008",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470011",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100001",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100002",
+     "fail",
+     1
+    ],
+    [
+     "gunma-100003",
+     "fail",
+     1
+    ],
+    [
+     "gunma-100004",
+     "ok",
+     null
+    ]
+   ],
+   "reselect": []
+  },
+  {
+   "date": "2026-10-10",
+   "planned": [
+    "gunma-100002",
+    "gunma-100003",
+    "okinawa-470006",
+    "gunma-100005",
+    "gunma-100008",
+    "gunma-100009",
+    "nagano-200005",
+    "nagano-200010",
+    "okinawa-470002",
+    "okinawa-470005",
+    "okinawa-470007",
+    "okinawa-470012",
+    "gunma-100010"
+   ],
+   "log": [
+    [
+     "gunma-100002",
+     "fail",
+     2
+    ],
+    [
+     "gunma-100003",
+     "skip",
+     null
+    ],
+    [
+     "okinawa-470006",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100005",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100008",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100009",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200005",
+     "skip",
+     null
+    ],
+    [
+     "nagano-200010",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470002",
+     "unreachable",
+     null
+    ],
+    [
+     "okinawa-470005",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470007",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470012",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100010",
+     "ok",
+     null
+    ]
+   ],
+   "reselect": []
+  },
+  {
+   "date": "2026-10-11",
+   "planned": [
+    "gunma-100002",
+    "gunma-100006",
+    "gunma-100012",
+    "okinawa-470009",
+    "gunma-100011",
+    "nagano-200001",
+    "nagano-200002",
+    "nagano-200004",
+    "okinawa-470010",
+    "gunma-100001",
+    "gunma-100004"
+   ],
+   "log": [
+    [
+     "gunma-100002",
+     "fail",
+     3
+    ],
+    [
+     "gunma-100006",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100012",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470009",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100011",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200001",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200002",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200004",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470010",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100001",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100004",
+     "ok",
+     null
+    ]
+   ],
+   "reselect": [
+    {
+     "source_id": "gunma-100002",
+     "name": "群馬県乙町",
+     "old_official": "moved.moved.www.gunma100002.example.jp",
+     "new_official": "moved.moved.moved.www.gunma100002.example.jp",
+     "old_bank": "https://www.gunma100002.example.jp/akiya/",
+     "new_bank": "https://www.gunma100002.example.jp/akiya/",
+     "reason": "3 晩続けて確かめられなかった（公式サイトのトップに市町村名が出ない）"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-12",
+   "planned": [
+    "nagano-200011",
+    "nagano-200006",
+    "nagano-200009",
+    "okinawa-470001",
+    "okinawa-470003",
+    "okinawa-470008",
+    "okinawa-470011",
+    "gunma-100005",
+    "gunma-100008",
+    "gunma-100009"
+   ],
+   "log": [
+    [
+     "nagano-200011",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200006",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200009",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470001",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470003",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470008",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470011",
+     "fail",
+     1
+    ],
+    [
+     "gunma-100005",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100008",
+     "skip",
+     null
+    ],
+    [
+     "gunma-100009",
+     "fail",
+     1
+    ]
+   ],
+   "reselect": []
+  },
+  {
+   "date": "2026-10-13",
+   "planned": [
+    "gunma-100009",
+    "okinawa-470011",
+    "gunma-100007",
+    "gunma-100010",
+    "nagano-200010",
+    "okinawa-470005",
+    "okinawa-470006",
+    "okinawa-470007",
+    "okinawa-470012",
+    "gunma-100001",
+    "gunma-100002",
+    "gunma-100004"
+   ],
+   "log": [
+    [
+     "gunma-100009",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470011",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100007",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100010",
+     "skip",
+     null
+    ],
+    [
+     "nagano-200010",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470005",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470006",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470007",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470012",
+     "skip",
+     null
+    ],
+    [
+     "gunma-100001",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100002",
+     "fail",
+     1
+    ],
+    [
+     "gunma-100004",
+     "ok",
+     null
+    ]
+   ],
+   "reselect": []
+  },
+  {
+   "date": "2026-10-14",
+   "planned": [
+    "gunma-100002",
+    "gunma-100006",
+    "gunma-100011",
+    "gunma-100012",
+    "nagano-200001",
+    "nagano-200002",
+    "nagano-200004",
+    "okinawa-470009",
+    "okinawa-470010",
+    "gunma-100005",
+    "nagano-200006"
+   ],
+   "log": [
+    [
+     "gunma-100002",
+     "fail",
+     2
+    ],
+    [
+     "gunma-100006",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100011",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100012",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200001",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200002",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200004",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470009",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470010",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100005",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200006",
+     "ok",
+     null
+    ]
+   ],
+   "reselect": []
+  },
+  {
+   "date": "2026-10-15",
+   "planned": [
+    "gunma-100002",
+    "nagano-200007",
+    "okinawa-470004",
+    "nagano-200008",
+    "nagano-200009",
+    "nagano-200011",
+    "okinawa-470001",
+    "okinawa-470003",
+    "okinawa-470008",
+    "gunma-100001",
+    "gunma-100004"
+   ],
+   "log": [
+    [
+     "gunma-100002",
+     "fail",
+     3
+    ],
+    [
+     "nagano-200007",
+     "unreachable",
+     null
+    ],
+    [
+     "okinawa-470004",
+     "skip",
+     null
+    ],
+    [
+     "nagano-200008",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200009",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200011",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470001",
+     "fail",
+     1
+    ],
+    [
+     "okinawa-470003",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470008",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100001",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100004",
+     "ok",
+     null
+    ]
+   ],
+   "reselect": [
+    {
+     "source_id": "gunma-100002",
+     "name": "群馬県乙町",
+     "old_official": "moved.moved.moved.www.gunma100002.example.jp",
+     "new_official": "moved.moved.moved.moved.www.gunma100002.example.jp",
+     "old_bank": "https://www.gunma100002.example.jp/akiya/",
+     "new_bank": "https://www.gunma100002.example.jp/akiya/",
+     "reason": "3 晩続けて確かめられなかった（公式サイトのトップに市町村名が出ない）"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "planned": [
+    "okinawa-470001",
+    "gunma-100007",
+    "gunma-100009",
+    "nagano-200010",
+    "okinawa-470005",
+    "okinawa-470006",
+    "okinawa-470007",
+    "okinawa-470011",
+    "gunma-100005",
+    "gunma-100006",
+    "gunma-100011"
+   ],
+   "log": [
+    [
+     "okinawa-470001",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100007",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100009",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200010",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470005",
+     "skip",
+     null
+    ],
+    [
+     "okinawa-470006",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470007",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470011",
+     "fail",
+     1
+    ],
+    [
+     "gunma-100005",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100006",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100011",
+     "ok",
+     null
+    ]
+   ],
+   "reselect": []
+  },
+  {
+   "date": "2026-10-17",
+   "planned": [
+    "gunma-100003",
+    "okinawa-470011",
+    "nagano-200005",
+    "okinawa-470002",
+    "gunma-100012",
+    "nagano-200001",
+    "nagano-200002",
+    "nagano-200004",
+    "nagano-200006",
+    "okinawa-470009",
+    "okinawa-470010",
+    "gunma-100001"
+   ],
+   "log": [
+    [
+     "gunma-100003",
+     "fail",
+     2
+    ],
+    [
+     "okinawa-470011",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200005",
+     "fail",
+     1
+    ],
+    [
+     "okinawa-470002",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100012",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200001",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200002",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200004",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200006",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470009",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470010",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100001",
+     "ok",
+     null
+    ]
+   ],
+   "reselect": []
+  },
+  {
+   "date": "2026-10-18",
+   "planned": [
+    "gunma-100003",
+    "nagano-200005",
+    "gunma-100002",
+    "gunma-100004",
+    "nagano-200008",
+    "nagano-200009",
+    "nagano-200011",
+    "okinawa-470003",
+    "okinawa-470008",
+    "gunma-100005",
+    "gunma-100006",
+    "gunma-100007"
+   ],
+   "log": [
+    [
+     "gunma-100003",
+     "fail",
+     3
+    ],
+    [
+     "nagano-200005",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100002",
+     "fail",
+     1
+    ],
+    [
+     "gunma-100004",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200008",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200009",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200011",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470003",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470008",
+     "unreachable",
+     null
+    ],
+    [
+     "gunma-100005",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100006",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100007",
+     "ok",
+     null
+    ]
+   ],
+   "reselect": [
+    {
+     "source_id": "gunma-100003",
+     "name": "群馬県丙村",
+     "old_official": "www.gunma100003.example.jp",
+     "new_official": "moved.www.gunma100003.example.jp",
+     "old_bank": "https://www.gunma100003.example.jp/akiya/",
+     "new_bank": "https://www.gunma100003.example.jp/akiya/",
+     "reason": "3 晩続けて確かめられなかった（空き家バンクのページを開けない（HTTP 404））"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-19",
+   "planned": [
+    "gunma-100002",
+    "gunma-100008",
+    "gunma-100009",
+    "gunma-100011",
+    "nagano-200010",
+    "okinawa-470001",
+    "okinawa-470006",
+    "okinawa-470007",
+    "gunma-100001",
+    "gunma-100012",
+    "nagano-200001"
+   ],
+   "log": [
+    [
+     "gunma-100002",
+     "fail",
+     2
+    ],
+    [
+     "gunma-100008",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100009",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100011",
+     "fail",
+     1
+    ],
+    [
+     "nagano-200010",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470001",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470006",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470007",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100001",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100012",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200001",
+     "ok",
+     null
+    ]
+   ],
+   "reselect": []
+  },
+  {
+   "date": "2026-10-20",
+   "planned": [
+    "gunma-100002",
+    "gunma-100011",
+    "gunma-100010",
+    "okinawa-470012",
+    "nagano-200002",
+    "nagano-200004",
+    "nagano-200006",
+    "okinawa-470002",
+    "okinawa-470009",
+    "okinawa-470010",
+    "okinawa-470011",
+    "gunma-100003"
+   ],
+   "log": [
+    [
+     "gunma-100002",
+     "fail",
+     3
+    ],
+    [
+     "gunma-100011",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100010",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470012",
+     "ok",
+     null
+    ],
+    [
+     "nagano-200002",
+     "unreachable",
+     null
+    ],
+    [
+     "nagano-200004",
+     "fail",
+     1
+    ],
+    [
+     "nagano-200006",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470002",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470009",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470010",
+     "ok",
+     null
+    ],
+    [
+     "okinawa-470011",
+     "ok",
+     null
+    ],
+    [
+     "gunma-100003",
+     "ok",
+     null
+    ]
+   ],
+   "reselect": [
+    {
+     "source_id": "gunma-100002",
+     "name": "群馬県乙町",
+     "old_official": "moved.moved.moved.moved.www.gunma100002.example.jp",
+     "new_official": "moved.moved.moved.moved.moved.www.gunma100002.example.jp",
+     "old_bank": "https://www.gunma100002.example.jp/akiya/",
+     "new_bank": "https://www.gunma100002.example.jp/akiya/",
+     "reason": "3 晩続けて確かめられなかった（公式サイトのトップに市町村名が出ない）"
+    }
+   ]
+  }
+ ],
+ "after": {
+  "7": {
+   "rows": {
+    "gunma-100001": [
+     "2026-10-07",
+     "www.gunma100001.example.jp",
+     "crawl"
+    ],
+    "gunma-100002": [
+     "2026-10-07",
+     "moved.moved.www.gunma100002.example.jp",
+     "crawl"
+    ],
+    "gunma-100003": [
+     "2026-10-07",
+     "www.gunma100003.example.jp",
+     "crawl"
+    ],
+    "gunma-100004": [
+     "2026-10-07",
+     "www.gunma100004.example.jp",
+     "crawl"
+    ],
+    "gunma-100005": [
+     "2026-10-07",
+     "www.gunma100005.example.jp",
+     "crawl"
+    ],
+    "gunma-100006": [
+     "2026-10-01",
+     "www.gunma100006.example.jp",
+     "crawl"
+    ],
+    "gunma-100007": [
+     "2026-10-03",
+     "www.gunma100007.example.jp",
+     "crawl"
+    ],
+    "gunma-100008": [
+     "2026-10-07",
+     "www.gunma100008.example.jp",
+     "crawl"
+    ],
+    "gunma-100009": [
+     "2026-10-07",
+     "www.gunma100009.example.jp",
+     "crawl"
+    ],
+    "gunma-100010": [
+     "2026-10-05",
+     "www.gunma100010.example.jp",
+     "crawl"
+    ],
+    "gunma-100011": [
+     "2026-10-06",
+     "www.gunma100011.example.jp",
+     "crawl"
+    ],
+    "gunma-100012": [
+     "2026-10-01",
+     "www.gunma100012.example.jp",
+     "crawl"
+    ],
+    "nagano-200001": [
+     "2026-10-05",
+     "www.nagano200001.example.jp",
+     "crawl"
+    ],
+    "nagano-200002": [
+     "2026-10-06",
+     "www.nagano200002.example.jp",
+     "crawl"
+    ],
+    "nagano-200003": [
+     null,
+     null,
+     "pending"
+    ],
+    "nagano-200004": [
+     "2026-10-05",
+     "www.nagano200004.example.jp",
+     "crawl"
+    ],
+    "nagano-200005": [
+     "2026-10-07",
+     "www.nagano200005.example.jp",
+     "crawl"
+    ],
+    "nagano-200006": [
+     "2026-10-06",
+     "www.nagano200006.example.jp",
+     "crawl"
+    ],
+    "nagano-200007": [
+     "2026-09-01",
+     "www.nagano200007.example.jp",
+     "crawl"
+    ],
+    "nagano-200008": [
+     "2026-10-05",
+     "www.nagano200008.example.jp",
+     "crawl"
+    ],
+    "nagano-200009": [
+     "2026-10-06",
+     "www.nagano200009.example.jp",
+     "crawl"
+    ],
+    "nagano-200010": [
+     "2026-10-07",
+     "www.nagano200010.example.jp",
+     "crawl"
+    ],
+    "nagano-200011": [
+     "2026-10-02",
+     "www.nagano200011.example.jp",
+     "crawl"
+    ],
+    "nagano-200012": [
+     "2026-09-15",
+     "www.nagano200012.example.jp",
+     "pending"
+    ],
+    "okinawa-470001": [
+     "2026-10-06",
+     "www.okinawa470001.example.jp",
+     "crawl"
+    ],
+    "okinawa-470002": [
+     "2026-10-07",
+     "www.okinawa470002.example.jp",
+     "crawl"
+    ],
+    "okinawa-470003": [
+     "2026-09-15",
+     "www.okinawa470003.example.jp",
+     "crawl"
+    ],
+    "okinawa-470004": [
+     "2026-09-01",
+     "www.okinawa470004.example.jp",
+     "crawl"
+    ],
+    "okinawa-470005": [
+     "2026-10-07",
+     "www.okinawa470005.example.jp",
+     "crawl"
+    ],
+    "okinawa-470006": [
+     "2026-10-05",
+     "www.okinawa470006.example.jp",
+     "crawl"
+    ],
+    "okinawa-470007": [
+     "2026-10-07",
+     "www.okinawa470007.example.jp",
+     "crawl"
+    ],
+    "okinawa-470008": [
+     "2026-10-06",
+     "www.okinawa470008.example.jp",
+     "crawl"
+    ],
+    "okinawa-470009": [
+     "2026-10-01",
+     "www.okinawa470009.example.jp",
+     "crawl"
+    ],
+    "okinawa-470010": [
+     "2026-10-05",
+     "www.okinawa470010.example.jp",
+     "crawl"
+    ],
+    "okinawa-470011": [
+     "2026-10-06",
+     "www.okinawa470011.example.jp",
+     "crawl"
+    ],
+    "okinawa-470012": [
+     "2026-10-07",
+     "www.okinawa470012.example.jp",
+     "crawl"
+    ]
+   },
+   "state": {
+    "gunma-100006": {
+     "last_tried": "2026-10-04",
+     "waiting_reason": "公式サイトに通信できない（HTTP 403）",
+     "waiting_since": "2026-10-04"
+    },
+    "gunma-100007": {
+     "last_tried": "2026-10-06",
+     "waiting_reason": "robots.txt で公式サイトを取得できない",
+     "waiting_since": "2026-10-06"
+    },
+    "gunma-100012": {
+     "last_tried": "2026-10-04",
+     "waiting_reason": "robots.txt で公式サイトを取得できない",
+     "waiting_since": "2026-10-04"
+    },
+    "nagano-200007": {
+     "last_tried": "2026-10-01",
+     "waiting_reason": "公式サイトに通信できない（ConnectTimeout）",
+     "waiting_since": "2026-10-01"
+    },
+    "nagano-200011": {
+     "last_tried": "2026-10-05",
+     "waiting_reason": "robots.txt で公式サイトを取得できない",
+     "waiting_since": "2026-10-05"
+    },
+    "okinawa-470003": {
+     "last_tried": "2026-10-02",
+     "waiting_reason": "公式サイトに通信できない（HTTP 403）",
+     "waiting_since": "2026-10-02"
+    },
+    "okinawa-470004": {
+     "last_tried": "2026-10-01",
+     "waiting_reason": "robots.txt で公式サイトを取得できない",
+     "waiting_since": "2026-10-01"
+    },
+    "okinawa-470009": {
+     "last_tried": "2026-10-04",
+     "waiting_reason": "公式サイトに通信できない（HTTP 403）",
+     "waiting_since": "2026-10-04"
+    }
+   },
+   "weekly": [
+    "- 運営主体の確かめ直し（ADR 0018）: **81 件**（成り立った 60・成り立たなかった 13・robots.txt で見送り 4・通信できない 4）。いちばん古い確認日 2026-09-01",
+    "  - **確かめられていない**（robots.txt・通信できない。失敗には数えず 7 日おきに見る）",
+    "    - 沖縄県丁市（2026-10-01 から）: robots.txt で公式サイトを取得できない",
+    "    - 長野県庚市（2026-10-01 から）: 公式サイトに通信できない（ConnectTimeout）",
+    "    - 沖縄県丙村（2026-10-02 から）: 公式サイトに通信できない（HTTP 403）",
+    "    - 群馬県丑村（2026-10-04 から）: robots.txt で公式サイトを取得できない",
+    "    - 沖縄県壬村（2026-10-04 から）: 公式サイトに通信できない（HTTP 403）",
+    "    - 群馬県己村（2026-10-04 から）: 公式サイトに通信できない（HTTP 403）",
+    "    - 長野県子町（2026-10-05 から）: robots.txt で公式サイトを取得できない",
+    "    - 群馬県庚市（2026-10-06 から）: robots.txt で公式サイトを取得できない",
+    "",
+    "## 今週 確かめ直しで選び直した自治体（3 件）",
+    "",
+    "| 自治体 | 旧 URL | 新 URL | 理由 |",
+    "| --- | --- | --- | --- |",
+    "| 群馬県乙町 | www.gunma100002.example.jp | moved.www.gunma100002.example.jp | 公式サイトが変わった。3 晩続けて確かめられなかった（公式サイトのトップに市町村名が出ない） |",
+    "| 長野県丙村 | www.nagano200003.example.jp | — | 公式サイトが変わった。3 晩続けて確かめられなかった（公式サイトを開けない（HTTP 404））。選び直しても運営主体が決まらず、人のレビューへ |",
+    "| 長野県丙村 | https://www.nagano200003.example.jp/akiya/ | — | 空き家バンクが変わった。3 晩続けて確かめられなかった（公式サイトを開けない（HTTP 404））。選び直しても運営主体が決まらず、人のレビューへ |",
+    "| 群馬県乙町 | moved.www.gunma100002.example.jp | moved.moved.www.gunma100002.example.jp | 公式サイトが変わった。3 晩続けて確かめられなかった（公式サイトのトップに市町村名が出ない） |"
+   ]
+  },
+  "20": {
+   "rows": {
+    "gunma-100001": [
+     "2026-10-19",
+     "www.gunma100001.example.jp",
+     "crawl"
+    ],
+    "gunma-100002": [
+     "2026-10-20",
+     "moved.moved.moved.moved.moved.www.gunma100002.example.jp",
+     "crawl"
+    ],
+    "gunma-100003": [
+     "2026-10-20",
+     "moved.www.gunma100003.example.jp",
+     "crawl"
+    ],
+    "gunma-100004": [
+     "2026-10-18",
+     "www.gunma100004.example.jp",
+     "crawl"
+    ],
+    "gunma-100005": [
+     "2026-10-18",
+     "www.gunma100005.example.jp",
+     "crawl"
+    ],
+    "gunma-100006": [
+     "2026-10-18",
+     "www.gunma100006.example.jp",
+     "crawl"
+    ],
+    "gunma-100007": [
+     "2026-10-18",
+     "www.gunma100007.example.jp",
+     "crawl"
+    ],
+    "gunma-100008": [
+     "2026-10-19",
+     "www.gunma100008.example.jp",
+     "crawl"
+    ],
+    "gunma-100009": [
+     "2026-10-19",
+     "www.gunma100009.example.jp",
+     "crawl"
+    ],
+    "gunma-100010": [
+     "2026-10-20",
+     "www.gunma100010.example.jp",
+     "crawl"
+    ],
+    "gunma-100011": [
+     "2026-10-20",
+     "www.gunma100011.example.jp",
+     "crawl"
+    ],
+    "gunma-100012": [
+     "2026-10-19",
+     "www.gunma100012.example.jp",
+     "crawl"
+    ],
+    "nagano-200001": [
+     "2026-10-19",
+     "www.nagano200001.example.jp",
+     "crawl"
+    ],
+    "nagano-200002": [
+     "2026-10-17",
+     "www.nagano200002.example.jp",
+     "crawl"
+    ],
+    "nagano-200003": [
+     null,
+     null,
+     "pending"
+    ],
+    "nagano-200004": [
+     "2026-10-17",
+     "www.nagano200004.example.jp",
+     "crawl"
+    ],
+    "nagano-200005": [
+     "2026-10-18",
+     "www.nagano200005.example.jp",
+     "crawl"
+    ],
+    "nagano-200006": [
+     "2026-10-20",
+     "www.nagano200006.example.jp",
+     "crawl"
+    ],
+    "nagano-200007": [
+     "2026-09-01",
+     "www.nagano200007.example.jp",
+     "crawl"
+    ],
+    "nagano-200008": [
+     "2026-10-18",
+     "www.nagano200008.example.jp",
+     "crawl"
+    ],
+    "nagano-200009": [
+     "2026-10-18",
+     "www.nagano200009.example.jp",
+     "crawl"
+    ],
+    "nagano-200010": [
+     "2026-10-19",
+     "www.nagano200010.example.jp",
+     "crawl"
+    ],
+    "nagano-200011": [
+     "2026-10-18",
+     "www.nagano200011.example.jp",
+     "crawl"
+    ],
+    "nagano-200012": [
+     "2026-09-15",
+     "www.nagano200012.example.jp",
+     "pending"
+    ],
+    "okinawa-470001": [
+     "2026-10-19",
+     "www.okinawa470001.example.jp",
+     "crawl"
+    ],
+    "okinawa-470002": [
+     "2026-10-20",
+     "www.okinawa470002.example.jp",
+     "crawl"
+    ],
+    "okinawa-470003": [
+     "2026-10-18",
+     "www.okinawa470003.example.jp",
+     "crawl"
+    ],
+    "okinawa-470004": [
+     "2026-09-01",
+     "www.okinawa470004.example.jp",
+     "crawl"
+    ],
+    "okinawa-470005": [
+     "2026-10-13",
+     "www.okinawa470005.example.jp",
+     "crawl"
+    ],
+    "okinawa-470006": [
+     "2026-10-19",
+     "www.okinawa470006.example.jp",
+     "crawl"
+    ],
+    "okinawa-470007": [
+     "2026-10-19",
+     "www.okinawa470007.example.jp",
+     "crawl"
+    ],
+    "okinawa-470008": [
+     "2026-10-15",
+     "www.okinawa470008.example.jp",
+     "crawl"
+    ],
+    "okinawa-470009": [
+     "2026-10-20",
+     "www.okinawa470009.example.jp",
+     "crawl"
+    ],
+    "okinawa-470010": [
+     "2026-10-20",
+     "www.okinawa470010.example.jp",
+     "crawl"
+    ],
+    "okinawa-470011": [
+     "2026-10-20",
+     "www.okinawa470011.example.jp",
+     "crawl"
+    ],
+    "okinawa-470012": [
+     "2026-10-20",
+     "www.okinawa470012.example.jp",
+     "crawl"
+    ]
+   },
+   "state": {
+    "nagano-200002": {
+     "last_tried": "2026-10-20",
+     "waiting_reason": "公式サイトに通信できない（HTTP 403）",
+     "waiting_since": "2026-10-20"
+    },
+    "nagano-200004": {
+     "failed_since": "2026-10-20",
+     "failures": 1,
+     "reason": "空き家バンクのページを開けない（HTTP 404）"
+    },
+    "nagano-200007": {
+     "last_tried": "2026-10-15",
+     "waiting_reason": "公式サイトに通信できない（ConnectTimeout）",
+     "waiting_since": "2026-10-01"
+    },
+    "okinawa-470004": {
+     "last_tried": "2026-10-15",
+     "waiting_reason": "robots.txt で公式サイトを取得できない",
+     "waiting_since": "2026-10-01"
+    },
+    "okinawa-470005": {
+     "last_tried": "2026-10-16",
+     "waiting_reason": "robots.txt で公式サイトを取得できない",
+     "waiting_since": "2026-10-16"
+    },
+    "okinawa-470008": {
+     "last_tried": "2026-10-18",
+     "waiting_reason": "公式サイトに通信できない（HTTP 403）",
+     "waiting_since": "2026-10-18"
+    }
+   },
+   "weekly": [
+    "- 運営主体の確かめ直し（ADR 0018）: **92 件**（成り立った 72・成り立たなかった 13・robots.txt で見送り 4・通信できない 3）。いちばん古い確認日 2026-09-01",
+    "  - **成り立っていない**（翌晩も確かめ、3 晩続くと選び直す）",
+    "    - 長野県丁市（2026-10-20 から、1 晩目）: 空き家バンクのページを開けない（HTTP 404）",
+    "  - **確かめられていない**（robots.txt・通信できない。失敗には数えず 7 日おきに見る）",
+    "    - 沖縄県丁市（2026-10-01 から）: robots.txt で公式サイトを取得できない",
+    "    - 長野県庚市（2026-10-01 から）: 公式サイトに通信できない（ConnectTimeout）",
+    "    - 沖縄県戊町（2026-10-16 から）: robots.txt で公式サイトを取得できない",
+    "    - 沖縄県辛町（2026-10-18 から）: 公式サイトに通信できない（HTTP 403）",
+    "    - 長野県乙町（2026-10-20 から）: 公式サイトに通信できない（HTTP 403）",
+    "",
+    "## 今週 確かめ直しで選び直した自治体（3 件）",
+    "",
+    "| 自治体 | 旧 URL | 新 URL | 理由 |",
+    "| --- | --- | --- | --- |",
+    "| 群馬県乙町 | moved.moved.moved.www.gunma100002.example.jp | moved.moved.moved.moved.www.gunma100002.example.jp | 公式サイトが変わった。3 晩続けて確かめられなかった（公式サイトのトップに市町村名が出ない） |",
+    "| 群馬県丙村 | www.gunma100003.example.jp | moved.www.gunma100003.example.jp | 公式サイトが変わった。3 晩続けて確かめられなかった（空き家バンクのページを開けない（HTTP 404）） |",
+    "| 群馬県乙町 | moved.moved.moved.moved.www.gunma100002.example.jp | moved.moved.moved.moved.moved.www.gunma100002.example.jp | 公式サイトが変わった。3 晩続けて確かめられなかった（公式サイトのトップに市町村名が出ない） |"
+   ]
+  }
+ }
+}
