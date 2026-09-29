@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import hashlib
+import json
 import logging
 import re
 from collections.abc import Sequence
@@ -10,6 +11,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from sitemill.build.guard import GuardLimit, GuardMetric
 from sitemill.build.pii import PHONE_RE
 from sitemill.diff.freshness import mark_read
 from sitemill.diff.normalize import page_text, squash
@@ -434,8 +436,72 @@ def retire_unlisted(ws: Workspace, *, now: datetime) -> dict[str, int]:
     return counts
 
 
+def _crawls_listings(source: Source | None) -> bool:
+    """物件一覧を巡回している情報源か（補助制度のためだけに crawl になっているものを除く）。"""
+    if source is None or source.policy != "crawl":
+        return False
+    return any(str(getattr(p.kind, "value", p.kind)) in LISTING_PAGE_KINDS for p in source.pages)
+
+
+# 公開前の歯止め（sitemill ADR 0026、akiya-atlas ADR 0019）。平常の値は 09-15〜09-29 の
+# 15 晩の日次のデータで数えた。割合が前回公開した値から急に増えたら、配置を止めて前日の本番を残す
+PUBLISH_LIMITS = {
+    "listings_not_live": GuardLimit(
+        reason=(
+            "掲載中でない物件の割合。平常は 5.8〜6.2% で、1 晩の動きは最大 0.2pt。売れた物件が "
+            "30 日で「掲載終了の可能性」になり始めても 1 晩 0.4pt ほどの見込み。鮮度や巡回の誤りで"
+            "物件の多い県（福島 8.7%・北海道 6.3%・鹿児島 5.3%）の分がまとめて古くなれば越える。"
+            "割合そのものは売れた物件が溜まって月単位で上がるので、上限は置かない"
+        ),
+        max_rise=0.05,
+    ),
+    "crawled_without_live": GuardLimit(
+        reason=(
+            "物件一覧を巡回しているのに掲載中が 0 件の自治体の割合。平常は 1.1〜1.9%（264 のうち"
+            " 3〜5）で、1 晩に動くのは 1 自治体（0.4pt）まで。1 晩で 8 自治体（3pt）以上が 0 件に"
+            "なるのは、同じ作りの一覧の読み取りや巡回がまとめて壊れたとき。10% は平常の約 5 倍"
+        ),
+        max_rise=0.03,
+        max_share=0.10,
+    ),
+    "operator_undetermined": GuardLimit(
+        reason=(
+            "運営主体を判定できない自治体の割合。平常は 0 件（1,742 自治体）。確かめ直しで"
+            "選び直した自治体が判定できずに人のレビューへ回ることはあるが、1 晩に数件。1 晩で"
+            " 17 件（1pt）を越えるのは、公式サイトの解決そのものが壊れたとき。3%（52 件）は"
+            "少しずつ増える場合の歯止め"
+        ),
+        max_rise=0.01,
+        max_share=0.03,
+    ),
+}
+
+
 class AkiyaAtlasService:
     id = "akiya-atlas"
+    publish_limits = PUBLISH_LIMITS
+
+    def publish_metrics(self, ws: Workspace, *, now: datetime) -> dict[str, GuardMetric]:
+        """公開前の歯止めで見る割合（件数と全体）。しきい値と理由は `PUBLISH_LIMITS`。"""
+        ds = Dataset.load(ws)
+        listings = [ls for m in ds.municipalities for ls in ds.listings_for(m)]
+        crawled = [m for m in ds.municipalities if _crawls_listings(ds.by_source.get(m.id))]
+        rows = [
+            row
+            for path in sorted(ws.runs_dir.glob("discover-*-findings.json"))
+            for row in (json.loads(path.read_text(encoding="utf-8")).get("findings") or [])
+        ]
+        return {
+            "listings_not_live": GuardMetric(
+                sum(1 for ls in listings if not ls.is_active), len(listings)
+            ),
+            "crawled_without_live": GuardMetric(
+                sum(1 for m in crawled if not ds.listings_for(m, active_only=True)), len(crawled)
+            ),
+            "operator_undetermined": GuardMetric(
+                sum(1 for r in rows if r.get("policy") == "pending"), len(rows)
+            ),
+        }
 
     def sources(self, ws: Workspace) -> list[Source]:
         return load_sources(ws)

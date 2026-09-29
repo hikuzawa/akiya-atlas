@@ -31,6 +31,10 @@ on:
         description: "Cloudflare Pages に配置する（Secrets がある場合）"
         type: boolean
         default: true
+      accept_guard:
+        description: "公開前の歯止めを越えていても、今の値を基準にして配置する（原因を確かめて正当な変化と判断したときだけ）"
+        type: boolean
+        default: false
       mode:
         description: "full: 巡回→抽出→heal→build→検査→deploy ／ deploy-only: 巡回・抽出・heal・データのコミットを行わず、main の現在のデータで build→検査→deploy だけ"
         type: choice
@@ -164,6 +168,23 @@ jobs:
         working-directory: akiya-atlas
         run: uv run sitemill eval
 
+      # 公開前の歯止め（sitemill ADR 0026、akiya-atlas ADR 0019）。掲載中でない物件・掲載中 0 件の
+      # 巡回自治体・運営主体を判定できない自治体の割合が、前回公開した値から急に増えたら、配置を止めて
+      # 前日の本番を残す。データのコミットは止めない。基準（data/state/publish_guard.json）は通った回
+      # だけ更新され、下のコミットに入る。人が確かめて正当な変化なら、手動実行で accept_guard を付ける
+      - name: 公開前の歯止め（判定の急変）
+        id: guard
+        working-directory: akiya-atlas
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          if [ "${{ inputs.accept_guard }}" = "true" ]; then
+            uv run sitemill guard --accept 2>&1 | tee "$RUNNER_TEMP/guard.txt"
+          else
+            uv run sitemill guard 2>&1 | tee "$RUNNER_TEMP/guard.txt"
+          fi
+
       - name: Commit data changes
         id: commit
         if: inputs.mode != 'deploy-only' # deploy-only では飛ばす
@@ -191,6 +212,31 @@ jobs:
           echo "::error::3 回試しても data を push できなかった（配置は続行）"
           exit 1
 
+      # deploy-only はデータをコミットしないが、歯止めの基準（通った回・受け入れた回）だけは残す。
+      # 残さないと、翌晩も古い基準と比べて止まり続ける
+      - name: 歯止めの基準を残す（deploy-only のとき）
+        if: inputs.mode == 'deploy-only' && steps.guard.outcome == 'success'
+        working-directory: akiya-atlas
+        continue-on-error: true
+        run: |
+          git config user.name "sitemill-bot"
+          git config user.email "sitemill-bot@users.noreply.github.com"
+          git add data/state/publish_guard.json
+          git diff --cached --quiet && exit 0
+          git commit -m "data: 公開前の歯止めの基準 $(date -u +%Y-%m-%dT%H:%MZ)"
+          # ビルドが書いた lastmod や実行記録で作業ツリーは汚れている（deploy-only ではコミットしない）。
+          # 先に push し、断られたときだけ汚れを退避して取り込み直す（japan-open-today と同じ形）
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            git fetch origin main
+            if ! git rebase --autostash origin/main; then
+              git rebase --abort || true
+              echo "::error::歯止めの基準を push できなかった（origin/main と競合）"
+              exit 1
+            fi
+          done
+          exit 1
+
       - name: Cloudflare の Secrets を確認
         id: cf
         run: |
@@ -204,6 +250,7 @@ jobs:
       - name: Cloudflare Pages プロジェクトを用意（無ければ作成、あれば何もしない）
         if: >-
           steps.cf.outputs.ready == 'true' &&
+          steps.guard.outcome != 'failure' &&
           (github.event_name == 'schedule' || inputs.deploy)
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -236,6 +283,7 @@ jobs:
       - name: Deploy to Cloudflare Pages
         if: >-
           steps.cf.outputs.ready == 'true' &&
+          steps.guard.outcome != 'failure' &&
           (github.event_name == 'schedule' || inputs.deploy)
         uses: cloudflare/wrangler-action@v3
         with:
@@ -244,6 +292,29 @@ jobs:
           # 作業ディレクトリ直下は git 管理外（2 リポジトリを並べている）で wrangler がブランチを検出できないため、
           # production branch の main を明示して本番（akiya-atlas-asb.pages.dev）に配置する
           command: pages deploy akiya-atlas/dist --project-name=akiya-atlas --branch=main
+
+      - name: 歯止めで配置を止めたことを Issue で通知
+        if: steps.guard.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        shell: bash
+        run: |
+          gh label create publish-guard --color 5319E7 --description "判定の急変で配置を止めた" 2>/dev/null || true
+          detail="$(head -20 "$RUNNER_TEMP/guard.txt" | sed 's/^/    /')"
+          msg="$(printf '%s に判定の急変で配置を止めました。本番は前回配置した状態のままです（データのコミットは実行済み）: %s\n\n%s' \
+            "$(date -u +%FT%TZ)" "$RUN_URL" "$detail")"
+          num=$(gh issue list --label publish-guard --state open --json number --jq '.[0].number // empty')
+          if [ -n "$num" ]; then
+            gh issue comment "$num" --body "$msg"
+          else
+            gh issue create --title "判定の急変で配置を止めました" --label publish-guard \
+              --body "$msg
+
+          原因を確かめ、データやコードの誤りなら直す（次の日次で通れば配置される）。正当な変化なら、
+          pipeline を手動実行し accept_guard を付けて受け入れる（docs/runbook/operations.md）。直ったら閉じてください"
+          fi
 
       - name: 失敗時に Issue で通知
         if: failure() || steps.commit.outcome == 'failure' || steps.recheck.outcome == 'failure'
