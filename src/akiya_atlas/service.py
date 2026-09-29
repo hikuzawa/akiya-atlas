@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Any
 
 from sitemill.build.pii import PHONE_RE
+from sitemill.diff.freshness import mark_read
 from sitemill.diff.normalize import page_text, squash
 from sitemill.diff.state import CrawlState
 from sitemill.extract import ExtractedItem, ExtractionSpec
@@ -506,18 +507,13 @@ class AkiyaAtlasService:
             if wrong:
                 log.info("%s: %d 件の価格から単価・賃料の金額を除去", source.id, wrong)
             assert_no_street_numbers(store.all(), where=source.id)
-            for record in store.records.values():
-                st = state.get(record.get("source_url", ""))
-                if (
-                    st is not None
-                    and st.error is None
-                    and st.fetched_at is not None
-                    and st.content_hash is not None
-                    and st.content_hash == st.extracted_hash
-                ):
-                    seen = st.fetched_at.isoformat()
-                    if seen > (record.get("last_seen_at") or ""):
-                        record["last_seen_at"] = seen
+            # 出どころのページを読めた時刻まで last_seen_at を進める（sitemill ADR 0028）
+            mark_read(
+                store.records.values(),
+                state,
+                source_url=lambda r: r.get("source_url"),
+                field="last_seen_at",
+            )
             stale = store.mark_stale(now=now, max_age_days=STALE_AFTER_DAYS)
             if stale:
                 log.info("%s: %d 件を stale に", source.id, stale)

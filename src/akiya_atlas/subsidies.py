@@ -18,6 +18,7 @@ from pathlib import Path
 from typing import Any
 
 from sitemill.clock import to_jst
+from sitemill.diff import freshness
 from sitemill.diff.normalize import squash
 from sitemill.diff.state import CrawlState
 from sitemill.extract import ExtractedItem
@@ -142,7 +143,8 @@ def mark_read(ws: Workspace, sources: Iterable[Source], state: CrawlState) -> in
     （09-14〜15 の全国収集の 2,638 件が 2027-03-14〜15 に。japan-open-today で起きた鮮度の障害と
     同じ形。2026-09-28）。物件の `last_seen_at` と同じく、読めていて、抽出したときから中身が
     変わっていないときだけ進める。取得に失敗したページ、変わってまだ抽出していないページの制度は
-    進めない（古くなったことが「情報が古い可能性」に出る）。
+    進めない（古くなったことが「情報が古い可能性」に出る）。判定そのものは sitemill の
+    `mark_read`（ADR 0028）で、ここで決めるのはレコードの出どころと、JST の日付で持つこと。
     """
     moved = 0
     for source in sources:
@@ -150,24 +152,20 @@ def mark_read(ws: Workspace, sources: Iterable[Source], state: CrawlState) -> in
         if not path.is_file():
             continue
         store = RecordStore(path)
-        touched = False
-        for record in store.records.values():
-            if record.get("status") == "removed":
-                continue
-            prov = record.get("provenance") or {}
-            st = state.get(str(prov.get("source_url") or record.get("url") or ""))
-            if st is None or st.error is not None or st.fetched_at is None:
-                continue
-            if st.content_hash is None or st.content_hash != st.extracted_hash:
-                continue
-            read_on = to_jst(st.fetched_at).date().isoformat()
-            if read_on > str(record.get("checked_on") or ""):
-                record["checked_on"] = read_on
-                moved += 1
-                touched = True
-        if touched:
+        live = [r for r in store.records.values() if r.get("status") != "removed"]
+        n = freshness.mark_read(
+            live, state, source_url=_source_page, field="checked_on", as_date=True
+        )
+        if n:
             store.save()
+            moved += n
     return moved
+
+
+def _source_page(record: dict[str, Any]) -> str:
+    """制度を抽出したページ。出どころ（provenance）が無い古い行は、制度の URL で代える。"""
+    prov = record.get("provenance") or {}
+    return str(prov.get("source_url") or record.get("url") or "")
 
 
 def load_subsidies(ws: Workspace, source_id: str) -> list[Subsidy]:
