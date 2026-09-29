@@ -235,6 +235,25 @@ def test_empty_notice_rechecks_are_a_count_not_a_row(
     )
 
 
+def test_a_one_time_note_shows_in_its_week_only(
+    ws: Workspace, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """まとめてデータを直した晩は、その週の週次に理由を 1 行添える（2026-09-28 が最初）。"""
+    monkeypatch.delenv("GH_REPO", raising=False)  # 環境に設定があっても外部に出ない
+    (ws.root / "data" / "reference").mkdir(parents=True, exist_ok=True)
+    (ws.root / "data" / "reference" / "weekly-notes.json").write_text(
+        json.dumps(
+            {"notes": [{"date": "2026-09-28", "text": "補助制度の確認日をまとめて進めた"}]},
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
+    week = chr(10).join(weekly.report(ws, days=7, now=datetime(2026, 10, 4, 22, tzinfo=UTC)))
+    assert "- 注記（表の 2026-09-28 の行）: 補助制度の確認日をまとめて進めた" in week
+    later = chr(10).join(weekly.report(ws, days=7, now=datetime(2026, 10, 11, 22, tzinfo=UTC)))
+    assert "注記" not in later
+
+
 def test_report_says_when_it_cannot_count_actions_minutes(
     ws: Workspace, monkeypatch: pytest.MonkeyPatch
 ) -> None:

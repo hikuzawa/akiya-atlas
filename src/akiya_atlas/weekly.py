@@ -404,6 +404,33 @@ def hold_lines(holds: list[Hold]) -> list[str]:
     return out
 
 
+NOTES_PATH = ("data", "reference", "weekly-notes.json")
+
+
+def notes_lines(ws: Workspace, *, days: int = 7, now: datetime | None = None) -> list[str]:
+    """一度きりの出来事の注記。その晩の数字や差分が異常に見えないよう、理由を添える。
+
+    `data/reference/weekly-notes.json` の `notes`（`date` は表の行と同じ UTC の日付）のうち、
+    期間に入るものを出す。まとめてデータを直した晩などに足す（最初は 2026-09-28 の、
+    補助制度の確認日を読めた日までまとめて進めた晩）。
+    """
+    path = ws.root.joinpath(*NOTES_PATH)
+    try:
+        notes = json.loads(path.read_text(encoding="utf-8")).get("notes") or []
+    except (OSError, ValueError):
+        return []
+    today = (now or datetime.now(UTC)).date()
+    out: list[str] = []
+    for note in notes:
+        try:
+            day = date.fromisoformat(str(note["date"]))
+        except (KeyError, ValueError):
+            continue
+        if today - timedelta(days=days) <= day <= today:
+            out.append(f"- 注記（表の {day.isoformat()} の行）: {note.get('text', '')}")
+    return out
+
+
 def _all_findings(ws: Workspace) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     for path in sorted(ws.runs_dir.glob("discover-*-findings.json")):
@@ -554,6 +581,7 @@ def report(
     )
     out += [
         "",
+        *notes_lines(ws, days=days, now=now),
         f"- 自己修復: 点検 {total.heal_checked} 件 / 変更 {total.heal_changed} 件 / "
         f"状態を見直し {total.heal_downgraded} 件 / 再巡回 {total.heal_recrawl} 件",
         *takedown_lines(scope),
