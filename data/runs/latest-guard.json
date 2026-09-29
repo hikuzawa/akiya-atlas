@@ -1,0 +1,30 @@
+{
+  "ci": true,
+  "command": "guard",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-29T22:31:35Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "guard": {
+      "breaches": 0,
+      "crawled_without_live_bp": 114,
+      "crawled_without_live_count": 3,
+      "crawled_without_live_total": 264,
+      "listings_not_live_bp": 579,
+      "listings_not_live_count": 301,
+      "listings_not_live_total": 5197,
+      "operator_undetermined_bp": 0,
+      "operator_undetermined_count": 0,
+      "operator_undetermined_total": 1742
+    }
+  },
+  "started_at": "2026-09-29T22:31:30Z"
+}
