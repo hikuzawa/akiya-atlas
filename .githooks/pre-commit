@@ -11,4 +11,4 @@ if command -v gitleaks >/dev/null 2>&1; then
     gitleaks protect --staged --redact --no-banner
   fi
 fi
-uv run --quiet sitemill scan-secrets --staged
+uv run --frozen --quiet sitemill scan-secrets --staged
