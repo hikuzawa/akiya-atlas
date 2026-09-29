@@ -236,6 +236,11 @@ def rum_pageloads(secrets, host: str, days: int) -> dict[str, int] | None: ...
 
 ## L. 出どころのページを読めた時刻で鮮度を進める（2026-09-28、3 か所で別々に持っていた）
 
+**済み（sitemill v0.7.13、ADR 0028、`sitemill/diff/freshness.py` の `mark_read`）。** akiya-atlas の
+物件（`last_seen_at`）と補助制度（`checked_on`、`as_date=True`）は 2026-09-29 にこれへ切り替えた。
+切り替えの前後で、日付を巻き戻したデータ（物件 5,131 件・補助制度 2,941 件が動く）でも、いまの
+データでも、レコードのファイルが全件一致した。以下は提案時の記録。
+
 同じ考え方を 3 か所で別々に持っている。akiya-atlas の物件（`service.finalize` が `last_seen_at` を
 進める）、akiya-atlas の補助制度（`subsidies.mark_read`。2026-09-28 に足した）、japan-open-today の
 施設。**片方だけ直る事故の元**で、実際に japan-open-today で鮮度の障害が出たあと、akiya-atlas の
