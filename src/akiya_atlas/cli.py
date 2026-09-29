@@ -64,7 +64,11 @@ def _register(app: typer.Typer) -> None:
             typer.Option("--workers", "-w", help="並列数（既定は site.toml の crawl.max_workers）"),
         ] = None,
     ) -> None:
-        """運営主体を確かめ直し、成り立てば確認日を今日にする（ADR 0018）。"""
+        """運営主体を確かめ直し、成り立てば確認日を今日にする（ADR 0018）。
+
+        回し方は sitemill の rotate（ADR 0027）。確かめた日を findings と YAML に書き戻すのは
+        こちらだけなので、`sitemill recheck` ではなくこのコマンドで回す。
+        """
         from akiya_atlas import recheck
 
         rt = commands.Runtime.open()

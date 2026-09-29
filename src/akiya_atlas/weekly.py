@@ -18,6 +18,8 @@ from sitemill.clock import jst_today
 from sitemill.metrics import weekly as engine_weekly
 from sitemill.settings import Workspace
 
+from akiya_atlas import recheck
+
 # Haiku 4.5 の単価（$/100 万トークン）。モデルを変えたらここも変える
 PRICE_IN = 1.0
 PRICE_OUT = 5.0
@@ -462,9 +464,14 @@ def recheck_entries(
 
 
 def recheck_lines(ws: Workspace, entries: list[dict[str, Any]]) -> list[str]:
-    """確かめ直しの 1 行。成り立っていない自治体は名前・始まった日・理由つきで並べる。"""
-    rows = [r for r in _all_findings(ws) if r.get("official_url") and r.get("policy") != "pending"]
-    oldest = min((str(r.get("evidence_checked_on") or "") for r in rows), default="") or "—"
+    """確かめ直しの 1 行。成り立っていない自治体は名前・始まった日・理由つきで並べる。
+
+    成り立たなかった晩数と、確かめられていない状態は sitemill の状態ファイル
+    （`data/state/recheck.json`）にある（2026-09-30 に findings の行から移した）。確認日は
+    findings の値と状態ファイルの値の新しいほう。
+    """
+    rows = recheck.standing(ws)
+    oldest = min((day.isoformat() if day else "" for _, _, day in rows), default="") or "—"
     kinds = ("ok", "fail", "skip", "unreachable")
     n = {k: sum(1 for e in entries if e.get("result") == k) for k in kinds}
     checked = sum(n.values())
@@ -478,29 +485,29 @@ def recheck_lines(ws: Workspace, entries: list[dict[str, Any]]) -> list[str]:
         head += "この期間に確かめた自治体はない"
     out = [f"{head}。いちばん古い確認日 {oldest}"]
     failing = sorted(
-        (r for r in rows if r.get("recheck_failures")),
-        key=lambda r: (-int(r["recheck_failures"]), str(r.get("name"))),
+        ((r, st) for r, st, _ in rows if st.get("failures")),
+        key=lambda pair: (-int(pair[1]["failures"]), str(pair[0].get("name"))),
     )
     if failing:
         out.append("  - **成り立っていない**（翌晩も確かめ、3 晩続くと選び直す）")
-        for r in failing:
+        for r, st in failing:
             out.append(
                 f"    - {r.get('prefecture', '')}{r.get('name', '')}"
-                f"（{r.get('recheck_failed_since')} から、{r['recheck_failures']} 晩目）: "
-                f"{r.get('recheck_reason') or ''}"
+                f"（{st.get('failed_since')} から、{st['failures']} 晩目）: "
+                f"{st.get('reason') or ''}"
             )
     waiting = sorted(
-        (r for r in rows if r.get("recheck_waiting_since")),
-        key=lambda r: (str(r["recheck_waiting_since"]), str(r.get("name"))),
+        ((r, st) for r, st, _ in rows if st.get("waiting_since")),
+        key=lambda pair: (str(pair[1]["waiting_since"]), str(pair[0].get("name"))),
     )
     if waiting:
         out.append(
             "  - **確かめられていない**（robots.txt・通信できない。失敗には数えず 7 日おきに見る）"
         )
-        for r in waiting:
+        for r, st in waiting:
             out.append(
                 f"    - {r.get('prefecture', '')}{r.get('name', '')}"
-                f"（{r['recheck_waiting_since']} から）: {r.get('recheck_waiting_reason') or ''}"
+                f"（{st['waiting_since']} から）: {st.get('waiting_reason') or ''}"
             )
     return out
 
@@ -513,7 +520,9 @@ def recheck_reselection_lines(entries: list[dict[str, Any]]) -> list[str]:
         return out + ["この期間に確かめ直しで選び直した自治体はありません。"]
     out += ["| 自治体 | 旧 URL | 新 URL | 理由 |", "| --- | --- | --- | --- |"]
     for e in picks:
-        name, reason = _cell(e.get("name") or e.get("source_id")), e.get("reason") or ""
+        # 09-30 からは sitemill が書く（key・label が足される。名前と旧新の URL はこちらの記録）
+        name = _cell(e.get("name") or e.get("label") or e.get("source_id") or e.get("key"))
+        reason = e.get("reason") or ""
         pairs = [
             ("公式サイト", e.get("old_official"), e.get("new_official")),
             ("空き家バンク", e.get("old_bank"), e.get("new_bank")),

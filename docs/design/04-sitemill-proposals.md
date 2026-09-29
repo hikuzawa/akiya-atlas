@@ -287,6 +287,12 @@ def mark_read(
 
 ## K. 根拠を定期的に確かめ直す回し方（2026-09-27、akiya-atlas で先に実装。akiya-atlas ADR 0018）
 
+**済み（sitemill v0.7.13、ADR 0027、`sitemill/recheck.py` の `rotate`）。** akiya-atlas は 2026-09-30 に
+自前の回し方をこれへ置き換えた。置き換えの前後を同じデータ・同じ判定で 100 晩並べて回し、確かめる
+自治体と順番・findings・状態・記録・週次が全部一致した（ADR 0018 の 09-30 の追記）。確認日を表示に
+書き戻す部分が engine に無いので、`sitemill recheck` ではなく `akiya-atlas recheck-operators` から
+`rotate` を呼んでいる（下の M）。以下は提案時の記録。
+
 akiya-atlas は、自治体ごとの運営主体の根拠（公式サイト・名乗り・県の一覧）を 90 日に 1 回確かめ直す
 ようにした（`src/akiya_atlas/recheck.py`）。**回し方はサービスに依らない**。engine に置けば、
 japan-open-today の運営主体の判定（施設の公式サイト）も同じ仕組みで確かめ直せる。
@@ -333,3 +339,26 @@ def rotate(ws, recheck: Recheck, *, per_night: int, retry_nights: int, workers: 
 - 作り直しのたびに review などの「作った時刻」を進めると、中身の変わらない差分が毎晩出る
 - 「解決し直したら同じホストだった」を成り立ったとしない。固定値や一覧から解決すると、サイトに
   届かなくても同じホストが返る。記録した先に実際に届き、名乗りが出ることを見る
+
+## M. 確かめ直しで確かめた日をサービスへ返す（2026-09-30、K を取り込んで分かったこと）
+
+`rotate` は確かめた日を `data/state/recheck.json` にだけ書き、サービスの確認日を書き換えない
+（ADR 0027 の決定どおり）。確認日を画面に出すサービス（akiya-atlas の `/data/<県>/`）は、回したあとに
+状態ファイルの日付を自分の記録へ書き戻す必要がある。`cmd_recheck` には回したあとにサービスを呼ぶ
+口が無いので、akiya-atlas は `sitemill recheck` を使えず、自分のコマンドから `rotate` を呼んで
+書き戻している（サービスのフックも置いていない。置くと `sitemill recheck` で回せてしまい、確認日が
+表示に届かない）。
+
+### engine に置けるもの
+
+- `cmd_recheck` が回したあとに、任意のフック `recheck_done(ws, results)` を呼ぶ。`results` は
+  キーごとの結果（ok / fail / skip / unreachable / reselect と、ok なら確かめた日）。サービスは ok の
+  ものだけ自分の確認日を進める。`RecheckReport` にキーごとの結果を持たせる形でもよい
+- これがあれば akiya-atlas もフックを置いて `sitemill recheck` で回せる（japan-open-today と同じ形）。
+  そのときは実行レポート（`data/runs/*-recheck.json`）も残るので、週次の「処理時間」に確かめ直しの
+  時間が入る（今は入っていない。akiya-atlas では 1 晩 1 分弱）
+
+### 小さいもの
+
+- 選び直しの行（`report.lines`）は、サービスが返した記録の dict をそのまま出す。旧新の URL を
+  「公式 a → b」のように並べる整形をサービスに任せられると、Actions のログが読みやすい

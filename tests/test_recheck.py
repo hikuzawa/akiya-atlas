@@ -1,6 +1,7 @@
-"""運営主体の確かめ直し（ADR 0018）のテスト。
+"""運営主体の確かめ直し（ADR 0018）のテスト。回し方は sitemill の rotate（ADR 0027）。
 
-ネットワークは respx でモックするか、確かめ方を差し替える。
+ネットワークは respx でモックするか、確かめ方を差し替える。成り立たなかった晩数と待ちの状態は
+sitemill の状態ファイル（`data/state/recheck.json`）、確認日は findings と YAML にある。
 """
 
 from __future__ import annotations
@@ -70,27 +71,56 @@ def _yaml_dates(ws: Workspace) -> dict[str, str]:
     return {s["id"]: str(s["operator_evidence"]["checked_on"]) for s in data["sources"]}
 
 
-def test_the_oldest_are_picked_after_last_nights_failures() -> None:
+def _state(ws: Workspace) -> dict[str, dict]:
+    return json.loads((ws.state_dir / "recheck.json").read_text(encoding="utf-8"))
+
+
+def _write_state(ws: Workspace, state: dict[str, dict]) -> None:
+    (ws.state_dir / "recheck.json").write_text(
+        json.dumps(state, ensure_ascii=False), encoding="utf-8"
+    )
+
+
+def test_the_oldest_are_picked_after_last_nights_failures(ws: Workspace) -> None:
     """再試行が先、そのあと確認日の古い順。運営主体が決まっていない行は見ない。"""
-    rows = [
-        _row("200001", "甲市", "2026-09-15"),
-        _row("200002", "乙町", "2026-09-10"),
-        _row("200003", "丙村", "2026-09-11"),
-        _row("200004", "丁町", "2026-09-27", recheck_failures=1),
-        _row("200005", "戊村", "2026-09-01", policy="pending"),
-        # 確かめられなかったばかりの行は待たせる。古い日付のまま毎晩の枠を取り続けないように
-        _row("200006", "己町", "2026-09-01", recheck_last_tried="2026-09-25"),
-    ]
-    picked = recheck.pick({"nagano": rows}, limit=2, today=date(2026, 9, 28))
-    assert [rows[i]["name"] for _, i in picked] == ["丁町", "乙町", "丙村"]
-    later = recheck.pick({"nagano": rows}, limit=2, today=date(2026, 10, 2))
-    assert [rows[i]["name"] for _, i in later] == ["丁町", "己町", "乙町"]
+    expand._write_rows(
+        ws,
+        "nagano",
+        "長野県",
+        [
+            _row("200001", "甲市", "2026-09-15"),
+            _row("200002", "乙町", "2026-09-10"),
+            _row("200003", "丙村", "2026-09-11"),
+            _row("200004", "丁町", "2026-09-27"),
+            _row("200005", "戊村", "2026-09-01", policy="pending"),
+            _row("200006", "己町", "2026-09-01"),
+            _row("200007", "庚村", "2026-09-05"),
+        ],
+    )
+    _write_state(
+        ws,
+        {
+            "nagano-200004": {"failures": 1, "failed_since": "2026-09-27", "reason": "x"},
+            # 確かめられなかったばかりの行は待たせる。古い日付のまま毎晩の枠を取り続けないように
+            "nagano-200006": {
+                "waiting_since": "2026-09-25",
+                "waiting_reason": "robots.txt で公式サイトを取得できない",
+                "last_tried": "2026-09-25",
+            },
+            # 確認日は findings と状態ファイルの新しいほう（sitemill recheck で確かめた日）
+            "nagano-200007": {"checked_on": "2026-09-26"},
+        },
+    )
+    picked = recheck.tonight(ws, limit=2, today=date(2026, 9, 28))
+    assert [t.label for t in picked] == ["長野県丁町", "長野県乙町", "長野県丙村"]
+    later = recheck.tonight(ws, limit=2, today=date(2026, 10, 2))
+    assert [t.label for t in later] == ["長野県丁町", "長野県己町", "長野県乙町"]
 
 
 def test_each_result_is_written_where_it_belongs(ws: Workspace) -> None:
     """成り立てば確認日を今日に（findings と YAML の両方）。成り立たなければ日付はそのままで晩数を
     残す。robots.txt で取れない・通信できないものは、日付も失敗の数も動かさず、待たせる。
-    1 件ずつ記録に残す。"""
+    晩数と待ちは sitemill の状態ファイルに、1 件ずつの結果は記録に残る。"""
     expand._write_rows(
         ws,
         "nagano",
@@ -115,18 +145,20 @@ def test_each_result_is_written_where_it_belongs(ws: Workspace) -> None:
             today=date(2026, 9, 28),
             checker=lambda slug, row, *a: results[row["name"]],
         )
-    counts = (report.checked, report.ok, report.failed, report.skipped, report.unreachable)
-    assert counts == (4, 1, 1, 1, 1)
-    rows = _findings(ws)
+    assert report.checked == 4
+    assert report.counts == {"ok": 1, "fail": 1, "skip": 1, "unreachable": 1}
+    rows, state = _findings(ws), _state(ws)
     assert rows["200001"]["evidence_checked_on"] == "2026-09-28"
+    assert state["nagano-200001"] == {"checked_on": "2026-09-28"}
     assert rows["200002"]["evidence_checked_on"] == "2026-09-10"
-    assert rows["200002"]["recheck_failures"] == 1
-    assert rows["200002"]["recheck_failed_since"] == "2026-09-28"
+    assert state["nagano-200002"]["failures"] == 1
+    assert state["nagano-200002"]["failed_since"] == "2026-09-28"
     for code in ("200003", "200004"):
         assert rows[code]["evidence_checked_on"] == "2026-09-10"
-        assert "recheck_failures" not in rows[code]
-        assert rows[code]["recheck_last_tried"] == "2026-09-28"
-    assert "通信できない" in rows["200004"]["recheck_waiting_reason"]
+        assert "failures" not in state[f"nagano-{code}"]
+        assert state[f"nagano-{code}"]["last_tried"] == "2026-09-28"
+    assert "通信できない" in state["nagano-200004"]["waiting_reason"]
+    assert not any(k.startswith("recheck_") for row in rows.values() for k in row)
     assert _yaml_dates(ws)["nagano-200001"] == "2026-09-28"
     log = (ws.runs_dir / "operator-rechecks.jsonl").read_text(encoding="utf-8").splitlines()
     results_logged = sorted(json.loads(line)["result"] for line in log)
@@ -165,7 +197,8 @@ def test_three_failed_nights_reselect_and_the_weekly_shows_old_and_new(
     assert report.reselected == 1
     row = _findings(ws)["200001"]
     assert row["official_url"] == "www.city.kakuu.lg.jp"
-    assert "recheck_failures" not in row
+    assert row["evidence_checked_on"] == "2026-09-30"
+    assert _state(ws)["nagano-200001"] == {"checked_on": "2026-09-30"}
     assert row["subsidy_urls"] == ["https://www.city.kakuu.lg.jp/hojo/"]
 
     entries = weekly.recheck_entries(ws, days=7, now=datetime.now(UTC))
@@ -175,23 +208,39 @@ def test_three_failed_nights_reselect_and_the_weekly_shows_old_and_new(
     assert "3 晩続けて確かめられなかった" in text
 
 
+def test_a_date_checked_elsewhere_reaches_the_page_on_the_next_night(ws: Workspace) -> None:
+    """sitemill は確かめた日を状態ファイルにだけ書く（`sitemill recheck` で回した場合など）。
+    次の recheck-operators が findings と YAML に書き戻し、`/data/<県>/` の確認日が進む。"""
+    expand._write_rows(ws, "nagano", "長野県", [_row("200001", "甲市", "2026-09-10")])
+    _write_state(ws, {"nagano-200001": {"checked_on": "2026-09-20"}})
+    with _client() as c:
+        report = recheck.recheck(
+            ws, client=c, limit=0, today=date(2026, 9, 28), checker=lambda *a: ("fail", "x")
+        )
+    assert report.checked == 0
+    assert _findings(ws)["200001"]["evidence_checked_on"] == "2026-09-20"
+    assert _yaml_dates(ws)["nagano-200001"] == "2026-09-20"
+
+
 def test_the_weekly_names_what_does_not_hold(ws: Workspace) -> None:
-    rows = [
-        _row("200001", "甲市", "2026-09-10"),
-        _row(
-            "200002",
-            "乙町",
-            "2026-09-11",
-            recheck_failures=2,
-            recheck_failed_since="2026-09-27",
-            recheck_reason="県の市町村一覧が、記録した公式サイトにリンクしていない",
-        ),
-    ]
+    rows = [_row("200001", "甲市", "2026-09-10"), _row("200002", "乙町", "2026-09-11")]
     expand._write_rows(ws, "nagano", "長野県", rows)
+    _write_state(
+        ws,
+        {
+            "nagano-200002": {
+                "failures": 2,
+                "failed_since": "2026-09-27",
+                "reason": "県の市町村一覧が、記録した公式サイトにリンクしていない",
+                "last_tried": "2026-09-28",
+            }
+        },
+    )
+    # 09-28 までの記録は source_id と name、09-30 からは sitemill の key と label
     entries = [
-        {"result": "ok", "at": "2026-09-28T03:30:00+09:00"},
-        {"result": "fail", "at": "2026-09-28T03:30:00+09:00"},
-        {"result": "skip", "at": "2026-09-28T03:30:00+09:00"},
+        {"result": "ok", "at": "2026-09-28T03:30:00+09:00", "source_id": "nagano-200001"},
+        {"result": "fail", "at": "2026-09-30T03:30:00+09:00", "key": "nagano-200002"},
+        {"result": "skip", "at": "2026-09-30T03:30:00+09:00", "key": "nagano-200001"},
     ]
     text = "\n".join(weekly.recheck_lines(ws, entries))
     counts = "**3 件**（成り立った 1・成り立たなかった 1・robots.txt で見送り 1・通信できない 0）"
