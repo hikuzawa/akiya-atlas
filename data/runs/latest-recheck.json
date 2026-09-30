@@ -1,0 +1,31 @@
+{
+  "ci": true,
+  "command": "recheck",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-30T22:46:36Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "運営主体の確かめ直し: 23 件（成り立った 21・成り立たなかった 2・robots.txt で見送り 0・通信できない 0・選び直し 0）",
+    "長野県飯島町: 成り立たない（2 晩目）: 空き家バンクのページを開けない（HTTP 404）",
+    "長野県白馬村: 成り立たない（1 晩目）: 空き家バンクのページを開けない（HTTP 404）"
+  ],
+  "service": "akiya-atlas",
+  "stages": {
+    "recheck": {
+      "checked": 23,
+      "fail": 2,
+      "ok": 21,
+      "requests": 91,
+      "reselected": 0,
+      "skip": 0,
+      "unreachable": 0
+    }
+  },
+  "started_at": "2026-09-30T22:46:03Z"
+}

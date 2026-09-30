@@ -27,8 +27,8 @@
  },
  "nagano-203840": {
   "failed_since": "2026-09-30",
-  "failures": 1,
-  "last_tried": "2026-09-30",
+  "failures": 2,
+  "last_tried": "2026-10-01",
   "reason": "空き家バンクのページを開けない（HTTP 404）"
  },
  "nagano-203858": {
@@ -55,16 +55,10 @@
   "checked_on": "2026-09-30"
  },
  "nagano-204099": {
-  "failed_since": "2026-09-30",
-  "failures": 1,
-  "last_tried": "2026-09-30",
-  "reason": "県の市町村一覧が、記録した公式サイトにリンクしていない"
+  "checked_on": "2026-10-01"
  },
  "nagano-204102": {
-  "failed_since": "2026-09-30",
-  "failures": 1,
-  "last_tried": "2026-09-30",
-  "reason": "県の市町村一覧が、記録した公式サイトにリンクしていない"
+  "checked_on": "2026-10-01"
  },
  "nagano-204111": {
   "checked_on": "2026-09-30"
@@ -74,5 +68,68 @@
  },
  "nagano-204137": {
   "checked_on": "2026-09-30"
+ },
+ "nagano-204145": {
+  "checked_on": "2026-10-01"
+ },
+ "nagano-204153": {
+  "checked_on": "2026-10-01"
+ },
+ "nagano-204161": {
+  "checked_on": "2026-10-01"
+ },
+ "nagano-204170": {
+  "checked_on": "2026-10-01"
+ },
+ "nagano-204226": {
+  "checked_on": "2026-10-01"
+ },
+ "nagano-204234": {
+  "checked_on": "2026-10-01"
+ },
+ "nagano-204251": {
+  "checked_on": "2026-10-01"
+ },
+ "nagano-204293": {
+  "checked_on": "2026-10-01"
+ },
+ "nagano-204307": {
+  "checked_on": "2026-10-01"
+ },
+ "nagano-204323": {
+  "checked_on": "2026-10-01"
+ },
+ "nagano-204463": {
+  "checked_on": "2026-10-01"
+ },
+ "nagano-204480": {
+  "checked_on": "2026-10-01"
+ },
+ "nagano-204501": {
+  "checked_on": "2026-10-01"
+ },
+ "nagano-204510": {
+  "checked_on": "2026-10-01"
+ },
+ "nagano-204528": {
+  "checked_on": "2026-10-01"
+ },
+ "nagano-204811": {
+  "checked_on": "2026-10-01"
+ },
+ "nagano-204854": {
+  "failed_since": "2026-10-01",
+  "failures": 1,
+  "last_tried": "2026-10-01",
+  "reason": "空き家バンクのページを開けない（HTTP 404）"
+ },
+ "nagano-204862": {
+  "checked_on": "2026-10-01"
+ },
+ "nagano-205214": {
+  "checked_on": "2026-10-01"
+ },
+ "nagano-205419": {
+  "checked_on": "2026-10-01"
  }
 }
