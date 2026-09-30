@@ -290,8 +290,8 @@ def mark_read(
 **済み（sitemill v0.7.13、ADR 0027、`sitemill/recheck.py` の `rotate`）。** akiya-atlas は 2026-09-30 に
 自前の回し方をこれへ置き換えた。置き換えの前後を同じデータ・同じ判定で 100 晩並べて回し、確かめる
 自治体と順番・findings・状態・記録・週次が全部一致した（ADR 0018 の 09-30 の追記）。確認日を表示に
-書き戻す部分が engine に無いので、`sitemill recheck` ではなく `akiya-atlas recheck-operators` から
-`rotate` を呼んでいる（下の M）。以下は提案時の記録。
+書き戻す口（下の M）が v0.7.14 で入ったので、同じ日のうちに `sitemill recheck` とフックへ切り替えた。
+以下は提案時の記録。
 
 akiya-atlas は、自治体ごとの運営主体の根拠（公式サイト・名乗り・県の一覧）を 90 日に 1 回確かめ直す
 ようにした（`src/akiya_atlas/recheck.py`）。**回し方はサービスに依らない**。engine に置けば、
@@ -341,6 +341,16 @@ def rotate(ws, recheck: Recheck, *, per_night: int, retry_nights: int, workers: 
   届かなくても同じホストが返る。記録した先に実際に届き、名乗りが出ることを見る
 
 ## M. 確かめ直しで確かめた日をサービスへ返す（2026-09-30、K を取り込んで分かったこと）
+
+**済み（sitemill v0.7.14、ADR 0027 の 09-30 の追記）。** `recheck_done(ws, results)`（1 件ずつの結果
+`RecheckResult` を受け取る。同じ並びが `RecheckReport.results` にも入る）と、選び直しの行を書く
+`recheck_reselect_line(target, record)`。akiya-atlas は同じ日に `recheck-operators` をやめ、
+`sitemill recheck` とフックに切り替えた。切り替えたあとも、置き換え前の出力を固定値にしたテスト
+（`tests/test_recheck_replacement.py`）に一致する。以下は提案時の記録。
+
+**残った小さいもの**: `sitemill recheck` の `--workers` は、省くと 1 並列になる（`crawl`・`extract` は
+site.toml の `crawl.max_workers`。オプションの説明文もそう書いてある）。akiya-atlas は日次で
+`--workers 8` を渡している。既定をほかのコマンドとそろえたい。
 
 `rotate` は確かめた日を `data/state/recheck.json` にだけ書き、サービスの確認日を書き換えない
 （ADR 0027 の決定どおり）。確認日を画面に出すサービス（akiya-atlas の `/data/<県>/`）は、回したあとに

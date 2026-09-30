@@ -624,5 +624,34 @@ class AkiyaAtlasService:
 
         return heal(ws, client=client, source_ids=source_ids)
 
+    # 運営主体の確かめ直し（ADR 0018、sitemill ADR 0027）。`sitemill recheck` が呼ぶ。
+    # 中身は recheck.py。確かめた日は recheck_done で findings と YAML に書き戻す
+    recheck_per_night = 20  # 1,736 自治体 ÷ 90 日 ≒ 19.3
+
+    def recheck_targets(self, ws: Workspace) -> list[Any]:
+        from akiya_atlas import recheck
+
+        return recheck.start(ws)
+
+    def recheck_one(self, ws: Workspace, target: Any, client: Any) -> tuple[str, str]:
+        from akiya_atlas import recheck
+
+        return recheck.check_one(ws, target, client)
+
+    def recheck_reselect(self, ws: Workspace, target: Any, reason: str, client: Any) -> dict:
+        from akiya_atlas import recheck
+
+        return recheck.reselect_one(ws, target, reason, client)
+
+    def recheck_reselect_line(self, target: Any, record: dict) -> str:
+        from akiya_atlas import recheck
+
+        return recheck.reselect_line(target, record)
+
+    def recheck_done(self, ws: Workspace, results: list[Any]) -> None:
+        from akiya_atlas import recheck
+
+        recheck.done(ws, results)
+
 
 service = AkiyaAtlasService()

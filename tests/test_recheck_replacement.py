@@ -13,6 +13,9 @@
 
 判定は自治体と日付のハッシュで決め、いつも同じ結果になる自治体（`ALWAYS`）を混ぜる。選び直しの
 評価（発見と同じ評価）は、同じ行から同じ結果を作るものに差し替える。
+
+09-30 のうちに、日次の入口を自前のコマンドから `sitemill recheck` とサービスのフック（v0.7.14 の
+`recheck_done`）に切り替えた。ここも `sitemill recheck` で回し、同じ固定値に一致することを見る。
 """
 
 from __future__ import annotations
@@ -28,10 +31,12 @@ from typing import Any
 import pytest
 import sitemill.recheck as engine
 import yaml
+from sitemill import commands
 from sitemill.fetch.client import PoliteClient
 from sitemill.settings import Workspace
 
 from akiya_atlas import expand, recheck, weekly
+from akiya_atlas.service import service
 
 REPO = Path(__file__).resolve().parents[1]
 GOLDEN = Path(__file__).parent / "fixtures" / "recheck_replacement.json"
@@ -218,14 +223,19 @@ def snapshot(ws: Workspace, at: datetime) -> dict:
     }
 
 
+def _client() -> PoliteClient:
+    return PoliteClient("sitemill-test/0", default_delay=0, jitter=0, sleep=lambda _s: None)
+
+
 def run_nights(ws: Workspace, mp: pytest.MonkeyPatch, nights: int, workers: int) -> dict:
-    """置き換え後のコードで nights 晩回し、比べる値を集める。"""
+    """`sitemill recheck`（サービスのフックごと）で nights 晩回し、比べる値を集める。"""
     out: dict[str, Any] = {"nights": [], "after": {}}
     seen = len(log_entries(ws))
     for n in range(nights):
         day = START + timedelta(days=n)
         at = datetime(day.year, day.month, day.day, 8, 30, tzinfo=JST)
         mp.setattr(engine, "jst_now", lambda at=at: at)
+        mp.setattr(engine, "jst_today", lambda day=day: day)
         mp.setattr(expand, "assess_municipality", fake_assess(ws, day))
         planned = [t.key for t in recheck.tonight(ws, limit=PER_NIGHT, today=day)]
         calls: list[str] = []
@@ -237,11 +247,10 @@ def run_nights(ws: Workspace, mp: pytest.MonkeyPatch, nights: int, workers: int)
             calls.append(key)
             return outcome(key, day)
 
-        client = PoliteClient("sitemill-test/0", default_delay=0, jitter=0, sleep=lambda _s: None)
-        with client as c:
-            recheck.recheck(
-                ws, client=c, limit=PER_NIGHT, workers=workers, today=day, checker=checker
-            )
+        mp.setattr(recheck, "check", checker)
+        rt = commands.Runtime.open(ws.root, service=service)
+        rt.client = _client  # type: ignore[method-assign]  # 巡回の間隔を待たない
+        commands.cmd_recheck(rt, limit=PER_NIGHT, workers=workers)
         assert (calls if workers == 1 else sorted(calls)) == (
             planned if workers == 1 else sorted(planned)
         ), day

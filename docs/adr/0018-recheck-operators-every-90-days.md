@@ -140,3 +140,22 @@ heal や `rediscover` が行を書き直しても、確かめ直しの「成り�
 記録したホストか、発見のときに一覧から取ったリンク先（`data/reference/<県>_official_urls.json`）の
 どちらかへ今もリンクしていれば成り立つ、にした。一覧が別の先へリンクするようになれば、どちらも
 無いので成り立たない。経緯と数え方は `docs/data-issues.md` の 2026-09-30。
+
+## 追記（2026-09-30）: 入口を `sitemill recheck` とサービスのフックに切り替えた（sitemill v0.7.14）
+
+上の最初の追記で「サービスのフックは置かない」としたのは、`sitemill recheck` に確かめた日をサービスへ
+返す口が無かったから。sitemill v0.7.14 で `recheck_done(ws, results)` が入った（設計案 M、sitemill
+ADR 0027 の 09-30 の追記）ので、`akiya-atlas recheck-operators` をやめ、日次を `sitemill recheck` にした。
+
+- フックは `service.py` の `recheck_targets`・`recheck_one`・`recheck_reselect`・`recheck_done`・
+  `recheck_reselect_line`・`recheck_per_night`（20）。中身は今までどおり `recheck.py`
+- `recheck_done` は今夜の 1 件ずつの結果（`RecheckResult`）の確認日を findings と YAML に書き戻す。
+  状態ファイルの方が新しい自治体も一緒に進める（書き戻しが途中で止まった晩の分を、次の晩に取り戻す）。
+  書き戻しに失敗したら、sitemill が実行レポートに残してステップを失敗にし、失敗の通知 Issue が出る
+- 選び直した行は、選び直したその場で findings と sources・review に書く
+- 実行ログの選び直しの行は、置き換え前と同じく旧新の URL を並べる（`recheck_reselect_line`）
+- `sitemill recheck` は実行レポート（`data/runs/*-recheck.json`）を残すので、週次の日次の表の
+  「処理時間」に確かめ直しの時間（8 並列で 1 晩 1 分弱）が入る。ほかの週次の表示は変わらない
+- `--workers` を省くと 1 並列になる（sitemill の既定。crawl・extract と違う）ので、日次は `--workers 8`
+- 固定値のテスト（`tests/test_recheck_replacement.py`）も `sitemill recheck` 経由で回し、置き換え前の
+  出力に一致する

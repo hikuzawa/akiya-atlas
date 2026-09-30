@@ -129,7 +129,10 @@ jobs:
         working-directory: akiya-atlas
         # 落ちても今夜のデータの取り込みと配置は続ける。失敗は下の通知ステップが Issue に出す
         continue-on-error: true
-        run: uv run akiya-atlas recheck-operators --limit 20
+        # 回し方は sitemill（ADR 0027）。1 晩の件数はサービスの recheck_per_night、確かめた日は
+        # サービスの recheck_done が findings と YAML に書き戻す。--workers を省くと 1 並列になるので、
+        # site.toml の crawl.max_workers（8）を渡す
+        run: uv run sitemill recheck --workers 8
 
       - name: 取り下げ依頼を取り込む（takedown ラベルの Issue → 非表示にするページ）
         working-directory: akiya-atlas

@@ -1,24 +1,31 @@
-"""運営主体の確かめ直し（ADR 0018）のテスト。回し方は sitemill の rotate（ADR 0027）。
+"""運営主体の確かめ直し（ADR 0018）のテスト。回し方は sitemill の `recheck`（ADR 0027）。
 
-ネットワークは respx でモックするか、確かめ方を差し替える。成り立たなかった晩数と待ちの状態は
+`sitemill recheck`（`commands.cmd_recheck`）をサービスのフックごと回す。ネットワークは respx で
+モックするか、確かめ方（`recheck.check`）を差し替える。成り立たなかった晩数と待ちの状態は
 sitemill の状態ファイル（`data/state/recheck.json`）、確認日は findings と YAML にある。
 """
 
 from __future__ import annotations
 
+import inspect
 import json
 import shutil
+from collections.abc import Callable
 from datetime import UTC, date, datetime
 from pathlib import Path
 
 import httpx
 import pytest
 import respx
+import sitemill.recheck as engine
 import yaml
+from sitemill import commands
 from sitemill.fetch.client import PoliteClient
+from sitemill.models.run import RunReport
 from sitemill.settings import Workspace
 
 from akiya_atlas import expand, recheck, weekly
+from akiya_atlas.service import service
 
 REPO = Path(__file__).resolve().parents[1]
 HOST = "www.city.kakuu.nagano.jp"
@@ -81,6 +88,31 @@ def _write_state(ws: Workspace, state: dict[str, dict]) -> None:
     )
 
 
+def _night(
+    ws: Workspace,
+    monkeypatch: pytest.MonkeyPatch,
+    day: date,
+    *,
+    checker: Callable[..., tuple[str, str]] | None = None,
+    limit: int | None = None,
+) -> RunReport:
+    """`sitemill recheck` を day の晩として回す。巡回の間隔は待たない。"""
+    monkeypatch.setattr(engine, "jst_today", lambda: day)
+    if checker is not None:
+        monkeypatch.setattr(recheck, "check", checker)
+    rt = commands.Runtime.open(ws.root, service=service)
+    rt.client = _client  # type: ignore[method-assign]
+    return commands.cmd_recheck(rt, limit=limit)
+
+
+def test_the_engine_defaults_are_the_ones_this_service_explains() -> None:
+    """3 晩で選び直す・7 日待つは `sitemill recheck` の既定。週次や理由の文はこの値で書いてある。"""
+    params = inspect.signature(engine.rotate).parameters
+    assert params["retry_nights"].default == recheck.RETRY_NIGHTS
+    assert params["wait_days"].default == recheck.WAIT_DAYS
+    assert service.recheck_per_night == recheck.PER_NIGHT
+
+
 def test_the_oldest_are_picked_after_last_nights_failures(ws: Workspace) -> None:
     """再試行が先、そのあと確認日の古い順。運営主体が決まっていない行は見ない。"""
     expand._write_rows(
@@ -117,10 +149,13 @@ def test_the_oldest_are_picked_after_last_nights_failures(ws: Workspace) -> None
     assert [t.label for t in later] == ["長野県丁町", "長野県己町", "長野県乙町"]
 
 
-def test_each_result_is_written_where_it_belongs(ws: Workspace) -> None:
-    """成り立てば確認日を今日に（findings と YAML の両方）。成り立たなければ日付はそのままで晩数を
-    残す。robots.txt で取れない・通信できないものは、日付も失敗の数も動かさず、待たせる。
-    晩数と待ちは sitemill の状態ファイルに、1 件ずつの結果は記録に残る。"""
+def test_each_result_is_written_where_it_belongs(
+    ws: Workspace, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """成り立てば確認日を今日に（findings と YAML の両方。`recheck_done` が書き戻す）。
+    成り立たなければ日付はそのままで晩数を残す。robots.txt で取れない・通信できないものは、
+    日付も失敗の数も動かさず、待たせる。晩数と待ちは sitemill の状態ファイルに、1 件ずつの結果は
+    記録に残る。"""
     expand._write_rows(
         ws,
         "nagano",
@@ -138,15 +173,12 @@ def test_each_result_is_written_where_it_belongs(ws: Workspace) -> None:
         "丙村": ("skip", "robots.txt で公式サイトを取得できない"),
         "丁町": ("unreachable", "公式サイトに通信できない（ConnectTimeout）"),
     }
-    with _client() as c:
-        report = recheck.recheck(
-            ws,
-            client=c,
-            today=date(2026, 9, 28),
-            checker=lambda slug, row, *a: results[row["name"]],
-        )
-    assert report.checked == 4
-    assert report.counts == {"ok": 1, "fail": 1, "skip": 1, "unreachable": 1}
+    report = _night(
+        ws, monkeypatch, date(2026, 9, 28), checker=lambda slug, row, *a: results[row["name"]]
+    )
+    counts = report.stages["recheck"]
+    assert counts["checked"] == 4
+    assert [counts[k] for k in ("ok", "fail", "skip", "unreachable")] == [1, 1, 1, 1]
     rows, state = _findings(ws), _state(ws)
     assert rows["200001"]["evidence_checked_on"] == "2026-09-28"
     assert state["nagano-200001"] == {"checked_on": "2026-09-28"}
@@ -189,12 +221,14 @@ def test_three_failed_nights_reselect_and_the_weekly_shows_old_and_new(
         lambda *a, **k: [("https://www.city.kakuu.lg.jp/hojo/", "補助")],
     )
     reason = "公式サイトを開けない、または市町村名が出ない"
-    with _client() as c:
-        for day in (28, 29, 30):
-            report = recheck.recheck(
-                ws, client=c, today=date(2026, 9, day), checker=lambda *a: ("fail", reason)
-            )
-    assert report.reselected == 1
+    for day in (28, 29, 30):
+        report = _night(ws, monkeypatch, date(2026, 9, day), checker=lambda *a: ("fail", reason))
+    assert report.stages["recheck"]["reselected"] == 1
+    # 実行ログの選び直しの行は、旧新の URL を並べる（recheck_reselect_line）
+    assert (
+        f"長野県甲市: 選び直した（公式 {HOST} → www.city.kakuu.lg.jp、空き家バンク "
+        f"https://{HOST}/akiya/200001.html → https://www.city.kakuu.lg.jp/akiya/200001.html）"
+    ) in report.notes
     row = _findings(ws)["200001"]
     assert row["official_url"] == "www.city.kakuu.lg.jp"
     assert row["evidence_checked_on"] == "2026-09-30"
@@ -208,18 +242,23 @@ def test_three_failed_nights_reselect_and_the_weekly_shows_old_and_new(
     assert "3 晩続けて確かめられなかった" in text
 
 
-def test_a_date_checked_elsewhere_reaches_the_page_on_the_next_night(ws: Workspace) -> None:
-    """sitemill は確かめた日を状態ファイルにだけ書く（`sitemill recheck` で回した場合など）。
-    次の recheck-operators が findings と YAML に書き戻し、`/data/<県>/` の確認日が進む。"""
-    expand._write_rows(ws, "nagano", "長野県", [_row("200001", "甲市", "2026-09-10")])
+def test_a_night_whose_write_back_stopped_is_caught_up_the_next_night(
+    ws: Workspace, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """sitemill は確かめた日を先に状態ファイルへ書く。書き戻しがその晩に止まっても（09-20 の甲市）、
+    次の晩の `recheck_done` が findings と YAML に書き戻し、`/data/<県>/` の確認日が進む。"""
+    expand._write_rows(
+        ws,
+        "nagano",
+        "長野県",
+        [_row("200001", "甲市", "2026-09-10"), _row("200002", "乙町", "2026-09-15")],
+    )
     _write_state(ws, {"nagano-200001": {"checked_on": "2026-09-20"}})
-    with _client() as c:
-        report = recheck.recheck(
-            ws, client=c, limit=0, today=date(2026, 9, 28), checker=lambda *a: ("fail", "x")
-        )
-    assert report.checked == 0
-    assert _findings(ws)["200001"]["evidence_checked_on"] == "2026-09-20"
-    assert _yaml_dates(ws)["nagano-200001"] == "2026-09-20"
+    report = _night(ws, monkeypatch, date(2026, 9, 28), checker=lambda *a: ("ok", ""), limit=1)
+    assert report.stages["recheck"]["checked"] == 1  # 乙町だけ（甲市の確認日は 09-20）
+    rows, dates = _findings(ws), _yaml_dates(ws)
+    assert rows["200002"]["evidence_checked_on"] == dates["nagano-200002"] == "2026-09-28"
+    assert rows["200001"]["evidence_checked_on"] == dates["nagano-200001"] == "2026-09-20"
 
 
 def test_the_weekly_names_what_does_not_hold(ws: Workspace) -> None:
@@ -396,7 +435,9 @@ def _write_list_reference(ws: Workspace, linked: str) -> None:
 
 
 @respx.mock
-def test_a_list_linking_the_address_before_the_redirect_still_holds(ws: Workspace) -> None:
+def test_a_list_linking_the_address_before_the_redirect_still_holds(
+    ws: Workspace, monkeypatch: pytest.MonkeyPatch
+) -> None:
     """県の一覧は `http://kakuumura.jp/` へリンクし、記録は転送先の `www.kakuumura.jp`。
 
     記録したホストだけで比べると、一覧が変わっていないのに毎回「一覧がリンクしていない」になり、
@@ -408,9 +449,8 @@ def test_a_list_linking_the_address_before_the_redirect_still_holds(ws: Workspac
     expand._write_rows(
         ws, "nagano", "長野県", [_row("200001", "架空村", "2026-09-10", host=f"www.{BARE}")]
     )
-    with _client() as c:
-        report = recheck.recheck(ws, client=c, today=date(2026, 9, 30))
-    assert report.counts["ok"] == 1, report.lines
+    report = _night(ws, monkeypatch, date(2026, 9, 30))
+    assert report.stages["recheck"]["ok"] == 1, report.notes
     assert _findings(ws)["200001"]["evidence_checked_on"] == "2026-09-30"
 
 

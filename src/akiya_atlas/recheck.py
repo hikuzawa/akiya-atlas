@@ -1,29 +1,27 @@
 """運営主体を 90 日に 1 回確かめ直す（ADR 0018）。回し方は sitemill の `recheck`（ADR 0027）。
 
-毎晩、確認日の古い順に 20 自治体を見る。LLM は使わない。今夜の分の選び方・翌晩の再試行・
-確かめられなかったものの待たせ方・状態（`data/state/recheck.json`）・記録
-（`data/runs/operator-rechecks.jsonl`）は sitemill の `rotate` が持つ。ここにあるのは
-akiya-atlas の中身だけ:
+毎晩、確認日の古い順に 20 自治体を見る。LLM は使わない。日次は `sitemill recheck` で回し、
+今夜の分の選び方・翌晩の再試行・確かめられなかったものの待たせ方・状態
+（`data/state/recheck.json`）・記録（`data/runs/operator-rechecks.jsonl`）は sitemill の `rotate` が
+持つ。ここにあるのは akiya-atlas の中身だけで、サービスのフック（`service.py` の `recheck_*`）から
+呼ばれる:
 
 - 公式サイト: 記録した公式ホストに届き、トップに市町村名が出るか。届いたのに出なければ解決し直し、
   別のホストになれば「公式サイトが変わった」
 - 県の一覧で公式と決めたホストは、県の一覧が今もリンクしているか（県ごとに 1 回だけ取得）
 - 根拠の出典ページと空き家バンクのページが今も開けるか
 - 3 晩続けて成り立たなければ選び直す（rediscover と同じ評価）。URL が変わったら週次に旧新を出す
-
-sitemill は確かめた日を状態ファイルにだけ書き、サービスの確認日は書き換えない（ADR 0027）。
-akiya-atlas は確認日を `/data/<県>/` に出しているので、回したあとに状態ファイルの日付を findings の
-`evidence_checked_on` と YAML の `checked_on` へ書き戻す（`_Night.write_back`）。サービスのフック
-（`recheck_targets` / `recheck_one`）を置かず、`sitemill recheck` ではなく
-`akiya-atlas recheck-operators` で回すのはこのため（`sitemill recheck` では表示の確認日が
-進まない）。
+- 確かめた日の書き戻し: sitemill は確かめた日を状態ファイルにだけ書く（ADR 0027）。akiya-atlas は
+  確認日を `/data/<県>/` に出すので、`recheck_done` で受け取った今夜の結果の日付を、findings の
+  `evidence_checked_on` と YAML の `checked_on` へ書き戻す（09-30 までは自前のコマンド
+  `recheck-operators` の後段で書き戻していた。sitemill v0.7.14 で `recheck_done` ができた）
 """
 
 from __future__ import annotations
 
 import threading
-from collections.abc import Callable
 from datetime import date
+from pathlib import Path
 from typing import Any
 
 from sitemill.classify import PlatformRegistry
@@ -31,12 +29,11 @@ from sitemill.clock import jst_today
 from sitemill.fetch.client import FetchResult, PoliteClient
 from sitemill.fetch.links import extract_links, host_of
 from sitemill.recheck import (
-    RecheckReport,
+    RecheckResult,
     RecheckTarget,
     checked_on,
     load_state,
     pick,
-    rotate,
     unreachable,
 )
 from sitemill.settings import Workspace
@@ -45,7 +42,9 @@ from sitemill.store.jsonio import read_json
 from akiya_atlas import expand
 from akiya_atlas.official_domains import classify_host
 
-PER_NIGHT = 20  # 1,736 自治体 ÷ 90 日 ≒ 19.3
+PER_NIGHT = 20  # 1,736 自治体 ÷ 90 日 ≒ 19.3（service の recheck_per_night）
+# 次の 2 つは `sitemill recheck` の既定（rotate の retry_nights・wait_days）と同じ値。サービスからは
+# 変えられないので、ここは週次と選び直しの理由の文に使うだけ（違っていればテストが落ちる）
 RETRY_NIGHTS = 3  # この晩数だけ続けて成り立たなければ選び直す
 WAIT_DAYS = 7  # 確かめられなかった（robots.txt・通信できない）自治体を、次に見るまでの日数
 
@@ -249,19 +248,14 @@ def reselect(
 class _Night:
     """1 晩分。findings を 1 度だけ読み、確かめる・選び直す・書き戻すで同じ行を使う。"""
 
-    def __init__(
-        self, ws: Workspace, client: PoliteClient, checker: Callable[..., tuple[str, str]]
-    ) -> None:
+    def __init__(self, ws: Workspace) -> None:
         self.ws = ws
-        self.client = client
-        self.checker = checker
         self.findings = load_findings(ws)
         self.where = {
             key_of(slug, row): (slug, i)
             for slug, rows in self.findings.items()
             for i, row in enumerate(rows)
         }
-        self.touched: set[str] = set()
         self._overrides: dict[str, expand.OfficialOverrides] = {}
         self._taken: dict[str, dict[str, str]] = {}
         self._lists: dict[str, set[str] | None] = {}
@@ -280,67 +274,94 @@ class _Night:
                 self._taken[slug] = taken_from_list(self.ws, slug)
             return self._taken[slug]
 
-    def prefecture_hosts(self, slug: str) -> set[str] | None:
+    def prefecture_hosts(self, slug: str, client: PoliteClient) -> set[str] | None:
         """県の一覧が今リンクしているホスト。並列で見ても、県ごとに 1 回だけ取る。"""
         with self._lists_lock:
             if slug not in self._lists:
-                self._lists[slug] = listed_hosts(self.ws, slug, self.client)
+                self._lists[slug] = listed_hosts(self.ws, slug, client)
             return self._lists[slug]
 
-    def check(self, target: RecheckTarget) -> tuple[str, str]:
+    def check(self, target: RecheckTarget, client: PoliteClient) -> tuple[str, str]:
         slug, i = self.where[target.key]
         row = self.findings[slug][i]
         hosts = listed_as = None
         if not classify_host(str(row["official_url"]), slug).is_official:
-            hosts = self.prefecture_hosts(slug)
+            hosts = self.prefecture_hosts(slug, client)
             listed_as = self.taken(slug).get(str(row["code"]))
-        return self.checker(slug, row, self.client, self.overrides(slug), hosts, listed_as)
+        return check(slug, row, client, self.overrides(slug), hosts, listed_as)
 
-    def reselect(self, target: RecheckTarget, reason: str) -> dict[str, Any]:
+    def reselect(self, target: RecheckTarget, reason: str, client: PoliteClient) -> dict[str, Any]:
+        """選び直した行はその場で書く（sources と review も作り直す）。"""
         slug, i = self.where[target.key]
         rows = self.findings[slug]
-        rows[i], record = reselect(
-            self.ws, slug, rows[i], self.client, self.overrides(slug), reason
-        )
-        self.touched.add(slug)
+        rows[i], record = reselect(self.ws, slug, rows[i], client, self.overrides(slug), reason)
+        expand._write_rows(self.ws, slug, rows[0]["prefecture"], rows)
         return record
 
-    def write_back(self, state: dict[str, dict[str, Any]]) -> None:
-        """状態ファイルの確かめた日が findings より新しい自治体の確認日を進め、YAML を書き直す。"""
+    def write_back(self, results: list[RecheckResult], state: dict[str, dict[str, Any]]) -> None:
+        """今夜確かめた日を findings の確認日に進め、YAML を書き直す。
+
+        今夜の結果（`results`）のほかに、状態ファイルの日付の方が新しいものも進める（書き戻しが
+        途中で止まった晩の分を、次の晩に取り戻すため）。
+        """
+        tonight = {r.key: r.checked_on for r in results if r.checked_on is not None}
+        touched: set[str] = set()
         for key, (slug, i) in self.where.items():
             row = self.findings[slug][i]
-            day = _day((state.get(key) or {}).get("checked_on"))
-            if not eligible(row) or day is None:
+            days = [
+                d for d in (tonight.get(key), _day((state.get(key) or {}).get("checked_on"))) if d
+            ]
+            if not eligible(row) or not days:
                 continue
-            if day > (_day(row.get("evidence_checked_on")) or date.min):
-                self.findings[slug][i] = {**row, "evidence_checked_on": day.isoformat()}
-                self.touched.add(slug)
-        for slug in sorted(self.touched):
+            if max(days) > (_day(row.get("evidence_checked_on")) or date.min):
+                self.findings[slug][i] = {**row, "evidence_checked_on": max(days).isoformat()}
+                touched.add(slug)
+        for slug in sorted(touched):
             rows = self.findings[slug]
             expand._write_rows(self.ws, slug, rows[0]["prefecture"], rows)
 
 
-def recheck(
-    ws: Workspace,
-    *,
-    client: PoliteClient,
-    limit: int = PER_NIGHT,
-    workers: int = 1,
-    today: date | None = None,
-    checker: Callable[..., tuple[str, str]] = check,
-) -> RecheckReport:
-    """今夜の分を sitemill の rotate で確かめ直し、確かめた日を findings と YAML に書き戻す。"""
-    night = _Night(ws, client, checker)
-    report = rotate(
-        ws,
-        targets(night.findings),
-        night.check,
-        per_night=limit,
-        retry_nights=RETRY_NIGHTS,
-        wait_days=WAIT_DAYS,
-        workers=workers,
-        today=today,
-        reselect=night.reselect,
-    )
-    night.write_back(load_state(ws))
-    return report
+# `sitemill recheck` が呼ぶフック（service.py の recheck_*）。1 晩の中で findings を共有するので、
+# recheck_targets で作った 1 晩分を、同じ作業場所の recheck_one・recheck_reselect・recheck_done が
+# 使う
+_NIGHTS: dict[Path, _Night] = {}
+_NIGHTS_LOCK = threading.Lock()
+
+
+def _night(ws: Workspace, *, fresh: bool = False) -> _Night:
+    with _NIGHTS_LOCK:
+        night = _NIGHTS.get(ws.root)
+        if fresh or night is None:
+            night = _NIGHTS[ws.root] = _Night(ws)
+        return night
+
+
+def start(ws: Workspace) -> list[RecheckTarget]:
+    """`recheck_targets`。今夜の findings を読み直し、確かめ直す自治体を返す。"""
+    return targets(_night(ws, fresh=True).findings)
+
+
+def check_one(ws: Workspace, target: RecheckTarget, client: PoliteClient) -> tuple[str, str]:
+    """`recheck_one`。"""
+    return _night(ws).check(target, client)
+
+
+def reselect_one(
+    ws: Workspace, target: RecheckTarget, reason: str, client: PoliteClient
+) -> dict[str, Any]:
+    """`recheck_reselect`。"""
+    return _night(ws).reselect(target, reason, client)
+
+
+def reselect_line(target: RecheckTarget, record: dict[str, Any]) -> str:
+    """`recheck_reselect_line`。実行ログに旧新の URL を並べる。"""
+    official = f"{record.get('old_official')} → {record.get('new_official')}"
+    bank = f"{record.get('old_bank')} → {record.get('new_bank')}"
+    return f"{target.label}: 選び直した（公式 {official}、空き家バンク {bank}）"
+
+
+def done(ws: Workspace, results: list[RecheckResult]) -> None:
+    """`recheck_done`。今夜確かめた日を findings と YAML に書き戻す。"""
+    with _NIGHTS_LOCK:
+        night = _NIGHTS.pop(ws.root, None)
+    (night or _Night(ws)).write_back(results, load_state(ws))
