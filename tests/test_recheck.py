@@ -361,6 +361,74 @@ def test_a_top_page_without_the_name_fails_and_a_move_is_named(
     assert result == "fail" and "公式サイトが www.city.kakuu.lg.jp になっている" in reason
 
 
+PREF_LIST = "https://www.pref.nagano.lg.jp/ichiran/index.html"
+BARE = "kakuumura.jp"  # 地理型でも lg.jp でもない。県の一覧で公式と決めたホスト
+
+
+def _mock_bare_site(list_links: list[str]) -> None:
+    """県の一覧（list_links へリンク）と、一覧から www つきへ転送される村のサイト。"""
+    body = "".join(f'<a href="{u}">架空村</a>' for u in list_links)
+    respx.get("https://www.pref.nagano.lg.jp/robots.txt").mock(return_value=httpx.Response(404))
+    respx.get(PREF_LIST).mock(
+        return_value=httpx.Response(
+            200, text=f"<html><body>{body}</body></html>", headers={"content-type": "text/html"}
+        )
+    )
+    respx.get(f"https://www.{BARE}/robots.txt").mock(return_value=httpx.Response(404))
+    page = "<html><head><title>架空村公式</title></head><body>架空村役場</body></html>"
+    for url in (f"https://www.{BARE}/", f"https://www.{BARE}/akiya/200001.html"):
+        respx.get(url).mock(
+            return_value=httpx.Response(200, text=page, headers={"content-type": "text/html"})
+        )
+
+
+def _write_list_reference(ws: Workspace, linked: str) -> None:
+    (ws.root / "data" / "reference" / "nagano_official_urls.json").write_text(
+        json.dumps(
+            {
+                "source_url": PREF_LIST,
+                "municipalities": [{"code": "200001", "name": "架空村", "official_url": linked}],
+            },
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
+
+
+@respx.mock
+def test_a_list_linking_the_address_before_the_redirect_still_holds(ws: Workspace) -> None:
+    """県の一覧は `http://kakuumura.jp/` へリンクし、記録は転送先の `www.kakuumura.jp`。
+
+    記録したホストだけで比べると、一覧が変わっていないのに毎回「一覧がリンクしていない」になり、
+    3 晩で選び直しが走る（2026-09-30 に長野県の平谷村・根羽村。全国で 4 自治体が同じ形）。
+    一覧が発見のときと同じ先へリンクしていれば成り立つ。
+    """
+    _mock_bare_site([f"http://{BARE}/"])
+    _write_list_reference(ws, f"http://{BARE}/")
+    expand._write_rows(
+        ws, "nagano", "長野県", [_row("200001", "架空村", "2026-09-10", host=f"www.{BARE}")]
+    )
+    with _client() as c:
+        report = recheck.recheck(ws, client=c, today=date(2026, 9, 30))
+    assert report.counts["ok"] == 1, report.lines
+    assert _findings(ws)["200001"]["evidence_checked_on"] == "2026-09-30"
+
+
+@respx.mock
+def test_a_list_that_stopped_linking_the_site_still_fails(ws: Workspace) -> None:
+    """一覧が別の先へリンクするようになったら、記録したホストでも発見のときの先でもないので成り立たない。"""
+    _mock_bare_site(["https://www.vill.kakuu.lg.jp/"])
+    _write_list_reference(ws, f"http://{BARE}/")
+    row = _row("200001", "架空村", "2026-09-10", host=f"www.{BARE}")
+    overrides = expand.OfficialOverrides.load(ws, "nagano")
+    with _client() as c:
+        hosts = recheck.listed_hosts(ws, "nagano", c)
+        assert recheck.check("nagano", row, c, overrides, hosts, BARE) == (
+            "fail",
+            "県の市町村一覧が、記録した公式サイトにリンクしていない",
+        )
+
+
 def test_an_unchanged_review_keeps_its_time(ws: Workspace) -> None:
     """候補が同じなら review の作った時刻を動かさない（毎晩 1 行の差分になっていた）。"""
     rows = [_row("200001", "甲市", "2026-09-10")]

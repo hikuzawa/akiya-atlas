@@ -131,6 +131,21 @@ def listed_hosts(ws: Workspace, slug: str, client: PoliteClient) -> set[str] | N
     return {host_of(ln.url) for ln in extract_links(res.text, res.final_url)}
 
 
+def taken_from_list(ws: Workspace, slug: str) -> dict[str, str]:
+    """発見のときに県の一覧から取ったリンク先のホスト（団体コードごと）。
+
+    記録した公式ホストは、一覧のリンク先を開いて転送された先になっていることがある
+    （長野県の一覧は `http://hirayamura.jp/`、記録は `www.hirayamura.jp`。北海道の一覧は
+    `town.higashikawa.hokkaido.jp`、記録は `higashikawa-town.jp`）。
+    """
+    ref = read_json(ws.root / "data" / "reference" / f"{slug}_official_urls.json") or {}
+    return {
+        str(m.get("code")): host_of(str(m["official_url"]))
+        for m in ref.get("municipalities") or []
+        if m.get("official_url")
+    }
+
+
 def _why(res: FetchResult) -> str:
     return res.error or f"HTTP {res.status}"
 
@@ -149,12 +164,18 @@ def check(
     client: PoliteClient,
     overrides: expand.OfficialOverrides,
     prefecture_hosts: set[str] | None,
+    listed_as: str | None = None,
 ) -> tuple[str, str]:
     """1 自治体を確かめる。(ok / fail / skip / unreachable, 理由)。
 
     記録した公式サイトに実際に届き、トップに市町村名が出ることを見る。解決し直した結果が
     「同じホスト」でも成り立ったとはしない。固定値と県の一覧は、届かなくても同じホストを返す。
     届かない（時間切れ・接続できない・403・429）ものは sitemill の `unreachable` で見分ける。
+
+    県の一覧は、記録したホストか、発見のときに一覧から取ったリンク先（`listed_as`）のどちらかへ
+    今もリンクしていれば成り立つ。記録したホストだけで比べると、一覧が転送元（www なしなど）へ
+    リンクしている自治体が、一覧が変わっていないのに毎回成り立たない（2026-09-30 に平谷村・
+    根羽村）。
     """
     host = str(row["official_url"])
     muni = expand._row_to_finding(row).muni
@@ -172,7 +193,7 @@ def check(
             return "fail", "公式サイトのトップに市町村名が出ない"
         return "fail", f"公式サイトを開けない（{_why(top)}）"
     if not classify_host(host, slug).is_official and prefecture_hosts is not None:
-        if host not in prefecture_hosts:
+        if host not in prefecture_hosts and listed_as not in prefecture_hosts:
             return "fail", "県の市町村一覧が、記録した公式サイトにリンクしていない"
     pages = {
         "根拠のページ": row.get("evidence_url"),
@@ -242,6 +263,7 @@ class _Night:
         }
         self.touched: set[str] = set()
         self._overrides: dict[str, expand.OfficialOverrides] = {}
+        self._taken: dict[str, dict[str, str]] = {}
         self._lists: dict[str, set[str] | None] = {}
         self._overrides_lock = threading.Lock()
         self._lists_lock = threading.Lock()
@@ -251,6 +273,12 @@ class _Night:
             if slug not in self._overrides:
                 self._overrides[slug] = expand.OfficialOverrides.load(self.ws, slug)
             return self._overrides[slug]
+
+    def taken(self, slug: str) -> dict[str, str]:
+        with self._overrides_lock:
+            if slug not in self._taken:
+                self._taken[slug] = taken_from_list(self.ws, slug)
+            return self._taken[slug]
 
     def prefecture_hosts(self, slug: str) -> set[str] | None:
         """県の一覧が今リンクしているホスト。並列で見ても、県ごとに 1 回だけ取る。"""
@@ -262,10 +290,11 @@ class _Night:
     def check(self, target: RecheckTarget) -> tuple[str, str]:
         slug, i = self.where[target.key]
         row = self.findings[slug][i]
-        hosts = None
+        hosts = listed_as = None
         if not classify_host(str(row["official_url"]), slug).is_official:
             hosts = self.prefecture_hosts(slug)
-        return self.checker(slug, row, self.client, self.overrides(slug), hosts)
+            listed_as = self.taken(slug).get(str(row["code"]))
+        return self.checker(slug, row, self.client, self.overrides(slug), hosts, listed_as)
 
     def reselect(self, target: RecheckTarget, reason: str) -> dict[str, Any]:
         slug, i = self.where[target.key]
