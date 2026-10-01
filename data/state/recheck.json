@@ -26,10 +26,7 @@
   "checked_on": "2026-09-30"
  },
  "nagano-203840": {
-  "failed_since": "2026-09-30",
-  "failures": 2,
-  "last_tried": "2026-10-01",
-  "reason": "空き家バンクのページを開けない（HTTP 404）"
+  "checked_on": "2026-10-02"
  },
  "nagano-203858": {
   "checked_on": "2026-09-30"
@@ -119,8 +116,8 @@
  },
  "nagano-204854": {
   "failed_since": "2026-10-01",
-  "failures": 1,
-  "last_tried": "2026-10-01",
+  "failures": 2,
+  "last_tried": "2026-10-02",
   "reason": "空き家バンクのページを開けない（HTTP 404）"
  },
  "nagano-204862": {
@@ -131,5 +128,67 @@
  },
  "nagano-205419": {
   "checked_on": "2026-10-01"
+ },
+ "nagano-205435": {
+  "checked_on": "2026-10-02"
+ },
+ "nagano-205613": {
+  "checked_on": "2026-10-02"
+ },
+ "nagano-205621": {
+  "checked_on": "2026-10-02"
+ },
+ "nagano-205630": {
+  "checked_on": "2026-10-02"
+ },
+ "nagano-205834": {
+  "checked_on": "2026-10-02"
+ },
+ "nagano-205885": {
+  "checked_on": "2026-10-02"
+ },
+ "nagano-205907": {
+  "checked_on": "2026-10-02"
+ },
+ "nagano-206024": {
+  "last_tried": "2026-10-02",
+  "waiting_reason": "robots.txt で公式サイトを取得できない",
+  "waiting_since": "2026-10-02"
+ },
+ "okinawa-472018": {
+  "checked_on": "2026-10-02"
+ },
+ "okinawa-472051": {
+  "checked_on": "2026-10-02"
+ },
+ "okinawa-472077": {
+  "checked_on": "2026-10-02"
+ },
+ "okinawa-472085": {
+  "checked_on": "2026-10-02"
+ },
+ "okinawa-472093": {
+  "checked_on": "2026-10-02"
+ },
+ "okinawa-472107": {
+  "checked_on": "2026-10-02"
+ },
+ "okinawa-472115": {
+  "checked_on": "2026-10-02"
+ },
+ "okinawa-472123": {
+  "checked_on": "2026-10-02"
+ },
+ "okinawa-472131": {
+  "checked_on": "2026-10-02"
+ },
+ "okinawa-472140": {
+  "checked_on": "2026-10-02"
+ },
+ "okinawa-472158": {
+  "checked_on": "2026-10-02"
+ },
+ "okinawa-473014": {
+  "checked_on": "2026-10-02"
  }
 }

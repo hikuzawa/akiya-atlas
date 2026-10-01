@@ -81,3 +81,26 @@
 {"at": "2026-10-01T07:46:36+09:00", "result": "ok", "key": "nagano-204862", "label": "長野県小谷村"}
 {"at": "2026-10-01T07:46:36+09:00", "result": "ok", "key": "nagano-205214", "label": "長野県坂城町"}
 {"at": "2026-10-01T07:46:36+09:00", "result": "ok", "key": "nagano-205419", "label": "長野県小布施町"}
+{"at": "2026-10-02T07:55:25+09:00", "result": "fail", "key": "nagano-203840", "label": "長野県飯島町", "reason": "空き家バンクのページを開けない（HTTP 404）", "failures": 3}
+{"at": "2026-10-02T07:55:25+09:00", "result": "reselect", "key": "nagano-203840", "source_id": "nagano-203840", "name": "長野県飯島町", "old_official": "www.town.iijima.lg.jp", "new_official": "www.town.iijima.lg.jp", "old_bank": "https://www.town.iijima.lg.jp/soshikiichiran/kensetsusuidoka/tosikeikakukakari/sumai/akiya/index.html", "new_bank": "https://www.town.iijima.lg.jp/", "reason": "3 晩続けて確かめられなかった（空き家バンクのページを開けない（HTTP 404））"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "fail", "key": "nagano-204854", "label": "長野県白馬村", "reason": "空き家バンクのページを開けない（HTTP 404）", "failures": 2}
+{"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "nagano-205435", "label": "長野県高山村"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "nagano-205613", "label": "長野県山ノ内町"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "nagano-205621", "label": "長野県木島平村"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "nagano-205630", "label": "長野県野沢温泉村"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "nagano-205834", "label": "長野県信濃町"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "nagano-205885", "label": "長野県小川村"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "nagano-205907", "label": "長野県飯綱町"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "skip", "key": "nagano-206024", "label": "長野県栄村", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "okinawa-472018", "label": "沖縄県那覇市"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "okinawa-472051", "label": "沖縄県宜野湾市"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "okinawa-472077", "label": "沖縄県石垣市"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "okinawa-472085", "label": "沖縄県浦添市"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "okinawa-472093", "label": "沖縄県名護市"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "okinawa-472107", "label": "沖縄県糸満市"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "okinawa-472115", "label": "沖縄県沖縄市"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "okinawa-472123", "label": "沖縄県豊見城市"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "okinawa-472131", "label": "沖縄県うるま市"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "okinawa-472140", "label": "沖縄県宮古島市"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "okinawa-472158", "label": "沖縄県南城市"}
+{"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "okinawa-473014", "label": "沖縄県国頭村"}

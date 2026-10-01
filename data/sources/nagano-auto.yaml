@@ -901,15 +901,15 @@ sources:
     prefecture: 長野県
     prefecture_slug: nagano
     slug: '203840'
-    bank_url: https://www.town.iijima.lg.jp/soshikiichiran/kensetsusuidoka/tosikeikakukakari/sumai/akiya/index.html
-    bank_status: info
+    bank_url: https://www.town.iijima.lg.jp/
+    bank_status: none
     extract_pending: false
     map_query: 長野県飯島町
-    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.iijima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.iijima.lg.jp/
-    checked_on: '2026-09-10'
+    checked_on: '2026-10-02'
   pages:
   - url: https://www.town.iijima.lg.jp/soshikiichiran/kensetsusuidoka/tosikeikakukakari/sumai/akiya/2922.html
     kind: subsidy
@@ -1910,7 +1910,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.takayama.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.takayama.nagano.jp/
-    checked_on: '2026-09-10'
+    checked_on: '2026-10-02'
   pages:
   - url: https://www.vill.takayama.nagano.jp/docs/8079270.html
     kind: subsidy
@@ -1941,7 +1941,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yamanouchi.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yamanouchi.nagano.jp/
-    checked_on: '2026-09-10'
+    checked_on: '2026-10-02'
   external_links:
   - label: 楽園信州 空き家バンク・空き地バンク（長野県）
     url: https://rakuen-akiya.jp/
@@ -1966,7 +1966,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.kijimadaira.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.kijimadaira.lg.jp/
-    checked_on: '2026-09-10'
+    checked_on: '2026-10-02'
   pages:
   - url: https://www.vill.kijimadaira.lg.jp/articles/2026080600020/
     kind: subsidy
@@ -1997,7 +1997,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.nozawaonsen.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.nozawaonsen.nagano.jp/
-    checked_on: '2026-09-10'
+    checked_on: '2026-10-02'
   pages:
   - url: https://www.vill.nozawaonsen.nagano.jp/www/contents/1763425500195/index.html
     kind: subsidy
@@ -2030,7 +2030,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shinano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.shinano.lg.jp/
-    checked_on: '2026-09-10'
+    checked_on: '2026-10-02'
   pages:
   - url: https://www.town.shinano.lg.jp/docs/9923205.html
     kind: subsidy
@@ -2066,7 +2066,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.vill.ogawa.nagano.jp）から空き家バンクとして案内されているリンク
     url: https://www.vill.ogawa.nagano.jp/
-    checked_on: '2026-09-10'
+    checked_on: '2026-10-02'
   pages:
   - url: http://ogawamura.jp/house/
     kind: listing_index
@@ -2097,7 +2097,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.iizuna.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.iizuna.nagano.jp/
-    checked_on: '2026-09-10'
+    checked_on: '2026-10-02'
   pages:
   - url: https://www.town.iizuna.nagano.jp/docs/taishin.html
     kind: subsidy
