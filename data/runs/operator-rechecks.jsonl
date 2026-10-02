@@ -104,3 +104,25 @@
 {"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "okinawa-472140", "label": "沖縄県宮古島市"}
 {"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "okinawa-472158", "label": "沖縄県南城市"}
 {"at": "2026-10-02T07:56:01+09:00", "result": "ok", "key": "okinawa-473014", "label": "沖縄県国頭村"}
+{"at": "2026-10-03T07:29:08+09:00", "result": "fail", "key": "nagano-204854", "label": "長野県白馬村", "reason": "空き家バンクのページを開けない（HTTP 404）", "failures": 3}
+{"at": "2026-10-03T07:29:08+09:00", "result": "reselect", "key": "nagano-204854", "source_id": "nagano-204854", "name": "長野県白馬村", "old_official": "www.vill.hakuba.lg.jp", "new_official": "www.vill.hakuba.lg.jp", "old_bank": "https://www.vill.hakuba.lg.jp/gyosei/furusatonozei_ijuteiju/ijuteiju/sumu/akiyabank/sitemap.dir.xml", "new_bank": "https://www.vill.hakuba.lg.jp/gyosei/soshikikarasagasu/somuka/kikakuchoseigakari/2/1/11463.html", "reason": "3 晩続けて確かめられなかった（空き家バンクのページを開けない（HTTP 404））"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473022", "label": "沖縄県大宜味村"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473031", "label": "沖縄県東村"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473065", "label": "沖縄県今帰仁村"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473081", "label": "沖縄県本部町"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473111", "label": "沖縄県恩納村"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473138", "label": "沖縄県宜野座村"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473146", "label": "沖縄県金武町"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473154", "label": "沖縄県伊江村"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473243", "label": "沖縄県読谷村"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473251", "label": "沖縄県嘉手納町"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473260", "label": "沖縄県北谷町"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473278", "label": "沖縄県北中城村"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473286", "label": "沖縄県中城村"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473294", "label": "沖縄県西原町"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473481", "label": "沖縄県与那原町"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473502", "label": "沖縄県南風原町"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473537", "label": "沖縄県渡嘉敷村"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473545", "label": "沖縄県座間味村"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473553", "label": "沖縄県粟国村"}
+{"at": "2026-10-03T07:29:25+09:00", "result": "ok", "key": "okinawa-473561", "label": "沖縄県渡名喜村"}

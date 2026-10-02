@@ -1780,7 +1780,7 @@ sources:
     prefecture: 長野県
     prefecture_slug: nagano
     slug: '204854'
-    bank_url: https://www.vill.hakuba.lg.jp/gyosei/furusatonozei_ijuteiju/ijuteiju/sumu/akiyabank/sitemap.dir.xml
+    bank_url: https://www.vill.hakuba.lg.jp/gyosei/soshikikarasagasu/somuka/kikakuchoseigakari/2/1/11463.html
     bank_status: info
     extract_pending: false
     map_query: 長野県白馬村
@@ -1788,11 +1788,10 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.hakuba.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.hakuba.lg.jp/
-    checked_on: '2026-09-10'
+    checked_on: '2026-10-03'
   external_links:
-  - label: 楽園信州 空き家バンク・空き地バンク（長野県）
+  - label: 楽園信州空き家・空き地バンク(長野県移住者向け空き家ポータルサイト)
     url: https://rakuen-akiya.jp/
-    note: 長野県が案内する県内横断の空き家・空き地バンク（民間運営）。
 - id: nagano-204862
   name: 小谷村空き家バンク
   operator: 小谷村
