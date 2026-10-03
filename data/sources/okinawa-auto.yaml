@@ -738,7 +738,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.minamidaito.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.minamidaito.okinawa.jp/
-    checked_on: '2026-09-10'
+    checked_on: '2026-10-04'
 - id: okinawa-473588
   name: 北大東村空き家バンク
   operator: 北大東村
@@ -759,7 +759,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン vill.kitadaito.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://vill.kitadaito.okinawa.jp/
-    checked_on: '2026-09-10'
+    checked_on: '2026-10-04'
 - id: okinawa-473596
   name: 伊平屋村空き家バンク
   operator: 伊平屋村
@@ -780,7 +780,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.iheya.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.iheya.okinawa.jp/
-    checked_on: '2026-09-10'
+    checked_on: '2026-10-04'
 - id: okinawa-473600
   name: 伊是名村空き家バンク
   operator: 伊是名村
@@ -801,7 +801,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.izena.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.izena.okinawa.jp/
-    checked_on: '2026-09-10'
+    checked_on: '2026-10-04'
 - id: okinawa-473618
   name: 久米島町空き家バンク
   operator: 久米島町
@@ -822,7 +822,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kumejima.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kumejima.okinawa.jp/
-    checked_on: '2026-09-10'
+    checked_on: '2026-10-04'
   pages:
   - url: http://www.town.kumejima.okinawa.jp/docs/2020051300049/
     kind: subsidy
@@ -849,7 +849,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yaese.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.yaese.lg.jp/
-    checked_on: '2026-09-10'
+    checked_on: '2026-10-04'
   pages:
   - url: https://www.town.yaese.lg.jp/docs/2021080600070/
     kind: subsidy
@@ -876,7 +876,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.tarama.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.tarama.okinawa.jp/
-    checked_on: '2026-09-10'
+    checked_on: '2026-10-04'
 - id: okinawa-473812
   name: 竹富町空き家バンク
   operator: 竹富町
@@ -896,7 +896,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.taketomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.taketomi.lg.jp/
-    checked_on: '2026-09-10'
+    checked_on: '2026-10-04'
   pages:
   - url: https://www.town.taketomi.lg.jp/soshiki/machizukuri/akiyakeijiban
     kind: listing_index
@@ -925,4 +925,4 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yonaguni.okinawa.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yonaguni.okinawa.jp/
-    checked_on: '2026-09-10'
+    checked_on: '2026-10-04'
