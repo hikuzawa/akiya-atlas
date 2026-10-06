@@ -840,7 +840,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.aisai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.aisai.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-06'
 - id: aichi-232335
   name: 清須市空き家バンク
   operator: 清須市
@@ -861,7 +861,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kiyosu.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kiyosu.aichi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-06'
 - id: aichi-232343
   name: 北名古屋市空き家バンク
   operator: 北名古屋市
@@ -882,7 +882,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kitanagoya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kitanagoya.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-06'
   pages:
   - url: https://www.city.kitanagoya.lg.jp/kurashi/kankyo/1001976/1001977.html
     kind: subsidy
@@ -909,7 +909,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yatomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.yatomi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-06'
   pages:
   - url: https://www.city.yatomi.lg.jp/kurashi/1000451/1007106.html
     kind: subsidy
@@ -938,7 +938,7 @@ sources:
   operator_evidence:
     quote: 愛知県 県内の市町村（リンク集）に掲載された公式サイト（www.city.aichi-miyoshi.lg.jp）
     url: https://www.pref.aichi.jp/site/userguide/link-citytown.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-06'
 - id: aichi-232378
   name: あま市空き家バンク
   operator: あま市
@@ -959,7 +959,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ama.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ama.aichi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-06'
 - id: aichi-232386
   name: 長久手市空き家バンク
   operator: 長久手市
@@ -980,7 +980,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nagakute.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nagakute.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-06'
 - id: aichi-233021
   name: 東郷町空き家バンク
   operator: 東郷町
@@ -1001,7 +1001,7 @@ sources:
   operator_evidence:
     quote: 愛知県 県内の市町村（リンク集）に掲載された公式サイト（www.town.aichi-togo.lg.jp）
     url: https://www.pref.aichi.jp/site/userguide/link-citytown.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-06'
   pages:
   - url: https://www.town.aichi-togo.lg.jp/pickup_news/13491.html
     kind: subsidy
@@ -1028,7 +1028,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.toyoyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.toyoyama.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-06'
 - id: aichi-233617
   name: 大口町空き家バンク
   operator: 大口町
@@ -1049,7 +1049,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.oguchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.oguchi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-06'
   pages:
   - url: https://www.town.oguchi.lg.jp/5857.htm
     kind: subsidy
@@ -1076,7 +1076,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.town.fuso.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.town.fuso.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-06'
   pages:
   - url: https://www.town.fuso.lg.jp/bousai/1001475/1001483/1001485.html
     kind: subsidy
@@ -1106,7 +1106,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.oharu.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.oharu.aichi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-06'
 - id: aichi-234257
   name: 蟹江町空き家バンク
   operator: 蟹江町
@@ -1127,7 +1127,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kanie.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kanie.aichi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-06'
 - id: aichi-234273
   name: 飛島村空き家バンク
   operator: 飛島村
@@ -1148,7 +1148,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.tobishima.aichi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.tobishima.aichi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-06'
   pages:
   - url: https://www.vill.tobishima.aichi.jp/kurashi/ijuu/1001701/1001706.html
     kind: subsidy
@@ -1175,7 +1175,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.agui.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.agui.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-06'
 - id: aichi-234427
   name: 東浦町空き家バンク
   operator: 東浦町
@@ -1196,7 +1196,7 @@ sources:
   operator_evidence:
     quote: 愛知県 県内の市町村（リンク集）に掲載された公式サイト（www.town.aichi-higashiura.lg.jp）
     url: https://www.pref.aichi.jp/site/userguide/link-citytown.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-06'
 - id: aichi-234451
   name: 南知多町空き家バンク
   operator: 南知多町
@@ -1216,7 +1216,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.minamichita.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.minamichita.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-06'
   pages:
   - url: https://www.town.minamichita.lg.jp/akiya/index.html
     kind: listing_index
@@ -1247,7 +1247,7 @@ sources:
   operator_evidence:
     quote: 愛知県 県内の市町村（リンク集）に掲載された公式サイト（www.town.aichi-mihama.lg.jp）
     url: https://www.pref.aichi.jp/site/userguide/link-citytown.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-06'
 - id: aichi-234478
   name: 武豊町空き家バンク
   operator: 武豊町
@@ -1268,7 +1268,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.taketoyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.taketoyo.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-06'
   pages:
   - url: https://www.town.taketoyo.lg.jp/kurashi/1001507/1001589/1002990.html
     kind: subsidy
