@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.aomori.aomori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.aomori.aomori.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-08'
   pages:
   - url: https://www.city.aomori.aomori.jp/kurashi_kankyo/sumai/1002247/1009350.html
     kind: subsidy
@@ -49,7 +49,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hirosaki.aomori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hirosaki.aomori.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-08'
 - id: aomori-022039
   name: 八戸市空き家バンク
   operator: 八戸市
@@ -70,7 +70,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.city.hachinohe.aomori.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.hachinohe.aomori.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-08'
 - id: aomori-022047
   name: 黒石市空き家バンク
   operator: 黒石市
@@ -91,7 +91,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kuroishi.aomori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kuroishi.aomori.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-08'
   pages:
   - url: https://www.city.kuroishi.aomori.jp/sangyou/shien/akiya-rikatsu.html
     kind: subsidy
@@ -118,7 +118,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.goshogawara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.goshogawara.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-08'
   pages:
   - url: https://www.city.goshogawara.lg.jp/kurashi/sumai/taiyoukou-setubidounyuusien.html
     kind: subsidy
@@ -154,7 +154,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.towada.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.towada.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-08'
   pages:
   - url: https://www.city.towada.lg.jp/kurashi/ijuu/ijuu/juutaku-hojo.html
     kind: subsidy
@@ -181,7 +181,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.misawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.misawa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-08'
   pages:
   - url: https://www.city.misawa.lg.jp/index.cfm/22,13592,17,132,html
     kind: subsidy
@@ -215,7 +215,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.mutsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.mutsu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-08'
   pages:
   - url: https://www.city.mutsu.lg.jp/government/bousai/bousaishizyoseikin.html
     kind: subsidy
@@ -246,7 +246,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tsugaru.aomori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.tsugaru.aomori.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-08'
 - id: aomori-022101
   name: 平川市空き家バンク
   operator: 平川市
@@ -267,7 +267,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hirakawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hirakawa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-08'
 - id: aomori-023019
   name: 平内町空き家バンク
   operator: 平内町

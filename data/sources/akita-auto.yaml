@@ -414,7 +414,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.fujisato.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.fujisato.akita.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-08'
 - id: akita-053481
   name: 三種町空き家バンク
   operator: 三種町
@@ -434,7 +434,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.mitane.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.mitane.akita.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-08'
   pages:
   - url: https://www.town.mitane.akita.jp/kurashi_furusatokaiki/akiya_bank/2305.html
     kind: listing_index
@@ -471,7 +471,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.happo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.happo.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-08'
 - id: akita-053619
   name: 五城目町空き家バンク
   operator: 五城目町
@@ -492,7 +492,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.gojome.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.gojome.akita.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-08'
   pages:
   - url: https://www.town.gojome.akita.jp/izyuu/kigyouizyuuhozyoseid/
     kind: subsidy
@@ -528,7 +528,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hachirogata.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.hachirogata.akita.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-08'
   pages:
   - url: https://www.town.hachirogata.akita.jp/kurashi/1001529/1003076.html
     kind: subsidy
@@ -561,7 +561,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ikawa.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ikawa.akita.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-08'
   pages:
   - url: https://www.town.ikawa.akita.jp/page/1600.html
     kind: subsidy
@@ -613,7 +613,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.misato.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.misato.akita.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-08'
   pages:
   - url: https://www.town.misato.akita.jp/archive/contents-658
     kind: subsidy
@@ -642,7 +642,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ugo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.ugo.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-08'
 - id: akita-054640
   name: 東成瀬村空き家バンク
   operator: 東成瀬村
@@ -663,4 +663,4 @@ sources:
   operator_evidence:
     quote: 公式ドメイン vill.higashinaruse.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://vill.higashinaruse.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-08'
