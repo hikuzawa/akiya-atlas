@@ -228,8 +228,8 @@
  },
  "akita-053686": {
   "failed_since": "2026-10-08",
-  "failures": 1,
-  "last_tried": "2026-10-08",
+  "failures": 2,
+  "last_tried": "2026-10-09",
   "reason": "公式サイトのトップに市町村名が出ない"
  },
  "akita-054348": {
@@ -270,6 +270,67 @@
  },
  "aomori-022101": {
   "checked_on": "2026-10-08"
+ },
+ "aomori-023019": {
+  "checked_on": "2026-10-09"
+ },
+ "aomori-023035": {
+  "checked_on": "2026-10-09"
+ },
+ "aomori-023043": {
+  "checked_on": "2026-10-09"
+ },
+ "aomori-023078": {
+  "checked_on": "2026-10-09"
+ },
+ "aomori-023213": {
+  "checked_on": "2026-10-09"
+ },
+ "aomori-023230": {
+  "checked_on": "2026-10-09"
+ },
+ "aomori-023434": {
+  "checked_on": "2026-10-09"
+ },
+ "aomori-023612": {
+  "checked_on": "2026-10-09"
+ },
+ "aomori-023621": {
+  "last_tried": "2026-10-09",
+  "waiting_reason": "robots.txt で公式サイトを取得できない",
+  "waiting_since": "2026-10-09"
+ },
+ "aomori-023671": {
+  "last_tried": "2026-10-09",
+  "waiting_reason": "robots.txt で公式サイトを取得できない",
+  "waiting_since": "2026-10-09"
+ },
+ "aomori-023817": {
+  "checked_on": "2026-10-09"
+ },
+ "aomori-023841": {
+  "checked_on": "2026-10-09"
+ },
+ "aomori-023876": {
+  "checked_on": "2026-10-09"
+ },
+ "aomori-024015": {
+  "checked_on": "2026-10-09"
+ },
+ "aomori-024023": {
+  "checked_on": "2026-10-09"
+ },
+ "aomori-024058": {
+  "checked_on": "2026-10-09"
+ },
+ "aomori-024066": {
+  "checked_on": "2026-10-09"
+ },
+ "aomori-024082": {
+  "checked_on": "2026-10-09"
+ },
+ "aomori-024112": {
+  "checked_on": "2026-10-09"
  },
  "nagano-203076": {
   "last_tried": "2026-10-06",
@@ -420,7 +481,7 @@
   "checked_on": "2026-10-02"
  },
  "nagano-206024": {
-  "last_tried": "2026-10-02",
+  "last_tried": "2026-10-09",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-10-02"
  },
