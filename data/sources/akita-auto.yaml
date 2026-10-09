@@ -590,9 +590,9 @@ sources:
     map_query: 秋田県大潟村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
-    quote: 公式ドメイン www.vill.ogata.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
-    url: https://www.vill.ogata.akita.jp/
-    checked_on: '2026-09-11'
+    quote: 秋田県 県内市町村のウェブサイトに掲載された公式サイト（www.vill.ogata.akita.jp）
+    url: https://www.pref.akita.lg.jp/pages/archive/46079
+    checked_on: '2026-10-10'
 - id: akita-054348
   name: 美郷町空き家バンク
   operator: 美郷町

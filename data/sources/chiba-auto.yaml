@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 千葉県 市町村一覧に掲載された公式サイト（www.city.chiba.jp）
     url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-10'
 - id: chiba-122025
   name: 銚子市空き家バンク
   operator: 銚子市
@@ -41,7 +41,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.choshi.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.choshi.chiba.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-10'
   pages:
   - url: https://www.city.choshi.chiba.jp/kurashi/page020017_00002.html
     kind: subsidy
@@ -70,7 +70,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ichikawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.ichikawa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-10'
   pages:
   - url: https://www.city.ichikawa.lg.jp/blog/%e2%89%aa%e5%b8%82%e5%b7%9d%e5%b8%82%e2%89%ab%e3%81%82%e3%82%93%e3%81%97%e3%82%93%e4%bd%8f%e5%ae%85%e5%8a%a9%e6%88%90%e4%ba%8b%e6%a5%ad%e3%83%bb%e4%bd%8f%e5%ae%85%e6%96%ad%e7%86%b1%e6%94%b9%e4%bf%ae-2/
     kind: subsidy
@@ -97,7 +97,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.funabashi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.funabashi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-10'
 - id: chiba-122050
   name: 館山市空き家バンク
   operator: 館山市
@@ -117,7 +117,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tateyama.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.tateyama.chiba.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-10'
   pages:
   - url: https://www.city.tateyama.chiba.jp/kenchikushisetsu/page100050.html
     kind: listing_index
@@ -146,7 +146,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kisarazu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kisarazu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-10'
 - id: chiba-122076
   name: 松戸市空き家バンク
   operator: 松戸市
@@ -167,7 +167,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.matsudo.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.matsudo.chiba.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-10'
 - id: chiba-122084
   name: 野田市空き家バンク
   operator: 野田市
@@ -187,7 +187,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.noda.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.noda.chiba.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-10'
   pages:
   - url: https://www.city.noda.chiba.jp/kurashi/anzen/bouhan/1008726.html
     kind: listing_index
@@ -213,7 +213,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.mobara.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.mobara.chiba.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-10'
   pages:
   - url: https://www.city.mobara.chiba.jp/0000007702.html
     kind: listing_index

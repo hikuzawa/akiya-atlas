@@ -227,10 +227,7 @@
   "checked_on": "2026-10-08"
  },
  "akita-053686": {
-  "failed_since": "2026-10-08",
-  "failures": 2,
-  "last_tried": "2026-10-09",
-  "reason": "公式サイトのトップに市町村名が出ない"
+  "checked_on": "2026-10-10"
  },
  "akita-054348": {
   "checked_on": "2026-10-08"
@@ -331,6 +328,74 @@
  },
  "aomori-024112": {
   "checked_on": "2026-10-09"
+ },
+ "aomori-024121": {
+  "checked_on": "2026-10-10"
+ },
+ "aomori-024236": {
+  "checked_on": "2026-10-10"
+ },
+ "aomori-024244": {
+  "last_tried": "2026-10-10",
+  "waiting_reason": "robots.txt で公式サイトを取得できない",
+  "waiting_since": "2026-10-10"
+ },
+ "aomori-024252": {
+  "checked_on": "2026-10-10"
+ },
+ "aomori-024261": {
+  "failed_since": "2026-10-10",
+  "failures": 1,
+  "last_tried": "2026-10-10",
+  "reason": "公式サイトのトップに市町村名が出ない"
+ },
+ "aomori-024414": {
+  "checked_on": "2026-10-10"
+ },
+ "aomori-024422": {
+  "checked_on": "2026-10-10"
+ },
+ "aomori-024431": {
+  "checked_on": "2026-10-10"
+ },
+ "aomori-024457": {
+  "checked_on": "2026-10-10"
+ },
+ "aomori-024465": {
+  "checked_on": "2026-10-10"
+ },
+ "aomori-024503": {
+  "failed_since": "2026-10-10",
+  "failures": 1,
+  "last_tried": "2026-10-10",
+  "reason": "空き家バンクのページを開けない（HTTP 404）"
+ },
+ "chiba-121002": {
+  "checked_on": "2026-10-10"
+ },
+ "chiba-122025": {
+  "checked_on": "2026-10-10"
+ },
+ "chiba-122033": {
+  "checked_on": "2026-10-10"
+ },
+ "chiba-122041": {
+  "checked_on": "2026-10-10"
+ },
+ "chiba-122050": {
+  "checked_on": "2026-10-10"
+ },
+ "chiba-122068": {
+  "checked_on": "2026-10-10"
+ },
+ "chiba-122076": {
+  "checked_on": "2026-10-10"
+ },
+ "chiba-122084": {
+  "checked_on": "2026-10-10"
+ },
+ "chiba-122106": {
+  "checked_on": "2026-10-10"
  },
  "nagano-203076": {
   "last_tried": "2026-10-06",

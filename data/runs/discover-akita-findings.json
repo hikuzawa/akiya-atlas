@@ -663,14 +663,17 @@
     },
     {
       "alternatives": [],
+      "bank_status": "none",
       "bank_url": "https://www.vill.ogata.akita.jp/",
       "code": "053686",
       "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
-      "evidence_quote": "公式ドメイン www.vill.ogata.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）",
-      "evidence_url": "https://www.vill.ogata.akita.jp/",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-10-10",
+      "evidence_quote": "秋田県 県内市町村のウェブサイトに掲載された公式サイト（www.vill.ogata.akita.jp）",
+      "evidence_url": "https://www.pref.akita.lg.jp/pages/archive/46079",
       "external_links": [],
+      "extract_gap": false,
       "listing_rows": null,
       "listing_score": null,
       "name": "大潟村",
@@ -683,7 +686,8 @@
       "prefecture": "秋田県",
       "prefecture_slug": "akita",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [

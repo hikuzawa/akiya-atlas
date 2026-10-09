@@ -247,3 +247,25 @@
 {"at": "2026-10-09T08:32:19+09:00", "result": "ok", "key": "aomori-024066", "label": "青森県横浜町"}
 {"at": "2026-10-09T08:32:19+09:00", "result": "ok", "key": "aomori-024082", "label": "青森県東北町"}
 {"at": "2026-10-09T08:32:19+09:00", "result": "ok", "key": "aomori-024112", "label": "青森県六ヶ所村"}
+{"at": "2026-10-10T08:00:40+09:00", "result": "fail", "key": "akita-053686", "label": "秋田県大潟村", "reason": "公式サイトのトップに市町村名が出ない", "failures": 3}
+{"at": "2026-10-10T08:00:40+09:00", "result": "reselect", "key": "akita-053686", "source_id": "akita-053686", "name": "秋田県大潟村", "old_official": "www.vill.ogata.akita.jp", "new_official": "www.vill.ogata.akita.jp", "old_bank": "https://www.vill.ogata.akita.jp/", "new_bank": "https://www.vill.ogata.akita.jp/", "reason": "3 晩続けて確かめられなかった（公式サイトのトップに市町村名が出ない）"}
+{"at": "2026-10-10T08:00:55+09:00", "result": "ok", "key": "aomori-024121", "label": "青森県おいらせ町"}
+{"at": "2026-10-10T08:00:55+09:00", "result": "ok", "key": "aomori-024236", "label": "青森県大間町"}
+{"at": "2026-10-10T08:00:55+09:00", "result": "skip", "key": "aomori-024244", "label": "青森県東通村", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-10-10T08:00:55+09:00", "result": "ok", "key": "aomori-024252", "label": "青森県風間浦村"}
+{"at": "2026-10-10T08:00:55+09:00", "result": "fail", "key": "aomori-024261", "label": "青森県佐井村", "reason": "公式サイトのトップに市町村名が出ない", "failures": 1}
+{"at": "2026-10-10T08:00:55+09:00", "result": "ok", "key": "aomori-024414", "label": "青森県三戸町"}
+{"at": "2026-10-10T08:00:55+09:00", "result": "ok", "key": "aomori-024422", "label": "青森県五戸町"}
+{"at": "2026-10-10T08:00:55+09:00", "result": "ok", "key": "aomori-024431", "label": "青森県田子町"}
+{"at": "2026-10-10T08:00:55+09:00", "result": "ok", "key": "aomori-024457", "label": "青森県南部町"}
+{"at": "2026-10-10T08:00:55+09:00", "result": "ok", "key": "aomori-024465", "label": "青森県階上町"}
+{"at": "2026-10-10T08:00:55+09:00", "result": "fail", "key": "aomori-024503", "label": "青森県新郷村", "reason": "空き家バンクのページを開けない（HTTP 404）", "failures": 1}
+{"at": "2026-10-10T08:00:55+09:00", "result": "ok", "key": "chiba-121002", "label": "千葉県千葉市"}
+{"at": "2026-10-10T08:00:55+09:00", "result": "ok", "key": "chiba-122025", "label": "千葉県銚子市"}
+{"at": "2026-10-10T08:00:55+09:00", "result": "ok", "key": "chiba-122033", "label": "千葉県市川市"}
+{"at": "2026-10-10T08:00:55+09:00", "result": "ok", "key": "chiba-122041", "label": "千葉県船橋市"}
+{"at": "2026-10-10T08:00:55+09:00", "result": "ok", "key": "chiba-122050", "label": "千葉県館山市"}
+{"at": "2026-10-10T08:00:55+09:00", "result": "ok", "key": "chiba-122068", "label": "千葉県木更津市"}
+{"at": "2026-10-10T08:00:55+09:00", "result": "ok", "key": "chiba-122076", "label": "千葉県松戸市"}
+{"at": "2026-10-10T08:00:55+09:00", "result": "ok", "key": "chiba-122084", "label": "千葉県野田市"}
+{"at": "2026-10-10T08:00:55+09:00", "result": "ok", "key": "chiba-122106", "label": "千葉県茂原市"}
