@@ -345,8 +345,8 @@
  },
  "aomori-024261": {
   "failed_since": "2026-10-10",
-  "failures": 1,
-  "last_tried": "2026-10-10",
+  "failures": 2,
+  "last_tried": "2026-10-11",
   "reason": "公式サイトのトップに市町村名が出ない"
  },
  "aomori-024414": {
@@ -366,8 +366,8 @@
  },
  "aomori-024503": {
   "failed_since": "2026-10-10",
-  "failures": 1,
-  "last_tried": "2026-10-10",
+  "failures": 2,
+  "last_tried": "2026-10-11",
   "reason": "空き家バンクのページを開けない（HTTP 404）"
  },
  "chiba-121002": {
@@ -396,6 +396,66 @@
  },
  "chiba-122106": {
   "checked_on": "2026-10-10"
+ },
+ "chiba-122114": {
+  "checked_on": "2026-10-11"
+ },
+ "chiba-122122": {
+  "checked_on": "2026-10-11"
+ },
+ "chiba-122131": {
+  "checked_on": "2026-10-11"
+ },
+ "chiba-122157": {
+  "checked_on": "2026-10-11"
+ },
+ "chiba-122165": {
+  "checked_on": "2026-10-11"
+ },
+ "chiba-122173": {
+  "checked_on": "2026-10-11"
+ },
+ "chiba-122181": {
+  "checked_on": "2026-10-11"
+ },
+ "chiba-122190": {
+  "checked_on": "2026-10-11"
+ },
+ "chiba-122203": {
+  "checked_on": "2026-10-11"
+ },
+ "chiba-122211": {
+  "checked_on": "2026-10-11"
+ },
+ "chiba-122220": {
+  "checked_on": "2026-10-11"
+ },
+ "chiba-122238": {
+  "checked_on": "2026-10-11"
+ },
+ "chiba-122246": {
+  "checked_on": "2026-10-11"
+ },
+ "chiba-122254": {
+  "checked_on": "2026-10-11"
+ },
+ "chiba-122262": {
+  "checked_on": "2026-10-11"
+ },
+ "chiba-122271": {
+  "checked_on": "2026-10-11"
+ },
+ "chiba-122289": {
+  "checked_on": "2026-10-11"
+ },
+ "chiba-122297": {
+  "checked_on": "2026-10-11"
+ },
+ "chiba-122301": {
+  "checked_on": "2026-10-11"
+ },
+ "chiba-122319": {
+  "checked_on": "2026-10-11"
  },
  "nagano-203076": {
   "last_tried": "2026-10-06",
