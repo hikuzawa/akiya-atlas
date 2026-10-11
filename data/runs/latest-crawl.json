@@ -60,7 +60,6 @@
     "https://www.city.kitaakita.akita.jp/archive/contents-5638: HTTP 403",
     "https://www.town.hiranai.aomori.jp/kurashi/sumai/2/1543.html: HTTP 404",
     "https://www.city.ichikawa.lg.jp/blog/%e2%89%aa%e5%b8%82%e5%b7%9d%e5%b8%82%e2%89%ab%e3%81%82%e3%82%93%e3%81%97%e3%82%93%e4%bd%8f%e5%ae%85%e5%8a%a9%e6%88%90%e4%ba%8b%e6%a5%ad%e3%83%bb%e4%bd%8f%e5%ae%85%e6%96%ad%e7%86%b1%e6%94%b9%e4%bf%ae-2/: HTTP 404",
-    "https://www.city.noda.chiba.jp/kurashi/anzen/bouhan/1008726.html: robots.txt を取得できないため今回は巡回しない",
     "https://www.city.seiyo.ehime.jp/kakuka/kensetsu/kensetsu/sumai/393.html: HTTP 404",
     "https://www.city.nogata.fukuoka.jp/kurashi/_1203/_12033.html: robots.txt を取得できないため今回は巡回しない",
     "https://www.city.nogata.fukuoka.jp/kurashi/_1203/_1363.html: robots.txt を取得できないため今回は巡回しない",
@@ -73,9 +72,6 @@
     "https://www.e-rumoi.jp/keizai/page17_00252.html: HTTP 404",
     "https://www.town.kyowa.hokkaido.jp/news/detail.html?content=30: HTTP 404",
     "https://www.town.minamifurano.hokkaido.jp/kurashi-info/%e4%bd%8f%e5%ae%85-2/%e4%bd%8f%e5%ae%85%e3%83%aa%e3%83%95%e3%82%a9%e3%83%bc%e3%83%a0%e5%8a%a9%e6%88%90%e9%87%91%e4%ba%8b%e6%a5%ad/: HTTP 404",
-    "https://www.town.koshimizu.hokkaido.jp/hotnews/detail/00009482.html: ReadTimeout: The read operation timed out",
-    "https://www.town.koshimizu.hokkaido.jp/hotnews/detail/00004377.html: ReadTimeout: The read operation timed out",
-    "https://www.town.koshimizu.hokkaido.jp/hotnews/detail/00004376.html: ReadTimeout: The read operation timed out",
     "https://www.city.ako.lg.jp/sangyoshinko/kanko/teiju/teijushien/syukuhakuhozyo.html: HTTP 404",
     "https://www.city.shiso.lg.jp/kurashi/sumai/10758.html: HTTP 404",
     "https://www.town.mikata-kami.lg.jp/kurashi-tetsuzuki/iju-teiju-akiya/3294.html: HTTP 404",
@@ -104,7 +100,7 @@
     "https://www.town.tsuwano.lg.jp/www/contents/1782190745130/index.html: HTTP 404",
     "https://www.town.yoshika.lg.jp/kurashi/josei/saiseikanou/y_solar.html: HTTP 404",
     "https://www.town.yoshika.lg.jp/kurashi/josei/saiseikanou/y_wbiomass.html: HTTP 404",
-    "https://www.city.ohtawara.tochigi.jp/docs/2013082767417/: ConnectTimeout: timed out",
+    "https://www.city.ohtawara.tochigi.jp/docs/2013082767417/: ConnectError: [Errno 111] Connection refused",
     "https://www.town.minami.lg.jp/docs/4937966.html: HTTP 404",
     "https://www.city.hino.lg.jp/kurashi/annzen/1030555.html: HTTP 404",
     "http://www.town.yura.wakayama.jp/docs/2021081200033/: HTTP 404",
@@ -113,7 +109,7 @@
     "https://www.city.hagi.lg.jp/support_006/: HTTP 404"
   ],
   "extraction_metrics": null,
-  "finished_at": "2026-10-10T21:57:58Z",
+  "finished_at": "2026-10-11T22:12:39Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -126,17 +122,17 @@
   "service": "akiya-atlas",
   "stages": {
     "crawl": {
-      "changed": 28,
-      "errors": 109,
-      "fetched": 453,
-      "not_modified": 146,
-      "requests": 971,
+      "changed": 21,
+      "errors": 105,
+      "fetched": 467,
+      "not_modified": 161,
+      "requests": 1002,
       "skipped_link_only": 806,
-      "skipped_not_due": 678,
+      "skipped_not_due": 672,
       "stale_cache": 3,
-      "unchanged": 571,
+      "unchanged": 607,
       "workers": 8
     }
   },
-  "started_at": "2026-10-10T21:51:42Z"
+  "started_at": "2026-10-11T22:06:44Z"
 }

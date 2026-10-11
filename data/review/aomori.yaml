@@ -1,6 +1,6 @@
 prefecture: 青森県
 prefecture_slug: aomori
-created_at: '2026-09-14T23:03:22+00:00'
+created_at: '2026-10-11T22:15:03+00:00'
 candidates:
 - key: '022012'
   label: 青森県 青森市
@@ -471,8 +471,8 @@ candidates:
   class_label: null
   confidence: 0.6
   operator_kind: municipality
-  evidence_quote: 公式ドメイン www.vill.sai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
-  evidence_url: https://www.vill.sai.lg.jp/
+  evidence_quote: 青森県 市町村ホームページに掲載された公式サイト（www.vill.sai.lg.jp）
+  evidence_url: https://www.pref.aomori.lg.jp/soshiki/zaimu/shichoson/shichoson.html
   reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
   proposed_policy: link_only
   proposed_action: 承認
@@ -550,7 +550,7 @@ candidates:
   note: null
 - key: '024503'
   label: 青森県 新郷村
-  url: https://www.vill.shingo.aomori.jp/news/post-31387/
+  url: https://www.vill.shingo.aomori.jp/live/touroku/page-23698/
   page_class: not_listing
   class_label: 物件ページではない
   confidence: 0.6

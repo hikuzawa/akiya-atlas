@@ -291,3 +291,27 @@
 {"at": "2026-10-11T06:58:59+09:00", "result": "ok", "key": "chiba-122297", "label": "千葉県袖ケ浦市"}
 {"at": "2026-10-11T06:58:59+09:00", "result": "ok", "key": "chiba-122301", "label": "千葉県八街市"}
 {"at": "2026-10-11T06:58:59+09:00", "result": "ok", "key": "chiba-122319", "label": "千葉県印西市"}
+{"at": "2026-10-12T07:13:41+09:00", "result": "fail", "key": "aomori-024261", "label": "青森県佐井村", "reason": "公式サイトのトップに市町村名が出ない", "failures": 3}
+{"at": "2026-10-12T07:13:41+09:00", "result": "reselect", "key": "aomori-024261", "source_id": "aomori-024261", "name": "青森県佐井村", "old_official": "www.vill.sai.lg.jp", "new_official": "www.vill.sai.lg.jp", "old_bank": "https://www.vill.sai.lg.jp/", "new_bank": "https://www.vill.sai.lg.jp/", "reason": "3 晩続けて確かめられなかった（公式サイトのトップに市町村名が出ない）"}
+{"at": "2026-10-12T07:13:56+09:00", "result": "fail", "key": "aomori-024503", "label": "青森県新郷村", "reason": "空き家バンクのページを開けない（HTTP 404）", "failures": 3}
+{"at": "2026-10-12T07:13:56+09:00", "result": "reselect", "key": "aomori-024503", "source_id": "aomori-024503", "name": "青森県新郷村", "old_official": "www.vill.shingo.aomori.jp", "new_official": "www.vill.shingo.aomori.jp", "old_bank": "https://www.vill.shingo.aomori.jp/news/post-31387/", "new_bank": "https://www.vill.shingo.aomori.jp/live/touroku/page-23698/", "reason": "3 晩続けて確かめられなかった（空き家バンクのページを開けない（HTTP 404））"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-122327", "label": "千葉県白井市"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-122335", "label": "千葉県富里市"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-122343", "label": "千葉県南房総市"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-122351", "label": "千葉県匝瑳市"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-122360", "label": "千葉県香取市"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-122378", "label": "千葉県山武市"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-122386", "label": "千葉県いすみ市"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-122394", "label": "千葉県大網白里市"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-123293", "label": "千葉県栄町"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-123421", "label": "千葉県神崎町"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-123471", "label": "千葉県多古町"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-123498", "label": "千葉県東庄町"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-124036", "label": "千葉県九十九里町"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-124095", "label": "千葉県芝山町"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-124109", "label": "千葉県横芝光町"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-124214", "label": "千葉県一宮町"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-124222", "label": "千葉県睦沢町"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-124231", "label": "千葉県長生村"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-124249", "label": "千葉県白子町"}
+{"at": "2026-10-12T07:15:03+09:00", "result": "ok", "key": "chiba-124265", "label": "千葉県長柄町"}

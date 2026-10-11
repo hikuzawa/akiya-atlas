@@ -3,7 +3,7 @@
   "command": "recheck",
   "errors": [],
   "extraction_metrics": null,
-  "finished_at": "2026-10-10T21:58:59Z",
+  "finished_at": "2026-10-11T22:15:03Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -11,9 +11,11 @@
     "output_tokens": 0
   },
   "notes": [
-    "運営主体の確かめ直し: 22 件（成り立った 20・成り立たなかった 2・robots.txt で見送り 0・通信できない 0・選び直し 0）",
-    "青森県佐井村: 成り立たない（2 晩目）: 公式サイトのトップに市町村名が出ない",
-    "青森県新郷村: 成り立たない（2 晩目）: 空き家バンクのページを開けない（HTTP 404）"
+    "運営主体の確かめ直し: 22 件（成り立った 20・成り立たなかった 2・robots.txt で見送り 0・通信できない 0・選び直し 2）",
+    "青森県佐井村: 成り立たない（3 晩目）: 公式サイトのトップに市町村名が出ない",
+    "青森県佐井村: 選び直した（公式 www.vill.sai.lg.jp → www.vill.sai.lg.jp、空き家バンク https://www.vill.sai.lg.jp/ → https://www.vill.sai.lg.jp/）",
+    "青森県新郷村: 成り立たない（3 晩目）: 空き家バンクのページを開けない（HTTP 404）",
+    "青森県新郷村: 選び直した（公式 www.vill.shingo.aomori.jp → www.vill.shingo.aomori.jp、空き家バンク https://www.vill.shingo.aomori.jp/news/post-31387/ → https://www.vill.shingo.aomori.jp/live/touroku/page-23698/）"
   ],
   "service": "akiya-atlas",
   "stages": {
@@ -21,11 +23,11 @@
       "checked": 22,
       "fail": 2,
       "ok": 20,
-      "requests": 78,
-      "reselected": 0,
+      "requests": 102,
+      "reselected": 2,
       "skip": 0,
       "unreachable": 0
     }
   },
-  "started_at": "2026-10-10T21:58:29Z"
+  "started_at": "2026-10-11T22:13:08Z"
 }

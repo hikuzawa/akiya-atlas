@@ -875,9 +875,9 @@ sources:
     map_query: 青森県佐井村
     bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
-    quote: 公式ドメイン www.vill.sai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
-    url: https://www.vill.sai.lg.jp/
-    checked_on: '2026-09-11'
+    quote: 青森県 市町村ホームページに掲載された公式サイト（www.vill.sai.lg.jp）
+    url: https://www.pref.aomori.lg.jp/soshiki/zaimu/shichoson/shichoson.html
+    checked_on: '2026-10-12'
 - id: aomori-024414
   name: 三戸町空き家バンク
   operator: 三戸町
@@ -1025,7 +1025,7 @@ sources:
     prefecture: 青森県
     prefecture_slug: aomori
     slug: '024503'
-    bank_url: https://www.vill.shingo.aomori.jp/news/post-31387/
+    bank_url: https://www.vill.shingo.aomori.jp/live/touroku/page-23698/
     bank_status: info
     extract_pending: false
     map_query: 青森県新郷村
@@ -1033,4 +1033,9 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.shingo.aomori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.shingo.aomori.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
+  external_links:
+  - label: https://www.akiya-athome.jp/
+    url: https://shingo-v02450.akiya-athome.jp/
+  - label: https://www.homes.co.jp/akiyabank/
+    url: https://www.homes.co.jp/akiyabank/

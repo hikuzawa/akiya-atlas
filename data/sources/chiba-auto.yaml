@@ -792,7 +792,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.shiroi.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.shiroi.chiba.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
 - id: chiba-122335
   name: 富里市空き家バンク
   operator: 富里市
@@ -813,7 +813,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tomisato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tomisato.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
   pages:
   - url: https://www.city.tomisato.lg.jp/0000017057.html
     kind: subsidy
@@ -849,7 +849,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.minamiboso.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.minamiboso.chiba.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
   pages:
   - url: https://www.city.minamiboso.chiba.jp/0000020142.html
     kind: subsidy
@@ -875,7 +875,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sosa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.sosa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
   pages:
   - url: https://www.city.sosa.lg.jp/page/page000263.html
     kind: listing_index
@@ -904,7 +904,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.katori.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.katori.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
   pages:
   - url: https://www.city.katori.lg.jp/living/anzen_anshin/20190529130743844.html
     kind: subsidy
@@ -933,7 +933,7 @@ sources:
   operator_evidence:
     quote: 千葉県 市町村一覧に掲載された公式サイト（www.city.sammu.lg.jp）
     url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
   pages:
   - url: https://www.city.sammu.lg.jp/kurashi/jyutaku/akiya/page008129.html
     kind: subsidy
@@ -966,7 +966,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.isumi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.isumi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
 - id: chiba-122394
   name: 大網白里市空き家バンク
   operator: 大網白里市
@@ -987,7 +987,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.oamishirasato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.oamishirasato.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
   pages:
   - url: https://www.city.oamishirasato.lg.jp/0000014470.html
     kind: subsidy
@@ -1046,7 +1046,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.sakae.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.sakae.chiba.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
   pages:
   - url: https://www.town.sakae.chiba.jp/kurashi/seikatsukankyo/page008273.html
     kind: subsidy
@@ -1079,7 +1079,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kozaki.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kozaki.chiba.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
 - id: chiba-123471
   name: 多古町空き家バンク
   operator: 多古町
@@ -1100,7 +1100,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tako.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.tako.chiba.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
   pages:
   - url: https://www.town.tako.chiba.jp/docs/2026020300010/
     kind: subsidy
@@ -1126,7 +1126,7 @@ sources:
   operator_evidence:
     quote: 千葉県 市町村一覧に掲載された公式サイト（www.town.tohnosho.chiba.jp）
     url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
   pages:
   - url: https://www.town.tohnosho.chiba.jp/cgi-bin/recruit.php/1/list?page_no=73
     kind: listing_index
@@ -1165,7 +1165,7 @@ sources:
   operator_evidence:
     quote: 千葉県 市町村一覧に掲載された公式サイト（www.town.kujukuri.chiba.jp）
     url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
 - id: chiba-124095
   name: 芝山町空き家バンク
   operator: 芝山町
@@ -1186,7 +1186,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shibayama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.shibayama.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
   pages:
   - url: https://www.town.shibayama.lg.jp/0000003385.html
     kind: subsidy
@@ -1213,7 +1213,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yokoshibahikari.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yokoshibahikari.chiba.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
 - id: chiba-124214
   name: 一宮町空き家バンク
   operator: 一宮町
@@ -1234,7 +1234,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ichinomiya.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ichinomiya.chiba.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
 - id: chiba-124222
   name: 睦沢町空き家バンク
   operator: 睦沢町
@@ -1254,7 +1254,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.mutsuzawa.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.mutsuzawa.chiba.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
   pages:
   - url: https://www.town.mutsuzawa.chiba.jp/akiya
     kind: listing_index
@@ -1284,7 +1284,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.chosei.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.chosei.chiba.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
   pages:
   - url: https://www.vill.chosei.chiba.jp/0000001054.html
     kind: listing_detail
@@ -1314,7 +1314,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shirako.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.shirako.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
   pages:
   - url: http://www.town.shirako.lg.jp/0000002357.html
     kind: listing_detail
@@ -1346,7 +1346,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nagara.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nagara.chiba.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-12'
   pages:
   - url: https://www.town.nagara.chiba.jp/soshiki/2/1628.html
     kind: listing_index

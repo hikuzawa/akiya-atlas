@@ -982,14 +982,17 @@
     },
     {
       "alternatives": [],
+      "bank_status": "none",
       "bank_url": "https://www.vill.sai.lg.jp/",
       "code": "024261",
       "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
-      "evidence_quote": "公式ドメイン www.vill.sai.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
-      "evidence_url": "https://www.vill.sai.lg.jp/",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-10-12",
+      "evidence_quote": "青森県 市町村ホームページに掲載された公式サイト（www.vill.sai.lg.jp）",
+      "evidence_url": "https://www.pref.aomori.lg.jp/soshiki/zaimu/shichoson/shichoson.html",
       "external_links": [],
+      "extract_gap": false,
       "listing_rows": null,
       "listing_score": null,
       "name": "佐井村",
@@ -1002,7 +1005,8 @@
       "prefecture": "青森県",
       "prefecture_slug": "aomori",
       "proposed_action": "承認",
-      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],
@@ -1146,16 +1150,28 @@
     },
     {
       "alternatives": [
-        "https://www.vill.shingo.aomori.jp/live/touroku/page-23698/"
+        "https://www.vill.shingo.aomori.jp/live/touroku/page-23698/page-23912/"
       ],
-      "bank_url": "https://www.vill.shingo.aomori.jp/news/post-31387/",
+      "bank_status": "info",
+      "bank_url": "https://www.vill.shingo.aomori.jp/live/touroku/page-23698/",
       "code": "024503",
       "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-10-12",
       "evidence_quote": "公式ドメイン www.vill.shingo.aomori.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.vill.shingo.aomori.jp/",
-      "external_links": [],
+      "external_links": [
+        {
+          "label": "https://www.akiya-athome.jp/",
+          "url": "https://shingo-v02450.akiya-athome.jp/"
+        },
+        {
+          "label": "https://www.homes.co.jp/akiyabank/",
+          "url": "https://www.homes.co.jp/akiyabank/"
+        }
+      ],
+      "extract_gap": false,
       "listing_rows": 0,
       "listing_score": 0.0,
       "name": "新郷村",
@@ -1168,7 +1184,8 @@
       "prefecture": "青森県",
       "prefecture_slug": "aomori",
       "proposed_action": "承認",
-      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": []
     }
   ]
 }
