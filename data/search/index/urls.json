@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-11T08:48:37.624449+09:00",
+  "checked_at": "2026-10-12T08:58:04.555943+09:00",
   "urls": {
     "https://akiya-atlas.com/": {
       "verdict": "PASS",
@@ -41457,6 +41457,86 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "checked_on": "2026-10-11"
     },
+    "https://akiya-atlas.com/saga/414018/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T07:07:43Z",
+      "google_canonical": "https://akiya-atlas.com/saga/414018/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saga/414239/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-26T00:18:34Z",
+      "google_canonical": "https://akiya-atlas.com/saga/414239/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saga/414247/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T00:11:29Z",
+      "google_canonical": "https://akiya-atlas.com/saga/414247/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saga/414247/15/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saga/414247/24/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T13:40:56Z",
+      "google_canonical": "https://akiya-atlas.com/saga/414247/24/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saga/414247/31/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saga/414247/34/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T03:38:36Z",
+      "google_canonical": "https://akiya-atlas.com/saga/414247/34/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saga/414247/6/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T21:17:35Z",
+      "google_canonical": "https://akiya-atlas.com/saga/414247/6/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saga/414255/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T18:46:53Z",
+      "google_canonical": "https://akiya-atlas.com/saga/414255/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saga/414417/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-24T15:36:54Z",
+      "google_canonical": "https://akiya-atlas.com/saga/414417/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
     "https://akiya-atlas.com/saitama/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
@@ -41464,6 +41544,854 @@
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "checked_on": "2026-09-14"
+    },
+    "https://akiya-atlas.com/saitama/111007/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112011/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T08:01:05Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112011/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112020/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T22:35:47Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112020/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112038/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T18:14:07Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112038/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112062/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T18:05:36Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112062/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112071/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T10:23:08Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112071/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112089/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T02:33:31Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112089/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112097/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T23:50:20Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112097/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112101/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T01:18:22Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112101/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112119/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-15T10:32:00Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112119/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112127/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T14:29:51Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112127/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112143/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-22T09:22:19Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112143/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112151/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T02:56:34Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112151/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112160/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112178/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T06:17:11Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112178/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112186/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112194/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-26T09:01:36Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112194/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112216/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T11:13:55Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112216/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112224/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T02:51:23Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112224/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112232/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T23:58:27Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112232/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112241/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T18:29:08Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112241/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112259/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T15:20:13Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112259/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112275/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T14:43:28Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112275/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112283/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112291/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T14:21:27Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112291/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112305/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T23:49:41Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112305/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112313/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-15T12:09:36Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112313/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112321/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-01T13:40:51Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112321/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112330/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-04T13:44:55Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112330/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112348/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T13:15:11Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112348/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112356/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112372/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T07:01:37Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112372/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112381/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112399/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112402/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112411/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-15T10:34:05Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112411/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112429/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T21:18:43Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112429/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112429/30-03fb/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112437/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T22:35:19Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112437/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112453/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T14:33:28Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112453/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/112461/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T19:31:32Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/112461/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113018/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T21:39:30Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113018/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113247/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T06:24:45Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113247/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113263/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-29T19:53:48Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113263/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113263/r7-1-ebc3/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-01T07:09:29Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113263/r7-1-ebc3/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113263/r7-1/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113263/r8-1-ad6b/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T03:15:22Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113263/r8-1-ad6b/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113263/r8-1/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113263/r8-10-d175/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-01T07:17:39Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113263/r8-10-d175/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113263/r8-10/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T23:34:08Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113263/r8-10/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113263/r8-11/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T01:44:35Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113263/r8-11/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113263/r8-13-3b58/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-01T05:54:00Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113263/r8-13-3b58/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113263/r8-2-2438/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-01T06:33:46Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113263/r8-2-2438/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113263/r8-2/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T06:31:10Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113263/r8-2/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113263/r8-4-3073/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-01T04:29:24Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113263/r8-4-3073/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113263/r8-4/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113263/r8-6-4b23/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-01T05:46:09Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113263/r8-6-4b23/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113263/r8-6/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T15:37:26Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113263/r8-6/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113263/r8-8-0fb4/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-01T03:42:59Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113263/r8-8-0fb4/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113263/r8-8/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-14T02:34:55Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113263/r8-8/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113263/r8-9-c76a/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-01T06:46:57Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113263/r8-9-c76a/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113263/r8-9/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-14T02:42:56Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113263/r8-9/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113271/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113271/r4-5/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113417/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-14T04:39:27Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113417/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113425/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113433/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T05:44:28Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113433/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113468/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T21:59:20Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113468/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113476/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T00:27:31Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113476/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113484/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T10:57:25Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113484/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113492/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T02:54:36Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113492/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113492/110/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T21:00:34Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113492/110/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113492/126/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113492/127/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T17:42:17Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113492/127/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113492/128/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113492/130/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113492/70/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113611/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T10:43:35Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113611/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113620/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T16:47:35Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113620/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113638/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T14:52:48Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113638/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113654/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T21:20:29Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113654/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113654/113-9bc2/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113654/114-4b05/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T08:45:25Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113654/114-4b05/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113654/121-y-3ca1/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113654/129-y-c0c3/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113654/13-6-065a/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T13:14:56Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113654/13-6-065a/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113654/145-y-f450/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113654/212-f90e/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113654/214-b1a5/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T14:36:32Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113654/214-b1a5/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113654/22-3-cb52/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:53:40Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113654/22-3-cb52/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113654/34-k-9844/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T06:29:12Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113654/34-k-9844/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113654/39-5-7cbb/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113654/50-8d26/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113654/91-a498/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113654/93-95a3/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T14:52:40Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113654/93-95a3/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113654/97-ada1/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113697/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T22:47:22Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113697/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113816/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T15:16:02Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113816/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113832/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T14:26:29Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113832/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113859/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T23:13:27Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/113859/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113859/000/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/113859/001/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/114081/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-26T06:14:09Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/114081/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/114421/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T15:14:51Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/114421/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/114642/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T09:16:28Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/114642/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/saitama/114651/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T08:31:34Z",
+      "google_canonical": "https://akiya-atlas.com/saitama/114651/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
     },
     "https://akiya-atlas.com/shiga/": {
       "verdict": "NEUTRAL",
@@ -41473,6 +42401,318 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "checked_on": "2026-09-14"
     },
+    "https://akiya-atlas.com/shiga/252018/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-06T23:12:40Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/252018/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/252026/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/252034/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/252042/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T00:24:23Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/252042/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/252069/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T01:48:37Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/252069/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/252077/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/252085/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T18:05:47Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/252085/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/252093/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T07:01:39Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/252093/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/252107/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T19:55:28Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/252107/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/252115/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/252123/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T18:00:52Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/252123/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/252131/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T11:52:44Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/252131/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/252140/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T08:54:54Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/252140/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/253839/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T10:56:24Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/253839/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/253839/155/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/253839/158/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/253839/162/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/253839/164/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/253839/165/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/253839/167/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T15:31:15Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/253839/167/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/253839/168/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/253839/176/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/253839/180/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T04:17:54Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/253839/180/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/253839/182/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/253839/184/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T18:40:01Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/253839/184/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/253839/186/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/253839/187/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T00:19:55Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/253839/187/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/253839/188/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T16:25:55Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/253839/188/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/253839/189/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T17:49:34Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/253839/189/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/253847/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/254258/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T08:50:45Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/254258/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/254258/028/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T08:44:29Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/254258/028/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/254258/050/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/254258/051/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T14:01:45Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/254258/051/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/254258/054/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/254258/061/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/254410/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T13:14:28Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/254410/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/254428/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T17:17:58Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/254428/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shiga/254436/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T16:34:28Z",
+      "google_canonical": "https://akiya-atlas.com/shiga/254436/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
     "https://akiya-atlas.com/shimane/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
@@ -41480,6 +42720,358 @@
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "checked_on": "2026-09-14"
+    },
+    "https://akiya-atlas.com/shimane/322016/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T01:26:54Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/322016/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322024/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T21:43:59Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/322024/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322032/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T03:25:09Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/322032/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322032/1-142/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-26T03:13:14Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/322032/1-142/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322032/1-168/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322032/1-175/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T04:25:13Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/322032/1-175/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322032/1-177/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322032/1-178/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-19T07:07:01Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/322032/1-178/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322032/1-179/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T04:01:50Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/322032/1-179/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322032/1-180/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-01T05:06:39Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/322032/1-180/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322032/2-088/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-26T05:10:09Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/322032/2-088/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322032/2-089/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T12:47:46Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/322032/2-089/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322032/2-090/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-26T03:47:46Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/322032/2-090/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322032/3-033/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322032/50-005/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T06:01:00Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/322032/50-005/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322032/6-052/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T18:23:39Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/322032/6-052/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322032/7-036/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322032/7-037/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-27T06:56:35Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/322032/7-037/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322032/70-008/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322041/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-27T05:26:30Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/322041/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322059/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322067/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-14T01:05:32Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/322067/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322075/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322075/341/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322075/391/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322075/399/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322075/485/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T21:13:28Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/322075/485/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/322091/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T05:08:53Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/322091/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/323438/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T06:44:55Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/323438/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/323861/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-15T11:52:04Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/323861/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/324418/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T21:33:57Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/324418/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/324485/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T18:52:39Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/324485/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/324493/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T16:41:46Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/324493/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/324493/10-5492/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T17:33:44Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/324493/10-5492/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/324493/101-abd8/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/324493/102-292f/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/324493/105-db29/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:12:14Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/324493/105-db29/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/324493/11-d68d/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/324493/111-6474/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T14:42:05Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/324493/111-6474/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/324493/122-76dd/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T13:18:46Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/324493/122-76dd/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/324493/133-0a67/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T00:27:15Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/324493/133-0a67/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/324493/1422-4528/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/324493/156-c744/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:22:27Z",
+      "google_canonical": "https://akiya-atlas.com/shimane/324493/156-c744/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-12"
+    },
+    "https://akiya-atlas.com/shimane/324493/158-2157/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-12"
     },
     "https://akiya-atlas.com/shizuoka/": {
       "verdict": "NEUTRAL",
