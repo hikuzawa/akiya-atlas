@@ -82,7 +82,10 @@
     "https://www.yoron.jp/kiji0039193/index.html: HTTP 404",
     "https://www.vill.sagara.lg.jp/q/aview/201/333.html: HTTP 404",
     "https://www.city.nabari.lg.jp/s043/030/080/160/20260721140347.html: HTTP 404",
-    "https://www.city.kumano.lg.jp/news/detail.html?content=834: HTTP 404",
+    "https://www.city.kumano.lg.jp/news/detail.html?content=834: robots.txt 503: 今回は巡回しない",
+    "https://www.city.kumano.lg.jp/life/?content=2824: robots.txt 503: 今回は巡回しない",
+    "https://www.city.kumano.lg.jp/life/?content=555: robots.txt 503: 今回は巡回しない",
+    "https://www.city.kumano.lg.jp/prevention/?content=1658: robots.txt 503: 今回は巡回しない",
     "https://www.hyugacity.jp/display.php?cont=240527131708: HTTP 404",
     "https://www.town.iijima.lg.jp/soshikiichiran/kensetsusuidoka/tosikeikakukakari/sumai/akiya/2922.html: HTTP 404",
     "https://www.town.iijima.lg.jp/soshikiichiran/kikakuseisakuka/kikakuseisakukajinkoutaisakuijyuteijyusuisinnkakari/settlement/5116.html: HTTP 404",
@@ -99,7 +102,6 @@
     "https://www.town.tsuwano.lg.jp/www/contents/1782190745130/index.html: HTTP 404",
     "https://www.town.yoshika.lg.jp/kurashi/josei/saiseikanou/y_solar.html: HTTP 404",
     "https://www.town.yoshika.lg.jp/kurashi/josei/saiseikanou/y_wbiomass.html: HTTP 404",
-    "https://www.city.ohtawara.tochigi.jp/docs/2013082767417/: ConnectTimeout: timed out",
     "https://www.town.minami.lg.jp/docs/4937966.html: HTTP 404",
     "https://www.city.hino.lg.jp/kurashi/annzen/1030555.html: HTTP 404",
     "http://www.town.yura.wakayama.jp/docs/2021081200033/: HTTP 404",
@@ -108,7 +110,7 @@
     "https://www.city.hagi.lg.jp/support_006/: HTTP 404"
   ],
   "extraction_metrics": null,
-  "finished_at": "2026-10-13T00:56:38Z",
+  "finished_at": "2026-10-13T22:59:23Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -121,17 +123,17 @@
   "service": "akiya-atlas",
   "stages": {
     "crawl": {
-      "changed": 36,
-      "errors": 104,
-      "fetched": 613,
-      "not_modified": 192,
-      "requests": 1244,
+      "changed": 50,
+      "errors": 106,
+      "fetched": 428,
+      "not_modified": 124,
+      "requests": 889,
       "skipped_link_only": 806,
-      "skipped_not_due": 612,
+      "skipped_not_due": 705,
       "stale_cache": 3,
-      "unchanged": 769,
+      "unchanged": 502,
       "workers": 8
     }
   },
-  "started_at": "2026-10-13T00:49:13Z"
+  "started_at": "2026-10-13T22:54:10Z"
 }

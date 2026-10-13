@@ -192,7 +192,7 @@
   "checked_on": "2026-10-07"
  },
  "akita-052132": {
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-14",
   "waiting_reason": "公式サイトに通信できない（HTTP 403）",
   "waiting_since": "2026-10-07"
  },
@@ -568,6 +568,63 @@
  "ehime-384224": {
   "checked_on": "2026-10-13"
  },
+ "ehime-384429": {
+  "checked_on": "2026-10-14"
+ },
+ "ehime-384844": {
+  "checked_on": "2026-10-14"
+ },
+ "ehime-384887": {
+  "checked_on": "2026-10-14"
+ },
+ "ehime-385069": {
+  "checked_on": "2026-10-14"
+ },
+ "fukui-182010": {
+  "checked_on": "2026-10-14"
+ },
+ "fukui-182028": {
+  "checked_on": "2026-10-14"
+ },
+ "fukui-182044": {
+  "checked_on": "2026-10-14"
+ },
+ "fukui-182052": {
+  "checked_on": "2026-10-14"
+ },
+ "fukui-182061": {
+  "checked_on": "2026-10-14"
+ },
+ "fukui-182079": {
+  "checked_on": "2026-10-14"
+ },
+ "fukui-182087": {
+  "checked_on": "2026-10-14"
+ },
+ "fukui-182095": {
+  "checked_on": "2026-10-14"
+ },
+ "fukui-183229": {
+  "checked_on": "2026-10-14"
+ },
+ "fukui-183822": {
+  "checked_on": "2026-10-14"
+ },
+ "fukui-184047": {
+  "checked_on": "2026-10-14"
+ },
+ "fukui-184233": {
+  "checked_on": "2026-10-14"
+ },
+ "fukui-184420": {
+  "failed_since": "2026-10-14",
+  "failures": 1,
+  "last_tried": "2026-10-14",
+  "reason": "空き家バンクのページを開けない（HTTP 404）"
+ },
+ "fukui-184811": {
+  "checked_on": "2026-10-14"
+ },
  "nagano-203076": {
   "last_tried": "2026-10-13",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
@@ -613,7 +670,7 @@
   "checked_on": "2026-09-30"
  },
  "nagano-204048": {
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-14",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-09-30"
  },

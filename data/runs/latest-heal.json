@@ -3,26 +3,22 @@
   "command": "heal",
   "errors": [],
   "extraction_metrics": null,
-  "finished_at": "2026-10-13T00:59:19Z",
+  "finished_at": "2026-10-13T22:59:41Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
     "input_tokens": 0,
     "output_tokens": 0
   },
-  "notes": [
-    "千葉県酒々井町: ページ自身が掲載なしと書いている。そのまま（次の点検は 7 日後）",
-    "兵庫県稲美町: ページ自身が掲載なしと書いている。そのまま（次の点検は 7 日後）",
-    "神奈川県逗子市: ページ自身が掲載なしと書いている。そのまま（次の点検は 7 日後）"
-  ],
+  "notes": [],
   "service": "akiya-atlas",
   "stages": {
     "heal": {
-      "checked": 3,
+      "checked": 0,
       "downgraded": 0,
-      "requests": 40,
+      "requests": 0,
       "swapped": 0
     }
   },
-  "started_at": "2026-10-13T00:57:01Z"
+  "started_at": "2026-10-13T22:59:38Z"
 }
