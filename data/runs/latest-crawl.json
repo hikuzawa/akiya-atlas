@@ -80,7 +80,6 @@
     "https://www.town.ibaraki-kawachi.lg.jp/page/page002651.html: robots.txt 202: 今回は巡回しない",
     "https://www.town.ibaraki-kawachi.lg.jp/page/page002668.html: robots.txt 202: 今回は巡回しない",
     "https://www.yoron.jp/kiji0039193/index.html: HTTP 404",
-    "https://www.city.uto.lg.jp/article/view/1605/14216.html: HTTP 404",
     "https://www.vill.sagara.lg.jp/q/aview/201/333.html: HTTP 404",
     "https://www.city.nabari.lg.jp/s043/030/080/160/20260721140347.html: HTTP 404",
     "https://www.city.kumano.lg.jp/news/detail.html?content=834: HTTP 404",
@@ -100,7 +99,7 @@
     "https://www.town.tsuwano.lg.jp/www/contents/1782190745130/index.html: HTTP 404",
     "https://www.town.yoshika.lg.jp/kurashi/josei/saiseikanou/y_solar.html: HTTP 404",
     "https://www.town.yoshika.lg.jp/kurashi/josei/saiseikanou/y_wbiomass.html: HTTP 404",
-    "https://www.city.ohtawara.tochigi.jp/docs/2013082767417/: ConnectError: [Errno 111] Connection refused",
+    "https://www.city.ohtawara.tochigi.jp/docs/2013082767417/: ConnectTimeout: timed out",
     "https://www.town.minami.lg.jp/docs/4937966.html: HTTP 404",
     "https://www.city.hino.lg.jp/kurashi/annzen/1030555.html: HTTP 404",
     "http://www.town.yura.wakayama.jp/docs/2021081200033/: HTTP 404",
@@ -109,7 +108,7 @@
     "https://www.city.hagi.lg.jp/support_006/: HTTP 404"
   ],
   "extraction_metrics": null,
-  "finished_at": "2026-10-11T22:12:39Z",
+  "finished_at": "2026-10-13T00:56:38Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -122,17 +121,17 @@
   "service": "akiya-atlas",
   "stages": {
     "crawl": {
-      "changed": 21,
-      "errors": 105,
-      "fetched": 467,
-      "not_modified": 161,
-      "requests": 1002,
+      "changed": 36,
+      "errors": 104,
+      "fetched": 613,
+      "not_modified": 192,
+      "requests": 1244,
       "skipped_link_only": 806,
-      "skipped_not_due": 672,
+      "skipped_not_due": 612,
       "stale_cache": 3,
-      "unchanged": 607,
+      "unchanged": 769,
       "workers": 8
     }
   },
-  "started_at": "2026-10-11T22:06:44Z"
+  "started_at": "2026-10-13T00:49:13Z"
 }

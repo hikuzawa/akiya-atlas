@@ -1410,7 +1410,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.otaki.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.otaki.chiba.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-13'
 - id: chiba-124435
   name: 御宿町空き家バンク
   operator: 御宿町
@@ -1431,7 +1431,7 @@ sources:
   operator_evidence:
     quote: 千葉県 市町村一覧に掲載された公式サイト（www.town.onjuku.chiba.jp）
     url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-13'
   pages:
   - url: https://www.town.onjuku.chiba.jp/sub1/7/75.html
     kind: subsidy
@@ -1460,7 +1460,7 @@ sources:
   operator_evidence:
     quote: 千葉県 市町村一覧に掲載された公式サイト（www.town.kyonan.chiba.jp）
     url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-13'
   pages:
   - url: https://www.town.kyonan.chiba.jp/soshiki/16/0010221.html
     kind: subsidy
