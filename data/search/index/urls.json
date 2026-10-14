@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-13T11:14:33.483329+09:00",
+  "checked_at": "2026-10-14T08:51:55.102943+09:00",
   "urls": {
     "https://akiya-atlas.com/": {
       "verdict": "PASS",
@@ -44521,6 +44521,14 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "checked_on": "2026-10-13"
     },
+    "https://akiya-atlas.com/shizuoka/222267/r5-4/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
     "https://akiya-atlas.com/shizuoka/222267/r5-7/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
@@ -44673,6 +44681,102 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "checked_on": "2026-10-13"
     },
+    "https://akiya-atlas.com/shizuoka/223018/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-02T13:00:04Z",
+      "google_canonical": "https://akiya-atlas.com/shizuoka/223018/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/shizuoka/223026/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-06T18:55:23Z",
+      "google_canonical": "https://akiya-atlas.com/shizuoka/223026/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/shizuoka/223042/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T04:47:49Z",
+      "google_canonical": "https://akiya-atlas.com/shizuoka/223042/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/shizuoka/223051/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T09:11:47Z",
+      "google_canonical": "https://akiya-atlas.com/shizuoka/223051/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/shizuoka/223069/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T17:15:03Z",
+      "google_canonical": "https://akiya-atlas.com/shizuoka/223069/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/shizuoka/223255/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T09:44:42Z",
+      "google_canonical": "https://akiya-atlas.com/shizuoka/223255/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/shizuoka/223417/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-28T09:37:39Z",
+      "google_canonical": "https://akiya-atlas.com/shizuoka/223417/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/shizuoka/223425/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-28T18:16:47Z",
+      "google_canonical": "https://akiya-atlas.com/shizuoka/223425/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/shizuoka/223441/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-23T12:34:43Z",
+      "google_canonical": "https://akiya-atlas.com/shizuoka/223441/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/shizuoka/224243/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-01T02:27:48Z",
+      "google_canonical": "https://akiya-atlas.com/shizuoka/224243/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/shizuoka/224294/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T07:08:23Z",
+      "google_canonical": "https://akiya-atlas.com/shizuoka/224294/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/shizuoka/224618/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:50:34Z",
+      "google_canonical": "https://akiya-atlas.com/shizuoka/224618/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
     "https://akiya-atlas.com/tochigi/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
@@ -44680,6 +44784,1502 @@
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "checked_on": "2026-09-14"
+    },
+    "https://akiya-atlas.com/tochigi/092011/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T00:04:12Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092011/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092029/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T05:44:36Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092029/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-17T10:31:08Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1026/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T06:06:35Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/1026/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1027/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T20:24:50Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/1027/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1081/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1102/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T15:02:44Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/1102/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1103/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T00:24:32Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/1103/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1104/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1105/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1106/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1109/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1110/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T07:40:50Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/1110/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1111/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1114/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T14:07:20Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/1114/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1115/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1117/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1118/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T01:21:23Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/1118/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1120/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T15:05:03Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/1120/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1121/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1123/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T19:47:23Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/1123/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1124/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1125/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1126/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1129/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T14:52:36Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/1129/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1130/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T03:40:34Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/1130/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1131/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1132/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T23:35:48Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/1132/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1133/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/1135/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-26T04:53:29Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/1135/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/741/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/767/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/841/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-26T05:25:05Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/841/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/943/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/971/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1026-d440/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1027-2fb7/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1081-f105/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T12:45:33Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/no-1081-f105/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1102-c03f/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1103-58b7/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1104-9f67/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1105-ed23/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1106-df97/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1109-c494/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1110-2c96/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T16:50:03Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/no-1110-2c96/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1111-aca3/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T17:54:24Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/no-1111-aca3/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1114-f8dc/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1115-ed42/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T18:29:41Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/no-1115-ed42/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1117-89b9/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T11:58:33Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/no-1117-89b9/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1118-3f1c/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1120-01a4/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1121-1d5b/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1123-d1f3/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1124-93d9/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1125-2073/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1126-297c/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T09:46:34Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/no-1126-297c/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1129-18aa/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T01:12:37Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/no-1129-18aa/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1130-7a41/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-24T08:13:43Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/no-1130-7a41/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1131-c0b1/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T02:39:39Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/no-1131-c0b1/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-1133-ae9d/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-741-d819/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-767-fbe1/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T14:38:27Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/no-767-fbe1/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-943-5c9c/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092037/no-971-402c/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T15:20:26Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092037/no-971-402c/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-24T09:42:43Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/3-1-0b1e/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/3-1-2021-8-17-81dd/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T17:36:52Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/3-1-2021-8-17-81dd/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/3-1-2021-8-17-86a9/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T05:26:06Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/3-1-2021-8-17-86a9/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/30-21-009c/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/30-21-2019-1-8-2ec8/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T05:01:42Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/30-21-2019-1-8-2ec8/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/30-21-2019-1-8-31f5/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/6-4-8c6d/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/6-4/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T18:16:55Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/6-4/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-10-31f0/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T17:49:36Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/7-10-31f0/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-10/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T21:38:10Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/7-10/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-14-44f1/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-14/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-15-613a/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T08:54:26Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/7-15-613a/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-15/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-16-2026-3-10-2e62/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-16-2026-3-10-9f4d/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T04:54:16Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/7-16-2026-3-10-9f4d/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-16-9e5f/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-02T18:00:04Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/7-16-9e5f/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-17-2026-2-5-2507/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T18:18:07Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/7-17-2026-2-5-2507/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-17-8bdb/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-18-2026-3-3-018f/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T04:54:20Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/7-18-2026-3-3-018f/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-18-2026-3-3-05f4/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:19:07Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/7-18-2026-3-3-05f4/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-18-343b/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T21:27:27Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/7-18-343b/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-19-2026-4-30-0e4f/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T23:07:52Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/7-19-2026-4-30-0e4f/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-19-2026-4-30-6633/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:12:15Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/7-19-2026-4-30-6633/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-19-4b1e/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-20-2026-7-1-2af9/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T23:52:45Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/7-20-2026-7-1-2af9/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-20-2026-7-1-acfc/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T03:09:53Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/7-20-2026-7-1-acfc/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-20-4599/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-6-2025-10-6-1e80/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T15:42:33Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/7-6-2025-10-6-1e80/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-6-2025-10-6-7bd6/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T05:08:45Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/7-6-2025-10-6-7bd6/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-6-b675/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-26T04:48:04Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/7-6-b675/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/7-7-2025-8-4-1a5c/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T07:56:52Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/7-7-2025-8-4-1a5c/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/8-1-2026-4-23-004c/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T03:53:43Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/8-1-2026-4-23-004c/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/8-1-2026-4-23-0ce5/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/8-1-610b/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/8-10-689d/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/8-10/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/8-11-6482/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/8-11/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-12T19:20:15Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/8-11/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/8-13-c1fd/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/8-13/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T01:51:51Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/8-13/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/8-14-33e8/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/8-14/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-15T14:28:19Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/8-14/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/8-3-8148/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/8-3/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-24T07:48:52Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/8-3/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/8-5-61cd/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:51:16Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/8-5-61cd/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/8-5/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/8-6-d33f/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/8-6/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:24:34Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/8-6/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092045/8-8-0dfa/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T22:45:05Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092045/8-8-0dfa/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092053/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T21:25:54Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092053/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092061/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T23:15:34Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092061/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092088/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-17T16:26:58Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092088/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092096/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T02:36:20Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092096/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092100/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-23T09:29:37Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092100/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092100/60-51aa/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092100/64-781c/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T06:28:27Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092100/64-781c/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092100/65-b941/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092118/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T22:35:09Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092118/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092134/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-14T01:56:10Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092134/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092142/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-29T04:49:12Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092142/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092151/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T20:16:05Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092151/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092151/r5-08/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T09:44:41Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092151/r5-08/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092151/r6-02/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092151/r6-04/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T21:44:21Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092151/r6-04/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092151/r6-05/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T15:59:11Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092151/r6-05/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092151/r6-09/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T22:45:20Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092151/r6-09/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092151/r6-10/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092151/tc4476384/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/092169/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-24T17:56:55Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/092169/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093017/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T08:17:42Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093017/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T19:43:04Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0177-d45b/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T05:22:37Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0177-d45b/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0177/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-04T12:55:22Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0177/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0182-a2cf/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T07:46:12Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0182-a2cf/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0182/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T04:47:18Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0182/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0186-fc1f/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T18:22:23Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0186-fc1f/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0186/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0188-b456/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T07:18:54Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0188-b456/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0188/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T05:10:30Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0188/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0189-abb4/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T07:39:27Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0189-abb4/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0189/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0192-6696/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T06:14:48Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0192-6696/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0192/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-26T06:43:07Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0192/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0193-0f60/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T07:32:34Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0193-0f60/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0193/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T04:20:56Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0193/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0195-7728/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-06T17:56:45Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0195-7728/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0195/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0196-95eb/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T14:35:31Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0196-95eb/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0196/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0197-348f/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T08:07:21Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0197-348f/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0197/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0200-6688/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T08:29:05Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0200-6688/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0200/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0201-c5f5/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T10:03:27Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0201-c5f5/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0201/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0203/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0204/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0208/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T03:44:29Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0208/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0210/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0211/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T15:42:39Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0211/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0212/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T04:48:27Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0212/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0213/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T01:06:45Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0213/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0214/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0215/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T23:38:36Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0215/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0217/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T09:52:23Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0217/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0218/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093424/0221/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T05:33:05Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093424/0221/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093432/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093441/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T15:13:19Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093441/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093459/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-17T13:43:10Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093459/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093611/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T07:49:16Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093611/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093611/s39/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-03T16:16:50Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093611/s39/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093611/s40/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093611/s42/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T11:00:46Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093611/s42/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093611/s43/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T17:34:23Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093611/s43/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093611/s45/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T17:53:39Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093611/s45/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093611/s46/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093611/s47/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093611/s48/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093611/s49/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-14"
+    },
+    "https://akiya-atlas.com/tochigi/093611/s50/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T15:19:08Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093611/s50/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-14"
     },
     "https://akiya-atlas.com/tokushima/": {
       "verdict": "NEUTRAL",
