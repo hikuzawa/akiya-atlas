@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-14T08:51:55.102943+09:00",
+  "checked_at": "2026-10-15T08:25:33.733893+09:00",
   "urls": {
     "https://akiya-atlas.com/": {
       "verdict": "PASS",
@@ -46281,6 +46281,110 @@
       "robots": "ALLOWED",
       "checked_on": "2026-10-14"
     },
+    "https://akiya-atlas.com/tochigi/093611/s51/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T15:08:57Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093611/s51/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tochigi/093645/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T21:20:05Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093645/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tochigi/093840/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T11:37:29Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093840/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tochigi/093840/006/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tochigi/093840/019/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tochigi/093840/024/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tochigi/093840/026/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T03:05:13Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093840/026/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tochigi/093840/027/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tochigi/093840/033/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T19:41:10Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093840/033/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tochigi/093840/034/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T00:27:32Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/093840/034/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tochigi/093866/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tochigi/094072/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T03:56:47Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/094072/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tochigi/094111/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T23:49:21Z",
+      "google_canonical": "https://akiya-atlas.com/tochigi/094111/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
     "https://akiya-atlas.com/tokushima/": {
       "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
@@ -46288,6 +46392,622 @@
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "checked_on": "2026-09-14"
+    },
+    "https://akiya-atlas.com/tokushima/362018/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:48:02Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362018/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362026/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-29T20:52:50Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362026/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362034/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T08:48:54Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362034/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362042/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T23:16:19Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362042/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362051/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T03:51:53Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362051/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T15:51:49Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362069/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/112/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/125/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/126/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/129/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T04:28:13Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362069/129/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/138/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/141/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T15:24:46Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362069/141/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/145/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/147/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T18:08:44Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362069/147/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/149/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T12:01:43Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362069/149/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/150/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/152/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T23:06:48Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362069/152/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/160/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T01:52:47Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362069/160/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/162/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/164/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T17:05:59Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362069/164/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/166/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/167/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/168/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T15:16:22Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362069/168/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/169/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/170/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-27T19:27:57Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362069/170/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/171/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/172/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-26T05:03:36Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362069/172/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/173/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-26T04:00:11Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362069/173/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/174/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-26T05:02:10Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362069/174/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362069/80/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362077/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T22:30:58Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362077/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/362085/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-14T01:14:03Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/362085/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363014/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-29T05:30:52Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363014/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363022/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T05:58:25Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363022/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363219/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T00:19:32Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363219/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363413/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T14:42:13Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363413/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363421/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T22:02:02Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363421/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363685/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-27T03:39:44Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363685/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363685/1-54/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363839/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T16:04:42Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363839/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363839/15/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363839/21/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T13:55:27Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363839/21/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363839/36/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363839/41/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T13:45:58Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363839/41/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363839/42/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363839/8/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T05:25:52Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363839/8/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363871/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T18:37:49Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363871/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363871/05-15/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-28T08:33:22Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363871/05-15/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363871/no-05-15-02a0/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T21:32:08Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363880/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/103/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/11/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/138/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/146/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T01:00:16Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363880/146/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/15/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/151/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T20:53:29Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363880/151/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/152/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T05:22:37Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363880/152/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/154/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T09:07:21Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363880/154/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/155/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T23:24:34Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363880/155/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/157/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/158/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/159/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T23:26:31Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363880/159/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/2/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/20/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T05:23:27Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363880/20/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/33/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/56/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/67/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T03:10:57Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363880/67/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/69/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/77/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T02:55:45Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/363880/77/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/363880/81/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/364011/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-26T07:46:40Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/364011/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/364029/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T02:43:50Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/364029/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/364037/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T19:53:07Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/364037/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/364045/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T17:29:34Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/364045/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/364053/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T05:16:36Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/364053/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/364681/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T17:49:36Z",
+      "google_canonical": "https://akiya-atlas.com/tokushima/364681/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokushima/364894/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
     },
     "https://akiya-atlas.com/tokyo/": {
       "verdict": "NEUTRAL",
@@ -46297,6 +47017,734 @@
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "checked_on": "2026-09-14"
     },
+    "https://akiya-atlas.com/tokyo/131016/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T00:57:32Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131016/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131024/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T00:10:38Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131024/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131032/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:08:24Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131032/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131041/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T15:48:39Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131041/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131059/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T23:27:36Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131059/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131067/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T21:25:05Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131067/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131075/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T08:48:28Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131075/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131083/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T04:44:45Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131083/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131091/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T17:49:35Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131091/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131105/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T07:14:35Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131105/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131113/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T02:16:09Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131113/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131121/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T15:54:15Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131121/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131130/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T10:30:33Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131130/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131148/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T19:16:19Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131148/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131156/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T02:31:15Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131156/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131164/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T20:11:26Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131164/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131172/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-03T11:39:44Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131172/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131181/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T15:19:39Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131181/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131199/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131202/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T15:51:48Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131202/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131211/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-12T17:54:53Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131211/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131229/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T15:09:48Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131229/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/131237/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:48:28Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/131237/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132012/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T18:24:48Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132012/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132021/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132039/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-15T12:00:49Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132039/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132047/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T10:24:21Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132047/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132055/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T03:42:10Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132055/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132055/29/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T22:06:29Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132055/29/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132055/31/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132055/32/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132055/33/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132063/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T03:37:19Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132063/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132071/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T09:17:35Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132071/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132080/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T01:06:23Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132080/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132098/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T03:34:53Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132098/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132101/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T04:02:51Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132101/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132110/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-03T13:41:47Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132110/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132128/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T12:47:11Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132128/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132136/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T19:08:57Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132136/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132144/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132152/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T15:14:44Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132152/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132187/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T15:17:30Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132187/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132195/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132209/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T15:49:24Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132209/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132217/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T21:14:27Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132217/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132225/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T19:52:14Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132225/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132233/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T20:33:49Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132233/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132241/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-28T18:45:23Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132241/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132250/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T06:00:16Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132250/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132276/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T02:38:28Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/132276/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132284/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/132292/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133035/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T08:28:45Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133035/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133051/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T12:56:17Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133051/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133078/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T14:45:43Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133078/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133078/16/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T20:45:38Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133078/16/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133078/17/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133078/18/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133078/31/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T06:13:49Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133078/31/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133078/32/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T01:17:37Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133078/32/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133078/38/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:40:03Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133078/38/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133078/39/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133078/41/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133086/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133086/104/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T02:50:58Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133086/104/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133086/109/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133086/121/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133086/122/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133086/123/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133086/125/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133086/126/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133086/129/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133086/17/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T12:47:23Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133086/17/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133086/50/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-28T04:23:12Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133086/50/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133086/52/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-28T05:20:52Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133086/52/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133086/61/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T19:03:53Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133086/61/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133086/65/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-05T14:27:18Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133086/65/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133086/68/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-28T05:01:38Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133086/68/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133086/79/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T19:13:00Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133086/79/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133086/89/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T18:58:36Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133086/89/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133086/99/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T17:29:58Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133086/99/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133612/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133621/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T18:52:33Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133621/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133639/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133647/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T22:16:51Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133647/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133817/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T05:38:17Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133817/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/133825/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T02:18:43Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/133825/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/134015/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T12:39:44Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/134015/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/134023/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-19T02:47:08Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/134023/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tokyo/134210/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T15:24:37Z",
+      "google_canonical": "https://akiya-atlas.com/tokyo/134210/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
     "https://akiya-atlas.com/tottori/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
@@ -46304,6 +47752,158 @@
       "google_canonical": "https://akiya-atlas.com/tottori/",
       "robots": "ALLOWED",
       "checked_on": "2026-09-14"
+    },
+    "https://akiya-atlas.com/tottori/312011/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-27T08:13:42Z",
+      "google_canonical": "https://akiya-atlas.com/tottori/312011/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tottori/312011/01-222b/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tottori/312011/08-3807/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-12T19:55:09Z",
+      "google_canonical": "https://akiya-atlas.com/tottori/312011/08-3807/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tottori/312011/09-d916/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T09:23:53Z",
+      "google_canonical": "https://akiya-atlas.com/tottori/312011/09-d916/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tottori/312011/12-27ca/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tottori/312011/13-4540/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T14:03:34Z",
+      "google_canonical": "https://akiya-atlas.com/tottori/312011/13-4540/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tottori/312011/43-54b1/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T19:14:43Z",
+      "google_canonical": "https://akiya-atlas.com/tottori/312011/43-54b1/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tottori/312011/61/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T04:01:45Z",
+      "google_canonical": "https://akiya-atlas.com/tottori/312011/61/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tottori/312011/63/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tottori/312011/64/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T06:33:57Z",
+      "google_canonical": "https://akiya-atlas.com/tottori/312011/64/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tottori/312011/66/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tottori/312029/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T23:23:28Z",
+      "google_canonical": "https://akiya-atlas.com/tottori/312029/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tottori/312037/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T22:27:36Z",
+      "google_canonical": "https://akiya-atlas.com/tottori/312037/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tottori/312037/119/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tottori/312037/182/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tottori/312037/216/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T16:07:13Z",
+      "google_canonical": "https://akiya-atlas.com/tottori/312037/216/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tottori/312037/261/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T02:10:28Z",
+      "google_canonical": "https://akiya-atlas.com/tottori/312037/261/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tottori/312037/273/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:00:04Z",
+      "google_canonical": "https://akiya-atlas.com/tottori/312037/273/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-15"
+    },
+    "https://akiya-atlas.com/tottori/312037/276/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-15"
     },
     "https://akiya-atlas.com/toyama/": {
       "verdict": "NEUTRAL",
