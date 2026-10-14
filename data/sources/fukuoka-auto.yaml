@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kitakyushu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kitakyushu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-15'
 - id: fukuoka-401307
   name: 福岡市空き家バンク
   operator: 福岡市
@@ -41,7 +41,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.fukuoka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.fukuoka.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-15'
   pages:
   - url: https://www.city.fukuoka.lg.jp/jutaku-toshi/jigyochosei/life/soudan/top_2_4_2.html
     kind: subsidy
@@ -72,7 +72,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.omuta.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.omuta.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-15'
 - id: fukuoka-402036
   name: 久留米市空き家バンク
   operator: 久留米市
@@ -93,7 +93,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kurume.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kurume.fukuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-15'
 - id: fukuoka-402044
   name: 直方市空き家バンク
   operator: 直方市
@@ -147,7 +147,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.iizuka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.iizuka.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-15'
   pages:
   - url: https://www.city.iizuka.lg.jp/soshiki/46/19902.html
     kind: subsidy
@@ -180,7 +180,7 @@ sources:
   operator_evidence:
     quote: 福岡県内市町村へのリンク集に掲載された公式サイト（www.joho.tagawa.fukuoka.jp）
     url: https://www.pref.fukuoka.lg.jp/contents/shichoson01.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-15'
 - id: fukuoka-402079
   name: 柳川市空き家バンク
   operator: 柳川市
@@ -201,7 +201,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yanagawa.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.yanagawa.fukuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-15'
   pages:
   - url: https://www.city.yanagawa.fukuoka.jp/kurashi/ijuteiju/shien/4224.html
     kind: subsidy
@@ -229,7 +229,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yame.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.yame.fukuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-15'
   pages:
   - url: https://www.city.yame.fukuoka.jp/kurashi/10755.html
     kind: listing_index
@@ -264,7 +264,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.chikugo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.chikugo.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-15'
   pages:
   - url: https://www.city.chikugo.lg.jp/kurashi/_2299/_13109/_27158.html
     kind: subsidy
@@ -293,7 +293,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.okawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.okawa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-15'
 - id: fukuoka-402133
   name: 行橋市空き家バンク
   operator: 行橋市
@@ -313,7 +313,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yukuhashi.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.yukuhashi.fukuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-15'
   pages:
   - url: https://www.city.yukuhashi.fukuoka.jp/site/akiya/1411.html
     kind: listing_index
@@ -353,7 +353,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.buzen.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.buzen.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-15'
   pages:
   - url: https://www.city.buzen.lg.jp/akiya/akiyajyoseikin.html
     kind: subsidy
@@ -419,7 +419,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ogori.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ogori.fukuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-15'
 - id: fukuoka-402176
   name: 筑紫野市空き家バンク
   operator: 筑紫野市
@@ -440,7 +440,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.chikushino.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.chikushino.fukuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-15'
 - id: fukuoka-402184
   name: 春日市空き家バンク
   operator: 春日市
@@ -461,7 +461,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kasuga.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kasuga.fukuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-15'
 - id: fukuoka-402192
   name: 大野城市空き家バンク
   operator: 大野城市
@@ -482,7 +482,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.onojo.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.onojo.fukuoka.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-15'
 - id: fukuoka-402206
   name: 宗像市空き家バンク
   operator: 宗像市
@@ -503,7 +503,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.munakata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.munakata.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-15'
   pages:
   - url: https://www.city.munakata.lg.jp/live/kiji0032276/index.html
     kind: subsidy
