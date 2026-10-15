@@ -102,13 +102,12 @@
     "https://www.town.yoshika.lg.jp/kurashi/josei/saiseikanou/y_wbiomass.html: HTTP 404",
     "https://www.town.minami.lg.jp/docs/4937966.html: HTTP 404",
     "https://www.city.hino.lg.jp/kurashi/annzen/1030555.html: HTTP 404",
-    "http://www.town.yura.wakayama.jp/docs/2021081200033/: HTTP 404",
     "https://www.town.shirataka.lg.jp/item/4849.htm: HTTP 404",
     "https://www.city.hagi.lg.jp/support_005/: HTTP 404",
     "https://www.city.hagi.lg.jp/support_006/: HTTP 404"
   ],
   "extraction_metrics": null,
-  "finished_at": "2026-10-14T21:52:54Z",
+  "finished_at": "2026-10-15T21:38:20Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -121,17 +120,17 @@
   "service": "akiya-atlas",
   "stages": {
     "crawl": {
-      "changed": 68,
-      "errors": 104,
-      "fetched": 428,
-      "not_modified": 109,
-      "requests": 870,
+      "changed": 81,
+      "errors": 103,
+      "fetched": 673,
+      "not_modified": 163,
+      "requests": 1286,
       "skipped_link_only": 806,
-      "skipped_not_due": 712,
+      "skipped_not_due": 598,
       "stale_cache": 3,
-      "unchanged": 469,
+      "unchanged": 755,
       "workers": 8
     }
   },
-  "started_at": "2026-10-14T21:47:46Z"
+  "started_at": "2026-10-15T21:30:56Z"
 }

@@ -1,0 +1,29 @@
+{
+  "ci": true,
+  "command": "recheck",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-10-15T21:39:02Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "運営主体の確かめ直し: 20 件（成り立った 17・成り立たなかった 0・robots.txt で見送り 3・通信できない 0・選び直し 0）"
+  ],
+  "service": "akiya-atlas",
+  "stages": {
+    "recheck": {
+      "checked": 20,
+      "fail": 0,
+      "ok": 17,
+      "requests": 56,
+      "reselected": 0,
+      "skip": 3,
+      "unreachable": 0
+    }
+  },
+  "started_at": "2026-10-15T21:38:40Z"
+}
