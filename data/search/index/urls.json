@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-17T08:00:47.378494+09:00",
+  "checked_at": "2026-10-18T07:38:35.739875+09:00",
   "urls": {
     "https://akiya-atlas.com/": {
       "verdict": "PASS",
@@ -51121,6 +51121,366 @@
       "robots": "ALLOWED",
       "checked_on": "2026-10-17"
     },
+    "https://akiya-atlas.com/wakayama/303810/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T20:21:11Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303810/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303828/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-16T12:33:04Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303828/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-26T11:28:58Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/10-7851/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-28T05:55:51Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/10-7851/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/10/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/11-d208/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T21:22:29Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/11-d208/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/11/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/12-5649/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-28T06:00:22Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/12-5649/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/12/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T14:23:15Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/12/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/15-5406/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-28T06:23:08Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/15-5406/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/15/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T04:01:45Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/15/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/18-52ef/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-04T10:20:56Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/18-52ef/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/18/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/22-8b9b/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-28T04:10:06Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/22-8b9b/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/22/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T01:57:26Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/22/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/29-40f1/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T10:10:40Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/29-40f1/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/29/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T06:14:43Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/29/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/30/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/33-3128/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T19:14:52Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/33-3128/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/33/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-01T02:09:13Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/33/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/34-bdb3/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T18:15:01Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/34-bdb3/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/34/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T18:06:03Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/34/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/35-0716/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T14:08:41Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/35-0716/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/35/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T23:45:56Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/35/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/36-a742/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T12:12:29Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/36-a742/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/36/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/37-833a/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T16:24:53Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/37-833a/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/37/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T09:03:32Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/37/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/41-ea98/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T05:08:22Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/41-ea98/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/41/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T01:01:06Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/41/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/42-909a/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T00:26:11Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/42-909a/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/42/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/43-4c81/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T22:09:47Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/43-4c81/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303836/43/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T02:51:44Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303836/43/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303909/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T19:02:45Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303909/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303917/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T12:19:49Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/303917/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/303925/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/304018/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T12:02:58Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/304018/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/304042/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-23T21:45:37Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/304042/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/304069/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T22:41:14Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/304069/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/304212/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T00:05:24Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/304212/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/304221/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T12:45:33Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/304221/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/304247/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T18:06:02Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/304247/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/304271/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T10:28:11Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/304271/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/wakayama/304280/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T22:23:08Z",
+      "google_canonical": "https://akiya-atlas.com/wakayama/304280/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
     "https://akiya-atlas.com/yamagata/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
@@ -51128,6 +51488,1246 @@
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
       "checked_on": "2026-09-14"
+    },
+    "https://akiya-atlas.com/yamagata/062014/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T06:15:34Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062014/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/02009-0971/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/02009-3f93/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T04:13:43Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062014/02009-3f93/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/06001-4c3c/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T01:06:28Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062014/06001-4c3c/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/06001-ec7f/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/06006-7e43/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/06006-d090/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/06008-5c7a/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/06013-00f9/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T02:23:24Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062014/06013-00f9/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/06013-bd5d/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/06019-4b6f/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T18:14:08Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062014/06019-4b6f/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/06019-fcdf/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07003-6332/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T19:41:10Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062014/07003-6332/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07003-a39b/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07005-81e5/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-12T01:57:12Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062014/07005-81e5/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07005-d12a/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07010-61b9/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T11:02:10Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062014/07010-61b9/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07010-a7e6/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T13:15:12Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062014/07010-a7e6/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07011-7d51/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T15:28:58Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062014/07011-7d51/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07011-fa22/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07014-432b/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07014-9ab2/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T04:44:34Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062014/07014-9ab2/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07017-b777/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-14T01:59:58Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062014/07017-b777/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07017-fb02/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07018-917b/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07018-e3aa/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07019-3f52/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07019-7164/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T04:58:30Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062014/07019-7164/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07021-35c8/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07021-f1f7/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T04:06:58Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062014/07021-f1f7/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07022-122e/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T19:28:21Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062014/07022-122e/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07022-409e/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07024-41db/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/07024-d907/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/08004-2f31/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T00:52:20Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062014/08004-2f31/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/08004-86a6/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/08005-6ab4/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/08005-a202/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/08006-49e8/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T14:25:38Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062014/08006-49e8/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/08006-b7c7/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/08007-9dad/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T12:06:05Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062014/08007-9dad/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062014/08007-f80c/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062022/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062031/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-29T04:58:16Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062031/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062049/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T06:35:19Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062049/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062057/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T02:28:20Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062057/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062065/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T23:35:47Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062065/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T15:55:50Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/108/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/114/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T01:44:55Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/114/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/120/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-02T14:15:04Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/120/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/125/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T03:33:19Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/125/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/134/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/135/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T13:33:15Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/135/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/139/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/141/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/146/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T02:12:48Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/146/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/150/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/155/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-14T06:28:47Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/155/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/158/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/163/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T13:59:38Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/163/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/164/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T19:03:34Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/164/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/165/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T08:32:15Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/165/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/166/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/167/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/168/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-14T06:32:45Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/168/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/172/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/173/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/175/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T14:48:32Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/175/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/176/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/178/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T18:32:41Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/178/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/179/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/180/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/181/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/182/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/183/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/186/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T01:50:51Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/186/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/187/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-14T01:46:33Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/187/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/188/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T23:22:02Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/188/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/189/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/190/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/191/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/192/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-29T05:18:47Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/192/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/193/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T06:44:52Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/193/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/194/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T20:12:18Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/194/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/195/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T12:15:21Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/195/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/196/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T12:28:46Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/196/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/197/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T06:33:44Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/197/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/198/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T22:22:05Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/198/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/30/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T23:58:28Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/30/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/34/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T01:37:03Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/34/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/36/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/47/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T23:47:36Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/47/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/50/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/55/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/57/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:30:24Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/57/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/59/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T15:36:22Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/59/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/61/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T01:15:40Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/61/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/62/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/63/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062073/89/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-12T16:26:45Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062073/89/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T15:20:24Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062081/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/a-36/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T14:20:49Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062081/a-36/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/a-50/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/a-65/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/a-67/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T20:48:01Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062081/a-67/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/a-68/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/a-73/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/a-75/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/a-76/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/a-77/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/a-80/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T15:08:51Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062081/a-80/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/a-83/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-27T08:50:27Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062081/a-83/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/a-85/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T23:13:31Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062081/a-85/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/a-86/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-01T05:02:42Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062081/a-86/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/b-25/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/b-37/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/b-42/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T06:51:41Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062081/b-42/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/b-44/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T13:58:54Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062081/b-44/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/b-45/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/b-47/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/b-48/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T03:11:03Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062081/b-48/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/b-51/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/b-52/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-29T05:22:44Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062081/b-52/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/b-55/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T13:49:02Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062081/b-55/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/b-56/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/b-61/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/b-63/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/b-69/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T16:09:23Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062081/b-69/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/b-78/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T11:43:25Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062081/b-78/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/b-84/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062081/b-87/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-01T03:46:33Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062081/b-87/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062090/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T19:16:37Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062090/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062103/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T15:04:01Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062103/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062111/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062120/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T09:39:42Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062120/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/062138/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T02:28:12Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/062138/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/063011/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T02:51:01Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/063011/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/063011/251239/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-16T09:20:40Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/063011/251239/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/063011/25711/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T01:39:10Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/063011/25711/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/063011/25714/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/063011/25935/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/063011/260340/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T21:56:33Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/063011/260340/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/063011/260341/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-14T00:09:05Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/063011/260341/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/063011/260542/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T07:41:21Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/063011/260542/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/063029/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T22:28:07Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/063029/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/063215/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-30T03:11:31Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/063215/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/063223/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T13:03:30Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/063223/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/063223/03-08/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/063223/05-06/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/063223/06-01/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/063223/07-08/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/063223/07-09/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-01T03:03:43Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/063223/07-09/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/063223/07-10/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-18"
+    },
+    "https://akiya-atlas.com/yamagata/063223/07-11/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-15T00:01:44Z",
+      "google_canonical": "https://akiya-atlas.com/yamagata/063223/07-11/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-18"
     },
     "https://akiya-atlas.com/yamaguchi/": {
       "verdict": "NEUTRAL",
