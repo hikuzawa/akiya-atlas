@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.fukushima.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.fukushima.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-18'
 - id: fukushima-072028
   name: 会津若松市空き家バンク
   operator: 会津若松市
@@ -41,7 +41,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.aizuwakamatsu.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.aizuwakamatsu.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-18'
   pages:
   - url: https://www.city.aizuwakamatsu.fukushima.jp/docs/2018061500016/
     kind: subsidy
@@ -70,7 +70,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.koriyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.koriyama.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-18'
   pages:
   - url: https://www.city.koriyama.lg.jp/soshiki/128/188771.html
     kind: subsidy
@@ -103,7 +103,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.iwaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.iwaki.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-18'
 - id: fukushima-072052
   name: 白河市空き家バンク
   operator: 白河市
@@ -123,7 +123,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.shirakawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.shirakawa.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-18'
   pages:
   - url: https://www.city.shirakawa.fukushima.jp/page/page005272.html
     kind: listing_index
@@ -150,7 +150,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sukagawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.sukagawa.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-18'
   pages:
   - url: https://www.city.sukagawa.fukushima.jp/kurashi/hikkoshi_sumai/1002444/1016860.html
     kind: subsidy
@@ -179,7 +179,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kitakata.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kitakata.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-18'
   pages:
   - url: https://www.city.kitakata.fukushima.jp/soshiki/toshiseibi/16510.html
     kind: subsidy
@@ -208,7 +208,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.soma.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.soma.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-18'
 - id: fukushima-072109
   name: 二本松市空き家バンク
   operator: 二本松市
@@ -228,7 +228,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nihonmatsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nihonmatsu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-18'
   pages:
   - url: https://www.city.nihonmatsu.lg.jp/ijyu_teijyu/kurasu/page000100.html
     kind: listing_index
@@ -266,7 +266,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tamura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tamura.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-18'
   pages:
   - url: https://www.city.tamura.lg.jp/soshiki/1/shinenergy_1_1.html
     kind: subsidy
@@ -295,7 +295,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.city.minamisoma.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.minamisoma.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-18'
   pages:
   - url: https://www.minamisoma-akiya.org/
     kind: listing_index
@@ -322,7 +322,7 @@ sources:
   operator_evidence:
     quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.city.fukushima-date.lg.jp）
     url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-18'
   pages:
   - url: https://www.city.fukushima-date.lg.jp/site/iju/35971.html
     kind: subsidy
@@ -353,7 +353,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.motomiya.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.motomiya.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-18'
   pages:
   - url: https://www.city.motomiya.lg.jp/life/1/6/27/
     kind: subsidy
@@ -386,7 +386,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.koori.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.koori.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-18'
 - id: fukushima-073032
   name: 国見町空き家バンク
   operator: 国見町
@@ -407,7 +407,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kunimi.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kunimi.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-18'
   pages:
   - url: https://www.town.kunimi.fukushima.jp/soshiki/2/16213.html
     kind: subsidy

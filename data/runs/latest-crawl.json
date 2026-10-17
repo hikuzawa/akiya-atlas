@@ -111,7 +111,7 @@
     "https://www.city.hagi.lg.jp/support_006/: HTTP 404"
   ],
   "extraction_metrics": null,
-  "finished_at": "2026-10-16T21:35:09Z",
+  "finished_at": "2026-10-17T20:48:58Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -124,17 +124,17 @@
   "service": "akiya-atlas",
   "stages": {
     "crawl": {
-      "changed": 97,
+      "changed": 33,
       "errors": 107,
-      "fetched": 1322,
-      "not_modified": 352,
-      "requests": 2518,
+      "fetched": 456,
+      "not_modified": 144,
+      "requests": 963,
       "skipped_link_only": 806,
-      "skipped_not_due": 215,
+      "skipped_not_due": 685,
       "stale_cache": 3,
-      "unchanged": 1577,
+      "unchanged": 567,
       "workers": 8
     }
   },
-  "started_at": "2026-10-16T21:20:58Z"
+  "started_at": "2026-10-17T20:43:23Z"
 }
