@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-22T08:37:02.403799+09:00",
+  "checked_at": "2026-10-23T08:35:17.761757+09:00",
   "urls": {
     "https://akiya-atlas.com/": {
       "verdict": "PASS",
@@ -2650,20 +2650,20 @@
       "checked_on": "2026-10-22"
     },
     "https://akiya-atlas.com/aomori/024457/086/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T12:16:05Z",
+      "google_canonical": "https://akiya-atlas.com/aomori/024457/086/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/aomori/024457/087/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/aomori/024457/090/": {
       "verdict": "PASS",
@@ -3311,31 +3311,31 @@
       "last_crawl": "2026-09-15T13:18:15Z",
       "google_canonical": "https://akiya-atlas.com/chiba/123471/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/123498/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T18:44:38Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/123498/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/123498/11/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T00:00:29Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/123498/11/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/123498/16/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:08:25Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/123498/16/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/123498/17/": {
       "verdict": "NEUTRAL",
@@ -3343,23 +3343,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/123498/27/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/123498/31/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T03:22:19Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/123498/31/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/123498/44/": {
       "verdict": "NEUTRAL",
@@ -3367,7 +3367,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/123498/47/": {
       "verdict": "NEUTRAL",
@@ -3375,15 +3375,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/123498/55/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T05:26:53Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/123498/55/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/123498/56/": {
       "verdict": "NEUTRAL",
@@ -3391,15 +3391,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/123498/58/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T12:51:25Z",
+      "last_crawl": "2026-09-24T07:17:44Z",
       "google_canonical": "https://akiya-atlas.com/chiba/123498/58/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/123498/60/": {
       "verdict": "NEUTRAL",
@@ -3411,43 +3411,43 @@
     },
     "https://akiya-atlas.com/chiba/123498/64/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/123498/65/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T09:51:49Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/123498/65/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/123498/66/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-16T07:30:29Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/123498/66/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/123498/67/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-24T07:11:43Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/123498/67/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/123498/68/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T14:35:58Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/123498/68/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/123498/9/": {
       "verdict": "NEUTRAL",
@@ -3455,39 +3455,39 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124036/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T00:02:26Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/124036/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124095/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-18T06:42:53Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/124095/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124109/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-15T11:12:28Z",
+      "last_crawl": "2026-09-28T08:54:48Z",
       "google_canonical": "https://akiya-atlas.com/chiba/124109/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124214/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-20T00:57:50Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/124214/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124222/": {
       "verdict": "PASS",
@@ -3495,31 +3495,31 @@
       "last_crawl": "2026-09-13T20:53:38Z",
       "google_canonical": "https://akiya-atlas.com/chiba/124222/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124222/508/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T23:38:43Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/124222/508/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124222/705/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-03T10:47:06Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/124222/705/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124222/803/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T11:00:46Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/124222/803/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124231/": {
       "verdict": "PASS",
@@ -3527,15 +3527,15 @@
       "last_crawl": "2026-09-15T09:43:51Z",
       "google_canonical": "https://akiya-atlas.com/chiba/124231/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124231/061001-f9ed/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T20:08:11Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/124231/061001-f9ed/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124231/061001/": {
       "verdict": "NEUTRAL",
@@ -3543,7 +3543,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124231/071001-0c20/": {
       "verdict": "NEUTRAL",
@@ -3551,7 +3551,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124231/071001/": {
       "verdict": "NEUTRAL",
@@ -3559,15 +3559,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124231/081001-3c63/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124231/081001/": {
       "verdict": "NEUTRAL",
@@ -3575,31 +3575,31 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124249/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T22:49:25Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/124249/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124249/2026-1/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T23:13:44Z",
+      "last_crawl": "2026-09-23T04:17:29Z",
       "google_canonical": "https://akiya-atlas.com/chiba/124249/2026-1/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124265/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124265/107/": {
       "verdict": "NEUTRAL",
@@ -3607,15 +3607,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124265/114/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T21:43:11Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/124265/114/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124265/117/": {
       "verdict": "NEUTRAL",
@@ -3623,7 +3623,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124265/89/": {
       "verdict": "NEUTRAL",
@@ -3631,23 +3631,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124265/93/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
-    },
-    "https://akiya-atlas.com/chiba/124265/94/": {
       "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
+    },
+    "https://akiya-atlas.com/chiba/124265/94/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T13:10:26Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/124265/94/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124265/t27f5170e/": {
       "verdict": "NEUTRAL",
@@ -3698,28 +3698,28 @@
       "checked_on": "2026-10-01"
     },
     "https://akiya-atlas.com/chiba/124273/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T04:20:37Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/124273/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124419/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T08:33:45Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/124419/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124435/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T03:14:04Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/124435/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/124630/": {
       "verdict": "NEUTRAL",
@@ -3727,7 +3727,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/data/": {
       "verdict": "PASS",
@@ -4122,60 +4122,60 @@
       "checked_on": "2026-10-20"
     },
     "https://akiya-atlas.com/ehime/382019/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T19:45:46Z",
+      "google_canonical": "https://akiya-atlas.com/ehime/382019/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/382027/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T19:10:19Z",
+      "google_canonical": "https://akiya-atlas.com/ehime/382027/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/382035/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T08:01:21Z",
+      "google_canonical": "https://akiya-atlas.com/ehime/382035/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/382043/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T11:38:49Z",
+      "google_canonical": "https://akiya-atlas.com/ehime/382043/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/382051/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T03:56:08Z",
+      "google_canonical": "https://akiya-atlas.com/ehime/382051/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/382060/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T02:53:32Z",
+      "google_canonical": "https://akiya-atlas.com/ehime/382060/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/382078/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T03:50:18Z",
+      "google_canonical": "https://akiya-atlas.com/ehime/382078/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/382078/1-1-127/": {
       "verdict": "NEUTRAL",
@@ -4183,87 +4183,87 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/382108/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/382132/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T22:09:56Z",
+      "google_canonical": "https://akiya-atlas.com/ehime/382132/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/382141/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T19:31:16Z",
+      "google_canonical": "https://akiya-atlas.com/ehime/382141/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/382159/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-18T07:24:36Z",
+      "google_canonical": "https://akiya-atlas.com/ehime/382159/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/383562/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T10:50:07Z",
+      "google_canonical": "https://akiya-atlas.com/ehime/383562/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/383864/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T05:42:12Z",
+      "google_canonical": "https://akiya-atlas.com/ehime/383864/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/384011/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T22:46:42Z",
+      "google_canonical": "https://akiya-atlas.com/ehime/384011/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/384020/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T15:54:34Z",
+      "google_canonical": "https://akiya-atlas.com/ehime/384020/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/384224/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T18:09:51Z",
+      "google_canonical": "https://akiya-atlas.com/ehime/384224/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/384429/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T17:37:54Z",
+      "google_canonical": "https://akiya-atlas.com/ehime/384429/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/384429/i-052/": {
       "verdict": "NEUTRAL",
@@ -4271,15 +4271,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/384844/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T12:17:15Z",
+      "google_canonical": "https://akiya-atlas.com/ehime/384844/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/384887/": {
       "verdict": "PASS",
@@ -4287,15 +4287,15 @@
       "last_crawl": "2026-09-13T20:52:32Z",
       "google_canonical": "https://akiya-atlas.com/ehime/384887/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/ehime/385069/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T01:40:11Z",
+      "google_canonical": "https://akiya-atlas.com/ehime/385069/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/": {
       "verdict": "PASS",
@@ -4306,60 +4306,60 @@
       "checked_on": "2026-10-20"
     },
     "https://akiya-atlas.com/fukui/182010/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T18:51:19Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182010/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182028/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T14:00:11Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182028/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182044/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T08:48:44Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182044/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182052/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-15T09:44:54Z",
+      "last_crawl": "2026-10-07T18:15:02Z",
       "google_canonical": "https://akiya-atlas.com/fukui/182052/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-18T19:25:23Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182061/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/30-16-d954/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T19:58:01Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182061/30-16-d954/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/8-1-c617/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r4-10-76aa/": {
       "verdict": "NEUTRAL",
@@ -4367,7 +4367,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r4-6-ac6f/": {
       "verdict": "NEUTRAL",
@@ -4375,7 +4375,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r5-17-bdf5/": {
       "verdict": "NEUTRAL",
@@ -4383,15 +4383,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r6-12-2a74/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T03:33:19Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182061/r6-12-2a74/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r6-18-5484/": {
       "verdict": "NEUTRAL",
@@ -4399,15 +4399,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r6-19-9d9c/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r6-2-53b2/": {
       "verdict": "NEUTRAL",
@@ -4415,7 +4415,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r6-5-d649/": {
       "verdict": "NEUTRAL",
@@ -4423,15 +4423,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r6-6-0346/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T18:25:08Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182061/r6-6-0346/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r7-1-5600/": {
       "verdict": "PASS",
@@ -4439,23 +4439,23 @@
       "last_crawl": "2026-09-14T00:14:13Z",
       "google_canonical": "https://akiya-atlas.com/fukui/182061/r7-1-5600/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r7-12-ad3c/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T01:46:43Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182061/r7-12-ad3c/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r7-13-534e/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T01:09:21Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182061/r7-13-534e/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r7-14-473f/": {
       "verdict": "NEUTRAL",
@@ -4463,7 +4463,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r7-2-e195/": {
       "verdict": "PASS",
@@ -4471,7 +4471,7 @@
       "last_crawl": "2026-09-13T15:21:16Z",
       "google_canonical": "https://akiya-atlas.com/fukui/182061/r7-2-e195/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r7-20-2ade/": {
       "verdict": "NEUTRAL",
@@ -4479,23 +4479,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r7-22-0594/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-01T13:40:48Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182061/r7-22-0594/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r7-23-5c01/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r7-24-8f6f/": {
       "verdict": "NEUTRAL",
@@ -4503,15 +4503,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r7-4-cfee/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T00:16:09Z",
+      "last_crawl": "2026-10-07T01:45:45Z",
       "google_canonical": "https://akiya-atlas.com/fukui/182061/r7-4-cfee/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r7-6-c437/": {
       "verdict": "PASS",
@@ -4519,39 +4519,39 @@
       "last_crawl": "2026-09-13T15:20:02Z",
       "google_canonical": "https://akiya-atlas.com/fukui/182061/r7-6-c437/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r7-7-e592/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-24T06:50:44Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182061/r7-7-e592/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r8-10-ab58/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r8-11-a619/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T01:01:07Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182061/r8-11-a619/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r8-12-9bf2/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T10:04:16Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182061/r8-12-9bf2/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r8-13-9c90/": {
       "verdict": "NEUTRAL",
@@ -4559,7 +4559,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r8-14-ba31/": {
       "verdict": "NEUTRAL",
@@ -4567,15 +4567,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r8-15-25bd/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r8-16-581c/": {
       "verdict": "NEUTRAL",
@@ -4583,7 +4583,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r8-17-0d6d/": {
       "verdict": "PASS",
@@ -4591,23 +4591,23 @@
       "last_crawl": "2026-09-14T00:07:47Z",
       "google_canonical": "https://akiya-atlas.com/fukui/182061/r8-17-0d6d/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r8-2-76c8/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-04T11:40:21Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182061/r8-2-76c8/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r8-3-3966/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T03:36:08Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182061/r8-3-3966/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r8-4-6f85/": {
       "verdict": "NEUTRAL",
@@ -4615,15 +4615,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r8-5-7966/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:23:25Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182061/r8-5-7966/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r8-6-ca78/": {
       "verdict": "NEUTRAL",
@@ -4631,39 +4631,39 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r8-7-e317/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T05:34:45Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182061/r8-7-e317/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r8-8-4e82/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T06:34:55Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182061/r8-8-4e82/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182061/r8-9-9849/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T09:42:40Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182061/r8-9-9849/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182079/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/": {
       "verdict": "NEUTRAL",
@@ -4671,7 +4671,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2409-1/": {
       "verdict": "NEUTRAL",
@@ -4679,23 +4679,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2410-2-2/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T13:01:55Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182087/2410-2-2/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2412-6/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2501-1-2/": {
       "verdict": "NEUTRAL",
@@ -4703,7 +4703,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2504-1/": {
       "verdict": "NEUTRAL",
@@ -4711,7 +4711,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2504-2-1/": {
       "verdict": "NEUTRAL",
@@ -4719,47 +4719,47 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2504-3/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T17:32:24Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182087/2504-3/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2505-2-1/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T22:59:35Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182087/2505-2-1/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2507-3/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T21:19:46Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182087/2507-3/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2510-1/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T14:05:54Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182087/2510-1/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2510-3/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:10:21Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182087/2510-3/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2511-2/": {
       "verdict": "NEUTRAL",
@@ -4767,7 +4767,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2512-2/": {
       "verdict": "NEUTRAL",
@@ -4775,7 +4775,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2602-3/": {
       "verdict": "NEUTRAL",
@@ -4783,23 +4783,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2603-1/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T18:53:54Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182087/2603-1/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
+    },
+    "https://akiya-atlas.com/fukui/182087/2603-2-3/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
-    },
-    "https://akiya-atlas.com/fukui/182087/2603-2-3/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2603-2-4/": {
       "verdict": "NEUTRAL",
@@ -4807,15 +4807,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2603-3-3/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T14:31:50Z",
+      "last_crawl": "2026-09-27T04:53:00Z",
       "google_canonical": "https://akiya-atlas.com/fukui/182087/2603-3-3/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2603-3-4/": {
       "verdict": "NEUTRAL",
@@ -4823,7 +4823,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2603-4/": {
       "verdict": "NEUTRAL",
@@ -4831,87 +4831,87 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2603-7/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
-    },
-    "https://akiya-atlas.com/fukui/182087/2604-2/": {
       "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
-    "https://akiya-atlas.com/fukui/182087/2604-3/": {
+    "https://akiya-atlas.com/fukui/182087/2604-2/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
+    },
+    "https://akiya-atlas.com/fukui/182087/2604-3/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T17:23:28Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182087/2604-3/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2604-4/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T23:17:33Z",
+      "last_crawl": "2026-10-07T20:58:36Z",
       "google_canonical": "https://akiya-atlas.com/fukui/182087/2604-4/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2606-1-1/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2606-1-2/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2606-3/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T12:12:29Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182087/2606-3/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2606-4/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T08:10:55Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182087/2606-4/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2606-5/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T23:09:11Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182087/2606-5/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2606-6/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:38:13Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182087/2606-6/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2606-7-1/": {
       "verdict": "NEUTRAL",
@@ -4927,7 +4927,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2607-1/": {
       "verdict": "NEUTRAL",
@@ -4935,7 +4935,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2607-2/": {
       "verdict": "NEUTRAL",
@@ -4943,7 +4943,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2607-4/": {
       "verdict": "NEUTRAL",
@@ -4951,7 +4951,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2607-5/": {
       "verdict": "NEUTRAL",
@@ -4959,7 +4959,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2608-1/": {
       "verdict": "NEUTRAL",
@@ -4967,15 +4967,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2608-2/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-17T03:49:32Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182087/2608-2/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182087/2609-1-1/": {
       "verdict": "NEUTRAL",
@@ -5002,28 +5002,28 @@
       "checked_on": "2026-09-28"
     },
     "https://akiya-atlas.com/fukui/182095/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T02:51:35Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/182095/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/182109/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-15T13:05:04Z",
+      "last_crawl": "2026-09-30T15:26:20Z",
       "google_canonical": "https://akiya-atlas.com/fukui/182109/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T18:49:15Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/183229/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/102/": {
       "verdict": "NEUTRAL",
@@ -5031,47 +5031,47 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/111/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T18:54:25Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/183229/111/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/114/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:28:13Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/183229/114/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/117/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T14:47:40Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/183229/117/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/122/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T04:46:23Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/183229/122/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/123/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/124/": {
       "verdict": "NEUTRAL",
@@ -5079,23 +5079,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/125/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
-    },
-    "https://akiya-atlas.com/fukui/183229/126/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
+    },
+    "https://akiya-atlas.com/fukui/183229/126/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T03:45:30Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/183229/126/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/128/": {
       "verdict": "NEUTRAL",
@@ -5103,7 +5103,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/129/": {
       "verdict": "NEUTRAL",
@@ -5111,7 +5111,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/130/": {
       "verdict": "NEUTRAL",
@@ -5122,12 +5122,12 @@
       "checked_on": "2026-10-04"
     },
     "https://akiya-atlas.com/fukui/183229/95/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T18:22:47Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/183229/95/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/97/": {
       "verdict": "NEUTRAL",
@@ -5135,7 +5135,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/99/": {
       "verdict": "NEUTRAL",
@@ -5143,39 +5143,39 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/no-10-4dfa/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T10:11:24Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/183229/no-10-4dfa/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/no-11-0ae9/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T07:39:21Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/183229/no-11-0ae9/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/no-12-d03b/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-24T06:53:48Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/183229/no-12-d03b/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/no-13-0b42/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T04:51:30Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/183229/no-13-0b42/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/no-16-601c/": {
       "verdict": "NEUTRAL",
@@ -5183,7 +5183,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/no-17-557d/": {
       "verdict": "NEUTRAL",
@@ -5191,7 +5191,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/no-18-a618/": {
       "verdict": "NEUTRAL",
@@ -5199,23 +5199,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/no-19-e270/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T08:18:42Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/183229/no-19-e270/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/no-20-ab79/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T04:56:29Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/183229/no-20-ab79/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/no-21-461c/": {
       "verdict": "PASS",
@@ -5223,7 +5223,7 @@
       "last_crawl": "2026-09-13T16:10:27Z",
       "google_canonical": "https://akiya-atlas.com/fukui/183229/no-21-461c/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-18"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/no-22-0566/": {
       "verdict": "NEUTRAL",
@@ -5231,15 +5231,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/no-5-0a07/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T14:28:33Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/183229/no-5-0a07/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183229/no-9-6ea9/": {
       "verdict": "NEUTRAL",
@@ -5247,15 +5247,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/183822/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T22:07:28Z",
+      "last_crawl": "2026-09-27T11:57:57Z",
       "google_canonical": "https://akiya-atlas.com/fukui/183822/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-18"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/184047/": {
       "verdict": "NEUTRAL",
@@ -5263,7 +5263,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/184233/": {
       "verdict": "PASS",
@@ -5271,15 +5271,15 @@
       "last_crawl": "2026-09-13T20:50:17Z",
       "google_canonical": "https://akiya-atlas.com/fukui/184233/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-18"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/184420/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T23:00:43Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/184420/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/184420/21-06/": {
       "verdict": "NEUTRAL",
@@ -5287,7 +5287,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/184420/21-11/": {
       "verdict": "NEUTRAL",
@@ -5295,7 +5295,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/184420/21-12/": {
       "verdict": "NEUTRAL",
@@ -5303,23 +5303,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/184420/24-02/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T23:46:06Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/184420/24-02/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/184420/25-04/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T20:40:47Z",
+      "last_crawl": "2026-10-17T09:56:14Z",
       "google_canonical": "https://akiya-atlas.com/fukui/184420/25-04/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-18"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/184420/25-06/": {
       "verdict": "PASS",
@@ -5327,7 +5327,7 @@
       "last_crawl": "2026-09-13T16:05:09Z",
       "google_canonical": "https://akiya-atlas.com/fukui/184420/25-06/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-18"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/184420/26-01/": {
       "verdict": "NEUTRAL",
@@ -5335,55 +5335,55 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/184420/26-02/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T02:46:06Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/184420/26-02/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/184420/26-03/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T10:12:37Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/184420/26-03/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/184811/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/184837/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T09:00:17Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/184837/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/185019/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T05:21:29Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/185019/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/185019/107-aba6/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-18"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T14:13:47Z",
+      "google_canonical": "https://akiya-atlas.com/fukui/185019/107-aba6/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/fukui/185019/116-64ec/": {
       "verdict": "NEUTRAL",
