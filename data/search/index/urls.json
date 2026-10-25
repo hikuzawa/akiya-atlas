@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-25T07:43:19.493343+09:00",
+  "checked_at": "2026-10-26T07:48:02.043550+09:00",
   "urls": {
     "https://akiya-atlas.com/": {
       "verdict": "PASS",
@@ -8783,7 +8783,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074233/n0-6/": {
       "verdict": "NEUTRAL",
@@ -8791,47 +8791,47 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074233/n0-7/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074446/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T19:25:01Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/074446/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074454/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T23:19:23Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/074454/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074454/32/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T01:36:09Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/074454/32/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074454/39/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T17:03:02Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/074454/39/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074454/41/": {
       "verdict": "NEUTRAL",
@@ -8839,15 +8839,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074454/42/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T16:50:45Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/074454/42/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074454/50/": {
       "verdict": "NEUTRAL",
@@ -8855,15 +8855,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074454/52/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-24T08:06:58Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/074454/52/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074454/54/": {
       "verdict": "NEUTRAL",
@@ -8871,15 +8871,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074454/55/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T18:50:44Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/074454/55/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074454/58/": {
       "verdict": "NEUTRAL",
@@ -8887,63 +8887,63 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074454/59/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
-    },
-    "https://akiya-atlas.com/fukushima/074462/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
-    },
-    "https://akiya-atlas.com/fukushima/074471/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
+    },
+    "https://akiya-atlas.com/fukushima/074462/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T13:14:48Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/074462/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
+    },
+    "https://akiya-atlas.com/fukushima/074471/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-19T20:32:56Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/074471/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074616/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T16:27:22Z",
+      "last_crawl": "2026-09-26T00:35:38Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/074616/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074641/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-16T22:45:16Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/074641/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074641/1-6ea1/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
-    },
-    "https://akiya-atlas.com/fukushima/074659/": {
       "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
+    },
+    "https://akiya-atlas.com/fukushima/074659/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-20T15:57:50Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/074659/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074667/": {
       "verdict": "PASS",
@@ -8951,15 +8951,15 @@
       "last_crawl": "2026-09-13T22:42:09Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/074667/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074811/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T13:49:26Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/074811/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074829/": {
       "verdict": "PASS",
@@ -8967,7 +8967,7 @@
       "last_crawl": "2026-09-15T15:20:03Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/074829/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074829/14-ab63/": {
       "verdict": "NEUTRAL",
@@ -8975,7 +8975,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074829/16-e613/": {
       "verdict": "NEUTRAL",
@@ -8983,23 +8983,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074829/17-0b76/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T23:55:11Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/074829/17-0b76/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074829/18-0f4b/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T17:43:18Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/074829/18-0f4b/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074829/4-fe4a/": {
       "verdict": "NEUTRAL",
@@ -9007,7 +9007,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074837/": {
       "verdict": "PASS",
@@ -9015,39 +9015,39 @@
       "last_crawl": "2026-09-14T03:27:15Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/074837/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/074845/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T01:52:30Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/074845/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075019/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T17:49:23Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075019/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075019/t198827a7/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T15:01:40Z",
+      "last_crawl": "2026-09-29T06:27:56Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075019/t198827a7/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075027/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-19T07:47:39Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075027/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075027/07-01/": {
       "verdict": "NEUTRAL",
@@ -9055,7 +9055,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075027/07-03/": {
       "verdict": "NEUTRAL",
@@ -9063,7 +9063,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075027/07-04/": {
       "verdict": "PASS",
@@ -9071,55 +9071,55 @@
       "last_crawl": "2026-09-17T14:21:15Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075027/07-04/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075027/07-05/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T00:14:52Z",
+      "last_crawl": "2026-09-25T01:01:48Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075027/07-05/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075027/07-07/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T18:36:52Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075027/07-07/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075027/08-01/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T05:38:32Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075027/08-01/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075027/08-03/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075027/08-04/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T13:55:43Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075027/08-04/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075027/08-05/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075027/08-06/": {
       "verdict": "NEUTRAL",
@@ -9127,7 +9127,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075027/08-07/": {
       "verdict": "NEUTRAL",
@@ -9135,7 +9135,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075035/": {
       "verdict": "PASS",
@@ -9143,31 +9143,31 @@
       "last_crawl": "2026-09-15T13:42:57Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075035/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075043/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T18:56:04Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075043/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075051/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T21:48:43Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075051/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075213/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-15T15:21:27Z",
+      "last_crawl": "2026-09-29T20:19:42Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075213/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075221/": {
       "verdict": "NEUTRAL",
@@ -9175,39 +9175,39 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075418/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-24T12:59:15Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075418/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075426/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T02:34:18Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075426/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075434/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T16:56:16Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075434/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075442/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T13:42:08Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075442/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075451/": {
       "verdict": "PASS",
@@ -9215,31 +9215,31 @@
       "last_crawl": "2026-09-15T13:50:43Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075451/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075469/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T14:56:27Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075469/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T14:25:14Z",
+      "last_crawl": "2026-10-03T14:44:05Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075477/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/01-095-03be/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T10:04:41Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/01-095-03be/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/01-125-2493/": {
       "verdict": "NEUTRAL",
@@ -9247,15 +9247,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/01-146-b228/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/01-168-ac27/": {
       "verdict": "NEUTRAL",
@@ -9263,7 +9263,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/01-172-d36d/": {
       "verdict": "NEUTRAL",
@@ -9271,7 +9271,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/01-178-c84d/": {
       "verdict": "NEUTRAL",
@@ -9279,7 +9279,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/01-180-f178/": {
       "verdict": "NEUTRAL",
@@ -9287,23 +9287,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/01-186-4639/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T17:56:30Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/01-186-4639/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/01-188-3fa0/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T01:54:56Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/01-188-3fa0/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/01-190-3398/": {
       "verdict": "NEUTRAL",
@@ -9311,7 +9311,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/01-191-d387/": {
       "verdict": "PASS",
@@ -9319,7 +9319,7 @@
       "last_crawl": "2026-09-13T15:02:54Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075477/01-191-d387/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/01-193-1c0c/": {
       "verdict": "NEUTRAL",
@@ -9327,7 +9327,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/01-196-e749/": {
       "verdict": "NEUTRAL",
@@ -9335,7 +9335,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/01-211-9357/": {
       "verdict": "NEUTRAL",
@@ -9343,23 +9343,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/01-213-028c/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T02:38:02Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/01-213-028c/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/01-217-32d1/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T18:33:46Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/01-217-32d1/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/01-218-db0c/": {
       "verdict": "NEUTRAL",
@@ -9367,23 +9367,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/01-221-6473/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
-    },
-    "https://akiya-atlas.com/fukushima/075477/02-034-9af4/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
+    },
+    "https://akiya-atlas.com/fukushima/075477/02-034-9af4/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T00:16:21Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/02-034-9af4/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/02-181-24c8/": {
       "verdict": "NEUTRAL",
@@ -9391,7 +9391,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/02-206-e58d/": {
       "verdict": "NEUTRAL",
@@ -9399,23 +9399,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/02-207-4e69/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/02-222-9163/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T09:36:11Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/02-222-9163/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/02-226-1-226-2-226-3-2832/": {
       "verdict": "NEUTRAL",
@@ -9423,39 +9423,39 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/02-227-f5ed/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
-    },
-    "https://akiya-atlas.com/fukushima/075477/02-228-7a57/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
-    },
-    "https://akiya-atlas.com/fukushima/075477/02-229-f212/": {
       "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
-    "https://akiya-atlas.com/fukushima/075477/02-230-b431/": {
+    "https://akiya-atlas.com/fukushima/075477/02-228-7a57/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T23:36:23Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/02-228-7a57/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
+    },
+    "https://akiya-atlas.com/fukushima/075477/02-229-f212/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
+    },
+    "https://akiya-atlas.com/fukushima/075477/02-230-b431/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T23:40:23Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/02-230-b431/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/02-234-1bb9/": {
       "verdict": "NEUTRAL",
@@ -9463,23 +9463,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/02-235-40d5/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
-    },
-    "https://akiya-atlas.com/fukushima/075477/02-243-7055/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
+    },
+    "https://akiya-atlas.com/fukushima/075477/02-243-7055/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T12:47:32Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/02-243-7055/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/02-248-8ee9/": {
       "verdict": "NEUTRAL",
@@ -9487,7 +9487,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/02-255-3cdc/": {
       "verdict": "NEUTRAL",
@@ -9495,23 +9495,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/02-257-45ea/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:59:14Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/02-257-45ea/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/03-249-dea4/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T00:06:11Z",
+      "last_crawl": "2026-10-07T01:44:38Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075477/03-249-dea4/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/03-250-1e5d/": {
       "verdict": "NEUTRAL",
@@ -9519,7 +9519,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/03-258-6057/": {
       "verdict": "NEUTRAL",
@@ -9527,23 +9527,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/03-266-3b35/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T10:07:47Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/03-266-3b35/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/107-2b1d/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:34:24Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/107-2b1d/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/114-b876/": {
       "verdict": "NEUTRAL",
@@ -9551,15 +9551,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/141-8ff2/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T14:08:56Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/141-8ff2/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/174-f22f/": {
       "verdict": "PASS",
@@ -9567,7 +9567,7 @@
       "last_crawl": "2026-09-14T00:13:34Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075477/174-f22f/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/177-f681/": {
       "verdict": "NEUTRAL",
@@ -9575,7 +9575,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/182-2cc1/": {
       "verdict": "NEUTRAL",
@@ -9583,39 +9583,39 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/185-9274/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T05:40:44Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/185-9274/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/197-c782/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T00:11:30Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/197-c782/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/209-3963/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T07:19:12Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/209-3963/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/216-15c3/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T01:03:36Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/216-15c3/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/236-ee59/": {
       "verdict": "NEUTRAL",
@@ -9623,7 +9623,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/237-bb14/": {
       "verdict": "PASS",
@@ -9631,23 +9631,23 @@
       "last_crawl": "2026-09-13T15:17:35Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075477/237-bb14/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/241-c081/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T03:44:30Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/241-c081/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/242-80e2/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T03:10:13Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/242-80e2/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/253-bc22/": {
       "verdict": "NEUTRAL",
@@ -9655,15 +9655,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/254-f626/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T23:11:58Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/254-f626/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/256-afeb/": {
       "verdict": "NEUTRAL",
@@ -9671,7 +9671,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/262-3b24/": {
       "verdict": "PASS",
@@ -9679,39 +9679,39 @@
       "last_crawl": "2026-09-13T14:56:48Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075477/262-3b24/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/263-4928/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/267-de68/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T00:24:23Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/267-de68/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/268-5811/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T16:31:58Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/268-5811/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/269-c645/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T08:52:20Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/269-c645/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/271-31f6/": {
       "verdict": "NEUTRAL",
@@ -9719,7 +9719,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/274-adf7/": {
       "verdict": "PASS",
@@ -9727,7 +9727,7 @@
       "last_crawl": "2026-09-13T23:50:28Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075477/274-adf7/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/275-7464/": {
       "verdict": "NEUTRAL",
@@ -9735,15 +9735,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/277-3166/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-21T21:42:01Z",
+      "last_crawl": "2026-10-08T09:51:01Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075477/277-3166/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/279-7efe/": {
       "verdict": "NEUTRAL",
@@ -9751,23 +9751,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/283-7e96/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T15:22:32Z",
+      "last_crawl": "2026-10-02T02:07:01Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075477/283-7e96/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/284-5f5b/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/285-951d/": {
       "verdict": "PASS",
@@ -9775,79 +9775,79 @@
       "last_crawl": "2026-09-13T15:22:43Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075477/285-951d/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/287-12b9/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T19:55:04Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/287-12b9/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/289-ed4a/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-15T19:46:12Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/289-ed4a/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-003-ae8c/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T19:42:19Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/29-003-ae8c/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-012-0e10/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-01T13:40:50Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/29-012-0e10/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-015-23b4/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T01:17:12Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/29-015-23b4/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-019-04ed/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T07:22:37Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/29-019-04ed/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-023-6a91/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T09:52:07Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/29-023-6a91/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-038-96af/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-041-971d/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-043-292c/": {
       "verdict": "NEUTRAL",
@@ -9855,23 +9855,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-046-e56e/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
-    },
-    "https://akiya-atlas.com/fukushima/075477/29-055-fae7/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
+    },
+    "https://akiya-atlas.com/fukushima/075477/29-055-fae7/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T23:23:28Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/29-055-fae7/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-056-278d/": {
       "verdict": "NEUTRAL",
@@ -9879,7 +9879,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-063-be2c/": {
       "verdict": "PASS",
@@ -9887,15 +9887,15 @@
       "last_crawl": "2026-09-15T15:11:43Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075477/29-063-be2c/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-067-8fed/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T15:32:14Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/29-067-8fed/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-077-cc6a/": {
       "verdict": "NEUTRAL",
@@ -9903,23 +9903,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-080-cfc5/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T00:06:32Z",
+      "last_crawl": "2026-10-07T17:34:11Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075477/29-080-cfc5/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-081-256b/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-085-c780/": {
       "verdict": "NEUTRAL",
@@ -9927,7 +9927,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-087-1148/": {
       "verdict": "NEUTRAL",
@@ -9935,23 +9935,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-090-741c/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T23:52:06Z",
+      "last_crawl": "2026-10-09T19:39:00Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075477/29-090-741c/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-094-f855/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-19T10:32:53Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/29-094-f855/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/29-097-9e15/": {
       "verdict": "NEUTRAL",
@@ -9959,7 +9959,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/291-be10/": {
       "verdict": "NEUTRAL",
@@ -9967,23 +9967,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/293-a184/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T13:16:16Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/293-a184/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/294-d2ae/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/295-c08a/": {
       "verdict": "NEUTRAL",
@@ -9991,7 +9991,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/297-fda5/": {
       "verdict": "NEUTRAL",
@@ -10007,15 +10007,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/299-32d3/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T02:51:46Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/299-32d3/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-044-aa16/": {
       "verdict": "NEUTRAL",
@@ -10023,71 +10023,71 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-065-ab7c/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T04:21:51Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-065-ab7c/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-072-de98/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T20:06:59Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-072-de98/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-086-172f/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T18:22:19Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-086-172f/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-093-b3a1/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T09:26:49Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-093-b3a1/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-096-5b94/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T06:32:08Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-096-5b94/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-098-2a3f/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T19:39:27Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-098-2a3f/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-100-b056/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:20:01Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-100-b056/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-106-fda9/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T07:44:04Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-106-fda9/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-113-5af7/": {
       "verdict": "NEUTRAL",
@@ -10095,15 +10095,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-115-1-4ff9/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T23:52:25Z",
+      "last_crawl": "2026-09-28T14:22:34Z",
       "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-115-1-4ff9/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-115-2-d592/": {
       "verdict": "NEUTRAL",
@@ -10111,15 +10111,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-115-3-af8a/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-115-4-3aeb/": {
       "verdict": "NEUTRAL",
@@ -10127,7 +10127,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-116-a8fd/": {
       "verdict": "NEUTRAL",
@@ -10135,15 +10135,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-117-f482/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-119-996b/": {
       "verdict": "NEUTRAL",
@@ -10151,31 +10151,31 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-120-d3cb/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
-    },
-    "https://akiya-atlas.com/fukushima/075477/30-123-5a64/": {
-      "verdict": "PASS",
-      "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T07:37:27Z",
-      "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-123-5a64/",
-      "robots": "ALLOWED",
-      "checked_on": "2026-09-21"
-    },
-    "https://akiya-atlas.com/fukushima/075477/30-135-9052/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
+    },
+    "https://akiya-atlas.com/fukushima/075477/30-123-5a64/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-28T18:31:11Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-123-5a64/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
+    },
+    "https://akiya-atlas.com/fukushima/075477/30-135-9052/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T01:31:11Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-135-9052/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-137-db3b/": {
       "verdict": "NEUTRAL",
@@ -10183,15 +10183,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-140-62a2/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T19:29:53Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-140-62a2/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-143-52fb/": {
       "verdict": "NEUTRAL",
@@ -10199,15 +10199,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-148-0328/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T11:06:36Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-148-0328/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-149-627a/": {
       "verdict": "NEUTRAL",
@@ -10215,15 +10215,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-151-9c55/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-152-46c3/": {
       "verdict": "NEUTRAL",
@@ -10231,39 +10231,39 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-153-95cf/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T04:27:40Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-153-95cf/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-154-8d5e/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-17T06:20:33Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-154-8d5e/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-156-b656/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:29:08Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-156-b656/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-161-81e6/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T01:45:41Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-161-81e6/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-164-9f24/": {
       "verdict": "NEUTRAL",
@@ -10271,23 +10271,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-166-3118/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:22:26Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-166-3118/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/30-179-535f/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T01:46:41Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/30-179-535f/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/302-7268/": {
       "verdict": "NEUTRAL",
@@ -10295,23 +10295,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/304-b062/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:27:25Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/304-b062/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/307-e916/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:54:26Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/075477/307-e916/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/309-4d2a/": {
       "verdict": "NEUTRAL",
@@ -10319,7 +10319,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/31-171-43d9/": {
       "verdict": "NEUTRAL",
@@ -10327,7 +10327,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-21"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/313-b0e1/": {
       "verdict": "NEUTRAL",
@@ -10335,7 +10335,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/314-bea1/": {
       "verdict": "NEUTRAL",
@@ -10343,15 +10343,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/317-8e13/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/318-832f/": {
       "verdict": "NEUTRAL",
@@ -10359,7 +10359,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/321-0d31/": {
       "verdict": "NEUTRAL",
@@ -10367,7 +10367,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/323-c7d9/": {
       "verdict": "NEUTRAL",
@@ -10375,7 +10375,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/324-e84d/": {
       "verdict": "NEUTRAL",
@@ -10383,7 +10383,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-22"
+      "checked_on": "2026-10-26"
     },
     "https://akiya-atlas.com/fukushima/075477/325-88f0/": {
       "verdict": "NEUTRAL",
