@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-27T09:04:11.346174+09:00",
+  "checked_at": "2026-10-28T08:59:23.339807+09:00",
   "urls": {
     "https://akiya-atlas.com/": {
       "verdict": "PASS",
@@ -12035,27 +12035,27 @@
     },
     "https://akiya-atlas.com/hiroshima/342041/368/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/370/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T16:08:05Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/370/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/371/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T06:02:50Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/371/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/372/": {
       "verdict": "NEUTRAL",
@@ -12063,15 +12063,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/373/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:38:20Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/373/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/375/": {
       "verdict": "NEUTRAL",
@@ -12079,7 +12079,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/379/": {
       "verdict": "NEUTRAL",
@@ -12087,31 +12087,31 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/381/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T07:01:45Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/381/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/382/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342041/383-2/": {
       "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342041/383-2/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T01:54:44Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/383-2/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/385/": {
       "verdict": "NEUTRAL",
@@ -12119,47 +12119,47 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/386/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-15T14:50:39Z",
+      "last_crawl": "2026-10-07T19:15:35Z",
       "google_canonical": "https://akiya-atlas.com/hiroshima/342041/386/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/389/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-16T17:25:18Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/389/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/390/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-03T12:41:21Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/390/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/391/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T15:52:39Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/391/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/394/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T06:54:01Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/394/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/396/": {
       "verdict": "NEUTRAL",
@@ -12167,7 +12167,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/397/": {
       "verdict": "NEUTRAL",
@@ -12175,15 +12175,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/399/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/404/": {
       "verdict": "NEUTRAL",
@@ -12191,23 +12191,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/407/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:02:25Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/407/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/408/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:41:51Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/408/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/409/": {
       "verdict": "NEUTRAL",
@@ -12215,39 +12215,39 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/411/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342041/413/": {
-      "verdict": "PASS",
-      "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T14:19:42Z",
-      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/413/",
-      "robots": "ALLOWED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342041/414/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342041/415/": {
       "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342041/413/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-24T09:08:41Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/413/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342041/414/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T06:06:35Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/414/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342041/415/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T23:32:25Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/415/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/416/": {
       "verdict": "NEUTRAL",
@@ -12255,15 +12255,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/417/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T20:14:53Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/417/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/418/": {
       "verdict": "NEUTRAL",
@@ -12271,23 +12271,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/419/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342041/420/": {
       "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342041/420/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T01:40:57Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/420/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/421/": {
       "verdict": "NEUTRAL",
@@ -12295,15 +12295,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/423/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T23:32:51Z",
+      "last_crawl": "2026-09-29T06:22:08Z",
       "google_canonical": "https://akiya-atlas.com/hiroshima/342041/423/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/424/": {
       "verdict": "NEUTRAL",
@@ -12311,7 +12311,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/425/": {
       "verdict": "NEUTRAL",
@@ -12319,7 +12319,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/426/": {
       "verdict": "NEUTRAL",
@@ -12327,31 +12327,31 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/427/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T08:59:40Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/427/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/428/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T02:33:12Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/428/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/430/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T03:06:49Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/430/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/431/": {
       "verdict": "NEUTRAL",
@@ -12359,15 +12359,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/432/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/433/": {
       "verdict": "PASS",
@@ -12375,23 +12375,23 @@
       "last_crawl": "2026-09-15T14:39:58Z",
       "google_canonical": "https://akiya-atlas.com/hiroshima/342041/433/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/434/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T06:23:55Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/434/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/435/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T07:34:45Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/435/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/436/": {
       "verdict": "NEUTRAL",
@@ -12426,44 +12426,44 @@
       "checked_on": "2026-10-02"
     },
     "https://akiya-atlas.com/hiroshima/342050/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T00:41:45Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342050/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342076/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-26T22:17:53Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342076/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342084/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-24T13:29:55Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342084/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342092/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342106/": {
-      "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342106/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T08:49:39Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342106/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342114/": {
       "verdict": "NEUTRAL",
@@ -12471,15 +12471,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342122/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T08:45:35Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342122/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342131/": {
       "verdict": "PASS",
@@ -12487,7 +12487,7 @@
       "last_crawl": "2026-09-15T13:49:26Z",
       "google_canonical": "https://akiya-atlas.com/hiroshima/342131/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/": {
       "verdict": "NEUTRAL",
@@ -12495,47 +12495,47 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/116/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342149/156/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342149/201/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342149/246/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342149/256/": {
       "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342149/156/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T21:06:19Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/156/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342149/201/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342149/246/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T17:37:19Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/246/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342149/256/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/280/": {
       "verdict": "NEUTRAL",
@@ -12543,23 +12543,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/314/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342149/315/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342149/315/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T00:27:39Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/315/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/332/": {
       "verdict": "PASS",
@@ -12567,15 +12567,15 @@
       "last_crawl": "2026-09-22T10:37:16Z",
       "google_canonical": "https://akiya-atlas.com/hiroshima/342149/332/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/354/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/363/": {
       "verdict": "NEUTRAL",
@@ -12583,23 +12583,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/370/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/378/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-03T13:54:06Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/378/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/411/": {
       "verdict": "NEUTRAL",
@@ -12607,15 +12607,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/421/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/451/": {
       "verdict": "PASS",
@@ -12623,23 +12623,23 @@
       "last_crawl": "2026-09-15T14:45:09Z",
       "google_canonical": "https://akiya-atlas.com/hiroshima/342149/451/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/464/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/471/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-15T06:27:16Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/471/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/477/": {
       "verdict": "PASS",
@@ -12647,15 +12647,15 @@
       "last_crawl": "2026-09-13T23:27:52Z",
       "google_canonical": "https://akiya-atlas.com/hiroshima/342149/477/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/478/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/482/": {
       "verdict": "NEUTRAL",
@@ -12663,15 +12663,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/498/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T06:00:08Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/498/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/501/": {
       "verdict": "NEUTRAL",
@@ -12679,23 +12679,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/504/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T08:42:28Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/504/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/512/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T09:38:01Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/512/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/522/": {
       "verdict": "NEUTRAL",
@@ -12703,15 +12703,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/525/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/526/": {
       "verdict": "NEUTRAL",
@@ -12719,7 +12719,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/527/": {
       "verdict": "NEUTRAL",
@@ -12727,23 +12727,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/528/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/531/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T23:26:56Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/531/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/532/": {
       "verdict": "NEUTRAL",
@@ -12751,7 +12751,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/538/": {
       "verdict": "NEUTRAL",
@@ -12759,71 +12759,71 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/542/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:45:29Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/542/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342149/544/": {
       "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342149/544/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/546/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/548/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T22:58:07Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/548/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/549/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-02T20:30:05Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/549/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/551/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T01:41:04Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/551/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/553/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T20:53:31Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/553/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/559/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T21:39:23Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/559/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/564/": {
       "verdict": "NEUTRAL",
@@ -12831,15 +12831,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/569/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T16:41:04Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/569/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/570/": {
       "verdict": "NEUTRAL",
@@ -12847,15 +12847,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/575/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T01:19:36Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/575/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/579/": {
       "verdict": "NEUTRAL",
@@ -12863,23 +12863,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/583/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T08:32:56Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/583/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/585/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T02:53:47Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/585/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/586/": {
       "verdict": "NEUTRAL",
@@ -12887,7 +12887,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/588/": {
       "verdict": "NEUTRAL",
@@ -12895,7 +12895,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/593/": {
       "verdict": "NEUTRAL",
@@ -12903,39 +12903,39 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/598/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Crawled - currently not indexed",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
       "last_crawl": "2026-09-22T23:23:14Z",
       "google_canonical": "https://akiya-atlas.com/hiroshima/342149/598/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/600/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-26T19:49:04Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/600/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/601/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342149/602/": {
       "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342149/602/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/608/": {
       "verdict": "NEUTRAL",
@@ -12943,39 +12943,39 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/609/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342149/611/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342149/617/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342149/620/": {
       "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342149/611/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-15T01:19:46Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/611/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342149/617/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342149/620/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/621/": {
       "verdict": "PASS",
@@ -12983,63 +12983,63 @@
       "last_crawl": "2026-09-15T14:52:03Z",
       "google_canonical": "https://akiya-atlas.com/hiroshima/342149/621/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/623/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342149/625/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342149/626/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342149/627/": {
       "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
-    "https://akiya-atlas.com/hiroshima/342149/629/": {
+    "https://akiya-atlas.com/hiroshima/342149/625/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:37:18Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/625/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342149/626/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342149/627/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T19:29:33Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/627/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342149/629/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-26T22:34:21Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/629/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/631/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T14:17:43Z",
+      "last_crawl": "2026-09-28T19:35:20Z",
       "google_canonical": "https://akiya-atlas.com/hiroshima/342149/631/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/634/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:21:53Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/634/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/635/": {
       "verdict": "NEUTRAL",
@@ -13047,15 +13047,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/637/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T23:55:22Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/637/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/639/": {
       "verdict": "NEUTRAL",
@@ -13063,7 +13063,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/644/": {
       "verdict": "NEUTRAL",
@@ -13071,23 +13071,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/648/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342149/649/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342149/649/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T16:18:20Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/649/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/651/": {
       "verdict": "NEUTRAL",
@@ -13095,7 +13095,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/652/": {
       "verdict": "NEUTRAL",
@@ -13103,15 +13103,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/653/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:15:39Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/653/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/654/": {
       "verdict": "NEUTRAL",
@@ -13119,31 +13119,31 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/656/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-15T02:27:21Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/656/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/657/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T17:51:29Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/657/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/658/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:31:30Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/658/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/659/": {
       "verdict": "NEUTRAL",
@@ -13151,47 +13151,47 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/660/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342149/661/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T15:35:45Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/661/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342149/662/": {
       "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342149/661/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342149/662/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/664/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T02:20:52Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/664/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/665/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-15T08:22:16Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/665/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/666/": {
       "verdict": "NEUTRAL",
@@ -13199,23 +13199,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/667/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/342149/668/": {
       "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/342149/668/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/669/": {
       "verdict": "NEUTRAL",
@@ -13223,7 +13223,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/670/": {
       "verdict": "NEUTRAL",
@@ -13231,31 +13231,31 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/671/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T04:01:46Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/671/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/672/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/69/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T15:18:59Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342149/69/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/85/": {
       "verdict": "NEUTRAL",
@@ -13263,95 +13263,95 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342149/95/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342157/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T21:58:35Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342157/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/343021/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T09:25:39Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/343021/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/343048/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T23:44:17Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/343048/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/343072/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:48:01Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/343072/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/343099/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T02:36:56Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/343099/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/343684/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
-    },
-    "https://akiya-atlas.com/hiroshima/343692/": {
-      "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
+    },
+    "https://akiya-atlas.com/hiroshima/343692/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T08:52:46Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/343692/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/344311/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-26T15:53:37Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/344311/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/344621/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-18T07:52:50Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/344621/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/345458/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T18:24:07Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/345458/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/": {
       "verdict": "PASS",
@@ -13362,12 +13362,12 @@
       "checked_on": "2026-10-20"
     },
     "https://akiya-atlas.com/hokkaido/011002/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T13:44:29Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/011002/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012025/": {
       "verdict": "PASS",
@@ -13375,7 +13375,7 @@
       "last_crawl": "2026-09-20T06:29:40Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012025/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012033/": {
       "verdict": "PASS",
@@ -13383,47 +13383,47 @@
       "last_crawl": "2026-09-16T12:41:20Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012033/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012041/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012050/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T15:08:52Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012050/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012068/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T03:16:46Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012068/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012076/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T18:15:30Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012076/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012084/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T00:04:54Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012084/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012092/": {
       "verdict": "PASS",
@@ -13431,23 +13431,23 @@
       "last_crawl": "2026-09-13T21:58:35Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012092/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-23"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012106/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-23"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T16:41:56Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012106/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012114/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T10:50:43Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012114/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012122/": {
       "verdict": "PASS",
@@ -13455,7 +13455,7 @@
       "last_crawl": "2026-09-22T03:48:07Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012122/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012122/t1c759ea3/": {
       "verdict": "PASS",
@@ -13463,7 +13463,7 @@
       "last_crawl": "2026-09-13T17:24:23Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012122/t1c759ea3/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012122/t7674b82f/": {
       "verdict": "NEUTRAL",
@@ -13471,23 +13471,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012122/t9590e521/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012122/t97934635/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T17:29:08Z",
+      "last_crawl": "2026-09-27T06:20:28Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012122/t97934635/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012122/t9e8b72e3/": {
       "verdict": "NEUTRAL",
@@ -13495,39 +13495,39 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012131/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T23:52:38Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012131/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012149/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T04:56:34Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012149/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012157/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T21:48:10Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012157/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012165/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T22:24:15Z",
+      "last_crawl": "2026-09-28T16:12:49Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012165/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012173/": {
       "verdict": "PASS",
@@ -13535,15 +13535,15 @@
       "last_crawl": "2026-09-13T22:09:43Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012173/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012181/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T02:38:56Z",
+      "last_crawl": "2026-10-13T19:34:44Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012181/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012181/101-39bd/": {
       "verdict": "PASS",
@@ -13551,31 +13551,31 @@
       "last_crawl": "2026-09-14T07:43:34Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012181/101-39bd/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012181/108-b8ea/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012181/109-0d03/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:26:23Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012181/109-0d03/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012181/112-60d2/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-22T04:41:54Z",
+      "last_crawl": "2026-10-11T03:21:17Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012181/112-60d2/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012181/115-7f0f/": {
       "verdict": "NEUTRAL",
@@ -13583,23 +13583,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012181/117-6d18/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T02:10:21Z",
+      "last_crawl": "2026-10-09T21:59:20Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012181/117-6d18/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012181/120-441b/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012181/121-955d/": {
       "verdict": "PASS",
@@ -13607,7 +13607,7 @@
       "last_crawl": "2026-09-14T02:22:42Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012181/121-955d/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012181/122-1ee2/": {
       "verdict": "PASS",
@@ -13615,7 +13615,7 @@
       "last_crawl": "2026-09-14T02:26:48Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012181/122-1ee2/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012181/123-e464/": {
       "verdict": "PASS",
@@ -13623,7 +13623,7 @@
       "last_crawl": "2026-09-14T07:52:43Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012181/123-e464/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012181/125-a2d8/": {
       "verdict": "PASS",
@@ -13631,31 +13631,31 @@
       "last_crawl": "2026-09-14T07:49:40Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012181/125-a2d8/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012181/4-569a/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:43:02Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012181/4-569a/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012181/42-e8ed/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T02:14:28Z",
+      "last_crawl": "2026-09-28T00:28:01Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012181/42-e8ed/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012181/50-2dbd/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-24T07:35:43Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012181/50-2dbd/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012181/51-72ca/": {
       "verdict": "PASS",
@@ -13663,7 +13663,7 @@
       "last_crawl": "2026-09-14T02:18:35Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012181/51-72ca/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012190/": {
       "verdict": "PASS",
@@ -13671,7 +13671,7 @@
       "last_crawl": "2026-09-13T21:51:51Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012190/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012203/": {
       "verdict": "NEUTRAL",
