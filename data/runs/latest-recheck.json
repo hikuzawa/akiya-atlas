@@ -3,7 +3,7 @@
   "command": "recheck",
   "errors": [],
   "extraction_metrics": null,
-  "finished_at": "2026-10-17T20:49:56Z",
+  "finished_at": "2026-10-29T23:13:42Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -11,19 +11,19 @@
     "output_tokens": 0
   },
   "notes": [
-    "運営主体の確かめ直し: 20 件（成り立った 20・成り立たなかった 0・robots.txt で見送り 0・通信できない 0・選び直し 0）"
+    "運営主体の確かめ直し: 20 件（成り立った 12・成り立たなかった 0・robots.txt で見送り 7・通信できない 1・選び直し 0）"
   ],
   "service": "akiya-atlas",
   "stages": {
     "recheck": {
       "checked": 20,
       "fail": 0,
-      "ok": 20,
-      "requests": 76,
+      "ok": 12,
+      "requests": 49,
       "reselected": 0,
-      "skip": 0,
-      "unreachable": 0
+      "skip": 7,
+      "unreachable": 1
     }
   },
-  "started_at": "2026-10-17T20:49:26Z"
+  "started_at": "2026-10-29T23:13:21Z"
 }

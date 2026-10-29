@@ -436,3 +436,23 @@
 {"at": "2026-10-18T05:49:55+09:00", "result": "ok", "key": "fukushima-072141", "label": "福島県本宮市"}
 {"at": "2026-10-18T05:49:55+09:00", "result": "ok", "key": "fukushima-073016", "label": "福島県桑折町"}
 {"at": "2026-10-18T05:49:55+09:00", "result": "ok", "key": "fukushima-073032", "label": "福島県国見町"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "skip", "key": "nagano-203076", "label": "長野県北相木村", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "skip", "key": "nagano-204048", "label": "長野県阿南町", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "skip", "key": "nagano-206024", "label": "長野県栄村", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "unreachable", "key": "akita-052132", "label": "秋田県北秋田市", "reason": "公式サイトに通信できない（HTTP 403）"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "skip", "key": "aomori-023621", "label": "青森県大鰐町", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "skip", "key": "aomori-023671", "label": "青森県田舎館村", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "skip", "key": "aomori-024244", "label": "青森県東通村", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "skip", "key": "fukuoka-402044", "label": "福岡県直方市", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "ok", "key": "fukushima-073083", "label": "福島県川俣町"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "ok", "key": "fukushima-073229", "label": "福島県大玉村"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "ok", "key": "fukushima-073423", "label": "福島県鏡石町"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "ok", "key": "fukushima-073440", "label": "福島県天栄村"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "ok", "key": "fukushima-073628", "label": "福島県下郷町"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "ok", "key": "fukushima-073644", "label": "福島県檜枝岐村"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "ok", "key": "fukushima-073679", "label": "福島県只見町"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "ok", "key": "fukushima-073687", "label": "福島県南会津町"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "ok", "key": "fukushima-074021", "label": "福島県北塩原村"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "ok", "key": "fukushima-074055", "label": "福島県西会津町"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "ok", "key": "fukushima-074071", "label": "福島県磐梯町"}
+{"at": "2026-10-30T08:13:42+09:00", "result": "ok", "key": "fukushima-074080", "label": "福島県猪苗代町"}

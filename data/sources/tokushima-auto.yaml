@@ -416,16 +416,16 @@ sources:
     prefecture: 徳島県
     prefecture_slug: tokushima
     slug: '363871'
-    bank_url: https://www.town.minami.lg.jp/docs/4937966.html
+    bank_url: https://www.town.minami.lg.jp/docs/5646476.html
     bank_status: available
     extract_pending: false
     map_query: 徳島県美波町
   operator_evidence:
     quote: 公式ドメイン www.town.minami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.minami.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-10-30'
   pages:
-  - url: https://www.town.minami.lg.jp/docs/4937966.html
+  - url: https://www.town.minami.lg.jp/docs/5646476.html
     kind: listing_index
   allow_hosts:
   - www.town.minami.lg.jp

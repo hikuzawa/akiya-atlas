@@ -1,16 +1,16 @@
 {
-  "accepted_at": "2026-10-17T20:51:04+00:00",
+  "accepted_at": "2026-10-29T23:14:56+00:00",
   "how": "passed",
   "metrics": {
     "crawled_without_live": {
-      "count": 3,
-      "total": 264,
-      "share": 0.011364
+      "count": 4,
+      "total": 263,
+      "share": 0.015209
     },
     "listings_not_live": {
-      "count": 315,
+      "count": 322,
       "total": 5361,
-      "share": 0.058758
+      "share": 0.060063
     },
     "operator_undetermined": {
       "count": 0,

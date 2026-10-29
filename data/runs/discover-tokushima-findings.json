@@ -429,21 +429,24 @@
     {
       "alternatives": [
         "https://www.town.minami.lg.jp/docs/115.html",
+        "https://www.town.minami.lg.jp/docs/6419141.html",
         "https://www.town.minami.lg.jp/docs/5962610.html",
         "https://www.town.minami.lg.jp/docs/3559826.html",
-        "https://www.town.minami.lg.jp/docs/5400215.html",
-        "https://www.town.minami.lg.jp/docs/5646476.html"
+        "https://www.town.minami.lg.jp/docs/5400215.html"
       ],
-      "bank_url": "https://www.town.minami.lg.jp/docs/4937966.html",
+      "bank_status": "available",
+      "bank_url": "https://www.town.minami.lg.jp/docs/5646476.html",
       "code": "363871",
       "confidence": 0.8205,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-10-30",
       "evidence_quote": "公式ドメイン www.town.minami.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.minami.lg.jp/",
       "external_links": [],
+      "extract_gap": false,
       "listing_rows": 4,
-      "listing_score": 0.45,
+      "listing_score": 0.48,
       "name": "美波町",
       "name_kana": "ﾐﾅﾐﾁｮｳ",
       "official_url": "www.town.minami.lg.jp",
@@ -454,7 +457,8 @@
       "prefecture": "徳島県",
       "prefecture_slug": "tokushima",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [

@@ -178,29 +178,22 @@ sources:
   operator: 名張市
   operator_kind: municipality
   official_url: https://www.city.nabari.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '242080'
     name: 名張市
     prefecture: 三重県
     prefecture_slug: mie
     slug: '242080'
-    bank_url: https://www.city.nabari.lg.jp/s043/030/080/160/20260721140347.html
-    bank_status: available
+    bank_url: https://www.city.nabari.lg.jp/020/060/040/index.html
+    bank_status: info
     extract_pending: false
     map_query: 三重県名張市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.nabari.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nabari.lg.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.nabari.lg.jp/s043/030/080/160/20260721140347.html
-    kind: listing_index
-  - url: https://www.city.nabari.lg.jp/020/060/020/index.html
-    kind: subsidy
-  allow_hosts:
-  - www.city.nabari.lg.jp
-  max_pages: 30
+    checked_on: '2026-10-30'
 - id: mie-242098
   name: 尾鷲市空き家バンク
   operator: 尾鷲市

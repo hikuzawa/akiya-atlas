@@ -192,7 +192,7 @@
   "checked_on": "2026-10-07"
  },
  "akita-052132": {
-  "last_tried": "2026-10-14",
+  "last_tried": "2026-10-30",
   "waiting_reason": "公式サイトに通信できない（HTTP 403）",
   "waiting_since": "2026-10-07"
  },
@@ -293,12 +293,12 @@
   "checked_on": "2026-10-09"
  },
  "aomori-023621": {
-  "last_tried": "2026-10-16",
+  "last_tried": "2026-10-30",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-10-09"
  },
  "aomori-023671": {
-  "last_tried": "2026-10-16",
+  "last_tried": "2026-10-30",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-10-09"
  },
@@ -336,7 +336,7 @@
   "checked_on": "2026-10-10"
  },
  "aomori-024244": {
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-30",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-10-10"
  },
@@ -641,7 +641,7 @@
   "checked_on": "2026-10-15"
  },
  "fukuoka-402044": {
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-30",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-10-15"
  },
@@ -852,8 +852,44 @@
  "fukushima-073032": {
   "checked_on": "2026-10-18"
  },
+ "fukushima-073083": {
+  "checked_on": "2026-10-30"
+ },
+ "fukushima-073229": {
+  "checked_on": "2026-10-30"
+ },
+ "fukushima-073423": {
+  "checked_on": "2026-10-30"
+ },
+ "fukushima-073440": {
+  "checked_on": "2026-10-30"
+ },
+ "fukushima-073628": {
+  "checked_on": "2026-10-30"
+ },
+ "fukushima-073644": {
+  "checked_on": "2026-10-30"
+ },
+ "fukushima-073679": {
+  "checked_on": "2026-10-30"
+ },
+ "fukushima-073687": {
+  "checked_on": "2026-10-30"
+ },
+ "fukushima-074021": {
+  "checked_on": "2026-10-30"
+ },
+ "fukushima-074055": {
+  "checked_on": "2026-10-30"
+ },
+ "fukushima-074071": {
+  "checked_on": "2026-10-30"
+ },
+ "fukushima-074080": {
+  "checked_on": "2026-10-30"
+ },
  "nagano-203076": {
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-30",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-09-29"
  },
@@ -897,7 +933,7 @@
   "checked_on": "2026-09-30"
  },
  "nagano-204048": {
-  "last_tried": "2026-10-14",
+  "last_tried": "2026-10-30",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-09-30"
  },
@@ -1001,7 +1037,7 @@
   "checked_on": "2026-10-02"
  },
  "nagano-206024": {
-  "last_tried": "2026-10-16",
+  "last_tried": "2026-10-30",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-10-02"
  },

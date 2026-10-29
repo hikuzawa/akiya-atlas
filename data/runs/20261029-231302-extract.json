@@ -1,0 +1,30 @@
+{
+  "ci": true,
+  "command": "extract",
+  "errors": [
+    "https://www.town.minami.lg.jp/docs/5646476.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgXNmConvbk8xK8S1hLog'}"
+  ],
+  "extraction_metrics": {
+    "fields": {},
+    "flags": {},
+    "items": 0,
+    "pages": 0,
+    "summary_replaced": 0,
+    "truncated_pages": 0
+  },
+  "finished_at": "2026-10-29T23:13:20Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "extract": {
+      "llm_errors": 1
+    }
+  },
+  "started_at": "2026-10-29T23:13:02Z"
+}

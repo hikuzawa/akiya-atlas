@@ -1,0 +1,38 @@
+{
+  "ci": true,
+  "command": "heal",
+  "errors": [
+    "https://www.town.minami.lg.jp/docs/5646476.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgXNmConvbk8xK8S1hLog'}"
+  ],
+  "extraction_metrics": null,
+  "finished_at": "2026-10-29T23:13:20Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "千葉県酒々井町: ページ自身が掲載なしと書いている。そのまま（次の点検は 7 日後）",
+    "兵庫県稲美町: ページ自身が掲載なしと書いている。そのまま（次の点検は 7 日後）",
+    "神奈川県逗子市: ページ自身が掲載なしと書いている。そのまま（次の点検は 7 日後）",
+    "三重県名張市: 一覧が見つからず info に変更（空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ）",
+    "徳島県美波町: 一覧を差し替え https://www.town.minami.lg.jp/docs/4937966.html → https://www.town.minami.lg.jp/docs/5646476.html（物件行 4）"
+  ],
+  "service": "akiya-atlas",
+  "stages": {
+    "heal": {
+      "checked": 5,
+      "downgraded": 1,
+      "requests": 61,
+      "swapped": 1
+    },
+    "recrawl": {
+      "errors": 0,
+      "fetched": 1,
+      "items": 0,
+      "pages": 0
+    }
+  },
+  "started_at": "2026-10-29T23:09:31Z"
+}
