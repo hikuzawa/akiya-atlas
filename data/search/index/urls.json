@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-28T08:59:23.339807+09:00",
+  "checked_at": "2026-10-29T09:22:45.212533+09:00",
   "urls": {
     "https://akiya-atlas.com/": {
       "verdict": "PASS",
@@ -1082,20 +1082,20 @@
       "checked_on": "2026-10-21"
     },
     "https://akiya-atlas.com/akita/052027/8-124-9fb5/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T14:42:33Z",
+      "google_canonical": "https://akiya-atlas.com/akita/052027/8-124-9fb5/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/akita/052027/8-125-27a8/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T14:57:57Z",
+      "google_canonical": "https://akiya-atlas.com/akita/052027/8-125-27a8/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/akita/052027/8-201-1500/": {
       "verdict": "PASS",
@@ -1106,12 +1106,12 @@
       "checked_on": "2026-10-21"
     },
     "https://akiya-atlas.com/akita/052027/8-202-ffd6/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T14:23:48Z",
+      "google_canonical": "https://akiya-atlas.com/akita/052027/8-202-ffd6/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/akita/052035/": {
       "verdict": "PASS",
@@ -3402,12 +3402,12 @@
       "checked_on": "2026-10-23"
     },
     "https://akiya-atlas.com/chiba/123498/60/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T14:53:31Z",
+      "google_canonical": "https://akiya-atlas.com/chiba/123498/60/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/chiba/123498/64/": {
       "verdict": "NEUTRAL",
@@ -7458,12 +7458,12 @@
       "checked_on": "2026-10-25"
     },
     "https://akiya-atlas.com/fukushima/072125/2021-126-4c34/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-03T13:45:43Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/072125/2021-126-4c34/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/fukushima/072125/2021-150-921e/": {
       "verdict": "PASS",
@@ -7538,12 +7538,12 @@
       "checked_on": "2026-10-25"
     },
     "https://akiya-atlas.com/fukushima/072125/2024-368-57f4/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T15:11:58Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/072125/2024-368-57f4/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/fukushima/072125/2025-281-d8e9/": {
       "verdict": "NEUTRAL",
@@ -7594,12 +7594,12 @@
       "checked_on": "2026-10-25"
     },
     "https://akiya-atlas.com/fukushima/072125/2025-458-3c82/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-01T13:40:49Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/072125/2025-458-3c82/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/fukushima/072125/2025-474-1f80/": {
       "verdict": "NEUTRAL",
@@ -11778,12 +11778,12 @@
       "checked_on": "2026-10-27"
     },
     "https://akiya-atlas.com/hiroshima/342041/237-2/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T15:52:33Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/237-2/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hiroshima/342041/247-2/": {
       "verdict": "PASS",
@@ -12394,28 +12394,28 @@
       "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hiroshima/342041/436/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-03T16:17:51Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/436/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hiroshima/342041/437/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T13:54:12Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/437/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hiroshima/342041/438/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T15:15:58Z",
+      "google_canonical": "https://akiya-atlas.com/hiroshima/342041/438/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hiroshima/342041/439/": {
       "verdict": "NEUTRAL",
@@ -13674,44 +13674,44 @@
       "checked_on": "2026-10-28"
     },
     "https://akiya-atlas.com/hokkaido/012203/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T10:04:28Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012203/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012211/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T02:18:08Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012211/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012220/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-22T05:31:08Z",
+      "last_crawl": "2026-10-09T00:40:05Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012220/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012238/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T07:01:38Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012238/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012246/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012254/": {
       "verdict": "PASS",
@@ -13719,23 +13719,23 @@
       "last_crawl": "2026-09-13T13:30:27Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012254/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T14:50:15Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/h30-15/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T20:22:47Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/h30-15/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/h30-19/": {
       "verdict": "NEUTRAL",
@@ -13743,7 +13743,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/h30-20/": {
       "verdict": "NEUTRAL",
@@ -13751,39 +13751,39 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/h30-27/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T01:17:36Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/h30-27/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/h30-29/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T01:03:12Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/h30-29/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/h30-34/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-23T01:39:22Z",
+      "last_crawl": "2026-10-15T06:01:35Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012262/h30-34/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/h30-35/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/h30-9/": {
       "verdict": "PASS",
@@ -13791,7 +13791,7 @@
       "last_crawl": "2026-09-13T14:35:35Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012262/h30-9/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r1-4/": {
       "verdict": "NEUTRAL",
@@ -13799,7 +13799,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r2-8/": {
       "verdict": "NEUTRAL",
@@ -13807,39 +13807,39 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r2-9/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Crawled - currently not indexed",
-      "last_crawl": "2026-09-23T03:00:58Z",
-      "google_canonical": "",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T07:16:47Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r2-9/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r5-6/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r6-1/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-06T20:00:11Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r6-1/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r6-11/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T02:08:30Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r6-11/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r6-25/": {
       "verdict": "NEUTRAL",
@@ -13847,7 +13847,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r6-3/": {
       "verdict": "NEUTRAL",
@@ -13855,23 +13855,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r7-1/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T14:18:41Z",
+      "last_crawl": "2026-10-03T20:40:59Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r7-1/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r7-10/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T12:41:10Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r7-10/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r7-11/": {
       "verdict": "PASS",
@@ -13879,71 +13879,71 @@
       "last_crawl": "2026-09-13T14:36:31Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r7-11/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r7-12/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T16:38:32Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r7-12/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r7-13/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:40:09Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r7-13/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r7-14/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r7-19/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T15:25:58Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r7-19/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r7-2/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T18:32:48Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r7-2/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r7-21/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T21:55:02Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r7-21/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r7-4/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T04:29:07Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r7-4/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r7-5/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:55:30Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r7-5/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r7-6/": {
       "verdict": "NEUTRAL",
@@ -13951,7 +13951,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r7-7/": {
       "verdict": "NEUTRAL",
@@ -13959,31 +13959,31 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r7-9/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T18:00:07Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r7-9/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r8-1/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T17:12:27Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r8-1/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r8-11/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r8-13/": {
       "verdict": "NEUTRAL",
@@ -13991,39 +13991,39 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r8-14/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T14:32:46Z",
+      "last_crawl": "2026-09-28T19:11:30Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r8-14/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r8-16/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T01:51:46Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r8-16/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
+    },
+    "https://akiya-atlas.com/hokkaido/012262/r8-17/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T05:13:54Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r8-17/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
+    },
+    "https://akiya-atlas.com/hokkaido/012262/r8-18/": {
       "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
-    },
-    "https://akiya-atlas.com/hokkaido/012262/r8-17/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
-    },
-    "https://akiya-atlas.com/hokkaido/012262/r8-18/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r8-2/": {
       "verdict": "NEUTRAL",
@@ -14031,15 +14031,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r8-3/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Crawled - currently not indexed",
-      "last_crawl": "2026-09-23T12:43:21Z",
-      "google_canonical": "",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-25T16:22:53Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r8-3/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r8-4/": {
       "verdict": "NEUTRAL",
@@ -14047,15 +14047,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r8-5/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r8-6/": {
       "verdict": "NEUTRAL",
@@ -14063,23 +14063,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r8-7/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-06T19:13:09Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r8-7/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012262/r8-8/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T18:46:39Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012262/r8-8/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012271/": {
       "verdict": "PASS",
@@ -14087,15 +14087,15 @@
       "last_crawl": "2026-09-13T15:38:23Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012271/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012289/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T18:30:04Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012289/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012297/": {
       "verdict": "PASS",
@@ -14103,55 +14103,55 @@
       "last_crawl": "2026-09-16T11:47:36Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012297/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012301/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T09:43:44Z",
+      "last_crawl": "2026-09-24T22:21:05Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012301/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012319/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T00:39:41Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012319/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012335/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T22:07:10Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012335/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012343/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012351/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T22:14:11Z",
+      "last_crawl": "2026-09-28T19:16:12Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/012351/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012360/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T14:37:33Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012360/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012360/116-d1f8/": {
       "verdict": "NEUTRAL",
@@ -14159,31 +14159,31 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012360/120-9ecb/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T16:05:17Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012360/120-9ecb/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012360/127-1d8c/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-18T11:55:24Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012360/127-1d8c/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012360/128-c107/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-24T08:32:01Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012360/128-c107/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012360/129-e1c2/": {
       "verdict": "NEUTRAL",
@@ -14191,15 +14191,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012360/84-0854/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T08:51:33Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/012360/84-0854/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012360/87-ee2a/": {
       "verdict": "NEUTRAL",
@@ -14207,23 +14207,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/012360/95-7896/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013030/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T23:11:14Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/013030/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013048/": {
       "verdict": "PASS",
@@ -14231,7 +14231,7 @@
       "last_crawl": "2026-09-15T06:46:47Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/013048/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013315/": {
       "verdict": "PASS",
@@ -14239,31 +14239,31 @@
       "last_crawl": "2026-09-14T10:08:58Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/013315/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013323/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T22:16:25Z",
+      "last_crawl": "2026-09-25T17:23:30Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/013323/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013331/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T12:08:13Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/013331/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013340/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T10:37:59Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/013340/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013374/": {
       "verdict": "NEUTRAL",
@@ -14271,15 +14271,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013439/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T21:56:20Z",
+      "last_crawl": "2026-09-28T18:57:15Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/013439/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013439/27-18e0/": {
       "verdict": "PASS",
@@ -14287,15 +14287,15 @@
       "last_crawl": "2026-09-13T14:49:25Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/013439/27-18e0/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013439/29-50ae/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013439/36-39d2/": {
       "verdict": "NEUTRAL",
@@ -14303,31 +14303,31 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013455/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T00:31:31Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/013455/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013463/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T13:38:09Z",
+      "last_crawl": "2026-10-13T18:16:38Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/013463/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013471/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T23:13:28Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/013471/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013617/": {
       "verdict": "PASS",
@@ -14335,15 +14335,15 @@
       "last_crawl": "2026-09-14T09:52:11Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/013617/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013625/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T21:22:24Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/013625/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013633/": {
       "verdict": "PASS",
@@ -14351,31 +14351,31 @@
       "last_crawl": "2026-09-16T11:06:02Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/013633/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013641/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T10:58:01Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/013641/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013676/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-16T12:49:13Z",
+      "last_crawl": "2026-10-01T13:40:52Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/013676/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013706/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T17:57:33Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/013706/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013714/": {
       "verdict": "NEUTRAL",
@@ -14383,7 +14383,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013919/": {
       "verdict": "PASS",
@@ -14391,55 +14391,55 @@
       "last_crawl": "2026-09-14T13:36:18Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/013919/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013927/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T13:20:57Z",
+      "last_crawl": "2026-09-29T05:08:27Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/013927/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013935/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-22T10:09:15Z",
+      "last_crawl": "2026-09-25T16:33:59Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/013935/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013943/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-12T05:58:13Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/013943/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013951/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T10:17:26Z",
+      "last_crawl": "2026-09-29T11:49:30Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/013951/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013960/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T09:35:36Z",
+      "last_crawl": "2026-10-07T02:27:02Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/013960/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013978/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T09:46:42Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/013978/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013986/": {
       "verdict": "PASS",
@@ -14447,7 +14447,7 @@
       "last_crawl": "2026-09-15T11:28:21Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/013986/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013986/3-1-0f13/": {
       "verdict": "PASS",
@@ -14455,7 +14455,7 @@
       "last_crawl": "2026-09-17T16:46:29Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/013986/3-1-0f13/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013986/4-2-31e4/": {
       "verdict": "PASS",
@@ -14463,47 +14463,47 @@
       "last_crawl": "2026-09-18T00:32:01Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/013986/4-2-31e4/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/013994/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T11:36:47Z",
+      "last_crawl": "2026-10-26T17:08:36Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/013994/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014001/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T22:33:41Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014001/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
+    },
+    "https://akiya-atlas.com/hokkaido/014010/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-18T04:12:53Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014010/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
+    },
+    "https://akiya-atlas.com/hokkaido/014028/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T12:36:21Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014028/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
+    },
+    "https://akiya-atlas.com/hokkaido/014036/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
-    },
-    "https://akiya-atlas.com/hokkaido/014010/": {
-      "verdict": "PASS",
-      "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-23T14:33:21Z",
-      "google_canonical": "https://akiya-atlas.com/hokkaido/014010/",
-      "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
-    },
-    "https://akiya-atlas.com/hokkaido/014028/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
-    },
-    "https://akiya-atlas.com/hokkaido/014036/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014044/": {
       "verdict": "NEUTRAL",
@@ -14511,31 +14511,31 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014052/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-23T00:39:06Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014052/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014061/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-22T04:21:13Z",
+      "last_crawl": "2026-10-07T18:05:48Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014061/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014061/4/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T01:42:36Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014061/4/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014079/": {
       "verdict": "NEUTRAL",
@@ -14543,15 +14543,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014087/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T04:57:18Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014087/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014095/": {
       "verdict": "PASS",
@@ -14559,39 +14559,39 @@
       "last_crawl": "2026-09-15T13:29:47Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014095/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T23:00:20Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014231/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/07-463f/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/11-55a7/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T01:05:06Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014231/11-55a7/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/12-5ac6/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-17T02:34:33Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014231/12-5ac6/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/13-02b3/": {
       "verdict": "NEUTRAL",
@@ -14599,23 +14599,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/24-3166/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
-    },
-    "https://akiya-atlas.com/hokkaido/014231/24-711e/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
+    },
+    "https://akiya-atlas.com/hokkaido/014231/24-711e/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T11:20:25Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014231/24-711e/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/34-f991/": {
       "verdict": "NEUTRAL",
@@ -14623,7 +14623,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/35-ce4e/": {
       "verdict": "NEUTRAL",
@@ -14631,7 +14631,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/38-fd1a/": {
       "verdict": "NEUTRAL",
@@ -14639,23 +14639,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/40-0f35/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/40-f23d/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T11:22:43Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014231/40-f23d/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/41-4fdc/": {
       "verdict": "NEUTRAL",
@@ -14684,10 +14684,10 @@
     "https://akiya-atlas.com/hokkaido/014231/47-c289/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-15T15:38:16Z",
+      "last_crawl": "2026-09-28T05:13:12Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014231/47-c289/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/48-fff8/": {
       "verdict": "NEUTRAL",
@@ -14695,15 +14695,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/49-4981/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T21:45:38Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014231/49-4981/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/50-90ec/": {
       "verdict": "NEUTRAL",
@@ -14711,23 +14711,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/53-21ee/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T19:48:54Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014231/53-21ee/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/55-490d/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T05:00:53Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014231/55-490d/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/58-9913/": {
       "verdict": "NEUTRAL",
@@ -14735,7 +14735,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/59-ed49/": {
       "verdict": "NEUTRAL",
@@ -14743,63 +14743,63 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/60-93f3/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-17T01:19:29Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014231/60-93f3/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/64-43e7/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-15T09:58:52Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014231/64-43e7/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
+    },
+    "https://akiya-atlas.com/hokkaido/014231/65-3c85/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T21:01:35Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014231/65-3c85/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
+    },
+    "https://akiya-atlas.com/hokkaido/014231/66-aa90/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T16:32:31Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014231/66-aa90/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
+    },
+    "https://akiya-atlas.com/hokkaido/014231/67-65d8/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T07:29:18Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014231/67-65d8/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
+    },
+    "https://akiya-atlas.com/hokkaido/014231/68-1a73/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T16:30:21Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014231/68-1a73/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
+    },
+    "https://akiya-atlas.com/hokkaido/014231/69-d9a0/": {
       "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
-    },
-    "https://akiya-atlas.com/hokkaido/014231/65-3c85/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
-    },
-    "https://akiya-atlas.com/hokkaido/014231/66-aa90/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
-    },
-    "https://akiya-atlas.com/hokkaido/014231/67-65d8/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
-    },
-    "https://akiya-atlas.com/hokkaido/014231/68-1a73/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
-    },
-    "https://akiya-atlas.com/hokkaido/014231/69-d9a0/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/70-8b3f/": {
       "verdict": "NEUTRAL",
@@ -14807,23 +14807,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014249/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T04:16:46Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014249/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014257/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T16:35:26Z",
+      "last_crawl": "2026-10-13T05:24:51Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014257/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014257/01-d3c7/": {
       "verdict": "NEUTRAL",
@@ -14831,7 +14831,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014257/03-d812/": {
       "verdict": "PASS",
@@ -14839,15 +14839,15 @@
       "last_crawl": "2026-09-20T03:07:06Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014257/03-d812/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014257/07-0828/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014257/09-21b2/": {
       "verdict": "NEUTRAL",
@@ -14855,7 +14855,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014257/10-fdf5/": {
       "verdict": "NEUTRAL",
@@ -14863,7 +14863,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014257/12-ca52/": {
       "verdict": "NEUTRAL",
@@ -14871,31 +14871,31 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014257/13-6d5d/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T23:22:40Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014257/13-6d5d/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014257/14-6cb7/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T17:10:23Z",
+      "last_crawl": "2026-09-29T22:14:12Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014257/14-6cb7/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T22:05:26Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014273/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/1/": {
       "verdict": "NEUTRAL",
@@ -14903,7 +14903,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/10/": {
       "verdict": "NEUTRAL",
@@ -14911,7 +14911,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/11/": {
       "verdict": "NEUTRAL",
@@ -14919,7 +14919,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/12/": {
       "verdict": "PASS",
@@ -14927,7 +14927,7 @@
       "last_crawl": "2026-09-17T10:20:47Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014273/12/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/13/": {
       "verdict": "PASS",
@@ -14935,7 +14935,7 @@
       "last_crawl": "2026-09-17T10:41:28Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014273/13/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/14/": {
       "verdict": "PASS",
@@ -14943,7 +14943,7 @@
       "last_crawl": "2026-09-17T09:39:26Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014273/14/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/15/": {
       "verdict": "PASS",
@@ -14951,7 +14951,7 @@
       "last_crawl": "2026-09-17T10:10:27Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014273/15/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/16/": {
       "verdict": "PASS",
@@ -14959,15 +14959,15 @@
       "last_crawl": "2026-09-17T09:03:16Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014273/16/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/17/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/18/": {
       "verdict": "PASS",
@@ -14975,7 +14975,7 @@
       "last_crawl": "2026-09-17T10:00:08Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014273/18/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/19/": {
       "verdict": "PASS",
@@ -14983,7 +14983,7 @@
       "last_crawl": "2026-09-13T14:01:44Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014273/19/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/2/": {
       "verdict": "PASS",
@@ -14991,55 +14991,55 @@
       "last_crawl": "2026-09-17T09:49:46Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014273/2/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/3/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/4/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T09:59:55Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014273/4/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/5/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-17T11:07:50Z",
+      "last_crawl": "2026-10-08T15:04:00Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014273/5/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/6/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T11:09:48Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014273/6/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/7/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-22T10:30:10Z",
+      "last_crawl": "2026-10-07T03:40:36Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014273/7/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/8/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-24"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T12:14:34Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014273/8/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014273/9/": {
       "verdict": "PASS",
@@ -15047,7 +15047,7 @@
       "last_crawl": "2026-09-17T09:21:30Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014273/9/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014281/": {
       "verdict": "PASS",
@@ -15055,7 +15055,7 @@
       "last_crawl": "2026-09-15T11:01:18Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014281/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014290/": {
       "verdict": "PASS",
@@ -15063,15 +15063,15 @@
       "last_crawl": "2026-09-15T13:08:22Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014290/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-24"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014303/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T10:00:35Z",
+      "last_crawl": "2026-09-29T05:04:22Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014303/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-25"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014311/": {
       "verdict": "NEUTRAL",
@@ -15079,7 +15079,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014311/4-5af4/": {
       "verdict": "NEUTRAL",
@@ -15087,23 +15087,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014311/5-5d47/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T15:10:48Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014311/5-5d47/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
+    },
+    "https://akiya-atlas.com/hokkaido/014320/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
-    },
-    "https://akiya-atlas.com/hokkaido/014320/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014338/": {
       "verdict": "PASS",
@@ -15111,31 +15111,31 @@
       "last_crawl": "2026-09-23T14:16:41Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014338/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-25"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014338/147/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014346/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T19:22:56Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014346/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014362/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014371/": {
       "verdict": "NEUTRAL",
@@ -15143,39 +15143,39 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014389/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T10:46:22Z",
+      "last_crawl": "2026-09-28T17:52:53Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014389/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-25"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014524/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-24T23:46:51Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014524/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014532/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-16T13:17:28Z",
+      "last_crawl": "2026-10-08T01:39:34Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014532/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-25"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014541/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-09-25"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T20:31:15Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014541/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014559/": {
       "verdict": "PASS",
@@ -15183,7 +15183,7 @@
       "last_crawl": "2026-09-13T13:34:13Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014559/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-25"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014567/": {
       "verdict": "PASS",
@@ -15191,15 +15191,15 @@
       "last_crawl": "2026-09-13T21:55:10Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014567/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-25"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014575/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T21:52:56Z",
+      "last_crawl": "2026-10-26T20:55:37Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014575/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-25"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014575/15-e8e5/": {
       "verdict": "PASS",
@@ -15207,7 +15207,7 @@
       "last_crawl": "2026-09-13T23:57:34Z",
       "google_canonical": "https://akiya-atlas.com/hokkaido/014575/15-e8e5/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-25"
+      "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014575/27-389b/": {
       "verdict": "PASS",
