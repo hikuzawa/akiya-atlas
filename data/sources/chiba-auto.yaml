@@ -173,27 +173,22 @@ sources:
   operator: 野田市
   operator_kind: municipality
   official_url: https://www.city.noda.chiba.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '122084'
     name: 野田市
     prefecture: 千葉県
     prefecture_slug: chiba
     slug: '122084'
-    bank_url: https://www.city.noda.chiba.jp/kurashi/anzen/bouhan/1008726.html
-    bank_status: available
+    bank_url: https://www.city.noda.chiba.jp/
+    bank_status: none
     extract_pending: false
     map_query: 千葉県野田市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.noda.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.noda.chiba.jp/
-    checked_on: '2026-10-10'
-  pages:
-  - url: https://www.city.noda.chiba.jp/kurashi/anzen/bouhan/1008726.html
-    kind: listing_index
-  allow_hosts:
-  - www.city.noda.chiba.jp
-  max_pages: 30
+    checked_on: '2026-10-31'
 - id: chiba-122106
   name: 茂原市空き家バンク
   operator: 茂原市

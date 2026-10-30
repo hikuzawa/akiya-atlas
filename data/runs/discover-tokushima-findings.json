@@ -429,9 +429,9 @@
     {
       "alternatives": [
         "https://www.town.minami.lg.jp/docs/115.html",
-        "https://www.town.minami.lg.jp/docs/6419141.html",
         "https://www.town.minami.lg.jp/docs/5962610.html",
         "https://www.town.minami.lg.jp/docs/3559826.html",
+        "https://www.town.minami.lg.jp/docs/6419141.html",
         "https://www.town.minami.lg.jp/docs/5400215.html"
       ],
       "bank_status": "available",
@@ -439,8 +439,8 @@
       "code": "363871",
       "confidence": 0.8205,
       "cross_linked": false,
-      "detail_pattern": null,
-      "evidence_checked_on": "2026-10-30",
+      "detail_pattern": "^https?://www\\.town\\.minami\\.lg\\.jp/docs/\\d+\\.html$",
+      "evidence_checked_on": "2026-10-31",
       "evidence_quote": "公式ドメイン www.town.minami.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.minami.lg.jp/",
       "external_links": [],

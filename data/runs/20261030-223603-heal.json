@@ -1,0 +1,61 @@
+{
+  "ci": true,
+  "command": "heal",
+  "errors": [
+    "https://www.town.minami.lg.jp/docs/115.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDy763X5Fxa1FXpXWUD'}",
+    "https://www.town.minami.lg.jp/docs/183.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDy7KBHsw55TekyePrY'}",
+    "https://www.town.minami.lg.jp/docs/2806924.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDy7ZpVwHtEPiDnPw5J'}",
+    "https://www.town.minami.lg.jp/docs/2892942.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDy7oCWoE8rwhQ62xME'}",
+    "https://www.town.minami.lg.jp/docs/388.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDy83LG23hddZkGB8Pz'}",
+    "https://www.town.minami.lg.jp/docs/4498386.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDy8GV2ypnXhR28cY6b'}",
+    "https://www.town.minami.lg.jp/docs/4750889.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDy8WsFjVUB3Zj17GsJ'}",
+    "https://www.town.minami.lg.jp/docs/4801478.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDy8mVwqg3EL8cKhEce'}",
+    "https://www.town.minami.lg.jp/docs/4871755.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDy91dcSLWiquijTVyE'}",
+    "https://www.town.minami.lg.jp/docs/5400215.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDy9F2PUriwpnCXA7kP'}",
+    "https://www.town.minami.lg.jp/docs/5400216.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDy9UR4qENLxNKGNwEn'}",
+    "https://www.town.minami.lg.jp/docs/5646476.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDy9i4GHq4fQbygf1YK'}",
+    "https://www.town.minami.lg.jp/docs/5807704.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDy9vwVztRVhQ8LWFr6'}",
+    "https://www.town.minami.lg.jp/docs/5877870.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDyAALMiG8qGXgG6LrU'}",
+    "https://www.town.minami.lg.jp/docs/5881504.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDyARTXj5aarvEyMHCo'}",
+    "https://www.town.minami.lg.jp/docs/5962609.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDyAfbo2y1gkLU2fmv3'}",
+    "https://www.town.minami.lg.jp/docs/5962610.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDyAtjkHtfSSiur4E8V'}",
+    "https://www.town.minami.lg.jp/docs/6057777.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDyB8cxododZr8vR66u'}",
+    "https://www.town.minami.lg.jp/docs/6418160.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDyBPFNX6tHQMR7zuE2'}",
+    "https://www.town.minami.lg.jp/docs/6419141.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDyBctWcceauJuJm38b'}",
+    "https://www.town.minami.lg.jp/docs/6479023.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDyBs2HQDxvhGdc7kbe'}",
+    "https://www.town.minami.lg.jp/docs/6488247.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDyC6v4M5rRF7NGZXhG'}",
+    "https://www.town.minami.lg.jp/docs/6489247.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDyCN3QNucdCzrYKCAr'}",
+    "https://www.town.minami.lg.jp/docs/794.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDyCZwphm2ZHWREd8Cm'}",
+    "https://www.town.minami.lg.jp/docs/800.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDyCp5j4YJ5VbMVTTdk'}",
+    "https://www.town.minami.lg.jp/docs/801.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDyD3yRAz2rTw3gERUM'}",
+    "https://www.town.minami.lg.jp/docs/825.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CgZDyDG7eHc9R7ZyqBdKS'}"
+  ],
+  "extraction_metrics": null,
+  "finished_at": "2026-10-30T22:39:06Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "千葉県野田市: 一覧が見つからず none に変更（公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ）",
+    "徳島県美波町: 詳細ページを辿るようにした（26 本）"
+  ],
+  "service": "akiya-atlas",
+  "stages": {
+    "heal": {
+      "checked": 2,
+      "downgraded": 1,
+      "requests": 22,
+      "swapped": 1
+    },
+    "recrawl": {
+      "errors": 0,
+      "fetched": 27,
+      "items": 0,
+      "pages": 0
+    }
+  },
+  "started_at": "2026-10-30T22:36:03Z"
+}
