@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.gifu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.gifu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
   pages:
   - url: https://www.city.gifu.lg.jp/kurashi/sumai/1002445/1002448.html
     kind: subsidy
@@ -49,7 +49,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ogaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.ogaki.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
 - id: gifu-212032
   name: 高山市空き家バンク
   operator: 高山市
@@ -70,7 +70,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.takayama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.takayama.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
   pages:
   - url: https://www.city.takayama.lg.jp/shisei/1015214/1003942.html
     kind: subsidy
@@ -97,7 +97,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tajimi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tajimi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
   pages:
   - url: https://www.city.tajimi.lg.jp/kurashi_tetsuduzuki/sumai_seikatsu_dobutsu/1006141/1006145.html
     kind: subsidy
@@ -128,7 +128,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.seki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.seki.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
   pages:
   - url: https://www.city.seki.lg.jp/0000019564.html
     kind: subsidy
@@ -161,7 +161,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nakatsugawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nakatsugawa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
   pages:
   - url: https://www.city.nakatsugawa.lg.jp/life/life/1/38701.html
     kind: subsidy
@@ -192,7 +192,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.mino.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.mino.gifu.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
 - id: gifu-212083
   name: 瑞浪市空き家バンク
   operator: 瑞浪市
@@ -213,7 +213,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.mizunami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.mizunami.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
   pages:
   - url: https://www.city.mizunami.lg.jp/kurashi/sumai/1001528/1001531.html
     kind: subsidy

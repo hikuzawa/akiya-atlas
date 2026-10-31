@@ -183,12 +183,12 @@ sources:
     slug: '062073'
     bank_url: https://www.city.kaminoyama.yamagata.jp/soshiki/12/kaminoyama-akiyabank2.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 山形県上山市
   operator_evidence:
     quote: 公式ドメイン www.city.kaminoyama.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kaminoyama.yamagata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
   pages:
   - url: https://www.city.kaminoyama.yamagata.jp/soshiki/12/kaminoyama-akiyabank2.html
     kind: listing_index
@@ -196,8 +196,6 @@ sources:
     - pattern: https?://www\.city\.kaminoyama\.yamagata\.jp/soshiki/12/kaminoyama\-akiyabank2\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
       kind: listing_index
       max_links: 20
-  - url: https://www.city.kaminoyama.yamagata.jp/soshiki/12/km20141218.html
-    kind: subsidy
   allow_hosts:
   - www.city.kaminoyama.yamagata.jp
   max_pages: 30
@@ -456,14 +454,14 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nishikawa.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nishikawa.yamagata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
   pages:
   - url: https://www.town.nishikawa.yamagata.jp/site/iju/1440.html
     kind: listing_index
-  - url: https://www.town.nishikawa.yamagata.jp/soshiki/kensetsu/9187.html
-    kind: subsidy
-  - url: https://www.town.nishikawa.yamagata.jp/soshiki/somu/2683.html
-    kind: subsidy
+    follow:
+    - pattern: ^https?://www\.town\.nishikawa\.yamagata\.jp/site/iju/\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.town.nishikawa.yamagata.jp
   max_pages: 30

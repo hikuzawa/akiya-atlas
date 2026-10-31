@@ -183,14 +183,19 @@
         "https://www.city.oyabe.toyama.jp/kurashi/1001729/1001742/index.html",
         "https://www.city.oyabe.toyama.jp/kurashi/1002358/1002359/index.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.city.oyabe.toyama.jp/ijyu/1001572/1003141/1004072.html",
       "code": "162094",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-01",
       "evidence_quote": "公式ドメイン www.city.oyabe.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.oyabe.toyama.jp/",
       "external_links": [],
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 35）。抽出側の課題として保留",
+      "held_since": "2026-11-01",
       "listing_rows": 35,
       "listing_score": 1.0,
       "name": "小矢部市",
@@ -204,11 +209,7 @@
       "prefecture_slug": "toyama",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.oyabe.toyama.jp/ijyu/1001583/index.html",
-        "https://www.city.oyabe.toyama.jp/kurashi/1001729/1001737/1001739.html",
-        "https://www.city.oyabe.toyama.jp/kurashi/1001729/1001737/1001738.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [],
@@ -361,36 +362,31 @@
     },
     {
       "alternatives": [],
-      "bank_url": "https://www.town.nyuzen.toyama.jp/gyosei/machizukuri/sumai/1/1856.html",
+      "bank_status": "none",
+      "bank_url": "https://www.town.nyuzen.toyama.jp/",
       "code": "163422",
-      "confidence": 0.9324999999999999,
+      "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-01",
       "evidence_quote": "公式ドメイン www.town.nyuzen.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.nyuzen.toyama.jp/",
-      "external_links": [
-        {
-          "label": "全国版空き家バンク（ライフルホームズのサイト）",
-          "url": "https://www.homes.co.jp/akiyabank/"
-        },
-        {
-          "label": "全国版空き家バンク（アットホームのサイト）",
-          "url": "https://www.akiya-athome.jp/"
-        }
-      ],
-      "listing_rows": 114,
-      "listing_score": 1.0,
+      "external_links": [],
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "入善町",
       "name_kana": "ﾆｭｳｾﾞﾝﾏﾁ",
       "official_url": "www.town.nyuzen.toyama.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
-      "pagination_pattern": "https?://www\\.town\\.nyuzen\\.toyama\\.jp/gyosei/machizukuri/sumai/1/1856\\.html/?\\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\\d+",
-      "policy": "crawl",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
       "prefecture": "富山県",
       "prefecture_slug": "toyama",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [

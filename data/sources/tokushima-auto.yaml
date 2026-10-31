@@ -418,19 +418,15 @@ sources:
     slug: '363871'
     bank_url: https://www.town.minami.lg.jp/docs/5646476.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 徳島県美波町
   operator_evidence:
     quote: 公式ドメイン www.town.minami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.minami.lg.jp/
-    checked_on: '2026-10-31'
+    checked_on: '2026-11-01'
   pages:
   - url: https://www.town.minami.lg.jp/docs/5646476.html
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.town\.minami\.lg\.jp/docs/\d+\.html$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.town.minami.lg.jp
   max_pages: 30

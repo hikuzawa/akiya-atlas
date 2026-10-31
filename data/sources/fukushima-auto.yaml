@@ -1450,7 +1450,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.miharu.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.miharu.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
 - id: fukushima-075221
   name: 小野町空き家バンク
   operator: 小野町
@@ -1471,7 +1471,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ono.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ono.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
 - id: fukushima-075418
   name: 広野町空き家バンク
   operator: 広野町
@@ -1492,7 +1492,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.hirono.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.hirono.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
   pages:
   - url: https://www.town.hirono.fukushima.jp/kurashi/sumai/1001540/index.html
     kind: subsidy
@@ -1519,7 +1519,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.naraha.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.naraha.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
   pages:
   - url: https://www.town.naraha.lg.jp/life/cat322/008510.html
     kind: subsidy
@@ -1548,7 +1548,7 @@ sources:
   operator_evidence:
     quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.tomioka-town.jp）
     url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
   pages:
   - url: https://www.tomioka-town.jp/soshiki/kikaku/1332.html
     kind: subsidy
@@ -1575,7 +1575,7 @@ sources:
   operator_evidence:
     quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.kawauchimura.jp）
     url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
 - id: fukushima-075451
   name: 大熊町空き家バンク
   operator: 大熊町
@@ -1596,7 +1596,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.okuma.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.okuma.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
 - id: fukushima-075469
   name: 双葉町空き家バンク
   operator: 双葉町
@@ -1617,7 +1617,7 @@ sources:
   operator_evidence:
     quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.town.fukushima-futaba.lg.jp）
     url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
   pages:
   - url: https://www.town.fukushima-futaba.lg.jp/10274.htm
     kind: subsidy
@@ -1643,7 +1643,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.namie.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.namie.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
   pages:
   - url: https://www.town.namie.fukushima.jp/soshiki/23/25795.html
     kind: listing_index
@@ -1676,7 +1676,7 @@ sources:
   operator_evidence:
     quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.katsurao.org）
     url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
   pages:
   - url: https://www.katsurao.org/soshiki/21/reiwa8saiene.html
     kind: subsidy
@@ -1705,7 +1705,7 @@ sources:
   operator_evidence:
     quote: 福島県 市役所・町村役場一覧に掲載された公式サイト（www.shinchi-town.jp）
     url: https://www.pref.fukushima.lg.jp/sec/01145a/yakuba.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
   pages:
   - url: https://www.shinchi-town.jp/soshiki/2/taiyoukou20260501.html
     kind: subsidy
@@ -1732,7 +1732,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.iitate.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.iitate.fukushima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
   pages:
   - url: https://www.vill.iitate.fukushima.jp/site/iju/3782.html
     kind: subsidy

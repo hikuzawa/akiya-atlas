@@ -1,0 +1,59 @@
+{
+  "ci": true,
+  "command": "heal",
+  "errors": [
+    "https://www.town.nishikawa.yamagata.jp/site/iju/10276.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4eyvdiXmP6nTubHB2b'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/10591.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4ezCm1PsAKzfxqxJyT'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/10672.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4ezU8XUCJNpeUoDXUP'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/10818.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4ezjWnY9qZ3FG42DvN'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/11354.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4f1189ui6RNK7Ww9fb'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/11355.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4f1HkDJvEDC3Mi53qg'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/1156.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4f1ZsRcdbhhgsFc7ma'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/1440.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4f1rDyQSDaCG2emrar'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/1447.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4f27N5MDzEGyHtLf65'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/3067.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4f2NV52UDyWSmhqCHr'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/3199.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4f2dbzyM9FfEjq9zc6'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/3304.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4f2tjQqwJxFSndeQS3'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/3377.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4f39N23tpkuGWmRVrc'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/3379.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4f3PWCFtw15GjScY34'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/7108.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4f3f7gxWyV5aCBPtU8'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/8434.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4f3vkTa7n8o61sp6J9'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/8435.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4f4Cd8MDr1VPzkqW5a'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/8436.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4f4VEFgLNzYdKXSfB7'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/8532.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4f4mLzqPZvGvGjSBAw'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/8763.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4f52UK2j2KHC6UFrcp'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/8974.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4f5HcDanPqP2uRGPov'}",
+    "https://www.town.nishikawa.yamagata.jp/site/iju/9305.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cgb4f5ZUhVEV7RGr7QS97'}"
+  ],
+  "extraction_metrics": null,
+  "finished_at": "2026-10-31T21:58:17Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "徳島県美波町: 一覧に見えるのに 0 件（物件行 4）。抽出側の課題として保留",
+    "富山県小矢部市: 一覧に見えるのに 0 件（物件行 35）。抽出側の課題として保留",
+    "富山県入善町: 一覧ではなかったので取り下げ（物件行 122・https://www.town.nyuzen.toyama.jp/gyosei/machizukuri/sumai/1/1856.html）",
+    "山形県上山市: 一覧に見えるのに 0 件（物件行 102）。抽出側の課題として保留",
+    "山形県西川町: 詳細ページを辿るようにした（21 本）"
+  ],
+  "service": "akiya-atlas",
+  "stages": {
+    "heal": {
+      "checked": 5,
+      "downgraded": 1,
+      "requests": 76,
+      "swapped": 1
+    },
+    "recrawl": {
+      "errors": 0,
+      "fetched": 22,
+      "items": 0,
+      "pages": 0
+    }
+  },
+  "started_at": "2026-10-31T21:52:15Z"
+}

@@ -185,21 +185,15 @@ sources:
     slug: '162094'
     bank_url: https://www.city.oyabe.toyama.jp/ijyu/1001572/1003141/1004072.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 富山県小矢部市
   operator_evidence:
     quote: 公式ドメイン www.city.oyabe.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.oyabe.toyama.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-01'
   pages:
   - url: https://www.city.oyabe.toyama.jp/ijyu/1001572/1003141/1004072.html
     kind: listing_index
-  - url: https://www.city.oyabe.toyama.jp/ijyu/1001583/index.html
-    kind: subsidy
-  - url: https://www.city.oyabe.toyama.jp/kurashi/1001729/1001737/1001739.html
-    kind: subsidy
-  - url: https://www.city.oyabe.toyama.jp/kurashi/1001729/1001737/1001738.html
-    kind: subsidy
   allow_hosts:
   - www.city.oyabe.toyama.jp
   max_pages: 30
@@ -349,36 +343,22 @@ sources:
   operator: 入善町
   operator_kind: municipality
   official_url: https://www.town.nyuzen.toyama.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '163422'
     name: 入善町
     prefecture: 富山県
     prefecture_slug: toyama
     slug: '163422'
-    bank_url: https://www.town.nyuzen.toyama.jp/gyosei/machizukuri/sumai/1/1856.html
-    bank_status: available
+    bank_url: https://www.town.nyuzen.toyama.jp/
+    bank_status: none
     extract_pending: false
     map_query: 富山県入善町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.nyuzen.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nyuzen.toyama.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.town.nyuzen.toyama.jp/gyosei/machizukuri/sumai/1/1856.html
-    kind: listing_index
-    follow:
-    - pattern: https?://www\.town\.nyuzen\.toyama\.jp/gyosei/machizukuri/sumai/1/1856\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
-      kind: listing_index
-      max_links: 20
-  allow_hosts:
-  - www.town.nyuzen.toyama.jp
-  max_pages: 30
-  external_links:
-  - label: 全国版空き家バンク(ライフルホームズのサイト)
-    url: https://www.homes.co.jp/akiyabank/
-  - label: 全国版空き家バンク(アットホームのサイト)
-    url: https://www.akiya-athome.jp/
+    checked_on: '2026-11-01'
 - id: toyama-163431
   name: 朝日町空き家バンク
   operator: 朝日町
