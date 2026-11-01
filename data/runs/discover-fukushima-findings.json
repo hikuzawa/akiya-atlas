@@ -870,15 +870,18 @@
       "alternatives": [
         "https://www.town.minamiaizu.lg.jp/official/kurashi_tetsuzuki/sumai/akiya/index.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.minamiaizu.lg.jp/cgi-bin/recruit.php/1/list",
       "code": "073687",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-10-30",
+      "detail_pattern": "^https?://www\\.town\\.minamiaizu\\.lg\\.jp/cgi\\-bin/recruit\\.php/\\d+/detail/\\d+$",
+      "evidence_checked_on": "2026-11-02",
       "evidence_quote": "公式ドメイン www.town.minamiaizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.minamiaizu.lg.jp/",
       "external_links": [],
-      "listing_rows": 91,
+      "extract_gap": false,
+      "listing_rows": 92,
       "listing_score": 1.0,
       "name": "南会津町",
       "name_kana": "ﾐﾅﾐｱｲﾂﾞﾏﾁ",
@@ -891,9 +894,7 @@
       "prefecture_slug": "fukushima",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.minamiaizu.lg.jp/official/soshikikarasagasu/sogoseisakuka/iju/3038.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [

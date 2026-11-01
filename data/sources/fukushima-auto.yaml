@@ -736,12 +736,14 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.minamiaizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.minamiaizu.lg.jp/
-    checked_on: '2026-10-30'
+    checked_on: '2026-11-02'
   pages:
   - url: https://www.town.minamiaizu.lg.jp/cgi-bin/recruit.php/1/list
     kind: listing_index
-  - url: https://www.town.minamiaizu.lg.jp/official/soshikikarasagasu/sogoseisakuka/iju/3038.html
-    kind: subsidy
+    follow:
+    - pattern: ^https?://www\.town\.minamiaizu\.lg\.jp/cgi\-bin/recruit\.php/\d+/detail/\d+$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.town.minamiaizu.lg.jp
   max_pages: 30
