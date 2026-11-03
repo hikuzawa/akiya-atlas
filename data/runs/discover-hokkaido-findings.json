@@ -2545,15 +2545,20 @@
       "alternatives": [
         "https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/akiyabank.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/geo5a8000000014g.html",
       "code": "014575",
-      "confidence": 0.9185,
+      "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-03",
       "evidence_quote": "北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.hokkaido-kamikawa.lg.jp）",
       "evidence_url": "https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html",
       "external_links": [],
-      "listing_rows": 18,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 24）。抽出側の課題として保留",
+      "held_since": "2026-11-03",
+      "listing_rows": 24,
       "listing_score": 1.0,
       "name": "上川町",
       "name_kana": "ｶﾐｶﾜﾁｮｳ",
@@ -2566,12 +2571,7 @@
       "prefecture_slug": "hokkaido",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/jutakushien.html",
-        "https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/chintaijyutakujyosei.html",
-        "https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/kyodojyutaku.html",
-        "https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/akiyasien.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [

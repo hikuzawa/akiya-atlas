@@ -1,6 +1,6 @@
 prefecture: 栃木県
 prefecture_slug: tochigi
-created_at: '2026-09-17T09:43:45+00:00'
+created_at: '2026-11-03T01:18:59+00:00'
 candidates:
 - key: 092011
   label: 栃木県 宇都宮市
@@ -32,15 +32,15 @@ candidates:
   note: null
 - key: 092037
   label: 栃木県 栃木市
-  url: http://www.tochigi-akiya.jp/
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.93
+  url: https://www.city.tochigi.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式サイト（www.city.tochigi.lg.jp）から空き家バンクとして案内されているリンク
   evidence_url: https://www.city.tochigi.lg.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null

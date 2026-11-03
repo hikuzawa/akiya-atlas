@@ -1,6 +1,6 @@
 prefecture: 山口県
 prefecture_slug: yamaguchi
-created_at: '2026-09-16T20:07:49+00:00'
+created_at: '2026-11-03T01:24:17+00:00'
 candidates:
 - key: '352012'
   label: 山口県 下関市
@@ -217,7 +217,7 @@ candidates:
   url: https://www.town.kaminoseki.lg.jp/%e4%b8%8a%e9%96%a2%e7%94%ba%e7%a9%ba%e3%81%8d%e5%ae%b6%e3%83%90%e3%83%b3%e3%82%af%e7%89%a9%e4%bb%b6%e4%b8%80%e8%a6%a7.html
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.87
+  confidence: 0.88
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.town.kaminoseki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
   evidence_url: https://www.town.kaminoseki.lg.jp/

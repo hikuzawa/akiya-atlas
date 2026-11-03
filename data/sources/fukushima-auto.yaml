@@ -594,21 +594,21 @@ sources:
     slug: 073679
     bank_url: https://www.town.tadami.lg.jp/akiyabank/index.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 福島県只見町
   operator_evidence:
     quote: 公式ドメイン www.town.tadami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.tadami.lg.jp/
-    checked_on: '2026-10-30'
+    checked_on: '2026-11-03'
   pages:
   - url: https://www.town.tadami.lg.jp/akiyabank/index.html
     kind: listing_index
-  - url: https://www.town.tadami.lg.jp/abouttown/ui-jyutaku.html
-    kind: subsidy
   allow_hosts:
   - www.town.tadami.lg.jp
   max_pages: 30
   external_links:
+  - label: 詳細(外部サイト)
+    url: https://www.homes.co.jp/akiyabank/b-49525/
   - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-49410/
   - label: 詳細(外部サイト)
@@ -641,6 +641,10 @@ sources:
     url: https://www.homes.co.jp/akiyabank/b-24041/
   - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-17887/
+  - label: 詳細(外部サイト)
+    url: https://www.homes.co.jp/akiyabank/b-49613/
+  - label: 詳細(外部サイト)
+    url: https://www.homes.co.jp/akiyabank/b-49555/
   - label: 詳細(外部サイト)
     url: https://www.homes.co.jp/akiyabank/b-45575/
   - label: 詳細(外部サイト)
@@ -731,19 +735,15 @@ sources:
     slug: 073687
     bank_url: https://www.town.minamiaizu.lg.jp/cgi-bin/recruit.php/1/list
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 福島県南会津町
   operator_evidence:
     quote: 公式ドメイン www.town.minamiaizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.minamiaizu.lg.jp/
-    checked_on: '2026-11-02'
+    checked_on: '2026-11-03'
   pages:
   - url: https://www.town.minamiaizu.lg.jp/cgi-bin/recruit.php/1/list
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.town\.minamiaizu\.lg\.jp/cgi\-bin/recruit\.php/\d+/detail/\d+$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.town.minamiaizu.lg.jp
   max_pages: 30

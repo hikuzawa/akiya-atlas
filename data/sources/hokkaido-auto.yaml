@@ -2308,23 +2308,15 @@ sources:
     slug: '014575'
     bank_url: https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/geo5a8000000014g.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 北海道上川町
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.hokkaido-kamikawa.lg.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-03'
   pages:
   - url: https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/geo5a8000000014g.html
     kind: listing_index
-  - url: https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/jutakushien.html
-    kind: subsidy
-  - url: https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/chintaijyutakujyosei.html
-    kind: subsidy
-  - url: https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/kyodojyutaku.html
-    kind: subsidy
-  - url: https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/akiyasien.html
-    kind: subsidy
   allow_hosts:
   - www.town.hokkaido-kamikawa.lg.jp
   max_pages: 30

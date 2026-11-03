@@ -436,18 +436,20 @@
     },
     {
       "alternatives": [
-        "https://www.town.kaminoseki.lg.jp/上関町空き家バンクトップページ.html",
-        "https://www.town.kaminoseki.lg.jp/%e4%b8%8a%e9%96%a2%e7%94%ba%e7%94%ba%e7%a9%ba%e5%ae%b6%e3%83%90%e3%83%b3%e3%82%af-%e7%89%a9%e4%bb%b6%e7%95%aa%e5%8f%b753.html"
+        "https://www.town.kaminoseki.lg.jp/上関町空き家バンクトップページ.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.kaminoseki.lg.jp/%e4%b8%8a%e9%96%a2%e7%94%ba%e7%a9%ba%e3%81%8d%e5%ae%b6%e3%83%90%e3%83%b3%e3%82%af%e7%89%a9%e4%bb%b6%e4%b8%80%e8%a6%a7.html",
       "code": "353418",
-      "confidence": 0.8694999999999999,
+      "confidence": 0.8835,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": "^https?://www\\.town\\.kaminoseki\\.lg\\.jp/%e\\d+%b\\d+%\\d+a%e\\d+%\\d+%a\\d+%e\\d+%\\d+%ba%e\\d+%\\d+%ba%e\\d+%a\\d+%ba%e\\d+%ae%b\\d+%e\\d+%\\d+%\\d+%e\\d+%\\d+%b\\d+%e\\d+%\\d+%af\\-%e\\d+%\\d+%a\\d+%e\\d+%bb%b\\d+%e\\d+%\\d+%aa%e\\d+%\\d+f%b\\d+\\.html$",
+      "evidence_checked_on": "2026-11-03",
       "evidence_quote": "公式ドメイン www.town.kaminoseki.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.kaminoseki.lg.jp/",
       "external_links": [],
-      "listing_rows": 11,
+      "extract_gap": false,
+      "listing_rows": 13,
       "listing_score": 1.0,
       "name": "上関町",
       "name_kana": "ｶﾐﾉｾｷﾁｮｳ",
@@ -459,7 +461,8 @@
       "prefecture": "山口県",
       "prefecture_slug": "yamaguchi",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [

@@ -1,6 +1,6 @@
 prefecture: 福岡県
 prefecture_slug: fukuoka
-created_at: '2026-09-16T20:07:50+00:00'
+created_at: '2026-11-03T01:14:03+00:00'
 candidates:
 - key: '401005'
   label: 福岡県 北九州市
@@ -733,9 +733,9 @@ candidates:
 - key: '406082'
   label: 福岡県 大任町
   url: https://www.town.oto.fukuoka.jp/dynamic/info/pub/default.aspx?c_id=16
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.84
+  page_class: listing_detail
+  class_label: 物件詳細（静的）
+  confidence: 0.79
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.town.oto.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
   evidence_url: https://www.town.oto.fukuoka.jp/

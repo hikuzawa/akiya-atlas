@@ -343,16 +343,21 @@
         "https://www.city.inabe.mie.jp/kurashi/jutaku/1013569.html",
         "https://www.city.inabe.mie.jp/kurashi/jutaku/1003161/index.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.city.inabe.mie.jp/kurashi/jutaku/1000847.html",
       "code": "242144",
       "confidence": 0.8414999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-03",
       "evidence_quote": "公式ドメイン www.city.inabe.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.inabe.mie.jp/",
       "external_links": [],
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 7）。抽出側の課題として保留",
+      "held_since": "2026-11-03",
       "listing_rows": 7,
-      "listing_score": 0.81,
+      "listing_score": 0.87,
       "name": "いなべ市",
       "name_kana": "ｲﾅﾍﾞｼ",
       "official_url": "www.city.inabe.mie.jp",
@@ -364,9 +369,7 @@
       "prefecture_slug": "mie",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.inabe.mie.jp/kurashi/jutaku/1007395.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [

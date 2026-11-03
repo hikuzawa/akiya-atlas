@@ -1,6 +1,6 @@
 prefecture: 北海道
 prefecture_slug: hokkaido
-created_at: '2026-09-15T11:25:06+00:00'
+created_at: '2026-11-03T01:15:40+00:00'
 candidates:
 - key: '011002'
   label: 北海道 札幌市
@@ -1281,7 +1281,7 @@ candidates:
   url: https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/geo5a8000000014g.html
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.92
+  confidence: 0.93
   operator_kind: municipality
   evidence_quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.hokkaido-kamikawa.lg.jp）
   evidence_url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html

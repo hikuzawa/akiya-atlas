@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.maebashi.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.maebashi.gunma.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-03'
 - id: gunma-102024
   name: 高崎市空き家バンク
   operator: 高崎市
@@ -41,7 +41,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.takasaki.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.takasaki.gunma.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-03'
 - id: gunma-102032
   name: 桐生市空き家バンク
   operator: 桐生市
@@ -62,7 +62,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kiryu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kiryu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-03'
   pages:
   - url: https://www.city.kiryu.lg.jp/shisei/machi/iinekiryu/1015464.html
     kind: subsidy
@@ -94,7 +94,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.isesaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.isesaki.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-03'
   pages:
   - url: https://www.city.isesaki.lg.jp/soshiki/kensetu/jyutaku/akiya/1640.html
     kind: subsidy
@@ -124,7 +124,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ota.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ota.gunma.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-03'
   pages:
   - url: https://www.city.ota.gunma.jp/page/1150.html
     kind: listing_index
@@ -182,7 +182,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.numata.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.numata.gunma.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-03'
 - id: gunma-102075
   name: 館林市空き家バンク
   operator: 館林市

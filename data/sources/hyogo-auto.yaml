@@ -538,10 +538,14 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.city.tambasasayama.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.tambasasayama.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-03'
   pages:
   - url: https://classo.jp/
     kind: listing_index
+    follow:
+    - pattern: ^https?://classo\.jp/house/g\d+u/$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - classo.jp
   max_pages: 30

@@ -107,15 +107,20 @@
     },
     {
       "alternatives": [],
+      "bank_status": "available",
       "bank_url": "https://namerikawa-akiya.com/",
       "code": "162060",
       "confidence": 0.9324999999999999,
       "cross_linked": true,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-03",
       "evidence_quote": "公式サイト（www.city.namerikawa.toyama.jp）から空き家バンクとして案内されているリンク",
       "evidence_url": "https://www.city.namerikawa.toyama.jp/",
       "external_links": [],
-      "listing_rows": 25,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 24）。抽出側の課題として保留",
+      "held_since": "2026-11-03",
+      "listing_rows": 24,
       "listing_score": 1.0,
       "name": "滑川市",
       "name_kana": "ﾅﾒﾘｶﾜｼ",
@@ -127,7 +132,8 @@
       "prefecture": "富山県",
       "prefecture_slug": "toyama",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],
@@ -189,7 +195,7 @@
       "confidence": 0.9324999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-02",
+      "evidence_checked_on": "2026-11-03",
       "evidence_quote": "公式ドメイン www.city.oyabe.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.oyabe.toyama.jp/",
       "external_links": [],
@@ -299,21 +305,19 @@
       "alternatives": [
         "https://www.town.kamiichi.toyama.jp/life/1/18/83/"
       ],
-      "bank_url": "https://www.town.kamiichi.toyama.jp/page/1646.html",
+      "bank_status": "available",
+      "bank_url": "https://www.town.kamiichi.toyama.jp/page/1934.html",
       "code": "163228",
-      "confidence": 0.8905,
+      "confidence": 0.8414999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-03",
       "evidence_quote": "公式ドメイン www.town.kamiichi.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.kamiichi.toyama.jp/",
-      "external_links": [
-        {
-          "label": "全国版空き家バンク（ライフル版）",
-          "url": "https://www.homes.co.jp/akiyabank/"
-        }
-      ],
-      "listing_rows": 14,
-      "listing_score": 1.0,
+      "external_links": [],
+      "extract_gap": false,
+      "listing_rows": 7,
+      "listing_score": 0.97,
       "name": "上市町",
       "name_kana": "ｶﾐｲﾁﾏﾁ",
       "official_url": "www.town.kamiichi.toyama.jp",
@@ -325,11 +329,7 @@
       "prefecture_slug": "toyama",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.kamiichi.toyama.jp/page/1710.html",
-        "https://www.town.kamiichi.toyama.jp/page/1753.html",
-        "https://www.town.kamiichi.toyama.jp/page/1770.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [],

@@ -56,30 +56,31 @@
       "alternatives": [
         "https://www.city.tochigi.lg.jp/soshiki/43/72461.html"
       ],
-      "bank_url": "http://www.tochigi-akiya.jp/",
+      "bank_status": "none",
+      "bank_url": "https://www.city.tochigi.lg.jp/",
       "code": "092037",
-      "confidence": 0.9324999999999999,
-      "cross_linked": true,
-      "evidence_checked_on": "2026-09-11",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-03",
       "evidence_quote": "公式サイト（www.city.tochigi.lg.jp）から空き家バンクとして案内されているリンク",
       "evidence_url": "https://www.city.tochigi.lg.jp/",
       "external_links": [],
-      "listing_rows": 59,
-      "listing_score": 1.0,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "栃木市",
       "name_kana": "ﾄﾁｷﾞｼ",
       "official_url": "www.city.tochigi.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "栃木県",
       "prefecture_slug": "tochigi",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "http://www.tochigi-akiya.jp/subsidy/index.php"
-      ]
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [

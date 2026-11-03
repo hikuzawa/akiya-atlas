@@ -320,17 +320,15 @@ sources:
     slug: '242144'
     bank_url: https://www.city.inabe.mie.jp/kurashi/jutaku/1000847.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 三重県いなべ市
   operator_evidence:
     quote: 公式ドメイン www.city.inabe.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.inabe.mie.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-03'
   pages:
   - url: https://www.city.inabe.mie.jp/kurashi/jutaku/1000847.html
     kind: listing_index
-  - url: https://www.city.inabe.mie.jp/kurashi/jutaku/1007395.html
-    kind: subsidy
   allow_hosts:
   - www.city.inabe.mie.jp
   max_pages: 30

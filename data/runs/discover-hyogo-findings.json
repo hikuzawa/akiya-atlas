@@ -577,15 +577,18 @@
     },
     {
       "alternatives": [],
+      "bank_status": "available",
       "bank_url": "https://classo.jp/",
       "code": "282219",
-      "confidence": 0.9185,
+      "confidence": 0.8975,
       "cross_linked": true,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": "^https?://classo\\.jp/house/g\\d+u/$",
+      "evidence_checked_on": "2026-11-03",
       "evidence_quote": "公式サイト（www.city.tambasasayama.lg.jp）から空き家バンクとして案内されているリンク",
       "evidence_url": "https://www.city.tambasasayama.lg.jp/",
       "external_links": [],
-      "listing_rows": 18,
+      "extract_gap": false,
+      "listing_rows": 15,
       "listing_score": 1.0,
       "name": "丹波篠山市",
       "name_kana": "ﾀﾝﾊﾞｻｻﾔﾏｼ",
@@ -597,7 +600,8 @@
       "prefecture": "兵庫県",
       "prefecture_slug": "hyogo",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],

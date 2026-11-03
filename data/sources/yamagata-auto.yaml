@@ -188,7 +188,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kaminoyama.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kaminoyama.yamagata.jp/
-    checked_on: '2026-11-02'
+    checked_on: '2026-11-03'
   pages:
   - url: https://www.city.kaminoyama.yamagata.jp/soshiki/12/kaminoyama-akiyabank2.html
     kind: listing_index
@@ -449,15 +449,19 @@ sources:
     slug: '063223'
     bank_url: https://www.town.nishikawa.yamagata.jp/site/iju/1440.html
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 山形県西川町
   operator_evidence:
     quote: 公式ドメイン www.town.nishikawa.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nishikawa.yamagata.jp/
-    checked_on: '2026-11-02'
+    checked_on: '2026-11-03'
   pages:
   - url: https://www.town.nishikawa.yamagata.jp/site/iju/1440.html
     kind: listing_index
+    follow:
+    - pattern: ^https?://www\.town\.nishikawa\.yamagata\.jp/site/iju/\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.town.nishikawa.yamagata.jp
   max_pages: 30

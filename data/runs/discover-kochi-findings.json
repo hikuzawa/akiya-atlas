@@ -895,15 +895,20 @@
       "alternatives": [
         "https://www.town.otsuki.kochi.jp/life/dtl.php?hdnKey=1036"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.otsuki.kochi.jp/iju/info/akiya.php",
       "code": "394246",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-03",
       "evidence_quote": "公式ドメイン www.town.otsuki.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.otsuki.kochi.jp/",
       "external_links": [],
-      "listing_rows": 66,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 63）。抽出側の課題として保留",
+      "held_since": "2026-11-03",
+      "listing_rows": 63,
       "listing_score": 1.0,
       "name": "大月町",
       "name_kana": "ｵｵﾂｷﾁｮｳ",
@@ -915,7 +920,8 @@
       "prefecture": "高知県",
       "prefecture_slug": "kochi",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [

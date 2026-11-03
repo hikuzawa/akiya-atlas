@@ -117,12 +117,12 @@ sources:
     slug: '162060'
     bank_url: https://namerikawa-akiya.com/
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 富山県滑川市
   operator_evidence:
     quote: 公式サイト（www.city.namerikawa.toyama.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.namerikawa.toyama.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-03'
   pages:
   - url: https://namerikawa-akiya.com/
     kind: listing_index
@@ -190,7 +190,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.oyabe.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.oyabe.toyama.jp/
-    checked_on: '2026-11-02'
+    checked_on: '2026-11-03'
   pages:
   - url: https://www.city.oyabe.toyama.jp/ijyu/1001572/1003141/1004072.html
     kind: listing_index
@@ -284,29 +284,20 @@ sources:
     prefecture: 富山県
     prefecture_slug: toyama
     slug: '163228'
-    bank_url: https://www.town.kamiichi.toyama.jp/page/1646.html
+    bank_url: https://www.town.kamiichi.toyama.jp/page/1934.html
     bank_status: available
     extract_pending: false
     map_query: 富山県上市町
   operator_evidence:
     quote: 公式ドメイン www.town.kamiichi.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kamiichi.toyama.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-03'
   pages:
-  - url: https://www.town.kamiichi.toyama.jp/page/1646.html
+  - url: https://www.town.kamiichi.toyama.jp/page/1934.html
     kind: listing_index
-  - url: https://www.town.kamiichi.toyama.jp/page/1710.html
-    kind: subsidy
-  - url: https://www.town.kamiichi.toyama.jp/page/1753.html
-    kind: subsidy
-  - url: https://www.town.kamiichi.toyama.jp/page/1770.html
-    kind: subsidy
   allow_hosts:
   - www.town.kamiichi.toyama.jp
   max_pages: 30
-  external_links:
-  - label: 全国版空き家バンク(ライフル版)
-    url: https://www.homes.co.jp/akiyabank/
 - id: toyama-163236
   name: 立山町空き家バンク
   operator: 立山町

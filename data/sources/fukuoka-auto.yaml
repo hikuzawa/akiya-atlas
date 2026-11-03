@@ -1312,15 +1312,15 @@ sources:
     slug: '406082'
     bank_url: https://www.town.oto.fukuoka.jp/dynamic/info/pub/default.aspx?c_id=16
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 福岡県大任町
   operator_evidence:
     quote: 公式ドメイン www.town.oto.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.oto.fukuoka.jp/
-    checked_on: '2026-10-17'
+    checked_on: '2026-11-03'
   pages:
   - url: https://www.town.oto.fukuoka.jp/dynamic/info/pub/default.aspx?c_id=16
-    kind: listing_index
+    kind: listing_detail
   allow_hosts:
   - www.town.oto.fukuoka.jp
   max_pages: 30

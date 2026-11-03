@@ -53,29 +53,22 @@ sources:
   operator: 栃木市
   operator_kind: municipality
   official_url: https://www.city.tochigi.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: 092037
     name: 栃木市
     prefecture: 栃木県
     prefecture_slug: tochigi
     slug: 092037
-    bank_url: http://www.tochigi-akiya.jp/
-    bank_status: available
+    bank_url: https://www.city.tochigi.lg.jp/
+    bank_status: none
     extract_pending: false
     map_query: 栃木県栃木市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式サイト（www.city.tochigi.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.tochigi.lg.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: http://www.tochigi-akiya.jp/
-    kind: listing_index
-  - url: http://www.tochigi-akiya.jp/subsidy/index.php
-    kind: subsidy
-  allow_hosts:
-  - www.tochigi-akiya.jp
-  max_pages: 30
+    checked_on: '2026-11-03'
 - id: tochigi-092045
   name: 佐野市空き家バンク
   operator: 佐野市

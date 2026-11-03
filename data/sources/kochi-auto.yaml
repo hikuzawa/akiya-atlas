@@ -840,12 +840,12 @@ sources:
     slug: '394246'
     bank_url: https://www.town.otsuki.kochi.jp/iju/info/akiya.php
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 高知県大月町
   operator_evidence:
     quote: 公式ドメイン www.town.otsuki.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.otsuki.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-03'
   pages:
   - url: https://www.town.otsuki.kochi.jp/iju/info/akiya.php
     kind: listing_index
