@@ -698,14 +698,14 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.city.sunagawa.hokkaido.jp/seikatsu_kurashi/news/akiyabankkousinn.html"
-      ],
+      "alternatives": [],
+      "bank_status": "available",
       "bank_url": "https://www.city.sunagawa.hokkaido.jp/seikatsu_kurashi/juutaku/newakiya-akichizyouhou.html",
       "code": "012262",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": "^https?://www\\.city\\.sunagawa\\.hokkaido\\.jp/seikatsu_kurashi/juutaku/akiyaR\\d+\\-\\d+\\.html$",
+      "evidence_checked_on": "2026-11-04",
       "evidence_quote": "公式ドメイン www.city.sunagawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.sunagawa.hokkaido.jp/",
       "external_links": [
@@ -714,7 +714,8 @@
           "url": "https://www.athome.co.jp/kodate/chuko/hokkaido/sunagawa-city/list/"
         }
       ],
-      "listing_rows": 57,
+      "extract_gap": false,
+      "listing_rows": 59,
       "listing_score": 1.0,
       "name": "砂川市",
       "name_kana": "ｽﾅｶﾞﾜｼ",
@@ -726,7 +727,8 @@
       "prefecture": "北海道",
       "prefecture_slug": "hokkaido",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -2551,7 +2553,7 @@
       "confidence": 0.9324999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-03",
+      "evidence_checked_on": "2026-11-04",
       "evidence_quote": "北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.hokkaido-kamikawa.lg.jp）",
       "evidence_url": "https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html",
       "external_links": [],

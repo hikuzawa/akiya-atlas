@@ -1,0 +1,32 @@
+{
+  "ci": true,
+  "command": "crawl",
+  "errors": [
+    "https://www.town.yusui.kagoshima.jp/soshiki/34/10491.html: HTTP 404"
+  ],
+  "extraction_metrics": null,
+  "finished_at": "2026-11-04T00:07:35Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "キャッシュが巡回状態より古く、条件を付けずに取り直した: https://akiyaconcierge.com/area/ooyodo/page/2/, https://www.town.minami.lg.jp/docs/115.html, https://www.town.minami.lg.jp/docs/5400215.html, https://www.town.minami.lg.jp/docs/4871755.html, https://www.town.minami.lg.jp/docs/5400216.html, https://www.town.minami.lg.jp/docs/6419141.html, https://www.town.minami.lg.jp/docs/3854997.html, https://www.town.minami.lg.jp/docs/794.html, https://www.town.minami.lg.jp/docs/6489247.html, https://www.town.minami.lg.jp/docs/6488247.html ほか 18 件"
+  ],
+  "service": "akiya-atlas",
+  "stages": {
+    "crawl": {
+      "changed": 240,
+      "errors": 1,
+      "fetched": 254,
+      "not_modified": 0,
+      "requests": 272,
+      "stale_cache": 28,
+      "unchanged": 14,
+      "workers": 8
+    }
+  },
+  "started_at": "2026-11-04T00:05:02Z"
+}

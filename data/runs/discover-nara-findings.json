@@ -826,14 +826,17 @@
         "https://www.town.oyodo.lg.jp/0000001485.html",
         "https://www.homes.co.jp/akiyabank/nara/yoshino_oyodo/"
       ],
+      "bank_status": "available",
       "bank_url": "https://akiyaconcierge.com/area/ooyodo/",
       "code": "294420",
       "confidence": 0.8905,
       "cross_linked": true,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": "^https?://akiyaconcierge\\.com/bank/\\d+/$",
+      "evidence_checked_on": "2026-11-04",
       "evidence_quote": "公式サイト（www.town.oyodo.lg.jp）から空き家バンクとして案内されているリンク",
       "evidence_url": "https://www.town.oyodo.lg.jp/",
       "external_links": [],
+      "extract_gap": false,
       "listing_rows": 14,
       "listing_score": 1.0,
       "name": "大淀町",
@@ -846,7 +849,8 @@
       "prefecture": "奈良県",
       "prefecture_slug": "nara",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [

@@ -635,10 +635,14 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sunagawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.sunagawa.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-04'
   pages:
   - url: https://www.city.sunagawa.hokkaido.jp/seikatsu_kurashi/juutaku/newakiya-akichizyouhou.html
     kind: listing_index
+    follow:
+    - pattern: ^https?://www\.city\.sunagawa\.hokkaido\.jp/seikatsu_kurashi/juutaku/akiyaR\d+\-\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.city.sunagawa.hokkaido.jp
   max_pages: 30
@@ -2313,7 +2317,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.hokkaido-kamikawa.lg.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-11-03'
+    checked_on: '2026-11-04'
   pages:
   - url: https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/geo5a8000000014g.html
     kind: listing_index

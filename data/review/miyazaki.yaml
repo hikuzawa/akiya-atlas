@@ -1,6 +1,6 @@
 prefecture: 宮崎県
 prefecture_slug: miyazaki
-created_at: '2026-09-15T00:45:30+00:00'
+created_at: '2026-11-03T23:51:52+00:00'
 candidates:
 - key: '452017'
   label: 宮崎県 宮崎市
@@ -315,7 +315,7 @@ candidates:
   url: https://www.town.miyazaki-misato.lg.jp/dynamic/info/pub/default.aspx?c_id=26
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.88
+  confidence: 0.9
   operator_kind: municipality
   evidence_quote: 宮崎県 県内市町村一覧に掲載された公式サイト（www.town.miyazaki-misato.lg.jp）
   evidence_url: https://www.pref.miyazaki.lg.jp/kohosenryaku/kense/shichoson/shichosonmap.html

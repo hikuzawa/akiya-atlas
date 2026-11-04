@@ -1,0 +1,34 @@
+{
+  "ci": true,
+  "command": "guard",
+  "errors": [
+    "listings_not_live: 前回公開した 11.2%（599/5361）から 33.1%（1772/5361）へ +21.9pt。上限は +5pt — 掲載中でない物件の割合。平常は 5.8〜6.2% で、1 晩の動きは最大 0.2pt。売れた物件が 30 日で「掲載終了の可能性」になり始めても 1 晩 0.4pt ほどの見込み。鮮度や巡回の誤りで物件の多い県（福島 8.7%・北海道 6.3%・鹿児島 5.3%）の分がまとめて古くなれば越える。割合そのものは売れた物件が溜まって月単位で上がるので、上限は置かない",
+    "crawled_without_live: 14.7%（37/251）が上限 10% を超えた — 物件一覧を巡回しているのに掲載中が 0 件の自治体の割合。平常は 1.1〜1.9%（264 のうち 3〜5）で、1 晩に動くのは 1 自治体（0.4pt）まで。1 晩で 8 自治体（3pt）以上が 0 件になるのは、同じ作りの一覧の読み取りや巡回がまとめて壊れたとき。10% は平常の約 5 倍",
+    "crawled_without_live: 前回公開した 3.4%（9/261）から 14.7%（37/251）へ +11.3pt。上限は +3pt — 物件一覧を巡回しているのに掲載中が 0 件の自治体の割合。平常は 1.1〜1.9%（264 のうち 3〜5）で、1 晩に動くのは 1 自治体（0.4pt）まで。1 晩で 8 自治体（3pt）以上が 0 件になるのは、同じ作りの一覧の読み取りや巡回がまとめて壊れたとき。10% は平常の約 5 倍"
+  ],
+  "extraction_metrics": null,
+  "finished_at": "2026-11-04T00:09:49Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "akiya-atlas",
+  "stages": {
+    "guard": {
+      "breaches": 3,
+      "crawled_without_live_bp": 1474,
+      "crawled_without_live_count": 37,
+      "crawled_without_live_total": 251,
+      "listings_not_live_bp": 3305,
+      "listings_not_live_count": 1772,
+      "listings_not_live_total": 5361,
+      "operator_undetermined_bp": 0,
+      "operator_undetermined_count": 0,
+      "operator_undetermined_total": 1742
+    }
+  },
+  "started_at": "2026-11-04T00:09:42Z"
+}

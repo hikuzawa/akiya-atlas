@@ -210,27 +210,22 @@ sources:
   operator: 十日町市
   operator_kind: municipality
   official_url: https://www.city.tokamachi.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '152102'
     name: 十日町市
     prefecture: 新潟県
     prefecture_slug: niigata
     slug: '152102'
-    bank_url: https://www.city.tokamachi.lg.jp/cgi-bin/recruit.php/1/list
-    bank_status: available
+    bank_url: https://www.city.tokamachi.lg.jp/
+    bank_status: none
     extract_pending: false
     map_query: 新潟県十日町市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.tokamachi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tokamachi.lg.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.tokamachi.lg.jp/cgi-bin/recruit.php/1/list
-    kind: listing_index
-  allow_hosts:
-  - www.city.tokamachi.lg.jp
-  max_pages: 30
+    checked_on: '2026-11-04'
 - id: niigata-152111
   name: 見附市空き家バンク
   operator: 見附市
@@ -301,31 +296,22 @@ sources:
   operator: 燕市
   operator_kind: municipality
   official_url: https://www.city.tsubame.niigata.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '152137'
     name: 燕市
     prefecture: 新潟県
     prefecture_slug: niigata
     slug: '152137'
-    bank_url: https://www.city.tsubame.niigata.jp/cgi-bin/recruit.php/3/list?page_no=1
-    bank_status: available
+    bank_url: https://www.city.tsubame.niigata.jp/
+    bank_status: none
     extract_pending: false
     map_query: 新潟県燕市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.tsubame.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.tsubame.niigata.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.tsubame.niigata.jp/cgi-bin/recruit.php/3/list?page_no=1
-    kind: listing_index
-  - url: https://www.city.tsubame.niigata.jp/soshiki/toshi_seibi/3/1/53/8812.html
-    kind: subsidy
-  - url: https://www.city.tsubame.niigata.jp/life/6/4/8675.html
-    kind: subsidy
-  allow_hosts:
-  - www.city.tsubame.niigata.jp
-  max_pages: 30
+    checked_on: '2026-11-04'
 - id: niigata-152161
   name: 糸魚川市空き家バンク
   operator: 糸魚川市
@@ -771,25 +757,17 @@ sources:
     prefecture: 新潟県
     prefecture_slug: niigata
     slug: '155811'
-    bank_url: http://www.vill.sekikawa.niigata.jp/life/13/696/index.html
+    bank_url: https://www.vill.sekikawa.niigata.jp/life/13/696/index.html
     bank_status: available
     extract_pending: false
     map_query: 新潟県関川村
   operator_evidence:
     quote: 新潟県 リンク集：県内市町村に掲載された公式サイト（www.vill.sekikawa.niigata.jp）
     url: https://www.pref.niigata.lg.jp/site/link/link-sichoson.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-04'
   pages:
-  - url: http://www.vill.sekikawa.niigata.jp/life/13/696/index.html
+  - url: https://www.vill.sekikawa.niigata.jp/life/13/696/index.html
     kind: listing_index
-  - url: http://www.vill.sekikawa.niigata.jp/life/13/1328/index.html
-    kind: subsidy
-  - url: http://www.vill.sekikawa.niigata.jp/life/13/269/index.html
-    kind: subsidy
-  - url: http://www.vill.sekikawa.niigata.jp/life/13/bb3953ab80a8/index.html
-    kind: subsidy
-  - url: http://www.vill.sekikawa.niigata.jp/life/3289/3290/124fb460eefa/index.html
-    kind: subsidy
   allow_hosts:
   - www.vill.sekikawa.niigata.jp
   max_pages: 30

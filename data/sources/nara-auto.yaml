@@ -727,7 +727,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.town.oyodo.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.town.oyodo.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-04'
   pages:
   - url: https://akiyaconcierge.com/area/ooyodo/
     kind: listing_index
@@ -735,6 +735,9 @@ sources:
     - pattern: https?://akiyaconcierge\.com/area/ooyodo/page/\d+/?$
       kind: listing_index
       max_links: 20
+    - pattern: ^https?://akiyaconcierge\.com/bank/\d+/$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - akiyaconcierge.com
   max_pages: 30

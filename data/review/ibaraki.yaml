@@ -1,6 +1,6 @@
 prefecture: 茨城県
 prefecture_slug: ibaraki
-created_at: '2026-09-14T23:21:07+00:00'
+created_at: '2026-11-03T23:46:29+00:00'
 candidates:
 - key: 082015
   label: 茨城県 水戸市
@@ -539,7 +539,7 @@ candidates:
   url: https://www.town.ami.lg.jp/0000009864.html
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.85
+  confidence: 0.86
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.town.ami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
   evidence_url: https://www.town.ami.lg.jp/

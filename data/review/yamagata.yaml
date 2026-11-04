@@ -1,6 +1,6 @@
 prefecture: 山形県
 prefecture_slug: yamagata
-created_at: '2026-09-14T23:13:08+00:00'
+created_at: '2026-11-04T00:03:14+00:00'
 candidates:
 - key: '062014'
   label: 山形県 山形市
@@ -438,15 +438,15 @@ candidates:
   note: null
 - key: '064033'
   label: 山形県 飯豊町
-  url: https://www.town.iide.yamagata.jp/001/akiyajyouhou_1.html
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.86
+  url: https://www.town.iide.yamagata.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
-  evidence_quote: 公式ドメイン www.town.iide.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
-  evidence_url: https://www.town.iide.yamagata.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  evidence_quote: '山形県 山形県内市町村ページに掲載された公式サイト（www.town.iide.yamagata.jp）。サイトを取得できなかったためリンクのみ（robots.txt 502: 今回は巡回しない）'
+  evidence_url: https://www.pref.yamagata.jp/020026/kensei/information/clink.html
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null

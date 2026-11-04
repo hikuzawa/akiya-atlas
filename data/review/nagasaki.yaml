@@ -1,6 +1,6 @@
 prefecture: 長崎県
 prefecture_slug: nagasaki
-created_at: '2026-09-17T09:36:51+00:00'
+created_at: '2026-11-03T23:52:54+00:00'
 candidates:
 - key: '422011'
   label: 長崎県 長崎市
@@ -172,10 +172,10 @@ candidates:
   note: null
 - key: '422142'
   label: 長崎県 南島原市
-  url: https://www.city.minamishimabara.lg.jp/kiji0037240/index.html
+  url: https://www.city.minamishimabara.lg.jp/list00242.html
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.83
+  confidence: 0.81
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.city.minamishimabara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
   evidence_url: https://www.city.minamishimabara.lg.jp/

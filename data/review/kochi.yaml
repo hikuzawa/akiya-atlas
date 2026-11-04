@@ -1,6 +1,6 @@
 prefecture: 高知県
 prefecture_slug: kochi
-created_at: '2026-09-17T09:36:19+00:00'
+created_at: '2026-11-03T23:49:06+00:00'
 candidates:
 - key: '392014'
   label: 高知県 高知市
@@ -32,10 +32,10 @@ candidates:
   note: null
 - key: '392031'
   label: 高知県 安芸市
-  url: https://www.city.aki.kochi.jp/iju/reside/list.php
+  url: https://www.city.aki.kochi.jp/iju/startbusiness/
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.93
+  confidence: 0.86
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.city.aki.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
   evidence_url: https://www.city.aki.kochi.jp/

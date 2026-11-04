@@ -443,12 +443,14 @@
       "code": "353418",
       "confidence": 0.8835,
       "cross_linked": false,
-      "detail_pattern": "^https?://www\\.town\\.kaminoseki\\.lg\\.jp/%e\\d+%b\\d+%\\d+a%e\\d+%\\d+%a\\d+%e\\d+%\\d+%ba%e\\d+%\\d+%ba%e\\d+%a\\d+%ba%e\\d+%ae%b\\d+%e\\d+%\\d+%\\d+%e\\d+%\\d+%b\\d+%e\\d+%\\d+%af\\-%e\\d+%\\d+%a\\d+%e\\d+%bb%b\\d+%e\\d+%\\d+%aa%e\\d+%\\d+f%b\\d+\\.html$",
-      "evidence_checked_on": "2026-11-03",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-04",
       "evidence_quote": "公式ドメイン www.town.kaminoseki.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.kaminoseki.lg.jp/",
       "external_links": [],
-      "extract_gap": false,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 13）。抽出側の課題として保留",
+      "held_since": "2026-11-04",
       "listing_rows": 13,
       "listing_score": 1.0,
       "name": "上関町",
@@ -493,16 +495,19 @@
     },
     {
       "alternatives": [],
+      "bank_status": "available",
       "bank_url": "https://www.town.hirao.lg.jp/kurashi/jyutaku/akiya/1457314685054.html",
       "code": "353442",
-      "confidence": 0.8905,
+      "confidence": 0.9045,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": "^https?://www\\.town\\.hirao\\.lg\\.jp/soshiki/chiiki/sosei/teijyu_project/akiya/hirao_akiya_bukken/\\d+\\.html$",
+      "evidence_checked_on": "2026-11-04",
       "evidence_quote": "公式ドメイン www.town.hirao.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.hirao.lg.jp/",
       "external_links": [],
-      "listing_rows": 14,
-      "listing_score": 0.9,
+      "extract_gap": false,
+      "listing_rows": 16,
+      "listing_score": 0.93,
       "name": "平生町",
       "name_kana": "ﾋﾗｵﾁｮｳ",
       "official_url": "www.town.hirao.lg.jp",
@@ -514,9 +519,7 @@
       "prefecture_slug": "yamaguchi",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.hirao.lg.jp/kurashi/jyutaku/akiya/1457314714412.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [

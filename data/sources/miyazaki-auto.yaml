@@ -567,12 +567,12 @@ sources:
     slug: '454311'
     bank_url: https://www.town.miyazaki-misato.lg.jp/dynamic/info/pub/default.aspx?c_id=26
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 宮崎県美郷町
   operator_evidence:
     quote: 宮崎県 県内市町村一覧に掲載された公式サイト（www.town.miyazaki-misato.lg.jp）
     url: https://www.pref.miyazaki.lg.jp/kohosenryaku/kense/shichoson/shichosonmap.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-04'
   pages:
   - url: https://www.town.miyazaki-misato.lg.jp/dynamic/info/pub/default.aspx?c_id=26
     kind: listing_index

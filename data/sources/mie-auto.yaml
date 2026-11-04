@@ -325,7 +325,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.inabe.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.inabe.mie.jp/
-    checked_on: '2026-11-03'
+    checked_on: '2026-11-04'
   pages:
   - url: https://www.city.inabe.mie.jp/kurashi/jutaku/1000847.html
     kind: listing_index
@@ -351,16 +351,14 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.shima.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.shima.mie.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-04'
   pages:
   - url: https://www.city.shima.mie.jp/cgi-bin/recruit.php/1/list
     kind: listing_index
-  - url: https://www.city.shima.mie.jp/kakuka/kensetsubu/eizenshitsu/eizen_sumai/1454318955400.html
-    kind: subsidy
-  - url: https://www.city.shima.mie.jp/kakuka/kensetsubu/eizenshitsu/eizen_sumai/akiya/4939.html
-    kind: subsidy
-  - url: https://www.city.shima.mie.jp/kakuka/kensetsubu/eizenshitsu/eizen_sumai/akiya/4986.html
-    kind: subsidy
+    follow:
+    - pattern: ^https?://www\.city\.shima\.mie\.jp/cgi\-bin/recruit\.php/\d+/detail/\d+$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.city.shima.mie.jp
   max_pages: 30

@@ -369,20 +369,23 @@
     },
     {
       "alternatives": [],
+      "bank_status": "available",
       "bank_url": "https://ijyuu.city-kasama.jp/house-bank/",
       "code": "082163",
       "confidence": 0.9324999999999999,
       "cross_linked": true,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": "^https?://ijyuu\\.city\\-kasama\\.jp/house_bank/\\d+\\-openspace/$",
+      "evidence_checked_on": "2026-11-04",
       "evidence_quote": "公式サイト（www.city.kasama.lg.jp）から空き家バンクとして案内されているリンク",
       "evidence_url": "https://www.city.kasama.lg.jp/",
       "external_links": [
         {
-          "label": "LIFULL HOME’S空き家バンク（笠間市のトップページ）（外部リンク）",
+          "label": "LIFULL HOME’S空き家バンク(笠間市のトップページ)(外部リンク)",
           "url": "https://www.homes.co.jp/akiyabank/ibaraki/kasama"
         }
       ],
-      "listing_rows": 52,
+      "extract_gap": false,
+      "listing_rows": 50,
       "listing_score": 1.0,
       "name": "笠間市",
       "name_kana": "ｶｻﾏｼ",
@@ -394,7 +397,8 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -1181,22 +1185,27 @@
     },
     {
       "alternatives": [
-        "https://www.town.ami.lg.jp/0000016771.html",
         "https://www.town.ami.lg.jp/0000008120.html",
+        "https://www.town.ami.lg.jp/0000016771.html",
         "https://www.town.ami.lg.jp/0000015318.html",
         "https://www.town.ami.lg.jp/0000007998.html",
         "https://www.town.ami.lg.jp/0000007990.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.ami.lg.jp/0000009864.html",
       "code": "084433",
-      "confidence": 0.8484999999999999,
+      "confidence": 0.8624999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-04",
       "evidence_quote": "公式ドメイン www.town.ami.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.ami.lg.jp/",
       "external_links": [],
-      "listing_rows": 8,
-      "listing_score": 0.86,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 10）。抽出側の課題として保留",
+      "held_since": "2026-11-04",
+      "listing_rows": 10,
+      "listing_score": 1.0,
       "name": "阿見町",
       "name_kana": "ｱﾐﾏﾁ",
       "official_url": "www.town.ami.lg.jp",
@@ -1207,7 +1216,8 @@
       "prefecture": "茨城県",
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [

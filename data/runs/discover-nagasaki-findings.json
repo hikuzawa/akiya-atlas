@@ -377,19 +377,20 @@
       ]
     },
     {
-      "alternatives": [
-        "https://www.city.minamishimabara.lg.jp/list00242.html"
-      ],
-      "bank_url": "https://www.city.minamishimabara.lg.jp/kiji0037240/index.html",
+      "alternatives": [],
+      "bank_status": "available",
+      "bank_url": "https://www.city.minamishimabara.lg.jp/list00242.html",
       "code": "422142",
-      "confidence": 0.8345,
+      "confidence": 0.8135,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-04",
       "evidence_quote": "公式ドメイン www.city.minamishimabara.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.minamishimabara.lg.jp/",
       "external_links": [],
-      "listing_rows": 6,
-      "listing_score": 0.58,
+      "extract_gap": false,
+      "listing_rows": 3,
+      "listing_score": 0.34,
       "name": "南島原市",
       "name_kana": "ﾐﾅﾐｼﾏﾊﾞﾗｼ",
       "official_url": "www.city.minamishimabara.lg.jp",
@@ -401,12 +402,7 @@
       "prefecture_slug": "nagasaki",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.minamishimabara.lg.jp/kiji0035627/index.html",
-        "https://www.city.minamishimabara.lg.jp/kiji0038146/index.html",
-        "https://www.city.minamishimabara.lg.jp/kiji0038481/index.html",
-        "https://www.city.minamishimabara.lg.jp/kiji0037334/index.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [

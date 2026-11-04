@@ -524,31 +524,22 @@ sources:
   operator: 丹波篠山市
   operator_kind: municipality
   official_url: https://www.city.tambasasayama.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '282219'
     name: 丹波篠山市
     prefecture: 兵庫県
     prefecture_slug: hyogo
     slug: '282219'
-    bank_url: https://classo.jp/
-    bank_status: available
+    bank_url: https://www.city.tambasasayama.lg.jp/
+    bank_status: none
     extract_pending: false
     map_query: 兵庫県丹波篠山市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式サイト（www.city.tambasasayama.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.tambasasayama.lg.jp/
-    checked_on: '2026-11-03'
-  pages:
-  - url: https://classo.jp/
-    kind: listing_index
-    follow:
-    - pattern: ^https?://classo\.jp/house/g\d+u/$
-      kind: listing_detail
-      max_links: 60
-  allow_hosts:
-  - classo.jp
-  max_pages: 30
+    checked_on: '2026-11-04'
 - id: hyogo-282227
   name: 養父市空き家バンク
   operator: 養父市
@@ -946,17 +937,15 @@ sources:
     slug: '284467'
     bank_url: https://www.town.kamikawa.hyogo.jp/0000000317.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 兵庫県神河町
   operator_evidence:
     quote: 公式ドメイン www.town.kamikawa.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kamikawa.hyogo.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-04'
   pages:
   - url: https://www.town.kamikawa.hyogo.jp/0000000317.html
     kind: listing_index
-  - url: https://www.town.kamikawa.hyogo.jp/0000003651.html
-    kind: subsidy
   allow_hosts:
   - www.town.kamikawa.hyogo.jp
   max_pages: 30

@@ -337,14 +337,19 @@
     },
     {
       "alternatives": [],
+      "bank_status": "available",
       "bank_url": "https://www.city.aso.kumamoto.jp/akiya/",
       "code": "432148",
       "confidence": 0.8414999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-04",
       "evidence_quote": "公式ドメイン www.city.aso.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.aso.kumamoto.jp/",
       "external_links": [],
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 7）。抽出側の課題として保留",
+      "held_since": "2026-11-04",
       "listing_rows": 7,
       "listing_score": 0.95,
       "name": "阿蘇市",
@@ -357,7 +362,8 @@
       "prefecture": "熊本県",
       "prefecture_slug": "kumamoto",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],
@@ -532,19 +538,22 @@
       "alternatives": [
         "https://www.town.nagomi.lg.jp/iju/teijyuu/akiya/",
         "https://www.town.nagomi.lg.jp/iju/teijyuu/akiya/kiji00335/",
-        "https://www.town.nagomi.lg.jp/iju/teijyuu/event/17454058707496/",
+        "https://kumamoto-akiya360.jp/",
         "https://www.town.nagomi.lg.jp/iju/hojyokin/akiyahojyokin/kiji00377",
         "https://www.town.nagomi.lg.jp/iju/hojyokin/akiyahojyokin/kiji00377/"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.nagomi.lg.jp/iju/teijyuu/akiya/16/",
       "code": "433691",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": "^https?://www\\.town\\.nagomi\\.lg\\.jp/iju/teijyuu/akiya/\\d+_\\d+/$",
+      "evidence_checked_on": "2026-11-04",
       "evidence_quote": "公式ドメイン www.town.nagomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.nagomi.lg.jp/",
       "external_links": [],
-      "listing_rows": 51,
+      "extract_gap": false,
+      "listing_rows": 54,
       "listing_score": 1.0,
       "name": "和水町",
       "name_kana": "ﾅｺﾞﾐﾏﾁ",
@@ -557,12 +566,7 @@
       "prefecture_slug": "kumamoto",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.nagomi.lg.jp/iju/hojyokin/akiyahojyokin/",
-        "https://www.town.nagomi.lg.jp/iju/hojyokin/mirai/",
-        "https://www.town.nagomi.lg.jp/iju/hojyokin/akiyahojyokin/kiji00377/",
-        "https://www.town.nagomi.lg.jp/iju/hojyokin/mirai/kiji00376/"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [

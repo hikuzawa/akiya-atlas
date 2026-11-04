@@ -312,14 +312,17 @@
     },
     {
       "alternatives": [],
+      "bank_status": "available",
       "bank_url": "https://www.minamisoma-akiya.org/",
       "code": "072125",
       "confidence": 0.9185,
       "cross_linked": true,
-      "evidence_checked_on": "2026-10-18",
+      "detail_pattern": "^https?://www\\.minamisoma\\-akiya\\.org/properties/\\d+/$",
+      "evidence_checked_on": "2026-11-04",
       "evidence_quote": "公式サイト（www.city.minamisoma.lg.jp）から空き家バンクとして案内されているリンク",
       "evidence_url": "https://www.city.minamisoma.lg.jp/",
       "external_links": [],
+      "extract_gap": false,
       "listing_rows": 18,
       "listing_score": 1.0,
       "name": "南相馬市",
@@ -332,7 +335,8 @@
       "prefecture": "福島県",
       "prefecture_slug": "fukushima",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],
@@ -630,7 +634,7 @@
       "confidence": 0.9324999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-03",
+      "evidence_checked_on": "2026-11-04",
       "evidence_quote": "公式ドメイン www.town.tadami.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.tadami.lg.jp/",
       "external_links": [
@@ -890,14 +894,12 @@
       "code": "073687",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "detail_pattern": null,
-      "evidence_checked_on": "2026-11-03",
+      "detail_pattern": "^https?://www\\.town\\.minamiaizu\\.lg\\.jp/cgi\\-bin/recruit\\.php/\\d+/detail/\\d+$",
+      "evidence_checked_on": "2026-11-04",
       "evidence_quote": "公式ドメイン www.town.minamiaizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.minamiaizu.lg.jp/",
       "external_links": [],
-      "extract_gap": true,
-      "held_reason": "一覧に見えるのに 0 件（物件行 92）。抽出側の課題として保留",
-      "held_since": "2026-11-03",
+      "extract_gap": false,
       "listing_rows": 92,
       "listing_score": 1.0,
       "name": "南会津町",
@@ -1035,23 +1037,26 @@
     },
     {
       "alternatives": [],
+      "bank_status": "available",
       "bank_url": "https://www.town.aizubange.fukushima.jp/site/akiya-bank/",
       "code": "074217",
       "confidence": 0.8065,
       "cross_linked": false,
-      "evidence_checked_on": "2026-10-31",
+      "detail_pattern": "^https?://www\\.town\\.aizubange\\.fukushima\\.jp/site/akiya\\-bank/list\\d+\\-\\d+\\.html$",
+      "evidence_checked_on": "2026-11-04",
       "evidence_quote": "公式ドメイン www.town.aizubange.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.aizubange.fukushima.jp/",
       "external_links": [
         {
-          "label": "Lifullhome'S空き家バンク（外部リンク）",
+          "label": "Lifullhome'S空き家バンク(外部リンク)",
           "url": "https://www.homes.co.jp/akiyabank/"
         },
         {
-          "label": "Lifullhome'S空き家バンク（会津坂下町のトップページ）（外部リンク）",
+          "label": "Lifullhome'S空き家バンク(会津坂下町のトップページ)(外部リンク)",
           "url": "https://www.homes.co.jp/akiyabank/fukushima/kawanuma_aizubange/"
         }
       ],
+      "extract_gap": false,
       "listing_rows": 2,
       "listing_score": 0.36,
       "name": "会津坂下町",
@@ -1065,11 +1070,7 @@
       "prefecture_slug": "fukushima",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.aizubange.fukushima.jp/soshiki/2/13535.html",
-        "https://www.town.aizubange.fukushima.jp/soshiki/2/15872.html",
-        "https://www.town.aizubange.fukushima.jp/soshiki/28/18883.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [

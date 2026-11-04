@@ -1,6 +1,6 @@
 prefecture: 福井県
 prefecture_slug: fukui
-created_at: '2026-09-17T09:42:12+00:00'
+created_at: '2026-11-03T23:39:03+00:00'
 candidates:
 - key: '182010'
   label: 福井県 福井市
@@ -228,15 +228,15 @@ candidates:
   note: null
 - key: '185019'
   label: 福井県 若狭町
-  url: https://www.town.fukui-wakasa.lg.jp/kurashi_tetsuzuki/sumai/1825.html
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.93
+  url: https://www.town.fukui-wakasa.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 福井県内市町リンク集に掲載された公式サイト（www.town.fukui-wakasa.lg.jp）
   evidence_url: https://www.pref.fukui.lg.jp/doc/dx-suishin/shimachi_list.html
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null

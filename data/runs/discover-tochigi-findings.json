@@ -88,30 +88,31 @@
         "https://www.city.sano.lg.jp/filmcommission/3/nature_landscape/akiyama_riv/sitemap.dir.xml",
         "https://www.city.sano.lg.jp/filmcommission/3/cityscape_building/akiyamagakuryou/sitemap.dir.xml"
       ],
-      "bank_url": "https://www.city.sano.lg.jp/cgi-bin/recruit.php/2/list",
+      "bank_status": "none",
+      "bank_url": "https://www.city.sano.lg.jp/",
       "code": "092045",
-      "confidence": 0.9324999999999999,
+      "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-04",
       "evidence_quote": "公式ドメイン www.city.sano.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.sano.lg.jp/",
       "external_links": [],
-      "listing_rows": 72,
-      "listing_score": 1.0,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "佐野市",
       "name_kana": "ｻﾉｼ",
       "official_url": "www.city.sano.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "栃木県",
       "prefecture_slug": "tochigi",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.sano.lg.jp/ijuteiju/sumu/housing_bank/943.html"
-      ]
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [

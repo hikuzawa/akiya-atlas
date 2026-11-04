@@ -310,25 +310,17 @@ sources:
     prefecture: 長崎県
     prefecture_slug: nagasaki
     slug: '422142'
-    bank_url: https://www.city.minamishimabara.lg.jp/kiji0037240/index.html
+    bank_url: https://www.city.minamishimabara.lg.jp/list00242.html
     bank_status: available
     extract_pending: false
     map_query: 長崎県南島原市
   operator_evidence:
     quote: 公式ドメイン www.city.minamishimabara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.minamishimabara.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-04'
   pages:
-  - url: https://www.city.minamishimabara.lg.jp/kiji0037240/index.html
+  - url: https://www.city.minamishimabara.lg.jp/list00242.html
     kind: listing_index
-  - url: https://www.city.minamishimabara.lg.jp/kiji0035627/index.html
-    kind: subsidy
-  - url: https://www.city.minamishimabara.lg.jp/kiji0038146/index.html
-    kind: subsidy
-  - url: https://www.city.minamishimabara.lg.jp/kiji0038481/index.html
-    kind: subsidy
-  - url: https://www.city.minamishimabara.lg.jp/kiji0037334/index.html
-    kind: subsidy
   allow_hosts:
   - www.city.minamishimabara.lg.jp
   max_pages: 30

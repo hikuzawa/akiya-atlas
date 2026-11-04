@@ -919,16 +919,21 @@
       "alternatives": [
         "https://www.town.karumai.iwate.jp/article/mokuteki/hikkoshi/jutakusumai/entry-basename.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.karumai.iwate.jp/article/kurashitetsuduki/living/jyutaku/entry-basename.html",
       "code": "035017",
-      "confidence": 0.8205,
+      "confidence": 0.8345,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-04",
       "evidence_quote": "公式ドメイン www.town.karumai.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.karumai.iwate.jp/",
       "external_links": [],
-      "listing_rows": 4,
-      "listing_score": 0.54,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 6）。抽出側の課題として保留",
+      "held_since": "2026-11-04",
+      "listing_rows": 6,
+      "listing_score": 0.76,
       "name": "軽米町",
       "name_kana": "ｶﾙﾏｲﾏﾁ",
       "official_url": "www.town.karumai.iwate.jp",
@@ -939,7 +944,8 @@
       "prefecture": "岩手県",
       "prefecture_slug": "iwate",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],

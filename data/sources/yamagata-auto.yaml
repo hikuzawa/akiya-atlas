@@ -188,7 +188,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kaminoyama.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kaminoyama.yamagata.jp/
-    checked_on: '2026-11-03'
+    checked_on: '2026-11-04'
   pages:
   - url: https://www.city.kaminoyama.yamagata.jp/soshiki/12/kaminoyama-akiyabank2.html
     kind: listing_index
@@ -449,19 +449,15 @@ sources:
     slug: '063223'
     bank_url: https://www.town.nishikawa.yamagata.jp/site/iju/1440.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 山形県西川町
   operator_evidence:
     quote: 公式ドメイン www.town.nishikawa.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nishikawa.yamagata.jp/
-    checked_on: '2026-11-03'
+    checked_on: '2026-11-04'
   pages:
   - url: https://www.town.nishikawa.yamagata.jp/site/iju/1440.html
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.town\.nishikawa\.yamagata\.jp/site/iju/\d+\.html$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.town.nishikawa.yamagata.jp
   max_pages: 30
@@ -839,33 +835,22 @@ sources:
   operator: 飯豊町
   operator_kind: municipality
   official_url: https://www.town.iide.yamagata.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '064033'
     name: 飯豊町
     prefecture: 山形県
     prefecture_slug: yamagata
     slug: '064033'
-    bank_url: https://www.town.iide.yamagata.jp/001/akiyajyouhou_1.html
-    bank_status: available
+    bank_url: https://www.town.iide.yamagata.jp/
+    bank_status: none
     extract_pending: false
     map_query: 山形県飯豊町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
-    quote: 公式ドメイン www.town.iide.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
-    url: https://www.town.iide.yamagata.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.town.iide.yamagata.jp/001/akiyajyouhou_1.html
-    kind: listing_index
-  - url: https://www.town.iide.yamagata.jp/003/kaitai4.html
-    kind: subsidy
-  - url: https://www.town.iide.yamagata.jp/001/r05_akiyarenovation_hojokin.html
-    kind: subsidy
-  - url: https://www.town.iide.yamagata.jp/003/seismic_diagnosis.html
-    kind: subsidy
-  allow_hosts:
-  - www.town.iide.yamagata.jp
-  max_pages: 30
+    quote: '山形県 山形県内市町村ページに掲載された公式サイト（www.town.iide.yamagata.jp）。サイトを取得できなかったためリンクのみ（robots.txt 502: 今回は巡回しない）'
+    url: https://www.pref.yamagata.jp/020026/kensei/information/clink.html
+    checked_on: '2026-11-04'
 - id: yamagata-064262
   name: 三川町空き家バンク
   operator: 三川町

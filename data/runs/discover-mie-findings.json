@@ -349,7 +349,7 @@
       "confidence": 0.8414999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-03",
+      "evidence_checked_on": "2026-11-04",
       "evidence_quote": "公式ドメイン www.city.inabe.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.inabe.mie.jp/",
       "external_links": [],
@@ -379,15 +379,18 @@
         "https://www.city.shima.mie.jp/kakuka/bousakiki/bosai/sitemap.dir.xml",
         "https://www.city.shima.mie.jp/kakuka/bousakiki/sonota/sitemap.dir.xml"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.city.shima.mie.jp/cgi-bin/recruit.php/1/list",
       "code": "242152",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": "^https?://www\\.city\\.shima\\.mie\\.jp/cgi\\-bin/recruit\\.php/\\d+/detail/\\d+$",
+      "evidence_checked_on": "2026-11-04",
       "evidence_quote": "公式ドメイン www.city.shima.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.shima.mie.jp/",
       "external_links": [],
-      "listing_rows": 55,
+      "extract_gap": false,
+      "listing_rows": 54,
       "listing_score": 1.0,
       "name": "志摩市",
       "name_kana": "ｼﾏｼ",
@@ -400,11 +403,7 @@
       "prefecture_slug": "mie",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.shima.mie.jp/kakuka/kensetsubu/eizenshitsu/eizen_sumai/1454318955400.html",
-        "https://www.city.shima.mie.jp/kakuka/kensetsubu/eizenshitsu/eizen_sumai/akiya/4939.html",
-        "https://www.city.shima.mie.jp/kakuka/kensetsubu/eizenshitsu/eizen_sumai/akiya/4986.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [

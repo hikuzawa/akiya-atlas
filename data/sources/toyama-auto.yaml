@@ -122,7 +122,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.city.namerikawa.toyama.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.namerikawa.toyama.jp/
-    checked_on: '2026-11-03'
+    checked_on: '2026-11-04'
   pages:
   - url: https://namerikawa-akiya.com/
     kind: listing_index
@@ -190,7 +190,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.oyabe.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.oyabe.toyama.jp/
-    checked_on: '2026-11-03'
+    checked_on: '2026-11-04'
   pages:
   - url: https://www.city.oyabe.toyama.jp/ijyu/1001572/1003141/1004072.html
     kind: listing_index
@@ -286,12 +286,12 @@ sources:
     slug: '163228'
     bank_url: https://www.town.kamiichi.toyama.jp/page/1934.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 富山県上市町
   operator_evidence:
     quote: 公式ドメイン www.town.kamiichi.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kamiichi.toyama.jp/
-    checked_on: '2026-11-03'
+    checked_on: '2026-11-04'
   pages:
   - url: https://www.town.kamiichi.toyama.jp/page/1934.html
     kind: listing_index
