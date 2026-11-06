@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T10:02:54.433405+09:00",
+  "checked_at": "2026-11-06T10:06:43.213750+09:00",
   "urls": {
     "https://akiya-atlas.com/": {
       "verdict": "PASS",
@@ -7362,12 +7362,12 @@
       "checked_on": "2026-11-03"
     },
     "https://akiya-atlas.com/fukushima/072125/2023-237-a42e/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-03T11:13:03Z",
+      "google_canonical": "https://akiya-atlas.com/fukushima/072125/2023-237-a42e/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/fukushima/072125/2024-249-011e/": {
       "verdict": "NEUTRAL",
@@ -14498,28 +14498,28 @@
       "checked_on": "2026-10-29"
     },
     "https://akiya-atlas.com/hokkaido/014231/41-4fdc/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T04:17:54Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014231/41-4fdc/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/hokkaido/014231/42-9e7d/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-03T12:23:11Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014231/42-9e7d/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/hokkaido/014231/43-3031/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-03T10:16:07Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/014231/43-3031/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/hokkaido/014231/47-c289/": {
       "verdict": "PASS",
@@ -16610,12 +16610,12 @@
       "checked_on": "2026-10-30"
     },
     "https://akiya-atlas.com/hokkaido/015857/t1d3c702e/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T11:42:50Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/015857/t1d3c702e/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/hokkaido/015857/t3648cc73/": {
       "verdict": "PASS",
@@ -16626,12 +16626,12 @@
       "checked_on": "2026-10-30"
     },
     "https://akiya-atlas.com/hokkaido/015857/t59309452/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-03T12:09:31Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/015857/t59309452/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/hokkaido/015857/t6616d61b/": {
       "verdict": "PASS",
@@ -16642,12 +16642,12 @@
       "checked_on": "2026-11-05"
     },
     "https://akiya-atlas.com/hokkaido/015857/t7a3c92ef/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-03T10:14:40Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/015857/t7a3c92ef/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/hokkaido/015857/t83350473/": {
       "verdict": "PASS",
@@ -16666,12 +16666,12 @@
       "checked_on": "2026-10-30"
     },
     "https://akiya-atlas.com/hokkaido/015857/te2d3aea7/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T18:11:14Z",
+      "google_canonical": "https://akiya-atlas.com/hokkaido/015857/te2d3aea7/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/hokkaido/015857/tf6008ea4/": {
       "verdict": "PASS",
@@ -21866,12 +21866,12 @@
       "checked_on": "2026-11-03"
     },
     "https://akiya-atlas.com/kagoshima/462144/261/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T10:25:05Z",
+      "google_canonical": "https://akiya-atlas.com/kagoshima/462144/261/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kagoshima/462144/262/": {
       "verdict": "PASS",
@@ -25450,28 +25450,28 @@
       "checked_on": "2026-11-05"
     },
     "https://akiya-atlas.com/kochi/393410/97/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-06T00:00:42Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/393410/97/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/393410/98/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T10:59:41Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/393410/98/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/393444/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T00:11:36Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/393444/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/393444/191/": {
       "verdict": "PASS",
@@ -25479,23 +25479,23 @@
       "last_crawl": "2026-09-24T05:05:02Z",
       "google_canonical": "https://akiya-atlas.com/kochi/393444/191/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/393631/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-30T19:58:51Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/393631/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/393649/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T23:13:23Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/393649/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/393860/": {
       "verdict": "PASS",
@@ -25503,23 +25503,23 @@
       "last_crawl": "2026-09-28T03:56:41Z",
       "google_canonical": "https://akiya-atlas.com/kochi/393860/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/393878/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-24T19:51:35Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/393878/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394017/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T02:16:11Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394017/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394017/115-273d/": {
       "verdict": "NEUTRAL",
@@ -25527,15 +25527,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394017/119-9060/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T10:32:25Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394017/119-9060/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394017/120-b58a/": {
       "verdict": "PASS",
@@ -25543,23 +25543,23 @@
       "last_crawl": "2026-09-27T02:03:40Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394017/120-b58a/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394017/121-f5bb/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-27T01:55:54Z",
+      "last_crawl": "2026-10-07T21:02:53Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394017/121-f5bb/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394017/124-9cde/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-27T04:02:12Z",
+      "last_crawl": "2026-10-06T07:27:35Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394017/124-9cde/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394017/125-4a50/": {
       "verdict": "PASS",
@@ -25567,175 +25567,175 @@
       "last_crawl": "2026-09-27T04:15:52Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394017/125-4a50/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394017/23-449e/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T09:31:45Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394017/23-449e/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394017/36-ee92/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T08:12:51Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394017/36-ee92/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394017/41-e59a/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T01:02:10Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394017/41-e59a/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394017/69-d10f/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T01:23:30Z",
+      "last_crawl": "2026-11-05T00:40:08Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394017/69-d10f/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394017/75-5f69/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394017/82-b785/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T14:33:48Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394017/82-b785/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394017/88-8743/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T17:22:23Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394017/88-8743/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394017/93-97fa/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T11:00:53Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394017/93-97fa/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394017/97-e903/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-27T03:30:55Z",
+      "last_crawl": "2026-10-06T23:21:03Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394017/97-e903/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394017/99-96ab/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T09:19:49Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394017/99-96ab/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T10:20:27Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394025/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/100/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-23T00:17:32Z",
+      "last_crawl": "2026-10-03T12:30:43Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394025/100/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/101/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T02:13:21Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394025/101/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/102/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-16T17:59:07Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394025/102/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/105/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T05:33:03Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394025/105/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/108/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/110/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T04:36:34Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394025/110/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/111/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T13:21:35Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394025/111/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/113/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T07:09:09Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394025/113/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/15/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T19:09:04Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394025/15/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/48/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T12:39:19Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394025/48/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/49/": {
       "verdict": "NEUTRAL",
@@ -25743,15 +25743,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/50/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T09:21:44Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394025/50/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/51/": {
       "verdict": "NEUTRAL",
@@ -25759,7 +25759,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/6/": {
       "verdict": "NEUTRAL",
@@ -25767,15 +25767,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/60/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/64/": {
       "verdict": "NEUTRAL",
@@ -25783,7 +25783,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/65/": {
       "verdict": "PASS",
@@ -25791,79 +25791,79 @@
       "last_crawl": "2026-09-15T13:58:30Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394025/65/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/76/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T11:39:54Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394025/76/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/81/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T15:51:19Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394025/81/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/85/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T18:53:45Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394025/85/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/87/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T14:25:35Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394025/87/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/97/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T05:17:10Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394025/97/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394025/98/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T08:15:26Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394025/98/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394033/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T08:19:12Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394033/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394033/101/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-17T00:40:58Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394033/101/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394033/106/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T04:26:23Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394033/106/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394033/113/": {
       "verdict": "NEUTRAL",
@@ -25871,31 +25871,31 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394033/22/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T00:42:53Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394033/22/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394033/25/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394033/37/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T23:52:01Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394033/37/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394050/": {
       "verdict": "PASS",
@@ -25903,7 +25903,7 @@
       "last_crawl": "2026-10-01T08:36:56Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394050/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394106/": {
       "verdict": "PASS",
@@ -25911,7 +25911,7 @@
       "last_crawl": "2026-09-26T05:48:45Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394106/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394114/": {
       "verdict": "PASS",
@@ -25919,79 +25919,79 @@
       "last_crawl": "2026-09-13T17:33:55Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394114/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394114/5-2/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-18T03:36:54Z",
+      "last_crawl": "2026-11-04T22:25:17Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394114/5-2/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394114/5-5/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T04:03:50Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394114/5-5/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-20T08:59:40Z",
+      "last_crawl": "2026-11-05T00:05:07Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394122/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/132/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-16T05:03:03Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/132/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/151/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T10:39:39Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/151/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/170/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-15T07:39:14Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/170/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/224/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
-    },
-    "https://akiya-atlas.com/kochi/394122/242/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
-    },
-    "https://akiya-atlas.com/kochi/394122/249/": {
       "verdict": "NEUTRAL",
       "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
+    },
+    "https://akiya-atlas.com/kochi/394122/242/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T00:26:31Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/242/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
+    },
+    "https://akiya-atlas.com/kochi/394122/249/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:01:51Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/249/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/251/": {
       "verdict": "NEUTRAL",
@@ -25999,47 +25999,47 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/255/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T02:22:18Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/255/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/258/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T20:01:48Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/258/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/262/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T14:15:40Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/262/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/267/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T08:05:15Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/267/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/271/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T12:57:26Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/271/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/282/": {
       "verdict": "NEUTRAL",
@@ -26047,7 +26047,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/291/": {
       "verdict": "NEUTRAL",
@@ -26055,7 +26055,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/no-132-f79f/": {
       "verdict": "PASS",
@@ -26063,127 +26063,127 @@
       "last_crawl": "2026-09-26T06:10:10Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394122/no-132-f79f/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/no-151-916d/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T20:35:12Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/no-151-916d/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/no-170-b576/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T14:35:23Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/no-170-b576/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/no-224-6417/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-15T15:03:15Z",
+      "last_crawl": "2026-10-08T16:07:37Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394122/no-224-6417/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/no-242-4761/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T02:52:51Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/no-242-4761/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/no-249-2c93/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T10:48:38Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/no-249-2c93/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/no-251-618c/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T18:42:24Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/no-251-618c/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/no-255-e4e9/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T01:04:51Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/no-255-e4e9/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/no-258-626d/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-06T12:52:41Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/no-258-626d/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/no-262-d9a6/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T14:33:02Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/no-262-d9a6/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/no-267-46be/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-26T20:09:20Z",
+      "last_crawl": "2026-10-09T02:23:11Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394122/no-267-46be/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/no-271-86fc/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T18:23:19Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/no-271-86fc/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/no-282-51df/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T16:47:36Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/no-282-51df/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/no-291-0d89/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T09:50:47Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/no-291-0d89/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394122/no-294-6a13/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T12:16:57Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394122/no-294-6a13/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T00:50:23Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/116/": {
       "verdict": "NEUTRAL",
@@ -26191,23 +26191,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/117/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T12:05:40Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/117/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/125/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T19:13:38Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/125/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/129/": {
       "verdict": "NEUTRAL",
@@ -26215,47 +26215,47 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/132/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T09:40:22Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/132/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/133/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T17:29:21Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/133/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/139/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T04:52:10Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/139/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/148/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T00:48:40Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/148/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/149/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T10:43:27Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/149/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/155/": {
       "verdict": "PASS",
@@ -26263,15 +26263,15 @@
       "last_crawl": "2026-09-13T22:51:24Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394246/155/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/159/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T14:13:51Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/159/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/162/": {
       "verdict": "NEUTRAL",
@@ -26279,31 +26279,31 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/165/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T00:35:03Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/165/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/166/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T13:03:57Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/166/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/168/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T23:10:11Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/168/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/177/": {
       "verdict": "NEUTRAL",
@@ -26311,31 +26311,31 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/44/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T13:29:54Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/44/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/62/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T19:26:45Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/62/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/90/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T11:44:14Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/90/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/99/": {
       "verdict": "NEUTRAL",
@@ -26343,119 +26343,119 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/9bf026e2c9e624ab/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T13:29:32Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/9bf026e2c9e624ab/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/af509f41112e5cdb/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T19:02:22Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/af509f41112e5cdb/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/d7b075275b288675/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T19:58:23Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/d7b075275b288675/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r5-002/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T14:32:29Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r5-002/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r5-003/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T06:40:01Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r5-003/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r5-004/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T21:11:19Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r5-004/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r5-005/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-27T10:52:37Z",
+      "last_crawl": "2026-10-08T16:42:38Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394246/r5-005/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r5-007/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T06:03:25Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r5-007/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r5-009/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T12:36:46Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r5-009/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r5-010/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T12:28:34Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r5-010/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r5-011/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T14:01:33Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r5-011/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r5-012/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T05:27:10Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r5-012/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r5-014/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T23:32:15Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r5-014/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r5-016/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T21:57:29Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r5-016/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r5-018/": {
       "verdict": "NEUTRAL",
@@ -26463,15 +26463,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r5-019/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T03:31:25Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r5-019/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r6-001/": {
       "verdict": "NEUTRAL",
@@ -26479,31 +26479,31 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r6-002/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
+      "coverage_state": "Crawled - currently not indexed",
+      "last_crawl": "2026-11-04T15:29:35Z",
       "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r6-003/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T01:06:20Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r6-003/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r6-005/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T09:47:24Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r6-005/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r6-006/": {
       "verdict": "NEUTRAL",
@@ -26511,39 +26511,39 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r6-013/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-17T02:03:24Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r6-013/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r6-014/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T02:13:10Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r6-014/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r6-015/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-14T01:15:22Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r6-015/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r6-016/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r6-017/": {
       "verdict": "NEUTRAL",
@@ -26551,23 +26551,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r6-018/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-31T00:10:15Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r6-018/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
+    },
+    "https://akiya-atlas.com/kochi/394246/r6-019/": {
       "verdict": "NEUTRAL",
       "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
-    },
-    "https://akiya-atlas.com/kochi/394246/r6-019/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r7-001/": {
       "verdict": "NEUTRAL",
@@ -26575,15 +26575,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r7-002/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T23:42:22Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r7-002/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r7-004/": {
       "verdict": "NEUTRAL",
@@ -26591,15 +26591,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r7-005/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T13:11:09Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r7-005/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r7-007/": {
       "verdict": "PASS",
@@ -26607,95 +26607,95 @@
       "last_crawl": "2026-09-15T14:30:53Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394246/r7-007/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-02"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r7-008/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-03T08:19:52Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r7-008/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r7-009/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T23:31:37Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r7-009/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r7-011/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T11:47:21Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r7-011/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r7-012/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T21:54:22Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r7-012/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r7-013/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-13T16:01:36Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r7-013/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r7-014/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T18:11:57Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r7-014/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r7-015/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T03:08:52Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r7-015/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r8-001/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T10:08:15Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r8-001/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394246/r8-002/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-02"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T11:10:04Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394246/r8-002/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394271/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-16T20:29:23Z",
+      "last_crawl": "2026-11-05T13:52:24Z",
       "google_canonical": "https://akiya-atlas.com/kochi/394271/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-03"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kochi/394289/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T16:26:33Z",
+      "google_canonical": "https://akiya-atlas.com/kochi/394289/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/": {
       "verdict": "NEUTRAL",
@@ -26706,52 +26706,52 @@
       "checked_on": "2026-10-20"
     },
     "https://akiya-atlas.com/kumamoto/431001/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T02:44:30Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/431001/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432024/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-24T14:53:11Z",
+      "last_crawl": "2026-11-03T08:03:05Z",
       "google_canonical": "https://akiya-atlas.com/kumamoto/432024/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-03"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432032/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T21:59:47Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/432032/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432041/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-30T10:23:27Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/432041/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432059/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T22:30:20Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/432059/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432067/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T13:25:37Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/432067/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432083/": {
       "verdict": "PASS",
@@ -26759,23 +26759,23 @@
       "last_crawl": "2026-10-02T09:25:06Z",
       "google_canonical": "https://akiya-atlas.com/kumamoto/432083/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-03"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432105/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T00:21:09Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/432105/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432113/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-15T15:06:03Z",
+      "last_crawl": "2026-11-04T20:04:21Z",
       "google_canonical": "https://akiya-atlas.com/kumamoto/432113/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-03"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432113/22-acb0/": {
       "verdict": "NEUTRAL",
@@ -26783,23 +26783,23 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432121/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-12T14:49:44Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/432121/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432130/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T15:23:33Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/432130/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432148/": {
       "verdict": "PASS",
@@ -26807,7 +26807,7 @@
       "last_crawl": "2026-09-29T05:06:24Z",
       "google_canonical": "https://akiya-atlas.com/kumamoto/432148/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-03"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432148/541-e786/": {
       "verdict": "PASS",
@@ -26815,7 +26815,7 @@
       "last_crawl": "2026-10-01T06:54:26Z",
       "google_canonical": "https://akiya-atlas.com/kumamoto/432148/541-e786/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-03"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432148/571-73d3/": {
       "verdict": "PASS",
@@ -26823,23 +26823,23 @@
       "last_crawl": "2026-10-01T02:06:33Z",
       "google_canonical": "https://akiya-atlas.com/kumamoto/432148/571-73d3/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-03"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432148/573-1650/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-11T05:58:15Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/432148/573-1650/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432148/577-98ad/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-08T15:26:39Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/432148/577-98ad/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432148/584-6040/": {
       "verdict": "PASS",
@@ -26847,103 +26847,103 @@
       "last_crawl": "2026-09-13T16:15:30Z",
       "google_canonical": "https://akiya-atlas.com/kumamoto/432148/584-6040/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-03"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432148/584-a164/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T04:02:55Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/432148/584-a164/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432148/585-9e0d/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T15:35:27Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/432148/585-9e0d/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432148/585-d985/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-24T17:49:59Z",
+      "last_crawl": "2026-10-16T21:45:25Z",
       "google_canonical": "https://akiya-atlas.com/kumamoto/432148/585-d985/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-03"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432148/586-a561/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-03T10:11:47Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/432148/586-a561/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432156/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-04T10:22:28Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/432156/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/432164/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-07T00:46:39Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/432164/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/433489/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-25T07:09:54Z",
+      "last_crawl": "2026-10-08T02:49:54Z",
       "google_canonical": "https://akiya-atlas.com/kumamoto/433489/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-03"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/433641/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-10T18:58:36Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/433641/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/433675/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T01:46:28Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/433675/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/433675/102/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T23:20:44Z",
+      "last_crawl": "2026-11-05T10:54:44Z",
       "google_canonical": "https://akiya-atlas.com/kumamoto/433675/102/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-03"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/433683/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T07:31:13Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/433683/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/433691/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-09T13:55:42Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/433691/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/433691/100-52f7/": {
       "verdict": "NEUTRAL",
@@ -26954,12 +26954,12 @@
       "checked_on": "2026-10-03"
     },
     "https://akiya-atlas.com/kumamoto/433691/100/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T23:58:02Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/433691/100/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/433691/105-848d/": {
       "verdict": "NEUTRAL",
@@ -26972,10 +26972,10 @@
     "https://akiya-atlas.com/kumamoto/433691/105/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-13T14:09:16Z",
+      "last_crawl": "2026-11-05T01:07:59Z",
       "google_canonical": "https://akiya-atlas.com/kumamoto/433691/105/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-03"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/433691/108-2a41/": {
       "verdict": "NEUTRAL",
@@ -26987,11 +26987,11 @@
     },
     "https://akiya-atlas.com/kumamoto/433691/108/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/433691/114-f245/": {
       "verdict": "NEUTRAL",
@@ -27002,12 +27002,12 @@
       "checked_on": "2026-10-03"
     },
     "https://akiya-atlas.com/kumamoto/433691/114/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T08:10:28Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/433691/114/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/433691/115-1fc2/": {
       "verdict": "PASS",
@@ -27018,12 +27018,12 @@
       "checked_on": "2026-10-03"
     },
     "https://akiya-atlas.com/kumamoto/433691/115/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-03"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-11-05T11:27:27Z",
+      "google_canonical": "https://akiya-atlas.com/kumamoto/433691/115/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-11-06"
     },
     "https://akiya-atlas.com/kumamoto/433691/121-4bb1/": {
       "verdict": "NEUTRAL",
