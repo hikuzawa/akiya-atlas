@@ -1408,12 +1408,12 @@ sources:
     slug: '204226'
     bank_url: https://www.town.agematsu.nagano.jp/kurashi/sumai_seikatsu/tochi/akiya.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 長野県上松町
   operator_evidence:
     quote: 公式ドメイン www.town.agematsu.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.agematsu.nagano.jp/
-    checked_on: '2026-10-01'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.town.agematsu.nagano.jp/kurashi/sumai_seikatsu/tochi/akiya.html
     kind: listing_index
@@ -1549,12 +1549,12 @@ sources:
     slug: '204323'
     bank_url: https://www.town-kiso.com/kurashi/sumai/akiya/
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 長野県木曽町
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.town-kiso.com）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-11-04'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.town-kiso.com/kurashi/sumai/akiya/
     kind: listing_index
@@ -1562,9 +1562,6 @@ sources:
     - pattern: https?://www\.town\-kiso\.com/kurashi/sumai/akiya/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
       kind: listing_index
       max_links: 20
-    - pattern: ^https?://www\.town\-kiso\.com/kurashi/sumai/akiya/m\d+/$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.town-kiso.com
   max_pages: 30
@@ -2058,31 +2055,26 @@ sources:
   operator: 小川村
   operator_kind: municipality
   official_url: https://www.vill.ogawa.nagano.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '205885'
     name: 小川村
     prefecture: 長野県
     prefecture_slug: nagano
     slug: '205885'
-    bank_url: http://ogawamura.jp/house/
-    bank_status: available
+    bank_url: https://www.vill.ogawa.nagano.jp/
+    bank_status: none
     extract_pending: false
     map_query: 長野県小川村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式サイト（www.vill.ogawa.nagano.jp）から空き家バンクとして案内されているリンク
     url: https://www.vill.ogawa.nagano.jp/
-    checked_on: '2026-10-02'
-  pages:
-  - url: http://ogawamura.jp/house/
-    kind: listing_index
-    follow:
-    - pattern: https?://ogawamura\.jp/house/page/\d+/?$
-      kind: listing_index
-      max_links: 20
-  allow_hosts:
-  - ogawamura.jp
-  max_pages: 30
+    checked_on: '2026-11-10'
+  external_links:
+  - label: 楽園信州 空き家バンク・空き地バンク（長野県）
+    url: https://rakuen-akiya.jp/
+    note: 長野県が案内する県内横断の空き家・空き地バンク（民間運営）。
 - id: nagano-205907
   name: 飯綱町空き家バンク
   operator: 飯綱町
@@ -2134,23 +2126,15 @@ sources:
     slug: '206024'
     bank_url: http://www.vill.sakae.nagano.jp/docs/1028.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 長野県栄村
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.vill.sakae.nagano.jp）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-09-10'
+    checked_on: '2026-11-10'
   pages:
   - url: http://www.vill.sakae.nagano.jp/docs/1028.html
     kind: listing_index
-  - url: http://www.vill.sakae.nagano.jp/docs/3529.html
-    kind: subsidy
-  - url: http://www.vill.sakae.nagano.jp/docs/2062.html
-    kind: subsidy
-  - url: http://www.vill.sakae.nagano.jp/docs/2063.html
-    kind: subsidy
-  - url: http://www.vill.sakae.nagano.jp/docs/2668.html
-    kind: subsidy
   allow_hosts:
   - www.vill.sakae.nagano.jp
   max_pages: 30

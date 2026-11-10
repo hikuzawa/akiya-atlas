@@ -97,12 +97,12 @@ sources:
     slug: '412040'
     bank_url: https://www.city.taku.lg.jp/adv/ba.php?id=98
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 佐賀県多久市
   operator_evidence:
     quote: 公式ドメイン www.city.taku.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.taku.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.city.taku.lg.jp/adv/ba.php?id=98
     kind: listing_index
@@ -110,8 +110,6 @@ sources:
     - pattern: https?://www\.city\.taku\.lg\.jp/adv/ba\.php/page/\d+/?$
       kind: listing_index
       max_links: 20
-  - url: https://www.city.taku.lg.jp/soshiki/24/11682.html
-    kind: subsidy
   allow_hosts:
   - www.city.taku.lg.jp
   max_pages: 30
@@ -129,25 +127,21 @@ sources:
     slug: '412058'
     bank_url: https://www.city.imari.lg.jp/12417.htm
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 佐賀県伊万里市
   operator_evidence:
     quote: 公式ドメイン www.city.imari.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.imari.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.city.imari.lg.jp/12417.htm
     kind: listing_index
-  - url: https://www.city.imari.lg.jp/21380.htm
-    kind: subsidy
-  - url: https://www.city.imari.lg.jp/21398.htm
-    kind: subsidy
-  - url: https://www.city.imari.lg.jp/23473.htm
-    kind: subsidy
   allow_hosts:
   - www.city.imari.lg.jp
   max_pages: 30
   external_links:
+  - label: 有限会社山﨑不動産
+    url: https://www.athome.co.jp/ahks/yamasaki-realestate.html
   - label: ダイア不動産(株)
     url: http://www.athome.co.jp/ahks/daia-imari.html
   - label: 有限会社幸美建設

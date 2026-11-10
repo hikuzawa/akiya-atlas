@@ -342,27 +342,22 @@ sources:
   operator: 津幡町
   operator_kind: municipality
   official_url: https://www.town.tsubata.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '173614'
     name: 津幡町
     prefecture: 石川県
     prefecture_slug: ishikawa
     slug: '173614'
-    bank_url: https://www.town.tsubata.lg.jp/site/welcome/1222.html
-    bank_status: available
+    bank_url: https://www.town.tsubata.lg.jp/life/1/5/36/
+    bank_status: spa_unsupported
     extract_pending: false
     map_query: 石川県津幡町
+    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.tsubata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.tsubata.lg.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.town.tsubata.lg.jp/site/welcome/1222.html
-    kind: listing_index
-  allow_hosts:
-  - www.town.tsubata.lg.jp
-  max_pages: 30
+    checked_on: '2026-11-10'
 - id: ishikawa-173657
   name: 内灘町空き家バンク
   operator: 内灘町

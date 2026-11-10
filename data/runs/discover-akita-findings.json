@@ -37,15 +37,20 @@
       "alternatives": [
         "https://www.city.noshiro.lg.jp/sangyo/iju-teiju/akiya-bank/10074"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.city.noshiro.lg.jp/sangyo/iju-teiju/akiya-bank/11098",
       "code": "052027",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-10-07",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.city.noshiro.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.noshiro.lg.jp/",
       "external_links": [],
-      "listing_rows": 28,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 30）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
+      "listing_rows": 30,
       "listing_score": 1.0,
       "name": "能代市",
       "name_kana": "ﾉｼﾛｼ",
@@ -58,12 +63,7 @@
       "prefecture_slug": "akita",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.noshiro.lg.jp/kurashi/zaitaku/kenchiku-jutaku/9571",
-        "https://www.city.noshiro.lg.jp/kurashi/zaitaku/kenchiku-jutaku/4940",
-        "https://www.city.noshiro.lg.jp/sangyo/iju-teiju/22619",
-        "https://www.city.noshiro.lg.jp/sangyo/iju-teiju/24305"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [],

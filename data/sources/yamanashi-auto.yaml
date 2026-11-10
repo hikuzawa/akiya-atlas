@@ -112,36 +112,22 @@ sources:
   operator: 大月市
   operator_kind: municipality
   official_url: https://www.city.otsuki.yamanashi.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '192066'
     name: 大月市
     prefecture: 山梨県
     prefecture_slug: yamanashi
     slug: '192066'
-    bank_url: https://www.city.otsuki.yamanashi.jp/shisei/shisaku_keikaku/akiyabanku.html
-    bank_status: available
+    bank_url: https://www.city.otsuki.yamanashi.jp/
+    bank_status: none
     extract_pending: false
     map_query: 山梨県大月市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.otsuki.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.otsuki.yamanashi.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.otsuki.yamanashi.jp/shisei/shisaku_keikaku/akiyabanku.html
-    kind: listing_index
-  - url: https://www.city.otsuki.yamanashi.jp/shisei/shisaku_keikaku/2025-0401-1721-6.html
-    kind: subsidy
-  - url: https://www.city.otsuki.yamanashi.jp/shisei/shisaku_keikaku/2025-0402-0928-6.html
-    kind: subsidy
-  allow_hosts:
-  - www.city.otsuki.yamanashi.jp
-  max_pages: 30
-  external_links:
-  - label: LIFULL HOME’S 空き家バンク(大月市)
-    url: https://www.homes.co.jp/akiyabank/yamanashi/otsuki/
-  - label: アットホーム 全国版空き家バンク(大月市)
-    url: https://otsuki-c19206.akiya-athome.jp/
+    checked_on: '2026-11-10'
 - id: yamanashi-192074
   name: 韮崎市空き家バンク
   operator: 韮崎市
@@ -182,12 +168,14 @@ sources:
   operator_evidence:
     quote: 山梨県市町村リンクページに掲載された公式サイト（www.city.minami-alps.yamanashi.jp）
     url: https://www.pref.yamanashi.jp/link/link_city.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.city.minami-alps.yamanashi.jp/iju/akiyabank/
     kind: listing_index
-  - url: https://www.city.minami-alps.yamanashi.jp/iju/akiyabank/akiya-hojyo.html
-    kind: subsidy
+    follow:
+    - pattern: ^https?://www\.city\.minami\-alps\.yamanashi\.jp/iju/akiyabank/\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.city.minami-alps.yamanashi.jp
   max_pages: 30

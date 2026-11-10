@@ -349,36 +349,37 @@
     },
     {
       "alternatives": [
-        "https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/",
-        "https://www.city.nasukarasuyama.lg.jp/inq.php?mode=detail&code=27&code2=0",
         "https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/page001338.html",
         "https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/page000922.html",
-        "https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/page000923.html"
+        "https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/page000923.html",
+        "https://www.city.nasukarasuyama.lg.jp/inq.php?mode=detail&code=27&code2=0",
+        "https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/page001804.html"
       ],
-      "bank_url": "https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/page004598.html",
+      "bank_status": "info",
+      "bank_url": "https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/",
       "code": "092151",
-      "confidence": 0.8975,
+      "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.city.nasukarasuyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.nasukarasuyama.lg.jp/",
       "external_links": [],
-      "listing_rows": 15,
-      "listing_score": 1.0,
+      "extract_gap": false,
+      "listing_rows": 0,
+      "listing_score": 0.02,
       "name": "那須烏山市",
       "name_kana": "ﾅｽｶﾗｽﾔﾏｼ",
       "official_url": "www.city.nasukarasuyama.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": "not_listing",
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "栃木県",
       "prefecture_slug": "tochigi",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.nasukarasuyama.lg.jp/nasukara-life/vacant-house-bank/page001804.html"
-      ]
+      "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],
@@ -437,15 +438,20 @@
     },
     {
       "alternatives": [],
+      "bank_status": "available",
       "bank_url": "https://www.town.mashiko.lg.jp/mashikonokurashi/akiya.php",
       "code": "093424",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.town.mashiko.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.mashiko.lg.jp/",
       "external_links": [],
-      "listing_rows": 35,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 34）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
+      "listing_rows": 34,
       "listing_score": 1.0,
       "name": "益子町",
       "name_kana": "ﾏｼｺﾏﾁ",
@@ -457,7 +463,8 @@
       "prefecture": "栃木県",
       "prefecture_slug": "tochigi",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],
@@ -628,18 +635,23 @@
     },
     {
       "alternatives": [
+        "https://www.town.shioya.tochigi.jp/info/2878",
+        "https://www.town.shioya.tochigi.jp/info/1080",
         "https://www.town.shioya.tochigi.jp/info/1076"
       ],
-      "bank_url": "https://www.town.shioya.tochigi.jp/info/1080",
+      "bank_status": "available",
+      "bank_url": "https://www.town.shioya.tochigi.jp/info/2879",
       "code": "093840",
-      "confidence": 0.8765,
+      "confidence": 0.8345,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.town.shioya.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.shioya.tochigi.jp/",
       "external_links": [],
-      "listing_rows": 12,
-      "listing_score": 0.8,
+      "extract_gap": false,
+      "listing_rows": 6,
+      "listing_score": 0.59,
       "name": "塩谷町",
       "name_kana": "ｼｵﾔﾏﾁ",
       "official_url": "www.town.shioya.tochigi.jp",
@@ -651,11 +663,7 @@
       "prefecture_slug": "tochigi",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.shioya.tochigi.jp/info/2064",
-        "https://www.town.shioya.tochigi.jp/info/2509",
-        "https://www.town.shioya.tochigi.jp/info/2488"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [],

@@ -339,16 +339,14 @@ sources:
   operator_evidence:
     quote: 滋賀県 県内の市町一覧に掲載された公式サイト（www.town.shiga-hino.lg.jp）
     url: https://www.pref.shiga.lg.jp/ab00/7739.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.town.shiga-hino.lg.jp/0000002170.html
     kind: listing_index
-  - url: https://www.town.shiga-hino.lg.jp/soshiki/10-2-0-0-0_40.html
-    kind: subsidy
-  - url: https://www.town.shiga-hino.lg.jp/category/27-10-1-0-0-0-0-0-0-0.html
-    kind: subsidy
-  - url: https://www.town.shiga-hino.lg.jp/0000008223.html
-    kind: subsidy
+    follow:
+    - pattern: ^https?://www\.town\.shiga\-hino\.lg\.jp/\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.town.shiga-hino.lg.jp
   max_pages: 30

@@ -60,34 +60,32 @@
       ]
     },
     {
-      "alternatives": [
-        "https://www.city.izumo.shimane.jp/cgi-bin/jump.cgi?https://izumo-akiyataisaku.jp/"
-      ],
-      "bank_url": "https://izumo-akiyataisaku.jp/bank/",
+      "alternatives": [],
+      "bank_status": "none",
+      "bank_url": "https://www.city.izumo.shimane.jp/",
       "code": "322032",
-      "confidence": 0.8274999999999999,
-      "cross_linked": true,
-      "evidence_checked_on": "2026-09-11",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式サイト（www.city.izumo.shimane.jp）から空き家バンクとして案内されているリンク",
       "evidence_url": "https://www.city.izumo.shimane.jp/",
       "external_links": [],
-      "listing_rows": 5,
-      "listing_score": 0.4,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "出雲市",
       "name_kana": "ｲｽﾞﾓｼ",
       "official_url": "www.city.izumo.shimane.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "島根県",
       "prefecture_slug": "shimane",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://izumo-akiyataisaku.jp/%e7%a9%ba%e3%81%8d%e5%ae%b6%e3%83%90%e3%83%b3%e3%82%af%e7%99%bb%e9%8c%b2%e6%94%af%e6%8f%b4%e8%a3%9c%e5%8a%a9%e9%87%91/",
-        "https://izumo-akiyataisaku.jp/about_akiya_contents/%e3%80%90%e3%83%aa%e3%83%bc%e3%83%89%e6%96%87%e3%80%91%e7%a9%ba%e3%81%8d%e5%ae%b6%e3%81%ae%e9%99%a4%e5%8d%b4%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/"
-      ]
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],
@@ -347,15 +345,20 @@
       "alternatives": [
         "https://www.town.ohnan.lg.jp/life/1/5/32/"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.ohnan.lg.jp/soshiki/11/1042.html",
       "code": "324493",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "島根県リンク（市町村）に掲載された公式サイト（www.town.ohnan.lg.jp）",
       "evidence_url": "https://www.pref.shimane.lg.jp/link01.html",
       "external_links": [],
-      "listing_rows": 49,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 52）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
+      "listing_rows": 52,
       "listing_score": 1.0,
       "name": "邑南町",
       "name_kana": "ｵｵﾅﾝﾁｮｳ",
@@ -368,9 +371,7 @@
       "prefecture_slug": "shimane",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.ohnan.lg.jp/soshiki/11/1251.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -379,15 +380,20 @@
         "https://www.town.tsuwano.lg.jp/www/contents/1710295974122/index.html",
         "https://www.town.tsuwano.lg.jp/www/contents/1653959395835/index.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.tsuwano.lg.jp/www/contents/1640736634362/index.html",
       "code": "325015",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.town.tsuwano.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.tsuwano.lg.jp/",
       "external_links": [],
-      "listing_rows": 43,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 36）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
+      "listing_rows": 36,
       "listing_score": 1.0,
       "name": "津和野町",
       "name_kana": "ﾂﾜﾉﾁｮｳ",
@@ -400,47 +406,35 @@
       "prefecture_slug": "shimane",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.tsuwano.lg.jp/www/contents/1782190745130/index.html",
-        "https://www.town.tsuwano.lg.jp/www/contents/1653959395835/index.html",
-        "https://www.town.tsuwano.lg.jp/www/contents/1681363976462/index.html"
-      ]
+      "subsidy_urls": []
     },
     {
-      "alternatives": [
-        "https://www.town.yoshika.lg.jp/iju/stay/akiyabank/",
-        "https://www.town.yoshika.lg.jp/kurashi/sumai/",
-        "https://www.town.yoshika.lg.jp/iju/stay/akiyabank/hojokin.html",
-        "https://www.town.yoshika.lg.jp/topics-news/sumikawakichiten.html",
-        "https://www.town.yoshika.lg.jp/iju/stay/akiyabank/akiya-about.html"
-      ],
-      "bank_url": "https://www.town.yoshika.lg.jp/iju/stay/akiyabank/akiyajouhou/",
+      "alternatives": [],
+      "bank_status": "none",
+      "bank_url": "https://www.town.yoshika.lg.jp/",
       "code": "325058",
-      "confidence": 0.8205,
+      "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.town.yoshika.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.yoshika.lg.jp/",
       "external_links": [],
-      "listing_rows": 4,
-      "listing_score": 0.42,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "吉賀町",
       "name_kana": "ﾖｼｶﾁｮｳ",
       "official_url": "www.town.yoshika.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "島根県",
       "prefecture_slug": "shimane",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.yoshika.lg.jp/iju/stay/akiyabank/hojokin.html",
-        "https://www.town.yoshika.lg.jp/sangyou/minkanchintaijyutaku/minkanchintaijyutaku.html",
-        "https://www.town.yoshika.lg.jp/kurashi/josei/saiseikanou/y_solar.html",
-        "https://www.town.yoshika.lg.jp/kurashi/josei/saiseikanou/y_wbiomass.html"
-      ]
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],
@@ -475,29 +469,34 @@
       "alternatives": [
         "https://www.town.nishinoshima.shimane.jp/teiju/akiya/",
         "https://www.town.nishinoshima.shimane.jp/bunya/b_sumai/b_akiya/",
-        "https://www.town.nishinoshima.shimane.jp/profile/56"
+        "https://www.town.nishinoshima.shimane.jp/profile/56",
+        "https://www.town.nishinoshima.shimane.jp/teiju/akiya/akiyaichiran/"
       ],
-      "bank_url": "https://www.town.nishinoshima.shimane.jp/teiju/akiya/akiyaichiran/",
+      "bank_status": "available",
+      "bank_url": "https://www.town.nishinoshima.shimane.jp/teiju/akiya/akitiitiran/",
       "code": "325261",
-      "confidence": 0.8205,
+      "confidence": 0.8414999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.town.nishinoshima.shimane.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.nishinoshima.shimane.jp/",
       "external_links": [],
-      "listing_rows": 4,
-      "listing_score": 0.45,
+      "extract_gap": false,
+      "listing_rows": 7,
+      "listing_score": 0.81,
       "name": "西ノ島町",
       "name_kana": "ﾆｼﾉｼﾏﾁｮｳ",
       "official_url": "www.town.nishinoshima.shimane.jp",
       "operator_kind": "municipality",
       "page_class": "listing_index",
-      "pagination_pattern": null,
+      "pagination_pattern": "https?://www\\.town\\.nishinoshima\\.shimane\\.jp/teiju/akiya/akitiitiran/?\\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\\d+",
       "policy": "crawl",
       "prefecture": "島根県",
       "prefecture_slug": "shimane",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],

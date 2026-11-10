@@ -421,12 +421,12 @@ sources:
     slug: '454044'
     bank_url: https://www.town.kijo.lg.jp/sosikikarasagasu/tiikiseisakuka/3/1/290.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 宮崎県木城町
   operator_evidence:
     quote: 公式ドメイン www.town.kijo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kijo.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.town.kijo.lg.jp/sosikikarasagasu/tiikiseisakuka/3/1/290.html
     kind: listing_index
@@ -572,7 +572,7 @@ sources:
   operator_evidence:
     quote: 宮崎県 県内市町村一覧に掲載された公式サイト（www.town.miyazaki-misato.lg.jp）
     url: https://www.pref.miyazaki.lg.jp/kohosenryaku/kense/shichoson/shichosonmap.html
-    checked_on: '2026-11-04'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.town.miyazaki-misato.lg.jp/dynamic/info/pub/default.aspx?c_id=26
     kind: listing_index

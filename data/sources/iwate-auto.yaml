@@ -437,17 +437,15 @@ sources:
     slug: '033014'
     bank_url: https://www.town.shizukuishi.iwate.jp/docs/2014121000281/
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 岩手県雫石町
   operator_evidence:
     quote: 公式ドメイン www.town.shizukuishi.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.shizukuishi.iwate.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.town.shizukuishi.iwate.jp/docs/2014121000281/
     kind: listing_index
-  - url: https://www.town.shizukuishi.iwate.jp/docs/2016072600053/
-    kind: subsidy
   allow_hosts:
   - www.town.shizukuishi.iwate.jp
   max_pages: 30
@@ -792,7 +790,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.karumai.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.karumai.iwate.jp/
-    checked_on: '2026-11-04'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.town.karumai.iwate.jp/article/kurashitetsuduki/living/jyutaku/entry-basename.html
     kind: listing_index

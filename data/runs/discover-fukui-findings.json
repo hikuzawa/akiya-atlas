@@ -127,15 +127,20 @@
     },
     {
       "alternatives": [],
+      "bank_status": "available",
       "bank_url": "https://www.city.katsuyama.fukui.jp/soshiki/16/410.html",
       "code": "182061",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-10-14",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.city.katsuyama.fukui.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.katsuyama.fukui.jp/",
       "external_links": [],
-      "listing_rows": 25,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 24）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
+      "listing_rows": 24,
       "listing_score": 1.0,
       "name": "勝山市",
       "name_kana": "ｶﾂﾔﾏｼ",
@@ -147,7 +152,8 @@
       "prefecture": "福井県",
       "prefecture_slug": "fukui",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],
@@ -179,32 +185,37 @@
     {
       "alternatives": [
         "https://www.city.awara.lg.jp/mokuteki/life/jyutaku1/index.html",
-        "https://www.city.awara.lg.jp/mokuteki/life/jyutaku1/p015621.html",
         "https://www.city.awara.lg.jp/mokuteki/life/jyutaku1/p008646.html",
         "https://www.city.awara.lg.jp/mokuteki/life/jyutaku1/p001354.html",
-        "https://www.city.awara.lg.jp/mokuteki/life/jyutaku1/p011117.html"
+        "https://www.city.awara.lg.jp/mokuteki/life/jyutaku1/p011117.html",
+        "https://www.city.awara.lg.jp/dept/souzousenryakubu/kyoudo/index.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.city.awara.lg.jp/mokuteki/life/jyutaku1/p001478.html",
       "code": "182087",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-10-14",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.city.awara.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.awara.lg.jp/",
       "external_links": [
         {
-          "label": "「at home 空き家バンク」 （アットホーム株式会社）",
+          "label": "「at home 空き家バンク」 (アットホーム株式会社)",
           "url": "https://awara-c18208.akiya-athome.jp/"
         },
         {
-          "label": "「LIFULL HOME’S 空き家バンク」 （株式会社LIFULL）",
+          "label": "「LIFULL HOME’S 空き家バンク」 (株式会社LIFULL)",
           "url": "https://www.homes.co.jp/akiyabank/fukui/awara/"
         },
         {
-          "label": "homes.co.jp",
+          "label": "LIFULL空き家バンクバナー",
           "url": "http://www.homes.co.jp/akiyabank/fukui/awara/"
         }
       ],
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 38）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
       "listing_rows": 38,
       "listing_score": 1.0,
       "name": "あわら市",
@@ -218,12 +229,7 @@
       "prefecture_slug": "fukui",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.awara.lg.jp/mokuteki/life/jyutaku1/p011117.html",
-        "https://www.city.awara.lg.jp/mokuteki/health/health04/health0404/p000081.html",
-        "https://www.city.awara.lg.jp/mokuteki/industry/industry0401/p010615.html",
-        "https://www.city.awara.lg.jp/mokuteki/life/life13/koyouroudou/p001367.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [],
@@ -409,35 +415,32 @@
       "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.town.fukui-mihama.lg.jp/life/1/11/198/"
-      ],
-      "bank_url": "https://www.town.fukui-mihama.lg.jp/site/iju/487.html",
+      "alternatives": [],
+      "bank_status": "review",
+      "bank_url": null,
       "code": "184420",
-      "confidence": 0.8135,
+      "confidence": 0.2,
       "cross_linked": false,
-      "evidence_checked_on": "2026-10-15",
+      "detail_pattern": null,
+      "evidence_checked_on": null,
       "evidence_quote": "福井県内市町リンク集に掲載された公式サイト（www.town.fukui-mihama.lg.jp）",
       "evidence_url": "https://www.pref.fukui.lg.jp/doc/dx-suishin/shimachi_list.html",
-      "external_links": [
-        {
-          "label": "全国版空家バンク（美浜町）",
-          "url": "https://mihama-t18442.akiya-athome.jp/"
-        }
-      ],
-      "listing_rows": 3,
-      "listing_score": 0.43,
+      "external_links": [],
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "美浜町",
       "name_kana": "ﾐﾊﾏﾁｮｳ",
       "official_url": "www.town.fukui-mihama.lg.jp",
-      "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "operator_kind": "unknown",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "pending",
       "prefecture": "福井県",
       "prefecture_slug": "fukui",
-      "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "proposed_action": "URL修正",
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],

@@ -1107,39 +1107,22 @@ sources:
   operator: 東庄町
   operator_kind: municipality
   official_url: https://www.town.tohnosho.chiba.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '123498'
     name: 東庄町
     prefecture: 千葉県
     prefecture_slug: chiba
     slug: '123498'
-    bank_url: https://www.town.tohnosho.chiba.jp/cgi-bin/recruit.php/1/list?page_no=73
-    bank_status: available
+    bank_url: https://www.town.tohnosho.chiba.jp/
+    bank_status: none
     extract_pending: false
     map_query: 千葉県東庄町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 千葉県 市町村一覧に掲載された公式サイト（www.town.tohnosho.chiba.jp）
     url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
-    checked_on: '2026-10-12'
-  pages:
-  - url: https://www.town.tohnosho.chiba.jp/cgi-bin/recruit.php/1/list?page_no=73
-    kind: listing_index
-    follow:
-    - pattern: https?://www\.town\.tohnosho\.chiba\.jp/cgi\-bin/recruit\.php/1/list/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
-      kind: listing_index
-      max_links: 20
-  - url: https://www.town.tohnosho.chiba.jp/kurashi_tetsuzuki/iju_teiju/akiyabank/3702.html
-    kind: subsidy
-  - url: https://www.town.tohnosho.chiba.jp/kurashi_tetsuzuki/iju_teiju/7774.html
-    kind: subsidy
-  - url: https://www.town.tohnosho.chiba.jp/kurashi_tetsuzuki/iju_teiju/6180.html
-    kind: subsidy
-  - url: https://www.town.tohnosho.chiba.jp/kurashi_tetsuzuki/iju_teiju/6224.html
-    kind: subsidy
-  allow_hosts:
-  - www.town.tohnosho.chiba.jp
-  max_pages: 30
+    checked_on: '2026-11-10'
 - id: chiba-124036
   name: 九十九里町空き家バンク
   operator: 九十九里町

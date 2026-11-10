@@ -1317,7 +1317,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.oto.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.oto.fukuoka.jp/
-    checked_on: '2026-11-04'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.town.oto.fukuoka.jp/dynamic/info/pub/default.aspx?c_id=16
     kind: listing_detail
@@ -1359,22 +1359,17 @@ sources:
     slug: '406104'
     bank_url: http://fukuchi-life.com/
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 福岡県福智町
   operator_evidence:
     quote: 公式サイト（www.town.fukuchi.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.town.fukuchi.lg.jp/
-    checked_on: '2026-10-17'
+    checked_on: '2026-11-10'
   pages:
   - url: http://fukuchi-life.com/
     kind: listing_index
-  - url: https://fukuchi-life.com/info/detail.php?id=0712d97e81ecc2658a86409ea2f1a34e
-    kind: subsidy
-  - url: https://www.town.fukuchi.lg.jp/soshiki/juutaku/aaaaa123/akiyainformation/4085.html
-    kind: subsidy
   allow_hosts:
   - fukuchi-life.com
-  - www.town.fukuchi.lg.jp
   max_pages: 30
 - id: fukuoka-406210
   name: 苅田町空き家バンク

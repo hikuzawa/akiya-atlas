@@ -735,38 +735,32 @@
       "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.town.kibichuo.lg.jp/site/teijyu/6685.html",
-        "https://www.town.kibichuo.lg.jp/site/teijyu/190.html",
-        "https://www.town.kibichuo.lg.jp/site/teijyu/711.html",
-        "https://www.town.kibichuo.lg.jp/site/teijyu/12507.html"
-      ],
-      "bank_url": "https://www.town.kibichuo.lg.jp/site/teijyu/1576.html",
+      "alternatives": [],
+      "bank_status": "review",
+      "bank_url": null,
       "code": "336815",
-      "confidence": 0.9324999999999999,
+      "confidence": 0.2,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": null,
       "evidence_quote": "公式ドメイン www.town.kibichuo.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.kibichuo.lg.jp/",
       "external_links": [],
-      "listing_rows": 52,
-      "listing_score": 1.0,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "吉備中央町",
       "name_kana": "ｷﾋﾞﾁｭｳｵｳﾁｮｳ",
       "official_url": "www.town.kibichuo.lg.jp",
-      "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "operator_kind": "unknown",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "pending",
       "prefecture": "岡山県",
       "prefecture_slug": "okayama",
-      "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.kibichuo.lg.jp/site/teijyu/190.html",
-        "https://www.town.kibichuo.lg.jp/site/teijyu/12507.html",
-        "https://www.town.kibichuo.lg.jp/site/teijyu/711.html"
-      ]
+      "proposed_action": "URL修正",
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     }
   ]
 }

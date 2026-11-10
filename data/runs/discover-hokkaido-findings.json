@@ -698,14 +698,16 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [],
+      "alternatives": [
+        "https://www.city.sunagawa.hokkaido.jp/seikatsu_kurashi/news/akiyabankkousinn.html"
+      ],
       "bank_status": "available",
       "bank_url": "https://www.city.sunagawa.hokkaido.jp/seikatsu_kurashi/juutaku/newakiya-akichizyouhou.html",
       "code": "012262",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "detail_pattern": "^https?://www\\.city\\.sunagawa\\.hokkaido\\.jp/seikatsu_kurashi/juutaku/akiyaR\\d+\\-\\d+\\.html$",
-      "evidence_checked_on": "2026-11-04",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.city.sunagawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.sunagawa.hokkaido.jp/",
       "external_links": [
@@ -714,7 +716,9 @@
           "url": "https://www.athome.co.jp/kodate/chuko/hokkaido/sunagawa-city/list/"
         }
       ],
-      "extract_gap": false,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 59）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
       "listing_rows": 59,
       "listing_score": 1.0,
       "name": "砂川市",
@@ -962,6 +966,7 @@
       "code": "012360",
       "confidence": 0.8835,
       "cross_linked": false,
+      "empty_checked_on": "2026-11-10",
       "evidence_checked_on": "2026-09-11",
       "evidence_quote": "公式ドメイン www.city.hokuto.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.hokuto.hokkaido.jp/",
@@ -1177,34 +1182,32 @@
       "reason": "JavaScript 描画のため静的 HTML に物件が無い。リンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.town.shikabe.lg.jp/kurashi_tetsuzuki/iju_teiju/akiyabunk/index.html",
-        "https://www.town.shikabe.lg.jp/kurashi_tetsuzuki/zumai/1113.html",
-        "https://www.town.shikabe.lg.jp/kurashi_tetsuzuki/zumai/2669.html",
-        "https://www.town.shikabe.lg.jp/kurashi_tetsuzuki/zumai/index.html",
-        "https://www.town.shikabe.lg.jp/kosodate_kyoiku/miraikirakiraplan/2252.html"
-      ],
-      "bank_url": "https://www.town.shikabe.lg.jp/kurashi_tetsuzuki/zumai/1045.html",
+      "alternatives": [],
+      "bank_status": "none",
+      "bank_url": "https://www.town.shikabe.lg.jp/",
       "code": "013439",
-      "confidence": 0.8554999999999999,
+      "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.town.shikabe.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.shikabe.lg.jp/",
       "external_links": [],
-      "listing_rows": 9,
-      "listing_score": 0.81,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "鹿部町",
       "name_kana": "ｼｶﾍﾞﾁｮｳ",
       "official_url": "www.town.shikabe.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
-      "pagination_pattern": "https?://www\\.town\\.shikabe\\.lg\\.jp/kurashi_tetsuzuki/zumai/1045\\.html/?\\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\\d+",
-      "policy": "crawl",
+      "page_class": null,
+      "pagination_pattern": null,
+      "policy": "link_only",
       "prefecture": "北海道",
       "prefecture_slug": "hokkaido",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -1880,14 +1883,19 @@
         "https://www.town.furubira.lg.jp/life/detail.php?id=290",
         "https://www.town.furubira.lg.jp/info/detail.php?id=366"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.furubira.lg.jp/life/detail.php?id=330",
       "code": "014061",
       "confidence": 0.8205,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.town.furubira.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.furubira.lg.jp/",
       "external_links": [],
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 4）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
       "listing_rows": 4,
       "listing_score": 0.43,
       "name": "古平町",
@@ -1901,12 +1909,7 @@
       "prefecture_slug": "hokkaido",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.furubira.lg.jp/common/img/content/cassette_2_pdf02_20200407_122433.rtf",
-        "https://www.town.furubira.lg.jp/common/img/content/cassette_2_pdf04_20200407_122537.rtf",
-        "https://www.town.furubira.lg.jp/common/img/content/cassette_2_pdf05_20200407_122624.rtf",
-        "https://www.town.furubira.lg.jp/common/img/content/cassette_2_pdf07_20200407_122742.rtf"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -1993,6 +1996,7 @@
       "code": "014231",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
+      "empty_checked_on": "2026-11-10",
       "evidence_checked_on": "2026-09-11",
       "evidence_quote": "公式ドメイン www.town.nanporo.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.nanporo.hokkaido.jp/",
@@ -2553,7 +2557,7 @@
       "confidence": 0.9324999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-04",
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.hokkaido-kamikawa.lg.jp）",
       "evidence_url": "https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html",
       "external_links": [],
@@ -3939,30 +3943,32 @@
       ]
     },
     {
-      "alternatives": [
-        "http://www.town.toyako.hokkaido.jp/settle/abandoned_house/"
-      ],
-      "bank_url": "http://www.town.toyako.hokkaido.jp/settle/abandoned_house",
+      "alternatives": [],
+      "bank_status": "none",
+      "bank_url": "https://www.town.toyako.hokkaido.jp/",
       "code": "015849",
-      "confidence": 0.8554999999999999,
+      "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.toyako.hokkaido.jp）",
       "evidence_url": "https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html",
       "external_links": [],
-      "listing_rows": 9,
-      "listing_score": 1.0,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "洞爺湖町",
       "name_kana": "ﾄｳﾔｺﾁｮｳ",
       "official_url": "www.town.toyako.hokkaido.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "北海道",
       "prefecture_slug": "hokkaido",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],
@@ -4418,36 +4424,32 @@
       "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.sarabetsu.jp/ijyuu/information/akichi_bank/",
-        "https://www.sarabetsu.jp/takikan/",
-        "https://www.sarabetsu.jp/ijyuu/information/akichi_bank/akiya/"
-      ],
-      "bank_url": "https://www.sarabetsu.jp/ijyuu/information/akichi_bank/akichi/",
+      "alternatives": [],
+      "bank_status": "none",
+      "bank_url": "https://www.sarabetsu.jp/",
       "code": "016390",
-      "confidence": 0.8624999999999999,
+      "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "北海道 道内179市町村（50音別）に掲載された公式サイト（www.sarabetsu.jp）",
       "evidence_url": "https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html",
       "external_links": [],
-      "listing_rows": 10,
-      "listing_score": 1.0,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "更別村",
       "name_kana": "ｻﾗﾍﾞﾂﾑﾗ",
       "official_url": "www.sarabetsu.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "北海道",
       "prefecture_slug": "hokkaido",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.sarabetsu.jp/ijyuu/information/sokushinjigyo_josei/",
-        "https://www.sarabetsu.jp/kurashi/sumai_seikatsu/sumai/kensetsu_josei/"
-      ]
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],

@@ -336,7 +336,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kakamigahara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kakamigahara.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-10'
 - id: gifu-212148
   name: 可児市空き家バンク
   operator: 可児市
@@ -460,19 +460,15 @@ sources:
     slug: '212181'
     bank_url: https://www.city.motosu.lg.jp/iju/0000000178.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 岐阜県本巣市
   operator_evidence:
     quote: 公式ドメイン www.city.motosu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.motosu.lg.jp/
-    checked_on: '2026-11-02'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.city.motosu.lg.jp/iju/0000000178.html
     kind: listing_index
-  - url: https://www.city.motosu.lg.jp/iju/0000000197.html
-    kind: subsidy
-  - url: https://www.city.motosu.lg.jp/iju/0000000191.html
-    kind: subsidy
   allow_hosts:
   - www.city.motosu.lg.jp
   max_pages: 30
@@ -622,21 +618,15 @@ sources:
     slug: '213411'
     bank_url: https://www.town.yoro.gifu.jp/life/living/1001778/1001779.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 岐阜県養老町
   operator_evidence:
     quote: 公式ドメイン www.town.yoro.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yoro.gifu.jp/
-    checked_on: '2026-11-02'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.town.yoro.gifu.jp/life/living/1001778/1001779.html
     kind: listing_index
-  - url: https://www.town.yoro.gifu.jp/life/living/1001778/1002610.html
-    kind: subsidy
-  - url: https://www.town.yoro.gifu.jp/life/living/1001778/1002611.html
-    kind: subsidy
-  - url: https://www.town.yoro.gifu.jp/life/living/1001777/1002586.html
-    kind: subsidy
   allow_hosts:
   - www.town.yoro.gifu.jp
   max_pages: 30
@@ -949,21 +939,17 @@ sources:
     prefecture: 岐阜県
     prefecture_slug: gifu
     slug: '215031'
-    bank_url: https://www.kawabe-gifu.jp/?page_id=16351
+    bank_url: https://www.kawabe-gifu.jp/?akiya=65%e5%b7%9d%e8%be%ba%e7%94%ba%e4%b8%8b%e5%b7%9d%e8%be%ba%e5%a3%b2%e8%b2%b7%e5%b8%8c%e6%9c%9b
     bank_status: available
     extract_pending: false
     map_query: 岐阜県川辺町
   operator_evidence:
     quote: 岐阜県の市町村一覧に掲載された公式サイト（www.kawabe-gifu.jp）
     url: https://www.pref.gifu.lg.jp/page/6058.html
-    checked_on: '2026-11-03'
+    checked_on: '2026-11-10'
   pages:
-  - url: https://www.kawabe-gifu.jp/?page_id=16351
+  - url: https://www.kawabe-gifu.jp/?akiya=65%e5%b7%9d%e8%be%ba%e7%94%ba%e4%b8%8b%e5%b7%9d%e8%be%ba%e5%a3%b2%e8%b2%b7%e5%b8%8c%e6%9c%9b
     kind: listing_index
-  - url: https://www.kawabe-gifu.jp/?page_id=16926
-    kind: subsidy
-  - url: https://www.kawabe-gifu.jp/?page_id=47302
-    kind: subsidy
   allow_hosts:
   - www.kawabe-gifu.jp
   max_pages: 30
@@ -999,27 +985,22 @@ sources:
   operator: 八百津町
   operator_kind: municipality
   official_url: https://www.town.yaotsu.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '215058'
     name: 八百津町
     prefecture: 岐阜県
     prefecture_slug: gifu
     slug: '215058'
-    bank_url: https://akiya-yaotsu.jp/
-    bank_status: available
+    bank_url: https://www.town.yaotsu.lg.jp/
+    bank_status: none
     extract_pending: false
     map_query: 岐阜県八百津町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式サイト（www.town.yaotsu.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.town.yaotsu.lg.jp/
-    checked_on: '2026-11-03'
-  pages:
-  - url: https://akiya-yaotsu.jp/
-    kind: listing_index
-  allow_hosts:
-  - akiya-yaotsu.jp
-  max_pages: 30
+    checked_on: '2026-11-10'
 - id: gifu-215066
   name: 白川町空き家バンク
   operator: 白川町
@@ -1110,32 +1091,19 @@ sources:
   operator: 白川村
   operator_kind: municipality
   official_url: https://www.vill.shirakawa.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '216046'
     name: 白川村
     prefecture: 岐阜県
     prefecture_slug: gifu
     slug: '216046'
-    bank_url: https://www.vill.shirakawa.lg.jp/1402.htm
-    bank_status: available
+    bank_url: https://www.vill.shirakawa.lg.jp/
+    bank_status: none
     extract_pending: false
     map_query: 岐阜県白川村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.shirakawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.shirakawa.lg.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.vill.shirakawa.lg.jp/1402.htm
-    kind: listing_index
-  - url: https://www.vill.shirakawa.lg.jp/1259.htm
-    kind: subsidy
-  - url: https://www.vill.shirakawa.lg.jp/2799.htm
-    kind: subsidy
-  - url: https://www.vill.shirakawa.lg.jp/1270.htm
-    kind: subsidy
-  - url: https://www.vill.shirakawa.lg.jp/item/3184.htm
-    kind: subsidy
-  allow_hosts:
-  - www.vill.shirakawa.lg.jp
-  max_pages: 30
+    checked_on: '2026-11-10'

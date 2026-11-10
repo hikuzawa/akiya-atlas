@@ -55,31 +55,22 @@ sources:
   operator: 出雲市
   operator_kind: municipality
   official_url: https://www.city.izumo.shimane.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '322032'
     name: 出雲市
     prefecture: 島根県
     prefecture_slug: shimane
     slug: '322032'
-    bank_url: https://izumo-akiyataisaku.jp/bank/
-    bank_status: available
+    bank_url: https://www.city.izumo.shimane.jp/
+    bank_status: none
     extract_pending: false
     map_query: 島根県出雲市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式サイト（www.city.izumo.shimane.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.izumo.shimane.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://izumo-akiyataisaku.jp/bank/
-    kind: listing_index
-  - url: https://izumo-akiyataisaku.jp/%e7%a9%ba%e3%81%8d%e5%ae%b6%e3%83%90%e3%83%b3%e3%82%af%e7%99%bb%e9%8c%b2%e6%94%af%e6%8f%b4%e8%a3%9c%e5%8a%a9%e9%87%91/
-    kind: subsidy
-  - url: https://izumo-akiyataisaku.jp/about_akiya_contents/%e3%80%90%e3%83%aa%e3%83%bc%e3%83%89%e6%96%87%e3%80%91%e7%a9%ba%e3%81%8d%e5%ae%b6%e3%81%ae%e9%99%a4%e5%8d%b4%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/
-    kind: subsidy
-  allow_hosts:
-  - izumo-akiyataisaku.jp
-  max_pages: 30
+    checked_on: '2026-11-10'
 - id: shimane-322041
   name: 益田市空き家バンク
   operator: 益田市
@@ -320,17 +311,15 @@ sources:
     slug: '324493'
     bank_url: https://www.town.ohnan.lg.jp/soshiki/11/1042.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 島根県邑南町
   operator_evidence:
     quote: 島根県リンク（市町村）に掲載された公式サイト（www.town.ohnan.lg.jp）
     url: https://www.pref.shimane.lg.jp/link01.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.town.ohnan.lg.jp/soshiki/11/1042.html
     kind: listing_index
-  - url: https://www.town.ohnan.lg.jp/soshiki/11/1251.html
-    kind: subsidy
   allow_hosts:
   - www.town.ohnan.lg.jp
   max_pages: 30
@@ -348,21 +337,15 @@ sources:
     slug: '325015'
     bank_url: https://www.town.tsuwano.lg.jp/www/contents/1640736634362/index.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 島根県津和野町
   operator_evidence:
     quote: 公式ドメイン www.town.tsuwano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.tsuwano.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.town.tsuwano.lg.jp/www/contents/1640736634362/index.html
     kind: listing_index
-  - url: https://www.town.tsuwano.lg.jp/www/contents/1782190745130/index.html
-    kind: subsidy
-  - url: https://www.town.tsuwano.lg.jp/www/contents/1653959395835/index.html
-    kind: subsidy
-  - url: https://www.town.tsuwano.lg.jp/www/contents/1681363976462/index.html
-    kind: subsidy
   allow_hosts:
   - www.town.tsuwano.lg.jp
   max_pages: 30
@@ -371,35 +354,22 @@ sources:
   operator: 吉賀町
   operator_kind: municipality
   official_url: https://www.town.yoshika.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '325058'
     name: 吉賀町
     prefecture: 島根県
     prefecture_slug: shimane
     slug: '325058'
-    bank_url: https://www.town.yoshika.lg.jp/iju/stay/akiyabank/akiyajouhou/
-    bank_status: available
+    bank_url: https://www.town.yoshika.lg.jp/
+    bank_status: none
     extract_pending: false
     map_query: 島根県吉賀町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.yoshika.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.yoshika.lg.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.town.yoshika.lg.jp/iju/stay/akiyabank/akiyajouhou/
-    kind: listing_index
-  - url: https://www.town.yoshika.lg.jp/iju/stay/akiyabank/hojokin.html
-    kind: subsidy
-  - url: https://www.town.yoshika.lg.jp/sangyou/minkanchintaijyutaku/minkanchintaijyutaku.html
-    kind: subsidy
-  - url: https://www.town.yoshika.lg.jp/kurashi/josei/saiseikanou/y_solar.html
-    kind: subsidy
-  - url: https://www.town.yoshika.lg.jp/kurashi/josei/saiseikanou/y_wbiomass.html
-    kind: subsidy
-  allow_hosts:
-  - www.town.yoshika.lg.jp
-  max_pages: 30
+    checked_on: '2026-11-10'
 - id: shimane-325252
   name: 海士町空き家バンク
   operator: 海士町
@@ -443,17 +413,21 @@ sources:
     prefecture: 島根県
     prefecture_slug: shimane
     slug: '325261'
-    bank_url: https://www.town.nishinoshima.shimane.jp/teiju/akiya/akiyaichiran/
+    bank_url: https://www.town.nishinoshima.shimane.jp/teiju/akiya/akitiitiran/
     bank_status: available
     extract_pending: false
     map_query: 島根県西ノ島町
   operator_evidence:
     quote: 公式ドメイン www.town.nishinoshima.shimane.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nishinoshima.shimane.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-10'
   pages:
-  - url: https://www.town.nishinoshima.shimane.jp/teiju/akiya/akiyaichiran/
+  - url: https://www.town.nishinoshima.shimane.jp/teiju/akiya/akitiitiran/
     kind: listing_index
+    follow:
+    - pattern: https?://www\.town\.nishinoshima\.shimane\.jp/teiju/akiya/akitiitiran/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
+      kind: listing_index
+      max_links: 20
   allow_hosts:
   - www.town.nishinoshima.shimane.jp
   max_pages: 30

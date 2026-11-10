@@ -356,7 +356,7 @@
       "code": "212130",
       "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.city.kakamigahara.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.kakamigahara.lg.jp/",
       "external_links": [],
@@ -505,14 +505,19 @@
         "https://www.city.motosu.lg.jp/iju/0000000217.html",
         "https://www.city.motosu.lg.jp/iju/0000000199.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.city.motosu.lg.jp/iju/0000000178.html",
       "code": "212181",
       "confidence": 0.8345,
       "cross_linked": false,
-      "evidence_checked_on": "2026-11-02",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.city.motosu.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.motosu.lg.jp/",
       "external_links": [],
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 6）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
       "listing_rows": 6,
       "listing_score": 0.76,
       "name": "本巣市",
@@ -526,10 +531,7 @@
       "prefecture_slug": "gifu",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.motosu.lg.jp/iju/0000000197.html",
-        "https://www.city.motosu.lg.jp/iju/0000000191.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [],
@@ -677,14 +679,19 @@
         "https://www.town.yoro.gifu.jp/life/living/1001778/index.html",
         "https://www.town.yoro.gifu.jp/event_calendar.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.yoro.gifu.jp/life/living/1001778/1001779.html",
       "code": "213411",
       "confidence": 0.8835,
       "cross_linked": false,
-      "evidence_checked_on": "2026-11-02",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.town.yoro.gifu.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.yoro.gifu.jp/",
       "external_links": [],
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 13）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
       "listing_rows": 13,
       "listing_score": 1.0,
       "name": "養老町",
@@ -698,11 +705,7 @@
       "prefecture_slug": "gifu",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.yoro.gifu.jp/life/living/1001778/1002610.html",
-        "https://www.town.yoro.gifu.jp/life/living/1001778/1002611.html",
-        "https://www.town.yoro.gifu.jp/life/living/1001777/1002586.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -1034,21 +1037,24 @@
     },
     {
       "alternatives": [
+        "https://www.kawabe-gifu.jp/?page_id=16351",
         "https://www.kawabe-gifu.jp/?page_id=16353",
         "https://www.kawabe-gifu.jp/?page_id=16354",
-        "https://www.kawabe-gifu.jp/?akiya=65%e5%b7%9d%e8%be%ba%e7%94%ba%e4%b8%8b%e5%b7%9d%e8%be%ba%e5%a3%b2%e8%b2%b7%e5%b8%8c%e6%9c%9b",
         "https://www.kawabe-gifu.jp/?akiya=38%e5%b7%9d%e8%be%ba%e7%94%ba%e4%b8%8a%e5%b7%9d%e8%be%ba%e5%a3%b2%e8%b2%b7%e5%b8%8c%e6%9c%9b",
         "https://www.kawabe-gifu.jp/?akiya=29%e5%b7%9d%e8%be%ba%e7%94%ba%e4%b8%8a%e5%b7%9d%e8%be%ba%e5%a3%b2%e8%b2%b7%e5%b8%8c%e6%9c%9b"
       ],
-      "bank_url": "https://www.kawabe-gifu.jp/?page_id=16351",
+      "bank_status": "available",
+      "bank_url": "https://www.kawabe-gifu.jp/?akiya=65%e5%b7%9d%e8%be%ba%e7%94%ba%e4%b8%8b%e5%b7%9d%e8%be%ba%e5%a3%b2%e8%b2%b7%e5%b8%8c%e6%9c%9b",
       "code": "215031",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-11-03",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "岐阜県の市町村一覧に掲載された公式サイト（www.kawabe-gifu.jp）",
       "evidence_url": "https://www.pref.gifu.lg.jp/page/6058.html",
       "external_links": [],
-      "listing_rows": 22,
+      "extract_gap": false,
+      "listing_rows": 29,
       "listing_score": 1.0,
       "name": "川辺町",
       "name_kana": "ｶﾜﾍﾞﾁｮｳ",
@@ -1061,10 +1067,7 @@
       "prefecture_slug": "gifu",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.kawabe-gifu.jp/?page_id=16926",
-        "https://www.kawabe-gifu.jp/?page_id=47302"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -1101,27 +1104,31 @@
     },
     {
       "alternatives": [],
-      "bank_url": "https://akiya-yaotsu.jp/",
+      "bank_status": "none",
+      "bank_url": "https://www.town.yaotsu.lg.jp/",
       "code": "215058",
-      "confidence": 0.8765,
-      "cross_linked": true,
-      "evidence_checked_on": "2026-11-03",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式サイト（www.town.yaotsu.lg.jp）から空き家バンクとして案内されているリンク",
       "evidence_url": "https://www.town.yaotsu.lg.jp/",
       "external_links": [],
-      "listing_rows": 12,
-      "listing_score": 0.95,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "八百津町",
       "name_kana": "ﾔｵﾂﾁｮｳ",
       "official_url": "www.town.yaotsu.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "岐阜県",
       "prefecture_slug": "gifu",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -1218,35 +1225,34 @@
     {
       "alternatives": [
         "https://www.vill.shirakawa.lg.jp/1259.htm",
-        "https://www.vill.shirakawa.lg.jp/2799.htm"
+        "https://www.vill.shirakawa.lg.jp/2799.htm",
+        "https://www.vill.shirakawa.lg.jp/item/1255.htm"
       ],
-      "bank_url": "https://www.vill.shirakawa.lg.jp/1402.htm",
+      "bank_status": "none",
+      "bank_url": "https://www.vill.shirakawa.lg.jp/",
       "code": "216046",
-      "confidence": 0.8345,
+      "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.vill.shirakawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.vill.shirakawa.lg.jp/",
       "external_links": [],
-      "listing_rows": 6,
-      "listing_score": 0.48,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "白川村",
       "name_kana": "ｼﾗｶﾜﾑﾗ",
       "official_url": "www.vill.shirakawa.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "岐阜県",
       "prefecture_slug": "gifu",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.vill.shirakawa.lg.jp/1259.htm",
-        "https://www.vill.shirakawa.lg.jp/2799.htm",
-        "https://www.vill.shirakawa.lg.jp/1270.htm",
-        "https://www.vill.shirakawa.lg.jp/item/3184.htm"
-      ]
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": []
     }
   ]
 }

@@ -640,35 +640,3 @@ sources:
     quote: 公式サイト（www.town.okayama-misaki.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.town.okayama-misaki.lg.jp/
     checked_on: '2026-09-11'
-- id: okayama-336815
-  name: 吉備中央町空き家バンク
-  operator: 吉備中央町
-  operator_kind: municipality
-  official_url: https://www.town.kibichuo.lg.jp/
-  policy: crawl
-  municipality:
-    code: '336815'
-    name: 吉備中央町
-    prefecture: 岡山県
-    prefecture_slug: okayama
-    slug: '336815'
-    bank_url: https://www.town.kibichuo.lg.jp/site/teijyu/1576.html
-    bank_status: available
-    extract_pending: false
-    map_query: 岡山県吉備中央町
-  operator_evidence:
-    quote: 公式ドメイン www.town.kibichuo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
-    url: https://www.town.kibichuo.lg.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.town.kibichuo.lg.jp/site/teijyu/1576.html
-    kind: listing_index
-  - url: https://www.town.kibichuo.lg.jp/site/teijyu/190.html
-    kind: subsidy
-  - url: https://www.town.kibichuo.lg.jp/site/teijyu/12507.html
-    kind: subsidy
-  - url: https://www.town.kibichuo.lg.jp/site/teijyu/711.html
-    kind: subsidy
-  allow_hosts:
-  - www.town.kibichuo.lg.jp
-  max_pages: 30

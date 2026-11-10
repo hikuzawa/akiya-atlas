@@ -192,7 +192,7 @@
   "checked_on": "2026-10-07"
  },
  "akita-052132": {
-  "last_tried": "2026-10-30",
+  "last_tried": "2026-11-10",
   "waiting_reason": "公式サイトに通信できない（HTTP 403）",
   "waiting_since": "2026-10-07"
  },
@@ -293,12 +293,12 @@
   "checked_on": "2026-10-09"
  },
  "aomori-023621": {
-  "last_tried": "2026-10-30",
+  "last_tried": "2026-11-10",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-10-09"
  },
  "aomori-023671": {
-  "last_tried": "2026-10-30",
+  "last_tried": "2026-11-10",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-10-09"
  },
@@ -336,7 +336,7 @@
   "checked_on": "2026-10-10"
  },
  "aomori-024244": {
-  "last_tried": "2026-10-30",
+  "last_tried": "2026-11-10",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-10-10"
  },
@@ -641,7 +641,7 @@
   "checked_on": "2026-10-15"
  },
  "fukuoka-402044": {
-  "last_tried": "2026-10-30",
+  "last_tried": "2026-11-10",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-10-15"
  },
@@ -1021,9 +1021,7 @@
   "checked_on": "2026-11-02"
  },
  "gifu-212130": {
-  "last_tried": "2026-11-02",
-  "waiting_reason": "robots.txt で公式サイトを取得できない",
-  "waiting_since": "2026-11-02"
+  "checked_on": "2026-11-10"
  },
  "gifu-212148": {
   "checked_on": "2026-11-02"
@@ -1080,7 +1078,7 @@
   "checked_on": "2026-11-03"
  },
  "gifu-214043": {
-  "last_tried": "2026-11-03",
+  "last_tried": "2026-11-10",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-11-03"
  },
@@ -1112,10 +1110,7 @@
   "checked_on": "2026-11-03"
  },
  "gifu-216046": {
-  "failed_since": "2026-11-03",
-  "failures": 2,
-  "last_tried": "2026-11-04",
-  "reason": "空き家バンクのページを開けない（HTTP 404）"
+  "checked_on": "2026-11-10"
  },
  "gunma-102016": {
   "checked_on": "2026-11-03"
@@ -1195,8 +1190,41 @@
  "gunma-104434": {
   "checked_on": "2026-11-04"
  },
+ "gunma-104442": {
+  "checked_on": "2026-11-10"
+ },
+ "gunma-104485": {
+  "checked_on": "2026-11-10"
+ },
+ "gunma-104493": {
+  "checked_on": "2026-11-10"
+ },
+ "gunma-104647": {
+  "checked_on": "2026-11-10"
+ },
+ "gunma-105210": {
+  "checked_on": "2026-11-10"
+ },
+ "gunma-105228": {
+  "checked_on": "2026-11-10"
+ },
+ "gunma-105236": {
+  "checked_on": "2026-11-10"
+ },
+ "gunma-105244": {
+  "checked_on": "2026-11-10"
+ },
+ "gunma-105252": {
+  "checked_on": "2026-11-10"
+ },
+ "hiroshima-341002": {
+  "checked_on": "2026-11-10"
+ },
+ "hiroshima-342025": {
+  "checked_on": "2026-11-10"
+ },
  "nagano-203076": {
-  "last_tried": "2026-10-30",
+  "last_tried": "2026-11-10",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-09-29"
  },
@@ -1240,7 +1268,7 @@
   "checked_on": "2026-09-30"
  },
  "nagano-204048": {
-  "last_tried": "2026-10-30",
+  "last_tried": "2026-11-10",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-09-30"
  },

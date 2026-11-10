@@ -895,34 +895,22 @@ sources:
   operator: 福崎町
   operator_kind: municipality
   official_url: https://www.town.fukusaki.hyogo.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '284432'
     name: 福崎町
     prefecture: 兵庫県
     prefecture_slug: hyogo
     slug: '284432'
-    bank_url: http://www.town.fukusaki.hyogo.jp/0000001949.html
-    bank_status: available
+    bank_url: https://www.town.fukusaki.hyogo.jp/
+    bank_status: none
     extract_pending: false
     map_query: 兵庫県福崎町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.fukusaki.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.fukusaki.hyogo.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: http://www.town.fukusaki.hyogo.jp/0000001949.html
-    kind: listing_index
-  - url: https://www.town.fukusaki.hyogo.jp/0000006026.html
-    kind: subsidy
-  allow_hosts:
-  - www.town.fukusaki.hyogo.jp
-  max_pages: 30
-  external_links:
-  - label: 全国版 空き家・空き地バンク (at homeのホームページ)(外部サイトへリンク)
-    url: https://www.akiya-athome.jp
-  - label: 空き家バンク(LIFULL HOME'Sのホームページ)(外部サイトへリンク)
-    url: https://www.homes.co.jp/akiyabank
+    checked_on: '2026-11-10'
 - id: hyogo-284467
   name: 神河町空き家バンク
   operator: 神河町
@@ -942,7 +930,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kamikawa.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kamikawa.hyogo.jp/
-    checked_on: '2026-11-04'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.town.kamikawa.hyogo.jp/0000000317.html
     kind: listing_index

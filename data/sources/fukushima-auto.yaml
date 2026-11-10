@@ -290,19 +290,15 @@ sources:
     slug: '072125'
     bank_url: https://www.minamisoma-akiya.org/
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 福島県南相馬市
   operator_evidence:
     quote: 公式サイト（www.city.minamisoma.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.minamisoma.lg.jp/
-    checked_on: '2026-11-04'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.minamisoma-akiya.org/
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.minamisoma\-akiya\.org/properties/\d+/$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.minamisoma-akiya.org
   max_pages: 30
@@ -436,17 +432,15 @@ sources:
     slug: 073083
     bank_url: https://www.town.kawamata.lg.jp/site/kurashi-tetsuzuki/akiyatoubanktourokubukken.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 福島県川俣町
   operator_evidence:
     quote: 公式ドメイン www.town.kawamata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kawamata.lg.jp/
-    checked_on: '2026-10-30'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.town.kawamata.lg.jp/site/kurashi-tetsuzuki/akiyatoubanktourokubukken.html
     kind: listing_index
-  - url: https://www.town.kawamata.lg.jp/site/kurashi-tetsuzuki/akiyataisakusogoshienzigyo.html
-    kind: subsidy
   allow_hosts:
   - www.town.kawamata.lg.jp
   max_pages: 30
@@ -603,7 +597,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tadami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.tadami.lg.jp/
-    checked_on: '2026-11-04'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.town.tadami.lg.jp/akiyabank/index.html
     kind: listing_index
@@ -739,19 +733,15 @@ sources:
     slug: 073687
     bank_url: https://www.town.minamiaizu.lg.jp/cgi-bin/recruit.php/1/list
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 福島県南会津町
   operator_evidence:
     quote: 公式ドメイン www.town.minamiaizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.minamiaizu.lg.jp/
-    checked_on: '2026-11-04'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.town.minamiaizu.lg.jp/cgi-bin/recruit.php/1/list
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.town\.minamiaizu\.lg\.jp/cgi\-bin/recruit\.php/\d+/detail/\d+$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.town.minamiaizu.lg.jp
   max_pages: 30
@@ -883,19 +873,15 @@ sources:
     slug: '074217'
     bank_url: https://www.town.aizubange.fukushima.jp/site/akiya-bank/
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 福島県会津坂下町
   operator_evidence:
     quote: 公式ドメイン www.town.aizubange.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.aizubange.fukushima.jp/
-    checked_on: '2026-11-04'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.town.aizubange.fukushima.jp/site/akiya-bank/
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.town\.aizubange\.fukushima\.jp/site/akiya\-bank/list\d+\-\d+\.html$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.town.aizubange.fukushima.jp
   max_pages: 30
@@ -1109,31 +1095,22 @@ sources:
   operator: 泉崎村
   operator_kind: municipality
   official_url: https://www.vill.izumizaki.fukushima.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '074641'
     name: 泉崎村
     prefecture: 福島県
     prefecture_slug: fukushima
     slug: '074641'
-    bank_url: https://www.vill.izumizaki.fukushima.jp/kurashi-tetsuduki/kenchiku-jutaku/page002028.html
-    bank_status: available
+    bank_url: https://www.vill.izumizaki.fukushima.jp/
+    bank_status: none
     extract_pending: false
     map_query: 福島県泉崎村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.izumizaki.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.izumizaki.fukushima.jp/
-    checked_on: '2026-10-31'
-  pages:
-  - url: https://www.vill.izumizaki.fukushima.jp/kurashi-tetsuduki/kenchiku-jutaku/page002028.html
-    kind: listing_index
-  - url: https://www.vill.izumizaki.fukushima.jp/kurashi-tetsuduki/news/page002025.html
-    kind: subsidy
-  - url: https://www.vill.izumizaki.fukushima.jp/kurashi-tetsuduki/news/page002026.html
-    kind: subsidy
-  allow_hosts:
-  - www.vill.izumizaki.fukushima.jp
-  max_pages: 30
+    checked_on: '2026-11-10'
 - id: fukushima-074659
   name: 中島村空き家バンク
   operator: 中島村
@@ -1637,33 +1614,22 @@ sources:
   operator: 浪江町
   operator_kind: municipality
   official_url: https://www.town.namie.fukushima.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '075477'
     name: 浪江町
     prefecture: 福島県
     prefecture_slug: fukushima
     slug: '075477'
-    bank_url: https://www.town.namie.fukushima.jp/soshiki/23/25795.html
-    bank_status: available
+    bank_url: https://www.town.namie.fukushima.jp/
+    bank_status: none
     extract_pending: false
     map_query: 福島県浪江町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.namie.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.namie.fukushima.jp/
-    checked_on: '2026-11-01'
-  pages:
-  - url: https://www.town.namie.fukushima.jp/soshiki/23/25795.html
-    kind: listing_index
-  - url: https://www.town.namie.fukushima.jp/soshiki/23/38833.html
-    kind: subsidy
-  - url: https://www.town.namie.fukushima.jp/soshiki/20/33719.html
-    kind: subsidy
-  - url: https://www.town.namie.fukushima.jp/soshiki/23/39232.html
-    kind: subsidy
-  allow_hosts:
-  - www.town.namie.fukushima.jp
-  max_pages: 30
+    checked_on: '2026-11-10'
 - id: fukushima-075485
   name: 葛尾村空き家バンク
   operator: 葛尾村

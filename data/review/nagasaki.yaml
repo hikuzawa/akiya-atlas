@@ -1,6 +1,6 @@
 prefecture: 長崎県
 prefecture_slug: nagasaki
-created_at: '2026-11-03T23:52:54+00:00'
+created_at: '2026-11-10T02:39:49+00:00'
 candidates:
 - key: '422011'
   label: 長崎県 長崎市
@@ -158,29 +158,29 @@ candidates:
   note: null
 - key: '422134'
   label: 長崎県 雲仙市
-  url: https://www.city.unzen.nagasaki.jp/dynamic/ijuu/info/pub/default.aspx?c_id=30&pg=1
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.93
+  url: https://www.city.unzen.nagasaki.jp/new_list.xml
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.city.unzen.nagasaki.jp（city/town/vill の地理型ドメイン、自治体に限定）
   evidence_url: https://www.city.unzen.nagasaki.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null
 - key: '422142'
   label: 長崎県 南島原市
   url: https://www.city.minamishimabara.lg.jp/list00242.html
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.81
+  page_class: not_listing
+  class_label: 物件ページではない
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.city.minamishimabara.lg.jp（.lg.jp、地方公共団体専用ドメイン）
   evidence_url: https://www.city.minamishimabara.lg.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null
@@ -245,7 +245,7 @@ candidates:
   url: https://www.town.hasami.lg.jp/kiji0031056/index.html
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.87
+  confidence: 0.9
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.town.hasami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
   evidence_url: https://www.town.hasami.lg.jp/

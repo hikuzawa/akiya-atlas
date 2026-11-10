@@ -41,23 +41,15 @@ sources:
     slug: '052027'
     bank_url: https://www.city.noshiro.lg.jp/sangyo/iju-teiju/akiya-bank/11098
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 秋田県能代市
   operator_evidence:
     quote: 公式ドメイン www.city.noshiro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.noshiro.lg.jp/
-    checked_on: '2026-10-07'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.city.noshiro.lg.jp/sangyo/iju-teiju/akiya-bank/11098
     kind: listing_index
-  - url: https://www.city.noshiro.lg.jp/kurashi/zaitaku/kenchiku-jutaku/9571
-    kind: subsidy
-  - url: https://www.city.noshiro.lg.jp/kurashi/zaitaku/kenchiku-jutaku/4940
-    kind: subsidy
-  - url: https://www.city.noshiro.lg.jp/sangyo/iju-teiju/22619
-    kind: subsidy
-  - url: https://www.city.noshiro.lg.jp/sangyo/iju-teiju/24305
-    kind: subsidy
   allow_hosts:
   - www.city.noshiro.lg.jp
   max_pages: 30

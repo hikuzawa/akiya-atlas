@@ -1,11 +1,9 @@
 {
   "ci": true,
   "command": "crawl",
-  "errors": [
-    "https://www.town.yusui.kagoshima.jp/soshiki/34/10491.html: HTTP 404"
-  ],
+  "errors": [],
   "extraction_metrics": null,
-  "finished_at": "2026-11-04T00:07:35Z",
+  "finished_at": "2026-11-10T03:09:46Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -13,20 +11,20 @@
     "output_tokens": 0
   },
   "notes": [
-    "キャッシュが巡回状態より古く、条件を付けずに取り直した: https://akiyaconcierge.com/area/ooyodo/page/2/, https://www.town.minami.lg.jp/docs/115.html, https://www.town.minami.lg.jp/docs/5400215.html, https://www.town.minami.lg.jp/docs/4871755.html, https://www.town.minami.lg.jp/docs/5400216.html, https://www.town.minami.lg.jp/docs/6419141.html, https://www.town.minami.lg.jp/docs/3854997.html, https://www.town.minami.lg.jp/docs/794.html, https://www.town.minami.lg.jp/docs/6489247.html, https://www.town.minami.lg.jp/docs/6488247.html ほか 18 件"
+    "キャッシュが巡回状態より古く、条件を付けずに取り直した: https://www.town.nishikawa.yamagata.jp/site/iju/3199.html, https://www.town.nishikawa.yamagata.jp/site/iju/3067.html, https://www.town.nishikawa.yamagata.jp/site/iju/8763.html, https://www.town.nishikawa.yamagata.jp/site/iju/3377.html, https://www.town.nishikawa.yamagata.jp/site/iju/3379.html, https://www.town.nishikawa.yamagata.jp/site/iju/7108.html, https://www.town.nishikawa.yamagata.jp/site/iju/8434.html, https://www.town.nishikawa.yamagata.jp/site/iju/8435.html, https://www.town.nishikawa.yamagata.jp/site/iju/8436.html, https://www.town.nishikawa.yamagata.jp/site/iju/8532.html ほか 20 件"
   ],
   "service": "akiya-atlas",
   "stages": {
     "crawl": {
-      "changed": 240,
-      "errors": 1,
-      "fetched": 254,
+      "changed": 100,
+      "errors": 0,
+      "fetched": 107,
       "not_modified": 0,
-      "requests": 272,
-      "stale_cache": 28,
-      "unchanged": 14,
+      "requests": 117,
+      "stale_cache": 30,
+      "unchanged": 7,
       "workers": 8
     }
   },
-  "started_at": "2026-11-04T00:05:02Z"
+  "started_at": "2026-11-10T03:07:59Z"
 }

@@ -1,6 +1,6 @@
 prefecture: 大分県
 prefecture_slug: oita
-created_at: '2026-09-16T20:07:50+00:00'
+created_at: '2026-11-10T02:46:00+00:00'
 candidates:
 - key: '442011'
   label: 大分県 大分市
@@ -60,15 +60,15 @@ candidates:
   note: null
 - key: '442054'
   label: 大分県 佐伯市
-  url: https://saiki-iju.com/house/
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.93
+  url: https://www.city.saiki.oita.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式サイト（www.city.saiki.oita.jp）から空き家バンクとして案内されているリンク
   evidence_url: https://www.city.saiki.oita.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null
@@ -77,7 +77,7 @@ candidates:
   url: https://www.city.usuki.oita.jp/docs/2021051200056/
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.86
+  confidence: 0.85
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.city.usuki.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
   evidence_url: https://www.city.usuki.oita.jp/

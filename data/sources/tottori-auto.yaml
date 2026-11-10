@@ -52,31 +52,22 @@ sources:
   operator: 倉吉市
   operator_kind: municipality
   official_url: https://www.city.kurayoshi.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '312037'
     name: 倉吉市
     prefecture: 鳥取県
     prefecture_slug: tottori
     slug: '312037'
-    bank_url: https://www.city.kurayoshi.lg.jp/4975.htm
-    bank_status: available
+    bank_url: https://www.city.kurayoshi.lg.jp/9129.htm
+    bank_status: info
     extract_pending: false
     map_query: 鳥取県倉吉市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.kurayoshi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kurayoshi.lg.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.kurayoshi.lg.jp/4975.htm
-    kind: listing_index
-  - url: https://www.city.kurayoshi.lg.jp/6146.htm
-    kind: subsidy
-  - url: https://www.city.kurayoshi.lg.jp/6143.htm
-    kind: subsidy
-  allow_hosts:
-  - www.city.kurayoshi.lg.jp
-  max_pages: 30
+    checked_on: '2026-11-10'
 - id: tottori-312045
   name: 境港市空き家バンク
   operator: 境港市
@@ -249,10 +240,14 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kotoura.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kotoura.tottori.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.town.kotoura.tottori.jp/ijuteiju/ohnav/
     kind: listing_index
+    follow:
+    - pattern: ^https?://www\.town\.kotoura\.tottori\.jp/ijuteiju/ohnav/\d+$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.town.kotoura.tottori.jp
   max_pages: 30

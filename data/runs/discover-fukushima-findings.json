@@ -315,15 +315,17 @@
       "bank_status": "available",
       "bank_url": "https://www.minamisoma-akiya.org/",
       "code": "072125",
-      "confidence": 0.9185,
+      "confidence": 0.8975,
       "cross_linked": true,
-      "detail_pattern": "^https?://www\\.minamisoma\\-akiya\\.org/properties/\\d+/$",
-      "evidence_checked_on": "2026-11-04",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式サイト（www.city.minamisoma.lg.jp）から空き家バンクとして案内されているリンク",
       "evidence_url": "https://www.city.minamisoma.lg.jp/",
       "external_links": [],
-      "extract_gap": false,
-      "listing_rows": 18,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 15）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
+      "listing_rows": 15,
       "listing_score": 1.0,
       "name": "南相馬市",
       "name_kana": "ﾐﾅﾐｿｳﾏｼ",
@@ -459,15 +461,23 @@
       ]
     },
     {
-      "alternatives": [],
+      "alternatives": [
+        "https://www.town.kawamata.lg.jp/site/kurashi-tetsuzuki/list59-784.html",
+        "https://www.town.kawamata.lg.jp/site/kurashi-tetsuzuki/akiyahojyokyakutuika.html"
+      ],
+      "bank_status": "available",
       "bank_url": "https://www.town.kawamata.lg.jp/site/kurashi-tetsuzuki/akiyatoubanktourokubukken.html",
       "code": "073083",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-10-30",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.town.kawamata.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.kawamata.lg.jp/",
       "external_links": [],
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 42）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
       "listing_rows": 42,
       "listing_score": 1.0,
       "name": "川俣町",
@@ -481,9 +491,7 @@
       "prefecture_slug": "fukushima",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.kawamata.lg.jp/site/kurashi-tetsuzuki/akiyataisakusogoshienzigyo.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -634,7 +642,7 @@
       "confidence": 0.9324999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-04",
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.town.tadami.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.tadami.lg.jp/",
       "external_links": [
@@ -894,13 +902,15 @@
       "code": "073687",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "detail_pattern": "^https?://www\\.town\\.minamiaizu\\.lg\\.jp/cgi\\-bin/recruit\\.php/\\d+/detail/\\d+$",
-      "evidence_checked_on": "2026-11-04",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.town.minamiaizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.minamiaizu.lg.jp/",
       "external_links": [],
-      "extract_gap": false,
-      "listing_rows": 92,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 93）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
+      "listing_rows": 93,
       "listing_score": 1.0,
       "name": "南会津町",
       "name_kana": "ﾐﾅﾐｱｲﾂﾞﾏﾁ",
@@ -1042,8 +1052,8 @@
       "code": "074217",
       "confidence": 0.8065,
       "cross_linked": false,
-      "detail_pattern": "^https?://www\\.town\\.aizubange\\.fukushima\\.jp/site/akiya\\-bank/list\\d+\\-\\d+\\.html$",
-      "evidence_checked_on": "2026-11-04",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.town.aizubange.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.aizubange.fukushima.jp/",
       "external_links": [
@@ -1056,7 +1066,9 @@
           "url": "https://www.homes.co.jp/akiyabank/fukushima/kawanuma_aizubange/"
         }
       ],
-      "extract_gap": false,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 2）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
       "listing_rows": 2,
       "listing_score": 0.36,
       "name": "会津坂下町",
@@ -1313,38 +1325,32 @@
       "reason": "空き家バンクの制度案内ページ（物件は登録制など）。リンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.vill.izumizaki.fukushima.jp/kurashi-tetsuduki/kenchiku-jutaku/page001581.html",
-        "https://www.vill.izumizaki.fukushima.jp/kurashi-tetsuduki/news/page002026.html",
-        "https://www.vill.izumizaki.fukushima.jp/",
-        "https://www.vill.izumizaki.fukushima.jp/link/",
-        "https://www.vill.izumizaki.fukushima.jp/gyosei/"
-      ],
-      "bank_url": "https://www.vill.izumizaki.fukushima.jp/kurashi-tetsuduki/kenchiku-jutaku/page002028.html",
+      "alternatives": [],
+      "bank_status": "none",
+      "bank_url": "https://www.vill.izumizaki.fukushima.jp/",
       "code": "074641",
-      "confidence": 0.8065,
+      "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-10-31",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.vill.izumizaki.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.vill.izumizaki.fukushima.jp/",
       "external_links": [],
-      "listing_rows": 2,
-      "listing_score": 0.41,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "泉崎村",
       "name_kana": "ｲｽﾞﾐｻﾞｷﾑﾗ",
       "official_url": "www.vill.izumizaki.fukushima.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "福島県",
       "prefecture_slug": "fukushima",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.vill.izumizaki.fukushima.jp/kurashi-tetsuduki/news/page002025.html",
-        "https://www.vill.izumizaki.fukushima.jp/kurashi-tetsuduki/news/page002026.html"
-      ]
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],
@@ -1893,36 +1899,32 @@
       ]
     },
     {
-      "alternatives": [
-        "https://www.town.namie.fukushima.jp/life/13/17/48/",
-        "https://www.town.namie.fukushima.jp/soshiki/23/16931.html"
-      ],
-      "bank_url": "https://www.town.namie.fukushima.jp/soshiki/23/25795.html",
+      "alternatives": [],
+      "bank_status": "none",
+      "bank_url": "https://www.town.namie.fukushima.jp/",
       "code": "075477",
-      "confidence": 0.9324999999999999,
+      "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-11-01",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.town.namie.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.namie.fukushima.jp/",
       "external_links": [],
-      "listing_rows": 119,
-      "listing_score": 1.0,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "浪江町",
       "name_kana": "ﾅﾐｴﾏﾁ",
       "official_url": "www.town.namie.fukushima.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "福島県",
       "prefecture_slug": "fukushima",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.namie.fukushima.jp/soshiki/23/38833.html",
-        "https://www.town.namie.fukushima.jp/soshiki/20/33719.html",
-        "https://www.town.namie.fukushima.jp/soshiki/23/39232.html"
-      ]
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [

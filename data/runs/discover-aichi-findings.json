@@ -389,28 +389,33 @@
       "alternatives": [
         "https://www.city.gamagori.lg.jp/unit/kenchiku/akiyabank.html",
         "https://www.city.gamagori.lg.jp/site/kenchiku/akiyaseminar.html",
+        "https://www.city.gamagori.lg.jp/unit/kenchiku/akiyakyougikai.html",
         "https://www.city.gamagori.lg.jp/life/1/37/327/",
-        "https://www.city.gamagori.lg.jp/site/kenchiku/akiyahozyo.html",
-        "https://www.city.gamagori.lg.jp/site/kenchiku/bengoshikai110.html"
+        "https://www.city.gamagori.lg.jp/site/kenchiku/akiyahozyo.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.city.gamagori.lg.jp/site/kenchiku/akiyatourokubukken.html",
       "code": "232149",
-      "confidence": 0.9255,
+      "confidence": 0.9045,
       "cross_linked": false,
-      "evidence_checked_on": "2026-10-05",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.city.gamagori.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.gamagori.lg.jp/",
       "external_links": [
         {
-          "label": "LIFULL HOMES　空き家バンク",
+          "label": "LIFULL HOMES 空き家バンク",
           "url": "https://www.homes.co.jp/akiyabank/aichi/gamagori/"
         },
         {
-          "label": "アットホーム　空き家バンク",
+          "label": "アットホーム 空き家バンク",
           "url": "https://gamagori-c23214.akiya-athome.jp/"
         }
       ],
-      "listing_rows": 19,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 16）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
+      "listing_rows": 16,
       "listing_score": 1.0,
       "name": "蒲郡市",
       "name_kana": "ｶﾞﾏｺﾞｵﾘｼ",
@@ -423,12 +428,7 @@
       "prefecture_slug": "aichi",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.gamagori.lg.jp/site/kenchiku/3sedai-jutakushien.html",
-        "https://www.city.gamagori.lg.jp/site/kenchiku/akiyarenovationhozyo.html",
-        "https://www.city.gamagori.lg.jp/site/kenchiku/akiyahozyo.html",
-        "https://www.city.gamagori.lg.jp/unit/kenchiku/jyokyaku.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -1327,37 +1327,32 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.town.minamichita.lg.jp/kurashi/sumai/1000958.html",
-        "https://www.town.minamichita.lg.jp/kurashi/sumai/1003563.html",
-        "https://www.town.minamichita.lg.jp/kurashi/sumai/1004272.html",
-        "https://www.town.minamichita.lg.jp/kurashi/sumai/1003051.html"
-      ],
-      "bank_url": "https://www.town.minamichita.lg.jp/akiya/index.html",
+      "alternatives": [],
+      "bank_status": "none",
+      "bank_url": "https://www.town.minamichita.lg.jp/",
       "code": "234451",
-      "confidence": 0.9324999999999999,
+      "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-10-06",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.town.minamichita.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.minamichita.lg.jp/",
       "external_links": [],
-      "listing_rows": 23,
-      "listing_score": 1.0,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "南知多町",
       "name_kana": "ﾐﾅﾐﾁﾀﾁｮｳ",
       "official_url": "www.town.minamichita.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "愛知県",
       "prefecture_slug": "aichi",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.minamichita.lg.jp/kurashi/sumai/1000901.html",
-        "https://www.town.minamichita.lg.jp/kurashi/sumai/1004335.html"
-      ]
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],

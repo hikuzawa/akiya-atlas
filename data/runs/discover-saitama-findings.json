@@ -1498,37 +1498,32 @@
       ]
     },
     {
-      "alternatives": [
-        "https://www.town.ogano.lg.jp/kurashi-tetsuzuki/akiyasien/",
-        "https://www.town.ogano.lg.jp/chousei-jouhou/public-facility/choyuakikoukyoshisetu/"
-      ],
-      "bank_url": "http://www.chichibuakiyabank.com/",
+      "alternatives": [],
+      "bank_status": "none",
+      "bank_url": "https://www.town.ogano.lg.jp/",
       "code": "113654",
-      "confidence": 0.8484999999999999,
-      "cross_linked": true,
-      "evidence_checked_on": "2026-09-11",
+      "confidence": 0.6,
+      "cross_linked": false,
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式サイト（www.town.ogano.lg.jp）から空き家バンクとして案内されているリンク",
       "evidence_url": "https://www.town.ogano.lg.jp/",
       "external_links": [],
-      "listing_rows": 8,
-      "listing_score": 0.85,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "小鹿野町",
       "name_kana": "ｵｶﾞﾉﾏﾁ",
       "official_url": "www.town.ogano.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "埼玉県",
       "prefecture_slug": "saitama",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.ogano.lg.jp/kurashi-tetsuzuki/sumai-sien/taiyoukou_hojyokin/",
-        "https://www.town.ogano.lg.jp/kurashi-tetsuzuki/sumai-sien/tenpo-rifoomujyosei/",
-        "https://www.town.ogano.lg.jp/kurashi-tetsuzuki/sumai-sien/jyuutakusyutokujyosei/",
-        "https://www.town.ogano.lg.jp/kurashi-tetsuzuki/akiyasien/akiyakaisyuuhozyo/"
-      ]
+      "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],

@@ -898,7 +898,7 @@
       "code": "283819",
       "confidence": 0.8624999999999999,
       "cross_linked": false,
-      "empty_checked_on": "2026-10-30",
+      "empty_checked_on": "2026-11-10",
       "evidence_checked_on": "2026-09-22",
       "evidence_quote": "兵庫県 リンク集（県内市町案内）に掲載された公式サイト（www.town.hyogo-inami.lg.jp）",
       "evidence_url": "https://web.pref.hyogo.lg.jp/link/pref.html",
@@ -981,46 +981,32 @@
       ]
     },
     {
-      "alternatives": [
-        "https://www.town.fukusaki.hyogo.jp/0000001949.html",
-        "https://www.town.fukusaki.hyogo.jp/",
-        "http://www.town.fukusaki.hyogo.jp/0000001686.html",
-        "http://www.town.fukusaki.hyogo.jp/0000001828.html",
-        "https://www.town.fukusaki.hyogo.jp/news/0001.html"
-      ],
-      "bank_url": "http://www.town.fukusaki.hyogo.jp/0000001949.html",
+      "alternatives": [],
+      "bank_status": "none",
+      "bank_url": "https://www.town.fukusaki.hyogo.jp/",
       "code": "284432",
-      "confidence": 0.9324999999999999,
+      "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.town.fukusaki.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.fukusaki.hyogo.jp/",
-      "external_links": [
-        {
-          "label": "全国版　空き家・空き地バンク　（at homeのホームページ）(外部サイトへリンク)",
-          "url": "https://www.akiya-athome.jp"
-        },
-        {
-          "label": "空き家バンク（LIFULL HOME'Sのホームページ）（外部サイトへリンク）",
-          "url": "https://www.homes.co.jp/akiyabank"
-        }
-      ],
-      "listing_rows": 52,
-      "listing_score": 1.0,
+      "external_links": [],
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "福崎町",
       "name_kana": "ﾌｸｻｷﾁｮｳ",
       "official_url": "www.town.fukusaki.hyogo.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "兵庫県",
       "prefecture_slug": "hyogo",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.fukusaki.hyogo.jp/0000006026.html"
-      ]
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -1035,14 +1021,14 @@
       "confidence": 0.9324999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-04",
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.town.kamikawa.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.kamikawa.hyogo.jp/",
       "external_links": [],
       "extract_gap": true,
-      "held_reason": "一覧に見えるのに 0 件（物件行 43）。抽出側の課題として保留",
+      "held_reason": "一覧に見えるのに 0 件（物件行 42）。抽出側の課題として保留",
       "held_since": "2026-11-04",
-      "listing_rows": 43,
+      "listing_rows": 42,
       "listing_score": 1.0,
       "name": "神河町",
       "name_kana": "ｶﾐｶﾜﾁｮｳ",

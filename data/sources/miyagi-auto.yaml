@@ -225,23 +225,15 @@ sources:
     slug: 042129
     bank_url: https://www.city.tome.miyagi.jp/jyutakutoshi/shisejoho/ijuteju/bank/akiyabank/index.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 宮城県登米市
   operator_evidence:
     quote: 公式ドメイン www.city.tome.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.tome.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.city.tome.miyagi.jp/jyutakutoshi/shisejoho/ijuteju/bank/akiyabank/index.html
     kind: listing_index
-  - url: https://www.city.tome.miyagi.jp/jyutakutoshi/shisejoho/ijuteju/bank/akiyakaisyu.html
-    kind: subsidy
-  - url: https://www.city.tome.miyagi.jp/kankyo/shisejoho/machizukuri/kankyo/hojojose/jyuutakuyosinene.html
-    kind: subsidy
-  - url: https://www.city.tome.miyagi.jp/machi/shisejoho/ijuteju/jutakushutoku/documents/kouhusinnseisyo.rtf
-    kind: subsidy
-  - url: https://www.city.tome.miyagi.jp/machi/shisejoho/ijuteju/otameshi/taikensankasokushinjigyo.html
-    kind: subsidy
   allow_hosts:
   - www.city.tome.miyagi.jp
   max_pages: 30
@@ -396,12 +388,12 @@ sources:
     slug: 043028
     bank_url: https://town.shichikashuku.miyagi.jp/its/news.cgi?act=house
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 宮城県七ヶ宿町
   operator_evidence:
     quote: 公式ドメイン town.shichikashuku.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://town.shichikashuku.miyagi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-10'
   pages:
   - url: https://town.shichikashuku.miyagi.jp/its/news.cgi?act=house
     kind: listing_index
@@ -714,35 +706,22 @@ sources:
   operator: 大郷町
   operator_kind: municipality
   official_url: https://www.town.miyagi-osato.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: 044229
     name: 大郷町
     prefecture: 宮城県
     prefecture_slug: miyagi
     slug: 044229
-    bank_url: https://www.town.miyagi-osato.lg.jp/soshiki/machidukuri/akiya-bank02.html
-    bank_status: available
+    bank_url: https://www.town.miyagi-osato.lg.jp/
+    bank_status: none
     extract_pending: false
     map_query: 宮城県大郷町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 宮城県 県内市町村リンク集に掲載された公式サイト（www.town.miyagi-osato.lg.jp）
     url: https://www.pref.miyagi.jp/soshiki/kohou/link01.html
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.town.miyagi-osato.lg.jp/soshiki/machidukuri/akiya-bank02.html
-    kind: listing_index
-  - url: https://www.town.miyagi-osato.lg.jp/soshiki/machidukuri/akiyakazaidougusyobun.html
-    kind: subsidy
-  - url: https://www.town.miyagi-osato.lg.jp/soshiki/machidukuri/housereform.html
-    kind: subsidy
-  - url: https://www.town.miyagi-osato.lg.jp/soshiki/tiikiseibi/kaisyu.html
-    kind: subsidy
-  - url: https://www.town.miyagi-osato.lg.jp/soshiki/tiikiseibi/shindan.html
-    kind: subsidy
-  allow_hosts:
-  - www.town.miyagi-osato.lg.jp
-  max_pages: 30
+    checked_on: '2026-11-10'
 - id: miyagi-044245
   name: 大衡村空き家バンク
   operator: 大衡村

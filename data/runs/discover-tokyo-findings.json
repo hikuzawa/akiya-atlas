@@ -726,14 +726,19 @@
     },
     {
       "alternatives": [],
+      "bank_status": "available",
       "bank_url": "https://www.city.ome.tokyo.jp/site/ome-style/1420.html",
       "code": "132055",
       "confidence": 0.8274999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.city.ome.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.ome.tokyo.jp/",
       "external_links": [],
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 5）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
       "listing_rows": 5,
       "listing_score": 0.62,
       "name": "青梅市",
@@ -747,10 +752,7 @@
       "prefecture_slug": "tokyo",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.ome.tokyo.jp/soshiki/45/680.html",
-        "https://www.city.ome.tokyo.jp/soshiki/45/679.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [

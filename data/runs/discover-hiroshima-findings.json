@@ -10,7 +10,7 @@
       "code": "341002",
       "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.city.hiroshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.hiroshima.lg.jp/",
       "external_links": [],
@@ -42,7 +42,7 @@
       "code": "342025",
       "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.city.kure.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.kure.lg.jp/",
       "external_links": [],
@@ -99,15 +99,41 @@
     },
     {
       "alternatives": [],
+      "bank_status": "available",
       "bank_url": "https://www.city.mihara.hiroshima.jp/soshiki/21/akiyainfo.html",
       "code": "342041",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.city.mihara.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.mihara.hiroshima.jp/",
-      "external_links": [],
-      "listing_rows": 106,
+      "external_links": [
+        {
+          "label": "アットホーム 空き家バンク",
+          "url": "https://www.akiya-athome.jp/"
+        },
+        {
+          "label": "地図からの売買物件検索(アットホーム 空き家バンク)",
+          "url": "https://mihara-c34204.akiya-athome.jp/buy/house/map/"
+        },
+        {
+          "label": "地図からの賃貸物件検索(アットホーム 空き家バンク)",
+          "url": "https://mihara-c34204.akiya-athome.jp/rent/live/map/"
+        },
+        {
+          "label": "ライフルホームズ 空き家バンク",
+          "url": "https://www.homes.co.jp/akiyabank/hiroshima/mihara/"
+        },
+        {
+          "label": "地図からの物件検索(ライフルホームズ 空き家バンク)",
+          "url": "https://www.homes.co.jp/akiyabank/chugoku/hiroshima/map/"
+        }
+      ],
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 116）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
+      "listing_rows": 116,
       "listing_score": 1.0,
       "name": "三原市",
       "name_kana": "ﾐﾊﾗｼ",
@@ -119,7 +145,8 @@
       "prefecture": "広島県",
       "prefecture_slug": "hiroshima",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -368,12 +395,14 @@
       "code": "342149",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "detail_pattern": "^https?://www\\.akitakata\\.jp/ja/shisei/section/kikaku/akiyabank/\\d+/$",
-      "evidence_checked_on": "2026-11-04",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "広島県 県内の市・町に掲載された公式サイト（www.akitakata.jp）",
       "evidence_url": "https://www.pref.hiroshima.lg.jp/soshiki/19/1168589482341.html",
       "external_links": [],
-      "extract_gap": false,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 87）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
       "listing_rows": 87,
       "listing_score": 1.0,
       "name": "安芸高田市",

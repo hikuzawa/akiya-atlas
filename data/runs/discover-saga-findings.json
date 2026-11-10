@@ -96,15 +96,20 @@
         "https://www.city.taku.lg.jp/soshiki/24/1412.html",
         "https://www.city.taku.lg.jp/soshiki/14/1412.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.city.taku.lg.jp/adv/ba.php?id=98",
       "code": "412040",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.city.taku.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.taku.lg.jp/",
       "external_links": [],
-      "listing_rows": 33,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 32）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
+      "listing_rows": 32,
       "listing_score": 1.0,
       "name": "多久市",
       "name_kana": "ﾀｸｼ",
@@ -117,26 +122,27 @@
       "prefecture_slug": "saga",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.taku.lg.jp/soshiki/24/11682.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [
-        "https://www.city.imari.lg.jp/akiya/",
-        "https://www.city.imari.lg.jp/21308.htm",
-        "https://www.city.imari.lg.jp/12003.htm",
-        "https://www.city.imari.lg.jp/18207.htm",
-        "https://www.city.imari.lg.jp/12415.htm"
+        "https://www.scinex.co.jp/wagamachi/loco/41205_akiya/dl_pc.html",
+        "https://www.city.imari.lg.jp/akiya"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.city.imari.lg.jp/12417.htm",
       "code": "412058",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.city.imari.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.imari.lg.jp/",
       "external_links": [
+        {
+          "label": "有限会社山﨑不動産",
+          "url": "https://www.athome.co.jp/ahks/yamasaki-realestate.html"
+        },
         {
           "label": "ダイア不動産(株)",
           "url": "http://www.athome.co.jp/ahks/daia-imari.html"
@@ -150,8 +156,11 @@
           "url": "https://www.hatomarksite.com/search/zentaku/agent/00074100333"
         }
       ],
-      "listing_rows": 37,
-      "listing_score": 0.8,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 60）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
+      "listing_rows": 60,
+      "listing_score": 1.0,
       "name": "伊万里市",
       "name_kana": "ｲﾏﾘｼ",
       "official_url": "www.city.imari.lg.jp",
@@ -163,11 +172,7 @@
       "prefecture_slug": "saga",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.imari.lg.jp/21380.htm",
-        "https://www.city.imari.lg.jp/21398.htm",
-        "https://www.city.imari.lg.jp/23473.htm"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [],

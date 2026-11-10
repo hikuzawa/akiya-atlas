@@ -1,6 +1,6 @@
 prefecture: 千葉県
 prefecture_slug: chiba
-created_at: '2026-10-30T22:36:25+00:00'
+created_at: '2026-11-10T02:01:33+00:00'
 candidates:
 - key: '121002'
   label: 千葉県 千葉市
@@ -578,15 +578,15 @@ candidates:
   note: null
 - key: '123498'
   label: 千葉県 東庄町
-  url: https://www.town.tohnosho.chiba.jp/cgi-bin/recruit.php/1/list?page_no=73
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.93
+  url: https://www.town.tohnosho.chiba.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 千葉県 市町村一覧に掲載された公式サイト（www.town.tohnosho.chiba.jp）
   evidence_url: https://www.pref.chiba.lg.jp/kouhou/ichiran.html
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null

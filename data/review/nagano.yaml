@@ -1,6 +1,6 @@
 prefecture: 長野県
 prefecture_slug: nagano
-created_at: '2026-10-02T22:29:25+00:00'
+created_at: '2026-11-10T02:37:26+00:00'
 candidates:
 - key: '202011'
   label: 長野県 長野市
@@ -970,15 +970,15 @@ candidates:
   note: null
 - key: '205885'
   label: 長野県 小川村
-  url: http://ogawamura.jp/house/
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.93
+  url: https://www.vill.ogawa.nagano.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式サイト（www.vill.ogawa.nagano.jp）から空き家バンクとして案内されているリンク
   evidence_url: https://www.vill.ogawa.nagano.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null
@@ -1001,7 +1001,7 @@ candidates:
   url: http://www.vill.sakae.nagano.jp/docs/1028.html
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.87
+  confidence: 0.86
   operator_kind: municipality
   evidence_quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.vill.sakae.nagano.jp）
   evidence_url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html

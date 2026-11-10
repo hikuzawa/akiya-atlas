@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hiroshima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hiroshima.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.city.hiroshima.lg.jp/living/sumai/1021346/index.html
     kind: subsidy
@@ -47,7 +47,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kure.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kure.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.city.kure.lg.jp/soshiki/46/index1.html
     kind: subsidy
@@ -99,18 +99,29 @@ sources:
     slug: '342041'
     bank_url: https://www.city.mihara.hiroshima.jp/soshiki/21/akiyainfo.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 広島県三原市
   operator_evidence:
     quote: 公式ドメイン www.city.mihara.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.mihara.hiroshima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.city.mihara.hiroshima.jp/soshiki/21/akiyainfo.html
     kind: listing_index
   allow_hosts:
   - www.city.mihara.hiroshima.jp
   max_pages: 30
+  external_links:
+  - label: アットホーム 空き家バンク
+    url: https://www.akiya-athome.jp/
+  - label: 地図からの売買物件検索(アットホーム 空き家バンク)
+    url: https://mihara-c34204.akiya-athome.jp/buy/house/map/
+  - label: 地図からの賃貸物件検索(アットホーム 空き家バンク)
+    url: https://mihara-c34204.akiya-athome.jp/rent/live/map/
+  - label: ライフルホームズ 空き家バンク
+    url: https://www.homes.co.jp/akiyabank/hiroshima/mihara/
+  - label: 地図からの物件検索(ライフルホームズ 空き家バンク)
+    url: https://www.homes.co.jp/akiyabank/chugoku/hiroshima/map/
 - id: hiroshima-342050
   name: 尾道市空き家バンク
   operator: 尾道市
@@ -329,19 +340,15 @@ sources:
     slug: '342149'
     bank_url: https://www.akitakata.jp/ja/shisei/section/kikaku/main/
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 広島県安芸高田市
   operator_evidence:
     quote: 広島県 県内の市・町に掲載された公式サイト（www.akitakata.jp）
     url: https://www.pref.hiroshima.lg.jp/soshiki/19/1168589482341.html
-    checked_on: '2026-11-04'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.akitakata.jp/ja/shisei/section/kikaku/main/
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.akitakata\.jp/ja/shisei/section/kikaku/akiyabank/\d+/$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.akitakata.jp
   max_pages: 30

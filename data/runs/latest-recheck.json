@@ -3,7 +3,7 @@
   "command": "recheck",
   "errors": [],
   "extraction_metrics": null,
-  "finished_at": "2026-11-04T00:08:28Z",
+  "finished_at": "2026-11-10T03:10:36Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -11,20 +11,19 @@
     "output_tokens": 0
   },
   "notes": [
-    "運営主体の確かめ直し: 21 件（成り立った 20・成り立たなかった 1・robots.txt で見送り 0・通信できない 0・選び直し 0）",
-    "岐阜県白川村: 成り立たない（2 晩目）: 空き家バンクのページを開けない（HTTP 404）"
+    "運営主体の確かめ直し: 21 件（成り立った 13・成り立たなかった 0・robots.txt で見送り 7・通信できない 1・選び直し 0）"
   ],
   "service": "akiya-atlas",
   "stages": {
     "recheck": {
       "checked": 21,
-      "fail": 1,
-      "ok": 20,
-      "requests": 78,
+      "fail": 0,
+      "ok": 13,
+      "requests": 46,
       "reselected": 0,
-      "skip": 0,
-      "unreachable": 0
+      "skip": 7,
+      "unreachable": 1
     }
   },
-  "started_at": "2026-11-04T00:07:58Z"
+  "started_at": "2026-11-10T03:10:05Z"
 }

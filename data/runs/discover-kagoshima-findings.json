@@ -135,11 +135,13 @@
       "alternatives": [
         "https://www.city.kagoshima-izumi.lg.jp/kurashi/tochi/akiya/index.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.city.kagoshima-izumi.lg.jp/page/page_00815.html",
       "code": "462080",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "鹿児島県 県内市町村に掲載された公式サイト（www.city.kagoshima-izumi.lg.jp）",
       "evidence_url": "https://www.pref.kagoshima.jp/aa02/link/shichoson.html",
       "external_links": [
@@ -148,11 +150,14 @@
           "url": "https://www.homes.co.jp/akiyabank/"
         },
         {
-          "label": "アットホーム　空き家バンク",
+          "label": "アットホーム 空き家バンク",
           "url": "https://www.akiya-athome.jp/"
         }
       ],
-      "listing_rows": 54,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 50）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
+      "listing_rows": 50,
       "listing_score": 1.0,
       "name": "出水市",
       "name_kana": "ｲｽﾞﾐｼ",
@@ -165,12 +170,7 @@
       "prefecture_slug": "kagoshima",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.kagoshima-izumi.lg.jp/page/page_013366.html",
-        "https://www.city.kagoshima-izumi.lg.jp/page/page_06573.html",
-        "https://www.city.kagoshima-izumi.lg.jp/page/page_20115.html",
-        "https://www.city.kagoshima-izumi.lg.jp/kurashi/tochi/juutakueco/index.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -815,13 +815,15 @@
       "code": "464520",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "detail_pattern": "^https?://www\\.town\\.yusui\\.kagoshima\\.jp/soshiki/\\d+/\\d+\\.html$",
-      "evidence_checked_on": "2026-11-04",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.town.yusui.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.yusui.kagoshima.jp/",
       "external_links": [],
-      "extract_gap": false,
-      "listing_rows": 46,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 48）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
+      "listing_rows": 48,
       "listing_score": 1.0,
       "name": "湧水町",
       "name_kana": "ﾕｳｽｲﾁｮｳ",
@@ -849,13 +851,15 @@
       "code": "464686",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "detail_pattern": "^https?://www\\.town\\.kagoshima\\-osaki\\.lg\\.jp/ke_kikaku/kurashi/ijuteju/akiyabank/\\d+\\.html$",
-      "evidence_checked_on": "2026-11-04",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "鹿児島県 県内市町村に掲載された公式サイト（www.town.kagoshima-osaki.lg.jp）",
       "evidence_url": "https://www.pref.kagoshima.jp/aa02/link/shichoson.html",
       "external_links": [],
-      "extract_gap": false,
-      "listing_rows": 27,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 28）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
+      "listing_rows": 28,
       "listing_score": 1.0,
       "name": "大崎町",
       "name_kana": "ｵｵｻｷﾁｮｳ",

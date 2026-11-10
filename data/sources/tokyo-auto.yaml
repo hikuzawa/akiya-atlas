@@ -641,19 +641,15 @@ sources:
     slug: '132055'
     bank_url: https://www.city.ome.tokyo.jp/site/ome-style/1420.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 東京都青梅市
   operator_evidence:
     quote: 公式ドメイン www.city.ome.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ome.tokyo.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.city.ome.tokyo.jp/site/ome-style/1420.html
     kind: listing_index
-  - url: https://www.city.ome.tokyo.jp/soshiki/45/680.html
-    kind: subsidy
-  - url: https://www.city.ome.tokyo.jp/soshiki/45/679.html
-    kind: subsidy
   allow_hosts:
   - www.city.ome.tokyo.jp
   max_pages: 30

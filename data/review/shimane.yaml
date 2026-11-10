@@ -1,6 +1,6 @@
 prefecture: 島根県
 prefecture_slug: shimane
-created_at: '2026-09-15T00:20:29+00:00'
+created_at: '2026-11-10T02:53:10+00:00'
 candidates:
 - key: '322016'
   label: 島根県 松江市
@@ -32,15 +32,15 @@ candidates:
   note: null
 - key: '322032'
   label: 島根県 出雲市
-  url: https://izumo-akiyataisaku.jp/bank/
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.83
+  url: https://www.city.izumo.shimane.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式サイト（www.city.izumo.shimane.jp）から空き家バンクとして案内されているリンク
   evidence_url: https://www.city.izumo.shimane.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null
@@ -200,15 +200,15 @@ candidates:
   note: null
 - key: '325058'
   label: 島根県 吉賀町
-  url: https://www.town.yoshika.lg.jp/iju/stay/akiyabank/akiyajouhou/
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.82
+  url: https://www.town.yoshika.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.town.yoshika.lg.jp（.lg.jp、地方公共団体専用ドメイン）
   evidence_url: https://www.town.yoshika.lg.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null
@@ -228,10 +228,10 @@ candidates:
   note: null
 - key: '325261'
   label: 島根県 西ノ島町
-  url: https://www.town.nishinoshima.shimane.jp/teiju/akiya/akiyaichiran/
+  url: https://www.town.nishinoshima.shimane.jp/teiju/akiya/akitiitiran/
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.82
+  confidence: 0.84
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.town.nishinoshima.shimane.jp（city/town/vill の地理型ドメイン、自治体に限定）
   evidence_url: https://www.town.nishinoshima.shimane.jp/

@@ -277,40 +277,22 @@ sources:
   operator: かつらぎ町
   operator_kind: municipality
   official_url: https://www.town.katsuragi.wakayama.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '303411'
     name: かつらぎ町
     prefecture: 和歌山県
     prefecture_slug: wakayama
     slug: '303411'
-    bank_url: https://www.town.katsuragi.wakayama.jp/teijyu/020/010/2023-1011-1627-16.html
-    bank_status: available
+    bank_url: https://www.town.katsuragi.wakayama.jp/teijyu/020/010/index.html
+    bank_status: info
     extract_pending: false
     map_query: 和歌山県かつらぎ町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.katsuragi.wakayama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.katsuragi.wakayama.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.town.katsuragi.wakayama.jp/teijyu/020/010/2023-1011-1627-16.html
-    kind: listing_index
-  - url: https://www.town.katsuragi.wakayama.jp/teijyu/020/010/2025-0704-1626-58.html
-    kind: subsidy
-  - url: https://www.town.katsuragi.wakayama.jp/teijyu/020/010/2023-0920-1629-16.html
-    kind: subsidy
-  - url: https://www.town.katsuragi.wakayama.jp/teijyu/020/010/2023-0920-1532-16.html
-    kind: subsidy
-  - url: https://www.town.katsuragi.wakayama.jp/teijyu/020/010/2023-0920-1622-16.html
-    kind: subsidy
-  allow_hosts:
-  - www.town.katsuragi.wakayama.jp
-  max_pages: 30
-  external_links:
-  - label: 全国版空き家バンク(LIFULL HOME'S)
-    url: https://www.homes.co.jp/akiyabank/wakayama/ito_katsuragi/
-  - label: 全国版空き家バンク(アットホーム)
-    url: https://katsuragi-t30341.akiya-athome.jp/
+    checked_on: '2026-11-10'
 - id: wakayama-303437
   name: 九度山町空き家バンク
   operator: 九度山町
@@ -501,7 +483,7 @@ sources:
     slug: '303836'
     bank_url: http://www.town.yura.wakayama.jp/docs/2021081200033/
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 和歌山県由良町
   operator_evidence:
     quote: 和歌山県 市町村のホームページ（リンク集）に掲載された公式サイト（www.town.yura.wakayama.jp）

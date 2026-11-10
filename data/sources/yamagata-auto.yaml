@@ -14,12 +14,12 @@ sources:
     slug: '062014'
     bank_url: https://www.city.yamagata-yamagata.lg.jp/kurashi/tochi/1006582/1006583/1002505.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 山形県山形市
   operator_evidence:
     quote: 山形県 山形県内市町村ページに掲載された公式サイト（www.city.yamagata-yamagata.lg.jp）
     url: https://www.pref.yamagata.jp/020026/kensei/information/clink.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.city.yamagata-yamagata.lg.jp/kurashi/tochi/1006582/1006583/1002505.html
     kind: listing_index
@@ -188,7 +188,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kaminoyama.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kaminoyama.yamagata.jp/
-    checked_on: '2026-11-04'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.city.kaminoyama.yamagata.jp/soshiki/12/kaminoyama-akiyabank2.html
     kind: listing_index
@@ -213,21 +213,15 @@ sources:
     slug: 062081
     bank_url: https://www.city.murayama.lg.jp/kurashi/sumai/akiyabankjoho.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 山形県村山市
   operator_evidence:
     quote: 公式ドメイン www.city.murayama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.murayama.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.city.murayama.lg.jp/kurashi/sumai/akiyabankjoho.html
     kind: listing_index
-  - url: https://www.city.murayama.lg.jp/kurashi/sumai/akiyakazai.html
-    kind: subsidy
-  - url: https://www.city.murayama.lg.jp/kurashi/josei/josei/sintikutoti.html
-    kind: subsidy
-  - url: https://www.city.murayama.lg.jp/shisei/keikaku_seisaku/ijuteiju/seisaku20180807142.html
-    kind: subsidy
   allow_hosts:
   - www.city.murayama.lg.jp
   max_pages: 30
@@ -449,15 +443,19 @@ sources:
     slug: '063223'
     bank_url: https://www.town.nishikawa.yamagata.jp/site/iju/1440.html
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 山形県西川町
   operator_evidence:
     quote: 公式ドメイン www.town.nishikawa.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nishikawa.yamagata.jp/
-    checked_on: '2026-11-04'
+    checked_on: '2026-11-10'
   pages:
   - url: https://www.town.nishikawa.yamagata.jp/site/iju/1440.html
     kind: listing_index
+    follow:
+    - pattern: ^https?://www\.town\.nishikawa\.yamagata\.jp/site/iju/\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.town.nishikawa.yamagata.jp
   max_pages: 30

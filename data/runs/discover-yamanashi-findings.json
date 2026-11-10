@@ -126,40 +126,31 @@
     },
     {
       "alternatives": [],
-      "bank_url": "https://www.city.otsuki.yamanashi.jp/shisei/shisaku_keikaku/akiyabanku.html",
+      "bank_status": "none",
+      "bank_url": "https://www.city.otsuki.yamanashi.jp/",
       "code": "192066",
-      "confidence": 0.8905,
+      "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.city.otsuki.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.otsuki.yamanashi.jp/",
-      "external_links": [
-        {
-          "label": "LIFULL HOME’S 空き家バンク（大月市）",
-          "url": "https://www.homes.co.jp/akiyabank/yamanashi/otsuki/"
-        },
-        {
-          "label": "アットホーム 全国版空き家バンク（大月市）",
-          "url": "https://otsuki-c19206.akiya-athome.jp/"
-        }
-      ],
-      "listing_rows": 14,
-      "listing_score": 1.0,
+      "external_links": [],
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "大月市",
       "name_kana": "ｵｵﾂｷｼ",
       "official_url": "www.city.otsuki.yamanashi.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "山梨県",
       "prefecture_slug": "yamanashi",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.otsuki.yamanashi.jp/shisei/shisaku_keikaku/2025-0401-1721-6.html",
-        "https://www.city.otsuki.yamanashi.jp/shisei/shisaku_keikaku/2025-0402-0928-6.html"
-      ]
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -192,16 +183,22 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [],
+      "alternatives": [
+        "https://www.city.minami-alps.yamanashi.jp/docs/22458.html",
+        "https://www.city.minami-alps.yamanashi.jp/docs/22462.html"
+      ],
+      "bank_status": "available",
       "bank_url": "https://www.city.minami-alps.yamanashi.jp/iju/akiyabank/",
       "code": "192082",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": "^https?://www\\.city\\.minami\\-alps\\.yamanashi\\.jp/iju/akiyabank/\\d+\\.html$",
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "山梨県市町村リンクページに掲載された公式サイト（www.city.minami-alps.yamanashi.jp）",
       "evidence_url": "https://www.pref.yamanashi.jp/link/link_city.html",
       "external_links": [],
-      "listing_rows": 42,
+      "extract_gap": false,
+      "listing_rows": 38,
       "listing_score": 1.0,
       "name": "南アルプス市",
       "name_kana": "ﾐﾅﾐｱﾙﾌﾟｽｼ",
@@ -214,9 +211,7 @@
       "prefecture_slug": "yamanashi",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.minami-alps.yamanashi.jp/iju/akiyabank/akiya-hojyo.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [],

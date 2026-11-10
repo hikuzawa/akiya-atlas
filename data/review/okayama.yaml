@@ -1,6 +1,6 @@
 prefecture: 岡山県
 prefecture_slug: okayama
-created_at: '2026-09-18T21:20:47+00:00'
+created_at: '2026-11-10T02:46:57+00:00'
 candidates:
 - key: '331007'
   label: 岡山県 岡山市
@@ -368,15 +368,15 @@ candidates:
   note: null
 - key: '336815'
   label: 岡山県 吉備中央町
-  url: https://www.town.kibichuo.lg.jp/site/teijyu/1576.html
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.93
-  operator_kind: municipality
+  url: www.town.kibichuo.lg.jp
+  page_class: null
+  class_label: null
+  confidence: 0.2
+  operator_kind: unknown
   evidence_quote: 公式ドメイン www.town.kibichuo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
   evidence_url: https://www.town.kibichuo.lg.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
-  proposed_action: 承認
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: pending
+  proposed_action: URL修正
   decision: null
   note: null

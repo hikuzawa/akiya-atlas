@@ -243,25 +243,33 @@
     {
       "alternatives": [
         "https://www.city.tome.miyagi.jp/jyutakutoshi/shisejoho/ijuteju/urenaiakiyaseminar.html",
-        "https://www.city.tome.miyagi.jp/kirakira/index.html"
+        "https://www.city.tome.miyagi.jp/shisejoho/ijuteju/bank/index.html",
+        "https://www.city.tome.miyagi.jp/jyutakutoshi/shisejoho/ijuteju/2026seminar.html",
+        "https://www.city.tome.miyagi.jp/jyutakutoshi/shisejoho/ijuteju/bank/platform.html",
+        "https://www.city.tome.miyagi.jp/jyutakutoshi/shisejoho/ijuteju/bank/akiyakaisyu.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.city.tome.miyagi.jp/jyutakutoshi/shisejoho/ijuteju/bank/akiyabank/index.html",
       "code": "042129",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン www.city.tome.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.tome.miyagi.jp/",
       "external_links": [
         {
-          "label": "「株式会社LIFULLHOME'S」（外部サイトへリンク）",
+          "label": "「株式会社LIFULLHOME'S」(外部サイトへリンク)",
           "url": "http://www.homes.co.jp/akiyabank/miyagi/tome/"
         },
         {
-          "label": "「アットホーム株式会社」（外部サイトへリンク）",
+          "label": "「アットホーム株式会社」(外部サイトへリンク)",
           "url": "https://tome-c04212.akiya-athome.jp/"
         }
       ],
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 42）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
       "listing_rows": 42,
       "listing_score": 1.0,
       "name": "登米市",
@@ -275,12 +283,7 @@
       "prefecture_slug": "miyagi",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.tome.miyagi.jp/jyutakutoshi/shisejoho/ijuteju/bank/akiyakaisyu.html",
-        "https://www.city.tome.miyagi.jp/kankyo/shisejoho/machizukuri/kankyo/hojojose/jyuutakuyosinene.html",
-        "https://www.city.tome.miyagi.jp/machi/shisejoho/ijuteju/jutakushutoku/documents/kouhusinnseisyo.rtf",
-        "https://www.city.tome.miyagi.jp/machi/shisejoho/ijuteju/otameshi/taikensankasokushinjigyo.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [],
@@ -435,16 +438,21 @@
     },
     {
       "alternatives": [],
+      "bank_status": "available",
       "bank_url": "https://town.shichikashuku.miyagi.jp/its/news.cgi?act=house",
       "code": "043028",
       "confidence": 0.8345,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "公式ドメイン town.shichikashuku.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://town.shichikashuku.miyagi.jp/",
       "external_links": [],
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 6）。抽出側の課題として保留",
+      "held_since": "2026-11-10",
       "listing_rows": 6,
-      "listing_score": 0.76,
+      "listing_score": 0.68,
       "name": "七ヶ宿町",
       "name_kana": "ｼﾁｶｼｭｸﾏﾁ",
       "official_url": "town.shichikashuku.miyagi.jp",
@@ -455,7 +463,8 @@
       "prefecture": "宮城県",
       "prefecture_slug": "miyagi",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],
@@ -790,37 +799,32 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.town.miyagi-osato.lg.jp/life/1/12/44/",
-        "https://www.town.miyagi-osato.lg.jp/soshiki/soumu/kotsuanzen-aki.html"
-      ],
-      "bank_url": "https://www.town.miyagi-osato.lg.jp/soshiki/machidukuri/akiya-bank02.html",
+      "alternatives": [],
+      "bank_status": "none",
+      "bank_url": "https://www.town.miyagi-osato.lg.jp/",
       "code": "044229",
-      "confidence": 0.8624999999999999,
+      "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-10",
       "evidence_quote": "宮城県 県内市町村リンク集に掲載された公式サイト（www.town.miyagi-osato.lg.jp）",
       "evidence_url": "https://www.pref.miyagi.jp/soshiki/kohou/link01.html",
       "external_links": [],
-      "listing_rows": 10,
-      "listing_score": 1.0,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "大郷町",
       "name_kana": "ｵｵｻﾄﾁｮｳ",
       "official_url": "www.town.miyagi-osato.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "宮城県",
       "prefecture_slug": "miyagi",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.miyagi-osato.lg.jp/soshiki/machidukuri/akiyakazaidougusyobun.html",
-        "https://www.town.miyagi-osato.lg.jp/soshiki/machidukuri/housereform.html",
-        "https://www.town.miyagi-osato.lg.jp/soshiki/tiikiseibi/kaisyu.html",
-        "https://www.town.miyagi-osato.lg.jp/soshiki/tiikiseibi/shindan.html"
-      ]
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [
