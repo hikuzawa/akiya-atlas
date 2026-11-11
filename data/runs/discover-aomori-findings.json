@@ -734,22 +734,29 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [],
+      "alternatives": [
+        "https://www.town.shichinohe.lg.jp/ijyu/sumai/akiya/index.html"
+      ],
+      "bank_status": "available",
       "bank_url": "https://www.town.shichinohe.lg.jp/ijyu/sumai/akiya/post-407.html",
       "code": "024023",
-      "confidence": 0.8345,
+      "confidence": 0.8414999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-10-09",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-11",
       "evidence_quote": "公式ドメイン www.town.shichinohe.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.shichinohe.lg.jp/",
       "external_links": [
         {
-          "label": "LIFULL HOME'S空き家バンク（外部リンク）",
+          "label": "LIFULL HOME'S空き家バンク(外部リンク)",
           "url": "https://www.homes.co.jp/akiyabank/"
         }
       ],
-      "listing_rows": 6,
-      "listing_score": 0.76,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 7）。抽出側の課題として保留",
+      "held_since": "2026-11-11",
+      "listing_rows": 7,
+      "listing_score": 0.87,
       "name": "七戸町",
       "name_kana": "ｼﾁﾉﾍﾏﾁ",
       "official_url": "www.town.shichinohe.lg.jp",
@@ -760,7 +767,8 @@
       "prefecture": "青森県",
       "prefecture_slug": "aomori",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [

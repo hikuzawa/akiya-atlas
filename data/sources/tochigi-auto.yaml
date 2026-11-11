@@ -409,7 +409,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.mashiko.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.mashiko.lg.jp/
-    checked_on: '2026-11-10'
+    checked_on: '2026-11-11'
   pages:
   - url: https://www.town.mashiko.lg.jp/mashikonokurashi/akiya.php
     kind: listing_index
@@ -587,12 +587,12 @@ sources:
     slug: 093840
     bank_url: https://www.town.shioya.tochigi.jp/info/2879
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 栃木県塩谷町
   operator_evidence:
     quote: 公式ドメイン www.town.shioya.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.shioya.tochigi.jp/
-    checked_on: '2026-11-10'
+    checked_on: '2026-11-11'
   pages:
   - url: https://www.town.shioya.tochigi.jp/info/2879
     kind: listing_index

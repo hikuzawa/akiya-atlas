@@ -722,12 +722,12 @@ sources:
     slug: '294420'
     bank_url: https://akiyaconcierge.com/area/ooyodo/
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 奈良県大淀町
   operator_evidence:
     quote: 公式サイト（www.town.oyodo.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.town.oyodo.lg.jp/
-    checked_on: '2026-11-10'
+    checked_on: '2026-11-11'
   pages:
   - url: https://akiyaconcierge.com/area/ooyodo/
     kind: listing_index
@@ -735,6 +735,9 @@ sources:
     - pattern: https?://akiyaconcierge\.com/area/ooyodo/page/\d+/?$
       kind: listing_index
       max_links: 20
+    - pattern: ^https?://akiyaconcierge\.com/bank/\d+/$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - akiyaconcierge.com
   max_pages: 30

@@ -66,19 +66,15 @@ sources:
     slug: '392031'
     bank_url: https://www.city.aki.kochi.jp/iju/startbusiness/
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 高知県安芸市
   operator_evidence:
     quote: 公式ドメイン www.city.aki.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.aki.kochi.jp/
-    checked_on: '2026-11-10'
+    checked_on: '2026-11-11'
   pages:
   - url: https://www.city.aki.kochi.jp/iju/startbusiness/
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.city\.aki\.kochi\.jp/iju/info/dtl\d+\.php$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.city.aki.kochi.jp
   max_pages: 30
@@ -460,21 +456,15 @@ sources:
     slug: '393070'
     bank_url: https://www.vill.geisei.kochi.jp/pages/m001580.php
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 高知県芸西村
   operator_evidence:
     quote: 公式ドメイン www.vill.geisei.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.geisei.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-11'
   pages:
   - url: https://www.vill.geisei.kochi.jp/pages/m001580.php
     kind: listing_index
-  - url: https://www.vill.geisei.kochi.jp/pages/m001633.php
-    kind: subsidy
-  - url: https://www.vill.geisei.kochi.jp/pages/m001632.php
-    kind: subsidy
-  - url: https://www.vill.geisei.kochi.jp/pages/m000427.php
-    kind: subsidy
   allow_hosts:
   - www.vill.geisei.kochi.jp
   max_pages: 30
@@ -684,19 +674,15 @@ sources:
     slug: '394025'
     bank_url: https://www.town.sakawa.lg.jp/life/dtl.php?hdnKey=1336
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 高知県佐川町
   operator_evidence:
     quote: 公式ドメイン www.town.sakawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.sakawa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-11'
   pages:
   - url: https://www.town.sakawa.lg.jp/life/dtl.php?hdnKey=1336
     kind: listing_index
-  - url: https://www.town.sakawa.lg.jp/life/dtl.php?hdnKey=2416
-    kind: subsidy
-  - url: https://www.town.sakawa.lg.jp/life/dtl.php?hdnKey=2418
-    kind: subsidy
   allow_hosts:
   - www.town.sakawa.lg.jp
   max_pages: 30
@@ -813,7 +799,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shimanto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.shimanto.lg.jp/
-    checked_on: '2026-11-10'
+    checked_on: '2026-11-11'
   pages:
   - url: https://www.town.shimanto.lg.jp/life/detail.php?hdnKey=10395
     kind: listing_index
@@ -839,7 +825,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.otsuki.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.otsuki.kochi.jp/
-    checked_on: '2026-11-10'
+    checked_on: '2026-11-11'
   pages:
   - url: https://www.town.otsuki.kochi.jp/iju/info/akiya.php
     kind: listing_index

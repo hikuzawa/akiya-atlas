@@ -163,19 +163,15 @@ sources:
     slug: '192082'
     bank_url: https://www.city.minami-alps.yamanashi.jp/iju/akiyabank/
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 山梨県南アルプス市
   operator_evidence:
     quote: 山梨県市町村リンクページに掲載された公式サイト（www.city.minami-alps.yamanashi.jp）
     url: https://www.pref.yamanashi.jp/link/link_city.html
-    checked_on: '2026-11-10'
+    checked_on: '2026-11-11'
   pages:
   - url: https://www.city.minami-alps.yamanashi.jp/iju/akiyabank/
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.city\.minami\-alps\.yamanashi\.jp/iju/akiyabank/\d+\.html$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.city.minami-alps.yamanashi.jp
   max_pages: 30

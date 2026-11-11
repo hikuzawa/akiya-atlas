@@ -1,0 +1,32 @@
+{
+  "ci": true,
+  "command": "crawl",
+  "errors": [
+    "https://www.town.yusui.kagoshima.jp/soshiki/34/10491.html: HTTP 404"
+  ],
+  "extraction_metrics": null,
+  "finished_at": "2026-11-11T00:34:08Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "キャッシュが巡回状態より古く、条件を付けずに取り直した: https://www.minamisoma-akiya.org/properties/16111/, https://www.minamisoma-akiya.org/properties/16890/, https://www.minamisoma-akiya.org/properties/9290/, https://www.minamisoma-akiya.org/properties/8936/, https://www.town.aizubange.fukushima.jp/site/akiya-bank/list10-41.html, https://www.town.aizubange.fukushima.jp/site/akiya-bank/list10-42.html, https://www.town.aizubange.fukushima.jp/site/akiya-bank/list10-43.html, https://www.town.aizubange.fukushima.jp/site/akiya-bank/list10-44.html, https://www.town.aizubange.fukushima.jp/site/akiya-bank/list10-45.html, https://www.town.aizubange.fukushima.jp/site/akiya-bank/list10-46.html ほか 217 件"
+  ],
+  "service": "akiya-atlas",
+  "stages": {
+    "crawl": {
+      "changed": 236,
+      "errors": 1,
+      "fetched": 248,
+      "not_modified": 0,
+      "requests": 263,
+      "stale_cache": 227,
+      "unchanged": 12,
+      "workers": 8
+    }
+  },
+  "started_at": "2026-11-11T00:31:45Z"
+}

@@ -139,7 +139,7 @@ sources:
   operator_evidence:
     quote: 鹿児島県 県内市町村に掲載された公式サイト（www.city.kagoshima-izumi.lg.jp）
     url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
-    checked_on: '2026-11-10'
+    checked_on: '2026-11-11'
   pages:
   - url: https://www.city.kagoshima-izumi.lg.jp/page/page_00815.html
     kind: listing_index
@@ -198,35 +198,22 @@ sources:
   operator: 垂水市
   operator_kind: municipality
   official_url: https://www.city.tarumizu.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '462144'
     name: 垂水市
     prefecture: 鹿児島県
     prefecture_slug: kagoshima
     slug: '462144'
-    bank_url: https://www.city.tarumizu.lg.jp/chiiki/kurashi/sangyo/akiya/sokushin.html
-    bank_status: available
+    bank_url: https://www.city.tarumizu.lg.jp/hisho/kurashi/sangyo/teju/akiya/index.html
+    bank_status: info
     extract_pending: false
     map_query: 鹿児島県垂水市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.tarumizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tarumizu.lg.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.tarumizu.lg.jp/chiiki/kurashi/sangyo/akiya/sokushin.html
-    kind: listing_index
-  - url: https://www.city.tarumizu.lg.jp/chiiki/kurashi/sangyo/akiya/hojokin.html
-    kind: subsidy
-  - url: https://www.city.tarumizu.lg.jp/chiiki/kurashi/sangyo/akiya/chintai.html
-    kind: subsidy
-  - url: https://www.city.tarumizu.lg.jp/chiiki/kurashi/sangyo/akiya/jyutaku_syutoku.html
-    kind: subsidy
-  - url: https://www.city.tarumizu.lg.jp/chiiki/kurashi/sangyo/iju/iju_shugyo.html
-    kind: subsidy
-  allow_hosts:
-  - www.city.tarumizu.lg.jp
-  max_pages: 30
+    checked_on: '2026-11-11'
 - id: kagoshima-462152
   name: 薩摩川内市空き家バンク
   operator: 薩摩川内市
@@ -714,15 +701,19 @@ sources:
     slug: '464520'
     bank_url: https://www.town.yusui.kagoshima.jp/soshiki/34/787.html
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 鹿児島県湧水町
   operator_evidence:
     quote: 公式ドメイン www.town.yusui.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yusui.kagoshima.jp/
-    checked_on: '2026-11-10'
+    checked_on: '2026-11-11'
   pages:
   - url: https://www.town.yusui.kagoshima.jp/soshiki/34/787.html
     kind: listing_index
+    follow:
+    - pattern: ^https?://www\.town\.yusui\.kagoshima\.jp/soshiki/\d+/\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.town.yusui.kagoshima.jp
   max_pages: 30
@@ -740,15 +731,19 @@ sources:
     slug: '464686'
     bank_url: https://www.town.kagoshima-osaki.lg.jp/ke_kikaku/kurashi/ijuteju/sokushin/akiyabank.html
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 鹿児島県大崎町
   operator_evidence:
     quote: 鹿児島県 県内市町村に掲載された公式サイト（www.town.kagoshima-osaki.lg.jp）
     url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
-    checked_on: '2026-11-10'
+    checked_on: '2026-11-11'
   pages:
   - url: https://www.town.kagoshima-osaki.lg.jp/ke_kikaku/kurashi/ijuteju/sokushin/akiyabank.html
     kind: listing_index
+    follow:
+    - pattern: ^https?://www\.town\.kagoshima\-osaki\.lg\.jp/ke_kikaku/kurashi/ijuteju/akiyabank/\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.town.kagoshima-osaki.lg.jp
   max_pages: 30

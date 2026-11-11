@@ -656,12 +656,12 @@ sources:
     slug: '024023'
     bank_url: https://www.town.shichinohe.lg.jp/ijyu/sumai/akiya/post-407.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 青森県七戸町
   operator_evidence:
     quote: 公式ドメイン www.town.shichinohe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.shichinohe.lg.jp/
-    checked_on: '2026-10-09'
+    checked_on: '2026-11-11'
   pages:
   - url: https://www.town.shichinohe.lg.jp/ijyu/sumai/akiya/post-407.html
     kind: listing_index
