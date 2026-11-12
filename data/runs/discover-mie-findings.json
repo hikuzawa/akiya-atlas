@@ -249,11 +249,13 @@
     },
     {
       "alternatives": [],
+      "bank_status": "available",
       "bank_url": "https://www.city.kameyama.mie.jp/docs/2021010500012/akiya_bank.html",
       "code": "242101",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-12",
       "evidence_quote": "公式ドメイン www.city.kameyama.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.kameyama.mie.jp/",
       "external_links": [
@@ -262,7 +264,10 @@
           "url": "https://www.hatomarksite.com/search/mie/buy/house/area/24/list?price_b_from=&price_b_to=&land_area_all_from=&land_area_all_to=&land_area_unit=UNIT30&bld_area_from=&bld_area_to=&bld_area_unit=UNIT30&eki_walk=&key_word=&expected_return_from=&expected_return_to=&m_adr%5B%5D=24210"
         }
       ],
-      "listing_rows": 31,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 30）。抽出側の課題として保留",
+      "held_since": "2026-11-12",
+      "listing_rows": 30,
       "listing_score": 1.0,
       "name": "亀山市",
       "name_kana": "ｶﾒﾔﾏｼ",
@@ -274,7 +279,8 @@
       "prefecture": "三重県",
       "prefecture_slug": "mie",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -349,7 +355,7 @@
       "confidence": 0.8414999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-11",
+      "evidence_checked_on": "2026-11-12",
       "evidence_quote": "公式ドメイン www.city.inabe.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.inabe.mie.jp/",
       "external_links": [],
@@ -384,13 +390,15 @@
       "code": "242152",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "detail_pattern": "^https?://www\\.city\\.shima\\.mie\\.jp/cgi\\-bin/recruit\\.php/\\d+/detail/\\d+$",
-      "evidence_checked_on": "2026-11-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-12",
       "evidence_quote": "公式ドメイン www.city.shima.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.shima.mie.jp/",
       "external_links": [],
-      "extract_gap": false,
-      "listing_rows": 53,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 51）。抽出側の課題として保留",
+      "held_since": "2026-11-12",
+      "listing_rows": 51,
       "listing_score": 1.0,
       "name": "志摩市",
       "name_kana": "ｼﾏｼ",

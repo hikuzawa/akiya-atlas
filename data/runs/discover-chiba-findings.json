@@ -1428,16 +1428,21 @@
       "alternatives": [
         "https://www.town.nagara.chiba.jp/soshiki/2/30.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.nagara.chiba.jp/soshiki/2/1628.html",
       "code": "124265",
-      "confidence": 0.8484999999999999,
+      "confidence": 0.8274999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-10-12",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-12",
       "evidence_quote": "公式ドメイン www.town.nagara.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.nagara.chiba.jp/",
       "external_links": [],
-      "listing_rows": 8,
-      "listing_score": 1.0,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 5）。抽出側の課題として保留",
+      "held_since": "2026-11-12",
+      "listing_rows": 5,
+      "listing_score": 0.71,
       "name": "長柄町",
       "name_kana": "ﾅｶﾞﾗﾏﾁ",
       "official_url": "www.town.nagara.chiba.jp",
@@ -1449,10 +1454,7 @@
       "prefecture_slug": "chiba",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.nagara.chiba.jp/soshiki/2/56.html",
-        "https://www.town.nagara.chiba.jp/soshiki/2/2300.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [

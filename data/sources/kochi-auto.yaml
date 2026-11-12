@@ -66,15 +66,19 @@ sources:
     slug: '392031'
     bank_url: https://www.city.aki.kochi.jp/iju/startbusiness/
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 高知県安芸市
   operator_evidence:
     quote: 公式ドメイン www.city.aki.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.aki.kochi.jp/
-    checked_on: '2026-11-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.city.aki.kochi.jp/iju/startbusiness/
     kind: listing_index
+    follow:
+    - pattern: ^https?://www\.city\.aki\.kochi\.jp/iju/info/dtl\d+\.php$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.city.aki.kochi.jp
   max_pages: 30
@@ -271,21 +275,15 @@ sources:
     slug: '392120'
     bank_url: https://www.city.kami.lg.jp/site/akiya/akiya.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 高知県香美市
   operator_evidence:
     quote: 公式ドメイン www.city.kami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kami.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.city.kami.lg.jp/site/akiya/akiya.html
     kind: listing_index
-  - url: https://www.city.kami.lg.jp/soshiki/9/akiyahojo.html
-    kind: subsidy
-  - url: https://www.city.kami.lg.jp/soshiki/9/taishin.html
-    kind: subsidy
-  - url: https://www.city.kami.lg.jp/soshiki/9/rokyu.html
-    kind: subsidy
   allow_hosts:
   - www.city.kami.lg.jp
   max_pages: 30
@@ -461,7 +459,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.geisei.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.geisei.kochi.jp/
-    checked_on: '2026-11-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.vill.geisei.kochi.jp/pages/m001580.php
     kind: listing_index
@@ -482,12 +480,12 @@ sources:
     slug: '393410'
     bank_url: https://www.town.motoyama.kochi.jp/kurashi_tetsuzuki/iju_teiju/613.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 高知県本山町
   operator_evidence:
     quote: 公式ドメイン www.town.motoyama.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.motoyama.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.town.motoyama.kochi.jp/kurashi_tetsuzuki/iju_teiju/613.html
     kind: listing_index
@@ -679,7 +677,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.sakawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.sakawa.lg.jp/
-    checked_on: '2026-11-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.town.sakawa.lg.jp/life/dtl.php?hdnKey=1336
     kind: listing_index
@@ -700,12 +698,12 @@ sources:
     slug: '394033'
     bank_url: https://www.town.ochi.kochi.jp/ijyu/house
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 高知県越知町
   operator_evidence:
     quote: 公式ドメイン www.town.ochi.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ochi.kochi.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.town.ochi.kochi.jp/ijyu/house
     kind: listing_index
@@ -799,7 +797,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shimanto.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.shimanto.lg.jp/
-    checked_on: '2026-11-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.town.shimanto.lg.jp/life/detail.php?hdnKey=10395
     kind: listing_index
@@ -825,7 +823,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.otsuki.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.otsuki.kochi.jp/
-    checked_on: '2026-11-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.town.otsuki.kochi.jp/iju/info/akiya.php
     kind: listing_index

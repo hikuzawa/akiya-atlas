@@ -320,19 +320,15 @@ sources:
     slug: 082163
     bank_url: https://ijyuu.city-kasama.jp/house-bank/
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 茨城県笠間市
   operator_evidence:
     quote: 公式サイト（www.city.kasama.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.kasama.lg.jp/
-    checked_on: '2026-11-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://ijyuu.city-kasama.jp/house-bank/
     kind: listing_index
-    follow:
-    - pattern: ^https?://ijyuu\.city\-kasama\.jp/house_bank/\d+\-openspace/$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - ijyuu.city-kasama.jp
   max_pages: 30
@@ -1066,7 +1062,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.ami.lg.jp/
-    checked_on: '2026-11-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.town.ami.lg.jp/0000009864.html
     kind: listing_index

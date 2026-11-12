@@ -523,12 +523,12 @@
       "confidence": 0.9045,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-09-11",
+      "evidence_checked_on": "2026-11-12",
       "evidence_quote": "和歌山県 市町村のホームページ（リンク集）に掲載された公式サイト（www.town.yura.wakayama.jp）",
       "evidence_url": "https://www.pref.wakayama.lg.jp/link/shichoson.html",
       "external_links": [],
       "extract_gap": true,
-      "held_reason": "本文を取り出せないページ（物件行 16）。抽出側の問題として保留",
+      "held_reason": "一覧に見えるのに 0 件（物件行 16）。抽出側の課題として保留",
       "held_since": "2026-11-10",
       "listing_rows": 16,
       "listing_score": 1.0,
@@ -543,9 +543,7 @@
       "prefecture_slug": "wakayama",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "http://www.town.yura.wakayama.jp/docs/2024082100012/"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [

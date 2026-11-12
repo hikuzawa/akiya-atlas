@@ -1319,19 +1319,15 @@ sources:
     slug: '124265'
     bank_url: https://www.town.nagara.chiba.jp/soshiki/2/1628.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 千葉県長柄町
   operator_evidence:
     quote: 公式ドメイン www.town.nagara.chiba.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nagara.chiba.jp/
-    checked_on: '2026-10-12'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.town.nagara.chiba.jp/soshiki/2/1628.html
     kind: listing_index
-  - url: https://www.town.nagara.chiba.jp/soshiki/2/56.html
-    kind: subsidy
-  - url: https://www.town.nagara.chiba.jp/soshiki/2/2300.html
-    kind: subsidy
   allow_hosts:
   - www.town.nagara.chiba.jp
   max_pages: 30

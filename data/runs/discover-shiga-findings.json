@@ -374,8 +374,8 @@
       "code": "253839",
       "confidence": 0.9115,
       "cross_linked": false,
-      "detail_pattern": null,
-      "evidence_checked_on": "2026-11-11",
+      "detail_pattern": "^https?://www\\.town\\.shiga\\-hino\\.lg\\.jp/\\d+\\.html$",
+      "evidence_checked_on": "2026-11-12",
       "evidence_quote": "滋賀県 県内の市町一覧に掲載された公式サイト（www.town.shiga-hino.lg.jp）",
       "evidence_url": "https://www.pref.shiga.lg.jp/ab00/7739.html",
       "external_links": [
@@ -384,9 +384,7 @@
           "url": "https://www.akiya-athome.jp/buy/25/?gyosei_cd%5B%5D=25383&proc_search="
         }
       ],
-      "extract_gap": true,
-      "held_reason": "一覧に見えるのに 0 件（物件行 17）。抽出側の課題として保留",
-      "held_since": "2026-11-11",
+      "extract_gap": false,
       "listing_rows": 17,
       "listing_score": 1.0,
       "name": "日野町",

@@ -69,14 +69,12 @@
       "code": "392031",
       "confidence": 0.8554999999999999,
       "cross_linked": false,
-      "detail_pattern": null,
-      "evidence_checked_on": "2026-11-11",
+      "detail_pattern": "^https?://www\\.city\\.aki\\.kochi\\.jp/iju/info/dtl\\d+\\.php$",
+      "evidence_checked_on": "2026-11-12",
       "evidence_quote": "公式ドメイン www.city.aki.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.aki.kochi.jp/",
       "external_links": [],
-      "extract_gap": true,
-      "held_reason": "一覧に見えるのに 0 件（物件行 9）。抽出側の課題として保留",
-      "held_since": "2026-11-11",
+      "extract_gap": false,
       "listing_rows": 9,
       "listing_score": 1.0,
       "name": "安芸市",
@@ -299,17 +297,22 @@
     },
     {
       "alternatives": [
-        "https://www.city.kami.lg.jp/life/1/16/51/"
+        "https://www.city.kami.lg.jp/site/akiya/akiyabank.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.city.kami.lg.jp/site/akiya/akiya.html",
       "code": "392120",
-      "confidence": 0.8975,
+      "confidence": 0.8835,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-12",
       "evidence_quote": "公式ドメイン www.city.kami.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.kami.lg.jp/",
       "external_links": [],
-      "listing_rows": 15,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 13）。抽出側の課題として保留",
+      "held_since": "2026-11-12",
+      "listing_rows": 13,
       "listing_score": 1.0,
       "name": "香美市",
       "name_kana": "ｶﾐｼ",
@@ -322,11 +325,7 @@
       "prefecture_slug": "kochi",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.kami.lg.jp/soshiki/9/akiyahojo.html",
-        "https://www.city.kami.lg.jp/soshiki/9/taishin.html",
-        "https://www.city.kami.lg.jp/soshiki/9/rokyu.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [],
@@ -506,7 +505,7 @@
       "confidence": 0.8765,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-11",
+      "evidence_checked_on": "2026-11-12",
       "evidence_quote": "公式ドメイン www.vill.geisei.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.vill.geisei.kochi.jp/",
       "external_links": [],
@@ -529,17 +528,24 @@
       "subsidy_urls": []
     },
     {
-      "alternatives": [],
+      "alternatives": [
+        "https://www.town.motoyama.kochi.jp/soshikikarasagasu/seisakukikakuka/iju_teiju/427.html"
+      ],
+      "bank_status": "available",
       "bank_url": "https://www.town.motoyama.kochi.jp/kurashi_tetsuzuki/iju_teiju/613.html",
       "code": "393410",
-      "confidence": 0.8414999999999999,
+      "confidence": 0.8274999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-12",
       "evidence_quote": "公式ドメイン www.town.motoyama.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.motoyama.kochi.jp/",
       "external_links": [],
-      "listing_rows": 7,
-      "listing_score": 0.78,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 5）。抽出側の課題として保留",
+      "held_since": "2026-11-12",
+      "listing_rows": 5,
+      "listing_score": 0.59,
       "name": "本山町",
       "name_kana": "ﾓﾄﾔﾏﾁｮｳ",
       "official_url": "www.town.motoyama.kochi.jp",
@@ -550,7 +556,8 @@
       "prefecture": "高知県",
       "prefecture_slug": "kochi",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -736,7 +743,7 @@
       "confidence": 0.9324999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-11",
+      "evidence_checked_on": "2026-11-12",
       "evidence_quote": "公式ドメイン www.town.sakawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.sakawa.lg.jp/",
       "external_links": [],
@@ -760,18 +767,22 @@
     },
     {
       "alternatives": [
-        "https://www.town.ochi.kochi.jp/ijyu/akiyabank",
-        "https://www.town.ochi.kochi.jp/result?q=%E7%A9%BA%E3%81%8D%E5%AE%B6"
+        "https://www.town.ochi.kochi.jp/ijyu/akiyabank"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.ochi.kochi.jp/ijyu/house",
       "code": "394033",
-      "confidence": 0.9185,
+      "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-12",
       "evidence_quote": "公式ドメイン www.town.ochi.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.ochi.kochi.jp/",
       "external_links": [],
-      "listing_rows": 18,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 34）。抽出側の課題として保留",
+      "held_since": "2026-11-12",
+      "listing_rows": 34,
       "listing_score": 1.0,
       "name": "越知町",
       "name_kana": "ｵﾁﾁｮｳ",
@@ -783,7 +794,8 @@
       "prefecture": "高知県",
       "prefecture_slug": "kochi",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -875,7 +887,7 @@
       "confidence": 0.9115,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-11",
+      "evidence_checked_on": "2026-11-12",
       "evidence_quote": "公式ドメイン www.town.shimanto.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.shimanto.lg.jp/",
       "external_links": [],
@@ -907,7 +919,7 @@
       "confidence": 0.9324999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-11",
+      "evidence_checked_on": "2026-11-12",
       "evidence_quote": "公式ドメイン www.town.otsuki.kochi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.otsuki.kochi.jp/",
       "external_links": [],

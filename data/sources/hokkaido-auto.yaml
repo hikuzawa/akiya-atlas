@@ -53,7 +53,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hakodate.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hakodate.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
 - id: hokkaido-012033
   name: 小樽市空き家バンク
   operator: 小樽市
@@ -74,7 +74,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.otaru.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.otaru.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.city.otaru.lg.jp/docs/2021030400033/
     kind: subsidy
@@ -101,7 +101,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.asahikawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.asahikawa.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
 - id: hokkaido-012050
   name: 室蘭市空き家バンク
   operator: 室蘭市
@@ -122,7 +122,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.muroran.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.muroran.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.city.muroran.lg.jp/life/?category=541
     kind: subsidy
@@ -149,7 +149,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kushiro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kushiro.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
 - id: hokkaido-012076
   name: 帯広市空き家バンク
   operator: 帯広市
@@ -170,7 +170,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.obihiro.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.obihiro.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
 - id: hokkaido-012084
   name: 北見市空き家バンク
   operator: 北見市
@@ -191,7 +191,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kitami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kitami.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
 - id: hokkaido-012092
   name: 夕張市空き家バンク
   operator: 夕張市
@@ -212,7 +212,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yubari.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.yubari.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
 - id: hokkaido-012106
   name: 岩見沢市空き家バンク
   operator: 岩見沢市
@@ -233,7 +233,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.iwamizawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.iwamizawa.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
 - id: hokkaido-012114
   name: 網走市空き家バンク
   operator: 網走市
@@ -254,7 +254,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.abashiri.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.abashiri.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.city.abashiri.hokkaido.jp/soshiki/19/1515.html
     kind: subsidy
@@ -280,7 +280,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.e-rumoi.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.e-rumoi.jp/rumoilife/estate/
     kind: listing_index
@@ -311,7 +311,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tomakomai.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.tomakomai.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.city.tomakomai.hokkaido.jp/kurashi/akiyataisaku/hoziyo.html
     kind: subsidy
@@ -338,7 +338,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.wakkanai.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.wakkanai.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
 - id: hokkaido-012157
   name: 美唄市空き家バンク
   operator: 美唄市
@@ -359,7 +359,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.bibai.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.bibai.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.city.bibai.hokkaido.jp/site/ijuu/27208.html
     kind: subsidy
@@ -386,7 +386,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ashibetsu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ashibetsu.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
 - id: hokkaido-012173
   name: 江別市空き家バンク
   operator: 江別市
@@ -407,7 +407,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ebetsu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ebetsu.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
 - id: hokkaido-012181
   name: 赤平市空き家バンク
   operator: 赤平市
@@ -427,7 +427,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.akabira.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.akabira.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.city.akabira.hokkaido.jp/docs/6120.html
     kind: listing_index
@@ -489,7 +489,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.city.shibetsu.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.shibetsu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
   external_links:
   - label: homes.co.jp
     url: https://www.homes.co.jp/akiyabank/
@@ -630,19 +630,15 @@ sources:
     slug: '012262'
     bank_url: https://www.city.sunagawa.hokkaido.jp/seikatsu_kurashi/juutaku/newakiya-akichizyouhou.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 北海道砂川市
   operator_evidence:
     quote: 公式ドメイン www.city.sunagawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.sunagawa.hokkaido.jp/
-    checked_on: '2026-11-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.city.sunagawa.hokkaido.jp/seikatsu_kurashi/juutaku/newakiya-akichizyouhou.html
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.city\.sunagawa\.hokkaido\.jp/seikatsu_kurashi/juutaku/akiyaR\d+\-\d+\.html$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.city.sunagawa.hokkaido.jp
   max_pages: 30
@@ -1660,7 +1656,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.furubira.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.furubira.lg.jp/
-    checked_on: '2026-11-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.town.furubira.lg.jp/life/detail.php?id=330
     kind: listing_index
@@ -2300,7 +2296,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.hokkaido-kamikawa.lg.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-11-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/geo5a8000000014g.html
     kind: listing_index
@@ -2705,29 +2701,22 @@ sources:
   operator: 羽幌町
   operator_kind: municipality
   official_url: https://www.town.haboro.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: 014842
     name: 羽幌町
     prefecture: 北海道
     prefecture_slug: hokkaido
     slug: 014842
-    bank_url: https://www.town.haboro.lg.jp/izyu-teijyu/akiya/akiyajyouhou.html
-    bank_status: available
+    bank_url: https://www.town.haboro.lg.jp/izyu-teijyu/akiya/
+    bank_status: info
     extract_pending: false
     map_query: 北海道羽幌町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.haboro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.haboro.lg.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.town.haboro.lg.jp/izyu-teijyu/akiya/akiyajyouhou.html
-    kind: listing_index
-  - url: https://www.town.haboro.lg.jp/kurashi/kankyo/tochi-jyutaku/2024-0209-1627-25.html
-    kind: subsidy
-  allow_hosts:
-  - www.town.haboro.lg.jp
-  max_pages: 30
+    checked_on: '2026-11-12'
 - id: hokkaido-014851
   name: 初山別村空き家バンク
   operator: 初山別村
@@ -3241,17 +3230,15 @@ sources:
     slug: '015521'
     bank_url: https://www.town.saroma.hokkaido.jp/machi/sumai/akiyabannku.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 北海道佐呂間町
   operator_evidence:
     quote: 公式ドメイン www.town.saroma.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.saroma.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.town.saroma.hokkaido.jp/machi/sumai/akiyabannku.html
     kind: listing_index
-  - url: https://www.town.saroma.hokkaido.jp/kakuka/keizaika/2012-0229-0549-15.html
-    kind: subsidy
   allow_hosts:
   - www.town.saroma.hokkaido.jp
   max_pages: 30

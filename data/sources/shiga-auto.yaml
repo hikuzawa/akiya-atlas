@@ -334,15 +334,19 @@ sources:
     slug: '253839'
     bank_url: https://www.town.shiga-hino.lg.jp/0000002170.html
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 滋賀県日野町
   operator_evidence:
     quote: 滋賀県 県内の市町一覧に掲載された公式サイト（www.town.shiga-hino.lg.jp）
     url: https://www.pref.shiga.lg.jp/ab00/7739.html
-    checked_on: '2026-11-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.town.shiga-hino.lg.jp/0000002170.html
     kind: listing_index
+    follow:
+    - pattern: ^https?://www\.town\.shiga\-hino\.lg\.jp/\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.town.shiga-hino.lg.jp
   max_pages: 30

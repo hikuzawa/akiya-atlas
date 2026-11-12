@@ -104,7 +104,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.mihara.hiroshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.mihara.hiroshima.jp/
-    checked_on: '2026-11-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.city.mihara.hiroshima.jp/soshiki/21/akiyainfo.html
     kind: listing_index
@@ -340,19 +340,15 @@ sources:
     slug: '342149'
     bank_url: https://www.akitakata.jp/ja/shisei/section/kikaku/main/
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 広島県安芸高田市
   operator_evidence:
     quote: 広島県 県内の市・町に掲載された公式サイト（www.akitakata.jp）
     url: https://www.pref.hiroshima.lg.jp/soshiki/19/1168589482341.html
-    checked_on: '2026-11-11'
+    checked_on: '2026-11-12'
   pages:
   - url: https://www.akitakata.jp/ja/shisei/section/kikaku/main/
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.akitakata\.jp/ja/shisei/section/kikaku/akiyabank/\d+/$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.akitakata.jp
   max_pages: 30
