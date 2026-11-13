@@ -19,7 +19,7 @@ sources:
   operator_evidence:
     quote: 山形県 山形県内市町村ページに掲載された公式サイト（www.city.yamagata-yamagata.lg.jp）
     url: https://www.pref.yamagata.jp/020026/kensei/information/clink.html
-    checked_on: '2026-11-12'
+    checked_on: '2026-11-13'
   pages:
   - url: https://www.city.yamagata-yamagata.lg.jp/kurashi/tochi/1006582/1006583/1002505.html
     kind: listing_index
@@ -188,7 +188,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kaminoyama.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kaminoyama.yamagata.jp/
-    checked_on: '2026-11-12'
+    checked_on: '2026-11-13'
   pages:
   - url: https://www.city.kaminoyama.yamagata.jp/soshiki/12/kaminoyama-akiyabank2.html
     kind: listing_index
@@ -218,7 +218,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.murayama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.murayama.lg.jp/
-    checked_on: '2026-11-12'
+    checked_on: '2026-11-13'
   pages:
   - url: https://www.city.murayama.lg.jp/kurashi/sumai/akiyabankjoho.html
     kind: listing_index
@@ -443,19 +443,15 @@ sources:
     slug: '063223'
     bank_url: https://www.town.nishikawa.yamagata.jp/site/iju/1440.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 山形県西川町
   operator_evidence:
     quote: 公式ドメイン www.town.nishikawa.yamagata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nishikawa.yamagata.jp/
-    checked_on: '2026-11-12'
+    checked_on: '2026-11-13'
   pages:
   - url: https://www.town.nishikawa.yamagata.jp/site/iju/1440.html
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.town\.nishikawa\.yamagata\.jp/site/iju/\d+\.html$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.town.nishikawa.yamagata.jp
   max_pages: 30
@@ -897,16 +893,14 @@ sources:
   operator_evidence:
     quote: 山形県 山形県内市町村ページに掲載された公式サイト（www.town.shonai.lg.jp）
     url: https://www.pref.yamagata.jp/020026/kensei/information/clink.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-13'
   pages:
   - url: https://www.town.shonai.lg.jp/kurashi/kurashi/akiyataisaku/akiyabank/index.html
     kind: listing_index
-  - url: https://www.town.shonai.lg.jp/kurashi/kurashi/akiyataisaku/kensetsu0420251222152426502.html
-    kind: subsidy
-  - url: https://www.town.shonai.lg.jp/kurashi/kurashi/akiyataisaku/kensetsu0320220421115221986.html
-    kind: subsidy
-  - url: https://www.town.shonai.lg.jp/kurashi/kurashi/zyuutaku/index.html
-    kind: subsidy
+    follow:
+    - pattern: ^https?://www\.town\.shonai\.lg\.jp/kurashi/kurashi/akiyataisaku/akiyabank/kensetsu\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.town.shonai.lg.jp
   max_pages: 30

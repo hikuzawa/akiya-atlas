@@ -43,7 +43,7 @@
       "confidence": 0.9324999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-12",
+      "evidence_checked_on": "2026-11-13",
       "evidence_quote": "公式ドメイン www.city.noshiro.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.noshiro.lg.jp/",
       "external_links": [],
@@ -498,14 +498,19 @@
         "https://www.town.mitane.akita.jp/kurashi_furusatokaiki/akiya_bank/2303.html",
         "https://www.town.mitane.akita.jp/kurashi_furusatokaiki/akiya_bank/index.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.mitane.akita.jp/kurashi_furusatokaiki/akiya_bank/2305.html",
       "code": "053481",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-10-08",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-13",
       "evidence_quote": "公式ドメイン www.town.mitane.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.mitane.akita.jp/",
       "external_links": [],
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 24）。抽出側の課題として保留",
+      "held_since": "2026-11-13",
       "listing_rows": 24,
       "listing_score": 1.0,
       "name": "三種町",
@@ -519,11 +524,7 @@
       "prefecture_slug": "akita",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.mitane.akita.jp/kurashi_furusatokaiki/jutaku_joho/2317.html",
-        "https://www.town.mitane.akita.jp/kurashi_furusatokaiki/jutaku_joho/2466.html",
-        "https://www.town.mitane.akita.jp/kurashi_furusatokaiki/jutaku_joho/2467.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [],

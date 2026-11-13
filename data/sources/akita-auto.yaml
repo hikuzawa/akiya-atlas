@@ -46,7 +46,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.noshiro.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.noshiro.lg.jp/
-    checked_on: '2026-11-12'
+    checked_on: '2026-11-13'
   pages:
   - url: https://www.city.noshiro.lg.jp/sangyo/iju-teiju/akiya-bank/11098
     kind: listing_index
@@ -421,12 +421,12 @@ sources:
     slug: 053481
     bank_url: https://www.town.mitane.akita.jp/kurashi_furusatokaiki/akiya_bank/2305.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 秋田県三種町
   operator_evidence:
     quote: 公式ドメイン www.town.mitane.akita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.mitane.akita.jp/
-    checked_on: '2026-10-08'
+    checked_on: '2026-11-13'
   pages:
   - url: https://www.town.mitane.akita.jp/kurashi_furusatokaiki/akiya_bank/2305.html
     kind: listing_index
@@ -434,12 +434,6 @@ sources:
     - pattern: https?://www\.town\.mitane\.akita\.jp/kurashi_furusatokaiki/akiya_bank/2305\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
       kind: listing_index
       max_links: 20
-  - url: https://www.town.mitane.akita.jp/kurashi_furusatokaiki/jutaku_joho/2317.html
-    kind: subsidy
-  - url: https://www.town.mitane.akita.jp/kurashi_furusatokaiki/jutaku_joho/2466.html
-    kind: subsidy
-  - url: https://www.town.mitane.akita.jp/kurashi_furusatokaiki/jutaku_joho/2467.html
-    kind: subsidy
   allow_hosts:
   - www.town.mitane.akita.jp
   max_pages: 30

@@ -234,7 +234,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kameyama.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kameyama.mie.jp/
-    checked_on: '2026-11-12'
+    checked_on: '2026-11-13'
   pages:
   - url: https://www.city.kameyama.mie.jp/docs/2021010500012/akiya_bank.html
     kind: listing_index
@@ -325,7 +325,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.inabe.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.inabe.mie.jp/
-    checked_on: '2026-11-12'
+    checked_on: '2026-11-13'
   pages:
   - url: https://www.city.inabe.mie.jp/kurashi/jutaku/1000847.html
     kind: listing_index
@@ -346,15 +346,19 @@ sources:
     slug: '242152'
     bank_url: https://www.city.shima.mie.jp/cgi-bin/recruit.php/1/list
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 三重県志摩市
   operator_evidence:
     quote: 公式ドメイン www.city.shima.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.shima.mie.jp/
-    checked_on: '2026-11-12'
+    checked_on: '2026-11-13'
   pages:
   - url: https://www.city.shima.mie.jp/cgi-bin/recruit.php/1/list
     kind: listing_index
+    follow:
+    - pattern: ^https?://www\.city\.shima\.mie\.jp/cgi\-bin/recruit\.php/\d+/detail/\d+$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.city.shima.mie.jp
   max_pages: 30

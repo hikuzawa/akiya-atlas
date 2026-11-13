@@ -139,7 +139,7 @@ sources:
   operator_evidence:
     quote: 鹿児島県 県内市町村に掲載された公式サイト（www.city.kagoshima-izumi.lg.jp）
     url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
-    checked_on: '2026-11-12'
+    checked_on: '2026-11-13'
   pages:
   - url: https://www.city.kagoshima-izumi.lg.jp/page/page_00815.html
     kind: listing_index
@@ -701,15 +701,19 @@ sources:
     slug: '464520'
     bank_url: https://www.town.yusui.kagoshima.jp/soshiki/34/787.html
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 鹿児島県湧水町
   operator_evidence:
     quote: 公式ドメイン www.town.yusui.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yusui.kagoshima.jp/
-    checked_on: '2026-11-12'
+    checked_on: '2026-11-13'
   pages:
   - url: https://www.town.yusui.kagoshima.jp/soshiki/34/787.html
     kind: listing_index
+    follow:
+    - pattern: ^https?://www\.town\.yusui\.kagoshima\.jp/soshiki/\d+/\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.town.yusui.kagoshima.jp
   max_pages: 30
@@ -727,15 +731,19 @@ sources:
     slug: '464686'
     bank_url: https://www.town.kagoshima-osaki.lg.jp/ke_kikaku/kurashi/ijuteju/sokushin/akiyabank.html
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 鹿児島県大崎町
   operator_evidence:
     quote: 鹿児島県 県内市町村に掲載された公式サイト（www.town.kagoshima-osaki.lg.jp）
     url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
-    checked_on: '2026-11-12'
+    checked_on: '2026-11-13'
   pages:
   - url: https://www.town.kagoshima-osaki.lg.jp/ke_kikaku/kurashi/ijuteju/sokushin/akiyabank.html
     kind: listing_index
+    follow:
+    - pattern: ^https?://www\.town\.kagoshima\-osaki\.lg\.jp/ke_kikaku/kurashi/ijuteju/akiyabank/\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.town.kagoshima-osaki.lg.jp
   max_pages: 30
