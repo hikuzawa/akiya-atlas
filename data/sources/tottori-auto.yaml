@@ -14,12 +14,12 @@ sources:
     slug: '312011'
     bank_url: https://www.city.tottori.lg.jp/page/5828.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 鳥取県鳥取市
   operator_evidence:
     quote: 公式ドメイン www.city.tottori.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tottori.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.city.tottori.lg.jp/page/5828.html
     kind: listing_index
@@ -235,15 +235,19 @@ sources:
     slug: '313718'
     bank_url: https://www.town.kotoura.tottori.jp/ijuteiju/ohnav/
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 鳥取県琴浦町
   operator_evidence:
     quote: 公式ドメイン www.town.kotoura.tottori.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kotoura.tottori.jp/
-    checked_on: '2026-11-13'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.town.kotoura.tottori.jp/ijuteiju/ohnav/
     kind: listing_index
+    follow:
+    - pattern: ^https?://www\.town\.kotoura\.tottori\.jp/ijuteiju/ohnav/\d+$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.town.kotoura.tottori.jp
   max_pages: 30

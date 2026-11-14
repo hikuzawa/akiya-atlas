@@ -745,10 +745,14 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nagawa.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.nagawa.nagano.jp/
-    checked_on: '2026-09-30'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/index.html
     kind: listing_index
+    follow:
+    - pattern: ^https?://www\.town\.nagawa\.nagano\.jp/kurashi/iju_teiju/akiyabank/\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.town.nagawa.nagano.jp
   max_pages: 30
@@ -1413,7 +1417,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.agematsu.nagano.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.agematsu.nagano.jp/
-    checked_on: '2026-11-13'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.town.agematsu.nagano.jp/kurashi/sumai_seikatsu/tochi/akiya.html
     kind: listing_index
@@ -1549,12 +1553,12 @@ sources:
     slug: '204323'
     bank_url: https://www.town-kiso.com/kurashi/sumai/akiya/
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 長野県木曽町
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.town-kiso.com）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-11-13'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.town-kiso.com/kurashi/sumai/akiya/
     kind: listing_index
@@ -1562,9 +1566,6 @@ sources:
     - pattern: https?://www\.town\-kiso\.com/kurashi/sumai/akiya/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
       kind: listing_index
       max_links: 20
-    - pattern: ^https?://www\.town\-kiso\.com/kurashi/sumai/akiya/m\d+/$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.town-kiso.com
   max_pages: 30
@@ -2134,7 +2135,7 @@ sources:
   operator_evidence:
     quote: 長野県 市町村一覧（役場所在地・電話番号等）に掲載された公式サイト（www.vill.sakae.nagano.jp）
     url: https://www.pref.nagano.lg.jp/shichoson/kensei/shichoson/gappei/gappei/mejiiko/ichiran/index.html
-    checked_on: '2026-11-13'
+    checked_on: '2026-11-14'
   pages:
   - url: http://www.vill.sakae.nagano.jp/docs/1028.html
     kind: listing_index

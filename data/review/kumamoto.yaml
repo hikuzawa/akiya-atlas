@@ -1,6 +1,6 @@
 prefecture: 熊本県
 prefecture_slug: kumamoto
-created_at: '2026-11-10T02:30:48+00:00'
+created_at: '2026-11-14T00:17:43+00:00'
 candidates:
 - key: '431001'
   label: 熊本県 熊本市
@@ -256,12 +256,12 @@ candidates:
   note: null
 - key: '433691'
   label: 熊本県 和水町
-  url: https://www.town.nagomi.lg.jp/iju/teijyuu/akiya/16/
+  url: https://kumamoto-akiya360.jp/
   page_class: listing_index
   class_label: 物件一覧（静的）
   confidence: 0.93
   operator_kind: municipality
-  evidence_quote: 公式ドメイン www.town.nagomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
+  evidence_quote: 公式サイト（www.town.nagomi.lg.jp）から空き家バンクとして案内されているリンク
   evidence_url: https://www.town.nagomi.lg.jp/
   reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
   proposed_policy: crawl

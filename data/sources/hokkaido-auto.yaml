@@ -630,19 +630,15 @@ sources:
     slug: '012262'
     bank_url: https://www.city.sunagawa.hokkaido.jp/seikatsu_kurashi/juutaku/newakiya-akichizyouhou.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 北海道砂川市
   operator_evidence:
     quote: 公式ドメイン www.city.sunagawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.sunagawa.hokkaido.jp/
-    checked_on: '2026-11-13'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.city.sunagawa.hokkaido.jp/seikatsu_kurashi/juutaku/newakiya-akichizyouhou.html
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.city\.sunagawa\.hokkaido\.jp/seikatsu_kurashi/juutaku/akiyaR\d+\-\d+\.html$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.city.sunagawa.hokkaido.jp
   max_pages: 30
@@ -1077,7 +1073,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.hokkaido-mori.lg.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.town.hokkaido-mori.lg.jp/kurashi-tetsuzuki/sumai-pets/1136.html
     kind: subsidy
@@ -1104,7 +1100,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yakumo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.yakumo.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
 - id: hokkaido-013471
   name: 長万部町空き家バンク
   operator: 長万部町
@@ -1125,7 +1121,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.oshamambe.lg.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
 - id: hokkaido-013617
   name: 江差町空き家バンク
   operator: 江差町
@@ -1146,7 +1142,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.hokkaido-esashi.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
 - id: hokkaido-013625
   name: 上ノ国町空き家バンク
   operator: 上ノ国町
@@ -1167,7 +1163,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kaminokuni.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kaminokuni.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
 - id: hokkaido-013633
   name: 厚沢部町空き家バンク
   operator: 厚沢部町
@@ -1188,7 +1184,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.assabu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.assabu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.town.assabu.lg.jp/page/10441.html
     kind: subsidy
@@ -1219,7 +1215,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.otobe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.otobe.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
 - id: hokkaido-013676
   name: 奥尻町空き家バンク
   operator: 奥尻町
@@ -1240,7 +1236,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.okushiri.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.okushiri.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
 - id: hokkaido-013706
   name: 今金町空き家バンク
   operator: 今金町
@@ -1261,7 +1257,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.imakane.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.imakane.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
 - id: hokkaido-013714
   name: せたな町空き家バンク
   operator: せたな町
@@ -1282,7 +1278,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.setana.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.setana.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
 - id: hokkaido-013919
   name: 島牧村空き家バンク
   operator: 島牧村
@@ -1303,7 +1299,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.shimamaki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.shimamaki.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
 - id: hokkaido-013927
   name: 寿都町空き家バンク
   operator: 寿都町
@@ -1366,7 +1362,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.rankoshi.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.rankoshi.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
 - id: hokkaido-013951
   name: ニセコ町空き家バンク
   operator: ニセコ町
@@ -1387,7 +1383,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.niseko.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.niseko.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
 - id: hokkaido-013960
   name: 真狩村空き家バンク
   operator: 真狩村
@@ -1408,7 +1404,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.makkari.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.makkari.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.vill.makkari.lg.jp/iju_teiju/ijushien/yashironomorihozyo/
     kind: subsidy
@@ -1435,7 +1431,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.rusutsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.rusutsu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
 - id: hokkaido-013986
   name: 喜茂別町空き家バンク
   operator: 喜茂別町
@@ -1455,7 +1451,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kimobetsu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kimobetsu.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.town.kimobetsu.hokkaido.jp/detail.php?content=325
     kind: listing_index
@@ -1490,7 +1486,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town-kyogoku.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.town-kyogoku.jp/page/1236.html
     kind: subsidy
@@ -1521,7 +1517,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.kutchan.hokkaido.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
 - id: hokkaido-014010
   name: 共和町空き家バンク
   operator: 共和町
@@ -1660,7 +1656,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.furubira.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.furubira.lg.jp/
-    checked_on: '2026-11-13'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.town.furubira.lg.jp/life/detail.php?id=330
     kind: listing_index
@@ -2300,7 +2296,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.hokkaido-kamikawa.lg.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-11-13'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/geo5a8000000014g.html
     kind: listing_index
@@ -3239,7 +3235,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.saroma.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.saroma.hokkaido.jp/
-    checked_on: '2026-11-13'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.town.saroma.hokkaido.jp/machi/sumai/akiyabannku.html
     kind: listing_index
@@ -3539,27 +3535,22 @@ sources:
   operator: 安平町
   operator_kind: municipality
   official_url: https://www.town.abira.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: 015857
     name: 安平町
     prefecture: 北海道
     prefecture_slug: hokkaido
     slug: 015857
-    bank_url: https://www.nobikura.jp/estate/
-    bank_status: available
+    bank_url: https://www.town.abira.lg.jp/
+    bank_status: none
     extract_pending: false
     map_query: 北海道安平町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式サイト（www.town.abira.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.town.abira.lg.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.nobikura.jp/estate/
-    kind: listing_index
-  allow_hosts:
-  - www.nobikura.jp
-  max_pages: 30
+    checked_on: '2026-11-14'
 - id: hokkaido-015865
   name: むかわ町空き家バンク
   operator: むかわ町

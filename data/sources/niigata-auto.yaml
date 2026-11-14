@@ -278,7 +278,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.murakami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.murakami.lg.jp/
-    checked_on: '2026-11-13'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.city.murakami.lg.jp/site/akiya-bank/m-akiya-bank-bukken.html
     kind: listing_index
@@ -356,7 +356,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.myoko.niigata.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.myoko.niigata.jp/
-    checked_on: '2026-11-13'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.city.myoko.niigata.jp/myoko-life/house/
     kind: listing_index
@@ -568,22 +568,17 @@ sources:
     slug: '153427'
     bank_url: https://akiya.vill.yahiko.niigata.jp/
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 新潟県弥彦村
   operator_evidence:
     quote: 公式サイト（www.vill.yahiko.niigata.jp）から空き家バンクとして案内されているリンク
     url: https://www.vill.yahiko.niigata.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-14'
   pages:
   - url: https://akiya.vill.yahiko.niigata.jp/
     kind: listing_index
-  - url: https://akiya.vill.yahiko.niigata.jp/support/
-    kind: subsidy
-  - url: https://www.vill.yahiko.niigata.jp/news/detail.html?content=1411
-    kind: subsidy
   allow_hosts:
   - akiya.vill.yahiko.niigata.jp
-  - www.vill.yahiko.niigata.jp
   max_pages: 30
 - id: niigata-153613
   name: 田上町空き家バンク
@@ -756,7 +751,7 @@ sources:
   operator_evidence:
     quote: 新潟県 リンク集：県内市町村に掲載された公式サイト（www.vill.sekikawa.niigata.jp）
     url: https://www.pref.niigata.lg.jp/site/link/link-sichoson.html
-    checked_on: '2026-11-13'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.vill.sekikawa.niigata.jp/life/13/696/index.html
     kind: listing_index

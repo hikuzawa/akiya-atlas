@@ -14,15 +14,19 @@ sources:
     slug: '162019'
     bank_url: https://www.city.toyama.lg.jp/akiyabk/index.html
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 富山県富山市
   operator_evidence:
     quote: 公式ドメイン www.city.toyama.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.toyama.lg.jp/
-    checked_on: '2026-11-13'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.city.toyama.lg.jp/akiyabk/index.html
     kind: listing_index
+    follow:
+    - pattern: ^https?://www\.city\.toyama\.lg\.jp/akiyabk/\d+/\d+/\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.city.toyama.lg.jp
   max_pages: 30
@@ -120,7 +124,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.city.namerikawa.toyama.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.namerikawa.toyama.jp/
-    checked_on: '2026-11-13'
+    checked_on: '2026-11-14'
   pages:
   - url: https://namerikawa-akiya.com/
     kind: listing_index
@@ -188,7 +192,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.oyabe.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.oyabe.toyama.jp/
-    checked_on: '2026-11-13'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.city.oyabe.toyama.jp/ijyu/1001572/1003141/1004072.html
     kind: listing_index
@@ -289,7 +293,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kamiichi.toyama.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kamiichi.toyama.jp/
-    checked_on: '2026-11-13'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.town.kamiichi.toyama.jp/page/1934.html
     kind: listing_index

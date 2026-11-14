@@ -1,6 +1,6 @@
 prefecture: 滋賀県
 prefecture_slug: shiga
-created_at: '2026-11-11T00:14:57+00:00'
+created_at: '2026-11-14T00:33:09+00:00'
 candidates:
 - key: '252018'
   label: 滋賀県 大津市
@@ -189,7 +189,7 @@ candidates:
   url: https://www.town.shiga-hino.lg.jp/0000002170.html
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.91
+  confidence: 0.92
   operator_kind: municipality
   evidence_quote: 滋賀県 県内の市町一覧に掲載された公式サイト（www.town.shiga-hino.lg.jp）
   evidence_url: https://www.pref.shiga.lg.jp/ab00/7739.html

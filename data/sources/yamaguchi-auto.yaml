@@ -409,12 +409,12 @@ sources:
     slug: '353418'
     bank_url: https://www.town.kaminoseki.lg.jp/%e4%b8%8a%e9%96%a2%e7%94%ba%e7%a9%ba%e3%81%8d%e5%ae%b6%e3%83%90%e3%83%b3%e3%82%af%e7%89%a9%e4%bb%b6%e4%b8%80%e8%a6%a7.html
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 山口県上関町
   operator_evidence:
     quote: 公式ドメイン www.town.kaminoseki.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kaminoseki.lg.jp/
-    checked_on: '2026-11-13'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.town.kaminoseki.lg.jp/%e4%b8%8a%e9%96%a2%e7%94%ba%e7%a9%ba%e3%81%8d%e5%ae%b6%e3%83%90%e3%83%b3%e3%82%af%e7%89%a9%e4%bb%b6%e4%b8%80%e8%a6%a7.html
     kind: listing_index
@@ -422,6 +422,9 @@ sources:
     - pattern: https?://www\.town\.kaminoseki\.lg\.jp/%e4%b8%8a%e9%96%a2%e7%94%ba%e7%a9%ba%e3%81%8d%e5%ae%b6%e3%83%90%e3%83%b3%e3%82%af%e7%89%a9%e4%bb%b6%e4%b8%80%e8%a6%a7\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
       kind: listing_index
       max_links: 20
+    - pattern: ^https?://www\.town\.kaminoseki\.lg\.jp/%e\d+%b\d+%\d+a%e\d+%\d+%a\d+%e\d+%\d+%ba%e\d+%\d+%ba%e\d+%a\d+%ba%e\d+%ae%b\d+%e\d+%\d+%\d+%e\d+%\d+%b\d+%e\d+%\d+%af\-%e\d+%\d+%a\d+%e\d+%bb%b\d+%e\d+%\d+%aa%e\d+%\d+f%b\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.town.kaminoseki.lg.jp
   max_pages: 30
@@ -465,12 +468,12 @@ sources:
     slug: '353442'
     bank_url: https://www.town.hirao.lg.jp/kurashi/jyutaku/akiya/1457314685054.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 山口県平生町
   operator_evidence:
     quote: 公式ドメイン www.town.hirao.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.hirao.lg.jp/
-    checked_on: '2026-11-13'
+    checked_on: '2026-11-14'
   pages:
   - url: https://www.town.hirao.lg.jp/kurashi/jyutaku/akiya/1457314685054.html
     kind: listing_index
@@ -478,9 +481,6 @@ sources:
     - pattern: https?://www\.town\.hirao\.lg\.jp/kurashi/jyutaku/akiya/1457314685054\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
       kind: listing_index
       max_links: 20
-    - pattern: ^https?://www\.town\.hirao\.lg\.jp/soshiki/chiiki/sosei/teijyu_project/akiya/hirao_akiya_bukken/\d+\.html$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.town.hirao.lg.jp
   max_pages: 30

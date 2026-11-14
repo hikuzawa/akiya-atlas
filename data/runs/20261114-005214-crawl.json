@@ -1,0 +1,30 @@
+{
+  "ci": true,
+  "command": "crawl",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-11-14T00:54:02Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "キャッシュが巡回状態より古く、条件を付けずに取り直した: https://www.town.shiga-hino.lg.jp/0000003025.html, https://www.town.shiga-hino.lg.jp/0000004323.html, https://www.town.shiga-hino.lg.jp/0000004735.html, https://www.town.shiga-hino.lg.jp/0000003873.html, https://www.town.shiga-hino.lg.jp/0000003875.html, https://www.town.shiga-hino.lg.jp/0000003147.html, https://www.town.shiga-hino.lg.jp/0000006723.html, https://www.town.kotoura.tottori.jp/ijuteiju/ohnav/199, https://www.town.kotoura.tottori.jp/ijuteiju/ohnav/241, https://www.town.kotoura.tottori.jp/ijuteiju/ohnav/240 ほか 87 件"
+  ],
+  "service": "akiya-atlas",
+  "stages": {
+    "crawl": {
+      "changed": 109,
+      "errors": 0,
+      "fetched": 117,
+      "not_modified": 0,
+      "requests": 126,
+      "stale_cache": 97,
+      "unchanged": 8,
+      "workers": 8
+    }
+  },
+  "started_at": "2026-11-14T00:52:14Z"
+}

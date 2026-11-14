@@ -1,13 +1,13 @@
 prefecture: 鳥取県
 prefecture_slug: tottori
-created_at: '2026-11-10T02:58:56+00:00'
+created_at: '2026-11-14T00:42:32+00:00'
 candidates:
 - key: '312011'
   label: 鳥取県 鳥取市
   url: https://www.city.tottori.lg.jp/page/5828.html
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.82
+  confidence: 0.83
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.city.tottori.lg.jp（.lg.jp、地方公共団体専用ドメイン）
   evidence_url: https://www.city.tottori.lg.jp/

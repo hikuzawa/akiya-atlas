@@ -373,8 +373,8 @@
       "code": "082163",
       "confidence": 0.9324999999999999,
       "cross_linked": true,
-      "detail_pattern": "^https?://ijyuu\\.city\\-kasama\\.jp/house_bank/\\d+\\-openspace/$",
-      "evidence_checked_on": "2026-11-13",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-14",
       "evidence_quote": "公式サイト（www.city.kasama.lg.jp）から空き家バンクとして案内されているリンク",
       "evidence_url": "https://www.city.kasama.lg.jp/",
       "external_links": [
@@ -383,7 +383,9 @@
           "url": "https://www.homes.co.jp/akiyabank/ibaraki/kasama"
         }
       ],
-      "extract_gap": false,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 47）。抽出側の課題として保留",
+      "held_since": "2026-11-14",
       "listing_rows": 47,
       "listing_score": 1.0,
       "name": "笠間市",
@@ -1197,7 +1199,7 @@
       "confidence": 0.8624999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-13",
+      "evidence_checked_on": "2026-11-14",
       "evidence_quote": "公式ドメイン www.town.ami.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.ami.lg.jp/",
       "external_links": [],
