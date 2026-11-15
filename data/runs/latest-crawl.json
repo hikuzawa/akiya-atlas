@@ -1,9 +1,11 @@
 {
   "ci": true,
   "command": "crawl",
-  "errors": [],
+  "errors": [
+    "https://www.town.yusui.kagoshima.jp/soshiki/34/10491.html: HTTP 404"
+  ],
   "extraction_metrics": null,
-  "finished_at": "2026-11-14T00:54:02Z",
+  "finished_at": "2026-11-15T00:01:22Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -11,20 +13,20 @@
     "output_tokens": 0
   },
   "notes": [
-    "キャッシュが巡回状態より古く、条件を付けずに取り直した: https://www.town.shiga-hino.lg.jp/0000003025.html, https://www.town.shiga-hino.lg.jp/0000004323.html, https://www.town.shiga-hino.lg.jp/0000004735.html, https://www.town.shiga-hino.lg.jp/0000003873.html, https://www.town.shiga-hino.lg.jp/0000003875.html, https://www.town.shiga-hino.lg.jp/0000003147.html, https://www.town.shiga-hino.lg.jp/0000006723.html, https://www.town.kotoura.tottori.jp/ijuteiju/ohnav/199, https://www.town.kotoura.tottori.jp/ijuteiju/ohnav/241, https://www.town.kotoura.tottori.jp/ijuteiju/ohnav/240 ほか 87 件"
+    "キャッシュが巡回状態より古く、条件を付けずに取り直した: https://www.minamisoma-akiya.org/properties/17717/, https://www.minamisoma-akiya.org/properties/17615/, https://www.minamisoma-akiya.org/properties/17698/, https://www.minamisoma-akiya.org/properties/17741/, https://www.minamisoma-akiya.org/properties/17456/, https://www.minamisoma-akiya.org/properties/8936/, https://www.town.aizubange.fukushima.jp/site/akiya-bank/list10-41.html, https://www.town.aizubange.fukushima.jp/site/akiya-bank/list10-42.html, https://www.town.aizubange.fukushima.jp/site/akiya-bank/list10-43.html, https://www.town.aizubange.fukushima.jp/site/akiya-bank/list10-44.html ほか 184 件"
   ],
   "service": "akiya-atlas",
   "stages": {
     "crawl": {
-      "changed": 109,
-      "errors": 0,
-      "fetched": 117,
+      "changed": 252,
+      "errors": 1,
+      "fetched": 268,
       "not_modified": 0,
-      "requests": 126,
-      "stale_cache": 97,
-      "unchanged": 8,
+      "requests": 286,
+      "stale_cache": 194,
+      "unchanged": 16,
       "workers": 8
     }
   },
-  "started_at": "2026-11-14T00:52:14Z"
+  "started_at": "2026-11-14T23:58:16Z"
 }

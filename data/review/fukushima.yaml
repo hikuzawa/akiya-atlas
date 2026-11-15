@@ -1,6 +1,6 @@
 prefecture: 福島県
 prefecture_slug: fukushima
-created_at: '2026-11-12T01:06:30+00:00'
+created_at: '2026-11-14T22:54:15+00:00'
 candidates:
 - key: '072010'
   label: 福島県 福島市
@@ -60,15 +60,15 @@ candidates:
   note: null
 - key: '072052'
   label: 福島県 白河市
-  url: https://www.city.shirakawa.fukushima.jp/page/page005272.html
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.9
+  url: https://www.city.shirakawa.fukushima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.city.shirakawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
   evidence_url: https://www.city.shirakawa.fukushima.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null
@@ -119,7 +119,7 @@ candidates:
   url: https://www.city.nihonmatsu.lg.jp/ijyu_teijyu/kurasu/page000100.html
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.86
+  confidence: 0.84
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.city.nihonmatsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
   evidence_url: https://www.city.nihonmatsu.lg.jp/
@@ -326,15 +326,15 @@ candidates:
   note: null
 - key: '074021'
   label: 福島県 北塩原村
-  url: https://www.vill.kitashiobara.fukushima.jp/site/iju/1412.html
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.92
+  url: https://www.vill.kitashiobara.fukushima.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.vill.kitashiobara.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
   evidence_url: https://www.vill.kitashiobara.fukushima.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null

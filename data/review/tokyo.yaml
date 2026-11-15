@@ -1,6 +1,6 @@
 prefecture: 東京都
 prefecture_slug: tokyo
-created_at: '2026-09-27T01:01:09+00:00'
+created_at: '2026-11-14T23:44:38+00:00'
 candidates:
 - key: '131016'
   label: 東京都 千代田区
@@ -721,7 +721,7 @@ candidates:
   url: http://www.vill.hinohara.tokyo.jp/0000000581.html
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.9
+  confidence: 0.92
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.vill.hinohara.tokyo.jp（city/town/vill の地理型ドメイン、自治体に限定）
   evidence_url: https://www.vill.hinohara.tokyo.jp/

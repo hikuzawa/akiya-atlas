@@ -406,7 +406,7 @@
       "confidence": 0.8274999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-14",
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "徳島県の市町村一覧に掲載された公式サイト（www.town.tokushima-mugi.lg.jp）",
       "evidence_url": "https://www.pref.tokushima.lg.jp/kenseijoho/kanrennochiiki/shichouson/",
       "external_links": [],
@@ -442,7 +442,7 @@
       "confidence": 0.8205,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-14",
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "公式ドメイン www.town.minami.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.minami.lg.jp/",
       "external_links": [],
@@ -450,7 +450,7 @@
       "held_reason": "一覧に見えるのに 0 件（物件行 4）。抽出側の課題として保留",
       "held_since": "2026-11-13",
       "listing_rows": 4,
-      "listing_score": 0.39,
+      "listing_score": 0.41,
       "name": "美波町",
       "name_kana": "ﾐﾅﾐﾁｮｳ",
       "official_url": "www.town.minami.lg.jp",
@@ -469,14 +469,19 @@
         "https://www.town.kaiyo.lg.jp/docs/2024052400012/",
         "https://www.town.kaiyo.lg.jp/docs/2024052300015/"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.kaiyo.lg.jp/docs/2016040400050/",
       "code": "363880",
       "confidence": 0.9464999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "公式ドメイン www.town.kaiyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.kaiyo.lg.jp/",
       "external_links": [],
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 0）。抽出側の課題として保留",
+      "held_since": "2026-11-15",
       "listing_rows": 0,
       "listing_score": 0.4,
       "name": "海陽町",
@@ -490,11 +495,7 @@
       "prefecture_slug": "tokushima",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.kaiyo.lg.jp/docs/2025051600021/",
-        "https://www.town.kaiyo.lg.jp/docs/2024052300015/",
-        "https://www.town.kaiyo.lg.jp/docs/2026033000013/"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [

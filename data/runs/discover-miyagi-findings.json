@@ -254,7 +254,7 @@
       "confidence": 0.9324999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-14",
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "公式ドメイン www.city.tome.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.tome.miyagi.jp/",
       "external_links": [
@@ -444,7 +444,7 @@
       "confidence": 0.8345,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-14",
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "公式ドメイン town.shichikashuku.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://town.shichikashuku.miyagi.jp/",
       "external_links": [],
@@ -970,34 +970,32 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.town.onagawa.miyagi.jp/akiya_bank_shien.html"
-      ],
-      "bank_url": "https://www.town.onagawa.miyagi.jp/onagawa_akiya.html",
+      "alternatives": [],
+      "bank_status": "none",
+      "bank_url": "https://www.town.onagawa.miyagi.jp/",
       "code": "045811",
-      "confidence": 0.9324999999999999,
+      "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "公式ドメイン www.town.onagawa.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.onagawa.miyagi.jp/",
       "external_links": [],
-      "listing_rows": 23,
-      "listing_score": 1.0,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "女川町",
       "name_kana": "ｵﾅｶﾞﾜﾁｮｳ",
       "official_url": "www.town.onagawa.miyagi.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "宮城県",
       "prefecture_slug": "miyagi",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.onagawa.miyagi.jp/05_03_08.html",
-        "https://www.town.onagawa.miyagi.jp/11_32.html"
-      ]
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],

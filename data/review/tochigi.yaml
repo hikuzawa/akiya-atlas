@@ -1,6 +1,6 @@
 prefecture: 栃木県
 prefecture_slug: tochigi
-created_at: '2026-11-10T02:55:31+00:00'
+created_at: '2026-11-14T23:40:24+00:00'
 candidates:
 - key: 092011
   label: 栃木県 宇都宮市
@@ -273,7 +273,7 @@ candidates:
   url: https://www.town.mibu.tochigi.jp/docs/2020052100013/
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.85
+  confidence: 0.87
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.town.mibu.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
   evidence_url: https://www.town.mibu.tochigi.jp/

@@ -576,84 +576,22 @@ sources:
   operator: 牧之原市
   operator_kind: municipality
   official_url: https://www.city.makinohara.shizuoka.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '222267'
     name: 牧之原市
     prefecture: 静岡県
     prefecture_slug: shizuoka
     slug: '222267'
-    bank_url: https://www.city.makinohara.shizuoka.jp/site/makinohara-life/32178.html
-    bank_status: available
+    bank_url: https://www.city.makinohara.shizuoka.jp/
+    bank_status: none
     extract_pending: false
     map_query: 静岡県牧之原市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.makinohara.shizuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.makinohara.shizuoka.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.makinohara.shizuoka.jp/site/makinohara-life/32178.html
-    kind: listing_index
-  - url: https://www.city.makinohara.shizuoka.jp/site/makinohara-life/51999.html
-    kind: subsidy
-  - url: https://www.city.makinohara.shizuoka.jp/site/makinohara-life/48565.html
-    kind: subsidy
-  - url: https://www.city.makinohara.shizuoka.jp/site/makinohara-life/44452.html
-    kind: subsidy
-  allow_hosts:
-  - www.city.makinohara.shizuoka.jp
-  max_pages: 30
-  external_links:
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/23178
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/25444
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/29845
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/40084
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/43646
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/44753
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/47184
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/%E7%89%A7%E4%B9%8B%E5%8E%9F%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-48285
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/%E7%89%A7%E4%B9%8B%E5%8E%9F%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-48843
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/%E7%89%A7%E4%B9%8B%E5%8E%9F%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-48866
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/8752
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/8757
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/9347
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/9608
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/13526
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/24588
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/25283
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/26374
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/37991
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/40017
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/45792
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/45794
-  - label: 詳細はこちら
-    url: https://makinohara-c22226.akiya-athome.jp/bukken/detail/buy/%E7%89%A7%E4%B9%8B%E5%8E%9F%E5%B8%82%E5%A3%B2%E5%9C%B0-47687
-  - label: こちらから
-    url: https://www.homes.co.jp/akiyabank/
-  - label: こちらから
-    url: https://www.akiya-athome.jp/
+    checked_on: '2026-11-15'
 - id: shizuoka-223018
   name: 東伊豆町空き家バンク
   operator: 東伊豆町

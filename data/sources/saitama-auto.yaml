@@ -1270,18 +1270,14 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tokigawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.tokigawa.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-15'
   pages:
   - url: https://www.town.tokigawa.lg.jp/info/1063
     kind: listing_index
-  - url: https://www.town.tokigawa.lg.jp/info/2722
-    kind: subsidy
-  - url: https://www.town.tokigawa.lg.jp/info/899
-    kind: subsidy
-  - url: https://www.town.tokigawa.lg.jp/info/3493
-    kind: subsidy
-  - url: https://www.town.tokigawa.lg.jp/info/2245
-    kind: subsidy
+    follow:
+    - pattern: ^https?://www\.town\.tokigawa\.lg\.jp/Info/\d+$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.town.tokigawa.lg.jp
   max_pages: 30

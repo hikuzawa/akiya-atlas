@@ -132,68 +132,73 @@
     {
       "alternatives": [
         "https://www.city.ota.gunma.jp/life/1/15/64/",
+        "https://www.city.ota.gunma.jp/page/1014074.html",
         "https://www.city.ota.gunma.jp/page/1061655.html",
         "https://www.city.ota.gunma.jp/page/1014067.html",
-        "https://www.city.ota.gunma.jp/page/1014074.html",
         "https://www.city.ota.gunma.jp/page/1151.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.city.ota.gunma.jp/page/1150.html",
       "code": "102059",
       "confidence": 0.9464999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-11-03",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "公式ドメイン www.city.ota.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.ota.gunma.jp/",
       "external_links": [
         {
-          "label": "全国版空き家・空き地バンク（アットホーム）",
+          "label": "全国版空き家・空き地バンク(アットホーム)",
           "url": "https://ota-c10205.akiya-athome.jp/bukken/detail/buy/%E5%A4%AA%E7%94%B0%E5%B8%82%E5%A3%B2%E5%9C%B0-23334"
         },
         {
-          "label": "全国版空き家・空き地バンク（ライフルホームズ）",
+          "label": "全国版空き家・空き地バンク(ライフルホームズ)",
           "url": "https://www.homes.co.jp/akiyabank/b-28247/"
         },
         {
-          "label": "全国版空き家・空き地バンク（アットホーム）",
+          "label": "全国版空き家・空き地バンク(アットホーム)",
           "url": "https://ota-c10205.akiya-athome.jp/bukken/detail/buy/26474"
         },
         {
-          "label": "全国版空き家・空き地バンク（ライフルホームズ）",
+          "label": "全国版空き家・空き地バンク(ライフルホームズ)",
           "url": "https://www.homes.co.jp/akiyabank/b-31707/"
         },
         {
-          "label": "全国版空き家・空き地バンク（アットホーム）",
+          "label": "全国版空き家・空き地バンク(アットホーム)",
           "url": "https://ota-c10205.akiya-athome.jp/bukken/detail/buy/%E5%A4%AA%E7%94%B0%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-45113"
         },
         {
-          "label": "全国版空き家・空き地バンク（ライフルホームズ）",
+          "label": "全国版空き家・空き地バンク(ライフルホームズ)",
           "url": "https://www.homes.co.jp/akiyabank/b-46386/"
         },
         {
-          "label": "全国版空き家・空き地バンク（アットホーム）",
-          "url": "https://ota-c10205.akiya-athome.jp/bukken/detail/buy/46716"
+          "label": "全国版空き家・空き地バンク(アットホーム)",
+          "url": "https://ota-c10205.akiya-athome.jp/bukken/detail/buy/49712"
         },
         {
-          "label": "全国版空き家・空き地バンク（ライフルホームズ）",
-          "url": "https://www.homes.co.jp/akiyabank/b-47631/"
+          "label": "全国版空き家・空き地バンク(ライフルホームズ)",
+          "url": "https://www.homes.co.jp/akiyabank/b-50097/"
         },
         {
-          "label": "全国版空き家・空き地バンク（アットホーム）",
+          "label": "全国版空き家・空き地バンク(アットホーム)",
           "url": "https://ota-c10205.akiya-athome.jp/bukken/detail/rent/8491"
         },
         {
-          "label": "全国版空き家・空き地バンク（ライフルホームズ）",
+          "label": "全国版空き家・空き地バンク(ライフルホームズ)",
           "url": "https://www.homes.co.jp/akiyabank/b-48376/"
         },
         {
-          "label": "全国版空き家・空き地バンク（アットホーム）",
+          "label": "全国版空き家・空き地バンク(アットホーム)",
           "url": "https://ota-c10205.akiya-athome.jp/bukken/detail/rent/8523"
         },
         {
-          "label": "全国版空き家・空き地バンク（ライフルホームズ）",
+          "label": "全国版空き家・空き地バンク(ライフルホームズ)",
           "url": "https://www.homes.co.jp/akiyabank/b-48624/"
         }
       ],
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 0）。抽出側の課題として保留",
+      "held_since": "2026-11-15",
       "listing_rows": 0,
       "listing_score": 0.41,
       "name": "太田市",
@@ -207,11 +212,7 @@
       "prefecture_slug": "gunma",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.ota.gunma.jp/page/1148.html",
-        "https://www.city.ota.gunma.jp/page/1149.html",
-        "https://www.city.ota.gunma.jp/page/1151.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [],

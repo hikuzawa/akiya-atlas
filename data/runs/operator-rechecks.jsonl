@@ -658,3 +658,23 @@
 {"at": "2026-11-14T09:54:45+09:00", "result": "ok", "key": "hokkaido-013986", "label": "北海道喜茂別町"}
 {"at": "2026-11-14T09:54:45+09:00", "result": "ok", "key": "hokkaido-013994", "label": "北海道京極町"}
 {"at": "2026-11-14T09:54:45+09:00", "result": "ok", "key": "hokkaido-014001", "label": "北海道倶知安町"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "unreachable", "key": "hokkaido-014010", "label": "北海道共和町", "reason": "公式サイトに通信できない（HTTP 403）"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "ok", "key": "hokkaido-014028", "label": "北海道岩内町"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "ok", "key": "hokkaido-014036", "label": "北海道泊村"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "ok", "key": "hokkaido-014044", "label": "北海道神恵内村"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "ok", "key": "hokkaido-014052", "label": "北海道積丹町"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "ok", "key": "hokkaido-014079", "label": "北海道仁木町"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "ok", "key": "hokkaido-014087", "label": "北海道余市町"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "ok", "key": "hokkaido-014095", "label": "北海道赤井川村"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "ok", "key": "hokkaido-014231", "label": "北海道南幌町"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "ok", "key": "hokkaido-014249", "label": "北海道奈井江町"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "ok", "key": "hokkaido-014257", "label": "北海道上砂川町"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "ok", "key": "hokkaido-014273", "label": "北海道由仁町"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "ok", "key": "hokkaido-014281", "label": "北海道長沼町"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "ok", "key": "hokkaido-014290", "label": "北海道栗山町"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "ok", "key": "hokkaido-014303", "label": "北海道月形町"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "ok", "key": "hokkaido-014311", "label": "北海道浦臼町"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "ok", "key": "hokkaido-014320", "label": "北海道新十津川町"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "ok", "key": "hokkaido-014338", "label": "北海道妹背牛町"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "skip", "key": "hokkaido-014346", "label": "北海道秩父別町", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-15T09:02:11+09:00", "result": "ok", "key": "hokkaido-014362", "label": "北海道雨竜町"}

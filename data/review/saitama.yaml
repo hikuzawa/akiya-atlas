@@ -1,6 +1,6 @@
 prefecture: 埼玉県
 prefecture_slug: saitama
-created_at: '2026-11-10T02:48:26+00:00'
+created_at: '2026-11-14T23:32:19+00:00'
 candidates:
 - key: '111007'
   label: 埼玉県 さいたま市
@@ -707,7 +707,7 @@ candidates:
   url: https://www.town.tokigawa.lg.jp/info/1063
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.92
+  confidence: 0.93
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.town.tokigawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
   evidence_url: https://www.town.tokigawa.lg.jp/

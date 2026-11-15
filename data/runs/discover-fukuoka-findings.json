@@ -229,19 +229,24 @@
     },
     {
       "alternatives": [
-        "https://www.city.yame.fukuoka.jp/art_museum/about_tasaki/sitemap.dir.xml",
-        "https://www.city.yame.fukuoka.jp/art_museum/about/tasaki_sns/sitemap.dir.xml",
-        "https://www.city.yame.fukuoka.jp/art_museum/about/tasakihirosukebijyutukanniittemiyou/sitemap.dir.xml"
+        "https://www.city.yame.fukuoka.jp/miryoku/live/vacant/1454651745897.html",
+        "https://www.city.yame.fukuoka.jp/miryoku/live/vacant/1454652855680.html",
+        "https://www.city.yame.fukuoka.jp/miryoku/live/vacant/sell_rent/10127.html",
+        "https://www.city.yame.fukuoka.jp/miryoku/live/vacant/sellandlent/1454652856174.html",
+        "https://www.fkjc.or.jp/jigyo/iekatsu-2"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.city.yame.fukuoka.jp/kurashi/10755.html",
       "code": "402109",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-10-15",
+      "detail_pattern": "^https?://www\\.city\\.yame\\.fukuoka\\.jp/miryoku/live/vacant/article/\\d+\\.html$",
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "公式ドメイン www.city.yame.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.yame.fukuoka.jp/",
       "external_links": [],
-      "listing_rows": 52,
+      "extract_gap": false,
+      "listing_rows": 49,
       "listing_score": 1.0,
       "name": "八女市",
       "name_kana": "ﾔﾒｼ",
@@ -254,10 +259,7 @@
       "prefecture_slug": "fukuoka",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.yame.fukuoka.jp/kurashi/7/1457320367638.html",
-        "https://www.city.yame.fukuoka.jp/soshiki/3/2/3/1/1454652358067.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -1466,7 +1468,7 @@
       "confidence": 0.7889999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-14",
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "公式ドメイン www.town.oto.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.oto.fukuoka.jp/",
       "external_links": [],
@@ -1523,7 +1525,7 @@
       "confidence": 0.8694999999999999,
       "cross_linked": true,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-14",
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "公式サイト（www.town.fukuchi.lg.jp）から空き家バンクとして案内されているリンク",
       "evidence_url": "https://www.town.fukuchi.lg.jp/",
       "external_links": [],

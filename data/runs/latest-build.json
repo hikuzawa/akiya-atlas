@@ -3,7 +3,7 @@
   "command": "build",
   "errors": [],
   "extraction_metrics": null,
-  "finished_at": "2026-11-14T00:55:33Z",
+  "finished_at": "2026-11-15T00:02:53Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -14,13 +14,13 @@
   "service": "akiya-atlas",
   "stages": {
     "build": {
-      "files": 7075,
+      "files": 7081,
       "lastmod_added": 0,
-      "lastmod_changed": 142,
-      "lastmod_kept": 5501,
+      "lastmod_changed": 331,
+      "lastmod_kept": 5188,
       "lastmod_relearned": 0,
-      "pages": 7021
+      "pages": 7027
     }
   },
-  "started_at": "2026-11-14T00:54:55Z"
+  "started_at": "2026-11-15T00:02:18Z"
 }

@@ -119,21 +119,15 @@ sources:
     slug: '102059'
     bank_url: https://www.city.ota.gunma.jp/page/1150.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 群馬県太田市
   operator_evidence:
     quote: 公式ドメイン www.city.ota.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ota.gunma.jp/
-    checked_on: '2026-11-03'
+    checked_on: '2026-11-15'
   pages:
   - url: https://www.city.ota.gunma.jp/page/1150.html
     kind: listing_index
-  - url: https://www.city.ota.gunma.jp/page/1148.html
-    kind: subsidy
-  - url: https://www.city.ota.gunma.jp/page/1149.html
-    kind: subsidy
-  - url: https://www.city.ota.gunma.jp/page/1151.html
-    kind: subsidy
   allow_hosts:
   - www.city.ota.gunma.jp
   max_pages: 30
@@ -151,9 +145,9 @@ sources:
   - label: 全国版空き家・空き地バンク(ライフルホームズ)
     url: https://www.homes.co.jp/akiyabank/b-46386/
   - label: 全国版空き家・空き地バンク(アットホーム)
-    url: https://ota-c10205.akiya-athome.jp/bukken/detail/buy/46716
+    url: https://ota-c10205.akiya-athome.jp/bukken/detail/buy/49712
   - label: 全国版空き家・空き地バンク(ライフルホームズ)
-    url: https://www.homes.co.jp/akiyabank/b-47631/
+    url: https://www.homes.co.jp/akiyabank/b-50097/
   - label: 全国版空き家・空き地バンク(アットホーム)
     url: https://ota-c10205.akiya-athome.jp/bukken/detail/rent/8491
   - label: 全国版空き家・空き地バンク(ライフルホームズ)

@@ -373,8 +373,8 @@
       "code": "082163",
       "confidence": 0.9324999999999999,
       "cross_linked": true,
-      "detail_pattern": null,
-      "evidence_checked_on": "2026-11-14",
+      "detail_pattern": "^https?://ijyuu\\.city\\-kasama\\.jp/house_bank/\\d+\\-openspace/$",
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "公式サイト（www.city.kasama.lg.jp）から空き家バンクとして案内されているリンク",
       "evidence_url": "https://www.city.kasama.lg.jp/",
       "external_links": [
@@ -383,9 +383,7 @@
           "url": "https://www.homes.co.jp/akiyabank/ibaraki/kasama"
         }
       ],
-      "extract_gap": true,
-      "held_reason": "一覧に見えるのに 0 件（物件行 47）。抽出側の課題として保留",
-      "held_since": "2026-11-14",
+      "extract_gap": false,
       "listing_rows": 47,
       "listing_score": 1.0,
       "name": "笠間市",
@@ -804,17 +802,23 @@
     },
     {
       "alternatives": [
-        "https://www.city.sakuragawa.lg.jp/akiya_bank/"
+        "https://www.city.sakuragawa.lg.jp/akiya_bank/",
+        "https://www.city.sakuragawa.lg.jp/akiya_bank/page009018.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.city.sakuragawa.lg.jp/akiya/akiya.php",
       "code": "082317",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "公式ドメイン www.city.sakuragawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.sakuragawa.lg.jp/",
       "external_links": [],
-      "listing_rows": 35,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 29）。抽出側の課題として保留",
+      "held_since": "2026-11-15",
+      "listing_rows": 29,
       "listing_score": 1.0,
       "name": "桜川市",
       "name_kana": "ｻｸﾗｶﾞﾜｼ",
@@ -827,11 +831,7 @@
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.sakuragawa.lg.jp/page/page005326.html",
-        "https://www.city.sakuragawa.lg.jp/akiya_bank/page009698.html",
-        "https://www.city.sakuragawa.lg.jp/akiya_bank/page009018.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -1199,7 +1199,7 @@
       "confidence": 0.8624999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-14",
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "公式ドメイン www.town.ami.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.ami.lg.jp/",
       "external_links": [],

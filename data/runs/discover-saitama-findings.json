@@ -1385,15 +1385,18 @@
         "https://www.town.tokigawa.lg.jp/info/1012",
         "https://www.town.tokigawa.lg.jp/info/1474"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.tokigawa.lg.jp/info/1063",
       "code": "113492",
-      "confidence": 0.9185,
+      "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": "^https?://www\\.town\\.tokigawa\\.lg\\.jp/Info/\\d+$",
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "公式ドメイン www.town.tokigawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.tokigawa.lg.jp/",
       "external_links": [],
-      "listing_rows": 18,
+      "extract_gap": false,
+      "listing_rows": 21,
       "listing_score": 1.0,
       "name": "ときがわ町",
       "name_kana": "ﾄｷｶﾞﾜﾏﾁ",
@@ -1406,12 +1409,7 @@
       "prefecture_slug": "saitama",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.tokigawa.lg.jp/info/2722",
-        "https://www.town.tokigawa.lg.jp/info/899",
-        "https://www.town.tokigawa.lg.jp/info/3493",
-        "https://www.town.tokigawa.lg.jp/info/2245"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [

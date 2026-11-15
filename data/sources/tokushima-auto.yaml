@@ -393,7 +393,7 @@ sources:
   operator_evidence:
     quote: 徳島県の市町村一覧に掲載された公式サイト（www.town.tokushima-mugi.lg.jp）
     url: https://www.pref.tokushima.lg.jp/kenseijoho/kanrennochiiki/shichouson/
-    checked_on: '2026-11-14'
+    checked_on: '2026-11-15'
   pages:
   - url: https://www.town.tokushima-mugi.lg.jp/doc/2024112500010/
     kind: listing_index
@@ -419,7 +419,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.minami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.minami.lg.jp/
-    checked_on: '2026-11-14'
+    checked_on: '2026-11-15'
   pages:
   - url: https://www.town.minami.lg.jp/docs/6523620.html
     kind: listing_index
@@ -440,21 +440,15 @@ sources:
     slug: '363880'
     bank_url: https://www.town.kaiyo.lg.jp/docs/2016040400050/
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 徳島県海陽町
   operator_evidence:
     quote: 公式ドメイン www.town.kaiyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kaiyo.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-15'
   pages:
   - url: https://www.town.kaiyo.lg.jp/docs/2016040400050/
     kind: listing_index
-  - url: https://www.town.kaiyo.lg.jp/docs/2025051600021/
-    kind: subsidy
-  - url: https://www.town.kaiyo.lg.jp/docs/2024052300015/
-    kind: subsidy
-  - url: https://www.town.kaiyo.lg.jp/docs/2026033000013/
-    kind: subsidy
   allow_hosts:
   - www.town.kaiyo.lg.jp
   max_pages: 30

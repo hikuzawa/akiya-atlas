@@ -229,7 +229,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yame.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.yame.fukuoka.jp/
-    checked_on: '2026-10-15'
+    checked_on: '2026-11-15'
   pages:
   - url: https://www.city.yame.fukuoka.jp/kurashi/10755.html
     kind: listing_index
@@ -237,10 +237,9 @@ sources:
     - pattern: https?://www\.city\.yame\.fukuoka\.jp/kurashi/10755\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
       kind: listing_index
       max_links: 20
-  - url: https://www.city.yame.fukuoka.jp/kurashi/7/1457320367638.html
-    kind: subsidy
-  - url: https://www.city.yame.fukuoka.jp/soshiki/3/2/3/1/1454652358067.html
-    kind: subsidy
+    - pattern: ^https?://www\.city\.yame\.fukuoka\.jp/miryoku/live/vacant/article/\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.city.yame.fukuoka.jp
   max_pages: 30
@@ -1317,7 +1316,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.oto.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.oto.fukuoka.jp/
-    checked_on: '2026-11-14'
+    checked_on: '2026-11-15'
   pages:
   - url: https://www.town.oto.fukuoka.jp/dynamic/info/pub/default.aspx?c_id=16
     kind: listing_detail
@@ -1364,7 +1363,7 @@ sources:
   operator_evidence:
     quote: 公式サイト（www.town.fukuchi.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.town.fukuchi.lg.jp/
-    checked_on: '2026-11-14'
+    checked_on: '2026-11-15'
   pages:
   - url: http://fukuchi-life.com/
     kind: listing_index

@@ -743,12 +743,12 @@ sources:
     slug: '282294'
     bank_url: https://www.city.tatsuno.lg.jp/iju/akiya-bank/1410.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 兵庫県たつの市
   operator_evidence:
     quote: 公式ドメイン www.city.tatsuno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tatsuno.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-15'
   pages:
   - url: https://www.city.tatsuno.lg.jp/iju/akiya-bank/1410.html
     kind: listing_index
@@ -756,8 +756,6 @@ sources:
     - pattern: https?://www\.city\.tatsuno\.lg\.jp/iju/akiya\-bank/1410\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
       kind: listing_index
       max_links: 20
-  - url: https://www.city.tatsuno.lg.jp/soshiki/1027/gyomu/akiyataisaku/1/1550.html
-    kind: subsidy
   allow_hosts:
   - www.city.tatsuno.lg.jp
   max_pages: 30
@@ -930,7 +928,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kamikawa.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kamikawa.hyogo.jp/
-    checked_on: '2026-11-14'
+    checked_on: '2026-11-15'
   pages:
   - url: https://www.town.kamikawa.hyogo.jp/0000000317.html
     kind: listing_index

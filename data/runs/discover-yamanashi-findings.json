@@ -184,7 +184,6 @@
     },
     {
       "alternatives": [
-        "https://www.city.minami-alps.yamanashi.jp/docs/22458.html",
         "https://www.city.minami-alps.yamanashi.jp/docs/22462.html"
       ],
       "bank_status": "available",
@@ -192,12 +191,14 @@
       "code": "192082",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "detail_pattern": "^https?://www\\.city\\.minami\\-alps\\.yamanashi\\.jp/iju/akiyabank/\\d+\\.html$",
-      "evidence_checked_on": "2026-11-14",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "山梨県市町村リンクページに掲載された公式サイト（www.city.minami-alps.yamanashi.jp）",
       "evidence_url": "https://www.pref.yamanashi.jp/link/link_city.html",
       "external_links": [],
-      "extract_gap": false,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 40）。抽出側の課題として保留",
+      "held_since": "2026-11-15",
       "listing_rows": 40,
       "listing_score": 1.0,
       "name": "南アルプス市",
@@ -311,7 +312,7 @@
       "confidence": 0.9324999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-14",
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "公式ドメイン www.city.uenohara.yamanashi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.uenohara.yamanashi.jp/",
       "external_links": [],
@@ -449,14 +450,19 @@
         "https://www.town.minobu.lg.jp/akiya/",
         "https://www.town.minobu.lg.jp/akiya/ijyu/10838.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.minobu.lg.jp/akiya/ijyu/10369.html",
       "code": "193658",
       "confidence": 0.9045,
       "cross_linked": false,
+      "detail_pattern": null,
       "evidence_checked_on": "2026-09-11",
       "evidence_quote": "公式ドメイン www.town.minobu.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.minobu.lg.jp/",
       "external_links": [],
+      "extract_gap": true,
+      "held_reason": "本文を取り出せないページ（物件行 3）。抽出側の問題として保留",
+      "held_since": "2026-11-15",
       "listing_rows": 3,
       "listing_score": 0.37,
       "name": "身延町",
@@ -469,7 +475,8 @@
       "prefecture": "山梨県",
       "prefecture_slug": "yamanashi",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],
@@ -545,14 +552,19 @@
     },
     {
       "alternatives": [],
+      "bank_status": "available",
       "bank_url": "http://www.vill.doshi.lg.jp/burner/log.php?id=27&url=http%3A%2F%2Fwww.vill.doshi.lg.jp%2Fakiyabank%2F",
       "code": "194221",
       "confidence": 0.8905,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "山梨県市町村リンクページに掲載された公式サイト（www.vill.doshi.lg.jp）",
       "evidence_url": "https://www.pref.yamanashi.jp/link/link_city.html",
       "external_links": [],
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 14）。抽出側の課題として保留",
+      "held_since": "2026-11-15",
       "listing_rows": 14,
       "listing_score": 1.0,
       "name": "道志村",
@@ -565,7 +577,8 @@
       "prefecture": "山梨県",
       "prefecture_slug": "yamanashi",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [

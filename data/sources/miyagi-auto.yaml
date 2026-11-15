@@ -230,7 +230,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tome.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.tome.miyagi.jp/
-    checked_on: '2026-11-14'
+    checked_on: '2026-11-15'
   pages:
   - url: https://www.city.tome.miyagi.jp/jyutakutoshi/shisejoho/ijuteju/bank/akiyabank/index.html
     kind: listing_index
@@ -393,7 +393,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン town.shichikashuku.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://town.shichikashuku.miyagi.jp/
-    checked_on: '2026-11-14'
+    checked_on: '2026-11-15'
   pages:
   - url: https://town.shichikashuku.miyagi.jp/its/news.cgi?act=house
     kind: listing_index
@@ -859,31 +859,22 @@ sources:
   operator: 女川町
   operator_kind: municipality
   official_url: https://www.town.onagawa.miyagi.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: 045811
     name: 女川町
     prefecture: 宮城県
     prefecture_slug: miyagi
     slug: 045811
-    bank_url: https://www.town.onagawa.miyagi.jp/onagawa_akiya.html
-    bank_status: available
+    bank_url: https://www.town.onagawa.miyagi.jp/
+    bank_status: none
     extract_pending: false
     map_query: 宮城県女川町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.onagawa.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.onagawa.miyagi.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.town.onagawa.miyagi.jp/onagawa_akiya.html
-    kind: listing_index
-  - url: https://www.town.onagawa.miyagi.jp/05_03_08.html
-    kind: subsidy
-  - url: https://www.town.onagawa.miyagi.jp/11_32.html
-    kind: subsidy
-  allow_hosts:
-  - www.town.onagawa.miyagi.jp
-  max_pages: 30
+    checked_on: '2026-11-15'
 - id: miyagi-046060
   name: 南三陸町空き家バンク
   operator: 南三陸町

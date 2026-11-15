@@ -437,14 +437,16 @@
       ]
     },
     {
-      "alternatives": [],
+      "alternatives": [
+        "https://www.town.mashiko.lg.jp/page/page001726.html"
+      ],
       "bank_status": "available",
       "bank_url": "https://www.town.mashiko.lg.jp/mashikonokurashi/akiya.php",
       "code": "093424",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-14",
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "公式ドメイン www.town.mashiko.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.mashiko.lg.jp/",
       "external_links": [],
@@ -569,20 +571,24 @@
     },
     {
       "alternatives": [
-        "https://www.town.mibu.tochigi.jp/docs/2026071700012/",
+        "https://www.town.mibu.tochigi.jp/docs/2018030800048/",
+        "https://www.town.mibu.tochigi.jp/docs/2026091400022/",
         "https://www.town.mibu.tochigi.jp/docs/2023032000013/",
         "https://www.town.mibu.tochigi.jp/docs/2026062400013/"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.mibu.tochigi.jp/docs/2020052100013/",
       "code": "093611",
-      "confidence": 0.8484999999999999,
+      "confidence": 0.8694999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": "^https?://www\\.town\\.mibu\\.tochigi\\.jp/docs/\\d+/$",
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "公式ドメイン www.town.mibu.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.mibu.tochigi.jp/",
       "external_links": [],
-      "listing_rows": 8,
-      "listing_score": 0.98,
+      "extract_gap": false,
+      "listing_rows": 11,
+      "listing_score": 1.0,
       "name": "壬生町",
       "name_kana": "ﾐﾌﾞﾏﾁ",
       "official_url": "www.town.mibu.tochigi.jp",
@@ -594,10 +600,7 @@
       "prefecture_slug": "tochigi",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.mibu.tochigi.jp/docs/2023032000013/",
-        "https://www.town.mibu.tochigi.jp/docs/2026062400013/"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -646,7 +649,7 @@
       "confidence": 0.8345,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-14",
+      "evidence_checked_on": "2026-11-15",
       "evidence_quote": "公式ドメイン www.town.shioya.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.shioya.tochigi.jp/",
       "external_links": [],
