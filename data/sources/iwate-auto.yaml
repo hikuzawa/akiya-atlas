@@ -269,88 +269,22 @@ sources:
   operator: 八幡平市
   operator_kind: municipality
   official_url: https://www.city.hachimantai.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '032140'
     name: 八幡平市
     prefecture: 岩手県
     prefecture_slug: iwate
     slug: '032140'
-    bank_url: https://www.city.hachimantai.lg.jp/site/ijyu-4/1816.html
-    bank_status: available
+    bank_url: https://www.city.hachimantai.lg.jp/
+    bank_status: none
     extract_pending: false
     map_query: 岩手県八幡平市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.hachimantai.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hachimantai.lg.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.city.hachimantai.lg.jp/site/ijyu-4/1816.html
-    kind: listing_index
-  - url: https://www.city.hachimantai.lg.jp/soshiki/machi/11371.html
-    kind: subsidy
-  - url: https://www.city.hachimantai.lg.jp/site/ijyu-4/list39-847.html
-    kind: subsidy
-  - url: https://www.city.hachimantai.lg.jp/soshiki/kensetsuka/11079.html
-    kind: subsidy
-  - url: https://www.city.hachimantai.lg.jp/soshiki/kensetsuka/1967.html
-    kind: subsidy
-  allow_hosts:
-  - www.city.hachimantai.lg.jp
-  max_pages: 30
-  external_links:
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47360
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46964
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-44113
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-44104
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-41203
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-39378
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47201
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-25988
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46985
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-43870
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-41118
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-33236
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-39380
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-33238
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-25610
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-45930
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46884
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-39382
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-39381
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-45921
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-33228
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-48095
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-25588
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E4%BA%8B%E6%A5%AD%E7%94%A8%28%E5%BB%BA%E7%89%A9%E5%85%A8%E9%83%A8%29-46247
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-44114
-  - label: 物件詳細ページはこちら
-    url: https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-39383
+    checked_on: '2026-11-16'
 - id: iwate-032158
   name: 奥州市空き家バンク
   operator: 奥州市
@@ -442,7 +376,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shizukuishi.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.shizukuishi.iwate.jp/
-    checked_on: '2026-11-15'
+    checked_on: '2026-11-16'
   pages:
   - url: https://www.town.shizukuishi.iwate.jp/docs/2014121000281/
     kind: listing_index
@@ -790,7 +724,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.karumai.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.karumai.iwate.jp/
-    checked_on: '2026-11-15'
+    checked_on: '2026-11-16'
   pages:
   - url: https://www.town.karumai.iwate.jp/article/kurashitetsuduki/living/jyutaku/entry-basename.html
     kind: listing_index

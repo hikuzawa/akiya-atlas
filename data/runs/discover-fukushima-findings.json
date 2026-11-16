@@ -249,7 +249,7 @@
       "confidence": 0.8414999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-15",
+      "evidence_checked_on": "2026-11-16",
       "evidence_quote": "公式ドメイン www.city.nihonmatsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.nihonmatsu.lg.jp/",
       "external_links": [
@@ -315,12 +315,14 @@
       "code": "072125",
       "confidence": 0.9185,
       "cross_linked": true,
-      "detail_pattern": "^https?://www\\.minamisoma\\-akiya\\.org/properties/\\d+/$",
-      "evidence_checked_on": "2026-11-15",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-16",
       "evidence_quote": "公式サイト（www.city.minamisoma.lg.jp）から空き家バンクとして案内されているリンク",
       "evidence_url": "https://www.city.minamisoma.lg.jp/",
       "external_links": [],
-      "extract_gap": false,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 18）。抽出側の課題として保留",
+      "held_since": "2026-11-16",
       "listing_rows": 18,
       "listing_score": 1.0,
       "name": "南相馬市",
@@ -464,7 +466,7 @@
       "confidence": 0.9324999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-15",
+      "evidence_checked_on": "2026-11-16",
       "evidence_quote": "公式ドメイン www.town.kawamata.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.kawamata.lg.jp/",
       "external_links": [],
@@ -635,7 +637,7 @@
       "confidence": 0.9324999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-15",
+      "evidence_checked_on": "2026-11-16",
       "evidence_quote": "公式ドメイン www.town.tadami.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.tadami.lg.jp/",
       "external_links": [
@@ -895,12 +897,14 @@
       "code": "073687",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "detail_pattern": "^https?://www\\.town\\.minamiaizu\\.lg\\.jp/cgi\\-bin/recruit\\.php/\\d+/detail/\\d+$",
-      "evidence_checked_on": "2026-11-15",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-16",
       "evidence_quote": "公式ドメイン www.town.minamiaizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.minamiaizu.lg.jp/",
       "external_links": [],
-      "extract_gap": false,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 91）。抽出側の課題として保留",
+      "held_since": "2026-11-16",
       "listing_rows": 91,
       "listing_score": 1.0,
       "name": "南会津町",
@@ -1030,8 +1034,8 @@
       "code": "074217",
       "confidence": 0.8065,
       "cross_linked": false,
-      "detail_pattern": "^https?://www\\.town\\.aizubange\\.fukushima\\.jp/site/akiya\\-bank/list\\d+\\-\\d+\\.html$",
-      "evidence_checked_on": "2026-11-15",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-16",
       "evidence_quote": "公式ドメイン www.town.aizubange.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.aizubange.fukushima.jp/",
       "external_links": [
@@ -1044,7 +1048,9 @@
           "url": "https://www.homes.co.jp/akiyabank/fukushima/kawanuma_aizubange/"
         }
       ],
-      "extract_gap": false,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 2）。抽出側の課題として保留",
+      "held_since": "2026-11-16",
       "listing_rows": 2,
       "listing_score": 0.36,
       "name": "会津坂下町",
@@ -1186,23 +1192,28 @@
         "https://www.town.kaneyama.fukushima.jp/site/akiyajyoho/akiya-3.html",
         "https://www.town.kaneyama.fukushima.jp/site/akiyajyoho/izyuu.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.kaneyama.fukushima.jp/site/akiyajyoho/akiya-2.html",
       "code": "074454",
       "confidence": 0.8624999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-10-31",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-16",
       "evidence_quote": "公式ドメイン www.town.kaneyama.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.kaneyama.fukushima.jp/",
       "external_links": [
         {
-          "label": "homes.co.jp",
+          "label": "LIFFUL空き家バンク",
           "url": "https://www.homes.co.jp/akiyabank/"
         },
         {
-          "label": "akiya-athome.jp",
+          "label": "全国版空き家・空き地バンク",
           "url": "https://www.akiya-athome.jp/"
         }
       ],
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 10）。抽出側の課題として保留",
+      "held_since": "2026-11-16",
       "listing_rows": 10,
       "listing_score": 1.0,
       "name": "金山町",
@@ -1216,10 +1227,7 @@
       "prefecture_slug": "fukushima",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.kaneyama.fukushima.jp/site/akiyajyoho/izyuu.html",
-        "https://www.town.kaneyama.fukushima.jp/soshiki/33/taisinsindan.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [],
@@ -1415,19 +1423,24 @@
     {
       "alternatives": [
         "https://www.town.yamatsuri.fukushima.jp/page/page000627.html",
-        "https://www.town.yamatsuri.fukushima.jp/page/page000953.html",
-        "https://www.town.yamatsuri.fukushima.jp/page/page001135.html"
+        "https://www.town.yamatsuri.fukushima.jp/page/page001135.html",
+        "https://www.town.yamatsuri.fukushima.jp/page/page000953.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.town.yamatsuri.fukushima.jp/page/page000628.html",
       "code": "074829",
-      "confidence": 0.8274999999999999,
+      "confidence": 0.8345,
       "cross_linked": false,
-      "evidence_checked_on": "2026-10-31",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-16",
       "evidence_quote": "公式ドメイン www.town.yamatsuri.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.yamatsuri.fukushima.jp/",
       "external_links": [],
-      "listing_rows": 5,
-      "listing_score": 0.55,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 6）。抽出側の課題として保留",
+      "held_since": "2026-11-16",
+      "listing_rows": 6,
+      "listing_score": 0.66,
       "name": "矢祭町",
       "name_kana": "ﾔﾏﾂﾘﾏﾁ",
       "official_url": "www.town.yamatsuri.fukushima.jp",
@@ -1439,12 +1452,7 @@
       "prefecture_slug": "fukushima",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.yamatsuri.fukushima.jp/page/page001135.html",
-        "https://www.town.yamatsuri.fukushima.jp/page/page000953.html",
-        "https://www.town.yamatsuri.fukushima.jp/page/page000613.html",
-        "https://www.town.yamatsuri.fukushima.jp/page/page000612.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -1538,36 +1546,32 @@
       ]
     },
     {
-      "alternatives": [
-        "https://www.vill.tamakawa.fukushima.jp/akiya/"
-      ],
-      "bank_url": "https://www.vill.tamakawa.fukushima.jp/akiya/vacant-house-bank/",
+      "alternatives": [],
+      "bank_status": "none",
+      "bank_url": "https://www.vill.tamakawa.fukushima.jp/",
       "code": "075027",
-      "confidence": 0.9324999999999999,
+      "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-10-31",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-16",
       "evidence_quote": "公式ドメイン www.vill.tamakawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.vill.tamakawa.fukushima.jp/",
       "external_links": [],
-      "listing_rows": 32,
-      "listing_score": 1.0,
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "玉川村",
       "name_kana": "ﾀﾏｶﾜﾑﾗ",
       "official_url": "www.vill.tamakawa.fukushima.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "福島県",
       "prefecture_slug": "fukushima",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.vill.tamakawa.fukushima.jp/guide/plan/001638.html",
-        "https://www.vill.tamakawa.fukushima.jp/guide/plan/000070.html",
-        "https://www.vill.tamakawa.fukushima.jp/guide/project/002274.html",
-        "https://www.vill.tamakawa.fukushima.jp/guide/region/003850.html"
-      ]
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [

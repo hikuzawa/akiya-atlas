@@ -743,7 +743,7 @@
       "confidence": 0.8345,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-15",
+      "evidence_checked_on": "2026-11-16",
       "evidence_quote": "公式ドメイン www.town.shichinohe.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.shichinohe.lg.jp/",
       "external_links": [
@@ -1095,32 +1095,31 @@
     },
     {
       "alternatives": [],
-      "bank_url": "https://www.town.aomori-nanbu.lg.jp/site/nanbugurashi/10472.html",
+      "bank_status": "none",
+      "bank_url": "https://www.town.aomori-nanbu.lg.jp/",
       "code": "024457",
-      "confidence": 0.8065,
+      "confidence": 0.6,
       "cross_linked": false,
-      "detail_pattern": "^https?://www\\.town\\.aomori\\-nanbu\\.lg\\.jp/page/\\d+\\.html$",
-      "evidence_checked_on": "2026-10-10",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-16",
       "evidence_quote": "青森県 市町村ホームページに掲載された公式サイト（www.town.aomori-nanbu.lg.jp）",
       "evidence_url": "https://www.pref.aomori.lg.jp/soshiki/zaimu/shichoson/shichoson.html",
       "external_links": [],
       "extract_gap": false,
-      "listing_rows": 2,
-      "listing_score": 0.18,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "南部町",
       "name_kana": "ﾅﾝﾌﾞﾁｮｳ",
       "official_url": "www.town.aomori-nanbu.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "青森県",
       "prefecture_slug": "aomori",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.town.aomori-nanbu.lg.jp/page/1742.html"
-      ]
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [

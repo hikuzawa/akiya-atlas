@@ -365,21 +365,15 @@ sources:
     slug: '332160'
     bank_url: https://www.city.asakuchi.lg.jp/page/13085.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 岡山県浅口市
   operator_evidence:
     quote: 公式ドメイン www.city.asakuchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.asakuchi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-16'
   pages:
   - url: https://www.city.asakuchi.lg.jp/page/13085.html
     kind: listing_index
-  - url: https://www.city.asakuchi.lg.jp/page/1035.html
-    kind: subsidy
-  - url: https://www.city.asakuchi.lg.jp/page/19896.html
-    kind: subsidy
-  - url: https://www.city.asakuchi.lg.jp/page/1034.html
-    kind: subsidy
   allow_hosts:
   - www.city.asakuchi.lg.jp
   max_pages: 30

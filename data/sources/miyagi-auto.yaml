@@ -230,7 +230,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tome.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.tome.miyagi.jp/
-    checked_on: '2026-11-15'
+    checked_on: '2026-11-16'
   pages:
   - url: https://www.city.tome.miyagi.jp/jyutakutoshi/shisejoho/ijuteju/bank/akiyabank/index.html
     kind: listing_index
@@ -393,7 +393,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン town.shichikashuku.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://town.shichikashuku.miyagi.jp/
-    checked_on: '2026-11-15'
+    checked_on: '2026-11-16'
   pages:
   - url: https://town.shichikashuku.miyagi.jp/its/news.cgi?act=house
     kind: listing_index
@@ -806,33 +806,22 @@ sources:
   operator: 涌谷町
   operator_kind: municipality
   official_url: https://www.town.wakuya.miyagi.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '045012'
     name: 涌谷町
     prefecture: 宮城県
     prefecture_slug: miyagi
     slug: '045012'
-    bank_url: https://www.town.wakuya.miyagi.jp/kurashi/sekatsu/akiya/akiyabank.html
-    bank_status: available
+    bank_url: https://www.town.wakuya.miyagi.jp/
+    bank_status: none
     extract_pending: false
     map_query: 宮城県涌谷町
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
-    quote: 公式ドメイン www.town.wakuya.miyagi.jp（city/town/vill の地理型ドメイン、自治体に限定）
-    url: https://www.town.wakuya.miyagi.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://www.town.wakuya.miyagi.jp/kurashi/sekatsu/akiya/akiyabank.html
-    kind: listing_index
-  - url: https://www.town.wakuya.miyagi.jp/kurashi/sekatsu/sumai/taishin.html
-    kind: subsidy
-  - url: https://www.town.wakuya.miyagi.jp/kurashi/sekatsu/sumai/hatsuden.html
-    kind: subsidy
-  - url: https://www.town.wakuya.miyagi.jp/kurashi/sekatsu/kaisyuu.html
-    kind: subsidy
-  allow_hosts:
-  - www.town.wakuya.miyagi.jp
-  max_pages: 30
+    quote: '宮城県 県内市町村リンク集に掲載された公式サイト（www.town.wakuya.miyagi.jp）。サイトを取得できなかったためリンクのみ（robots.txt 502: 今回は巡回しない）'
+    url: https://www.pref.miyagi.jp/soshiki/kohou/link01.html
+    checked_on: '2026-11-16'
 - id: miyagi-045055
   name: 美里町空き家バンク
   operator: 美里町

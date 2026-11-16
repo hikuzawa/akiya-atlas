@@ -139,7 +139,7 @@ sources:
   operator_evidence:
     quote: 鹿児島県 県内市町村に掲載された公式サイト（www.city.kagoshima-izumi.lg.jp）
     url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
-    checked_on: '2026-11-15'
+    checked_on: '2026-11-16'
   pages:
   - url: https://www.city.kagoshima-izumi.lg.jp/page/page_00815.html
     kind: listing_index
@@ -336,50 +336,46 @@ sources:
     slug: '462195'
     bank_url: https://www.city.ichikikushikino.lg.jp/seisaku1/akiyabank/akiya-bukkenn.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 鹿児島県いちき串木野市
   operator_evidence:
     quote: 公式ドメイン www.city.ichikikushikino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.ichikikushikino.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-16'
   pages:
   - url: https://www.city.ichikikushikino.lg.jp/seisaku1/akiyabank/akiya-bukkenn.html
     kind: listing_index
-  - url: http://www.city.ichikikushikino.lg.jp/kankyo1/kurashi/seikatsu/hojo/kojihojokin.html
-    kind: subsidy
-  - url: http://www.city.ichikikushikino.lg.jp/tokei3/kurashi/machizukuri/jutaku.html
-    kind: subsidy
   allow_hosts:
   - www.city.ichikikushikino.lg.jp
   max_pages: 30
   external_links:
-  - label: akiya-athome.jp
+  - label: 空き家物件No.129
+    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/rent/8436
+  - label: 空き家物件No.142
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/31713
-  - label: akiya-athome.jp
+  - label: 空き家物件No.141
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/33865
-  - label: akiya-athome.jp
+  - label: 空き家物件No.139
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/48936
-  - label: akiya-athome.jp
+  - label: 空き家物件No.137
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/33249
-  - label: akiya-athome.jp
+  - label: 空き家物件No.136
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/48933
-  - label: akiya-athome.jp
+  - label: 空き家物件No.135
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/48584
-  - label: akiya-athome.jp
+  - label: 空き家物件No.134
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/47490
-  - label: akiya-athome.jp
-    url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/47489
-  - label: akiya-athome.jp
+  - label: 空き家物件No.131
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/47485
-  - label: akiya-athome.jp
+  - label: 空き家物件No.130
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/47190
-  - label: akiya-athome.jp
+  - label: 空き家物件No.127
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/46264
-  - label: akiya-athome.jp
+  - label: 空き家物件No.126
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/46260
   - label: 空き家物件(No.123)(外部サイトへリンク)
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/44801
-  - label: akiya-athome.jp
+  - label: 空き家物件No.122
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/43840
   - label: 空き家物件(No.118)(外部サイトへリンク)
     url: http://ichikikushikino-c46219.akiya-athome.jp/bukken/detail/buy/42485
@@ -637,7 +633,7 @@ sources:
   operator_evidence:
     quote: 鹿児島県 県内市町村に掲載された公式サイト（www.satsuma-net.jp）
     url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
-    checked_on: '2026-11-15'
+    checked_on: '2026-11-16'
   pages:
   - url: https://www.satsuma-net.jp/teiju/akiya/1/5623.html
     kind: listing_index
@@ -695,19 +691,15 @@ sources:
     slug: '464520'
     bank_url: https://www.town.yusui.kagoshima.jp/soshiki/34/787.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 鹿児島県湧水町
   operator_evidence:
     quote: 公式ドメイン www.town.yusui.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yusui.kagoshima.jp/
-    checked_on: '2026-11-15'
+    checked_on: '2026-11-16'
   pages:
   - url: https://www.town.yusui.kagoshima.jp/soshiki/34/787.html
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.town\.yusui\.kagoshima\.jp/soshiki/\d+/\d+\.html$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.town.yusui.kagoshima.jp
   max_pages: 30
@@ -725,19 +717,15 @@ sources:
     slug: '464686'
     bank_url: https://www.town.kagoshima-osaki.lg.jp/ke_kikaku/kurashi/ijuteju/sokushin/akiyabank.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 鹿児島県大崎町
   operator_evidence:
     quote: 鹿児島県 県内市町村に掲載された公式サイト（www.town.kagoshima-osaki.lg.jp）
     url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
-    checked_on: '2026-11-15'
+    checked_on: '2026-11-16'
   pages:
   - url: https://www.town.kagoshima-osaki.lg.jp/ke_kikaku/kurashi/ijuteju/sokushin/akiyabank.html
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.town\.kagoshima\-osaki\.lg\.jp/ke_kikaku/kurashi/ijuteju/akiyabank/\d+\.html$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.town.kagoshima-osaki.lg.jp
   max_pages: 30

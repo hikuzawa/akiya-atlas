@@ -302,142 +302,32 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [
-        "https://www.city.hachimantai.lg.jp/life/1/19/92/",
-        "https://www.city.hachimantai.lg.jp/site/ijyu-4/31685.html"
-      ],
-      "bank_url": "https://www.city.hachimantai.lg.jp/site/ijyu-4/1816.html",
+      "alternatives": [],
+      "bank_status": "none",
+      "bank_url": "https://www.city.hachimantai.lg.jp/",
       "code": "032140",
-      "confidence": 0.9324999999999999,
+      "confidence": 0.6,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-16",
       "evidence_quote": "公式ドメイン www.city.hachimantai.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.hachimantai.lg.jp/",
-      "external_links": [
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47360"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46964"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-44113"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-44104"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-41203"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-39378"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-47201"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-25988"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46985"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-43870"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-41118"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-33236"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-39380"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-33238"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-25610"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-45930"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-46884"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-39382"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-39381"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-45921"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-33228"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-48095"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-25588"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E4%BA%8B%E6%A5%AD%E7%94%A8%28%E5%BB%BA%E7%89%A9%E5%85%A8%E9%83%A8%29-46247"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-44114"
-        },
-        {
-          "label": "物件詳細ページはこちら",
-          "url": "https://hachimantai-c03214.akiya-athome.jp/bukken/detail/buy/%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A3%B2%E6%88%B8%E5%BB%BA%E4%BD%8F%E5%AE%85-39383"
-        }
-      ],
-      "listing_rows": 31,
-      "listing_score": 1.0,
+      "external_links": [],
+      "extract_gap": false,
+      "listing_rows": null,
+      "listing_score": null,
       "name": "八幡平市",
       "name_kana": "ﾊﾁﾏﾝﾀｲｼ",
       "official_url": "www.city.hachimantai.lg.jp",
       "operator_kind": "municipality",
-      "page_class": "listing_index",
+      "page_class": null,
       "pagination_pattern": null,
-      "policy": "crawl",
+      "policy": "link_only",
       "prefecture": "岩手県",
       "prefecture_slug": "iwate",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.hachimantai.lg.jp/soshiki/machi/11371.html",
-        "https://www.city.hachimantai.lg.jp/site/ijyu-4/list39-847.html",
-        "https://www.city.hachimantai.lg.jp/soshiki/kensetsuka/11079.html",
-        "https://www.city.hachimantai.lg.jp/soshiki/kensetsuka/1967.html"
-      ]
+      "reason": "物件の一覧ではなかった（0 件・物件番号なし）。公式へのリンクのみ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -524,7 +414,7 @@
       "confidence": 0.8484999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-15",
+      "evidence_checked_on": "2026-11-16",
       "evidence_quote": "公式ドメイン www.town.shizukuishi.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.shizukuishi.iwate.jp/",
       "external_links": [
@@ -928,7 +818,7 @@
       "confidence": 0.8345,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-15",
+      "evidence_checked_on": "2026-11-16",
       "evidence_quote": "公式ドメイン www.town.karumai.iwate.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.karumai.iwate.jp/",
       "external_links": [],

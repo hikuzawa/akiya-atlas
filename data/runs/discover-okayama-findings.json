@@ -403,20 +403,25 @@
     },
     {
       "alternatives": [
+        "https://www.city.asakuchi.lg.jp/page/21786.html",
         "https://www.city.asakuchi.lg.jp/page/21878.html",
         "https://www.city.asakuchi.lg.jp/page/1035.html",
-        "https://www.city.asakuchi.lg.jp/page/1034.html",
         "https://www.city.asakuchi.lg.jp/page/19896.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.city.asakuchi.lg.jp/page/13085.html",
       "code": "332160",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-16",
       "evidence_quote": "公式ドメイン www.city.asakuchi.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.asakuchi.lg.jp/",
       "external_links": [],
-      "listing_rows": 51,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 54）。抽出側の課題として保留",
+      "held_since": "2026-11-16",
+      "listing_rows": 54,
       "listing_score": 1.0,
       "name": "浅口市",
       "name_kana": "ｱｻｸﾁｼ",
@@ -429,11 +434,7 @@
       "prefecture_slug": "okayama",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.asakuchi.lg.jp/page/1035.html",
-        "https://www.city.asakuchi.lg.jp/page/19896.html",
-        "https://www.city.asakuchi.lg.jp/page/1034.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [

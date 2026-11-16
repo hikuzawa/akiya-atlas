@@ -373,8 +373,8 @@
       "code": "082163",
       "confidence": 0.9324999999999999,
       "cross_linked": true,
-      "detail_pattern": "^https?://ijyuu\\.city\\-kasama\\.jp/house_bank/\\d+\\-openspace/$",
-      "evidence_checked_on": "2026-11-15",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-16",
       "evidence_quote": "公式サイト（www.city.kasama.lg.jp）から空き家バンクとして案内されているリンク",
       "evidence_url": "https://www.city.kasama.lg.jp/",
       "external_links": [
@@ -383,7 +383,9 @@
           "url": "https://www.homes.co.jp/akiyabank/ibaraki/kasama"
         }
       ],
-      "extract_gap": false,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 47）。抽出側の課題として保留",
+      "held_since": "2026-11-16",
       "listing_rows": 47,
       "listing_score": 1.0,
       "name": "笠間市",
@@ -649,16 +651,21 @@
         "https://www.city.naka.lg.jp/kurashi-tetsuduki/sumai/akiya/page010785.html",
         "https://www.city.naka.lg.jp/kurashi-tetsuduki/news/page009912.html"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.city.naka.lg.jp/kurashi-tetsuduki/sumai/akiya/page004131.html",
       "code": "082261",
       "confidence": 0.8205,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-16",
       "evidence_quote": "公式ドメイン www.city.naka.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.naka.lg.jp/",
       "external_links": [],
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 4）。抽出側の課題として保留",
+      "held_since": "2026-11-16",
       "listing_rows": 4,
-      "listing_score": 0.74,
+      "listing_score": 0.71,
       "name": "那珂市",
       "name_kana": "ﾅｶｼ",
       "official_url": "www.city.naka.lg.jp",
@@ -670,10 +677,7 @@
       "prefecture_slug": "ibaraki",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.naka.lg.jp/kurashi-tetsuduki/sumai/akiya/page004354.html",
-        "https://www.city.naka.lg.jp/kurashi-tetsuduki/douro/tatemono/page007566.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -811,7 +815,7 @@
       "confidence": 0.9324999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-15",
+      "evidence_checked_on": "2026-11-16",
       "evidence_quote": "公式ドメイン www.city.sakuragawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.sakuragawa.lg.jp/",
       "external_links": [],
@@ -1199,7 +1203,7 @@
       "confidence": 0.8624999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-15",
+      "evidence_checked_on": "2026-11-16",
       "evidence_quote": "公式ドメイン www.town.ami.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.town.ami.lg.jp/",
       "external_links": [],

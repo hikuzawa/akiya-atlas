@@ -1,0 +1,30 @@
+{
+  "ci": true,
+  "command": "crawl",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-11-16T00:38:51Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "キャッシュが巡回状態より古く、条件を付けずに取り直した: https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/954.html, https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/955.html, https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/957.html, https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/958.html, https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/963.html, https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/967.html, https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/2537.html, https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/2682.html, https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/2963.html, https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/3068.html ほか 98 件"
+  ],
+  "service": "akiya-atlas",
+  "stages": {
+    "crawl": {
+      "changed": 108,
+      "errors": 0,
+      "fetched": 116,
+      "not_modified": 0,
+      "requests": 124,
+      "stale_cache": 108,
+      "unchanged": 8,
+      "workers": 8
+    }
+  },
+  "started_at": "2026-11-16T00:37:02Z"
+}

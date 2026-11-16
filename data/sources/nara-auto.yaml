@@ -713,34 +713,27 @@ sources:
   operator: 大淀町
   operator_kind: municipality
   official_url: https://www.town.oyodo.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '294420'
     name: 大淀町
     prefecture: 奈良県
     prefecture_slug: nara
     slug: '294420'
-    bank_url: https://akiyaconcierge.com/area/ooyodo/
-    bank_status: available
+    bank_url: https://www.town.oyodo.lg.jp/0000000968.html
+    bank_status: info
     extract_pending: false
     map_query: 奈良県大淀町
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式サイト（www.town.oyodo.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.town.oyodo.lg.jp/
-    checked_on: '2026-11-15'
-  pages:
-  - url: https://akiyaconcierge.com/area/ooyodo/
-    kind: listing_index
-    follow:
-    - pattern: https?://akiyaconcierge\.com/area/ooyodo/page/\d+/?$
-      kind: listing_index
-      max_links: 20
-    - pattern: ^https?://akiyaconcierge\.com/bank/\d+/$
-      kind: listing_detail
-      max_links: 60
-  allow_hosts:
-  - akiyaconcierge.com
-  max_pages: 30
+    checked_on: '2026-11-16'
+  external_links:
+  - label: アットホーム (別ウインドウで開く)
+    url: https://oyodo-t29442.akiya-athome.jp/
+  - label: ライフルホームズ (別ウインドウで開く)
+    url: https://www.homes.co.jp/akiyabank/nara/yoshino_oyodo/
 - id: nara-294438
   name: 下市町空き家バンク
   operator: 下市町

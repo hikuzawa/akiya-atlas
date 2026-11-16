@@ -223,7 +223,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nihonmatsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nihonmatsu.lg.jp/
-    checked_on: '2026-11-15'
+    checked_on: '2026-11-16'
   pages:
   - url: https://www.city.nihonmatsu.lg.jp/ijyu_teijyu/kurasu/page000100.html
     kind: listing_index
@@ -277,19 +277,15 @@ sources:
     slug: '072125'
     bank_url: https://www.minamisoma-akiya.org/
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 福島県南相馬市
   operator_evidence:
     quote: 公式サイト（www.city.minamisoma.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.minamisoma.lg.jp/
-    checked_on: '2026-11-15'
+    checked_on: '2026-11-16'
   pages:
   - url: https://www.minamisoma-akiya.org/
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.minamisoma\-akiya\.org/properties/\d+/$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.minamisoma-akiya.org
   max_pages: 30
@@ -428,7 +424,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kawamata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kawamata.lg.jp/
-    checked_on: '2026-11-15'
+    checked_on: '2026-11-16'
   pages:
   - url: https://www.town.kawamata.lg.jp/site/kurashi-tetsuzuki/akiyatoubanktourokubukken.html
     kind: listing_index
@@ -588,7 +584,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tadami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.tadami.lg.jp/
-    checked_on: '2026-11-15'
+    checked_on: '2026-11-16'
   pages:
   - url: https://www.town.tadami.lg.jp/akiyabank/index.html
     kind: listing_index
@@ -724,19 +720,15 @@ sources:
     slug: 073687
     bank_url: https://www.town.minamiaizu.lg.jp/cgi-bin/recruit.php/1/list
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 福島県南会津町
   operator_evidence:
     quote: 公式ドメイン www.town.minamiaizu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.minamiaizu.lg.jp/
-    checked_on: '2026-11-15'
+    checked_on: '2026-11-16'
   pages:
   - url: https://www.town.minamiaizu.lg.jp/cgi-bin/recruit.php/1/list
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.town\.minamiaizu\.lg\.jp/cgi\-bin/recruit\.php/\d+/detail/\d+$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.town.minamiaizu.lg.jp
   max_pages: 30
@@ -852,19 +844,15 @@ sources:
     slug: '074217'
     bank_url: https://www.town.aizubange.fukushima.jp/site/akiya-bank/
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 福島県会津坂下町
   operator_evidence:
     quote: 公式ドメイン www.town.aizubange.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.aizubange.fukushima.jp/
-    checked_on: '2026-11-15'
+    checked_on: '2026-11-16'
   pages:
   - url: https://www.town.aizubange.fukushima.jp/site/akiya-bank/
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.town\.aizubange\.fukushima\.jp/site/akiya\-bank/list\d+\-\d+\.html$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.town.aizubange.fukushima.jp
   max_pages: 30
@@ -986,26 +974,22 @@ sources:
     slug: '074454'
     bank_url: https://www.town.kaneyama.fukushima.jp/site/akiyajyoho/akiya-2.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 福島県金山町
   operator_evidence:
     quote: 公式ドメイン www.town.kaneyama.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kaneyama.fukushima.jp/
-    checked_on: '2026-10-31'
+    checked_on: '2026-11-16'
   pages:
   - url: https://www.town.kaneyama.fukushima.jp/site/akiyajyoho/akiya-2.html
     kind: listing_index
-  - url: https://www.town.kaneyama.fukushima.jp/site/akiyajyoho/izyuu.html
-    kind: subsidy
-  - url: https://www.town.kaneyama.fukushima.jp/soshiki/33/taisinsindan.html
-    kind: subsidy
   allow_hosts:
   - www.town.kaneyama.fukushima.jp
   max_pages: 30
   external_links:
-  - label: homes.co.jp
+  - label: LIFFUL空き家バンク
     url: https://www.homes.co.jp/akiyabank/
-  - label: akiya-athome.jp
+  - label: 全国版空き家・空き地バンク
     url: https://www.akiya-athome.jp/
 - id: fukushima-074462
   name: 昭和村空き家バンク
@@ -1185,23 +1169,15 @@ sources:
     slug: 074829
     bank_url: https://www.town.yamatsuri.fukushima.jp/page/page000628.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 福島県矢祭町
   operator_evidence:
     quote: 公式ドメイン www.town.yamatsuri.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yamatsuri.fukushima.jp/
-    checked_on: '2026-10-31'
+    checked_on: '2026-11-16'
   pages:
   - url: https://www.town.yamatsuri.fukushima.jp/page/page000628.html
     kind: listing_index
-  - url: https://www.town.yamatsuri.fukushima.jp/page/page001135.html
-    kind: subsidy
-  - url: https://www.town.yamatsuri.fukushima.jp/page/page000953.html
-    kind: subsidy
-  - url: https://www.town.yamatsuri.fukushima.jp/page/page000613.html
-    kind: subsidy
-  - url: https://www.town.yamatsuri.fukushima.jp/page/page000612.html
-    kind: subsidy
   allow_hosts:
   - www.town.yamatsuri.fukushima.jp
   max_pages: 30
@@ -1290,35 +1266,22 @@ sources:
   operator: 玉川村
   operator_kind: municipality
   official_url: https://www.vill.tamakawa.fukushima.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '075027'
     name: 玉川村
     prefecture: 福島県
     prefecture_slug: fukushima
     slug: '075027'
-    bank_url: https://www.vill.tamakawa.fukushima.jp/akiya/vacant-house-bank/
-    bank_status: available
+    bank_url: https://www.vill.tamakawa.fukushima.jp/
+    bank_status: none
     extract_pending: false
     map_query: 福島県玉川村
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.vill.tamakawa.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.tamakawa.fukushima.jp/
-    checked_on: '2026-10-31'
-  pages:
-  - url: https://www.vill.tamakawa.fukushima.jp/akiya/vacant-house-bank/
-    kind: listing_index
-  - url: https://www.vill.tamakawa.fukushima.jp/guide/plan/001638.html
-    kind: subsidy
-  - url: https://www.vill.tamakawa.fukushima.jp/guide/plan/000070.html
-    kind: subsidy
-  - url: https://www.vill.tamakawa.fukushima.jp/guide/project/002274.html
-    kind: subsidy
-  - url: https://www.vill.tamakawa.fukushima.jp/guide/region/003850.html
-    kind: subsidy
-  allow_hosts:
-  - www.vill.tamakawa.fukushima.jp
-  max_pages: 30
+    checked_on: '2026-11-16'
 - id: fukushima-075035
   name: 平田村空き家バンク
   operator: 平田村
