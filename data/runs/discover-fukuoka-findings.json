@@ -240,14 +240,12 @@
       "code": "402109",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
-      "detail_pattern": null,
-      "evidence_checked_on": "2026-11-16",
+      "detail_pattern": "^https?://www\\.city\\.yame\\.fukuoka\\.jp/miryoku/live/vacant/article/\\d+\\.html$",
+      "evidence_checked_on": "2026-11-17",
       "evidence_quote": "公式ドメイン www.city.yame.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.yame.fukuoka.jp/",
       "external_links": [],
-      "extract_gap": true,
-      "held_reason": "一覧に見えるのに 0 件（物件行 49）。抽出側の課題として保留",
-      "held_since": "2026-11-16",
+      "extract_gap": false,
       "listing_rows": 49,
       "listing_score": 1.0,
       "name": "八女市",
@@ -322,25 +320,30 @@
       "alternatives": [
         "https://www.city.yukuhashi.fukuoka.jp/site/akiya/"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.city.yukuhashi.fukuoka.jp/site/akiya/1411.html",
       "code": "402133",
-      "confidence": 0.8345,
+      "confidence": 0.8624999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-10-15",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-17",
       "evidence_quote": "公式ドメイン www.city.yukuhashi.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.yukuhashi.fukuoka.jp/",
       "external_links": [
         {
-          "label": "homes.co.jp",
+          "label": "LIFULL空き家バンクバナー画像",
           "url": "https://www.homes.co.jp/akiyabank/"
         },
         {
-          "label": "akiya-athome.jp",
+          "label": "at home空き家バンクバナー画像",
           "url": "https://yukuhashi-c40213.akiya-athome.jp/"
         }
       ],
-      "listing_rows": 6,
-      "listing_score": 0.87,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 10）。抽出側の課題として保留",
+      "held_since": "2026-11-17",
+      "listing_rows": 10,
+      "listing_score": 1.0,
       "name": "行橋市",
       "name_kana": "ﾕｸﾊｼｼ",
       "official_url": "www.city.yukuhashi.fukuoka.jp",
@@ -352,12 +355,7 @@
       "prefecture_slug": "fukuoka",
       "proposed_action": "承認",
       "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
-      "subsidy_urls": [
-        "https://www.city.yukuhashi.fukuoka.jp/soshiki/24/20311.html",
-        "https://www.city.yukuhashi.fukuoka.jp/life/1/5/19/",
-        "https://www.city.yukuhashi.fukuoka.jp/soshiki/24/1530.html",
-        "https://www.city.yukuhashi.fukuoka.jp/soshiki/24/1531.html"
-      ]
+      "subsidy_urls": []
     },
     {
       "alternatives": [
@@ -1470,7 +1468,7 @@
       "confidence": 0.7889999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-16",
+      "evidence_checked_on": "2026-11-17",
       "evidence_quote": "公式ドメイン www.town.oto.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.town.oto.fukuoka.jp/",
       "external_links": [],

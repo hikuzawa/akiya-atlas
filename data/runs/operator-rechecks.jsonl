@@ -698,3 +698,23 @@
 {"at": "2026-11-16T09:39:40+09:00", "result": "ok", "key": "hokkaido-014702", "label": "北海道音威子府村"}
 {"at": "2026-11-16T09:39:40+09:00", "result": "ok", "key": "hokkaido-014711", "label": "北海道中川町"}
 {"at": "2026-11-16T09:39:40+09:00", "result": "ok", "key": "hokkaido-014729", "label": "北海道幌加内町"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "skip", "key": "nagano-203076", "label": "長野県北相木村", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "skip", "key": "nagano-204048", "label": "長野県阿南町", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "unreachable", "key": "akita-052132", "label": "秋田県北秋田市", "reason": "公式サイトに通信できない（HTTP 403）"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "skip", "key": "aomori-023621", "label": "青森県大鰐町", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "skip", "key": "aomori-023671", "label": "青森県田舎館村", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "skip", "key": "aomori-024244", "label": "青森県東通村", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "skip", "key": "fukuoka-402044", "label": "福岡県直方市", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "skip", "key": "gifu-214043", "label": "岐阜県池田町", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "ok", "key": "hokkaido-014818", "label": "北海道増毛町"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "ok", "key": "hokkaido-014826", "label": "北海道小平町"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "skip", "key": "hokkaido-014834", "label": "北海道苫前町", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "ok", "key": "hokkaido-014851", "label": "北海道初山別村"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "ok", "key": "hokkaido-014877", "label": "北海道天塩町"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "ok", "key": "hokkaido-015113", "label": "北海道猿払村"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "skip", "key": "hokkaido-015121", "label": "北海道浜頓別町", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "ok", "key": "hokkaido-015130", "label": "北海道中頓別町"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "ok", "key": "hokkaido-015148", "label": "北海道枝幸町"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "ok", "key": "hokkaido-015164", "label": "北海道豊富町"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "ok", "key": "hokkaido-015172", "label": "北海道礼文町"}
+{"at": "2026-11-17T12:37:55+09:00", "result": "skip", "key": "hokkaido-015181", "label": "北海道利尻町", "reason": "robots.txt で公式サイトを取得できない"}

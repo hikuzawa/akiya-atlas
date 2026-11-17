@@ -630,15 +630,19 @@ sources:
     slug: '012262'
     bank_url: https://www.city.sunagawa.hokkaido.jp/seikatsu_kurashi/juutaku/newakiya-akichizyouhou.html
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 北海道砂川市
   operator_evidence:
     quote: 公式ドメイン www.city.sunagawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.sunagawa.hokkaido.jp/
-    checked_on: '2026-11-16'
+    checked_on: '2026-11-17'
   pages:
   - url: https://www.city.sunagawa.hokkaido.jp/seikatsu_kurashi/juutaku/newakiya-akichizyouhou.html
     kind: listing_index
+    follow:
+    - pattern: ^https?://www\.city\.sunagawa\.hokkaido\.jp/seikatsu_kurashi/juutaku/akiyaR\d+\-\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.city.sunagawa.hokkaido.jp
   max_pages: 30
@@ -1656,7 +1660,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.furubira.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.furubira.lg.jp/
-    checked_on: '2026-11-16'
+    checked_on: '2026-11-17'
   pages:
   - url: https://www.town.furubira.lg.jp/life/detail.php?id=330
     kind: listing_index
@@ -2287,7 +2291,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.hokkaido-kamikawa.lg.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-11-16'
+    checked_on: '2026-11-17'
   pages:
   - url: https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/geo5a8000000014g.html
     kind: listing_index
@@ -2634,7 +2638,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.mashike.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.mashike.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-17'
 - id: hokkaido-014826
   name: 小平町空き家バンク
   operator: 小平町
@@ -2655,7 +2659,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.obira.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.obira.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-17'
 - id: hokkaido-014834
   name: 苫前町空き家バンク
   operator: 苫前町
@@ -2727,7 +2731,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.shosanbetsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.shosanbetsu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-17'
   pages:
   - url: https://www.vill.shosanbetsu.lg.jp/sangyobusiness/akiyabank/
     kind: listing_index
@@ -2779,7 +2783,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.teshiotown.hokkaido.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-17'
 - id: hokkaido-015113
   name: 猿払村空き家バンク
   operator: 猿払村
@@ -2800,7 +2804,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.sarufutsu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.sarufutsu.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-17'
   pages:
   - url: https://www.vill.sarufutsu.hokkaido.jp/hotnews/detail/00001360.html
     kind: subsidy
@@ -2854,7 +2858,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.nakatombetsu.hokkaido.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-17'
 - id: hokkaido-015148
   name: 枝幸町空き家バンク
   operator: 枝幸町
@@ -2875,7 +2879,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.esashi.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-17'
   pages:
   - url: https://www.esashi.jp/life/house/support/
     kind: subsidy
@@ -2902,7 +2906,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.toyotomi.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.toyotomi.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-17'
   pages:
   - url: https://www.town.toyotomi.hokkaido.jp/section/chominka/lepd6s0000007ppc.html
     kind: subsidy
@@ -2933,7 +2937,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.rebun.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.rebun.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-17'
   pages:
   - url: https://www.town.rebun.hokkaido.jp/hotnews/detail/00003087.html
     kind: subsidy
@@ -3226,7 +3230,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.saroma.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.saroma.hokkaido.jp/
-    checked_on: '2026-11-16'
+    checked_on: '2026-11-17'
   pages:
   - url: https://www.town.saroma.hokkaido.jp/machi/sumai/akiyabannku.html
     kind: listing_index
@@ -3632,7 +3636,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.niikappu.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-11-16'
+    checked_on: '2026-11-17'
   pages:
   - url: https://www.niikappu.jp/kurashi/sekatsu/sumai/teijyu/sumai/akiya.html
     kind: listing_index

@@ -606,27 +606,35 @@
     {
       "alternatives": [
         "https://www.akiya-athome.jp/",
-        "https://www.homes.co.jp/akiyabank/"
+        "https://www.homes.co.jp/akiyabank/",
+        "https://www.vill.minamiyamashiro.lg.jp/cmsfiles/contents/0000001/1383/2020riyou_nagare.jpg",
+        "https://www.vill.minamiyamashiro.lg.jp/cmsfiles/contents/0000001/1383/2020touroku_nagare.jpg",
+        "https://www.vill.minamiyamashiro.lg.jp/cmsfiles/contents/0000001/1383/shikumi-adviser_illust.jpg"
       ],
+      "bank_status": "available",
       "bank_url": "https://www.vill.minamiyamashiro.lg.jp/0000001383.html",
       "code": "263672",
-      "confidence": 0.8765,
+      "confidence": 0.8484999999999999,
       "cross_linked": false,
-      "evidence_checked_on": "2026-09-11",
+      "detail_pattern": null,
+      "evidence_checked_on": "2026-11-17",
       "evidence_quote": "公式ドメイン www.vill.minamiyamashiro.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.vill.minamiyamashiro.lg.jp/",
       "external_links": [
         {
-          "label": "LIFULL HOME'S　空き家バンク（株式会社LIFULL） （別ウインドウで開く）",
+          "label": "LIFULL HOME'S 空き家バンク(株式会社LIFULL) (別ウインドウで開く)",
           "url": "https://www.homes.co.jp/akiyabank/"
         },
         {
-          "label": "at home　空き家・空き地バンク（アットホーム株式会社） （別ウインドウで開く）",
+          "label": "at home 空き家・空き地バンク(アットホーム株式会社) (別ウインドウで開く)",
           "url": "https://www.akiya-athome.jp/"
         }
       ],
-      "listing_rows": 12,
-      "listing_score": 1.0,
+      "extract_gap": true,
+      "held_reason": "一覧に見えるのに 0 件（物件行 8）。抽出側の課題として保留",
+      "held_since": "2026-11-17",
+      "listing_rows": 8,
+      "listing_score": 0.86,
       "name": "南山城村",
       "name_kana": "ﾐﾅﾐﾔﾏｼﾛﾑﾗ",
       "official_url": "www.vill.minamiyamashiro.lg.jp",
@@ -637,7 +645,8 @@
       "prefecture": "京都府",
       "prefecture_slug": "kyoto",
       "proposed_action": "承認",
-      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ"
+      "reason": "自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ",
+      "subsidy_urls": []
     },
     {
       "alternatives": [],

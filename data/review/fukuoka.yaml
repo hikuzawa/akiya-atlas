@@ -1,6 +1,6 @@
 prefecture: 福岡県
 prefecture_slug: fukuoka
-created_at: '2026-11-15T23:18:17+00:00'
+created_at: '2026-11-17T02:18:27+00:00'
 candidates:
 - key: '401005'
   label: 福岡県 北九州市
@@ -161,7 +161,7 @@ candidates:
   url: https://www.city.yukuhashi.fukuoka.jp/site/akiya/1411.html
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.83
+  confidence: 0.86
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.city.yukuhashi.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
   evidence_url: https://www.city.yukuhashi.fukuoka.jp/

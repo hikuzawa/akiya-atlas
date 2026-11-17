@@ -71,30 +71,22 @@ sources:
   operator: 中津市
   operator_kind: municipality
   official_url: https://www.city-nakatsu.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '442038'
     name: 中津市
     prefecture: 大分県
     prefecture_slug: oita
     slug: '442038'
-    bank_url: https://akiyabank.city-nakatsu.jp/
-    bank_status: available
+    bank_url: https://www.city-nakatsu.jp/
+    bank_status: none
     extract_pending: false
     map_query: 大分県中津市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式サイト（www.city-nakatsu.jp）から空き家バンクとして案内されているリンク
     url: https://www.city-nakatsu.jp/
-    checked_on: '2026-09-11'
-  pages:
-  - url: https://akiyabank.city-nakatsu.jp/
-    kind: listing_index
-  - url: https://www.city-nakatsu.jp/doc/2026022000048/
-    kind: subsidy
-  allow_hosts:
-  - akiyabank.city-nakatsu.jp
-  - www.city-nakatsu.jp
-  max_pages: 30
+    checked_on: '2026-11-17'
 - id: oita-442046
   name: 日田市空き家バンク
   operator: 日田市
@@ -114,7 +106,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hita.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.hita.oita.jp/
-    checked_on: '2026-11-16'
+    checked_on: '2026-11-17'
   pages:
   - url: https://www.city.hita.oita.jp/site/iju/2680.html
     kind: listing_index
@@ -161,7 +153,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.usuki.oita.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.usuki.oita.jp/
-    checked_on: '2026-11-16'
+    checked_on: '2026-11-17'
   pages:
   - url: https://www.city.usuki.oita.jp/docs/2021051200056/
     kind: listing_index

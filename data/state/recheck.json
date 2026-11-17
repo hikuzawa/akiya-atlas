@@ -192,7 +192,7 @@
   "checked_on": "2026-10-07"
  },
  "akita-052132": {
-  "last_tried": "2026-11-10",
+  "last_tried": "2026-11-17",
   "waiting_reason": "公式サイトに通信できない（HTTP 403）",
   "waiting_since": "2026-10-07"
  },
@@ -293,12 +293,12 @@
   "checked_on": "2026-10-09"
  },
  "aomori-023621": {
-  "last_tried": "2026-11-10",
+  "last_tried": "2026-11-17",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-10-09"
  },
  "aomori-023671": {
-  "last_tried": "2026-11-10",
+  "last_tried": "2026-11-17",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-10-09"
  },
@@ -336,7 +336,7 @@
   "checked_on": "2026-10-10"
  },
  "aomori-024244": {
-  "last_tried": "2026-11-10",
+  "last_tried": "2026-11-17",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-10-10"
  },
@@ -641,7 +641,7 @@
   "checked_on": "2026-10-15"
  },
  "fukuoka-402044": {
-  "last_tried": "2026-11-10",
+  "last_tried": "2026-11-17",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-10-15"
  },
@@ -1078,7 +1078,7 @@
   "checked_on": "2026-11-03"
  },
  "gifu-214043": {
-  "last_tried": "2026-11-10",
+  "last_tried": "2026-11-17",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-11-03"
  },
@@ -1595,8 +1595,50 @@
  "hokkaido-014729": {
   "checked_on": "2026-11-16"
  },
+ "hokkaido-014818": {
+  "checked_on": "2026-11-17"
+ },
+ "hokkaido-014826": {
+  "checked_on": "2026-11-17"
+ },
+ "hokkaido-014834": {
+  "last_tried": "2026-11-17",
+  "waiting_reason": "robots.txt で公式サイトを取得できない",
+  "waiting_since": "2026-11-17"
+ },
+ "hokkaido-014851": {
+  "checked_on": "2026-11-17"
+ },
+ "hokkaido-014877": {
+  "checked_on": "2026-11-17"
+ },
+ "hokkaido-015113": {
+  "checked_on": "2026-11-17"
+ },
+ "hokkaido-015121": {
+  "last_tried": "2026-11-17",
+  "waiting_reason": "robots.txt で公式サイトを取得できない",
+  "waiting_since": "2026-11-17"
+ },
+ "hokkaido-015130": {
+  "checked_on": "2026-11-17"
+ },
+ "hokkaido-015148": {
+  "checked_on": "2026-11-17"
+ },
+ "hokkaido-015164": {
+  "checked_on": "2026-11-17"
+ },
+ "hokkaido-015172": {
+  "checked_on": "2026-11-17"
+ },
+ "hokkaido-015181": {
+  "last_tried": "2026-11-17",
+  "waiting_reason": "robots.txt で公式サイトを取得できない",
+  "waiting_since": "2026-11-17"
+ },
  "nagano-203076": {
-  "last_tried": "2026-11-10",
+  "last_tried": "2026-11-17",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-09-29"
  },
@@ -1640,7 +1682,7 @@
   "checked_on": "2026-09-30"
  },
  "nagano-204048": {
-  "last_tried": "2026-11-10",
+  "last_tried": "2026-11-17",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-09-30"
  },
