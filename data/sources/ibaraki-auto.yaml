@@ -306,34 +306,22 @@ sources:
   operator: 笠間市
   operator_kind: municipality
   official_url: https://www.city.kasama.lg.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: 082163
     name: 笠間市
     prefecture: 茨城県
     prefecture_slug: ibaraki
     slug: 082163
-    bank_url: https://ijyuu.city-kasama.jp/house-bank/
-    bank_status: available
+    bank_url: https://www.city.kasama.lg.jp/page/dir006823.html
+    bank_status: info
     extract_pending: false
     map_query: 茨城県笠間市
+    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
   operator_evidence:
     quote: 公式サイト（www.city.kasama.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.kasama.lg.jp/
-    checked_on: '2026-11-17'
-  pages:
-  - url: https://ijyuu.city-kasama.jp/house-bank/
-    kind: listing_index
-    follow:
-    - pattern: ^https?://ijyuu\.city\-kasama\.jp/house_bank/\d+\-openspace/$
-      kind: listing_detail
-      max_links: 60
-  allow_hosts:
-  - ijyuu.city-kasama.jp
-  max_pages: 30
-  external_links:
-  - label: LIFULL HOME’S空き家バンク(笠間市のトップページ)(外部リンク)
-    url: https://www.homes.co.jp/akiyabank/ibaraki/kasama
+    checked_on: '2026-11-18'
 - id: ibaraki-082171
   name: 取手市空き家バンク
   operator: 取手市
@@ -562,7 +550,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.naka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.naka.lg.jp/
-    checked_on: '2026-11-17'
+    checked_on: '2026-11-18'
   pages:
   - url: https://www.city.naka.lg.jp/kurashi-tetsuduki/sumai/akiya/page004131.html
     kind: listing_index
@@ -704,7 +692,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sakuragawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.sakuragawa.lg.jp/
-    checked_on: '2026-11-17'
+    checked_on: '2026-11-18'
   pages:
   - url: https://www.city.sakuragawa.lg.jp/akiya/akiya.php
     kind: listing_index
@@ -1051,7 +1039,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.ami.lg.jp/
-    checked_on: '2026-11-17'
+    checked_on: '2026-11-18'
   pages:
   - url: https://www.town.ami.lg.jp/0000009864.html
     kind: listing_index

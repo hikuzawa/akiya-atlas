@@ -718,3 +718,23 @@
 {"at": "2026-11-17T12:37:55+09:00", "result": "ok", "key": "hokkaido-015164", "label": "北海道豊富町"}
 {"at": "2026-11-17T12:37:55+09:00", "result": "ok", "key": "hokkaido-015172", "label": "北海道礼文町"}
 {"at": "2026-11-17T12:37:55+09:00", "result": "skip", "key": "hokkaido-015181", "label": "北海道利尻町", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-18T11:33:17+09:00", "result": "fail", "key": "hokkaido-015199", "label": "北海道利尻富士町", "reason": "公式サイトのトップに市町村名が出ない", "failures": 1}
+{"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015202", "label": "北海道幌延町"}
+{"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015431", "label": "北海道美幌町"}
+{"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015440", "label": "北海道津別町"}
+{"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015458", "label": "北海道斜里町"}
+{"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015466", "label": "北海道清里町"}
+{"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015474", "label": "北海道小清水町"}
+{"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015491", "label": "北海道訓子府町"}
+{"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015504", "label": "北海道置戸町"}
+{"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015555", "label": "北海道遠軽町"}
+{"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015598", "label": "北海道湧別町"}
+{"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015601", "label": "北海道滝上町"}
+{"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015610", "label": "北海道興部町"}
+{"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015628", "label": "北海道西興部村"}
+{"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015636", "label": "北海道雄武町"}
+{"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015644", "label": "北海道大空町"}
+{"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015717", "label": "北海道豊浦町"}
+{"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015750", "label": "北海道壮瞥町"}
+{"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015784", "label": "北海道白老町"}
+{"at": "2026-11-18T11:33:17+09:00", "result": "fail", "key": "hokkaido-015814", "label": "北海道厚真町", "reason": "空き家バンクのページを開けない（HTTP 404）", "failures": 1}

@@ -630,19 +630,15 @@ sources:
     slug: '012262'
     bank_url: https://www.city.sunagawa.hokkaido.jp/seikatsu_kurashi/juutaku/newakiya-akichizyouhou.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 北海道砂川市
   operator_evidence:
     quote: 公式ドメイン www.city.sunagawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.sunagawa.hokkaido.jp/
-    checked_on: '2026-11-17'
+    checked_on: '2026-11-18'
   pages:
   - url: https://www.city.sunagawa.hokkaido.jp/seikatsu_kurashi/juutaku/newakiya-akichizyouhou.html
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.city\.sunagawa\.hokkaido\.jp/seikatsu_kurashi/juutaku/akiyaR\d+\-\d+\.html$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.city.sunagawa.hokkaido.jp
   max_pages: 30
@@ -1660,7 +1656,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.furubira.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.furubira.lg.jp/
-    checked_on: '2026-11-17'
+    checked_on: '2026-11-18'
   pages:
   - url: https://www.town.furubira.lg.jp/life/detail.php?id=330
     kind: listing_index
@@ -2291,7 +2287,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.hokkaido-kamikawa.lg.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-11-17'
+    checked_on: '2026-11-18'
   pages:
   - url: https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/geo5a8000000014g.html
     kind: listing_index
@@ -3006,7 +3002,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.horonobe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.horonobe.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-18'
   pages:
   - url: https://www.town.horonobe.lg.jp/www4/section/jumin/zyokyakusien.html
     kind: subsidy
@@ -3037,7 +3033,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.bihoro.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.bihoro.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-18'
   pages:
   - url: https://www.town.bihoro.hokkaido.jp/page/1166.html
     kind: subsidy
@@ -3064,7 +3060,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tsubetsu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.tsubetsu.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-18'
 - id: hokkaido-015458
   name: 斜里町空き家バンク
   operator: 斜里町
@@ -3085,7 +3081,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shari.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.shari.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-18'
 - id: hokkaido-015466
   name: 清里町空き家バンク
   operator: 清里町
@@ -3106,7 +3102,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kiyosato.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kiyosato.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-18'
   pages:
   - url: https://www.town.kiyosato.hokkaido.jp/life/?content=782
     kind: subsidy
@@ -3135,7 +3131,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.koshimizu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.koshimizu.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-18'
   pages:
   - url: https://www.town.koshimizu.hokkaido.jp/hotnews/detail/00009482.html
     kind: subsidy
@@ -3168,7 +3164,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kunneppu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kunneppu.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-18'
   pages:
   - url: https://www.town.kunneppu.hokkaido.jp/life/jyuutakushisetuka/akiyajyokyaku.html
     kind: subsidy
@@ -3196,7 +3192,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.oketo.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.oketo.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-18'
   pages:
   - url: https://www.town.oketo.hokkaido.jp/kurashi/sumai/takuchibunjou/
     kind: listing_index
@@ -3230,7 +3226,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.saroma.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.saroma.hokkaido.jp/
-    checked_on: '2026-11-17'
+    checked_on: '2026-11-18'
   pages:
   - url: https://www.town.saroma.hokkaido.jp/machi/sumai/akiyabannku.html
     kind: listing_index
@@ -3257,7 +3253,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（engaru.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-18'
 - id: hokkaido-015598
   name: 湧別町空き家バンク
   operator: 湧別町
@@ -3278,7 +3274,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yubetsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.yubetsu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-18'
   pages:
   - url: https://www.town.yubetsu.lg.jp/administration/life/detail.html?content=1106
     kind: subsidy
@@ -3311,7 +3307,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.takinoue.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.takinoue.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-18'
 - id: hokkaido-015610
   name: 興部町空き家バンク
   operator: 興部町
@@ -3331,7 +3327,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.okoppe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.okoppe.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-18'
   pages:
   - url: https://www.town.okoppe.lg.jp/cms/section/kikaku/nbm3tm000000129q.html
     kind: listing_index
@@ -3358,7 +3354,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.nishiokoppe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.nishiokoppe.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-18'
   pages:
   - url: https://www.vill.nishiokoppe.lg.jp/section/kikaku/hhlo2b0000001bdn.html
     kind: subsidy
@@ -3385,7 +3381,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.oumu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.oumu.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-18'
 - id: hokkaido-015644
   name: 大空町空き家バンク
   operator: 大空町
@@ -3406,7 +3402,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ozora.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ozora.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-18'
 - id: hokkaido-015717
   name: 豊浦町空き家バンク
   operator: 豊浦町
@@ -3427,7 +3423,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.toyoura.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.toyoura.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-18'
 - id: hokkaido-015750
   name: 壮瞥町空き家バンク
   operator: 壮瞥町
@@ -3447,7 +3443,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.sobetsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.sobetsu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-18'
   pages:
   - url: https://www.town.sobetsu.lg.jp/akiyabank/
     kind: listing_index
@@ -3474,7 +3470,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shiraoi.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.shiraoi.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-18'
 - id: hokkaido-015814
   name: 厚真町空き家バンク
   operator: 厚真町
@@ -3636,7 +3632,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.niikappu.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-11-17'
+    checked_on: '2026-11-18'
   pages:
   - url: https://www.niikappu.jp/kurashi/sekatsu/sumai/teijyu/sumai/akiya.html
     kind: listing_index

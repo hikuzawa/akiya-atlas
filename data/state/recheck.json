@@ -1637,6 +1637,72 @@
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-11-17"
  },
+ "hokkaido-015199": {
+  "failed_since": "2026-11-18",
+  "failures": 1,
+  "last_tried": "2026-11-18",
+  "reason": "公式サイトのトップに市町村名が出ない"
+ },
+ "hokkaido-015202": {
+  "checked_on": "2026-11-18"
+ },
+ "hokkaido-015431": {
+  "checked_on": "2026-11-18"
+ },
+ "hokkaido-015440": {
+  "checked_on": "2026-11-18"
+ },
+ "hokkaido-015458": {
+  "checked_on": "2026-11-18"
+ },
+ "hokkaido-015466": {
+  "checked_on": "2026-11-18"
+ },
+ "hokkaido-015474": {
+  "checked_on": "2026-11-18"
+ },
+ "hokkaido-015491": {
+  "checked_on": "2026-11-18"
+ },
+ "hokkaido-015504": {
+  "checked_on": "2026-11-18"
+ },
+ "hokkaido-015555": {
+  "checked_on": "2026-11-18"
+ },
+ "hokkaido-015598": {
+  "checked_on": "2026-11-18"
+ },
+ "hokkaido-015601": {
+  "checked_on": "2026-11-18"
+ },
+ "hokkaido-015610": {
+  "checked_on": "2026-11-18"
+ },
+ "hokkaido-015628": {
+  "checked_on": "2026-11-18"
+ },
+ "hokkaido-015636": {
+  "checked_on": "2026-11-18"
+ },
+ "hokkaido-015644": {
+  "checked_on": "2026-11-18"
+ },
+ "hokkaido-015717": {
+  "checked_on": "2026-11-18"
+ },
+ "hokkaido-015750": {
+  "checked_on": "2026-11-18"
+ },
+ "hokkaido-015784": {
+  "checked_on": "2026-11-18"
+ },
+ "hokkaido-015814": {
+  "failed_since": "2026-11-18",
+  "failures": 1,
+  "last_tried": "2026-11-18",
+  "reason": "空き家バンクのページを開けない（HTTP 404）"
+ },
  "nagano-203076": {
   "last_tried": "2026-11-17",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
