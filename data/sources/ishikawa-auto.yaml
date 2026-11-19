@@ -263,12 +263,12 @@ sources:
     slug: '172111'
     bank_url: https://www.city.nomi.lg.jp/docs/1083.html
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 石川県能美市
   operator_evidence:
     quote: 公式ドメイン www.city.nomi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nomi.lg.jp/
-    checked_on: '2026-11-18'
+    checked_on: '2026-11-19'
   pages:
   - url: https://www.city.nomi.lg.jp/docs/1083.html
     kind: listing_index
@@ -276,6 +276,9 @@ sources:
     - pattern: https?://www\.city\.nomi\.lg\.jp/docs/1083\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
       kind: listing_index
       max_links: 20
+    - pattern: ^https?://www\.city\.nomi\.lg\.jp/docs/\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.city.nomi.lg.jp
   max_pages: 30

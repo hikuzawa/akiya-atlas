@@ -1335,15 +1335,13 @@
   "checked_on": "2026-11-12"
  },
  "hokkaido-012190": {
-  "last_tried": "2026-11-12",
-  "waiting_reason": "robots.txt で公式サイトを取得できない",
-  "waiting_since": "2026-11-12"
+  "checked_on": "2026-11-19"
  },
  "hokkaido-012203": {
   "checked_on": "2026-11-12"
  },
  "hokkaido-012211": {
-  "last_tried": "2026-11-12",
+  "last_tried": "2026-11-19",
   "waiting_reason": "robots.txt で公式サイトを取得できない",
   "waiting_since": "2026-11-12"
  },
@@ -1639,8 +1637,8 @@
  },
  "hokkaido-015199": {
   "failed_since": "2026-11-18",
-  "failures": 1,
-  "last_tried": "2026-11-18",
+  "failures": 2,
+  "last_tried": "2026-11-19",
   "reason": "公式サイトのトップに市町村名が出ない"
  },
  "hokkaido-015202": {
@@ -1699,9 +1697,65 @@
  },
  "hokkaido-015814": {
   "failed_since": "2026-11-18",
-  "failures": 1,
-  "last_tried": "2026-11-18",
+  "failures": 2,
+  "last_tried": "2026-11-19",
   "reason": "空き家バンクのページを開けない（HTTP 404）"
+ },
+ "hokkaido-015865": {
+  "checked_on": "2026-11-19"
+ },
+ "hokkaido-016012": {
+  "checked_on": "2026-11-19"
+ },
+ "hokkaido-016021": {
+  "checked_on": "2026-11-19"
+ },
+ "hokkaido-016080": {
+  "last_tried": "2026-11-19",
+  "waiting_reason": "robots.txt で公式サイトを取得できない",
+  "waiting_since": "2026-11-19"
+ },
+ "hokkaido-016098": {
+  "checked_on": "2026-11-19"
+ },
+ "hokkaido-016101": {
+  "checked_on": "2026-11-19"
+ },
+ "hokkaido-016314": {
+  "checked_on": "2026-11-19"
+ },
+ "hokkaido-016322": {
+  "checked_on": "2026-11-19"
+ },
+ "hokkaido-016331": {
+  "checked_on": "2026-11-19"
+ },
+ "hokkaido-016349": {
+  "checked_on": "2026-11-19"
+ },
+ "hokkaido-016357": {
+  "checked_on": "2026-11-19"
+ },
+ "hokkaido-016365": {
+  "checked_on": "2026-11-19"
+ },
+ "hokkaido-016373": {
+  "checked_on": "2026-11-19"
+ },
+ "hokkaido-016381": {
+  "checked_on": "2026-11-19"
+ },
+ "hokkaido-016411": {
+  "checked_on": "2026-11-19"
+ },
+ "hokkaido-016420": {
+  "checked_on": "2026-11-19"
+ },
+ "hokkaido-016438": {
+  "checked_on": "2026-11-19"
+ },
+ "hokkaido-016446": {
+  "checked_on": "2026-11-19"
  },
  "nagano-203076": {
   "last_tried": "2026-11-17",

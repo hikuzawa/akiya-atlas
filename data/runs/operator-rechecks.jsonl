@@ -738,3 +738,25 @@
 {"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015750", "label": "北海道壮瞥町"}
 {"at": "2026-11-18T11:33:17+09:00", "result": "ok", "key": "hokkaido-015784", "label": "北海道白老町"}
 {"at": "2026-11-18T11:33:17+09:00", "result": "fail", "key": "hokkaido-015814", "label": "北海道厚真町", "reason": "空き家バンクのページを開けない（HTTP 404）", "failures": 1}
+{"at": "2026-11-19T11:03:44+09:00", "result": "fail", "key": "hokkaido-015199", "label": "北海道利尻富士町", "reason": "公式サイトのトップに市町村名が出ない", "failures": 2}
+{"at": "2026-11-19T11:03:44+09:00", "result": "fail", "key": "hokkaido-015814", "label": "北海道厚真町", "reason": "空き家バンクのページを開けない（HTTP 404）", "failures": 2}
+{"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-012190", "label": "北海道紋別市"}
+{"at": "2026-11-19T11:03:44+09:00", "result": "skip", "key": "hokkaido-012211", "label": "北海道名寄市", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-015865", "label": "北海道むかわ町"}
+{"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-016012", "label": "北海道日高町"}
+{"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-016021", "label": "北海道平取町"}
+{"at": "2026-11-19T11:03:44+09:00", "result": "skip", "key": "hokkaido-016080", "label": "北海道様似町", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-016098", "label": "北海道えりも町"}
+{"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-016101", "label": "北海道新ひだか町"}
+{"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-016314", "label": "北海道音更町"}
+{"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-016322", "label": "北海道士幌町"}
+{"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-016331", "label": "北海道上士幌町"}
+{"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-016349", "label": "北海道鹿追町"}
+{"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-016357", "label": "北海道新得町"}
+{"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-016365", "label": "北海道清水町"}
+{"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-016373", "label": "北海道芽室町"}
+{"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-016381", "label": "北海道中札内村"}
+{"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-016411", "label": "北海道大樹町"}
+{"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-016420", "label": "北海道広尾町"}
+{"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-016438", "label": "北海道幕別町"}
+{"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-016446", "label": "北海道池田町"}
