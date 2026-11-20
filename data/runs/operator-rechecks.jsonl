@@ -760,3 +760,27 @@
 {"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-016420", "label": "北海道広尾町"}
 {"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-016438", "label": "北海道幕別町"}
 {"at": "2026-11-19T11:03:44+09:00", "result": "ok", "key": "hokkaido-016446", "label": "北海道池田町"}
+{"at": "2026-11-20T11:12:26+09:00", "result": "fail", "key": "hokkaido-015199", "label": "北海道利尻富士町", "reason": "公式サイトのトップに市町村名が出ない", "failures": 3}
+{"at": "2026-11-20T11:12:26+09:00", "result": "reselect", "key": "hokkaido-015199", "source_id": "hokkaido-015199", "name": "北海道利尻富士町", "old_official": "www.town.rishirifuji.hokkaido.jp", "new_official": "www.town.rishirifuji.hokkaido.jp", "old_bank": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1600.htm", "new_bank": "https://www.town.rishirifuji.hokkaido.jp/", "reason": "3 晩続けて確かめられなかった（公式サイトのトップに市町村名が出ない）"}
+{"at": "2026-11-20T11:12:58+09:00", "result": "fail", "key": "hokkaido-015814", "label": "北海道厚真町", "reason": "空き家バンクのページを開けない（HTTP 404）", "failures": 3}
+{"at": "2026-11-20T11:12:58+09:00", "result": "reselect", "key": "hokkaido-015814", "source_id": "hokkaido-015814", "name": "北海道厚真町", "old_official": "www.town.atsuma.lg.jp", "new_official": "www.town.atsuma.lg.jp", "old_bank": "https://www.town.atsuma.lg.jp/site/atsumyhome/3925.html", "new_bank": "https://www.town.atsuma.lg.jp/", "reason": "3 晩続けて確かめられなかった（空き家バンクのページを開けない（HTTP 404））"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "ok", "key": "hokkaido-016454", "label": "北海道豊頃町"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "ok", "key": "hokkaido-016462", "label": "北海道本別町"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "ok", "key": "hokkaido-016471", "label": "北海道足寄町"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "ok", "key": "hokkaido-016489", "label": "北海道陸別町"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "ok", "key": "hokkaido-016497", "label": "北海道浦幌町"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "skip", "key": "hokkaido-016616", "label": "北海道釧路町", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "ok", "key": "hokkaido-016624", "label": "北海道厚岸町"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "ok", "key": "hokkaido-016632", "label": "北海道浜中町"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "ok", "key": "hokkaido-016641", "label": "北海道標茶町"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "ok", "key": "hokkaido-016659", "label": "北海道弟子屈町"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "ok", "key": "hokkaido-016675", "label": "北海道鶴居村"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "ok", "key": "hokkaido-016683", "label": "北海道白糠町"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "ok", "key": "hokkaido-016918", "label": "北海道別海町"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "ok", "key": "hokkaido-016926", "label": "北海道中標津町"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "ok", "key": "hokkaido-016934", "label": "北海道標津町"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "ok", "key": "hokkaido-016942", "label": "北海道羅臼町"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "ok", "key": "hyogo-281000", "label": "兵庫県神戸市"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "ok", "key": "hyogo-282014", "label": "兵庫県姫路市"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "ok", "key": "hyogo-282022", "label": "兵庫県尼崎市"}
+{"at": "2026-11-20T11:13:26+09:00", "result": "ok", "key": "hyogo-282031", "label": "兵庫県明石市"}

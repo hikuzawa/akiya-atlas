@@ -1,6 +1,6 @@
 prefecture: 三重県
 prefecture_slug: mie
-created_at: '2026-10-29T23:12:12+00:00'
+created_at: '2026-11-20T01:29:17+00:00'
 candidates:
 - key: '242012'
   label: 三重県 津市
@@ -161,7 +161,7 @@ candidates:
   url: https://www.city.inabe.mie.jp/kurashi/jutaku/1000847.html
   page_class: listing_index
   class_label: 物件一覧（静的）
-  confidence: 0.84
+  confidence: 0.85
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.city.inabe.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
   evidence_url: https://www.city.inabe.mie.jp/
@@ -172,15 +172,15 @@ candidates:
   note: null
 - key: '242152'
   label: 三重県 志摩市
-  url: https://www.city.shima.mie.jp/cgi-bin/recruit.php/1/list
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.93
+  url: https://www.city.shima.mie.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.city.shima.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
   evidence_url: https://www.city.shima.mie.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null

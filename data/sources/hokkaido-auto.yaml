@@ -630,19 +630,15 @@ sources:
     slug: '012262'
     bank_url: https://www.city.sunagawa.hokkaido.jp/seikatsu_kurashi/juutaku/newakiya-akichizyouhou.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 北海道砂川市
   operator_evidence:
     quote: 公式ドメイン www.city.sunagawa.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.sunagawa.hokkaido.jp/
-    checked_on: '2026-11-19'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.city.sunagawa.hokkaido.jp/seikatsu_kurashi/juutaku/newakiya-akichizyouhou.html
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.city\.sunagawa\.hokkaido\.jp/seikatsu_kurashi/juutaku/akiyaR\d+\-\d+\.html$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.city.sunagawa.hokkaido.jp
   max_pages: 30
@@ -1660,7 +1656,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.furubira.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.furubira.lg.jp/
-    checked_on: '2026-11-19'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.town.furubira.lg.jp/life/detail.php?id=330
     kind: listing_index
@@ -2291,7 +2287,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.hokkaido-kamikawa.lg.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-11-19'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.town.hokkaido-kamikawa.lg.jp/section/chiikimiryoku/geo5a8000000014g.html
     kind: listing_index
@@ -2977,15 +2973,15 @@ sources:
     prefecture: 北海道
     prefecture_slug: hokkaido
     slug: 015199
-    bank_url: https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1600.htm
-    bank_status: spa_unsupported
+    bank_url: https://www.town.rishirifuji.hokkaido.jp/
+    bank_status: none
     extract_pending: false
     map_query: 北海道利尻富士町
-    bank_note: 空き家バンクのサイトが JavaScript 表示のため、本サイトでは物件を要約できません。公式サイトでご確認ください。
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.town.rishirifuji.hokkaido.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
 - id: hokkaido-015202
   name: 幌延町空き家バンク
   operator: 幌延町
@@ -3230,7 +3226,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.saroma.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.saroma.hokkaido.jp/
-    checked_on: '2026-11-19'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.town.saroma.hokkaido.jp/machi/sumai/akiyabannku.html
     kind: listing_index
@@ -3487,15 +3483,15 @@ sources:
     prefecture: 北海道
     prefecture_slug: hokkaido
     slug: 015814
-    bank_url: https://www.town.atsuma.lg.jp/site/atsumyhome/3925.html
-    bank_status: info
+    bank_url: https://www.town.atsuma.lg.jp/
+    bank_status: none
     extract_pending: false
     map_query: 北海道厚真町
-    bank_note: この自治体の空き家バンクは制度案内が中心で、物件は利用登録後などに公開される方式です。詳しくは公式の空き家バンクページをご確認ください。
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.town.atsuma.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.atsuma.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.town.atsuma.lg.jp/page/1237.html
     kind: subsidy
@@ -3636,7 +3632,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.niikappu.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-11-19'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.niikappu.jp/kurashi/sekatsu/sumai/teijyu/sumai/akiya.html
     kind: listing_index
@@ -4060,7 +4056,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.toyokoro.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.toyokoro.jp/site/iju/1218.html
     kind: listing_index
@@ -4093,7 +4089,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.honbetsu.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.honbetsu.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.town.honbetsu.hokkaido.jp/web/life/life05.html
     kind: subsidy
@@ -4126,7 +4122,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ashoro.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.ashoro.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
 - id: hokkaido-016489
   name: 陸別町空き家バンク
   operator: 陸別町
@@ -4147,7 +4143,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.rikubetsu.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
 - id: hokkaido-016497
   name: 浦幌町空き家バンク
   operator: 浦幌町
@@ -4168,7 +4164,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.urahoro.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.urahoro.jp/life/?content=2477
     kind: subsidy
@@ -4228,7 +4224,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.akkeshi-town.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
 - id: hokkaido-016632
   name: 浜中町空き家バンク
   operator: 浜中町
@@ -4249,7 +4245,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.townhamanaka.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
 - id: hokkaido-016641
   name: 標茶町空き家バンク
   operator: 標茶町
@@ -4270,7 +4266,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（town.shibecha.hokkaido.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
 - id: hokkaido-016659
   name: 弟子屈町空き家バンク
   operator: 弟子屈町
@@ -4291,7 +4287,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.teshikaga.hokkaido.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.teshikaga.hokkaido.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
 - id: hokkaido-016675
   name: 鶴居村空き家バンク
   operator: 鶴居村
@@ -4312,7 +4308,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.tsurui.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.tsurui.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
 - id: hokkaido-016683
   name: 白糠町空き家バンク
   operator: 白糠町
@@ -4333,7 +4329,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.shiranuka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.shiranuka.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.town.shiranuka.lg.jp/section/keizai/nfml630000001b68.html
     kind: subsidy
@@ -4360,7 +4356,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（betsukai.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
 - id: hokkaido-016926
   name: 中標津町空き家バンク
   operator: 中標津町
@@ -4381,7 +4377,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.nakashibetsu.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
 - id: hokkaido-016934
   name: 標津町空き家バンク
   operator: 標津町
@@ -4402,7 +4398,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.shibetsutown.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.shibetsutown.jp/life/?content=343
     kind: subsidy
@@ -4431,7 +4427,7 @@ sources:
   operator_evidence:
     quote: 北海道 道内179市町村（50音別）に掲載された公式サイト（www.rausu-town.jp）
     url: https://www.pref.hokkaido.lg.jp/link/shichoson/aiueo.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.rausu-town.jp/pages/view/429
     kind: subsidy

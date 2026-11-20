@@ -234,7 +234,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kameyama.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.kameyama.mie.jp/
-    checked_on: '2026-11-19'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.city.kameyama.mie.jp/docs/2021010500012/akiya_bank.html
     kind: listing_index
@@ -325,7 +325,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.inabe.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.inabe.mie.jp/
-    checked_on: '2026-11-19'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.city.inabe.mie.jp/kurashi/jutaku/1000847.html
     kind: listing_index
@@ -337,31 +337,22 @@ sources:
   operator: 志摩市
   operator_kind: municipality
   official_url: https://www.city.shima.mie.jp/
-  policy: crawl
+  policy: link_only
   municipality:
     code: '242152'
     name: 志摩市
     prefecture: 三重県
     prefecture_slug: mie
     slug: '242152'
-    bank_url: https://www.city.shima.mie.jp/cgi-bin/recruit.php/1/list
-    bank_status: available
+    bank_url: https://www.city.shima.mie.jp/
+    bank_status: none
     extract_pending: false
     map_query: 三重県志摩市
+    bank_note: 本サイトが確認した範囲では、この自治体の空き家バンクの物件ページを見つけられませんでした。移住・空き家の情報は公式サイトや県の窓口をご確認ください。
   operator_evidence:
     quote: 公式ドメイン www.city.shima.mie.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.shima.mie.jp/
-    checked_on: '2026-11-19'
-  pages:
-  - url: https://www.city.shima.mie.jp/cgi-bin/recruit.php/1/list
-    kind: listing_index
-    follow:
-    - pattern: ^https?://www\.city\.shima\.mie\.jp/cgi\-bin/recruit\.php/\d+/detail/\d+$
-      kind: listing_detail
-      max_links: 60
-  allow_hosts:
-  - www.city.shima.mie.jp
-  max_pages: 30
+    checked_on: '2026-11-20'
 - id: mie-242161
   name: 伊賀市空き家バンク
   operator: 伊賀市

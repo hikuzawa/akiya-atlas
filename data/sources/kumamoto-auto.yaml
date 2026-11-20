@@ -315,7 +315,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.aso.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.aso.kumamoto.jp/
-    checked_on: '2026-11-19'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.city.aso.kumamoto.jp/akiya/
     kind: listing_index
@@ -482,19 +482,19 @@ sources:
     prefecture: 熊本県
     prefecture_slug: kumamoto
     slug: '433691'
-    bank_url: https://kumamoto-akiya360.jp/
+    bank_url: https://www.town.nagomi.lg.jp/iju/teijyuu/akiya/16/
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 熊本県和水町
   operator_evidence:
     quote: 公式サイト（www.town.nagomi.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.town.nagomi.lg.jp/
-    checked_on: '2026-11-19'
+    checked_on: '2026-11-20'
   pages:
-  - url: https://kumamoto-akiya360.jp/
+  - url: https://www.town.nagomi.lg.jp/iju/teijyuu/akiya/16/
     kind: listing_index
   allow_hosts:
-  - kumamoto-akiya360.jp
+  - www.town.nagomi.lg.jp
   max_pages: 30
 - id: kumamoto-434035
   name: 大津町空き家バンク
@@ -665,7 +665,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.nishihara.kumamoto.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.vill.nishihara.kumamoto.jp/
-    checked_on: '2026-11-19'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.vill.nishihara.kumamoto.jp/dynamic/ijyu/info/pub/default.aspx?c_id=32
     kind: listing_index

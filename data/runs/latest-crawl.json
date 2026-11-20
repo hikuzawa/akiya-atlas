@@ -1,12 +1,9 @@
 {
   "ci": true,
   "command": "crawl",
-  "errors": [
-    "https://www.city.nomi.lg.jp/docs/6712.html: HTTP 404",
-    "https://www.town.yusui.kagoshima.jp/soshiki/34/10491.html: HTTP 404"
-  ],
+  "errors": [],
   "extraction_metrics": null,
-  "finished_at": "2026-11-19T02:02:52Z",
+  "finished_at": "2026-11-20T02:11:26Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -14,20 +11,20 @@
     "output_tokens": 0
   },
   "notes": [
-    "キャッシュが巡回状態より古く、条件を付けずに取り直した: https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/12704.html, https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/12803.html, https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/12989.html, https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/13367.html, https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/14153.html, https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/14184.html, https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/14187.html, https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/14296.html, https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/14385.html, https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/12407.html ほか 253 件"
+    "キャッシュが巡回状態より古く、条件を付けずに取り直した: https://www.town.nagomi.lg.jp/iju/teijyuu/akiya/16/, https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/954.html, https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/955.html, https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/957.html, https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/958.html, https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/963.html, https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/967.html, https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/2537.html, https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/2682.html, https://www.town.nagawa.nagano.jp/kurashi/iju_teiju/akiyabank/2963.html ほか 125 件"
   ],
   "service": "akiya-atlas",
   "stages": {
     "crawl": {
-      "changed": 264,
-      "errors": 2,
-      "fetched": 280,
+      "changed": 136,
+      "errors": 0,
+      "fetched": 145,
       "not_modified": 0,
-      "requests": 298,
-      "stale_cache": 263,
-      "unchanged": 16,
+      "requests": 155,
+      "stale_cache": 135,
+      "unchanged": 9,
       "workers": 8
     }
   },
-  "started_at": "2026-11-19T01:59:42Z"
+  "started_at": "2026-11-20T02:09:35Z"
 }

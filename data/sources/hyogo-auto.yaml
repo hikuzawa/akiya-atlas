@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.kobe.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.kobe.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.city.kobe.lg.jp/a01110/hojokin.html
     kind: subsidy
@@ -53,7 +53,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.himeji.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.himeji.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.city.himeji.lg.jp/kurashi/0000006739.html
     kind: subsidy
@@ -84,7 +84,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.amagasaki.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.amagasaki.hyogo.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.city.amagasaki.hyogo.jp/kurashi/kankyo/hozen/1003761/1043821.html
     kind: subsidy
@@ -111,7 +111,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.akashi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.akashi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-20'
 - id: hyogo-282049
   name: 西宮市空き家バンク
   operator: 西宮市
@@ -748,7 +748,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tatsuno.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tatsuno.lg.jp/
-    checked_on: '2026-11-19'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.city.tatsuno.lg.jp/iju/akiya-bank/1410.html
     kind: listing_index
@@ -928,7 +928,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kamikawa.hyogo.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kamikawa.hyogo.jp/
-    checked_on: '2026-11-19'
+    checked_on: '2026-11-20'
   pages:
   - url: https://www.town.kamikawa.hyogo.jp/0000000317.html
     kind: listing_index
