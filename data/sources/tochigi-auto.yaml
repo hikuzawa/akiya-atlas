@@ -409,7 +409,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.mashiko.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.mashiko.lg.jp/
-    checked_on: '2026-11-20'
+    checked_on: '2026-11-21'
   pages:
   - url: https://www.town.mashiko.lg.jp/mashikonokurashi/akiya.php
     kind: listing_index
@@ -524,15 +524,19 @@ sources:
     slug: 093611
     bank_url: https://www.town.mibu.tochigi.jp/docs/2020052100013/
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 栃木県壬生町
   operator_evidence:
     quote: 公式ドメイン www.town.mibu.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.mibu.tochigi.jp/
-    checked_on: '2026-11-20'
+    checked_on: '2026-11-21'
   pages:
   - url: https://www.town.mibu.tochigi.jp/docs/2020052100013/
     kind: listing_index
+    follow:
+    - pattern: ^https?://www\.town\.mibu\.tochigi\.jp/docs/\d+/$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.town.mibu.tochigi.jp
   max_pages: 30
@@ -581,20 +585,23 @@ sources:
     prefecture: 栃木県
     prefecture_slug: tochigi
     slug: 093840
-    bank_url: https://www.town.shioya.tochigi.jp/info/2879
+    bank_url: https://www.town.shioya.tochigi.jp/info/2891
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 栃木県塩谷町
   operator_evidence:
     quote: 公式ドメイン www.town.shioya.tochigi.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.shioya.tochigi.jp/
-    checked_on: '2026-11-20'
+    checked_on: '2026-11-21'
   pages:
-  - url: https://www.town.shioya.tochigi.jp/info/2879
+  - url: https://www.town.shioya.tochigi.jp/info/2891
     kind: listing_index
   allow_hosts:
   - www.town.shioya.tochigi.jp
   max_pages: 30
+  external_links:
+  - label: 有限会社シービーエス
+    url: https://www.hatomarksite.com/search/zentaku/agent/00070901909
 - id: tochigi-093866
   name: 高根沢町空き家バンク
   operator: 高根沢町

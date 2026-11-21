@@ -224,12 +224,12 @@ sources:
     slug: '402109'
     bank_url: https://www.city.yame.fukuoka.jp/kurashi/10755.html
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 福岡県八女市
   operator_evidence:
     quote: 公式ドメイン www.city.yame.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.yame.fukuoka.jp/
-    checked_on: '2026-11-20'
+    checked_on: '2026-11-21'
   pages:
   - url: https://www.city.yame.fukuoka.jp/kurashi/10755.html
     kind: listing_index
@@ -237,6 +237,9 @@ sources:
     - pattern: https?://www\.city\.yame\.fukuoka\.jp/kurashi/10755\.html/?\?(?:.*&)?(?:page|p|pg|pagenum|page_no|pageno)=\d+
       kind: listing_index
       max_links: 20
+    - pattern: ^https?://www\.city\.yame\.fukuoka\.jp/miryoku/live/vacant/article/\d+\.html$
+      kind: listing_detail
+      max_links: 60
   allow_hosts:
   - www.city.yame.fukuoka.jp
   max_pages: 30
@@ -309,7 +312,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.yukuhashi.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.yukuhashi.fukuoka.jp/
-    checked_on: '2026-11-20'
+    checked_on: '2026-11-21'
   pages:
   - url: https://www.city.yukuhashi.fukuoka.jp/site/akiya/1411.html
     kind: listing_index
@@ -1305,7 +1308,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.oto.fukuoka.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.oto.fukuoka.jp/
-    checked_on: '2026-11-20'
+    checked_on: '2026-11-21'
   pages:
   - url: https://www.town.oto.fukuoka.jp/dynamic/info/pub/default.aspx?c_id=16
     kind: listing_detail

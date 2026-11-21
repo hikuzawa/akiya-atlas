@@ -148,7 +148,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.awa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.awa.lg.jp/
-    checked_on: '2026-11-20'
+    checked_on: '2026-11-21'
   pages:
   - url: https://www.city.awa.lg.jp/docs/2025111300021/
     kind: listing_index
@@ -385,7 +385,7 @@ sources:
   operator_evidence:
     quote: 徳島県の市町村一覧に掲載された公式サイト（www.town.tokushima-mugi.lg.jp）
     url: https://www.pref.tokushima.lg.jp/kenseijoho/kanrennochiiki/shichouson/
-    checked_on: '2026-11-20'
+    checked_on: '2026-11-21'
   pages:
   - url: https://www.town.tokushima-mugi.lg.jp/doc/2024112500010/
     kind: listing_index
@@ -406,19 +406,15 @@ sources:
     slug: '363871'
     bank_url: https://www.town.minami.lg.jp/docs/6523620.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 徳島県美波町
   operator_evidence:
     quote: 公式ドメイン www.town.minami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.minami.lg.jp/
-    checked_on: '2026-11-20'
+    checked_on: '2026-11-21'
   pages:
   - url: https://www.town.minami.lg.jp/docs/6523620.html
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.town\.minami\.lg\.jp/docs/\d+\.html$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.town.minami.lg.jp
   max_pages: 30
@@ -441,7 +437,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kaiyo.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kaiyo.lg.jp/
-    checked_on: '2026-11-20'
+    checked_on: '2026-11-21'
   pages:
   - url: https://www.town.kaiyo.lg.jp/docs/2016040400050/
     kind: listing_index
