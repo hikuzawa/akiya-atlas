@@ -20,7 +20,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.mito.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.mito.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-22'
   pages:
   - url: https://www.city.mito.lg.jp/page/90090.html
     kind: subsidy
@@ -51,7 +51,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.hitachi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.hitachi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-22'
 - id: ibaraki-082031
   name: 土浦市空き家バンク
   operator: 土浦市
@@ -72,7 +72,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.tsuchiura.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.tsuchiura.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-22'
   pages:
   - url: https://www.city.tsuchiura.lg.jp/kurashi-tetsuzuki/shieijutaku/page022866.html
     kind: subsidy
@@ -99,7 +99,7 @@ sources:
   operator_evidence:
     quote: 茨城県 県内の市町村に掲載された公式サイト（www.city.ibaraki-koga.lg.jp）
     url: https://www.pref.ibaraki.jp/towns/index.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-22'
 - id: ibaraki-082058
   name: 石岡市空き家バンク
   operator: 石岡市
@@ -119,7 +119,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ishioka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.ishioka.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-22'
   pages:
   - url: https://www.city.ishioka.lg.jp/kurashi_tetsuzuki/sumai/akiyabank/page011717.html
     kind: listing_index
@@ -550,7 +550,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.naka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.naka.lg.jp/
-    checked_on: '2026-11-21'
+    checked_on: '2026-11-22'
   pages:
   - url: https://www.city.naka.lg.jp/kurashi-tetsuduki/sumai/akiya/page004131.html
     kind: listing_index
@@ -692,7 +692,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sakuragawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.sakuragawa.lg.jp/
-    checked_on: '2026-11-21'
+    checked_on: '2026-11-22'
   pages:
   - url: https://www.city.sakuragawa.lg.jp/akiya/akiya.php
     kind: listing_index
@@ -1039,7 +1039,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.ami.lg.jp/
-    checked_on: '2026-11-21'
+    checked_on: '2026-11-22'
   pages:
   - url: https://www.town.ami.lg.jp/0000009864.html
     kind: listing_index

@@ -223,7 +223,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.nihonmatsu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.nihonmatsu.lg.jp/
-    checked_on: '2026-11-21'
+    checked_on: '2026-11-22'
   pages:
   - url: https://www.city.nihonmatsu.lg.jp/ijyu_teijyu/kurasu/page000100.html
     kind: listing_index
@@ -277,19 +277,15 @@ sources:
     slug: '072125'
     bank_url: https://www.minamisoma-akiya.org/
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 福島県南相馬市
   operator_evidence:
     quote: 公式サイト（www.city.minamisoma.lg.jp）から空き家バンクとして案内されているリンク
     url: https://www.city.minamisoma.lg.jp/
-    checked_on: '2026-11-21'
+    checked_on: '2026-11-22'
   pages:
   - url: https://www.minamisoma-akiya.org/
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.minamisoma\-akiya\.org/properties/\d+/$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.minamisoma-akiya.org
   max_pages: 30
@@ -428,7 +424,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kawamata.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.kawamata.lg.jp/
-    checked_on: '2026-11-21'
+    checked_on: '2026-11-22'
   pages:
   - url: https://www.town.kawamata.lg.jp/site/kurashi-tetsuzuki/akiyatoubanktourokubukken.html
     kind: listing_index
@@ -588,7 +584,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tadami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.tadami.lg.jp/
-    checked_on: '2026-11-21'
+    checked_on: '2026-11-22'
   pages:
   - url: https://www.town.tadami.lg.jp/akiyabank/index.html
     kind: listing_index
@@ -839,19 +835,15 @@ sources:
     slug: '074217'
     bank_url: https://www.town.aizubange.fukushima.jp/site/akiya-bank/
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 福島県会津坂下町
   operator_evidence:
     quote: 公式ドメイン www.town.aizubange.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.aizubange.fukushima.jp/
-    checked_on: '2026-11-21'
+    checked_on: '2026-11-22'
   pages:
   - url: https://www.town.aizubange.fukushima.jp/site/akiya-bank/
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.town\.aizubange\.fukushima\.jp/site/akiya\-bank/list\d+\-\d+\.html$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.town.aizubange.fukushima.jp
   max_pages: 30
@@ -978,7 +970,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.kaneyama.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.kaneyama.fukushima.jp/
-    checked_on: '2026-11-21'
+    checked_on: '2026-11-22'
   pages:
   - url: https://www.town.kaneyama.fukushima.jp/site/akiyajyoho/akiya-2.html
     kind: listing_index
@@ -1173,7 +1165,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yamatsuri.fukushima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yamatsuri.fukushima.jp/
-    checked_on: '2026-11-21'
+    checked_on: '2026-11-22'
   pages:
   - url: https://www.town.yamatsuri.fukushima.jp/page/page000628.html
     kind: listing_index

@@ -1470,7 +1470,7 @@
   "checked_on": "2026-11-14"
  },
  "hokkaido-014010": {
-  "last_tried": "2026-11-15",
+  "last_tried": "2026-11-22",
   "waiting_reason": "公式サイトに通信できない（HTTP 403）",
   "waiting_since": "2026-11-15"
  },
@@ -1526,9 +1526,7 @@
   "checked_on": "2026-11-15"
  },
  "hokkaido-014346": {
-  "last_tried": "2026-11-15",
-  "waiting_reason": "robots.txt で公式サイトを取得できない",
-  "waiting_since": "2026-11-15"
+  "checked_on": "2026-11-22"
  },
  "hokkaido-014362": {
   "checked_on": "2026-11-15"
@@ -1866,6 +1864,65 @@
  },
  "hyogo-282243": {
   "checked_on": "2026-11-21"
+ },
+ "hyogo-282251": {
+  "checked_on": "2026-11-22"
+ },
+ "hyogo-282260": {
+  "checked_on": "2026-11-22"
+ },
+ "hyogo-282278": {
+  "checked_on": "2026-11-22"
+ },
+ "hyogo-282286": {
+  "checked_on": "2026-11-22"
+ },
+ "hyogo-283011": {
+  "checked_on": "2026-11-22"
+ },
+ "hyogo-283657": {
+  "last_tried": "2026-11-22",
+  "waiting_reason": "robots.txt で公式サイトを取得できない",
+  "waiting_since": "2026-11-22"
+ },
+ "hyogo-283827": {
+  "checked_on": "2026-11-22"
+ },
+ "hyogo-284424": {
+  "checked_on": "2026-11-22"
+ },
+ "hyogo-284645": {
+  "checked_on": "2026-11-22"
+ },
+ "hyogo-284815": {
+  "checked_on": "2026-11-22"
+ },
+ "hyogo-285013": {
+  "checked_on": "2026-11-22"
+ },
+ "hyogo-285854": {
+  "failed_since": "2026-11-22",
+  "failures": 1,
+  "last_tried": "2026-11-22",
+  "reason": "空き家バンクのページを開けない（HTTP 404）"
+ },
+ "hyogo-285862": {
+  "checked_on": "2026-11-22"
+ },
+ "ibaraki-082015": {
+  "checked_on": "2026-11-22"
+ },
+ "ibaraki-082023": {
+  "checked_on": "2026-11-22"
+ },
+ "ibaraki-082031": {
+  "checked_on": "2026-11-22"
+ },
+ "ibaraki-082040": {
+  "checked_on": "2026-11-22"
+ },
+ "ibaraki-082058": {
+  "checked_on": "2026-11-22"
  },
  "nagano-203076": {
   "last_tried": "2026-11-17",
