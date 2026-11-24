@@ -143,7 +143,7 @@
       "confidence": 0.9464999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-23",
+      "evidence_checked_on": "2026-11-24",
       "evidence_quote": "公式ドメイン www.city.ota.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）",
       "evidence_url": "https://www.city.ota.gunma.jp/",
       "external_links": [
@@ -180,6 +180,10 @@
           "url": "https://www.homes.co.jp/akiyabank/b-50097/"
         },
         {
+          "label": "全国版空き家・空き地バンク(ライフルホームズ)",
+          "url": "https://www.homes.co.jp/akiyabank/b-50705/"
+        },
+        {
           "label": "全国版空き家・空き地バンク(アットホーム)",
           "url": "https://ota-c10205.akiya-athome.jp/bukken/detail/rent/8491"
         },
@@ -200,7 +204,7 @@
       "held_reason": "一覧に見えるのに 0 件（物件行 0）。抽出側の課題として保留",
       "held_since": "2026-11-15",
       "listing_rows": 0,
-      "listing_score": 0.41,
+      "listing_score": 0.44,
       "name": "太田市",
       "name_kana": "ｵｵﾀｼ",
       "official_url": "www.city.ota.gunma.jp",

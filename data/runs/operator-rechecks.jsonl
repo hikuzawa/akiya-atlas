@@ -845,3 +845,25 @@
 {"at": "2026-11-23T10:08:26+09:00", "result": "ok", "key": "ibaraki-082325", "label": "茨城県神栖市"}
 {"at": "2026-11-23T10:08:26+09:00", "result": "ok", "key": "ibaraki-082333", "label": "茨城県行方市"}
 {"at": "2026-11-23T10:08:26+09:00", "result": "ok", "key": "ibaraki-082341", "label": "茨城県鉾田市"}
+{"at": "2026-11-24T14:38:32+09:00", "result": "fail", "key": "hyogo-285854", "label": "兵庫県香美町", "reason": "空き家バンクのページを開けない（HTTP 404）", "failures": 3}
+{"at": "2026-11-24T14:38:32+09:00", "result": "reselect", "key": "hyogo-285854", "source_id": "hyogo-285854", "name": "兵庫県香美町", "old_official": "www.town.mikata-kami.lg.jp", "new_official": "www.town.mikata-kami.lg.jp", "old_bank": "https://www.town.mikata-kami.lg.jp/kurashi-tetsuzuki/iju-teiju-akiya/2904.html", "new_bank": "https://www.town.mikata-kami.lg.jp/soshiki/kikaku/4/600.html", "reason": "3 晩続けて確かめられなかった（空き家バンクのページを開けない（HTTP 404））"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "skip", "key": "nagano-203076", "label": "長野県北相木村", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "skip", "key": "nagano-204048", "label": "長野県阿南町", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "unreachable", "key": "akita-052132", "label": "秋田県北秋田市", "reason": "公式サイトに通信できない（HTTP 403）"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "skip", "key": "aomori-023621", "label": "青森県大鰐町", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "skip", "key": "aomori-023671", "label": "青森県田舎館村", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "skip", "key": "aomori-024244", "label": "青森県東通村", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "skip", "key": "fukuoka-402044", "label": "福岡県直方市", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "skip", "key": "gifu-214043", "label": "岐阜県池田町", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "skip", "key": "hokkaido-014834", "label": "北海道苫前町", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "skip", "key": "hokkaido-015121", "label": "北海道浜頓別町", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "skip", "key": "hokkaido-015181", "label": "北海道利尻町", "reason": "robots.txt で公式サイトを取得できない"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "ok", "key": "ibaraki-082350", "label": "茨城県つくばみらい市"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "ok", "key": "ibaraki-082368", "label": "茨城県小美玉市"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "ok", "key": "ibaraki-083020", "label": "茨城県茨城町"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "ok", "key": "ibaraki-083097", "label": "茨城県大洗町"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "ok", "key": "ibaraki-083101", "label": "茨城県城里町"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "ok", "key": "ibaraki-083411", "label": "茨城県東海村"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "ok", "key": "ibaraki-083640", "label": "茨城県大子町"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "ok", "key": "ibaraki-084425", "label": "茨城県美浦村"}
+{"at": "2026-11-24T14:38:50+09:00", "result": "skip", "key": "ibaraki-084476", "label": "茨城県河内町", "reason": "robots.txt で公式サイトを取得できない"}

@@ -124,7 +124,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ota.gunma.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.ota.gunma.jp/
-    checked_on: '2026-11-23'
+    checked_on: '2026-11-24'
   pages:
   - url: https://www.city.ota.gunma.jp/page/1150.html
     kind: listing_index
@@ -148,6 +148,8 @@ sources:
     url: https://ota-c10205.akiya-athome.jp/bukken/detail/buy/49712
   - label: 全国版空き家・空き地バンク(ライフルホームズ)
     url: https://www.homes.co.jp/akiyabank/b-50097/
+  - label: 全国版空き家・空き地バンク(ライフルホームズ)
+    url: https://www.homes.co.jp/akiyabank/b-50705/
   - label: 全国版空き家・空き地バンク(アットホーム)
     url: https://ota-c10205.akiya-athome.jp/bukken/detail/rent/8491
   - label: 全国版空き家・空き地バンク(ライフルホームズ)

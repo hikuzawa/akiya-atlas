@@ -1,6 +1,6 @@
 prefecture: 島根県
 prefecture_slug: shimane
-created_at: '2026-11-10T02:53:10+00:00'
+created_at: '2026-11-24T05:14:17+00:00'
 candidates:
 - key: '322016'
   label: 島根県 松江市
@@ -186,15 +186,15 @@ candidates:
   note: null
 - key: '325015'
   label: 島根県 津和野町
-  url: https://www.town.tsuwano.lg.jp/www/contents/1640736634362/index.html
-  page_class: listing_index
-  class_label: 物件一覧（静的）
-  confidence: 0.93
+  url: https://www.town.tsuwano.lg.jp/
+  page_class: null
+  class_label: null
+  confidence: 0.6
   operator_kind: municipality
   evidence_quote: 公式ドメイン www.town.tsuwano.lg.jp（.lg.jp、地方公共団体専用ドメイン）
   evidence_url: https://www.town.tsuwano.lg.jp/
-  reason: 自治体ドメイン/相互リンクで運営主体を確認、静的な物件ページ
-  proposed_policy: crawl
+  reason: 公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ
+  proposed_policy: link_only
   proposed_action: 承認
   decision: null
   note: null
