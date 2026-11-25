@@ -481,19 +481,19 @@ sources:
     prefecture: 和歌山県
     prefecture_slug: wakayama
     slug: '303836'
-    bank_url: http://www.town.yura.wakayama.jp/docs/2021081200033/
+    bank_url: https://www.town.yura.lg.jp/kurashi/03/03/2021081200033.html
     bank_status: available
-    extract_pending: true
+    extract_pending: false
     map_query: 和歌山県由良町
   operator_evidence:
     quote: 和歌山県 市町村のホームページ（リンク集）に掲載された公式サイト（www.town.yura.wakayama.jp）
     url: https://www.pref.wakayama.lg.jp/link/shichoson.html
-    checked_on: '2026-11-24'
+    checked_on: '2026-11-25'
   pages:
-  - url: http://www.town.yura.wakayama.jp/docs/2021081200033/
+  - url: https://www.town.yura.lg.jp/kurashi/03/03/2021081200033.html
     kind: listing_index
   allow_hosts:
-  - www.town.yura.wakayama.jp
+  - www.town.yura.lg.jp
   max_pages: 30
 - id: wakayama-303909
   name: 印南町空き家バンク

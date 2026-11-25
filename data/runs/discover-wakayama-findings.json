@@ -514,22 +514,18 @@
       "reason": "公式サイトは確認できたが物件ページを特定できず。公式へのリンクのみ"
     },
     {
-      "alternatives": [
-        "http://www.town.yura.wakayama.jp/docs/2024082100012/"
-      ],
+      "alternatives": [],
       "bank_status": "available",
-      "bank_url": "http://www.town.yura.wakayama.jp/docs/2021081200033/",
+      "bank_url": "https://www.town.yura.lg.jp/kurashi/03/03/2021081200033.html",
       "code": "303836",
       "confidence": 0.9045,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-24",
+      "evidence_checked_on": "2026-11-25",
       "evidence_quote": "和歌山県 市町村のホームページ（リンク集）に掲載された公式サイト（www.town.yura.wakayama.jp）",
       "evidence_url": "https://www.pref.wakayama.lg.jp/link/shichoson.html",
       "external_links": [],
-      "extract_gap": true,
-      "held_reason": "一覧に見えるのに 0 件（物件行 16）。抽出側の課題として保留",
-      "held_since": "2026-11-10",
+      "extract_gap": false,
       "listing_rows": 16,
       "listing_score": 1.0,
       "name": "由良町",

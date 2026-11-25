@@ -1,0 +1,33 @@
+{
+  "ci": true,
+  "command": "crawl",
+  "errors": [
+    "https://www.city.nomi.lg.jp/docs/6712.html: HTTP 404",
+    "https://www.town.yusui.kagoshima.jp/soshiki/34/10491.html: HTTP 404"
+  ],
+  "extraction_metrics": null,
+  "finished_at": "2026-11-25T04:03:09Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "キャッシュが巡回状態より古く、条件を付けずに取り直した: https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/12704.html, https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/12803.html, https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/12989.html, https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/13367.html, https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/14153.html, https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/14184.html, https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/14187.html, https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/14296.html, https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/14385.html, https://www.city.yame.fukuoka.jp/miryoku/live/vacant/article/12407.html ほか 275 件"
+  ],
+  "service": "akiya-atlas",
+  "stages": {
+    "crawl": {
+      "changed": 289,
+      "errors": 2,
+      "fetched": 304,
+      "not_modified": 0,
+      "requests": 322,
+      "stale_cache": 285,
+      "unchanged": 15,
+      "workers": 8
+    }
+  },
+  "started_at": "2026-11-25T03:59:52Z"
+}

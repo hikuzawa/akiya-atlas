@@ -550,7 +550,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.naka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.naka.lg.jp/
-    checked_on: '2026-11-24'
+    checked_on: '2026-11-25'
   pages:
   - url: https://www.city.naka.lg.jp/kurashi-tetsuduki/sumai/akiya/page004131.html
     kind: listing_index
@@ -692,7 +692,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.sakuragawa.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.sakuragawa.lg.jp/
-    checked_on: '2026-11-24'
+    checked_on: '2026-11-25'
   pages:
   - url: https://www.city.sakuragawa.lg.jp/akiya/akiya.php
     kind: listing_index
@@ -1039,7 +1039,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.ami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.ami.lg.jp/
-    checked_on: '2026-11-24'
+    checked_on: '2026-11-25'
   pages:
   - url: https://www.town.ami.lg.jp/0000009864.html
     kind: listing_index
@@ -1104,7 +1104,7 @@ sources:
   operator_evidence:
     quote: 茨城県 県内の市町村に掲載された公式サイト（www.town.ibaraki-yachiyo.lg.jp）
     url: https://www.pref.ibaraki.jp/towns/index.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-25'
   pages:
   - url: https://www.town.ibaraki-yachiyo.lg.jp/page/page009607.html
     kind: subsidy
@@ -1133,7 +1133,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.goka.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.goka.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-25'
 - id: ibaraki-085464
   name: 境町空き家バンク
   operator: 境町
@@ -1175,7 +1175,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.tone.ibaraki.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.tone.ibaraki.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-25'
   pages:
   - url: https://www.town.tone.ibaraki.jp/kurashi/sumaidouro/akiya/page001599.html
     kind: subsidy
