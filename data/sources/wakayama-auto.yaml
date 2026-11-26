@@ -483,12 +483,12 @@ sources:
     slug: '303836'
     bank_url: https://www.town.yura.lg.jp/kurashi/03/03/2021081200033.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 和歌山県由良町
   operator_evidence:
     quote: 和歌山県 市町村のホームページ（リンク集）に掲載された公式サイト（www.town.yura.wakayama.jp）
     url: https://www.pref.wakayama.lg.jp/link/shichoson.html
-    checked_on: '2026-11-25'
+    checked_on: '2026-11-26'
   pages:
   - url: https://www.town.yura.lg.jp/kurashi/03/03/2021081200033.html
     kind: listing_index
