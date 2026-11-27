@@ -118,12 +118,12 @@ sources:
     slug: '412058'
     bank_url: https://www.city.imari.lg.jp/item/16299.htm
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 佐賀県伊万里市
   operator_evidence:
     quote: 公式ドメイン www.city.imari.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.imari.lg.jp/
-    checked_on: '2026-11-26'
+    checked_on: '2026-11-27'
   pages:
   - url: https://www.city.imari.lg.jp/item/16299.htm
     kind: listing_index
