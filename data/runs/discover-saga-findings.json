@@ -128,12 +128,12 @@
         "https://www.city.imari.lg.jp/akiya"
       ],
       "bank_status": "available",
-      "bank_url": "https://www.city.imari.lg.jp/item/16299.htm",
+      "bank_url": "https://www.city.imari.lg.jp/12417.htm",
       "code": "412058",
       "confidence": 0.9324999999999999,
       "cross_linked": false,
       "detail_pattern": null,
-      "evidence_checked_on": "2026-11-27",
+      "evidence_checked_on": "2026-11-28",
       "evidence_quote": "公式ドメイン www.city.imari.lg.jp（.lg.jp、地方公共団体専用ドメイン）",
       "evidence_url": "https://www.city.imari.lg.jp/",
       "external_links": [
@@ -154,9 +154,7 @@
           "url": "https://www.hatomarksite.com/search/zentaku/agent/00074100333"
         }
       ],
-      "extract_gap": true,
-      "held_reason": "一覧に見えるのに 0 件（物件行 60）。抽出側の課題として保留",
-      "held_since": "2026-11-27",
+      "extract_gap": false,
       "listing_rows": 60,
       "listing_score": 1.0,
       "name": "伊万里市",

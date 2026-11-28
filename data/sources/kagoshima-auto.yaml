@@ -139,7 +139,7 @@ sources:
   operator_evidence:
     quote: 鹿児島県 県内市町村に掲載された公式サイト（www.city.kagoshima-izumi.lg.jp）
     url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
-    checked_on: '2026-11-27'
+    checked_on: '2026-11-28'
   pages:
   - url: https://www.city.kagoshima-izumi.lg.jp/page/page_00815.html
     kind: listing_index
@@ -288,7 +288,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.soo.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.soo.kagoshima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-28'
   pages:
   - url: https://www.city.soo.kagoshima.jp/kurashi/kurashisumai/zyuutakuhozyo/index.html
     kind: subsidy
@@ -315,7 +315,7 @@ sources:
   operator_evidence:
     quote: 鹿児島県 県内市町村に掲載された公式サイト（www.city-kirishima.jp）
     url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-28'
   pages:
   - url: https://www.city-kirishima.jp/shido/machizukuri/kenchiku/taishin/sukehosedo.html
     kind: subsidy
@@ -341,7 +341,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.ichikikushikino.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.ichikikushikino.lg.jp/
-    checked_on: '2026-11-27'
+    checked_on: '2026-11-28'
   pages:
   - url: https://www.city.ichikikushikino.lg.jp/seisaku1/akiyabank/akiya-bukkenn.html
     kind: listing_index
@@ -419,7 +419,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.minamisatsuma.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.minamisatsuma.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-28'
   pages:
   - url: https://www.city.minamisatsuma.lg.jp/living/sumai-tochi/jutaku-hojokin/
     kind: subsidy
@@ -446,7 +446,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.shibushi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.shibushi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-28'
   pages:
   - url: https://www.city.shibushi.lg.jp/site/iju/25497.html
     kind: subsidy
@@ -477,7 +477,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.amami.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.amami.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-28'
   pages:
   - url: https://www.city.amami.lg.jp/pjsenryaku/ui-turn/documents/kounyu_reformjosei.html
     kind: subsidy
@@ -504,7 +504,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.minamikyushu.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.minamikyushu.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-28'
   pages:
   - url: https://www.city.minamikyushu.lg.jp/ijuteijusite/otokuniijusuru/2/2624.html
     kind: subsidy
@@ -533,7 +533,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.isa.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.city.isa.kagoshima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-28'
 - id: kagoshima-462250
   name: 姶良市空き家バンク
   operator: 姶良市
@@ -554,7 +554,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.city.aira.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.city.aira.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-28'
   pages:
   - url: https://www.city.aira.lg.jp/kenchiku/kurashi/sumai/kenchiku/akiyakaitaihojo.html
     kind: subsidy
@@ -592,7 +592,7 @@ sources:
   operator_evidence:
     quote: 鹿児島県 県内市町村に掲載された公式サイト（mishimamura.com）
     url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-28'
 - id: kagoshima-463043
   name: 十島村空き家バンク
   operator: 十島村
@@ -613,7 +613,7 @@ sources:
   operator_evidence:
     quote: 鹿児島県 県内市町村に掲載された公式サイト（www.tokara.jp）
     url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-28'
 - id: kagoshima-463922
   name: さつま町空き家バンク
   operator: さつま町
@@ -633,7 +633,7 @@ sources:
   operator_evidence:
     quote: 鹿児島県 県内市町村に掲載された公式サイト（www.satsuma-net.jp）
     url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
-    checked_on: '2026-11-27'
+    checked_on: '2026-11-28'
   pages:
   - url: https://www.satsuma-net.jp/teiju/akiya/1/5623.html
     kind: listing_index
@@ -664,7 +664,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.nagashima.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.nagashima.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-28'
   pages:
   - url: https://www.town.nagashima.lg.jp/topinfo_chisei/%e7%a9%ba%e3%81%8d%e5%ae%b6%e6%94%b9%e4%bf%ae%e8%b2%bb/
     kind: subsidy
@@ -691,19 +691,15 @@ sources:
     slug: '464520'
     bank_url: https://www.town.yusui.kagoshima.jp/soshiki/34/787.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 鹿児島県湧水町
   operator_evidence:
     quote: 公式ドメイン www.town.yusui.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yusui.kagoshima.jp/
-    checked_on: '2026-11-27'
+    checked_on: '2026-11-28'
   pages:
   - url: https://www.town.yusui.kagoshima.jp/soshiki/34/787.html
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.town\.yusui\.kagoshima\.jp/soshiki/\d+/\d+\.html$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.town.yusui.kagoshima.jp
   max_pages: 30
@@ -721,19 +717,15 @@ sources:
     slug: '464686'
     bank_url: https://www.town.kagoshima-osaki.lg.jp/ke_kikaku/kurashi/ijuteju/sokushin/akiyabank.html
     bank_status: available
-    extract_pending: false
+    extract_pending: true
     map_query: 鹿児島県大崎町
   operator_evidence:
     quote: 鹿児島県 県内市町村に掲載された公式サイト（www.town.kagoshima-osaki.lg.jp）
     url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
-    checked_on: '2026-11-27'
+    checked_on: '2026-11-28'
   pages:
   - url: https://www.town.kagoshima-osaki.lg.jp/ke_kikaku/kurashi/ijuteju/sokushin/akiyabank.html
     kind: listing_index
-    follow:
-    - pattern: ^https?://www\.town\.kagoshima\-osaki\.lg\.jp/ke_kikaku/kurashi/ijuteju/akiyabank/\d+\.html$
-      kind: listing_detail
-      max_links: 60
   allow_hosts:
   - www.town.kagoshima-osaki.lg.jp
   max_pages: 30
@@ -757,7 +749,7 @@ sources:
   operator_evidence:
     quote: 鹿児島県 県内市町村に掲載された公式サイト（www.higashikushira.com）
     url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-28'
   pages:
   - url: https://www.higashikushira.com/docs/2024061300013/
     kind: subsidy
@@ -809,7 +801,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.minamiosumi.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.town.minamiosumi.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-28'
   pages:
   - url: https://www.town.minamiosumi.lg.jp/kikaku/iju.html
     kind: subsidy
@@ -836,7 +828,7 @@ sources:
   operator_evidence:
     quote: 鹿児島県 県内市町村に掲載された公式サイト（kimotsuki-town.jp）
     url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-28'
 - id: kagoshima-465011
   name: 中種子町空き家バンク
   operator: 中種子町
@@ -857,7 +849,7 @@ sources:
   operator_evidence:
     quote: 鹿児島県 県内市町村に掲載された公式サイト（town.nakatane.kagoshima.jp）
     url: https://www.pref.kagoshima.jp/aa02/link/shichoson.html
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-28'
 - id: kagoshima-465020
   name: 南種子町空き家バンク
   operator: 南種子町
@@ -905,7 +897,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.town.yakushima.kagoshima.jp（city/town/vill の地理型ドメイン、自治体に限定）
     url: https://www.town.yakushima.kagoshima.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-28'
 - id: kagoshima-465232
   name: 大和村空き家バンク
   operator: 大和村
@@ -926,7 +918,7 @@ sources:
   operator_evidence:
     quote: 公式ドメイン www.vill.yamato.lg.jp（.lg.jp、地方公共団体専用ドメイン）
     url: https://www.vill.yamato.lg.jp/
-    checked_on: '2026-09-11'
+    checked_on: '2026-11-28'
   pages:
   - url: https://www.vill.yamato.lg.jp/hpkanri/kurashi/iju/index.html
     kind: subsidy

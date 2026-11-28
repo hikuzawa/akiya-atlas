@@ -1,6 +1,6 @@
 prefecture: 佐賀県
 prefecture_slug: saga
-created_at: '2026-11-26T02:49:24+00:00'
+created_at: '2026-11-28T02:30:35+00:00'
 candidates:
 - key: '412015'
   label: 佐賀県 佐賀市
@@ -60,7 +60,7 @@ candidates:
   note: null
 - key: '412058'
   label: 佐賀県 伊万里市
-  url: https://www.city.imari.lg.jp/item/16299.htm
+  url: https://www.city.imari.lg.jp/12417.htm
   page_class: listing_index
   class_label: 物件一覧（静的）
   confidence: 0.93
